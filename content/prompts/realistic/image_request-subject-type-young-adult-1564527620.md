@@ -1,5 +1,5 @@
 ---
-title: "{ "image_request": { "subject": { "type": "Young adult woman", "identity_constraint": "Use the uploaded image as a reference.", "expression": "Use the uploaded image as a reference.", "gaze": "Use the uploaded image as a reference.", "emotion":"
+title: '{ "image_request": { "subject": { "type": "Young adult woman", "identity_constraint": "Use the uploaded image as a reference.", "expression": "Use the uploaded image as a reference.", "gaze": "Use the uploaded image as a reference.", "emotion":'
 slug: "image_request-subject-type-young-adult-1564527620"
 model: "Midjourney v6"
 category: "realistic"

@@ -1,5 +1,5 @@
 ---
-title: "上一期讲了"复古"，这期来个反方向—— Y2K 未来感 (Y2K Cyber Glam)。"
+title: '上一期讲了"复古"，这期来个反方向—— Y2K 未来感 (Y2K Cyber Glam)。'
 slug: "上一期讲了复古这期来个反方向-y2k-未来感-y2k-cyber-glam-1560926599"
 model: "Midjourney v6"
 category: "realistic"

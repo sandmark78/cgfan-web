@@ -8,7 +8,7 @@ difficulty: "intermediate"
 cover: "/images/prompts/life-journey-on-google-gemini-nano-1571173612.jpg"
 date: "2026-01-31"
 source: "https://x.com/i/status/2017592536601399641"
-author: "{"name":"Smiling Khan","username":"AIwithkhan","verified":true,"profile_image_url":"https://pbs.twimg.com/profile_images/1972969283492732928/v8nE7zqc_normal.jpg"}"
+author: "Smiling Khan"
 ---
 
 ## Prompt
