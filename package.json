@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "pages:build": "npx @cloudflare/next-on-pages",
+    "pages:preview": "npm run pages:build && npx wrangler pages dev .vercel/output/static --compatibility-date=2024-11-15 --compatibility-flags=nodejs_compat",
     "start": "next start",
     "lint": "eslint"
   },
@@ -17,7 +18,7 @@
     "clsx": "^2.1.1",
     "gray-matter": "^4.0.3",
     "lucide-react": "^1.25.0",
-    "next": "16.2.10",
+    "next": "^15.5.20",
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "shadcn": "^4.13.1",
@@ -30,7 +31,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "16.2.10",
+    "eslint-config-next": "^15.5.20",
     "tailwindcss": "^4",
     "typescript": "^5",
     "wrangler": "^4.112.0"
