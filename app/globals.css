@@ -10,38 +10,41 @@
   --green-500: #4CAF50;
   --green-600: #66BB6A;
   --green-700: #2e7d32;
-  
+
   /* 奶白底色 */
   --cream-50: #FFF8F0;
   --cream-100: #FDF6EC;
   --cream-200: #f5f0e8;
-  
-  /* 毛玻璃效果 */
-  --glass: rgba(255, 255, 255, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.8);
-  --glass-shadow: 0 8px 32px rgba(76, 175, 80, 0.15);
-  --blur: 16px;
-  
+
+  /* 毛玻璃效果 - 增强版 */
+  --glass: rgba(255, 255, 255, 0.55);
+  --glass-heavy: rgba(255, 255, 255, 0.72);
+  --glass-border: rgba(255, 255, 255, 0.85);
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(255, 255, 255, 0.5) inset;
+  --glass-shadow-hover: 0 16px 48px rgba(76, 175, 80, 0.15), 0 2px 8px rgba(255, 255, 255, 0.6) inset;
+  --blur: 24px;
+  --blur-heavy: 32px;
+
   /* 文本颜色 */
   --text-primary: #1a1a1a;
   --text-secondary: #4a4a4a;
   --text-muted: #717171;
-  
+
   /* 背景图 */
   --bg-light: url('/bg-vines.jpg');
   --bg-dark: url('/bg-dark.jpg');
-  
+
   /* 圆角 */
-  --radius: 18px;
+  --radius: 16px;
   --radius-sm: 12px;
   --radius-full: 999px;
-  
-  /* 间距 */
-  --spacing-xs: 8px;
-  --spacing-sm: 12px;
-  --spacing-md: 16px;
-  --spacing-lg: 24px;
-  --spacing-xl: 32px;
+
+  /* 间距 - 紧凑版 */
+  --spacing-xs: 6px;
+  --spacing-sm: 10px;
+  --spacing-md: 14px;
+  --spacing-lg: 20px;
+  --spacing-xl: 28px;
 }
 
 /* 暗色模式 */
@@ -51,15 +54,17 @@
   --green-500: #7CFFB2;
   --green-600: #4ade80;
   --green-700: #22c55e;
-  
+
   --cream-50: #0a0a0a;
   --cream-100: #1a1a1a;
   --cream-200: #2a2a2a;
-  
-  --glass: rgba(10, 30, 20, 0.55);
-  --glass-border: rgba(124, 255, 178, 0.2);
-  --glass-shadow: 0 8px 24px rgba(124, 255, 178, 0.08);
-  
+
+  --glass: rgba(10, 30, 20, 0.5);
+  --glass-heavy: rgba(10, 30, 20, 0.7);
+  --glass-border: rgba(124, 255, 178, 0.18);
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(124, 255, 178, 0.1) inset;
+  --glass-shadow-hover: 0 16px 48px rgba(124, 255, 178, 0.12), 0 1px 0 rgba(124, 255, 178, 0.15) inset;
+
   --text-primary: #eafff0;
   --text-secondary: #b8d4c0;
   --text-muted: #7a9a85;
@@ -99,19 +104,19 @@ body {
   content: "";
   position: fixed;
   inset: 0;
-  background: radial-gradient(60% 60% at 50% 45%, rgba(253, 246, 236, 0.35), transparent 70%);
+  background: radial-gradient(60% 60% at 50% 45%, rgba(253, 246, 236, 0.3), transparent 70%);
   pointer-events: none;
 }
 
 .dark .app-bg::after {
-  background: radial-gradient(60% 60% at 50% 45%, rgba(8, 24, 16, 0.45), transparent 70%);
+  background: radial-gradient(60% 60% at 50% 45%, rgba(8, 24, 16, 0.4), transparent 70%);
 }
 
 /* ===== 内容层 ===== */
 .shell {
   max-width: 1120px;
   margin: 0 auto;
-  padding: 24px clamp(16px, 4vw, 40px);
+  padding: 16px clamp(12px, 3vw, 32px);
 }
 
 /* ===== 毛玻璃组件 ===== */
@@ -123,29 +128,57 @@ body {
   box-shadow: var(--glass-shadow);
 }
 
+/* 光泽高光层 */
+.glass::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(255,255,255,0.25) 0%, transparent 40%, transparent 60%, rgba(255,255,255,0.08) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
 .glass-card {
+  position: relative;
   background: var(--glass);
   backdrop-filter: blur(var(--blur));
   -webkit-backdrop-filter: blur(var(--blur));
   border: 1px solid var(--glass-border);
   border-radius: var(--radius);
   box-shadow: var(--glass-shadow);
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+/* 卡片光泽层 */
+.glass-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(180deg, rgba(255,255,255,0.15) 0%, transparent 100%);
+  pointer-events: none;
+  z-index: 1;
+  border-radius: var(--radius) var(--radius) 0 0;
 }
 
 .glass-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 32px rgba(76, 175, 80, 0.18);
+  transform: translateY(-3px);
+  box-shadow: var(--glass-shadow-hover);
+  border-color: rgba(255, 255, 255, 0.95);
 }
 
 .dark .glass-card:hover {
-  box-shadow: 0 12px 32px rgba(124, 255, 178, 0.12);
+  border-color: rgba(124, 255, 178, 0.3);
 }
 
 /* ===== 整齐网格布局 ===== */
 .grid-uniform {
   display: grid;
-  gap: 20px;
+  gap: 16px;
   align-items: stretch;
 }
 
@@ -172,6 +205,8 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  position: relative;
+  z-index: 2;
 }
 
 .card-image {
@@ -189,7 +224,7 @@ body {
   overflow: hidden;
   margin: var(--spacing-sm) 0;
   color: var(--text-secondary);
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.5;
 }
 
@@ -205,7 +240,7 @@ body {
 .params {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
 }
 
 .param-chip {
@@ -214,8 +249,8 @@ body {
   -webkit-backdrop-filter: blur(var(--blur));
   border: 1px solid var(--glass-border);
   border-radius: var(--radius-full);
-  padding: 8px 14px;
-  font-size: 13px;
+  padding: 6px 12px;
+  font-size: 12px;
   color: var(--green-700);
 }
 
@@ -227,7 +262,7 @@ body {
 .category-chips {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 8px;
 }
 
 .category-chip {
@@ -236,8 +271,8 @@ body {
   -webkit-backdrop-filter: blur(var(--blur));
   border: 1px solid var(--glass-border);
   border-radius: var(--radius-full);
-  padding: 10px 20px;
-  font-size: 14px;
+  padding: 8px 16px;
+  font-size: 13px;
   font-weight: 500;
   color: var(--text-primary);
   transition: all 0.2s ease;
@@ -261,25 +296,28 @@ body {
   color: white;
   border: none;
   border-radius: var(--radius-full);
-  padding: 12px 28px;
+  padding: 10px 24px;
   font-weight: 600;
+  font-size: 14px;
   cursor: pointer;
   transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.25);
 }
 
 .btn-primary:hover {
   background: var(--green-600);
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+  box-shadow: 0 4px 16px rgba(76, 175, 80, 0.35);
 }
 
 .btn-secondary {
   background: transparent;
   color: var(--green-700);
-  border: 2px solid var(--green-500);
+  border: 1.5px solid var(--green-500);
   border-radius: var(--radius-full);
-  padding: 10px 26px;
+  padding: 9px 22px;
   font-weight: 600;
+  font-size: 14px;
   cursor: pointer;
   transition: all 0.2s ease;
 }
@@ -297,7 +335,7 @@ body {
 .detail-layout {
   display: grid;
   grid-template-columns: 1.1fr 1fr;
-  gap: 24px;
+  gap: 20px;
   align-items: start;
 }
 
@@ -335,4 +373,52 @@ body {
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+/* ===== 登录页专用 ===== */
+.login-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(40px) saturate(180%);
+  -webkit-backdrop-filter: blur(40px) saturate(180%);
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
+  border-radius: 24px;
+  box-shadow: 
+    0 24px 64px rgba(0, 0, 0, 0.12),
+    0 0 0 1px rgba(255, 255, 255, 0.3) inset,
+    0 1px 0 rgba(255, 255, 255, 0.8) inset;
+  overflow: hidden;
+}
+
+.dark .login-card {
+  background: rgba(20, 40, 30, 0.5);
+  border: 1.5px solid rgba(124, 255, 178, 0.15);
+  box-shadow: 
+    0 24px 64px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(124, 255, 178, 0.1) inset,
+    0 1px 0 rgba(124, 255, 178, 0.2) inset;
+}
+
+.login-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(180deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0.1) 50%, transparent 100%);
+  pointer-events: none;
+  border-radius: 24px 24px 0 0;
+}
+
+.login-card::after {
+  content: "";
+  position: absolute;
+  bottom: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120%;
+  height: 80%;
+  background: radial-gradient(ellipse at center, rgba(76, 175, 80, 0.08) 0%, transparent 70%);
+  pointer-events: none;
 }
