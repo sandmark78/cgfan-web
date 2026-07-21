@@ -1,0 +1,338 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ===== 设计系统变量 ===== */
+:root {
+  /* 主色调 - 绿色系 */
+  --green-50: #f0fdf4;
+  --green-100: #dcfce7;
+  --green-500: #4CAF50;
+  --green-600: #66BB6A;
+  --green-700: #2e7d32;
+  
+  /* 奶白底色 */
+  --cream-50: #FFF8F0;
+  --cream-100: #FDF6EC;
+  --cream-200: #f5f0e8;
+  
+  /* 毛玻璃效果 */
+  --glass: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.8);
+  --glass-shadow: 0 8px 32px rgba(76, 175, 80, 0.15);
+  --blur: 16px;
+  
+  /* 文本颜色 */
+  --text-primary: #1a1a1a;
+  --text-secondary: #4a4a4a;
+  --text-muted: #717171;
+  
+  /* 背景图 */
+  --bg-light: url('/bg-vines.jpg');
+  --bg-dark: url('/bg-dark.jpg');
+  
+  /* 圆角 */
+  --radius: 18px;
+  --radius-sm: 12px;
+  --radius-full: 999px;
+  
+  /* 间距 */
+  --spacing-xs: 8px;
+  --spacing-sm: 12px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+}
+
+/* 暗色模式 */
+.dark {
+  --green-50: #0c1f15;
+  --green-100: #102a1c;
+  --green-500: #7CFFB2;
+  --green-600: #4ade80;
+  --green-700: #22c55e;
+  
+  --cream-50: #0a0a0a;
+  --cream-100: #1a1a1a;
+  --cream-200: #2a2a2a;
+  
+  --glass: rgba(10, 30, 20, 0.55);
+  --glass-border: rgba(124, 255, 178, 0.2);
+  --glass-shadow: 0 8px 24px rgba(124, 255, 178, 0.08);
+  
+  --text-primary: #eafff0;
+  --text-secondary: #b8d4c0;
+  --text-muted: #7a9a85;
+}
+
+/* ===== 基础样式 ===== */
+* {
+  border-color: var(--glass-border);
+}
+
+body {
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* ===== 背景层 ===== */
+.app-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: var(--bg-light) center / cover no-repeat;
+}
+
+.dark .app-bg {
+  background-image: var(--bg-dark);
+}
+
+/* 移动端：使用 scroll 避免 iOS 抖动 */
+@media (max-width: 640px) {
+  .app-bg {
+    background-attachment: scroll;
+  }
+}
+
+/* 背景遮罩：保证文字对比度 */
+.app-bg::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(60% 60% at 50% 45%, rgba(253, 246, 236, 0.35), transparent 70%);
+  pointer-events: none;
+}
+
+.dark .app-bg::after {
+  background: radial-gradient(60% 60% at 50% 45%, rgba(8, 24, 16, 0.45), transparent 70%);
+}
+
+/* ===== 内容层 ===== */
+.shell {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 24px clamp(16px, 4vw, 40px);
+}
+
+/* ===== 毛玻璃组件 ===== */
+.glass {
+  background: var(--glass);
+  backdrop-filter: blur(var(--blur));
+  -webkit-backdrop-filter: blur(var(--blur));
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+}
+
+.glass-card {
+  background: var(--glass);
+  backdrop-filter: blur(var(--blur));
+  -webkit-backdrop-filter: blur(var(--blur));
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius);
+  box-shadow: var(--glass-shadow);
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(76, 175, 80, 0.18);
+}
+
+.dark .glass-card:hover {
+  box-shadow: 0 12px 32px rgba(124, 255, 178, 0.12);
+}
+
+/* ===== 整齐网格布局 ===== */
+.grid-uniform {
+  display: grid;
+  gap: 20px;
+  align-items: stretch;
+}
+
+@media (min-width: 1024px) {
+  .grid-uniform {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .grid-uniform {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 639px) {
+  .grid-uniform {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== 卡片内容统一高度 ===== */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+}
+
+.card-text {
+  flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: var(--spacing-sm) 0;
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: var(--spacing-sm);
+}
+
+/* ===== 参数 chips ===== */
+.params {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.param-chip {
+  background: var(--glass);
+  backdrop-filter: blur(var(--blur));
+  -webkit-backdrop-filter: blur(var(--blur));
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-full);
+  padding: 8px 14px;
+  font-size: 13px;
+  color: var(--green-700);
+}
+
+.dark .param-chip {
+  color: var(--green-500);
+}
+
+/* ===== 分类 chips ===== */
+.category-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.category-chip {
+  background: var(--glass);
+  backdrop-filter: blur(var(--blur));
+  -webkit-backdrop-filter: blur(var(--blur));
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-full);
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.category-chip:hover {
+  background: var(--green-100);
+  border-color: var(--green-500);
+}
+
+.category-chip.active {
+  background: var(--green-500);
+  color: white;
+  border-color: var(--green-500);
+}
+
+/* ===== 按钮样式 ===== */
+.btn-primary {
+  background: var(--green-500);
+  color: white;
+  border: none;
+  border-radius: var(--radius-full);
+  padding: 12px 28px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: var(--green-600);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--green-700);
+  border: 2px solid var(--green-500);
+  border-radius: var(--radius-full);
+  padding: 10px 26px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dark .btn-secondary {
+  color: var(--green-500);
+}
+
+.btn-secondary:hover {
+  background: var(--green-50);
+  border-color: var(--green-600);
+}
+
+/* ===== 详情页两栏布局 ===== */
+.detail-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+@media (max-width: 860px) {
+  .detail-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.detail-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+
+/* ===== 复制按钮反馈 ===== */
+.copy-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.copy-btn.copied::after {
+  content: '✓ Copied!';
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--green-600);
+  color: white;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
