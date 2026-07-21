@@ -72,7 +72,7 @@ export default function Header() {
           {/* 登录按钮 */}
           <Link
             href="/login"
-            className="btn-primary text-sm"
+            className="btn-primary text-xs px-3 py-1.5"
           >
             登录
           </Link>

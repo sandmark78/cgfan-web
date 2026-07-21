@@ -34,20 +34,20 @@ export default function Home() {
   }
 
   return (
-    <div className="py-12">
+    <div className="py-6 sm:py-12">
       {/* Hero 区域 */}
       <div className="text-center">
-        <h1 className="font-serif text-5xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl">
+        <h1 className="font-serif text-2xl sm:text-5xl font-bold tracking-tight text-gray-900 dark:text-white md:text-6xl leading-tight">
           分享 AI 提示词和示例图
         </h1>
-        <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-600 dark:text-gray-400">
+        <p className="mx-auto mt-3 sm:mt-6 max-w-2xl text-sm sm:text-lg text-gray-600 dark:text-gray-400 leading-snug">
           每日精选 AI 提示词和示例图，分门别类，方便查找和复用
         </p>
-        <div className="mt-10 flex items-center justify-center gap-4">
-          <Link href="/explore" className="btn-primary">
+        <div className="mt-6 sm:mt-10 flex items-center justify-center gap-3 sm:gap-4">
+          <Link href="/explore" className="btn-primary text-sm sm:text-base px-5 sm:px-7 py-2 sm:py-2.5">
             开始浏览
           </Link>
-          <Link href="/about" className="btn-secondary">
+          <Link href="/about" className="btn-secondary text-sm sm:text-base px-5 sm:px-7 py-2 sm:py-2.5">
             了解更多
           </Link>
         </div>
@@ -55,17 +55,17 @@ export default function Home() {
 
       {/* 分类 chips */}
       {categories.length > 0 && (
-        <div className="mt-16">
+        <div className="mt-8 sm:mt-16">
           <div className="category-chips justify-center">
             {categories.map((cat) => (
               <Link
                 key={cat.name}
                 href={`/explore?category=${encodeURIComponent(cat.name)}`}
-                className="category-chip"
+                className="category-chip text-xs sm:text-sm"
               >
-                <span className="mr-2">{categoryIcons[cat.name] || '📁'}</span>
+                <span className="mr-1 sm:mr-2">{categoryIcons[cat.name] || '📁'}</span>
                 {categoryNames[cat.name] || cat.name}
-                <span className="ml-2 text-xs opacity-60">({cat.count})</span>
+                <span className="ml-1 sm:ml-2 text-xs opacity-60">({cat.count})</span>
               </Link>
             ))}
           </div>
@@ -73,19 +73,19 @@ export default function Home() {
       )}
 
       {/* 最新提示词 - 整齐网格 */}
-      <div className="mt-16">
+      <div className="mt-8 sm:mt-16">
         <div className="flex items-center justify-between">
-          <h2 className="font-serif text-3xl font-bold text-gray-900 dark:text-white">
+          <h2 className="font-serif text-lg sm:text-3xl font-bold text-gray-900 dark:text-white">
             最新提示词
           </h2>
           <Link
             href="/explore"
-            className="text-sm font-medium text-green-600 transition-colors hover:text-green-700 dark:text-green-400 dark:hover:text-green-300"
+            className="text-xs sm:text-sm font-medium text-green-600 transition-colors hover:text-green-700 dark:text-green-400 dark:hover:text-green-300"
           >
             查看全部 →
           </Link>
         </div>
-        <div className="mt-8">
+        <div className="mt-4 sm:mt-8">
           <PromptGrid prompts={latestPrompts} />
         </div>
       </div>
