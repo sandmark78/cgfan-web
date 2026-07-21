@@ -34,16 +34,16 @@ export default function Home() {
   }
 
   return (
-    <div className="py-6 sm:py-12">
+    <div className="py-3 sm:py-6">
       {/* Hero 区域 */}
       <div className="text-center">
         <h1 className="font-serif text-2xl sm:text-5xl font-bold tracking-tight text-gray-900 dark:text-white md:text-6xl leading-tight">
           分享 AI 提示词和示例图
         </h1>
-        <p className="mx-auto mt-3 sm:mt-6 max-w-2xl text-sm sm:text-lg text-gray-600 dark:text-gray-400 leading-snug">
+        <p className="mx-auto mt-1.5 sm:mt-3 max-w-2xl text-sm sm:text-lg text-gray-600 dark:text-gray-400 leading-snug">
           每日精选 AI 提示词和示例图，分门别类，方便查找和复用
         </p>
-        <div className="mt-6 sm:mt-10 flex items-center justify-center gap-3 sm:gap-4">
+        <div className="mt-3 sm:mt-5 flex items-center justify-center gap-3 sm:gap-4">
           <Link href="/explore" className="btn-primary text-sm sm:text-base px-5 sm:px-7 py-2 sm:py-2.5">
             开始浏览
           </Link>
@@ -55,7 +55,7 @@ export default function Home() {
 
       {/* 分类 chips */}
       {categories.length > 0 && (
-        <div className="mt-8 sm:mt-16">
+        <div className="mt-4 sm:mt-8">
           <div className="category-chips justify-center">
             {categories.map((cat) => (
               <Link
@@ -73,7 +73,7 @@ export default function Home() {
       )}
 
       {/* 最新提示词 - 整齐网格 */}
-      <div className="mt-8 sm:mt-16">
+      <div className="mt-4 sm:mt-8">
         <div className="flex items-center justify-between">
           <h2 className="font-serif text-lg sm:text-3xl font-bold text-gray-900 dark:text-white">
             最新提示词
@@ -85,7 +85,7 @@ export default function Home() {
             查看全部 →
           </Link>
         </div>
-        <div className="mt-4 sm:mt-8">
+        <div className="mt-2 sm:mt-4">
           <PromptGrid prompts={latestPrompts} />
         </div>
       </div>
