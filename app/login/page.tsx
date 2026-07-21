@@ -3,6 +3,8 @@ import { redirect } from 'next/navigation'
 import { GitHubSignInButton } from '@/components/auth/github-sign-in-button'
 import { GoogleSignInButton } from '@/components/auth/google-sign-in-button'
 
+export const runtime = 'edge'
+
 export default async function LoginPage() {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()

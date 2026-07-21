@@ -8,13 +8,7 @@ import { DetailImage } from '@/components/prompt/detail-image'
 import { createClient } from '@/lib/supabase/server'
 import Link from 'next/link'
 
-/**
- * 生成所有提示词的静态路径
- */
-export async function generateStaticParams() {
-  const prompts = getAllPrompts()
-  return prompts.map((p) => ({ slug: p.slug }))
-}
+export const runtime = 'edge'
 
 /**
  * 提示词详情页 - 左图右文布局

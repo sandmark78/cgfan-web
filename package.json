@@ -8,7 +8,8 @@
     "pages:build": "npx @cloudflare/next-on-pages",
     "pages:preview": "npm run pages:build && npx wrangler pages dev .vercel/output/static --compatibility-date=2024-11-15 --compatibility-flags=nodejs_compat",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "prebuild": "tsx scripts/generate-prompts.ts"
   },
   "dependencies": {
     "@base-ui/react": "^1.6.0",
@@ -18,7 +19,7 @@
     "clsx": "^2.1.1",
     "gray-matter": "^4.0.3",
     "lucide-react": "^1.25.0",
-    "next": "^15.5.20",
+    "next": "15.5.2",
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "shadcn": "^4.13.1",
@@ -33,6 +34,7 @@
     "eslint": "^9",
     "eslint-config-next": "^15.5.20",
     "tailwindcss": "^4",
+    "tsx": "^4.23.1",
     "typescript": "^5",
     "wrangler": "^4.112.0"
   }

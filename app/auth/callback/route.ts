@@ -1,6 +1,8 @@
 import { createClient } from '@/lib/supabase/server'
 import { redirect } from 'next/navigation'
 
+export const runtime = 'edge'
+
 /**
  * OAuth 回调处理
  * 处理 Supabase Auth 的回调，重定向到首页

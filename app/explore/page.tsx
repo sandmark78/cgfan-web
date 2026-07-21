@@ -2,6 +2,8 @@ import { getAllPrompts, getAllCategories, getAllTags, getPromptsByCategory, getP
 import { PromptGrid } from '@/components/prompt/prompt-grid'
 import Link from 'next/link'
 
+export const runtime = 'edge'
+
 /**
  * 浏览页 - 分类/标签/搜索
  */
