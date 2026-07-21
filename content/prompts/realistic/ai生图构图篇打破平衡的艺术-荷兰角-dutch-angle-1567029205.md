@@ -1,0 +1,47 @@
+---
+title: "📐 AI生图构图篇：打破平衡的艺术 —— 荷兰角 (Dutch Angle)"
+slug: "ai生图构图篇打破平衡的艺术-荷兰角-dutch-angle-1567029205"
+model: "Midjourney v6"
+category: "realistic"
+tags: ["摄影", "AIart", "摄影构图", "AI绘画技巧", "电影感"]
+difficulty: "intermediate"
+cover: "/images/prompts/ai生图构图篇打破平衡的艺术-荷兰角-dutch-angle-1567029205.jpg"
+date: "2026-01-29"
+source: "https://x.com/i/status/2016699373305155859"
+author: "VoxCat"
+---
+
+## Prompt
+
+📐 AI生图构图篇：打破平衡的艺术 —— 荷兰角 (Dutch Angle)
+
+为什么有的画面一看就有"电影感"？ 除了光影，秘密往往在于那个倾斜的机位。
+
+【核心原理】
+荷兰角是通过倾斜相机，使地平线不再与画面边缘平行：
+视觉失衡 (Visual Instability)：打破水平稳重感，创造动态张力。
+心理暗示 (Psychological Impact)：暗示不安、疯狂、危险、紧张或超现实感。
+对角线引导 (Diagonal Lines)：将垂直线条转化为强有力的对角线。
+
+【视觉情绪】
+紧张不安悬疑、惊悚、突发冲突
+疯狂/混乱角色失控、梦境、超现实
+动感爆发主动进攻、离轴动作、极速
+时尚张力拒绝平庸、前卫杂志封面
+
+关键词👇
+Dutch angle shot, canted perspective.
+Subject tilting at an off-axis angle.
+Dynamic tension, cinematic camera tilt of 15-30 degrees.
+Action is slightly off-balance to create kinet
+
+## Negative Prompt
+
+(none provided)
+
+## Parameters
+
+| Setting | Value |
+|---------|-------|
+| Model | Midjourney v6 |
+| Aspect Ratio | 16:9 |

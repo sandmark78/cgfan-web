@@ -1,0 +1,27 @@
+---
+title: "📐 AI生图构图篇：打破物理的叙事 —— 分焦镜头 (Split Diopter)"
+slug: "ai生图构图篇打破物理的叙事-分焦镜头-split-diopter-1572908923"
+model: "Midjourney v6"
+category: "realistic"
+tags: ["艺术", "AI生图", "分焦镜头", "摄影构图", "电影感"]
+difficulty: "intermediate"
+cover: "/images/prompts/ai生图构图篇打破物理的叙事-分焦镜头-split-diopter-1572908923.jpg"
+date: "2026-02-02"
+source: "https://x.com/i/status/2017871199876092195"
+author: "VoxCat"
+---
+
+## Prompt
+
+📐 AI生图构图篇：打破物理的叙事 —— 分焦镜头 (Split Diopter) 想在同一个画面里，让近处的特写和远处的背景同时清晰？ 在现实摄影中，这通常需要昂贵的分焦滤镜；但在 AI 手中，这只是一个提示词的事。 【核心原理】 分焦镜头通过AI 创造出两个互不连续的焦平面： • 双重对焦 (Dual Focus)：近处的主体（通常是人脸特写）和远处的主体同时处于合焦状态。 • 物理失真 (Optical Anomaly)：打破了「焦平面越远越虚」的自然规律，制造一种超现实的张力。 • 对立场面 (Juxtaposition)：常用于展现两个角色之间的信息差或戏剧冲突。 【视觉情绪】 • 深度焦虑/紧张：近处角色在焦虑，背景危机正在逼近。 • 命运交织：两个互不相干的角色在同一时空被锁定。 • 超现实/梦幻：违反常理的清晰度，增加非真实感。 • 强叙事冲突：监听、窥视、暗杀等充满「信息差」的桥段。 【进阶公式：NBP 分焦实战】 Split diopter shot × Dual focal planes × [近景主体] vs [远景主体] = 顶级电影感 【进阶技巧：如何玩转「
+
+## Negative Prompt
+
+(none provided)
+
+## Parameters
+
+| Setting | Value |
+|---------|-------|
+| Model | Midjourney v6 |
+| Aspect Ratio | 16:9 |
