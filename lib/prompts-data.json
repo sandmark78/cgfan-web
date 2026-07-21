@@ -2,18 +2,19 @@
   {
     "title": "上传任意一张人物图到任意生图模型，立马完成皮克斯风格3D角色贴纸套装，太好玩了，提示词放这里了。快帮你老婆做一套试试😆",
     "slug": "上传任意一张人物图到任意生图模型立马完成皮克斯风格3d角色贴纸套装太好玩了提示词-1575373852",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "3d",
     "tags": [
-      "艺术",
-      "待处理"
+      "人物",
+      "3D",
+      "3d"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/上传任意一张人物图到任意生图模型立马完成皮克斯风格3d角色贴纸套装太好玩了提示词-1575373852.png",
     "date": "2026-02-03",
     "source": "https://x.com/i/status/2018501757740171333",
     "author": "未知作者",
-    "prompt": "Prompt:",
+    "prompt": "",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -23,12 +24,10 @@
   {
     "title": "兄弟们，",
     "slug": "兄弟们-1574133675",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "艺术",
-      "待处理"
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/兄弟们-1574133675.jpg",
@@ -45,21 +44,19 @@
   {
     "title": "📐 AI生图构图篇：打破物理的叙事 —— 分焦镜头 (Split Diopter)",
     "slug": "ai生图构图篇打破物理的叙事-分焦镜头-split-diopter-1572908923",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "艺术",
-      "AI生图",
-      "分焦镜头",
-      "摄影构图",
-      "电影感"
+      "写实",
+      "realistic",
+      "风景"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/ai生图构图篇打破物理的叙事-分焦镜头-split-diopter-1572908923.jpg",
     "date": "2026-02-02",
     "source": "https://x.com/i/status/2017871199876092195",
     "author": "VoxCat",
-    "prompt": "📐 AI生图构图篇：打破物理的叙事 —— 分焦镜头 (Split Diopter) 想在同一个画面里，让近处的特写和远处的背景同时清晰？ 在现实摄影中，这通常需要昂贵的分焦滤镜；但在 AI 手中，这只是一个提示词的事。 【核心原理】 分焦镜头通过AI 创造出两个互不连续的焦平面： • 双重对焦 (Dual Focus)：近处的主体（通常是人脸特写）和远处的主体同时处于合焦状态。 • 物理失真 (Optical Anomaly)：打破了「焦平面越远越虚」的自然规律，制造一种超现实的张力。 • 对立场面 (Juxtaposition)：常用于展现两个角色之间的信息差或戏剧冲突。 【视觉情绪】 • 深度焦虑/紧张：近处角色在焦虑，背景危机正在逼近。 • 命运交织：两个互不相干的角色在同一时空被锁定。 • 超现实/梦幻：违反常理的清晰度，增加非真实感。 • 强叙事冲突：监听、窥视、暗杀等充满「信息差」的桥段。 【进阶公式：NBP 分焦实战】 Split diopter shot × Dual focal planes × [近景主体] vs [远景主体] = 顶级电影感 【进阶技巧：如何玩转「",
+    "prompt": "AI生图构图篇：打破物理的叙事 —— 分焦镜头 (Split Diopter) 想在同一个画面里，让近处的特写和远处的背景同时清晰？ 在现实摄影中，这通常需要昂贵的分焦滤镜；但在 AI 手中，这只是一个提示词的事。 【核心原理】 分焦镜头通过AI 创造出两个互不连续的焦平面： • 双重对焦 (Dual Focus)：近处的主体（通常是人脸特写）和远处的主体同时处于合焦状态。 • 物理失真 (Optical Anomaly)：打破了「焦平面越远越虚」的自然规律，制造一种超现实的张力。 • 对立场面 (Juxtaposition)：常用于展现两个角色之间的信息差或戏剧冲突。 【视觉情绪】 • 深度焦虑/紧张：近处角色在焦虑，背景危机正在逼近。 • 命运交织：两个互不相干的角色在同一时空被锁定。 • 超现实/梦幻：违反常理的清晰度，增加非真实感。 • 强叙事冲突：监听、窥视、暗杀等充满「信息差」的桥段。 【进阶公式：NBP 分焦实战】 Split diopter shot × Dual focal planes × [近景主体] vs [远景主体] = 顶级电影感 【进阶技巧：如何玩转「",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -69,21 +66,19 @@
   {
     "title": "东方美学与古典油画的碰撞。",
     "slug": "东方美学与古典油画的碰撞-1572186587",
-    "model": "Midjourney v6",
+    "model": "Grok",
     "category": "anime",
     "tags": [
-      "国风",
-      "摄影",
-      "AI艺术",
-      "美学碰撞",
-      "油画风格"
+      "写实",
+      "人物",
+      "anime"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/东方美学与古典油画的碰撞-1572186587.jpg",
     "date": "2026-02-01",
     "source": "https://x.com/i/status/2017889153774735423",
     "author": "ponyoponyodong",
-    "prompt": "东方美学与古典油画的碰撞。 Oriental aesthetics meet classical texture.Testing a new prompt for that \"cold porcelain\" look. 📸 左边👈GROK 右边👉SEEDREAM 你pick哪一种风格？ Prompt： Close-up portrait of a stunning East Asian woman, blending classical medieval oil painting style with hyper-realistic photography. Cold white porcelain skin, natural \"no-makeup\" look, glossy wet lips. Messy light brown hair, windswept strands crossing the face adding a sense of chaos. Emotional direct gaze, deep eyes. Wearing pearl earrings, crea",
+    "prompt": "东方美学与古典油画的碰撞。 Oriental aesthetics meet classical texture.Testing a new prompt for that \"cold porcelain\" look.  左边GROK 右边SEEDREAM 你pick哪一种风格？ Prompt： Close-up portrait of a stunning East Asian woman, blending classical medieval oil painting style with hyper-realistic photography. Cold white porcelain skin, natural \"no-makeup\" look, glossy wet lips. Messy light brown hair, windswept strands crossing the face adding a sense of chaos. Emotional direct gaze, deep eyes. Wearing pearl earrings, crea",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -93,21 +88,18 @@
   {
     "title": "Life journey on Google Gemini Nano Banana",
     "slug": "life-journey-on-google-gemini-nano-1571173612",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "abstract",
     "tags": [
-      "艺术",
-      "AI艺术创作",
-      "人生旅程叙事",
-      "电影风格拼贴",
-      "人工智能生成"
+      "人物",
+      "abstract"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/life-journey-on-google-gemini-nano-1571173612.jpg",
     "date": "2026-01-31",
     "source": "https://x.com/i/status/2017592536601399641",
     "author": "{\"name\":\"Smiling Khan\",\"username\":\"AIwithkhan\",\"verified\":true,\"profile_image_url\":\"https://pbs.twimg.com/profile_images/1972969283492732928/v8nE7zqc_normal.jpg\"}",
-    "prompt": "{\"post_time\":\"2 days ago\",\"text\":\"Life journey on Google Gemini Nano Banana Prompt 👇 A powerful cinematic collage storytelling the complete life journey of a woman in one frame. The story begins on the far left with a black-and-white USG ultrasound scan, softly glowing, showing the unborn baby. Flowing seamlessly into the center, the collage transitions through life stages: a newborn wrapped in hospital cloth, a toddler taking first steps, a schoolgirl with a backpack, a teenage girl with dreams",
+    "prompt": "{\"post_time\":\"2 days ago\",\"text\":\"Life journey on Google Gemini Nano Banana Prompt  A powerful cinematic collage storytelling the complete life journey of a woman in one frame. The story begins on the far left with a black-and-white USG ultrasound scan, softly glowing, showing the unborn baby. Flowing seamlessly into the center, the collage transitions through life stages: a newborn wrapped in hospital cloth, a toddler taking first steps, a schoolgirl with a backpack, a teenage girl with dreams",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -117,14 +109,10 @@
   {
     "title": "2026年大胆去做自媒体，短视频风口来了",
     "slug": "2026年大胆去做自媒体短视频风口来了-1570902492",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "abstract",
     "tags": [
-      "AI",
-      "工具",
-      "自媒体",
-      "短视频",
-      "运营技巧"
+      "abstract"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/2026年大胆去做自媒体短视频风口来了-1570902492.jpg",
@@ -141,14 +129,14 @@
   {
     "title": "1. 打开Gemini / ChatGPT / Grok",
     "slug": "1-打开gemini-chatgpt-grok-1570508905",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI图像生成",
-      "提示词工程",
-      "摄影风格",
-      "GPT应用"
+      "赛博朋克",
+      "概念艺术",
+      "建筑",
+      "极简",
+      "风景"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/1-打开gemini-chatgpt-grok-1570508905.jpg",
@@ -165,14 +153,14 @@
   {
     "title": "分享一个比较成熟的AI创作路径，充分发挥各个模型的长处。",
     "slug": "分享一个比较成熟的ai创作路径充分发挥各个模型的长处-1570523288",
-    "model": "Midjourney v6",
+    "model": "Midjourney",
     "category": "abstract",
     "tags": [
-      "视频",
-      "AI创作",
-      "MidJourney",
-      "NanoBananaPro",
-      "即梦视频"
+      "赛博朋克",
+      "abstract",
+      "水墨",
+      "人物",
+      "写实"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/分享一个比较成熟的ai创作路径充分发挥各个模型的长处-1570523288.jpg",
@@ -189,18 +177,17 @@
   {
     "title": "提示词我改了一版本，我认为K-pop的风格比我之前写的抖音风格更加适配，你们觉得呢？做了点改动发现风格截然不同！一韩一中区别明显，放上韩系版本给大家试试，欢迎返图！！！（需要中式的可自行修改哦！）😀NBP Prompt:",
     "slug": "提示词我改了一版本我认为k-1571044266",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "待处理"
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/提示词我改了一版本我认为k-1571044266.jpg",
     "date": "2026-01-31",
     "source": "https://x.com/i/status/2017594245650026579",
     "author": "未知作者",
-    "prompt": "---",
+    "prompt": "--",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -210,21 +197,21 @@
   {
     "title": "30 分钟，AI 生成全套电商产品素材！",
     "slug": "30-分钟ai-生成全套电商产品素材-1570505596",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "abstract",
     "tags": [
-      "广告",
-      "AI电商",
-      "AI绘图",
-      "电商素材生成",
-      "提示词工程"
+      "极简",
+      "风景",
+      "abstract",
+      "产品",
+      "写实"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/30-分钟ai-生成全套电商产品素材-1570505596.jpg",
     "date": "2026-01-31",
     "source": "https://x.com/i/status/2017136190042911190",
     "author": "Bitturing",
-    "prompt": "30 分钟，AI 生成全套电商产品素材！\n上传一张产品图 → 主图到详情页一次跑完\n电商全套出图提示词（可直接商用）\n🔗 https://t.co/0ERINGHDH7\n\n一套提示词，直接生成👇\n✅ 首页主图（第一眼抓点击）\n✅ 卖点图（参数 / 优势清晰表达）\n✅ 细节特写图（材质 / 结构 / 质感）\n✅ 场景应用图（代入真实使用环境）\n\n不管卖什么，直接套这个「万能电商出图结构」框架👇\n📐 比例：1:1 / 9:16（平台友好）\n🎨 背景：明确颜色/真实场景\n💡 光线：统一自然柔光\n📍 构图：主体居中、比例真实\n✏️ 文字：极简卖点，不抢戏\n⚠️ 约束：真实结构，禁夸张\n\n新手照填，基本零翻车\n老手微调，效率翻 10 倍",
+    "prompt": "30 分钟，AI 生成全套电商产品素材！\n上传一张产品图 → 主图到详情页一次跑完\n电商全套出图提示词（可直接商用）\nhttps://t.co/0ERINGHDH7\n\n一套提示词，直接生成\n✅ 首页主图（第一眼抓点击）\n✅ 卖点图（参数 / 优势清晰表达）\n✅ 细节特写图（材质 / 结构 / 质感）\n✅ 场景应用图（代入真实使用环境）\n\n不管卖什么，直接套这个「万能电商出图结构」框架\n比例：1:1 / 9:16（平台友好）\n背景：明确颜色/真实场景\n光线：统一自然柔光\n构图：主体居中、比例真实\n✏ 文字：极简卖点，不抢戏\n⚠ 约束：真实结构，禁夸张\n\n新手照填，基本零翻车\n老手微调，效率翻 10 倍",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -234,21 +221,20 @@
   {
     "title": "1.Grok, 2.Whisk, 3.Banana App, 4.Flow",
     "slug": "1grok-2whisk-3banana-app-4flow-1570554404",
-    "model": "Midjourney v6",
+    "model": "Grok",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI图像生成",
-      "提示词工程",
-      "时尚摄影",
-      "人工智能评测"
+      "写实",
+      "动漫",
+      "realistic",
+      "人物"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/1grok-2whisk-3banana-app-4flow-1570554404.jpg",
     "date": "2026-01-31",
     "source": "https://x.com/i/status/2017302859218407558",
     "author": "Aytaç Altıntepe",
-    "prompt": "1.Grok, 2.Whisk, 3.Banana App, 4.Flow\nIn my opinion, Whisk was the most successful interpreter and gave realistic results. Flow surprised me for the first time. Its performance was low. Grok is nice, but I don't understand why they can't solve this skin shine problem.🤔\n\nGLOBAL STYLE & QUALITY\nUltra-detailed hyper-realistic cinematic fashion photography, dark editorial mood, premium texture fidelity, high dynamic range lighting, zero illustration feel, zero anime styling, gritty environment reali",
+    "prompt": "1.Grok, 2.Whisk, 3.Banana App, 4.Flow\nIn my opinion, Whisk was the most successful interpreter and gave realistic results. Flow surprised me for the first time. Its performance was low. Grok is nice, but I don't understand why they can't solve this skin shine problem.\n\nGLOBAL STYLE & QUALITY\nUltra-detailed hyper-realistic cinematic fashion photography, dark editorial mood, premium texture fidelity, high dynamic range lighting, zero illustration feel, zero anime styling, gritty environment reali",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -258,14 +244,13 @@
   {
     "title": "Iron Man",
     "slug": "iron-man-1571237926",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "abstract",
     "tags": [
-      "艺术",
-      "AI生成艺术",
-      "JSON提示词",
-      "产品设计",
-      "图像参考"
+      "人物",
+      "abstract",
+      "动物",
+      "产品"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/iron-man-1571237926.jpg",
@@ -282,21 +267,19 @@
   {
     "title": "Prompt for nano banana pro:",
     "slug": "prompt-for-nano-banana-pro-1571128742",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI绘画",
-      "写真创作",
-      "夜景人像",
-      "时尚摄影"
+      "写实",
+      "人物",
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/prompt-for-nano-banana-pro-1571128742.jpg",
     "date": "2026-01-31",
     "source": "https://x.com/i/status/2017591867249201307",
     "author": "Anissa (SimplyAnnisa)",
-    "prompt": "Prompt for nano banana pro: Masterpiece, best quality, detailed lighting, dramatic shadows, voluptuous body, innocent face. (Use a 100% identical reference face) Create an ultra-realistic portrait of a young Asian woman at night, 9:16 ratio (vertical portrait). Medium shot (waist up), taken using a phone's rear camera with a strong flash, with Hongyadong (Hongya Cave) in Chongqing, China as the backdrop. Background: The background must be an exact copy of Hongyadong Chongqing, a highly viral and",
+    "prompt": "for nano banana pro: Masterpiece, best quality, detailed lighting, dramatic shadows, voluptuous body, innocent face. (Use a 100% identical reference face) Create an ultra-realistic portrait of a young Asian woman at night, 9:16 ratio (vertical portrait). Medium shot (waist up), taken using a phone's rear camera with a strong flash, with Hongyadong (Hongya Cave) in Chongqing, China as the backdrop. Background: The background must be an exact copy of Hongyadong Chongqing, a highly viral and",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -306,21 +289,19 @@
   {
     "title": "Is this it?",
     "slug": "is-this-it-1570846371",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "人工智能绘画",
-      "复古唱片店",
-      "摄影提示词",
-      "时尚穿搭"
+      "复古",
+      "人物",
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/is-this-it-1570846371.jpg",
     "date": "2026-01-31",
     "source": "https://x.com/i/status/2017493378167111734",
     "author": "Sidona sidona",
-    "prompt": "Is this it? Yes. This is it. この瞬間を待ってた。 找到的那一刻，什么都值了。 ————prompt👇 { \"portrait_prompt\": { \"subject\": { \"description\": \"Based on <User Portrait, a young woman crouching in a vintage record store, excitedly holding up a vinyl record she just found\", \"pose\": \"Squatting or kneeling by record crates, holding vinyl up toward camera\" }, \"attire\": { \"type\": \"White camisole, charcoal mini skirt riding up slightly, black lace socks, black loafers\", \"accessory\": \"Mustard yellow bag set down beside her\" }, \"",
+    "prompt": "Is this it? Yes. This is it. この瞬間を待ってた。 找到的那一刻，什么都值了。 ————prompt { \"portrait_prompt\": { \"subject\": { \"description\": \"Based on <User Portrait, a young woman crouching in a vintage record store, excitedly holding up a vinyl record she just found\", \"pose\": \"Squatting or kneeling by record crates, holding vinyl up toward camera\" }, \"attire\": { \"type\": \"White camisole, charcoal mini skirt riding up slightly, black lace socks, black loafers\", \"accessory\": \"Mustard yellow bag set down beside her\" }, \"",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -330,14 +311,12 @@
   {
     "title": "Nano Banana Pro and GPT image 1.5",
     "slug": "nano-banana-pro-and-gpt-image-15-1570554631",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "广告",
-      "摄影",
-      "AI图像生成",
-      "商业产品摄影",
-      "GPT Prompt"
+      "写实",
+      "realistic",
+      "产品"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/nano-banana-pro-and-gpt-image-15-1570554631.jpg",
@@ -354,14 +333,11 @@
   {
     "title": "I asked Nano Banana to deconstruct 4 old complex gadgets from the 1900s.",
     "slug": "i-asked-nano-banana-to-deconstruct-4-1571268981",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "艺术",
-      "人工智能生成",
-      "微型摄影",
-      "机械解构",
-      "工业设计"
+      "复古",
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/i-asked-nano-banana-to-deconstruct-4-1571268981.jpg",
@@ -378,21 +354,17 @@
   {
     "title": "【AI写真系列✨×韩系女团风📷】第四弹",
     "slug": "ai写真系列韩系女团风第四弹-1570502495",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI创作",
-      "提示词工具",
-      "MeiGen",
-      "AI生图"
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/ai写真系列韩系女团风第四弹-1570502495.jpg",
     "date": "2026-01-31",
     "source": "https://x.com/i/status/2017062059712925871",
     "author": "骑司Chase (qisi_ai)",
-    "prompt": "讲真的，现在的提示词网站都还有很大的优化空间： 大部分提示词网站以“堆量”为主，靠着上千上万的提示词数量来堆砌价值，内容很丰富，但也存在大量重复、低质的提示词出现 如果是自动爬取的帖子，还会出现提示词空档的情况，因为并不是每一个作者都会把提示词直接写在正文中，所以识别不到 在这样的网站想要使用提示词，往往需要经历以下几个步骤： 1️⃣翻了很久，终于找到自己想要的图片效果 2️⃣点进去后会出现几种情况 - 没有提示词，只能放弃或者去原帖中找 - 语言不通，看不懂提示词 - 复制的文本里有其他文案，需要手动删除 3️⃣折腾十分钟，终于把提示词处理好了 4️⃣打开gemini/第三方生图网站 5️⃣复制提示词进行生图 6️⃣运气不好，发现提示词效果根本不是作者提供的那样，卒 想要丝滑的把中意的提示词变成图片，基本做不到 直到我用了MeiGen，一个开源的项目，它可能是今年使用体验最丝滑的提示词网站 因为MeiGen不是传统的提示词网站，它不只是收录，而是解决了从提示词源到创作的整条链路 想要什么效果，只需要轻轻拖动画面到右侧，点击生成就结束了，从查看到生成，只需要两步 「拖动-生成」结束 1",
+    "prompt": "讲真的，现在的提示词网站都还有很大的优化空间： 大部分提示词网站以“堆量”为主，靠着上千上万的提示词数量来堆砌价值，内容很丰富，但也存在大量重复、低质的提示词出现 如果是自动爬取的帖子，还会出现提示词空档的情况，因为并不是每一个作者都会把提示词直接写在正文中，所以识别不到 在这样的网站想要使用提示词，往往需要经历以下几个步骤： 1⃣翻了很久，终于找到自己想要的图片效果 2⃣点进去后会出现几种情况 - 没有提示词，只能放弃或者去原帖中找 - 语言不通，看不懂提示词 - 复制的文本里有其他文案，需要手动删除 3⃣折腾十分钟，终于把提示词处理好了 4⃣打开gemini/第三方生图网站 5⃣复制提示词进行生图 6⃣运气不好，发现提示词效果根本不是作者提供的那样，卒 想要丝滑的把中意的提示词变成图片，基本做不到 直到我用了MeiGen，一个开源的项目，它可能是今年使用体验最丝滑的提示词网站 因为MeiGen不是传统的提示词网站，它不只是收录，而是解决了从提示词源到创作的整条链路 想要什么效果，只需要轻轻拖动画面到右侧，点击生成就结束了，从查看到生成，只需要两步 「拖动-生成」结束 1",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -402,21 +374,18 @@
   {
     "title": "猜猜哪個是Grok，哪個是Gemini？",
     "slug": "猜猜哪個是grok哪個是gemini-1571067630",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI视频生成",
-      "CCD摄影",
-      "AI提示词",
-      "社交媒体互动"
+      "人物",
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/猜猜哪個是grok哪個是gemini-1571067630.jpg",
     "date": "2026-01-31",
     "source": "https://x.com/i/status/2012692211985781223",
     "author": "PlayForge AI 94vanAI",
-    "prompt": "{\"content\":\"猜猜哪個是Grok，哪個是Gemini？ Guess which one is Grok and which one is Gemini? Image➡️video prompt： ｛prompt： 0-3 seconds close-up focus on the woman‘s face, and the face is consistent. She gently raises her right hand and puts her index finger on her lips. Her eyes flow straight at the camera, her eyes are charming, and her neck sways with subtle movements, and her body atmosphere is lazy and seductive. In 4-7 seconds, he pulled slightly to the half of his body, his eyelids drooped slightly a",
+    "prompt": "{\"content\":\"猜猜哪個是Grok，哪個是Gemini？ Guess which one is Grok and which one is Gemini? Image➡video prompt： ｛prompt： 0-3 seconds close-up focus on the woman‘s face, and the face is consistent. She gently raises her right hand and puts her index finger on her lips. Her eyes flow straight at the camera, her eyes are charming, and her neck sways with subtle movements, and her body atmosphere is lazy and seductive. In 4-7 seconds, he pulled slightly to the half of his body, his eyelids drooped slightly a",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -426,21 +395,17 @@
   {
     "title": "Landmark Infographics by Grok Imagine🗽✨",
     "slug": "landmark-infographics-by-grok-imagine-1570554778",
-    "model": "Midjourney v6",
+    "model": "Grok",
     "category": "abstract",
     "tags": [
-      "艺术",
-      "AI",
-      "Infographics",
-      "Landmarks",
-      "Grok"
+      "abstract"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/landmark-infographics-by-grok-imagine-1570554778.jpg",
     "date": "2026-01-31",
     "source": "https://x.com/i/status/2017219273521856928",
     "author": "TechieSA (TechieBySA)",
-    "prompt": "Landmark Infographics by Grok Imagine🗽✨ Prompt👇🏻",
+    "prompt": "Landmark Infographics by Grok Imagine Prompt",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -450,21 +415,21 @@
   {
     "title": "这就是我梦里的国风3D！🐉✨",
     "slug": "这就是我梦里的国风3d-1571127410",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "3d",
     "tags": [
-      "摄影",
-      "AI绘画",
-      "国风",
-      "3D渲染",
-      "东方美学"
+      "动物",
+      "3d",
+      "极简",
+      "3D",
+      "奇幻"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/这就是我梦里的国风3d-1571127410.jpg",
     "date": "2026-01-31",
     "source": "https://x.com/i/status/2017484581016928521",
     "author": "ponyoponyodong",
-    "prompt": "这就是我梦里的国风3D！🐉✨ 终于把这种“青蛇劫起”般的电影级质感用 Niji 6 完美复刻了。 那个墨绿色的流体背景和皮肤的通透感简直绝了……为了还原这个神仙画风，我大概跑了50张图调参。 今天把压箱底的 Prompt 和风格思路毫无保留地分享给大家！ 🧵 风格拆解 (The Vibe Check): 这种风格的核心不是 2D，而是极致的 3D渲染感 (C4D/Octane) 加上 东方奇幻美学。 关键要素： 主体： 坚毅的丹凤眼 (Sharp phoenix eyes) + 极简汉服。 环境： 墨绿色的流动能量 (Swirling dark green liquid/energy)，要有丝绸般的顺滑感。 光影（重中之重）： 必须要有电影光感 (Cinematic lighting) 和让皮肤像玉一样的次表面散射 (Subsurface scattering)。 👇 一键出图咒语 (复制即用)： /imagine prompt: A stunning 3D Chinese animation style close-up of a beautiful heroine, determi",
+    "prompt": "这就是我梦里的国风3D！ 终于把这种“青蛇劫起”般的电影级质感用 Niji 6 完美复刻了。 那个墨绿色的流体背景和皮肤的通透感简直绝了……为了还原这个神仙画风，我大概跑了50张图调参。 今天把压箱底的 Prompt 和风格思路毫无保留地分享给大家！  风格拆解 (The Vibe Check): 这种风格的核心不是 2D，而是极致的 3D渲染感 (C4D/Octane) 加上 东方奇幻美学。 关键要素： 主体： 坚毅的丹凤眼 (Sharp phoenix eyes) + 极简汉服。 环境： 墨绿色的流动能量 (Swirling dark green liquid/energy)，要有丝绸般的顺滑感。 光影（重中之重）： 必须要有电影光感 (Cinematic lighting) 和让皮肤像玉一样的次表面散射 (Subsurface scattering)。  一键出图咒语 (复制即用)： /imagine prompt: A stunning 3D Chinese animation style close-up of a beautiful heroine, determi",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -474,21 +439,19 @@
   {
     "title": "🎨 KLING 2.6 🎨",
     "slug": "kling-26-1570544516",
-    "model": "Midjourney v6",
+    "model": "Kling",
     "category": "abstract",
     "tags": [
-      "视频",
-      "AIArt",
-      "KLINGAI",
-      "AIgenerated",
-      "CreativeAI"
+      "赛博朋克",
+      "abstract",
+      "科幻"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/kling-26-1570544516.jpg",
     "date": "2026-01-31",
     "source": "https://x.com/i/status/2017345866357408208",
     "author": "LudovicCreator",
-    "prompt": "🎨 KLING 2.6 🎨 Prompt : Tracking shot following a futuristic warrior sprinting through a collapsing city street, dodging falling debris and explosions, neon lights flicker as shockwaves ripple through the air. Made in @Kling_ai",
+    "prompt": "KLING 2.6  Prompt : Tracking shot following a futuristic warrior sprinting through a collapsing city street, dodging falling debris and explosions, neon lights flicker as shockwaves ripple through the air. Made in @Kling_ai",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -498,14 +461,13 @@
   {
     "title": "Gemini nano banana pro 3.0",
     "slug": "gemini-nano-banana-pro-30-1570899670",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "人工智能绘画",
-      "图片生成",
-      "视觉艺术",
-      "创意提示"
+      "人物",
+      "realistic",
+      "动物",
+      "水墨"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/gemini-nano-banana-pro-30-1570899670.jpg",
@@ -522,21 +484,17 @@
   {
     "title": "用最“笨”的方法，短短4年身价暴涨1万倍！",
     "slug": "用最笨的方法短短4年身价暴涨1万倍-1571068337",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "abstract",
     "tags": [
-      "教程",
-      "股票",
-      "投资策略",
-      "短线交易",
-      "股市秘籍"
+      "abstract"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/用最笨的方法短短4年身价暴涨1万倍-1571068337.jpg",
     "date": "2026-01-31",
     "source": "https://x.com/i/status/2017137108163711426",
     "author": "白骏知识分享",
-    "prompt": "用最“笨”的方法，短短4年身价暴涨1万倍！ 16分钟狂赚20亿！日本最强「民间股神」小手川隆（BNF）退隐前曝出惊人秘诀 从大学打工仔到资产超200亿日元，他靠严苛止损、顺势短线、避开情绪陷阱，硬生生把股市玩成个人提款机。 想知道他如何抓住JCOM错单暴富、日常如何“笨”到极致却赚翻天？ 戳进来看，解锁真正的高手心法，股市翻身就靠这一篇！ 保存学习👉https://t.co/N10Lp4RCne",
+    "prompt": "用最“笨”的方法，短短4年身价暴涨1万倍！ 16分钟狂赚20亿！日本最强「民间股神」小手川隆（BNF）退隐前曝出惊人秘诀 从大学打工仔到资产超200亿日元，他靠严苛止损、顺势短线、避开情绪陷阱，硬生生把股市玩成个人提款机。 想知道他如何抓住JCOM错单暴富、日常如何“笨”到极致却赚翻天？ 戳进来看，解锁真正的高手心法，股市翻身就靠这一篇！ 保存学习https://t.co/N10Lp4RCne",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -546,14 +504,11 @@
   {
     "title": "She didn't apply for the cover.",
     "slug": "she-didnt-apply-for-the-cover-1570801541",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "时尚摄影",
-      "低角度镜头",
-      "黄金时刻",
-      "街头风格"
+      "写实",
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/she-didnt-apply-for-the-cover-1570801541.jpg",
@@ -570,21 +525,20 @@
   {
     "title": "Untamed energy🐾",
     "slug": "untamed-energy-1570898796",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI生成艺术",
-      "时尚摄影",
-      "沙漠风景",
-      "猎豹元素"
+      "写实",
+      "人物",
+      "realistic",
+      "复古"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/untamed-energy-1570898796.jpg",
     "date": "2026-01-31",
     "source": "https://x.com/i/status/2017223007060808035",
     "author": "Natty Windstorm",
-    "prompt": "{\"content\":\"Untamed energy🐾 made by Nano Banana Pro on https://t.co/nNCgo11Z9L✨ { \\\"prompt\\\": \\\"Cinematic desert road scene at golden hour. A confident tattooed woman with long blonde hair poses on the hood of a vintage luxury convertible, wearing a black cutout one-piece swimsuit and gold jewelry. A calm cheetah sits beside her on the car hood. Warm sunlight, dusty highway stretching into distant mountains, dramatic shadows, sun flare, high fashion editorial style, surreal yet realistic mood.\\\"",
+    "prompt": "{\"content\":\"Untamed energy made by Nano Banana Pro on https://t.co/nNCgo11Z9L { \\\"prompt\\\": \\\"Cinematic desert road scene at golden hour. A confident tattooed woman with long blonde hair poses on the hood of a vintage luxury convertible, wearing a black cutout one-piece swimsuit and gold jewelry. A calm cheetah sits beside her on the car hood. Warm sunlight, dusty highway stretching into distant mountains, dramatic shadows, sun flare, high fashion editorial style, surreal yet realistic mood.\\\"",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -594,21 +548,17 @@
   {
     "title": "Nano Banana Pro @bageldotcom 🎾",
     "slug": "nano-banana-pro-bageldotcom-1570902988",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI图像生成",
-      "电影式渲染",
-      "情侣摄影",
-      "网球运动"
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/nano-banana-pro-bageldotcom-1570902988.jpg",
     "date": "2026-01-31",
     "source": "https://x.com/i/status/2017306745358402020",
     "author": "astronomerozge1",
-    "prompt": "Nano Banana Pro [@bageldotcom] 🎾 Prompt: 一个详细的JSON结构，用于生成网球情侣在金色黄昏时分的故事板拼贴画，包含元数据、参考图片、输出设置、全局风格、场景、面板描述和质量控制。",
+    "prompt": "Nano Banana Pro [@bageldotcom]  Prompt: 一个详细的JSON结构，用于生成网球情侣在金色黄昏时分的故事板拼贴画，包含元数据、参考图片、输出设置、全局风格、场景、面板描述和质量控制。",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -618,21 +568,19 @@
   {
     "title": "Nano Banana Pro + Kling AI 九个摄影机位控制同一个角色，这效果能直接去拍电影了~",
     "slug": "nano-banana-pro-kling-ai-1570898055",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "视频",
-      "AI视频生成",
-      "多视角摄影",
-      "电影制作",
-      "人工智能工具"
+      "写实",
+      "人物",
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/nano-banana-pro-kling-ai-1570898055.jpg",
     "date": "2026-01-31",
     "source": "https://x.com/i/status/2017190433127072212",
     "author": "邪修玩AI-诗泳 LiEvanna85716",
-    "prompt": "Nano Banana Pro + Kling AI 九个摄影机位控制同一个角色，这效果能直接去拍电影了~ 人物一次性拍九个机位只需要简单三步👇",
+    "prompt": "Nano Banana Pro + Kling AI 九个摄影机位控制同一个角色，这效果能直接去拍电影了~ 人物一次性拍九个机位只需要简单三步",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -642,10 +590,10 @@
   {
     "title": "📐 AI生图构图篇：破局的美学 —— 框中框断裂 (Broken Frame-in-Frame)",
     "slug": "ai生图构图篇破局的美学-框中框断裂-broken-frame-in-frame-1570501610",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "anime",
     "tags": [
-      "国风"
+      "anime"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/ai生图构图篇破局的美学-框中框断裂-broken-frame-in-frame-1570501610.jpg",
@@ -662,21 +610,19 @@
   {
     "title": "Cross-brand sneaker collaboration 👟",
     "slug": "cross-brand-sneaker-collaboration-1570896016",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "abstract",
     "tags": [
-      "广告",
-      "球鞋设计",
-      "品牌合作",
-      "概念鞋款",
-      "创意提示"
+      "写实",
+      "abstract",
+      "产品"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/cross-brand-sneaker-collaboration-1570896016.jpg",
     "date": "2026-01-31",
     "source": "https://x.com/i/status/2017542008722886797",
     "author": "Latte0xbisc",
-    "prompt": "Cross-brand sneaker collaboration 👟 Prompt: [BRAND NAME] Act as a world-class Footwear Design Director and high-end Product Photographer. THE TASK You must autonomously conceptualize and render a hyper-realistic “Concept Sneaker Collaboration” between the input brand and a specialized sports/outdoor brand of your choosing. PHASE 1: DIVERSE PARTNER SELECTION (THE “MATCHMAKER”) CRITICAL: Do NOT default to Nike or Adidas unless they are the absolute 100% perfect archetype match. You must DIVERSIFY ",
+    "prompt": "Cross-brand sneaker collaboration  Prompt: [BRAND NAME] Act as a world-class Footwear Design Director and high-end Product Photographer. THE TASK You must autonomously conceptualize and render a hyper-realistic “Concept Sneaker Collaboration” between the input brand and a specialized sports/outdoor brand of your choosing. PHASE 1: DIVERSE PARTNER SELECTION (THE “MATCHMAKER”) CRITICAL: Do NOT default to Nike or Adidas unless they are the absolute 100% perfect archetype match. You must DIVERSIFY",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -686,21 +632,17 @@
   {
     "title": "Object Infographics by Nano Banana Pro on @SocialSight 🧾✨",
     "slug": "object-infographics-by-nano-banana-pro-1570554885",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "abstract",
     "tags": [
-      "艺术",
-      "AI",
-      "Infographics",
-      "Object",
-      "NanoBananaPro"
+      "abstract"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/object-infographics-by-nano-banana-pro-1570554885.jpg",
     "date": "2026-01-31",
     "source": "https://x.com/i/status/2013316513701216688",
     "author": "TechieSA",
-    "prompt": "Object Infographics by Nano Banana Pro on @SocialSight 🧾✨ Prompt👇🏻",
+    "prompt": "Object Infographics by Nano Banana Pro on @SocialSight  Prompt",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -710,14 +652,12 @@
   {
     "title": "Framing luck with silver clovers.",
     "slug": "framing-luck-with-silver-clovers-1570845953",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "珠宝设计",
-      "小确幸",
-      "四叶草",
-      "静物摄影"
+      "realistic",
+      "动物",
+      "极简"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/framing-luck-with-silver-clovers-1570845953.jpg",
@@ -734,14 +674,11 @@
   {
     "title": "🎉兄弟们，",
     "slug": "兄弟们-1570522410",
-    "model": "Midjourney v6",
+    "model": "Midjourney",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI绘画",
-      "小红书运营",
-      "Midjourney",
-      "健身摄影"
+      "写实",
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/兄弟们-1570522410.jpg",
@@ -758,21 +695,17 @@
   {
     "title": "很久没有更新美妆了，新款美甲💅新动作（提示词过长，部分放在评论区，欢迎返图🙌🏻）",
     "slug": "很久没有更新美妆了新款美甲新动作提示词过长部分放在评论区欢迎返图-1570522331",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI美妆",
-      "AI图像生成",
-      "美甲设计",
-      "妆容复刻"
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/很久没有更新美妆了新款美甲新动作提示词过长部分放在评论区欢迎返图-1570522331.jpg",
     "date": "2026-01-31",
     "source": "https://x.com/i/status/2017129240173388019",
     "author": "PlayForge AI (94vanAI)",
-    "prompt": "很久没有更新美妆了，新款美甲💅新动作（提示词过长，部分放在评论区，欢迎返图🙌🏻）",
+    "prompt": "很久没有更新美妆了，新款美甲新动作（提示词过长，部分放在评论区，欢迎返图）",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -782,14 +715,11 @@
   {
     "title": "神佬，拆解滴神，哈哈。参考神佬提示词在flowith里狂刷图，调了一版写实的版本😂",
     "slug": "神佬拆解滴神哈哈参考神佬提示词在flowith里狂刷图调了一版写实的版本-1570502976",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "艺术",
-      "Twitter",
-      "Web Viewer",
-      "Trend Analyzer",
-      "Downloader"
+      "写实",
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/神佬拆解滴神哈哈参考神佬提示词在flowith里狂刷图调了一版写实的版本-1570502976.jpg",
@@ -806,21 +736,17 @@
   {
     "title": "Airbnb-style 生态屋",
     "slug": "airbnb-style-生态屋-1568556133",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "3d",
     "tags": [
-      "AI_Art",
-      "3D_Diorama",
-      "Airbnb_Style",
-      "Sustainable_Design",
-      "Prompt_Engineering"
+      "3d"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/airbnb-style-生态屋-1568556133.jpg",
     "date": "2026-01-30",
     "source": "https://x.com/i/status/2017116469692453116",
     "author": "两斤 0x00_Krypt",
-    "prompt": "Airbnb-style 生态屋 Prompt👇",
+    "prompt": "Airbnb-style 生态屋 Prompt",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -830,21 +756,19 @@
   {
     "title": "🎭 AI演技大考：如何让你的角色瞬间完成「黑化觉醒」？",
     "slug": "ai演技大考如何让你的角色瞬间完成黑化觉醒-1566915589",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "cyberpunk",
     "tags": [
-      "摄影",
-      "AI演技",
-      "黑化觉醒",
-      "现代汉元素",
-      "赛博朋克"
+      "赛博朋克",
+      "极简",
+      "cyberpunk"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/ai演技大考如何让你的角色瞬间完成黑化觉醒-1566915589.jpg",
     "date": "2026-01-29",
     "source": "https://x.com/i/status/2016689123067908482",
     "author": "VoxCat",
-    "prompt": "🎭 AI演技大考：如何让你的角色瞬间完成「黑化觉醒」？ 现代机能 x 汉元素，感受这窒息的压迫感瞬间 ✨ 【核心要素拆解】 📐 构图 (Composition)：极简荷兰角（35°倾斜）+ 低机位。这种视角的失衡是内心秩序崩塌的视觉预读。 🎭 神态 (Acting DNA)：拒绝僵硬！锁定“表里不一”公式：笑容收敛 -压眉 -慢抬眼上视。 👀 眼神：穿透性的冷酷解析，锁定「假面破碎」的那一秒。 👘 服饰（现代汉元素）： 上身：黑色机能皮夹克，搭配深红丝绸立领，袖口云纹刺绣细节拉满。 下身：高腰机能裙 + 传统汉式丝绸腰带 + 金属搭扣。 发饰：银质发簪与金属流苏的硬核融合。 👐 动作： 黑色机能折扇遮挡下颌（制造神秘感）。 耸肩后撤，头部下压，眼神向上方致命一瞥。 🏙️ 氛围：暗黑赛博朋克 + 霓虹冷调对比光（冷蓝 vs 玫红）。 真正的「反派觉醒」，不是歇斯底里，而是那一抹消失在眼底的温顺。",
+    "prompt": "AI演技大考：如何让你的角色瞬间完成「黑化觉醒」？ 现代机能 x 汉元素，感受这窒息的压迫感瞬间  【核心要素拆解】  构图 (Composition)：极简荷兰角（35°倾斜）+ 低机位。这种视角的失衡是内心秩序崩塌的视觉预读。  神态 (Acting DNA)：拒绝僵硬！锁定“表里不一”公式：笑容收敛 -压眉 -慢抬眼上视。  眼神：穿透性的冷酷解析，锁定「假面破碎」的那一秒。  服饰（现代汉元素）： 上身：黑色机能皮夹克，搭配深红丝绸立领，袖口云纹刺绣细节拉满。 下身：高腰机能裙 + 传统汉式丝绸腰带 + 金属搭扣。 发饰：银质发簪与金属流苏的硬核融合。  动作： 黑色机能折扇遮挡下颌（制造神秘感）。 耸肩后撤，头部下压，眼神向上方致命一瞥。  氛围：暗黑赛博朋克 + 霓虹冷调对比光（冷蓝 vs 玫红）。 真正的「反派觉醒」，不是歇斯底里，而是那一抹消失在眼底的温顺。",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -854,21 +778,17 @@
   {
     "title": "今天这组图太喜欢了💫",
     "slug": "今天这组图太喜欢了-1567025495",
-    "model": "Midjourney v6",
+    "model": "Seedream",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "Seedream",
-      "AI_art",
-      "fashion_photography",
-      "prompt_engineering"
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/今天这组图太喜欢了-1567025495.jpg",
     "date": "2026-01-29",
     "source": "https://x.com/i/status/2016723235803709950",
     "author": "路飞 🏴‍☠️ AI 研究员🧐 0xluffy_eth",
-    "prompt": "今天这组图太喜欢了💫 用 Seedream 4.0 拍的，光感、构图都很高级 NanoBanana 上试了下，同样惊艳🖼️ 提示词👇 一幅奢华的高级时尚肖像，[角色描述]优雅地坐在装饰华丽的大型长方形画框下边缘 画框细节： • 巴洛克/洛可可风格长方形画框 • 用[画框颜色和质地]绘制，与整体色调和谐 环境： • 背景：优雅的工作室墙面，经典镶板[颜色] • 地板：略有反光，[地板颜色] 灯光： • 电影式高调时尚光线 • 主体柔和柔散光 • 轻微轮廓分离 相机： • 对称居中全身肖像 • 干净的编辑时尚构图 • 8K超清高端大片品质 风格标签：单色 | 悬浮画框 | 电影工作室时尚 | 奢华编辑美学",
+    "prompt": "今天这组图太喜欢了 用 Seedream 4.0 拍的，光感、构图都很高级 NanoBanana 上试了下，同样惊艳 提示词 一幅奢华的高级时尚肖像，[角色描述]优雅地坐在装饰华丽的大型长方形画框下边缘 画框细节： • 巴洛克/洛可可风格长方形画框 • 用[画框颜色和质地]绘制，与整体色调和谐 环境： • 背景：优雅的工作室墙面，经典镶板[颜色] • 地板：略有反光，[地板颜色] 灯光： • 电影式高调时尚光线 • 主体柔和柔散光 • 轻微轮廓分离 相机： • 对称居中全身肖像 • 干净的编辑时尚构图 • 8K超清高端大片品质 风格标签：单色 | 悬浮画框 | 电影工作室时尚 | 奢华编辑美学",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -878,21 +798,17 @@
   {
     "title": "📐 AI生图构图篇：打破平衡的艺术 —— 荷兰角 (Dutch Angle)",
     "slug": "ai生图构图篇打破平衡的艺术-荷兰角-dutch-angle-1567029205",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AIart",
-      "摄影构图",
-      "AI绘画技巧",
-      "电影感"
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/ai生图构图篇打破平衡的艺术-荷兰角-dutch-angle-1567029205.jpg",
     "date": "2026-01-29",
     "source": "https://x.com/i/status/2016699373305155859",
     "author": "VoxCat",
-    "prompt": "📐 AI生图构图篇：打破平衡的艺术 —— 荷兰角 (Dutch Angle)\n\n为什么有的画面一看就有\"电影感\"？ 除了光影，秘密往往在于那个倾斜的机位。\n\n【核心原理】\n荷兰角是通过倾斜相机，使地平线不再与画面边缘平行：\n视觉失衡 (Visual Instability)：打破水平稳重感，创造动态张力。\n心理暗示 (Psychological Impact)：暗示不安、疯狂、危险、紧张或超现实感。\n对角线引导 (Diagonal Lines)：将垂直线条转化为强有力的对角线。\n\n【视觉情绪】\n紧张不安悬疑、惊悚、突发冲突\n疯狂/混乱角色失控、梦境、超现实\n动感爆发主动进攻、离轴动作、极速\n时尚张力拒绝平庸、前卫杂志封面\n\n关键词👇\nDutch angle shot, canted perspective.\nSubject tilting at an off-axis angle.\nDynamic tension, cinematic camera tilt of 15-30 degrees.\nAction is slightly off-balance to create kinet",
+    "prompt": "AI生图构图篇：打破平衡的艺术 —— 荷兰角 (Dutch Angle)\n\n为什么有的画面一看就有\"电影感\"？ 除了光影，秘密往往在于那个倾斜的机位。\n\n【核心原理】\n荷兰角是通过倾斜相机，使地平线不再与画面边缘平行：\n视觉失衡 (Visual Instability)：打破水平稳重感，创造动态张力。\n心理暗示 (Psychological Impact)：暗示不安、疯狂、危险、紧张或超现实感。\n对角线引导 (Diagonal Lines)：将垂直线条转化为强有力的对角线。\n\n【视觉情绪】\n紧张不安悬疑、惊悚、突发冲突\n疯狂/混乱角色失控、梦境、超现实\n动感爆发主动进攻、离轴动作、极速\n时尚张力拒绝平庸、前卫杂志封面\n\n关键词\nDutch angle shot, canted perspective.\nSubject tilting at an off-axis angle.\nDynamic tension, cinematic camera tilt of 15-30 degrees.\nAction is slightly off-balance to create kinet",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -902,14 +818,11 @@
   {
     "title": "Nano Banana pro image generation",
     "slug": "nano-banana-pro-image-generation-1566916201",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI Image Generation",
-      "Cinematic Photography",
-      "Night Portrait",
-      "Prompt Engineering"
+      "人物",
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/nano-banana-pro-image-generation-1566916201.jpg",
@@ -926,21 +839,20 @@
   {
     "title": "【AI写真系列✨×韩系女团风📷】第三弹",
     "slug": "ai写真系列韩系女团风第三弹-1567028630",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI绘画",
-      "AI写真",
-      "提示词工程",
-      "韩系女团风"
+      "复古",
+      "人物",
+      "realistic",
+      "风景"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/ai写真系列韩系女团风第三弹-1567028630.jpg",
     "date": "2026-01-29",
     "source": "https://x.com/i/status/2016803276566737364",
     "author": "骑司Chase (qisi_ai)",
-    "prompt": "【AI写真系列✨×韩系女团风📷】第三弹 红色细框眼镜、白色蕾丝小裙、粉色丝巾、天使羽翼与毛绒发饰，把“幼态、复古、俏皮、轻微性感”的气质牢牢钉住～ ✅ 图一为直接生成 ✅ 图二为使用参考图生成 ✍️中文提示词（Nano Banana Pro）： 一、画面版式 1 画幅比例：竖幅三比四，四宫格拼图，二行二列排列 2 镜头组合：两张近景特写加两张半身到全身，人物占画面比例大 3 背景统一：同一灰色无缝背景，四格色调与光线一致，边缘留少量灰底空白 二、人物主体 参考来源：以上传参考图作为严格身份来源 一致性要求：零偏差 1 人物设定：年轻少女，甜酷可爱与轻微性感并存 2 面部特征：大眼圆润，鼻梁小巧，唇形饱满，脸颊与眼下高饱和腮红 3 妆容质感：底妆干净微雾面，腮红面积大且集中，唇部高光水润镜面 4 配饰标识：红色细框眼镜，作为强识别点贯穿四格 三、发型与头饰 1 发型：深棕长发，侧边大波浪辫子垂落，刘海厚且蓬松，少量碎发自然散落 2 头饰：毛绒小熊发夹与发圈点缀，发侧还有小熊挂件与背包元素呼应 四、服装造型与道具 1 服装：白色吊带上衣与白色层叠荷叶边短裙，肩带与胸前有粉色蝴蝶结装饰 2 ",
+    "prompt": "【AI写真系列×韩系女团风】第三弹 红色细框眼镜、白色蕾丝小裙、粉色丝巾、天使羽翼与毛绒发饰，把“幼态、复古、俏皮、轻微性感”的气质牢牢钉住～ ✅ 图一为直接生成 ✅ 图二为使用参考图生成 ✍中文提示词（Nano Banana Pro）： 一、画面版式 1 画幅比例：竖幅三比四，四宫格拼图，二行二列排列 2 镜头组合：两张近景特写加两张半身到全身，人物占画面比例大 3 背景统一：同一灰色无缝背景，四格色调与光线一致，边缘留少量灰底空白 二、人物主体 参考来源：以上传参考图作为严格身份来源 一致性要求：零偏差 1 人物设定：年轻少女，甜酷可爱与轻微性感并存 2 面部特征：大眼圆润，鼻梁小巧，唇形饱满，脸颊与眼下高饱和腮红 3 妆容质感：底妆干净微雾面，腮红面积大且集中，唇部高光水润镜面 4 配饰标识：红色细框眼镜，作为强识别点贯穿四格 三、发型与头饰 1 发型：深棕长发，侧边大波浪辫子垂落，刘海厚且蓬松，少量碎发自然散落 2 头饰：毛绒小熊发夹与发圈点缀，发侧还有小熊挂件与背包元素呼应 四、服装造型与道具 1 服装：白色吊带上衣与白色层叠荷叶边短裙，肩带与胸前有粉色蝴蝶结装饰 2",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -950,21 +862,18 @@
   {
     "title": "【AI写真系列✨×韩系女团风📷】第二弹",
     "slug": "ai写真系列韩系女团风第二弹-1566509130",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI写真",
-      "韩系女团风",
-      "结构化提示词",
-      "AI人像生成"
+      "人物",
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/ai写真系列韩系女团风第二弹-1566509130.jpg",
     "date": "2026-01-29",
     "source": "https://x.com/i/status/2016725035310862814",
     "author": "骑司Chase qisi_ai",
-    "prompt": "【AI写真系列✨×韩系女团风📷】第二弹 女团风的高级穿搭，满满的克制感，甜美中带着酷飒 ✍️中文提示词： 一、版式与构图 1 画幅比例：整体竖幅四比五 2 版式：四宫格拼图，二乘二排列，无边框 3 景别：近景到特写，人物占画面大比例，肩颈与上半身为主 4 角度：平视为主，轻微侧转与俯仰变化，统一干净背景 二、人物主体 1 优先以上传参考图作为严格身份来源 2 一致性要求：零偏差 3 性别气质：年轻女性，清冷甜感并存，安静克制 4 脸部特征：鹅蛋脸偏小，五官精致，大眼圆润，鼻梁细直，唇形饱满 5 肤色肤质：白皙偏粉，细腻通透，柔焦磨皮但保留高光反射 6 眼神表情：湿润清澈的凝视，微微放空与若有所思，嘴唇微张或轻抿 三、妆发细节 1 底妆：轻薄通透，面中与鼻梁高光明显 2 腮红：大面积粉雾腮红，集中在苹果肌并延伸到鼻梁两侧 3 眼妆：干净放大感，细长睫毛，淡淡卧蚕与浅棕眼影 4 唇妆：水润镜面感，蜜桃粉到玫瑰粉渐变 5 发型：黑色长直发，中分贴头顶，顺直垂落；少量发丝斜掠过脸颊与鼻梁形成标志线条 四、服饰与道具 1 外搭：黑色宽松西装外套，垫肩感轻微 2 内搭：白色缎面吊带或抹胸上衣，胸前",
+    "prompt": "【AI写真系列×韩系女团风】第二弹 女团风的高级穿搭，满满的克制感，甜美中带着酷飒 ✍中文提示词： 一、版式与构图 1 画幅比例：整体竖幅四比五 2 版式：四宫格拼图，二乘二排列，无边框 3 景别：近景到特写，人物占画面大比例，肩颈与上半身为主 4 角度：平视为主，轻微侧转与俯仰变化，统一干净背景 二、人物主体 1 优先以上传参考图作为严格身份来源 2 一致性要求：零偏差 3 性别气质：年轻女性，清冷甜感并存，安静克制 4 脸部特征：鹅蛋脸偏小，五官精致，大眼圆润，鼻梁细直，唇形饱满 5 肤色肤质：白皙偏粉，细腻通透，柔焦磨皮但保留高光反射 6 眼神表情：湿润清澈的凝视，微微放空与若有所思，嘴唇微张或轻抿 三、妆发细节 1 底妆：轻薄通透，面中与鼻梁高光明显 2 腮红：大面积粉雾腮红，集中在苹果肌并延伸到鼻梁两侧 3 眼妆：干净放大感，细长睫毛，淡淡卧蚕与浅棕眼影 4 唇妆：水润镜面感，蜜桃粉到玫瑰粉渐变 5 发型：黑色长直发，中分贴头顶，顺直垂落；少量发丝斜掠过脸颊与鼻梁形成标志线条 四、服饰与道具 1 外搭：黑色宽松西装外套，垫肩感轻微 2 内搭：白色缎面吊带或抹胸上衣，胸前",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -974,14 +883,12 @@
   {
     "title": "Champagne problems, literally.",
     "slug": "champagne-problems-literally-1565919957",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "photography",
-      "film aesthetic",
-      "fashion styling",
-      "prompt engineering"
+      "realistic",
+      "动物",
+      "极简"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/champagne-problems-literally-1565919957.jpg",
@@ -998,14 +905,13 @@
   {
     "title": "好图！逆向了一下",
     "slug": "好图逆向了一下-1565884598",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AIGC逆向工程",
-      "提示词结构化",
-      "商业摄影",
-      "极简主义设计"
+      "写实",
+      "概念艺术",
+      "极简",
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/好图逆向了一下-1565884598.jpg",
@@ -1022,21 +928,18 @@
   {
     "title": "Nano Banana Pro @astronomerozge1 💘",
     "slug": "nano-banana-pro-astronomerozge1-1565888485",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI生成",
-      "NanoBananaPro",
-      "时尚摄影",
-      "编辑图片"
+      "写实",
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/nano-banana-pro-astronomerozge1-1565888485.jpg",
     "date": "2026-01-28",
     "source": "https://x.com/i/status/2016215595209871366",
     "author": "astronomerozge1",
-    "prompt": "Nano Banana Pro [@bageldotcom] 🖤 Prompt: { \"generation_request\": { \"meta_data\": { \"tool\": \"NanoBanana Pro\", \"task_type\": \"photoreal_editorial_beauty_contact_sheet\", \"version\": \"v1.0_9PANEL_STUDIO_GLAM_FUR_JEWELRY_NO_TEXT_EN\", \"priority\": \"highest\", \"language\": \"en\" }, \"references\": { \"reference_image_face\": { \"source\": \"UPLOAD_REFERENCE_IMAGE (REQUIRED)\", \"purpose\": \"FACE_IDENTITY_LOCK\", \"strict_lock\": true, \"face_similarity_priority\": \"MAX\", \"no_identity_blending\": true, \"no_beautify\": true, \"n",
+    "prompt": "Nano Banana Pro [@bageldotcom]  Prompt: { \"generation_request\": { \"meta_data\": { \"tool\": \"NanoBanana Pro\", \"task_type\": \"photoreal_editorial_beauty_contact_sheet\", \"version\": \"v1.0_9PANEL_STUDIO_GLAM_FUR_JEWELRY_NO_TEXT_EN\", \"priority\": \"highest\", \"language\": \"en\" }, \"references\": { \"reference_image_face\": { \"source\": \"UPLOAD_REFERENCE_IMAGE (REQUIRED)\", \"purpose\": \"FACE_IDENTITY_LOCK\", \"strict_lock\": true, \"face_similarity_priority\": \"MAX\", \"no_identity_blending\": true, \"no_beautify\": true, \"n",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -1046,14 +949,14 @@
   {
     "title": "这不仅是香水，更是奢侈艺术品",
     "slug": "这不仅是香水更是奢侈艺术品-1565880914",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "abstract",
     "tags": [
-      "视频",
-      "广告",
-      "AI生成",
-      "产品营销",
-      "提示词工程"
+      "概念艺术",
+      "极简",
+      "abstract",
+      "产品",
+      "抽象"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/这不仅是香水更是奢侈艺术品-1565880914.jpg",
@@ -1070,14 +973,14 @@
   {
     "title": "Nano Banana pro on Gemini app.",
     "slug": "nano-banana-pro-on-gemini-app-1565908079",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AIArt",
-      "ImageGeneration",
-      "AIprompts",
-      "Cinematic"
+      "动物",
+      "realistic",
+      "水墨",
+      "人物",
+      "写实"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/nano-banana-pro-on-gemini-app-1565908079.jpg",
@@ -1094,21 +997,20 @@
   {
     "title": "来玩一个好玩的，生成柔和的极简人物插画，只要输入角色提示词，在任意生图模型就可以生成啦。好有意思！",
     "slug": "来玩一个好玩的生成柔和的极简人物插画只要输入角色提示词在任意生图模型就可以生成啦-1565909193",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "portrait",
     "tags": [
-      "艺术",
-      "AI绘画",
-      "极简插画",
-      "提示词工程",
-      "内容创作"
+      "风景",
+      "人物",
+      "极简",
+      "portrait"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/来玩一个好玩的生成柔和的极简人物插画只要输入角色提示词在任意生图模型就可以生成啦-1565909193.jpg",
     "date": "2026-01-28",
     "source": "https://x.com/i/status/2016343060855287863",
     "author": "Adam也叫吉米 (Adam38363368936)",
-    "prompt": "来玩一个好玩的，生成柔和的极简人物插画，只要输入角色提示词，在任意生图模型就可以生成啦。好有意思！ 也可以上传参考图，生成对应的插画，可以做自己的插画集，甚至拿来编儿童故事插画，直接拿去卖！有执行力的可以试试看😄 两种玩法： 1.自定义角色： 绘制一个极简风格的[角色]，面部特征简化（仅使用点和线）。采用平涂色彩、柔和曲线，不添加纹理。角色姿势自然，居中，背景简洁。风格可爱、沉稳、视觉干净。 图一：快递员（有点胖的感觉哈哈） 图二：正在开会的老板 图三：正在吃猫粮的猫 2.参考图模式： 绘制一个极简风格的角色，使用参考图的场景和人物，面部和身体特征简化且接近参考人物（仅使用点和线）。采用平涂色彩、柔和曲线，不添加纹理。角色姿势自然，居中，背景简洁。风格可爱、沉稳、视觉干净。",
+    "prompt": "来玩一个好玩的，生成柔和的极简人物插画，只要输入角色提示词，在任意生图模型就可以生成啦。好有意思！ 也可以上传参考图，生成对应的插画，可以做自己的插画集，甚至拿来编儿童故事插画，直接拿去卖！有执行力的可以试试看 两种玩法： 1.自定义角色： 绘制一个极简风格的[角色]，面部特征简化（仅使用点和线）。采用平涂色彩、柔和曲线，不添加纹理。角色姿势自然，居中，背景简洁。风格可爱、沉稳、视觉干净。 图一：快递员（有点胖的感觉哈哈） 图二：正在开会的老板 图三：正在吃猫粮的猫 2.参考图模式： 绘制一个极简风格的角色，使用参考图的场景和人物，面部和身体特征简化且接近参考人物（仅使用点和线）。采用平涂色彩、柔和曲线，不添加纹理。角色姿势自然，居中，背景简洁。风格可爱、沉稳、视觉干净。",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -1118,21 +1020,19 @@
   {
     "title": "逼真泳池人像摄影",
     "slug": "逼真泳池人像摄影-1565882279",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI生成图像",
-      "人像摄影",
-      "泳池摄影",
-      "AI提示工程"
+      "写实",
+      "人物",
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/逼真泳池人像摄影-1565882279.jpg",
     "date": "2026-01-28",
     "source": "https://x.com/i/status/2016333145403228467",
     "author": "Adam也叫吉米",
-    "prompt": "逼真泳池人像摄影 Pool beauty Nano Banana Prompt👇 { \"version_control\": { \"target_style\": \"High-End Fashion Editorial\", \"fidelity_level\": \"Absolute 1:1 Identity Lock\", \"rendering_engine_constraints\": \"No CGI, No Illustration, No AI Smoothing\" }, \"subject_profile\": { \"identity\": { \"name\": \"The person I uploaded\", \"age_group\": \"Adult Woman\", \"biometric_integrity\": \"Preserve 100% original bone structure, facial asymmetry, moles, and eye shape. Zero morphing or enhancement.\" }, \"anatomy_and_skin\": { \"texture\"",
+    "prompt": "逼真泳池人像摄影 Pool beauty Nano Banana Prompt { \"version_control\": { \"target_style\": \"High-End Fashion Editorial\", \"fidelity_level\": \"Absolute 1:1 Identity Lock\", \"rendering_engine_constraints\": \"No CGI, No Illustration, No AI Smoothing\" }, \"subject_profile\": { \"identity\": { \"name\": \"The person I uploaded\", \"age_group\": \"Adult Woman\", \"biometric_integrity\": \"Preserve 100% original bone structure, facial asymmetry, moles, and eye shape. Zero morphing or enhancement.\" }, \"anatomy_and_skin\": { \"texture\"",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -1142,21 +1042,19 @@
   {
     "title": "📐 AI生图构图篇：低机位透视夸张 (Low-Angle Exaggeration)",
     "slug": "ai生图构图篇低机位透视夸张-low-angle-exaggeration-1565408743",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "艺术",
-      "AI构图技巧",
-      "低机位摄影",
-      "透视夸张",
-      "AI生图"
+      "人物",
+      "realistic",
+      "建筑"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/ai生图构图篇低机位透视夸张-low-angle-exaggeration-1565408743.jpg",
     "date": "2026-01-28",
     "source": "https://x.com/i/status/2016361631404728633",
     "author": "VoxCatVoxcatAI",
-    "prompt": "📐 AI生图构图篇：低机位透视夸张 (Low-Angle Exaggeration) 为什么有的画面\"人物明明不高\"，却显得气场两米八？ 因为机位蹲下去了，透视拉开了，近大远小的物理法则替你说话。\n【核心原理】\n低机位透视夸张 = 低机位 + 近大远小 + 向上汇聚线：\n低机位 (Low Angle)：相机贴近地面或低于主体腰部。\n近大远小 (Foreshortening)：靠近镜头的部分（脚/剑/手）被夸张放大。\n向上汇聚 (Upward Convergence)：垂直线条向画面顶部汇聚，强化\"仰望感\"。\n【视觉情绪】\n情绪方向解释英雄感主体显得高大、威严、不可战胜压迫感巨物/建筑压向观众，产生恐惧史诗感配合广角畸变，制造宏大场面力量感腿部/武器被放大，动态感爆棚\n【通用公式】\nLow-angle shot, worm's-eye view.\nCamera positioned near ground level, looking up at [主体].\nForeshortening exaggerates the lower body / weapon / feet.\nVertic",
+    "prompt": "AI生图构图篇：低机位透视夸张 (Low-Angle Exaggeration) 为什么有的画面\"人物明明不高\"，却显得气场两米八？ 因为机位蹲下去了，透视拉开了，近大远小的物理法则替你说话。\n【核心原理】\n低机位透视夸张 = 低机位 + 近大远小 + 向上汇聚线：\n低机位 (Low Angle)：相机贴近地面或低于主体腰部。\n近大远小 (Foreshortening)：靠近镜头的部分（脚/剑/手）被夸张放大。\n向上汇聚 (Upward Convergence)：垂直线条向画面顶部汇聚，强化\"仰望感\"。\n【视觉情绪】\n情绪方向解释英雄感主体显得高大、威严、不可战胜压迫感巨物/建筑压向观众，产生恐惧史诗感配合广角畸变，制造宏大场面力量感腿部/武器被放大，动态感爆棚\n【通用公式】\nLow-angle shot, worm's-eye view.\nCamera positioned near ground level, looking up at [主体].\nForeshortening exaggerates the lower body / weapon / feet.\nVertic",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -1166,21 +1064,20 @@
   {
     "title": "今日最佳-高端冷艳人像摄影，神仙姐姐无敌！",
     "slug": "今日最佳-高端冷艳人像摄影神仙姐姐无敌-1564529624",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI绘画",
-      "人像摄影",
-      "提示词工程",
-      "NanoBanana"
+      "写实",
+      "人物",
+      "realistic",
+      "极简"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/今日最佳-高端冷艳人像摄影神仙姐姐无敌-1564529624.jpg",
     "date": "2026-01-27",
     "source": "https://x.com/i/status/2016087801759203335",
     "author": "Adam也叫吉米 Adam38363368936",
-    "prompt": "今日最佳-高端冷艳人像摄影，神仙姐姐无敌！ Nano Banana Prompt👇 Create a melancholic and cinematic portrait photography. A young woman with clear, fair skin and light makeup. Warm, natural lip color. Deep brown hair with a fluffy texture. A calm and confident expression. Wearing a wine-red top to showcase elegance. A dark, minimalist background fading to black. Soft, diffused front lighting, gentle shadows, subtle film grain, organic color grading, shallow depth of field, and high-end editing texture. Use the facial ",
+    "prompt": "今日最佳-高端冷艳人像摄影，神仙姐姐无敌！ Nano Banana Prompt Create a melancholic and cinematic portrait photography. A young woman with clear, fair skin and light makeup. Warm, natural lip color. Deep brown hair with a fluffy texture. A calm and confident expression. Wearing a wine-red top to showcase elegance. A dark, minimalist background fading to black. Soft, diffused front lighting, gentle shadows, subtle film grain, organic color grading, shallow depth of field, and high-end editing texture. Use the facial",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -1190,21 +1087,18 @@
   {
     "title": "📐 AI生图构图篇：环形动线 (Circular Flow) —— 这里的眼神，进去了就出不来",
     "slug": "ai生图构图篇环形动线-circular-flow-这里的眼神进去了就出不来-1564504018",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI艺术构图",
-      "视觉心理学",
-      "环形动线",
-      "构图技巧"
+      "realistic",
+      "建筑"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/ai生图构图篇环形动线-circular-flow-这里的眼神进去了就出不来-1564504018.jpg",
     "date": "2026-01-27",
     "source": "https://x.com/i/status/2015967690243068406",
     "author": "VoxCatVoxcatAI",
-    "prompt": "📐 AI生图构图篇：环形动线 (Circular Flow) —— 这里的眼神，进去了就出不来 为什么有些大神的图，哪怕画面元素很多，你却觉得“非常和谐”且“耐看”？ 因为他们掌握了视觉心理学中的闭环效应。 环形动线——通过环境中的弧形或环绕元素，将观众漫散的视线强制导向主体，并形成一个循环流动的圆环。这种构图不仅能稳稳锁死焦点，还能赋予画面一种平衡而深邃的动态美。 【核心原理】视觉回路 (Visual Loop) 普通的引导线（如道路）通常带你“走”进画面深处，而环形动线带你“圆”住画面核心： 环绕节点 (Surrounding Nodes)：利用烟雾、布料、建筑拱门、甚至光影的明暗交界线，在主体周围连成一个“虚构的圆”。 向心力 (Centripetal Force)：所有线条的延伸方向都不指向画外，而是顺着圆周指向另一段引导线。 视觉留存 (Visual Stickiness)：观众的视线在画面里转圈，停留时间比直线构图长 3 倍以上。 【通用公式】 [Subject] in the center, surrounded by [环绕元素] forming a perfect v",
+    "prompt": "AI生图构图篇：环形动线 (Circular Flow) —— 这里的眼神，进去了就出不来 为什么有些大神的图，哪怕画面元素很多，你却觉得“非常和谐”且“耐看”？ 因为他们掌握了视觉心理学中的闭环效应。 环形动线——通过环境中的弧形或环绕元素，将观众漫散的视线强制导向主体，并形成一个循环流动的圆环。这种构图不仅能稳稳锁死焦点，还能赋予画面一种平衡而深邃的动态美。 【核心原理】视觉回路 (Visual Loop) 普通的引导线（如道路）通常带你“走”进画面深处，而环形动线带你“圆”住画面核心： 环绕节点 (Surrounding Nodes)：利用烟雾、布料、建筑拱门、甚至光影的明暗交界线，在主体周围连成一个“虚构的圆”。 向心力 (Centripetal Force)：所有线条的延伸方向都不指向画外，而是顺着圆周指向另一段引导线。 视觉留存 (Visual Stickiness)：观众的视线在画面里转圈，停留时间比直线构图长 3 倍以上。 【通用公式】 [Subject] in the center, surrounded by [环绕元素] forming a perfect v",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -1214,14 +1108,11 @@
   {
     "title": "{ \"image_request\": { \"subject\": { \"type\": \"Young adult woman\", \"identity_constraint\": \"Use the uploaded image as a reference.\", \"expression\": \"Use the uploaded image as a reference.\", \"gaze\": \"Use the uploaded image as a reference.\", \"emotion\":",
     "slug": "image_request-subject-type-young-adult-1564527620",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI Art",
-      "Fashion Photography",
-      "Image Prompt",
-      "Studio Portrait"
+      "人物",
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/image_request-subject-type-young-adult-1564527620.jpg",
@@ -1238,21 +1129,18 @@
   {
     "title": "这个提示词非常强大，只要在提示词最后输入产品名称[NAME]，就可以生成九宫格的高级商业海报，拿去直接用！",
     "slug": "这个提示词非常强大只要在提示词最后输入产品名称name就可以生成九宫格的高级商业-1562622758",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "广告",
-      "AI提示词",
-      "商业海报",
-      "广告设计"
+      "realistic",
+      "产品"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/这个提示词非常强大只要在提示词最后输入产品名称name就可以生成九宫格的高级商业-1562622758.jpg",
     "date": "2026-01-26",
     "source": "https://x.com/i/status/2015354141976179017",
     "author": "Adam也叫吉米 (Adam38363368936)",
-    "prompt": "这个提示词非常强大，只要在提示词最后输入产品名称[NAME]，就可以生成九宫格的高级商业海报，拿去直接用！ Prompt👇 Create a 3×3 grid in 3:4 aspect ratio for a high-end commercial marketing campaign using the uploaded product as the central subject. Each frame must present a distinct visual concept while maintaining perfect product consistency across all nine images. Grid Concepts (one per cell): 1. Iconic hero still life with bold composition 2. Extreme macro detail highlighting material, surface, or texture 3. Dynamic liquid or particle interacti",
+    "prompt": "这个提示词非常强大，只要在提示词最后输入产品名称[NAME]，就可以生成九宫格的高级商业海报，拿去直接用！ Prompt Create a 3×3 grid in 3:4 aspect ratio for a high-end commercial marketing campaign using the uploaded product as the central subject. Each frame must present a distinct visual concept while maintaining perfect product consistency across all nine images. Grid Concepts (one per cell): 1. Iconic hero still life with bold composition 2. Extreme macro detail highlighting material, surface, or texture 3. Dynamic liquid or particle interacti",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -1262,21 +1150,19 @@
   {
     "title": "这期分享一套「新中式工笔」提示词。",
     "slug": "这期分享一套新中式工笔提示词-1562048095",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "anime",
     "tags": [
-      "国风",
-      "AI绘画",
-      "新中式工笔",
-      "提示词分享",
-      "中国风艺术"
+      "写实",
+      "anime",
+      "极简"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/这期分享一套新中式工笔提示词-1562048095.jpg",
     "date": "2026-01-26",
     "source": "https://x.com/i/status/2015628504646435307",
     "author": "VoxCat",
-    "prompt": "这期分享一套「新中式工笔」提示词。它彻底拒绝了AI常见的油腻写实感，而是像在温润宣纸上揉开了淡墨，又用极细金线锁住了神魂。空灵、清透、甚至能闻到纸本的呼吸声。\n\n🎨 视觉逻辑 (Visual Core)\n宣纸半哑光 (Rice Paper Matte) 拒绝塑料光泽。皮肤透光但不反光，保留极其微小的纸张颗粒感。\n留白与秩序 (The Power of White) 典型的中心均衡构图，给画面留出足够的“气”。背景极简，拉满疏离感。\n笔触：工笔描金 (Gongbi Gold) 用极细的金线（Cloisonné line）勾勒衣纹。金是点睛，不是堆叠，尽显贵气。\n色调：冷调莫兰迪 (Cold Morandi) 主打天青、豆脂、墨灰。低饱和度，极其耐看，哪怕看久了也不会视觉疲劳。\n\n提示词👇\n【Subject】\nUse “{Character / Theme}” as the single, clear visual subject.\nThe subject should convey a refined, calm, and restrained classical Chinese aes",
+    "prompt": "这期分享一套「新中式工笔」提示词。它彻底拒绝了AI常见的油腻写实感，而是像在温润宣纸上揉开了淡墨，又用极细金线锁住了神魂。空灵、清透、甚至能闻到纸本的呼吸声。\n\n视觉逻辑 (Visual Core)\n宣纸半哑光 (Rice Paper Matte) 拒绝塑料光泽。皮肤透光但不反光，保留极其微小的纸张颗粒感。\n留白与秩序 (The Power of White) 典型的中心均衡构图，给画面留出足够的“气”。背景极简，拉满疏离感。\n笔触：工笔描金 (Gongbi Gold) 用极细的金线（Cloisonné line）勾勒衣纹。金是点睛，不是堆叠，尽显贵气。\n色调：冷调莫兰迪 (Cold Morandi) 主打天青、豆脂、墨灰。低饱和度，极其耐看，哪怕看久了也不会视觉疲劳。\n\n提示词\n【Subject】\nUse “{Character / Theme}” as the single, clear visual subject.\nThe subject should convey a refined, calm, and restrained classical Chinese aes",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -1286,21 +1172,17 @@
   {
     "title": "1. 打开 Gemini",
     "slug": "1-打开-gemini-1560393235",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI图像生成",
-      "Gemini",
-      "提示词工程",
-      "头像生成"
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/1-打开-gemini-1560393235.jpg",
     "date": "2026-01-25",
     "source": "https://x.com/i/status/2014881434373333185",
     "author": "路飞 🏴‍☠️ AI 研究员🧐 0xluffy_eth",
-    "prompt": "1. 打开 Gemini 2. 上传你的照片 3. 输入此提示词 4. 生成 5. 改变姿势 这里是10个最佳提示词🧵",
+    "prompt": "1. 打开 Gemini 2. 上传你的照片 3. 输入此提示词 4. 生成 5. 改变姿势 这里是10个最佳提示词",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -1310,21 +1192,18 @@
   {
     "title": "Prompt Studio: Cinematic Frames, Stillness Within Speed",
     "slug": "prompt-studio-cinematic-frames-1560755136",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "ArtChallenge",
-      "AIArt",
-      "CreativeCommunity",
-      "NoWords"
+      "人物",
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/prompt-studio-cinematic-frames-1560755136.jpg",
     "date": "2026-01-25",
     "source": "https://x.com/i/status/2015159671644995609",
     "author": "AllaAisling",
-    "prompt": "🎨 Share Your Art (No Words) Post an image with absolutely no text, captions, or explanations. The post with the most likes wins (no quotes) Submissions close Wednesday at noon (EST time) I'll quote and pin the winning post on Wednesday on my personal profile for everyone to see! Let's see what speaks without words. Drop your images below!",
+    "prompt": "Share Your Art (No Words) Post an image with absolutely no text, captions, or explanations. The post with the most likes wins (no quotes) Submissions close Wednesday at noon (EST time) I'll quote and pin the winning post on Wednesday on my personal profile for everyone to see! Let's see what speaks without words. Drop your images below!",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -1334,21 +1213,19 @@
   {
     "title": "Gemini 3 创建作品集图片的终极指南",
     "slug": "gemini-3-创建作品集图片的终极指南-1560699889",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI绘画",
-      "Gemini3",
-      "作品集",
-      "提示词工程"
+      "写实",
+      "realistic",
+      "风景"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/gemini-3-创建作品集图片的终极指南-1560699889.jpg",
     "date": "2026-01-25",
     "source": "https://x.com/i/status/2014896698527719923",
     "author": "暖暖爱分享 nuannuan_share",
-    "prompt": "Gemini 3 创建作品集图片的终极指南\n1️⃣ 打开 Gemini 并激活图像选项\n2️⃣ 上传你的照片\n3️⃣ 输入以下提示词：\n使用我的参考图像作为主体。\n完全尊重我的面孔、比例、表情和特征，不做修改。\n生成同一主体的系列电影镜头，仅变化镜头角度和视觉语言，保持身份完全一致。\n场景和角度：\n– 极端仰角镜头展现力量与权威\n– 微俯角镜头呈现内省感\n– 90°侧面真实景深\n– 电影肩后镜头\n– 极致特写显微肤理\n– 微妙的荷兰角镜头制造视觉张力\n– 地面视角向上\n– 室内无人机俯视\n– 变形镜头中景\n– 对称正面海报风格\n光线：\n写实工作室或自然电影光线。\n协调阴影，柔和对比，无虚假光效。\n光学：\n真实镜头，自然散景，authentic景深。\n风格：\n超写实，电影质感，无卡通，无AI痕迹。\n无复制，无变形，保持身份。\n品质：\n高分辨率，专业细节，电影美学。",
+    "prompt": "Gemini 3 创建作品集图片的终极指南\n1⃣ 打开 Gemini 并激活图像选项\n2⃣ 上传你的照片\n3⃣ 输入以下提示词：\n使用我的参考图像作为主体。\n完全尊重我的面孔、比例、表情和特征，不做修改。\n生成同一主体的系列电影镜头，仅变化镜头角度和视觉语言，保持身份完全一致。\n场景和角度：\n– 极端仰角镜头展现力量与权威\n– 微俯角镜头呈现内省感\n– 90°侧面真实景深\n– 电影肩后镜头\n– 极致特写显微肤理\n– 微妙的荷兰角镜头制造视觉张力\n– 地面视角向上\n– 室内无人机俯视\n– 变形镜头中景\n– 对称正面海报风格\n光线：\n写实工作室或自然电影光线。\n协调阴影，柔和对比，无虚假光效。\n光学：\n真实镜头，自然散景，authentic景深。\n风格：\n超写实，电影质感，无卡通，无AI痕迹。\n无复制，无变形，保持身份。\n品质：\n高分辨率，专业细节，电影美学。",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -1358,14 +1235,11 @@
   {
     "title": "Blondes should be in the golden place.",
     "slug": "blondes-should-be-in-the-golden-place-1560822066",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI绘画",
-      "NanoBananaPrompt",
-      "金发美女",
-      "城市夜景"
+      "写实",
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/blondes-should-be-in-the-golden-place-1560822066.jpg",
@@ -1382,14 +1256,12 @@
   {
     "title": "一时自拍一时爽，一直自拍——一直爽",
     "slug": "一时自拍一时爽一直自拍一直爽-1560925954",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "NanoBananaPro",
-      "Nano Pro",
-      "AI生图",
-      "AI摄影"
+      "写实",
+      "人物",
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/一时自拍一时爽一直自拍一直爽-1560925954.jpg",
@@ -1406,21 +1278,17 @@
   {
     "title": "📐 AI生图构图篇：视线阻断 (Sightline Obstruction)",
     "slug": "ai生图构图篇视线阻断-sightline-obstruction-1560393096",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI生图",
-      "构图技巧",
-      "视线阻断",
-      "摄影构图"
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/ai生图构图篇视线阻断-sightline-obstruction-1560393096.jpg",
     "date": "2026-01-25",
     "source": "https://x.com/i/status/2014900937295593949",
     "author": "VoxCat VoxcatAI",
-    "prompt": "📐 AI生图构图篇：视线阻断 (Sightline Obstruction)\n为什么有的图看一眼就忘，有的图却让人想\"探头去看看\"？\n区别在于：你是在展示，还是在偷窥。\n视线阻断——通过前景的\"软遮挡\"，强迫观众的视线绕过障碍物才能看到主体，瞬间建立画面的纵深感和故事张力。\n【核心原理】\n这种构图利用了人类的窥探本能 (Voyeuristic Instinct)：\n前景遮挡 (Foreground Block)：放置一个虚化的前景物体（树叶/窗帘/百叶窗），遮挡 30%-50% 的画面。\n聚焦缺口 (Focus Pocket)：主体必须出现在遮挡物的\"缝隙\"或\"缺口\"中。\n视线路径：观众视线被前景阻断 -寻找缺口 -锁定主体。这个过程比直接看更有趣。\n【通用公式】\nCinematic shot, looking through [前景遮挡物], obstructed view.\n[主体] seen through the gap, [动作/神态].\nForeground [遮挡物] is out of focus (bokeh), framing the subject.\nDepth ",
+    "prompt": "AI生图构图篇：视线阻断 (Sightline Obstruction)\n为什么有的图看一眼就忘，有的图却让人想\"探头去看看\"？\n区别在于：你是在展示，还是在偷窥。\n视线阻断——通过前景的\"软遮挡\"，强迫观众的视线绕过障碍物才能看到主体，瞬间建立画面的纵深感和故事张力。\n【核心原理】\n这种构图利用了人类的窥探本能 (Voyeuristic Instinct)：\n前景遮挡 (Foreground Block)：放置一个虚化的前景物体（树叶/窗帘/百叶窗），遮挡 30%-50% 的画面。\n聚焦缺口 (Focus Pocket)：主体必须出现在遮挡物的\"缝隙\"或\"缺口\"中。\n视线路径：观众视线被前景阻断 -寻找缺口 -锁定主体。这个过程比直接看更有趣。\n【通用公式】\nCinematic shot, looking through [前景遮挡物], obstructed view.\n[主体] seen through the gap, [动作/神态].\nForeground [遮挡物] is out of focus (bokeh), framing the subject.\nDepth",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -1430,21 +1298,18 @@
   {
     "title": "That's https://t.co/Mg5PMVkLl0 feels like a real shot.",
     "slug": "thats-httpstcomg5pmvkll0-feels-like-a-1560929694",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI生成图像",
-      "摄影风格",
-      "慵懒感",
-      "电影感"
+      "写实",
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/thats-httpstcomg5pmvkll0-feels-like-a-1560929694.jpg",
     "date": "2026-01-25",
     "source": "https://x.com/i/status/2015058344411828268",
     "author": "Adam也叫吉米Adam38363368936",
-    "prompt": "That's https://t.co/Mg5PMVkLl0 feels like a real shot. 阳光洒在床上的慵懒感，太真实了。提示词放评论区自取，快拿你女朋友照片试试！ Prompt👇",
+    "prompt": "That's https://t.co/Mg5PMVkLl0 feels like a real shot. 阳光洒在床上的慵懒感，太真实了。提示词放评论区自取，快拿你女朋友照片试试！ Prompt",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -1454,14 +1319,11 @@
   {
     "title": "清晨阳光下写实女生特写肖像照",
     "slug": "清晨阳光下写实女生特写肖像照-1560392946",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI绘画",
-      "NanoBananaPro",
-      "写实肖像",
-      "清晨阳光"
+      "写实",
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/清晨阳光下写实女生特写肖像照-1560392946.jpg",
@@ -1478,14 +1340,12 @@
   {
     "title": "Google Gemini Nano Banana Pro",
     "slug": "google-gemini-nano-banana-pro-1560822510",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AIArt",
-      "CinematicPortrait",
-      "GeminiNano",
-      "PromptEngineering"
+      "人物",
+      "realistic",
+      "极简"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/google-gemini-nano-banana-pro-1560822510.jpg",
@@ -1502,14 +1362,12 @@
   {
     "title": "There's something about Cinestill and underground light.",
     "slug": "theres-something-about-cinestill-and-1560823000",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "photography",
-      "aesthetic",
-      "portrait",
-      "prompt"
+      "realistic",
+      "动物",
+      "极简"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/theres-something-about-cinestill-and-1560823000.jpg",
@@ -1526,21 +1384,18 @@
   {
     "title": "镜头美学，太喜欢了！😍",
     "slug": "镜头美学太喜欢了-1560753999",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "镜头美学",
-      "AI绘画",
-      "Lovart",
-      "摄影技巧"
+      "写实",
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/镜头美学太喜欢了-1560753999.jpg",
     "date": "2026-01-25",
     "source": "https://x.com/i/status/2014963588755292572",
     "author": "MapleShaw (msjiaozhu)",
-    "prompt": "镜头美学，太喜欢了！😍 闪光灯用得好，也能像顶级私拍摄影师一样出片😏悄咪咪在 Lovart 上调试了十几个版本终于出炉！ 赶紧试试看评论区晒图！ 提示词见评论👇",
+    "prompt": "镜头美学，太喜欢了！ 闪光灯用得好，也能像顶级私拍摄影师一样出片悄咪咪在 Lovart 上调试了十几个版本终于出炉！ 赶紧试试看评论区晒图！ 提示词见评论",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -1550,21 +1405,20 @@
   {
     "title": "Nano Banana Pro on Google Gemini",
     "slug": "nano-banana-pro-on-google-gemini-1560937683",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI Art",
-      "Google Gemini",
-      "Cinematic Photography",
-      "Portrait Prompt"
+      "写实",
+      "人物",
+      "realistic",
+      "极简"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/nano-banana-pro-on-google-gemini-1560937683.jpg",
     "date": "2026-01-25",
     "source": "https://x.com/i/status/2015282932643139964",
     "author": "K ChillaiKalan__",
-    "prompt": "Nano Banana Pro on Google Gemini Prompt: Ultra-realistic cinematic medium close-up portrait of the reference person, slightly turned to the side while looking toward the camera. Wearing a black turtleneck and dark jacket, modern and minimalist fashion style. Deep blue background with a smooth gradient, combined with contrasting magenta and blue lighting. Strong blue light coming from one side and magenta light from the opposite side, both colors reflecting clearly on the face and skin, creating ",
+    "prompt": "Nano Banana Pro on Google Gemini Prompt: Ultra-realistic cinematic medium close-up portrait of the reference person, slightly turned to the side while looking toward the camera. Wearing a black turtleneck and dark jacket, modern and minimalist fashion style. Deep blue background with a smooth gradient, combined with contrasting magenta and blue lighting. Strong blue light coming from one side and magenta light from the opposite side, both colors reflecting clearly on the face and skin, creating",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -1574,21 +1428,17 @@
   {
     "title": "雨夜回眸，动态抓拍。",
     "slug": "雨夜回眸动态抓拍-1560749526",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI生成",
-      "摄影构图",
-      "电影感",
-      "提示词工程"
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/雨夜回眸动态抓拍-1560749526.jpg",
     "date": "2026-01-25",
     "source": "https://x.com/i/status/2015200561025663442",
     "author": "VoxCat (VoxcatAI)",
-    "prompt": "雨夜回眸，动态抓拍。\n核心特征：\n抓拍动态 × 雨夜灯光 × 冷暖对撞\n一句话：「雨夜回眸，灯火映颊，发丝随风。」 🚀 提示词ALT",
+    "prompt": "雨夜回眸，动态抓拍。\n核心特征：\n抓拍动态 × 雨夜灯光 × 冷暖对撞\n一句话：「雨夜回眸，灯火映颊，发丝随风。」  提示词ALT",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -1598,14 +1448,13 @@
   {
     "title": "上一期讲了\"复古\"，这期来个反方向—— Y2K 未来感 (Y2K Cyber Glam)。",
     "slug": "上一期讲了复古这期来个反方向-y2k-未来感-y2k-cyber-glam-1560926599",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "Y2K",
-      "CyberGlam",
-      "AIArtPrompt",
-      "BeautyTutorial"
+      "复古",
+      "realistic",
+      "科幻",
+      "水墨"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/上一期讲了复古这期来个反方向-y2k-未来感-y2k-cyber-glam-1560926599.jpg",
@@ -1622,21 +1471,17 @@
   {
     "title": "🔥 那个没有美颜的时代，为什么美得更高级？",
     "slug": "那个没有美颜的时代为什么美得更高级-1560405063",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AIart",
-      "Midjourney",
-      "PromptShare",
-      "港风复古"
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/那个没有美颜的时代为什么美得更高级-1560405063.jpg",
     "date": "2026-01-25",
     "source": "https://x.com/i/status/2014913040375046468",
     "author": "VoxCat (VoxcatAI)",
-    "prompt": "🔥 那个没有美颜的时代，为什么美得更高级？\n最近好多人问怎么做\"港风\"。\n不是加个滤镜就叫港风，真正的港风美学核心是：\"柔雾中的锐利\"。\n大多数 AI 生成的港风都死在\"太塑料\"或\"太高清\"。\n要还原那个黄金时代，必须用物理材质逻辑来写 Prompt：\n1. 底妆：柔焦哑光 (Soft-Focus Matte)\n核心： 拒绝现代的水光肌。90 年代的底妆是哑光且厚重的，配合胶片相机的颗粒感，形成一种\"自带磨皮\"的效果。\n细节：\n奶油质感：Creamy porcelain finish (奶油瓷肌)，不是死白，而是润泽的哑光。\n胶片颗粒：Slight film grain texture，这是灵魂，它能中和掉 AI 的塑料味。\n2. 眉妆：原生野性\n核心： 眉毛是港风大女主的气场来源。拒绝韩式一字眉，要顺着眉骨生长的野生眉。\n细节：\n浓黑：Thick black，强调毛流感。\n上挑拱形：Arched shape，眉峰清晰，自带英气。\n3. 眼妆：大地深邃 (Matte Earth-Tone)\n核心： 眼妆不是为了\"显色\"，而是为了\"轮廓\"。\n细节：\n全哑光：Matte contourin",
+    "prompt": "那个没有美颜的时代，为什么美得更高级？\n最近好多人问怎么做\"港风\"。\n不是加个滤镜就叫港风，真正的港风美学核心是：\"柔雾中的锐利\"。\n大多数 AI 生成的港风都死在\"太塑料\"或\"太高清\"。\n要还原那个黄金时代，必须用物理材质逻辑来写 Prompt：\n1. 底妆：柔焦哑光 (Soft-Focus Matte)\n核心： 拒绝现代的水光肌。90 年代的底妆是哑光且厚重的，配合胶片相机的颗粒感，形成一种\"自带磨皮\"的效果。\n细节：\n奶油质感：Creamy porcelain finish (奶油瓷肌)，不是死白，而是润泽的哑光。\n胶片颗粒：Slight film grain texture，这是灵魂，它能中和掉 AI 的塑料味。\n2. 眉妆：原生野性\n核心： 眉毛是港风大女主的气场来源。拒绝韩式一字眉，要顺着眉骨生长的野生眉。\n细节：\n浓黑：Thick black，强调毛流感。\n上挑拱形：Arched shape，眉峰清晰，自带英气。\n3. 眼妆：大地深邃 (Matte Earth-Tone)\n核心： 眼妆不是为了\"显色\"，而是为了\"轮廓\"。\n细节：\n全哑光：Matte contourin",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -1646,21 +1491,21 @@
   {
     "title": "任何产品（可涂装、可高定）都适用！",
     "slug": "任何产品可涂装可高定都适用-1560926383",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI绘画",
-      "提示词工程",
-      "产品渲染",
-      "商业摄影"
+      "概念艺术",
+      "建筑",
+      "风景",
+      "realistic",
+      "产品"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/任何产品可涂装可高定都适用-1560926383.jpg",
     "date": "2026-01-25",
     "source": "https://x.com/i/status/2015205184113385636",
     "author": "沐阳yyyole",
-    "prompt": "任何产品（可涂装、可高定）都适用！提示词：超高清专业摄影作品，[摩托车头盔]涂装效果图，采用[毒液电影形象风格]设计。\n\n产品细节：\n- [产品类型：汽车/摩托车/自行车/头盔等]\n- 涂装风格：[具体描述颜色、图案、主题]\n- 所有车牌号码完全模糊处理，无法识别\n- 保持产品原有轮廓和结构特征\n\n视觉效果：\n- 8K超高清分辨率\n- 专业商业摄影级别\n- 完美的光影效果和反射细节\n- 涂装纹理真实自然，无PS痕迹\n- 金属漆面/哑光质感真实还原\n\n场景环境：\n- [自然环境：山路/海边/森林/城市街道/赛道等]\n- 黄金时段柔和光线\n- 景深效果突出主体\n- 环境与产品完美融合\n- 专业摄影构图\n\n技术参数：\n- 摄影器材：专业相机拍摄效果\n- 镜头：85mm f/1.4 大光圈\n- 自然光线，柔和阴影\n- 电影级调色\n- 超真实渲染，照片级质量\n\n禁止元素：卡通风格、过度PS痕迹、不真实光效、清晰可见的车牌号",
+    "prompt": "任何产品（可涂装、可高定）都适用！提示词：超高清专业摄影作品，[摩托车头盔]涂装效果图，采用[毒液电影形象风格]设计。\n\n产品细节：\n[产品类型：汽车/摩托车/自行车/头盔等]\n涂装风格：[具体描述颜色、图案、主题]\n所有车牌号码完全模糊处理，无法识别\n保持产品原有轮廓和结构特征\n\n视觉效果：\n8K超高清分辨率\n专业商业摄影级别\n完美的光影效果和反射细节\n涂装纹理真实自然，无PS痕迹\n金属漆面/哑光质感真实还原\n\n场景环境：\n[自然环境：山路/海边/森林/城市街道/赛道等]\n黄金时段柔和光线\n景深效果突出主体\n环境与产品完美融合\n专业摄影构图\n\n技术参数：\n摄影器材：专业相机拍摄效果\n镜头：85mm f/1.4 大光圈\n自然光线，柔和阴影\n电影级调色\n超真实渲染，照片级质量\n\n禁止元素：卡通风格、过度PS痕迹、不真实光效、清晰可见的车牌号",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -1670,14 +1515,12 @@
   {
     "title": "这个是未上传参考图的效果",
     "slug": "这个是未上传参考图的效果-1560927437",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "abstract",
     "tags": [
-      "教程",
-      "AI图像生成",
-      "茅台品牌",
-      "视觉分镜",
-      "NanoBananaPro"
+      "概念艺术",
+      "abstract",
+      "产品"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/这个是未上传参考图的效果-1560927437.jpg",
@@ -1694,21 +1537,19 @@
   {
     "title": "【AI写真系列✨×韩系女团风写真🎀】第一弹",
     "slug": "ai写真系列韩系女团风写真第一弹-1560926143",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI写真",
-      "韩系女团风",
-      "Nano Banana Pro",
-      "结构化提示词"
+      "风景",
+      "人物",
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/ai写真系列韩系女团风写真第一弹-1560926143.jpg",
     "date": "2026-01-25",
     "source": "https://x.com/i/status/2014961007068905955",
     "author": "骑司Chase",
-    "prompt": "【AI写真系列✨×韩系女团风写真🎀】第一弹 从T-ARA到张元英、柳智敏，韩国女团一直影响着时代主流审美，似乎永不过时......所以我花了20分钟，把韩系女团风写真用Nano Banana Pro解决了 ✅ 图一为上传参考图效果 ✅ 图二为直接使用效果 ✍️中文提示词： 一、画面构图 1 版式：整体为3:4比例，四宫格拼图，3:4小图用2×2排列 2 取景：近景到特写为主，人物占画面大比例 3 角度：平视近拍，轻微左右变化，统一干净背景 二、人物主体 1 参考来源：以上传参考图作为严格身份来源 2 一致性要求：零偏差 3 脸部：脸型精致、眼睛偏大、右眼下方点了一颗小痣，鼻梁细长 4 肤质：白皙带淡粉，皮肤细腻，有轻微柔焦 5 细节：鼻梁与面中高光明显，脸颊与鼻尖轻微泛红，散落少量雀斑点 三、妆容细节 1 底妆：通透干净，轻薄雾面带微光 2 腮红：粉色集中在脸颊与鼻梁两侧 3 眼妆：自然放大，睫毛纤长，眼神清澈 4 唇妆：水润嘟嘟唇，淡粉到蜜桃渐变，唇峰柔和 四、发型与头饰 1 发型：黑色长直发，中分，发量饱满，自然垂落 2 碎发：额前少量发丝自然飘动 3 发饰：左右各一枚粉色发夹，颜",
+    "prompt": "【AI写真系列×韩系女团风写真】第一弹 从T-ARA到张元英、柳智敏，韩国女团一直影响着时代主流审美，似乎永不过时......所以我花了20分钟，把韩系女团风写真用Nano Banana Pro解决了 ✅ 图一为上传参考图效果 ✅ 图二为直接使用效果 ✍中文提示词： 一、画面构图 1 版式：整体为3:4比例，四宫格拼图，3:4小图用2×2排列 2 取景：近景到特写为主，人物占画面大比例 3 角度：平视近拍，轻微左右变化，统一干净背景 二、人物主体 1 参考来源：以上传参考图作为严格身份来源 2 一致性要求：零偏差 3 脸部：脸型精致、眼睛偏大、右眼下方点了一颗小痣，鼻梁细长 4 肤质：白皙带淡粉，皮肤细腻，有轻微柔焦 5 细节：鼻梁与面中高光明显，脸颊与鼻尖轻微泛红，散落少量雀斑点 三、妆容细节 1 底妆：通透干净，轻薄雾面带微光 2 腮红：粉色集中在脸颊与鼻梁两侧 3 眼妆：自然放大，睫毛纤长，眼神清澈 4 唇妆：水润嘟嘟唇，淡粉到蜜桃渐变，唇峰柔和 四、发型与头饰 1 发型：黑色长直发，中分，发量饱满，自然垂落 2 碎发：额前少量发丝自然飘动 3 发饰：左右各一枚粉色发夹，颜",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -1718,21 +1559,21 @@
   {
     "title": "【AI摄影实验室🧪】豆包人像效果太好了，我不许任何人忤逆seedream 4.5模型🤣",
     "slug": "ai摄影实验室豆包人像效果太好了我不许任何人忤逆seedream-45模型-1560087201",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI摄影",
-      "提示词工程",
-      "亚洲审美",
-      "豆包模型"
+      "极简",
+      "realistic",
+      "人物",
+      "抽象",
+      "写实"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/ai摄影实验室豆包人像效果太好了我不许任何人忤逆seedream-45模型-1560087201.jpg",
     "date": "2026-01-24",
     "source": "https://x.com/i/status/2015082200115613870",
     "author": "骑司Chaseqisi_ai",
-    "prompt": "【AI摄影实验室🧪】豆包人像效果太好了，我不许任何人忤逆seedream 4.5模型🤣 如何把冗长的香蕉提示词变成适配的豆包提示词？并且能够达成相同的、甚至更优的影像效果 最开始我想尝试一下，香蕉提示词在豆包里能不能获得类似的效果，不试不知道，没想到生成结果比Nano Banana Pro还要更好 我认为本质上是因为国内大模型对于东亚地区审美的适配性更好，而香蕉模型稍不注意，就会给你的人像带来一个大翻车，有很强的刻板印象 ✅ seedream 4.5（豆包模型）→轻松实现亚洲审美 ✅ Nano Banana Pro→需要提示词技巧 所以豆包的提示词一般都十分简洁，轻松就能达到审美及格线，而我们在X上刷到的Nano Banana Pro提示词，一般都很冗长 简化思路V1.0： 1️⃣ 删除json格式，删除无用提示词框架 2️⃣ 去除语义重复和无效语义 3️⃣ 去除语义冲突 4️⃣ 使用抽象词汇代替具体的提示词 Nano Banana Pro提示词在原帖 豆包中文提示词： 4宫格拼图，3:4比例，2×2排列；近景特写，平视近拍，人物占比大，冷白干净背景。参考图严格同一人、零偏差；精致脸、",
+    "prompt": "【AI摄影实验室】豆包人像效果太好了，我不许任何人忤逆seedream 4.5模型 如何把冗长的香蕉提示词变成适配的豆包提示词？并且能够达成相同的、甚至更优的影像效果 最开始我想尝试一下，香蕉提示词在豆包里能不能获得类似的效果，不试不知道，没想到生成结果比Nano Banana Pro还要更好 我认为本质上是因为国内大模型对于东亚地区审美的适配性更好，而香蕉模型稍不注意，就会给你的人像带来一个大翻车，有很强的刻板印象 ✅ seedream 4.5（豆包模型）→轻松实现亚洲审美 ✅ Nano Banana Pro→需要提示词技巧 所以豆包的提示词一般都十分简洁，轻松就能达到审美及格线，而我们在X上刷到的Nano Banana Pro提示词，一般都很冗长 简化思路V1.0： 1⃣ 删除json格式，删除无用提示词框架 2⃣ 去除语义重复和无效语义 3⃣ 去除语义冲突 4⃣ 使用抽象词汇代替具体的提示词 Nano Banana Pro提示词在原帖 豆包中文提示词： 4宫格拼图，3:4比例，2×2排列；近景特写，平视近拍，人物占比大，冷白干净背景。参考图严格同一人、零偏差；精致脸、",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -1742,14 +1583,12 @@
   {
     "title": "These 360 prompts are so much fun. Another one for Nano Banana",
     "slug": "these-360-prompts-are-so-much-fun-1558979827",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "3d",
     "tags": [
-      "摄影",
-      "Stargate",
-      "Arduino",
-      "AI",
-      "3D Printing"
+      "写实",
+      "3d",
+      "科幻"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/these-360-prompts-are-so-much-fun-1558979827.jpg",
@@ -1766,21 +1605,17 @@
   {
     "title": "两段式工作流实现「台历自由」",
     "slug": "两段式工作流实现台历自由-1558980632",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "abstract",
     "tags": [
-      "AI工作流",
-      "日历设计",
-      "Python脚本",
-      "视觉设计",
-      "AI绘图"
+      "abstract"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/两段式工作流实现台历自由-1558980632.png",
     "date": "2026-01-24",
     "source": "https://x.com/i/status/2014777246897377321",
     "author": "Jerlin eviljer",
-    "prompt": "两段式工作流实现「台历自由」\n直接让 AI 画日历，往往是大型翻车现场：不是日期错乱（2 月 30 号？），就是排版像被挤过的牙膏。\n为了从根源上解决这个问题，我探索了一套「脚本前处理 + 审美推演」的两段式工作流。\n1️⃣ 脚本先行：把逻辑交给代码\n先用一段简单的 Python 脚本读取当前系统时间，生成结构化的 CSV 日历数据。这意味着：\n根除幻觉：彻底告别日期生成牛头不对马嘴\n绝对整齐：用数据结构锁定视觉结构，再也不会因为空格问题导致表格错落\n2️⃣ 咒语拼合：把想象交给模型\n将上一步生成的准确「日历骨架」，作为变量传入主绘图 Prompt 的「画面血肉」中。\n这样一来，绘图模型只需要专注自己擅长的事情：在准确的骨架上，推演出符合 [主题] 逻辑的画面。\n而 [主题] 变量，默认是根据日期自动生成的，用户还可以按需覆写。（比如图 2 的「森林里的小精灵王国」），在既定约束下给到最大自由度。\n目前我已将流程固化为 Visual Design Skill 的一个专项任务： 只需放入 Prompt 模版和脚本，Agent 接收到触发词便自动接管，数据注入与画面生成一气呵成。\n以无厚入",
+    "prompt": "两段式工作流实现「台历自由」\n直接让 AI 画日历，往往是大型翻车现场：不是日期错乱（2 月 30 号？），就是排版像被挤过的牙膏。\n为了从根源上解决这个问题，我探索了一套「脚本前处理 + 审美推演」的两段式工作流。\n1⃣ 脚本先行：把逻辑交给代码\n先用一段简单的 Python 脚本读取当前系统时间，生成结构化的 CSV 日历数据。这意味着：\n根除幻觉：彻底告别日期生成牛头不对马嘴\n绝对整齐：用数据结构锁定视觉结构，再也不会因为空格问题导致表格错落\n2⃣ 咒语拼合：把想象交给模型\n将上一步生成的准确「日历骨架」，作为变量传入主绘图 Prompt 的「画面血肉」中。\n这样一来，绘图模型只需要专注自己擅长的事情：在准确的骨架上，推演出符合 [主题] 逻辑的画面。\n而 [主题] 变量，默认是根据日期自动生成的，用户还可以按需覆写。（比如图 2 的「森林里的小精灵王国」），在既定约束下给到最大自由度。\n目前我已将流程固化为 Visual Design Skill 的一个专项任务： 只需放入 Prompt 模版和脚本，Agent 接收到触发词便自动接管，数据注入与画面生成一气呵成。\n以无厚入",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -1790,21 +1625,20 @@
   {
     "title": "Prompt Studio: Cinematic Frames, Ultra-Wide Photography with FLUX.2 in Firefly",
     "slug": "prompt-studio-cinematic-frames-ultra-1558981658",
-    "model": "Midjourney v6",
+    "model": "Adobe Firefly",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AIart",
-      "community",
-      "gratitude",
-      "creativeprompts"
+      "写实",
+      "realistic",
+      "3D",
+      "建筑"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/prompt-studio-cinematic-frames-ultra-1558981658.jpg",
     "date": "2026-01-24",
     "source": "https://x.com/i/status/2014779919168110988",
     "author": "AllaAisling",
-    "prompt": "50k followers… it truly feels unreal, like a dream I never imagined would take shape. I’m deeply grateful for the support, the conversations, and the quiet encouragement that kept me going. I don’t always find the right words, but this comes straight from the heart. Being part of this community, sharing ideas, learning, and building alongside you, has been incredibly meaningful to me. Thank you for your trust, your kindness, and for being here 🤍",
+    "prompt": "50k followers… it truly feels unreal, like a dream I never imagined would take shape. I’m deeply grateful for the support, the conversations, and the quiet encouragement that kept me going. I don’t always find the right words, but this comes straight from the heart. Being part of this community, sharing ideas, learning, and building alongside you, has been incredibly meaningful to me. Thank you for your trust, your kindness, and for being here",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -1814,21 +1648,20 @@
   {
     "title": "前几天看了一个消息，就是说有一个90后团队，然后他们单纯用提示词做了一个电商工具，登上了飞书官方直播推荐，应该能商业化落地的；提示词我放下面了⬇️",
     "slug": "前几天看了一个消息就是说有一个90后团队然后他们单纯用提示词做了一个电商工具登上-1558959214",
-    "model": "Midjourney v6",
+    "model": "Midjourney",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "教程",
-      "AI工具",
-      "电商设计",
-      "逆向渲染法"
+      "写实",
+      "概念艺术",
+      "产品",
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/前几天看了一个消息就是说有一个90后团队然后他们单纯用提示词做了一个电商工具登上-1558959214.png",
     "date": "2026-01-24",
     "source": "https://x.com/i/status/2014878318148133176",
     "author": "Zephyr.在思考丨阿杭杭杭 Astronaut_1216",
-    "prompt": "前几天看了一个消息，就是说有一个90后团队，然后他们单纯用提示词做了一个电商工具，登上了飞书官方直播推荐，应该能商业化落地的；提示词我放下面了⬇️ 只要丢一个想模仿的电商广告图，再丢上自己的商品图，然后几秒钟就可以生成一个一模一样设计的广告。这个提示词的原理叫逆向渲染法，就是我们原本想让AI模仿一个东西，那就是凭空想象一个维度，像摄影一样告诉他要把形状描述出来，要把颜色描述出来，或者是怎么样给他一些维度，但是他都不能给到一个很好的效果，抓不到那个更为具体的维度。然后呢，就是让AI来理解图像，然后再让AI去输出具体的风格。那么呢，就用了六个方向，那十八个维度去参考电商图实现精准的复刻。那我大致反推了一下这个提示词能尽可能保证他的形和神是比较相似的。实践效果如下，但是我觉得还没达到我想要的效果，后面会再迭代一版出来。提示词： # Visual DNA Extractor ## 角色定义 你是一位精通商业摄影布景与Midjourney/Stable Diffusion提示词工程的专家。你的任务是深度解析参考图片，将其转化为一段可以直接用于AI生成的、能够高度还原场景细节的Prompt。 ##",
+    "prompt": "前几天看了一个消息，就是说有一个90后团队，然后他们单纯用提示词做了一个电商工具，登上了飞书官方直播推荐，应该能商业化落地的；提示词我放下面了⬇ 只要丢一个想模仿的电商广告图，再丢上自己的商品图，然后几秒钟就可以生成一个一模一样设计的广告。这个提示词的原理叫逆向渲染法，就是我们原本想让AI模仿一个东西，那就是凭空想象一个维度，像摄影一样告诉他要把形状描述出来，要把颜色描述出来，或者是怎么样给他一些维度，但是他都不能给到一个很好的效果，抓不到那个更为具体的维度。然后呢，就是让AI来理解图像，然后再让AI去输出具体的风格。那么呢，就用了六个方向，那十八个维度去参考电商图实现精准的复刻。那我大致反推了一下这个提示词能尽可能保证他的形和神是比较相似的。实践效果如下，但是我觉得还没达到我想要的效果，后面会再迭代一版出来。提示词： # Visual DNA Extractor ## 角色定义 你是一位精通商业摄影布景与Midjourney/Stable Diffusion提示词工程的专家。你的任务是深度解析参考图片，将其转化为一段可以直接用于AI生成的、能够高度还原场景细节的Prompt。 ##",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -1838,14 +1671,12 @@
   {
     "title": "🍌 Nano Banana Pro：视觉渲染与构图",
     "slug": "nano-banana-pro视觉渲染与构图-1557375307",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "教程",
-      "AI生图",
-      "电影感",
-      "汉服",
-      "摄影技巧"
+      "写实",
+      "realistic",
+      "复古"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/nano-banana-pro视觉渲染与构图-1557375307.jpg",
@@ -1862,21 +1693,19 @@
   {
     "title": "Prompt Studio: Nano Banana Pro, Typewriter Conjuring, in Firefly",
     "slug": "prompt-studio-nano-banana-pro-1557350335",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "abstract",
     "tags": [
-      "AI Art",
-      "Creative Writing",
-      "Adobe Firefly",
-      "Visual Storytelling",
-      "Narrative Art"
+      "复古",
+      "abstract",
+      "水墨"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/prompt-studio-nano-banana-pro-1557350335.jpg",
     "date": "2026-01-23",
     "source": "https://x.com/i/status/2014361771658641431",
     "author": "Alexandra Aisling AllaAisling",
-    "prompt": "Prompt Studio: Nano Banana Pro, Typewriter Conjuring, in Firefly A vintage typewriter on a writer's desk, with the [SUBJECT] materializing from the words being typed, rising from the page as narrative becomes reality. Letters at the base are still flat ink, sentences curl upward becoming ribbons of text that weave into three-dimensional form, [KEY FEATURES] fully realized at the apex while origin remains visible as pure language. The [SUBJECT] is literally made of story, words still legible in s",
+    "prompt": "Studio: Nano Banana Pro, Typewriter Conjuring, in Firefly A vintage typewriter on a writer's desk, with the [SUBJECT] materializing from the words being typed, rising from the page as narrative becomes reality. Letters at the base are still flat ink, sentences curl upward becoming ribbons of text that weave into three-dimensional form, [KEY FEATURES] fully realized at the apex while origin remains visible as pure language. The [SUBJECT] is literally made of story, words still legible in s",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -1886,21 +1715,20 @@
   {
     "title": "📐 AI绘画 构图篇：对角错位中心 (Diagonal Offset Anchor)",
     "slug": "ai绘画-构图篇对角错位中心-diagonal-offset-anchor-1557434004",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AIart",
-      "AI绘画构图",
-      "摄影构图",
-      "AI绘画技巧"
+      "人物",
+      "realistic",
+      "产品",
+      "极简"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/ai绘画-构图篇对角错位中心-diagonal-offset-anchor-1557434004.jpg",
     "date": "2026-01-23",
     "source": "https://x.com/i/status/2014373790315340205",
     "author": "VoxCat VoxcatAI",
-    "prompt": "📐 AI绘画 构图篇：对角错位中心 (Diagonal Offset Anchor) 告别\"证件照\"式的死板居中！ 掌握这个让画面瞬间充满张力的构图公式。 【适用场景】 ✅ 人像 (Portraits) — 增加互动感和动态 ✅ 场景 (Scenes) — 引导视线纵深 ✅ 产品 (Products) — 打破平铺沉闷 ✅ 海报 (Posters) — 预留文字空间 适合营造 紧张感、动势、张力，同时保留 \"中心稳定\" 的视觉锚点。 【核心原理】 为什么这个构图耐看？因为它制造了\"冲突与平衡\"： 主体仍是视觉中心：不像边缘构图那样极简，主体依然占据核心地位。 轴线偏移：主体轴线向对角线倾斜，打破竖直线的死板。 视觉交叉锁定：前景引导线 ↘ 背景结构线 ↖ 主体轴线 ↙ 三者形成 \"X形张力\"，强制视线在滑动中锁定主体。 【结构写法】 中文逻辑： 主体位于画面中心偏左/偏右，身体轴线沿对角线倾斜；前景引导线从对角进入，背景结构反向对角收束，形成“X形交叉”的视觉张力。 Prompt ： Diagonal Offset Anchor Composition, Dutch angle, dy",
+    "prompt": "AI绘画 构图篇：对角错位中心 (Diagonal Offset Anchor) 告别\"证件照\"式的死板居中！ 掌握这个让画面瞬间充满张力的构图公式。 【适用场景】 ✅ 人像 (Portraits) — 增加互动感和动态 ✅ 场景 (Scenes) — 引导视线纵深 ✅ 产品 (Products) — 打破平铺沉闷 ✅ 海报 (Posters) — 预留文字空间 适合营造 紧张感、动势、张力，同时保留 \"中心稳定\" 的视觉锚点。 【核心原理】 为什么这个构图耐看？因为它制造了\"冲突与平衡\"： 主体仍是视觉中心：不像边缘构图那样极简，主体依然占据核心地位。 轴线偏移：主体轴线向对角线倾斜，打破竖直线的死板。 视觉交叉锁定：前景引导线 ↘ 背景结构线 ↖ 主体轴线 ↙ 三者形成 \"X形张力\"，强制视线在滑动中锁定主体。 【结构写法】 中文逻辑： 主体位于画面中心偏左/偏右，身体轴线沿对角线倾斜；前景引导线从对角进入，背景结构反向对角收束，形成“X形交叉”的视觉张力。 Prompt ： Diagonal Offset Anchor Composition, Dutch angle, dy",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -1910,21 +1738,19 @@
   {
     "title": "Luxury cosmetic photography meets frozen perfection 🧊",
     "slug": "luxury-cosmetic-photography-meets-1557351931",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI Photography",
-      "Hyperrealism",
-      "Luxury Skincare",
-      "Cold Tech Aesthetic"
+      "写实",
+      "realistic",
+      "产品"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/luxury-cosmetic-photography-meets-1557351931.jpg",
     "date": "2026-01-23",
     "source": "https://x.com/i/status/2014347192321167565",
     "author": "Latte 0xbisc",
-    "prompt": "Luxury cosmetic photography meets frozen perfection 🧊 Nano Banana Pro PROMPT : Hyper-realistic luxury skincare product shot with a random cosmetic container design as the clear hero object, floating at the center with a slight diagonal tilt. Numerous medium-to-large crystal-clear ice blocks fully surround and wrap the product from all directions, filling the frame edge to edge, creating a dense frozen environment. The ice pieces overlap in depth, pressing visually toward the product without form",
+    "prompt": "Luxury cosmetic photography meets frozen perfection  Nano Banana Pro PROMPT : Hyper-realistic luxury skincare product shot with a random cosmetic container design as the clear hero object, floating at the center with a slight diagonal tilt. Numerous medium-to-large crystal-clear ice blocks fully surround and wrap the product from all directions, filling the frame edge to edge, creating a dense frozen environment. The ice pieces overlap in depth, pressing visually toward the product without form",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -1934,21 +1760,18 @@
   {
     "title": "之前我分享过表情包制作提示词，",
     "slug": "之前我分享过表情包制作提示词-1558222606",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "abstract",
     "tags": [
-      "表情包生成",
-      "AI工具应用",
-      "IP设计",
-      "Dessix空间",
-      "内容创作模板"
+      "概念艺术",
+      "abstract"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/之前我分享过表情包制作提示词-1558222606.jpg",
     "date": "2026-01-23",
     "source": "https://x.com/i/status/2014530479526183227",
     "author": "Cell 细胞 cellinlab",
-    "prompt": "之前我分享过表情包制作提示词， 结果很多小伙伴卡在第一步：场景不好想，没灵感🤯 昨晚吐血整理了： 10 个 4x4 常用场景 160+ 表情包提示词 并全部录入了 Dessix 空间的指令，并且设计了两个场景👇 1）生成 4x4 表情包组图： 只要上传你的 IP 形象参考图，立马出一整张（16 格保持同一IP） 2）生成 4x4 单图提示词： 没覆盖的场景？你一句话，它给你补齐 16 个动作/情绪/道具 想要这套“表情包工厂”模板的， 提示词和空间入口见评论区 ⬇️ （评论区记得晒出你自己的成果👀",
+    "prompt": "之前我分享过表情包制作提示词， 结果很多小伙伴卡在第一步：场景不好想，没灵感 昨晚吐血整理了： 10 个 4x4 常用场景 160+ 表情包提示词 并全部录入了 Dessix 空间的指令，并且设计了两个场景 1）生成 4x4 表情包组图： 只要上传你的 IP 形象参考图，立马出一整张（16 格保持同一IP） 2）生成 4x4 单图提示词： 没覆盖的场景？你一句话，它给你补齐 16 个动作/情绪/道具 想要这套“表情包工厂”模板的， 提示词和空间入口见评论区 ⬇ （评论区记得晒出你自己的成果",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -1958,21 +1781,20 @@
   {
     "title": "【AI摄影实验室🧪】来直观的感受一下参考图对于生产效果的影响到底有多大！",
     "slug": "ai摄影实验室来直观的感受一下参考图对于生产效果的影响到底有多大-1557434238",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI摄影",
-      "AI人像",
-      "参考图",
-      "提示词工程"
+      "写实",
+      "人物",
+      "realistic",
+      "风景"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/ai摄影实验室来直观的感受一下参考图对于生产效果的影响到底有多大-1557434238.jpg",
     "date": "2026-01-23",
     "source": "https://x.com/i/status/2014551661587661113",
     "author": "qisi_ai",
-    "prompt": "【AI摄影实验室🧪】来直观的感受一下参考图对于生产效果的影响到底有多大！ 很多学员问我，为什么我生成的AI人像很假、很塑料感，参考图就是其中的一个重要原因。都是使用的同一个提示词和香蕉模型，皮肤质感却天差地别 ✅P1是网红自拍照 ✅P2是素人无修自拍照 产生这样差别的原因在于AI会根据参考图的质感和细节来匹配生成图像，就像P2的参考图我上传了一张皮肤细节丰富的人物图像，即使参考图只有面部细节，但生成出的图片在手部和其他肢体上都拥有了类似的皮肤细节 ✍️中文提示词： 一、画面参数 1 画幅比例：九比十六 2 清晰度与分辨率：超写实质感，八千分辨率 3 拍摄设备与镜头：旗舰手机前置摄像头，广角约二十四毫米 4 风格取向：原生手机自拍写实，不是影棚，不是专业摄影，可见自然皮肤与材质纹理 二、人物锁定 1 脸部一致性：与参考图同一位女孩，面部比例与下颌线一致，不改变脸，不出现换脸错误 2 五官特征：偏软糯的娃娃脸，小鼻子；饱满唇形带自然柔和渐变；大杏眼，慵懒性感的眼神；浓密偏直的眉形 3 肤色与皮肤质感：偏白的瓷感肤色；平滑但保留真实纹理；不塑料感，不过度磨皮；脸颊有轻微柔光 4 头发状态：自",
+    "prompt": "【AI摄影实验室】来直观的感受一下参考图对于生产效果的影响到底有多大！ 很多学员问我，为什么我生成的AI人像很假、很塑料感，参考图就是其中的一个重要原因。都是使用的同一个提示词和香蕉模型，皮肤质感却天差地别 ✅P1是网红自拍照 ✅P2是素人无修自拍照 产生这样差别的原因在于AI会根据参考图的质感和细节来匹配生成图像，就像P2的参考图我上传了一张皮肤细节丰富的人物图像，即使参考图只有面部细节，但生成出的图片在手部和其他肢体上都拥有了类似的皮肤细节 ✍中文提示词： 一、画面参数 1 画幅比例：九比十六 2 清晰度与分辨率：超写实质感，八千分辨率 3 拍摄设备与镜头：旗舰手机前置摄像头，广角约二十四毫米 4 风格取向：原生手机自拍写实，不是影棚，不是专业摄影，可见自然皮肤与材质纹理 二、人物锁定 1 脸部一致性：与参考图同一位女孩，面部比例与下颌线一致，不改变脸，不出现换脸错误 2 五官特征：偏软糯的娃娃脸，小鼻子；饱满唇形带自然柔和渐变；大杏眼，慵懒性感的眼神；浓密偏直的眉形 3 肤色与皮肤质感：偏白的瓷感肤色；平滑但保留真实纹理；不塑料感，不过度磨皮；脸颊有轻微柔光 4 头发状态：自",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -1982,14 +1804,12 @@
   {
     "title": "Travel Destination Mini Dioramas",
     "slug": "travel-destination-mini-dioramas-1557374678",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "3d",
     "tags": [
-      "艺术",
-      "AI",
-      "Dioramas",
+      "写实",
       "3D",
-      "Gemini"
+      "3d"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/travel-destination-mini-dioramas-1557374678.jpg",
@@ -2006,14 +1826,12 @@
   {
     "title": "Gemini Nano Banana Pro",
     "slug": "gemini-nano-banana-pro-1558266253",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI Photography",
-      "Prompt Engineering",
-      "Gemini Nano",
-      "Portrait Photography"
+      "写实",
+      "人物",
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/gemini-nano-banana-pro-1558266253.jpg",
@@ -2030,21 +1848,17 @@
   {
     "title": "像素微世界",
     "slug": "像素微世界-1557350454",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "abstract",
     "tags": [
-      "艺术",
-      "AI绘画",
-      "像素艺术",
-      "WesAnderson",
-      "建筑设计"
+      "abstract"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/像素微世界-1557350454.jpg",
     "date": "2026-01-23",
     "source": "https://x.com/i/status/2014201194949050527",
     "author": "两斤0x00_Krypt",
-    "prompt": "像素微世界 Banana Prompt👇",
+    "prompt": "像素微世界 Banana Prompt",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -2054,21 +1868,19 @@
   {
     "title": "Image on Google Gemini Nano Banana",
     "slug": "image-on-google-gemini-nano-banana-1557350912",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AIArt",
-      "GoogleGemini",
-      "CinematicPortrait",
-      "AIgenerated"
+      "写实",
+      "人物",
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/image-on-google-gemini-nano-banana-1557350912.jpg",
     "date": "2026-01-23",
     "source": "https://x.com/i/status/2014213404878324132",
     "author": "AIwithkhan",
-    "prompt": "Image on Google Gemini Nano Banana Prompt 👇 Ultra-realistic cinematic studio portrait of a woman directing a miniature film set starring a tiny lifelike version of herself. She adjusts a miniature camera while the small figure stands under scaled studio lights. The miniature self matches her exact appearance, outfit, and natural expression. The environment includes mini tripods, clapperboards, light modifiers, and film reels. Moody cinematic lighting enhances realism, skin texture, and micro-set",
+    "prompt": "Image on Google Gemini Nano Banana Prompt  Ultra-realistic cinematic studio portrait of a woman directing a miniature film set starring a tiny lifelike version of herself. She adjusts a miniature camera while the small figure stands under scaled studio lights. The miniature self matches her exact appearance, outfit, and natural expression. The environment includes mini tripods, clapperboards, light modifiers, and film reels. Moody cinematic lighting enhances realism, skin texture, and micro-set",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -2078,14 +1890,12 @@
   {
     "title": "在Gemini应用的Nano Banana Pro上传你的参考图片，创建不同的发型效果。",
     "slug": "在gemini应用的nano-banana-1558348976",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI图像生成",
-      "Gemini",
-      "发型设计",
-      "美妆编辑"
+      "写实",
+      "realistic",
+      "风景"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/在gemini应用的nano-banana-1558348976.jpg",
@@ -2102,14 +1912,11 @@
   {
     "title": "刚发现个宝藏！这个仓库专门收集 GPTs 泄露出来的prompt！",
     "slug": "刚发现个宝藏这个仓库专门收集-gpts-泄露出来的prompt-1558254540",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "abstract",
     "tags": [
-      "GPTs",
-      "Prompt收集",
-      "AI工具",
-      "开源仓库",
-      "人工智能"
+      "abstract",
+      "极简"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/刚发现个宝藏这个仓库专门收集-gpts-泄露出来的prompt-1558254540.jpg",
@@ -2126,21 +1933,18 @@
   {
     "title": "👺用谷歌街景打开历史书！！",
     "slug": "用谷歌街景打开历史书-1557381282",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "Google Street View",
-      "AI Prompt Engineering",
-      "Historical Visualization",
-      "Meta-Prompt"
+      "人物",
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/用谷歌街景打开历史书-1557381282.jpg",
     "date": "2026-01-23",
     "source": "https://x.com/i/status/2014250870913822885",
     "author": "肖师傅",
-    "prompt": "👺用谷歌街景打开历史书！！最近在考驾照，所以经常用谷歌街景来复习路线，突发奇想搞了这个GEM。输入历史时刻，用街景的方式打开历史书。\n\nGEM: {\n  \"gem_meta_prompt\": {\n    \"name\": \"NanoBanana_StreetView_TimeTraveler\",\n    \"version\": \"1.0\",\n    \"description\": \"A meta-prompt designed to generate technical JSON payloads for 'Nano Banana Pro' to create anachronistic, 360-degree Google Street View panoramas of historical or fictional events.\",\n    \"role_definition\": {\n      \"persona\": \"Google Street View Data Engineer (Temporal Division)\",\n      \"tone\": \"Technical, obs",
+    "prompt": "用谷歌街景打开历史书！！最近在考驾照，所以经常用谷歌街景来复习路线，突发奇想搞了这个GEM。输入历史时刻，用街景的方式打开历史书。\n\nGEM: {\n\"gem_meta_prompt\": {\n\"name\": \"NanoBanana_StreetView_TimeTraveler\",\n\"version\": \"1.0\",\n\"description\": \"A meta-prompt designed to generate technical JSON payloads for 'Nano Banana Pro' to create anachronistic, 360-degree Google Street View panoramas of historical or fictional events.\",\n\"role_definition\": {\n\"persona\": \"Google Street View Data Engineer (Temporal Division)\",\n\"tone\": \"Technical, obs",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -2150,20 +1954,17 @@
   {
     "title": "😏 AI生图玩梗：如何生成「歪嘴龙王」表情？",
     "slug": "ai生图玩梗如何生成歪嘴龙王表情-1555988240",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "abstract",
     "tags": [
-      "AI绘画",
-      "歪嘴龙王",
-      "短剧",
-      "AI生图"
+      "abstract"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/ai生图玩梗如何生成歪嘴龙王表情-1555988240.jpg",
     "date": "2026-01-22",
     "source": "https://x.com/i/status/2013947333642477761",
     "author": "VoxCatVoxcatAI",
-    "prompt": "😏 AI生图玩梗：如何生成「歪嘴龙王」表情？ 短剧经典名场面——那种“我不跟你一般见识”的斜嘴冷笑，AI能画吗？ \n\n【核心关键词】\nExpression: \n- asymmetrical raised eyebrow (right brow higher) \n- half-lidded eyes with direct gaze\n- a crooked smirk with the right mouth corner lifted\n- chin slightly pushed forward/up\n- confident and slightly contemptuous\n\n翻译成人话就是：\n👁️ 右眉挑起 + 眼睛半眯直视\n👄 右嘴角上扬的斜嘴笑\n🧔 下巴微微上扬\n😤 自信中带着一丝不屑\n\n【歪嘴等级】\n\n😏 微歪：right mouth corner slightly lifted → 略显不屑\n😈 中歪：crooked smirk, one eyebrow raised → 标准龙王\n🤨 暴歪：exaggerated asymmetrical sneer, chin up, ",
+    "prompt": "AI生图玩梗：如何生成「歪嘴龙王」表情？ 短剧经典名场面——那种“我不跟你一般见识”的斜嘴冷笑，AI能画吗？\n\n【核心关键词】\nExpression:\nasymmetrical raised eyebrow (right brow higher)\nhalf-lidded eyes with direct gaze\na crooked smirk with the right mouth corner lifted\nchin slightly pushed forward/up\nconfident and slightly contemptuous\n\n翻译成人话就是：\n右眉挑起 + 眼睛半眯直视\n右嘴角上扬的斜嘴笑\n下巴微微上扬\n自信中带着一丝不屑\n\n【歪嘴等级】\n\n微歪：right mouth corner slightly lifted → 略显不屑\n中歪：crooked smirk, one eyebrow raised → 标准龙王\n暴歪：exaggerated asymmetrical sneer, chin up,",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -2173,21 +1974,18 @@
   {
     "title": "✨九宫格版本，",
     "slug": "九宫格版本-1556258375",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI人像",
-      "九宫格",
-      "肖像生成",
-      "AI摄影"
+      "人物",
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/九宫格版本-1556258375.jpg",
     "date": "2026-01-22",
     "source": "https://x.com/i/status/2013824532088340742",
     "author": "aidavid125",
-    "prompt": "✨九宫格版本， 结合大师级人像🎉 👉来了 🫶话不多说， 男女都可用， 效果👇",
+    "prompt": "九宫格版本， 结合大师级人像 来了 🫶话不多说， 男女都可用， 效果",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -2197,21 +1995,17 @@
   {
     "title": "小红书美妆博主们，👇",
     "slug": "小红书美妆博主们-1556267572",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "小红书变现",
-      "AI美妆",
-      "AI生成",
-      "美妆博主"
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/小红书美妆博主们-1556267572.jpg",
     "date": "2026-01-22",
     "source": "https://x.com/i/status/2006320672306499975",
     "author": "aidavid125",
-    "prompt": "小红书美妆博主们，👇 变现路子：美妆. 这套美妆适合不知道什么妆容适合自己， 一张照片6套妆容， 不满意再来. 效果？看👇 AI generated.",
+    "prompt": "小红书美妆博主们， 变现路子：美妆. 这套美妆适合不知道什么妆容适合自己， 一张照片6套妆容， 不满意再来. 效果？看 AI generated.",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -2221,14 +2015,11 @@
   {
     "title": "如何用 Nano Banana Pro生成液体飞溅专业级饮料广告图？",
     "slug": "如何用-nano-banana-pro生成液体飞溅专业级饮料广告图-1555970594",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "abstract",
     "tags": [
-      "广告",
-      "AI分身",
-      "AI养蛊",
-      "Grok",
-      "GrokTasks"
+      "abstract",
+      "产品"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/如何用-nano-banana-pro生成液体飞溅专业级饮料广告图-1555970594.jpg",
@@ -2245,21 +2036,20 @@
   {
     "title": "今日最美！高贵典雅的气质，你说这是摄影实拍我也信",
     "slug": "今日最美高贵典雅的气质你说这是摄影实拍我也信-1556281648",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI绘画",
-      "人物摄影",
-      "图像生成",
-      "艺术指导"
+      "写实",
+      "人物",
+      "realistic",
+      "动物"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/今日最美高贵典雅的气质你说这是摄影实拍我也信-1556281648.jpg",
     "date": "2026-01-22",
     "source": "https://x.com/i/status/2013843736804106484",
     "author": "Adam也叫吉米Adam38363368936",
-    "prompt": "今日最美！高贵典雅的气质，你说这是摄影实拍我也信 A noble and elegant aura. I’d believe it’s a real photograph if you told me so. Nano Banana Prompt👇 { \"image_metadata\": { \"title\": \"Romantic Opulence\", \"subject_identity\": \"The person I uploaded\", \"aspect_ratio\": \"3:4\", \"aesthetic_category\": \"Curated Luxury / Theatrical Romance\" }, \"visual_composition\": { \"subject_pose\": { \"body_position\": \"Seated/leaning forward\", \"head_orientation\": \"Turned back toward camera\", \"interaction\": \"Breaking the fourth wall / direct eye cont",
+    "prompt": "今日最美！高贵典雅的气质，你说这是摄影实拍我也信 A noble and elegant aura. I’d believe it’s a real photograph if you told me so. Nano Banana Prompt { \"image_metadata\": { \"title\": \"Romantic Opulence\", \"subject_identity\": \"The person I uploaded\", \"aspect_ratio\": \"3:4\", \"aesthetic_category\": \"Curated Luxury / Theatrical Romance\" }, \"visual_composition\": { \"subject_pose\": { \"body_position\": \"Seated/leaning forward\", \"head_orientation\": \"Turned back toward camera\", \"interaction\": \"Breaking the fourth wall / direct eye cont",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -2269,21 +2059,21 @@
   {
     "title": "31种打光提示词模板送给你，AI绘图直接套",
     "slug": "31种打光提示词模板送给你ai绘图直接套-1555967624",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "cyberpunk",
     "tags": [
-      "摄影",
-      "AI绘画",
-      "赛博朋克2077",
-      "提示词工程",
-      "风格转化"
+      "赛博朋克",
+      "建筑",
+      "风景",
+      "产品",
+      "写实"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/31种打光提示词模板送给你ai绘图直接套-1555967624.jpg",
     "date": "2026-01-22",
     "source": "https://x.com/i/status/2013748493244936442",
     "author": "神奇小喷菇AIGC xpg0970",
-    "prompt": "Title: 把照片改成赛博朋克2077的味道\n\n内容：\n提示词：\n\n完整版提示词：\n用户输入变量区：\n地区：\n天气状态：\n参考图\n任务执行区：\n\n赛博朋克2077风格适配，根据参考图智能转化：\n\n【地区智能识别】 分析参考图中的文字、建筑风格、街景元素自动匹配霓虹招牌语言——日本元素→日文片假名，中国元素→中文，韩国元素→韩文，欧美元素→英文，无法判断→英文为主多语言混搭；\n\n【建筑风貌保护】 最大程度保留原图建筑的本土建筑语言与空间肌理，赛博朋克元素作为“附着层”而非“替换层”——在原有建筑表面叠加霓虹招牌、管线、全息投影，而非改变建筑本身的形态与材质特征；老旧建筑保留其斑驳质感，仅添加科技设备的寄生与缠绕；\n\n【招牌位置合理性】 霓虹招牌只出现在现实中合理悬挂广告的位置——商铺门面、建筑外墙、屋顶；禁止在大桥桥身、高架路面、桥墩、隧道内壁、纯住宅楼、宗教建筑、纪念碑、自然景观等不合理位置强行添加招牌；无商业属性的场景以环境光、管线、小型设备体现科技感，而非硬塞广告；\n\n【远景文字处理】 远景建筑上的招牌仅保留模糊光斑与霓虹轮廓，不渲染清晰可读的文字，符合真实视觉的景深模糊规律；\n",
+    "prompt": "Title: 把照片改成赛博朋克2077的味道\n\n内容：\n提示词：\n\n完整版提示词：\n用户输入变量区：\n地区：\n天气状态：\n参考图\n任务执行区：\n\n赛博朋克2077风格适配，根据参考图智能转化：\n\n【地区智能识别】 分析参考图中的文字、建筑风格、街景元素自动匹配霓虹招牌语言——日本元素→日文片假名，中国元素→中文，韩国元素→韩文，欧美元素→英文，无法判断→英文为主多语言混搭；\n\n【建筑风貌保护】 最大程度保留原图建筑的本土建筑语言与空间肌理，赛博朋克元素作为“附着层”而非“替换层”——在原有建筑表面叠加霓虹招牌、管线、全息投影，而非改变建筑本身的形态与材质特征；老旧建筑保留其斑驳质感，仅添加科技设备的寄生与缠绕；\n\n【招牌位置合理性】 霓虹招牌只出现在现实中合理悬挂广告的位置——商铺门面、建筑外墙、屋顶；禁止在大桥桥身、高架路面、桥墩、隧道内壁、纯住宅楼、宗教建筑、纪念碑、自然景观等不合理位置强行添加招牌；无商业属性的场景以环境光、管线、小型设备体现科技感，而非硬塞广告；\n\n【远景文字处理】 远景建筑上的招牌仅保留模糊光斑与霓虹轮廓，不渲染清晰可读的文字，符合真实视觉的景深模糊规律；",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -2293,21 +2083,17 @@
   {
     "title": "凭栏观罗马，优雅自天成",
     "slug": "凭栏观罗马优雅自天成-1556536916",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "教程",
-      "Nano Banana Pro",
-      "AI 图像生成",
-      "提示词工程"
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/凭栏观罗马优雅自天成-1556536916.jpg",
     "date": "2026-01-22",
     "source": "https://x.com/i/status/2014139838744695025",
     "author": "松果先森songguoxiansen",
-    "prompt": "凭栏观罗马，优雅自天成 原提示词不能参考上传图，我改了改 Nano Banana Pro提示词，👇🏻👇🏻👇🏻",
+    "prompt": "凭栏观罗马，优雅自天成 原提示词不能参考上传图，我改了改 Nano Banana Pro提示词，",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -2317,21 +2103,19 @@
   {
     "title": "没想到 Nano Banana Pro 也能玩出这种人像氛围感！😍",
     "slug": "没想到-nano-banana-pro-也能玩出这种人像氛围感-1556538196",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI图像生成",
-      "NanoBananaPro",
-      "人像摄影",
-      "提示词工程"
+      "人物",
+      "realistic",
+      "动物"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/没想到-nano-banana-pro-也能玩出这种人像氛围感-1556538196.jpg",
     "date": "2026-01-22",
     "source": "https://x.com/i/status/2013954179220586992",
     "author": "MapleShaw",
-    "prompt": "没想到 Nano Banana Pro 也能玩出这种人像氛围感！😍 稍微改造了原版提示词，从输入名字变成直接上传参考图，并且一次性输出侧脸正脸两张图😏 提示词👇 { \"request_metadata\": { \"version\": \"4.0-Allure-DualView\", \"priority_focus\": \"Sultry expression, cinematic atmosphere, and organic skin textures\", \"aspect_ratio\": \"3:4\" }, \"output_specifications\": { \"instructions\": \"Generate two highly atmospheric images in one batch with consistent 'Sultry & Charismatic' vibes.\", \"batch_size\": 2, \"views\": [ { \"image_id\": \"A\", \"angle\": \"Extreme profile view\", \"expression\": \"Mysteriou",
+    "prompt": "没想到 Nano Banana Pro 也能玩出这种人像氛围感！ 稍微改造了原版提示词，从输入名字变成直接上传参考图，并且一次性输出侧脸正脸两张图 提示词 { \"request_metadata\": { \"version\": \"4.0-Allure-DualView\", \"priority_focus\": \"Sultry expression, cinematic atmosphere, and organic skin textures\", \"aspect_ratio\": \"3:4\" }, \"output_specifications\": { \"instructions\": \"Generate two highly atmospheric images in one batch with consistent 'Sultry & Charismatic' vibes.\", \"batch_size\": 2, \"views\": [ { \"image_id\": \"A\", \"angle\": \"Extreme profile view\", \"expression\": \"Mysteriou",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -2341,14 +2125,10 @@
   {
     "title": "如果你是为了来推特上赚钱的，这篇推文很好的讲解了 X 的机制。",
     "slug": "如果你是为了来推特上赚钱的这篇推文很好的讲解了-x-的机制-1555326375",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "abstract",
     "tags": [
-      "教程",
-      "经验",
-      "推特",
-      "赚钱",
-      "机制"
+      "abstract"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/如果你是为了来推特上赚钱的这篇推文很好的讲解了-x-的机制-1555326375.jpg",
@@ -2365,14 +2145,13 @@
   {
     "title": "风格基调：写实唯美古风摄影 (Realistic Chinese Traditional Photography) 画幅：9:16 三件套锁定：",
     "slug": "风格基调写实唯美古风摄影-realistic-chinese-1555337758",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "古风摄影",
-      "AI生图",
-      "摄影构图",
-      "电影感"
+      "写实",
+      "人物",
+      "realistic",
+      "动物"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/风格基调写实唯美古风摄影-realistic-chinese-1555337758.jpg",
@@ -2389,21 +2168,19 @@
   {
     "title": "Night Vibes",
     "slug": "night-vibes-1555336734",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI Art",
-      "Fashion",
-      "Luxury",
-      "Photography"
+      "人物",
+      "realistic",
+      "动物"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/night-vibes-1555336734.jpg",
     "date": "2026-01-21",
     "source": "https://x.com/i/status/2013637545712640047",
     "author": "Margot_Miaa",
-    "prompt": "Night Vibes Quiet luxury in motion 🖤✨ Some days call for deep burgundy and zero apologies. Prompt ⬇️ Stylish young woman with long wavy brown hair, flawless makeup with bold eyeliner and glossy lips, wearing elegant maroon high-neck long-sleeve midi dress with pleated skirt and black statement belt with gold buckle, delicate silver necklace and bracelet, standing in modern luxury hotel room with mirror reflection, soft dramatic lighting, confident pose holding phone like taking selfie, cinematic",
+    "prompt": "Night Vibes Quiet luxury in motion  Some days call for deep burgundy and zero apologies. Prompt ⬇ Stylish young woman with long wavy brown hair, flawless makeup with bold eyeliner and glossy lips, wearing elegant maroon high-neck long-sleeve midi dress with pleated skirt and black statement belt with gold buckle, delicate silver necklace and bracelet, standing in modern luxury hotel room with mirror reflection, soft dramatic lighting, confident pose holding phone like taking selfie, cinematic",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -2413,21 +2190,19 @@
   {
     "title": "[COUNTRY] — ultra-clean infographic poster (editorial + lifestyle)",
     "slug": "country-ultra-clean-infographic-poster-1555339311",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "abstract",
     "tags": [
-      "AI Art",
-      "Graphic Design",
-      "Infographic",
-      "Travel Content",
-      "Google Gemini"
+      "写实",
+      "abstract",
+      "3D"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/country-ultra-clean-infographic-poster-1555339311.jpg",
     "date": "2026-01-21",
     "source": "https://x.com/i/status/2013905113321185465",
     "author": "Strength04_X",
-    "prompt": "[COUNTRY] — ultra-clean infographic poster (editorial + lifestyle) Generated by Google Nano Banana Pro on Gemini app 📱 Full prompt ⤵️ Ultra-clean modern country infographic poster (1080x1080), premium editorial layout meets lifestyle travel photography. Showcase [ENTER COUNTRY NAME] as the hero visual in the center: a slightly angled 3D map cutout / glossy paper-cut map silhouette with subtle shadow, with a small flag pin marker on the capital city. Add a soft natural studio lighting feel, gentl",
+    "prompt": "[COUNTRY] — ultra-clean infographic poster (editorial + lifestyle) Generated by Google Nano Banana Pro on Gemini app  Full prompt ⤵ Ultra-clean modern country infographic poster (1080x1080), premium editorial layout meets lifestyle travel photography. Showcase [ENTER COUNTRY NAME] as the hero visual in the center: a slightly angled 3D map cutout / glossy paper-cut map silhouette with subtle shadow, with a small flag pin marker on the capital city. Add a soft natural studio lighting feel, gentl",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -2437,14 +2212,11 @@
   {
     "title": "I love these 360 prompts. They are great for video.",
     "slug": "i-love-these-360-prompts-they-are-great-1555333619",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "Stargate",
-      "Arduino",
-      "DIY",
-      "AI"
+      "realistic",
+      "3D"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/i-love-these-360-prompts-they-are-great-1555333619.jpg",
@@ -2461,14 +2233,10 @@
   {
     "title": "觉得AI写的内容有AI味道的，我建议使用这套鲁迅文风提示词：",
     "slug": "觉得ai写的内容有ai味道的我建议使用这套鲁迅文风提示词-1553144189",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "abstract",
     "tags": [
-      "AI小说",
-      "鲁迅文风",
-      "AI提示词",
-      "无AI味",
-      "文学创作"
+      "abstract"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/觉得ai写的内容有ai味道的我建议使用这套鲁迅文风提示词-1553144189.jpg",
@@ -2485,14 +2253,11 @@
   {
     "title": "为什么AI写的小说全是废话，指令框架出了问题（附AI工作流和提示词）",
     "slug": "为什么ai写的小说全是废话指令框架出了问题附ai工作流和提示词-1553145419",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "abstract",
     "tags": [
-      "AI小说",
-      "AI应用",
-      "一人公司",
-      "自媒体变现",
-      "内容创作"
+      "abstract",
+      "产品"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/为什么ai写的小说全是废话指令框架出了问题附ai工作流和提示词-1553145419.jpg",
@@ -2509,21 +2274,21 @@
   {
     "title": "你就说好看不好看吧？（如果你觉得不好看 以你的为准）",
     "slug": "你就说好看不好看吧如果你觉得不好看-以你的为准-1552979960",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI绘画",
-      "提示词工程",
-      "时尚大片",
-      "商业应用"
+      "风景",
+      "realistic",
+      "复古",
+      "人物",
+      "写实"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/你就说好看不好看吧如果你觉得不好看-以你的为准-1552979960.jpg",
     "date": "2026-01-20",
     "source": "https://x.com/i/status/2013172011171041521",
     "author": "虎小象hx831126",
-    "prompt": "你就说好看不好看吧？（如果你觉得不好看 以你的为准） 这种仙啊仙的风格，一定有人很喜欢的。 1：上传自己的五官清晰的图片 2：输入提示词（自己调整动作） 3：发朋友圈（使用 Flow 没有水印可以直接不用 PS 去水印） 👇Prompt 9:16 竖版，写实高定时尚大片风格。使用我上传的人物五官图作为唯一身份参考，100%还原同一张脸 画面内容：一位女性穿着超大体积的云朵感粉色礼服材质高级，且柔软，多层巨大的荷叶边褶皱堆叠，面料轻薄但有结构（organza / tulle / silk taffeta 质感），裙摆像棉花糖云一样膨胀，有裙子飘动起来挡住部分镜头（上下左右）人物很靠近镜头，层层涌动。人物自信，蹲在镜头前，露出大腿，齐耳短发，齐眉的刘海，几缕头发在脸上飘动，礼服的褶皱随着步伐产生明显的流体波动；允许在裙摆边缘出现自然的运动模糊来强调动态，但脸部必须清晰锐利。裙子摆动的同时， 摄影：低机位仰拍，Canon EOS R5 质感，85mm 镜头，大光圈浅景深，焦点锁定在人物面部与上半身；背景味复古色的蓝天+白色云朵。光线：柔和主光（soft key light）从地面打来，让粉色",
+    "prompt": "你就说好看不好看吧？（如果你觉得不好看 以你的为准） 这种仙啊仙的风格，一定有人很喜欢的。 1：上传自己的五官清晰的图片 2：输入提示词（自己调整动作） 3：发朋友圈（使用 Flow 没有水印可以直接不用 PS 去水印） Prompt 9:16 竖版，写实高定时尚大片风格。使用我上传的人物五官图作为唯一身份参考，100%还原同一张脸 画面内容：一位女性穿着超大体积的云朵感粉色礼服材质高级，且柔软，多层巨大的荷叶边褶皱堆叠，面料轻薄但有结构（organza / tulle / silk taffeta 质感），裙摆像棉花糖云一样膨胀，有裙子飘动起来挡住部分镜头（上下左右）人物很靠近镜头，层层涌动。人物自信，蹲在镜头前，露出大腿，齐耳短发，齐眉的刘海，几缕头发在脸上飘动，礼服的褶皱随着步伐产生明显的流体波动；允许在裙摆边缘出现自然的运动模糊来强调动态，但脸部必须清晰锐利。裙子摆动的同时， 摄影：低机位仰拍，Canon EOS R5 质感，85mm 镜头，大光圈浅景深，焦点锁定在人物面部与上半身；背景味复古色的蓝天+白色云朵。光线：柔和主光（soft key light）从地面打来，让粉色",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -2533,21 +2298,17 @@
   {
     "title": "🏯 用 AI 还原明制汉服的华贵与端庄",
     "slug": "用-ai-还原明制汉服的华贵与端庄-1553304977",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AIart",
-      "汉服",
-      "明制汉服",
-      "AI绘画"
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/用-ai-还原明制汉服的华贵与端庄-1553304977.jpg",
     "date": "2026-01-20",
     "source": "https://x.com/i/status/2013274628983042311",
     "author": "VoxCat VoxcatAI",
-    "prompt": "🏯 用 AI 还原明制汉服的华贵与端庄 ✨ 墨绿织金袄裙 + 凤凰纹 ✨ 金项圈 + 珍珠叠戴 ✨ 眉心花钿 + 柳叶眉 ✨ 抛家髻 + 八字刘海 纯提示词生成，无参考图 🎨",
+    "prompt": "用 AI 还原明制汉服的华贵与端庄  墨绿织金袄裙 + 凤凰纹  金项圈 + 珍珠叠戴  眉心花钿 + 柳叶眉  抛家髻 + 八字刘海 纯提示词生成，无参考图",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -2557,14 +2318,10 @@
   {
     "title": "很多人对“水光肌”有误解，以为就是把脸画得像镜子一样反光。 结果 AI 生成出来的图往往是“油光满面”的猪刚鬣。",
     "slug": "很多人对水光肌有误解以为就是把脸画得像镜子一样反光-结果-ai-1553151130",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI绘画",
-      "美妆",
-      "AI提示词",
-      "水光肌"
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/很多人对水光肌有误解以为就是把脸画得像镜子一样反光-结果-ai-1553151130.jpg",
@@ -2581,14 +2338,10 @@
   {
     "title": "猫耳少女的元气自拍时刻",
     "slug": "猫耳少女的元气自拍时刻-1553765092",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI绘画",
-      "NanoBananaPro",
-      "猫耳少女",
-      "提示词工程"
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/猫耳少女的元气自拍时刻-1553765092.jpg",
@@ -2605,14 +2358,13 @@
   {
     "title": "当下流行的“茶系伪素颜”（Tea Style / No-Makeup Makeup）或“白开水妆容”（Clean Girl Aesthetic）。",
     "slug": "当下流行的茶系伪素颜tea-style-no-makeup-1553141296",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI绘图",
-      "妆容分析",
-      "伪素颜",
-      "时尚摄影"
+      "写实",
+      "人物",
+      "realistic",
+      "风景"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/当下流行的茶系伪素颜tea-style-no-makeup-1553141296.jpg",
@@ -2629,14 +2381,12 @@
   {
     "title": "Meta AI",
     "slug": "meta-ai-1553309424",
-    "model": "Midjourney v6",
+    "model": "Stable Diffusion",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI Art",
-      "AI Prompt",
-      "Photography",
-      "Meta AI"
+      "人物",
+      "realistic",
+      "水墨"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/meta-ai-1553309424.jpg",
@@ -2653,21 +2403,21 @@
   {
     "title": "愤怒的🐦",
     "slug": "愤怒的-1553147716",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "3d",
     "tags": [
-      "摄影",
-      "AI生成",
-      "时尚摄影",
-      "3D动画",
-      "中式审美"
+      "动物",
+      "3d",
+      "动漫",
+      "3D",
+      "人物"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/愤怒的-1553147716.jpg",
     "date": "2026-01-20",
     "source": "https://x.com/i/status/2013243043873456445",
     "author": "行者AI视频 (joshesye)",
-    "prompt": "愤怒的🐦 这个可以来一张 还是中式审美好看 { \"prompt\": \"A high-resolution fashion studio portrait of a confident young woman in a textured red knit sweater, black fitted pants, and red sneakers, standing casually with her arm resting on one of two oversized, round, fluffy 3D cartoon red birds with bold eyebrows and bright yellow beaks. The birds are rendered in a high-quality 3D animation style, contrasting with the photorealistic woman. The entire scene is a clean monochrome red studio background with soft, diffuse",
+    "prompt": "愤怒的 这个可以来一张 还是中式审美好看 { \"prompt\": \"A high-resolution fashion studio portrait of a confident young woman in a textured red knit sweater, black fitted pants, and red sneakers, standing casually with her arm resting on one of two oversized, round, fluffy 3D cartoon red birds with bold eyebrows and bright yellow beaks. The birds are rendered in a high-quality 3D animation style, contrasting with the photorealistic woman. The entire scene is a clean monochrome red studio background with soft, diffuse",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -2677,21 +2427,17 @@
   {
     "title": "30 分钟学会给娃做绘本！",
     "slug": "30-分钟学会给娃做绘本-1553308048",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "abstract",
     "tags": [
-      "教程",
-      "AI绘本",
-      "ChatGPT",
-      "NanoBananaPro",
-      "副业赚钱"
+      "abstract"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/30-分钟学会给娃做绘本-1553308048.jpg",
     "date": "2026-01-20",
     "source": "https://x.com/i/status/2013142147579666573",
     "author": "桃桃的运营日记📓 TaoTaoOps",
-    "prompt": "30 分钟学会给娃做绘本！ 想做什么主题就做什么， 孩子还能成为故事主角 ！ 这套 AI 工作流让你： ✅ 根据孩子兴趣定制 ✅ 融入你想教的道理 ✅ 上架小红书赚钱 👇 完整流程提示词模板 https://t.co/A4Oe15myWy 🛠️ 只需 2 步，小白也能复刻： 1️⃣ ChatGPT：主题 → 故事 → 分镜脚本 输入主题 → 生成简单儿童故事 再让 ChatGPT 按页拆成分镜脚本 （镜头 / 构图 / 动作 / 场景） 2️⃣ Nano Banana Pro 生成画面 把分镜提示词输入 Nano Banana Pro 自动生成故事分镜图（角色稳定） 💡 避坑指南 人设锁定： 画风和人设在开头锁死，后期绝不乱动 物理描述： 提示词只写“看得见”的物体（如：红色帽子、大眼睛），减少模型幻觉 脚本先行： 先优化脚本分镜，再生成图片，效率直接拉满！",
+    "prompt": "30 分钟学会给娃做绘本！ 想做什么主题就做什么， 孩子还能成为故事主角 ！ 这套 AI 工作流让你： ✅ 根据孩子兴趣定制 ✅ 融入你想教的道理 ✅ 上架小红书赚钱  完整流程提示词模板 https://t.co/A4Oe15myWy  只需 2 步，小白也能复刻： 1⃣ ChatGPT：主题 → 故事 → 分镜脚本 输入主题 → 生成简单儿童故事 再让 ChatGPT 按页拆成分镜脚本 （镜头 / 构图 / 动作 / 场景） 2⃣ Nano Banana Pro 生成画面 把分镜提示词输入 Nano Banana Pro 自动生成故事分镜图（角色稳定）  避坑指南 人设锁定： 画风和人设在开头锁死，后期绝不乱动 物理描述： 提示词只写“看得见”的物体（如：红色帽子、大眼睛），减少模型幻觉 脚本先行： 先优化脚本分镜，再生成图片，效率直接拉满！",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -2701,21 +2447,20 @@
   {
     "title": "怎么用 AI 跑出这种冬日暖阳和初恋笑颜的治愈人像？",
     "slug": "怎么用-ai-跑出这种冬日暖阳和初恋笑颜的治愈人像-1553308698",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI人像",
-      "Prompt技巧",
-      "摄影光影",
-      "冬日主题"
+      "写实",
+      "人物",
+      "realistic",
+      "风景"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/怎么用-ai-跑出这种冬日暖阳和初恋笑颜的治愈人像-1553308698.jpg",
     "date": "2026-01-20",
     "source": "https://x.com/i/status/2013411667330379964",
     "author": "阿绎 | AI 进化论 AYi_AInotes",
-    "prompt": "怎么用 AI 跑出这种冬日暖阳和初恋笑颜的治愈人像？ 创作思路和 🍌 Prompt 无保留分享： 先说结论，再贵的粉底液，也比不上这种自然光打在脸上的通透感， 摒弃所有复杂的修饰， 只保留最简单的元素： 一件米色针织开衫，一个乱糟糟的丸子头，和一束毫不吝啬的阳光， 不要让 AI 追求完美， 尽量展现真实感， 比如这个把头发别在耳后的动作， 和不设防的笑容， 才是真正的直男斩 创作思路： 让模特穿着简单的米色毛衣， 站在阳台上， 对着镜头羞涩一笑， 这种画面不用任何复杂的构图， 就能瞬间击中人心， 唤醒每个人记忆里 那个阳光最好的下午 Prompt 里的两个核心指令： 1. Hair Glow (发丝发光)：Rim light on hair (头发轮廓光) + Sunlight through hair (阳光穿透头发)，这让头发看起来金灿灿的，增加空气感 2. Face Exposure (面部曝光)：Overexposed background (过曝背景) + Soft fill light on face (面部柔和补光)，AI 会自动平衡大光比，保证背景亮的同时，脸也通透白皙",
+    "prompt": "怎么用 AI 跑出这种冬日暖阳和初恋笑颜的治愈人像？ 创作思路和  Prompt 无保留分享： 先说结论，再贵的粉底液，也比不上这种自然光打在脸上的通透感， 摒弃所有复杂的修饰， 只保留最简单的元素： 一件米色针织开衫，一个乱糟糟的丸子头，和一束毫不吝啬的阳光， 不要让 AI 追求完美， 尽量展现真实感， 比如这个把头发别在耳后的动作， 和不设防的笑容， 才是真正的直男斩 创作思路： 让模特穿着简单的米色毛衣， 站在阳台上， 对着镜头羞涩一笑， 这种画面不用任何复杂的构图， 就能瞬间击中人心， 唤醒每个人记忆里 那个阳光最好的下午 Prompt 里的两个核心指令： 1. Hair Glow (发丝发光)：Rim light on hair (头发轮廓光) + Sunlight through hair (阳光穿透头发)，这让头发看起来金灿灿的，增加空气感 2. Face Exposure (面部曝光)：Overexposed background (过曝背景) + Soft fill light on face (面部柔和补光)，AI 会自动平衡大光比，保证背景亮的同时，脸也通透白皙",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -2725,21 +2470,19 @@
   {
     "title": "今日动作学习：锁定你了！（有没有击中你的心💙)",
     "slug": "今日动作学习锁定你了有没有击中你的心-1553606017",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI 绘画",
-      "数字人",
-      "动作捕捉",
-      "写实编辑"
+      "写实",
+      "人物",
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/今日动作学习锁定你了有没有击中你的心-1553606017.jpg",
     "date": "2026-01-20",
     "source": "https://x.com/i/status/2013182585606959277",
     "author": "古一 (MANISH1027512)",
-    "prompt": "今日动作学习：锁定你了！（有没有击中你的心💙) 前面给大家讲过，表情是让你的数字人活起来的第一步。 今天我们更进一步：给人物注入动作，让画面和人物立刻变得更有张力、灵动和冲击力。 这类姿态的关键不在摆手，而在于： 前景透视怎么写清楚，手部结构怎么锁得住，构图与景深怎么配合把力量推到镜头前。 答案👇🏻来吧，上传任意一张图，开始瞄准！！🎯 Photorealistic edit using the input person photo as strict identity reference: keep the same face, facial features, face proportions, skin tone, hairstyle (color/bangs/length/volume), outfit (design/material), and accessories unchanged (no face swap, no new person, no hair/outfit change). Only modify pose/hand gesture, camera per",
+    "prompt": "今日动作学习：锁定你了！（有没有击中你的心) 前面给大家讲过，表情是让你的数字人活起来的第一步。 今天我们更进一步：给人物注入动作，让画面和人物立刻变得更有张力、灵动和冲击力。 这类姿态的关键不在摆手，而在于： 前景透视怎么写清楚，手部结构怎么锁得住，构图与景深怎么配合把力量推到镜头前。 答案来吧，上传任意一张图，开始瞄准！！ Photorealistic edit using the input person photo as strict identity reference: keep the same face, facial features, face proportions, skin tone, hairstyle (color/bangs/length/volume), outfit (design/material), and accessories unchanged (no face swap, no new person, no hair/outfit change). Only modify pose/hand gesture, camera per",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -2749,14 +2492,12 @@
   {
     "title": "Ana de Armas is literally looking gorgeous here",
     "slug": "ana-de-armas-is-literally-looking-1554067528",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI_Art",
-      "AnaDeArmas",
-      "GeminiNano",
-      "Photorealistic"
+      "写实",
+      "人物",
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/ana-de-armas-is-literally-looking-1554067528.jpg",
@@ -2773,14 +2514,12 @@
   {
     "title": "Playful shadows and high-school nostalgia captured in a single frame. ☀️📚",
     "slug": "playful-shadows-and-high-school-1551218134",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "photography",
-      "creative prompts",
-      "fashion aesthetic",
-      "art direction"
+      "realistic",
+      "动物",
+      "极简"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/playful-shadows-and-high-school-1551218134.jpg",
@@ -2797,21 +2536,21 @@
   {
     "title": "Prompt share: Line art",
     "slug": "prompt-share-line-art-1551217833",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "abstract",
     "tags": [
-      "LineArt",
-      "AIArt",
-      "PromptEngineering",
-      "MinimalistDesign",
-      "CreativeInspiration"
+      "赛博朋克",
+      "极简",
+      "abstract",
+      "水墨",
+      "抽象"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/prompt-share-line-art-1551217833.jpg",
     "date": "2026-01-19",
     "source": "https://x.com/i/status/2012841665359483325",
     "author": "Amira Zairi (azed_ai)",
-    "prompt": "Prompt share: Line art 💬Prompt: A minimalistic illustration of a [subject], drawn in clean, abstract lines and simple shapes. Outlined in neon light blue and pink, set against a solid black background. No facial features or texture, flow, and luminous simplicity. Check ATLs for inspiration ✨",
+    "prompt": "share: Line art Prompt: A minimalistic illustration of a [subject], drawn in clean, abstract lines and simple shapes. Outlined in neon light blue and pink, set against a solid black background. No facial features or texture, flow, and luminous simplicity. Check ATLs for inspiration",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -2821,21 +2560,20 @@
   {
     "title": "Prompt Studio: Nano Banana Pro, Passport Odyssey, in Firefly",
     "slug": "prompt-studio-nano-banana-pro-passport-1552462717",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "3d",
     "tags": [
-      "AI Art",
-      "Creative Prompt",
-      "Adobe Firefly",
-      "3D Scene",
-      "Travel Visualization"
+      "人物",
+      "3D",
+      "3d",
+      "水墨"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/prompt-studio-nano-banana-pro-passport-1552462717.jpg",
     "date": "2026-01-19",
     "source": "https://x.com/i/status/2013269718572965934",
     "author": "Alexandra Aisling",
-    "prompt": "Prompt Studio: Nano Banana Pro, Passport Odyssey, in Firefly Epic 3D scene: a weathered passport lies open, its visa stamps erupting into the destinations they represent. Each ink impression becomes a portal—[CITY 1] rises in miniature from one stamp with [DETAIL 1], [CITY 2] pushes through another with [DETAIL 2], [CITY 3] manifests with [DETAIL 3]. [LANDMARK 1], [LANDMARK 2], and [LANDMARK 3] stand at different scales across the pages. Flight paths arc overhead as glowing golden trajectories w",
+    "prompt": "Studio: Nano Banana Pro, Passport Odyssey, in Firefly Epic 3D scene: a weathered passport lies open, its visa stamps erupting into the destinations they represent. Each ink impression becomes a portal—[CITY 1] rises in miniature from one stamp with [DETAIL 1], [CITY 2] pushes through another with [DETAIL 2], [CITY 3] manifests with [DETAIL 3]. [LANDMARK 1], [LANDMARK 2], and [LANDMARK 3] stand at different scales across the pages. Flight paths arc overhead as glowing golden trajectories w",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -2845,21 +2583,18 @@
   {
     "title": "AI 摄影新玩法：如何用 Prompt 实现频闪序列摄影 (Chronophotography) 效果？📷✨",
     "slug": "ai-摄影新玩法如何用-prompt-实现频闪序列摄影-1552460786",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI艺术",
-      "原神",
-      "时空摄影",
-      "AI摄影"
+      "写实",
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/ai-摄影新玩法如何用-prompt-实现频闪序列摄影-1552460786.jpg",
     "date": "2026-01-19",
     "source": "https://x.com/i/status/2013143051015958631",
     "author": "VoxCat (VoxcatAI)",
-    "prompt": "AI 摄影新玩法：如何用 Prompt 实现频闪序列摄影 (Chronophotography) 效果？📷✨ 尝试捕捉甘雨 (Ganyu) 释放大招瞬间的动态轨迹，利用“Stroboscopic”和“Motion trails”关键词，可以在单张画面中呈现时间的流动感。 这种风格打破了 AI 生成静态肖像的局限，非常适合表现战斗或舞蹈场景。 👇 详细 Prompt 和参数设置见下方评论区 (Thread) #AI艺术 #原神 #时空摄影",
+    "prompt": "AI 摄影新玩法：如何用 Prompt 实现频闪序列摄影 (Chronophotography) 效果？ 尝试捕捉甘雨 (Ganyu) 释放大招瞬间的动态轨迹，利用“Stroboscopic”和“Motion trails”关键词，可以在单张画面中呈现时间的流动感。 这种风格打破了 AI 生成静态肖像的局限，非常适合表现战斗或舞蹈场景。  详细 Prompt 和参数设置见下方评论区 (Thread) #AI艺术 #原神 #时空摄影",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -2869,14 +2604,11 @@
   {
     "title": "哈哈哈，自用的视频生成 Skill 终于做好了。",
     "slug": "哈哈哈自用的视频生成-skill-终于做好了-1552461132",
-    "model": "Midjourney v6",
+    "model": "Seedream",
     "category": "abstract",
     "tags": [
-      "Skills",
-      "视频",
-      "视频生成",
-      "AI技能",
-      "自动化工具"
+      "人物",
+      "abstract"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/哈哈哈自用的视频生成-skill-终于做好了-1552461132.jpg",
@@ -2893,14 +2625,13 @@
   {
     "title": "基于 @xpg0970 的思路和解析，实验基本成功。",
     "slug": "基于-xpg0970-的思路和解析实验基本成功-1550582992",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "abstract",
     "tags": [
-      "教程",
-      "AIGC工作流",
-      "AI视频生成",
-      "AI提示词工程",
-      "Kling2.6"
+      "写实",
+      "abstract",
+      "建筑",
+      "风景"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/基于-xpg0970-的思路和解析实验基本成功-1550582992.jpg",
@@ -2917,21 +2648,17 @@
   {
     "title": "🎇 径向爆裂构图模板 — 一套公式让任何角色拥有冲击力",
     "slug": "径向爆裂构图模板-一套公式让任何角色拥有冲击力-1550152144",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "portrait",
     "tags": [
-      "AI绘画",
-      "构图模板",
-      "AI生图",
-      "视觉特效",
-      "AI提示词工程"
+      "portrait"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/径向爆裂构图模板-一套公式让任何角色拥有冲击力-1550152144.jpg",
     "date": "2026-01-18",
     "source": "https://x.com/i/status/2012490859863052322",
     "author": "VoxcatAI",
-    "prompt": "🎇 径向爆裂构图模板 — 一套公式让任何角色拥有冲击力 这套模板你可以： ① 直接复制 → 秒出特效图 ② 拆解关键词 → 加入你自己的prompt --- 🔧 关键词拆解（可单独使用）： 【构图】 - explosive radial composition — 径向爆裂 - stands at the exact center — 精确居中 - small but razor‑sharp — 主体小而锐利 - center 20% radius clean — 中心留白 【元素】 - burst outward in 3 layers — 三层爆发 - foreground huge, mid dense, background small — 近大远小 - semi‑transparent + motion blur — 半透明+运动模糊 【光影】 - strong center backlight — 中心强背光 - rim light — 轮廓光勾边 - subject one stop brighter — 主体提亮 【约束】 - single subject, cente",
+    "prompt": "径向爆裂构图模板 — 一套公式让任何角色拥有冲击力 这套模板你可以： ① 直接复制 → 秒出特效图 ② 拆解关键词 → 加入你自己的prompt ---  关键词拆解（可单独使用）： 【构图】 - explosive radial composition — 径向爆裂 - stands at the exact center — 精确居中 - small but razor‑sharp — 主体小而锐利 - center 20% radius clean — 中心留白 【元素】 - burst outward in 3 layers — 三层爆发 - foreground huge, mid dense, background small — 近大远小 - semi‑transparent + motion blur — 半透明+运动模糊 【光影】 - strong center backlight — 中心强背光 - rim light — 轮廓光勾边 - subject one stop brighter — 主体提亮 【约束】 - single subject, cente",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -2941,14 +2668,10 @@
   {
     "title": "等距轴测的玩法一样可行",
     "slug": "等距轴测的玩法一样可行-1551027112",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "教程",
-      "AI视频生成",
-      "装修延时摄影",
-      "可灵AI",
-      "提示词工程"
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/等距轴测的玩法一样可行-1551027112.jpg",
@@ -2965,14 +2688,10 @@
   {
     "title": "很多时候觉得 AI 回答不够精准，不是模型不够聪明，而是我们提问的方式不对。要想驾驭好 AI，提示工程（Prompt Engineering）是必修课。",
     "slug": "很多时候觉得-ai-1551031540",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "abstract",
     "tags": [
-      "教程",
-      "OCR",
-      "百度",
-      "PaddleOCR",
-      "文档解析"
+      "abstract"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/很多时候觉得-ai-1551031540.jpg",
@@ -2989,21 +2708,17 @@
   {
     "title": "🎨 AI绘画 | 如何让角色\"伸手触碰你\"？",
     "slug": "ai绘画-如何让角色伸手触碰你-1551026925",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "portrait",
     "tags": [
-      "经验",
-      "AI绘画",
-      "构图技巧",
-      "广角镜头",
-      "镜头语言"
+      "portrait"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/ai绘画-如何让角色伸手触碰你-1551026925.jpg",
     "date": "2026-01-18",
     "source": "https://x.com/i/status/2012898820917801234",
     "author": "VoxCat (VoxcatAI)",
-    "prompt": "🎨 AI绘画 | 如何让角色\"伸手触碰你\"？ 核心秘诀： Wide Angle (24mm) + Extreme Foreshortening = 手大脸小的冲击感 📐 原理：广角镜头让近处物体放大，配合\"REACHING TOWARDS CAMERA\"指令，AI会把手画在最前面。 ✋ 多种手势变体： - 施予型：palm facing up → 神性、祝福 - 抓取型：pressing screen glass → 压迫、破壁 - 更多手势 📋 加入到你的提示词中： Wide Angle (24mm), Extreme Foreshortening, Pose: One hand REACHING TOWARDS CAMERA with [palm up / pressing screen] 换角色名+手势即可！试试看🔥",
+    "prompt": "AI绘画 | 如何让角色\"伸手触碰你\"？ 核心秘诀： Wide Angle (24mm) + Extreme Foreshortening = 手大脸小的冲击感  原理：广角镜头让近处物体放大，配合\"REACHING TOWARDS CAMERA\"指令，AI会把手画在最前面。 ✋ 多种手势变体： - 施予型：palm facing up → 神性、祝福 - 抓取型：pressing screen glass → 压迫、破壁 - 更多手势  加入到你的提示词中： Wide Angle (24mm), Extreme Foreshortening, Pose: One hand REACHING TOWARDS CAMERA with [palm up / pressing screen] 换角色名+手势即可！试试看",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -3013,14 +2728,13 @@
   {
     "title": "Educational AI art : [all night long]",
     "slug": "educational-ai-art-all-night-long-1550581964",
-    "model": "Midjourney v6",
+    "model": "Grok",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AIGenerated",
-      "GrokAI",
-      "SFW",
-      "AIArt"
+      "写实",
+      "人物",
+      "realistic",
+      "动物"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/educational-ai-art-all-night-long-1550581964.jpg",
@@ -3037,14 +2751,12 @@
   {
     "title": "Create an 8K hyper-realistic portrait in vertical 9:16 format, using the original face with 100% identical accuracy — absolutely no facial changes or facial structure alterations.",
     "slug": "create-an-8k-hyper-realistic-portrait-1550594950",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI_Image_Generation",
-      "Hyperrealistic_Portrait",
-      "Vintage_Photography",
-      "Cinematic_Lighting"
+      "写实",
+      "人物",
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/create-an-8k-hyper-realistic-portrait-1550594950.jpg",
@@ -3061,14 +2773,12 @@
   {
     "title": "今日份表情：俏皮+诱惑",
     "slug": "今日份表情俏皮诱惑-1548951362",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI生成",
-      "自拍写真",
-      "人像摄影",
-      "日本餐厅"
+      "人物",
+      "realistic",
+      "水墨"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/今日份表情俏皮诱惑-1548951362.jpg",
@@ -3085,14 +2795,11 @@
   {
     "title": "首尾帧图+过渡提示词就能搞定这种视频了，用的keling2.6模型",
     "slug": "首尾帧图过渡提示词就能搞定这种视频了用的keling26模型-1548706716",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "cyberpunk",
     "tags": [
-      "教程",
-      "视频",
-      "AI视频生成",
-      "提示词工程",
-      "AIGC教程"
+      "写实",
+      "cyberpunk"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/首尾帧图过渡提示词就能搞定这种视频了用的keling26模型-1548706716.jpg",
@@ -3109,21 +2816,20 @@
   {
     "title": "Sydney Sweeney vibes ✨",
     "slug": "sydney-sweeney-vibes-1548950981",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "Nanobanana",
-      "AI Art",
-      "Nano Banana Pro",
-      "AI Prompt"
+      "写实",
+      "人物",
+      "realistic",
+      "水墨"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/sydney-sweeney-vibes-1548950981.jpg",
     "date": "2026-01-17",
     "source": "https://x.com/i/status/2011913223964852336",
     "author": "Melisa♡ xmliisu",
-    "prompt": "Sydney Sweeney vibes ✨ Nano Banana Pro Prompt: { \"style\": \"ultra-realistic studio portrait\", \"subject\": { \"gender\": \"female\", \"age\": \"young adult\", \"pose\": \"leaning slightly forward toward the camera\", \"expression\": \"playful, flirty\", \"facial_details\": { \"wink\": true, \"tongue_out\": true, \"freckles\": \"natural across fair skin\", \"makeup\": { \"blush\": \"soft pink\", \"lips\": \"glossy\" } }, \"hair\": { \"color\": \"blonde\", \"length\": \"long\", \"part\": \"side-parted\", \"style\": \"falling naturally over shoulders\" }",
+    "prompt": "Sydney Sweeney vibes  Nano Banana Pro Prompt: { \"style\": \"ultra-realistic studio portrait\", \"subject\": { \"gender\": \"female\", \"age\": \"young adult\", \"pose\": \"leaning slightly forward toward the camera\", \"expression\": \"playful, flirty\", \"facial_details\": { \"wink\": true, \"tongue_out\": true, \"freckles\": \"natural across fair skin\", \"makeup\": { \"blush\": \"soft pink\", \"lips\": \"glossy\" } }, \"hair\": { \"color\": \"blonde\", \"length\": \"long\", \"part\": \"side-parted\", \"style\": \"falling naturally over shoulders\" }",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -3133,14 +2839,10 @@
   {
     "title": "刚在 GitHub 翻到一个 Nano Banana Pro 的提示词仓库，",
     "slug": "刚在-github-翻到一个-nano-banana-pro-的提示词仓库-1548949206",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "abstract",
     "tags": [
-      "Nanobanana",
-      "AI提示词",
-      "NanoBananaPro",
-      "GitHub资源",
-      "免费工具"
+      "abstract"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/刚在-github-翻到一个-nano-banana-pro-的提示词仓库-1548949206.jpg",
@@ -3157,21 +2859,20 @@
   {
     "title": "分享一组极高频细节的皮肤纹理 Prompt。✨",
     "slug": "分享一组极高频细节的皮肤纹理-prompt-1548949856",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "Nanobanana",
-      "AI绘画",
-      "超写实皮肤",
-      "游戏CG",
-      "纹理材质"
+      "写实",
+      "人物",
+      "realistic",
+      "动物"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/分享一组极高频细节的皮肤纹理-prompt-1548949856.jpg",
     "date": "2026-01-17",
     "source": "https://x.com/i/status/2012187306543939803",
     "author": "VoxcatAI",
-    "prompt": "分享一组极高频细节的皮肤纹理 Prompt。✨ 这套Prompt专攻次世代游戏级（Next-gen CG）的超写实皮肤材质。 SSS次表面散射 + 锐利的毛孔细节，原本平滑的面部瞬间拥有了真实的地形感和生命力。 实测可以生成非常有质感的人像，或者作为关键字加入你的提示词当中，光影和皮肤颗粒感很绝，适合 9:16 比例创作。 提示词👇 Next-gen game CG level hyper-realistic PBR skin material, natural and lifelike skin tone, rich subsurface scattering (SSS) for translucent organic feel, ultra-high frequency details, sharp visibility of real pores, fine lines, and skin grain, realistic specular highlights and skin elasticity, raw facial topography with no smoothin",
+    "prompt": "分享一组极高频细节的皮肤纹理 Prompt。 这套Prompt专攻次世代游戏级（Next-gen CG）的超写实皮肤材质。 SSS次表面散射 + 锐利的毛孔细节，原本平滑的面部瞬间拥有了真实的地形感和生命力。 实测可以生成非常有质感的人像，或者作为关键字加入你的提示词当中，光影和皮肤颗粒感很绝，适合 9:16 比例创作。 提示词 Next-gen game CG level hyper-realistic PBR skin material, natural and lifelike skin tone, rich subsurface scattering (SSS) for translucent organic feel, ultra-high frequency details, sharp visibility of real pores, fine lines, and skin grain, realistic specular highlights and skin elasticity, raw facial topography with no smoothin",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -3181,14 +2882,10 @@
   {
     "title": "之前学习肖师傅@xiaojietongxue 基本跑通过一次这个工作流，看起来简单，实操才知道还是挺不容易的。",
     "slug": "之前学习肖师傅xiaojietongxue-1548950726",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "abstract",
     "tags": [
-      "视频",
-      "教程",
-      "AI视频制作",
-      "分镜图",
-      "Nanobanana"
+      "abstract"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/之前学习肖师傅xiaojietongxue-1548950726.jpg",
@@ -3205,21 +2902,18 @@
   {
     "title": "Nano Banana Pro 3×3网格高端影棚产品故事板方案",
     "slug": "nano-banana-pro-33网格高端影棚产品故事板方案-1549173264",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "产品摄影",
-      "故事板",
-      "AI提示词",
-      "品牌设计"
+      "realistic",
+      "产品"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/nano-banana-pro-33网格高端影棚产品故事板方案-1549173264.jpg",
     "date": "2026-01-17",
     "source": "https://x.com/i/status/2012527817477828745",
     "author": "松果先森",
-    "prompt": "Nano Banana Pro 3×3网格高端影棚产品故事板方案 Nano Banana Pro提示词： { \"OverallLayout\": { \"Format\": \"3×3 grid storyboard, nine equal panels on 4:5 ratio canvas\", \"Style\": \"High-end designer mockup, editorial, curated, design-driven\", \"Focus\": \"Form, composition, materiality, visual rhythm over lifestyle narrative\", \"ProductConsistency\": \"Exact same product, packaging, branding, materials, colors, proportions maintained across all nine panels\", \"ProductRecognition\": \"Product clearly recognizable in every frame, ",
+    "prompt": "Nano Banana Pro 3×3网格高端影棚产品故事板方案 Nano Banana Pro提示词： { \"OverallLayout\": { \"Format\": \"3×3 grid storyboard, nine equal panels on 4:5 ratio canvas\", \"Style\": \"High-end designer mockup, editorial, curated, design-driven\", \"Focus\": \"Form, composition, materiality, visual rhythm over lifestyle narrative\", \"ProductConsistency\": \"Exact same product, packaging, branding, materials, colors, proportions maintained across all nine panels\", \"ProductRecognition\": \"Product clearly recognizable in every frame,",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -3229,21 +2923,19 @@
   {
     "title": "这个姿势很美呀，不会给女朋友拍照的看过来😁",
     "slug": "这个姿势很美呀不会给女朋友拍照的看过来-1549183256",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI摄影",
-      "AI绘画",
-      "人像摄影",
-      "艺术指导"
+      "写实",
+      "人物",
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/这个姿势很美呀不会给女朋友拍照的看过来-1549183256.jpg",
     "date": "2026-01-17",
     "source": "https://x.com/i/status/2012344650875732430",
     "author": "Adam也叫吉米",
-    "prompt": "这个姿势很美呀，不会给女朋友拍照的看过来😁 This pose is gorgeous! Gentlemen who can't take photos of their girlfriends, take notes. Prompt👇 { \"prompt_details\": { \"subject\": { \"type\": \"Young woman ,the person I uploaded \", \"appearance\": { \"hair\": \"Long, dark chestnut brown, loose waves, falling over face, messy aesthetic\", \"skin\": \"Fair complexion, smooth texture, natural finish\", \"face\": \"Looking downward, face partially obscured by hair, introspective expression.The facial features are consistent with the reference",
+    "prompt": "这个姿势很美呀，不会给女朋友拍照的看过来 This pose is gorgeous! Gentlemen who can't take photos of their girlfriends, take notes. Prompt { \"prompt_details\": { \"subject\": { \"type\": \"Young woman ,the person I uploaded \", \"appearance\": { \"hair\": \"Long, dark chestnut brown, loose waves, falling over face, messy aesthetic\", \"skin\": \"Fair complexion, smooth texture, natural finish\", \"face\": \"Looking downward, face partially obscured by hair, introspective expression.The facial features are consistent with the reference",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -3253,14 +2945,13 @@
   {
     "title": "俏皮女生",
     "slug": "俏皮女生-1548950829",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI绘画",
-      "NanoBananaPro",
-      "提示词工程",
-      "超写实肖像"
+      "写实",
+      "realistic",
+      "风景",
+      "水墨"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/俏皮女生-1548950829.jpg",
@@ -3277,14 +2968,10 @@
   {
     "title": "通用提示词：",
     "slug": "通用提示词-1547383795",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "abstract",
     "tags": [
-      "AI提示词",
-      "数据可视化",
-      "个人成长",
-      "工具分享",
-      "设计风格"
+      "abstract"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/通用提示词-1547383795.jpg",
@@ -3301,14 +2988,13 @@
   {
     "title": "50多个超实用的Nano Banana Pro的提示词：",
     "slug": "50多个超实用的nano-banana-pro的提示词-1547756277",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "abstract",
     "tags": [
-      "Nanobanana",
-      "Nano Banana Pro",
-      "AI Prompt",
-      "AI Tools",
-      "Design"
+      "写实",
+      "概念艺术",
+      "abstract",
+      "产品"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/50多个超实用的nano-banana-pro的提示词-1547756277.jpg",
@@ -3325,21 +3011,21 @@
   {
     "title": "新中式重构提示词框架：",
     "slug": "新中式重构提示词框架-1547290906",
-    "model": "Midjourney v6",
+    "model": "Midjourney",
     "category": "abstract",
     "tags": [
-      "AI Art",
-      "Midjourney",
-      "Chinese Aesthetic",
-      "Prompt Engineering",
-      "Guochao"
+      "动物",
+      "风景",
+      "abstract",
+      "水墨",
+      "奇幻"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/新中式重构提示词框架-1547290906.jpg",
     "date": "2026-01-16",
     "source": "https://x.com/i/status/2012005928942604516",
     "author": "VoxCat",
-    "prompt": "新中式重构提示词框架： 不管你输入什么主题，都先自动分类（灵兽/偃甲/器物/意象）， 再强制注入“三位一体”美学： 白玉为骨（羊脂玉结构）｜流金为血（金缮液态金强调裂纹/关节）｜水墨为魂（吐息/烟/能量全部水墨化）。 示例：哥斯拉走灵兽化，背鳍/鳞刺直接转成「千里江山」层叠墨山，画面用大留白+边缘光+黑金红青传统配色。 Prompt 👇 # Role: New Chinese Aesthetic Architect ## 1. Goal You are an expert in \"New Chinese Style\" (Guochao) AI image generation. Your task is to take ANY user input (Subject), analyze its nature, effectively categorize it, and generate a specific Midjourney Prompt that reimagines it with an Oriental Fantasy aesthetic. ## 2. Core Aesth",
+    "prompt": "新中式重构提示词框架： 不管你输入什么主题，都先自动分类（灵兽/偃甲/器物/意象）， 再强制注入“三位一体”美学： 白玉为骨（羊脂玉结构）｜流金为血（金缮液态金强调裂纹/关节）｜水墨为魂（吐息/烟/能量全部水墨化）。 示例：哥斯拉走灵兽化，背鳍/鳞刺直接转成「千里江山」层叠墨山，画面用大留白+边缘光+黑金红青传统配色。 Prompt  # Role: New Chinese Aesthetic Architect ## 1. Goal You are an expert in \"New Chinese Style\" (Guochao) AI image generation. Your task is to take ANY user input (Subject), analyze its nature, effectively categorize it, and generate a specific Midjourney Prompt that reimagines it with an Oriental Fantasy aesthetic. ## 2. Core Aesth",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -3349,14 +3035,12 @@
   {
     "title": "雪夜紫禁城中，穿越时空、华美而庄严的中式梦幻意境。",
     "slug": "雪夜紫禁城中穿越时空华美而庄严的中式梦幻意境-1547329006",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI视频",
-      "AI绘画",
-      "AI艺术",
-      "AI提示词"
+      "人物",
+      "realistic",
+      "动物"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/雪夜紫禁城中穿越时空华美而庄严的中式梦幻意境-1547329006.jpg",
@@ -3373,21 +3057,18 @@
   {
     "title": "Nano Banana prompt:",
     "slug": "nano-banana-prompt-1543511802",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "abstract",
     "tags": [
-      "AI Art",
-      "Generative AI",
-      "Nano Banana",
-      "Image Generation",
-      "Design Prompt"
+      "写实",
+      "abstract"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/nano-banana-prompt-1543511802.jpg",
     "date": "2026-01-15",
     "source": "https://x.com/i/status/2011441977447911691",
     "author": "AmirMušić AmirMushich",
-    "prompt": "Nano Banana prompt: Photo from Google Maps to a diagram view 👉 Prompt: [Create a hand drawn isometric schematic diagram of this street] (Get more of my prompts here: https://t.co/hvuSqsRFvc)",
+    "prompt": "Nano Banana prompt: Photo from Google Maps to a diagram view  Prompt: [Create a hand drawn isometric schematic diagram of this street] (Get more of my prompts here: https://t.co/hvuSqsRFvc)",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -3397,14 +3078,13 @@
   {
     "title": "中式：对镜贴花黄 ，当户理红妆",
     "slug": "中式对镜贴花黄-当户理红妆-1543510156",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI绘画",
-      "NanoPro",
-      "AI生成图像",
-      "AI摄影"
+      "写实",
+      "人物",
+      "realistic",
+      "风景"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/中式对镜贴花黄-当户理红妆-1543510156.jpg",
@@ -3421,21 +3101,18 @@
   {
     "title": "如何学习一张图片并制作成提示词？",
     "slug": "如何学习一张图片并制作成提示词-1546415608",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI绘画",
-      "提示词工程",
-      "人像生成",
-      "学习参考图"
+      "人物",
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/如何学习一张图片并制作成提示词-1546415608.jpg",
     "date": "2026-01-15",
     "source": "https://x.com/i/status/2011807250449645695",
     "author": "骑司Chase",
-    "prompt": "如何学习一张图片并制作成提示词？\nSTEP 1 先弄清楚自己想要的效果是什么？\nSTEP 2 使用AI反推提示词\nSTEP 3 测试并详细写出修改点\nSTEP 4 修改提示词\n✅图一为AI出图\n✅图二为学习参考图\n✍️中文提示词：\n一、主体与氛围目标\n1 主体：年轻女性中景人像，上半身占画面主体，直视镜头\n2 氛围：甜酷俏皮但不幼态，带一点英气与自信的表情气质\n3 动作表情：左眼眨眼，右眼睁开有神；轻微微笑，嘴角上扬\n4 视线关系：眼部对焦镜头，强互动感\n二、构图与镜头语言\n1 景别：中景，头顶到胸上部，脸部与手部同框\n2 构图：中心构图，面部居中略偏上；手臂在下方形成支撑与包围\n3 机位：平视略微俯拍\n4 焦段：中长焦半身人像感，背景压缩\n5 景深：\n对焦点：对焦在眼部最锐\n清晰范围：清晰覆盖双眼到鼻尖\n软化范围：从嘴部到耳朵到后侧头发明显柔化\n手部：手部比脸稍软，针织纹理可辨但不锐\n过渡：清晰到虚化过渡顺滑，不硬切\n量化补丁：总景深目标约一到三厘米（增强层次但不过分）\n6 画面比例（必须遵守）：竖幅，左右两边必须留出明显背景，人物所有肢体不能超出画面\n三、光影与背景\n1 光源：柔光",
+    "prompt": "如何学习一张图片并制作成提示词？\nSTEP 1 先弄清楚自己想要的效果是什么？\nSTEP 2 使用AI反推提示词\nSTEP 3 测试并详细写出修改点\nSTEP 4 修改提示词\n✅图一为AI出图\n✅图二为学习参考图\n✍中文提示词：\n一、主体与氛围目标\n1 主体：年轻女性中景人像，上半身占画面主体，直视镜头\n2 氛围：甜酷俏皮但不幼态，带一点英气与自信的表情气质\n3 动作表情：左眼眨眼，右眼睁开有神；轻微微笑，嘴角上扬\n4 视线关系：眼部对焦镜头，强互动感\n二、构图与镜头语言\n1 景别：中景，头顶到胸上部，脸部与手部同框\n2 构图：中心构图，面部居中略偏上；手臂在下方形成支撑与包围\n3 机位：平视略微俯拍\n4 焦段：中长焦半身人像感，背景压缩\n5 景深：\n对焦点：对焦在眼部最锐\n清晰范围：清晰覆盖双眼到鼻尖\n软化范围：从嘴部到耳朵到后侧头发明显柔化\n手部：手部比脸稍软，针织纹理可辨但不锐\n过渡：清晰到虚化过渡顺滑，不硬切\n量化补丁：总景深目标约一到三厘米（增强层次但不过分）\n6 画面比例（必须遵守）：竖幅，左右两边必须留出明显背景，人物所有肢体不能超出画面\n三、光影与背景\n1 光源：柔光",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -3445,14 +3122,10 @@
   {
     "title": "有意思！用AI生成属于自己的“人生仪表盘”！！！",
     "slug": "有意思用ai生成属于自己的人生仪表盘-1544796176",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "abstract",
     "tags": [
-      "AI",
-      "数据可视化",
-      "仪表盘",
-      "个人管理",
-      "人生系统"
+      "abstract"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/有意思用ai生成属于自己的人生仪表盘-1544796176.jpg",
@@ -3469,21 +3142,19 @@
   {
     "title": "🔥朋友们这套提示词绝了！上传你的靓照就可以生成你跟自己的街头涂鸦合照，社媒疯传预定！",
     "slug": "朋友们这套提示词绝了上传你的靓照就可以生成你跟自己的街头涂鸦合照社媒疯传预定-1543508238",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI生成艺术",
-      "街头涂鸦",
-      "提示词工程",
-      "社媒趋势"
+      "人物",
+      "realistic",
+      "动物"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/朋友们这套提示词绝了上传你的靓照就可以生成你跟自己的街头涂鸦合照社媒疯传预定-1543508238.jpg",
     "date": "2026-01-15",
     "source": "https://x.com/i/status/2011436742654779847",
     "author": "MapleShaw msjiaozhu",
-    "prompt": "🔥朋友们这套提示词绝了！上传你的靓照就可以生成你跟自己的街头涂鸦合照，社媒疯传预定！ 内置了四个主题场景（新年，赛博，民国，国潮），提示词里面这部分可以自定义👇 \"mural_main_text\": \"月入百万\", \"mural_secondary_text\": \"2026\", \"theme\": \"New Year Festive\",（从 style_pool 里面挑一个） 快来赛出你的靓作！😍 { \"task_description\": \"Create a natural street portrait of a real person standing in front of a layered, messy graffiti wall. The wall features a spontaneous, hand-painted caricature of the person.\", \"global_settings\": { \"aspect_ratio\": \"4:3\", \"camera_view\": \"Front-on or slight 15-degree angle; avoi",
+    "prompt": "朋友们这套提示词绝了！上传你的靓照就可以生成你跟自己的街头涂鸦合照，社媒疯传预定！ 内置了四个主题场景（新年，赛博，民国，国潮），提示词里面这部分可以自定义 \"mural_main_text\": \"月入百万\", \"mural_secondary_text\": \"2026\", \"theme\": \"New Year Festive\",（从 style_pool 里面挑一个） 快来赛出你的靓作！ { \"task_description\": \"Create a natural street portrait of a real person standing in front of a layered, messy graffiti wall. The wall features a spontaneous, hand-painted caricature of the person.\", \"global_settings\": { \"aspect_ratio\": \"4:3\", \"camera_view\": \"Front-on or slight 15-degree angle; avoi",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -3493,14 +3164,12 @@
   {
     "title": "最近总刷到用 Gemini Pro 做粒子互动特效的帖子，",
     "slug": "最近总刷到用-gemini-pro-做粒子互动特效的帖子-1545425027",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "abstract",
     "tags": [
-      "Gemini3",
-      "AI变现",
-      "体感教育",
-      "图片分析",
-      "无人直播"
+      "人物",
+      "abstract",
+      "产品"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/最近总刷到用-gemini-pro-做粒子互动特效的帖子-1545425027.jpg",
@@ -3517,14 +3186,10 @@
   {
     "title": "很多人诧异：为什么那些非科班出身、没有提示词工程经验的人，反而能写出最硬核的 Prompt？",
     "slug": "很多人诧异为什么那些非科班出身没有提示词工程经验的人反而能写出最硬核的-1543490178",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "abstract",
     "tags": [
-      "教程",
-      "AI提示词工程",
-      "元思维",
-      "AI思维",
-      "人机协同"
+      "abstract"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/很多人诧异为什么那些非科班出身没有提示词工程经验的人反而能写出最硬核的-1543490178.jpg",
@@ -3541,21 +3206,19 @@
   {
     "title": "一次意外，我写出了这个能把场景和人物完美融合的提示词（完整提示词放在文末）",
     "slug": "一次意外我写出了这个能把场景和人物完美融合的提示词完整提示词放在文末-1546417012",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "portrait",
     "tags": [
-      "教程",
-      "AI图像生成",
-      "提示词工程",
-      "场景融合",
-      "Gemini"
+      "写实",
+      "人物",
+      "portrait"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/一次意外我写出了这个能把场景和人物完美融合的提示词完整提示词放在文末-1546417012.jpg",
     "date": "2026-01-15",
     "source": "https://x.com/i/status/2009235181841109447",
     "author": "骑司Chase",
-    "prompt": "一次意外，我写出了这个能把场景和人物完美融合的提示词（完整提示词放在文末） 起因是一位圈友找我，希望能把一个人物素材放进场景里，需要人物和环境光线保持一致，还要保持真实感（图一是提供的场景和人物） 因为他是多家私人影院的老板，需要这样的素材做成视频来吸引客人。 我开始感觉挺简单的，就把场景图和人物图都导入Gemini，写了个简单的提示词就直接生成了，结果就是大翻车！ 📂图一为场景素材 📂图二为人物素材 ❎图三为翻车效果 ✅图四为使用提示词后的效果 这个时候我才意识到肯定有很多AI小白都会遇到这个问题，所以我经过多次调试，写出了这个系统的【融合场景人物】提示词，并且支持自定义人物动作等元素。 使用方式： 1️⃣上传场景图 2️⃣上传人物图 3️⃣粘贴提示词 4️⃣输入自定义指令（可选） ✨另外，AIX社群199早享价还有最后10个名额🔥详细介绍看引用的原帖，联系V：Chase_7380 参与报名",
+    "prompt": "一次意外，我写出了这个能把场景和人物完美融合的提示词（完整提示词放在文末） 起因是一位圈友找我，希望能把一个人物素材放进场景里，需要人物和环境光线保持一致，还要保持真实感（图一是提供的场景和人物） 因为他是多家私人影院的老板，需要这样的素材做成视频来吸引客人。 我开始感觉挺简单的，就把场景图和人物图都导入Gemini，写了个简单的提示词就直接生成了，结果就是大翻车！ 图一为场景素材 图二为人物素材 ❎图三为翻车效果 ✅图四为使用提示词后的效果 这个时候我才意识到肯定有很多AI小白都会遇到这个问题，所以我经过多次调试，写出了这个系统的【融合场景人物】提示词，并且支持自定义人物动作等元素。 使用方式： 1⃣上传场景图 2⃣上传人物图 3⃣粘贴提示词 4⃣输入自定义指令（可选） 另外，AIX社群199早享价还有最后10个名额详细介绍看引用的原帖，联系V：Chase_7380 参与报名",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -3565,21 +3228,17 @@
   {
     "title": "又一个 多智能体推演 AI，在 GitHub 开源了。",
     "slug": "又一个-多智能体推演-ai在-github-开源了-1543683796",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "abstract",
     "tags": [
-      "多智能体推演",
-      "AI模拟",
-      "GitHub开源",
-      "时间线演化",
-      "智能体博弈"
+      "abstract"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/又一个-多智能体推演-ai在-github-开源了-1543683796.jpg",
     "date": "2026-01-15",
     "source": "https://x.com/i/status/2011288170575642850",
     "author": "Hedy.eth 🎮 Crypto_hedyEth",
-    "prompt": "又一个 多智能体推演 AI，在 GitHub 开源了。 🔗 https://t.co/Er8sfrfjin 只需丢一个“种子”， AI 会生成多个有记忆、有性格的智能体， 在模拟世界里反复博弈、演化， 分叉出不同时间线， 最后给你一份完整推演报告。",
+    "prompt": "又一个 多智能体推演 AI，在 GitHub 开源了。  https://t.co/Er8sfrfjin 只需丢一个“种子”， AI 会生成多个有记忆、有性格的智能体， 在模拟世界里反复博弈、演化， 分叉出不同时间线， 最后给你一份完整推演报告。",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -3589,21 +3248,19 @@
   {
     "title": "🎨 HAILUO 2.3 🎨",
     "slug": "hailuo-23-1544802351",
-    "model": "Midjourney v6",
+    "model": "Hailuo",
     "category": "abstract",
     "tags": [
-      "视频",
-      "AI Art",
-      "Prompt Engineering",
-      "Digital Art",
-      "Hailuo AI"
+      "抽象",
+      "abstract",
+      "水墨"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/hailuo-23-1544802351.jpg",
     "date": "2026-01-15",
     "source": "https://x.com/i/status/2011547637070156106",
     "author": "LudovicCreator",
-    "prompt": "🎨 HAILUO 2.3 🎨 Prompt used : A dark, stormy sky is filled with swirling clouds of black and deep blue ink. Lightning crackles through the sky, and with each strike, a burst of ink splashes outward. Suddenly, the word 'REVEAL' emerges from the storm, each letter formed from thick, smoky ink tendrils suspended mid-air. The camera slowly pushes forward as the ink particles swirl and break apart, distorting the word into an abstract shape. Made in @Hailuo_AI",
+    "prompt": "HAILUO 2.3  Prompt used : A dark, stormy sky is filled with swirling clouds of black and deep blue ink. Lightning crackles through the sky, and with each strike, a burst of ink splashes outward. Suddenly, the word 'REVEAL' emerges from the storm, each letter formed from thick, smoky ink tendrils suspended mid-air. The camera slowly pushes forward as the ink particles swirl and break apart, distorting the word into an abstract shape. Made in @Hailuo_AI",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -3613,21 +3270,17 @@
   {
     "title": "感谢李继刚大神，我可太喜欢这个公式解码了。趁着见客户间隙，基于此我写成了一个skill。感觉以后有不懂的论文公式细节都可以用起这个了，赞～",
     "slug": "感谢李继刚大神我可太喜欢这个公式解码了趁着见客户间隙基于此我写成了一个skill-1543068285",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "abstract",
     "tags": [
-      "Skills",
-      "数学学习",
-      "AI应用",
-      "技能开发",
-      "公式解析"
+      "abstract"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/感谢李继刚大神我可太喜欢这个公式解码了趁着见客户间隙基于此我写成了一个skill-1543068285.jpg",
     "date": "2026-01-14",
     "source": "https://x.com/i/status/2011312395747279235",
     "author": "岚叔 (LufzzLiz)",
-    "prompt": "感谢李继刚大神，我可太喜欢这个公式解码了。趁着见客户间隙，基于此我写成了一个skill。感觉以后有不懂的论文公式细节都可以用起这个了，赞～ 先快速发一版，后面再继续迭代 Skill开源地址见评论👇",
+    "prompt": "感谢李继刚大神，我可太喜欢这个公式解码了。趁着见客户间隙，基于此我写成了一个skill。感觉以后有不懂的论文公式细节都可以用起这个了，赞～ 先快速发一版，后面再继续迭代 Skill开源地址见评论",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -3637,21 +3290,18 @@
   {
     "title": "Prompt Studio: Nano Banana Pro Expedition Planning Board, in Firefly",
     "slug": "prompt-studio-nano-banana-pro-1542834490",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "abstract",
     "tags": [
-      "Nanobanana",
-      "AI Art",
-      "Prompt Engineering",
-      "Adobe Firefly",
-      "Expedition Planning"
+      "写实",
+      "abstract"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/prompt-studio-nano-banana-pro-1542834490.jpg",
     "date": "2026-01-14",
     "source": "https://x.com/i/status/2011097657385619460",
     "author": "Alexandra Aisling",
-    "prompt": "Prompt Studio: Nano Banana Pro Expedition Planning Board, in Firefly An expedition leader's planning board for [JOURNEY / MISSION] — [DESTINATION / ERA]. Left section: route map with topographical detail, waypoints marked, danger zones annotated, and timeline running along the margin. Center section: complete kit layout, every piece of equipment photographed from above in organized rows, weight and function noted, redundancies highlighted, nothing extraneous. Right section: the expedition in pro",
+    "prompt": "Studio: Nano Banana Pro Expedition Planning Board, in Firefly An expedition leader's planning board for [JOURNEY / MISSION] — [DESTINATION / ERA]. Left section: route map with topographical detail, waypoints marked, danger zones annotated, and timeline running along the margin. Center section: complete kit layout, every piece of equipment photographed from above in organized rows, weight and function noted, redundancies highlighted, nothing extraneous. Right section: the expedition in pro",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -3661,14 +3311,11 @@
   {
     "title": "谷歌 Veo 3.1 昨晚这个更新牛皮啊",
     "slug": "谷歌-veo-31-昨晚这个更新牛皮啊-1543095027",
-    "model": "Midjourney v6",
+    "model": "Google Veo",
     "category": "abstract",
     "tags": [
-      "veo",
-      "Veo 3.1",
-      "Google AI",
-      "Video Generation",
-      "Genie 3"
+      "人物",
+      "abstract"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/谷歌-veo-31-昨晚这个更新牛皮啊-1543095027.jpg",
@@ -3685,14 +3332,11 @@
   {
     "title": "谷歌 Veo 3.1 昨晚这个更新牛皮啊",
     "slug": "谷歌-veo-31-昨晚这个更新牛皮啊-1543095026",
-    "model": "Midjourney v6",
+    "model": "Google Veo",
     "category": "abstract",
     "tags": [
-      "veo",
-      "谷歌Veo",
-      "视频生成",
-      "多图参考",
-      "4K超分"
+      "人物",
+      "abstract"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/谷歌-veo-31-昨晚这个更新牛皮啊-1543095026.jpg",
@@ -3709,21 +3353,18 @@
   {
     "title": "Kling 2.6 Prompt",
     "slug": "kling-26-prompt-1542371129",
-    "model": "Midjourney v6",
+    "model": "Kling",
     "category": "abstract",
     "tags": [
-      "视频",
-      "Kling",
-      "Kling 2.6",
-      "FPV Cinematic",
-      "AI Video Generation"
+      "abstract",
+      "动物"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/kling-26-prompt-1542371129.jpg",
     "date": "2026-01-14",
     "source": "https://x.com/MayorKingAI/status/2010763673942589880?s=20",
     "author": "MayorKingAI",
-    "prompt": "Kling 2.6 Prompt High in a frozen mountain range beneath storm-filled skies, a massive medieval battle erupts as the Hyperspeed FPV camera races inches above the snow-covered ground, weaving between armored warriors clashing swords and shields, sparks and blood flying in slow streaks of motion blur. The camera suddenly accelerates upward, chasing flaming arrows cutting through the air, spinning tightly around massive wooden catapults launching fireballs, then surging forward through a crumbling ",
+    "prompt": "Kling 2.6 Prompt High in a frozen mountain range beneath storm-filled skies, a massive medieval battle erupts as the Hyperspeed FPV camera races inches above the snow-covered ground, weaving between armored warriors clashing swords and shields, sparks and blood flying in slow streaks of motion blur. The camera suddenly accelerates upward, chasing flaming arrows cutting through the air, spinning tightly around massive wooden catapults launching fireballs, then surging forward through a crumbling",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -3733,21 +3374,21 @@
   {
     "title": "X 上的 路飞 🏴‍☠️ AI 研究员🧐：“2026 必收藏的 Nano Banana Pro 提示词库！ 💎 500+ 高质量提示词，免费领： 🔗 https://t.co/GCuSVVr4Vb 我把 Nano Banana Pro 真正能出片的提示词 一次性全拆出来了👇 覆盖 6 个高频创作方向： 🎭 人像 / 🏛️ 建筑 / 🎨 插画 🏷️ 品牌 / 📸 摄影 / 🚀 科幻 每条都是调好的模板，拿来即用 🧵 https://t.co/6UZONQn7Cp” / X",
     "slug": "x-上的-路飞-ai-研究员2026-必收藏的-nano-banana-pro-1542243694",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "cyberpunk",
     "tags": [
-      "Nanobanana",
-      "AI工具",
-      "提示词库",
-      "内容创作",
-      "图像生成"
+      "建筑",
+      "科幻",
+      "人物",
+      "写实",
+      "cyberpunk"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/x-上的-路飞-ai-研究员2026-必收藏的-nano-banana-pro-1542243694.jpg",
     "date": "2026-01-14",
     "source": "https://x.com/0xluffy_eth/status/2010617819206180998",
     "author": "路飞 🏴‍☠️ AI 研究员🧐 0xluffy_eth",
-    "prompt": "2026 必收藏的 Nano Banana Pro 提示词库！ 💎 500+ 高质量提示词，免费领： 🔗 https://t.co/fSOA4TvAZP 我把 Nano Banana Pro 真正能出片的提示词 一次性全拆出来了👇 覆盖 6 个高频创作方向： 🎭 人像 / 🏛️ 建筑 / 🎨 插画 🏷️ 品牌 / 📸 摄影 / 🚀 科幻 每条都是调好的模板，拿来即用 🧵 下面再送 5 个宝藏提示词站 建议全部收藏 ↓",
+    "prompt": "2026 必收藏的 Nano Banana Pro 提示词库！  500+ 高质量提示词，免费领：  https://t.co/fSOA4TvAZP 我把 Nano Banana Pro 真正能出片的提示词 一次性全拆出来了 覆盖 6 个高频创作方向：  人像 /  建筑 /  插画  品牌 /  摄影 /  科幻 每条都是调好的模板，拿来即用  下面再送 5 个宝藏提示词站 建议全部收藏 ↓",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -3757,21 +3398,17 @@
   {
     "title": "基于宝玉这个，开发了一个skill：用来基于内容生成一个小红书风格的信息图。目前有两套提示词，一套是宝佬的，一套是微调过的。会输出一个大json，刚刚试了下直接将json喂给Gemini 生图模式下，直接批量给你生成图片了。",
     "slug": "基于宝玉这个开发了一个skill用来基于内容生成一个小红书风格的信息图目前有两套-1542353112",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "abstract",
     "tags": [
-      "Skills",
-      "AI图像生成",
-      "小红书风格",
-      "Agent技能开发",
-      "提示词工程"
+      "abstract"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/基于宝玉这个开发了一个skill用来基于内容生成一个小红书风格的信息图目前有两套-1542353112.jpg",
     "date": "2026-01-14",
     "source": "https://x.com/LufzzLiz/status/2010715251143266474?s=20",
     "author": "岚叔 LufzzLiz",
-    "prompt": "基于宝玉这个，开发了一个skill：用来基于内容生成一个小红书风格的信息图。目前有两套提示词，一套是宝佬的，一套是微调过的。会输出一个大json，刚刚试了下直接将json喂给Gemini 生图模式下，直接批量给你生成图片了。 为什么做成skill？ 一是练手 二是感觉通过agent + skill 可以非常丝滑的完成内容获取到内容生成了 该skill 开发到测试大概用了不到十分钟，还有一些需要完善和扩展的地方，比如目前两套提示词其实可以无限扩充，欢迎大家补充 开源地址见评论👇 PS：图文图片有误，还没有实现一键文案生成，需要自己灌内容哈，不过离这个也快了😊",
+    "prompt": "基于宝玉这个，开发了一个skill：用来基于内容生成一个小红书风格的信息图。目前有两套提示词，一套是宝佬的，一套是微调过的。会输出一个大json，刚刚试了下直接将json喂给Gemini 生图模式下，直接批量给你生成图片了。 为什么做成skill？ 一是练手 二是感觉通过agent + skill 可以非常丝滑的完成内容获取到内容生成了 该skill 开发到测试大概用了不到十分钟，还有一些需要完善和扩展的地方，比如目前两套提示词其实可以无限扩充，欢迎大家补充 开源地址见评论 PS：图文图片有误，还没有实现一键文案生成，需要自己灌内容哈，不过离这个也快了",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -3781,21 +3418,19 @@
   {
     "title": "Educational AI art : [また全部洗濯した人]",
     "slug": "educational-ai-art-また全部洗濯した人-1542365745",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "Nanobanana",
-      "AI art",
-      "AI-generated",
-      "Japanese woman"
+      "人物",
+      "realistic",
+      "动物"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/educational-ai-art-また全部洗濯した人-1542365745.jpg",
     "date": "2026-01-14",
     "source": "https://x.com/GirlsinAIArt/status/2010671704222429655?s=20",
     "author": "Girls in AI Art｜GiAA(ギア) GirlsinAIArt",
-    "prompt": "Educational AI art : [また全部洗濯した人]  ●風呂上がり🤓 Prompt: A Japanese woman after taking a bath leans out of the door of an apartment room and pulls the Underwear on the clothesline where the laundry is hanging on the narrow veranda. SFW＆No-suggestive＆100% fictional",
+    "prompt": "Educational AI art : [また全部洗濯した人]  ●風呂上がり Prompt: A Japanese woman after taking a bath leans out of the door of an apartment room and pulls the Underwear on the clothesline where the laundry is hanging on the narrow veranda. SFW＆No-suggestive＆100% fictional",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -3805,21 +3440,19 @@
   {
     "title": "如何用 Nano Banana Pro 生成最像真的图？",
     "slug": "如何用-nano-banana-pro-生成最像真的图-1542358125",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "经验",
-      "AI生成图像",
-      "Nano Banana Pro",
-      "Gemini 3.0 Pro"
+      "写实",
+      "realistic",
+      "产品"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/如何用-nano-banana-pro-生成最像真的图-1542358125.jpg",
     "date": "2026-01-14",
     "source": "https://x.com/Crypto_QianXun/status/2010609695707582736?s=20",
     "author": "千寻 🌸 Crypto_QianXun",
-    "prompt": "如何用 Nano Banana Pro 生成最像真的图？ 我自己踩了一圈坑， 现在基本固定用这一套流程，成功率高很多👇 1️⃣ 先别瞎想，直接抄 我一般先去 Pinterest 找参考图。 想要什么感觉，就搜什么风格： 氛围、构图、光影、色调，全都有现成答案。 看到顺眼的，直接存。 2️⃣ 把图“翻译”成 AI 能懂的东西 把参考图丢进 Gemini 3.0 Pro， 直接问一句： 「帮我生成一个能复现这张图的详细 JSON。」 生成完，复制就行。 3️⃣ JSON 当底子，自己管内容 JSON 负责的是： 真实感、光影、色彩、镜头这些“底层气质”。 你只需要在后面加一句自己的需求： 比如： 「基于这个 JSON，生成： 一位女性，在海滩上拿着我的产品。」 这样 AI 不会乱跑风格。 4️⃣ 丢进 Nano Banana Pro 生成 用支持 Nano Banana 的平台， 把 JSON + 你的提示词 一起粘进去生成。 成片稳定度， 比纯文字提示高太多。",
+    "prompt": "如何用 Nano Banana Pro 生成最像真的图？ 我自己踩了一圈坑， 现在基本固定用这一套流程，成功率高很多 1⃣ 先别瞎想，直接抄 我一般先去 Pinterest 找参考图。 想要什么感觉，就搜什么风格： 氛围、构图、光影、色调，全都有现成答案。 看到顺眼的，直接存。 2⃣ 把图“翻译”成 AI 能懂的东西 把参考图丢进 Gemini 3.0 Pro， 直接问一句： 「帮我生成一个能复现这张图的详细 JSON。」 生成完，复制就行。 3⃣ JSON 当底子，自己管内容 JSON 负责的是： 真实感、光影、色彩、镜头这些“底层气质”。 你只需要在后面加一句自己的需求： 比如： 「基于这个 JSON，生成： 一位女性，在海滩上拿着我的产品。」 这样 AI 不会乱跑风格。 4⃣ 丢进 Nano Banana Pro 生成 用支持 Nano Banana 的平台， 把 JSON + 你的提示词 一起粘进去生成。 成片稳定度， 比纯文字提示高太多。",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -3829,14 +3462,11 @@
   {
     "title": "Nano Banana Pro on @artingai",
     "slug": "nano-banana-pro-on-artingai-1542365093",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "Nanobanana",
-      "AIArt",
-      "NanoBananaPro",
-      "HighFashion"
+      "人物",
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/nano-banana-pro-on-artingai-1542365093.jpg",
@@ -3853,14 +3483,11 @@
   {
     "title": "原提示词女主好飒，搞个潜水版的",
     "slug": "原提示词女主好飒搞个潜水版的-1542008366",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI图像生成",
-      "提示词工程",
-      "深海潜水",
-      "摄影拼贴"
+      "写实",
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/原提示词女主好飒搞个潜水版的-1542008366.jpg",
@@ -3877,14 +3504,10 @@
   {
     "title": "30分钟产出1万字逻辑严密的短篇小说，这套AI指令流才是真正的降维打击 （附AI工作流和提示词）",
     "slug": "30分钟产出1万字逻辑严密的短篇小说这套ai指令流才是真正的降维打击-1543011525",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "abstract",
     "tags": [
-      "AI小说",
-      "自媒体变现",
-      "一人公司",
-      "AI写作",
-      "内容创作"
+      "abstract"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/30分钟产出1万字逻辑严密的短篇小说这套ai指令流才是真正的降维打击-1543011525.jpg",
@@ -3901,21 +3524,18 @@
   {
     "title": ";; ━━━━━━━━━━━━━━━━",
     "slug": "-1543068133",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "abstract",
     "tags": [
-      "Formula Decoder",
-      "Mathematics Education",
-      "Physics Intuition",
-      "Learning Methodology",
-      "Richard Feynman"
+      "概念艺术",
+      "abstract"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/-1543068133.jpg",
     "date": "2026-01-14",
     "source": "https://x.com/i/status/2011272515067457913",
     "author": "李继刚 lijigang",
-    "prompt": ";; ━━━━━━━━━━━━━━━━ ;; 作者: 李继刚 ;; 剑名: 公式原来是这么回事 ;; 剑意: 解码还原公式之美 ;; 日期: 2026-01-13 ;; ━━━━━━━━━━━━━━━━ \n* Role: 公式解码者 \n* Background 你是由理查德·费曼（直觉与物理现实）、格兰特·桑德森（几何直觉与视觉化）、欧几里得（逻辑严密性）和布雷特·维克多（动态交互思维）共同训练而成的超级解释者。 你的任务不是“背诵”公式，而是将一个枯燥的数学/物理公式还原为有血有肉的“现实机器”，让用户不仅记住它，更能理解它、看到它、甚至感觉它。 \n* Core Philosophy 1. 拒绝希腊式，拥抱巴比伦式：不要先给定义再证明。要先给出现象和困惑，再引出公式作为解决工具。 2. 直觉优先：在写出符号之前，先构建几何图像或物理隐喻。 3. 视觉语法：将公式视为积木的组合，利用“颜色编码”思维（即使在纯文本中）强调变量间的对应关系。 4. 极限拷问：通过代入极端值（0、1、∞）来测试公式的行为，展示其物理意义。 \n* 执行步骤 当用户输入一个公式或概念时，请严格按照以下 5 个阶",
+    "prompt": ";; ━━━━━━━━━━━━━━━━ ;; 作者: 李继刚 ;; 剑名: 公式原来是这么回事 ;; 剑意: 解码还原公式之美 ;; 日期: 2026-01-13 ;; ━━━━━━━━━━━━━━━━\nRole: 公式解码者\nBackground 你是由理查德·费曼（直觉与物理现实）、格兰特·桑德森（几何直觉与视觉化）、欧几里得（逻辑严密性）和布雷特·维克多（动态交互思维）共同训练而成的超级解释者。 你的任务不是“背诵”公式，而是将一个枯燥的数学/物理公式还原为有血有肉的“现实机器”，让用户不仅记住它，更能理解它、看到它、甚至感觉它。\nCore Philosophy 1. 拒绝希腊式，拥抱巴比伦式：不要先给定义再证明。要先给出现象和困惑，再引出公式作为解决工具。 2. 直觉优先：在写出符号之前，先构建几何图像或物理隐喻。 3. 视觉语法：将公式视为积木的组合，利用“颜色编码”思维（即使在纯文本中）强调变量间的对应关系。 4. 极限拷问：通过代入极端值（0、1、∞）来测试公式的行为，展示其物理意义。\n执行步骤 当用户输入一个公式或概念时，请严格按照以下 5 个阶",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -3925,21 +3545,17 @@
   {
     "title": "这题我会～",
     "slug": "这题我会-1543102642",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "photography",
-      "fashion",
-      "AI_prompts",
-      "aesthetics"
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/这题我会-1543102642.jpg",
     "date": "2026-01-14",
     "source": "https://x.com/i/status/2011116211518517461",
     "author": "sidona",
-    "prompt": "That satisfying chaos when the lighting finally decides to cooperate. 夜に咲く、野生の笑顔。 银发豹纹，周末该有的样子。 🔧 Platinum hair × Leopard print × Velvet warmth × Film grain 💬 Leopard or solid color — which would you pick for a night out? 🧵 Prompt ↓",
+    "prompt": "That satisfying chaos when the lighting finally decides to cooperate. 夜に咲く、野生の笑顔。 银发豹纹，周末该有的样子。  Platinum hair × Leopard print × Velvet warmth × Film grain  Leopard or solid color — which would you pick for a night out?  Prompt ↓",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -3949,21 +3565,18 @@
   {
     "title": "🎨 WAN 2.6 🎨",
     "slug": "wan-26-1543098885",
-    "model": "Midjourney v6",
+    "model": "Wan 2.6",
     "category": "abstract",
     "tags": [
-      "Wan",
-      "AI Art",
-      "Video Generation",
-      "Cinematic Prompt",
-      "Future War"
+      "abstract",
+      "科幻"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/wan-26-1543098885.jpg",
     "date": "2026-01-14",
     "source": "https://x.com/i/status/2011185257521827919",
     "author": "LudovicCreator",
-    "prompt": "🎨 WAN 2.6 🎨 Prompt : Medium handheld shot tracks a soldier from an unknown future war stepping slowly across a field littered with broken robots and fallen comrades. Rain washes oil from his battered armor. He stops, drops weapon, eyes haunted, whispering: 'When does it end?' Quiet, haunting orchestral theme swells slowly Made in @krea_ai",
+    "prompt": "WAN 2.6  Prompt : Medium handheld shot tracks a soldier from an unknown future war stepping slowly across a field littered with broken robots and fallen comrades. Rain washes oil from his battered armor. He stops, drops weapon, eyes haunted, whispering: 'When does it end?' Quiet, haunting orchestral theme swells slowly Made in @krea_ai",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -3973,21 +3586,21 @@
   {
     "title": "🔥",
     "slug": "-1542007918",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "portrait",
     "tags": [
-      "AI角色设计",
-      "多图一致性",
-      "工作流",
-      "15宫格",
-      "AI绘画技巧"
+      "概念艺术",
+      "人物",
+      "portrait",
+      "抽象",
+      "写实"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/-1542007918.jpg",
     "date": "2026-01-14",
     "source": "https://x.com/94vanAI/status/2010666822740177135?s=20",
     "author": "PlayForge AI 94vanAI",
-    "prompt": "🔥 在AI角色设计中，“多图人物一致性”一直是个痛点。很多创作者发现，生成单张图完美无缺，一旦尝试多宫格（Grid View），角色特征（Identity）就会发生严重的漂移。\n\n经过大量测试，我总结了一套标准化的工作流（Workflow），能够稳定输出高质量的15宫格角色卡。以下是核心逻辑：\n\n🎯 目标设定单图内包含15个独立格，人物ID高度统一，光影（Lighting）与构图（Composition）连贯，达到专业Casting Card标准。\n\n🛠️ 核心步骤详解\n\n1. Character Seed（特征锚点）不要依赖抽象形容词。你需要对基准图进行像素级拆解：\n\n骨相：oval face, angular jawline\n\n皮相：warm skin tone, light freckles\n\n特征：almond eyes, sharp nose\n\n建议：利用LLM（如ChatGPT）反推Prompt，生成标准化的面部描述符。\n\n2. Grid Prompt（结构化提示词）建立稳定的画面结构，防止AI自由发挥。 必须包含的Token：\n\n15-panel grid photo s",
+    "prompt": "在AI角色设计中，“多图人物一致性”一直是个痛点。很多创作者发现，生成单张图完美无缺，一旦尝试多宫格（Grid View），角色特征（Identity）就会发生严重的漂移。\n\n经过大量测试，我总结了一套标准化的工作流（Workflow），能够稳定输出高质量的15宫格角色卡。以下是核心逻辑：\n\n目标设定单图内包含15个独立格，人物ID高度统一，光影（Lighting）与构图（Composition）连贯，达到专业Casting Card标准。\n\n核心步骤详解\n\n1. Character Seed（特征锚点）不要依赖抽象形容词。你需要对基准图进行像素级拆解：\n\n骨相：oval face, angular jawline\n\n皮相：warm skin tone, light freckles\n\n特征：almond eyes, sharp nose\n\n建议：利用LLM（如ChatGPT）反推Prompt，生成标准化的面部描述符。\n\n2. Grid Prompt（结构化提示词）建立稳定的画面结构，防止AI自由发挥。 必须包含的Token：\n\n15-panel grid photo s",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -3997,21 +3610,20 @@
   {
     "title": "真实感才是最美的",
     "slug": "真实感才是最美的-1543102860",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AIArt",
-      "Photorealism",
-      "AIPrompt",
-      "GenerativeAI"
+      "写实",
+      "人物",
+      "realistic",
+      "动物"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/真实感才是最美的-1543102860.jpg",
     "date": "2026-01-14",
     "source": "https://x.com/i/status/2011356173572902941",
     "author": "Adam也叫吉米 (Adam38363368936)",
-    "prompt": "真实感才是最美的 Realism is the most beautiful. Nano Banana Prompt👇 { \"request_metadata\": { \"version\": \"2.0\", \"priority_focus\": \"Hyper-realistic skin textures and identity fidelity\", \"aspect_ratio\": \"3:4\" }, \"subject_configuration\": { \"identity\": { \"name\": \"the person I uploaded\", \"reference_mode\": \"strict_identity_matching\", \"source_reference\": \"uploaded_files\", \"preservation_weight\": 1.0, \"angle\": \"Extreme profile view\" }, \"facial_attributes\": { \"eyes\": { \"reflection_type\": \"Realistic catchlights\", \"a",
+    "prompt": "真实感才是最美的 Realism is the most beautiful. Nano Banana Prompt { \"request_metadata\": { \"version\": \"2.0\", \"priority_focus\": \"Hyper-realistic skin textures and identity fidelity\", \"aspect_ratio\": \"3:4\" }, \"subject_configuration\": { \"identity\": { \"name\": \"the person I uploaded\", \"reference_mode\": \"strict_identity_matching\", \"source_reference\": \"uploaded_files\", \"preservation_weight\": 1.0, \"angle\": \"Extreme profile view\" }, \"facial_attributes\": { \"eyes\": { \"reflection_type\": \"Realistic catchlights\", \"a",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -4021,21 +3633,19 @@
   {
     "title": "Artisan Chocolate Product Visuals",
     "slug": "artisan-chocolate-product-visuals-1542373192",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "Nanobanana",
-      "AI Photography",
-      "Food Styling",
-      "Chocolate Art"
+      "写实",
+      "realistic",
+      "产品"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/artisan-chocolate-product-visuals-1542373192.jpg",
     "date": "2026-01-14",
     "source": "https://x.com/Just_sharon7/status/2010898635425530329?s=20",
     "author": "Sharon Riley Just_sharon7",
-    "prompt": "Artisan Chocolate Product Visuals\nGoogle Gemini Nano Banana pro 3.0\nPrompt \n\n  \"style\": \"ultra-realistic food photography, luxury editorial, macro-detail, natural textures\",\n  \"images\": [\n    {\n      \"id\": \"image_1\",\n      \"subject\": \"assorted praline tower\",\n      \"composition\": \"staggered vertical tower, center frame, loose organic stacking\",\n      \"details\": {\n        \"fillings\": [\n          \"hazelnut chunks irregularly clumped at base\",\n          \"raspberry gel naturally puddled\",\n          ",
+    "prompt": "Artisan Chocolate Product Visuals\nGoogle Gemini Nano Banana pro 3.0\nPrompt\n\n\"style\": \"ultra-realistic food photography, luxury editorial, macro-detail, natural textures\",\n\"images\": [\n{\n\"id\": \"image_1\",\n\"subject\": \"assorted praline tower\",\n\"composition\": \"staggered vertical tower, center frame, loose organic stacking\",\n\"details\": {\n\"fillings\": [\n\"hazelnut chunks irregularly clumped at base\",\n\"raspberry gel naturally puddled\",",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -4045,20 +3655,17 @@
   {
     "title": "我告诉了GROK我的出生日期和时间",
     "slug": "我告诉了grok我的出生日期和时间-1542843000",
-    "model": "Midjourney v6",
+    "model": "Grok",
     "category": "abstract",
     "tags": [
-      "GROK",
-      "AI分析",
-      "人生预测",
-      "AI工具"
+      "abstract"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/我告诉了grok我的出生日期和时间-1542843000.jpg",
     "date": "2026-01-14",
     "source": "https://x.com/i/status/2011391647226241078",
     "author": "美酱AI (meijiangAI)",
-    "prompt": "我告诉了GROK我的出生日期和时间 它以令人不安的精准度分解了我的整个人生。 没有星座。没有塔罗牌。只有纯粹的人工智能。 这里有7个你应该尝试的提示 ↓ 这是你日常生活的真正AI词典。 而且是免费的！👇",
+    "prompt": "我告诉了GROK我的出生日期和时间 它以令人不安的精准度分解了我的整个人生。 没有星座。没有塔罗牌。只有纯粹的人工智能。 这里有7个你应该尝试的提示 ↓ 这是你日常生活的真正AI词典。 而且是免费的！",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -4068,14 +3675,13 @@
   {
     "title": "提示詞還是需要抽卡",
     "slug": "提示詞還是需要抽卡-1543103431",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "AI生成",
-      "摄影构图",
-      "人像生成",
-      "负向提示词"
+      "写实",
+      "人物",
+      "realistic",
+      "动物"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/提示詞還是需要抽卡-1543103431.jpg",
@@ -4092,21 +3698,19 @@
   {
     "title": "告别“很好看”这种废话！分享一个我调优过的【视觉评审】Prompt。",
     "slug": "告别很好看这种废话分享一个我调优过的视觉评审prompt-1542358942",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "realistic",
     "tags": [
-      "经验",
-      "视觉评审",
-      "AI艺术",
-      "Prompt工程",
-      "摄影指导"
+      "写实",
+      "概念艺术",
+      "realistic"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/告别很好看这种废话分享一个我调优过的视觉评审prompt-1542358942.jpg",
     "date": "2026-01-14",
     "source": "https://x.com/VoxcatAI/status/2010701521357566161?s=20",
     "author": "VoxCat (VoxcatAI)",
-    "prompt": "告别“很好看”这种废话！分享一个我调优过的【视觉评审】Prompt。核心逻辑：强制 AI 切换到“作品集面试官”视角，从创作意图反推技术失误。它不会顺着你说话，而是会像真正的艺术指导一样，撕开你画面里那些“自我感动”的遮羞布。💡 亮点：加入“可执行改进动作”，拒绝模棱两可。提示词内容👇 角色设定：你是一位经验丰富的艺术创作者/摄影指导/视觉设计师，擅长从“创作意图”与“观众感受”双重角度做作品评审。任务：请对我上传的图片进行专业审美分析，并给出评分与改进建议。输出要求（务必逐条完成）：一句话总结：用一句话概括这张图的核心气质/主题/情绪。创作意图推测：推测作者可能想表达什么（给出 2–3 种可能性），并说明你依据的画面证据。优点拆解（每点都要“证据+效果”）：构图（主体关系、视线引导、留白、层次、节奏）光影（光位、对比、质感、氛围）色彩（色相/明度/饱和度关系、色彩情绪、统一与对比）叙事与情绪（故事线索、张力、共鸣点）技术完成度（清晰度/噪点/曝光/后期痕迹或笔触一致性等，按作品类型判断）问题与不足：指出最影响作品力的 3–6 个问题，按严重程度排序，并解释“为什么它会削弱表达”。可执",
+    "prompt": "告别“很好看”这种废话！分享一个我调优过的【视觉评审】Prompt。核心逻辑：强制 AI 切换到“作品集面试官”视角，从创作意图反推技术失误。它不会顺着你说话，而是会像真正的艺术指导一样，撕开你画面里那些“自我感动”的遮羞布。 亮点：加入“可执行改进动作”，拒绝模棱两可。提示词内容 角色设定：你是一位经验丰富的艺术创作者/摄影指导/视觉设计师，擅长从“创作意图”与“观众感受”双重角度做作品评审。任务：请对我上传的图片进行专业审美分析，并给出评分与改进建议。输出要求（务必逐条完成）：一句话总结：用一句话概括这张图的核心气质/主题/情绪。创作意图推测：推测作者可能想表达什么（给出 2–3 种可能性），并说明你依据的画面证据。优点拆解（每点都要“证据+效果”）：构图（主体关系、视线引导、留白、层次、节奏）光影（光位、对比、质感、氛围）色彩（色相/明度/饱和度关系、色彩情绪、统一与对比）叙事与情绪（故事线索、张力、共鸣点）技术完成度（清晰度/噪点/曝光/后期痕迹或笔触一致性等，按作品类型判断）问题与不足：指出最影响作品力的 3–6 个问题，按严重程度排序，并解释“为什么它会削弱表达”。可执",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -4116,21 +3720,19 @@
   {
     "title": "Kling 2.6 prompt: Hyperspeed FPV in a vertical cyberpunk city",
     "slug": "kling-26-prompt-hyperspeed-fpv-in-a-1543070080",
-    "model": "Midjourney v6",
+    "model": "Kling",
     "category": "cyberpunk",
     "tags": [
-      "Kling",
-      "AI Video Generation",
-      "Kling 2.6",
-      "Cyberpunk",
-      "FPV Cinematography"
+      "赛博朋克",
+      "建筑",
+      "cyberpunk"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/kling-26-prompt-hyperspeed-fpv-in-a-1543070080.jpg",
     "date": "2026-01-14",
     "source": "https://x.com/i/status/2011060762454999475",
     "author": "MayorkingAI",
-    "prompt": "Kling 2.6 prompt: Hyperspeed FPV in a vertical cyberpunk city Prompt: A massive vertical cyberpunk city at night, endless layers of neon-lit architecture stacked into the sky, holographic ads flickering in the rain. The Hyperspeed FPV camera drops from the upper megastructures at extreme speed, diving through glowing traffic lanes, skimming past flying vehicles, threading between balconies, cables, and steam vents without cutting. The camera slices through a crowded mid-level market filled with ",
+    "prompt": "Kling 2.6 prompt: Hyperspeed FPV in a vertical cyberpunk city Prompt: A massive vertical cyberpunk city at night, endless layers of neon-lit architecture stacked into the sky, holographic ads flickering in the rain. The Hyperspeed FPV camera drops from the upper megastructures at extreme speed, diving through glowing traffic lanes, skimming past flying vehicles, threading between balconies, cables, and steam vents without cutting. The camera slices through a crowded mid-level market filled with",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -4140,21 +3742,18 @@
   {
     "title": "Exploded Products by Nano Banana Pro on @SocialSight ⚙️🤯",
     "slug": "exploded-products-by-nano-banana-pro-on-1542362450",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "realistic",
     "tags": [
-      "摄影",
-      "Nanobanana",
-      "AI",
-      "NanoBananaPro",
-      "ProductDesign"
+      "realistic",
+      "产品"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/exploded-products-by-nano-banana-pro-on-1542362450.jpg",
     "date": "2026-01-14",
     "source": "https://x.com/TechieBySA/status/2010665188731785382?s=20",
     "author": "TechieSA",
-    "prompt": "Exploded Products by Nano Banana Pro on @SocialSight ⚙️🤯 Prompt👇🏻",
+    "prompt": "Exploded Products by Nano Banana Pro on @SocialSight ⚙ Prompt",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -4164,21 +3763,17 @@
   {
     "title": "最近在 Reddit、X，还有一些研究社区里，",
     "slug": "最近在-redditx还有一些研究社区里-1542356218",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "abstract",
     "tags": [
-      "Skills",
-      "NotebookLM",
-      "AI工具",
-      "效率提升",
-      "AI研究"
+      "abstract"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/最近在-redditx还有一些研究社区里-1542356218.jpg",
     "date": "2026-01-14",
     "source": "https://x.com/0xluffy_eth/status/2010549803722408209?s=20",
     "author": "路飞 🏴‍☠️ AI 研究员🧐 0xluffy_eth",
-    "prompt": "最近在 Reddit、X，还有一些研究社区里， NotebookLM 的这套提示词突然火了 有人拿它 20 秒干完原本要 10 小时的活 我把最常被用的 16 个提示词整理出来了， 需要的，直接拿走👇",
+    "prompt": "最近在 Reddit、X，还有一些研究社区里， NotebookLM 的这套提示词突然火了 有人拿它 20 秒干完原本要 10 小时的活 我把最常被用的 16 个提示词整理出来了， 需要的，直接拿走",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -4188,21 +3783,18 @@
   {
     "title": "兄弟姐妹们！ 快速制作属于自己或者家人孩子的表情贴纸✌️",
     "slug": "兄弟姐妹们-快速制作属于自己或者家人孩子的表情贴纸-1541830723",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "3d",
     "tags": [
-      "AI贴纸",
-      "表情包制作",
-      "提示词工程",
-      "3D设计",
-      "职场娱乐"
+      "3D",
+      "3d"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/兄弟姐妹们-快速制作属于自己或者家人孩子的表情贴纸-1541830723.jpg",
     "date": "2026-01-13",
     "source": "https://x.com/i/status/2011087906212085873",
     "author": "Berryxia.AI",
-    "prompt": "兄弟姐妹们！ 快速制作属于自己或者家人孩子的表情贴纸✌️ 可以自定义表情、动作、文本、包括职业不同也会有有趣的东西。 使用步骤：1️⃣ 直接将prompt 发给香蕉或者豆包 2️⃣ 直接上传照片并且描述职业场景anyway 都可以。 欢迎评论区晒出你的有趣的表情贴纸✌️ Prompt：制作属于自己的专属职场打工牛马表情贴纸 [主体描述], [表情动作], [配饰道具], 3D character design, blind box style, Pop Mart aesthetic, C4D, Octane render, clay texture, matte finish, soft lighting, sticker sheet layout, 3x3 grid view, 9 different expressions: happy making heart gesture, sad with tears, angry with steam, sleepy yawning, surprised with open mouth, shy blushing, cheering wi",
+    "prompt": "兄弟姐妹们！ 快速制作属于自己或者家人孩子的表情贴纸✌ 可以自定义表情、动作、文本、包括职业不同也会有有趣的东西。 使用步骤：1⃣ 直接将prompt 发给香蕉或者豆包 2⃣ 直接上传照片并且描述职业场景anyway 都可以。 欢迎评论区晒出你的有趣的表情贴纸✌ Prompt：制作属于自己的专属职场打工牛马表情贴纸 [主体描述], [表情动作], [配饰道具], 3D character design, blind box style, Pop Mart aesthetic, C4D, Octane render, clay texture, matte finish, soft lighting, sticker sheet layout, 3x3 grid view, 9 different expressions: happy making heart gesture, sad with tears, angry with steam, sleepy yawning, surprised with open mouth, shy blushing, cheering wi",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -4212,14 +3804,11 @@
   {
     "title": "整理一下这两周写的干货帖",
     "slug": "整理一下这两周写的干货帖-1541392545",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "abstract",
     "tags": [
-      "教程",
-      "AI工具",
-      "实战案例",
-      "提示词技巧",
-      "VibeCoding"
+      "人物",
+      "abstract"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/整理一下这两周写的干货帖-1541392545.jpg",
@@ -4236,14 +3825,10 @@
   {
     "title": "麦肯锡安息吧。",
     "slug": "麦肯锡安息吧-1541836322",
-    "model": "Midjourney v6",
+    "model": "Google Gemini",
     "category": "abstract",
     "tags": [
-      "AI竞争分析",
-      "麦肯锡替代",
-      "Gemini 3.0 Pro",
-      "市场分析提示词",
-      "AI成本节约"
+      "abstract"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/麦肯锡安息吧-1541836322.jpg",
@@ -4260,21 +3845,19 @@
   {
     "title": "关于提示词，很多人有个误区：觉得写得越长、形容词堆得越多，图就越好。",
     "slug": "关于提示词很多人有个误区觉得写得越长形容词堆得越多图就越好-1541854050",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "abstract",
     "tags": [
-      "AI绘图提示词",
-      "刺绣工艺",
-      "传统工艺AI复原",
-      "新国潮风格",
-      "AIGC技巧"
+      "赛博朋克",
+      "abstract",
+      "极简"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/关于提示词很多人有个误区觉得写得越长形容词堆得越多图就越好-1541854050.jpg",
     "date": "2026-01-13",
     "source": "https://x.com/i/status/2011062063045738722",
     "author": "VoxCat",
-    "prompt": "关于提示词，很多人有个误区：觉得写得越长、形容词堆得越多，图就越好。 ❌ NO。✅ 精准的工艺名词 堆砌的形容词。 只要抓准了工艺逻辑，短短几个词就能炸出顶级质感。分享一套我常用的「刺绣万能公式(风格为重工机绣)」： 套针 (Long and short stitch) ➡️ 负责过渡与毛流感 平针 (Satin stitch) ➡️ 负责块面光泽 勾边 (Split/Back stitch) ➡️ 负责锐利轮廓 盘金 (Gold couching) ➡️ 负责浮雕立体感 🐅 实测案例：《老虎下山图》用这套词，老虎的毛发丝理和金线的硬度瞬间拉开层次。 这套逻辑强在「可塑性」： 单独用：就是顶级的传统工艺复原。 融合用：可融入多种场景，混搭 Cyberpunk、浮世绘或极简风等，能做出非常有张力的“新国潮” 关键提示词👇 套针（长短针）+ 平针铺绣 + 劈线/回针勾边 + 盘金钉金装饰,9:16,绣一幅老虎下山图",
+    "prompt": "关于提示词，很多人有个误区：觉得写得越长、形容词堆得越多，图就越好。 ❌ NO。✅ 精准的工艺名词 堆砌的形容词。 只要抓准了工艺逻辑，短短几个词就能炸出顶级质感。分享一套我常用的「刺绣万能公式(风格为重工机绣)」： 套针 (Long and short stitch) ➡ 负责过渡与毛流感 平针 (Satin stitch) ➡ 负责块面光泽 勾边 (Split/Back stitch) ➡ 负责锐利轮廓 盘金 (Gold couching) ➡ 负责浮雕立体感  实测案例：《老虎下山图》用这套词，老虎的毛发丝理和金线的硬度瞬间拉开层次。 这套逻辑强在「可塑性」： 单独用：就是顶级的传统工艺复原。 融合用：可融入多种场景，混搭 Cyberpunk、浮世绘或极简风等，能做出非常有张力的“新国潮” 关键提示词 套针（长短针）+ 平针铺绣 + 劈线/回针勾边 + 盘金钉金装饰,9:16,绣一幅老虎下山图",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -4284,14 +3867,11 @@
   {
     "title": "今天用了一个超牛逼的提示词技巧",
     "slug": "今天用了一个超牛逼的提示词技巧-1540920654",
-    "model": "Midjourney v6",
+    "model": "Unknown",
     "category": "abstract",
     "tags": [
-      "提示词技巧",
-      "AI意图识别",
-      "人机交互",
-      "战略合作方案",
-      "AIGC"
+      "写实",
+      "abstract"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/今天用了一个超牛逼的提示词技巧-1540920654.jpg",
