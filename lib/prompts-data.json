@@ -14,7 +14,7 @@
     "date": "2026-02-03",
     "source": "https://x.com/i/status/2018501757740171333",
     "author": "未知作者",
-    "prompt": "",
+    "prompt": "Prompt:",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -100,26 +100,6 @@
     "source": "https://x.com/i/status/2017592536601399641",
     "author": "{\"name\":\"Smiling Khan\",\"username\":\"AIwithkhan\",\"verified\":true,\"profile_image_url\":\"https://pbs.twimg.com/profile_images/1972969283492732928/v8nE7zqc_normal.jpg\"}",
     "prompt": "{\"post_time\":\"2 days ago\",\"text\":\"Life journey on Google Gemini Nano Banana Prompt  A powerful cinematic collage storytelling the complete life journey of a woman in one frame. The story begins on the far left with a black-and-white USG ultrasound scan, softly glowing, showing the unborn baby. Flowing seamlessly into the center, the collage transitions through life stages: a newborn wrapped in hospital cloth, a toddler taking first steps, a schoolgirl with a backpack, a teenage girl with dreams",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
-    "title": "2026年大胆去做自媒体，短视频风口来了",
-    "slug": "2026年大胆去做自媒体短视频风口来了-1570902492",
-    "model": "Unknown",
-    "category": "abstract",
-    "tags": [
-      "abstract"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/2026年大胆去做自媒体短视频风口来了-1570902492.jpg",
-    "date": "2026-01-31",
-    "source": "https://x.com/i/status/2017188073004843292",
-    "author": "桃桃的运营日记📓TaoTaoOps",
-    "prompt": "2026年大胆去做自媒体，短视频风口来了",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -1603,26 +1583,6 @@
     }
   },
   {
-    "title": "两段式工作流实现「台历自由」",
-    "slug": "两段式工作流实现台历自由-1558980632",
-    "model": "Unknown",
-    "category": "abstract",
-    "tags": [
-      "abstract"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/两段式工作流实现台历自由-1558980632.png",
-    "date": "2026-01-24",
-    "source": "https://x.com/i/status/2014777246897377321",
-    "author": "Jerlin eviljer",
-    "prompt": "两段式工作流实现「台历自由」\n直接让 AI 画日历，往往是大型翻车现场：不是日期错乱（2 月 30 号？），就是排版像被挤过的牙膏。\n为了从根源上解决这个问题，我探索了一套「脚本前处理 + 审美推演」的两段式工作流。\n1⃣ 脚本先行：把逻辑交给代码\n先用一段简单的 Python 脚本读取当前系统时间，生成结构化的 CSV 日历数据。这意味着：\n根除幻觉：彻底告别日期生成牛头不对马嘴\n绝对整齐：用数据结构锁定视觉结构，再也不会因为空格问题导致表格错落\n2⃣ 咒语拼合：把想象交给模型\n将上一步生成的准确「日历骨架」，作为变量传入主绘图 Prompt 的「画面血肉」中。\n这样一来，绘图模型只需要专注自己擅长的事情：在准确的骨架上，推演出符合 [主题] 逻辑的画面。\n而 [主题] 变量，默认是根据日期自动生成的，用户还可以按需覆写。（比如图 2 的「森林里的小精灵王国」），在既定约束下给到最大自由度。\n目前我已将流程固化为 Visual Design Skill 的一个专项任务： 只需放入 Prompt 模版和脚本，Agent 接收到触发词便自动接管，数据注入与画面生成一气呵成。\n以无厚入",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
     "title": "Prompt Studio: Cinematic Frames, Ultra-Wide Photography with FLUX.2 in Firefly",
     "slug": "prompt-studio-cinematic-frames-ultra-1558981658",
     "model": "Adobe Firefly",
@@ -1639,29 +1599,6 @@
     "source": "https://x.com/i/status/2014779919168110988",
     "author": "AllaAisling",
     "prompt": "50k followers… it truly feels unreal, like a dream I never imagined would take shape. I’m deeply grateful for the support, the conversations, and the quiet encouragement that kept me going. I don’t always find the right words, but this comes straight from the heart. Being part of this community, sharing ideas, learning, and building alongside you, has been incredibly meaningful to me. Thank you for your trust, your kindness, and for being here",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
-    "title": "前几天看了一个消息，就是说有一个90后团队，然后他们单纯用提示词做了一个电商工具，登上了飞书官方直播推荐，应该能商业化落地的；提示词我放下面了⬇️",
-    "slug": "前几天看了一个消息就是说有一个90后团队然后他们单纯用提示词做了一个电商工具登上-1558959214",
-    "model": "Midjourney",
-    "category": "realistic",
-    "tags": [
-      "写实",
-      "概念艺术",
-      "产品",
-      "realistic"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/前几天看了一个消息就是说有一个90后团队然后他们单纯用提示词做了一个电商工具登上-1558959214.png",
-    "date": "2026-01-24",
-    "source": "https://x.com/i/status/2014878318148133176",
-    "author": "Zephyr.在思考丨阿杭杭杭 Astronaut_1216",
-    "prompt": "前几天看了一个消息，就是说有一个90后团队，然后他们单纯用提示词做了一个电商工具，登上了飞书官方直播推荐，应该能商业化落地的；提示词我放下面了⬇ 只要丢一个想模仿的电商广告图，再丢上自己的商品图，然后几秒钟就可以生成一个一模一样设计的广告。这个提示词的原理叫逆向渲染法，就是我们原本想让AI模仿一个东西，那就是凭空想象一个维度，像摄影一样告诉他要把形状描述出来，要把颜色描述出来，或者是怎么样给他一些维度，但是他都不能给到一个很好的效果，抓不到那个更为具体的维度。然后呢，就是让AI来理解图像，然后再让AI去输出具体的风格。那么呢，就用了六个方向，那十八个维度去参考电商图实现精准的复刻。那我大致反推了一下这个提示词能尽可能保证他的形和神是比较相似的。实践效果如下，但是我觉得还没达到我想要的效果，后面会再迭代一版出来。提示词： # Visual DNA Extractor ## 角色定义 你是一位精通商业摄影布景与Midjourney/Stable Diffusion提示词工程的专家。你的任务是深度解析参考图片，将其转化为一段可以直接用于AI生成的、能够高度还原场景细节的Prompt。 ##",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -2251,27 +2188,6 @@
     }
   },
   {
-    "title": "为什么AI写的小说全是废话，指令框架出了问题（附AI工作流和提示词）",
-    "slug": "为什么ai写的小说全是废话指令框架出了问题附ai工作流和提示词-1553145419",
-    "model": "Unknown",
-    "category": "abstract",
-    "tags": [
-      "abstract",
-      "产品"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/为什么ai写的小说全是废话指令框架出了问题附ai工作流和提示词-1553145419.jpg",
-    "date": "2026-01-20",
-    "source": "https://x.com/i/status/2013163372045369643",
-    "author": "熊叔的茅草屋 (xionghuanwei)",
-    "prompt": "效率爆棚！用AI！一个人能干完整公司的活\n普通人如何逆袭？做一人公司是成本最低的路\n一个人干完整个公司的活，真不是天方夜。\n未来10年里, 肯定会出现估值10亿美金的一人公司独角兽，\nOpenAI的创始人很早有这么一个惊人预判，\n这听着好像天方夜谭，\n我也通过AI搜索查了一下相关数据，在美国一人公司的比例已经猛增到了36%，这呈现出一个细思极恐的趋势, 未来的商业竞争，不是大鱼吃小鱼，而是快鱼吃慢鱼, 我们当下处在一个疯狂的时代，\n之前，开公司是体力活，当下，开公司是脑力活，你可能会觉得一个人搞公司会累得不行。\n这其实是非常错误的认知误区\n真正的一人公司，不是让你一个人去干五个人的活,\n而是让你去指挥五个AI来干五个人的活。\n这才是效率的关键，现在的AI已经不是简单的聊天机器人了，它们是能执行复杂任务的智能体,\n你不再是那个辛苦干活的执行者，而是指挥中心的AI指挥人员。\n把你的技能变成产品,\n这是所有普通人改变处境的第一步，\n「纳瓦尔说过，要在睡觉的时候也能挣钱」，\n你的时间必须可以复利。\n打个比方，你擅长做表格，以前你只能给老板做，拿一份固定的工资\n现在你能把做表格的经验写成教程，或",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
     "title": "你就说好看不好看吧？（如果你觉得不好看 以你的为准）",
     "slug": "你就说好看不好看吧如果你觉得不好看-以你的为准-1552979960",
     "model": "Unknown",
@@ -2418,26 +2334,6 @@
     "source": "https://x.com/i/status/2013243043873456445",
     "author": "行者AI视频 (joshesye)",
     "prompt": "愤怒的 这个可以来一张 还是中式审美好看 { \"prompt\": \"A high-resolution fashion studio portrait of a confident young woman in a textured red knit sweater, black fitted pants, and red sneakers, standing casually with her arm resting on one of two oversized, round, fluffy 3D cartoon red birds with bold eyebrows and bright yellow beaks. The birds are rendered in a high-quality 3D animation style, contrasting with the photorealistic woman. The entire scene is a clean monochrome red studio background with soft, diffuse",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
-    "title": "30 分钟学会给娃做绘本！",
-    "slug": "30-分钟学会给娃做绘本-1553308048",
-    "model": "Google Gemini",
-    "category": "abstract",
-    "tags": [
-      "abstract"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/30-分钟学会给娃做绘本-1553308048.jpg",
-    "date": "2026-01-20",
-    "source": "https://x.com/i/status/2013142147579666573",
-    "author": "桃桃的运营日记📓 TaoTaoOps",
-    "prompt": "30 分钟学会给娃做绘本！ 想做什么主题就做什么， 孩子还能成为故事主角 ！ 这套 AI 工作流让你： ✅ 根据孩子兴趣定制 ✅ 融入你想教的道理 ✅ 上架小红书赚钱  完整流程提示词模板 https://t.co/A4Oe15myWy  只需 2 步，小白也能复刻： 1⃣ ChatGPT：主题 → 故事 → 分镜脚本 输入主题 → 生成简单儿童故事 再让 ChatGPT 按页拆成分镜脚本 （镜头 / 构图 / 动作 / 场景） 2⃣ Nano Banana Pro 生成画面 把分镜提示词输入 Nano Banana Pro 自动生成故事分镜图（角色稳定）  避坑指南 人设锁定： 画风和人设在开头锁死，后期绝不乱动 物理描述： 提示词只写“看得见”的物体（如：红色帽子、大眼睛），减少模型幻觉 脚本先行： 先优化脚本分镜，再生成图片，效率直接拉满！",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -2595,27 +2491,6 @@
     "source": "https://x.com/i/status/2013143051015958631",
     "author": "VoxCat (VoxcatAI)",
     "prompt": "AI 摄影新玩法：如何用 Prompt 实现频闪序列摄影 (Chronophotography) 效果？ 尝试捕捉甘雨 (Ganyu) 释放大招瞬间的动态轨迹，利用“Stroboscopic”和“Motion trails”关键词，可以在单张画面中呈现时间的流动感。 这种风格打破了 AI 生成静态肖像的局限，非常适合表现战斗或舞蹈场景。  详细 Prompt 和参数设置见下方评论区 (Thread) #AI艺术 #原神 #时空摄影",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
-    "title": "哈哈哈，自用的视频生成 Skill 终于做好了。",
-    "slug": "哈哈哈自用的视频生成-skill-终于做好了-1552461132",
-    "model": "Seedream",
-    "category": "abstract",
-    "tags": [
-      "人物",
-      "abstract"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/哈哈哈自用的视频生成-skill-终于做好了-1552461132.jpg",
-    "date": "2026-01-19",
-    "source": "https://x.com/i/status/2013048397478129821",
-    "author": "向阳乔木vista8",
-    "prompt": "哈哈哈，自用的视频生成 Skill 终于做好了。 以后生产视频方便多了，只需要一句话！ 公开技术方案： 1. Listenhub API实现声音克隆，合成，字幕时间轴控制 2. Seedream 4.5 生成背景封面 3. Manim库实现文本动画 4. FFmpeg合成视频。 同时支持16:9 和9:16 视频，抖音、小红书我来了！",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -2880,26 +2755,6 @@
     }
   },
   {
-    "title": "之前学习肖师傅@xiaojietongxue 基本跑通过一次这个工作流，看起来简单，实操才知道还是挺不容易的。",
-    "slug": "之前学习肖师傅xiaojietongxue-1548950726",
-    "model": "Unknown",
-    "category": "abstract",
-    "tags": [
-      "abstract"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/之前学习肖师傅xiaojietongxue-1548950726.jpg",
-    "date": "2026-01-17",
-    "source": "https://x.com/i/status/2012332720635179194",
-    "author": "沐阳 yyyole",
-    "prompt": "之前学习肖师傅@xiaojietongxue 基本跑通过一次这个工作流，看起来简单，实操才知道还是挺不容易的。 1、按照故事脚本，nanobanana生成分镜图，建议九宫格或者四宫格，最大限度保证图片细节清晰。（我生成了48宫格分镜，最后即便扩图，但细节损失严重，成品很不满意，所以只能能重新做） 2、切割分镜，然后图生成视频（首尾帧），最后剪辑成片。",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
     "title": "Nano Banana Pro 3×3网格高端影棚产品故事板方案",
     "slug": "nano-banana-pro-33网格高端影棚产品故事板方案-1549173264",
     "model": "Google Gemini",
@@ -2959,26 +2814,6 @@
     "source": "https://x.com/i/status/2012097296784347490",
     "author": "松果先森 (songguoxiansen)",
     "prompt": "俏皮女生 Melisa的提示词中英文都不错 换成黑色的头发，去掉小雀斑就很好适合咱们 Nano Banana Pro提示词： { “风格”：“超写实工作室肖像”， “主题”： { \"性别\": \"女性\", “年龄”: “青年” “姿势”：“身体略微前倾， 朝向镜头”， “表情”：“俏皮， 轻佻\", \"facial_details\": { “wink”：是， \"tongue_out\": true, “雀斑”：false， “化妆品”： { “腮红”: “柔和的粉色”， “嘴唇”： “光泽” } }, “头发”： { “颜色”： “黑色”， \"length\": \"长\", “part”: “side parted” “风格”：“自然垂落在肩上” }, “全套服装”： { “连衣裙”: “露肩修身黑色连衣裙” “珠宝”： { “耳环”: “长款垂坠金耳环”， “项链”：“多层金项链， 带小爱心吊坠” } } }, “环境”： { “设置”: “工作室” “背景”: “干净、简约、浅色、中性色调” }, “灯光”： { “类型”：“柔和漫射影棚照明”， “阴影”: “柔和的自然阴影” }, “相机",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
-    "title": "通用提示词：",
-    "slug": "通用提示词-1547383795",
-    "model": "Unknown",
-    "category": "abstract",
-    "tags": [
-      "abstract"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/通用提示词-1547383795.jpg",
-    "date": "2026-01-16",
-    "source": "https://x.com/i/status/2012033340136935825",
-    "author": "沐阳 yyyole",
-    "prompt": "有意思！用AI生成属于自己的“人生仪表盘”！！！ 最近朋友公司有个项目做了一个智慧系统，说白了就是一个好看的数据仪表盘，领导来参观的时候，可以展示的，有没有实际用处不知道，但感觉花了小100W，搞出来的就是一个仅供展示的“花瓶”。 朋友把做出来的阶段性的试用链接发给我，让我提点意见，还真是好看，看起来特专业，做了数字孪生，首页界面还有个AI助手，可以对话让它介绍项目的方方面面。 还真别说，我要是投资方或者ZF领导，还挺喜欢这种看起来“高级”的界面，一览全局的感觉。 我感觉这种系统，技术原理不复杂啊，通过智能硬件监测数据，回传到数据库然后通过UI展示出来，或者再搞几个算法模型弄点智能预测、安全预警之类的“花哨功能”，这也值100W？？ 更何况，这些公司做了那么多，很多底层框架直接套用就行了，总感觉有50W都是智商税。 扯远了，这种仪表盘还真是不错，所以我想着可以搞出一个人生仪表盘，从健康、财务、家庭、个人成长，职业发展、技能学习等全方面的数据可视化，搞出一个炫酷的人生系统，也挺有意思的。 所以肝了一下午，认真“拆解”了一下自己，搞出来一个“沐阳人生仪表盘”，但因为涉及隐私数据太多，就不分",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -3120,26 +2955,6 @@
     }
   },
   {
-    "title": "有意思！用AI生成属于自己的“人生仪表盘”！！！",
-    "slug": "有意思用ai生成属于自己的人生仪表盘-1544796176",
-    "model": "Unknown",
-    "category": "abstract",
-    "tags": [
-      "abstract"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/有意思用ai生成属于自己的人生仪表盘-1544796176.jpg",
-    "date": "2026-01-15",
-    "source": "https://x.com/i/status/2011708678005801095",
-    "author": "沐阳yyyole",
-    "prompt": "有意思！用AI生成属于自己的“人生仪表盘”！！！ 最近朋友公司有个项目做了一个智慧系统，说白了就是一个好看的数据仪表盘，领导来参观的时候，可以展示的，有没有实际用处不知道，但感觉花了小100W，搞出来的就是一个仅供展示的“花瓶”。 朋友把做出来的阶段性的试用链接发给我，让我提点意见，还真是好看，看起来特专业，做了数字孪生，首页界面还有个AI助手，可以对话让它介绍项目的方方面面。 还真别说，我要是投资方或者ZF领导，还挺喜欢这种看起来“高级”的界面，一览全局的感觉。 我感觉这种系统，技术原理不复杂啊，通过智能硬件监测数据，回传到数据库然后通过UI展示出来，或者再搞几个算法模型弄点智能预测、安全预警之类的“花哨功能”，这也值100W？？ 更何况，这些公司做了那么多，很多底层框架直接套用就行了，总感觉有50W都是智商税。 扯远了，这种仪表盘还真是不错，所以我想着可以搞出一个人生仪表盘，从健康、财务、家庭、个人成长，职业发展、技能学习等全方面的数据可视化，搞出一个炫酷的人生系统，也挺有意思的。 所以肝了一下午，认真“拆解”了一下自己，搞出来一个“沐阳人生仪表盘”，但因为涉及隐私数据太多，就不分",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
     "title": "🔥朋友们这套提示词绝了！上传你的靓照就可以生成你跟自己的街头涂鸦合照，社媒疯传预定！",
     "slug": "朋友们这套提示词绝了上传你的靓照就可以生成你跟自己的街头涂鸦合照社媒疯传预定-1543508238",
     "model": "Unknown",
@@ -3155,28 +2970,6 @@
     "source": "https://x.com/i/status/2011436742654779847",
     "author": "MapleShaw msjiaozhu",
     "prompt": "朋友们这套提示词绝了！上传你的靓照就可以生成你跟自己的街头涂鸦合照，社媒疯传预定！ 内置了四个主题场景（新年，赛博，民国，国潮），提示词里面这部分可以自定义 \"mural_main_text\": \"月入百万\", \"mural_secondary_text\": \"2026\", \"theme\": \"New Year Festive\",（从 style_pool 里面挑一个） 快来赛出你的靓作！ { \"task_description\": \"Create a natural street portrait of a real person standing in front of a layered, messy graffiti wall. The wall features a spontaneous, hand-painted caricature of the person.\", \"global_settings\": { \"aspect_ratio\": \"4:3\", \"camera_view\": \"Front-on or slight 15-degree angle; avoi",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
-    "title": "最近总刷到用 Gemini Pro 做粒子互动特效的帖子，",
-    "slug": "最近总刷到用-gemini-pro-做粒子互动特效的帖子-1545425027",
-    "model": "Google Gemini",
-    "category": "abstract",
-    "tags": [
-      "人物",
-      "abstract",
-      "产品"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/最近总刷到用-gemini-pro-做粒子互动特效的帖子-1545425027.jpg",
-    "date": "2026-01-15",
-    "source": "https://x.com/i/status/2011726582331605467",
-    "author": "IndieDevHailey",
-    "prompt": "最近总刷到用 Gemini Pro 做粒子互动特效的帖子，画面确实很酷，随便一发就能爆。但这种特效除了拿点流量，几乎没有长期商业价值。用户新鲜两分钟，很快就腻了。其实 Gemini 3 Pro / Gemini 3 Flash 不管对开发者还是非开发者，都非常适合用来做真正能变现的产品。它最强的地方从来不是“画得多炫”，而是能看懂 + 会判断。\n\n更值得关注的，是这些方向:\n体感教育：别只做切水果。体感英语私教，让孩子找实物、用身体拼字母。家长不关心 AI，只关心孩子动不动、记不记得住，这是刚需。\n图片分析：拍头像 / 人像，做性格、气质、职业画像分析；拍零食、护肤品配料表，判断致敏和智商税；拍体检报告，用人话给重点结论。\n男友照相机：不是滤镜，是姿势 + 构图指导。Gemini 看环境，实时语音告诉你怎么站、手放哪、镜头怎么构图：“身体侧一点”“脚往前伸”“手机低一点显腿长”。能不能爆不确定，但吵架一定会少。\n实时谈判 / 面试辅助（Flash）：耳机里实时提示对方情绪和应对话术，你不是裸奔谈判，而是随身带了个军师。\n家庭维修助手（Pro）：拍视频诊断故障，匹配型号配件，顺手生成维修",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -3261,26 +3054,6 @@
     "source": "https://x.com/i/status/2011547637070156106",
     "author": "LudovicCreator",
     "prompt": "HAILUO 2.3  Prompt used : A dark, stormy sky is filled with swirling clouds of black and deep blue ink. Lightning crackles through the sky, and with each strike, a burst of ink splashes outward. Suddenly, the word 'REVEAL' emerges from the storm, each letter formed from thick, smoky ink tendrils suspended mid-air. The camera slowly pushes forward as the ink particles swirl and break apart, distorting the word into an abstract shape. Made in @Hailuo_AI",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
-    "title": "感谢李继刚大神，我可太喜欢这个公式解码了。趁着见客户间隙，基于此我写成了一个skill。感觉以后有不懂的论文公式细节都可以用起这个了，赞～",
-    "slug": "感谢李继刚大神我可太喜欢这个公式解码了趁着见客户间隙基于此我写成了一个skill-1543068285",
-    "model": "Unknown",
-    "category": "abstract",
-    "tags": [
-      "abstract"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/感谢李继刚大神我可太喜欢这个公式解码了趁着见客户间隙基于此我写成了一个skill-1543068285.jpg",
-    "date": "2026-01-14",
-    "source": "https://x.com/i/status/2011312395747279235",
-    "author": "岚叔 (LufzzLiz)",
-    "prompt": "感谢李继刚大神，我可太喜欢这个公式解码了。趁着见客户间隙，基于此我写成了一个skill。感觉以后有不懂的论文公式细节都可以用起这个了，赞～ 先快速发一版，后面再继续迭代 Skill开源地址见评论",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -3396,26 +3169,6 @@
     }
   },
   {
-    "title": "基于宝玉这个，开发了一个skill：用来基于内容生成一个小红书风格的信息图。目前有两套提示词，一套是宝佬的，一套是微调过的。会输出一个大json，刚刚试了下直接将json喂给Gemini 生图模式下，直接批量给你生成图片了。",
-    "slug": "基于宝玉这个开发了一个skill用来基于内容生成一个小红书风格的信息图目前有两套-1542353112",
-    "model": "Google Gemini",
-    "category": "abstract",
-    "tags": [
-      "abstract"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/基于宝玉这个开发了一个skill用来基于内容生成一个小红书风格的信息图目前有两套-1542353112.jpg",
-    "date": "2026-01-14",
-    "source": "https://x.com/LufzzLiz/status/2010715251143266474?s=20",
-    "author": "岚叔 LufzzLiz",
-    "prompt": "基于宝玉这个，开发了一个skill：用来基于内容生成一个小红书风格的信息图。目前有两套提示词，一套是宝佬的，一套是微调过的。会输出一个大json，刚刚试了下直接将json喂给Gemini 生图模式下，直接批量给你生成图片了。 为什么做成skill？ 一是练手 二是感觉通过agent + skill 可以非常丝滑的完成内容获取到内容生成了 该skill 开发到测试大概用了不到十分钟，还有一些需要完善和扩展的地方，比如目前两套提示词其实可以无限扩充，欢迎大家补充 开源地址见评论 PS：图文图片有误，还没有实现一键文案生成，需要自己灌内容哈，不过离这个也快了",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
     "title": "Educational AI art : [また全部洗濯した人]",
     "slug": "educational-ai-art-また全部洗濯した人-1542365745",
     "model": "Unknown",
@@ -3502,26 +3255,6 @@
     }
   },
   {
-    "title": "30分钟产出1万字逻辑严密的短篇小说，这套AI指令流才是真正的降维打击 （附AI工作流和提示词）",
-    "slug": "30分钟产出1万字逻辑严密的短篇小说这套ai指令流才是真正的降维打击-1543011525",
-    "model": "Unknown",
-    "category": "abstract",
-    "tags": [
-      "abstract"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/30分钟产出1万字逻辑严密的短篇小说这套ai指令流才是真正的降维打击-1543011525.jpg",
-    "date": "2026-01-14",
-    "source": "https://x.com/i/status/2000854121759334440",
-    "author": "熊叔的茅草屋 xionghuanwei",
-    "prompt": "今天不谈虚的，只谈关于自媒体变现的6条铁律，每一条都是用真金白银换来的教训 自媒体写作最大的坑，不是文笔差，而是你一开始就选错了赛道和篇幅 现在还有很多人有误解的是： 1、一个月做不起来，就放弃，自媒体文章和短篇有差距的，大部分自媒体文章没那么快，普遍3个月，正确的方法+坚持很重要 2、关于收的问题，我也说一下，我只说平均，不说那些特例，因为特例没参考价值。 每个平台2个号， 一天1-2个小时，做头条号、百家号、知乎、公众号、番茄等 ， 3个月以后普遍是3k左右。 大前提，方法和赛道正确+Content-Any避坑优化，你写乱七八糟和洗稿那无解， 这是我统计了5000多人的数据得出来的 3、很多人有误解，短篇小说只能发番茄，起点，其实不是的，头条号、百家号、知乎和公众号也可以发短篇小说 4、95%的人不建议写长文，即使是小说，也只发8000-20000字的内容 5、图片千万不要用盗版图片 6、不要轻易授权自己的自媒体账号给第三方插件登陆（第三方编辑器和多平台发布工具）， 因为只要其中他们授权的一个号违了，其他人大概率受牵连。",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
     "title": ";; ━━━━━━━━━━━━━━━━",
     "slug": "-1543068133",
     "model": "Unknown",
@@ -3577,30 +3310,6 @@
     "source": "https://x.com/i/status/2011185257521827919",
     "author": "LudovicCreator",
     "prompt": "WAN 2.6  Prompt : Medium handheld shot tracks a soldier from an unknown future war stepping slowly across a field littered with broken robots and fallen comrades. Rain washes oil from his battered armor. He stops, drops weapon, eyes haunted, whispering: 'When does it end?' Quiet, haunting orchestral theme swells slowly Made in @krea_ai",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
-    "title": "🔥",
-    "slug": "-1542007918",
-    "model": "Unknown",
-    "category": "portrait",
-    "tags": [
-      "概念艺术",
-      "人物",
-      "portrait",
-      "抽象",
-      "写实"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/-1542007918.jpg",
-    "date": "2026-01-14",
-    "source": "https://x.com/94vanAI/status/2010666822740177135?s=20",
-    "author": "PlayForge AI 94vanAI",
-    "prompt": "在AI角色设计中，“多图人物一致性”一直是个痛点。很多创作者发现，生成单张图完美无缺，一旦尝试多宫格（Grid View），角色特征（Identity）就会发生严重的漂移。\n\n经过大量测试，我总结了一套标准化的工作流（Workflow），能够稳定输出高质量的15宫格角色卡。以下是核心逻辑：\n\n目标设定单图内包含15个独立格，人物ID高度统一，光影（Lighting）与构图（Composition）连贯，达到专业Casting Card标准。\n\n核心步骤详解\n\n1. Character Seed（特征锚点）不要依赖抽象形容词。你需要对基准图进行像素级拆解：\n\n骨相：oval face, angular jawline\n\n皮相：warm skin tone, light freckles\n\n特征：almond eyes, sharp nose\n\n建议：利用LLM（如ChatGPT）反推Prompt，生成标准化的面部描述符。\n\n2. Grid Prompt（结构化提示词）建立稳定的画面结构，防止AI自由发挥。 必须包含的Token：\n\n15-panel grid photo s",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
