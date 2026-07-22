@@ -19,22 +19,18 @@ export function createClient() {
           return cookie ? cookie.trim().substring(name.length + 1) : null
         },
         set(name: string, value: string, options: any = {}) {
-          // 检测当前协议，决定是否设置 Secure 属性
+          // 检测当前协议
           const isSecure = typeof window !== 'undefined' && window.location.protocol === 'https:'
           
-          // 默认设置，确保适用于 PKCE 流程
+          // 根据协议动态设置 SameSite - OAuth 跨域重定向需要 'none'
           const cookieOptions = {
             path: '/',
-            sameSite: 'lax',
+            sameSite: isSecure ? 'none' : 'lax',
+            secure: isSecure,
             ...options
           }
           
-          // 只 HTTPS 环境才设置 Secure 属性
-          if (isSecure) {
-            cookieOptions.secure = true
-          }
-          
-          // 构建 cookie 字符串 - 使用标准的 cookie 属性名称
+          // 构建 cookie 字符串
           const cookieParts = [
             `${name}=${value}`,
             `Path=${cookieOptions.path}`,

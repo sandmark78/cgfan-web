@@ -3,6 +3,8 @@ import { getAllPrompts, getAllCategories } from '@/lib/prompts'
 import { PromptGrid } from '@/components/prompt/prompt-grid'
 import { getCategoryLabel, getCategoryIcon } from '@/lib/category-map'
 
+export const runtime = 'edge'
+
 /**
  * 首页 - 绿色 + 奶白 + 毛玻璃风格
  */

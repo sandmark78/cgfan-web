@@ -3,6 +3,8 @@ import { redirect } from 'next/navigation'
 import { getAllPrompts } from '@/lib/prompts'
 import { PromptCard } from '@/components/prompt/prompt-card'
 
+export const runtime = 'edge'
+
 export default async function DashboardPage() {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
