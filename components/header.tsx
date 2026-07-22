@@ -105,33 +105,51 @@ export default function Header() {
                 {/* 遮罩层 - 点击关闭 */}
                 <div className="fixed inset-0 z-40" onClick={() => setIsMenuOpen(false)} />
                 {/* 菜单面板 */}
-                <div className="absolute right-0 top-full mt-2 z-[60] w-48 rounded-2xl glass-card overflow-hidden p-2 shadow-xl">
-                  {/* 移动端搜索 */}
-                  <form onSubmit={handleSearch} className="md:hidden px-2 py-1.5">
-                    <input
-                      type="text"
-                      value={searchQuery}
-                      onChange={(e) => setSearchQuery(e.target.value)}
-                      placeholder="搜索提示词..."
-                      className="w-full rounded-full border border-gray-200 bg-white/50 px-3 py-1.5 text-sm outline-none dark:border-gray-700 dark:bg-gray-800/50 dark:text-white"
-                    />
-                  </form>
-                  <Link href="/explore" onClick={() => setIsMenuOpen(false)} className="block rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800 transition-colors">
-                    🗂️ 浏览全部
-                  </Link>
-                  <Link href="/explore?category=realistic" onClick={() => setIsMenuOpen(false)} className="block rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800 transition-colors">
-                    📷 写实风格
-                  </Link>
-                  <Link href="/explore?category=3d" onClick={() => setIsMenuOpen(false)} className="block rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800 transition-colors">
-                    🎮 3D 渲染
-                  </Link>
-                  <Link href="/explore?category=anime" onClick={() => setIsMenuOpen(false)} className="block rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800 transition-colors">
-                    🎨 动漫风格
-                  </Link>
-                  <div className="my-1 border-t border-gray-200 dark:border-gray-700" />
-                  <Link href="/about" onClick={() => setIsMenuOpen(false)} className="block rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800 transition-colors">
-                    ℹ️ 关于 CGfan
-                  </Link>
+                <div className="absolute right-0 top-full mt-2 z-[60] w-48 rounded-2xl bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl border border-white/20 dark:border-gray-700/30 shadow-2xl overflow-hidden">
+                  <div className="p-2 max-h-[calc(100vh-100px)] overflow-y-auto">
+                    {/* 移动端搜索 */}
+                    <form onSubmit={handleSearch} className="md:hidden px-2 py-1.5 mb-2">
+                      <input
+                        type="text"
+                        value={searchQuery}
+                        onChange={(e) => setSearchQuery(e.target.value)}
+                        placeholder="搜索提示词..."
+                        className="w-full rounded-full border border-gray-200 bg-white/50 px-3 py-1.5 text-sm outline-none dark:border-gray-700 dark:bg-gray-800/50 dark:text-white"
+                      />
+                    </form>
+                    <Link href="/explore" onClick={() => setIsMenuOpen(false)} className="flex items-center gap-2 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800 transition-colors">
+                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+                      </svg>
+                      浏览全部
+                    </Link>
+                    <Link href="/explore?category=realistic" onClick={() => setIsMenuOpen(false)} className="flex items-center gap-2 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800 transition-colors">
+                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                      写实风格
+                    </Link>
+                    <Link href="/explore?category=3d" onClick={() => setIsMenuOpen(false)} className="flex items-center gap-2 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800 transition-colors">
+                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" />
+                      </svg>
+                      3D 渲染
+                    </Link>
+                    <Link href="/explore?category=anime" onClick={() => setIsMenuOpen(false)} className="flex items-center gap-2 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800 transition-colors">
+                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+                      </svg>
+                      动漫风格
+                    </Link>
+                    <div className="my-1 border-t border-gray-200 dark:border-gray-700" />
+                    <Link href="/about" onClick={() => setIsMenuOpen(false)} className="flex items-center gap-2 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800 transition-colors">
+                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      关于 CGfan
+                    </Link>
+                  </div>
                 </div>
               </>
             )}
