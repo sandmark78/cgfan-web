@@ -163,11 +163,11 @@ export default async function PromptDetailPage({
 
       {/* 相似推荐 */}
       {related.length > 0 && (
-        <div className="mt-16">
-          <h2 className="font-serif text-3xl font-bold text-gray-900 dark:text-white">
+        <div className="mt-8">
+          <h2 className="font-serif text-xl font-bold text-gray-900 dark:text-white">
             相关推荐
           </h2>
-          <div className="mt-8">
+          <div className="mt-4">
             <PromptGrid prompts={related} />
           </div>
         </div>
