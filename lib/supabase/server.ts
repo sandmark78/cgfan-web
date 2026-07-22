@@ -19,9 +19,14 @@ export async function createClient() {
         },
         setAll(cookiesToSet) {
           try {
-            cookiesToSet.forEach(({ name, value, options }) =>
-              cookieStore.set(name, value, options)
-            )
+            cookiesToSet.forEach(({ name, value, options }) => {
+              // 保留原有选项，添加缺失的属性
+              const cookieOptions = {
+                path: '/',
+                ...options,
+              }
+              cookieStore.set(name, value, cookieOptions)
+            })
           } catch {
             // Server Component 中无法设置 cookie，忽略
             // 这在 Middleware 中会处理
