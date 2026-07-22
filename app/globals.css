@@ -126,6 +126,7 @@ body {
   -webkit-backdrop-filter: blur(var(--blur));
   border: 1px solid var(--glass-border);
   box-shadow: var(--glass-shadow);
+  isolation: isolate;
 }
 
 /* 光泽高光层 */

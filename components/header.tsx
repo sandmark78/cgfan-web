@@ -15,8 +15,8 @@ export default function Header() {
   }
 
   return (
-    <header className="sticky top-4 z-50 mx-auto max-w-6xl px-3 sm:px-4">
-      <nav className="glass flex items-center justify-between rounded-full px-3 sm:px-6 py-2 sm:py-3">
+    <header className="sticky top-4 z-50 mx-auto w-full max-w-6xl px-3 sm:px-4">
+      <nav className="glass flex items-center justify-between rounded-full px-3 sm:px-6 py-2 sm:py-3 overflow-hidden">
         {/* Logo - 衬线体 */}
         <Link href="/" className="font-serif text-lg sm:text-2xl italic font-bold text-gray-900 dark:text-white">
           CGfan.com
