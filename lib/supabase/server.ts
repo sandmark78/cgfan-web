@@ -20,7 +20,7 @@ export async function createClient() {
         setAll(cookiesToSet) {
           try {
             cookiesToSet.forEach(({ name, value, options }) => {
-              // 保留原有选项，添加缺失的属性
+              // 合并选项，确保有正确的路径
               const cookieOptions = {
                 path: '/',
                 ...options,
