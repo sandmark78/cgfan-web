@@ -1,15 +1,16 @@
 import Link from 'next/link'
 
 /**
- * 页脚 - 毛玻璃效果
+ * 页脚 - 响应式毛玻璃效果
  */
 export default function Footer() {
   return (
     <footer className="mx-auto mt-16 max-w-6xl px-4 pb-8">
-      <div className="glass rounded-full px-6 py-4">
-        <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
-          {/* 链接 */}
-          <div className="flex items-center gap-6 text-sm text-gray-600 dark:text-gray-400">
+      {/* 移动端：圆角矩形，桌面端：胶囊形 */}
+      <div className="glass rounded-3xl md:rounded-full px-6 py-5 md:py-4">
+        <div className="flex flex-col items-center gap-4 md:flex-row md:justify-between md:gap-6">
+          {/* 链接 - 移动端横排紧凑 */}
+          <div className="flex items-center gap-4 text-sm text-gray-600 dark:text-gray-400">
             <Link href="/about" className="transition-colors hover:text-green-600 dark:hover:text-green-400">
               关于
             </Link>
@@ -24,7 +25,7 @@ export default function Footer() {
           </div>
 
           {/* 版权 */}
-          <div className="text-sm text-gray-500 dark:text-gray-500">
+          <div className="text-xs text-gray-500 dark:text-gray-500 md:text-sm">
             © 2026 CGfan.com
           </div>
 
