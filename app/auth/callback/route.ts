@@ -13,13 +13,30 @@ export async function GET(request: Request) {
   const next = searchParams.get('next') ?? '/'
 
   if (code) {
-    const supabase = await createClient()
-    const { error } = await supabase.auth.exchangeCodeForSession(code)
-    if (!error) {
+    try {
+      const supabase = await createClient()
+      const { error, data } = await supabase.auth.exchangeCodeForSession(code)
+      
+      if (error) {
+        console.error('OAuth exchange error:', error)
+        console.error('Error details:', {
+          code: code ? 'present' : 'missing',
+          error_message: error.message,
+          error_code: error.code,
+          origin: origin
+        })
+        // 重定向到登录页，带错误信息
+        redirect(`${origin}/login?error=auth_failed&details=${encodeURIComponent(error.message)}`)
+      }
+      
+      // 成功，重定向到目标页面
       redirect(next)
+    } catch (err) {
+      console.error('OAuth callback exception:', err)
+      redirect(`${origin}/login?error=exception`)
     }
   }
 
-  // 认证失败，重定向到登录页
-  redirect(`${origin}/login?error=auth_failed`)
+  // 没有 code，重定向到登录页
+  redirect(`${origin}/login?error=no_code`)
 }
