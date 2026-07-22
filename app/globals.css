@@ -130,11 +130,6 @@ body {
   isolation: isolate;
 }
 
-/* 关键：用外层容器裁剪掉边缘溢出 */
-nav.glass {
-  overflow: hidden;
-}
-
 /* 光泽高光层 */
 .glass::before {
   content: "";
