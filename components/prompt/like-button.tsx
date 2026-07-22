@@ -5,6 +5,7 @@ import { createClient } from '@/lib/supabase/client'
 
 interface LikeButtonProps {
   promptSlug: string
+  userId?: string
   initialLiked?: boolean
   initialCount?: number
   isAuthenticated?: boolean
@@ -15,6 +16,7 @@ interface LikeButtonProps {
  */
 export function LikeButton({
   promptSlug,
+  userId,
   initialLiked = false,
   initialCount = 0,
   isAuthenticated = false,
@@ -30,6 +32,11 @@ export function LikeButton({
       return
     }
 
+    if (!userId) {
+      console.error('用户 ID 不存在')
+      return
+    }
+
     setLoading(true)
     try {
       if (liked) {
@@ -38,6 +45,7 @@ export function LikeButton({
           .from('likes')
           .delete()
           .eq('prompt_slug', promptSlug)
+          .eq('user_id', userId)
 
         setCount((c) => c - 1)
         setLiked(false)
@@ -45,7 +53,7 @@ export function LikeButton({
         // 点赞
         await supabase
           .from('likes')
-          .insert({ prompt_slug: promptSlug })
+          .insert({ prompt_slug: promptSlug, user_id: userId })
 
         setCount((c) => c + 1)
         setLiked(true)

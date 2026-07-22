@@ -108,7 +108,7 @@ export function PromptCard({ prompt }: PromptCardProps) {
                 d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
               />
             </svg>
-            <span className="text-xs">12</span>
+            <span className="text-xs">{prompt.likeCount || 0}</span>
           </div>
 
           {/* 作者头像 */}

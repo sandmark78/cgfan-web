@@ -168,11 +168,13 @@ export default async function PromptDetailPage({
             <div className="flex items-center gap-4">
               <LikeButton
                 promptSlug={prompt.slug}
+                userId={user?.id}
                 initialLiked={isLiked}
                 isAuthenticated={!!user}
               />
               <FavoriteButton
                 promptSlug={prompt.slug}
+                userId={user?.id}
                 initialFavorited={isFavorited}
                 isAuthenticated={!!user}
               />

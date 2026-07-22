@@ -5,6 +5,7 @@ import { createClient } from '@/lib/supabase/client'
 
 interface FavoriteButtonProps {
   promptSlug: string
+  userId?: string
   initialFavorited?: boolean
   isAuthenticated?: boolean
 }
@@ -14,6 +15,7 @@ interface FavoriteButtonProps {
  */
 export function FavoriteButton({
   promptSlug,
+  userId,
   initialFavorited = false,
   isAuthenticated = false,
 }: FavoriteButtonProps) {
@@ -27,6 +29,11 @@ export function FavoriteButton({
       return
     }
 
+    if (!userId) {
+      console.error('用户 ID 不存在')
+      return
+    }
+
     setLoading(true)
     try {
       if (favorited) {
@@ -35,13 +42,14 @@ export function FavoriteButton({
           .from('favorites')
           .delete()
           .eq('prompt_slug', promptSlug)
+          .eq('user_id', userId)
 
         setFavorited(false)
       } else {
         // 收藏
         await supabase
           .from('favorites')
-          .insert({ prompt_slug: promptSlug })
+          .insert({ prompt_slug: promptSlug, user_id: userId })
 
         setFavorited(true)
       }

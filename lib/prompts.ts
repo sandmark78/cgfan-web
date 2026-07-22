@@ -17,6 +17,7 @@ export interface PromptData {
   prompt: string
   negativePrompt: string
   parameters: Record<string, string>
+  likeCount?: number
 }
 
 const staticPrompts = promptsData as unknown as PromptData[]
