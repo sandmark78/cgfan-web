@@ -124,9 +124,15 @@ body {
   background: var(--glass);
   backdrop-filter: blur(var(--blur));
   -webkit-backdrop-filter: blur(var(--blur));
-  border: 1px solid var(--glass-border);
-  box-shadow: var(--glass-shadow);
+  border: none !important;
+  box-shadow: 0 8px 32px #00000010 !important;
+  outline: none !important;
   isolation: isolate;
+}
+
+/* 关键：用外层容器裁剪掉边缘溢出 */
+nav.glass {
+  overflow: hidden;
 }
 
 /* 光泽高光层 */
