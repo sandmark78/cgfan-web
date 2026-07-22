@@ -1,14 +1,19 @@
 ---
-title: "Kling 2.6 prompt: Hyperspeed FPV in a vertical cyberpunk city"
-slug: "kling-26-prompt-hyperspeed-fpv-in-a-1543070080"
-model: "Midjourney v6"
-category: "cyberpunk"
-tags: ["Kling", "AI Video Generation", "Kling 2.6", "Cyberpunk", "FPV Cinematography"]
-difficulty: "intermediate"
-cover: "/images/prompts/kling-26-prompt-hyperspeed-fpv-in-a-1543070080.jpg"
-date: "2026-01-14"
-source: "https://x.com/i/status/2011060762454999475"
-author: "MayorkingAI"
+title: 'Kling 2.6 prompt: Hyperspeed FPV in a vertical cyberpunk city'
+slug: kling-26-prompt-hyperspeed-fpv-in-a-1543070080
+model: Midjourney
+category: cyberpunk
+tags:
+- Kling
+- AI Video Generation
+- Kling 2.6
+- Cyberpunk
+- FPV Cinematography
+difficulty: intermediate
+cover: /images/prompts/kling-26-prompt-hyperspeed-fpv-in-a-1543070080.jpg
+date: '2026-01-14'
+source: https://x.com/i/status/2011060762454999475
+author: MayorkingAI
 ---
 
 ## Prompt

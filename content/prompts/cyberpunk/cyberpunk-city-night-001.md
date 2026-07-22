@@ -1,14 +1,18 @@
 ---
-title: "赛博朋克城市夜景"
-slug: "cyberpunk-city-night-001"
-model: "Midjourney v6"
-category: "cyberpunk"
-tags: ["城市", "夜景", "霓虹", "赛博朋克"]
-difficulty: "intermediate"
-cover: "/images/prompts/cyberpunk-city-night-001.webp"
+title: 赛博朋克城市夜景
+slug: cyberpunk-city-night-001
+model: Midjourney
+category: cyberpunk
+tags:
+- 城市
+- 夜景
+- 霓虹
+- 赛博朋克
+difficulty: intermediate
+cover: /images/prompts/cyberpunk-city-night-001.webp
 date: 2025-07-21
-source: "https://civitai.com/images/123456"
-author: "CGfan 编辑部"
+source: https://civitai.com/images/123456
+author: CGfan 编辑部
 ---
 
 ## Prompt

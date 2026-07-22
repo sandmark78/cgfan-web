@@ -1,14 +1,19 @@
 ---
-title: "Cross-brand sneaker collaboration 👟"
-slug: "cross-brand-sneaker-collaboration-1570896016"
-model: "Midjourney v6"
-category: "abstract"
-tags: ["广告", "球鞋设计", "品牌合作", "概念鞋款", "创意提示"]
-difficulty: "intermediate"
-cover: "/images/prompts/cross-brand-sneaker-collaboration-1570896016.jpg"
-date: "2026-01-31"
-source: "https://x.com/i/status/2017542008722886797"
-author: "Latte0xbisc"
+title: Cross-brand sneaker collaboration 👟
+slug: cross-brand-sneaker-collaboration-1570896016
+model: Midjourney
+category: abstract
+tags:
+- 广告
+- 球鞋设计
+- 品牌合作
+- 概念鞋款
+- 创意提示
+difficulty: intermediate
+cover: /images/prompts/cross-brand-sneaker-collaboration-1570896016.jpg
+date: '2026-01-31'
+source: https://x.com/i/status/2017542008722886797
+author: Latte0xbisc
 ---
 
 ## Prompt

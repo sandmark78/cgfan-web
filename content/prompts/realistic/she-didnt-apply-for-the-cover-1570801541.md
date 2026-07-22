@@ -1,14 +1,19 @@
 ---
-title: "She didn't apply for the cover."
-slug: "she-didnt-apply-for-the-cover-1570801541"
-model: "Midjourney v6"
-category: "realistic"
-tags: ["摄影", "时尚摄影", "低角度镜头", "黄金时刻", "街头风格"]
-difficulty: "intermediate"
-cover: "/images/prompts/she-didnt-apply-for-the-cover-1570801541.jpg"
-date: "2026-01-31"
-source: "https://x.com/i/status/2017457199333970004"
-author: "Sidona"
+title: She didn't apply for the cover.
+slug: she-didnt-apply-for-the-cover-1570801541
+model: Midjourney
+category: realistic
+tags:
+- 摄影
+- 时尚摄影
+- 低角度镜头
+- 黄金时刻
+- 街头风格
+difficulty: intermediate
+cover: /images/prompts/she-didnt-apply-for-the-cover-1570801541.jpg
+date: '2026-01-31'
+source: https://x.com/i/status/2017457199333970004
+author: Sidona
 ---
 
 ## Prompt

@@ -1,14 +1,19 @@
 ---
-title: "Luxury cosmetic photography meets frozen perfection 🧊"
-slug: "luxury-cosmetic-photography-meets-1557351931"
-model: "Midjourney v6"
-category: "realistic"
-tags: ["摄影", "AI Photography", "Hyperrealism", "Luxury Skincare", "Cold Tech Aesthetic"]
-difficulty: "intermediate"
-cover: "/images/prompts/luxury-cosmetic-photography-meets-1557351931.jpg"
-date: "2026-01-23"
-source: "https://x.com/i/status/2014347192321167565"
-author: "Latte 0xbisc"
+title: Luxury cosmetic photography meets frozen perfection 🧊
+slug: luxury-cosmetic-photography-meets-1557351931
+model: Midjourney
+category: realistic
+tags:
+- 摄影
+- AI Photography
+- Hyperrealism
+- Luxury Skincare
+- Cold Tech Aesthetic
+difficulty: intermediate
+cover: /images/prompts/luxury-cosmetic-photography-meets-1557351931.jpg
+date: '2026-01-23'
+source: https://x.com/i/status/2014347192321167565
+author: Latte 0xbisc
 ---
 
 ## Prompt

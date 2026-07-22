@@ -1,14 +1,19 @@
 ---
-title: "Nano Banana Pro on @artingai"
-slug: "nano-banana-pro-on-artingai-1542365093"
-model: "Midjourney v6"
-category: "realistic"
-tags: ["摄影", "Nanobanana", "AIArt", "NanoBananaPro", "HighFashion"]
-difficulty: "intermediate"
-cover: "/images/prompts/nano-banana-pro-on-artingai-1542365093.jpg"
-date: "2026-01-14"
-source: "https://x.com/ChillaiKalan__/status/2010663134743368058?s=20"
-author: "K ChillaiKalan__"
+title: Nano Banana Pro on @artingai
+slug: nano-banana-pro-on-artingai-1542365093
+model: Midjourney
+category: realistic
+tags:
+- 摄影
+- Nanobanana
+- AIArt
+- NanoBananaPro
+- HighFashion
+difficulty: intermediate
+cover: /images/prompts/nano-banana-pro-on-artingai-1542365093.jpg
+date: '2026-01-14'
+source: https://x.com/ChillaiKalan__/status/2010663134743368058?s=20
+author: K ChillaiKalan__
 ---
 
 ## Prompt

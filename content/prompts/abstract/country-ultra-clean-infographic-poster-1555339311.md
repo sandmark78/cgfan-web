@@ -1,14 +1,19 @@
 ---
-title: "[COUNTRY] — ultra-clean infographic poster (editorial + lifestyle)"
-slug: "country-ultra-clean-infographic-poster-1555339311"
-model: "Midjourney v6"
-category: "abstract"
-tags: ["AI Art", "Graphic Design", "Infographic", "Travel Content", "Google Gemini"]
-difficulty: "intermediate"
-cover: "/images/prompts/country-ultra-clean-infographic-poster-1555339311.jpg"
-date: "2026-01-21"
-source: "https://x.com/i/status/2013905113321185465"
-author: "Strength04_X"
+title: '[COUNTRY] — ultra-clean infographic poster (editorial + lifestyle)'
+slug: country-ultra-clean-infographic-poster-1555339311
+model: Midjourney
+category: abstract
+tags:
+- AI Art
+- Graphic Design
+- Infographic
+- Travel Content
+- Google Gemini
+difficulty: intermediate
+cover: /images/prompts/country-ultra-clean-infographic-poster-1555339311.jpg
+date: '2026-01-21'
+source: https://x.com/i/status/2013905113321185465
+author: Strength04_X
 ---
 
 ## Prompt

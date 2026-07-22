@@ -1,14 +1,21 @@
 ---
-title: '{ "image_request": { "subject": { "type": "Young adult woman", "identity_constraint": "Use the uploaded image as a reference.", "expression": "Use the uploaded image as a reference.", "gaze": "Use the uploaded image as a reference.", "emotion":'
-slug: "image_request-subject-type-young-adult-1564527620"
-model: "Midjourney v6"
-category: "realistic"
-tags: ["摄影", "AI Art", "Fashion Photography", "Image Prompt", "Studio Portrait"]
-difficulty: "intermediate"
-cover: "/images/prompts/image_request-subject-type-young-adult-1564527620.jpg"
-date: "2026-01-27"
-source: "https://x.com/i/status/2016087115482763660"
-author: "Lena lenawakes"
+title: '{ "image_request": { "subject": { "type": "Young adult woman", "identity_constraint":
+  "Use the uploaded image as a reference.", "expression": "Use the uploaded image
+  as a reference.", "gaze": "Use the uploaded image as a reference.", "emotion":'
+slug: image_request-subject-type-young-adult-1564527620
+model: Midjourney
+category: realistic
+tags:
+- 摄影
+- AI Art
+- Fashion Photography
+- Image Prompt
+- Studio Portrait
+difficulty: intermediate
+cover: /images/prompts/image_request-subject-type-young-adult-1564527620.jpg
+date: '2026-01-27'
+source: https://x.com/i/status/2016087115482763660
+author: Lena lenawakes
 ---
 
 ## Prompt

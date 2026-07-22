@@ -1,14 +1,19 @@
 ---
-title: "Prompt Studio: Nano Banana Pro, Typewriter Conjuring, in Firefly"
-slug: "prompt-studio-nano-banana-pro-1557350335"
-model: "Midjourney v6"
-category: "abstract"
-tags: ["AI Art", "Creative Writing", "Adobe Firefly", "Visual Storytelling", "Narrative Art"]
-difficulty: "intermediate"
-cover: "/images/prompts/prompt-studio-nano-banana-pro-1557350335.jpg"
-date: "2026-01-23"
-source: "https://x.com/i/status/2014361771658641431"
-author: "Alexandra Aisling AllaAisling"
+title: 'Prompt Studio: Nano Banana Pro, Typewriter Conjuring, in Firefly'
+slug: prompt-studio-nano-banana-pro-1557350335
+model: Midjourney
+category: abstract
+tags:
+- AI Art
+- Creative Writing
+- Adobe Firefly
+- Visual Storytelling
+- Narrative Art
+difficulty: intermediate
+cover: /images/prompts/prompt-studio-nano-banana-pro-1557350335.jpg
+date: '2026-01-23'
+source: https://x.com/i/status/2014361771658641431
+author: Alexandra Aisling AllaAisling
 ---
 
 ## Prompt

@@ -1,14 +1,19 @@
 ---
-title: "Google Gemini Nano Banana Pro"
-slug: "google-gemini-nano-banana-pro-1560822510"
-model: "Midjourney v6"
-category: "realistic"
-tags: ["摄影", "AIArt", "CinematicPortrait", "GeminiNano", "PromptEngineering"]
-difficulty: "intermediate"
-cover: "/images/prompts/google-gemini-nano-banana-pro-1560822510.jpg"
-date: "2026-01-25"
-source: "https://x.com/i/status/2014984098213929280"
-author: "Kashberg_0"
+title: Google Gemini Nano Banana Pro
+slug: google-gemini-nano-banana-pro-1560822510
+model: Midjourney
+category: realistic
+tags:
+- 摄影
+- AIArt
+- CinematicPortrait
+- GeminiNano
+- PromptEngineering
+difficulty: intermediate
+cover: /images/prompts/google-gemini-nano-banana-pro-1560822510.jpg
+date: '2026-01-25'
+source: https://x.com/i/status/2014984098213929280
+author: Kashberg_0
 ---
 
 ## Prompt

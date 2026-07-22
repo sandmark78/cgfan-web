@@ -1,14 +1,19 @@
 ---
-title: "Prompt Studio: Cinematic Frames, Ultra-Wide Photography with FLUX.2 in Firefly"
-slug: "prompt-studio-cinematic-frames-ultra-1558981658"
-model: "Midjourney v6"
-category: "realistic"
-tags: ["摄影", "AIart", "community", "gratitude", "creativeprompts"]
-difficulty: "intermediate"
-cover: "/images/prompts/prompt-studio-cinematic-frames-ultra-1558981658.jpg"
-date: "2026-01-24"
-source: "https://x.com/i/status/2014779919168110988"
-author: "AllaAisling"
+title: 'Prompt Studio: Cinematic Frames, Ultra-Wide Photography with FLUX.2 in Firefly'
+slug: prompt-studio-cinematic-frames-ultra-1558981658
+model: Midjourney
+category: realistic
+tags:
+- 摄影
+- AIart
+- community
+- gratitude
+- creativeprompts
+difficulty: intermediate
+cover: /images/prompts/prompt-studio-cinematic-frames-ultra-1558981658.jpg
+date: '2026-01-24'
+source: https://x.com/i/status/2014779919168110988
+author: AllaAisling
 ---
 
 ## Prompt

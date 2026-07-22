@@ -1,14 +1,19 @@
 ---
-title: "Playful shadows and high-school nostalgia captured in a single frame. ☀️📚"
-slug: "playful-shadows-and-high-school-1551218134"
-model: "Midjourney v6"
-category: "realistic"
-tags: ["摄影", "photography", "creative prompts", "fashion aesthetic", "art direction"]
-difficulty: "intermediate"
-cover: "/images/prompts/playful-shadows-and-high-school-1551218134.jpg"
-date: "2026-01-19"
-source: "https://x.com/i/status/2012718730854502440"
-author: "sidona"
+title: Playful shadows and high-school nostalgia captured in a single frame. ☀️📚
+slug: playful-shadows-and-high-school-1551218134
+model: Midjourney
+category: realistic
+tags:
+- 摄影
+- photography
+- creative prompts
+- fashion aesthetic
+- art direction
+difficulty: intermediate
+cover: /images/prompts/playful-shadows-and-high-school-1551218134.jpg
+date: '2026-01-19'
+source: https://x.com/i/status/2012718730854502440
+author: sidona
 ---
 
 ## Prompt

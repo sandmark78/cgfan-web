@@ -1,14 +1,18 @@
 ---
-title: "写实人像 - 街头摄影"
-slug: "realistic-portrait-street-001"
-model: "Midjourney v6"
-category: "realistic"
-tags: ["写实", "人像", "街头", "摄影"]
-difficulty: "intermediate"
-cover: "/images/prompts/realistic-portrait-street-001.webp"
+title: 写实人像 - 街头摄影
+slug: realistic-portrait-street-001
+model: Midjourney
+category: realistic
+tags:
+- 写实
+- 人像
+- 街头
+- 摄影
+difficulty: intermediate
+cover: /images/prompts/realistic-portrait-street-001.webp
 date: 2025-07-21
-source: "https://civitai.com/images/345678"
-author: "CGfan 编辑部"
+source: https://civitai.com/images/345678
+author: CGfan 编辑部
 ---
 
 ## Prompt

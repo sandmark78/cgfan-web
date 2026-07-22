@@ -1,14 +1,18 @@
 ---
-title: "动漫少女 - 樱花树下"
-slug: "anime-girl-cherry-blossom-001"
-model: "Stable Diffusion XL"
-category: "anime"
-tags: ["动漫", "少女", "樱花", "春天"]
-difficulty: "beginner"
-cover: "/images/prompts/anime-girl-cherry-blossom-001.webp"
+title: 动漫少女 - 樱花树下
+slug: anime-girl-cherry-blossom-001
+model: Stable Diffusion
+category: anime
+tags:
+- 动漫
+- 少女
+- 樱花
+- 春天
+difficulty: intermediate
+cover: /images/prompts/anime-girl-cherry-blossom-001.webp
 date: 2025-07-21
-source: "https://civitai.com/images/234567"
-author: "CGfan 编辑部"
+source: https://civitai.com/images/234567
+author: CGfan 编辑部
 ---
 
 ## Prompt

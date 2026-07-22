@@ -1,14 +1,19 @@
 ---
-title: "Nano Banana Pro @bageldotcom 🎾"
-slug: "nano-banana-pro-bageldotcom-1570902988"
-model: "Midjourney v6"
-category: "realistic"
-tags: ["摄影", "AI图像生成", "电影式渲染", "情侣摄影", "网球运动"]
-difficulty: "intermediate"
-cover: "/images/prompts/nano-banana-pro-bageldotcom-1570902988.jpg"
-date: "2026-01-31"
-source: "https://x.com/i/status/2017306745358402020"
-author: "astronomerozge1"
+title: Nano Banana Pro @bageldotcom 🎾
+slug: nano-banana-pro-bageldotcom-1570902988
+model: Midjourney
+category: realistic
+tags:
+- 摄影
+- AI图像生成
+- 电影式渲染
+- 情侣摄影
+- 网球运动
+difficulty: intermediate
+cover: /images/prompts/nano-banana-pro-bageldotcom-1570902988.jpg
+date: '2026-01-31'
+source: https://x.com/i/status/2017306745358402020
+author: astronomerozge1
 ---
 
 ## Prompt

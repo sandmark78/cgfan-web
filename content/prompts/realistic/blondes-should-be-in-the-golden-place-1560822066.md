@@ -1,14 +1,19 @@
 ---
-title: "Blondes should be in the golden place."
-slug: "blondes-should-be-in-the-golden-place-1560822066"
-model: "Midjourney v6"
-category: "realistic"
-tags: ["摄影", "AI绘画", "NanoBananaPrompt", "金发美女", "城市夜景"]
-difficulty: "intermediate"
-cover: "/images/prompts/blondes-should-be-in-the-golden-place-1560822066.jpg"
-date: "2026-01-25"
-source: "https://x.com/i/status/2015040715169075512"
-author: "Adam也叫吉米Adam38363368936"
+title: Blondes should be in the golden place.
+slug: blondes-should-be-in-the-golden-place-1560822066
+model: Midjourney
+category: realistic
+tags:
+- 摄影
+- AI绘画
+- NanoBananaPrompt
+- 金发美女
+- 城市夜景
+difficulty: intermediate
+cover: /images/prompts/blondes-should-be-in-the-golden-place-1560822066.jpg
+date: '2026-01-25'
+source: https://x.com/i/status/2015040715169075512
+author: Adam也叫吉米Adam38363368936
 ---
 
 ## Prompt

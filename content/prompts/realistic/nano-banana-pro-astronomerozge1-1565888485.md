@@ -1,14 +1,19 @@
 ---
-title: "Nano Banana Pro @astronomerozge1 💘"
-slug: "nano-banana-pro-astronomerozge1-1565888485"
-model: "Midjourney v6"
-category: "realistic"
-tags: ["摄影", "AI生成", "NanoBananaPro", "时尚摄影", "编辑图片"]
-difficulty: "intermediate"
-cover: "/images/prompts/nano-banana-pro-astronomerozge1-1565888485.jpg"
-date: "2026-01-28"
-source: "https://x.com/i/status/2016215595209871366"
-author: "astronomerozge1"
+title: Nano Banana Pro @astronomerozge1 💘
+slug: nano-banana-pro-astronomerozge1-1565888485
+model: Midjourney
+category: realistic
+tags:
+- 摄影
+- AI生成
+- NanoBananaPro
+- 时尚摄影
+- 编辑图片
+difficulty: intermediate
+cover: /images/prompts/nano-banana-pro-astronomerozge1-1565888485.jpg
+date: '2026-01-28'
+source: https://x.com/i/status/2016215595209871366
+author: astronomerozge1
 ---
 
 ## Prompt

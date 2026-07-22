@@ -1,14 +1,19 @@
 ---
-title: "Prompt for nano banana pro:"
-slug: "prompt-for-nano-banana-pro-1571128742"
-model: "Midjourney v6"
-category: "realistic"
-tags: ["摄影", "AI绘画", "写真创作", "夜景人像", "时尚摄影"]
-difficulty: "intermediate"
-cover: "/images/prompts/prompt-for-nano-banana-pro-1571128742.jpg"
-date: "2026-01-31"
-source: "https://x.com/i/status/2017591867249201307"
-author: "Anissa (SimplyAnnisa)"
+title: 'Prompt for nano banana pro:'
+slug: prompt-for-nano-banana-pro-1571128742
+model: Midjourney
+category: realistic
+tags:
+- 摄影
+- AI绘画
+- 写真创作
+- 夜景人像
+- 时尚摄影
+difficulty: intermediate
+cover: /images/prompts/prompt-for-nano-banana-pro-1571128742.jpg
+date: '2026-01-31'
+source: https://x.com/i/status/2017591867249201307
+author: Anissa (SimplyAnnisa)
 ---
 
 ## Prompt

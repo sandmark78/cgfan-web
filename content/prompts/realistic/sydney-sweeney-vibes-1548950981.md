@@ -1,14 +1,19 @@
 ---
-title: "Sydney Sweeney vibes ✨"
-slug: "sydney-sweeney-vibes-1548950981"
-model: "Midjourney v6"
-category: "realistic"
-tags: ["摄影", "Nanobanana", "AI Art", "Nano Banana Pro", "AI Prompt"]
-difficulty: "intermediate"
-cover: "/images/prompts/sydney-sweeney-vibes-1548950981.jpg"
-date: "2026-01-17"
-source: "https://x.com/i/status/2011913223964852336"
-author: "Melisa♡ xmliisu"
+title: Sydney Sweeney vibes ✨
+slug: sydney-sweeney-vibes-1548950981
+model: Midjourney
+category: realistic
+tags:
+- 摄影
+- Nanobanana
+- AI Art
+- Nano Banana Pro
+- AI Prompt
+difficulty: intermediate
+cover: /images/prompts/sydney-sweeney-vibes-1548950981.jpg
+date: '2026-01-17'
+source: https://x.com/i/status/2011913223964852336
+author: Melisa♡ xmliisu
 ---
 
 ## Prompt

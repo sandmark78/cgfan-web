@@ -1,14 +1,19 @@
 ---
-title: "Prompt Studio: Cinematic Frames, Stillness Within Speed"
-slug: "prompt-studio-cinematic-frames-1560755136"
-model: "Midjourney v6"
-category: "realistic"
-tags: ["摄影", "ArtChallenge", "AIArt", "CreativeCommunity", "NoWords"]
-difficulty: "intermediate"
-cover: "/images/prompts/prompt-studio-cinematic-frames-1560755136.jpg"
-date: "2026-01-25"
-source: "https://x.com/i/status/2015159671644995609"
-author: "AllaAisling"
+title: 'Prompt Studio: Cinematic Frames, Stillness Within Speed'
+slug: prompt-studio-cinematic-frames-1560755136
+model: Midjourney
+category: realistic
+tags:
+- 摄影
+- ArtChallenge
+- AIArt
+- CreativeCommunity
+- NoWords
+difficulty: intermediate
+cover: /images/prompts/prompt-studio-cinematic-frames-1560755136.jpg
+date: '2026-01-25'
+source: https://x.com/i/status/2015159671644995609
+author: AllaAisling
 ---
 
 ## Prompt

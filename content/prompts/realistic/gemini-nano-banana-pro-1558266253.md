@@ -1,14 +1,19 @@
 ---
-title: "Gemini Nano Banana Pro"
-slug: "gemini-nano-banana-pro-1558266253"
-model: "Midjourney v6"
-category: "realistic"
-tags: ["摄影", "AI Photography", "Prompt Engineering", "Gemini Nano", "Portrait Photography"]
-difficulty: "intermediate"
-cover: "/images/prompts/gemini-nano-banana-pro-1558266253.jpg"
-date: "2026-01-23"
-source: "https://x.com/i/status/2014576740492869761"
-author: "Lex (lexx_aura)"
+title: Gemini Nano Banana Pro
+slug: gemini-nano-banana-pro-1558266253
+model: Midjourney
+category: realistic
+tags:
+- 摄影
+- AI Photography
+- Prompt Engineering
+- Gemini Nano
+- Portrait Photography
+difficulty: intermediate
+cover: /images/prompts/gemini-nano-banana-pro-1558266253.jpg
+date: '2026-01-23'
+source: https://x.com/i/status/2014576740492869761
+author: Lex (lexx_aura)
 ---
 
 ## Prompt

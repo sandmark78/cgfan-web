@@ -1,14 +1,18 @@
 ---
-title: "山水画 - 中国风"
-slug: "landscape-chinese-painting-001"
-model: "Midjourney v6"
-category: "landscape"
-tags: ["风景", "山水", "中国风", "水墨"]
-difficulty: "intermediate"
-cover: "/images/prompts/landscape-chinese-painting-001.webp"
+title: 山水画 - 中国风
+slug: landscape-chinese-painting-001
+model: Midjourney
+category: landscape
+tags:
+- 风景
+- 山水
+- 中国风
+- 水墨
+difficulty: intermediate
+cover: /images/prompts/landscape-chinese-painting-001.webp
 date: 2025-07-21
-source: "https://civitai.com/images/567890"
-author: "CGfan 编辑部"
+source: https://civitai.com/images/567890
+author: CGfan 编辑部
 ---
 
 ## Prompt

@@ -1,14 +1,19 @@
 ---
-title: "Gemini nano banana pro 3.0"
-slug: "gemini-nano-banana-pro-30-1570899670"
-model: "Midjourney v6"
-category: "realistic"
-tags: ["摄影", "人工智能绘画", "图片生成", "视觉艺术", "创意提示"]
-difficulty: "intermediate"
-cover: "/images/prompts/gemini-nano-banana-pro-30-1570899670.jpg"
-date: "2026-01-31"
-source: "https://x.com/i/status/2017166130746675620"
-author: "kashmir_ki_lark"
+title: Gemini nano banana pro 3.0
+slug: gemini-nano-banana-pro-30-1570899670
+model: Midjourney
+category: realistic
+tags:
+- 摄影
+- 人工智能绘画
+- 图片生成
+- 视觉艺术
+- 创意提示
+difficulty: advanced
+cover: /images/prompts/gemini-nano-banana-pro-30-1570899670.jpg
+date: '2026-01-31'
+source: https://x.com/i/status/2017166130746675620
+author: kashmir_ki_lark
 ---
 
 ## Prompt

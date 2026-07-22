@@ -1,14 +1,19 @@
 ---
-title: "Nano Banana Pro on Google Gemini"
-slug: "nano-banana-pro-on-google-gemini-1560937683"
-model: "Midjourney v6"
-category: "realistic"
-tags: ["摄影", "AI Art", "Google Gemini", "Cinematic Photography", "Portrait Prompt"]
-difficulty: "intermediate"
-cover: "/images/prompts/nano-banana-pro-on-google-gemini-1560937683.jpg"
-date: "2026-01-25"
-source: "https://x.com/i/status/2015282932643139964"
-author: "K ChillaiKalan__"
+title: Nano Banana Pro on Google Gemini
+slug: nano-banana-pro-on-google-gemini-1560937683
+model: Midjourney
+category: realistic
+tags:
+- 摄影
+- AI Art
+- Google Gemini
+- Cinematic Photography
+- Portrait Prompt
+difficulty: intermediate
+cover: /images/prompts/nano-banana-pro-on-google-gemini-1560937683.jpg
+date: '2026-01-25'
+source: https://x.com/i/status/2015282932643139964
+author: K ChillaiKalan__
 ---
 
 ## Prompt

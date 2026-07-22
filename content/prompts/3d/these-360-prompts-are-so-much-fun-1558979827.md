@@ -1,14 +1,19 @@
 ---
-title: "These 360 prompts are so much fun. Another one for Nano Banana"
-slug: "these-360-prompts-are-so-much-fun-1558979827"
-model: "Midjourney v6"
-category: "3d"
-tags: ["摄影", "Stargate", "Arduino", "AI", "3D Printing"]
-difficulty: "intermediate"
-cover: "/images/prompts/these-360-prompts-are-so-much-fun-1558979827.jpg"
-date: "2026-01-24"
-source: "https://x.com/i/status/2014696369680793776"
-author: "Gdgtify"
+title: These 360 prompts are so much fun. Another one for Nano Banana
+slug: these-360-prompts-are-so-much-fun-1558979827
+model: Midjourney
+category: 3d
+tags:
+- 摄影
+- Stargate
+- Arduino
+- AI
+- 3D Printing
+difficulty: intermediate
+cover: /images/prompts/these-360-prompts-are-so-much-fun-1558979827.jpg
+date: '2026-01-24'
+source: https://x.com/i/status/2014696369680793776
+author: Gdgtify
 ---
 
 ## Prompt

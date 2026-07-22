@@ -1,14 +1,21 @@
 ---
-title: "Create an 8K hyper-realistic portrait in vertical 9:16 format, using the original face with 100% identical accuracy — absolutely no facial changes or facial structure alterations."
-slug: "create-an-8k-hyper-realistic-portrait-1550594950"
-model: "Midjourney v6"
-category: "realistic"
-tags: ["摄影", "AI_Image_Generation", "Hyperrealistic_Portrait", "Vintage_Photography", "Cinematic_Lighting"]
-difficulty: "intermediate"
-cover: "/images/prompts/create-an-8k-hyper-realistic-portrait-1550594950.jpg"
-date: "2026-01-18"
-source: "https://x.com/i/status/2012578660453405071"
-author: "simplykingofdairyque"
+title: Create an 8K hyper-realistic portrait in vertical 9:16 format, using the original
+  face with 100% identical accuracy — absolutely no facial changes or facial structure
+  alterations.
+slug: create-an-8k-hyper-realistic-portrait-1550594950
+model: Midjourney
+category: realistic
+tags:
+- 摄影
+- AI_Image_Generation
+- Hyperrealistic_Portrait
+- Vintage_Photography
+- Cinematic_Lighting
+difficulty: intermediate
+cover: /images/prompts/create-an-8k-hyper-realistic-portrait-1550594950.jpg
+date: '2026-01-18'
+source: https://x.com/i/status/2012578660453405071
+author: simplykingofdairyque
 ---
 
 ## Prompt

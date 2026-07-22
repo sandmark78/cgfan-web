@@ -1,14 +1,19 @@
 ---
-title: "Champagne problems, literally."
-slug: "champagne-problems-literally-1565919957"
-model: "Midjourney v6"
-category: "realistic"
-tags: ["摄影", "photography", "film aesthetic", "fashion styling", "prompt engineering"]
-difficulty: "intermediate"
-cover: "/images/prompts/champagne-problems-literally-1565919957.jpg"
-date: "2026-01-28"
-source: "https://x.com/i/status/2016351167551570140"
-author: "sidona"
+title: Champagne problems, literally.
+slug: champagne-problems-literally-1565919957
+model: Midjourney
+category: realistic
+tags:
+- 摄影
+- photography
+- film aesthetic
+- fashion styling
+- prompt engineering
+difficulty: intermediate
+cover: /images/prompts/champagne-problems-literally-1565919957.jpg
+date: '2026-01-28'
+source: https://x.com/i/status/2016351167551570140
+author: sidona
 ---
 
 ## Prompt

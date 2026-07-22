@@ -1,14 +1,19 @@
 ---
-title: "Nano Banana pro on Gemini app."
-slug: "nano-banana-pro-on-gemini-app-1565908079"
-model: "Midjourney v6"
-category: "realistic"
-tags: ["摄影", "AIArt", "ImageGeneration", "AIprompts", "Cinematic"]
-difficulty: "intermediate"
-cover: "/images/prompts/nano-banana-pro-on-gemini-app-1565908079.jpg"
-date: "2026-01-28"
-source: "https://x.com/i/status/2016357678680039438"
-author: "Taaruk_"
+title: Nano Banana pro on Gemini app.
+slug: nano-banana-pro-on-gemini-app-1565908079
+model: Midjourney
+category: realistic
+tags:
+- 摄影
+- AIArt
+- ImageGeneration
+- AIprompts
+- Cinematic
+difficulty: intermediate
+cover: /images/prompts/nano-banana-pro-on-gemini-app-1565908079.jpg
+date: '2026-01-28'
+source: https://x.com/i/status/2016357678680039438
+author: Taaruk_
 ---
 
 ## Prompt

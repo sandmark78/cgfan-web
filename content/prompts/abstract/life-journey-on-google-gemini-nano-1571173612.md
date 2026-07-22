@@ -1,14 +1,19 @@
 ---
-title: "Life journey on Google Gemini Nano Banana"
-slug: "life-journey-on-google-gemini-nano-1571173612"
-model: "Midjourney v6"
-category: "abstract"
-tags: ["艺术", "AI艺术创作", "人生旅程叙事", "电影风格拼贴", "人工智能生成"]
-difficulty: "intermediate"
-cover: "/images/prompts/life-journey-on-google-gemini-nano-1571173612.jpg"
-date: "2026-01-31"
-source: "https://x.com/i/status/2017592536601399641"
-author: "Smiling Khan"
+title: Life journey on Google Gemini Nano Banana
+slug: life-journey-on-google-gemini-nano-1571173612
+model: Midjourney
+category: abstract
+tags:
+- 艺术
+- AI艺术创作
+- 人生旅程叙事
+- 电影风格拼贴
+- 人工智能生成
+difficulty: intermediate
+cover: /images/prompts/life-journey-on-google-gemini-nano-1571173612.jpg
+date: '2026-01-31'
+source: https://x.com/i/status/2017592536601399641
+author: Smiling Khan
 ---
 
 ## Prompt

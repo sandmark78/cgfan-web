@@ -1,14 +1,18 @@
 ---
-title: "3D 角色 - 未来战士"
-slug: "3d-character-futuristic-warrior-001"
-model: "Stable Diffusion XL"
-category: "3d"
-tags: ["3D", "角色", "未来", "科幻"]
-difficulty: "advanced"
-cover: "/images/prompts/3d-character-futuristic-warrior-001.webp"
+title: 3D 角色 - 未来战士
+slug: 3d-character-futuristic-warrior-001
+model: Stable Diffusion
+category: 3d
+tags:
+- 3D
+- 角色
+- 未来
+- 科幻
+difficulty: intermediate
+cover: /images/prompts/3d-character-futuristic-warrior-001.webp
 date: 2025-07-21
-source: "https://civitai.com/images/456789"
-author: "CGfan 编辑部"
+source: https://civitai.com/images/456789
+author: CGfan 编辑部
 ---
 
 ## Prompt

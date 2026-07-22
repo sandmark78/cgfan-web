@@ -1,14 +1,19 @@
 ---
-title: "Nano Banana pro image generation"
-slug: "nano-banana-pro-image-generation-1566916201"
-model: "Midjourney v6"
-category: "realistic"
-tags: ["摄影", "AI Image Generation", "Cinematic Photography", "Night Portrait", "Prompt Engineering"]
-difficulty: "intermediate"
-cover: "/images/prompts/nano-banana-pro-image-generation-1566916201.jpg"
-date: "2026-01-29"
-source: "https://x.com/i/status/2016491419570155780"
-author: "Taaruk_"
+title: Nano Banana pro image generation
+slug: nano-banana-pro-image-generation-1566916201
+model: Midjourney
+category: realistic
+tags:
+- 摄影
+- AI Image Generation
+- Cinematic Photography
+- Night Portrait
+- Prompt Engineering
+difficulty: intermediate
+cover: /images/prompts/nano-banana-pro-image-generation-1566916201.jpg
+date: '2026-01-29'
+source: https://x.com/i/status/2016491419570155780
+author: Taaruk_
 ---
 
 ## Prompt

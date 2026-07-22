@@ -1,14 +1,19 @@
 ---
-title: "There's something about Cinestill and underground light."
-slug: "theres-something-about-cinestill-and-1560823000"
-model: "Midjourney v6"
-category: "realistic"
-tags: ["摄影", "photography", "aesthetic", "portrait", "prompt"]
-difficulty: "intermediate"
-cover: "/images/prompts/theres-something-about-cinestill-and-1560823000.jpg"
-date: "2026-01-25"
-source: "https://x.com/i/status/2015075609949663312"
-author: "sidona"
+title: There's something about Cinestill and underground light.
+slug: theres-something-about-cinestill-and-1560823000
+model: Midjourney
+category: realistic
+tags:
+- 摄影
+- photography
+- aesthetic
+- portrait
+- prompt
+difficulty: intermediate
+cover: /images/prompts/theres-something-about-cinestill-and-1560823000.jpg
+date: '2026-01-25'
+source: https://x.com/i/status/2015075609949663312
+author: sidona
 ---
 
 ## Prompt
