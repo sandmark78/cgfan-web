@@ -34,14 +34,14 @@ export function createClient() {
             cookieOptions.secure = true
           }
           
-          // 构建 cookie 字符串
+          // 构建 cookie 字符串 - 使用标准的 cookie 属性名称
           const cookieParts = [
             `${name}=${value}`,
-            `path=${cookieOptions.path}`,
-            cookieOptions.domain ? `domain=${cookieOptions.domain}` : null,
-            cookieOptions.secure ? 'secure' : null,
-            `samesite=${cookieOptions.sameSite}`,
-            cookieOptions.expires ? `expires=${new Date(cookieOptions.expires).toUTCString()}` : null
+            `Path=${cookieOptions.path}`,
+            cookieOptions.domain ? `Domain=${cookieOptions.domain}` : null,
+            cookieOptions.secure ? 'Secure' : null,
+            `SameSite=${cookieOptions.sameSite}`,
+            cookieOptions.expires ? `Expires=${new Date(cookieOptions.expires).toUTCString()}` : null
           ].filter(Boolean)
           
           document.cookie = cookieParts.join('; ')

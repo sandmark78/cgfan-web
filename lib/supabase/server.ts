@@ -15,12 +15,13 @@ export async function createClient() {
     {
       cookies: {
         getAll() {
+          // 获取所有 cookies，用于 PKCE 流程
           return cookieStore.getAll()
         },
         setAll(cookiesToSet) {
           try {
             cookiesToSet.forEach(({ name, value, options }) => {
-              // 合并选项，确保有正确的路径
+              // 为 OAuth 流程设置合理的默认选项
               const cookieOptions = {
                 path: '/',
                 ...options,
