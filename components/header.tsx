@@ -2,6 +2,9 @@
 
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
+import { createClient } from '@/lib/supabase/client'
+import type { User } from '@supabase/supabase-js'
+import { useRouter } from 'next/navigation'
 
 /**
  * 顶部导航栏 - 毛玻璃效果
@@ -10,14 +13,30 @@ export default function Header() {
   const [isDark, setIsDark] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [searchQuery, setSearchQuery] = useState('')
+  const [user, setUser] = useState<User | null>(null)
+  const [isUserMenuOpen, setIsUserMenuOpen] = useState(false)
+  const supabase = createClient()
+  const router = useRouter()
 
-  // 初始化时读取系统主题偏好
+  // 初始化时读取系统主题偏好和登录状态
   useEffect(() => {
     const stored = localStorage.getItem('theme')
     if (stored === 'dark' || (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       setIsDark(true)
       document.documentElement.classList.add('dark')
     }
+
+    // 获取初始用户状态
+    supabase.auth.getUser().then(({ data: { user } }) => {
+      setUser(user)
+    })
+
+    // 监听登录状态变化
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+      setUser(session?.user ?? null)
+    })
+
+    return () => subscription.unsubscribe()
   }, [])
 
   const toggleTheme = () => {
@@ -31,6 +50,28 @@ export default function Header() {
     if (searchQuery.trim()) {
       window.location.href = `/explore?q=${encodeURIComponent(searchQuery.trim())}`
     }
+  }
+
+  const handleSignOut = async () => {
+    await supabase.auth.signOut()
+    setUser(null)
+    setIsUserMenuOpen(false)
+    router.refresh()
+  }
+
+  // 获取用户显示名称
+  const getUserName = () => {
+    if (!user) return ''
+    return user.user_metadata?.name || 
+           user.user_metadata?.user_name || 
+           user.email || 
+           '用户'
+  }
+
+  // 获取用户头像
+  const getUserAvatar = () => {
+    if (!user) return null
+    return user.user_metadata?.avatar_url || user.user_metadata?.picture
   }
 
   return (
@@ -78,10 +119,53 @@ export default function Header() {
             )}
           </button>
 
-          {/* 登录按钮 */}
-          <Link href="/login" className="btn-primary text-xs px-3 py-1.5">
-            登录
-          </Link>
+          {/* 用户区域 */}
+          {user ? (
+            <div className="relative">
+              <button
+                onClick={() => setIsUserMenuOpen(!isUserMenuOpen)}
+                className="flex items-center gap-2 rounded-full p-1 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                aria-label="用户菜单"
+              >
+                {getUserAvatar() ? (
+                  <img
+                    src={getUserAvatar()!}
+                    alt="avatar"
+                    className="h-7 w-7 rounded-full border-2 border-white dark:border-gray-700"
+                  />
+                ) : (
+                  <div className="h-7 w-7 rounded-full bg-gradient-to-br from-green-400 to-emerald-600 flex items-center justify-center text-white text-xs font-bold border-2 border-white dark:border-gray-700">
+                    {getUserName()[0].toUpperCase()}
+                  </div>
+                )}
+              </button>
+
+              {/* 用户下拉菜单 */}
+              {isUserMenuOpen && (
+                <>
+                  <div className="fixed inset-0 z-40" onClick={() => setIsUserMenuOpen(false)} />
+                  <div className="absolute right-0 top-full mt-2 z-[60] w-56 rounded-2xl bg-white/90 dark:bg-gray-900/90 backdrop-blur-xl border border-white/20 dark:border-gray-700/30 shadow-2xl overflow-hidden p-2">
+                    <div className="px-3 py-2 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700 mb-1 truncate font-medium">
+                      {getUserName()}
+                    </div>
+                    <button
+                      onClick={handleSignOut}
+                      className="flex w-full items-center gap-2 rounded-xl px-3 py-2 text-sm text-red-600 hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors"
+                    >
+                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                      </svg>
+                      退出登录
+                    </button>
+                  </div>
+                </>
+              )}
+            </div>
+          ) : (
+            <Link href="/login" className="btn-primary text-xs px-3 py-1.5">
+              登录
+            </Link>
+          )}
 
           {/* 菜单按钮 - 展开下拉 */}
           <div className="relative">

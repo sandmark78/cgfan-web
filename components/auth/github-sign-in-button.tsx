@@ -10,10 +10,15 @@ export function GitHubSignInButton() {
   const supabase = createClient()
 
   const handleSignIn = async () => {
+    // 云端环境使用硬编码的回调地址
+    const redirectTo = typeof window !== 'undefined' 
+      ? `${window.location.origin}/auth/callback`
+      : 'https://cgfan-web.pages.dev/auth/callback'
+    
     await supabase.auth.signInWithOAuth({
       provider: 'github',
       options: {
-        redirectTo: `${window.location.origin}/auth/callback`,
+        redirectTo,
       },
     })
   }
