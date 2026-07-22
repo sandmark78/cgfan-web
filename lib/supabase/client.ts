@@ -15,34 +15,24 @@ export function createClient() {
         get(name: string) {
           const cookie = document.cookie
             .split('; ')
-            .find(row => row.startsWith(`${name}=`))
+            .find(row => row.trim().startsWith(`${name}=`))
           return cookie ? cookie.split('=')[1] : null
         },
         set(name: string, value: string, options: any) {
           const { expires, path, domain, secure, sameSite, ...restOptions } = options
-          const cookieOptions = {
-            ...restOptions,
-            path: path ?? '/',
-            domain,
-            secure,
-            sameSite: sameSite ?? 'lax',
-            expires: expires ? new Date(expires) : undefined,
-          }
+          const cookieOptions = [
+            path && `Path=${path}`,
+            domain && `Domain=${domain}`,
+            secure && 'Secure',
+            sameSite && `SameSite=${sameSite}`,
+            expires && `Expires=${new Date(expires).toUTCString()}`
+          ].filter(Boolean).join('; ')
           
-          const cookieParts = [
-            `${name}=${value}`,
-            cookieOptions.path && `Path=${cookieOptions.path}`,
-            cookieOptions.domain && `Domain=${cookieOptions.domain}`,
-            cookieOptions.secure && 'Secure',
-            `SameSite=${cookieOptions.sameSite}`,
-            cookieOptions.expires && `Expires=${cookieOptions.expires.toUTCString()}`
-          ].filter(Boolean) as string[]
-          
-          document.cookie = cookieParts.join('; ')
+          document.cookie = `${name}=${value}${cookieOptions ? '; ' + cookieOptions : ''}`
         },
         remove(name: string, options: any) {
-          const { path, domain, ...restOptions } = options
-          document.cookie = `${name}=; Path=${path ?? '/'}; Expires=Thu, 01 Jan 1970 00:00:00 GMT${domain ? `; Domain=${domain}` : ''}`
+          const { path, domain } = options
+          document.cookie = `${name}=; Path=${path || '/'}; Expires=Thu, 01 Jan 1970 00:00:00 GMT${domain ? `; Domain=${domain}` : ''}`
         },
       },
     }
