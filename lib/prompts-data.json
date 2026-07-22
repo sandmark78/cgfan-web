@@ -1,26 +1,5 @@
 [
   {
-    "title": "兄弟们，",
-    "slug": "prompt-1574133675",
-    "model": "Midjourney",
-    "category": "realistic",
-    "tags": [
-      "摄影",
-      "艺术"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-1574133675.jpg",
-    "date": "2026-02-03",
-    "source": "https://x.com/i/status/2018307657963057593",
-    "author": "未知作者",
-    "prompt": "加今天一个白天时间，",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
     "title": "📐 AI生图构图篇：打破物理的叙事 —— 分焦镜头 (Split Diopter)",
     "slug": "prompt-1572908923",
     "model": "Midjourney",
@@ -181,7 +160,7 @@
     "date": "2026-01-31",
     "source": "https://x.com/i/status/2017219273521856928",
     "author": "TechieSA (TechieBySA)",
-    "prompt": "Landmark Infographics by Grok Imagine🗽✨ Prompt👇🏻 🧵 深度展开 [!NOTE] 补充 1 [!NOTE] 补充 2 [!NOTE] 补充 3 [!NOTE] 补充 4 [!NOTE] 补充 5",
+    "prompt": "Landmark Infographics by Grok Imagine🗽✨ Prompt👇🏻",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -229,7 +208,7 @@
     "date": "2026-01-31",
     "source": "https://x.com/i/status/2013316513701216688",
     "author": "TechieSA",
-    "prompt": "Object Infographics by Nano Banana Pro on @SocialSight 🧾✨ Prompt👇🏻 🧵 深度展开 [!NOTE] 补充 1 [!NOTE] 补充 2 [!NOTE] 补充 3 [!NOTE] 补充 4 [!NOTE] 补充 5",
+    "prompt": "Object Infographics by Nano Banana Pro on @SocialSight 🧾✨ Prompt👇🏻",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -285,30 +264,6 @@
     }
   },
   {
-    "title": "2026年大胆去做自媒体，短视频风口来了",
-    "slug": "prompt-1570902492",
-    "model": "Midjourney",
-    "category": "abstract",
-    "tags": [
-      "AI",
-      "工具",
-      "自媒体",
-      "短视频",
-      "运营技巧"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-1570902492.jpg",
-    "date": "2026-01-31",
-    "source": "https://x.com/i/status/2017188073004843292",
-    "author": "桃桃的运营日记📓TaoTaoOps",
-    "prompt": "2026年大胆去做自媒体，短视频风口来了",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
     "title": "用最“笨”的方法，短短4年身价暴涨1万倍！",
     "slug": "prompt-1571068337",
     "model": "Midjourney",
@@ -326,26 +281,6 @@
     "source": "https://x.com/i/status/2017137108163711426",
     "author": "白骏知识分享",
     "prompt": "用最“笨”的方法，短短4年身价暴涨1万倍！ 16分钟狂赚20亿！日本最强「民间股神」小手川隆（BNF）退隐前曝出惊人秘诀 从大学打工仔到资产超200亿日元，他靠严苛止损、顺势短线、避开情绪陷阱，硬生生把股市玩成个人提款机。 想知道他如何抓住JCOM错单暴富、日常如何“笨”到极致却赚翻天？ 戳进来看，解锁真正的高手心法，股市翻身就靠这一篇！ 保存学习👉https://t.co/N10Lp4RCne",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
-    "title": "📐 AI生图构图篇：破局的美学 —— 框中框断裂 (Broken Frame-in-Frame)",
-    "slug": "prompt-1570501610",
-    "model": "Midjourney",
-    "category": "anime",
-    "tags": [
-      "国风"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-1570501610.jpg",
-    "date": "2026-01-31",
-    "source": "https://x.com/i/status/2017075458781958263",
-    "author": "未知作者",
-    "prompt": "null",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -393,7 +328,7 @@
     "date": "2026-01-31",
     "source": "https://x.com/i/status/2016757713162960972",
     "author": "Sidona",
-    "prompt": "Framing luck with silver clovers. 幸運を纏う静かな瞬間。 用四叶草框住自己的小确幸。 Soft window light + mother-of-pearl texture + minimal composition What jewelry style speaks to you — delicate or bold? Prompt ↓ 🧵 深度展开",
+    "prompt": "Framing luck with silver clovers. 幸運を纏う静かな瞬間。 用四叶草框住自己的小确幸。 Soft window light + mother-of-pearl texture + minimal composition What jewelry style speaks to you — delicate or bold? Prompt ↓",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -585,7 +520,7 @@
     "date": "2026-01-31",
     "source": "https://x.com/i/status/2004193839142342792",
     "author": "Unknown",
-    "prompt": "{ &quot;prompt&quot;: &quot;3D Realistic Deconstruction Prompt\\n\\n📷 Core Instruction (Core Instruction) \\nTask: Based on the reference image provided by",
+    "prompt": "Twitter Web Viewer & Trend Analyzer & Downloader | Sotwe",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -617,30 +552,6 @@
     }
   },
   {
-    "title": "很久没有更新美妆了，新款美甲💅新动作（提示词过长，部分放在评论区，欢迎返图🙌🏻）",
-    "slug": "prompt-1570522331",
-    "model": "Midjourney",
-    "category": "realistic",
-    "tags": [
-      "摄影",
-      "AI美妆",
-      "AI图像生成",
-      "美甲设计",
-      "妆容复刻"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-1570522331.jpg",
-    "date": "2026-01-31",
-    "source": "https://x.com/i/status/2017129240173388019",
-    "author": "PlayForge AI (94vanAI)",
-    "prompt": "很久没有更新美妆了，新款美甲💅新动作（提示词过长，部分放在评论区，欢迎返图🙌🏻） 🧵 深度展开 [!NOTE] 补充 1 AI 妆容复刻教学指南 这是一套利用 AI 图像生成技术，从参考图中精准提取妆容信息并一键复刻到你的人像照片上的完整工作流。 📋 整体流程概览 步骤 说明 目的 第一步 反推妆容 Prompt 从参考图提取妆容细节 第二步 生成妆容描述词 获得可复用的妆容提示词 第三步 一键上妆 将妆容应用到你的照片 🔍 第一步：反推妆容 Prompt 用以下提示词让 AI 分析参考图中的妆容细节： ✨ 提示词模板（三选一或组合使用）： 模板 1：毫米级精细反推 超精细反推参考图妆容，分区域标注： 底妆：毛孔隐形手法 眼影：渐变色彩配比 眼线：防水持妆配方 唇妆：唇线勾勒技巧 手部妆容：美甲款式、手部底妆、指节腮红 生成毫米级复刻提示词 模板 2：光影适配分析 反推图片中妆容的光影适配逻辑： 分析不同光源下妆容的显色变化 明确眼妆亮片的粒径大小 明确唇妆的成膜速度 明确修容的粉质细腻度 附带妆容修改微调的参数建议 模板 3：专业美妆教程式 针对特写妆容照片进行反推，重点拆解： 眼妆：睫毛嫁接层次 眉妆：野生毛流打造 腮红：膏粉结合手法 手部：白嫩质感妆容（指缘油护理、手部高光位置） 生成专业级美妆教程式提示词 ✍️ 第二步：生成妆容 Prompt 根据需求选择不同侧重点的 Prompt 方案： 方案一：毫米级复刻与技术拆解 适用场景：需要精确复刻妆容手法与色彩配比 (best quality, 8k, masterpiece, hyper-detailed close-up portrait based on image_0.png), Subject: The woman from image_0.png with dark wavy hair and white/blue ruffled bonnet. Blue contact lenses. Skin Base (Millimeter-level precision): Porcelain skin texture, zero pore visibility achieved via silicone-based pore-blurring primer and high-coverage matte liquid foundation, set with translucent micro-finishing powder using a baking technique under the eyes. Eye Makeup (Gradient &amp; Formula): Intense peach-to-coral gradient eyeshadow (70% muted peach transitions to 30% soft coral towards the temples), blown out heavily around the eyes. Sharp, waterproof jet-black liquid eyeliner with a winged tip. Lashes: Defined, wispy individual false lashes. Lip Makeup (Contour &amp; Technique): Velvet matte lip look in peachy-pink. Precise lip contouring using a slightly darker nude pencil to define the shape, blended inwards for a blurred &quot;bitten&quot; effect, no harsh edges. Hand Details (Linked to makeup): Hand visible at the bottom with pale hand foundation, distinct pink &quot;knuckle blush&quot; on finger joints to match face blush. Glossy, dark black manicured nails. Lighting: Bright, high-key lighting emphasizing the flawless matte finish. 方案二：光影适配与材质分析 适用场景：分析妆容在不同光线下的质感表现 (best quality, realistic texture analysis portrait based on image_0.png), Context: Close-up beauty shot analyzing makeup texture under bright, diffused high-key lighting. Skin Texture &amp; Light Reaction: Soft-focus matte skin finish that absorbs light, subtly reflecting only on the high points of the nose and forehead. Very fine milled contour powder provides subtle structure without looking muddy under bright light. Eye Makeup Particle Analysis: The coral eyeshadow contains ultra-fine (approx. 50-micron) shimmer particles that create a wet-look sheen rather than chunky glitter. Lip Product Texture: Lips feature a rapid film-forming velvet lip stain that appears completely dry and transfer-proof, diffusing light softly. Lash Details: Lashes have a matte, fiber-rich mascara coating. Adjustment Parameters: Makeup is balanced for high exposure; blush saturation is high to register on camera, contour is cool-toned to avoid orange cast. Hand Texture: Hands show smooth skin texture with a non-greasy satin finish hand cream. 方案三：专业级美妆教程风格 适用场景：展示专业美妆手法，如野生眉、睫毛嫁接等 (masterpiece, top-tier beauty tutorial photography based on image_0.png), Focus: A professional makeup look showcasing specific techniques. Brow Tutorial: &quot;Wild&quot; brow flow achieved using brow soap technique, individual hairs brushed upwards and textured with a tinted fiber gel. Lash Tutorial: Hybrid eyelash extensions, mixing classic and volume fans (C-curl, lengths ranging from 8mm inner corner to 12mm outer corner) for a fluttery, doll-like effect. Blush Application: Layered blush technique—cream coral base layered under a translucent powder pink blush, applied high on the cheekbones connecting to the eye area (Igari style). Hand Care &amp; Makeup: Hands at the bottom appear manicured. Visible shine on cuticles from nourishing cuticle oil application. Subtle liquid highlighter placed on the knuckles and veins of the hand for a hydrated, youthful look. Dark polished nails. Overall Feeling: Ethereal, perfectly groomed, high-end beauty look. 🎯 第三步：一键上妆 完成前两步后，只需用一句话即可完成妆容复刻： 💫 指令：上面的妆容给参照图角色化妆 将你的人像照片与生成的妆容 Prompt 一起提交给 AI，无需再写详细描述，即可获得理想妆容效果。 💡 小贴士 方案一 适合追求精确复刻的用户 方案二 适合需要分析妆容在镜头前表现的摄影师 方案三 适合想展示专业技法的美妆博主 可以根据需要组合使用多个方案中的元素",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
     "title": "🎉兄弟们，",
     "slug": "prompt-1570522410",
     "model": "Midjourney",
@@ -658,30 +569,6 @@
     "source": "https://x.com/i/status/2017448595218436545",
     "author": "大卫叔的AI旅程 aidavid125",
     "prompt": "提示词： --- {角色定义}, {服装描述}, kneeling on yoga mat holding smartphone for mirror selfie, one hand resting on foam roller, {姿态细节}, {场景环境}, {光影设置}, 3:4 vertical composition, fitness photography aesthetic, sharp focus, 8k resolution --ar 3:4 --style raw --v 6.0 ---",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
-    "title": "提示词我改了一版本，我认为K-pop的风格比我之前写的抖音风格更加适配，你们觉得呢？做了点改动发现风格截然不同！一韩一中区别明显，放上韩系版本给大家试试，欢迎返图！！！（需要中式的可自行修改哦！）😀NBP Prompt:",
-    "slug": "prompt-1571044266",
-    "model": "Midjourney",
-    "category": "realistic",
-    "tags": [
-      "摄影",
-      "#摄影",
-      "#提示词",
-      "•",
-      "收藏夹：提示词"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-1571044266.jpg",
-    "date": "2026-01-31",
-    "source": "https://x.com/i/status/2017594245650026579",
-    "author": "未知作者",
-    "prompt": "原推文：https://x.com/i/status/2017594245650026579 作者：@未知作者 时间：2026-1-31 21:51:34",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -737,30 +624,6 @@
     }
   },
   {
-    "title": "She didn't apply for the cover.",
-    "slug": "she-didnt-apply-for-the-cover-1570801541",
-    "model": "Midjourney",
-    "category": "realistic",
-    "tags": [
-      "摄影",
-      "时尚摄影",
-      "低角度镜头",
-      "黄金时刻",
-      "街头风格"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/she-didnt-apply-for-the-cover-1570801541.jpg",
-    "date": "2026-01-31",
-    "source": "https://x.com/i/status/2017457199333970004",
-    "author": "Sidona",
-    "prompt": "通过低角度摄影和黄金时刻的光线，将街头瞬间提升为《BAZAAR》杂志封面级别的时尚大片。",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
     "title": "Untamed energy🐾",
     "slug": "untamed-energy-1570898796",
     "model": "Gemini",
@@ -778,30 +641,6 @@
     "source": "https://x.com/i/status/2017223007060808035",
     "author": "Natty Windstorm",
     "prompt": "{\"content\":\"Untamed energy🐾 made by Nano Banana Pro on https://t.co/nNCgo11Z9L✨ { \\\"prompt\\\": \\\"Cinematic desert road scene at golden hour. A confident tattooed woman with long blonde hair poses on the hood of a vintage luxury convertible, wearing a black cutout one-piece swimsuit and gold jewelry. A calm cheetah sits beside her on the car hood. Warm sunlight, dusty highway stretching into distant mountains, dramatic shadows, sun flare, high fashion editorial style, surreal yet realistic mood.\\\"",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
-    "title": "Airbnb-style 生态屋",
-    "slug": "prompt-1568556133",
-    "model": "Midjourney",
-    "category": "3d",
-    "tags": [
-      "AI_Art",
-      "3D_Diorama",
-      "Airbnb_Style",
-      "Sustainable_Design",
-      "Prompt_Engineering"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-1568556133.jpg",
-    "date": "2026-01-30",
-    "source": "https://x.com/i/status/2017116469692453116",
-    "author": "两斤 0x00_Krypt",
-    "prompt": "Airbnb-style 生态屋 Prompt👇",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -1017,7 +856,7 @@
     "date": "2026-01-28",
     "source": "https://x.com/i/status/2016351167551570140",
     "author": "sidona",
-    "prompt": "Framing luck with silver clovers. 幸運を纏う静かな瞬間。 用四叶草框住自己的小确幸。 Soft window light + mother-of-pearl texture + minimal composition What jewelry style speaks to you — delicate or bold? Prompt ↓ 🧵 深度展开 [!NOTE] 补充 1 That satisfying chaos when the lighting finally decides to cooperate. 夜に咲く、野生の笑顔。 银发豹纹，周末该有的样子。 🔧 Platinum hair × Leopard print × Velvet warmth × Film grain 💬 Leopard or solid color — which would you pick for a night out? 🧵 Prompt ↓ [!NOTE] 补充 2 Matcha date with Sailor Moon. セーラームーンと抹茶デート。 和月野兔一起喝抹茶，宅女的快乐就是这么简单。 🔧 Overhead boyfriend POV × Sailor Moon collectibles × Matcha latte art 💬 Which Sailor Scout is your favorite? 🧵 Prompt ↓ [!NOTE] 补充 3 Trying to catch falling stars from down here. 地べたから星を掴もうとしている。 贴地捞星星，这个角度真的绝。 🔧 Ground-level POV × Wide angle × Silver star props × K-style 💬 Would you try this angle? 🧵 Prompt ↓ [!NOTE] 补充 4 Drawing smiley faces on foggy mirrors. The kind of happiness that doesn't need a reason. 曇った鏡に、小さな幸せを描く。 浴室里的小确幸，不需要理由。 ——————Prompt👇",
+    "prompt": "Framing luck with silver clovers. 幸運を纏う静かな瞬間。 用四叶草框住自己的小确幸。 Soft window light + mother-of-pearl texture + minimal composition What jewelry style speaks to you — delicate or bold? Prompt ↓",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -1361,30 +1200,6 @@
     }
   },
   {
-    "title": "清晨阳光下写实女生特写肖像照",
-    "slug": "prompt-1560392946",
-    "model": "Gemini",
-    "category": "realistic",
-    "tags": [
-      "摄影",
-      "AI绘画",
-      "NanoBananaPro",
-      "写实肖像",
-      "清晨阳光"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-1560392946.jpg",
-    "date": "2026-01-25",
-    "source": "https://x.com/i/status/2015021870991761539",
-    "author": "松果先森 (songguoxiansen)",
-    "prompt": "清晨阳光下写实女生特写肖像照 Nano Banana Pro提示词",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
     "title": "📐 AI生图构图篇：视线阻断 (Sightline Obstruction)",
     "slug": "prompt-1560393096",
     "model": "Midjourney",
@@ -1497,7 +1312,7 @@
     "date": "2026-01-25",
     "source": "https://x.com/i/status/2015200561025663442",
     "author": "VoxCat (VoxcatAI)",
-    "prompt": "雨夜回眸，动态抓拍。 核心特征： 抓拍动态 × 雨夜灯光 × 冷暖对撞 一句话：「雨夜回眸，灯火映颊，发丝随风。」 🚀 提示词ALT 🧵 深度展开 [!NOTE] 补充 1 [!NOTE] 补充 2 [!NOTE] 补充 3",
+    "prompt": "雨夜回眸，动态抓拍。\n核心特征：\n抓拍动态 × 雨夜灯光 × 冷暖对撞\n一句话：「雨夜回眸，灯火映颊，发丝随风。」 🚀 提示词ALT",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -1665,7 +1480,7 @@
     "date": "2026-01-25",
     "source": "https://x.com/i/status/2015058344411828268",
     "author": "Adam也叫吉米Adam38363368936",
-    "prompt": "That's https://t.co/Mg5PMVkLl0 feels like a real shot. 阳光洒在床上的慵懒感，太真实了。提示词放评论区自取，快拿你女朋友照片试试！ Prompt👇 🧵 深度展开 [!NOTE] 补充 1 [!NOTE] 补充 2 [!NOTE] 补充 3",
+    "prompt": "That's https://t.co/Mg5PMVkLl0 feels like a real shot. 阳光洒在床上的慵懒感，太真实了。提示词放评论区自取，快拿你女朋友照片试试！ Prompt👇",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -1675,7 +1490,7 @@
   {
     "title": "There's something about Cinestill and underground light.",
     "slug": "theres-something-about-cinestill-and-1560823000",
-    "model": "Gemini",
+    "model": "Midjourney",
     "category": "realistic",
     "tags": [
       "摄影",
@@ -1689,7 +1504,7 @@
     "date": "2026-01-25",
     "source": "https://x.com/i/status/2015075609949663312",
     "author": "sidona",
-    "prompt": "Framing luck with silver clovers. 幸運を纏う静かな瞬間。 用四叶草框住自己的小确幸。 Soft window light + mother-of-pearl texture + minimal composition What jewelry style speaks to you — delicate or bold? Prompt ↓ 🧵 深度展开 [!NOTE] 补充 1 That satisfying chaos when the lighting finally decides to cooperate. 夜に咲く、野生の笑顔。 银发豹纹，周末该有的样子。 🔧 Platinum hair × Leopard print × Velvet warmth × Film grain 💬 Leopard or solid color — which would you pick for a night out? 🧵 Prompt ↓ [!NOTE] 补充 2 Matcha date with Sailor Moon. セーラームーンと抹茶デート。 和月野兔一起喝抹茶，宅女的快乐就是这么简单。 🔧 Overhead boyfriend POV × Sailor Moon collectibles × Matcha latte art 💬 Which Sailor Scout is your favorite? 🧵 Prompt ↓ [!NOTE] 补充 3 📸 How to recreate this shot: 1. Camera flat ON the ground (not handheld low) 2. Wide angle lens (24mm or wider) 3. Subject reaches arm toward lens 4. Legs kick up toward sky for balance 5. Scatter props around for visual interest The key is EXTREME low angle — lower than you think! [!NOTE] 补充 4 Trying to catch falling stars from down here. 地べたから星を掴もうとしている。 贴地捞星星，这个角度真的绝。 🔧 Ground-level POV × Wide angle × Silver star props × K-style 💬 Would you try this angle? 🧵 Prompt ↓ [!NOTE] 补充 5 Drawing smiley faces on foggy mirrors. The kind of happiness that doesn't need a reason. 曇った鏡に、小さな幸せを描く。 浴室里的小确幸，不需要理由。 ——————Prompt👇",
+    "prompt": "Framing luck with silver clovers. 幸運を纏う静かな瞬間。 用四叶草框住自己的小确幸。 Soft window light + mother-of-pearl texture + minimal composition What jewelry style speaks to you — delicate or bold? Prompt ↓",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -1841,30 +1656,6 @@
     }
   },
   {
-    "title": "像素微世界",
-    "slug": "prompt-1557350454",
-    "model": "Midjourney",
-    "category": "abstract",
-    "tags": [
-      "艺术",
-      "AI绘画",
-      "像素艺术",
-      "WesAnderson",
-      "建筑设计"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-1557350454.jpg",
-    "date": "2026-01-23",
-    "source": "https://x.com/i/status/2014201194949050527",
-    "author": "两斤0x00_Krypt",
-    "prompt": "像素微世界 Banana Prompt👇 Style &amp; Medium: Isometric 2.5D pixel art illustration, architectural cross-section diorama, cute, whimsical, charming, detailed. Core Concept: &quot;The Stacked Suitcase Hotel.&quot; A teetering tower of 5 vintage suitcases of various sizes and colors, precariously stacked. Each case is a unique micro-room for a traveler. Aesthetic &amp; Atmosphere : Wes Anderson inspired color palette (pastel pinks, muted yellows, soft blues, warm browns), nostalgic, retro-futurism, literary and artistic vibe, symmetrical composition despite the wobbly stack. Level Details: L1 (Base Foundation): The Explorer's Lobby. A giant, worn brown leather trunk covered in vintage postage stamps. Inside: A reception desk overflowing with antique globes and old maps. A cute pixel corgi dog is guarding the entrance. L2 (Blue Hard-Shell): The Seaside Souvenir Shop. A bright blue case. Interior packed with ocean elements: surfboards hanging, shelves cluttered with seashells, ships-in-bottles, and miniature lighthouse models. The floor is sandy beige. L3 (Green Carry-on): The Botanist's Greenhouse. A green hand-luggage case popped slightly open, with massive tropical foliage plants bursting out. Inside is lush with climbing vines, hanging potted plants, and pixel butterflies flying around. L4 (The Sticker Trunk): Darkroom &amp; Film Lab. Exterior plastered with international travel stickers. Inside: Freshly developed black and white pixel photos hanging on clotheslines, bathed in a moody red darkroom safelight. Vintage cameras piled up like mountains. L5 (Top Vanity Case): The Pilot's Attic. A tiny, exquisite red makeup case perched on top. A telescope poking out of a small window. Flight goggles and leather pilot cap hanging on the wall, paper airplanes floating in the air. 🧵 深度展开",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
     "title": "之前我分享过表情包制作提示词，",
     "slug": "prompt-1558222606",
     "model": "Midjourney",
@@ -1905,7 +1696,7 @@
     "date": "2026-01-23",
     "source": "https://x.com/i/status/2014610813798253029",
     "author": "暖暖爱分享 nuannuan_share",
-    "prompt": "刚发现个宝藏！这个仓库专门收集 GPTs 泄露出来的prompt！ 这些提示是涵盖了从学术论文润色到算命、医疗咨询等多个领域，例如&quot;AI 极简翻译&quot;、&quot;AI算命&quot;、&quot;AI Doctor&quot;等 这个合集不仅能让你深入了解 GPT 是怎么应对各种奇葩请求的，还能激发你的灵感，甚至你可以直接用来复制一个一模一样的 GPT 链接：https://t.co/5JmS4GQTZJ 🧵 深度展开",
+    "prompt": "刚发现个宝藏！这个仓库专门收集 GPTs 泄露出来的prompt！ 这些提示是涵盖了从学术论文润色到算命、医疗咨询等多个领域，例如\"AI 极简翻译\"、\"AI算命\"、\"AI Doctor\"等 这个合集不仅能让你深入了解 GPT 是怎么应对各种奇葩请求的，还能激发你的灵感，甚至你可以直接用来复制一个一模一样的 GPT 链接：https://t.co/5JmS4GQTZJ",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -2129,30 +1920,6 @@
     }
   },
   {
-    "title": "如何用 Nano Banana Pro生成液体飞溅专业级饮料广告图？",
-    "slug": "prompt-1555970594",
-    "model": "Midjourney",
-    "category": "abstract",
-    "tags": [
-      "广告",
-      "AI分身",
-      "AI养蛊",
-      "Grok",
-      "GrokTasks"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-1555970594.jpg",
-    "date": "2026-01-22",
-    "source": "https://x.com/i/status/2013979236487553443",
-    "author": "ttmouse - 豆爸",
-    "prompt": "https://t.co/DRMMCMtUIA",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
     "title": "😏 AI生图玩梗：如何生成「歪嘴龙王」表情？",
     "slug": "prompt-1555988240",
     "model": "Midjourney",
@@ -2193,30 +1960,6 @@
     "source": "https://x.com/i/status/2013748493244936442",
     "author": "神奇小喷菇AIGC xpg0970",
     "prompt": "Title: 把照片改成赛博朋克2077的味道\n\n内容：\n提示词：\n\n完整版提示词：\n用户输入变量区：\n地区：\n天气状态：\n参考图\n任务执行区：\n\n赛博朋克2077风格适配，根据参考图智能转化：\n\n【地区智能识别】 分析参考图中的文字、建筑风格、街景元素自动匹配霓虹招牌语言——日本元素→日文片假名，中国元素→中文，韩国元素→韩文，欧美元素→英文，无法判断→英文为主多语言混搭；\n\n【建筑风貌保护】 最大程度保留原图建筑的本土建筑语言与空间肌理，赛博朋克元素作为“附着层”而非“替换层”——在原有建筑表面叠加霓虹招牌、管线、全息投影，而非改变建筑本身的形态与材质特征；老旧建筑保留其斑驳质感，仅添加科技设备的寄生与缠绕；\n\n【招牌位置合理性】 霓虹招牌只出现在现实中合理悬挂广告的位置——商铺门面、建筑外墙、屋顶；禁止在大桥桥身、高架路面、桥墩、隧道内壁、纯住宅楼、宗教建筑、纪念碑、自然景观等不合理位置强行添加招牌；无商业属性的场景以环境光、管线、小型设备体现科技感，而非硬塞广告；\n\n【远景文字处理】 远景建筑上的招牌仅保留模糊光斑与霓虹轮廓，不渲染清晰可读的文字，符合真实视觉的景深模糊规律；",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
-    "title": "✨九宫格版本，",
-    "slug": "prompt-1556258375",
-    "model": "Midjourney",
-    "category": "realistic",
-    "tags": [
-      "摄影",
-      "AI人像",
-      "九宫格",
-      "肖像生成",
-      "AI摄影"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-1556258375.jpg",
-    "date": "2026-01-22",
-    "source": "https://x.com/i/status/2013824532088340742",
-    "author": "aidavid125",
-    "prompt": "✨九宫格版本， 结合大师级人像🎉 👉来了 🫶话不多说， 男女都可用， 效果👇",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -2344,33 +2087,9 @@
     }
   },
   {
-    "title": "如果你是为了来推特上赚钱的，这篇推文很好的讲解了 X 的机制。",
-    "slug": "prompt-1555326375",
-    "model": "Midjourney",
-    "category": "abstract",
-    "tags": [
-      "教程",
-      "经验",
-      "推特",
-      "赚钱",
-      "机制"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-1555326375.jpg",
-    "date": "2026-01-21",
-    "source": "https://x.com/i/status/2013631275068743761",
-    "author": "Phyrex",
-    "prompt": "如果你是为了来推特上赚钱的，这篇推文很好的讲解了 X 的机制。",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
     "title": "I love these 360 prompts. They are great for video.",
     "slug": "i-love-these-360-prompts-they-are-great-1555333619",
-    "model": "Gemini",
+    "model": "Midjourney",
     "category": "realistic",
     "tags": [
       "摄影",
@@ -2384,7 +2103,7 @@
     "date": "2026-01-21",
     "source": "https://x.com/i/status/2013733776929788085",
     "author": "Gdgtify",
-    "prompt": "Input Variable: [INSERT CITY NAME] (e.g., Tokyo, New York, Barcelona) System Instruction: Generate a hyper-realistic, 360-degree &quot;Full-Bleed&quot; Stereographic Projection . CRITICAL: The city must form a",
+    "prompt": "DIY: 3D Printed Stargate with Arduino control https://t.co/esg4CI5U1N",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -2672,7 +2391,7 @@
     "date": "2026-01-20",
     "source": "https://x.com/i/status/2013274628983042311",
     "author": "VoxCat VoxcatAI",
-    "prompt": "🏯 用 AI 还原明制汉服的华贵与端庄 ✨ 墨绿织金袄裙 + 凤凰纹 ✨ 金项圈 + 珍珠叠戴 ✨ 眉心花钿 + 柳叶眉 ✨ 抛家髻 + 八字刘海 纯提示词生成，无参考图 🎨 🧵 深度展开 [!NOTE] 补充 1 @defyong 谢谢😊",
+    "prompt": "🏯 用 AI 还原明制汉服的华贵与端庄 ✨ 墨绿织金袄裙 + 凤凰纹 ✨ 金项圈 + 珍珠叠戴 ✨ 眉心花钿 + 柳叶眉 ✨ 抛家髻 + 八字刘海 纯提示词生成，无参考图 🎨",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -2728,30 +2447,6 @@
     }
   },
   {
-    "title": "猫耳少女的元气自拍时刻",
-    "slug": "prompt-1553765092",
-    "model": "Gemini",
-    "category": "realistic",
-    "tags": [
-      "摄影",
-      "AI绘画",
-      "NanoBananaPro",
-      "猫耳少女",
-      "提示词工程"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-1553765092.jpg",
-    "date": "2026-01-20",
-    "source": "https://x.com/i/status/2013599739875578197",
-    "author": "松果先森 (songguoxiansen)",
-    "prompt": "猫耳少女的元气自拍时刻 Nano Banana Pro提示词 ，在评论区",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
     "title": "Prompt Studio: Nano Banana Pro, Passport Odyssey, in Firefly",
     "slug": "prompt-studio-nano-banana-pro-passport-1552462717",
     "model": "Gemini",
@@ -2792,7 +2487,7 @@
     "date": "2026-01-19",
     "source": "https://x.com/i/status/2013048397478129821",
     "author": "向阳乔木vista8",
-    "prompt": "哈哈哈，自用的视频生成 Skill 终于做好了。 以后生产视频方便多了，只需要一句话！ 公开技术方案： 1. Listenhub API实现声音克隆，合成，字幕时间轴控制 2. Seedream 4.5 生成背景封面 3. Manim库实现文本动画 4. FFmpeg合成视频。 同时支持16:9 和9:16 视频，抖音、小红书我来了！ 🧵 深度展开",
+    "prompt": "哈哈哈，自用的视频生成 Skill 终于做好了。 以后生产视频方便多了，只需要一句话！ 公开技术方案： 1. Listenhub API实现声音克隆，合成，字幕时间轴控制 2. Seedream 4.5 生成背景封面 3. Manim库实现文本动画 4. FFmpeg合成视频。 同时支持16:9 和9:16 视频，抖音、小红书我来了！",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -2840,7 +2535,7 @@
     "date": "2026-01-19",
     "source": "https://x.com/i/status/2012718730854502440",
     "author": "sidona",
-    "prompt": "Framing luck with silver clovers. 幸運を纏う静かな瞬間。 用四叶草框住自己的小确幸。 Soft window light + mother-of-pearl texture + minimal composition What jewelry style speaks to you — delicate or bold? Prompt ↓ 🧵 深度展开 [!NOTE] 补充 1 That satisfying chaos when the lighting finally decides to cooperate. 夜に咲く、野生の笑顔。 银发豹纹，周末该有的样子。 🔧 Platinum hair × Leopard print × Velvet warmth × Film grain 💬 Leopard or solid color — which would you pick for a night out? 🧵 Prompt ↓ [!NOTE] 补充 2 Matcha date with Sailor Moon. セーラームーンと抹茶デート。 和月野兔一起喝抹茶，宅女的快乐就是这么简单。 🔧 Overhead boyfriend POV × Sailor Moon collectibles × Matcha latte art 💬 Which Sailor Scout is your favorite? 🧵 Prompt ↓ [!NOTE] 补充 3 📸 How to recreate this shot: 1. Camera flat ON the ground (not handheld low) 2. Wide angle lens (24mm or wider) 3. Subject reaches arm toward lens 4. Legs kick up toward sky for balance 5. Scatter props around for visual interest The key is EXTREME low angle — lower than you think! [!NOTE] 补充 4 Trying to catch falling stars from down here. 地べたから星を掴もうとしている。 贴地捞星星，这个角度真的绝。 🔧 Ground-level POV × Wide angle × Silver star props × K-style 💬 Would you try this angle? 🧵 Prompt ↓ [!NOTE] 补充 5 Is it weird that I talk to her like she understands everything? この子、全部わかってる気がするのは私だけ？ 她什么都听得懂，对吧？ 🐾 Portra 400 · Pet Parent Life · Soul Connection 💬 Does your pet understand you? 🧵 Prompt ↓",
+    "prompt": "Framing luck with silver clovers. 幸運を纏う静かな瞬間。 用四叶草框住自己的小确幸。 Soft window light + mother-of-pearl texture + minimal composition What jewelry style speaks to you — delicate or bold? Prompt ↓",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -3016,30 +2711,6 @@
     }
   },
   {
-    "title": "等距轴测的玩法一样可行",
-    "slug": "prompt-1551027112",
-    "model": "Midjourney",
-    "category": "realistic",
-    "tags": [
-      "教程",
-      "AI视频生成",
-      "装修延时摄影",
-      "可灵AI",
-      "提示词工程"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-1551027112.jpg",
-    "date": "2026-01-18",
-    "source": "https://x.com/i/status/2012882413613928577",
-    "author": "MarioTan TanShilong",
-    "prompt": "“移除家具，保留脏乱的毛坯房的效果，但是要注意保持结构的一致性” 这样我们就能获得一张脏乱差的原始底图了。 至于尾帧，我们可以直接用比较好的成果图，如果你觉得你现有的这种照片不够好看，可以让AI帮你进行润色和修改。 提示词参考： “保持原图视角和墙体结构，生成室内{客厅} 真实渲染图。进行合理的室内家具布置与材质搭配，为室内天花板、墙面、地板分别赋予材质，整体呈现 {现代轻奢风格} 。房间内外均进行真实感渲染。包括 {沙发, 地毯 ,茶几} ，材质质感逼真，光线自然。整体画面呈现出专业建筑摄影的光线效果，具备4K超高清分辨率的图像细节。” 拿到首尾帧之后就可以进行视频生成了，在测试了即梦、可灵、Veo之后。目前最稳定的就是可灵2.6（O1在这个场景下表现一般，不推荐） 视频提示词如下： 房间装修延时摄影视频。工人们在一间简陋的毛坯房内工作，水泥墙面，。快进画面展示：人们清理杂物和垃圾袋、移除所有旧家具，{将房屋还原至毛坯房，擦洗墙壁、将灰色水泥墙刷成现代轻奢风格、先完成主体框架装修，再放入家具，再逐渐将一个房屋搭建成最终的现代轻奢风格的客厅}。多名工人在加速画面中快速移动，工具和材料不断出现又消失，窗外自然光线随时间变化。施工灰尘逐渐落定，从冷蓝色调转变为温暖的环境光。纪实风格，8-16倍速延时，4K画质。 中间的步骤可以再详细点，我这个比较泛用性。这个版本还是可以再次进行迭代的",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
     "title": "刚在 GitHub 翻到一个 Nano Banana Pro 的提示词仓库，",
     "slug": "prompt-1548949206",
     "model": "Gemini",
@@ -3056,7 +2727,7 @@
     "date": "2026-01-17",
     "source": "https://x.com/i/status/2012375335220944940",
     "author": "摆烂程序媛 wanerfu",
-    "prompt": "刚在 GitHub 翻到一个 Nano Banana Pro 的提示词仓库，一共 703 个提示词，全部免费，复制就能用，而且完成度已经调得很成熟。还支持 16 种语言（含日语），顺手附了 12 个精选玩法，像引用卡生成、手绘风格转换、水彩地图、教育资料模板这种，基本都是能直接拿去干活的。 https://t.co/pwj9l1iPpo 🧵 深度展开",
+    "prompt": "刚在 GitHub 翻到一个 Nano Banana Pro 的提示词仓库，一共 703 个提示词，全部免费，复制就能用，而且完成度已经调得很成熟。还支持 16 种语言（含日语），顺手附了 12 个精选玩法，像引用卡生成、手绘风格转换、水彩地图、教育资料模板这种，基本都是能直接拿去干活的。 https://t.co/pwj9l1iPpo",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -3080,7 +2751,7 @@
     "date": "2026-01-17",
     "source": "https://x.com/i/status/2012332720635179194",
     "author": "沐阳 yyyole",
-    "prompt": "之前学习肖师傅@xiaojietongxue 基本跑通过一次这个工作流，看起来简单，实操才知道还是挺不容易的。 1、按照故事脚本，nanobanana生成分镜图，建议九宫格或者四宫格，最大限度保证图片细节清晰。（我生成了48宫格分镜，最后即便扩图，但细节损失严重，成品很不满意，所以只能能重新做） 2、切割分镜，然后图生成视频（首尾帧），最后剪辑成片。 🧵 深度展开 [!NOTE] 补充 1 受人之托，刚才完成一组丝袜产品的样图，这次刻意对logo进行的一致性的约束，效果还不错。 [!NOTE] 补充 2 迭代了！ 不用管思路了！不用管格式了！ 不用让ai参考全部提示词了！ 上传图片即可（不传也可以，凭空虚构个产品也行） [!NOTE] 补充 3 都有人搞成产品了？有市场吗？？ [!NOTE] 补充 4 @zhenjunzhai 这是升级了一版提示词吗？👍 [!NOTE] 补充 5 简直万能！！一键生成宠物喂养指南！ 新房装修的差不多了，太太最近在挑家具，还打算搬过去之后就再养一只宠物狗（家里已经两只猫），希望有一只狗狗能够陪小家伙长大，顺利的话，还能分担一些带娃的事情。 但养什么狗，还是需要好好的选择一下，不同品种脾气秉性差别很大，容易感染和滋生的病菌也不一样，有了小家伙，这些都必须得特别注意。 太太心中大概有了几个待选，但一直在纠结，一会刷小红薯有人说这个更好，一会刷短视频说另一个更好，于是我搞出一个提示词，搜罗不同品种宠物的特点直接集中到一张信息图上，一目了然，做决定应该页会更加容易。",
+    "prompt": "之前学习肖师傅@xiaojietongxue 基本跑通过一次这个工作流，看起来简单，实操才知道还是挺不容易的。 1、按照故事脚本，nanobanana生成分镜图，建议九宫格或者四宫格，最大限度保证图片细节清晰。（我生成了48宫格分镜，最后即便扩图，但细节损失严重，成品很不满意，所以只能能重新做） 2、切割分镜，然后图生成视频（首尾帧），最后剪辑成片。",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -3320,7 +2991,7 @@
     "date": "2026-01-16",
     "source": "https://x.com/i/status/2012047413914243461",
     "author": "松果先森",
-    "prompt": "原推文：https://x.com/i/status/2012047413914243461 作者：@松果先森 时间：2026-1-16 21:54:17 💡 核心观点 50多个超实用的Nano Banana Pro的提示词： 工作室级AI照片编辑提示词 产品摄影提示词 信息图表提示词 故事板/视觉叙事/场景可视化提示词 UI/UX与网页设计提示词 多图片编辑提示词 字体Logo设计提示词 数学与逻辑推理提示词 文本艺术渲染提示词 比例调整提示词 🧵 深度展开",
+    "prompt": "50多个超实用的Nano Banana Pro的提示词： 工作室级AI照片编辑提示词 产品摄影提示词 信息图表提示词 故事板/视觉叙事/场景可视化提示词 UI/UX与网页设计提示词 多图片编辑提示词 字体Logo设计提示词 数学与逻辑推理提示词 文本艺术渲染提示词 比例调整提示词",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -3392,7 +3063,7 @@
     "date": "2026-01-15",
     "source": "https://x.com/i/status/2011441977447911691",
     "author": "AmirMušić AmirMushich",
-    "prompt": "原推文：https://x.com/i/status/2011441977447911691 作者：@AmirMušić @AmirMushich 时间：2026-1-15 09:51:36 💡 核心观点 Nano Banana prompt: Photo from Google Maps to a diagram view 👉 Prompt: [Create a hand drawn isometric schematic diagram of this street] (Get more of my prompts here: https://t.co/hvuSqsRFvc) 🧵 深度展开",
+    "prompt": "Nano Banana prompt: Photo from Google Maps to a diagram view 👉 Prompt: [Create a hand drawn isometric schematic diagram of this street] (Get more of my prompts here: https://t.co/hvuSqsRFvc)",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -3440,7 +3111,7 @@
     "date": "2026-01-15",
     "source": "https://x.com/i/status/2011288170575642850",
     "author": "Hedy.eth 🎮 Crypto_hedyEth",
-    "prompt": "又一个 多智能体推演 AI，在 GitHub 开源了。 🔗 https://t.co/Er8sfrfjin 只需丢一个“种子”， AI 会生成多个有记忆、有性格的智能体， 在模拟世界里反复博弈、演化， 分叉出不同时间线， 最后给你一份完整推演报告。 🧵 深度展开",
+    "prompt": "又一个 多智能体推演 AI，在 GitHub 开源了。 🔗 https://t.co/Er8sfrfjin 只需丢一个“种子”， AI 会生成多个有记忆、有性格的智能体， 在模拟世界里反复博弈、演化， 分叉出不同时间线， 最后给你一份完整推演报告。",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -3680,7 +3351,7 @@
     "date": "2026-01-14",
     "source": "https://x.com/0xluffy_eth/status/2010549803722408209?s=20",
     "author": "路飞 🏴‍☠️ AI 研究员🧐 0xluffy_eth",
-    "prompt": "最近在 Reddit、X，还有一些研究社区里， NotebookLM 的这套提示词突然火了 有人拿它 20 秒干完原本要 10 小时的活 我把最常被用的 16 个提示词整理出来了， 需要的，直接拿走👇 🧵 深度展开",
+    "prompt": "最近在 Reddit、X，还有一些研究社区里， NotebookLM 的这套提示词突然火了 有人拿它 20 秒干完原本要 10 小时的活 我把最常被用的 16 个提示词整理出来了， 需要的，直接拿走👇",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -3704,7 +3375,7 @@
     "date": "2026-01-14",
     "source": "https://x.com/i/status/2011391647226241078",
     "author": "美酱AI (meijiangAI)",
-    "prompt": "我告诉了GROK我的出生日期和时间 它以令人不安的精准度分解了我的整个人生。 没有星座。没有塔罗牌。只有纯粹的人工智能。 这里有7个你应该尝试的提示 ↓ 这是你日常生活的真正AI词典。 而且是免费的！👇 🧵 深度展开",
+    "prompt": "我告诉了GROK我的出生日期和时间 它以令人不安的精准度分解了我的整个人生。 没有星座。没有塔罗牌。只有纯粹的人工智能。 这里有7个你应该尝试的提示 ↓ 这是你日常生活的真正AI词典。 而且是免费的！👇",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -3752,7 +3423,7 @@
     "date": "2026-01-14",
     "source": "https://x.com/i/status/2011312395747279235",
     "author": "岚叔 (LufzzLiz)",
-    "prompt": "感谢李继刚大神，我可太喜欢这个公式解码了。趁着见客户间隙，基于此我写成了一个skill。感觉以后有不懂的论文公式细节都可以用起这个了，赞～ 先快速发一版，后面再继续迭代 Skill开源地址见评论👇 🧵 深度展开 [!NOTE] 补充 1",
+    "prompt": "感谢李继刚大神，我可太喜欢这个公式解码了。趁着见客户间隙，基于此我写成了一个skill。感觉以后有不懂的论文公式细节都可以用起这个了，赞～ 先快速发一版，后面再继续迭代 Skill开源地址见评论👇",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -3776,7 +3447,7 @@
     "date": "2026-01-14",
     "source": "https://x.com/i/status/2011334661923049609",
     "author": "op7418",
-    "prompt": "谷歌 Veo 3.1 昨晚这个更新牛皮啊 新的多图参考和 4K 超分，直接把可用性拉满了 多图参考（Ingredients to Video）中人物和物品一致性大幅增强，支持输出竖版视频，也能融合纹理、角色和物品。 视频分辨率也有变化，现在官方支持更好的 1080P 和 4K 超分服务。 目前 FLOW 上就可以使用，选择“素材生视频”就可以，只支持 Veo 3.1-Fast 模型。 🧵 深度展开 [!NOTE] 补充 1 [!NOTE] 补充 2 [!NOTE] 补充 3 [!NOTE] 补充 4 [!NOTE] 补充 5 [!NOTE] 补充 6",
+    "prompt": "谷歌 Veo 3.1 昨晚这个更新牛皮啊 新的多图参考和 4K 超分，直接把可用性拉满了 多图参考（Ingredients to Video）中人物和物品一致性大幅增强，支持输出竖版视频，也能融合纹理、角色和物品。 视频分辨率也有变化，现在官方支持更好的 1080P 和 4K 超分服务。 目前 FLOW 上就可以使用，选择“素材生视频”就可以，只支持 Veo 3.1-Fast 模型。",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -3800,7 +3471,7 @@
     "date": "2026-01-14",
     "source": "https://x.com/i/status/2011334661923049609",
     "author": "歸藏(guizang.ai) op7418",
-    "prompt": "谷歌 Veo 3.1 昨晚这个更新牛皮啊 新的多图参考和 4K 超分，直接把可用性拉满了 多图参考（Ingredients to Video）中人物和物品一致性大幅增强，支持输出竖版视频，也能融合纹理、角色和物品。 视频分辨率也有变化，现在官方支持更好的 1080P 和 4K 超分服务。 目前 FLOW 上就可以使用，选择“素材生视频”就可以，只支持 Veo 3.1-Fast 模型。 🧵 深度展开 [!NOTE] 补充 1 [!NOTE] 补充 2 [!NOTE] 补充 3 [!NOTE] 补充 4 [!NOTE] 补充 5 [!NOTE] 补充 6",
+    "prompt": "谷歌 Veo 3.1 昨晚这个更新牛皮啊 新的多图参考和 4K 超分，直接把可用性拉满了 多图参考（Ingredients to Video）中人物和物品一致性大幅增强，支持输出竖版视频，也能融合纹理、角色和物品。 视频分辨率也有变化，现在官方支持更好的 1080P 和 4K 超分服务。 目前 FLOW 上就可以使用，选择“素材生视频”就可以，只支持 Veo 3.1-Fast 模型。",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -4256,7 +3927,7 @@
     "date": "2026-01-13",
     "source": "https://x.com/i/status/2010884307561390335",
     "author": "猫小姐学AI (MissCat_AI)",
-    "prompt": "麦肯锡安息吧。你再也不需要花30万美元请顾问了。现在你可以用Gemini 3.0 Pro进行完整的竞争市场分析。这是我用来免费复制麦肯锡式洞察的3个超级提示词：AI现在能瞬间完成其中90%的工作。让我展示给你： 🧵 深度展开",
+    "prompt": "麦肯锡安息吧。你再也不需要花30万美元请顾问了。现在你可以用Gemini 3.0 Pro进行完整的竞争市场分析。这是我用来免费复制麦肯锡式洞察的3个超级提示词：AI现在能瞬间完成其中90%的工作。让我展示给你：",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",

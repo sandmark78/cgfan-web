@@ -220,8 +220,8 @@ function parseMarkdownFile(filePath: string): PromptData | null {
     // 清理提示词
     const cleanedPrompt = cleanPrompt(promptText);
     
-    // 如果清理后为空，跳过这个文件
-    if (!cleanedPrompt) {
+    // 如果清理后为空或太短（少于50字符），跳过这个文件
+    if (!cleanedPrompt || cleanedPrompt.length < 50) {
       return null;
     }
     
