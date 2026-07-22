@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { getAllPrompts, getAllCategories } from '@/lib/prompts'
 import { PromptGrid } from '@/components/prompt/prompt-grid'
+import { getCategoryLabel, getCategoryIcon } from '@/lib/category-map'
 
 /**
  * 首页 - 绿色 + 奶白 + 毛玻璃风格
@@ -9,29 +10,6 @@ export default function Home() {
   const prompts = getAllPrompts()
   const categories = getAllCategories()
   const latestPrompts = prompts.slice(0, 8)
-
-  // 分类图标映射
-  const categoryIcons: Record<string, string> = {
-    cyberpunk: '🌃',
-    anime: '🎨',
-    '3d': '🎮',
-    realistic: '📷',
-    landscape: '🏔️',
-    portrait: '👤',
-    architecture: '🏛️',
-    abstract: '🎭',
-  }
-
-  const categoryNames: Record<string, string> = {
-    cyberpunk: '赛博朋克',
-    anime: '动漫风格',
-    '3d': '3D 渲染',
-    realistic: '写实风格',
-    landscape: '风景',
-    portrait: '人物',
-    architecture: '建筑',
-    abstract: '抽象',
-  }
 
   return (
     <div className="py-3 sm:py-6">
@@ -63,8 +41,8 @@ export default function Home() {
                 href={`/explore?category=${encodeURIComponent(cat.name)}`}
                 className="category-chip text-xs sm:text-sm"
               >
-                <span className="mr-1 sm:mr-2">{categoryIcons[cat.name] || '📁'}</span>
-                {categoryNames[cat.name] || cat.name}
+                <span className="mr-1 sm:mr-2">{getCategoryIcon(cat.name)}</span>
+                {getCategoryLabel(cat.name)}
                 <span className="ml-1 sm:ml-2 text-xs opacity-60">({cat.count})</span>
               </Link>
             ))}

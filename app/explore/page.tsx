@@ -1,5 +1,6 @@
 import { getAllPrompts, getAllCategories, getAllTags, getPromptsByCategory, getPromptsByTag } from '@/lib/prompts'
 import { PromptGrid } from '@/components/prompt/prompt-grid'
+import { getCategoryLabel } from '@/lib/category-map'
 import Link from 'next/link'
 
 export const runtime = 'edge'
@@ -61,7 +62,7 @@ export default async function ExplorePage({
                         : 'text-zinc-400 hover:bg-zinc-800/50 hover:text-zinc-300'
                     }`}
                   >
-                    <span>{cat.name}</span>
+                    <span>{getCategoryLabel(cat.name)}</span>
                     <span className="text-xs text-zinc-600">{cat.count}</span>
                   </Link>
                 </li>

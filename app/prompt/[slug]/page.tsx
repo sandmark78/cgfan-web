@@ -6,6 +6,7 @@ import { FavoriteButton } from '@/components/prompt/favorite-button'
 import { PromptGrid } from '@/components/prompt/prompt-grid'
 import { DetailImage } from '@/components/prompt/detail-image'
 import { createClient } from '@/lib/supabase/server'
+import { getCategoryLabel } from '@/lib/category-map'
 import Link from 'next/link'
 
 export const runtime = 'edge'
@@ -23,6 +24,36 @@ export default async function PromptDetailPage({
 
   if (!prompt) {
     notFound()
+  }
+
+  /**
+   * 格式化提示词文本 - 智能换行
+   * 在关键标记符前后添加换行，提升可读性
+   */
+  function formatPromptText(text: string): string {
+    if (!text) return ''
+    
+    let formatted = text
+    
+    // 在【】标记前添加换行（中文段落标记）
+    formatted = formatted.replace(/(?<!\n)(【)/g, '\n\n$1')
+    
+    // 在 • 符号前添加换行（列表项）
+    formatted = formatted.replace(/(?<!\n)\s*(•\s)/g, '\n  $1')
+    
+    // 在 Prompt: / Prompt👇 等标记前添加换行
+    formatted = formatted.replace(/(?<!\n)\s*(Prompt[：:]?\s*(?:👇[🏻]?)?)/gi, '\n\n$1')
+    
+    // 在 /imagine 前添加换行
+    formatted = formatted.replace(/(?<!\n)\s*(\/imagine)/gi, '\n\n$1')
+    
+    // 在 👇 前添加换行
+    formatted = formatted.replace(/(?<!\n)\s*(👇)/g, '\n$1')
+    
+    // 清理多余空行（超过2个连续换行变成2个）
+    formatted = formatted.replace(/\n{3,}/g, '\n\n')
+    
+    return formatted.trim()
   }
 
   const supabase = await createClient()
@@ -69,7 +100,7 @@ export default async function PromptDetailPage({
           href={`/explore?category=${prompt.category}`}
           className="transition-colors hover:text-green-600 dark:hover:text-green-400"
         >
-          {prompt.category}
+          {getCategoryLabel(prompt.category)}
         </Link>
         <span className="mx-2">/</span>
         <span className="text-gray-900 dark:text-white">{prompt.title}</span>
@@ -109,7 +140,7 @@ export default async function PromptDetailPage({
               Prompt:
             </h3>
             <pre className="whitespace-pre-wrap text-sm text-gray-600 dark:text-gray-400">
-              {prompt.prompt}
+              {formatPromptText(prompt.prompt)}
             </pre>
             <div className="mt-4">
               <CopyPromptButton prompt={prompt.prompt} />

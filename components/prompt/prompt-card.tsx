@@ -7,6 +7,33 @@ interface PromptCardProps {
 }
 
 /**
+ * 从提示词文本中提取干净的摘要（去除重复的标题）
+ */
+function extractSummary(prompt: PromptData): string {
+  const fullText = prompt.prompt || ''
+  const title = prompt.title || ''
+  
+  // 如果提示词以标题开头，去除标题部分
+  let summary = fullText
+  if (title && fullText.startsWith(title)) {
+    summary = fullText.slice(title.length).trim()
+  }
+  
+  // 如果去除后太短，尝试从其他字段提取
+  if (summary.length < 50) {
+    // 尝试从 negativePrompt 提取
+    if (prompt.negativePrompt && prompt.negativePrompt.length > 50) {
+      return prompt.negativePrompt.slice(0, 150) + '...'
+    }
+    // 否则返回原始提示词（截断）
+    return fullText.length > 150 ? fullText.slice(0, 150) + '...' : fullText
+  }
+  
+  // 截断到 150 字符
+  return summary.length > 150 ? summary.slice(0, 150) + '...' : summary
+}
+
+/**
  * 提示词卡片 - 毛玻璃效果 + 整齐对齐
  */
 export function PromptCard({ prompt }: PromptCardProps) {
@@ -21,6 +48,8 @@ export function PromptCard({ prompt }: PromptCardProps) {
     intermediate: 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-400',
     advanced: 'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400',
   }[prompt.difficulty]
+
+  const summary = extractSummary(prompt)
 
   return (
     <Link
@@ -50,9 +79,9 @@ export function PromptCard({ prompt }: PromptCardProps) {
           {prompt.title}
         </h3>
 
-        {/* 提示词文本 - 统一 3 行 */}
+        {/* 提示词摘要 - 统一 3 行 */}
         <p className="card-text text-gray-600 dark:text-gray-300">
-          {prompt.prompt}
+          {summary}
         </p>
 
         {/* 标签 */}
