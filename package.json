@@ -9,7 +9,7 @@
     "pages:preview": "npm run pages:build && npx wrangler pages dev .vercel/output/static --compatibility-date=2024-11-15 --compatibility-flags=nodejs_compat",
     "start": "next start",
     "lint": "eslint",
-    "prebuild": "python3 scripts/extract-prompts.py"
+    "prebuild": "tsx scripts/extract-prompts.ts"
   },
   "dependencies": {
     "@base-ui/react": "^1.6.0",
