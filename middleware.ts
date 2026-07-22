@@ -6,11 +6,7 @@ import { NextResponse, type NextRequest } from 'next/server'
  * 确保每个请求都有最新的认证状态
  */
 export async function middleware(request: NextRequest) {
-  let response = NextResponse.next({
-    request: {
-      headers: request.headers,
-    },
-  })
+  let supabaseResponse = NextResponse.next({ request })
 
   const supabase = createServerClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -21,18 +17,13 @@ export async function middleware(request: NextRequest) {
           return request.cookies.getAll()
         },
         setAll(cookiesToSet) {
-          cookiesToSet.forEach(({ name, value, options }) => {
-            const cookieOptions: any = {
-              maxAge: options.maxAge,
-              expires: options.expires,
-              path: options.path ?? '/',
-              domain: options.domain,
-              httpOnly: options.httpOnly,
-              secure: options.secure,
-              sameSite: options.sameSite,
-            }
-            response.cookies.set(name, value, cookieOptions)
-          })
+          cookiesToSet.forEach(({ name, value }) =>
+            request.cookies.set(name, value)
+          )
+          supabaseResponse = NextResponse.next({ request })
+          cookiesToSet.forEach(({ name, value, options }) =>
+            supabaseResponse.cookies.set(name, value, options)
+          )
         },
       },
     }
@@ -41,7 +32,7 @@ export async function middleware(request: NextRequest) {
   // 刷新 session
   await supabase.auth.getUser()
 
-  return response
+  return supabaseResponse
 }
 
 export const config = {

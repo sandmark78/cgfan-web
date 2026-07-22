@@ -19,20 +19,12 @@ export async function createClient() {
         },
         setAll(cookiesToSet) {
           try {
-            cookiesToSet.forEach(({ name, value, options }) => {
-              const cookieOptions: any = {
-                maxAge: options.maxAge,
-                expires: options.expires,
-                path: options.path ?? '/',
-                domain: options.domain,
-                httpOnly: options.httpOnly,
-                secure: options.secure,
-                sameSite: options.sameSite,
-              }
-              cookieStore.set(name, value, cookieOptions)
-            })
+            cookiesToSet.forEach(({ name, value, options }) =>
+              cookieStore.set(name, value, options)
+            )
           } catch {
             // Server Component 中无法设置 cookie，忽略
+            // 这在 Middleware 中会处理
           }
         },
       },
