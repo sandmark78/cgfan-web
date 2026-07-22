@@ -35,7 +35,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-4 z-50 mx-auto w-full max-w-6xl px-3 sm:px-4">
-      <nav className="glass flex items-center justify-between rounded-full px-3 sm:px-6 py-2 sm:py-3 overflow-hidden">
+      <nav className="glass relative flex items-center justify-between rounded-full px-3 sm:px-6 py-2 sm:py-3">
         {/* Logo */}
         <Link href="/" className="font-serif text-lg sm:text-2xl italic font-bold text-gray-900 dark:text-white">
           CGfan.com
@@ -105,7 +105,7 @@ export default function Header() {
                 {/* 遮罩层 - 点击关闭 */}
                 <div className="fixed inset-0 z-40" onClick={() => setIsMenuOpen(false)} />
                 {/* 菜单面板 */}
-                <div className="absolute right-0 top-full mt-2 z-50 w-48 rounded-2xl glass-card overflow-hidden p-2 shadow-xl">
+                <div className="absolute right-0 top-full mt-2 z-[60] w-48 rounded-2xl glass-card overflow-hidden p-2 shadow-xl">
                   {/* 移动端搜索 */}
                   <form onSubmit={handleSearch} className="md:hidden px-2 py-1.5">
                     <input

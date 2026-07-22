@@ -58,7 +58,7 @@ export function PromptCard({ prompt }: PromptCardProps) {
     >
       <div className="card-content p-4">
         {/* 封面图 */}
-        <div className="relative aspect-[4/3] overflow-hidden rounded-xl">
+        <div className="relative aspect-square overflow-hidden rounded-xl">
           <PromptImage src={prompt.cover} alt={prompt.title} />
           {/* 模型标签 */}
           <div className="absolute left-3 top-3">
