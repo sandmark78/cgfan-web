@@ -19,20 +19,30 @@ export function createClient() {
           return cookie ? cookie.split('=')[1] : null
         },
         set(name: string, value: string, options: any) {
-          const { expires, ...restOptions } = options
+          const { expires, path, domain, secure, sameSite, ...restOptions } = options
           const cookieOptions = {
             ...restOptions,
+            path: path ?? '/',
+            domain,
+            secure,
+            sameSite: sameSite ?? 'lax',
             expires: expires ? new Date(expires) : undefined,
           }
-          document.cookie = `${name}=${value}; ${Object.entries(cookieOptions).map(([k, v]) => `${k}=${v}`).join('; ')}`
+          
+          const cookieParts = [
+            `${name}=${value}`,
+            cookieOptions.path && `Path=${cookieOptions.path}`,
+            cookieOptions.domain && `Domain=${cookieOptions.domain}`,
+            cookieOptions.secure && 'Secure',
+            `SameSite=${cookieOptions.sameSite}`,
+            cookieOptions.expires && `Expires=${cookieOptions.expires.toUTCString()}`
+          ].filter(Boolean) as string[]
+          
+          document.cookie = cookieParts.join('; ')
         },
         remove(name: string, options: any) {
-          const { expires, ...restOptions } = options
-          const cookieOptions = {
-            ...restOptions,
-            expires: new Date(0),
-          }
-          document.cookie = `${name}=; ${Object.entries(cookieOptions).map(([k, v]) => `${k}=${v}`).join('; ')}`
+          const { path, domain, ...restOptions } = options
+          document.cookie = `${name}=; Path=${path ?? '/'}; Expires=Thu, 01 Jan 1970 00:00:00 GMT${domain ? `; Domain=${domain}` : ''}`
         },
       },
     }
