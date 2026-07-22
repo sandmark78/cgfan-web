@@ -71,7 +71,16 @@ const PLACEHOLDER_TAGS = ['待处理', 'todo', 'placeholder', 'TODO', '待整理
 function detectModel(content: string, frontmatterModel: string = ''): string {
   const contentLower = content.toLowerCase();
   
-  // 先检查 frontmatter 中的模型
+  // 优先从正文内容中检测（按优先级）
+  for (const [model, patterns] of Object.entries(MODEL_PATTERNS)) {
+    for (const pattern of patterns) {
+      if (pattern.test(contentLower)) {
+        return model;
+      }
+    }
+  }
+  
+  // 正文没检测到，才用 frontmatter
   if (frontmatterModel) {
     for (const [model, patterns] of Object.entries(MODEL_PATTERNS)) {
       for (const pattern of patterns) {
@@ -81,15 +90,6 @@ function detectModel(content: string, frontmatterModel: string = ''): string {
       }
     }
     return frontmatterModel;
-  }
-  
-  // 从内容中检测（按优先级）
-  for (const [model, patterns] of Object.entries(MODEL_PATTERNS)) {
-    for (const pattern of patterns) {
-      if (pattern.test(contentLower)) {
-        return model;
-      }
-    }
   }
   
   return 'Unknown';
