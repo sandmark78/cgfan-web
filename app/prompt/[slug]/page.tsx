@@ -78,15 +78,12 @@ export default async function PromptDetailPage({
       {/* 两栏布局 */}
       <div className="detail-layout">
         {/* 左侧：示例图 */}
-        {/* 图片展示区 */}
         <div className="overflow-hidden rounded-xl">
           <DetailImage src={prompt.cover} alt={prompt.title} />
-        </div>
         </div>
 
         {/* 右侧：提示词信息 */}
         <div className="space-y-6">
-          {/* 作者信息 */}
           <div className="glass-card p-6">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
