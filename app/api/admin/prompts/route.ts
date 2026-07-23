@@ -9,16 +9,30 @@ export async function GET() {
   try {
     await requireAdmin()
     
+    // 检查环境变量
+    if (!process.env.GITHUB_TOKEN) {
+      return NextResponse.json(
+        { error: 'GITHUB_TOKEN not configured' },
+        { status: 500 }
+      )
+    }
+    
     const prompts = []
     
     // 获取所有分类目录
     const categories = await listGitHubDirectory('content/prompts')
+    
+    if (!categories || categories.length === 0) {
+      return NextResponse.json({ prompts: [], message: 'No categories found' })
+    }
     
     // 遍历每个分类目录
     for (const category of categories) {
       if (category.type === 'dir') {
         // 获取该分类下的所有文件
         const files = await listGitHubDirectory(category.path)
+        
+        if (!files) continue
         
         for (const file of files) {
           if (file.name.endsWith('.md')) {
