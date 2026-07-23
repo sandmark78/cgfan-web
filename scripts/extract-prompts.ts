@@ -171,6 +171,28 @@ function cleanPrompt(content: string): string {
   return cleaned.trim();
 }
 
+function normalizeDate(dateValue: any): string {
+  if (!dateValue) return '';
+  
+  // 如果已经是 YYYY-MM-DD 格式
+  if (typeof dateValue === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(dateValue)) {
+    return dateValue;
+  }
+  
+  // 如果是 Date 对象或可以解析为日期
+  try {
+    const date = new Date(dateValue);
+    if (!isNaN(date.getTime())) {
+      return date.toISOString().split('T')[0];
+    }
+  } catch {
+    // 忽略错误
+  }
+  
+  // 如果无法解析，返回原值
+  return String(dateValue);
+}
+
 interface PromptData {
   title: string;
   slug: string;
