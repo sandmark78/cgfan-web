@@ -34,8 +34,13 @@ export default function AdminDashboard({ user }: { user: User }) {
 
   const loadPrompts = async () => {
     try {
-      const res = await fetch('/api/admin/prompts')
+      const res = await fetch('/api/admin/prompts', {
+        credentials: 'include',
+      })
       const data = await res.json()
+      if (data.error) {
+        console.error('API error:', data.error)
+      }
       setPrompts(data.prompts || [])
     } catch (error) {
       console.error('Failed to load prompts:', error)
