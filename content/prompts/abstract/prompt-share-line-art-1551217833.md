@@ -12,6 +12,7 @@ tags:
 difficulty: intermediate
 cover: /images/prompts/prompt-share-line-art-1551217833.jpg
 date: '2026-01-19'
+added: 2026-07-22
 source: https://x.com/i/status/2012841665359483325
 author: Amira Zairi (azed_ai)
 ---

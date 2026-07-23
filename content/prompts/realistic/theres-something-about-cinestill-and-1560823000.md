@@ -12,6 +12,7 @@ tags:
 difficulty: intermediate
 cover: /images/prompts/theres-something-about-cinestill-and-1560823000.jpg
 date: '2026-01-25'
+added: %Y->-
 source: https://x.com/i/status/2015075609949663312
 author: sidona
 ---

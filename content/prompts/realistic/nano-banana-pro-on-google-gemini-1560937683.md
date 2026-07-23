@@ -12,6 +12,7 @@ tags:
 difficulty: intermediate
 cover: /images/prompts/nano-banana-pro-on-google-gemini-1560937683.jpg
 date: '2026-01-25'
+added: %Y->-
 source: https://x.com/i/status/2015282932643139964
 author: K ChillaiKalan__
 ---

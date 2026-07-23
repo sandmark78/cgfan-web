@@ -12,6 +12,7 @@ tags:
 difficulty: intermediate
 cover: /images/prompts/prompt-studio-nano-banana-pro-1557350335.jpg
 date: '2026-01-23'
+added: 2026-07-22
 source: https://x.com/i/status/2014361771658641431
 author: Alexandra Aisling AllaAisling
 ---

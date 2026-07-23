@@ -12,6 +12,7 @@ tags:
 difficulty: intermediate
 cover: /images/prompts/nano-banana-pro-and-gpt-image-15-1570554631.jpg
 date: '2026-01-31'
+added: %Y->-
 source: https://x.com/i/status/2017420332458774791
 author: Meem (mehvishs25)
 ---

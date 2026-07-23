@@ -12,6 +12,7 @@ tags:
 difficulty: intermediate
 cover: /images/prompts/nano-banana-pro-image-generation-1566916201.jpg
 date: '2026-01-29'
+added: %Y->-
 source: https://x.com/i/status/2016491419570155780
 author: Taaruk_
 ---

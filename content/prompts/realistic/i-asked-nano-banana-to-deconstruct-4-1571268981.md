@@ -12,6 +12,7 @@ tags:
 difficulty: advanced
 cover: /images/prompts/i-asked-nano-banana-to-deconstruct-4-1571268981.jpg
 date: '2026-01-31'
+added: %Y->-
 source: https://x.com/i/status/2017611578284401056
 author: Gadgetify
 ---

@@ -12,6 +12,7 @@ tags:
 difficulty: intermediate
 cover: /images/prompts/educational-ai-art-all-night-long-1550581964.jpg
 date: '2026-01-18'
+added: %Y->-
 source: https://x.com/i/status/2012669231498703282
 author: Girls in AI Art｜GiAA(ギア)
 ---

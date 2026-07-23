@@ -12,6 +12,7 @@ tags:
 difficulty: intermediate
 cover: /images/prompts/thats-httpstcomg5pmvkll0-feels-like-a-1560929694.jpg
 date: '2026-01-25'
+added: %Y->-
 source: https://x.com/i/status/2015058344411828268
 author: Adam也叫吉米Adam38363368936
 ---

@@ -12,6 +12,7 @@ tags:
 difficulty: intermediate
 cover: /images/prompts/nano-banana-pro-astronomerozge1-1565888485.jpg
 date: '2026-01-28'
+added: %Y->-
 source: https://x.com/i/status/2016215595209871366
 author: astronomerozge1
 ---

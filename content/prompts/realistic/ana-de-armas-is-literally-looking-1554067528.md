@@ -12,6 +12,7 @@ tags:
 difficulty: intermediate
 cover: /images/prompts/ana-de-armas-is-literally-looking-1554067528.jpg
 date: '2026-01-20'
+added: %Y->-
 source: https://x.com/i/status/2013588573065220479
 author: Yaseen Khan Gul (YaseenK7212)
 ---

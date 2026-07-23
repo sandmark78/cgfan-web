@@ -12,6 +12,7 @@ tags:
 difficulty: intermediate
 cover: /images/prompts/exploded-products-by-nano-banana-pro-on-1542362450.jpg
 date: '2026-01-14'
+added: %Y->-
 source: https://x.com/TechieBySA/status/2010665188731785382?s=20
 author: TechieSA
 ---

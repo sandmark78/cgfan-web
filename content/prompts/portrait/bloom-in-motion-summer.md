@@ -3,6 +3,7 @@ title: Bloom in Motion 夏日野花人像
 slug: bloom-in-motion-summer
 author: Larus Canus
 date: 2026-07-19
+added: %Y->-
 model: GPT-Image2
 category: portrait
 tags: [summer, wildflower, motion, fresh, natural]

@@ -12,6 +12,7 @@ tags:
 difficulty: intermediate
 cover: /images/prompts/gemini-nano-banana-pro-1558266253.jpg
 date: '2026-01-23'
+added: %Y->-
 source: https://x.com/i/status/2014576740492869761
 author: Lex (lexx_aura)
 ---

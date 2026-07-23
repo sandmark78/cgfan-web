@@ -12,6 +12,7 @@ tags:
 difficulty: intermediate
 cover: /images/prompts/these-360-prompts-are-so-much-fun-1558979827.jpg
 date: '2026-01-24'
+added: 2026-07-22
 source: https://x.com/i/status/2014696369680793776
 author: Gdgtify
 ---

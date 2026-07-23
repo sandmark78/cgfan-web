@@ -12,6 +12,7 @@ tags:
 difficulty: intermediate
 cover: /images/prompts/playful-shadows-and-high-school-1551218134.jpg
 date: '2026-01-19'
+added: %Y->-
 source: https://x.com/i/status/2012718730854502440
 author: sidona
 ---

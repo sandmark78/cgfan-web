@@ -14,6 +14,7 @@ tags:
 difficulty: intermediate
 cover: /images/prompts/create-an-8k-hyper-realistic-portrait-1550594950.jpg
 date: '2026-01-18'
+added: %Y->-
 source: https://x.com/i/status/2012578660453405071
 author: simplykingofdairyque
 ---

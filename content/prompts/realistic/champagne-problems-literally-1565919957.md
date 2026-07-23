@@ -12,6 +12,7 @@ tags:
 difficulty: intermediate
 cover: /images/prompts/champagne-problems-literally-1565919957.jpg
 date: '2026-01-28'
+added: %Y->-
 source: https://x.com/i/status/2016351167551570140
 author: sidona
 ---

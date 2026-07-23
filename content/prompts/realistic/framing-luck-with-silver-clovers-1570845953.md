@@ -12,6 +12,7 @@ tags:
 difficulty: intermediate
 cover: /images/prompts/framing-luck-with-silver-clovers-1570845953.jpg
 date: '2026-01-31'
+added: %Y->-
 source: https://x.com/i/status/2016757713162960972
 author: Sidona
 ---
