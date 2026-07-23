@@ -3,11 +3,11 @@ title: 金箔岩彩插画：群青圣莲
 slug: gold-leaf-sacred-lotus
 author: 李岳
 date: 2026-07-23
-model: GPT Image 2
+model: GPT-Image2
 category: portrait
 tags: [oriental, gold-leaf, mineral-pigment, sacred, eastern]
 difficulty: advanced
-cover: /images/prompts/gold-leaf-sacred-lotus.webp
+cover: /images/prompts/2080286680649773541.jpg
 source: https://x.com/liyue_ai/status/2080286680649773541
 ---
 

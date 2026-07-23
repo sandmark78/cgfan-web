@@ -1,14 +1,30 @@
 ---
-title: 暗黑漫画黑工风格
+title: 暗黑漫画黑工线稿风格
 slug: dark-manga-ink-style
 author: VoxCat
 date: 2026-07-22
-model: Unknown
+model: GPT-Image2
 category: style
-tags: [dark, manga, ink, woodcut, silk-screen]
+tags: [dark, manga, ink, woodcut, silk-screen, high-contrast]
 difficulty: advanced
-cover: /images/prompts/dark-manga-ink-style.webp
+cover: /images/prompts/2079912938538951156.jpg
 source: https://x.com/VoxcatAI/status/2079912938538951156
 ---
 
 高对比日系漫画黑工线稿，融合木刻、刮画与限色丝网印刷质感；以象牙白、纯黑和少量深猩红构成三色系统，大面积纯黑块面与白色负形硬切，外轮廓粗重锐利，内部使用细密平行排线和反向刻线。整体形状尖锐、有机、流动，大量长弧线、刀锋状分叉与撕裂边缘形成旋转节奏；画面高度平面化，弱化真实光影和灰阶，局部高密度纹理与大面积浅色空间形成疏密对比。细线古典装饰仅作为辅助框架，整体具有暗黑漫画、黑工纹身与收藏级专色版画的冷峻攻击感。
+
+风格基调：
+- 高对比日系漫画黑工线稿
+- 木刻、刮画与限色丝网印刷
+- 象牙白、纯黑、深猩红三色系统
+- 大面积纯黑块面
+- 白色负形硬切
+- 粗重锐利外轮廓
+- 细密平行排线与反向刻线
+- 尖锐、有机、流动的形状语言
+- 极弱灰阶与高度平面化表现
+
+关键要点：
+这套最重要的是黑白关系。人物不能靠正常光影塑形，而要靠黑块、留白和刻线重新切出身体与服装结构。深猩红只作为少量视觉锚点，用在眼睛、纹章、武器轨迹或核心装饰上。
+
+整体更像收藏级专色版画，也带一点地下漫画、黑工纹身和哥特角色海报的冷峻压迫感。
