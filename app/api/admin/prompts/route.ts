@@ -2,6 +2,8 @@ import { getGitHubFile, putGitHubFile, deleteGitHubFile, listGitHubDirectory } f
 import { NextResponse } from 'next/server'
 import { requireAdmin } from '@/lib/admin'
 
+export const runtime = 'edge'
+
 // GET /api/admin/prompts - 获取所有提示词
 export async function GET() {
   try {
