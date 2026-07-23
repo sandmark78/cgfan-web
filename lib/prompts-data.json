@@ -7,6 +7,7 @@
     "tags": [
       "AI绘图",
       "提示词",
+      "GPT-Image2",
       "人物"
     ],
     "difficulty": "intermediate",
@@ -29,9 +30,9 @@
     "tags": [
       "AI绘图",
       "提示词",
+      "GPT-Image2",
       "国风",
-      "摄影",
-      "人物"
+      "摄影"
     ],
     "difficulty": "advanced",
     "cover": "/images/prompts/prompt-2046785940593725633.jpg",
@@ -125,6 +126,7 @@
     "tags": [
       "AI绘图",
       "提示词",
+      "GPT-Image2",
       "摄影"
     ],
     "difficulty": "intermediate",
@@ -171,9 +173,9 @@
     "tags": [
       "AI绘图",
       "提示词",
+      "GPT-Image2",
       "写实",
-      "摄影",
-      "人物"
+      "摄影"
     ],
     "difficulty": "intermediate",
     "cover": "/images/prompts/prompt-2080124574696694035.jpg",

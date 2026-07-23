@@ -112,9 +112,12 @@ export default async function PromptDetailPage({
         >
           {getCategoryLabel(prompt.category)}
         </Link>
-        <span className="mx-2">/</span>
-        <span className="text-gray-900 dark:text-white">{prompt.title}</span>
       </nav>
+
+      {/* 主标题 */}
+      <h1 className="mb-8 text-3xl font-bold text-gray-900 dark:text-white">
+        {prompt.title.length > 60 ? prompt.title.slice(0, 60) + '...' : prompt.title}
+      </h1>
 
       {/* 两栏布局 */}
       <div className="detail-layout">
