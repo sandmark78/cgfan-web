@@ -1,22 +1,116 @@
 [
   {
-    "title": "1.Grok, 2.Whisk, 3.Banana App, 4.Flow\nIn my opinion, Whisk was the most successful interpreter and gave realistic results. Flow surprised me for the first time. Its performance was low. Grok is nice,",
-    "slug": "prompt-2017302859218407558",
-    "model": "Grok",
+    "title": "GPT IMAGE2\n碉堡了家人们~~😍\n它读出了人物背后的性格特征，甚至世界观、角色设定都给你写好了，还非常之合理！！\n“优雅，是力量最温柔的表达！”\nprompt: 基于此角色和背景，请制作一份类似官方设定资料的角色资料卡。 ・包含三视图：正面、侧面和背面 ・添加角色面部表情的变化・分解并展示服装和装备的详细部分 ・添加色板・包含世界观设定的简要说明 ・总体上，使用有组织的布局（白色",
+    "slug": "prompt-2045013913901867334",
+    "model": "Midjourney",
+    "category": "realistic",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "人物"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2045013913901867334.jpg",
+    "date": "2026-07-23",
+    "source": "https://x.com/i/status/2045013913901867334",
+    "author": "古一",
+    "prompt": "基于此角色和背景，请制作一份类似官方设定资料的角色资料卡。\n・包含三视图：正面、侧面和背面\n・添加角色面部表情的变化・分解并展示服装和装备的详细部分\n・添加色板・包含世界观设定的简要说明\n・总体上，使用有组织的布局（白色背景，插画风格）",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    }
+  },
+  {
+    "title": "昨晚看到GPT image 2画潘金莲来了灵感， 让ChatGPT协助我画了一张唐风的CG插画。 调整了好多版，不是暴露过多就是过于妩媚， 这张算是比较符合我的要求。\n提示词： 国风CG插画，唐风美学，古代绝美女子，半身近景特写，画面重心聚焦面部与上半身，高级人像构图，电影级镜头语言与空间透视\n人物设定： 东亚古典美人，冷白通透肌肤，细腻真实皮肤质感，柔润微光； 五官精致立体但自然不过度夸张，",
+    "slug": "prompt-2046785940593725633",
+    "model": "Midjourney",
+    "category": "realistic",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "国风",
+      "摄影",
+      "人物"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/prompt-2046785940593725633.jpg",
+    "date": "2026-07-23",
+    "source": "https://x.com/i/status/2046785940593725633",
+    "author": "李岳",
+    "prompt": "国风CG插画，唐风美学，古代绝美女子，半身近景特写，画面重心聚焦面部与上半身，高级人像构图，电影级镜头语言与空间透视",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    }
+  },
+  {
+    "title": "接上一期，分享绝美AI古风女生侧颜提示词\n提示词prompt：中国古典美学，宋韵美学，工笔写实风格，超写实摄影，东方古风成年女子，气质清雅，五官精致，肤色细腻自然，杏眼含光，自然淡妆，浅粉唇色，神情温柔宁静，身体微微背向镜头，右肩朝向镜头，头部自然向右缓缓转动约35°，轻轻回眸凝视镜头，三分之二侧颜，Rear Three-quarter Portrait，近景半身肖像，人物占画面约75%，肩颈舒",
+    "slug": "prompt-2078522659567239382",
+    "model": "Midjourney",
+    "category": "realistic",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "国风",
+      "写实",
+      "油画"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2078522659567239382.jpg",
+    "date": "2026-07-23",
+    "source": "https://x.com/i/status/2078522659567239382",
+    "author": "灰度笔记",
+    "prompt": "中国古典美学，宋韵美学，工笔写实风格，超写实摄影，东方古风成年女子，气质清雅，五官精致，肤色细腻自然，杏眼含光，自然淡妆，浅粉唇色，神情温柔宁静，身体微微背向镜头，右肩朝向镜头，头部自然向右缓缓转动约35°，轻轻回眸凝视镜头，三分之二侧颜，Rear Three-quarter Portrait，近景半身肖像，人物占画面约75%，肩颈舒展，白色轻纱交领古裙，月白色真丝外衫，轻盈飘逸，真实丝绸纹理，低位松散盘发，乌黑长发自然垂落，几缕碎发轻拂脸颊，发间仅点缀一朵半开的白玉兰，一支温润白玉发簪固定发髻，几颗天然珍珠若隐若现地点缀于发丝之间，细长银色流苏耳饰自然垂落，整体发饰极简雅致，不使用莲蓬、荷花等大型植物发饰，画面右下角一朵盛开的粉色山茶花作为前景虚化，左侧淡雅竹影虚化，背景采用宣纸留白质感，浅灰青渐变背景，隐约水墨晕染纹理，若隐若现的窗棂光影，极浅景深，奶油散景，柔和晨光透过窗棂形成自然侧逆光，发丝轮廓光细腻勾勒边缘，柔光均匀照亮面部，真实皮肤纹理，真实发丝，空气中漂浮细微尘埃，整体低饱和、低对比，高级东方电影感，宋画留白构图，极简构图，高级审美，85mm人像镜头，f1.4，大光圈，HDR，8K。",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    }
+  },
+  {
+    "title": "角色旋转海报提示词",
+    "slug": "prompt-2079092189372498043",
+    "model": "Midjourney",
+    "category": "realistic",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "动漫",
+      "摄影",
+      "人物"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2079092189372498043.jpg",
+    "date": "2026-07-23",
+    "source": "https://x.com/i/status/2079092189372498043",
+    "author": "VoxCat",
+    "prompt": "9:16 竖版艺术海报，以\"角色\"为主体。完整保留角色固有的外貌、服装轮廓、代表性配色和核心配饰，以高完成度二次元幻想动作游戏插画呈现，不添加其他人物，不改变角色身份。\n\n画面采用 Armin Hofmann 式瑞士海报设计：黑白摄影般的角色层次与扁平几何并置，模块化网格、粗黑矩形、圆弧、透明叠印、照片网点、清晰负空间、无衬线排版秩序和轻微丝网印刷颗粒。\n\n大胆透视：夸张鱼眼镜头，角色在空中旋转或跃起，一只伸向镜头的手被放大，角色自身的飘带、衣摆、能量轨迹或代表性元素形成巨大的前景螺旋。头部位于黄金分割区域，地平线弯曲，构图产生旋转与失重感。\n\n配色为黑、白、洋红三色。洋红用于螺旋轨迹、少量服装细节、几何图形和 voxcat 胸针，避免彩虹色和复杂光污染。\n\n品牌元素固定规范：左上角加入由 stylized \"V\" 与猫元素组成的图形 logo；右下角加入小型签名\"voxCAT\"；服装上带有清晰吊牌，吊牌文字准确写为\"VOXCAT\"；在胸前、领口或服装结构交界处自然加入一枚 voxcat 胸针，使其像角色服装原生配件，不悬浮、不遮挡身体。\n\n要求：角色面部清晰，五指自然，旋转透视合理，主体身份稳定。除 VOXCAT 指定元素外，无其他 logo、品牌、水印或随机可读文字。",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "9:16"
+    }
+  },
+  {
+    "title": "分享一组AI创作24mm自拍镜头提示词🙌\n提示词prompt：超写实动漫真人融合（Anime Realism），日系Cosplay少女，约20岁，白皙细腻肌肤，精致鹅蛋脸，小巧鼻梁，粉嫩自然唇色，超大湛蓝瞳孔，晶莹眼眸，高光眼神，慵懒半睁眼，轻启双唇露出一点点上排牙齿，神情自然温柔，带一点惊喜与亲近感；银白色长发，自然大波浪卷发，发尾渐变浅薄荷蓝，额前轻薄空气刘海，几缕碎发自然垂落脸颊，没有兽",
+    "slug": "prompt-2079848056024105126",
+    "model": "Midjourney",
     "category": "realistic",
     "tags": [
       "AI绘图",
       "提示词",
       "写实",
       "动漫",
-      "摄影"
+      "风景"
     ],
-    "difficulty": "advanced",
-    "cover": "https://pbs.twimg.com/media/G_7mPucXEAAB8R4.jpg?name=orig&format=webp",
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2079848056024105126.jpg",
     "date": "2026-07-23",
-    "source": "https://x.com/i/status/2017302859218407558",
-    "author": "Aytaç Altıntepe",
-    "prompt": "1.Grok, 2.Whisk, 3.Banana App, 4.Flow\n\nIn my opinion, Whisk was the most successful interpreter and gave realistic results. Flow surprised me for the first time. Its performance was low. Grok is nice, but I don't understand why they can't solve this skin shine problem.🤔\n\nGLOBAL STYLE & QUALITY\n\nUltra-detailed hyper-realistic cinematic fashion photography, dark editorial mood, premium texture fidelity, high dynamic range lighting, zero illustration feel, zero anime styling, gritty environment realism, luxury fashion campaign sharpness.\n\nFACE\n\nBeautiful woman in her 20s, sharp feminine facial structure, clean fair skin, controlled intense expression, lips slightly parted as if mid-breath, soft satin lipstick, defined eyeliner with elegant wing, balanced blush, confident upward gaze, emotionally distant but magnetic.\n\nBODY\n\nFit, toned, feminine athletic silhouette, strong posture dominance, torso arched backward creating tension line through waist and hips, one leg elevated and flexed, calf and thigh tension visible, body language territorial and commanding.\n\nSKIN\n\nNatural fair skin with subtle moisture sheen, realistic pore texture, micro highlights from overhead light, no plastic smoothing, cinematic contrast rolloff.\n\nHAIR\n\nShort black hair, sleek layered cut, straight strands with slight directional separation, subtle edge highlights from top light, structured and modern.\n\nCAMERA & ANGLE\n\nVertical full-body frame, camera placed slightly below hip line looking upward, medium-tight lens compression (85–105mm feel), subject fills frame height, narrow corridor perspective adds dominance, shallow depth with environmental texture retained.\n\nSETTING\n\nNarrow industrial service tunnel, wet concrete floor with reflections, aged walls, pipes and cables overhead, dark green moss and grime accents, urban decay atmosphere.\n\nSCENE SETUP\n\nSingle subject centered between concrete blocks, one foot raised on block, hands braced behind for leverage, overhead spotlight beam cutting through dust particles, back tunnel falling into darkness, controlled cinematic shadow falloff.\n\nOUTFIT\n\nTight red long-sleeve mini dress, stretch fabric contouring body lines, matte-satin finish, , thigh-high red leather stiletto boots, pointed toe, high gloss leather texture, tailored aggressive fashion styling.\n\nPROPS (FLATLAY FEEL)\n\nNo extra props, only architectural concrete blocks and industrial structure elements supporting pose.\n\nEXPRESSION & MOOD\n\nDominant, dangerous elegance, seductive authority, emotionally cool, controlled power stance, tension + allure balance.\n\nATMOSPHERE\n\nDark cinematic tension, wet ground reflections, cold environment vs warm red outfit contrast, fashion-thriller editorial tone.\n\nFINAL RESULT GOAL\n\nHyper-realistic dark fashion editorial frame with bold seductive dominance, aggressive posture clarity, luxury cinematic grit, viewer focus locked on pose power and silhouette tension.",
+    "source": "https://x.com/i/status/2079848056024105126",
+    "author": "灰度笔记",
+    "prompt": "超写实动漫真人融合（Anime Realism），日系Cosplay少女，约20岁，白皙细腻肌肤，精致鹅蛋脸，小巧鼻梁，粉嫩自然唇色，超大湛蓝瞳孔，晶莹眼眸，高光眼神，慵懒半睁眼，轻启双唇露出一点点上排牙齿，神情自然温柔，带一点惊喜与亲近感；银白色长发，自然大波浪卷发，发尾渐变浅薄荷蓝，额前轻薄空气刘海，几缕碎发自然垂落脸颊，没有兽耳，没有任何动物特征，仅佩戴简洁灰色蝴蝶结发饰。",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -34,11 +128,35 @@
       "摄影"
     ],
     "difficulty": "intermediate",
-    "cover": "https://pbs.twimg.com/media/HN1foZja0AAznRt.jpg?name=orig&format=webp",
+    "cover": "/images/prompts/prompt-2079924115650256936.jpg",
     "date": "2026-07-23",
     "source": "https://x.com/i/status/2079924115650256936",
     "author": "𝟡𝟜 ᴾᴸᴬʸᶠᴼᴿᴳᴱ",
     "prompt": "剩下的直接交给GPT-Image2，让模型自己发挥。\n这种方式充分利用了GPT-Image2在风格理解上的高权限，能自动处理摄影角度、光影、情绪、构图、镜头语言等大量细节，从而大幅减少手动堆叠关键词。",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    }
+  },
+  {
+    "title": "AI创作轮廓光应用提示词",
+    "slug": "prompt-2079962963226861934",
+    "model": "Midjourney",
+    "category": "realistic",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "国风",
+      "写实",
+      "油画"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2079962963226861934.jpg",
+    "date": "2026-07-23",
+    "source": "https://x.com/i/status/2079962963226861934",
+    "author": "灰度笔记",
+    "prompt": "超写实古风人像摄影，电影级视觉，近景特写（Close-up Portrait），人物占据画面约70%～85%，肩部以上构图，轻微侧身，头部自然回望镜头，眼神温柔平静，神情含蓄自然，具有东方古典美感。\n\n背景设定\n古典中式园林，傍晚黄金时刻（Golden Hour），亭台楼阁、小桥流水、朦胧湖面、远山、水榭、垂柳、飞檐斗拱若隐若现，大面积浅景深，背景完全虚化，仅保留柔和光斑（Bokeh），环境安静空灵，电影氛围浓厚。\n\n光线设定\n太阳位于人物后方约45°，柔和轮廓光（Rim Light）包裹发丝与肩部，发丝边缘形成自然金色高光，人物面部采用柔和漫反射补光，无HDR，无过曝，肤色自然通透，空气中带有轻微雾气，体积光（Volumetric Light）增强空间层次。\n\n摄影语言\nLeica SL3，APO-Summicron-SL 90mm F2 ASPH，f/2.0，长焦压缩感，超浅景深，真实镜头呼吸感，自然背景虚化，高级电影色彩，真实皮肤纹理，保留毛孔、细小绒毛、自然皮肤反光，无塑料皮肤，无AI感。\n\n色彩风格\n中国传统雅致色调，柔和低饱和，高级电影调色，青灰、浅蓝、米白、暖金光交织，画面干净纯净，富有诗意与呼吸感。\n\n画质\nUltra Photorealistic，Cinematic Portrait，Editorial Photography，8K，HDR，Ultra Detailed，Masterpiece，Professional Color Grading，Natural Skin Texture，Soft Rim Light，Atmospheric Perspective。",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -58,7 +176,7 @@
       "人物"
     ],
     "difficulty": "intermediate",
-    "cover": "https://pbs.twimg.com/media/HN4WRRKaEAAHyKe.jpg?name=orig&format=webp",
+    "cover": "/images/prompts/prompt-2080124574696694035.jpg",
     "date": "2026-07-23",
     "source": "https://x.com/i/status/2080124574696694035",
     "author": "𝟡𝟜 ᴾᴸᴬʸᶠᴼᴿᴳᴱ",

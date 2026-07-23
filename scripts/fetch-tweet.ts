@@ -82,22 +82,35 @@ function fetchFromNitter(author: string, id: string): string | null {
  * 从 HTML 解析推文内容
  */
 function parseTweetHtml(html: string): TweetData | null {
-  // 提取推文内容
-  const contentMatch = html.match(/<div class="tweet-content[^"]*"[^>]*>([\s\S]*?)<\/div>/);
-  if (!contentMatch) {
+  // 提取所有推文内容（包括主推文和回复）
+  const tweetContentRegex = /<div class="tweet-content[^"]*"[^>]*>([\s\S]*?)<\/div>/g;
+  const allContents: string[] = [];
+  let match;
+  
+  while ((match = tweetContentRegex.exec(html)) !== null) {
+    const content = match[1]
+      .replace(/<[^>]+>/g, '')
+      .replace(/&amp;/g, '&')
+      .replace(/&lt;/g, '<')
+      .replace(/&gt;/g, '>')
+      .replace(/&quot;/g, '"')
+      .replace(/&#x27;/g, "'")
+      .replace(/&#x2F;/g, '/')
+      .trim();
+    
+    if (content) {
+      allContents.push(content);
+    }
+  }
+  
+  if (allContents.length === 0) {
     console.log('  → 未找到推文内容');
     return null;
   }
   
-  let content = contentMatch[1]
-    .replace(/<[^>]+>/g, '')
-    .replace(/&amp;/g, '&')
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&quot;/g, '"')
-    .replace(/&#x27;/g, "'")
-    .replace(/&#x2F;/g, '/')
-    .trim();
+  // 第一个是主推文，其余的是回复
+  const content = allContents[0];
+  const replyContent = allContents.slice(1).join('\n\n');
   
   // 提取作者名
   const authorMatch = html.match(/<a class="fullname"[^>]*title="([^"]+)"[^>]*>([^<]+)<\/a>/);
@@ -112,22 +125,31 @@ function parseTweetHtml(html: string): TweetData | null {
   const timeMatch = html.match(/<p class="tweet-published">([^<]+)<\/p>/);
   const timestamp = timeMatch ? timeMatch[1] : '';
   
-  // 提取图片 URL
+  // 提取图片 URL (更通用的方式)
   const mediaUrls: string[] = [];
-  const imgMatches = html.match(/<img[^>]*src=["']([^"']*?)["'][^>]*>/g);
-  for (const matchStr of (imgMatches || [])) {
-    const srcMatch = matchStr.match(/src=["']([^"']*?)["']/);
-    const src = srcMatch ? srcMatch[1] : '';
-    
-    // 匹配 /pic/media%2F... 格式
-    if (src.includes('/pic/media')) {
-      // 解码 URL 编码
-      const decoded = decodeURIComponent(src);
-      // 转换为完整的 Twitter 图片 URL
-      const mediaPath = decoded.replace('/pic/media/', '');
-      const fullUrl = `https://pbs.twimg.com/media/${mediaPath}`;
-      // 获取原图
-      mediaUrls.push(fullUrl.replace(/:small$/, ':orig').replace(/\?name=small/, '?name=orig'));
+  const imgMatches = html.match(/(?:data-src|src)=["']([^"']*?)["']/gi);
+  if (imgMatches) {
+    for (const matchStr of imgMatches) {
+      const srcMatch = matchStr.match(/(?:data-src|src)=["']([^"']*?)["']/i);
+      const src = srcMatch ? srcMatch[1] : '';
+      
+      // 匹配 Twitter 图片 URL
+      if (src.includes('pbs.twimg.com/media')) {
+        // 提取原始图片链接
+        const url = src.replace(/:thumb$|:small$|:medium$|:large$/g, ':orig');
+        mediaUrls.push(url);
+      }
+      
+      // 匹配 Nitter 格式的图片 URL
+      if (src.includes('/pic/media%2F')) {
+        // 解码 URL 编码
+        const decoded = decodeURIComponent(src);
+        // 转换为完整的 Twitter 图片 URL
+        const mediaPath = decoded.replace('/pic/media/', '');
+        const fullUrl = `https://pbs.twimg.com/media/${mediaPath}`;
+        // 获取原图
+        mediaUrls.push(fullUrl.replace(/:small$/, ':orig').replace(/\?name=small/, '?name=orig'));
+      }
     }
   }
   
@@ -138,7 +160,7 @@ function parseTweetHtml(html: string): TweetData | null {
     content,
     timestamp,
     mediaUrls,
-    replyContent: '',
+    replyContent: replyContent.trim(),
     fullThread: content,
   };
 }
@@ -165,6 +187,12 @@ function extractPrompt(content: string): string {
   const zhMatch = content.match(/提示词[：:]?\s*([\s\S]+?)(?:\n\n|Negative|$)/);
   if (zhMatch) {
     return zhMatch[1].trim();
+  }
+  
+  // 查找 "Prompt" 或 "提示词" 后面的文本
+  const promptSection = content.match(/(Prompt.*?:.*?(?=\n|$)|提示词.*?:.*?(?=\n|$))[\s\S]*?/i);
+  if (promptSection) {
+    return promptSection[0].trim();
   }
   
   // 如果内容本身就很长且像提示词，直接返回
