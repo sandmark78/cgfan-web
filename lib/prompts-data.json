@@ -1,5 +1,99 @@
 [
   {
+    "title": "1.Grok, 2.Whisk, 3.Banana App, 4.Flow\nIn my opinion, Whisk was the most successful interpreter and gave realistic results. Flow surprised me for the first time. Its performance was low. Grok is nice,",
+    "slug": "prompt-2017302859218407558",
+    "model": "Grok",
+    "category": "realistic",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "写实",
+      "动漫",
+      "摄影"
+    ],
+    "difficulty": "advanced",
+    "cover": "https://pbs.twimg.com/media/G_7mPucXEAAB8R4.jpg?name=orig&format=webp",
+    "date": "2026-07-23",
+    "source": "https://x.com/i/status/2017302859218407558",
+    "author": "Aytaç Altıntepe",
+    "prompt": "1.Grok, 2.Whisk, 3.Banana App, 4.Flow\n\nIn my opinion, Whisk was the most successful interpreter and gave realistic results. Flow surprised me for the first time. Its performance was low. Grok is nice, but I don't understand why they can't solve this skin shine problem.🤔\n\nGLOBAL STYLE & QUALITY\n\nUltra-detailed hyper-realistic cinematic fashion photography, dark editorial mood, premium texture fidelity, high dynamic range lighting, zero illustration feel, zero anime styling, gritty environment realism, luxury fashion campaign sharpness.\n\nFACE\n\nBeautiful woman in her 20s, sharp feminine facial structure, clean fair skin, controlled intense expression, lips slightly parted as if mid-breath, soft satin lipstick, defined eyeliner with elegant wing, balanced blush, confident upward gaze, emotionally distant but magnetic.\n\nBODY\n\nFit, toned, feminine athletic silhouette, strong posture dominance, torso arched backward creating tension line through waist and hips, one leg elevated and flexed, calf and thigh tension visible, body language territorial and commanding.\n\nSKIN\n\nNatural fair skin with subtle moisture sheen, realistic pore texture, micro highlights from overhead light, no plastic smoothing, cinematic contrast rolloff.\n\nHAIR\n\nShort black hair, sleek layered cut, straight strands with slight directional separation, subtle edge highlights from top light, structured and modern.\n\nCAMERA & ANGLE\n\nVertical full-body frame, camera placed slightly below hip line looking upward, medium-tight lens compression (85–105mm feel), subject fills frame height, narrow corridor perspective adds dominance, shallow depth with environmental texture retained.\n\nSETTING\n\nNarrow industrial service tunnel, wet concrete floor with reflections, aged walls, pipes and cables overhead, dark green moss and grime accents, urban decay atmosphere.\n\nSCENE SETUP\n\nSingle subject centered between concrete blocks, one foot raised on block, hands braced behind for leverage, overhead spotlight beam cutting through dust particles, back tunnel falling into darkness, controlled cinematic shadow falloff.\n\nOUTFIT\n\nTight red long-sleeve mini dress, stretch fabric contouring body lines, matte-satin finish, , thigh-high red leather stiletto boots, pointed toe, high gloss leather texture, tailored aggressive fashion styling.\n\nPROPS (FLATLAY FEEL)\n\nNo extra props, only architectural concrete blocks and industrial structure elements supporting pose.\n\nEXPRESSION & MOOD\n\nDominant, dangerous elegance, seductive authority, emotionally cool, controlled power stance, tension + allure balance.\n\nATMOSPHERE\n\nDark cinematic tension, wet ground reflections, cold environment vs warm red outfit contrast, fashion-thriller editorial tone.\n\nFINAL RESULT GOAL\n\nHyper-realistic dark fashion editorial frame with bold seductive dominance, aggressive posture clarity, luxury cinematic grit, viewer focus locked on pose power and silhouette tension.",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    }
+  },
+  {
+    "title": "一个怎样玩转GPT，出爆款摄影风格写真抽卡技巧：\n通过【某某人视角的摄影风格】，例如下面⬇️这组风格： 【Masochist系男友的视角拍摄风格】\n核心优势： 省去大量繁琐的摄影参数描述 更容易出情绪感和自带故事性 风格一致性更高，更容易抽到爆款图，也不用去洗图找人要提示词\n剩下的直接交给GPT-Image2，让模型自己发挥。 这种方式充分利用了GPT-Image2在风格理解上的高权限，能自",
+    "slug": "prompt-2079924115650256936",
+    "model": "Midjourney",
+    "category": "realistic",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "摄影"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2079924115650256936.jpg",
+    "date": "2026-07-23",
+    "source": "https://x.com/i/status/2079924115650256936",
+    "author": "𝟡𝟜 ᴾᴸᴬʸᶠᴼᴿᴳᴱ",
+    "prompt": "一个怎样玩转GPT，出爆款摄影风格写真抽卡技巧：\n\n通过【某某人视角的摄影风格】，例如下面⬇️这组风格：\n【Masochist系男友的视角拍摄风格】\n\n核心优势：\n省去大量繁琐的摄影参数描述\n更容易出情绪感和自带故事性\n风格一致性更高，更容易抽到爆款图，也不用去洗图找人要提示词\n\n剩下的直接交给GPT-Image2，让模型自己发挥。\n这种方式充分利用了GPT-Image2在风格理解上的高权限，能自动处理摄影角度、光影、情绪、构图、镜头语言等大量细节，从而大幅减少手动堆叠关键词。",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    }
+  },
+  {
+    "title": "这套提示词做的是一组 魏晋风高髻 × 古典仕女妆造 × 清冷柔艳棚拍人像。\n我把重点放在发型、妆容和衣料层次上：高耸环形主髻搭配厚重发包，黑发保持平整浓亮；白粉花朵、浅青玉叶和白色枝形发簪负责提亮轮廓。妆面采用冷调象牙白瓷肌，灰粉紫眼影向眼尾拉长，细眉、灰紫瞳色、额间小朱点，再用深莓豆沙唇压住整体气质。\n服装选择浅灰紫与冷白叠穿，交领内搭配轻薄大袖外衫，加入细小珍珠珠串，让画面保持端庄、轻盈和",
+    "slug": "prompt-2079942715656245356",
+    "model": "Midjourney",
+    "category": "realistic",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "油画",
+      "人物",
+      "产品"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2079942715656245356.jpg",
+    "date": "2026-07-23",
+    "source": "https://x.com/i/status/2079942715656245356",
+    "author": "VoxCat",
+    "prompt": "这套提示词做的是一组 魏晋风高髻 × 古典仕女妆造 × 清冷柔艳棚拍人像。\n\n我把重点放在发型、妆容和衣料层次上：高耸环形主髻搭配厚重发包，黑发保持平整浓亮；白粉花朵、浅青玉叶和白色枝形发簪负责提亮轮廓。妆面采用冷调象牙白瓷肌，灰粉紫眼影向眼尾拉长，细眉、灰紫瞳色、额间小朱点，再用深莓豆沙唇压住整体气质。\n\n服装选择浅灰紫与冷白叠穿，交领内搭配轻薄大袖外衫，加入细小珍珠珠串，让画面保持端庄、轻盈和克制。最后用纯净渐变背景与柔和棚灯收尾，发髻、面部和衣料都有清晰层次，整体像一张完成度很高的古典妆造商业样片。\n\n完整提示词在评论区👇",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    }
+  },
+  {
+    "title": "Gemini的香蕉人像人脸内容的时期做过类似的教程有专门写捏脸：\n远不止在脸上加几颗痘痘痘印和简单皮肤纹理。\n很多图一眼就能看出是AI，缺的就是那种“活人”气息。这是之前gemini的核心要点：\n1.  皮肤的真实层次 区域差异化：T区油光明显、鼻翼有黑头、脸颊微干有细纹、下巴易有粉刺 微血管与色素：轻微红血丝、色斑不均匀、自然的血管透肤感 光线反应：不同光源下皮肤颜色、油光、反光都要真实变",
+    "slug": "prompt-2080124574696694035",
+    "model": "Gemini",
+    "category": "realistic",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "写实",
+      "摄影",
+      "人物"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2080124574696694035.jpg",
+    "date": "2026-07-23",
+    "source": "https://x.com/i/status/2080124574696694035",
+    "author": "𝟡𝟜 ᴾᴸᴬʸᶠᴼᴿᴳᴱ",
+    "prompt": "Gemini的香蕉人像人脸内容的时期做过类似的教程有专门写捏脸：\n\n远不止在脸上加几颗痘痘痘印和简单皮肤纹理。\n\n很多图一眼就能看出是AI，缺的就是那种“活人”气息。这是之前gemini的核心要点：\n\n1.  皮肤的真实层次 区域差异化：T区油光明显、鼻翼有黑头、脸颊微干有细纹、下巴易有粉刺 微血管与色素：轻微红血丝、色斑不均匀、自然的血管透肤感 光线反应：不同光源下皮肤颜色、油光、反光都要真实变化\n\n2.  五官的瑕疵细节（最容易暴露AI） 眼睛：巩膜带轻微血丝、泪腺细节、瞳孔边缘不规则、自然高光位置 嘴唇：唇纹、轻微干皮、嘴角色差和纹理 牙齿：轻微不整齐、牙釉质反光不均、可能有轻度牙垢 眉毛/汗毛：生长方向和密度不均匀，自然杂乱感\n\n3.  皮下结构与动态真实 脂肪与骨骼：脸颊咬肌、下颌线脂肪、自然眼窝阴影 表情肌牵动：笑时鱼尾纹、法令纹、抬头纹的自然动态 微表情：眼皮轻微下垂、鼻翼动作等细微变化\n\n4.  环境与生活痕迹 衣服压痕、口罩痕、眼镜压痕、枕头睡痕 皮肤与环境的交互：环境色反射、汗光、油光 体毛细节：手臂、腿部、后颈的自然汗毛\n\n5.  摄影级真实（决定性因素） 真实相机模型（Sony A7R系列、Canon R5、iPhone最新参数） 镜头特性：边缘畸变、真实景深、轻微色散 后期痕迹：自然锐化、胶片/数码噪点、真实光影\n\n而用GPT-image或者seedream 5.0pro重点是「光影以及拍摄风格」；其他都属于锦上添花的作用",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    }
+  },
+  {
     "title": "📐 AI生图构图篇：打破物理的叙事 —— 分焦镜头 (Split Diopter)",
     "slug": "prompt-1572908923",
     "model": "Midjourney",
