@@ -1,10 +1,9 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import type { User } from '@supabase/supabase-js'
 
 interface Prompt {
-  id: number
   slug: string
   title: string
   prompt: string
@@ -18,46 +17,31 @@ interface Prompt {
   source?: string
   author?: string
   parameters?: Record<string, string>
-  created_at: string
-  updated_at: string
 }
 
-export default function AdminDashboard({ user }: { user: User }) {
-  const [prompts, setPrompts] = useState<Prompt[]>([])
-  const [loading, setLoading] = useState(true)
+export default function AdminDashboard({ 
+  user, 
+  initialPrompts,
+  hasGithubToken 
+}: { 
+  user: User
+  initialPrompts: Prompt[]
+  hasGithubToken: boolean
+}) {
+  const [prompts] = useState<Prompt[]>(initialPrompts)
   const [editingPrompt, setEditingPrompt] = useState<Prompt | null>(null)
   const [showForm, setShowForm] = useState(false)
 
-  useEffect(() => {
-    loadPrompts()
-  }, [])
-
-  const loadPrompts = async () => {
-    try {
-      const res = await fetch('/api/admin/prompts', {
-        credentials: 'include',
-      })
-      const data = await res.json()
-      if (data.error) {
-        console.error('API error:', data.error)
-      }
-      setPrompts(data.prompts || [])
-    } catch (error) {
-      console.error('Failed to load prompts:', error)
-    } finally {
-      setLoading(false)
-    }
-  }
-
-  const handleDelete = async (id: number) => {
+  const handleDelete = async (slug: string) => {
     if (!confirm('确定要删除这个提示词吗？')) return
 
     try {
-      const res = await fetch(`/api/admin/prompts?id=${id}`, {
+      const res = await fetch(`/api/admin/prompts?slug=${slug}`, {
         method: 'DELETE',
+        credentials: 'include',
       })
       if (res.ok) {
-        setPrompts(prompts.filter(p => p.id !== id))
+        window.location.reload()
       }
     } catch (error) {
       console.error('Failed to delete:', error)
@@ -71,29 +55,20 @@ export default function AdminDashboard({ user }: { user: User }) {
 
   const handleSave = async (prompt: Partial<Prompt>) => {
     try {
-      const method = prompt.id ? 'PUT' : 'POST'
+      const method = prompt.slug && editingPrompt ? 'PUT' : 'POST'
       const res = await fetch('/api/admin/prompts', {
         method,
         headers: { 'Content-Type': 'application/json' },
+        credentials: 'include',
         body: JSON.stringify(prompt),
       })
 
       if (res.ok) {
-        await loadPrompts()
-        setShowForm(false)
-        setEditingPrompt(null)
+        window.location.reload()
       }
     } catch (error) {
       console.error('Failed to save:', error)
     }
-  }
-
-  if (loading) {
-    return (
-      <div className="container mx-auto px-4 py-16">
-        <div className="text-center">加载中...</div>
-      </div>
-    )
   }
 
   return (
@@ -102,16 +77,21 @@ export default function AdminDashboard({ user }: { user: User }) {
         <div>
           <h1 className="text-3xl font-bold">后台管理</h1>
           <p className="text-gray-600 mt-1">欢迎，{user.email}</p>
+          {!hasGithubToken && (
+            <p className="text-red-600 mt-2">⚠️ GITHUB_TOKEN 未配置，无法管理提示词</p>
+          )}
         </div>
-        <button
-          onClick={() => {
-            setEditingPrompt(null)
-            setShowForm(true)
-          }}
-          className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700"
-        >
-          + 新建提示词
-        </button>
+        {hasGithubToken && (
+          <button
+            onClick={() => {
+              setEditingPrompt(null)
+              setShowForm(true)
+            }}
+            className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700"
+          >
+            + 新建提示词
+          </button>
+        )}
       </div>
 
       {showForm && (
@@ -137,36 +117,44 @@ export default function AdminDashboard({ user }: { user: User }) {
             </tr>
           </thead>
           <tbody className="bg-white divide-y divide-gray-200">
-            {prompts.map((prompt) => (
-              <tr key={prompt.id}>
-                <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                  {prompt.title}
-                </td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                  {prompt.model}
-                </td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                  {prompt.category}
-                </td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                  {new Date(prompt.date).toLocaleDateString('zh-CN')}
-                </td>
-                <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                  <button
-                    onClick={() => handleEdit(prompt)}
-                    className="text-green-600 hover:text-green-900 mr-4"
-                  >
-                    编辑
-                  </button>
-                  <button
-                    onClick={() => handleDelete(prompt.id)}
-                    className="text-red-600 hover:text-red-900"
-                  >
-                    删除
-                  </button>
+            {prompts.length === 0 ? (
+              <tr>
+                <td colSpan={5} className="px-6 py-8 text-center text-gray-500">
+                  {hasGithubToken ? '暂无提示词' : '请先配置 GITHUB_TOKEN 环境变量'}
                 </td>
               </tr>
-            ))}
+            ) : (
+              prompts.map((prompt) => (
+                <tr key={prompt.slug}>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                    {prompt.title}
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                    {prompt.model}
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                    {prompt.category}
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                    {new Date(prompt.date).toLocaleDateString('zh-CN')}
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                    <button
+                      onClick={() => handleEdit(prompt)}
+                      className="text-green-600 hover:text-green-900 mr-4"
+                    >
+                      编辑
+                    </button>
+                    <button
+                      onClick={() => handleDelete(prompt.slug)}
+                      className="text-red-600 hover:text-red-900"
+                    >
+                      删除
+                    </button>
+                  </td>
+                </tr>
+              ))
+            )}
           </tbody>
         </table>
       </div>
@@ -237,6 +225,7 @@ function PromptForm({
                 onChange={(e) => setFormData({ ...formData, slug: e.target.value })}
                 className="w-full px-3 py-2 border border-gray-300 rounded-md"
                 required
+                disabled={!!prompt}
               />
             </div>
 
