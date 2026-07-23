@@ -12,7 +12,7 @@ tags:
 difficulty: advanced
 cover: /images/prompts/gemini-nano-banana-pro-30-1570899670.jpg
 date: '2026-01-31'
-added: %Y->-
+added: 2026-07-24
 source: https://x.com/i/status/2017166130746675620
 author: kashmir_ki_lark
 ---

@@ -12,7 +12,7 @@ tags:
 difficulty: intermediate
 cover: /images/prompts/nano-banana-prompt-1543511802.jpg
 date: '2026-01-15'
-added: %Y->-
+added: 2026-07-24
 source: https://x.com/i/status/2011441977447911691
 author: AmirMušić AmirMushich
 ---

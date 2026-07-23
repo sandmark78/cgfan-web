@@ -12,7 +12,7 @@ tags:
 difficulty: intermediate
 cover: /images/prompts/object-infographics-by-nano-banana-pro-1570554885.jpg
 date: '2026-01-31'
-added: %Y->-
+added: 2026-07-24
 source: https://x.com/i/status/2013316513701216688
 author: TechieSA
 ---

@@ -14,7 +14,7 @@ tags:
 difficulty: intermediate
 cover: /images/prompts/image_request-subject-type-young-adult-1564527620.jpg
 date: '2026-01-27'
-added: %Y->-
+added: 2026-07-24
 source: https://x.com/i/status/2016087115482763660
 author: Lena lenawakes
 ---

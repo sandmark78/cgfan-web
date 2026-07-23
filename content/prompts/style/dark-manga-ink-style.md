@@ -3,7 +3,7 @@ title: 暗黑漫画黑工线稿风格
 slug: dark-manga-ink-style
 author: VoxCat
 date: 2026-07-22
-added: %Y->-
+added: 2026-07-24
 model: GPT-Image2
 category: style
 tags: [dark, manga, ink, woodcut, silk-screen, high-contrast]

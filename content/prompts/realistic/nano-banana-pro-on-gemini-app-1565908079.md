@@ -12,7 +12,7 @@ tags:
 difficulty: intermediate
 cover: /images/prompts/nano-banana-pro-on-gemini-app-1565908079.jpg
 date: '2026-01-28'
-added: %Y->-
+added: 2026-07-24
 source: https://x.com/i/status/2016357678680039438
 author: Taaruk_
 ---

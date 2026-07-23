@@ -12,7 +12,7 @@ tags:
 difficulty: intermediate
 cover: /images/prompts/1grok-2whisk-3banana-app-4flow-1570554404.jpg
 date: '2026-01-31'
-added: %Y->-
+added: 2026-07-24
 source: https://x.com/i/status/2017302859218407558
 author: Aytaç Altıntepe
 ---
