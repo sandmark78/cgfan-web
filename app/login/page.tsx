@@ -2,9 +2,9 @@ import { createClient } from '@/lib/supabase/server'
 import { redirect } from 'next/navigation'
 import { GitHubSignInButton } from '@/components/auth/github-sign-in-button'
 import { GoogleSignInButton } from '@/components/auth/google-sign-in-button'
+import { EmailSignInForm } from '@/components/auth/email-sign-in-form'
 
 export const runtime = 'edge'
-
 export default async function LoginPage() {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
@@ -37,6 +37,9 @@ export default async function LoginPage() {
           <GitHubSignInButton />
           <GoogleSignInButton />
         </div>
+
+        {/* 邮箱登录 */}
+        <EmailSignInForm />
 
         {/* 条款 */}
         <p className="relative z-10 mt-6 text-center text-xs text-gray-400 dark:text-gray-500">
