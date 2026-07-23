@@ -12,7 +12,7 @@ tags:
 difficulty: intermediate
 cover: /images/prompts/kling-26-prompt-hyperspeed-fpv-in-a-1543070080.jpg
 date: '2026-01-14'
-added: %Y->-
+added: 2026-07-24
 source: https://x.com/i/status/2011060762454999475
 author: MayorkingAI
 ---

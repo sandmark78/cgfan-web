@@ -12,7 +12,7 @@ tags:
 difficulty: intermediate
 cover: /images/prompts/untamed-energy-1570898796.jpg
 date: '2026-01-31'
-added: %Y->-
+added: 2026-07-24
 source: https://x.com/i/status/2017223007060808035
 author: Natty Windstorm
 ---
