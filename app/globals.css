@@ -100,7 +100,7 @@ body {
   position: relative;
 }
 
-/* 内容区域的毛玻璃背景 */
+/* 内容区域的毛玻璃背景 + 两侧渐变透明 */
 .shell::before {
   content: "";
   position: fixed;
@@ -116,6 +116,21 @@ body {
   border-radius: 24px;
   z-index: -1;
   pointer-events: none;
+  /* 两侧渐变透明 */
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 20%,
+    black 80%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 20%,
+    black 80%,
+    transparent 100%
+  );
 }
 
 .dark .shell::before {
