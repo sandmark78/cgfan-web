@@ -7,10 +7,12 @@ export const runtime = 'edge'
 // GET /api/admin/prompts - 获取所有提示词
 export async function GET() {
   try {
-    await requireAdmin()
+    const user = await requireAdmin()
+    console.log('Admin authenticated:', user.email)
     
     // 检查环境变量
     if (!process.env.GITHUB_TOKEN) {
+      console.error('GITHUB_TOKEN not configured')
       return NextResponse.json(
         { error: 'GITHUB_TOKEN not configured' },
         { status: 500 }
