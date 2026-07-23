@@ -86,35 +86,40 @@ body {
   inset: 0;
   z-index: -1;
   background: var(--bg-light) center / cover no-repeat;
-  filter: blur(12px);
-  transform: scale(1.05); /* 防止模糊边缘露出 */
-}
-
-/* 中间向两边渐变遮罩 */
-.app-bg::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(
-    ellipse 80% 70% at 50% 50%,
-    rgba(255, 255, 255, 0.3) 0%,
-    rgba(255, 255, 255, 0.1) 50%,
-    transparent 100%
-  );
-  pointer-events: none;
 }
 
 .dark .app-bg {
   background-image: var(--bg-dark);
 }
 
-.dark .app-bg::after {
-  background: radial-gradient(
-    ellipse 80% 70% at 50% 50%,
-    rgba(0, 0, 0, 0.4) 0%,
-    rgba(0, 0, 0, 0.2) 50%,
-    transparent 100%
-  );
+/* ===== 内容层毛玻璃效果 ===== */
+.shell {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 16px clamp(12px, 3vw, 32px);
+  position: relative;
+}
+
+/* 内容区域的毛玻璃背景 */
+.shell::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1120px;
+  max-width: calc(100% - 24px);
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 24px;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.dark .shell::before {
+  background: rgba(0, 0, 0, 0.4);
 }
 
 /* 移动端：使用 scroll 避免 iOS 抖动 */
