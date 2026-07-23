@@ -11,6 +11,8 @@ cover: /images/prompts/2079781372626165800.jpg
 source: https://x.com/YUKIMASTERAI/status/2079781372626165800
 ---
 
+## Prompt
+
 Ultra-photorealistic portrait of a beautiful young adult East Asian woman standing gracefully beneath cascading pink weeping cherry blossoms in a traditional Chinese courtyard during spring. She has long, silky black hair flowing naturally down her back, fair porcelain skin with subtle natural texture, soft almond-shaped brown eyes, delicate facial features, and light rosy makeup with glossy lips.
 
 She wears an elegant blush pink hanfu-inspired chiffon dress with sheer flowing sleeves, intricate floral embroidery, pearl embellishments, layered translucent fabric, and a fitted waist. A large pale pink flower hair ornament with dangling pearl tassels decorates one side of her hair.

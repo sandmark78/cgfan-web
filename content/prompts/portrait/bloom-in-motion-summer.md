@@ -11,6 +11,8 @@ cover: /images/prompts/2078835665958314213.jpg
 source: https://x.com/MrLarus/status/2078835665958314213
 ---
 
+## Prompt
+
 Subject: [young woman / character]
 Dress: [color and style of light summer dress]
 Scene: [wildflower meadow / green hillside / summer garden]
