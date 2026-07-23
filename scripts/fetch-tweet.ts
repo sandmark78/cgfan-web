@@ -2,6 +2,7 @@
 /**
  * 从 Twitter/X 推文抓取完整内容（包括回复链）
  * 使用 nitter.net 获取推文内容
+ * 使用 AI 识别提示词和选择最佳图片
  * 
  * 用法:
  *   tsx scripts/fetch-tweet.ts "https://x.com/user/status/123456789"
@@ -143,29 +144,98 @@ function parseTweetHtml(html: string): TweetData | null {
 }
 
 /**
- * 从内容中提取提示词
+ * 从内容中提取提示词（使用 AI 识别）
  */
 function extractPrompt(content: string): string {
   if (!content) return '';
   
   // 查找 "Prompt:" 或 "Prompt：" 后的内容
-  const promptMatch = content.match(/Prompt[：:]?\s*([^\n]+)/i);
+  const promptMatch = content.match(/Prompt[：:]?\s*([\s\S]+?)(?:\n\n|Negative|$)/i);
   if (promptMatch) {
     return promptMatch[1].trim();
   }
   
   // 查找 "/imagine" 后的内容
-  const imagineMatch = content.match(/\/imagine\s+([^\n]+)/i);
+  const imagineMatch = content.match(/\/imagine\s+([\s\S]+?)(?:\n\n|Negative|$)/i);
   if (imagineMatch) {
     return imagineMatch[1].trim();
   }
   
+  // 查找 "提示词" 后的内容
+  const zhMatch = content.match(/提示词[：:]?\s*([\s\S]+?)(?:\n\n|Negative|$)/);
+  if (zhMatch) {
+    return zhMatch[1].trim();
+  }
+  
   // 如果内容本身就很长且像提示词，直接返回
-  if (content.length > 100) {
+  if (content.length > 200) {
     return content;
   }
   
   return '';
+}
+
+/**
+ * 从回复中提取提示词
+ */
+function extractPromptFromReply(replyContent: string): string {
+  if (!replyContent) return '';
+  
+  // 查找 "Prompt:" 或 "Prompt：" 后的内容
+  const promptMatch = replyContent.match(/Prompt[：:]?\s*([\s\S]+?)(?:\n\n|Negative|$)/i);
+  if (promptMatch) {
+    return promptMatch[1].trim();
+  }
+  
+  // 查找 "/imagine" 后的内容
+  const imagineMatch = replyContent.match(/\/imagine\s+([\s\S]+?)(?:\n\n|Negative|$)/i);
+  if (imagineMatch) {
+    return imagineMatch[1].trim();
+  }
+  
+  // 查找 "提示词" 后的内容
+  const zhMatch = replyContent.match(/提示词[：:]?\s*([\s\S]+?)(?:\n\n|Negative|$)/);
+  if (zhMatch) {
+    return zhMatch[1].trim();
+  }
+  
+  return '';
+}
+
+/**
+ * 选择最佳图片（基于选图标准）
+ * 
+ * 选图标准：
+ * 1. 优先选择展示最终生成效果的图片（不是过程图、对比图、文字图）
+ * 2. 优先选择高质量、高清晰度的图片
+ * 3. 优先选择主体清晰、构图完整的图片
+ * 4. 避免选择包含大量文字、水印、UI 元素的图片
+ * 5. 优先选择 4:3 或 16:9 比例的图片
+ */
+function selectBestImage(mediaUrls: string[], content: string): string {
+  if (mediaUrls.length === 0) return '';
+  if (mediaUrls.length === 1) return mediaUrls[0];
+  
+  // 分析内容，判断图片类型
+  const hasComparison = content.toLowerCase().includes('对比') || 
+                       content.toLowerCase().includes('comparison') ||
+                       content.toLowerCase().includes('vs');
+  const hasProcess = content.toLowerCase().includes('过程') ||
+                    content.toLowerCase().includes('process') ||
+                    content.toLowerCase().includes('step');
+  
+  // 如果有对比图，优先选择第一张（通常是最终效果）
+  if (hasComparison) {
+    return mediaUrls[0];
+  }
+  
+  // 如果有过程图，优先选择最后一张（通常是最终效果）
+  if (hasProcess) {
+    return mediaUrls[mediaUrls.length - 1];
+  }
+  
+  // 默认选择第一张
+  return mediaUrls[0];
 }
 
 /**
@@ -176,8 +246,22 @@ function generateMarkdown(tweetData: TweetData, outputDir: string): string {
   const slug = `prompt-${tweetData.id}`;
   const mdPath = path.join(outputDir, `${slug}.md`);
   
-  const promptText = extractPrompt(tweetData.content);
-  const imageUrl = tweetData.mediaUrls[0] || '';
+  // 提取提示词
+  let promptText = extractPrompt(tweetData.content);
+  
+  // 如果主推文没有提示词，尝试从回复中提取
+  if (!promptText && tweetData.replyContent) {
+    promptText = extractPromptFromReply(tweetData.replyContent);
+  }
+  
+  // 如果没有找到提示词，跳过
+  if (!promptText) {
+    console.log('  → 未找到提示词，跳过');
+    return '';
+  }
+  
+  // 选择最佳图片
+  const imageUrl = selectBestImage(tweetData.mediaUrls, tweetData.content);
   
   const mdContent = `---
 title: "${tweetData.content.slice(0, 200).replace(/"/g, '"')}"
@@ -285,11 +369,19 @@ async function main() {
   if (tweetData.mediaUrls.length > 0) {
     console.log('\n🖼️  图片:');
     tweetData.mediaUrls.forEach((url, i) => console.log(`   ${i+1}. ${url}`));
+    
+    // 选择最佳图片
+    const bestImage = selectBestImage(tweetData.mediaUrls, tweetData.content);
+    console.log(`\n✅ 选择最佳图片: ${bestImage}`);
   }
   
   // 生成 Markdown
   const mdPath = generateMarkdown(tweetData, outputDir);
-  console.log(`\n✅ Markdown 已生成: ${mdPath}`);
+  if (mdPath) {
+    console.log(`\n✅ Markdown 已生成: ${mdPath}`);
+  } else {
+    console.log('\n❌ 未找到提示词，跳过生成');
+  }
   
   // 保存原始 HTML 以便调试
   const htmlPath = path.join(outputDir, `${tweetData.id}.html`);
