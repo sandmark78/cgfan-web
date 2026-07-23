@@ -1,7 +1,7 @@
 import { createClient } from '@/lib/supabase/server'
 
-// 管理员邮箱列表（从环境变量读取）
-const ADMIN_EMAILS = process.env.ADMIN_EMAILS?.split(',') || ['sandmark78@gmail.com']
+// 管理员邮箱白名单
+const ADMIN_EMAILS = ['sandmark78@gmail.com']
 
 /**
  * 检查当前用户是否为管理员
