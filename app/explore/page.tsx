@@ -11,10 +11,10 @@ export const runtime = 'edge'
 export default async function ExplorePage({
   searchParams,
 }: {
-  searchParams: Promise<{ category?: string; tag?: string }>
+  searchParams: Promise<{ category?: string; tag?: string; q?: string }>
 }) {
   const params = await searchParams
-  const { category, tag } = params
+  const { category, tag, q } = params
 
   const categories = getAllCategories()
   const tags = getAllTags()
@@ -23,9 +23,20 @@ export default async function ExplorePage({
   let prompts = getAllPrompts()
   let activeFilter = ''
 
-  if (category) {
+  if (q) {
+    // 搜索：匹配标题、提示词内容、标签、作者
+    const query = q.toLowerCase()
+    prompts = prompts.filter((p) =>
+      p.title.toLowerCase().includes(query) ||
+      p.prompt.toLowerCase().includes(query) ||
+      p.tags.some((t) => t.toLowerCase().includes(query)) ||
+      p.author.toLowerCase().includes(query) ||
+      p.model.toLowerCase().includes(query)
+    )
+    activeFilter = `"${q}"`
+  } else if (category) {
     prompts = getPromptsByCategory(category)
-    activeFilter = category
+    activeFilter = getCategoryLabel(category)
   } else if (tag) {
     prompts = getPromptsByTag(tag)
     activeFilter = `#${tag}`
