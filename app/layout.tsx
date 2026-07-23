@@ -18,6 +18,12 @@ export const metadata: Metadata = {
   title: 'CGfan - AI 提示词画廊',
   description: '每日精选 AI 提示词和示例图，分门别类，方便查找和复用',
   viewport: 'width=device-width, initial-scale=1.0',
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon-96x96.png',
+    apple: '/apple-touch-icon.png',
+    manifest: '/site.webmanifest'
+  }
 }
 
 export default function RootLayout({
