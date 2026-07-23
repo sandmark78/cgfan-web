@@ -12,17 +12,32 @@ interface PromptGridProps {
 /**
  * 响应式网格画廊 - 根据屏幕宽度自动调整显示数量
  */
-export function PromptGrid({ prompts, maxRows = 3 }: PromptGridProps) {
-  const [displayCount, setDisplayCount] = useState(prompts.length)
+export function PromptGrid({ prompts, maxRows }: PromptGridProps) {
+  // 如果传了 maxRows，使用它计算；否则显示全部
+  const [displayCount, setDisplayCount] = useState(() => {
+    if (typeof window === 'undefined') return prompts.length
+    if (maxRows === undefined) return prompts.length
+    
+    const width = window.innerWidth
+    let cols = 1
+    if (width >= 1024) cols = 3
+    else if (width >= 640) cols = 2
+    
+    return Math.min(cols * maxRows, prompts.length)
+  })
 
   useEffect(() => {
+    if (maxRows === undefined) {
+      setDisplayCount(prompts.length)
+      return
+    }
+    
     function updateDisplayCount() {
       const width = window.innerWidth
       let cols = 1
       if (width >= 1024) cols = 3
       else if (width >= 640) cols = 2
 
-      // 根据列数和最大行数计算显示数量
       const count = cols * maxRows
       setDisplayCount(Math.min(count, prompts.length))
     }
