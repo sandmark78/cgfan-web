@@ -259,7 +259,7 @@ function parseMarkdownFile(filePath: string): PromptData | null {
       difficulty: detectedDifficulty,
       cover: frontmatter.cover || '',
       date: String(frontmatter.date || ''),
-      added: String(frontmatter.added || frontmatter.date || ''), // 优先用 added，没有则 fallback 到 date
+      added: normalizeDate(frontmatter.added || frontmatter.date || ''), // 统一 YYYY-MM-DD 格式
       source: frontmatter.source || '',
       author: frontmatter.author || 'Unknown',
       prompt: cleanedPrompt,
@@ -300,8 +300,8 @@ function main() {
   
   walkDir(contentDir);
   
-  // 按上传日期排序（最新的在前），优先用 added，没有则 fallback 到 date
-  allPrompts.sort((a, b) => (b.added || b.date || '').localeCompare(a.added || a.date || ''));
+  // 按发布日期排序（最新的在前）
+  allPrompts.sort((a, b) => (b.date || '').localeCompare(a.date || ''));
   
   // 写入 JSON
   fs.writeFileSync(outputFile, JSON.stringify(allPrompts, null, 2), 'utf-8');
