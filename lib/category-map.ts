@@ -9,6 +9,9 @@ export const CATEGORY_MAP: Record<string, { label: string; icon: string }> = {
   cyberpunk: { label: '赛博朋克', icon: '🌃' },
   portrait: { label: '人物', icon: '👤' },
   landscape: { label: '风景', icon: '🏔️' },
+  style: { label: '风格', icon: '🎨' },
+  photography: { label: '摄影', icon: '📸' },
+  product: { label: '产品', icon: '📦' },
 }
 
 /**
