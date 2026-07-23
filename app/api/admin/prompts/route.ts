@@ -9,15 +9,25 @@ export async function GET() {
   try {
     await requireAdmin()
     
-    const files = await listGitHubDirectory('content/prompts')
     const prompts = []
-
-    for (const file of files) {
-      if (file.name.endsWith('.md')) {
-        const fileData = await getGitHubFile(file.path)
-        if (fileData) {
-          const prompt = parseMarkdown(fileData.content, file.name)
-          prompts.push(prompt)
+    
+    // 获取所有分类目录
+    const categories = await listGitHubDirectory('content/prompts')
+    
+    // 遍历每个分类目录
+    for (const category of categories) {
+      if (category.type === 'dir') {
+        // 获取该分类下的所有文件
+        const files = await listGitHubDirectory(category.path)
+        
+        for (const file of files) {
+          if (file.name.endsWith('.md')) {
+            const fileData = await getGitHubFile(file.path)
+            if (fileData) {
+              const prompt = parseMarkdown(fileData.content, file.name)
+              prompts.push(prompt)
+            }
+          }
         }
       }
     }
