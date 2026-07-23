@@ -120,8 +120,8 @@ export default async function ExplorePage({
             </h1>
           </div>
 
-          {/* 瀑布流画廊 */}
-          <PromptGrid prompts={prompts} />
+          {/* 瀑布流画廊 - 显示全部 */}
+          <PromptGrid prompts={prompts} maxRows={999} />
         </div>
       </div>
     </div>
