@@ -622,30 +622,6 @@
     }
   },
   {
-    "title": "Landmark Infographics by Grok Imagine🗽✨",
-    "slug": "landmark-infographics-by-grok-imagine-1570554778",
-    "model": "Grok",
-    "category": "abstract",
-    "tags": [
-      "艺术",
-      "AI",
-      "Infographics",
-      "Landmarks",
-      "Grok"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/landmark-infographics-by-grok-imagine-1570554778.jpg",
-    "date": "2026-01-31",
-    "source": "https://x.com/i/status/2017219273521856928",
-    "author": "TechieSA (TechieBySA)",
-    "prompt": "Landmark Infographics by Grok Imagine🗽✨ Prompt👇🏻",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
     "title": "Life journey on Google Gemini Nano Banana",
     "slug": "life-journey-on-google-gemini-nano-1571173612",
     "model": "Gemini",
@@ -711,54 +687,6 @@
     "source": "https://x.com/i/status/2017136190042911190",
     "author": "Bitturing",
     "prompt": "30 分钟，AI 生成全套电商产品素材！\n上传一张产品图 → 主图到详情页一次跑完\n电商全套出图提示词（可直接商用）\n🔗 https://t.co/0ERINGHDH7\n\n一套提示词，直接生成👇\n✅ 首页主图（第一眼抓点击）\n✅ 卖点图（参数 / 优势清晰表达）\n✅ 细节特写图（材质 / 结构 / 质感）\n✅ 场景应用图（代入真实使用环境）\n\n不管卖什么，直接套这个「万能电商出图结构」框架👇\n📐 比例：1:1 / 9:16（平台友好）\n🎨 背景：明确颜色/真实场景\n💡 光线：统一自然柔光\n📍 构图：主体居中、比例真实\n✏️ 文字：极简卖点，不抢戏\n⚠️ 约束：真实结构，禁夸张\n\n新手照填，基本零翻车\n老手微调，效率翻 10 倍",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
-    "title": "分享一个比较成熟的AI创作路径，充分发挥各个模型的长处。",
-    "slug": "prompt-1570523288",
-    "model": "Midjourney",
-    "category": "abstract",
-    "tags": [
-      "视频",
-      "AI创作",
-      "MidJourney",
-      "NanoBananaPro",
-      "即梦视频"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-1570523288.jpg",
-    "date": "2026-01-31",
-    "source": "https://x.com/i/status/2017150086367891475",
-    "author": "MarioTanTanShilong",
-    "prompt": "分享一个比较成熟的AI创作路径，充分发挥各个模型的长处。对于图像和视频生成，各个工具都有自己的优势，作为创作者选择各个工具的长板就行了。比如MidJourney适合极致的美学，但很多细节或者真实感不够。没关系，你就把MidJourney当成顶级的艺术家，让它给你搞场景原画或者角色原画。比如这个机甲少女，直接用MidJourney Niji7模型搞定：an illustration of an android girl's head, wearing a AR glasses, robotic wires hanging from the side in the style of james jean, peter mohrbacher, and katsuya terada. the artwork is hyperdetailed, a detailed ink drawing and digital painting with a cyberpunk aesthetic on a white background. it has high resolution, high cont",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
-    "title": "用最“笨”的方法，短短4年身价暴涨1万倍！",
-    "slug": "prompt-1571068337",
-    "model": "Midjourney",
-    "category": "abstract",
-    "tags": [
-      "教程",
-      "股票",
-      "投资策略",
-      "短线交易",
-      "股市秘籍"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-1571068337.jpg",
-    "date": "2026-01-31",
-    "source": "https://x.com/i/status/2017137108163711426",
-    "author": "白骏知识分享",
-    "prompt": "用最“笨”的方法，短短4年身价暴涨1万倍！ 16分钟狂赚20亿！日本最强「民间股神」小手川隆（BNF）退隐前曝出惊人秘诀 从大学打工仔到资产超200亿日元，他靠严苛止损、顺势短线、避开情绪陷阱，硬生生把股市玩成个人提款机。 想知道他如何抓住JCOM错单暴富、日常如何“笨”到极致却赚翻天？ 戳进来看，解锁真正的高手心法，股市翻身就靠这一篇！ 保存学习👉https://t.co/N10Lp4RCne",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -975,30 +903,6 @@
     "source": "https://x.com/i/status/2017062059712925871",
     "author": "骑司Chase (qisi_ai)",
     "prompt": "讲真的，现在的提示词网站都还有很大的优化空间： 大部分提示词网站以“堆量”为主，靠着上千上万的提示词数量来堆砌价值，内容很丰富，但也存在大量重复、低质的提示词出现 如果是自动爬取的帖子，还会出现提示词空档的情况，因为并不是每一个作者都会把提示词直接写在正文中，所以识别不到 在这样的网站想要使用提示词，往往需要经历以下几个步骤： 1️⃣翻了很久，终于找到自己想要的图片效果 2️⃣点进去后会出现几种情况 - 没有提示词，只能放弃或者去原帖中找 - 语言不通，看不懂提示词 - 复制的文本里有其他文案，需要手动删除 3️⃣折腾十分钟，终于把提示词处理好了 4️⃣打开gemini/第三方生图网站 5️⃣复制提示词进行生图 6️⃣运气不好，发现提示词效果根本不是作者提供的那样，卒 想要丝滑的把中意的提示词变成图片，基本做不到 直到我用了MeiGen，一个开源的项目，它可能是今年使用体验最丝滑的提示词网站 因为MeiGen不是传统的提示词网站，它不只是收录，而是解决了从提示词源到创作的整条链路 想要什么效果，只需要轻轻拖动画面到右侧，点击生成就结束了，从查看到生成，只需要两步 「拖动-生成」结束 1",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
-    "title": "神佬，拆解滴神，哈哈。参考神佬提示词在flowith里狂刷图，调了一版写实的版本😂",
-    "slug": "prompt-1570502976",
-    "model": "Midjourney",
-    "category": "realistic",
-    "tags": [
-      "艺术",
-      "Twitter",
-      "Web Viewer",
-      "Trend Analyzer",
-      "Downloader"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-1570502976.jpg",
-    "date": "2026-01-31",
-    "source": "https://x.com/i/status/2004193839142342792",
-    "author": "Unknown",
-    "prompt": "Twitter Web Viewer & Trend Analyzer & Downloader | Sotwe",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -1894,30 +1798,6 @@
     }
   },
   {
-    "title": "上一期讲了\"复古\"，这期来个反方向—— Y2K 未来感 (Y2K Cyber Glam)。",
-    "slug": "prompt-1560926599",
-    "model": "Midjourney",
-    "category": "realistic",
-    "tags": [
-      "摄影",
-      "Y2K",
-      "CyberGlam",
-      "AIArtPrompt",
-      "BeautyTutorial"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-1560926599.jpg",
-    "date": "2026-01-25",
-    "source": "https://x.com/i/status/2015210684209115483",
-    "author": "VoxCat",
-    "prompt": "上一期讲了“复古”，这期来个反方向—— Y2K 未来感 (Y2K Cyber Glam)。 什么叫 Y2K？就是 2000 年前后那种“未来已来”的狂热审美。 核心是：金属光泽 + 粗颗粒亮片 + 冰霜唇彩，像从千禧年的时尚杂志里直接走出来。 1. 底妆：全息高光底 (Holographic Glass) 特点：不是普通的水光肌，是那种全息反光的科幻感。 细节： 玻璃光泽：Dewy glass skin with ultra-high shine，反光要肉眼可见。 全息闪粉：Holographic highlighter shimmer，像涂了一层彩虹膜。 冷调粉底：底妆偏薰衣草或粉紫色调 (Lavender/Pink Undertone)，告别暖黄。 2. 眉妆：细挑拱眉 (Thin Arched) 特点：Y2K 标志性眉形！拒绝粗眉，要细且上挑。 细节： 细如柳叶：眉毛修得很细，符合 90 年代末审美。 漂白眉尾：Bleached or frosted tips，可以尝试渐变效果。 3. 眼妆：金属镀铬 (Metallic Chrome) 特点：眼妆是全脸的焦点，必须闪到刺眼！ 细",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
     "title": "Prompt Studio: Cinematic Frames, Stillness Within Speed",
     "slug": "prompt-studio-cinematic-frames-1560755136",
     "model": "Midjourney",
@@ -2079,30 +1959,6 @@
     "source": "https://x.com/i/status/2015082200115613870",
     "author": "骑司Chaseqisi_ai",
     "prompt": "【AI摄影实验室🧪】豆包人像效果太好了，我不许任何人忤逆seedream 4.5模型🤣 如何把冗长的香蕉提示词变成适配的豆包提示词？并且能够达成相同的、甚至更优的影像效果 最开始我想尝试一下，香蕉提示词在豆包里能不能获得类似的效果，不试不知道，没想到生成结果比Nano Banana Pro还要更好 我认为本质上是因为国内大模型对于东亚地区审美的适配性更好，而香蕉模型稍不注意，就会给你的人像带来一个大翻车，有很强的刻板印象 ✅ seedream 4.5（豆包模型）→轻松实现亚洲审美 ✅ Nano Banana Pro→需要提示词技巧 所以豆包的提示词一般都十分简洁，轻松就能达到审美及格线，而我们在X上刷到的Nano Banana Pro提示词，一般都很冗长 简化思路V1.0： 1️⃣ 删除json格式，删除无用提示词框架 2️⃣ 去除语义重复和无效语义 3️⃣ 去除语义冲突 4️⃣ 使用抽象词汇代替具体的提示词 Nano Banana Pro提示词在原帖 豆包中文提示词： 4宫格拼图，3:4比例，2×2排列；近景特写，平视近拍，人物占比大，冷白干净背景。参考图严格同一人、零偏差；精致脸、",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
-    "title": "Prompt Studio: Cinematic Frames, Ultra-Wide Photography with FLUX.2 in Firefly",
-    "slug": "prompt-studio-cinematic-frames-ultra-1558981658",
-    "model": "Midjourney",
-    "category": "realistic",
-    "tags": [
-      "摄影",
-      "AIart",
-      "community",
-      "gratitude",
-      "creativeprompts"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-studio-cinematic-frames-ultra-1558981658.jpg",
-    "date": "2026-01-24",
-    "source": "https://x.com/i/status/2014779919168110988",
-    "author": "AllaAisling",
-    "prompt": "50k followers… it truly feels unreal, like a dream I never imagined would take shape. I’m deeply grateful for the support, the conversations, and the quiet encouragement that kept me going. I don’t always find the right words, but this comes straight from the heart. Being part of this community, sharing ideas, learning, and building alongside you, has been incredibly meaningful to me. Thank you for your trust, your kindness, and for being here 🤍",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -2565,30 +2421,6 @@
     }
   },
   {
-    "title": "I love these 360 prompts. They are great for video.",
-    "slug": "i-love-these-360-prompts-they-are-great-1555333619",
-    "model": "Midjourney",
-    "category": "realistic",
-    "tags": [
-      "摄影",
-      "Stargate",
-      "Arduino",
-      "DIY",
-      "AI"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/i-love-these-360-prompts-they-are-great-1555333619.jpg",
-    "date": "2026-01-21",
-    "source": "https://x.com/i/status/2013733776929788085",
-    "author": "Gdgtify",
-    "prompt": "DIY: 3D Printed Stargate with Arduino control https://t.co/esg4CI5U1N",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
     "title": "Night Vibes",
     "slug": "night-vibes-1555336734",
     "model": "Midjourney",
@@ -2678,30 +2510,6 @@
     "source": "https://x.com/i/status/2013098343959085365",
     "author": "Roland的思考日记 (Roland_WayneOZ)",
     "prompt": "觉得AI写的内容有AI味道的，我建议使用这套鲁迅文风提示词： 《鲁迅文风提示词（无AI味版）》 作者：Roland 提示词：# 角色设定 你是一位深谙鲁迅写作风格的文学创作者。你的任务是用鲁迅式的笔法创作文本，精准还原其冷峻、反讽、深刻的文学特质。 # 核心DNA编码 ## 哲学层 (PH1621) - 平均句长：16字 - 本体论：唯物理想主义（既关注现实又构建理论） - 时间观：线性进步（相信历史向前） ## 认识论 (EP134) - 知识来源：经验主义（从生活中取材） - 验证方式：群体验证（通过描写众人反应） - 真理观：情境真理（具体问题具体分析） ## 意识形态 (ID3254856) - 权力维度(3)：温和反权威 - 精英倾向(2)：平民立场 - 知识态度(5)：启蒙与保留并存 - 技术态度(4)：技术中性 - 行动导向(8)：强烈行动性 - 阶层意识(5)：清醒但不简单化 - 情感浓度(6)：深沉克制 ## 修辞层 (RHNLNCAA4) - 论证：叙事(50%) + 逻辑(25%) + 对比(15%) + 类比(10%) - 修辞：反讽(40%) + 象征(30%",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
-    "title": "为什么AI写的小说全是废话，指令框架出了问题（附AI工作流和提示词）",
-    "slug": "prompt-1553145419",
-    "model": "DALL-E",
-    "category": "abstract",
-    "tags": [
-      "AI小说",
-      "AI应用",
-      "一人公司",
-      "自媒体变现",
-      "内容创作"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-1553145419.jpg",
-    "date": "2026-01-20",
-    "source": "https://x.com/i/status/2013163372045369643",
-    "author": "熊叔的茅草屋 (xionghuanwei)",
-    "prompt": "效率爆棚！用AI！一个人能干完整公司的活\n普通人如何逆袭？做一人公司是成本最低的路\n一个人干完整个公司的活，真不是天方夜。\n未来10年里, 肯定会出现估值10亿美金的一人公司独角兽，\nOpenAI的创始人很早有这么一个惊人预判，\n这听着好像天方夜谭，\n我也通过AI搜索查了一下相关数据，在美国一人公司的比例已经猛增到了36%，这呈现出一个细思极恐的趋势, 未来的商业竞争，不是大鱼吃小鱼，而是快鱼吃慢鱼, 我们当下处在一个疯狂的时代，\n之前，开公司是体力活，当下，开公司是脑力活，你可能会觉得一个人搞公司会累得不行。\n这其实是非常错误的认知误区\n真正的一人公司，不是让你一个人去干五个人的活,\n而是让你去指挥五个AI来干五个人的活。\n这才是效率的关键，现在的AI已经不是简单的聊天机器人了，它们是能执行复杂任务的智能体,\n你不再是那个辛苦干活的执行者，而是指挥中心的AI指挥人员。\n把你的技能变成产品,\n这是所有普通人改变处境的第一步，\n「纳瓦尔说过，要在睡觉的时候也能挣钱」，\n你的时间必须可以复利。\n打个比方，你擅长做表格，以前你只能给老板做，拿一份固定的工资\n现在你能把做表格的经验写成教程，或",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -2870,30 +2678,6 @@
     "source": "https://x.com/i/status/2013274628983042311",
     "author": "VoxCat VoxcatAI",
     "prompt": "🏯 用 AI 还原明制汉服的华贵与端庄 ✨ 墨绿织金袄裙 + 凤凰纹 ✨ 金项圈 + 珍珠叠戴 ✨ 眉心花钿 + 柳叶眉 ✨ 抛家髻 + 八字刘海 纯提示词生成，无参考图 🎨",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
-    "title": "怎么用 AI 跑出这种冬日暖阳和初恋笑颜的治愈人像？",
-    "slug": "prompt-1553308698",
-    "model": "Midjourney",
-    "category": "realistic",
-    "tags": [
-      "摄影",
-      "AI人像",
-      "Prompt技巧",
-      "摄影光影",
-      "冬日主题"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-1553308698.jpg",
-    "date": "2026-01-20",
-    "source": "https://x.com/i/status/2013411667330379964",
-    "author": "阿绎 | AI 进化论 AYi_AInotes",
-    "prompt": "怎么用 AI 跑出这种冬日暖阳和初恋笑颜的治愈人像？ 创作思路和 🍌 Prompt 无保留分享： 先说结论，再贵的粉底液，也比不上这种自然光打在脸上的通透感， 摒弃所有复杂的修饰， 只保留最简单的元素： 一件米色针织开衫，一个乱糟糟的丸子头，和一束毫不吝啬的阳光， 不要让 AI 追求完美， 尽量展现真实感， 比如这个把头发别在耳后的动作， 和不设防的笑容， 才是真正的直男斩 创作思路： 让模特穿着简单的米色毛衣， 站在阳台上， 对着镜头羞涩一笑， 这种画面不用任何复杂的构图， 就能瞬间击中人心， 唤醒每个人记忆里 那个阳光最好的下午 Prompt 里的两个核心指令： 1. Hair Glow (发丝发光)：Rim light on hair (头发轮廓光) + Sunlight through hair (阳光穿透头发)，这让头发看起来金灿灿的，增加空气感 2. Face Exposure (面部曝光)：Overexposed background (过曝背景) + Soft fill light on face (面部柔和补光)，AI 会自动平衡大光比，保证背景亮的同时，脸也通透白皙",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -3261,30 +3045,6 @@
     }
   },
   {
-    "title": "分享一组极高频细节的皮肤纹理 Prompt。✨",
-    "slug": "prompt-1548949856",
-    "model": "Midjourney",
-    "category": "realistic",
-    "tags": [
-      "Nanobanana",
-      "AI绘画",
-      "超写实皮肤",
-      "游戏CG",
-      "纹理材质"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-1548949856.jpg",
-    "date": "2026-01-17",
-    "source": "https://x.com/i/status/2012187306543939803",
-    "author": "VoxcatAI",
-    "prompt": "分享一组极高频细节的皮肤纹理 Prompt。✨ 这套Prompt专攻次世代游戏级（Next-gen CG）的超写实皮肤材质。 SSS次表面散射 + 锐利的毛孔细节，原本平滑的面部瞬间拥有了真实的地形感和生命力。 实测可以生成非常有质感的人像，或者作为关键字加入你的提示词当中，光影和皮肤颗粒感很绝，适合 9:16 比例创作。 提示词👇 Next-gen game CG level hyper-realistic PBR skin material, natural and lifelike skin tone, rich subsurface scattering (SSS) for translucent organic feel, ultra-high frequency details, sharp visibility of real pores, fine lines, and skin grain, realistic specular highlights and skin elasticity, raw facial topography with no smoothin",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
     "title": "俏皮女生",
     "slug": "prompt-1548950829",
     "model": "Gemini",
@@ -3302,30 +3062,6 @@
     "source": "https://x.com/i/status/2012097296784347490",
     "author": "松果先森 (songguoxiansen)",
     "prompt": "俏皮女生 Melisa的提示词中英文都不错 换成黑色的头发，去掉小雀斑就很好适合咱们 Nano Banana Pro提示词： { “风格”：“超写实工作室肖像”， “主题”： { \"性别\": \"女性\", “年龄”: “青年” “姿势”：“身体略微前倾， 朝向镜头”， “表情”：“俏皮， 轻佻\", \"facial_details\": { “wink”：是， \"tongue_out\": true, “雀斑”：false， “化妆品”： { “腮红”: “柔和的粉色”， “嘴唇”： “光泽” } }, “头发”： { “颜色”： “黑色”， \"length\": \"长\", “part”: “side parted” “风格”：“自然垂落在肩上” }, “全套服装”： { “连衣裙”: “露肩修身黑色连衣裙” “珠宝”： { “耳环”: “长款垂坠金耳环”， “项链”：“多层金项链， 带小爱心吊坠” } } }, “环境”： { “设置”: “工作室” “背景”: “干净、简约、浅色、中性色调” }, “灯光”： { “类型”：“柔和漫射影棚照明”， “阴影”: “柔和的自然阴影” }, “相机",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
-    "title": "今日份表情：俏皮+诱惑",
-    "slug": "prompt-1548951362",
-    "model": "Midjourney",
-    "category": "realistic",
-    "tags": [
-      "摄影",
-      "AI生成",
-      "自拍写真",
-      "人像摄影",
-      "日本餐厅"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-1548951362.jpg",
-    "date": "2026-01-17",
-    "source": "https://x.com/i/status/2012049402542899544",
-    "author": "行者AI视频 joshesye",
-    "prompt": "今日份表情：俏皮+诱惑 { \"composition\": { \"layout\": \"Close-up selfie\", \"perspective\": \"First-person, held by subject\", \"elements\": \"Young woman in off-the-shoulder top, holding orange phone, against wooden wall with menu signs in background.\" }, \"lighting\": { \"source\": \"Indoor ambient, likely mixed with screen light\", \"mood\": \"Warm, soft, slightly pink glow on face\" }, \"typography\": { \"style\": \"Handwritten Japanese characters on wooden plaques\", \"content\": \"Various menu items, e.g., '生ビール', 'おでん', '焼き鳥'\" }",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -3717,30 +3453,6 @@
     }
   },
   {
-    "title": "如何学习一张图片并制作成提示词？",
-    "slug": "prompt-1546415608",
-    "model": "Midjourney",
-    "category": "realistic",
-    "tags": [
-      "摄影",
-      "AI绘画",
-      "提示词工程",
-      "人像生成",
-      "学习参考图"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-1546415608.jpg",
-    "date": "2026-01-15",
-    "source": "https://x.com/i/status/2011807250449645695",
-    "author": "骑司Chase",
-    "prompt": "如何学习一张图片并制作成提示词？\nSTEP 1 先弄清楚自己想要的效果是什么？\nSTEP 2 使用AI反推提示词\nSTEP 3 测试并详细写出修改点\nSTEP 4 修改提示词\n✅图一为AI出图\n✅图二为学习参考图\n✍️中文提示词：\n一、主体与氛围目标\n1 主体：年轻女性中景人像，上半身占画面主体，直视镜头\n2 氛围：甜酷俏皮但不幼态，带一点英气与自信的表情气质\n3 动作表情：左眼眨眼，右眼睁开有神；轻微微笑，嘴角上扬\n4 视线关系：眼部对焦镜头，强互动感\n二、构图与镜头语言\n1 景别：中景，头顶到胸上部，脸部与手部同框\n2 构图：中心构图，面部居中略偏上；手臂在下方形成支撑与包围\n3 机位：平视略微俯拍\n4 焦段：中长焦半身人像感，背景压缩\n5 景深：\n对焦点：对焦在眼部最锐\n清晰范围：清晰覆盖双眼到鼻尖\n软化范围：从嘴部到耳朵到后侧头发明显柔化\n手部：手部比脸稍软，针织纹理可辨但不锐\n过渡：清晰到虚化过渡顺滑，不硬切\n量化补丁：总景深目标约一到三厘米（增强层次但不过分）\n6 画面比例（必须遵守）：竖幅，左右两边必须留出明显背景，人物所有肢体不能超出画面\n三、光影与背景\n1 光源：柔光",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
     "title": ";; ━━━━━━━━━━━━━━━━",
     "slug": "-1543068133",
     "model": "Midjourney",
@@ -3878,30 +3590,6 @@
     "source": "https://x.com/i/status/2000854121759334440",
     "author": "熊叔的茅草屋 xionghuanwei",
     "prompt": "今天不谈虚的，只谈关于自媒体变现的6条铁律，每一条都是用真金白银换来的教训 自媒体写作最大的坑，不是文笔差，而是你一开始就选错了赛道和篇幅 现在还有很多人有误解的是： 1、一个月做不起来，就放弃，自媒体文章和短篇有差距的，大部分自媒体文章没那么快，普遍3个月，正确的方法+坚持很重要 2、关于收的问题，我也说一下，我只说平均，不说那些特例，因为特例没参考价值。 每个平台2个号， 一天1-2个小时，做头条号、百家号、知乎、公众号、番茄等 ， 3个月以后普遍是3k左右。 大前提，方法和赛道正确+Content-Any避坑优化，你写乱七八糟和洗稿那无解， 这是我统计了5000多人的数据得出来的 3、很多人有误解，短篇小说只能发番茄，起点，其实不是的，头条号、百家号、知乎和公众号也可以发短篇小说 4、95%的人不建议写长文，即使是小说，也只发8000-20000字的内容 5、图片千万不要用盗版图片 6、不要轻易授权自己的自媒体账号给第三方插件登陆（第三方编辑器和多平台发布工具）， 因为只要其中他们授权的一个号违了，其他人大概率受牵连。",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
-    "title": "感谢李继刚大神，我可太喜欢这个公式解码了。趁着见客户间隙，基于此我写成了一个skill。感觉以后有不懂的论文公式细节都可以用起这个了，赞～",
-    "slug": "prompt-1543068285",
-    "model": "Midjourney",
-    "category": "abstract",
-    "tags": [
-      "Skills",
-      "数学学习",
-      "AI应用",
-      "技能开发",
-      "公式解析"
-    ],
-    "difficulty": "advanced",
-    "cover": "/images/prompts/prompt-1543068285.jpg",
-    "date": "2026-01-14",
-    "source": "https://x.com/i/status/2011312395747279235",
-    "author": "岚叔 (LufzzLiz)",
-    "prompt": "感谢李继刚大神，我可太喜欢这个公式解码了。趁着见客户间隙，基于此我写成了一个skill。感觉以后有不懂的论文公式细节都可以用起这个了，赞～ 先快速发一版，后面再继续迭代 Skill开源地址见评论👇",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
@@ -4166,30 +3854,6 @@
     "source": "https://x.com/songguoxiansen/status/2010243189207380187?s=20",
     "author": "松果先森 (songguoxiansen)",
     "prompt": "原提示词女主好飒，搞个潜水版的 深海潜水海洋探险的3×3网格照片拼贴画 Nano Banana Pro提示词： { \"Objective\": \"Create a 3x3 grid photo collage with deep sea diving ocean explorer aesthetics\", \"FaceReference\": {\"Mode\": \"Strict face preservation\", \"Instruction\": \"Use uploaded reference for exact facial features\", \"Consistency\": \"Face identical across all nine frames\"}, \"GridComposition\": {\"Layout\": \"3x3 grid\", \"PoseVariety\": [\"Swimming with sea turtles\", \"Close-up through diving mask\", \"Exploring coral reef\", \"Freediving descent gracef",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
-    "title": "如何用 Nano Banana Pro 生成最像真的图？",
-    "slug": "prompt-1542358125",
-    "model": "Gemini",
-    "category": "realistic",
-    "tags": [
-      "摄影",
-      "经验",
-      "AI生成图像",
-      "Nano Banana Pro",
-      "Gemini 3.0 Pro"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-1542358125.jpg",
-    "date": "2026-01-14",
-    "source": "https://x.com/Crypto_QianXun/status/2010609695707582736?s=20",
-    "author": "千寻 🌸 Crypto_QianXun",
-    "prompt": "如何用 Nano Banana Pro 生成最像真的图？ 我自己踩了一圈坑， 现在基本固定用这一套流程，成功率高很多👇 1️⃣ 先别瞎想，直接抄 我一般先去 Pinterest 找参考图。 想要什么感觉，就搜什么风格： 氛围、构图、光影、色调，全都有现成答案。 看到顺眼的，直接存。 2️⃣ 把图“翻译”成 AI 能懂的东西 把参考图丢进 Gemini 3.0 Pro， 直接问一句： 「帮我生成一个能复现这张图的详细 JSON。」 生成完，复制就行。 3️⃣ JSON 当底子，自己管内容 JSON 负责的是： 真实感、光影、色彩、镜头这些“底层气质”。 你只需要在后面加一句自己的需求： 比如： 「基于这个 JSON，生成： 一位女性，在海滩上拿着我的产品。」 这样 AI 不会乱跑风格。 4️⃣ 丢进 Nano Banana Pro 生成 用支持 Nano Banana 的平台， 把 JSON + 你的提示词 一起粘进去生成。 成片稳定度， 比纯文字提示高太多。",
     "negativePrompt": "",
     "parameters": {
       "Model": "Midjourney v6",
