@@ -205,7 +205,7 @@ export default async function PromptDetailPage({
             相关推荐
           </h2>
           <div className="mt-4">
-            <PromptGrid prompts={related} />
+            <PromptGrid prompts={related} maxRows={2} />
           </div>
         </div>
       )}
