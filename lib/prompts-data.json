@@ -1,5 +1,131 @@
 [
   {
+    "title": "樱花汉服人像",
+    "slug": "cherry-blossom-hanfu",
+    "model": "GPT-Image2",
+    "category": "portrait",
+    "tags": [
+      "cherry-blossom",
+      "hanfu",
+      "spring",
+      "photorealistic",
+      "国风"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/2079781372626165800.jpg",
+    "date": "Wed Jul 22 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "source": "https://x.com/YUKIMASTERAI/status/2079781372626165800",
+    "author": "YUKI",
+    "prompt": "Ultra-photorealistic portrait of a beautiful young adult East Asian woman standing gracefully beneath cascading pink weeping cherry blossoms in a traditional Chinese courtyard during spring. She has long, silky black hair flowing naturally down her back, fair porcelain skin with subtle natural texture, soft almond-shaped brown eyes, delicate facial features, and light rosy makeup with glossy lips.\n\nShe wears an elegant blush pink hanfu-inspired chiffon dress with sheer flowing sleeves, intricate floral embroidery, pearl embellishments, layered translucent fabric, and a fitted waist. A large pale pink flower hair ornament with dangling pearl tassels decorates one side of her hair.\n\nShe gently raises one hand to touch the hanging cherry blossoms while turning her upper body slightly toward the camera. Calm, gentle expression with direct eye contact and a subtle smile.\n\nBackground features a traditional dark wooden pavilion with Chinese lattice windows softly blurred by shallow depth of field. Foreground includes dreamy out-of-focus cherry blossoms creating natural framing and depth.\n\nGolden afternoon sunlight filters through the blossoms, producing soft highlights, warm rim lighting, cinematic atmosphere, creamy bokeh, volumetric light, delicate pink color palette, romantic spring mood.\n\nShot on Sony A7R V, 85mm f/1.4 GM lens, f/1.8, ISO 100, ultra-high resolution, HDR, masterpiece, realistic skin pores, natural hair strands, ultra detailed fabric texture, professional fashion photography, soft color grading, Leica-inspired tones, 8K.",
+    "negativePrompt": "",
+    "parameters": {}
+  },
+  {
+    "title": "暗黑漫画黑工线稿风格",
+    "slug": "dark-manga-ink-style",
+    "model": "GPT-Image2",
+    "category": "style",
+    "tags": [
+      "dark",
+      "manga",
+      "ink",
+      "woodcut",
+      "silk-screen"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/2079912938538951156.jpg",
+    "date": "Wed Jul 22 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "source": "https://x.com/VoxcatAI/status/2079912938538951156",
+    "author": "VoxCat",
+    "prompt": "高对比日系漫画黑工线稿，融合木刻、刮画与限色丝网印刷质感；以象牙白、纯黑和少量深猩红构成三色系统，大面积纯黑块面与白色负形硬切，外轮廓粗重锐利，内部使用细密平行排线和反向刻线。整体形状尖锐、有机、流动，大量长弧线、刀锋状分叉与撕裂边缘形成旋转节奏；画面高度平面化，弱化真实光影和灰阶，局部高密度纹理与大面积浅色空间形成疏密对比。细线古典装饰仅作为辅助框架，整体具有暗黑漫画、黑工纹身与收藏级专色版画的冷峻攻击感。\n\n风格基调：\n- 高对比日系漫画黑工线稿\n- 木刻、刮画与限色丝网印刷\n- 象牙白、纯黑、深猩红三色系统\n- 大面积纯黑块面\n- 白色负形硬切\n- 粗重锐利外轮廓\n- 细密平行排线与反向刻线\n- 尖锐、有机、流动的形状语言\n- 极弱灰阶与高度平面化表现\n\n关键要点：\n这套最重要的是黑白关系。人物不能靠正常光影塑形，而要靠黑块、留白和刻线重新切出身体与服装结构。深猩红只作为少量视觉锚点，用在眼睛、纹章、武器轨迹或核心装饰上。\n\n整体更像收藏级专色版画，也带一点地下漫画、黑工纹身和哥特角色海报的冷峻压迫感。",
+    "negativePrompt": "",
+    "parameters": {}
+  },
+  {
+    "title": "金箔岩彩插画：群青圣莲",
+    "slug": "gold-leaf-sacred-lotus",
+    "model": "GPT-Image2",
+    "category": "portrait",
+    "tags": [
+      "oriental",
+      "gold-leaf",
+      "mineral-pigment",
+      "sacred",
+      "eastern"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/2080286680649773541.jpg",
+    "date": "Thu Jul 23 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "source": "https://x.com/liyue_ai/status/2080286680649773541",
+    "author": "李岳",
+    "prompt": "9:16 竖版，高完成度群青蓝金东方圣女金箔岩彩数字插画，modern oriental gold-leaf mineral-pigment sacred maiden illustration，东方幻想莲华圣女人像，精致半写实数字插画人物，矿物岩彩色层，不规则真实金箔工艺，兼具东方装饰性平面美学、神殿仪式感与纵深空间层次。\n\n画面主体是一位明确成年的年轻东方女性，视觉年龄约 20–28 岁，身份为莲华圣女，气质圣洁、神秘、庄雅、安静、清冷而克制。人物采用胸像至大半身近景构图，身体呈三分之二侧身，肩颈舒展，仪态端庄，头部轻微转向镜头方向，目光略微越过镜头，神情沉静含蓄，像正在凝视遥远的星轨与云海。\n\n人物拥有空灵仙气的精致东方数字插画脸，脸型为小巧柔和的鹅蛋脸，额头饱满，面中细腻立体，面部轮廓纤秀流畅，下颌线清晰但不过度尖锐。眼睛为细长清亮的杏眼，眼尾轻微上扬，瞳色为深茶棕，瞳孔具有清晰而克制的高光；眉形细致舒展，鼻梁秀气流畅，鼻尖精巧自然，唇形柔润细致，裸粉与浅珊瑚色唇妆含有细腻光泽。\n\n人物脸部采用高完成度半写实数字插画塑形，肤面干净通透，面部明暗柔和细腻，保持真实东方骨相和流畅轮廓。只参考人脸的数字插画塑形方式与肤面表现，不迁移任何参考图中的宫廷头冠、重珠宝体系、舞台背景、过强发光或华丽女王式世界观。弱化明显 3D CG 建模感，不出现塑料高光、蜡像皮肤、过度磨皮或厚重壁画脸。\n\n发型为仙气半扎长发与轻量高髻结合，乌黑长发柔顺垂落，发尾在高台微风中自然飘动，部分细碎发丝轻贴脸侧，发髻结构清晰但不夸张。头饰为轻量莲花金冠，主体采用层叠金箔莲瓣结构，搭配少量珍珠、青金石小珠、银金细枝与细长流苏，结构精致有主次，不遮挡五官，不形成戏曲大冠或重珠宝堆砌感。\n\n妆容采用珍珠白通透底妆，肤面细腻清润，眼妆以浅群青、冰蓝灰与少量银灰色层自然晕染，睫毛根部加入极细金线，眼尾略微拉长但保持克制，内眼角使用少量冷白金提亮。眉心点缀精细白金花钿，形态为小型莲瓣或星芒纹，唇色为柔雾裸粉与粉金之间，柔润含光。妆容清晰显妆，但不现代网红化，不欧美浓妆。\n\n人物穿着群青蓝层叠祭礼长裙，外层为高纯度群青、青金石蓝与靛青色丝绸长袍，内层为珍珠白与冰灰白交领内衬，肩部与袖间搭配半透明银白轻纱和深靛青披帛。服装为完整包覆式古风祭礼结构，领口与胸前衣襟层叠严谨，衣料完整遮盖胸部，不暴露、不低胸，但通过自然剪裁和层叠织物表现成年女性饱满、自然、端庄的胸部轮廓与协调身形。\n\n人物上围饱满自然，胸腰比例协调，服装贴合但不紧绷，胸前由珍珠白内衬、群青外袍与交叠衣襟完整覆盖，轮廓柔和自然，不刻意挤压，不出现夸张胸沟或暴露感。腰部使用深海军蓝与金线腰封收束，使整体身形端雅、庄重、符合圣女身份。\n\n服装材质由丝绸、锦缎、绢布和轻纱构成，衣料柔软垂坠，褶皱细腻自然。群青外袍表面融入金箔莲纹、星轨纹、水波纹、月轮纹与细小星芒纹样，局部加入矿脉状金线、金线刺绣和不规则金箔拼贴。金色纹样沿袖缘、肩部、腰封和衣襟自然延伸，但服装始终保持真实织物感，不变成硬质金属铠甲。\n\n场景为高台神殿与深蓝色东方幻想穹顶，人物站在云海之上的神殿长廊或露台前。背景包含深海军蓝石柱、群青穹顶、远处层叠宫殿、云海、月轮与极少量星辰。人物身后设置大型圆形金箔星轨与莲华月轮装饰，形成具有仪式感的视觉光环，但光环是矿物岩彩和金箔装饰结构，不是强烈自发光特效。\n\n背景主结构采用高纯度群青、青金石蓝、靛青和深海军蓝，神殿柱体与穹顶形成稳定浓郁的暗部锚点；远处云海使用珍珠白、冷白和少量冰灰蓝，保持洁净明亮。远景只适度降低对比，不褪成灰蓝，不产生大面积灰雾滤镜。\n\n整体采用高饱和、高对比的群青蓝金岩彩体系。主色为高纯度群青、青金石蓝、皇家蓝、靛青与深海军蓝，辅色为珍珠白、冰灰蓝和少量银白，金属色为明金、浅金、古金与银金。蓝色必须浓郁、纯净、通透，不得变成灰蓝、雾蓝或低饱和青灰。\n\n画面建立明确明度分区：人物玉白肤色、珍珠白内衬和远处云海为高明度区域；群青外袍为高饱和中明度区域；黑色长发、深海军蓝神殿、柱体与穹顶构成中低明度和暗部锚点；金箔莲花、星轨、头冠和纹样形成局部明亮高光。亮部清澈，暗部深邃，中间色保持纯净，不发灰、不浑浊。\n\n金箔分布强度为中偏强，主要集中在莲花头冠、人物身后的星轨月轮、服装莲纹、星轨纹、肩部装饰与腰封细节。金色区域呈现真实金箔工艺质感，具有不规则箔片边缘、细小颗粒、轻微褶皱、局部斑驳、裂纹和微浮雕起伏，并呈现亮金、暖金、古金与暗金层次。金箔不是普通黄色描边，不是廉价亮片，也不做满屏金色发光。\n\n光线采用清澈冷白侧前光照亮人物面部，使额头、眼下、鼻梁、唇部与肩颈形成柔和干净的明暗过渡；柔和侧逆光从人物后方扫过发丝、头冠、耳坠、轻纱和金箔星轨，形成克制的边缘亮度。低角度掠射光照亮金箔表面，使金属材质产生细碎而清晰的反射，金色反光不污染人物肤色。\n\n构图为现代东方神性海报式人物主视觉，人物脸部位于画面上方黄金分割区域，圆形莲华星轨在人物身后形成稳定构图中心。人物头冠、五官、服装胸前纹样和腰封共同形成纵向视觉轴，深蓝神殿柱体与远处云海向纵深延伸，画面庄严但不过度拥挤。\n\n整体效果应圣洁、神秘、华贵、安静、庄雅，具有高纯度群青矿物颜料浓度、真实金箔工艺、莲华与星轨的东方神性意象，以及高完成度半写实数字插画人物表现。保持群青蓝金东方圣女金箔岩彩主风格，不转成普通仙侠游戏立绘、明显 3D CG 角色渲染、舞台式宫廷海报、宝石女王风或满屏金色发光幻境。\n\n负面约束：未成年，幼态，儿童脸，夸张二次元大眼，网红脸，欧美整容脸，明显 3D CG 建模，塑料皮肤，蜡像脸，厚重壁画脸，过度磨皮，五官模糊，眼睛无神，肤色发灰，满脸贴金，金箔覆盖五官，普通黄色描边，廉价闪粉，整图偏黄，灰蓝滤镜，低饱和青灰，脏蓝，褪色旧画感，大面积灰雾覆盖主体，蓝色发白，暗部不够深，高光浑浊，胸部暴露，低胸，夸张胸沟，衣襟松散，服装透明暴露，身体比例异常，戏曲大冠，重宝石头冠，头饰遮脸，满屏莲花堆砌，强烈自发光光环，舞台追光，霓虹污染，服装金属铠甲化，背景拥挤，文字，水印，logo，手指畸形，四肢错误，饰品悬浮。",
+    "negativePrompt": "",
+    "parameters": {}
+  },
+  {
+    "title": "微表情之傲娇",
+    "slug": "tsundere-micro-expression",
+    "model": "GPT-Image2",
+    "category": "portrait",
+    "tags": [
+      "ancient-style",
+      "tsundere",
+      "micro-expression",
+      "photography",
+      "国风"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/2080231502311567862.jpg",
+    "date": "Thu Jul 23 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "source": "https://x.com/GrayNoteLab/status/2080231502311567862",
+    "author": "灰度笔记",
+    "prompt": "超写实古风人像摄影，电影级视觉，Anime Realism，近景特写（Close-up Portrait），人物占画面约75%～85%，肩部以上构图，人物正面对镜头，不侧身，身体保持正面，仅头部自然向一侧轻轻歪头约10°～15°，姿势端庄自然。\n\n表情参考经典古风影视中的傲娇微笑：嘴角轻轻上扬，弯嘴浅笑，笑意克制，不露齿，眼神带一点骄傲与灵动，带有几分少女的小得意，神态可爱而不过分夸张；双眼自然望向镜头偏上方，瞳孔大小符合真实人眼比例，避免二次元超大瞳、玻璃眼、高饱和虹膜，保留真实虹膜纹理与自然高光。\n\n肤色白皙细腻，柔雾奶油肌，真实皮肤纹理，浅粉自然腮红，小巧鼻梁，粉嫩自然唇色，不使用花钿，不使用现代妆容元素。\n\n背景采用原创古风环境，不参考其他图片背景：江南古典园林、亭台楼阁、青瓦白墙、木质花窗、庭院回廊、竹影、水榭、小桥、桃花或玉兰花点缀，背景充分虚化（Large Bokeh），营造东方古典氛围，不出现现代建筑或现代物品。\n\n傍晚黄金时刻（Golden Hour）自然逆光，柔和轮廓光勾勒发丝，暖金色阳光穿过树叶形成细腻光斑，电影级空气透视，浅景深，高级胶片质感，画面通透明亮，色彩低饱和，高级电影调色。\n\n摄影风格：Leica SL3，APO-Summicron-SL 90mm F2 ASPH，F2.0，浅景深，中画幅质感，真实摄影，不使用HDR，不出现AI塑料皮肤，不出现夸张磨皮。",
+    "negativePrompt": "",
+    "parameters": {}
+  },
+  {
+    "title": "Bloom in Motion 夏日野花人像",
+    "slug": "bloom-in-motion-summer",
+    "model": "GPT-Image2",
+    "category": "portrait",
+    "tags": [
+      "summer",
+      "wildflower",
+      "motion",
+      "fresh",
+      "natural"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/2078835665958314213.jpg",
+    "date": "Sun Jul 19 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "source": "https://x.com/MrLarus/status/2078835665958314213",
+    "author": "Larus Canus",
+    "prompt": "Subject: [young woman / character]\nDress: [color and style of light summer dress]\nScene: [wildflower meadow / green hillside / summer garden]\nAction: [running / turning back / spinning / walking through flowers]\nFlowers: [wildflower bouquet / no bouquet]\nLighting: [bright summer sunlight / soft backlight]\n\nCreate a 9:16 vertical, photorealistic summer fashion portrait with a natural editorial photography feel.\n\nCapture the subject in the middle of a real movement rather than posing for the camera. Her expression should feel spontaneous and alive, with natural eye movement and relaxed emotion. The dress is thin, lightweight, airy and slightly translucent in the sunlight, with soft fabric flowing naturally as she moves.\n\nUse wind to animate the hair, loose strands, dress and surrounding flowers. Keep the face and main body relatively sharp while introducing subtle directional motion blur in the background, fabric edges and foreground plants, creating the feeling of a candid moment caught in motion.\n\nSurround her with lush green vegetation and scattered summer wildflowers. Add softly blurred flowers or grass in the foreground for depth. Use bright natural sunlight, fresh green tones, soft highlights and realistic skin texture.\n\nThe final image should feel youthful, fresh, airy and full of summer vitality — like a spontaneous outdoor fashion editorial captured while running through a field.",
+    "negativePrompt": "",
+    "parameters": {}
+  },
+  {
+    "title": "器乐回响系列海报",
+    "slug": "instrument-echo-posters",
+    "model": "GPT-Image2",
+    "category": "style",
+    "tags": [
+      "poster",
+      "music",
+      "instrument",
+      "design",
+      "3D渲染"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/2073781331327160753.jpg",
+    "date": "Sun Jul 05 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "source": "https://x.com/MrLarus/status/2073781331327160753",
+    "author": "Larus Canus",
+    "prompt": "生成一张 4:5 竖版高清音乐会艺术海报，系列主题为【系列名称】，单张主题为【海报标题】。\n\n画面风格为现代展演海报，高级音乐会视觉，具有艺术馆海报感、杂志排版感和系列化设计语言。\n\n背景使用【背景颜色】纸张质感，带轻微颗粒、印刷纹理和柔和留白，不要纯白空背景。\n\n主视觉是一件巨大的【乐器名称】局部，以写实 3D / 高级摄影质感呈现，从画面边缘进入并大胆裁切。重点表现【材质特征】，例如金属反光、木纹、黑漆、琴弦、按键、弧线结构等。乐器要真实、精致、结构准确，不要变形，不要卡通感。\n\n背景加入 1–2 个【几何色块】，例如圆形、半圆、弧形、细线、透明圆环或月相图形，用来平衡画面结构。几何元素要克制、高级，不要太复杂。\n\n排版采用非对称构图：大标题区 + 主视觉区 + 小型信息区。左侧放大中文标题【中文标题】，字体清晰、完整、有设计感。加入英文副标题【英文副标题】，使用优雅衬线字体或现代杂志字体。\n\n画面角落加入少量活动信息，例如：\nDATE / 【日期】\nVENUE / 【地点】\nSERIES / 【系列信息】\n\n底部可加入少量小字信息，例如：\n【节目类型】\n【演出描述】\n【策展信息】\n\n整体配色为【主色调】，保持高级、克制、有音乐厅气质。画面需要有强设计感、系列感、材质感和清晰视觉重心。\n\n避免：文字乱码、错字、乐器结构错误、信息过多、廉价促销感、培训班海报感、普通活动传单感、过度装饰、低清晰度。",
+    "negativePrompt": "",
+    "parameters": {}
+  },
+  {
     "title": "超写实电影感人像提示词",
     "slug": "prompt-2009298156748722252",
     "model": "ChatGPT",
@@ -476,6 +602,153 @@
       "Model": "GPT-Image2",
       "Aspect Ratio": "9:16"
     }
+  },
+  {
+    "title": "电影人像海报（前景虚焦叙事）",
+    "slug": "2080225665706766485",
+    "model": "GPT-Image2",
+    "category": "photography",
+    "tags": [
+      "poster",
+      "cinematic",
+      "portrait",
+      "narrative",
+      "摄影"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/2080225665706766485.jpg",
+    "date": "2026-07-23",
+    "source": "https://x.com/derek_wall90176/status/2080225665706766485",
+    "author": "Derek Wen｜德里克文",
+    "prompt": "生成一张电影感人物海报。 \n主题：【填写标题】 \n主体：【男性 / 女性 / 亚洲人物 / 西方人物 / 时尚人物】 \n配色：【暮紫色 / 深蓝灰 / 冷灰白 + 暖橙光】 \n比例：【9:16】 \n\n画面核心机制： \n一个主体人物位于中景，清晰对焦。 \n同时有另一个人物或一个模糊身影从镜头前方很近的位置掠过， \n形成大面积柔和前景虚焦。 \n整体使用傍晚光线、薄雾感、轻微颗粒和电影级空间深度。 \n前景模糊人物不需要清晰五官，只作为情绪和叙事张力来源。 \n中景主体保持清晰、克制、有情绪。 \n画面有明显前景、中景、背景层次。 \n\n排版采用高级编辑海报方式， \n加入少量精致标题和2—4组短句。 \n\n要求： \n安静、克制、略带悬念， \n像独立电影海报、时尚杂志封面、情绪叙事海报。 \n避免普通街拍感、廉价虚化和过度戏剧化表演。\n\n核心逻辑只有一句话：\n一个清晰人物 + 一个模糊经过者。前景虚焦不是干扰，是故事入口。\n\n有人路过、有人靠近、有关系发生、有时间在流动。中景主体要安静：站着、回头、侧身、凝视、等待。\n越克制，越有电影感。光线决定气质：暮色、冷灰白、深蓝夜色、暖橙街灯。\n\n延伸玩法：情绪海报、时尚封面、品牌氛围、双人关系（一清一虚更戏剧）。\n\n参数重点：\n前景模糊要\"大\"——整个人影大面积掠过，不是小配件。\n主体稳在中景，颜色克制（暮紫灰蓝、冷灰暖橙、深蓝银灰）。\n\n避坑：模糊太弱像脏污、主体也糊、变成街拍、前景抢戏、色彩过艳。\n\n一句话总结：\n不是虚焦本身，而是\"有人经过时，主角还站在那里\"的时间感。",
+    "negativePrompt": "",
+    "parameters": {}
+  },
+  {
+    "title": "Midjourney 8.2 立体照片",
+    "slug": "2080291851098079546",
+    "model": "Midjourney",
+    "category": "photography",
+    "tags": [
+      "stereoscopic",
+      "film",
+      "portrait",
+      "vintage",
+      "摄影"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/2080291851098079546.jpg",
+    "date": "2026-07-23",
+    "source": "https://x.com/michaelrabone/status/2080291851098079546",
+    "author": "Michael Rabone",
+    "prompt": "Stereoscopic photo of two different elderly African men with big afro hair taken on Kodak Gold 35mm film, heavy film grain, asymmetrical, creative light leaks --no glasses --ar 16:9 --raw --stylize 150 --hd --preview --v 8.1\n\nStereoscopic photo of two different Korean women taken on Kodak Gold 35mm film, heavy film grain, asymmetrical, creative light leaks --no glasses --ar 16:9 --raw --stylize 150 --hd --preview --v 8.1",
+    "negativePrompt": "",
+    "parameters": {}
+  },
+  {
+    "title": "韩国女性雨天街拍",
+    "slug": "2080318291202158756",
+    "model": "GPT-Image2",
+    "category": "photography",
+    "tags": [
+      "street",
+      "fashion",
+      "portrait",
+      "rain",
+      "写实"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/2080318291202158756.jpg",
+    "date": "2026-07-23",
+    "source": "https://x.com/Mind_Boticni/status/2080318291202158756",
+    "author": "Cherry 2.O",
+    "prompt": "Aspect Ratio: 4:5\n\nUltra-realistic candid street fashion photography of a beautiful Korean woman with a naturally slim model physique (5'8\", long legs, slim waist, toned arms, elegant proportions), walking gracefully through a covered European shopping arcade during a light rain.\n\nShe wears a fitted light-beige trench coat over a sage-green midi dress that gently follows her body shape, clean white leather sneakers, and carries a premium dark-brown leather tote bag. In her left arm she holds a bouquet of fresh white flowers wrapped in kraft paper. In her right hand she holds a transparent umbrella with tiny realistic raindrops.\n\nShe looks down at the bouquet with a soft genuine smile while taking a natural step forward. The coat moves slightly with the walking motion. Wet stone pavement with beautiful reflections, elegant cream-colored stone columns, black metal bollards, blurred cafés, luxury European atmosphere, soft overcast daylight after rain.\n\nCaptured from about 8 meters away using a Canon EOS R5 + RF 135mm f/1.8L lens, f/2.0, ISO 200, 1/1250 sec. Natural telephoto compression, authentic candid street photography, subject perfectly sharp, creamy background bokeh, realistic skin pores, fine hair details, magazine-quality editorial photography, luxury fashion campaign, cinematic color grading, true-to-life colors, ultra photorealistic, DSLR realism, 8K.\n\nNegative prompt: overweight, chubby, wide hips, thick legs, short legs, oversized body, cartoon, CGI, plastic skin, bad anatomy, extra fingers, blurry face, low quality, oversaturated, HDR, deformed body, unnatural pose.",
+    "negativePrompt": "",
+    "parameters": {}
+  },
+  {
+    "title": "奢侈品产品摄影",
+    "slug": "2080212974174974122",
+    "model": "GPT-Image2",
+    "category": "product",
+    "tags": [
+      "product",
+      "luxury",
+      "commercial",
+      "bottle",
+      "写实"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/2080212974174974122.jpg",
+    "date": "2026-07-23",
+    "source": "https://x.com/iamrealsnow/status/2080212974174974122",
+    "author": "Snow",
+    "prompt": "A luxury commercial product photography shot featuring a sleek matte emerald green glass bottle with a tall cylindrical neck, rounded shoulders, and a premium brushed gold cap. The fictional brand name VERDARA is elegantly printed in embossed gold typography with a minimalist botanical emblem. The bottle is centered against a rich emerald green textured paper backdrop.\n\nThe paper is dramatically torn open across the middle, revealing an overflowing bed of fresh green grapes, sliced kiwi, mint leaves, and sparkling lime wedges hidden beneath. A curled section of torn paper on the lower left adds depth and realism. Several fruits are scattered naturally across the foreground.\n\nElegant editorial typography appears in the upper left:\n\n\"Sip Into Pure Freshness\"\n\n\"Sip\" in modern handwritten brush script, \"Into Pure Freshness\" in sophisticated high-fashion serif typography.\n\nThe bottle label features premium botanical illustrations of kiwi, grapes, mint, and lime with subtle metallic foil accents. Hyper-realistic glass reflections, natural condensation droplets, premium studio lighting, soft shadows, vibrant colors, razor-sharp focus, luxury beverage advertisement, photorealistic, ultra-detailed, award-winning commercial product photography, minimalist composition, 8K.",
+    "negativePrompt": "",
+    "parameters": {}
+  },
+  {
+    "title": "仿生产品设计提示词",
+    "slug": "2080262149532758372",
+    "model": "GPT-Image2",
+    "category": "product",
+    "tags": [
+      "product",
+      "biomorphic",
+      "design",
+      "industrial",
+      "3D渲染"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/2080262149532758372.jpg",
+    "date": "2026-07-23",
+    "source": "https://x.com/Gdgtify/status/2080262149532758372",
+    "author": "Gadgetify",
+    "prompt": "input:\nproduct_function = [any product function]\ninspiration_source = [any biological / mechanical / cultural / natural source]\nuser_context = [optional]\ntech_features = [optional]\nstyle_level = [minimal / premium / playful / luxury / futuristic / ai-infers]\n\nrun biomorphic_product_extraction:\n\nproduct_dna := infer product category, usage scenario, user interaction, power system, controls, safety needs, and ergonomic constraints\ninspiration_dna := infer silhouette, anatomy, texture, motion, structural logic, surface rhythm, protective forms, sensory cues, or symbolic traits\nfunction_mapping := map inspiration traits to product functions:\n  - fins → airflow / cooling / acoustic dispersion if relevant\n  - shell → protection / enclosure if relevant\n  - beak / snout / head → sensor / output / light / nozzle if relevant\n  - wings → folding / circulation / coverage if relevant\n  - scales / plates → vents / grip / modular panels if relevant\n  - roots / veins → cable routes / fluid paths / support if relevant\n  - eyes / spots → indicators / sensors / leds if relevant\n\nmaterial_system := infer ceramic, aluminum, fabric, recycled plastic, glass, rubber, wood, resin, carbon, silicone, or other appropriate materials\ncmf := infer color, material, finish, texture, surface softness, gloss, transparency, and accent colors\nproduct_name := generate a concise brandable name derived from function + inspiration\nfeature_list := generate realistic product-specific features\ndetail_panels := infer 4 close-up views that explain the most important features\nlayout := infer hero render + spec card + detail grid presentation\n\nrender:\na premium biomorphic product concept sheet with a hero product render and industrial-design feature documentation.\n\nforbidden:\nhard-coded dinosaur, hard-coded lamp, hard-coded speaker, hard-coded purifier, hard-coded fan, copied names, random anatomy, fake features unrelated to product function.",
+    "negativePrompt": "",
+    "parameters": {}
+  },
+  {
+    "title": "高级旅行海报",
+    "slug": "2080125207164162108",
+    "model": "GPT-Image2",
+    "category": "style",
+    "tags": [
+      "poster",
+      "travel",
+      "editorial",
+      "minimalist",
+      "3D渲染"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/2080125207164162108.jpg",
+    "date": "2026-07-23",
+    "source": "https://x.com/Naiknelofar788/status/2080125207164162108",
+    "author": "simeon-sanai",
+    "prompt": "Create a premium editorial travel poster illustration of [PLACE]. Automatically identify and depict the most iconic landmarks, architecture, geography, and visual identity associated with [PLACE].\n\nStyle: flat vector illustration, ultra clean minimalism, mid-century modern aesthetic, editorial travel poster style inspired by Scandinavian graphic design and vintage tourism prints, no photorealism, no textures, no noise, no gradients.\n\nComposition: vertical 3:4 poster layout. Foreground: a peaceful, characteristic ground-level scene unique to [PLACE] (paths, steps, local plants, or water as appropriate). Midground: the most recognizable architectural style and skyline elements of [PLACE], with subtle silhouettes of people, local transport, and everyday life integrated naturally. Background: layered landscape or skyline of [PLACE] fading into the horizon, with 2–3 globally recognized landmarks of [PLACE] worked subtly into the scene.\n\nArchitecture: simplified geometric rendering of [PLACE]'s authentic architectural style, clean edges, balanced symmetry, flat color blocking.\n\nColor palette: a cohesive palette appropriate to [PLACE]'s real-world visual identity. The base/background color must be pure, bright white (# FFFFFF) — strictly no yellow tint, no cream, no ivory, no off-white, no golden or beige-yellow hues anywhere in the image. Use clean whites only, paired with [PLACE]-appropriate accent colors (blues, greens, terracotta, navy, etc. as fits the location), bright yet restrained saturation.\n\nLighting: bright daylight with soft, minimal shadows, fresh and clean atmosphere, calm and refined mood.\n\nTypography: add text at bottom center: \"[PLACE NAME IN CAPS]\" (large modern sans-serif, spaced lettering), with the country name as a small subtitle below.\n\nMood: calm, elegant, premium travel-magazine aesthetic, timeless and culturally accurate to [PLACE].\n\nQuality: ultra clean vector edges, perfect alignment and composition, high resolution, print-ready premium poster design.\n\nNegative prompt: no yellow, no cream, no ivory, no beige-yellow, no sepia, no golden tones, no gradients, no photorealism, no texture noise.",
+    "negativePrompt": "",
+    "parameters": {}
+  },
+  {
+    "title": "留白东方艺术海报",
+    "slug": "2080295424015962364",
+    "model": "GPT-Image2",
+    "category": "style",
+    "tags": [
+      "poster",
+      "oriental",
+      "minimalist",
+      "art",
+      "国风"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/2080295424015962364.jpg",
+    "date": "2026-07-23",
+    "source": "https://x.com/MrLarus/status/2080295424015962364",
+    "author": "Larus Canus",
+    "prompt": "【主题】：【填写】\n【核心物件】：【填写】\n【主色 / 光色】：【填写】\n【背景压纹】：【填写】\n【微小叙事元素】：【填写】\n【中文标题】：【填写】\n【短句】：【填写】\n【英文标题】：【填写】\n\nPrompt:\n\n生成一张高级东方留白艺术海报，整体画面克制、安静、有呼吸感。\n画面以【主题】为核心，主体为【核心物件】，位于画面中下部或偏右，留出大面积空白与纹理空间。\n主色为【主色 / 光色】，光线柔和、偏冷或偏暖均可，但要统一、干净、有层次。\n背景为带有细腻压纹的纸张或墙面质感，压纹图案为【背景压纹】，压纹要若隐若现，不能抢主体。\n画面中加入 1–2 个【微小叙事元素】，例如：一片叶子、一缕烟、一滴水痕、一道光、一只虫、一行小字等，用来增加故事感。\n排版采用高级杂志风格：\n左上或顶部放大号中文标题【中文标题】，字体为现代宋体或书法体，字间距略宽。\n下方或右侧加入一行短句【短句】，字号较小，优雅克制。\n右下角或底部加入英文标题【英文标题】，使用现代衬线字体或极简无衬线字体。\n整体风格参考：日本侘寂美学、中国宋代留白、现代东方杂志、高级艺术展海报。\n避免：色彩过艳、元素过多、构图过满、廉价装饰感、网红滤镜感、过度设计。\n要求：画面要有\"空\"的感觉，但空而不虚，留白处有呼吸、有情绪、有时间感。",
+    "negativePrompt": "",
+    "parameters": {}
   },
   {
     "title": "📐 AI生图构图篇：打破物理的叙事 —— 分焦镜头 (Split Diopter)",

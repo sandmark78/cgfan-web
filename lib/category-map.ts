@@ -12,6 +12,7 @@ export const CATEGORY_MAP: Record<string, { label: string; icon: string }> = {
   style: { label: '风格', icon: '🎨' },
   photography: { label: '摄影', icon: '📸' },
   product: { label: '产品', icon: '📦' },
+  design: { label: '设计', icon: '🎯' },
 }
 
 /**
