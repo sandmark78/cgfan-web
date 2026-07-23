@@ -96,7 +96,7 @@ export default async function PromptDetailPage({
   const allPrompts = getAllPrompts()
   const related = allPrompts
     .filter((p) => p.category === prompt.category && p.slug !== slug)
-    .slice(0, 4)
+    .slice(0, 6)
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-8">

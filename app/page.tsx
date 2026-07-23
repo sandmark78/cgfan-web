@@ -11,7 +11,7 @@ export const runtime = 'edge'
 export default function Home() {
   const prompts = getAllPrompts()
   const categories = getAllCategories()
-  const latestPrompts = prompts.slice(0, 8)
+  const latestPrompts = prompts.slice(0, 9)
 
   return (
     <div className="py-3 sm:py-6">
