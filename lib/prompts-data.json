@@ -1,5 +1,77 @@
 [
   {
+    "title": "超写实电影感人像提示词",
+    "slug": "prompt-2009298156748722252",
+    "model": "ChatGPT",
+    "category": "realistic",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "3D渲染",
+      "写实",
+      "摄影"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2009298156748722252.jpg",
+    "date": "2026-07-23",
+    "source": "https://x.com/i/status/2009298156748722252",
+    "author": "Aijaz",
+    "prompt": "A hyper-realistic cinematic close-up portrait of a young woman's face in profile, intense turquoise-blue eye in sharp focus, wind-blown strands of wet hair crossing her face, tiny water droplets and floating particles suspended in the air, stormy and ethereal atmosphere, teal and blue color grading, soft glowing highlights, dramatic moody lighting, shallow depth of field, ultra-fine skin texture, emotional and introspective expression, fantasy realism style, high contrast, volumetric mist, particles and sparks around the face, 8K resolution, cinematic color grading, film still look, masterpiece, ultra-detailed, photorealistic, shot on 85mm lens, f/1.8, Unreal Engine, Octane render look.",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "ChatGPT",
+      "Aspect Ratio": "1:1"
+    }
+  },
+  {
+    "title": "新生儿用品必备指南信息图",
+    "slug": "prompt-2009523651679539373",
+    "model": "GPT-Image2",
+    "category": "design",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "GPT-Image2",
+      "信息图",
+      "产品"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2009523651679539373.jpg",
+    "date": "2026-07-23",
+    "source": "https://x.com/i/status/2009523651679539373",
+    "author": "沐阳",
+    "prompt": "创建一张【新生儿用品必备指南】信息图，瑞士高端设计风格，用于家庭采购指南。\n\n**设计风格要求：**\n- 采用瑞士设计美学：极简主义、网格系统、清晰的层次结构\n- 配色方案：使用2-3种主色调，搭配中性色（白色、浅灰、深灰）\n- 版式采用严格的网格布局，留白充足，视觉呼吸感强\n- 字体层次分明：标题使用无衬线粗体，正文使用易读的无衬线字体\n- 图标风格：线性图标或扁平化图标，风格统一\n\n**内容结构：**\n\n1. **顶部标题区**\n   - 主标题：新生儿用品必备指南\n   - 英文副标题：Essential Baby Products Guide\n   - 简短说明文字（1-2句）\n\n2. **分类展示区（4-6个类别）**\n   每个类别包含：\n   - 简洁的线性图标\n   - 类别名称\n   - 3-5个具体项目\n   - 每个项目的关键信息：\n     * 名称\n     * 用途/功能（简明扼要）\n     * 使用建议或注意事项\n     * 推荐等级或重要性标识\n\n3. **信息标注**\n   - 使用图标+文字组合\n   - 颜色编码区分不同重要级别\n   - 添加简明的使用提示\n\n4. **底部信息栏**\n   - 购买建议\n   - 存储提示\n   - 更新日期标识\n\n**视觉元素：**\n- 使用细线条分隔不同区域\n- 圆角矩形或方形框架包围内容模块\n- 适度使用阴影增加层次感\n- 图标与文字比例协调，不超过3:7\n\n**信息密度：**\n- 总项目数量：15-25个\n- 每个项目信息控制在30-50字\n- 确保信息实用、准确、易查阅\n\n**尺寸建议：**\n- 竖版海报：1080x1920\n\n**输出要求：**\n- 高清晰度\n- 可打印质量\n- 中英文双语标注（可选）",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "GPT-Image2",
+      "Aspect Ratio": "9:16"
+    }
+  },
+  {
+    "title": "Nano Banana Pro Blueprint Awakening",
+    "slug": "prompt-2010009737816162736",
+    "model": "Adobe Firefly",
+    "category": "3d",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "Adobe Firefly",
+      "3D场景",
+      "3D渲染"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2010009737816162736.jpg",
+    "date": "2026-07-23",
+    "source": "https://x.com/i/status/2010009737816162736",
+    "author": "Alexandra Aisling",
+    "prompt": "Epic 3D scene: a massive architectural blueprint of [BUILDING/STRUCTURE] pinned to a drafting table, its ink lines rising off the paper into fully realized construction. Blue lines become steel beams mid-weld, floor plans inflate into furnished rooms, elevation drawings push outward into facades with working windows. Construction phases coexist simultaneously: foundation being poured in one corner while the penthouse is already inhabited in another. Tiny workers, cranes, and scaffolding swarm the rising structure. The flat drawing and the living building merge at impossible angles. Technical annotations float as dimensional signage. Architect's coffee cup sits at the edge, casting shadow across unbuilt sections. Extreme scale contrast, construction dust catching afternoon light, 8K, photorealistic.",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Adobe Firefly",
+      "Aspect Ratio": "16:9"
+    }
+  },
+  {
     "title": "GPT IMAGE2\n碉堡了家人们~~😍\n它读出了人物背后的性格特征，甚至世界观、角色设定都给你写好了，还非常之合理！！\n“优雅，是力量最温柔的表达！”\nprompt: 基于此角色和背景，请制作一份类似官方设定资料的角色资料卡。 ・包含三视图：正面、侧面和背面 ・添加角色面部表情的变化・分解并展示服装和装备的详细部分 ・添加色板・包含世界观设定的简要说明 ・总体上，使用有组织的布局（白色",
     "slug": "prompt-2045013913901867334",
     "model": "Midjourney",
@@ -68,6 +140,30 @@
     "parameters": {
       "Model": "GPT-Image2",
       "Aspect Ratio": "9:16"
+    }
+  },
+  {
+    "title": "车内慵懒坐姿电影感写真",
+    "slug": "prompt-2077211623266390489",
+    "model": "Midjourney",
+    "category": "realistic",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "人像摄影",
+      "写实",
+      "摄影"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/prompt-2077211623266390489.jpg",
+    "date": "2026-07-23",
+    "source": "https://x.com/i/status/2077211623266390489",
+    "author": "VoxCat",
+    "prompt": "人物深坐在豪华商务车的独立航空座椅中，臀部靠近座椅内侧，腰背自然后仰并贴住靠背，身体向一侧轻微侧躺，胸肩与骨盆形成柔和扭转。\n\n双腿完整收上座椅，高位屈膝蜷缩，一条腿靠近镜头横向占据前景，形成明显的近大远小透视效果；另一条腿从后方自然交叠，小腿向画面下方折回，双脚前后错开，脚踝保持放松自然状态。\n\n头部微微侧偏，下巴略收，视线向下，不直视镜头，呈现车内休息时慵懒、安静、放松的状态。\n\n摄影机位于人物膝盖下方的近距离低机位仰拍，使用广角镜头，强化前景肢体比例与空间纵深。人物面部位于画面右上方，形成不对称电影构图。\n\n豪华商务车内部环境，高级皮革座椅，柔和车内光线，真实摄影质感，浅景深，电影级构图，生活化瞬间抓拍感。",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney",
+      "Aspect Ratio": "16:9"
     }
   },
   {
@@ -379,30 +475,6 @@
     "parameters": {
       "Model": "GPT-Image2",
       "Aspect Ratio": "9:16"
-    }
-  },
-  {
-    "title": "车内慵懒坐姿电影感写真",
-    "slug": "prompt-2077211623266390489",
-    "model": "Midjourney",
-    "category": "realistic",
-    "tags": [
-      "AI绘图",
-      "提示词",
-      "人像摄影",
-      "写实",
-      "摄影"
-    ],
-    "difficulty": "advanced",
-    "cover": "/images/prompts/prompt-2077211623266390489.jpg",
-    "date": "2026-07-18",
-    "source": "https://x.com/i/status/2077211623266390489",
-    "author": "VoxCat",
-    "prompt": "人物深坐在豪华商务车的独立航空座椅中，臀部靠近座椅内侧，腰背自然后仰并贴住靠背，身体向一侧轻微侧躺，胸肩与骨盆形成柔和扭转。\n\n双腿完整收上座椅，高位屈膝蜷缩，一条腿靠近镜头横向占据前景，形成明显的近大远小透视效果；另一条腿从后方自然交叠，小腿向画面下方折回，双脚前后错开，脚踝保持放松自然状态。\n\n头部微微侧偏，下巴略收，视线向下，不直视镜头，呈现车内休息时慵懒、安静、放松的状态。\n\n摄影机位于人物膝盖下方的近距离低机位仰拍，使用广角镜头，强化前景肢体比例与空间纵深。人物面部位于画面右上方，形成不对称电影构图。\n\n豪华商务车内部环境，高级皮革座椅，柔和车内光线，真实摄影质感，浅景深，电影级构图，生活化瞬间抓拍感。",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney",
-      "Aspect Ratio": "16:9"
     }
   },
   {
@@ -4362,78 +4434,6 @@
     "parameters": {
       "Model": "Midjourney v6",
       "Aspect Ratio": "16:9"
-    }
-  },
-  {
-    "title": "Nano Banana Pro Blueprint Awakening",
-    "slug": "prompt-2010009737816162736",
-    "model": "Adobe Firefly",
-    "category": "3d",
-    "tags": [
-      "AI绘图",
-      "提示词",
-      "Adobe Firefly",
-      "3D场景",
-      "3D渲染"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-2010009737816162736.jpg",
-    "date": "2026-01-09",
-    "source": "https://x.com/i/status/2010009737816162736",
-    "author": "Alexandra Aisling",
-    "prompt": "Epic 3D scene: a massive architectural blueprint of [BUILDING/STRUCTURE] pinned to a drafting table, its ink lines rising off the paper into fully realized construction. Blue lines become steel beams mid-weld, floor plans inflate into furnished rooms, elevation drawings push outward into facades with working windows. Construction phases coexist simultaneously: foundation being poured in one corner while the penthouse is already inhabited in another. Tiny workers, cranes, and scaffolding swarm the rising structure. The flat drawing and the living building merge at impossible angles. Technical annotations float as dimensional signage. Architect's coffee cup sits at the edge, casting shadow across unbuilt sections. Extreme scale contrast, construction dust catching afternoon light, 8K, photorealistic.",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Adobe Firefly",
-      "Aspect Ratio": "16:9"
-    }
-  },
-  {
-    "title": "超写实电影感人像提示词",
-    "slug": "prompt-2009298156748722252",
-    "model": "ChatGPT",
-    "category": "realistic",
-    "tags": [
-      "AI绘图",
-      "提示词",
-      "3D渲染",
-      "写实",
-      "摄影"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-2009298156748722252.jpg",
-    "date": "2026-01-08",
-    "source": "https://x.com/i/status/2009298156748722252",
-    "author": "Aijaz",
-    "prompt": "A hyper-realistic cinematic close-up portrait of a young woman's face in profile, intense turquoise-blue eye in sharp focus, wind-blown strands of wet hair crossing her face, tiny water droplets and floating particles suspended in the air, stormy and ethereal atmosphere, teal and blue color grading, soft glowing highlights, dramatic moody lighting, shallow depth of field, ultra-fine skin texture, emotional and introspective expression, fantasy realism style, high contrast, volumetric mist, particles and sparks around the face, 8K resolution, cinematic color grading, film still look, masterpiece, ultra-detailed, photorealistic, shot on 85mm lens, f/1.8, Unreal Engine, Octane render look.",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "ChatGPT",
-      "Aspect Ratio": "1:1"
-    }
-  },
-  {
-    "title": "新生儿用品必备指南信息图",
-    "slug": "prompt-2009523651679539373",
-    "model": "GPT-Image2",
-    "category": "design",
-    "tags": [
-      "AI绘图",
-      "提示词",
-      "GPT-Image2",
-      "信息图",
-      "产品"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-2009523651679539373.jpg",
-    "date": "2026-01-08",
-    "source": "https://x.com/i/status/2009523651679539373",
-    "author": "沐阳",
-    "prompt": "创建一张【新生儿用品必备指南】信息图，瑞士高端设计风格，用于家庭采购指南。\n\n**设计风格要求：**\n- 采用瑞士设计美学：极简主义、网格系统、清晰的层次结构\n- 配色方案：使用2-3种主色调，搭配中性色（白色、浅灰、深灰）\n- 版式采用严格的网格布局，留白充足，视觉呼吸感强\n- 字体层次分明：标题使用无衬线粗体，正文使用易读的无衬线字体\n- 图标风格：线性图标或扁平化图标，风格统一\n\n**内容结构：**\n\n1. **顶部标题区**\n   - 主标题：新生儿用品必备指南\n   - 英文副标题：Essential Baby Products Guide\n   - 简短说明文字（1-2句）\n\n2. **分类展示区（4-6个类别）**\n   每个类别包含：\n   - 简洁的线性图标\n   - 类别名称\n   - 3-5个具体项目\n   - 每个项目的关键信息：\n     * 名称\n     * 用途/功能（简明扼要）\n     * 使用建议或注意事项\n     * 推荐等级或重要性标识\n\n3. **信息标注**\n   - 使用图标+文字组合\n   - 颜色编码区分不同重要级别\n   - 添加简明的使用提示\n\n4. **底部信息栏**\n   - 购买建议\n   - 存储提示\n   - 更新日期标识\n\n**视觉元素：**\n- 使用细线条分隔不同区域\n- 圆角矩形或方形框架包围内容模块\n- 适度使用阴影增加层次感\n- 图标与文字比例协调，不超过3:7\n\n**信息密度：**\n- 总项目数量：15-25个\n- 每个项目信息控制在30-50字\n- 确保信息实用、准确、易查阅\n\n**尺寸建议：**\n- 竖版海报：1080x1920\n\n**输出要求：**\n- 高清晰度\n- 可打印质量\n- 中英文双语标注（可选）",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "GPT-Image2",
-      "Aspect Ratio": "9:16"
     }
   }
 ]
