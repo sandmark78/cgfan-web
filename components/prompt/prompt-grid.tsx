@@ -33,12 +33,15 @@ export function PromptGrid({ prompts, maxRows }: PromptGridProps) {
     }
     
     function updateDisplayCount() {
+      const rows = maxRows
+      if (rows === undefined) return
+      
       const width = window.innerWidth
       let cols = 1
       if (width >= 1024) cols = 3
       else if (width >= 640) cols = 2
 
-      const count = cols * maxRows
+      const count = cols * rows
       setDisplayCount(Math.min(count, prompts.length))
     }
 
