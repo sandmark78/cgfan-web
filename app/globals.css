@@ -20,8 +20,8 @@
   --glass: rgba(255, 255, 255, 0.55);
   --glass-heavy: rgba(255, 255, 255, 0.72);
   --glass-border: rgba(255, 255, 255, 0.85);
-  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(255, 255, 255, 0.5) inset;
-  --glass-shadow-hover: 0 16px 48px rgba(76, 175, 80, 0.15), 0 2px 8px rgba(255, 255, 255, 0.6) inset;
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  --glass-shadow-hover: 0 16px 48px rgba(76, 175, 80, 0.15);
   --blur: 24px;
   --blur-heavy: 32px;
 
@@ -62,8 +62,8 @@
   --glass: rgba(10, 30, 20, 0.5);
   --glass-heavy: rgba(10, 30, 20, 0.7);
   --glass-border: rgba(124, 255, 178, 0.18);
-  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(124, 255, 178, 0.1) inset;
-  --glass-shadow-hover: 0 16px 48px rgba(124, 255, 178, 0.12), 0 1px 0 rgba(124, 255, 178, 0.15) inset;
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  --glass-shadow-hover: 0 16px 48px rgba(124, 255, 178, 0.12);
 
   --text-primary: #eafff0;
   --text-secondary: #b8d4c0;
@@ -117,17 +117,6 @@ body {
   isolation: isolate;
 }
 
-/* 光泽高光层 */
-.glass::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  background: linear-gradient(135deg, rgba(255,255,255,0.25) 0%, transparent 40%, transparent 60%, rgba(255,255,255,0.08) 100%);
-  pointer-events: none;
-  z-index: 1;
-}
-
 .glass-card {
   position: relative;
   background: var(--glass);
@@ -138,20 +127,6 @@ body {
   box-shadow: var(--glass-shadow);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
-}
-
-/* 卡片光泽层 */
-.glass-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 50%;
-  background: linear-gradient(180deg, rgba(255,255,255,0.15) 0%, transparent 100%);
-  pointer-events: none;
-  z-index: 1;
-  border-radius: var(--radius) var(--radius) 0 0;
 }
 
 .glass-card:hover {
