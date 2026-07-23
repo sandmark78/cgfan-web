@@ -12,7 +12,7 @@ tags:
 difficulty: intermediate
 cover: /images/prompts/prompt-studio-cinematic-frames-1560755136.jpg
 date: '2026-01-25'
-added: 2026-07-24
+added: %Y->-
 source: https://x.com/i/status/2015159671644995609
 author: AllaAisling
 ---

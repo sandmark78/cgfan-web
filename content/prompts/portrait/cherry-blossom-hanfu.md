@@ -3,7 +3,7 @@ title: 樱花汉服人像
 slug: cherry-blossom-hanfu
 author: YUKI
 date: 2026-07-22
-added: 2026-07-24
+added: %Y->-
 model: GPT-Image2
 category: portrait
 tags: [cherry-blossom, hanfu, spring, photorealistic]

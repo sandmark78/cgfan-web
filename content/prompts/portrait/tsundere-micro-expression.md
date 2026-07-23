@@ -3,7 +3,7 @@ title: 微表情之傲娇
 slug: tsundere-micro-expression
 author: 灰度笔记
 date: 2026-07-23
-added: 2026-07-24
+added: %Y->-
 model: GPT-Image2
 category: portrait
 tags: [ancient-style, tsundere, micro-expression, photography]

@@ -12,7 +12,7 @@ tags:
 difficulty: intermediate
 cover: /images/prompts/life-journey-on-google-gemini-nano-1571173612.jpg
 date: '2026-01-31'
-added: 2026-07-22
+added: %Y->-
 source: https://x.com/i/status/2017592536601399641
 author: Smiling Khan
 ---

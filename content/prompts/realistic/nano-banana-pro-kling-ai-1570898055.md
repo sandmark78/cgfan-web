@@ -12,7 +12,7 @@ tags:
 difficulty: intermediate
 cover: /images/prompts/nano-banana-pro-kling-ai-1570898055.jpg
 date: '2026-01-31'
-added: 2026-07-24
+added: %Y->-
 source: https://x.com/i/status/2017190433127072212
 author: 邪修玩AI-诗泳 LiEvanna85716
 ---

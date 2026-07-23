@@ -12,7 +12,7 @@ tags:
 difficulty: intermediate
 cover: /images/prompts/cross-brand-sneaker-collaboration-1570896016.jpg
 date: '2026-01-31'
-added: 2026-07-22
+added: %Y->-
 source: https://x.com/i/status/2017542008722886797
 author: Latte0xbisc
 ---

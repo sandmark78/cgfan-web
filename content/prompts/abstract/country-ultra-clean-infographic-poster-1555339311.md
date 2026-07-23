@@ -12,7 +12,7 @@ tags:
 difficulty: intermediate
 cover: /images/prompts/country-ultra-clean-infographic-poster-1555339311.jpg
 date: '2026-01-21'
-added: 2026-07-22
+added: %Y->-
 source: https://x.com/i/status/2013905113321185465
 author: Strength04_X
 ---

@@ -12,7 +12,7 @@ tags:
 difficulty: intermediate
 cover: /images/prompts/prompt-for-nano-banana-pro-1571128742.jpg
 date: '2026-01-31'
-added: 2026-07-24
+added: %Y->-
 source: https://x.com/i/status/2017591867249201307
 author: Anissa (SimplyAnnisa)
 ---

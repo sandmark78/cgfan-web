@@ -12,7 +12,7 @@ tags:
 difficulty: intermediate
 cover: /images/prompts/nano-banana-pro-on-artingai-1542365093.jpg
 date: '2026-01-14'
-added: 2026-07-24
+added: %Y->-
 source: https://x.com/ChillaiKalan__/status/2010663134743368058?s=20
 author: K ChillaiKalan__
 ---
