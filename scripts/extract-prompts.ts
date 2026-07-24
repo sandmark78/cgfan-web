@@ -236,9 +236,20 @@ function parseMarkdownFile(filePath: string): PromptData | null {
       sections[currentSection] = currentContent.join('\n').trim();
     }
     
-    // 提取提示词
-    const promptText = sections['Prompt'] || '';
+    // 提取提示词 - 优先使用 ## Prompt 章节，否则使用整个正文
+    let promptText = sections['Prompt'] || '';
     const negativePrompt = sections['Negative Prompt'] || '';
+    
+    // 如果没有 ## Prompt 章节，使用整个正文作为提示词
+    if (!promptText) {
+      // 检查是否有类似 "## Prompt 1:" 的章节
+      const promptSections = Object.keys(sections).filter(k => k.toLowerCase().startsWith('prompt'));
+      if (promptSections.length > 0) {
+        promptText = promptSections.map(k => sections[k]).join('\n\n');
+      } else {
+        promptText = body.trim();
+      }
+    }
     
     // 清理提示词
     const cleanedPrompt = cleanPrompt(promptText);
@@ -324,9 +335,11 @@ function main() {
   
   walkDir(contentDir);
   
-  // 按文件修改时间排序（最新的在前）
+  // 按上传日期排序（最新的在前）
   allPrompts.sort((a, b) => {
-    return ((b as any).mtime || 0) - ((a as any).mtime || 0);
+    const dateA = a.added || a.date || '1970-01-01';
+    const dateB = b.added || b.date || '1970-01-01';
+    return dateB.localeCompare(dateA);
   });
   
   // 写入 JSON
