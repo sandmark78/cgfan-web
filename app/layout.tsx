@@ -43,6 +43,9 @@ export const metadata: Metadata = {
     description: '每日精选 AI 提示词与示例图鉴，附策展笔记，复制即用。',
     images: ['/og-cover.jpg'],
   },
+  alternates: {
+    canonical: 'https://cgfan-web.pages.dev',
+  },
   robots: {
     index: true,
     follow: true,

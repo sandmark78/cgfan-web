@@ -38,6 +38,9 @@ export async function generateMetadata({
   return {
     title: `${prompt.title} | CGfan`,
     description,
+    alternates: {
+      canonical: `${baseUrl}/prompt/${slug}`,
+    },
     openGraph: {
       title: prompt.title,
       description,
