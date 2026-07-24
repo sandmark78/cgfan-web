@@ -6,11 +6,58 @@ import { FavoriteButton } from '@/components/prompt/favorite-button'
 import { ShareButton } from '@/components/prompt/share-button'
 import { PromptGrid } from '@/components/prompt/prompt-grid'
 import { DetailImage } from '@/components/prompt/detail-image'
+import { PromptTextBlock } from '@/components/prompt/prompt-text-block'
 import { createClient } from '@/lib/supabase/server'
 import { getCategoryLabel } from '@/lib/category-map'
 import Link from 'next/link'
+import type { Metadata } from 'next'
 
 export const runtime = 'edge'
+
+/**
+ * 生成详情页 SEO 元数据
+ */
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>
+}): Promise<Metadata> {
+  const { slug } = await params
+  const prompt = getPromptBySlug(slug)
+
+  if (!prompt) {
+    return {
+      title: '提示词未找到',
+    }
+  }
+
+  const baseUrl = 'https://cgfan-web.pages.dev'
+  const description = prompt.prompt.slice(0, 160).replace(/\n/g, ' ')
+
+  return {
+    title: `${prompt.title} | CGfan`,
+    description,
+    openGraph: {
+      title: prompt.title,
+      description,
+      images: [
+        {
+          url: prompt.cover,
+          width: 1200,
+          height: 900,
+          alt: prompt.title,
+        },
+      ],
+      type: 'article',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: prompt.title,
+      description,
+      images: [prompt.cover],
+    },
+  }
+}
 
 /**
  * 提示词详情页 - 左图右文布局
@@ -166,12 +213,7 @@ export default async function PromptDetailPage({
             <h3 className="mb-3 text-sm font-semibold text-gray-700 dark:text-gray-300">
               Prompt:
             </h3>
-            <pre className="whitespace-pre-wrap text-sm text-gray-600 dark:text-gray-400">
-              {formatPromptText(prompt.prompt)}
-            </pre>
-            <div className="mt-4">
-              <CopyPromptButton prompt={prompt.prompt} />
-            </div>
+            <PromptTextBlock text={formatPromptText(prompt.prompt)} maxLines={20} />
           </div>
 
           {/* 参数 chips */}
