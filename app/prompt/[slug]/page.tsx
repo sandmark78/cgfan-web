@@ -133,17 +133,20 @@ export default async function PromptDetailPage({
               <div className="flex items-center gap-3">
                 <div className="h-12 w-12 rounded-full bg-gradient-to-br from-green-400 to-blue-500" />
                 <div>
+                  <div className="text-xs text-gray-400 dark:text-gray-500">作者</div>
                   <div className="font-semibold text-gray-900 dark:text-white">
                     {prompt.author}
                   </div>
                 </div>
               </div>
               {prompt.source && (() => {
-                const match = prompt.source.match(/x\.com\/([^/]+)/);
-                const authorUrl = match ? `https://x.com/${match[1]}` : prompt.source;
+                const match = prompt.source.match(/x\.com\/([^/]+)\/status/);
+                const username = match && match[1] !== 'i' ? match[1] : null;
+                const linkUrl = username ? `https://x.com/${username}` : prompt.source;
+                const linkLabel = username ? '查看主页' : '查看原文';
                 return (
                   <a
-                    href={authorUrl}
+                    href={linkUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-primary text-sm inline-flex items-center gap-1"
@@ -151,7 +154,7 @@ export default async function PromptDetailPage({
                     <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                     </svg>
-                    查看主页
+                    {linkLabel}
                   </a>
                 );
               })()}
