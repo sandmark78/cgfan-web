@@ -2,8 +2,62 @@ import { getAllPrompts, getAllCategories, getAllTags, getPromptsByCategory, getP
 import { PromptGrid } from '@/components/prompt/prompt-grid'
 import { getCategoryLabel } from '@/lib/category-map'
 import Link from 'next/link'
+import type { Metadata } from 'next'
 
 export const runtime = 'edge'
+
+/**
+ * 生成探索页 SEO 元数据
+ */
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams: Promise<{ category?: string; tag?: string; q?: string; page?: string }>
+}): Promise<Metadata> {
+  const params = await searchParams
+  const { category, tag, q, page } = params
+  const currentPage = Math.max(1, parseInt(page || '1', 10))
+  const baseUrl = 'https://cgfan-web.pages.dev'
+
+  let title = '探索'
+  let description = '浏览精选 AI 提示词，涵盖写实、动漫、3D、摄影等风格，支持 GPT-Image、Midjourney 等模型，一键复制即用。'
+
+  if (category) {
+    title = `${getCategoryLabel(category)}`
+    description = `浏览 ${getCategoryLabel(category)} 风格的 AI 提示词，共多款精选 prompt，附示例图和策展笔记。`
+  }
+  if (tag) {
+    title = `#${tag}`
+    description = `浏览 #${tag} 标签的 AI 提示词合集，附示例图和策展笔记。`
+  }
+  if (q) {
+    title = `搜索: ${q}`
+    description = `搜索 "${q}" 相关的 AI 提示词结果。`
+  }
+  if (currentPage > 1) {
+    title += ` 第${currentPage}页`
+    description += ` 第 ${currentPage} 页，共多页内容。`
+  }
+
+  let canonical = `${baseUrl}/explore`
+  const paramsStr = new URLSearchParams()
+  if (category) paramsStr.set('category', category)
+  if (tag) paramsStr.set('tag', tag)
+  if (q) paramsStr.set('q', q)
+  if (currentPage > 1) paramsStr.set('page', String(currentPage))
+  const query = paramsStr.toString()
+  if (query) canonical += `?${query}`
+
+  return {
+    title,
+    description,
+    alternates: { canonical },
+    openGraph: {
+      title: `${title} | CGfan`,
+      description,
+    },
+  }
+}
 
 /**
  * 浏览页 - 分类/标签/搜索

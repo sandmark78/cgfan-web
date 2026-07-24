@@ -92,8 +92,12 @@ export function PromptCard({ prompt, priority = false }: PromptCardProps) {
         aria-label={`查看 ${prompt.title} 的完整提示词`}
       >
         {/* 封面图 */}
-        <div className="relative aspect-[4/3] overflow-hidden">
+        <div className="relative aspect-[4/3] overflow-hidden bg-stone-100 dark:bg-stone-800">
           <PromptImage src={prompt.cover} alt={prompt.title} priority={priority} />
+          
+          {/* 图片底部渐变遮罩 - 让徽章更清晰 */}
+          <div className="absolute inset-auto bottom-0 left-0 right-0 h-2/5 pointer-events-none z-0"
+            style={{background: 'linear-gradient(transparent, rgba(0,0,0,0.35))'}} />
           
           {/* 模型标签 */}
           <div className="absolute top-3 left-3 z-10">

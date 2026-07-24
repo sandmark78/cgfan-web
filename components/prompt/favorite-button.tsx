@@ -19,13 +19,27 @@ export function FavoriteButton({
   initialFavorited = false,
   isAuthenticated = false,
 }: FavoriteButtonProps) {
-  const [favorited, setFavorited] = useState(initialFavorited)
+  // 从 localStorage 读取收藏状态（未登录时用）
+  const [favorited, setFavorited] = useState(() => {
+    if (typeof window === 'undefined') return initialFavorited
+    const stored = JSON.parse(localStorage.getItem('cgfan-favs') || '[]')
+    return stored.includes(promptSlug) || initialFavorited
+  })
   const [loading, setLoading] = useState(false)
   const supabase = createClient()
 
   const handleToggle = async () => {
+    // 未登录时用 localStorage
     if (!isAuthenticated) {
-      window.location.href = '/login'
+      const stored = JSON.parse(localStorage.getItem('cgfan-favs') || '[]')
+      let next: string[]
+      if (favorited) {
+        next = stored.filter((s: string) => s !== promptSlug)
+      } else {
+        next = [...stored, promptSlug]
+      }
+      localStorage.setItem('cgfan-favs', JSON.stringify(next))
+      setFavorited(!favorited)
       return
     }
 
