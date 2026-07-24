@@ -216,101 +216,139 @@ body {
 }
 
 /* ═══════════════════════════════════════════
-   暗色毛玻璃 v2 — 黑曜石质感
+   暗色毛玻璃 v3 — 通透清爽
    ═══════════════════════════════════════════ */
 
-/* 暗色导航栏 */
+/* ── 导航栏 ── */
 .dark .glass {
-  background: linear-gradient(180deg, rgba(28,25,23,.82), rgba(20,17,16,.90));
-  border: none !important;
-  box-shadow:
-    0 0 0 1px rgba(255,255,255,.06),
-    0 1px 0 0 rgba(255,255,255,.06) inset,
-    0 8px 32px rgba(0,0,0,.4);
-  -webkit-backdrop-filter: blur(24px) saturate(1.3);
-  backdrop-filter: blur(24px) saturate(1.3);
-}
-
-/* 暗色卡片 - 黑曜石质感 */
-.dark .glass-card {
-  background: linear-gradient(168deg, rgba(41,37,36,.72), rgba(23,20,19,.88));
+  background: linear-gradient(
+    180deg,
+    rgba(24, 22, 20, 0.52) 0%,
+    rgba(18, 16, 15, 0.65) 100%
+  );
   border: none;
   box-shadow:
-    0 0 0 1px rgba(255,255,255,.07),
-    0 1px 0 0 rgba(255,255,255,.09) inset,
-    0 -1px 0 0 rgba(0,0,0,.35) inset,
-    0 12px 40px -8px rgba(0,0,0,.5),
-    0 4px 12px -2px rgba(0,0,0,.3);
-  -webkit-backdrop-filter: blur(20px) saturate(1.4);
-  backdrop-filter: blur(20px) saturate(1.4);
-  transition: transform .35s cubic-bezier(.22,1,.36,1),
-              box-shadow .35s cubic-bezier(.22,1,.36,1);
+    0 0 0 1px rgba(255, 255, 255, 0.07),
+    0 1px 0 0 rgba(255, 255, 255, 0.06) inset,
+    0 8px 32px rgba(0, 0, 0, 0.35);
+  -webkit-backdrop-filter: blur(18px) saturate(1.4);
+  backdrop-filter: blur(18px) saturate(1.4);
 }
 
-/* 卡片顶部高光 */
+/* ── 卡片 ── */
+.dark .glass-card {
+  background: linear-gradient(
+    168deg,
+    rgba(30, 28, 26, 0.42) 0%,     /* 顶部：透，背景隐约可见 */
+    rgba(20, 18, 17, 0.60) 100%    /* 底部：略实，托住文字 */
+  );
+  border: none;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.08),          /* 轮廓 */
+    0 1px 0 0 rgba(255, 255, 255, 0.09) inset,    /* 顶部边缘光 */
+    0 12px 36px -6px rgba(0, 0, 0, 0.40);         /* 外阴影，一层够了 */
+  -webkit-backdrop-filter: blur(14px) saturate(1.5);
+  backdrop-filter: blur(14px) saturate(1.5);
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ── 顶部高光：极淡，一条就够 ── */
 .dark .glass-card::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  height: 40%;
-  background: linear-gradient(180deg, rgba(255,255,255,.04), transparent 60%);
+  height: 35%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    transparent 50%
+  );
   pointer-events: none;
   border-radius: var(--radius) var(--radius) 0 0;
 }
 
-/* 卡片 hover 效果 */
-.glass-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--glass-shadow-hover);
-  border-color: rgba(255, 255, 255, 0.95);
-}
-
+/* ── Hover ── */
 .dark .glass-card:hover {
+  transform: translateY(-4px);
   box-shadow:
-    0 0 0 1px rgba(255,255,255,.13),
-    0 1px 0 0 rgba(255,255,255,.13) inset,
-    0 -1px 0 0 rgba(0,0,0,.35) inset,
-    0 20px 50px -8px rgba(0,0,0,.6),
-    0 8px 20px -4px rgba(0,0,0,.4);
+    0 0 0 1px rgba(255, 255, 255, 0.14),
+    0 1px 0 0 rgba(255, 255, 255, 0.12) inset,
+    0 18px 48px -8px rgba(0, 0, 0, 0.50);
 }
 
-/* 暗色图片压暗 */
+/* ── 图片：微压暗，hover 恢复 ── */
 .dark .glass-card img {
-  filter: brightness(.92) contrast(1.02);
-  transition: filter .35s ease, transform .35s cubic-bezier(.22,1,.36,1);
+  filter: brightness(0.93);
+  transition: filter 0.35s ease;
 }
 
 .dark .glass-card:hover img {
-  filter: brightness(1) contrast(1);
+  filter: brightness(1);
 }
 
-/* 图片底部渐变遮罩 */
-.glass-card .relative.aspect-\[4\/3\]::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 40%;
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.3));
-  pointer-events: none;
-  z-index: 1;
-}
-
-/* 暗色 Chip */
+/* ── Chip ── */
 .dark .param-chip,
 .dark .category-chip {
-  background: rgba(255,255,255,.06);
-  border-color: rgba(255,255,255,.08);
-  box-shadow: 0 1px 2px rgba(0,0,0,.2) inset;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  box-shadow: none;                          /* 去掉内阴影，更干净 */
+  -webkit-backdrop-filter: blur(8px) saturate(1.3);
+  backdrop-filter: blur(8px) saturate(1.3);
 }
 
 .dark .param-chip:hover,
 .dark .category-chip:hover {
-  background: rgba(255,255,255,.10);
-  border-color: rgba(255,255,255,.15);
+  background: rgba(255, 255, 255, 0.11);
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+/* ── 搜索框 ── */
+.dark input[type="text"],
+.dark input[type="search"] {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.dark input[type="text"]:focus,
+.dark input[type="search"]:focus {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.20);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.05);
+  outline: none;
+}
+
+/* ── 背景叠层：别压太暗，留住通透感 ── */
+.dark .app-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    60% 60% at 50% 45%,
+    rgba(10, 9, 8, 0.20) 0%,
+    rgba(10, 9, 8, 0.55) 100%
+  );
+  pointer-events: none;
+}
+
+/* ── 选中色 ── */
+.dark ::selection {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* ── 滚动条 ── */
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.10);
+  border-radius: 3px;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.18);
 }
 
 /* ── 搜索框：内凹，清透 ── */
