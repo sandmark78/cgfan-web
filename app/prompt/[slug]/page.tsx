@@ -136,14 +136,25 @@ export default async function PromptDetailPage({
                   <div className="font-semibold text-gray-900 dark:text-white">
                     {prompt.author}
                   </div>
-                  <div className="text-sm text-gray-500 dark:text-gray-400">
-                    10pts
-                  </div>
                 </div>
               </div>
-              <button className="btn-primary text-sm">
-                关注
-              </button>
+              {prompt.source && (() => {
+                const match = prompt.source.match(/x\.com\/([^/]+)/);
+                const authorUrl = match ? `https://x.com/${match[1]}` : prompt.source;
+                return (
+                  <a
+                    href={authorUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-primary text-sm inline-flex items-center gap-1"
+                  >
+                    <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                    查看主页
+                  </a>
+                );
+              })()}
             </div>
           </div>
 
