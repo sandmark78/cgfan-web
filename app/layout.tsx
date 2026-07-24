@@ -17,16 +17,17 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL('https://cgfan-web.pages.dev'),
   title: {
-    default: 'CGfan - AI 提示词画廊',
+    default: 'CGfan - 每日一味，一句咒语一张图',
     template: '%s | CGfan',
   },
-  description: '每日精选 AI 提示词和示例图，分门别类，方便查找和复用',
+  description:
+    'CGfan — 每日精选 AI 提示词与示例图。涵盖写实、动漫、3D、摄影等风格，附策展笔记和参数解析，支持 GPT-Image、Midjourney 等模型，一键复制即用。',
   openGraph: {
-    type: 'website',
-    locale: 'zh_CN',
+    title: 'CGfan · 每日一味，一句咒语一张图',
+    description: '每日精选 AI 提示词与示例图鉴，附策展笔记，复制即用。',
     siteName: 'CGfan',
-    title: 'CGfan - AI 提示词画廊',
-    description: '每日精选 AI 提示词和示例图，分门别类，方便查找和复用',
+    locale: 'zh_CN',
+    type: 'website',
     images: [
       {
         url: '/og-cover.jpg',
@@ -38,8 +39,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'CGfan - AI 提示词画廊',
-    description: '每日精选 AI 提示词和示例图，分门别类，方便查找和复用',
+    title: 'CGfan · 每日一味，一句咒语一张图',
+    description: '每日精选 AI 提示词与示例图鉴，附策展笔记，复制即用。',
     images: ['/og-cover.jpg'],
   },
   robots: {

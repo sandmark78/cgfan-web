@@ -19,10 +19,10 @@ export default function Home() {
       {/* Hero 区域 */}
       <div className="text-center">
         <h1 className="font-serif text-2xl sm:text-5xl font-bold tracking-tight text-gray-900 dark:text-white md:text-6xl leading-tight">
-          分享 AI 提示词和示例图
+          每日一味，一句咒语一张图
         </h1>
-        <p className="mx-auto mt-1.5 sm:mt-3 max-w-2xl text-sm sm:text-lg text-gray-600 dark:text-gray-400 leading-snug">
-          每日精选 AI 提示词和示例图，分门别类，方便查找和复用
+        <p className="mx-auto mt-1.5 sm:mt-3 max-w-2xl text-sm sm:text-lg text-gray-600 dark:text-gray-400 leading-snug whitespace-pre-line">
+          每天精选一个 AI 提示词，附策展笔记和示例图。{'\n'}不贪多，只选好的。复制即用，灵感即走。
         </p>
         <div className="mt-3 sm:mt-5 flex items-center justify-center gap-3 sm:gap-4">
           <Link href="/explore" className="btn-primary text-sm sm:text-base px-5 sm:px-7 py-2 sm:py-2.5">
