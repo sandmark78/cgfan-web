@@ -213,11 +213,44 @@ export default async function PromptDetailPage({
             </div>
           </div>
 
+          {/* 分类和标签 */}
+          <div className="glass-card p-6">
+            <div className="mb-4 flex items-center gap-2">
+              <span className="text-xs text-gray-500 dark:text-gray-400">分类：</span>
+              <Link
+                href={`/explore?category=${prompt.category}`}
+                className="rounded-full bg-green-100 px-3 py-1 text-xs font-medium text-green-700 transition-colors hover:bg-green-200 dark:bg-green-900/30 dark:text-green-400 dark:hover:bg-green-900/50"
+              >
+                {getCategoryLabel(prompt.category)}
+              </Link>
+            </div>
+            {prompt.tags.length > 0 && (
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="text-xs text-gray-500 dark:text-gray-400">标签：</span>
+                {prompt.tags.map((tag) => (
+                  <Link
+                    key={tag}
+                    href={`/explore?tag=${encodeURIComponent(tag)}`}
+                    className="rounded-full bg-gray-100 px-3 py-1 text-xs text-gray-600 transition-colors hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"
+                  >
+                    #{tag}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+
           {/* 提示词 */}
           <div className="glass-card p-6">
-            <h3 className="mb-3 text-sm font-semibold text-gray-700 dark:text-gray-300">
-              Prompt:
-            </h3>
+            <div className="mb-3 flex items-center justify-between">
+              <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300">
+                Prompt:
+              </h3>
+              <div className="flex items-center gap-3 text-xs text-gray-500 dark:text-gray-400">
+                <span>{prompt.prompt.length.toLocaleString()} 字符</span>
+                <span>约 {Math.ceil(prompt.prompt.length / 500)} 分钟阅读</span>
+              </div>
+            </div>
             <PromptTextBlock text={formatPromptText(prompt.prompt)} maxLines={20} />
           </div>
 
