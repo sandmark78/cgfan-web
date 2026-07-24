@@ -1,4 +1,5 @@
 import { getAllPrompts, getAllCategories, getAllTags, getPromptsByCategory, getPromptsByTag } from '@/lib/prompts'
+import { InfiniteGrid } from '@/components/infinite-grid'
 import { PromptGrid } from '@/components/prompt/prompt-grid'
 import { getCategoryLabel } from '@/lib/category-map'
 import Link from 'next/link'
@@ -61,18 +62,17 @@ export async function generateMetadata({
 }
 
 /**
- * 浏览页 - 分类/标签/搜索
+ * 浏览页 - 分类/标签/搜索（无限滚动）
  */
 const PAGE_SIZE = 20
 
 export default async function ExplorePage({
   searchParams,
 }: {
-  searchParams: Promise<{ category?: string; tag?: string; q?: string; page?: string }>
+  searchParams: Promise<{ category?: string; tag?: string; q?: string }>
 }) {
   const params = await searchParams
-  const { category, tag, q, page } = params
-  const currentPage = Math.max(1, parseInt(page || '1', 10))
+  const { category, tag, q } = params
 
   const categories = getAllCategories()
   const tags = getAllTags()
@@ -100,10 +100,8 @@ export default async function ExplorePage({
     activeFilter = `#${tag}`
   }
 
-  // 分页计算
-  const totalPages = Math.ceil(prompts.length / PAGE_SIZE)
-  const startIndex = (currentPage - 1) * PAGE_SIZE
-  const paginatedPrompts = prompts.slice(startIndex, startIndex + PAGE_SIZE)
+  // 取前 PAGE_SIZE 条作为初始数据
+  const initialPrompts = prompts.slice(0, PAGE_SIZE)
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
@@ -183,15 +181,12 @@ export default async function ExplorePage({
             </h1>
           </div>
 
-          {/* 瀑布流画廊 - 分页显示 */}
-          <PromptGrid prompts={paginatedPrompts} maxRows={999} />
-
-          {/* 分页导航 - 带页码选择 */}
-          <Pagination
-            current={currentPage}
-            total={totalPages}
-            basePath="/explore"
-            params={{ category, tag, q }}
+          {/* 无限滚动瀑布流 */}
+          <InfiniteGrid
+            initialPrompts={initialPrompts}
+            category={category}
+            tag={tag}
+            q={q}
           />
         </div>
       </div>
