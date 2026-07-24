@@ -8,13 +8,16 @@ export const runtime = 'edge'
 /**
  * 浏览页 - 分类/标签/搜索
  */
+const PAGE_SIZE = 20
+
 export default async function ExplorePage({
   searchParams,
 }: {
-  searchParams: Promise<{ category?: string; tag?: string; q?: string }>
+  searchParams: Promise<{ category?: string; tag?: string; q?: string; page?: string }>
 }) {
   const params = await searchParams
-  const { category, tag, q } = params
+  const { category, tag, q, page } = params
+  const currentPage = Math.max(1, parseInt(page || '1', 10))
 
   const categories = getAllCategories()
   const tags = getAllTags()
@@ -41,6 +44,11 @@ export default async function ExplorePage({
     prompts = getPromptsByTag(tag)
     activeFilter = `#${tag}`
   }
+
+  // 分页计算
+  const totalPages = Math.ceil(prompts.length / PAGE_SIZE)
+  const startIndex = (currentPage - 1) * PAGE_SIZE
+  const paginatedPrompts = prompts.slice(startIndex, startIndex + PAGE_SIZE)
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
@@ -120,8 +128,43 @@ export default async function ExplorePage({
             </h1>
           </div>
 
-          {/* 瀑布流画廊 - 显示全部 */}
-          <PromptGrid prompts={prompts} maxRows={999} />
+          {/* 瀑布流画廊 - 分页显示 */}
+          <PromptGrid prompts={paginatedPrompts} maxRows={999} />
+
+          {/* 分页导航 */}
+          {totalPages > 1 && (
+            <div className="mt-8 flex justify-center gap-2">
+              {currentPage > 1 && (
+                <Link
+                  href={`/explore?${new URLSearchParams({
+                    ...(q && { q }),
+                    ...(category && { category }),
+                    ...(tag && { tag }),
+                    page: String(currentPage - 1),
+                  }).toString()}`}
+                  className="rounded-lg bg-zinc-800 px-4 py-2 text-sm text-white hover:bg-zinc-700"
+                >
+                  上一页
+                </Link>
+              )}
+              <span className="flex items-center px-4 text-sm text-zinc-400">
+                {currentPage} / {totalPages}
+              </span>
+              {currentPage < totalPages && (
+                <Link
+                  href={`/explore?${new URLSearchParams({
+                    ...(q && { q }),
+                    ...(category && { category }),
+                    ...(tag && { tag }),
+                    page: String(currentPage + 1),
+                  }).toString()}`}
+                  className="rounded-lg bg-zinc-800 px-4 py-2 text-sm text-white hover:bg-zinc-700"
+                >
+                  下一页
+                </Link>
+              )}
+            </div>
+          )}
         </div>
       </div>
     </div>
