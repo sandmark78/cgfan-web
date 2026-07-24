@@ -1,5 +1,5 @@
 ---
-title: 'Prompt Studio: Nano Banana Pro, Typewriter Conjuring, in Firefly'
+title: 'Prompt Studio: Nano Banana Pro, Typewriter Conjuri...'
 slug: prompt-studio-nano-banana-pro-1557350335
 model: Midjourney
 category: abstract

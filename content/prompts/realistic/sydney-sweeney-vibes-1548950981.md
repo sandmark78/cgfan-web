@@ -1,5 +1,5 @@
 ---
-title: Sydney Sweeney vibes ✨
+title: Sydney Sweeney vibes
 slug: sydney-sweeney-vibes-1548950981
 model: Midjourney
 category: realistic

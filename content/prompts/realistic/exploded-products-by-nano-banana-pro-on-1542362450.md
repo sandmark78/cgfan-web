@@ -1,5 +1,5 @@
 ---
-title: Exploded Products by Nano Banana Pro on @SocialSight ⚙️🤯
+title: Exploded Products by Nano Banana Pro on @SocialSight ⚙🤯
 slug: exploded-products-by-nano-banana-pro-on-1542362450
 model: Midjourney
 category: realistic

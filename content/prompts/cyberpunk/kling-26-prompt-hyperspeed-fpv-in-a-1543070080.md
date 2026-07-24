@@ -1,5 +1,5 @@
 ---
-title: 'Kling 2.6 prompt: Hyperspeed FPV in a vertical cyberpunk city'
+title: 'Kling 2.6 prompt: Hyperspeed FPV in a vertical cyb...'
 slug: kling-26-prompt-hyperspeed-fpv-in-a-1543070080
 model: Midjourney
 category: cyberpunk

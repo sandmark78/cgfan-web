@@ -1,5 +1,5 @@
 ---
-title: Playful shadows and high-school nostalgia captured in a single frame. ☀️📚
+title: Playful shadows and high-school nostalgia captured...
 slug: playful-shadows-and-high-school-1551218134
 model: Midjourney
 category: realistic

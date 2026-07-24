@@ -1,5 +1,5 @@
 ---
-title: 'Prompt Studio: Nano Banana Pro Expedition Planning Board, in Firefly'
+title: 'Prompt Studio: Nano Banana Pro Expedition Planning...'
 slug: prompt-studio-nano-banana-pro-1542834490
 model: Midjourney
 category: abstract

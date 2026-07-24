@@ -1,5 +1,5 @@
 ---
-title: I asked Nano Banana to deconstruct 4 old complex gadgets from the 1900s.
+title: I asked Nano Banana to deconstruct 4 old complex g...
 slug: i-asked-nano-banana-to-deconstruct-4-1571268981
 model: Midjourney
 category: realistic

@@ -1,5 +1,5 @@
 ---
-title: '[COUNTRY] — ultra-clean infographic poster (editorial + lifestyle)'
+title: '[COUNTRY] — ultra-clean infographic poster (editor...'
 slug: country-ultra-clean-infographic-poster-1555339311
 model: Midjourney
 category: abstract

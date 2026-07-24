@@ -1,5 +1,5 @@
 ---
-title: These 360 prompts are so much fun. Another one for Nano Banana
+title: These 360 prompts are so much fun. Another one for...
 slug: these-360-prompts-are-so-much-fun-1558979827
 model: Midjourney
 category: 3d

@@ -1,5 +1,5 @@
 ---
-title: Object Infographics by Nano Banana Pro on @SocialSight 🧾✨
+title: Object Infographics by Nano Banana Pro on @SocialSight 🧾
 slug: object-infographics-by-nano-banana-pro-1570554885
 model: Midjourney
 category: abstract
