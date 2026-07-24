@@ -24,17 +24,17 @@ export const dailyFeatures: DailyFeature[] = [
   },
   {
     date: '2026-07-24',
-    slug: 'retro-vector-travel-poster',
+    slug: 'retro-futuristic-vector-travel-poster',
     curatorNote:
       '复古未来主义旅行海报。关键技巧：用 "risograph print" 模拟孔版印刷的颗粒感，配合 "limited color palette" 限制配色，反而比堆砌细节更有味道。',
     highlight: '限制配色，反而更有味道',
   },
   {
     date: '2026-07-23',
-    slug: 'cyberpunk-street-food',
+    slug: '3d-capsule-toy-kawaii-diorama',
     curatorNote:
-      '赛博朋克街景。这个 prompt 的精髓在于 "neon reflection on wet pavement"——不是直接画霓虹灯，而是画霓虹灯在湿地面上的倒影。间接表现比直接堆砌更高级。',
-    highlight: '间接表现比直接堆砌更高级',
+      '3D 胶囊玩具风格的城市微缩场景。这个 prompt 的精髓在于 "kawaii urban diorama"——把可爱和都市感结合，用 tilt-shift 镜头营造微缩模型的错觉。',
+    highlight: '可爱与都市的完美融合',
   },
 ]
 
