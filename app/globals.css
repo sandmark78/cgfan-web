@@ -118,38 +118,7 @@ body {
   pointer-events: none;
 }
 
-/* 两侧渐变遮罩（独立层，避免和 backdrop-filter 冲突） */
-.shell::after {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(
-    to right,
-    var(--cream-50) 0%,
-    transparent 20%,
-    transparent 80%,
-    var(--cream-50) 100%
-  );
-  z-index: 0;
-  pointer-events: none;
-}
 
-.dark .shell::before {
-  background: rgba(0, 0, 0, 0.4);
-}
-
-.dark .shell::after {
-  background: linear-gradient(
-    to right,
-    var(--cream-50) 0%,
-    transparent 15%,
-    transparent 85%,
-    var(--cream-50) 100%
-  );
-}
 
 /* 移动端：使用 scroll 避免 iOS 抖动 */
 @media (max-width: 640px) {

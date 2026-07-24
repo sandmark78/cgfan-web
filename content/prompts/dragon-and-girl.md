@@ -1,17 +1,16 @@
 ---
 title: "龙与少女"
-slug: Promote 
+slug: dragon-and-girl
 model: Midjourney
-category: 玄幻
-tags: []
+category: fantasy
+tags: [dragon, chinese-dragon, hanfu, fantasy, cinematic]
 difficulty: advanced
-cover: https://x.com/i/status/2080262813684015189
-date: '2026-07-24'
-source: 
-author: 
+cover: /images/prompts/dragon-and-girl.jpg
+date: 2026-07-24
+added: 2026-07-24
+source: https://x.com/i/status/2080262813684015189
+author: MartineArtB
 ---
-
-## Prompt
 
 A majestic white Chinese dragon gently resting beside a beautiful young Chinese woman, the woman peacefully sleeping with her forehead touching the dragon, intimate emotional connection, giant dragon protecting his beloved.
 
@@ -35,5 +34,3 @@ natural cinematic grading.
 
 Negative Prompt:
 low quality, blurry, deformed anatomy, extra limbs, ugly face, bad hands, oversaturated colors, cartoon, anime, CGI, watermark, logo, text, cropped, noisy
-
-
