@@ -7,6 +7,7 @@ import { ShareButton } from '@/components/prompt/share-button'
 import { PromptGrid } from '@/components/prompt/prompt-grid'
 import { DetailImage } from '@/components/prompt/detail-image'
 import { PromptTextBlock } from '@/components/prompt/prompt-text-block'
+import { PromptRecipeCard } from '@/components/prompt-recipe-card'
 import { createClient } from '@/lib/supabase/server'
 import { getCategoryLabel } from '@/lib/category-map'
 import Link from 'next/link'
@@ -337,6 +338,19 @@ export default async function PromptDetailPage({
           </div>
         </div>
       )}
+
+      {/* Prompt 食谱卡 */}
+      <div className="mt-12">
+        <h2 className="font-serif text-xl font-bold text-gray-900 dark:text-white">
+          生成分享卡片
+        </h2>
+        <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+          下载精美的 Prompt 食谱卡，分享到社交媒体
+        </p>
+        <div className="mt-6">
+          <PromptRecipeCard prompt={prompt} />
+        </div>
+      </div>
 
       {/* JSON-LD 结构化数据 */}
       <script

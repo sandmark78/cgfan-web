@@ -2,6 +2,7 @@ import { createClient } from '@/lib/supabase/server'
 import { redirect } from 'next/navigation'
 import { getAllPrompts } from '@/lib/prompts'
 import { PromptCard } from '@/components/prompt/prompt-card'
+import { AestheticPersonality } from '@/components/aesthetic-personality'
 
 export const runtime = 'edge'
 
@@ -31,12 +32,26 @@ export default async function DashboardPage() {
   const likedPrompts = allPrompts.filter((p) => likedSlugs.has(p.slug))
   const favoritePrompts = allPrompts.filter((p) => favoriteSlugs.has(p.slug))
 
+  // 准备美学人格分析数据
+  const aestheticData = allPrompts.map((p) => ({
+    slug: p.slug,
+    title: p.title,
+    tags: p.tags,
+    category: p.category,
+    cover: p.cover,
+  }))
+
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="mb-8">
         <h1 className="text-3xl font-bold">我的中心</h1>
         <p className="mt-2 text-zinc-400">管理你的点赞和收藏</p>
       </div>
+
+      {/* 美学人格 */}
+      <section className="mb-12">
+        <AestheticPersonality allPrompts={aestheticData} />
+      </section>
 
       {/* 统计卡片 */}
       <div className="mb-8 grid grid-cols-1 gap-4 sm:grid-cols-2">

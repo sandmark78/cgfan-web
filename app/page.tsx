@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { getAllPrompts, getAllCategories } from '@/lib/prompts'
 import { PromptGrid } from '@/components/prompt/prompt-grid'
 import { getCategoryLabel, getCategoryIcon } from '@/lib/category-map'
+import { DailyFeature } from '@/components/daily-feature'
 
 export const runtime = 'edge'
 
@@ -32,6 +33,9 @@ export default function Home() {
           </Link>
         </div>
       </div>
+
+      {/* 每日一味 - 今日推荐 */}
+      <DailyFeature />
 
       {/* 分类 chips */}
       {categories.length > 0 && (
