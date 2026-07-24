@@ -335,20 +335,13 @@ function main() {
   
   walkDir(contentDir);
   
-  // 按 added 字段排序（最新的在前），同一天按推文 ID 排序
+  // 按 mtime（文件修改时间=实际上传时间）升序排列
+  // 最早上传的在前，最新上传的在最后 → "新上传的排在后面"
+  // 首页和探索页通过 reverse() 实现"最新优先"展示
   allPrompts.sort((a, b) => {
-    const dateA = a.added || a.date || '1970-01-01';
-    const dateB = b.added || b.date || '1970-01-01';
-    const dateCompare = dateB.localeCompare(dateA);
-    
-    // 日期相同，按推文 ID 排序（ID 越大越新）
-    if (dateCompare === 0) {
-      const idA = (a.source || '').match(/\/status\/(\d+)/)?.[1] || '0';
-      const idB = (b.source || '').match(/\/status\/(\d+)/)?.[1] || '0';
-      return idB.localeCompare(idA);
-    }
-    
-    return dateCompare;
+    const mtimeA = (a as any).mtime || 0;
+    const mtimeB = (b as any).mtime || 0;
+    return mtimeA - mtimeB;
   });
   
   // 写入 JSON

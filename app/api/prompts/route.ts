@@ -12,6 +12,8 @@ export async function GET(request: NextRequest) {
   const q = searchParams.get('q')
 
   let prompts = getAllPrompts()
+  // 数据已按上传时间升序排列，API 需要返回最新优先
+  prompts = [...prompts].reverse()
 
   // 应用筛选
   if (q) {

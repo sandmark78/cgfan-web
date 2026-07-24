@@ -12,7 +12,9 @@ export const runtime = 'edge'
 export default function Home() {
   const prompts = getAllPrompts()
   const categories = getAllCategories()
-  const latestPrompts = prompts.slice(0, 12)
+  // 数据已按上传时间升序排列（最早上传在前，最新上传在后）
+  // 首页需要显示最新上传的12条，所以从末尾取
+  const latestPrompts = [...prompts].reverse().slice(0, 12)
 
   return (
     <div className="py-3 sm:py-6">

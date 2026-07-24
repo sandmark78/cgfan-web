@@ -79,6 +79,8 @@ export default async function ExplorePage({
 
   // 根据筛选条件获取提示词
   let prompts = getAllPrompts()
+  // 数据已按上传时间升序排列，探索页需要显示最新优先（倒序）
+  prompts = [...prompts].reverse()
   let activeFilter = ''
 
   if (q) {
