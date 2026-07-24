@@ -69,12 +69,20 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className={`${geistSans.variable} ${geistMono.variable} relative min-h-screen overflow-x-hidden`}>
+        {/* 可访问性：跳到主要内容 */}
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-green-500 focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:shadow-lg"
+        >
+          跳到主要内容
+        </a>
+        
         {/* 背景层 */}
         <div className="app-bg" />
 
         <div className="relative z-10 flex min-h-screen flex-col">
           <Header />
-          <main className="flex-1 shell">{children}</main>
+          <main id="main-content" className="flex-1 shell">{children}</main>
           <Footer />
         </div>
       </body>

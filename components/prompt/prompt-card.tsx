@@ -85,74 +85,70 @@ export function PromptCard({ prompt, priority = false }: PromptCardProps) {
   const summary = extractSummary(prompt)
 
   return (
-    <Link
-      href={`/prompt/${prompt.slug}`}
-      className="glass-card group block overflow-hidden"
-    >
-      <div className="card-content p-4">
+    <article className="glass-card group relative overflow-hidden rounded-2xl">
+      <Link
+        href={`/prompt/${prompt.slug}`}
+        className="block"
+        aria-label={`查看 ${prompt.title} 的完整提示词`}
+      >
         {/* 封面图 */}
-        <div className="relative aspect-[4/3] overflow-hidden rounded-xl">
+        <div className="relative aspect-[4/3] overflow-hidden">
           <PromptImage src={prompt.cover} alt={prompt.title} priority={priority} />
+          
           {/* 模型标签 */}
-          <div className="absolute left-3 top-3">
-            <span className="rounded-full bg-black/60 px-3 py-1 text-xs font-medium text-white backdrop-blur-sm">
+          <div className="absolute top-3 left-3 z-10">
+            <span className="rounded-full bg-black/60 px-2.5 py-1 text-xs font-medium text-white backdrop-blur-sm">
               {prompt.model}
             </span>
           </div>
+
           {/* 难度标签 */}
-          <div className="absolute right-3 top-3">
-            <span className={`rounded-full px-3 py-1 text-xs font-medium ${difficultyColor}`}>
+          <div className="absolute top-3 right-3 z-10">
+            <span className={`rounded-full px-2.5 py-1 text-xs font-medium ${difficultyColor}`}>
               {difficultyLabel}
             </span>
           </div>
         </div>
 
-        {/* 标题 */}
-        <h3 className="mt-4 line-clamp-1 text-base font-semibold text-gray-900 dark:text-white">
-          {prompt.title}
-        </h3>
+        {/* 内容区 */}
+        <div className="p-4">
+          {/* 标题 */}
+          <h3 className="mb-2 line-clamp-1 text-base font-semibold text-gray-900 dark:text-white">
+            {prompt.title}
+          </h3>
 
-        {/* 提示词摘要 - 统一 3 行 */}
-        <p className="card-text text-gray-600 dark:text-gray-300">
-          {summary}
-        </p>
+          {/* 摘要 */}
+          <p className="mb-3 line-clamp-2 text-sm text-gray-600 dark:text-gray-400">
+            {summary}
+          </p>
 
-        {/* 标签 */}
-        <div className="flex flex-wrap gap-2">
-          {prompt.tags.slice(0, 3).map((tag) => (
-            <span
-              key={tag}
-              className="rounded-full bg-gray-100 px-2.5 py-1 text-xs text-gray-600 dark:bg-gray-800 dark:text-gray-400"
-            >
-              #{tag}
-            </span>
-          ))}
-        </div>
-
-        {/* 底部操作区 - 锁在同一基线 */}
-        <div className="card-footer">
-          {/* 点赞 */}
-          <div className="flex items-center gap-1.5 text-gray-500 dark:text-gray-400">
-            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-              />
-            </svg>
-            <span className="text-xs">{likeCount}</span>
+          {/* 标签 */}
+          <div className="mb-3 flex flex-wrap gap-1.5">
+            {prompt.tags.slice(0, 3).map((tag) => (
+              <span
+                key={tag}
+                className="rounded-full bg-gray-100 px-2 py-0.5 text-xs text-gray-600 dark:bg-gray-800 dark:text-gray-400"
+              >
+                #{tag}
+              </span>
+            ))}
           </div>
 
-          {/* 作者头像 */}
-          <div className="flex items-center gap-2">
-            <div className="h-6 w-6 rounded-full bg-gradient-to-br from-green-400 to-blue-500" />
-            <span className="text-xs text-gray-500 dark:text-gray-400">
-              {prompt.author}
-            </span>
+          {/* 底部信息 */}
+          <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+            <div className="flex items-center gap-1.5">
+              <div className="h-5 w-5 rounded-full bg-gradient-to-br from-green-400 to-blue-500" />
+              <span className="text-xs">{prompt.author}</span>
+            </div>
+            <div className="flex items-center gap-1">
+              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+              <span>{likeCount}</span>
+            </div>
           </div>
         </div>
-      </div>
-    </Link>
+      </Link>
+    </article>
   )
 }

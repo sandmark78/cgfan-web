@@ -85,14 +85,16 @@ export default function Header() {
         {/* 搜索框 - 桌面端 */}
         <form onSubmit={handleSearch} className="hidden md:flex flex-1 max-w-md mx-8">
           <div className="relative w-full">
+            <label htmlFor="header-search" className="sr-only">搜索提示词</label>
             <input
+              id="header-search"
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="搜索提示词..."
               className="w-full rounded-full border border-gray-200 bg-white/50 px-4 py-2 pl-10 text-sm outline-none backdrop-blur-sm transition-all focus:border-green-500 focus:bg-white dark:border-gray-700 dark:bg-gray-800/50 dark:text-white dark:focus:border-green-400"
             />
-            <button type="submit" className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-green-500 transition-colors">
+            <button type="submit" className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-green-500 transition-colors" aria-label="搜索">
               <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
