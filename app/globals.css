@@ -137,45 +137,54 @@ body {
 }
 
 /* ═══════════════════════════════════════════
-   浅色毛玻璃 v2 — 奶油水晶质感
+   浅色毛玻璃 v2 — 清透绿意
+   核心：玻璃中性纯白，让背景的绿透出来
    ═══════════════════════════════════════════ */
 
-/* 浅色导航栏 */
+/* ── 导航栏 ── */
 .glass {
-  background: linear-gradient(180deg, rgba(255,254,250,.85), rgba(253,249,240,.92));
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.78) 0%,
+    rgba(253, 255, 253, 0.88) 100%
+  );
   border: none !important;
   box-shadow:
-    0 0 0 1px rgba(255,255,255,.5),
-    0 1px 0 0 rgba(255,255,255,.8) inset,
-    0 4px 24px -4px rgba(120,90,50,.10),
-    0 1px 4px rgba(120,90,50,.05);
-  -webkit-backdrop-filter: blur(24px) saturate(1.2);
-  backdrop-filter: blur(24px) saturate(1.2);
+    0 0 0 1px rgba(255, 255, 255, 0.55),
+    0 1px 0 0 rgba(255, 255, 255, 0.85) inset,
+    0 4px 24px -4px rgba(40, 70, 50, 0.09),
+    0 1px 4px rgba(40, 70, 50, 0.04);
+  -webkit-backdrop-filter: blur(20px) saturate(1.35);
+  backdrop-filter: blur(20px) saturate(1.35);
   outline: none !important;
   isolation: isolate;
 }
 
-/* 浅色卡片 - 奶油水晶 */
+/* ── 卡片 ── */
 .glass-card {
   position: relative;
-  background: linear-gradient(168deg, rgba(255,254,250,.78), rgba(253,249,240,.88));
+  background: linear-gradient(
+    168deg,
+    rgba(255, 255, 255, 0.68) 0%,
+    rgba(252, 255, 252, 0.84) 100%
+  );
   border: none;
   border-radius: var(--radius);
   box-shadow:
-    0 0 0 1px rgba(255,255,255,.55),
-    0 0 0 2px rgba(180,158,120,.08),
-    0 1px 0 0 rgba(255,255,255,.9) inset,
-    0 -1px 0 0 rgba(160,140,110,.06) inset,
-    0 8px 28px -6px rgba(120,90,50,.12),
-    0 2px 8px -2px rgba(120,90,50,.07);
-  -webkit-backdrop-filter: blur(20px) saturate(1.25);
-  backdrop-filter: blur(20px) saturate(1.25);
-  transition: transform .35s cubic-bezier(.22,1,.36,1),
-              box-shadow .35s cubic-bezier(.22,1,.36,1);
+    0 0 0 1px rgba(255, 255, 255, 0.55),
+    0 0 0 2px rgba(120, 150, 130, 0.08),
+    0 1px 0 0 rgba(255, 255, 255, 0.92) inset,
+    0 -1px 0 0 rgba(100, 130, 110, 0.05) inset,
+    0 8px 28px -6px rgba(40, 70, 50, 0.10),
+    0 2px 8px -2px rgba(40, 70, 50, 0.05);
+  -webkit-backdrop-filter: blur(16px) saturate(1.4);
+  backdrop-filter: blur(16px) saturate(1.4);
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1);
   overflow: hidden;
 }
 
-/* 浅色卡片顶部高光 */
+/* ── 卡片顶部高光 ── */
 .glass-card::before {
   content: '';
   position: absolute;
@@ -183,22 +192,27 @@ body {
   left: 0;
   right: 0;
   height: 45%;
-  background: linear-gradient(180deg, rgba(255,255,255,.35), rgba(255,255,255,.08) 50%, transparent);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.38) 0%,
+    rgba(255, 255, 255, 0.10) 50%,
+    transparent 100%
+  );
   pointer-events: none;
   border-radius: var(--radius) var(--radius) 0 0;
   z-index: 0;
 }
 
-/* 浅色卡片 hover */
+/* ── 卡片 Hover ── */
 .glass-card:hover {
   transform: translateY(-4px);
   box-shadow:
-    0 0 0 1px rgba(255,255,255,.7),
-    0 0 0 2px rgba(180,158,120,.12),
-    0 1px 0 0 rgba(255,255,255,.95) inset,
-    0 -1px 0 0 rgba(160,140,110,.06) inset,
-    0 16px 44px -8px rgba(120,90,50,.18),
-    0 6px 16px -4px rgba(120,90,50,.10);
+    0 0 0 1px rgba(255, 255, 255, 0.7),
+    0 0 0 2px rgba(120, 150, 130, 0.14),
+    0 1px 0 0 rgba(255, 255, 255, 0.95) inset,
+    0 -1px 0 0 rgba(100, 130, 110, 0.05) inset,
+    0 16px 44px -8px rgba(40, 70, 50, 0.16),
+    0 6px 16px -4px rgba(40, 70, 50, 0.08);
 }
 
 /* ═══════════════════════════════════════════
@@ -299,43 +313,51 @@ body {
   border-color: rgba(255,255,255,.15);
 }
 
-/* ===== 搜索框内凹效果 ===== */
+/* ── 搜索框：内凹，清透 ── */
 input[type="text"],
 input[type="search"] {
-  background: rgba(255,254,250,.55);
-  border: 1px solid rgba(180,158,120,.15);
-  box-shadow: 0 1px 3px rgba(120,90,50,.06) inset, 0 1px 0 0 rgba(255,255,255,.6);
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.50);
+  border: 1px solid rgba(120, 150, 130, 0.18);
+  box-shadow:
+    0 1px 3px rgba(40, 70, 50, 0.05) inset,
+    0 1px 0 0 rgba(255, 255, 255, 0.6);
+  -webkit-backdrop-filter: blur(12px) saturate(1.2);
+  backdrop-filter: blur(12px) saturate(1.2);
   transition: all 0.25s ease;
 }
 
 input[type="text"]:focus,
 input[type="search"]:focus {
-  background: rgba(255,254,250,.75);
-  border-color: rgba(217,119,6,.3);
-  box-shadow: 0 1px 3px rgba(120,90,50,.04) inset, 0 0 0 3px rgba(217,119,6,.08);
+  background: rgba(255, 255, 255, 0.72);
+  border-color: rgba(80, 140, 100, 0.35);
+  box-shadow:
+    0 1px 3px rgba(40, 70, 50, 0.03) inset,
+    0 0 0 3px rgba(80, 140, 100, 0.10);
   outline: none;
 }
 
-/* ===== 浅色背景叠层 ===== */
+/* ── 背景叠层：让绿更润 ── */
 .app-bg::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(60% 60% at 50% 45%, rgba(253,246,236,.35), transparent 70%);
+  background: radial-gradient(
+    60% 60% at 50% 45%,
+    rgba(240, 250, 240, 0.30) 0%,
+    transparent 70%
+  );
   pointer-events: none;
 }
 
-/* ===== 全屏 blur 层优化 ===== */
+/* ── 全屏 blur 层 ── */
 .shell::before {
-  -webkit-backdrop-filter: blur(16px) saturate(1.1);
-  backdrop-filter: blur(16px) saturate(1.1);
+  -webkit-backdrop-filter: blur(14px) saturate(1.2);
+  backdrop-filter: blur(14px) saturate(1.2);
 }
 
-/* ===== 选中色 ===== */
+/* ── 选中色：绿 ── */
 ::selection {
-  background: rgba(217,119,6,.15);
+  background: rgba(80, 160, 100, 0.18);
   color: inherit;
 }
 
@@ -344,7 +366,7 @@ input[type="search"]:focus {
   color: inherit;
 }
 
-/* ===== 滚动条 ===== */
+/* ── 滚动条 ── */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -355,12 +377,12 @@ input[type="search"]:focus {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(120,90,50,.15);
+  background: rgba(40, 70, 50, 0.14);
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(120,90,50,.25);
+  background: rgba(40, 70, 50, 0.24);
 }
 
 .dark ::-webkit-scrollbar-thumb {
@@ -371,17 +393,9 @@ input[type="search"]:focus {
   background: rgba(255,255,255,.2);
 }
 
-/* 按钮/Chip 按压反馈 */
-.param-chip:active,
-.category-chip:active,
-button:active {
-  transform: scale(0.96);
-  transition-duration: 0.1s;
-}
-
-/* 焦点样式 */
+/* ── 焦点 ── */
 :focus-visible {
-  outline: 2px solid var(--green-500);
+  outline: 2px solid rgba(80, 140, 100, 0.5);
   outline-offset: 2px;
   border-radius: 4px;
 }
@@ -474,54 +488,33 @@ button:active {
   gap: 8px;
 }
 
-/* Chip 基础样式 */
+/* ── Chip / 标签 ── */
 .param-chip,
 .category-chip {
-  background: rgba(255,254,250,.65);
-  border: 1px solid rgba(255,255,255,.6);
-  border-radius: var(--radius-full);
-  box-shadow: 0 1px 3px rgba(120,90,50,.06), 0 1px 0 0 rgba(255,255,255,.7) inset;
-  -webkit-backdrop-filter: blur(10px) saturate(1.15);
-  backdrop-filter: blur(10px) saturate(1.15);
-  transition: all .25s cubic-bezier(.22,1,.36,1);
-  cursor: pointer;
-}
-
-.param-chip {
-  padding: 6px 12px;
-  font-size: 12px;
-  color: var(--green-700);
-}
-
-.category-chip {
-  padding: 8px 16px;
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--text-primary);
-}
-
-.dark .param-chip {
-  color: var(--green-500);
+  background: rgba(255, 255, 255, 0.60);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  box-shadow:
+    0 1px 3px rgba(40, 70, 50, 0.06),
+    0 1px 0 0 rgba(255, 255, 255, 0.75) inset;
+  -webkit-backdrop-filter: blur(10px) saturate(1.3);
+  backdrop-filter: blur(10px) saturate(1.3);
+  transition: all 0.25s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .param-chip:hover,
 .category-chip:hover {
-  background: rgba(255,254,250,.85);
-  border-color: rgba(255,255,255,.8);
-  box-shadow: 0 2px 8px rgba(120,90,50,.10), 0 1px 0 0 rgba(255,255,255,.9) inset;
+  background: rgba(255, 255, 255, 0.82);
+  border-color: rgba(255, 255, 255, 0.85);
+  box-shadow:
+    0 2px 8px rgba(40, 70, 50, 0.10),
+    0 1px 0 0 rgba(255, 255, 255, 0.9) inset;
   transform: translateY(-1px);
-}
-
-.category-chip.active {
-  background: var(--green-500);
-  color: white;
-  border-color: var(--green-500);
 }
 
 .param-chip:active,
 .category-chip:active {
-  transform: scale(.97) translateY(0);
-  transition-duration: .1s;
+  transform: scale(0.97);
+  transition-duration: 0.1s;
 }
 
 /* ===== 按钮样式 ===== */
