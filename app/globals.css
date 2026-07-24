@@ -170,16 +170,14 @@ body {
   /* ② 玻璃棱边：可见的白色边框 */
   border: 1px solid rgba(255, 255, 255, 0.50);
   border-radius: var(--radius);
-  /* ③ 四层光影 */
+  /* ③ 三层光影（移除底部内阴影，避免双线） */
   box-shadow:
     /* 外阴影：绿灰色，柔和 */
     0 8px 32px -4px rgba(30, 60, 40, 0.08),
     /* 顶部棱边光：亮线，模拟光打在玻璃上沿 */
     0 1px 0 0 rgba(255, 255, 255, 0.90) inset,
     /* 左侧棱边光：稍弱 */
-    1px 0 0 0 rgba(255, 255, 255, 0.35) inset,
-    /* 底部内影：玻璃厚度 */
-    0 -1px 0 0 rgba(30, 60, 40, 0.04) inset;
+    1px 0 0 0 rgba(255, 255, 255, 0.35) inset;
   /* ④ 模糊 + 高饱和 + 微提亮 = 背后的绿鲜活透亮 */
   -webkit-backdrop-filter: blur(14px) saturate(1.65) brightness(1.04);
   backdrop-filter: blur(14px) saturate(1.65) brightness(1.04);
