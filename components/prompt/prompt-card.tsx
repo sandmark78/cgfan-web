@@ -1,15 +1,29 @@
+'use client'
+
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import type { PromptData } from '@/lib/prompts'
+import { createClient } from '@/lib/supabase/client'
 import { PromptImage } from './prompt-image'
 
 interface PromptCardProps {
-  prompt: PromptData
+  prompt: {
+    slug: string
+    title: string
+    cover: string
+    model: string
+    difficulty: 'beginner' | 'intermediate' | 'advanced'
+    tags: string[]
+    prompt: string
+    negativePrompt?: string
+    author?: string
+    likeCount?: number
+  }
 }
 
 /**
  * 从提示词文本中提取干净的摘要（去除重复的标题）
  */
-function extractSummary(prompt: PromptData): string {
+function extractSummary(prompt: PromptCardProps['prompt']): string {
   const fullText = prompt.prompt || ''
   const title = prompt.title || ''
   
@@ -37,6 +51,24 @@ function extractSummary(prompt: PromptData): string {
  * 提示词卡片 - 毛玻璃效果 + 整齐对齐
  */
 export function PromptCard({ prompt }: PromptCardProps) {
+  const [likeCount, setLikeCount] = useState(prompt.likeCount || 0)
+  const supabase = createClient()
+
+  // 从 Supabase 获取实时点赞数
+  useEffect(() => {
+    const fetchLikeCount = async () => {
+      const { count } = await supabase
+        .from('likes')
+        .select('*', { count: 'exact', head: true })
+        .eq('prompt_slug', prompt.slug)
+
+      if (count !== null) {
+        setLikeCount(count)
+      }
+    }
+
+    fetchLikeCount()
+  }, [prompt.slug, supabase])
   const difficultyLabel = {
     beginner: '入门',
     intermediate: '进阶',
@@ -108,7 +140,7 @@ export function PromptCard({ prompt }: PromptCardProps) {
                 d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
               />
             </svg>
-            <span className="text-xs">{prompt.likeCount || 0}</span>
+            <span className="text-xs">{likeCount}</span>
           </div>
 
           {/* 作者头像 */}
