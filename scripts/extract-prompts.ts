@@ -322,11 +322,11 @@ function main() {
   
   walkDir(contentDir);
   
-  // 按上传日期排序（最旧的在前），优先用 added，没有则 fallback 到 date
+  // 按上传日期排序（最新的在前），优先用 added，没有则 fallback 到 date
   allPrompts.sort((a, b) => {
     const dateA = new Date(a.added || a.date || '1970-01-01');
     const dateB = new Date(b.added || b.date || '1970-01-01');
-    return dateA.getTime() - dateB.getTime();
+    return dateB.getTime() - dateA.getTime();
   });
   
   // 写入 JSON
