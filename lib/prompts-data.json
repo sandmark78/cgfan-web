@@ -1,5 +1,74 @@
 [
   {
+    "title": "水彩故事书插画生成器",
+    "slug": "watercolor-storybook-illustration",
+    "model": "ChatGPT",
+    "category": "style",
+    "tags": [
+      "水彩",
+      "故事书",
+      "插画",
+      "儿童",
+      "极简"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/2080652535405400276.jpg",
+    "date": "Fri Jul 24 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-24",
+    "source": "https://x.com/MissDelulu9/status/2080652535405400276",
+    "author": "Eesha",
+    "prompt": "Whimsical watercolor storybook illustration of [HUMAN] and [ANIMAL] captured in a heartfelt [POSE]. Style the human in [CLOTHING] with a gentle, desaturated [PALETTE] palette. Design the characters with elegant elongated forms, simple rounded faces, tiny expressive dot eyes, and a soft childlike charm. Add delicate sepia sketch strokes, layered transparent watercolor washes, natural pigment variations, rough handmade paper texture, and softly bleeding edges. Create a minimalist airy composition with a warm emotional tone, subtle shadows, and minimal background elements for a timeless illustrated fairytale feeling.",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1784905220563.0742
+  },
+  {
+    "title": "产品爆炸商业摄影生成器",
+    "slug": "product-explosion-commercial-photography",
+    "model": "Gemini",
+    "category": "commercial",
+    "tags": [
+      "产品",
+      "商业",
+      "摄影",
+      "爆炸",
+      "高速"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/2080633180277879240.jpg",
+    "date": "Fri Jul 24 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-24",
+    "source": "https://x.com/AiwithLariab/status/2080633180277879240",
+    "author": "Laraib Fatima",
+    "prompt": "A high-speed commercial photograph capturing a dynamic explosion of [Isi Objek Utama & Jumlahnya, misal: assorted gourmet burgers / various fresh fruits / colorful sneakers] bursting upwards out of [Wadah Asal, misal: a takeaway box / a rustic wooden crate / an open shoebox]. Freeze motion effect shows [Partikel Pendukung yang Terbang, misal: flying crumbs, sauce splashes, ingredients / water droplets, fruit slices / laces, rubber pieces, dust] suspended in mid-air surrounding the main subjects. Some elements are breaking apart or deconstructing. Hyper-realistic textures, dramatic studio lighting highlighting details against a dark, moody textured background. Vertical composition, 8k resolution, vibrant colors, energetic atmosphere.",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1784905238807.3877
+  },
+  {
+    "title": "扁平矢量景观剪影生成器",
+    "slug": "flat-vector-landscape-silhouette",
+    "model": "GPT Image 2",
+    "category": "style",
+    "tags": [
+      "矢量",
+      "剪影",
+      "扁平",
+      "极简",
+      "双色"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/2080629318309556345.jpg",
+    "date": "Fri Jul 24 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-24",
+    "source": "https://x.com/Gdgtify/status/2080629318309556345",
+    "author": "Gadgetify",
+    "prompt": "Render_Target = ( Flat_Vector_Landscape_Of_[$FRANCHISE] * 2.0 ) + ( Sky_Cut_Into_Silhouette_Profile_Of_[$FRANCHISE]_Character * 2.0 ) + ( Gestalt_Negative_Space_Illusion * 1.8 ) + ( 2_Color_Screenprint_Aesthetic * 1.5 ) + ( Olly_Moss_Minimalist_Style * 1.5 ) + ( Heavy_Paper_Texture * 1.0 ) - ( Gradients / 2.0 ) - ( 3D_Shading / 2.0 ) - ( Faces_Drawn_In_The_Sky / 3.0 )",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1784905194498.2341
+  },
+  {
     "title": "Terre d'Hermès 沙漠香水海报生成器",
     "slug": "terre-hermes-desert-perfume-poster",
     "model": "GPT Image 2",
@@ -21,6 +90,29 @@
     "negativePrompt": "",
     "parameters": {},
     "mtime": 1784891486119.504
+  },
+  {
+    "title": "教堂芭蕾舞者剪影 - 神圣背光人像",
+    "slug": "cathedral-ballerina-silhouette-backlight",
+    "model": "GPT Image 2",
+    "category": "portrait",
+    "tags": [
+      "人像",
+      "剪影",
+      "教堂",
+      "芭蕾",
+      "背光"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/2080576844915708137.jpg",
+    "date": "Fri Jul 24 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-24",
+    "source": "https://x.com/ou_zhen599/status/2080576844915708137",
+    "author": "Loriel.AI",
+    "prompt": "Create an ultra-premium cinematic portrait illustration that fully preserves the exact visual logic, atmosphere, and compositional structure of a grand backlit cathedral scene: a solitary female ballet dancer stands centered in front of a towering Gothic stained-glass window, with powerful radiant light streaming through the glass behind her, turning her figure into a dark elegant silhouette held inside a sacred atmosphere of dust, haze, and luminous beams. The image must feel realistic, ethereal, solemn, and emotionally breathtaking. The dancer must remain mostly in soft shadow, with only subtle edge light and faint body shaping visible. No visible text, no logo, no title, no typography of any kind.\n\nCore composition:\nUse a strict vertical composition with strong symmetry and monumental stillness. The dancer must stand in the exact center foreground, full body visible, aligned with the middle axis of the stained-glass window behind her. The towering Gothic window occupies most of the upper frame, while the dancer anchors the lower center. Light rays must radiate outward from behind her body in a halo-like fan, filling the cathedral space with depth and sacred drama. The architecture on both sides should frame the scene quietly, reinforcing the sense of height and reverence.\n\nMilk Cloud Orbit + Cream Halo Transit direction:\nPush the strongest existing qualities further: intensify the purity of the dancer's dark silhouette, strengthen the concentration and elegance of the backlight behind her, and make the volumetric beams more layered, visible, and emotionally resonant. Keep the exact same structural skeleton, but enrich the stained-glass window with deeper, older, more intricate Gothic patterning and slightly darker jewel-tone richness, so the cathedral feels more ancient and more sacred. The final result should feel calmer, holier, more atmospheric, and more collector-grade, like a rare illuminated vision inside an old cathedral.\n\nMain subject:\nShow a healthy athletic Western female ballet dancer with a refined elongated body, elegant neck, controlled posture, and quiet stage presence. She stands en pointe or in a poised ballet stance, body relaxed yet disciplined, with arms held softly and naturally. Her face must not be clearly readable; she should feel like a near-silhouette held inside the backlight. The mood comes from posture, proportion, and the relationship to light, not facial expression.\n\nShadow and silhouette logic:\nThe dancer must remain mostly in very soft dark shadow, with only minimal reflected light shaping the shoulders, waist, arms, legs, and ballet costume contours. Do not overlight the face or body. The figure should feel like a dark living sculpture suspended between visibility and mystery. Her silhouette must be elegant, clean, and emotionally magnetic, never flat and never fully blacked out. The edge light around her outline should feel slightly more refined and sacred, never theatrical.\n\nLighting and mood:\nUse extremely delicate soft backlight with exquisite tonal transitions. The brightest area must come from the window center behind the dancer, creating radiant halo pressure while leaving the figure itself in graceful shadow. Allow subtle reflected floor light and faint edge illumination on the dancer's form. The mood must be solemn, sacred, quiet, emotionally elevated, and cinematic, with a sense of mystery and transcendence.\n\nColor direction:\nUse a restrained sacred palette of deep charcoal shadow, soft black, pale gold-white light, aged jewel-tone stained glass, smoky blue-gray haze, muted violet, deep crimson accents, and warm ivory highlights. Keep the colors rich but controlled, elegant, old, and reverent, never flashy.\n\nPrint grain and sharpness:\nApply a strong heavy archival print-grain treatment across the full image. The artwork must feel like a rare oversized collector print with dense analog grain, visible paper tooth, subtle scan texture, and tactile surface richness.\n\nNegative prompt:\nvisible text, logo, title, watermark, letters, numbers, typography, readable symbols, fully lit face, bright frontal lighting, cartoon ballerina, childish fantasy effects, low-detail stained glass, plastic costume, bad anatomy, extra limbs, messy composition, oversaturated colors, cheap glow effects, flat lighting, modern church interior, cluttered background",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1784905208660.8257
   },
   {
     "title": "复古户外杂志海报生成器",
