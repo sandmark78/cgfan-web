@@ -335,11 +335,20 @@ function main() {
   
   walkDir(contentDir);
   
-  // 按 added 字段排序（最新的在前）
+  // 按 added 字段排序（最新的在前），同一天按推文 ID 排序
   allPrompts.sort((a, b) => {
     const dateA = a.added || a.date || '1970-01-01';
     const dateB = b.added || b.date || '1970-01-01';
-    return dateB.localeCompare(dateA);
+    const dateCompare = dateB.localeCompare(dateA);
+    
+    // 日期相同，按推文 ID 排序（ID 越大越新）
+    if (dateCompare === 0) {
+      const idA = (a.source || '').match(/\/status\/(\d+)/)?.[1] || '0';
+      const idB = (b.source || '').match(/\/status\/(\d+)/)?.[1] || '0';
+      return idB.localeCompare(idA);
+    }
+    
+    return dateCompare;
   });
   
   // 写入 JSON
