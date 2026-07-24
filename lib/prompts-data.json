@@ -1,5 +1,51 @@
 [
   {
+    "title": "纽约旅行水彩插画",
+    "slug": "new-york-travel-watercolor",
+    "model": "GPT-Image2",
+    "category": "style",
+    "tags": [
+      "水彩",
+      "插画",
+      "旅行",
+      "纽约",
+      "自由女神"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/2080691509817639347.jpg",
+    "date": "Fri Jul 24 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-24",
+    "source": "https://x.com/Sairah_0/status/2080691509817639347",
+    "author": "Sairah",
+    "prompt": "# 纽约旅行水彩插画\n\n## 提示词\n\nAn illustration featuring delicate watercolors and rich ink, depicting a young Korean woman in her 20s traveling in New York, standing on a ferry deck with the Statue of Liberty rising in the distance behind her. She holds the railing with one hand, her long hair and light trench coat lifted by the harbor breeze, looking up with a bright delighted smile. A small crossbody bag and a folded map complete her traveler styling. Hand-drawn-style line art, translucent watercolor rendering, high-quality paper texture, sophisticated sketch-like style, composition automatically adjusted to fit the subject, joyful and warm expression, soft colors, design that makes use of white space, completely white background, large margins on all four sides, subject centered, faint watercolor suggestion of seagulls and gentle water ripples, no text, logos, or watermarks, ultra-high resolution, for wallpaper, 3:4\n\n## 策展笔记\n\n纽约渡轮上的旅行瞬间，水彩与墨线交织，自由女神在远处若隐若现，海风吹起发丝与风衣，捕捉旅途中最纯粹的愉悦。",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1784912921733.2405
+  },
+  {
+    "title": "欧洲小吃海报生成器",
+    "slug": "european-snacks-poster-generator",
+    "model": "GPT-Image2",
+    "category": "commercial",
+    "tags": [
+      "海报",
+      "商业",
+      "插画",
+      "冒险地图",
+      "3D渲染"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/2080670591531483339.jpg",
+    "date": "Fri Jul 24 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-24",
+    "source": "https://x.com/Gdgtify/status/2080670591531483339",
+    "author": "Gadgetify",
+    "prompt": "# 欧洲小吃海报生成器\n\n## 提示词\n\ninput ::= [food_brand] + [food_product] + [promotion_type] + [delivery_or_party_theme]\n\n[concept]\nrender a vertical promotional poster as a hand-drawn mission map for delivering or sharing [food_product].\n\n[world]\nthe giant product package is the headquarters.\ntiny characters launch from it with delivery vehicles, balloons, ladders, parachutes, bikes, carts, ropes, signs, and party supplies.\ndashed routes, arrows, comic captions, and little map icons show the journey from box to craving.\n\n[layout]\n- big campaign headline at the top\n- giant product package as central headquarters\n- offer badge attached like an official mission seal\n- food reveal inside the package\n- doodle routes spreading outward to small scenes:\n  home delivery, picnic, office lunch, party table, late-night snack, celebration zone\n\n[art direction]\nadvertising poster meets illustrated adventure map.\nrealistic cardboard/product photography plus playful black ink doodles.\nlimited brand-color accents.\nwhitespace remains clean and premium.\n\n[negative]\n--no cluttered treasure map\n--no unrelated characters\n--no fake real logos unless supplied\n--no unreadable microtext\n--no generic delivery ad\n\n## 策展笔记\n\n将广告海报与手绘冒险地图结合，用虚线路线、箭头和漫画字幕展示产品从包装到消费者的旅程。",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1784912891457.8208
+  },
+  {
     "title": "水彩故事书插画生成器",
     "slug": "watercolor-storybook-illustration",
     "model": "ChatGPT",
@@ -113,6 +159,29 @@
     "negativePrompt": "",
     "parameters": {},
     "mtime": 1784905194498.2341
+  },
+  {
+    "title": "威士忌奢华海报",
+    "slug": "whisky-luxury-poster",
+    "model": "GPT-Image2",
+    "category": "commercial",
+    "tags": [
+      "威士忌",
+      "奢华",
+      "海报",
+      "商业摄影",
+      "3D渲染"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/2080615196691698043.jpg",
+    "date": "Fri Jul 24 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-24",
+    "source": "https://x.com/ou_zhen599/status/2080615196691698043",
+    "author": "Loriel.AI",
+    "prompt": "# 威士忌奢华海报\n\n## 提示词\n\nCreate an ultra-premium luxury whisky advertising poster for Johnnie Walker, built around one hyper-real Johnnie Walker bottle as the absolute hero product centered in the frame, surrounded by an intricate historical aura of sculptural amber whisky liquid, dark bronze ornamental forms, and compressed heritage symbols that suggest centuries of legacy without overwhelming the bottle. The image must feel rich, aristocratic, timeless, and monumental, like a world-class high-luxury spirits campaign. The product must remain the dominant protagonist, while the background and surrounding elements express the idea of history condensed into whisky. Use elegant English title typography, restrained official-feeling branding, minimal support text, and a composition with extreme impact but luxurious control.\n\nCore composition:\nUse a tall vertical composition with the Johnnie Walker bottle placed dead center or slightly lower-center, large and unmistakably dominant. The bottle must stand upright with majestic stillness. Around and behind it, build a layered sculptural background of swirling whisky liquid, dark bronze relief-like forms, circular medallion structures, heritage seals, ornamental metal textures, and subtle engraved historical motifs. These historical elements must feel compressed into one rich visual mass behind the bottle, like memory, lineage, trade, and craftsmanship flowing together. The overall composition must feel symmetrical or near-symmetrical, dense at the center, and elegantly contained.\n\nMilk Cloud Orbit + Cream Halo Transit direction:\nPush the strongest established qualities further: make the hero bottle more sovereign and still, make the amber whisky feel more like time in motion, and refine the historical background so it shifts from obvious decorative props into subtler, more elevated heritage signals. Keep the same central bottle-and-liquid skeleton, but replace part of the visible medallion-heavy language with more sophisticated historical textures such as oak-barrel grain memory, antique map engraving traces, trade-route echoes, archival metallic relief, blending-house heritage contours, and old-world insignia embedded into shadow. The result should feel richer, older, more noble, and more collectible, while remaining product-led.\n\nBrand transition logic:\nPreserve the exact same premium historical composition logic, but adapt every visual language detail to Johnnie Walker. The bottle silhouette, label proportion, glass geometry, historical cues, and heritage atmosphere must now reflect the iconic Johnnie Walker world: distinguished whisky heritage, old trade prestige, blending mastery, travel legacy, and gentlemanly strength. The scene must feel less like static aristocratic display and more like legacy in motion, built through time, craft, and journey.\n\nProduct realism:\nRender the Johnnie Walker bottle with obsessive realism and premium material fidelity. Show the correct iconic bottle silhouette with crystal-clear glass, deep amber whisky tone, warm internal glow, elegant label sharpness, embossed details, refined cap or neck treatment, and rich reflections. The bottle must feel heavy, iconic, expensive, and unmistakably Johnnie Walker. The glass should feel thick and tactile, the whisky warm and noble, and the label crisp, refined, and luxury-grade.\n\nHistorical support logic:\nExpress Johnnie Walker's heritage through refined visual symbols rather than clutter. Use compressed background elements such as antique medallions, embossed seals, old trade emblems, archival metallic rings, engraved compass-like forms, barrel-memory textures, subtle shipping or exploration references, blending-house heritage cues, and old-world relief patterns. These elements must remain secondary and integrated into the sculptural background, never reading like random props. They should feel like fragments of legacy suspended inside the whisky atmosphere.\n\nLiquid behavior:\nUse rich amber whisky as a major visual force. The liquid should curl, arc, fold, and swirl around the bottle in controlled sculptural forms, like history itself flowing around the product. Render it with world-class physical realism: thick glossy viscosity, warm internal glow, smooth tension, elegant splashes, glass-like edges, tiny droplets, and dynamic frozen movement. The whisky must feel noble, dense, and luxurious, never messy or cheap. It should partially frame and elevate the bottle, not bury it. The liquid should feel like a timeless orbit of legacy, motion, and memory.\n\nMaterial and ornamental detail:\nIntroduce dark bronze, antique gold, smoked metal, and aged luxury textures around the bottle. These may appear as medallion rims, engraved circular forms, archival plaques, heritage fragments, barrel-memory textures, old travel insignia logic, and ornamental traces lost in shadow. Everything must feel premium, tactile, and integrated into one sculptural environment. Avoid generic bar props or obvious vintage clichés.\n\nLighting:\nUse extremely delicate soft luxury lighting. The main illumination should make the whisky glow from within, highlighting the amber richness of the liquid and the bottle's sculptural glass edges. Use refined warm highlights, deep shadow transitions, subtle rim light, and controlled reflections on the heritage metal elements. The light must feel aristocratic, rich, and highly cinematic, never harsh, never overexposed.\n\nBackground:\nKeep the background dark, minimal, and rich, built from deep brown-black, smoked bronze, shadowed amber, and soft atmospheric darkness. The historical elements should emerge from this darkness like memory fragments. Avoid empty flat background, but also avoid busy scene-building. The bottle and the history mass behind it should feel like one unified throne of legacy.\n\nTypography and branding:\nAdd a refined English main title such as \"JOHNNIE WALKER\" in a premium editorial-luxury layout, with very restrained support text beneath if needed. Include subtle official-feeling logo or crest placement, but keep all text sparse, balanced, and elegant. Typography must feel high-end, timeless, and art-directed, never bulky, never noisy, never commercial in a cheap way.\n\nMood:\nluxurious, historical, noble, rich, timeless, sculptural, aristocratic, amber, collectible, monumental, refined\n\nRendering style:\nultra-premium Johnnie Walker luxury whisky campaign, centered hero bottle, sculptural amber whisky liquid, refined compressed historical imagery, dark bronze heritage textures, elegant English typography, official-feeling branding, cinematic luxury lighting, world-class spirits advertising aesthetic, 8k, collector-grade image quality\n\nNegative prompt:\ncheap liquor ad, cluttered bar props, weak bottle focus, messy splash, generic whisky bottle, plastic-looking glass, noisy background, oversized text, cheap gold effects, low-detail label, cartoon rendering, random historical props, overdecorated composition, low-resolution reflections, supermarket poster style\n\n## 策展笔记\n\n将威士忌的历史传承凝练为视觉语言——琥珀色酒液如时间之河环绕瓶身，青铜浮雕般的纹章象征百年工艺。不是用古董道具堆砌历史，而是让酒本身成为时间的容器。",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1784912953613.0579
   },
   {
     "title": "Terre d'Hermès 沙漠香水海报生成器",
@@ -274,6 +343,29 @@
     "negativePrompt": "",
     "parameters": {},
     "mtime": 1784874169429.2368
+  },
+  {
+    "title": "森林木屋人像",
+    "slug": "forest-cabin-portrait",
+    "model": "GPT-Image2",
+    "category": "portrait",
+    "tags": [
+      "人像",
+      "自然",
+      "森林",
+      "木屋",
+      "清新"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/2080510789065093167.jpg",
+    "date": "Fri Jul 24 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-24",
+    "source": "https://x.com/qoobee2036/status/2080510789065093167",
+    "author": "HeyGirls",
+    "prompt": "# 森林木屋人像\n\n## 提示词\n\nMain Subject:\n20-year-old gentle fresh East Asian young girl, messy low tied brown hair with loose stray hairs around face, light natural nude makeup, soft pale pink lips, clear round deer eyes, translucent cool fair delicate skin with tiny water droplets on shoulders, slender soft curvy figure, quiet serene forest healing temperament, fully barefoot\n\nPose, Movement & Expression:\nSitting sideways on rattan armchair on wooden cabin balcony, knees bent and legs folded, hands gently resting between thighs, upper body leaning slightly forward, gazing calmly straight toward camera, quiet tranquil relaxed expression\n\nClothing & Accessories:\nLight mint green glossy satin spaghetti strap slip dress, deep V neckline, side high slit, smooth reflective silk fabric, no extra jewelry accessories\n\nEnvironment & Atmosphere:\nWooden cabin balcony surrounded by dense lush green forest, dark wooden railings, abundant green foliage in background, dappled sunlight filtering through tree canopy, quiet secluded woodland cabin atmosphere, fresh natural summer forest vibe\n\nLight & Color:\nSoft diffused natural daylight filtering through trees, dappled tree shadows cast on skin and dress, low contrast gentle light and shadow, main color palette mint green, natural wood brown, fresh emerald green, low-saturation fresh natural tone, translucent warm glowing skin with subtle satin reflection\n\nComposition & Shot Angle:\n2:3 vertical portrait frame, medium full-body shot, eye-level shooting angle, character as visual center, shallow depth of field blurs background forest foliage, focus on girl's face and glossy satin slip dress\n\nStyle & Texture:\nFresh forest cabin daylight portrait photography, 8K ultra HD image quality, delicate authentic natural skin texture, clear smooth glossy satin fabric texture, tiny water droplet details, no excessive over-smoothing beauty retouch, subtle soft natural light film grain, bright transparent gentle portrait color grading, sharp high-definition hair and fabric details, realistic quiet lifelike portrait texture\n\n## 策展笔记\n\n森林木屋阳台上的清新人像，薄荷绿丝缎吊带裙与斑驳树影交织，呈现夏日林间的宁静治愈感。",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1784912907970.7456
   },
   {
     "title": "复古未来主义矢量旅行海报",
