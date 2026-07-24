@@ -184,36 +184,41 @@ export default async function PromptDetailPage({
 
         {/* 右侧：提示词信息 */}
         <div className="space-y-6">
-          <div className="glass-card p-6">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-3">
-                <div className="h-8 w-8 rounded-full bg-gradient-to-br from-green-400 to-blue-500" />
-                <div>
-                  <div className="text-xs text-gray-400 dark:text-gray-500">作者</div>
-                  <div className="text-xs font-semibold text-gray-900 dark:text-white">
-                    {prompt.author}
-                  </div>
-                </div>
+          {/* 来源归属 - 虚线框表示引用 */}
+          <div className="rounded-xl p-4 bg-white/50 dark:bg-zinc-800/50 border border-dashed border-gray-300 dark:border-zinc-600">
+            <div className="flex items-center justify-between flex-wrap gap-2">
+              <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
+                <span>提示词来自</span>
+                {prompt.source && (() => {
+                  const match = prompt.source.match(/x\.com\/([^/]+)\/status/);
+                  const username = match && match[1] !== 'i' ? match[1] : null;
+                  return username ? (
+                    <a
+                      href={`https://x.com/${username}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-medium text-green-600 dark:text-green-400 hover:underline"
+                    >
+                      @{username}
+                    </a>
+                  ) : (
+                    <span className="font-medium text-gray-900 dark:text-white">{prompt.author}</span>
+                  );
+                })()}
               </div>
-              {prompt.source && (() => {
-                const match = prompt.source.match(/x\.com\/([^/]+)\/status/);
-                const username = match && match[1] !== 'i' ? match[1] : null;
-                const linkUrl = username ? `https://x.com/${username}` : prompt.source;
-                const linkLabel = username ? '查看主页' : '查看原文';
-                return (
-                  <a
-                    href={linkUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-[10px]! font-semibold text-white bg-[var(--green-500)] hover:bg-[var(--green-600)] rounded-full px-3 py-1.5 transition-all hover:-translate-y-0.5"
-                  >
-                    <svg className="h-3 w-3" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                    </svg>
-                    {linkLabel}
-                  </a>
-                );
-              })()}
+              {prompt.source && (
+                <a
+                  href={prompt.source}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-xs font-medium text-green-600 dark:text-green-400 hover:underline"
+                >
+                  查看原文
+                  <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              )}
             </div>
           </div>
 

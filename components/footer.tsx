@@ -22,11 +22,18 @@ export default function Footer() {
             <Link href="/terms" className="transition-colors hover:text-green-600 dark:hover:text-green-400">
               条款
             </Link>
+            <span className="text-gray-300 dark:text-gray-700">·</span>
+            <Link href="/copyright" className="transition-colors hover:text-green-600 dark:hover:text-green-400">
+              版权
+            </Link>
           </div>
 
-          {/* 版权 */}
-          <div className="text-xs text-gray-500 dark:text-gray-500 md:text-sm">
-            © 2026 CGfan.com
+          {/* 版权声明 */}
+          <div className="text-xs text-gray-500 dark:text-gray-500 md:text-sm text-center md:text-right">
+            <p>© 2026 CGfan.com</p>
+            <p className="mt-1 text-xs opacity-80">
+              提示词与示例图收集自 X 公开内容，版权归原作者，仅供学习交流。如有侵权请联系删除。
+            </p>
           </div>
 
           {/* 社交图标 */}
