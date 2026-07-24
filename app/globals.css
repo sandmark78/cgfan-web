@@ -137,25 +137,23 @@ body {
 }
 
 /* ═══════════════════════════════════════════
-   浅色毛玻璃 v2 — 清透绿意
-   核心：玻璃中性纯白，让背景的绿透出来
+   浅色玻璃 v3 — 高透 · 清冽 · 玻璃感
+   核心：降透明度 + 强化玻璃边缘光 + 拉饱和度
    ═══════════════════════════════════════════ */
 
-/* ── 导航栏 ── */
+/* ── 导航栏（比卡片略实，保证可读）── */
 .glass {
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.78) 0%,
-    rgba(253, 255, 253, 0.88) 100%
+    rgba(255, 255, 255, 0.48) 0%,
+    rgba(255, 255, 255, 0.60) 100%
   );
-  border: none !important;
+  border: 1px solid rgba(255, 255, 255, 0.50);
   box-shadow:
-    0 0 0 1px rgba(255, 255, 255, 0.55),
-    0 1px 0 0 rgba(255, 255, 255, 0.85) inset,
-    0 4px 24px -4px rgba(40, 70, 50, 0.09),
-    0 1px 4px rgba(40, 70, 50, 0.04);
-  -webkit-backdrop-filter: blur(20px) saturate(1.35);
-  backdrop-filter: blur(20px) saturate(1.35);
+    0 4px 24px -4px rgba(30, 60, 40, 0.07),
+    0 1px 0 0 rgba(255, 255, 255, 0.85) inset;
+  -webkit-backdrop-filter: blur(18px) saturate(1.6) brightness(1.04);
+  backdrop-filter: blur(18px) saturate(1.6) brightness(1.04);
   outline: none !important;
   isolation: isolate;
 }
@@ -163,56 +161,68 @@ body {
 /* ── 卡片 ── */
 .glass-card {
   position: relative;
+  /* ① 高透背景：顶部 35%，底部 48% */
   background: linear-gradient(
-    168deg,
-    rgba(255, 255, 255, 0.68) 0%,
-    rgba(252, 255, 252, 0.84) 100%
+    165deg,
+    rgba(255, 255, 255, 0.35) 0%,
+    rgba(255, 255, 255, 0.48) 100%
   );
-  border: none;
+  /* ② 玻璃棱边：可见的白色边框 */
+  border: 1px solid rgba(255, 255, 255, 0.50);
   border-radius: var(--radius);
+  /* ③ 四层光影 */
   box-shadow:
-    0 0 0 1px rgba(255, 255, 255, 0.55),
-    0 0 0 2px rgba(120, 150, 130, 0.08),
-    0 1px 0 0 rgba(255, 255, 255, 0.92) inset,
-    0 -1px 0 0 rgba(100, 130, 110, 0.05) inset,
-    0 8px 28px -6px rgba(40, 70, 50, 0.10),
-    0 2px 8px -2px rgba(40, 70, 50, 0.05);
-  -webkit-backdrop-filter: blur(16px) saturate(1.4);
-  backdrop-filter: blur(16px) saturate(1.4);
+    /* 外阴影：绿灰色，柔和 */
+    0 8px 32px -4px rgba(30, 60, 40, 0.08),
+    /* 顶部棱边光：亮线，模拟光打在玻璃上沿 */
+    0 1px 0 0 rgba(255, 255, 255, 0.90) inset,
+    /* 左侧棱边光：稍弱 */
+    1px 0 0 0 rgba(255, 255, 255, 0.35) inset,
+    /* 底部内影：玻璃厚度 */
+    0 -1px 0 0 rgba(30, 60, 40, 0.04) inset;
+  /* ④ 模糊 + 高饱和 + 微提亮 = 背后的绿鲜活透亮 */
+  -webkit-backdrop-filter: blur(14px) saturate(1.65) brightness(1.04);
+  backdrop-filter: blur(14px) saturate(1.65) brightness(1.04);
+  /* ⑤ 过渡 */
   transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
-              box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+              box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+              background 0.35s ease;
   overflow: hidden;
 }
 
-/* ── 卡片顶部高光 ── */
+/* ── 卡片顶部高光：玻璃表面的光带 ── */
 .glass-card::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  height: 45%;
+  height: 50%;
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.38) 0%,
-    rgba(255, 255, 255, 0.10) 50%,
-    transparent 100%
+    rgba(255, 255, 255, 0.42) 0%,     /* 顶部强高光 */
+    rgba(255, 255, 255, 0.10) 45%,    /* 快速衰减 */
+    transparent 75%
   );
   pointer-events: none;
   border-radius: var(--radius) var(--radius) 0 0;
   z-index: 0;
 }
 
-/* ── 卡片 Hover ── */
+/* ── Hover：玻璃抬起来，迎光面更亮 ── */
 .glass-card:hover {
   transform: translateY(-4px);
+  background: linear-gradient(
+    165deg,
+    rgba(255, 255, 255, 0.42) 0%,
+    rgba(255, 255, 255, 0.55) 100%
+  );
+  border-color: rgba(255, 255, 255, 0.65);
   box-shadow:
-    0 0 0 1px rgba(255, 255, 255, 0.7),
-    0 0 0 2px rgba(120, 150, 130, 0.14),
+    0 16px 48px -8px rgba(30, 60, 40, 0.12),
     0 1px 0 0 rgba(255, 255, 255, 0.95) inset,
-    0 -1px 0 0 rgba(100, 130, 110, 0.05) inset,
-    0 16px 44px -8px rgba(40, 70, 50, 0.16),
-    0 6px 16px -4px rgba(40, 70, 50, 0.08);
+    1px 0 0 0 rgba(255, 255, 255, 0.45) inset,
+    0 -1px 0 0 rgba(30, 60, 40, 0.04) inset;
 }
 
 /* ═══════════════════════════════════════════
@@ -351,46 +361,46 @@ body {
   background: rgba(255, 255, 255, 0.18);
 }
 
-/* ── 搜索框：内凹，清透 ── */
+/* ── 搜索框：内凹玻璃 ── */
 input[type="text"],
 input[type="search"] {
-  background: rgba(255, 255, 255, 0.50);
-  border: 1px solid rgba(120, 150, 130, 0.18);
+  background: rgba(255, 255, 255, 0.30);
+  border: 1px solid rgba(255, 255, 255, 0.45);
   box-shadow:
-    0 1px 3px rgba(40, 70, 50, 0.05) inset,
-    0 1px 0 0 rgba(255, 255, 255, 0.6);
-  -webkit-backdrop-filter: blur(12px) saturate(1.2);
-  backdrop-filter: blur(12px) saturate(1.2);
+    0 1px 4px rgba(30, 60, 40, 0.05) inset,
+    0 1px 0 0 rgba(255, 255, 255, 0.55);
+  -webkit-backdrop-filter: blur(12px) saturate(1.4);
+  backdrop-filter: blur(12px) saturate(1.4);
   transition: all 0.25s ease;
 }
 
 input[type="text"]:focus,
 input[type="search"]:focus {
-  background: rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.48);
   border-color: rgba(80, 140, 100, 0.35);
   box-shadow:
-    0 1px 3px rgba(40, 70, 50, 0.03) inset,
+    0 1px 3px rgba(30, 60, 40, 0.03) inset,
     0 0 0 3px rgba(80, 140, 100, 0.10);
   outline: none;
 }
 
-/* ── 背景叠层：让绿更润 ── */
+/* ── 背景叠层：别盖住绿色 ── */
 .app-bg::after {
   content: "";
   position: absolute;
   inset: 0;
   background: radial-gradient(
     60% 60% at 50% 45%,
-    rgba(240, 250, 240, 0.30) 0%,
+    rgba(240, 250, 240, 0.18) 0%,
     transparent 70%
   );
   pointer-events: none;
 }
 
-/* ── 全屏 blur 层 ── */
+/* ── 全屏 blur 层：减轻，别闷 ── */
 .shell::before {
-  -webkit-backdrop-filter: blur(14px) saturate(1.2);
-  backdrop-filter: blur(14px) saturate(1.2);
+  -webkit-backdrop-filter: blur(10px) saturate(1.15);
+  backdrop-filter: blur(10px) saturate(1.15);
 }
 
 /* ── 选中色：绿 ── */
@@ -536,26 +546,27 @@ input[type="search"]:focus {
 }
 
 /* ── Chip / 标签 ── */
+/* ── Chip / 标签：更透 ── */
 .param-chip,
 .category-chip {
-  background: rgba(255, 255, 255, 0.60);
-  border: 1px solid rgba(255, 255, 255, 0.65);
+  background: rgba(255, 255, 255, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.45);
   border-radius: var(--radius-full);
   box-shadow:
-    0 1px 3px rgba(40, 70, 50, 0.06),
-    0 1px 0 0 rgba(255, 255, 255, 0.75) inset;
-  -webkit-backdrop-filter: blur(10px) saturate(1.3);
-  backdrop-filter: blur(10px) saturate(1.3);
+    0 1px 4px rgba(30, 60, 40, 0.05),
+    0 1px 0 0 rgba(255, 255, 255, 0.70) inset;
+  -webkit-backdrop-filter: blur(10px) saturate(1.5);
+  backdrop-filter: blur(10px) saturate(1.5);
   transition: all 0.25s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .param-chip:hover,
 .category-chip:hover {
-  background: rgba(255, 255, 255, 0.82);
-  border-color: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.45);
+  border-color: rgba(255, 255, 255, 0.60);
   box-shadow:
-    0 2px 8px rgba(40, 70, 50, 0.10),
-    0 1px 0 0 rgba(255, 255, 255, 0.9) inset;
+    0 2px 8px rgba(30, 60, 40, 0.08),
+    0 1px 0 0 rgba(255, 255, 255, 0.85) inset;
   transform: translateY(-1px);
 }
 
