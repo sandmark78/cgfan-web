@@ -3,6 +3,7 @@ import { PromptGrid } from '@/components/prompt/prompt-grid'
 import { getCategoryLabel } from '@/lib/category-map'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import Pagination from '@/components/pagination'
 
 export const runtime = 'edge'
 
@@ -185,40 +186,13 @@ export default async function ExplorePage({
           {/* 瀑布流画廊 - 分页显示 */}
           <PromptGrid prompts={paginatedPrompts} maxRows={999} />
 
-          {/* 分页导航 */}
-          {totalPages > 1 && (
-            <div className="mt-8 flex justify-center gap-2">
-              {currentPage > 1 && (
-                <Link
-                  href={`/explore?${new URLSearchParams({
-                    ...(q && { q }),
-                    ...(category && { category }),
-                    ...(tag && { tag }),
-                    page: String(currentPage - 1),
-                  }).toString()}`}
-                  className="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-lg bg-zinc-800 px-4 py-2 text-sm text-white hover:bg-zinc-700"
-                >
-                  上一页
-                </Link>
-              )}
-              <span className="flex min-h-[44px] items-center px-4 text-sm text-zinc-400">
-                {currentPage} / {totalPages}
-              </span>
-              {currentPage < totalPages && (
-                <Link
-                  href={`/explore?${new URLSearchParams({
-                    ...(q && { q }),
-                    ...(category && { category }),
-                    ...(tag && { tag }),
-                    page: String(currentPage + 1),
-                  }).toString()}`}
-                  className="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-lg bg-zinc-800 px-4 py-2 text-sm text-white hover:bg-zinc-700"
-                >
-                  下一页
-                </Link>
-              )}
-            </div>
-          )}
+          {/* 分页导航 - 带页码选择 */}
+          <Pagination
+            current={currentPage}
+            total={totalPages}
+            basePath="/explore"
+            params={{ category, tag, q }}
+          />
         </div>
       </div>
     </div>
