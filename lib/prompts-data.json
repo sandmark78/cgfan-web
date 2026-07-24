@@ -1,5 +1,109 @@
 [
   {
+    "title": "Product to Professional Ad with Model",
+    "slug": "product-to-professional-ad",
+    "model": "Gemini",
+    "category": "product",
+    "tags": [
+      "product",
+      "advertising",
+      "model",
+      "professional",
+      "产品"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/2080242915536761050.jpg",
+    "date": "Thu Jul 23 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-23",
+    "source": "https://x.com/i/status/2080242915536761050",
+    "author": "Med | Ai & Marketing",
+    "prompt": "من صورة منتج واحدة... إلى إعلان احترافي مع موديل تلقائيًا. 🚀\n\nهذا البرومبت يقوم بتحليل المنتج، واختيار موديل مناسب، وإنشاء إعلان متكامل مع خلفية احترافية، عناوين، أيقونات، ومميزات جاهزة للنشر.\n\nكل ما عليك هو رفع صورة المنتج وكتابة اسمه.\n\nFrom a single product image to a professional ad with an automatic model.\n\nThis prompt analyzes the product, selects an appropriate model, and creates a complete advertisement with a professional background, headlines, icons, and features ready for publishing.\n\nAll you need to do is upload the product image and write its name.",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Gemini",
+      "Type": "Product Advertising"
+    },
+    "mtime": 1784861159331.96
+  },
+  {
+    "title": "Halftone Film Grain Noir",
+    "slug": "halftone-film-grain-noir",
+    "model": "GPT-Image2",
+    "category": "style",
+    "tags": [
+      "halftone",
+      "film-noir",
+      "illustration",
+      "high-contrast",
+      "电影感"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/2080307225281585642.jpg",
+    "date": "Thu Jul 23 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-23",
+    "source": "https://x.com/i/status/2080307225281585642",
+    "author": "LudovicCreator",
+    "prompt": "A Halftone Film Grain Noir illustration of [SUBJECT], evoking the atmospheric and high-contrast style of film noir. Employ a halftone effect with a moody color palette of [COLOR1] and [COLOR2].",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "GPT-Image2",
+      "Style": "Film Noir, Halftone"
+    },
+    "mtime": 1784861159318.1482
+  },
+  {
+    "title": "Fashion Runway Illustration",
+    "slug": "fashion-runway-illustration",
+    "model": "Gemini",
+    "category": "style",
+    "tags": [
+      "fashion",
+      "runway",
+      "illustration",
+      "sketch"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/2080291102939283648.jpg",
+    "date": "Thu Jul 23 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-23",
+    "source": "https://x.com/i/status/2080291102939283648",
+    "author": "Amira Zairi",
+    "prompt": "A fashion runway illustration featuring a [subject]-inspired outfit, with high-fashion fabric swatches in [color1] and [color2], dramatic lighting, exaggerated pose, and stylistic pencil sketch notes along the sides.",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Gemini",
+      "Style": "Fashion Illustration"
+    },
+    "mtime": 1784861159273.6333
+  },
+  {
+    "title": "Capillary Sequence System Prompt",
+    "slug": "capillary-sequence-system-prompt",
+    "model": "Gemini",
+    "category": "style",
+    "tags": [
+      "system-prompt",
+      "gesture",
+      "moisture",
+      "advanced",
+      "动漫"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/2080408937078124633.jpg",
+    "date": "Thu Jul 23 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-23",
+    "source": "https://x.com/i/status/2080408937078124633",
+    "author": "Emily",
+    "prompt": "SYSTEM PROMPT: CAPILLARY SEQUENCE\n\nRewrite the user's text, image, or both as one prompt for GPT Image Gen V2 or Nano Banana Pro. Use GPT unless Nano is named. Write in the user's language, preserve exact text, and keep the requested or source ratio.\n\nUse two systems. Gesture Script defines pressure through pose, hands, shoulders, gaze, crop, spacing, repeated states, and action direction. Capillary Record shows the consequence through rain, sweat, condensation, wet hair, damp fabric, steam, droplets, reflections, or another fluid condition supported by the request.\n\nDo not blend them into a wet anime portrait. Determine the subject, exact action, pressure path, moisture source, affected surfaces, visible consequence, and two to four caused junctions.\n\nPreserve subject, count, identity, anatomy, setting, clothing, objects, colors, text, and reference roles. For edits, preserve all unrequested content. Use style references only for gesture rhythm, contour, moisture behavior, light falloff, crop, and detail placement. Do not copy their subject, pose, costume, or setting.\n\nGesture must agree across hands, joints, shoulders, spine, head, gaze, and balance. Use one state by default. Use two or three pose echoes only when they show preparation, force, recoil, hesitation, or release. Use panels only when requested. Repetition must advance the action.\n\nMoisture needs a source and follows gravity, airflow, adhesion, absorption, curvature, and surface tension. Wet hair clumps and adheres. Skin carries uneven films and droplets, not uniform gloss. Fabric darkens, gains weight, and clings at pressure points. Glass fogs, streaks, reflects, and transmits according to angle. Every droplet needs scale, attachment, direction, and stopping point.\n\nJunctions may include spray following a hand path, wet hair changing a facial contour, damp fabric revealing body rotation, a gesture repeated in reflection, condensation hiding one area, or a wet contact trace remaining after movement. Each requires a physical cause.\n\nKeep one pressure path, one moisture path, one focal junction, and clear negative space. Remove repetition, praise, mood labels, prestige terms, fake technical detail, generic defect lists, and unresolved alternatives. Use concrete nouns and active verbs. No em dash or en dash.\n\nGPT: return 500 to 800 words in five paragraphs covering scene, subjects, gesture, moisture, junctions, composition, preservation, text, and failures.\n\nNANO: return valid JSON only, 1000 to 1800 tokens, using \"aspect_ratio\", \"references\", \"scene\", \"subjects\", \"gesture_script\", \"capillary_record\", \"junctions\", \"composition\", \"surface\", \"text\", \"avoid\". Omit unused fields. No metadata, IDs, weights, comments, or repeated facts.\n\nReturn only the finished prompt.",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "GPT-Image2 / Nano Banana Pro",
+      "Type": "System Prompt",
+      "Complexity": "Advanced"
+    },
+    "mtime": 1784861159268.9053
+  },
+  {
     "title": "X 上的 路飞 🏴‍☠️ AI 研究员🧐：“2026 必收藏的 Nano Banana Pro 提示词库！ 💎 500+ 高质量提示词，免费领： 🔗 https://t.co/GCuSVVr4Vb 我把 Nano Banana Pro 真正能出片的提示词 一次性全拆出来了👇 覆盖 6 个高频创作方向： 🎭 人像 / 🏛️ 建筑 / 🎨 插画 🏷️ 品牌 / 📸 摄影 / 🚀 科幻 每条都是调好的模板，拿来即用 🧵 https://t.co/6UZONQn7Cp” / X",
     "slug": "prompt-1542243694",
     "model": "Gemini",
