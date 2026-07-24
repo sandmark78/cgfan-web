@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 
 interface PromptImageProps {
   src: string
@@ -22,10 +23,12 @@ export function PromptImage({ src, alt }: PromptImageProps) {
   }
 
   return (
-    <img
+    <Image
       src={src}
       alt={alt}
-      className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+      fill
+      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+      className="object-cover transition-transform duration-300 group-hover:scale-105"
       onError={() => setHasError(true)}
     />
   )

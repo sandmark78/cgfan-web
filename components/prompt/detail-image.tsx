@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 
 interface DetailImageProps {
   src: string
@@ -22,10 +23,14 @@ export function DetailImage({ src, alt }: DetailImageProps) {
   }
 
   return (
-    <img
+    <Image
       src={src}
       alt={alt}
+      width={1200}
+      height={1200}
+      sizes="(max-width: 768px) 100vw, 1200px"
       className="w-full object-cover"
+      priority
       onError={() => setHasError(true)}
     />
   )

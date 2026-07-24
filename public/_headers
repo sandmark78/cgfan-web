@@ -1,0 +1,11 @@
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/bg-vines.jpg
+  Cache-Control: public, max-age=604800
+
+/bg-dark.jpg
+  Cache-Control: public, max-age=604800
