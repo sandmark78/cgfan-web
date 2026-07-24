@@ -337,6 +337,31 @@ export default async function PromptDetailPage({
           </div>
         </div>
       )}
+
+      {/* JSON-LD 结构化数据 */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'CreativeWork',
+            name: prompt.title,
+            description: prompt.prompt.slice(0, 200),
+            image: prompt.cover,
+            author: {
+              '@type': 'Person',
+              name: prompt.author,
+            },
+            datePublished: prompt.date,
+            keywords: prompt.tags.join(', '),
+            publisher: {
+              '@type': 'Organization',
+              name: 'CGfan',
+              url: 'https://cgfan-web.pages.dev',
+            },
+          }),
+        }}
+      />
     </div>
   )
 }

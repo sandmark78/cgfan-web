@@ -52,7 +52,7 @@ export default function NotFound() {
           热门推荐
         </h2>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {popularPrompts.map((prompt) => (
+          {popularPrompts.map((prompt, index) => (
             <Link
               key={prompt.slug}
               href={`/prompt/${prompt.slug}`}
@@ -63,6 +63,8 @@ export default function NotFound() {
                   <img
                     src={prompt.cover}
                     alt={prompt.title}
+                    loading={index === 0 ? 'eager' : 'lazy'}
+                    decoding="async"
                     className="h-full w-full object-cover transition-transform group-hover:scale-105"
                   />
                 ) : (
