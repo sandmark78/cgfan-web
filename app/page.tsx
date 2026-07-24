@@ -57,7 +57,7 @@ export default function Home() {
       )}
 
       {/* 最新提示词 - 整齐网格 */}
-      <div className="mt-4 sm:mt-8">
+      <div className="mt-4 sm:mt-8 px-4 sm:px-0">
         <div className="flex items-center justify-between">
           <h2 className="font-serif text-lg sm:text-3xl font-bold text-gray-900 dark:text-white">
             最新提示词
