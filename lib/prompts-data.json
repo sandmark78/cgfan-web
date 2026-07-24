@@ -69,29 +69,6 @@
     "mtime": 1784865168102.1572
   },
   {
-    "title": "Capillary Sequence System Prompt",
-    "slug": "capillary-sequence-system-prompt",
-    "model": "Gemini",
-    "category": "style",
-    "tags": [
-      "system-prompt",
-      "gesture",
-      "moisture",
-      "advanced",
-      "动漫"
-    ],
-    "difficulty": "advanced",
-    "cover": "/images/prompts/2080408937078124633.jpg",
-    "date": "Thu Jul 23 2026 08:00:00 GMT+0800 (China Standard Time)",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2080408937078124633",
-    "author": "Emily",
-    "prompt": "SYSTEM PROMPT: CAPILLARY SEQUENCE\n\nRewrite the user's text, image, or both as one prompt for GPT Image Gen V2 or Nano Banana Pro. Use GPT unless Nano is named. Write in the user's language, preserve exact text, and keep the requested or source ratio.\n\nUse two systems. Gesture Script defines pressure through pose, hands, shoulders, gaze, crop, spacing, repeated states, and action direction. Capillary Record shows the consequence through rain, sweat, condensation, wet hair, damp fabric, steam, droplets, reflections, or another fluid condition supported by the request.\n\nDo not blend them into a wet anime portrait. Determine the subject, exact action, pressure path, moisture source, affected surfaces, visible consequence, and two to four caused junctions.\n\nPreserve subject, count, identity, anatomy, setting, clothing, objects, colors, text, and reference roles. For edits, preserve all unrequested content. Use style references only for gesture rhythm, contour, moisture behavior, light falloff, crop, and detail placement. Do not copy their subject, pose, costume, or setting.\n\nGesture must agree across hands, joints, shoulders, spine, head, gaze, and balance. Use one state by default. Use two or three pose echoes only when they show preparation, force, recoil, hesitation, or release. Use panels only when requested. Repetition must advance the action.\n\nMoisture needs a source and follows gravity, airflow, adhesion, absorption, curvature, and surface tension. Wet hair clumps and adheres. Skin carries uneven films and droplets, not uniform gloss. Fabric darkens, gains weight, and clings at pressure points. Glass fogs, streaks, reflects, and transmits according to angle. Every droplet needs scale, attachment, direction, and stopping point.\n\nJunctions may include spray following a hand path, wet hair changing a facial contour, damp fabric revealing body rotation, a gesture repeated in reflection, condensation hiding one area, or a wet contact trace remaining after movement. Each requires a physical cause.\n\nKeep one pressure path, one moisture path, one focal junction, and clear negative space. Remove repetition, praise, mood labels, prestige terms, fake technical detail, generic defect lists, and unresolved alternatives. Use concrete nouns and active verbs. No em dash or en dash.\n\nGPT: return 500 to 800 words in five paragraphs covering scene, subjects, gesture, moisture, junctions, composition, preservation, text, and failures.\n\nNANO: return valid JSON only, 1000 to 1800 tokens, using \"aspect_ratio\", \"references\", \"scene\", \"subjects\", \"gesture_script\", \"capillary_record\", \"junctions\", \"composition\", \"surface\", \"text\", \"avoid\". Omit unused fields. No metadata, IDs, weights, comments, or repeated facts.\n\nReturn only the finished prompt.",
-    "negativePrompt": "",
-    "parameters": {},
-    "mtime": 1784869055943.471
-  },
-  {
     "title": "Chevy Camaro Z/28 性能海报",
     "slug": "camaro-z28-performance-poster",
     "model": "GPT-Image2",
@@ -182,29 +159,6 @@
     "negativePrompt": "",
     "parameters": {},
     "mtime": 1784865157576.8936
-  },
-  {
-    "title": "Halftone Film Grain Noir",
-    "slug": "halftone-film-grain-noir",
-    "model": "GPT-Image2",
-    "category": "style",
-    "tags": [
-      "halftone",
-      "film-noir",
-      "illustration",
-      "high-contrast",
-      "电影感"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/2080307225281585642.jpg",
-    "date": "Thu Jul 23 2026 08:00:00 GMT+0800 (China Standard Time)",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2080307225281585642",
-    "author": "LudovicCreator",
-    "prompt": "A Halftone Film Grain Noir illustration of [SUBJECT], evoking the atmospheric and high-contrast style of film noir. Employ a halftone effect with a moody color palette of [COLOR1] and [COLOR2].\n\nUsage:\n- Replace [SUBJECT] with your subject (e.g., detective, cityscape, jazz musician)\n- Replace [COLOR1] and [COLOR2] with moody colors (e.g., deep blue and burnt orange)\n- Check the image alt text on the original tweet for detailed variations",
-    "negativePrompt": "",
-    "parameters": {},
-    "mtime": 1784869055943.176
   },
   {
     "title": "Kjeldsens丹麦黄油曲奇四宫格奢华海报",
@@ -320,29 +274,6 @@
     "negativePrompt": "",
     "parameters": {},
     "mtime": 1784850147883.5195
-  },
-  {
-    "title": "Fashion Runway Illustration",
-    "slug": "fashion-runway-illustration",
-    "model": "GPT-Image2",
-    "category": "style",
-    "tags": [
-      "fashion",
-      "runway",
-      "illustration",
-      "sketch",
-      "赛博朋克"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/2080291102939283648.jpg",
-    "date": "Thu Jul 23 2026 08:00:00 GMT+0800 (China Standard Time)",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2080291102939283648",
-    "author": "Amira Zairi",
-    "prompt": "A fashion runway illustration featuring a [subject]-inspired outfit, with high-fashion fabric swatches in [color1] and [color2], dramatic lighting, exaggerated pose, and stylistic pencil sketch notes along the sides.\n\nUsage:\n- Replace [subject] with your inspiration (e.g., Japanese kimono, Art Deco, cyberpunk)\n- Replace [color1] and [color2] with fabric colors (e.g., emerald and gold)",
-    "negativePrompt": "",
-    "parameters": {},
-    "mtime": 1784869055942.9045
   },
   {
     "title": "9:16 竖版，高完成度群青蓝金东方圣女金箔岩彩数字插画，modern oriental gold-leaf mineral-pigment sacred maiden illustration，东方幻想莲华圣女人像，精致半写实数字插画人物，矿物岩彩色层，不规则真实金箔工艺，兼具东方装饰性平面美学、神殿仪式感与纵深空间层次。",
@@ -530,29 +461,6 @@
     "negativePrompt": "",
     "parameters": {},
     "mtime": 1784850147884.6516
-  },
-  {
-    "title": "Product to Professional Ad with Model",
-    "slug": "product-to-professional-ad",
-    "model": "GPT-Image2",
-    "category": "commercial",
-    "tags": [
-      "product",
-      "advertising",
-      "model",
-      "professional",
-      "产品"
-    ],
-    "difficulty": "advanced",
-    "cover": "/images/prompts/2080242915536761050.jpg",
-    "date": "Thu Jul 23 2026 08:00:00 GMT+0800 (China Standard Time)",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2080242915536761050",
-    "author": "Med | Ai & Marketing",
-    "prompt": "从一张产品图片自动生成专业广告，包含模特、专业背景、标题、图标和产品特性。\n\n使用方法：\n1. 访问 med3bbas.com/1/gai1.html 获取完整提示词\n2. 上传产品图片\n3. 输入产品名称\n4. AI自动分析产品、选择合适模特、生成完整广告\n\n功能：\n- 自动分析产品特性\n- 智能选择匹配的模特\n- 生成专业广告背景\n- 添加标题、图标和产品卖点\n- 输出可直接发布的广告图",
-    "negativePrompt": "",
-    "parameters": {},
-    "mtime": 1784869055942.486
   },
   {
     "title": "超写实古风人像摄影，电影级视觉，Anime Realism，近景特写（Close-up Portrait），人物占画面约75%～85%，肩部以上构图，人物正面对镜头，不侧身，身体保持正面，仅头部自然向一侧轻轻歪头约10°～15°，姿势端庄自然。",
