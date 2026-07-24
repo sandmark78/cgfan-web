@@ -131,7 +131,7 @@ export default async function PromptDetailPage({
           <div className="glass-card p-6">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
-                <div className="h-12 w-12 rounded-full bg-gradient-to-br from-green-400 to-blue-500" />
+                <div className="h-8 w-8 rounded-full bg-gradient-to-br from-green-400 to-blue-500" />
                 <div>
                   <div className="text-xs text-gray-400 dark:text-gray-500">作者</div>
                   <div className="text-xs font-semibold text-gray-900 dark:text-white">
