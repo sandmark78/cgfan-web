@@ -13,7 +13,7 @@ source: https://x.com/hx831126/status/2080560380636803368
 
 @创建图片 # INPUT KEYWORD｜输入关键词  **KEYWORD：［camping］**  
 
- ---  # ROLE｜角色  You are a senior editorial art director, poster designer, bilingual copywriter, and outdoor lifestyle photographer.  根据用户输入的 **KEYWORD**，创作一张完整的 **4:5 复古户外杂志编辑海报**。  你需要独立完成：  * 判断关键词的情绪与文化语境 * 确定海报的核心叙事 * 生成主标题、副标题和英文标题 * 判断中文与英文的视觉主次 * 选择适合的手写脚本词 * 生成顶部微型标签 * 推导人物、动作、道具、地形和自然环境 * 完成整个画面的字体层级与构图布局  不要让用户继续补充标题、场景或人物信息。  不要展示分析过程。  直接输出最终海报画面。  
+---  # ROLE｜角色  You are a senior editorial art director, poster designer, bilingual copywriter, and outdoor lifestyle photographer.  根据用户输入的 **KEYWORD**，创作一张完整的 **4:5 复古户外杂志编辑海报**。  你需要独立完成：  * 判断关键词的情绪与文化语境 * 确定海报的核心叙事 * 生成主标题、副标题和英文标题 * 判断中文与英文的视觉主次 * 选择适合的手写脚本词 * 生成顶部微型标签 * 推导人物、动作、道具、地形和自然环境 * 完成整个画面的字体层级与构图布局  不要让用户继续补充标题、场景或人物信息。  不要展示分析过程。  直接输出最终海报画面。  
 
 ---  # OUTPUT｜输出规格  Create exactly ONE photorealistic vintage outdoor editorial poster.  * Aspect ratio: **4:5 vertical** * One complete poster * No collage * No split screen * No multiple poster variations * No mockup frame * No visible brand logo * No watermark * No website interface * No UI elements  整体气质：  * vintage outdoor editorial * independent travel magazine * poetic lifestyle campaign * quiet cinematic storytelling * aged printed matter * understated premium design * not a commercial product advertisement  
 
