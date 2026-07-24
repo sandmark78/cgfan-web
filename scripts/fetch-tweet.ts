@@ -286,6 +286,7 @@ function downloadImage(url: string, outputPath: string): boolean {
  */
 function generateMarkdown(tweetData: TweetData, outputDir: string): string {
   const date = tweetData.timestamp ? new Date(tweetData.timestamp).toISOString().split('T')[0] : new Date().toISOString().split('T')[0];
+  const added = new Date().toISOString().replace('Z', '+08:00').replace('T', 'T').split('.')[0] + '+08:00';  // ISO 8601 时间戳
   const slug = `prompt-${tweetData.id}`;
   const mdPath = path.join(outputDir, `${slug}.md`);
   
@@ -335,6 +336,7 @@ tags:
 difficulty: intermediate
 cover: ${localImagePath}
 date: '${date}'
+added: '${added}'
 source: "https://x.com/i/status/${tweetData.id}"
 author: "${tweetData.author}"
 ---

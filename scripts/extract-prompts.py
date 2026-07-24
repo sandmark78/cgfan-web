@@ -283,8 +283,8 @@ def main():
         else:
             skipped_count += 1
     
-    # 按日期排序（最新的在前）
-    all_prompts.sort(key=lambda x: x.get('date', ''), reverse=True)
+    # 按上传时间排序（优先 added ISO 时间戳，无则 mtime）
+    all_prompts.sort(key=lambda x: x.get('added', x.get('date', '')), reverse=False)
     
     # 写入 JSON
     with open(output_file, 'w', encoding='utf-8') as f:
