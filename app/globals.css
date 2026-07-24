@@ -136,25 +136,69 @@ body {
   padding: 16px clamp(12px, 3vw, 32px);
 }
 
-/* ===== 毛玻璃组件 ===== */
+/* ═══════════════════════════════════════════
+   浅色毛玻璃 v2 — 奶油水晶质感
+   ═══════════════════════════════════════════ */
+
+/* 浅色导航栏 */
 .glass {
-  background: var(--glass);
-  backdrop-filter: blur(var(--blur));
-  -webkit-backdrop-filter: blur(var(--blur));
+  background: linear-gradient(180deg, rgba(255,254,250,.85), rgba(253,249,240,.92));
   border: none !important;
-  box-shadow: 0 8px 32px #00000010 !important;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,.5),
+    0 1px 0 0 rgba(255,255,255,.8) inset,
+    0 4px 24px -4px rgba(120,90,50,.10),
+    0 1px 4px rgba(120,90,50,.05);
+  -webkit-backdrop-filter: blur(24px) saturate(1.2);
+  backdrop-filter: blur(24px) saturate(1.2);
   outline: none !important;
   isolation: isolate;
 }
 
+/* 浅色卡片 - 奶油水晶 */
 .glass-card {
   position: relative;
-  background: var(--glass-heavy);
-  border: 1px solid var(--glass-border);
+  background: linear-gradient(168deg, rgba(255,254,250,.78), rgba(253,249,240,.88));
+  border: none;
   border-radius: var(--radius);
-  box-shadow: var(--glass-shadow);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,.55),
+    0 0 0 2px rgba(180,158,120,.08),
+    0 1px 0 0 rgba(255,255,255,.9) inset,
+    0 -1px 0 0 rgba(160,140,110,.06) inset,
+    0 8px 28px -6px rgba(120,90,50,.12),
+    0 2px 8px -2px rgba(120,90,50,.07);
+  -webkit-backdrop-filter: blur(20px) saturate(1.25);
+  backdrop-filter: blur(20px) saturate(1.25);
+  transition: transform .35s cubic-bezier(.22,1,.36,1),
+              box-shadow .35s cubic-bezier(.22,1,.36,1);
   overflow: hidden;
+}
+
+/* 浅色卡片顶部高光 */
+.glass-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 45%;
+  background: linear-gradient(180deg, rgba(255,255,255,.35), rgba(255,255,255,.08) 50%, transparent);
+  pointer-events: none;
+  border-radius: var(--radius) var(--radius) 0 0;
+  z-index: 0;
+}
+
+/* 浅色卡片 hover */
+.glass-card:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,.7),
+    0 0 0 2px rgba(180,158,120,.12),
+    0 1px 0 0 rgba(255,255,255,.95) inset,
+    0 -1px 0 0 rgba(160,140,110,.06) inset,
+    0 16px 44px -8px rgba(120,90,50,.18),
+    0 6px 16px -4px rgba(120,90,50,.10);
 }
 
 /* ═══════════════════════════════════════════
@@ -255,9 +299,43 @@ body {
   border-color: rgba(255,255,255,.15);
 }
 
-/* 选中色 */
+/* ===== 搜索框内凹效果 ===== */
+input[type="text"],
+input[type="search"] {
+  background: rgba(255,254,250,.55);
+  border: 1px solid rgba(180,158,120,.15);
+  box-shadow: 0 1px 3px rgba(120,90,50,.06) inset, 0 1px 0 0 rgba(255,255,255,.6);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  transition: all 0.25s ease;
+}
+
+input[type="text"]:focus,
+input[type="search"]:focus {
+  background: rgba(255,254,250,.75);
+  border-color: rgba(217,119,6,.3);
+  box-shadow: 0 1px 3px rgba(120,90,50,.04) inset, 0 0 0 3px rgba(217,119,6,.08);
+  outline: none;
+}
+
+/* ===== 浅色背景叠层 ===== */
+.app-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(60% 60% at 50% 45%, rgba(253,246,236,.35), transparent 70%);
+  pointer-events: none;
+}
+
+/* ===== 全屏 blur 层优化 ===== */
+.shell::before {
+  -webkit-backdrop-filter: blur(16px) saturate(1.1);
+  backdrop-filter: blur(16px) saturate(1.1);
+}
+
+/* ===== 选中色 ===== */
 ::selection {
-  background: rgba(217, 119, 6, 0.2);
+  background: rgba(217,119,6,.15);
   color: inherit;
 }
 
@@ -266,7 +344,7 @@ body {
   color: inherit;
 }
 
-/* 滚动条 */
+/* ===== 滚动条 ===== */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -277,12 +355,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.15);
+  background: rgba(120,90,50,.15);
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(120,90,50,.25);
 }
 
 .dark ::-webkit-scrollbar-thumb {
@@ -382,54 +460,68 @@ button:active {
   padding-top: var(--spacing-sm);
 }
 
-/* ===== 参数 chips ===== */
+/* ===== 参数 chips 容器 ===== */
 .params {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
 
-.param-chip {
-  background: var(--glass-heavy);
-  border: 1px solid var(--glass-border);
-  border-radius: var(--radius-full);
-  padding: 6px 12px;
-  font-size: 12px;
-  color: var(--green-700);
-}
-
-.dark .param-chip {
-  color: var(--green-500);
-}
-
-/* ===== 分类 chips ===== */
+/* ===== 分类 chips 容器 ===== */
 .category-chips {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
 
+/* Chip 基础样式 */
+.param-chip,
 .category-chip {
-  background: var(--glass-heavy);
-  border: 1px solid var(--glass-border);
+  background: rgba(255,254,250,.65);
+  border: 1px solid rgba(255,255,255,.6);
   border-radius: var(--radius-full);
+  box-shadow: 0 1px 3px rgba(120,90,50,.06), 0 1px 0 0 rgba(255,255,255,.7) inset;
+  -webkit-backdrop-filter: blur(10px) saturate(1.15);
+  backdrop-filter: blur(10px) saturate(1.15);
+  transition: all .25s cubic-bezier(.22,1,.36,1);
+  cursor: pointer;
+}
+
+.param-chip {
+  padding: 6px 12px;
+  font-size: 12px;
+  color: var(--green-700);
+}
+
+.category-chip {
   padding: 8px 16px;
   font-size: 13px;
   font-weight: 500;
   color: var(--text-primary);
-  transition: all 0.2s ease;
-  cursor: pointer;
 }
 
+.dark .param-chip {
+  color: var(--green-500);
+}
+
+.param-chip:hover,
 .category-chip:hover {
-  background: var(--green-100);
-  border-color: var(--green-500);
+  background: rgba(255,254,250,.85);
+  border-color: rgba(255,255,255,.8);
+  box-shadow: 0 2px 8px rgba(120,90,50,.10), 0 1px 0 0 rgba(255,255,255,.9) inset;
+  transform: translateY(-1px);
 }
 
 .category-chip.active {
   background: var(--green-500);
   color: white;
   border-color: var(--green-500);
+}
+
+.param-chip:active,
+.category-chip:active {
+  transform: scale(.97) translateY(0);
+  transition-duration: .1s;
 }
 
 /* ===== 按钮样式 ===== */
