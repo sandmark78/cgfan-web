@@ -411,7 +411,7 @@
     "prompt": "Aspect Ratio: 4:5\n\nUltra-realistic candid street fashion photography of a beautiful Korean woman with a naturally slim model physique (5'8\", long legs, slim waist, toned arms, elegant proportions), walking gracefully through a covered European shopping arcade during a light rain.\n\nShe wears a fitted light-beige trench coat over a sage-green midi dress that gently follows her body shape, clean white leather sneakers, and carries a premium dark-brown leather tote bag. In her left arm she holds a bouquet of fresh white flowers wrapped in kraft paper. In her right hand she holds a transparent umbrella with tiny realistic raindrops.\n\nShe looks down at the bouquet with a soft genuine smile while taking a natural step forward. The coat moves slightly with the walking motion. Wet stone pavement with beautiful reflections, elegant cream-colored stone columns, black metal bollards, blurred cafés, luxury European atmosphere, soft overcast daylight after rain.\n\nCaptured from about 8 meters away using a Canon EOS R5 + RF 135mm f/1.8L lens, f/2.0, ISO 200, 1/1250 sec. Natural telephoto compression, authentic candid street photography, subject perfectly sharp, creamy background bokeh, realistic skin pores, fine hair details, magazine-quality editorial photography, luxury fashion campaign, cinematic color grading, true-to-life colors, ultra photorealistic, DSLR realism, 8K.\n\nNegative prompt: overweight, chubby, wide hips, thick legs, short legs, oversized body, cartoon, CGI, plastic skin, bad anatomy, extra fingers, blurry face, low quality, oversaturated, HDR, deformed body, unnatural pose.",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1784850147883.586
+    "mtime": 1784909710889.7258
   },
   {
     "title": "东方古典水中人像 - 梦幻高亮柔光",
@@ -503,7 +503,7 @@
     "prompt": "【主题】：【填写】\n【核心物件】：【填写】\n【主色 / 光色】：【填写】\n【背景压纹】：【填写】\n【微小叙事元素】：【填写】\n【中文标题】：【填写】\n【短句】：【填写】\n【英文标题】：【填写】\n\nPrompt:\n\n生成一张高级东方留白艺术海报，整体画面克制、安静、有呼吸感。\n画面以【主题】为核心，主体为【核心物件】，位于画面中下部或偏右，留出大面积空白与纹理空间。\n主色为【主色 / 光色】，光线柔和、偏冷或偏暖均可，但要统一、干净、有层次。\n背景为带有细腻压纹的纸张或墙面质感，压纹图案为【背景压纹】，压纹要若隐若现，不能抢主体。\n画面中加入 1–2 个【微小叙事元素】，例如：一片叶子、一缕烟、一滴水痕、一道光、一只虫、一行小字等，用来增加故事感。\n排版采用高级杂志风格：\n左上或顶部放大号中文标题【中文标题】，字体为现代宋体或书法体，字间距略宽。\n下方或右侧加入一行短句【短句】，字号较小，优雅克制。\n右下角或底部加入英文标题【英文标题】，使用现代衬线字体或极简无衬线字体。\n整体风格参考：日本侘寂美学、中国宋代留白、现代东方杂志、高级艺术展海报。\n避免：色彩过艳、元素过多、构图过满、廉价装饰感、网红滤镜感、过度设计。\n要求：画面要有\"空\"的感觉，但空而不虚，留白处有呼吸、有情绪、有时间感。",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1784850147884.5796
+    "mtime": 1784909710890.2803
   },
   {
     "title": "食品品牌九宫格社交媒体海报",
@@ -549,7 +549,7 @@
     "prompt": "Stereoscopic photo of two different elderly African men with big afro hair taken on Kodak Gold 35mm film, heavy film grain, asymmetrical, creative light leaks --no glasses --ar 16:9 --raw --stylize 150 --hd --preview --v 8.1\n\nStereoscopic photo of two different Korean women taken on Kodak Gold 35mm film, heavy film grain, asymmetrical, creative light leaks --no glasses --ar 16:9 --raw --stylize 150 --hd --preview --v 8.1",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1784850147883.5195
+    "mtime": 1784909710889.6235
   },
   {
     "title": "双重曝光艺术时尚人像",
@@ -664,7 +664,7 @@
     "prompt": "input:\nproduct_function = [any product function]\ninspiration_source = [any biological / mechanical / cultural / natural source]\nuser_context = [optional]\ntech_features = [optional]\nstyle_level = [minimal / premium / playful / luxury / futuristic / ai-infers]\n\nrun biomorphic_product_extraction:\n\nproduct_dna := infer product category, usage scenario, user interaction, power system, controls, safety needs, and ergonomic constraints\ninspiration_dna := infer silhouette, anatomy, texture, motion, structural logic, surface rhythm, protective forms, sensory cues, or symbolic traits\nfunction_mapping := map inspiration traits to product functions:\n  - fins → airflow / cooling / acoustic dispersion if relevant\n  - shell → protection / enclosure if relevant\n  - beak / snout / head → sensor / output / light / nozzle if relevant\n  - wings → folding / circulation / coverage if relevant\n  - scales / plates → vents / grip / modular panels if relevant\n  - roots / veins → cable routes / fluid paths / support if relevant\n  - eyes / spots → indicators / sensors / leds if relevant\n\nmaterial_system := infer ceramic, aluminum, fabric, recycled plastic, glass, rubber, wood, resin, carbon, silicone, or other appropriate materials\ncmf := infer color, material, finish, texture, surface softness, gloss, transparency, and accent colors\nproduct_name := generate a concise brandable name derived from function + inspiration\nfeature_list := generate realistic product-specific features\ndetail_panels := infer 4 close-up views that explain the most important features\nlayout := infer hero render + spec card + detail grid presentation\n\nrender:\na premium biomorphic product concept sheet with a hero product render and industrial-design feature documentation.\n\nforbidden:\nhard-coded dinosaur, hard-coded lamp, hard-coded speaker, hard-coded purifier, hard-coded fan, copied names, random anatomy, fake features unrelated to product function.",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1784850147884.6516
+    "mtime": 1784909710889.9731
   },
   {
     "title": "电影人像海报（前景虚焦叙事）",
@@ -687,30 +687,7 @@
     "prompt": "生成一张电影感人物海报。 \n主题：【填写标题】 \n主体：【男性 / 女性 / 亚洲人物 / 西方人物 / 时尚人物】 \n配色：【暮紫色 / 深蓝灰 / 冷灰白 + 暖橙光】 \n比例：【9:16】 \n\n画面核心机制： \n一个主体人物位于中景，清晰对焦。 \n同时有另一个人物或一个模糊身影从镜头前方很近的位置掠过， \n形成大面积柔和前景虚焦。 \n整体使用傍晚光线、薄雾感、轻微颗粒和电影级空间深度。 \n前景模糊人物不需要清晰五官，只作为情绪和叙事张力来源。 \n中景主体保持清晰、克制、有情绪。 \n画面有明显前景、中景、背景层次。 \n\n排版采用高级编辑海报方式， \n加入少量精致标题和2—4组短句。 \n\n要求： \n安静、克制、略带悬念， \n像独立电影海报、时尚杂志封面、情绪叙事海报。 \n避免普通街拍感、廉价虚化和过度戏剧化表演。\n\n核心逻辑只有一句话：\n一个清晰人物 + 一个模糊经过者。前景虚焦不是干扰，是故事入口。\n\n有人路过、有人靠近、有关系发生、有时间在流动。中景主体要安静：站着、回头、侧身、凝视、等待。\n越克制，越有电影感。光线决定气质：暮色、冷灰白、深蓝夜色、暖橙街灯。\n\n延伸玩法：情绪海报、时尚封面、品牌氛围、双人关系（一清一虚更戏剧）。\n\n参数重点：\n前景模糊要\"大\"——整个人影大面积掠过，不是小配件。\n主体稳在中景，颜色克制（暮紫灰蓝、冷灰暖橙、深蓝银灰）。\n\n避坑：模糊太弱像脏污、主体也糊、变成街拍、前景抢戏、色彩过艳。\n\n一句话总结：\n不是虚焦本身，而是\"有人经过时，主角还站在那里\"的时间感。",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1784850147883.654
-  },
-  {
-    "title": "Midjourney风格参考 - 儿童绘本插画风格",
-    "slug": "midjourney-style-reference-children-book",
-    "model": "Midjourney",
-    "category": "style",
-    "tags": [
-      "style-reference",
-      "children-book",
-      "illustration",
-      "animation",
-      "人物"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/2080220129892192374.jpg",
-    "date": "Thu Jul 23 2026 08:00:00 GMT+0800 (China Standard Time)",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2080220129892192374",
-    "author": "OscarAI",
-    "prompt": "--sref 1206536427\n\nThis Midjourney style reference blends the warmth of classic children's book illustration with the charm of modern animated films.\n\nThe muted earthy palette and loose digital brushwork create images that feel handcrafted rather than overly polished. It's a perfect style for fantasy adventures, young heroes, cozy storytelling, and cinematic concept art.\n\nI've been using this reference to create expressive character designs that work beautifully both as standalone illustrations and as a starting point for animation workflows with tools like Seedance.\n\nUsage:\n- Add --sref 1206536427 to your Midjourney prompt\n- Works well for character design, fantasy scenes, and storytelling\n- Ideal for animation concept art and children's book illustration\n- Pairs well with Seedance for animation workflows",
-    "negativePrompt": "",
-    "parameters": {},
-    "mtime": 1784865147574.2236
+    "mtime": 1784909710889.481
   },
   {
     "title": "奢侈品产品摄影",
@@ -733,7 +710,7 @@
     "prompt": "A luxury commercial product photography shot featuring a sleek matte emerald green glass bottle with a tall cylindrical neck, rounded shoulders, and a premium brushed gold cap. The fictional brand name VERDARA is elegantly printed in embossed gold typography with a minimalist botanical emblem. The bottle is centered against a rich emerald green textured paper backdrop.\n\nThe paper is dramatically torn open across the middle, revealing an overflowing bed of fresh green grapes, sliced kiwi, mint leaves, and sparkling lime wedges hidden beneath. A curled section of torn paper on the lower left adds depth and realism. Several fruits are scattered naturally across the foreground.\n\nElegant editorial typography appears in the upper left:\n\n\"Sip Into Pure Freshness\"\n\n\"Sip\" in modern handwritten brush script, \"Into Pure Freshness\" in sophisticated high-fashion serif typography.\n\nThe bottle label features premium botanical illustrations of kiwi, grapes, mint, and lime with subtle metallic foil accents. Hyper-realistic glass reflections, natural condensation droplets, premium studio lighting, soft shadows, vibrant colors, razor-sharp focus, luxury beverage advertisement, photorealistic, ultra-detailed, award-winning commercial product photography, minimalist composition, 8K.",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1784850147884.717
+    "mtime": 1784909710889.8567
   },
   {
     "title": "Mirror Betrayal 产品反射广告",
@@ -901,7 +878,7 @@
     "prompt": "Create a premium editorial travel poster illustration of [PLACE]. Automatically identify and depict the most iconic landmarks, architecture, geography, and visual identity associated with [PLACE].\n\nStyle: flat vector illustration, ultra clean minimalism, mid-century modern aesthetic, editorial travel poster style inspired by Scandinavian graphic design and vintage tourism prints, no photorealism, no textures, no noise, no gradients.\n\nComposition: vertical 3:4 poster layout. Foreground: a peaceful, characteristic ground-level scene unique to [PLACE] (paths, steps, local plants, or water as appropriate). Midground: the most recognizable architectural style and skyline elements of [PLACE], with subtle silhouettes of people, local transport, and everyday life integrated naturally. Background: layered landscape or skyline of [PLACE] fading into the horizon, with 2–3 globally recognized landmarks of [PLACE] worked subtly into the scene.\n\nArchitecture: simplified geometric rendering of [PLACE]'s authentic architectural style, clean edges, balanced symmetry, flat color blocking.\n\nColor palette: a cohesive palette appropriate to [PLACE]'s real-world visual identity. The base/background color must be pure, bright white (# FFFFFF) — strictly no yellow tint, no cream, no ivory, no off-white, no golden or beige-yellow hues anywhere in the image. Use clean whites only, paired with [PLACE]-appropriate accent colors (blues, greens, terracotta, navy, etc. as fits the location), bright yet restrained saturation.\n\nLighting: bright daylight with soft, minimal shadows, fresh and clean atmosphere, calm and refined mood.\n\nTypography: add text at bottom center: \"[PLACE NAME IN CAPS]\" (large modern sans-serif, spaced lettering), with the country name as a small subtitle below.\n\nMood: calm, elegant, premium travel-magazine aesthetic, timeless and culturally accurate to [PLACE].\n\nQuality: ultra clean vector edges, perfect alignment and composition, high resolution, print-ready premium poster design.\n\nNegative prompt: no yellow, no cream, no ivory, no beige-yellow, no sepia, no golden tones, no gradients, no photorealism, no texture noise.",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1784850147884.3755
+    "mtime": 1784909710890.178
   },
   {
     "title": "Gemini的香蕉人像人脸内容的时期做过类似的教程有专门写捏脸：\n远不止在脸上加几颗痘痘痘印和简单皮肤纹理。\n很多图一眼就能看出是AI，缺的就是那种“活人”气息。这是之前gemini的核心要点：\n1.  皮肤的真实层次 区域差异化：T区油光明显、鼻翼有黑头、脸颊微干有细纹、下巴易有粉刺 微血管与色素：轻微红血丝、色斑不均匀、自然的血管透肤感 光线反应：不同光源下皮肤颜色、油光、反光都要真实变",
@@ -1281,7 +1258,7 @@
     "prompt": "生成一张 4:5 竖版高清音乐会艺术海报，系列主题为【系列名称】，单张主题为【海报标题】。\n\n画面风格为现代展演海报，高级音乐会视觉，具有艺术馆海报感、杂志排版感和系列化设计语言。\n\n背景使用【背景颜色】纸张质感，带轻微颗粒、印刷纹理和柔和留白，不要纯白空背景。\n\n主视觉是一件巨大的【乐器名称】局部，以写实 3D / 高级摄影质感呈现，从画面边缘进入并大胆裁切。重点表现【材质特征】，例如金属反光、木纹、黑漆、琴弦、按键、弧线结构等。乐器要真实、精致、结构准确，不要变形，不要卡通感。\n\n背景加入 1–2 个【几何色块】，例如圆形、半圆、弧形、细线、透明圆环或月相图形，用来平衡画面结构。几何元素要克制、高级，不要太复杂。\n\n排版采用非对称构图：大标题区 + 主视觉区 + 小型信息区。左侧放大中文标题【中文标题】，字体清晰、完整、有设计感。加入英文副标题【英文副标题】，使用优雅衬线字体或现代杂志字体。\n\n画面角落加入少量活动信息，例如：\nDATE / 【日期】\nVENUE / 【地点】\nSERIES / 【系列信息】\n\n底部可加入少量小字信息，例如：\n【节目类型】\n【演出描述】\n【策展信息】\n\n整体配色为【主色调】，保持高级、克制、有音乐厅气质。画面需要有强设计感、系列感、材质感和清晰视觉重心。\n\n避免：文字乱码、错字、乐器结构错误、信息过多、廉价促销感、培训班海报感、普通活动传单感、过度装饰、低清晰度。",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1784850147884.5112
+    "mtime": 1784909710890.0847
   },
   {
     "title": "GPT Image 2生图小技巧：3D CG转写实风",
@@ -1491,32 +1468,6 @@
     "mtime": 1784850147882.548
   },
   {
-    "title": "这就是我梦里的国风3D！🐉",
-    "slug": "这就是我-梦里的国",
-    "model": "Midjourney",
-    "category": "3d",
-    "tags": [
-      "摄影",
-      "AI绘画",
-      "国风",
-      "3D渲染",
-      "东方美学"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-1571127410.jpg",
-    "date": "2026-01-31",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2017484581016928521",
-    "author": "ponyoponyodong",
-    "prompt": "这就是我梦里的国风3D！🐉✨ 终于把这种“青蛇劫起”般的电影级质感用 Niji 6 完美复刻了。 那个墨绿色的流体背景和皮肤的通透感简直绝了……为了还原这个神仙画风，我大概跑了50张图调参。 今天把压箱底的 Prompt 和风格思路毫无保留地分享给大家！ 🧵 风格拆解 (The Vibe Check): 这种风格的核心不是 2D，而是极致的 3D渲染感 (C4D/Octane) 加上 东方奇幻美学。 关键要素： 主体： 坚毅的丹凤眼 (Sharp phoenix eyes) + 极简汉服。 环境： 墨绿色的流动能量 (Swirling dark green liquid/energy)，要有丝绸般的顺滑感。 光影（重中之重）： 必须要有电影光感 (Cinematic lighting) 和让皮肤像玉一样的次表面散射 (Subsurface scattering)。 👇 一键出图咒语 (复制即用)： A stunning 3D Chinese animation style close-up of a beautiful heroine, determi",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1784907722109.4263
-  },
-  {
     "title": "Nano Banana Pro and GPT image 1.5",
     "slug": "nano-banana-pro-and-gpt-image-15-1570554631",
     "model": "Gemini",
@@ -1723,32 +1674,6 @@
       "Aspect Ratio": "16:9"
     },
     "mtime": 1784907577153.356
-  },
-  {
-    "title": "【AI写真系列×韩系女团风】第四弹",
-    "slug": "写真系列-韩系女团-第四弹",
-    "model": "Gemini",
-    "category": "realistic",
-    "tags": [
-      "摄影",
-      "AI创作",
-      "提示词工具",
-      "MeiGen",
-      "AI生图"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-1570502495.jpg",
-    "date": "2026-01-31",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2017062059712925871",
-    "author": "骑司Chase (qisi_ai)",
-    "prompt": "讲真的，现在的提示词网站都还有很大的优化空间： 大部分提示词网站以“堆量”为主，靠着上千上万的提示词数量来堆砌价值，内容很丰富，但也存在大量重复、低质的提示词出现 如果是自动爬取的帖子，还会出现提示词空档的情况，因为并不是每一个作者都会把提示词直接写在正文中，所以识别不到 在这样的网站想要使用提示词，往往需要经历以下几个步骤： 1️⃣翻了很久，终于找到自己想要的图片效果 2️⃣点进去后会出现几种情况 - 没有提示词，只能放弃或者去原帖中找 - 语言不通，看不懂提示词 - 复制的文本里有其他文案，需要手动删除 3️⃣折腾十分钟，终于把提示词处理好了 4️⃣打开gemini/第三方生图网站 5️⃣复制提示词进行生图 6️⃣运气不好，发现提示词效果根本不是作者提供的那样，卒 想要丝滑的把中意的提示词变成图片，基本做不到 直到我用了MeiGen，一个开源的项目，它可能是今年使用体验最丝滑的提示词网站 因为MeiGen不是传统的提示词网站，它不只是收录，而是解决了从提示词源到创作的整条链路 想要什么效果，只需要轻轻拖动画面到右侧，点击生成就结束了，从查看到生成，只需要两步 「拖动-生成」结束 1",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1784907722111.8965
   },
   {
     "title": "Iron Man",
@@ -2817,32 +2742,6 @@
     "mtime": 1784907577151.4734
   },
   {
-    "title": ";; ━━━━━━━━━━━━━━━━",
-    "slug": "untitled",
-    "model": "Midjourney",
-    "category": "abstract",
-    "tags": [
-      "Formula Decoder",
-      "Mathematics Education",
-      "Physics Intuition",
-      "Learning Methodology",
-      "Richard Feynman"
-    ],
-    "difficulty": "advanced",
-    "cover": "/images/prompts/-1543068133.jpg",
-    "date": "2026-01-14",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2011272515067457913",
-    "author": "李继刚 lijigang",
-    "prompt": ";; ━━━━━━━━━━━━━━━━ ;; 作者: 李继刚 ;; 剑名: 公式原来是这么回事 ;; 剑意: 解码还原公式之美 ;; 日期: 2026-01-13 ;; ━━━━━━━━━━━━━━━━ \n* Role: 公式解码者 \n* Background 你是由理查德·费曼（直觉与物理现实）、格兰特·桑德森（几何直觉与视觉化）、欧几里得（逻辑严密性）和布雷特·维克多（动态交互思维）共同训练而成的超级解释者。 你的任务不是“背诵”公式，而是将一个枯燥的数学/物理公式还原为有血有肉的“现实机器”，让用户不仅记住它，更能理解它、看到它、甚至感觉它。 \n* Core Philosophy 1. 拒绝希腊式，拥抱巴比伦式：不要先给定义再证明。要先给出现象和困惑，再引出公式作为解决工具。 2. 直觉优先：在写出符号之前，先构建几何图像或物理隐喻。 3. 视觉语法：将公式视为积木的组合，利用“颜色编码”思维（即使在纯文本中）强调变量间的对应关系。 4. 极限拷问：通过代入极端值（0、1、∞）来测试公式的行为，展示其物理意义。 \n* 执行步骤 当用户输入一个公式或概念时，请严格按照以下 5 个阶",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1784907577154.9387
-  },
-  {
     "title": "WAN 2.6",
     "slug": "wan-26-1543098885",
     "model": "Midjourney",
@@ -2893,32 +2792,6 @@
       "Aspect Ratio": "16:9"
     },
     "mtime": 1784907722108.066
-  },
-  {
-    "title": "兄弟姐妹们！ 快速制作属于自己或者家人孩子的表情贴纸✌",
-    "slug": "兄弟姐妹-快速制作-属于自己",
-    "model": "Midjourney",
-    "category": "3d",
-    "tags": [
-      "AI贴纸",
-      "表情包制作",
-      "提示词工程",
-      "3D设计",
-      "职场娱乐"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-1541830723.jpg",
-    "date": "2026-01-13",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2011087906212085873",
-    "author": "Berryxia.AI",
-    "prompt": "兄弟姐妹们！ 快速制作属于自己或者家人孩子的表情贴纸✌️ 可以自定义表情、动作、文本、包括职业不同也会有有趣的东西。 使用步骤：1️⃣ 直接将prompt 发给香蕉或者豆包 2️⃣ 直接上传照片并且描述职业场景anyway 都可以。 欢迎评论区晒出你的有趣的表情贴纸✌️ Prompt：制作属于自己的专属职场打工牛马表情贴纸 [主体描述], [表情动作], [配饰道具], 3D character design, blind box style, Pop Mart aesthetic, C4D, Octane render, clay texture, matte finish, soft lighting, sticker sheet layout, 3x3 grid view, 9 different expressions: happy making heart gesture, sad with tears, angry with steam, sleepy yawning, surprised with open mouth, shy blushing, cheering wi",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1784907722109.534
   },
   {
     "title": "Kling 2.6 prompt: Hyperspeed FPV in a vertical cyb...",
@@ -2997,32 +2870,6 @@
       "Aspect Ratio": "16:9"
     },
     "mtime": 1784850147876.6204
-  },
-  {
-    "title": "🔥",
-    "slug": "untitled",
-    "model": "Midjourney",
-    "category": "portrait",
-    "tags": [
-      "AI角色设计",
-      "多图一致性",
-      "工作流",
-      "15宫格",
-      "AI绘画技巧"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/-1542007918.jpg",
-    "date": "2026-01-14",
-    "added": "2026-07-24",
-    "source": "https://x.com/94vanAI/status/2010666822740177135?s=20",
-    "author": "PlayForge AI 94vanAI",
-    "prompt": "🔥 在AI角色设计中，“多图人物一致性”一直是个痛点。很多创作者发现，生成单张图完美无缺，一旦尝试多宫格（Grid View），角色特征（Identity）就会发生严重的漂移。\n\n经过大量测试，我总结了一套标准化的工作流（Workflow），能够稳定输出高质量的15宫格角色卡。以下是核心逻辑：\n\n🎯 目标设定单图内包含15个独立格，人物ID高度统一，光影（Lighting）与构图（Composition）连贯，达到专业Casting Card标准。\n\n🛠️ 核心步骤详解\n\n1. Character Seed（特征锚点）不要依赖抽象形容词。你需要对基准图进行像素级拆解：\n\n骨相：oval face, angular jawline\n\n皮相：warm skin tone, light freckles\n\n特征：almond eyes, sharp nose\n\n建议：利用LLM（如ChatGPT）反推Prompt，生成标准化的面部描述符。\n\n2. Grid Prompt（结构化提示词）建立稳定的画面结构，防止AI自由发挥。 必须包含的Token：\n\n15-panel grid photo s",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1784907577168.0457
   },
   {
     "title": "Exploded Products by Nano Banana Pro on @SocialSight ⚙🤯",
