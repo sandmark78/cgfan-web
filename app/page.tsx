@@ -40,12 +40,12 @@ export default function Home() {
       {/* 分类 chips */}
       {categories.length > 0 && (
         <div className="mt-4 sm:mt-8">
-          <div className="category-chips justify-center">
+          <div className="category-chips justify-center overflow-x-auto pb-2 no-scrollbar md:flex-wrap">
             {categories.map((cat) => (
               <Link
                 key={cat.name}
                 href={`/explore?category=${encodeURIComponent(cat.name)}`}
-                className="category-chip text-xs sm:text-sm"
+                className="category-chip text-xs sm:text-sm whitespace-nowrap"
               >
                 <span className="mr-1 sm:mr-2">{getCategoryIcon(cat.name)}</span>
                 {getCategoryLabel(cat.name)}

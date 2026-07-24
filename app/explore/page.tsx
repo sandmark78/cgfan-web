@@ -142,12 +142,12 @@ export default async function ExplorePage({
                     ...(tag && { tag }),
                     page: String(currentPage - 1),
                   }).toString()}`}
-                  className="rounded-lg bg-zinc-800 px-4 py-2 text-sm text-white hover:bg-zinc-700"
+                  className="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-lg bg-zinc-800 px-4 py-2 text-sm text-white hover:bg-zinc-700"
                 >
                   上一页
                 </Link>
               )}
-              <span className="flex items-center px-4 text-sm text-zinc-400">
+              <span className="flex min-h-[44px] items-center px-4 text-sm text-zinc-400">
                 {currentPage} / {totalPages}
               </span>
               {currentPage < totalPages && (
@@ -158,7 +158,7 @@ export default async function ExplorePage({
                     ...(tag && { tag }),
                     page: String(currentPage + 1),
                   }).toString()}`}
-                  className="rounded-lg bg-zinc-800 px-4 py-2 text-sm text-white hover:bg-zinc-700"
+                  className="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-lg bg-zinc-800 px-4 py-2 text-sm text-white hover:bg-zinc-700"
                 >
                   下一页
                 </Link>

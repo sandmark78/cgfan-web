@@ -442,6 +442,15 @@ input[type="search"]:focus {
   outline-color: rgba(124, 255, 178, 0.6);
 }
 
+/* ── 隐藏滚动条（用于横向滚动区域）── */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 /* 暗色背景叠层 */
 .dark .app-bg::after {
   content: "";
