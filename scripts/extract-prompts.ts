@@ -312,6 +312,8 @@ function main() {
       } else if (file.endsWith('.md')) {
         const promptData = parseMarkdownFile(filePath);
         if (promptData) {
+          // 添加文件修改时间用于排序
+          (promptData as any).mtime = stat.mtimeMs;
           allPrompts.push(promptData);
         } else {
           skippedCount++;
@@ -322,11 +324,9 @@ function main() {
   
   walkDir(contentDir);
   
-  // 按上传日期排序（最新的在前），优先用 added，没有则 fallback 到 date
+  // 按文件修改时间排序（最新的在前）
   allPrompts.sort((a, b) => {
-    const dateA = new Date(a.added || a.date || '1970-01-01');
-    const dateB = new Date(b.added || b.date || '1970-01-01');
-    return dateB.getTime() - dateA.getTime();
+    return ((b as any).mtime || 0) - ((a as any).mtime || 0);
   });
   
   // 写入 JSON
