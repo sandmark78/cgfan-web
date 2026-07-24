@@ -64,8 +64,8 @@ export function PromptGrid({ prompts, maxRows }: PromptGridProps) {
 
   return (
     <div className="grid-uniform">
-      {displayPrompts.map((prompt) => (
-        <PromptCard key={prompt.slug} prompt={prompt} />
+      {displayPrompts.map((prompt, index) => (
+        <PromptCard key={prompt.slug} prompt={prompt} priority={index < 6} />
       ))}
     </div>
   )

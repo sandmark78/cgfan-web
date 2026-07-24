@@ -15,14 +15,47 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'CGfan - AI 提示词画廊',
+  metadataBase: new URL('https://cgfan-web.pages.dev'),
+  title: {
+    default: 'CGfan - AI 提示词画廊',
+    template: '%s | CGfan',
+  },
   description: '每日精选 AI 提示词和示例图，分门别类，方便查找和复用',
+  openGraph: {
+    type: 'website',
+    locale: 'zh_CN',
+    siteName: 'CGfan',
+    title: 'CGfan - AI 提示词画廊',
+    description: '每日精选 AI 提示词和示例图，分门别类，方便查找和复用',
+    images: [
+      {
+        url: '/og-cover.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'CGfan - AI 提示词画廊',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'CGfan - AI 提示词画廊',
+    description: '每日精选 AI 提示词和示例图，分门别类，方便查找和复用',
+    images: ['/og-cover.jpg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
   viewport: 'width=device-width, initial-scale=1.0',
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon-96x96.png',
     apple: '/apple-touch-icon.png',
-  }
+  },
 }
 
 export default function RootLayout({

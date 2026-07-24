@@ -18,6 +18,7 @@ interface PromptCardProps {
     author?: string
     likeCount?: number
   }
+  priority?: boolean
 }
 
 /**
@@ -50,7 +51,7 @@ function extractSummary(prompt: PromptCardProps['prompt']): string {
 /**
  * 提示词卡片 - 毛玻璃效果 + 整齐对齐
  */
-export function PromptCard({ prompt }: PromptCardProps) {
+export function PromptCard({ prompt, priority = false }: PromptCardProps) {
   const [likeCount, setLikeCount] = useState(prompt.likeCount || 0)
   const supabase = createClient()
 
@@ -91,7 +92,7 @@ export function PromptCard({ prompt }: PromptCardProps) {
       <div className="card-content p-4">
         {/* 封面图 */}
         <div className="relative aspect-[4/3] overflow-hidden rounded-xl">
-          <PromptImage src={prompt.cover} alt={prompt.title} />
+          <PromptImage src={prompt.cover} alt={prompt.title} priority={priority} />
           {/* 模型标签 */}
           <div className="absolute left-3 top-3">
             <span className="rounded-full bg-black/60 px-3 py-1 text-xs font-medium text-white backdrop-blur-sm">
