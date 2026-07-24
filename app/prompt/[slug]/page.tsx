@@ -145,6 +145,11 @@ export default async function PromptDetailPage({
     .filter((p) => p.category === prompt.category && p.slug !== slug)
     .slice(0, 6)
 
+  // 上一篇/下一篇导航
+  const currentIndex = allPrompts.findIndex((p) => p.slug === slug)
+  const prevPrompt = currentIndex > 0 ? allPrompts[currentIndex - 1] : null
+  const nextPrompt = currentIndex < allPrompts.length - 1 ? allPrompts[currentIndex + 1] : null
+
   return (
     <div className="mx-auto max-w-6xl px-4 py-8">
       {/* 面包屑导航 */}
@@ -253,6 +258,40 @@ export default async function PromptDetailPage({
           </div>
         </div>
       </div>
+
+      {/* 上一篇/下一篇导航 */}
+      {(prevPrompt || nextPrompt) && (
+        <div className="mt-12 flex items-center justify-between gap-4">
+          {prevPrompt ? (
+            <Link
+              href={`/prompt/${prevPrompt.slug}`}
+              className="group flex items-center gap-3 rounded-lg border border-gray-200 p-4 transition-all hover:border-green-500 hover:shadow-md dark:border-gray-700 dark:hover:border-green-500"
+            >
+              <svg className="h-5 w-5 text-gray-400 transition-transform group-hover:-translate-x-1 group-hover:text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+              <div className="flex-1">
+                <div className="text-xs text-gray-500 dark:text-gray-400">上一篇</div>
+                <div className="line-clamp-1 text-sm font-medium text-gray-900 dark:text-white">{prevPrompt.title}</div>
+              </div>
+            </Link>
+          ) : <div />}
+          {nextPrompt ? (
+            <Link
+              href={`/prompt/${nextPrompt.slug}`}
+              className="group flex items-center gap-3 rounded-lg border border-gray-200 p-4 text-right transition-all hover:border-green-500 hover:shadow-md dark:border-gray-700 dark:hover:border-green-500"
+            >
+              <div className="flex-1">
+                <div className="text-xs text-gray-500 dark:text-gray-400">下一篇</div>
+                <div className="line-clamp-1 text-sm font-medium text-gray-900 dark:text-white">{nextPrompt.title}</div>
+              </div>
+              <svg className="h-5 w-5 text-gray-400 transition-transform group-hover:translate-x-1 group-hover:text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+          ) : <div />}
+        </div>
+      )}
 
       {/* 相似推荐 */}
       {related.length > 0 && (

@@ -1,6 +1,25 @@
 import Link from 'next/link'
+import type { Metadata } from 'next'
 
 export const runtime = 'edge'
+
+/**
+ * About 页 SEO 元数据
+ */
+export const metadata: Metadata = {
+  title: '关于我们 | CGfan',
+  description: 'CGfan 是一个 AI 提示词画廊，汇集了从 X (Twitter) 上精选的 AI 生成艺术作品和提示词。帮助创作者发现优秀的提示词，学习 AI 绘画技巧，激发创作灵感。',
+  openGraph: {
+    title: '关于我们 | CGfan',
+    description: 'CGfan 是一个 AI 提示词画廊，汇集了从 X (Twitter) 上精选的 AI 生成艺术作品和提示词。',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: '关于我们 | CGfan',
+    description: 'CGfan 是一个 AI 提示词画廊，汇集了从 X (Twitter) 上精选的 AI 生成艺术作品和提示词。',
+  },
+}
 
 /**
  * 关于页面
