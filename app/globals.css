@@ -157,24 +157,168 @@ body {
   overflow: hidden;
 }
 
-/* 暗色模式 - 半透明背景，移除blur */
-.dark .glass-card {
-  background: rgba(20, 40, 30, 0.6);
-  border: 1.5px solid rgba(124, 255, 178, 0.15);
-  box-shadow: 
-    0 24px 64px rgba(0, 0, 0, 0.4),
-    0 0 0 1px rgba(124, 255, 178, 0.1) inset,
-    0 1px 0 rgba(124, 255, 178, 0.2) inset;
+/* ═══════════════════════════════════════════
+   暗色毛玻璃 v2 — 黑曜石质感
+   ═══════════════════════════════════════════ */
+
+/* 暗色导航栏 */
+.dark .glass {
+  background: linear-gradient(180deg, rgba(28,25,23,.82), rgba(20,17,16,.90));
+  border: none !important;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,.06),
+    0 1px 0 0 rgba(255,255,255,.06) inset,
+    0 8px 32px rgba(0,0,0,.4);
+  -webkit-backdrop-filter: blur(24px) saturate(1.3);
+  backdrop-filter: blur(24px) saturate(1.3);
 }
 
+/* 暗色卡片 - 黑曜石质感 */
+.dark .glass-card {
+  background: linear-gradient(168deg, rgba(41,37,36,.72), rgba(23,20,19,.88));
+  border: none;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,.07),
+    0 1px 0 0 rgba(255,255,255,.09) inset,
+    0 -1px 0 0 rgba(0,0,0,.35) inset,
+    0 12px 40px -8px rgba(0,0,0,.5),
+    0 4px 12px -2px rgba(0,0,0,.3);
+  -webkit-backdrop-filter: blur(20px) saturate(1.4);
+  backdrop-filter: blur(20px) saturate(1.4);
+  transition: transform .35s cubic-bezier(.22,1,.36,1),
+              box-shadow .35s cubic-bezier(.22,1,.36,1);
+}
+
+/* 卡片顶部高光 */
+.dark .glass-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: linear-gradient(180deg, rgba(255,255,255,.04), transparent 60%);
+  pointer-events: none;
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+
+/* 卡片 hover 效果 */
 .glass-card:hover {
-  transform: translateY(-3px);
+  transform: translateY(-4px);
   box-shadow: var(--glass-shadow-hover);
   border-color: rgba(255, 255, 255, 0.95);
 }
 
 .dark .glass-card:hover {
-  border-color: rgba(124, 255, 178, 0.3);
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,.13),
+    0 1px 0 0 rgba(255,255,255,.13) inset,
+    0 -1px 0 0 rgba(0,0,0,.35) inset,
+    0 20px 50px -8px rgba(0,0,0,.6),
+    0 8px 20px -4px rgba(0,0,0,.4);
+}
+
+/* 暗色图片压暗 */
+.dark .glass-card img {
+  filter: brightness(.92) contrast(1.02);
+  transition: filter .35s ease, transform .35s cubic-bezier(.22,1,.36,1);
+}
+
+.dark .glass-card:hover img {
+  filter: brightness(1) contrast(1);
+}
+
+/* 图片底部渐变遮罩 */
+.glass-card .relative.aspect-\[4\/3\]::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* 暗色 Chip */
+.dark .param-chip,
+.dark .category-chip {
+  background: rgba(255,255,255,.06);
+  border-color: rgba(255,255,255,.08);
+  box-shadow: 0 1px 2px rgba(0,0,0,.2) inset;
+}
+
+.dark .param-chip:hover,
+.dark .category-chip:hover {
+  background: rgba(255,255,255,.10);
+  border-color: rgba(255,255,255,.15);
+}
+
+/* 选中色 */
+::selection {
+  background: rgba(217, 119, 6, 0.2);
+  color: inherit;
+}
+
+.dark ::selection {
+  background: rgba(251,191,36,.25);
+  color: inherit;
+}
+
+/* 滚动条 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,.12);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,.2);
+}
+
+/* 按钮/Chip 按压反馈 */
+.param-chip:active,
+.category-chip:active,
+button:active {
+  transform: scale(0.96);
+  transition-duration: 0.1s;
+}
+
+/* 焦点样式 */
+:focus-visible {
+  outline: 2px solid var(--green-500);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.dark :focus-visible {
+  outline-color: rgba(124, 255, 178, 0.6);
+}
+
+/* 暗色背景叠层 */
+.dark .app-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(60% 60% at 50% 45%, rgba(12,10,9,.3), rgba(12,10,9,.7));
+  pointer-events: none;
 }
 
 /* ===== 整齐网格布局 ===== */
