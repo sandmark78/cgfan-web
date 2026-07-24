@@ -1,5 +1,51 @@
 [
   {
+    "title": "Bottle City Miniature",
+    "slug": "bottle-city-miniature",
+    "model": "GPT-Image2",
+    "category": "style",
+    "tags": [
+      "bottle",
+      "city",
+      "miniature",
+      "surreal",
+      "hyperrealistic"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/2080529110103925213.jpg",
+    "date": "Fri Jul 24 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2080529110103925213",
+    "author": "Saul Goodman",
+    "prompt": "Create a hyperrealistic poster featuring a transparent glass bottle partially buried in fine sand at a slight angle, with the ocean in the background. Inside the bottle, place a highly detailed miniature 3D model of [City Name], showcasing its iconic landmarks sits in the upper part while water fills the lower section. The scene is set under bright sunlight, with crisp shadows, realistic water reflections, and subtle sand textures. The bottle should have slight imperfections for authenticity. Add a slightly weathered paper label with '[City Name]' handwritten in elegant font, glued to the lower part of the bottle. The composition should be balanced, with a dreamy yet ultra-detailed aesthetic.",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1784874236851.4712
+  },
+  {
+    "title": "Premium Pepsi Tin Pack Commercial",
+    "slug": "premium-pepsi-tin-pack-commercial",
+    "model": "GPT-Image2",
+    "category": "commercial",
+    "tags": [
+      "pepsi",
+      "commercial",
+      "storyboard",
+      "beverage",
+      "advertising"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/2080513239972995388.jpg",
+    "date": "Fri Jul 24 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2080513239972995388",
+    "author": "ÀBDŪLLÂH",
+    "prompt": "TITLE: Premium Pepsi Tin Pack Commercial\n\nFORMAT: • Premium beverage commercial storyboard\n• Single-page portrait layout\n• High-end luxury editorial presentation\n• 9 cinematic storyboard scenes\n• Swiss editorial grid\n• Client presentation quality\n• Designed for a 10-second advertisement\n\nHEADER: • Playful elegant title\n• Handwritten creative note\n• Beverage-themed decorative accents\n• Information cards:\n\nDuration: 10 Seconds\n\nStyle: Premium Beverage Commercial\n\nAudience: Kids & Adults\n\nAudio: Happy Summer Music\n\nCreative Goal: Refreshment & Joy\n\nGRID STRUCTURE: • 3 × 3 storyboard layout\n• Rounded premium cards\n• Large cinematic previews\n• Scene number\n• Timestamp\n• Visual / Action / Dialogue\n\nSCENE FLOW:\n\n1. Pepsi tin pack hero pack shot (0:00–0:01)\n\n2. Hand naturally picks up the Pepsi tin pack from an ice bucket (0:01–0:02)\n\n3. Extreme close-up of the chilled Pepsi tin pack covered in icy condensation droplets with ultra-realistic aluminum texture (0:02–0:03)\n\n4. Can opening in slow motion with the pull tab popping naturally as refreshing fizz bursts out (0:03–0:04)\n\n5. Refreshing Pepsi pouring into a glass with sparkling bubbles, ice cubes, and dynamic liquid motion (0:04–0:05)\n\n6. Warm golden sunlight highlights the Pepsi tin pack with subtle condensation and refreshing mist (0:05–0:06)\n\n7. Happy enjoying moment with natural expression while taking a refreshing sip of Pepsi (0:06–0:08)\n\n8. Product beauty shot with flying ice cubes, sparkling water droplets, refreshing splash, and dynamic liquid motion (0:08–0:09)\n\n9. Premium hero pack shot featuring the Pepsi tin pack with logo and tagline (0:09–0:10)\n\nVISUAL STYLE: Realistic beverage commercial\nNatural daylight\nGolden-hour lighting\nUltra-detailed aluminum can texture\nRefreshing condensation droplets\nCrystal-clear ice cubes\nPremium beverage photography\nCommercial-grade cinematography\nNatural hand movements\nPhotorealistic composition\n\nGRAPHIC ELEMENTS: Tiny hearts\nSparkles\nMinimal doodles\nClean premium layout\n\nFOOTER: 10 Seconds\n9:16 Vertical\nPremium Beverage Storyboard\n\nOVERALL AESTHETIC: Pepsi commercial, luxury beverage advertising, cinematic realism, Behance featured, print-ready, ultra-clean editorial layout, photorealistic, 8K. #Lovart #LovartPartner",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1784874169429.2368
+  },
+  {
     "title": "复古未来主义矢量旅行海报",
     "slug": "retro-futuristic-vector-travel-poster",
     "model": "GPT-Image2",
@@ -69,6 +115,29 @@
     "mtime": 1784865168102.1572
   },
   {
+    "title": "Cosmic Astronaut Storybook Poster",
+    "slug": "cosmic-astronaut-storybook-poster",
+    "model": "GPT-Image2",
+    "category": "style",
+    "tags": [
+      "astronaut",
+      "cosmic",
+      "storybook",
+      "cinematic",
+      "poster"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/2080371761573675459.jpg",
+    "date": "Thu Jul 23 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2080371761573675459",
+    "author": "Loriel.AI",
+    "prompt": "Create an ultra-premium cinematic storybook space illustration that feels like a direct same-series continuation of an existing black-and-gold cosmic child-astronaut poster, with absolute consistency in composition logic, visual language, lighting behavior, fantasy atmosphere, and collectible print mood. The image must preserve the exact same core structure: a tiny childlike astronaut standing front-facing on the top of a cratered moonlike asteroid in the lower center of a tall vertical 2:3 frame, surrounded by a monumental cosmic environment with glowing ring geometry, drifting nebula light, scattered planets, warm golden celestial dust, and immense black negative space. The final artwork must feel like a sister image from the same series, not a new style. No visible text, no logo, no title, no symbols, no typography, no watermark.\n\nCore composition:\nUse a strict centered poster composition. A small fictional child astronaut stands on the rounded top of a cratered asteroid or moon in the lower third of the frame, facing directly forward. The body must feel symmetrical and iconic, with monumental stillness. Behind the astronaut, place a large thin glowing circular orbit ring or halo structure, centered on the figure, creating the same sacred cosmic framing logic as the original series. Preserve vast dark negative space around the figure, especially in the upper half and side areas, so the character feels tiny against an immense universe. Keep the child astronaut, planets, negative space, and the luminous backlight source all locked in the same compositional relationship.\n\nMain subject:\nA small childlike astronaut character with a premium fantasy-storybook design. The suit must be dark navy-black to charcoal-black, with warm bronze-gold trim, stitched leather-like paneling, reinforced gloves and boots, tiny straps, buckles, and subtle handcrafted explorer detailing. The helmet must be large, round, glossy, and reflective, with amber-gold metallic rings and a dark faceplate that does not reveal a human face. The figure should feel adorable but dignified, iconic but not cartoonish, standing calmly with arms relaxed at the sides. A warm golden scarf should flow softly to one side in low gravity, matching the same-series logic.\n\nEnvironment:\nBuild a vast deep-space fantasy landscape filled with elegant black cosmic depth, orange-gold nebula currents, drifting smoke-like stardust, small planets, distant moons, faint meteor fragments, and glowing particulate trails. The upper background should contain several celestial bodies placed with careful balance, including one larger planet and a few smaller moons, all softly rim-lit and integrated into the same black-gold world. Preserve the feeling of a giant cosmic horizon behind the astronaut, with luminous cloud bands and fantasy-grade celestial dust forming a soft arc through the frame. Keep all planets and celestial placements restrained, quiet, and series-consistent.\n\nLighting and mood:\nUse extremely delicate soft cinematic lighting. The primary light should come from behind the astronaut, creating a warm golden cosmic glow that outlines the helmet, scarf, shoulders, gloves, and boots with soft amber rim light. Let the rest of the frame fall into deeper black, charcoal, and muted bronze shadow than before. Use gentle bloom around the backlight and brightest celestial bodies, subtle volumetric dust, and rich tonal transitions. The mood must be quiet, lonely, hopeful, adventurous, magical, emotionally restrained, and more nocturnal in its black-gold depth.\n\nStyle:\nHighly detailed cinematic digital illustration with storybook realism. The style must be painterly but polished, with realistic material rendering on the suit, helmet, scarf, asteroid, and cosmic environment. The image must feel like a premium illustrated collector poster: magical but restrained, fantastical but believable, adorable but not childish, emotional but not sentimental. No comedy tone, no simplified cartoon look.\n\nColor direction:\nDeepen the overall palette into a darker black-and-gold system: rich black, deep navy-black, charcoal, muted bronze, antique gold, dim amber, burnt orange-gold nebula glow, and only very restrained cool dark space undertones. The image must feel darker, heavier, more elegant, more print-rich, and more unified than a brighter fantasy poster. Avoid bright yellows, neon gold, bright blue sci-fi tones, or excessive cosmic color noise.\n\nNegative prompt:\nvisible text, title, logo, watermark, caption, slogan, letters, numbers, typography, readable words, brand mark, modern nasa design, adult astronaut face visible, photorealistic human face, childish cartoon style, comedy mood, flat vector art, low detail, blurry stars, muddy nebula, oversaturated colors, bright neon gold, plastic suit, distorted helmet, bad anatomy, extra limbs, duplicated astronaut, cropped main subject, chaotic explosion, noisy particles, empty plain background",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1784874193211.5784
+  },
+  {
     "title": "Chevy Camaro Z/28 性能海报",
     "slug": "camaro-z28-performance-poster",
     "model": "GPT-Image2",
@@ -89,7 +158,7 @@
     "prompt": "Create an ultra-premium editorial-performance poster for Chevy Camaro Z/28, fully preserving the exact visual logic of a high-end segmented automotive product layout: a tall vertical poster with a clean premium master background, three or four tall tapered segmented image blocks in the upper half showing different high-intensity Camaro Z/28 moments and detail close-ups, and one full side-profile hero Chevy Camaro Z/28 stretching across the lower middle section as the dominant product anchor. The final artwork must feel bold, muscular, fast, precise, premium, and highly collectible, like a world-class automotive design annual exhibition poster. The Camaro Z/28 must remain the absolute protagonist. Use highly restrained English typography, minimal official-feeling Chevrolet or Camaro branding, and only a whisper of elegant icon-style spec data. The design must feel graphic, clean, quiet, and powerful while preserving the product's visual dominance.\n\nCore composition:\nUse a vertically oriented premium poster layout. In the upper half, arrange three or four tall segmented panels with slightly angled edges, evenly spaced but visually dynamic, each panel showing a different Camaro Z/28 visual state. The segmented blocks must feel consistent, sculptural, and editorial, not random collage pieces. Below them, place one large hyper-real full side-profile Chevy Camaro Z/28 spanning across the composition, grounded and dominant, reading like the final distilled summary of all the details above. The whole composition must feel balanced, intentional, and brand-powerful.\n\nSegmented panel logic:\nPanel 1 should show a dramatic front three-quarter view of the Chevy Camaro Z/28 in a clean studio-performance environment, emphasizing the low aggressive stance, front splitter, wide track, and muscular body form.\nPanel 2 should show an extreme close-up of a signature front detail such as the headlight, grille, hood vent, front fascia, or badge area, rendered with luxurious sharpness and tactile realism.\nPanel 3 should show a rear or rear three-quarter view emphasizing the taillight signature, diffuser, rear stance, spoiler, and planted muscle-car aggression.\nPanel 4, if used, should show a refined performance detail such as the cockpit, steering wheel, instrument cluster, paddle area, performance seat, wheel and brake system, or another Z/28 signature control or engineering detail.\nAll upper panels must feel part of one coherent visual world with consistent lighting and premium material discipline.\n\nHero product shot:\nPlace one full side-profile Chevy Camaro Z/28 across the lower middle section, larger than all upper panels in visual authority. The car must feel low, wide, planted, unmistakably Camaro, and extremely realistic. Emphasize the long hood, short deck, strong shoulder line, muscular fenders, aggressive coupe silhouette, performance wheels, and track-focused American muscle proportions. The car should feel like the distilled essence of brute force and precision. Keep it perfectly readable, sharply detailed, and visually dominant.\n\nProduct realism:\nRender the Chevy Camaro Z/28 with obsessive realism and premium automotive fidelity. Show accurate body proportions, track-ready stance, metallic paint depth, panel reflections, wheel design, brake detail, glass clarity, headlight precision, grille aggression, vent logic, and surface sculpting. The paint must feel expensive and tactile. The bodywork must show high-end reflections, subtle environmental lighting, and clean studio-grade finish even in the more dramatic upper panel shots. No distortion, no generic sports coupe look. It must feel unmistakably Chevy Camaro Z/28.\n\nColor direction:\nUse a premium high-impact performance palette inspired by bold American muscle presentation: saturated championship yellow, deep black, graphite gray, carbon fiber black, warm metallic bronze reflections, and restrained red brake accents. The full poster background should remain extremely light, minimal, and spacious, preferably a luxurious warm off-white, pale ivory, soft concrete, or premium exhibition-white field so the segmented imagery and the yellow Camaro stand out with clarity. The overall feeling must be bold, muscular, modern, and highly refined.\n\nLighting:\nUse extremely delicate, soft, high-end cinematic lighting. The upper segmented panels should carry richer contrast and controlled premium drama, while the lower hero car should feel ultra-clean, sculpted, and expensive. Reflections must be controlled and elegant. Paint, glass, wheel finishes, brake hardware, vents, and lights should all be rendered with world-class realism. The lighting must feel luxurious and intentional, never harsh, never flat.\n\nTypography and layout:\nUse a highly restrained English main title such as \"CHEVY CAMARO Z/28\" or \"CAMARO Z/28\" in a bold premium layout, but make it smaller, lighter, and quieter than a conventional advertisement. Add only one short English slogan line beneath if needed, in a sharp performance tone. Include subtle official-feeling Chevrolet bowtie or Camaro mark placement, but keep it minimal and premium. Typography must feel modern, engineered, beautifully art-directed, and almost gallery-like, never bulky, never generic, never cluttered.\n\nMinimal data and icon logic:\nUse only a very small, refined row of premium performance-style data icons and English labels, such as ENGINE, POWER, TORQUE, or TRACK DNA. Keep the number of data points minimal, the scale small, and the design elegant. The data must feel like a faint editorial accent rather than a technical information strip. Use sparse dark gray typography with extremely restrained accent highlights. Everything should feel intentionally reduced.\n\nNegative prompt:\ngeneric muscle car, distorted body proportions, cluttered layout, cheap brochure look, oversized text, dense data blocks, noisy background, low-detail wheels, plastic paint, weak Camaro identity, messy collage, low-resolution reflections, cartoon car, excessive motion blur, amateur racing poster style",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1784869055943.3184
+    "mtime": 1784873624733.3877
   },
   {
     "title": "韩国女性雨天街拍",
@@ -253,29 +322,6 @@
     "mtime": 1784850147883.5195
   },
   {
-    "title": "金箔岩彩插画：群青圣莲",
-    "slug": "gold-leaf-sacred-lotus",
-    "model": "GPT-Image2",
-    "category": "portrait",
-    "tags": [
-      "oriental",
-      "gold-leaf",
-      "mineral-pigment",
-      "sacred",
-      "eastern"
-    ],
-    "difficulty": "advanced",
-    "cover": "/images/prompts/2080286680649773541.jpg",
-    "date": "Thu Jul 23 2026 08:00:00 GMT+0800 (China Standard Time)",
-    "added": "2026-07-24",
-    "source": "https://x.com/liyue_ai/status/2080286680649773541",
-    "author": "李岳",
-    "prompt": "9:16 竖版，高完成度群青蓝金东方圣女金箔岩彩数字插画，modern oriental gold-leaf mineral-pigment sacred maiden illustration，东方幻想莲华圣女人像，精致半写实数字插画人物，矿物岩彩色层，不规则真实金箔工艺，兼具东方装饰性平面美学、神殿仪式感与纵深空间层次。\n\n画面主体是一位明确成年的年轻东方女性，视觉年龄约 20–28 岁，身份为莲华圣女，气质圣洁、神秘、庄雅、安静、清冷而克制。人物采用胸像至大半身近景构图，身体呈三分之二侧身，肩颈舒展，仪态端庄，头部轻微转向镜头方向，目光略微越过镜头，神情沉静含蓄，像正在凝视遥远的星轨与云海。\n\n人物拥有空灵仙气的精致东方数字插画脸，脸型为小巧柔和的鹅蛋脸，额头饱满，面中细腻立体，面部轮廓纤秀流畅，下颌线清晰但不过度尖锐。眼睛为细长清亮的杏眼，眼尾轻微上扬，瞳色为深茶棕，瞳孔具有清晰而克制的高光；眉形细致舒展，鼻梁秀气流畅，鼻尖精巧自然，唇形柔润细致，裸粉与浅珊瑚色唇妆含有细腻光泽。\n\n人物脸部采用高完成度半写实数字插画塑形，肤面干净通透，面部明暗柔和细腻，保持真实东方骨相和流畅轮廓。只参考人脸的数字插画塑形方式与肤面表现，不迁移任何参考图中的宫廷头冠、重珠宝体系、舞台背景、过强发光或华丽女王式世界观。弱化明显 3D CG 建模感，不出现塑料高光、蜡像皮肤、过度磨皮或厚重壁画脸。\n\n发型为仙气半扎长发与轻量高髻结合，乌黑长发柔顺垂落，发尾在高台微风中自然飘动，部分细碎发丝轻贴脸侧，发髻结构清晰但不夸张。头饰为轻量莲花金冠，主体采用层叠金箔莲瓣结构，搭配少量珍珠、青金石小珠、银金细枝与细长流苏，结构精致有主次，不遮挡五官，不形成戏曲大冠或重珠宝堆砌感。\n\n妆容采用珍珠白通透底妆，肤面细腻清润，眼妆以浅群青、冰蓝灰与少量银灰色层自然晕染，睫毛根部加入极细金线，眼尾略微拉长但保持克制，内眼角使用少量冷白金提亮。眉心点缀精细白金花钿，形态为小型莲瓣或星芒纹，唇色为柔雾裸粉与粉金之间，柔润含光。妆容清晰显妆，但不现代网红化，不欧美浓妆。\n\n人物穿着群青蓝层叠祭礼长裙，外层为高纯度群青、青金石蓝与靛青色丝绸长袍，内层为珍珠白与冰灰白交领内衬，肩部与袖间搭配半透明银白轻纱和深靛青披帛。服装为完整包覆式古风祭礼结构，领口与胸前衣襟层叠严谨，衣料完整遮盖胸部，不暴露、不低胸，但通过自然剪裁和层叠织物表现成年女性饱满、自然、端庄的胸部轮廓与协调身形。\n\n人物上围饱满自然，胸腰比例协调，服装贴合但不紧绷，胸前由珍珠白内衬、群青外袍与交叠衣襟完整覆盖，轮廓柔和自然，不刻意挤压，不出现夸张胸沟或暴露感。腰部使用深海军蓝与金线腰封收束，使整体身形端雅、庄重、符合圣女身份。\n\n服装材质由丝绸、锦缎、绢布和轻纱构成，衣料柔软垂坠，褶皱细腻自然。群青外袍表面融入金箔莲纹、星轨纹、水波纹、月轮纹与细小星芒纹样，局部加入矿脉状金线、金线刺绣和不规则金箔拼贴。金色纹样沿袖缘、肩部、腰封和衣襟自然延伸，但服装始终保持真实织物感，不变成硬质金属铠甲。\n\n场景为高台神殿与深蓝色东方幻想穹顶，人物站在云海之上的神殿长廊或露台前。背景包含深海军蓝石柱、群青穹顶、远处层叠宫殿、云海、月轮与极少量星辰。人物身后设置大型圆形金箔星轨与莲华月轮装饰，形成具有仪式感的视觉光环，但光环是矿物岩彩和金箔装饰结构，不是强烈自发光特效。\n\n背景主结构采用高纯度群青、青金石蓝、靛青和深海军蓝，神殿柱体与穹顶形成稳定浓郁的暗部锚点；远处云海使用珍珠白、冷白和少量冰灰蓝，保持洁净明亮。远景只适度降低对比，不褪成灰蓝，不产生大面积灰雾滤镜。\n\n整体采用高饱和、高对比的群青蓝金岩彩体系。主色为高纯度群青、青金石蓝、皇家蓝、靛青与深海军蓝，辅色为珍珠白、冰灰蓝和少量银白，金属色为明金、浅金、古金与银金。蓝色必须浓郁、纯净、通透，不得变成灰蓝、雾蓝或低饱和青灰。\n\n画面建立明确明度分区：人物玉白肤色、珍珠白内衬和远处云海为高明度区域；群青外袍为高饱和中明度区域；黑色长发、深海军蓝神殿、柱体与穹顶构成中低明度和暗部锚点；金箔莲花、星轨、头冠和纹样形成局部明亮高光。亮部清澈，暗部深邃，中间色保持纯净，不发灰、不浑浊。\n\n金箔分布强度为中偏强，主要集中在莲花头冠、人物身后的星轨月轮、服装莲纹、星轨纹、肩部装饰与腰封细节。金色区域呈现真实金箔工艺质感，具有不规则箔片边缘、细小颗粒、轻微褶皱、局部斑驳、裂纹和微浮雕起伏，并呈现亮金、暖金、古金与暗金层次。金箔不是普通黄色描边，不是廉价亮片，也不做满屏金色发光。\n\n光线采用清澈冷白侧前光照亮人物面部，使额头、眼下、鼻梁、唇部与肩颈形成柔和干净的明暗过渡；柔和侧逆光从人物后方扫过发丝、头冠、耳坠、轻纱和金箔星轨，形成克制的边缘亮度。低角度掠射光照亮金箔表面，使金属材质产生细碎而清晰的反射，金色反光不污染人物肤色。\n\n构图为现代东方神性海报式人物主视觉，人物脸部位于画面上方黄金分割区域，圆形莲华星轨在人物身后形成稳定构图中心。人物头冠、五官、服装胸前纹样和腰封共同形成纵向视觉轴，深蓝神殿柱体与远处云海向纵深延伸，画面庄严但不过度拥挤。\n\n整体效果应圣洁、神秘、华贵、安静、庄雅，具有高纯度群青矿物颜料浓度、真实金箔工艺、莲华与星轨的东方神性意象，以及高完成度半写实数字插画人物表现。保持群青蓝金东方圣女金箔岩彩主风格，不转成普通仙侠游戏立绘、明显 3D CG 角色渲染、舞台式宫廷海报、宝石女王风或满屏金色发光幻境。\n\n负面约束：未成年，幼态，儿童脸，夸张二次元大眼，网红脸，欧美整容脸，明显 3D CG 建模，塑料皮肤，蜡像脸，厚重壁画脸，过度磨皮，五官模糊，眼睛无神，肤色发灰，满脸贴金，金箔覆盖五官，普通黄色描边，廉价闪粉，整图偏黄，灰蓝滤镜，低饱和青灰，脏蓝，褪色旧画感，大面积灰雾覆盖主体，蓝色发白，暗部不够深，高光浑浊，胸部暴露，低胸，夸张胸沟，衣襟松散，服装透明暴露，身体比例异常，戏曲大冠，重宝石头冠，头饰遮脸，满屏莲花堆砌，强烈自发光光环，舞台追光，霓虹污染，服装金属铠甲化，背景拥挤，文字，水印，logo，手指畸形，四肢错误，饰品悬浮。",
-    "negativePrompt": "",
-    "parameters": {},
-    "mtime": 1784850147883.9585
-  },
-  {
     "title": "双重曝光艺术时尚人像",
     "slug": "double-exposure-art-fashion-portrait",
     "model": "GPT-Image2",
@@ -389,29 +435,6 @@
     "negativePrompt": "",
     "parameters": {},
     "mtime": 1784850147884.6516
-  },
-  {
-    "title": "微表情之傲娇",
-    "slug": "tsundere-micro-expression",
-    "model": "GPT-Image2",
-    "category": "portrait",
-    "tags": [
-      "ancient-style",
-      "tsundere",
-      "micro-expression",
-      "photography",
-      "国风"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/2080231502311567862.jpg",
-    "date": "Thu Jul 23 2026 08:00:00 GMT+0800 (China Standard Time)",
-    "added": "2026-07-24",
-    "source": "https://x.com/GrayNoteLab/status/2080231502311567862",
-    "author": "灰度笔记",
-    "prompt": "超写实古风人像摄影，电影级视觉，Anime Realism，近景特写（Close-up Portrait），人物占画面约75%～85%，肩部以上构图，人物正面对镜头，不侧身，身体保持正面，仅头部自然向一侧轻轻歪头约10°～15°，姿势端庄自然。\n\n表情参考经典古风影视中的傲娇微笑：嘴角轻轻上扬，弯嘴浅笑，笑意克制，不露齿，眼神带一点骄傲与灵动，带有几分少女的小得意，神态可爱而不过分夸张；双眼自然望向镜头偏上方，瞳孔大小符合真实人眼比例，避免二次元超大瞳、玻璃眼、高饱和虹膜，保留真实虹膜纹理与自然高光。\n\n肤色白皙细腻，柔雾奶油肌，真实皮肤纹理，浅粉自然腮红，小巧鼻梁，粉嫩自然唇色，不使用花钿，不使用现代妆容元素。\n\n背景采用原创古风环境，不参考其他图片背景：江南古典园林、亭台楼阁、青瓦白墙、木质花窗、庭院回廊、竹影、水榭、小桥、桃花或玉兰花点缀，背景充分虚化（Large Bokeh），营造东方古典氛围，不出现现代建筑或现代物品。\n\n傍晚黄金时刻（Golden Hour）自然逆光，柔和轮廓光勾勒发丝，暖金色阳光穿过树叶形成细腻光斑，电影级空气透视，浅景深，高级胶片质感，画面通透明亮，色彩低饱和，高级电影调色。\n\n摄影风格：Leica SL3，APO-Summicron-SL 90mm F2 ASPH，F2.0，浅景深，中画幅质感，真实摄影，不使用HDR，不出现AI塑料皮肤，不出现夸张磨皮。",
-    "negativePrompt": "",
-    "parameters": {},
-    "mtime": 1784850147884.2412
   },
   {
     "title": "电影人像海报（前景虚焦叙事）",
@@ -803,29 +826,6 @@
     "mtime": 1784850147886.4182
   },
   {
-    "title": "樱花汉服人像",
-    "slug": "cherry-blossom-hanfu",
-    "model": "GPT-Image2",
-    "category": "portrait",
-    "tags": [
-      "cherry-blossom",
-      "hanfu",
-      "spring",
-      "photorealistic",
-      "国风"
-    ],
-    "difficulty": "advanced",
-    "cover": "/images/prompts/2079781372626165800.jpg",
-    "date": "Wed Jul 22 2026 08:00:00 GMT+0800 (China Standard Time)",
-    "added": "2026-07-24",
-    "source": "https://x.com/YUKIMASTERAI/status/2079781372626165800",
-    "author": "YUKI",
-    "prompt": "Ultra-photorealistic portrait of a beautiful young adult East Asian woman standing gracefully beneath cascading pink weeping cherry blossoms in a traditional Chinese courtyard during spring. She has long, silky black hair flowing naturally down her back, fair porcelain skin with subtle natural texture, soft almond-shaped brown eyes, delicate facial features, and light rosy makeup with glossy lips.\n\nShe wears an elegant blush pink hanfu-inspired chiffon dress with sheer flowing sleeves, intricate floral embroidery, pearl embellishments, layered translucent fabric, and a fitted waist. A large pale pink flower hair ornament with dangling pearl tassels decorates one side of her hair.\n\nShe gently raises one hand to touch the hanging cherry blossoms while turning her upper body slightly toward the camera. Calm, gentle expression with direct eye contact and a subtle smile.\n\nBackground features a traditional dark wooden pavilion with Chinese lattice windows softly blurred by shallow depth of field. Foreground includes dreamy out-of-focus cherry blossoms creating natural framing and depth.\n\nGolden afternoon sunlight filters through the blossoms, producing soft highlights, warm rim lighting, cinematic atmosphere, creamy bokeh, volumetric light, delicate pink color palette, romantic spring mood.\n\nShot on Sony A7R V, 85mm f/1.4 GM lens, f/1.8, ISO 100, ultra-high resolution, HDR, masterpiece, realistic skin pores, natural hair strands, ultra detailed fabric texture, professional fashion photography, soft color grading, Leica-inspired tones, 8K.",
-    "negativePrompt": "",
-    "parameters": {},
-    "mtime": 1784850147884.3079
-  },
-  {
     "title": "GPT-Image2 婚礼请柬美学提示词",
     "slug": "prompt-2079557034622796056",
     "model": "GPT-Image2",
@@ -904,29 +904,6 @@
     "mtime": 1784850147885.4707
   },
   {
-    "title": "Bloom in Motion 夏日野花人像",
-    "slug": "bloom-in-motion-summer",
-    "model": "GPT-Image2",
-    "category": "portrait",
-    "tags": [
-      "summer",
-      "wildflower",
-      "motion",
-      "fresh",
-      "natural"
-    ],
-    "difficulty": "advanced",
-    "cover": "/images/prompts/2078835665958314213.jpg",
-    "date": "Sun Jul 19 2026 08:00:00 GMT+0800 (China Standard Time)",
-    "added": "2026-07-24",
-    "source": "https://x.com/MrLarus/status/2078835665958314213",
-    "author": "Larus Canus",
-    "prompt": "Subject: [young woman / character]\nDress: [color and style of light summer dress]\nScene: [wildflower meadow / green hillside / summer garden]\nAction: [running / turning back / spinning / walking through flowers]\nFlowers: [wildflower bouquet / no bouquet]\nLighting: [bright summer sunlight / soft backlight]\n\nCreate a 9:16 vertical, photorealistic summer fashion portrait with a natural editorial photography feel.\n\nCapture the subject in the middle of a real movement rather than posing for the camera. Her expression should feel spontaneous and alive, with natural eye movement and relaxed emotion. The dress is thin, lightweight, airy and slightly translucent in the sunlight, with soft fabric flowing naturally as she moves.\n\nUse wind to animate the hair, loose strands, dress and surrounding flowers. Keep the face and main body relatively sharp while introducing subtle directional motion blur in the background, fabric edges and foreground plants, creating the feeling of a candid moment caught in motion.\n\nSurround her with lush green vegetation and scattered summer wildflowers. Add softly blurred flowers or grass in the foreground for depth. Use bright natural sunlight, fresh green tones, soft highlights and realistic skin texture.\n\nThe final image should feel youthful, fresh, airy and full of summer vitality — like a spontaneous outdoor fashion editorial captured while running through a field.",
-    "negativePrompt": "",
-    "parameters": {},
-    "mtime": 1784850147883.8582
-  },
-  {
     "title": "接上一期，分享绝美AI古风女生侧颜提示词\n提示词prompt：中国古典美学，宋韵美学，工笔写实风格，超写实摄影，东方古风成年女子，气质清雅，五官精致，肤色细腻自然，杏眼含光，自然淡妆，浅粉唇色，神情温柔宁静，身体微微背向镜头，右肩朝向镜头，头部自然向右缓缓转动约35°，轻轻回眸凝视镜头，三分之二侧颜，Rear Three-quarter Portrait，近景半身肖像，人物占画面约75%，肩颈舒",
     "slug": "prompt-2078522659567239382",
     "model": "Midjourney",
@@ -951,6 +928,29 @@
       "Aspect Ratio": "16:9"
     },
     "mtime": 1784850147886.0771
+  },
+  {
+    "title": "Ethereal Woman with Blue Butterflies",
+    "slug": "ethereal-woman-blue-butterflies",
+    "model": "GPT-Image2",
+    "category": "portrait",
+    "tags": [
+      "butterfly",
+      "surreal",
+      "fine art",
+      "oil painting",
+      "ethereal"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/2078497116771783012.jpg",
+    "date": "Sat Jul 18 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2078497116771783012",
+    "author": "Aylin",
+    "prompt": "Create a contemporary surreal fine art oil painting of an ethereal woman partially hidden behind dozens of luminous blue butterflies. The butterflies naturally merge with her face, fingers, neck, and flowing white hair, becoming part of her anatomy rather than separate objects. One large butterfly gently covers one eye while smaller butterflies climb across her hands and shoulders. Her porcelain skin features subtle freckles, delicate paint splatters, and soft natural imperfections. She has expressive melancholic eyes, slightly parted lips, and an intimate, mysterious expression. Long platinum-white hair softly dissolves into loose painterly strokes. Color palette: soft blue dusty gray white silver cool teal subtle iridescent highlights. Minimal textured background with soft neutral tones. Visible oil brush strokes, painterly texture, expressive blending, fine art canvas, contemporary surrealism, museum-quality artwork, emotional composition, soft diffused lighting, elegant realism, highly detailed, masterpiece.",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1784874334885.01
   },
   {
     "title": "增强AI人脸真实感提示词",
@@ -4326,32 +4326,6 @@
       "Aspect Ratio": "16:9"
     },
     "mtime": 1784850147874.5217
-  },
-  {
-    "title": "谷歌 Veo 3.1 昨晚这个更新牛皮啊",
-    "slug": "prompt-1543095027",
-    "model": "Midjourney",
-    "category": "abstract",
-    "tags": [
-      "veo",
-      "Veo 3.1",
-      "Google AI",
-      "Video Generation",
-      "Genie 3"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-1543095027.jpg",
-    "date": "2026-01-14",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2011334661923049609",
-    "author": "歸藏(guizang.ai) op7418",
-    "prompt": "谷歌 Veo 3.1 昨晚这个更新牛皮啊 新的多图参考和 4K 超分，直接把可用性拉满了 多图参考（Ingredients to Video）中人物和物品一致性大幅增强，支持输出竖版视频，也能融合纹理、角色和物品。 视频分辨率也有变化，现在官方支持更好的 1080P 和 4K 超分服务。 目前 FLOW 上就可以使用，选择“素材生视频”就可以，只支持 Veo 3.1-Fast 模型。",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1784850147874.7356
   },
   {
     "title": "又一个 多智能体推演 AI，在 GitHub 开源了。",
