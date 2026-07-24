@@ -174,12 +174,30 @@ function cleanPrompt(content: string): string {
 function normalizeDate(dateValue: any): string {
   if (!dateValue) return '';
   
+  // 如果是 Date 对象，检查是否有非零时间分量（表示是精确时间戳）
+  if (dateValue instanceof Date && !isNaN(dateValue.getTime())) {
+    const hours = dateValue.getUTCHours();
+    const minutes = dateValue.getUTCMinutes();
+    const seconds = dateValue.getUTCSeconds();
+    // 如果有时分秒分量（非全部为0），说明原本是 ISO 时间戳，保留完整 ISO
+    if (hours !== 0 || minutes !== 0 || seconds !== 0) {
+      return dateValue.toISOString(); // 保留完整时间
+    }
+    // 全部为0，说明原本只是日期，只输出 YYYY-MM-DD
+    return dateValue.toISOString().split('T')[0];
+  }
+  
+  // 如果是 ISO 8601 时间戳字符串（含 T 和时区），直接保留
+  if (typeof dateValue === 'string' && /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}/.test(dateValue)) {
+    return dateValue;
+  }
+  
   // 如果已经是 YYYY-MM-DD 格式
   if (typeof dateValue === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(dateValue)) {
     return dateValue;
   }
   
-  // 如果是 Date 对象或可以解析为日期
+  // 如果是字符串但可以解析为日期
   try {
     const date = new Date(dateValue);
     if (!isNaN(date.getTime())) {
@@ -335,13 +353,31 @@ function main() {
   
   walkDir(contentDir);
   
-  // 按 mtime（文件修改时间=实际上传时间）升序排列
-  // 最早上传的在前，最新上传的在最后 → "新上传的排在后面"
-  // 首页和探索页通过 reverse() 实现"最新优先"展示
+  // 按上传时间升序排列（最早上传在前，最新上传在后）
+  // 优先使用 added 字段（含 ISO 时间戳），否则 fallback 到 mtime
   allPrompts.sort((a, b) => {
-    const mtimeA = (a as any).mtime || 0;
-    const mtimeB = (b as any).mtime || 0;
-    return mtimeA - mtimeB;
+    const addedA = a.added || '';
+    const addedB = b.added || '';
+    
+    // 如果 added 含 ISO 时间戳（带 T），精确排序
+    const hasTimeA = addedA.includes('T');
+    const hasTimeB = addedB.includes('T');
+    
+    if (hasTimeA && hasTimeB) {
+      // 都有 ISO 时间戳 → 按时间排序
+      return addedA.localeCompare(addedB);
+    } else if (hasTimeA && !hasTimeB) {
+      // A 有精确时间 → A 排在 B 后面（B 是同一天，先显示）
+      return 1;
+    } else if (!hasTimeA && hasTimeB) {
+      // B 有精确时间 → B 排在 A 后面
+      return -1;
+    } else {
+      // 都没有精确时间 → 用 mtime 排序
+      const mtimeA = (a as any).mtime || 0;
+      const mtimeB = (b as any).mtime || 0;
+      return mtimeA - mtimeB;
+    }
   });
   
   // 写入 JSON

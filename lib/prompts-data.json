@@ -3043,13 +3043,13 @@
     "difficulty": "advanced",
     "cover": "/images/prompts/clay-render-to-dark-fantasy-cover.webp",
     "date": "Tue Jul 21 2026 08:00:00 GMT+0800 (China Standard Time)",
-    "added": "2026-07-21",
+    "added": "2026-07-25T06:55:00.000Z",
     "source": "https://x.com/DrSadek_/status/2080643089534726452",
     "author": "DrSadek",
     "prompt": "## Step 1: 单色粘土渲染 / Greybox 重建\n\nRecreate the reference image as a clean monochrome Blender clay render / greybox cinematic reconstruction. Preserve only the composition, subject placement, architecture, silhouette, and lighting direction. Use neutral matte grey clay materials for everything, with no color palette, no film grain, no cinematic color grading, no painterly texture, no surface noise, no ornate texture detail. The goal is clean geometry and spatial structure: one bowed figure centered in a ruined stone hall, tall pillars, rubble floor, arched opening, and diagonal volumetric light from the upper left. Simplify textures into clean sculptural forms while keeping the same scene design and solemn dark fantasy mood.\n\n## Step 2: 超写实真人暗黑奇幻电影画面\n\nTransform this monochrome clay reconstruction into an ultra-realistic live-action grim melancholic dark fantasy film still. Preserve the composition, subject placement, architecture, silhouette, ruined hall structure, rubble floor, arched opening, and diagonal upper-left lighting direction. Add realistic stone, fabric, hair, rubble, atmospheric haze, muted golds, charcoal greys, old bronze, bone white, faded candlelight, and deep crimson accents. Make it high-budget festival cinema shot on 35mm film with an anamorphic lens, moody chiaroscuro lighting, grounded production design, clean cinematic detail, and controlled subtle film grain. The final image should be clean and detailed, not noisy, not painterly, not a game screenshot.",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1784926543721.3228
+    "mtime": 1784933787827.3171
   },
   {
     "title": "逆流而行：编辑风丝网印刷系列 — 四幕独行者",
@@ -3066,12 +3066,12 @@
     "difficulty": "advanced",
     "cover": "/images/prompts/editorial-screenprint-dam-worker.webp",
     "date": "Fri Jul 24 2026 08:00:00 GMT+0800 (China Standard Time)",
-    "added": "2026-07-24",
+    "added": "2026-07-25T06:56:00.000Z",
     "source": "https://x.com/gridzzle/status/2080609314138390780",
     "author": "Ahmed",
     "prompt": "## 1. 大坝维护工 — 溢洪道中央的攀登者\n\nA small dam maintenance worker climbs a steep central access stair between colossal spillway walls as water plunges downward on both sides. The scene is rendered as a mature editorial screen print with bold flat shapes, visible ink grain, Weathered Bone and Tidal Blue-Gray fields, deep Harbor Black structure, and a Rust Vermilion safety rope as the only accent.\n\n## 2. 体育场维护工 — 逆向而行的人流\n\nA lone stadium maintenance worker carrying a sealed supply case walks upward against a crowd moving down across a broad concrete concourse. The high oblique scene uses simplified dark silhouettes, exposed Weathered Bone floor, Tidal Blue-Gray architecture, screen-print grain, and a single Rust Vermilion case to isolate the worker.\n\n## 3. 渡夫 — 逆流撑篙\n\nA river ferryman stands in a narrow skiff and pushes upstream with a long pole while strong current bands sweep in the opposite direction. The industrial river scene uses a mature editorial screen-print look with broad Weathered Bone sky, Harbor Black silhouettes, Tidal Blue-Gray water, visible ink texture, and a Rust Vermilion rain cloak as the sole accent.\n\n## 4. 灯塔守望者 — 潮汐堤道上的独行\n\nA lighthouse keeper walks alone along a narrow tidal causeway into strong wind, with gulls, spray, open flats, rough sea, and a distant lighthouse around him. The sparse screen-print composition uses broad Weathered Bone negative space, Harbor Black structure, muted Tidal Blue-Gray weather, visible ink grain, and one Rust Vermilion fuel can.",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1784926558889.3032
+    "mtime": 1784933790982.9663
   }
 ]

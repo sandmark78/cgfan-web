@@ -8,6 +8,7 @@ category: style
 tags: [editorial-screenprint, minimal-color, silhouette, series, GPT-Image2]
 difficulty: intermediate
 cover: /images/prompts/editorial-screenprint-dam-worker.webp
+added: 2026-07-25T14:56:00+08:00
 source: https://x.com/gridzzle/status/2080609314138390780
 ---
 

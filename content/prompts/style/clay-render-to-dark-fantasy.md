@@ -8,6 +8,7 @@ category: style
 tags: [clay-render, dark-fantasy, cinematic, two-step, denoise, GPT-Image2]
 difficulty: advanced
 cover: /images/prompts/clay-render-to-dark-fantasy-cover.webp
+added: 2026-07-25T14:55:00+08:00
 source: https://x.com/DrSadek_/status/2080643089534726452
 ---
 
