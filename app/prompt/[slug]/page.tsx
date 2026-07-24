@@ -149,7 +149,7 @@ export default async function PromptDetailPage({
                     href={linkUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn-primary text-[10px] inline-flex items-center gap-1"
+                    className="inline-flex items-center gap-1 text-[10px] font-semibold text-white bg-[var(--green-500)] hover:bg-[var(--green-600)] rounded-full px-3 py-1.5 transition-all hover:-translate-y-0.5"
                   >
                     <svg className="h-3 w-3" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
