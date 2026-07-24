@@ -23,6 +23,52 @@
     "mtime": 1784905220563.0742
   },
   {
+    "title": "现代亚洲咖啡馆海报生成器",
+    "slug": "modern-asian-cafe-poster",
+    "model": "GPT Image 2",
+    "category": "commercial",
+    "tags": [
+      "咖啡",
+      "海报",
+      "商业",
+      "日韩",
+      "极简"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/2080648358914658503.jpg",
+    "date": "Fri Jul 24 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-24",
+    "source": "https://x.com/SimplyAnnisa/status/2080648358914658503",
+    "author": "Anissa",
+    "prompt": "GPT IMAGE 2 on CHATGPT\n\nCreate a premium 1:1 modern Asian café promotional poster for \"[PRODUCT NAME]\" using the uploaded product image or generate an ultra-realistic premium version of the drink. Design the poster in a clean Korean/Japanese-inspired café branding style with bold oversized typography, premium minimalism, playful graphic accents, and an elegant editorial layout.\n\nCanvas: 1080×1080 px (1:1), optimized for Instagram.\n\nComposition: Centered hero drink with a clean sticker-style white cutout outline and subtle drop shadow. Keep the composition balanced, spacious, and aesthetically pleasing. Avoid clutter.\n\nBackground: Automatically generate a soft premium background inspired by the drink flavor using smooth gradients, paper textures, subtle grain, organic abstract shapes, curved lines, spark icons, tiny doodles, outlined circles, hand-drawn arrows, minimal geometric elements, and modern Asian café graphics.\n\nLighting: Premium commercial studio lighting with realistic reflections, glossy cup highlights, creamy textures, soft shadows, shallow depth of field, and ultra-appetizing realism.\n\nStyle: Luxury café advertising, Korean coffee shop branding, Japanese editorial poster, Gen Z minimal design, premium packaging aesthetic, ultra-realistic beverage photography, elegant typography composition.\n\nTypography: Use oversized bold typography integrated naturally into the layout. Combine large condensed sans-serif fonts, elegant handwritten script, small editorial captions, and curved typography where appropriate. Do not overcrowd the design.\n\nAutomatically generate elegant marketing text relevant to the drink, such as: Daily Fresh, Signature Blend, Crafted Daily, Smooth & Creamy, Rich Flavor, Premium Selection, Café Collection, Since 2026.\n\nAvoid: Order Now, Fast Delivery, Big discount labels, Loud promotional stickers, Price tags, QR codes.\n\nMATCHA LATTE VERSION:\nDrink: Premium Iced Matcha Latte\nColors: Matcha Green, Cream, Warm White, Soft Sage\nDecorations: Floating matcha powder, Fresh tea leaves, Bamboo whisk, Ceramic bowl of matcha, Ice cubes, Tiny leaf doodles, Soft botanical graphics\nTypography: Large word \"MATCHA\", Elegant script \"Latte\", Small captions: Daily Fresh, Premium Selection, Smooth & Creamy, Japanese Café Style\nMood: Fresh, Clean, Minimal, Organic, Premium, Calm, Luxury Café\n\nCHOCOLATE SHAKE VERSION:\nDrink: Premium Chocolate Shake\nColors: Chocolate Brown, Mocha, Cream, Caramel, Dark Cocoa\nDecorations: Floating chocolate cubes, Chocolate drizzle, Cocoa powder particles, Whipped cream, Chocolate curls, Tiny sparkle doodles, Elegant abstract shapes\nTypography: Large word \"CHOCOLATE\", Elegant script \"Shake\", Small captions: Rich & Creamy, Crafted Daily, Premium Blend, Signature Café\nMood: Rich, Luxurious, Creamy, Indulgent, Premium, Modern, Editorial\n\nCamera: Close-up hero composition, 85mm commercial food photography, shallow depth of field, ultra-sharp textures, premium advertising quality, realistic reflections, 8K.\n\nFinal Look: Minimal yet bold Korean/Japanese café poster with elegant typography, clean composition, premium branding, modern editorial styling, realistic drink photography, and a luxurious Instagram-worthy aesthetic.",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1784905817666.0469
+  },
+  {
+    "title": "LOOP 城市骑行奢侈编辑海报",
+    "slug": "loop-city-cycling-editorial-poster",
+    "model": "GPT Image 2",
+    "category": "style",
+    "tags": [
+      "海报",
+      "编辑",
+      "城市",
+      "骑行",
+      "排版"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/2080636904152998144.jpg",
+    "date": "Fri Jul 24 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-24",
+    "source": "https://x.com/arsalannazir07/status/2080636904152998144",
+    "author": "Marcos",
+    "prompt": "Create an ultra-realistic luxury editorial poster with a clean off-white textured paper background and a minimalist magazine layout. A dynamic low-angle cinematic photograph of a stylish young man riding a modern bicycle through an urban downtown street during golden hour. The subject wears a beige overshirt layered over a white T-shirt, relaxed black trousers, black-and-white sneakers, and a black backpack. Preserve realistic facial details, natural skin texture, and authentic motion.\n\nIntegrate the photograph inside enormous bold uppercase typography reading \"LOOP\", where the letters act as clipping masks while parts of the cyclist naturally overlap outside the letters to create depth. Use oversized sans-serif typography in muted dark teal. Position the cyclist so the front wheel extends beyond the typography for a striking 3D editorial effect.\n\nOn the right side, add a clean vertical information panel with minimalist typography:\n\nTitle: CITY LOOP\nSeries: HUMAN FRAGMENTS\nVisual Note: every route leaves a shape\n2026\n\nInclude thin divider lines, subtle \"+\" symbols in opposite corners, generous white space, premium Swiss-style grid composition, muted earthy color grading, soft natural sunlight, realistic shadows, high-end fashion magazine aesthetic, luxury branding, modern graphic design, ultra-sharp details, cinematic photography, award-winning editorial poster, 8K resolution, portrait 4:5 aspect ratio.",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1784905829998.0332
+  },
+  {
     "title": "产品爆炸商业摄影生成器",
     "slug": "product-explosion-commercial-photography",
     "model": "Gemini",
@@ -113,6 +159,29 @@
     "negativePrompt": "",
     "parameters": {},
     "mtime": 1784905208660.8257
+  },
+  {
+    "title": "3×3 编辑照片网格生成器",
+    "slug": "3x3-editorial-photo-grid",
+    "model": "GPT Image 2",
+    "category": "portrait",
+    "tags": [
+      "人像",
+      "编辑",
+      "摄影",
+      "极简",
+      "工作室"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/2080571396745486426.jpg",
+    "date": "Fri Jul 24 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-24",
+    "source": "https://x.com/MissDelulu9/status/2080571396745486426",
+    "author": "Eesha",
+    "prompt": "GPT Image 2 on ChatGPT\n\nPrompt: Create a refined 3×3 editorial photo grid in a soft beige studio. The subject wears a lightweight dark navy shirt, ivory trousers, and is barefoot to convey a raw, minimalist aesthetic.\n\nLighting Setup: Large diffused key light from the front-right, silver reflector on the left side, and a subtle overhead rim light.\n\nNine Detailed Shot Compositions:\n- Extreme close-up of the lips (85mm, f/1.8)\n- Close-up of the eyes looking directly into the camera\n- Black-and-white portrait with chin resting on hand\n- Half-concealed portrait with partial face visibility\n- Close-up with hands covering the face\n- Hair falling across the eyes composition\n- Detailed shot of hands touching the chin\n- Half-body seated side pose\n- Cinematic side profile with a tear on the cheek\n\nCapture with a mix of 35mm, 50mm, and 85mm lenses, maintaining shallow depth of field and subtle angle variations. Professional RAW look, muted cinematic color grading, smooth tonal contrast, and fine film grain.\n\nMood: intimate, introspective, minimalist editorial photography with a premium magazine aesthetic, ultra-realistic, 8K.",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1784905807655.1829
   },
   {
     "title": "复古户外杂志海报生成器",
@@ -5462,5 +5531,28 @@
     "negativePrompt": "",
     "parameters": {},
     "mtime": 1784862025681.54
+  },
+  {
+    "title": "角色设定与生活手账海报",
+    "slug": "character-design-life-journal-poster",
+    "model": "GPT Image 2",
+    "category": "portrait",
+    "tags": [
+      "角色设定",
+      "手账",
+      "动漫",
+      "插画",
+      "中文"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/2080136792318083513.jpg",
+    "date": "Thu Jul 23 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-23",
+    "source": "https://x.com/leo_xiaolei/status/2080136792318083513",
+    "author": "多肉｜AI 内容增长架构师",
+    "prompt": "Semi-realistic anime-inspired portrait of a stylish young Korean woman with a short glossy black bob tucked behind one ear, delicate round-frame glasses, and a gentle confident expression. She wears an oversized pastel lilac blouse with rolled sleeves paired with a flowing ivory A-line midi skirt. Full-body composition, standing casually with relaxed posture. Behind her is an artistic collage of hand-drawn monochrome character studies, loose pencil sketches, manga panels, playful doodles, stars, hearts, swirls, and handwritten notes scattered organically across the backdrop. Contemporary anime fashion illustration with mixed ink-and-pencil textures, clean linework, subtle cel shading, bright white background, magazine-cover aesthetic, highly detailed, ultra-sharp, vibrant yet elegant, 8K masterpiece.\n\n中文版本提示词：\n请先上传一张清晰的人物参考图片，并以参考图中的人物作为唯一角色原型，创作一张半写实动漫风格的角色设定与生活手账海报。\n\n【人物一致性要求】\n严格保留参考图中人物的核心身份特征，包括：性别与年龄感、脸型和五官比例、肤色与面部特征、发型发色和头发长度、眼镜耳饰项链等标志性配饰、身材比例和整体气质、参考图中的主要服装特征。生成结果必须让人一眼看出是参考图中的同一个人物。\n\n【主体画面】\n以人物完整全身形象作为画面中心，自然放松自信的站立姿势，完整展示头部、身体、双手、双腿和鞋子。\n\n【周围设定内容】\n在主体人物周围，以整齐而富有设计感的拼贴方式加入：\n1. 角色设定：正面、四分之三侧面、完整侧面和背面视图\n2. 表情展示：平静、开心、好奇、害羞、惊讶、紧张、难过、坚定、放松\n3. 日常生活画面：阅读、喝咖啡、工作学习、散步、拍照、听音乐等\n4. 服装与细节：发型、褶皱、鞋子、包袋、首饰、手部动作\n5. 手账与涂鸦元素：星星、爱心、花朵、蝴蝶结、箭头、音符、便签纸等\n\n【中文文字要求】\n画面中所有标题、标签、便签和对话框必须使用准确自然的中文简体。禁止出现英文、韩文、日文、繁体中文。\n\n【视觉风格】\n明亮干净的白色或暖白色背景，日系/韩系时尚插画质感，自然的铅笔素描纹理，黑白漫画分镜，干净细腻的墨线，柔和的数字上色，轻微赛璐璐阴影，低饱和柔和配色，清新温柔文艺治愈的氛围。",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1784905848453.9001
   }
 ]
