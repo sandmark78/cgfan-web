@@ -3037,5 +3037,97 @@
     "negativePrompt": "",
     "parameters": {},
     "mtime": 1784972175930.35
+  },
+  {
+    "title": "角色参考图 + 涂鸦阴影双人肖像生成器",
+    "slug": "character-reference-prompt",
+    "model": "GPT Image 2",
+    "category": "portrait",
+    "tags": [
+      "character",
+      "reference",
+      "doodle",
+      "portrait",
+      "mixed-media"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/character-reference-prompt.jpg",
+    "date": "Sat Jul 25 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-25T10:30:00.000Z",
+    "source": "https://x.com/Ciri_ai/status/2080867597806133589",
+    "author": "Ciri_ai",
+    "prompt": "Use the uploaded character reference image as the strict identity and outfit reference.\n\nPreserve the reference character's:\n- face identity, facial proportions, eye shape, nose, lips, skin tone\n- hairstyle, hair color, visible hair accessories\n- overall recognizable vibe\n- outfit and styling shown in the reference image\n\nDo not hardcode any specific character traits that are not present in the uploaded reference. All identity, hairstyle, accessories, and clothing details must be inferred directly from the uploaded reference image.\n\nCreate a high-quality mixed-style vertical portrait showing:\n1. a realistic full-body version of the uploaded character/person\n2. a black hand-drawn doodle-shadow version of the same character/person on the wall beside them\n\nCore concept: The real person and their doodle-shadow are doing a playful mischievous pose together. The real person performs a cute realistic version of the pose, while the doodle-shadow performs a much more exaggerated, chaotic, cartoonish version of the same pose idea. The mood should feel cute, playful, mischievous, stylish, funny, and social-media-friendly.\n\nReal person: Must remain realistic and photogenic. Must wear the same outfit style and key visible details from the uploaded reference image. Expression should be cute, slightly confused, mildly embarrassed, playful.\n\nDoodle-shadow: Must be a black hand-drawn sketch version of the same person, drawn directly on the wall. Not a realistic second person, not a normal physical shadow, not a full-color anime character. Black sketch line-art only. Add manga-like motion lines, hearts, stars, sparkles, and comic marks around the doodle if helpful.\n\nThe pose must NOT be fixed. For each generation, invent a new playful mischievous pose. The real person and the doodle-shadow should share the same general pose idea.\n\nComposition: vertical 4:5 or 9:16, show the real person in full-body or nearly full-body framing, place the real person on one side of the frame, place the black doodle-shadow on a clean wall beside them.\n\nBackground: simple clean indoor studio wall or minimal room corner, white, cream, or pale gray wall, clean floor, soft natural sunlight patch.\n\nLighting: soft natural studio lighting, bright, clean, polished, playful mood.\n\nStyle quality: realistic human photography, black hand-drawn doodle-shadow on wall, matching mischievous pose interaction, strong identity resemblance, cute and stylish mixed-media portrait, clean composition, social-media-friendly, no obvious AI artifacts.",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1784980297766.809
+  },
+  {
+    "title": "极简航拍：孤帆与森林单人滑翔伞",
+    "slug": "minimalist-ocean-sailboat",
+    "model": "GPT Image 2",
+    "category": "landscape",
+    "tags": [
+      "aerial",
+      "minimalist",
+      "ocean",
+      "forest",
+      "national-geographic"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/minimalist-ocean-sailboat.jpg",
+    "date": "Fri Jul 24 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-25T11:50:00.000Z",
+    "source": "https://x.com/Naiknelofar788/status/2080720887314264212",
+    "author": "simeon-sanai",
+    "prompt": "Prompt 1: An ultra-minimalist aerial drone photograph of a vast deep-blue ocean stretching endlessly in every direction. A single small white sailboat is perfectly isolated near the center of the frame, emphasizing solitude, freedom, and scale. The sea has subtle ripples and rich navy-to-cobalt blue tones with natural texture. The composition features extensive negative space, creating a calm, cinematic, and peaceful atmosphere. Shot from a very high altitude with a top-down telephoto perspective, the sailboat appears tiny against the immense ocean. Soft natural daylight, realistic water reflections, crisp details, photorealistic, fine art travel photography, luxury editorial aesthetic, National Geographic style, Hasselblad medium-format camera, 100mm lens, ultra-sharp focus, HDR, 8K resolution, clean composition, minimalist color palette, no land, no horizon, no people visible, only the solitary sailboat surrounded by endless sea.\n\nPrompt 2: An ultra-minimalist aerial drone photograph of an endless dense evergreen forest stretching to the horizon. A single tiny white paraglider with a clean white canopy floats perfectly near the center of the frame, emphasizing solitude, freedom, and the immense scale of nature. The forest consists of tightly packed dark pine and fir trees, creating a rich deep-green texture with subtle variations in tone. Captured from an extremely high altitude with a top-down telephoto perspective, the paraglider appears tiny against the vast forest canopy. The composition features abundant negative space, creating a calm, cinematic, and contemplative mood. Soft overcast natural light, gentle atmospheric haze, realistic tree textures, crisp details, photorealistic, fine-art landscape photography, luxury editorial aesthetic, National Geographic style, Hasselblad X2D medium-format camera, 100mm telephoto lens, ultra-sharp focus, HDR, 8K resolution, muted green color palette, no mountains, no roads, no rivers, no buildings, no other people or aircraft, only the solitary paraglider above the endless forest.",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1784980320023.994
+  },
+  {
+    "title": "热气球日出旅行海报：土耳其 / 日本",
+    "slug": "cinematic-travel-poster",
+    "model": "GPT Image 2",
+    "category": "portrait",
+    "tags": [
+      "travel",
+      "poster",
+      "hot-air-balloon",
+      "cinematic",
+      "typography"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/cinematic-travel-poster.jpg",
+    "date": "Sat Jul 25 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-25T11:50:00.000Z",
+    "source": "https://x.com/noorwithwifi/status/2080935590774833626",
+    "author": "NoorAI",
+    "prompt": "Create a cinematic travel poster of [LOCATION] at sunrise with a pastel sky gradient (blue, pink, purple, and orange). Fill the sky with numerous hot air balloons at varying distances, featuring one large foreground balloon and several smaller colorful balloons for depth. Showcase the destination's iconic landscape with natural haze and warm golden-hour lighting. Add elegant, center-aligned serif typography with the country name in large spaced capitals and the destination name below in smaller serif capitals separated by dashes. Use a minimalist, premium travel magazine aesthetic with balanced composition, soft atmospheric depth, and high-resolution realism.",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1784980309724.4287
+  },
+  {
+    "title": "AI 小说封面生成框架：故事驱动封面设计",
+    "slug": "novel-cover-framework",
+    "model": "GPT Image 2",
+    "category": "style",
+    "tags": [
+      "book-cover",
+      "novel",
+      "editorial",
+      "typography",
+      "framework"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/novel-cover-framework.jpg",
+    "date": "Fri Jul 24 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-25T11:50:00.000Z",
+    "source": "https://x.com/MrLarus/status/2080683852700278988",
+    "author": "Larus Canus",
+    "prompt": "【小说名称】：\n【小说类型】：\n【一句话故事梗概】：\n【主要人物与关系】：\n【核心冲突】：\n【故事发生地】：\n【关键场景】：\n【关键物件】：\n【核心情绪】：\n【作者名】：\n【封面宣传语】：\n【主色调】：\n【画幅比例】：2:3 竖版\n\n请先理解以上小说内容，再为它设计一张原创小说封面。\n\n不要只根据书名随机生成一张图片。请先从故事中提炼：\n1. 最核心的情绪\n2. 最有代表性的场景\n3. 最能暗示剧情的人物关系或关键物件\n4. 适合小说气质的主色与辅助色\n5. 对应题材的字体与排版语言\n\n使用真实摄影感、文学感和电影感结合的视觉方式。以小说中的关键场景作为全幅背景，画面应具备明确的前景、中景和远景，并通过人物背影、玻璃倒影、雨水、灯光、建筑、交通工具或关键物件，加入克制但可感知的叙事线索。\n\n封面不能只是漂亮风景，也不要把剧情全部直接讲明。画面应让读者感受到故事正在发生，并对人物关系或冲突产生好奇。\n\n根据画面结构安排书名位置，不要每张封面都把文字固定放在同一侧。中文书名是主要视觉，可使用手写体、宋体、无衬线体或其他与题材匹配的字体；英文副标题、作者名和宣传语作为次级信息。文字应与建筑透视、道路、人物、光线或留白区域自然结合，而不是简单覆盖在图片上。\n\n保留适当的出版设计层次：中文书名、英文副标题或拼音（可选）、作者名、一句封面宣传语、少量小说类型或出版信息。\n\n整体需要有真实小说封面的完整度、视觉层次和出版感，不能过度极简，也不能像普通摄影海报。不同小说应根据故事内容自然生成不同的场景、构图、配色、字体和情绪，而不是套用同一个固定模板。\n\n最终只生成一张独立完整的小说封面，不要生成拼图、九宫格、书籍样机或展示场景。",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1784980349849.2966
   }
 ]
