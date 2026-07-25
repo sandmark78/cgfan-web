@@ -2945,5 +2945,97 @@
     "negativePrompt": "",
     "parameters": {},
     "mtime": 1784933790982.9663
+  },
+  {
+    "title": "La Mer 四格自然场景护肤海报生成器",
+    "slug": "la-mer-skincare-poster",
+    "model": "GPT Image 2",
+    "category": "commercial",
+    "tags": [
+      "skincare",
+      "poster",
+      "commercial",
+      "luxury",
+      "editorial"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/la-mer-skincare-poster.jpg",
+    "date": "Fri Jul 24 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-25T09:35:00.000Z",
+    "source": "https://x.com/ou_zhen599/status/2080699209632952468",
+    "author": "Loriel.AI",
+    "prompt": "Create an ultra-premium 2x2 four-panel skincare campaign poster for La Mer, with absolute brand consistency but four completely different fantasy natural environments. Each quadrant must feel like a distinct magical world with its own ecological identity, color atmosphere, and cinematic mood, yet all four must still clearly belong to one unified La Mer visual universe. The product must remain the absolute protagonist in every panel, fully integrated into nature as if it naturally belongs there.\n\nThe four environments and their visual metaphors:\n- Tropical rainforest — conveys deep nourishment: humid tropical sanctuary, filtered golden light, wet foliage, living moss\n- Coastal cliffs — conveys revitalizing balance: ocean cliff renewal, salt mist, mineral-rich rocks, cool open daylight\n- Moonlit forest — conveys nighttime repair: moonlit forest ritual, silver-blue haze, damp moss, subtle bioluminescence\n- Sea crystals — conveys hydration and radiance: sea-mineral sanctuary, pearl-aqua light, translucent crystals, luminous moisture\n\nThe scenes become more than just pretty backdrops; they serve as visual metaphors for the product's key selling points. First, determine the benefits each product aims to convey, then match them with the appropriate climate, lighting, and textures.\n\nThe final artwork must feel like a world-class luxury skincare series and like award-winning cinematography frozen into four still frames: hyper-real product photography, exquisite environmental storytelling, elegant natural interaction, subtle fantasy atmosphere, and collector-grade visual refinement. Use refined English title typography, subtle official-feeling branding, and minimal support text in a premium editorial layout.\n\nCore layout: Use a strict 2x2 four-panel composition with balanced spacing, subtle grid gaps, and a unified color palette that shifts slightly per quadrant.",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1784972150025.5857
+  },
+  {
+    "title": "蓝晒法 Cyanotype 工艺美学：普鲁士蓝肖像",
+    "slug": "cyanotype-process-aesthetic",
+    "model": "GPT Image 2",
+    "category": "style",
+    "tags": [
+      "cyanotype",
+      "aesthetic",
+      "vintage",
+      "photography",
+      "blueprint"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/cyanotype-aesthetic.jpg",
+    "date": "Sat Jul 25 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-25T09:35:00.000Z",
+    "source": "https://x.com/AllaAisling/status/2080812273250263097",
+    "author": "Alexandra Aisling",
+    "prompt": "[SUBJECT], cyanotype process aesthetic, everything rendered in prussian blue and white, botanical or architectural elements contact-printed around the subject, the image reading as both photograph and blueprint, UV light artifacts at the edges, the oldest photographic feeling.\n\nMore examples generated with this prompt:\n- A young woman wearing a crown of wildflowers, cyanotype process aesthetic, everything rendered in prussian blue and white, botanical or architectural elements contact-printed around the subject\n- A dragonfly resting on reeds, cyanotype process aesthetic, everything rendered in prussian blue and white, botanical or architectural elements contact-printed around the subject",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1784972161248.043
+  },
+  {
+    "title": "反者道之动：霓虹鱼眼编辑海报生成系统",
+    "slug": "dao-poster-system",
+    "model": "GPT Image 2",
+    "category": "style",
+    "tags": [
+      "poster",
+      "system-prompt",
+      "fisheye",
+      "neon",
+      "typography"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/dao-poster-system.jpg",
+    "date": "Fri Jul 24 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-25T09:35:00.000Z",
+    "source": "https://x.com/hx831126/status/2080681825505280084",
+    "author": "虎小象",
+    "prompt": "ROLE｜角色\nYou are a senior editorial art director, conceptual photographer, character designer, bilingual copywriter, and experimental poster designer.\n\n根据用户输入的 KEYWORD，创作一张完整的 9:16 霓虹天空鱼眼字体编辑海报。\n\n你需要独立完成：\n- 理解关键词的真实含义\n- 判断关键词的情绪强度与文化语境\n- 将抽象关键词转化为一个具体人物\n- 决定人物的职业、身份、年龄气质和生活背景\n- 决定人物正在进行的巅峰动作\n- 选择最能代表人物与关键词的道具\n- 根据人物身份设计合理服装\n- 根据关键词生成主标题和微型辅助文字\n- 完成无黑边的鱼眼镜头、巨大字体与人物之间的空间关系\n\nOUTPUT｜输出规格\nCreate exactly ONE photorealistic experimental editorial poster. Aspect ratio: 9:16 vertical. Exactly one adult person. One complete poster. No collage, no split screen, no multiple variations, no mockup frame, no visible brand logo, no watermark, no UI elements.\n\n视觉风格：neon cyan sky + extreme fisheye perspective + monumental acid-yellow typography + ordinary-person heroism + late-1990s experimental editorial print\n\nCHARACTER CREATION｜人物生成\n根据关键词自动设计一位具有真实身份感的人物。人物必须具备：明确但不刻板的职业或生活身份，真实可信的年龄感，符合职业与生活环境的身体状态，有力量、有性格，但不是超级英雄。\n\nWARDROBE LOGIC｜服装推导\n人物服装必须根据关键词含义、人物职业、人物所处环境、人物正在进行的动作、真实功能需求、海报整体配色共同推导。画面中需要保留一种温暖强调色（red/coral/vermilion/warm orange/magenta/rust/deep pink），暖色比例控制在画面约 10–15%。\n\nACTION DESIGN｜动作设计\n根据人物身份与关键词设计一个具有爆发力的巅峰动作。动作必须能够代表关键词，与人物职业或生活身份有关，处于动作发生的最高张力瞬间，形成清晰对角线，穿越画面中心。",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1784972134510.9954
+  },
+  {
+    "title": "托斯卡纳阳光住宅：四页室内设计提案",
+    "slug": "tuscan-sunlit-residence",
+    "model": "GPT Image 2",
+    "category": "style",
+    "tags": [
+      "interior",
+      "design",
+      "editorial",
+      "tuscan",
+      "architecture"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/tuscan-sunlit-residence.jpg",
+    "date": "Sat Jul 25 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-25T09:35:00.000Z",
+    "source": "https://x.com/MrLarus/status/2080652961231827318",
+    "author": "Larus Canus",
+    "prompt": "Create a four-page interior design proposal series titled \"Sunlit Tuscan Residence\".\n\nDesign a contemporary Tuscan living room for a real private home. The space should feel sun-washed, warm, architectural, earthy and refined, with large arched openings, lime-plaster walls, travertine, dark walnut, natural linen, aged leather, blackened iron, handmade ceramics, terracotta accents, olive green and soft afternoon light. Avoid farmhouse styling, rustic inns, vacation rentals, coastal décor, distressed wood, vintage clutter and all-beige minimalism.\n\nUse a professional editorial presentation style with a warm limestone-gray background, terracotta page-number blocks, dark olive divider lines, elegant serif titles, clean sans-serif labels and a few restrained handwritten notes. Keep the same visual identity across all four vertical 4:5 boards.\n\n01 / Spatial Concept: show a large panoramic living room with arches, courtyard views, linen sofa, terracotta lounge chair, leather accent chair, travertine coffee table, walnut storage, olive tree and strong sunlight shadows. Add concise material, palette and key-piece sections.\n\n02 / Architecture & Living Flow: show an axonometric breakdown of the arches, sunlight direction, lime-plaster walls, travertine fireplace, walnut storage, seating zone, reading corner, textile layer, collected objects and indoor-outdoor flow. Include a small floor plan, sun-path diagram and circulation analysis.\n\n03 / Furniture & Collected Objects: create an asymmetric editorial selection page with a linen sofa, terracotta chair, leather chair, travertine table, walnut console, iron side table, floor lamp, wool rug, linen curtains, landscape art, olive tree, ceramics, books, cushions and woven storage.\n\n04 / Material, Light & Atmosphere: show close-up panels for plaster and sunlight, linen and leather, stone and walnut, and table styling. Add material swatches, a color balance strip and short handwritten notes such as \"sun-washed\", \"raw texture\", \"soft linen\" and \"warm earth\".\n\nKeep the boards modern, cohesive, tactile and highly professional. Use short English labels only, no brand logos, no famous furniture replicas and no long paragraphs.",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1784972175930.35
   }
 ]
