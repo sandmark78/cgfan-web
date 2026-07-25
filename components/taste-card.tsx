@@ -53,18 +53,6 @@ function wrap(ctx: CanvasRenderingContext2D, str: string, x: number, y: number, 
   ctx.fillText(line, x, yy)
 }
 
-function drawLeafShadow(ctx: CanvasRenderingContext2D) {
-  ctx.save()
-  ctx.translate(70, 60); ctx.rotate(-0.5)
-  ctx.fillStyle = 'rgba(47,107,69,.05)'
-  for (let i = 0; i < 5; i++) {
-    ctx.save(); ctx.translate(i * 16, i * 22); ctx.rotate(0.3 * i)
-    ctx.beginPath(); ctx.ellipse(0, 0, 11, 26, 0, 0, Math.PI * 2); ctx.fill()
-    ctx.restore()
-  }
-  ctx.restore()
-}
-
 function drawWaxSeal(ctx: CanvasRenderingContext2D, cx: number, cy: number, r: number, text: string) {
   ctx.save()
 
@@ -130,7 +118,6 @@ function renderCard(ctx: CanvasRenderingContext2D, data: {
   let rg = ctx.createRadialGradient(120, 90, 10, 120, 90, 320)
   rg.addColorStop(0, 'rgba(255,255,255,.5)'); rg.addColorStop(1, 'rgba(255,255,255,0)')
   ctx.fillStyle = rg; ctx.fillRect(0, 0, W, H)
-  drawLeafShadow(ctx)
 
   // 标本卡双线内框
   ctx.lineWidth = 1; ctx.strokeStyle = C.line
