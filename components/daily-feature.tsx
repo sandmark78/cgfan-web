@@ -40,6 +40,14 @@ export default function DailyFeature() {
   return (
     <section className="daily-pick">
       <article className="daily-card glass-card">
+        {/* 火漆角标 —— 破框，盖在卡片上 */}
+        <img
+          src="/seal-daily.png"
+          alt="每日一味"
+          className="daily-seal"
+          draggable={false}
+        />
+
         {/* 左：图 + 角标 */}
         <figure className="daily-figure">
           {prompt.cover ? (
@@ -55,14 +63,6 @@ export default function DailyFeature() {
               🎨
             </div>
           )}
-
-          {/* 火漆角标 —— 左上角 */}
-          <img
-            src="/seal-daily.png"
-            alt="每日一味"
-            className="daily-seal"
-            draggable={false}
-          />
 
           {/* 日期签 —— 右下角 */}
           <figcaption className="daily-date">

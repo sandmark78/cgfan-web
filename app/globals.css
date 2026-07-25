@@ -95,7 +95,7 @@ body {
 .daily-card {
   display: grid;
   grid-template-columns: 300px 1fr;
-  overflow: hidden;
+  overflow: visible;
   padding: 0 !important;
 }
 @media (max-width: 640px) {
@@ -118,11 +118,11 @@ body {
 /* 火漆角标 */
 .daily-seal {
   position: absolute;
-  top: -10px; left: -10px;
-  width: 84px;
+  top: -16px; left: -16px;
+  width: 96px;
   height: auto;
   pointer-events: none;
-  transform: rotate(-7deg);
+  transform: rotate(-17deg);
   transform-origin: 50% 30%;
   filter: drop-shadow(0 6px 14px rgba(120, 20, 16, .45))
           drop-shadow(0 2px 3px rgba(0,0,0,.3));
@@ -132,16 +132,16 @@ body {
   animation: seal-press .7s cubic-bezier(.34,1.56,.64,1) .3s both;
 }
 @keyframes seal-press {
-  from { opacity: 0; transform: rotate(-7deg) scale(1.7); }
-  to   { opacity: 1; transform: rotate(-7deg) scale(1); }
+  from { opacity: 0; transform: rotate(-17deg) scale(1.7); }
+  to   { opacity: 1; transform: rotate(-17deg) scale(1); }
 }
 .daily-card:hover .daily-seal {
-  transform: rotate(0deg) scale(1.08);
+  transform: rotate(-10deg) scale(1.08);
   filter: drop-shadow(0 10px 20px rgba(120, 20, 16, .55))
           drop-shadow(0 2px 3px rgba(0,0,0,.35));
 }
 @media (max-width: 640px) {
-  .daily-seal { width: 68px; top: -6px; left: -6px; }
+  .daily-seal { width: 72px; top: -10px; left: -10px; }
 }
 
 /* 日期签 */
