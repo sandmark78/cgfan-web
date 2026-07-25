@@ -84,11 +84,11 @@ export default function Home() {
             '@context': 'https://schema.org',
             '@type': 'WebSite',
             name: 'CGfan',
-            url: 'https://cgfan-web.pages.dev',
+            url: 'https://www.cgfan.com',
             description: '每日一味 · 一句提示词，一张图。精选 AI 提示词与示例图鉴，附策展笔记，复制即用。',
             potentialAction: {
               '@type': 'SearchAction',
-              target: 'https://cgfan-web.pages.dev/explore?q={search_term_string}',
+              target: 'https://www.cgfan.com/explore?q={search_term_string}',
               'query-input': 'required name=search_term_string',
             },
           }),

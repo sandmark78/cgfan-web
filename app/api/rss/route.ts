@@ -8,7 +8,7 @@ export const runtime = 'edge'
  */
 export async function GET() {
   const prompts = getAllPrompts().slice(0, 50) // 最新 50 条
-  const baseUrl = 'https://cgfan-web.pages.dev'
+  const baseUrl = 'https://www.cgfan.com'
 
   const rss = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">

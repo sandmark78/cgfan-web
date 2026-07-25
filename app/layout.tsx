@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://cgfan-web.pages.dev'),
+  metadataBase: new URL('https://www.cgfan.com'),
   title: {
     default: 'CGfan - 每日一味 · 一句提示词，一张图',
     template: '%s | CGfan',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     images: ['/og-cover.jpg'],
   },
   alternates: {
-    canonical: 'https://cgfan-web.pages.dev',
+    canonical: 'https://www.cgfan.com',
   },
   robots: {
     index: true,

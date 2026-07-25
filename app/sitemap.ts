@@ -2,7 +2,7 @@ import { getAllPrompts } from '@/lib/prompts'
 
 export default function sitemap() {
   const prompts = getAllPrompts()
-  const baseUrl = 'https://cgfan-web.pages.dev'
+  const baseUrl = 'https://www.cgfan.com'
 
   return [
     {

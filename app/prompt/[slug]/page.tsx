@@ -32,7 +32,7 @@ export async function generateMetadata({
     }
   }
 
-  const baseUrl = 'https://cgfan-web.pages.dev'
+  const baseUrl = 'https://www.cgfan.com'
   const description = prompt.prompt.slice(0, 160).replace(/\n/g, ' ')
 
   return {
@@ -379,7 +379,7 @@ export default async function PromptDetailPage({
             publisher: {
               '@type': 'Organization',
               name: 'CGfan',
-              url: 'https://cgfan-web.pages.dev',
+              url: 'https://www.cgfan.com',
             },
           }),
         }}

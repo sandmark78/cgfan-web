@@ -13,7 +13,7 @@ export function GitHubSignInButton() {
     // 云端环境使用硬编码的回调地址
     const redirectTo = typeof window !== 'undefined' 
       ? `${window.location.origin}/auth/callback`
-      : 'https://cgfan-web.pages.dev/auth/callback'
+      : 'https://www.cgfan.com/auth/callback'
     
     await supabase.auth.signInWithOAuth({
       provider: 'github',

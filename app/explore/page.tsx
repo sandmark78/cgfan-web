@@ -19,7 +19,7 @@ export async function generateMetadata({
   const params = await searchParams
   const { category, tag, q, page } = params
   const currentPage = Math.max(1, parseInt(page || '1', 10))
-  const baseUrl = 'https://cgfan-web.pages.dev'
+  const baseUrl = 'https://www.cgfan.com'
 
   let title = '探索'
   let description = '浏览精选 AI 提示词，涵盖写实、动漫、3D、摄影等风格，支持 GPT-Image、Midjourney 等模型，一键复制即用。'

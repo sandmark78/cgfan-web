@@ -126,7 +126,7 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
           {/* 底部水印 */}
           <div className="border-t border-gray-200 pt-4 dark:border-gray-700">
             <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
-              <span>cgfan-web.pages.dev</span>
+              <span>www.cgfan.com</span>
               <span>❤️ {prompt.likeCount || 0}</span>
             </div>
           </div>

@@ -141,7 +141,7 @@ export function AestheticPersonality({ allPrompts }: AestheticPersonalityProps) 
       <div className="mt-6 text-center">
         <button
           onClick={() => {
-            const text = `我的 AI 美学人格是「${profile.personality}」✨\n\n${profile.description}\n\n来 CGfan 发现你的审美基因 → cgfan-web.pages.dev`
+            const text = `我的 AI 美学人格是「${profile.personality}」✨\n\n${profile.description}\n\n来 CGfan 发现你的审美基因 → www.cgfan.com`
             navigator.clipboard.writeText(text)
             alert('已复制到剪贴板，快去分享吧！')
           }}

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cgfan-web.pages.dev/sitemap.xml
+Sitemap: https://www.cgfan.com/sitemap.xml
