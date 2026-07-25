@@ -68,11 +68,17 @@ function drawLeafShadow(ctx: CanvasRenderingContext2D) {
 function drawWaxSeal(ctx: CanvasRenderingContext2D, cx: number, cy: number, r: number, text: string) {
   ctx.save()
 
-  // 外圈平滑圆
+  // 外圈平滑波浪：8 个正弦波
   ctx.strokeStyle = C.inkDeep
   ctx.lineWidth = 2.5
   ctx.beginPath()
-  ctx.arc(cx, cy, r + 2, 0, Math.PI * 2)
+  for (let a = 0; a <= Math.PI * 2; a += 0.03) {
+    const wave = Math.sin(a * 8) * 3.5
+    const x = cx + Math.cos(a) * (r + 2 + wave)
+    const y = cy + Math.sin(a) * (r + 2 + wave)
+    a === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y)
+  }
+  ctx.closePath()
   ctx.stroke()
 
   // 内圈平滑线
