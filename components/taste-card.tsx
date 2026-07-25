@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { useState, useEffect, useRef } from 'react'
 import { analyzeTaste, readFavorites, FavoriteItem } from '@/lib/taste'
 import { matchPersona, rankPersonas, Persona } from '@/lib/personas'
@@ -215,7 +216,32 @@ export function TasteCard() {
   }
 
   if (!persona || !analysis) {
-    return null
+    // 门槛页：收藏不足 5 个
+    const favCount = favorites.length
+    const need = 5 - favCount
+    return (
+      <div className="mx-auto max-w-md py-16 text-center">
+        <div className="mb-8 text-6xl">🎨</div>
+        <h2 className="mb-3 font-serif text-2xl font-bold text-gray-900 dark:text-white">
+          你的品味，值得一张卡片
+        </h2>
+        <p className="mb-6 text-gray-600 dark:text-gray-400">
+          收藏 {5} 个提示词，解锁专属于你的品味档案
+        </p>
+        <div className="mb-3 h-2 overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700">
+          <div
+            className="h-full rounded-full bg-gradient-to-r from-green-500 to-emerald-600 transition-all duration-500"
+            style={{ width: `${(favCount / 5) * 100}%` }}
+          />
+        </div>
+        <p className="mb-8 text-sm text-gray-500 dark:text-gray-400">
+          {favCount} / 5 {need > 0 ? `· 还差 ${need} 个` : '· 即将解锁！'}
+        </p>
+        <Link href="/explore" className="btn-primary inline-block">
+          去收藏提示词 →
+        </Link>
+      </div>
+    )
   }
 
   return (
