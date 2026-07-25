@@ -75,7 +75,31 @@ export default function DailyFeature() {
         <div className="daily-body">
           <span className="daily-kicker">今日精选 · No.{serial}</span>
           <h2 className="daily-title">{prompt.title}</h2>
+
+          {todayFeature.technique && (
+            <div className="mb-3 flex flex-wrap gap-1.5">
+              {todayFeature.technique.split(' · ').map((t: string) => (
+                <span key={t} className="daily-tag">{t}</span>
+              ))}
+            </div>
+          )}
+
           <p className="daily-note">{todayFeature.curatorNote}</p>
+
+          {todayFeature.tip && (
+            <div className="mb-3 rounded-lg border border-green-200/40 bg-green-50/40 px-3 py-2 dark:border-green-800/30 dark:bg-green-900/20">
+              <div className="mb-0.5 text-[10px] font-medium tracking-wider text-green-600 dark:text-green-400">💡 实用技巧</div>
+              <p className="text-[12px] leading-relaxed text-gray-700 dark:text-gray-300">{todayFeature.tip}</p>
+            </div>
+          )}
+
+          {todayFeature.tryChange && (
+            <div className="mb-3 border-l-2 border-amber-400/50 pl-3">
+              <div className="text-[10px] font-medium tracking-wider text-amber-600 dark:text-amber-400">✏️ 试着改一个词</div>
+              <p className="text-[12px] italic leading-relaxed text-gray-600 dark:text-gray-400">{todayFeature.tryChange}</p>
+            </div>
+          )}
+
           <div className="daily-actions">
             <Link href={`/prompt/${prompt.slug}`} className="daily-more">
               看完整策展

@@ -8,6 +8,9 @@ export interface DailyFeature {
   slug: string
   curatorNote: string
   highlight?: string // 一句话亮点
+  tip?: string // 实用技巧
+  technique?: string // 关键技法
+  tryChange?: string // 试着改一个词
 }
 
 /**
@@ -21,6 +24,9 @@ export const dailyFeatures: DailyFeature[] = [
     curatorNote:
       '这个 prompt 的灵感来自日本"箱庭"微缩艺术。作者试了 14 次才把玻璃瓶的折射感调对，关键是把 "subsurface scattering" 换成 "caustic light refraction"——一个词的差别，光就活了。',
     highlight: '一个词的差别，光就活了',
+    technique: '焦散光 · 微距 · 暖冷对比',
+    tip: '写玻璃材质时，避免用 "transparent"——太普通。用 "caustic light refraction" 或 "light dispersion through glass" 会让模型自动计算光的折射路径。',
+    tryChange: '把 "warm sunset" 换成 "cold morning"，整座城的情绪会完全不同',
   },
   {
     date: '2026-07-24',
