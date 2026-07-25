@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { getAllPrompts, getAllCategories } from '@/lib/prompts'
 import { PromptGrid } from '@/components/prompt/prompt-grid'
 import { getCategoryLabel, getCategoryIcon } from '@/lib/category-map'
-import { DailyFeature } from '@/components/daily-feature'
+import DailyFeature from '@/components/daily-feature'
 
 export const runtime = 'edge'
 

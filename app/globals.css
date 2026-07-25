@@ -85,6 +85,198 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
+/* ===== 每日一味 - 横向紧凑卡 ===== */
+.daily-pick {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 28px 16px;
+}
+
+.daily-card {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  overflow: hidden;
+  padding: 0 !important;
+}
+@media (max-width: 640px) {
+  .daily-card { grid-template-columns: 1fr; }
+}
+
+/* 图区 */
+.daily-figure {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+}
+.daily-figure img.object-cover {
+  transition: transform 1.2s cubic-bezier(.22,1,.36,1);
+}
+.daily-card:hover .daily-figure img.object-cover {
+  transform: scale(1.05);
+}
+
+/* 火漆角标 */
+.daily-seal {
+  position: absolute;
+  top: -10px; left: -10px;
+  width: 84px;
+  height: auto;
+  pointer-events: none;
+  transform: rotate(-7deg);
+  transform-origin: 50% 30%;
+  filter: drop-shadow(0 6px 14px rgba(120, 20, 16, .45))
+          drop-shadow(0 2px 3px rgba(0,0,0,.3));
+  transition: transform .5s cubic-bezier(.34,1.56,.64,1),
+              filter .4s ease;
+  z-index: 2;
+  animation: seal-press .7s cubic-bezier(.34,1.56,.64,1) .3s both;
+}
+@keyframes seal-press {
+  from { opacity: 0; transform: rotate(-7deg) scale(1.7); }
+  to   { opacity: 1; transform: rotate(-7deg) scale(1); }
+}
+.daily-card:hover .daily-seal {
+  transform: rotate(0deg) scale(1.08);
+  filter: drop-shadow(0 10px 20px rgba(120, 20, 16, .55))
+          drop-shadow(0 2px 3px rgba(0,0,0,.35));
+}
+@media (max-width: 640px) {
+  .daily-seal { width: 68px; top: -6px; left: -6px; }
+}
+
+/* 日期签 */
+.daily-date {
+  position: absolute;
+  right: 14px; bottom: 14px;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 6px 12px;
+  background: rgba(10,14,10,.55);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 8px;
+  color: #F2F0E9;
+}
+.daily-date-day {
+  font-family: var(--font-serif), "Noto Serif SC", serif;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 1;
+  color: #E8B34B;
+}
+.daily-date-meta {
+  font-size: 11px;
+  letter-spacing: .15em;
+  opacity: .8;
+}
+
+/* 文字区 */
+.daily-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 26px 28px;
+}
+.daily-kicker {
+  font-size: 11px;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  color: #6b7280;
+  margin-bottom: 10px;
+}
+.daily-title {
+  font-family: var(--font-serif), "Noto Serif SC", serif;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 1.15;
+  margin: 0 0 12px;
+  color: #111827;
+}
+.dark .daily-title {
+  color: #f3f4f6;
+}
+.daily-note {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #6b7280;
+  border-left: 2px solid rgba(208,68,46,.5);
+  padding-left: 12px;
+  margin: 0 0 18px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.dark .daily-note {
+  color: #9ca3af;
+}
+.daily-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.daily-more {
+  font-size: 13px;
+  color: #059669;
+  text-decoration: none;
+  transition: transform .25s;
+  font-weight: 500;
+}
+.daily-more:hover {
+  transform: translateX(3px);
+}
+.dark .daily-more {
+  color: #34d399;
+}
+
+/* 底部导航 */
+.daily-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+  padding: 0 4px;
+}
+.daily-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: #6b7280;
+  font-size: 13px;
+  transition: color .2s;
+}
+.daily-nav-link:hover {
+  color: #059669;
+}
+.dark .daily-nav-link {
+  color: #9ca3af;
+}
+.dark .daily-nav-link:hover {
+  color: #34d399;
+}
+.daily-nav-arrow {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+.daily-nav-label {
+  font-size: 11px;
+  letter-spacing: .1em;
+  opacity: .6;
+}
+.daily-nav-title {
+  max-width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.daily-nav-next {
+  text-align: right;
+}
+
 /* ===== 背景层 ===== */
 .app-bg {
   position: fixed;
