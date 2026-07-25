@@ -21,14 +21,11 @@ export async function DailyFeature() {
   }
 
   const formatDate = (date: Date) => {
-    const day = date.getDate()
     const month = date.getMonth() + 1
+    const day = date.getDate()
     const weekdays = ['日', '一', '二', '三', '四', '五', '六']
     const weekday = weekdays[date.getDay()]
-    // 中文数字
-    const cnNums = ['〇', '一', '二', '三', '四', '五', '六', '七', '八', '九', '十', '十一', '十二']
-    const cnDay = day <= 10 ? cnNums[day] : day < 20 ? `十${cnNums[day - 10]}` : `二十${cnNums[day - 20]}`
-    return `${cnNums[month]}月${cnDay}日 · 周${weekday}`
+    return `${month}月${day}日 · 周${weekday}`
   }
 
   const today = new Date()
@@ -38,15 +35,8 @@ export async function DailyFeature() {
   tomorrow.setDate(tomorrow.getDate() + 1)
 
   return (
-    <section className="mx-auto max-w-4xl px-4 py-12">
+    <section className="mx-auto max-w-4xl px-4 py-6">
       <div className="relative overflow-hidden rounded-2xl border border-gray-200 bg-gradient-to-br from-gray-50 to-gray-100 dark:border-gray-800 dark:from-gray-900 dark:to-gray-950">
-        {/* 日期标签 */}
-        <div className="absolute left-6 top-6 z-10">
-          <div className="text-xs font-medium text-gray-500 dark:text-gray-400">
-            {formatDate(today)}
-          </div>
-        </div>
-
         {/* 主内容 */}
         <div className="grid gap-0 md:grid-cols-2">
           {/* 左侧：图片 */}
@@ -63,6 +53,10 @@ export async function DailyFeature() {
                 🎨
               </div>
             )}
+            {/* 日期胶囊 - 图片右下角 */}
+            <div className="absolute bottom-3 right-3 z-10 rounded-full bg-white/70 px-3 py-1 text-xs font-medium text-gray-700 backdrop-blur-sm dark:bg-gray-900/60 dark:text-gray-300">
+              {formatDate(today)}
+            </div>
           </div>
 
           {/* 右侧：内容 */}

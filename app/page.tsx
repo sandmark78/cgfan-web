@@ -41,7 +41,7 @@ export default function Home() {
 
       {/* 分类 chips */}
       {categories.length > 0 && (
-        <div className="mt-4 sm:mt-8">
+        <div className="mt-2 sm:mt-4">
           <div className="category-chips justify-center overflow-x-auto pb-2 no-scrollbar md:flex-wrap">
             {categories.map((cat) => (
               <Link
@@ -58,19 +58,8 @@ export default function Home() {
         </div>
       )}
 
-      {/* 分隔线 + 最新收录 */}
-      <div className="mx-auto mt-10 sm:mt-14 max-w-5xl px-4 sm:px-0">
-        <div className="flex items-center gap-4">
-          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-gray-200 to-transparent dark:via-gray-700" />
-          <span className="flex-shrink-0 text-xs font-medium tracking-widest text-gray-400 dark:text-gray-500">
-            · 最新收录 ·
-          </span>
-          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-gray-200 to-transparent dark:via-gray-700" />
-        </div>
-      </div>
-
       {/* 最新提示词 - 整齐网格 */}
-      <div className="mt-4 sm:mt-8 px-4 sm:px-0">
+      <div className="mt-3 sm:mt-6 px-4 sm:px-0">
         <div className="flex items-center justify-between">
           <h2 className="font-serif text-lg sm:text-3xl font-bold text-gray-900 dark:text-white">
             最新提示词
