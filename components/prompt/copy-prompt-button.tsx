@@ -5,12 +5,13 @@ import { useState } from 'react'
 interface CopyPromptButtonProps {
   prompt: string
   label?: string
+  className?: string
 }
 
 /**
  * 一键复制提示词按钮
  */
-export function CopyPromptButton({ prompt, label = '复制提示词' }: CopyPromptButtonProps) {
+export function CopyPromptButton({ prompt, label = '复制提示词', className = '' }: CopyPromptButtonProps) {
   const [copied, setCopied] = useState(false)
 
   const handleCopy = async () => {
@@ -26,7 +27,7 @@ export function CopyPromptButton({ prompt, label = '复制提示词' }: CopyProm
   return (
     <button
       onClick={handleCopy}
-      className={`btn-primary w-full ${copied ? 'copied' : ''}`}
+      className={`daily-copy-btn ${className} ${copied ? 'copied' : ''}`}
     >
       {copied ? '✓ 已复制' : label}
     </button>
