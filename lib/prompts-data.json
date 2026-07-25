@@ -829,33 +829,6 @@
     "mtime": 1784850147884.443
   },
   {
-    "title": "Capillary Sequence System Prompt",
-    "slug": "capillary-sequence-system-prompt",
-    "model": "Gemini",
-    "category": "style",
-    "tags": [
-      "system-prompt",
-      "gesture",
-      "moisture",
-      "advanced",
-      "动漫"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/2080408937078124633.jpg",
-    "date": "Thu Jul 23 2026 08:00:00 GMT+0800 (China Standard Time)",
-    "added": "2026-07-23",
-    "source": "https://x.com/i/status/2080408937078124633",
-    "author": "Emily",
-    "prompt": "SYSTEM PROMPT: CAPILLARY SEQUENCE\n\nRewrite the user's text, image, or both as one prompt for GPT Image Gen V2 or Nano Banana Pro. Use GPT unless Nano is named. Write in the user's language, preserve exact text, and keep the requested or source ratio.\n\nUse two systems. Gesture Script defines pressure through pose, hands, shoulders, gaze, crop, spacing, repeated states, and action direction. Capillary Record shows the consequence through rain, sweat, condensation, wet hair, damp fabric, steam, droplets, reflections, or another fluid condition supported by the request.\n\nDo not blend them into a wet anime portrait. Determine the subject, exact action, pressure path, moisture source, affected surfaces, visible consequence, and two to four caused junctions.\n\nPreserve subject, count, identity, anatomy, setting, clothing, objects, colors, text, and reference roles. For edits, preserve all unrequested content. Use style references only for gesture rhythm, contour, moisture behavior, light falloff, crop, and detail placement. Do not copy their subject, pose, costume, or setting.\n\nGesture must agree across hands, joints, shoulders, spine, head, gaze, and balance. Use one state by default. Use two or three pose echoes only when they show preparation, force, recoil, hesitation, or release. Use panels only when requested. Repetition must advance the action.\n\nMoisture needs a source and follows gravity, airflow, adhesion, absorption, curvature, and surface tension. Wet hair clumps and adheres. Skin carries uneven films and droplets, not uniform gloss. Fabric darkens, gains weight, and clings at pressure points. Glass fogs, streaks, reflects, and transmits according to angle. Every droplet needs scale, attachment, direction, and stopping point.\n\nJunctions may include spray following a hand path, wet hair changing a facial contour, damp fabric revealing body rotation, a gesture repeated in reflection, condensation hiding one area, or a wet contact trace remaining after movement. Each requires a physical cause.\n\nKeep one pressure path, one moisture path, one focal junction, and clear negative space. Remove repetition, praise, mood labels, prestige terms, fake technical detail, generic defect lists, and unresolved alternatives. Use concrete nouns and active verbs. No em dash or en dash.\n\nGPT: return 500 to 800 words in five paragraphs covering scene, subjects, gesture, moisture, junctions, composition, preservation, text, and failures.\n\nNANO: return valid JSON only, 1000 to 1800 tokens, using \"aspect_ratio\", \"references\", \"scene\", \"subjects\", \"gesture_script\", \"capillary_record\", \"junctions\", \"composition\", \"surface\", \"text\", \"avoid\". Omit unused fields. No metadata, IDs, weights, comments, or repeated facts.\n\nReturn only the finished prompt.",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "GPT-Image2 / Nano Banana Pro",
-      "Type": "System Prompt",
-      "Complexity": "Advanced"
-    },
-    "mtime": 1784861159268.9053
-  },
-  {
     "title": "Fashion Runway Illustration",
     "slug": "fashion-runway-illustration",
     "model": "Gemini",
@@ -1870,32 +1843,6 @@
     "mtime": 1784907577162.2786
   },
   {
-    "title": "昨晚看到GPT image 2画潘金莲来了灵感， 让ChatGPT协助我画了一张唐风的CG插画。 调整了好多版，不是暴露过多就是过于妩媚， 这张算是比较符合我的要求。\n提示词： 国风CG插画，唐风美学，古代绝美女子，半身近景特写，画面重心聚焦面部与上半身，高级人像构图，电影级镜头语言与空间透视\n人物设定： 东亚古典美人，冷白通透肌肤，细腻真实皮肤质感，柔润微光； 五官精致立体但自然不过度夸张，",
-    "slug": "昨晚看到-画潘金莲-来了灵感",
-    "model": "Midjourney",
-    "category": "realistic",
-    "tags": [
-      "AI绘图",
-      "提示词",
-      "GPT-Image2",
-      "国风",
-      "摄影"
-    ],
-    "difficulty": "advanced",
-    "cover": "/images/prompts/prompt-2046785940593725633.jpg",
-    "date": "2026-07-23",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2046785940593725633",
-    "author": "李岳",
-    "prompt": "国风CG插画，唐风美学，古代绝美女子，半身近景特写，画面重心聚焦面部与上半身，高级人像构图，电影级镜头语言与空间透视",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1784907577168.3794
-  },
-  {
     "title": "Gemini的香蕉人像人脸内容的时期做过类似的教程有专门写捏脸：\n远不止在脸上加几颗痘痘痘印和简单皮肤纹理。\n很多图一眼就能看出是AI，缺的就是那种“活人”气息。这是之前gemini的核心要点：\n1.  皮肤的真实层次 区域差异化：T区油光明显、鼻翼有黑头、脸颊微干有细纹、下巴易有粉刺 微血管与色素：轻微红血丝、色斑不均匀、自然的血管透肤感 光线反应：不同光源下皮肤颜色、油光、反光都要真实变",
     "slug": "的香蕉人-像人脸内-容的时期",
     "model": "Gemini",
@@ -2181,31 +2128,6 @@
     "mtime": 1784907577170.781
   },
   {
-    "title": "一个怎样玩转GPT，出爆款摄影风格写真抽卡技巧：\n通过【某某人视角的摄影风格】，例如下面⬇️这组风格： 【Masochist系男友的视角拍摄风格】\n核心优势： 省去大量繁琐的摄影参数描述 更容易出情绪感和自带故事性 风格一致性更高，更容易抽到爆款图，也不用去洗图找人要提示词\n剩下的直接交给GPT-Image2，让模型自己发挥。 这种方式充分利用了GPT-Image2在风格理解上的高权限，能自",
-    "slug": "一个怎样-玩转-出爆款摄",
-    "model": "Midjourney",
-    "category": "realistic",
-    "tags": [
-      "AI绘图",
-      "提示词",
-      "GPT-Image2",
-      "摄影"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-2079924115650256936.jpg",
-    "date": "2026-07-23",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2079924115650256936",
-    "author": "𝟡𝟜 ᴾᴸᴬʸᶠᴼᴿᴳᴱ",
-    "prompt": "剩下的直接交给GPT-Image2，让模型自己发挥。\n这种方式充分利用了GPT-Image2在风格理解上的高权限，能自动处理摄影角度、光影、情绪、构图、镜头语言等大量细节，从而大幅减少手动堆叠关键词。",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1784907577170.9604
-  },
-  {
     "title": "接上一期，分享绝美AI古风女生侧颜提示词\n提示词prompt：中国古典美学，宋韵美学，工笔写实风格，超写实摄影，东方古风成年女子，气质清雅，五官精致，肤色细腻自然，杏眼含光，自然淡妆，浅粉唇色，神情温柔宁静，身体微微背向镜头，右肩朝向镜头，头部自然向右缓缓转动约35°，轻轻回眸凝视镜头，三分之二侧颜，Rear Three-quarter Portrait，近景半身肖像，人物占画面约75%，肩颈舒",
     "slug": "接上一期-分享绝美-古风女生",
     "model": "Midjourney",
@@ -2256,30 +2178,6 @@
       "Aspect Ratio": "9:16"
     },
     "mtime": 1784907577171.3313
-  },
-  {
-    "title": "LudovicCreator @LudovicCreator 🥭 National Mango Day AI Challenge  Showcase Thread is LIVE! 🌴✨\nA huge THANK YOU to everyone who participated, created, shared, and celebrated one of the world's sweetes",
-    "slug": "ludoviccreator",
-    "model": "Midjourney",
-    "category": "style",
-    "tags": [
-      "AI绘图",
-      "提示词",
-      "奇幻"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/2080194510982705505.jpg",
-    "date": "2026-07-23",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2080194510982705505",
-    "author": "LudovicCreator",
-    "prompt": "LudovicCreator\n@LudovicCreator\n🥭 National Mango Day AI Challenge  Showcase Thread is LIVE! 🌴✨\n\nA huge THANK YOU to everyone who participated, created, shared, and celebrated one of the world's sweetest tropical fruits with AI.\n\nFrom juicy mango slices and vibrant tropical scenes to refreshing desserts, colorful smoothies, fantasy mango worlds, and mouth-watering close-ups , your creations were bursting with sunshine, flavor, and imagination. ☀️🥭\n\nI’ll be sharing the amazing entries in this thread.\n\nLet’s celebrate creativity, tropical inspiration, and the incredible AI community together. 👇\nMade with AI\n7:33 AM · Jul 23, 2026\n1.1K\nViews\n4\n17\n1",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1784907577171.6777
   },
   {
     "title": "GPT Image 2生图小技巧：3D CG转写实风",
@@ -2722,32 +2620,6 @@
       "Aspect Ratio": "16:9"
     },
     "mtime": 1784907722113.52
-  },
-  {
-    "title": "分享一组AI创作24mm自拍镜头提示词\n提示词prompt：超写实动漫真人融合（Anime Realism），日系Cosplay少女，约20岁，白皙细腻肌肤，精致鹅蛋脸，小巧鼻梁，粉嫩自然唇色，超大湛蓝瞳孔，晶莹眼眸，高光眼神，慵懒半睁眼，轻启双唇露出一点点上排牙齿，神情自然温柔，带一点惊喜与亲近感；银白色长发，自然大波浪卷发，发尾渐变浅薄荷蓝，额前轻薄空气刘海，几缕碎发自然垂落脸颊，没有兽",
-    "slug": "分享一组-创作-自拍镜头",
-    "model": "Midjourney",
-    "category": "realistic",
-    "tags": [
-      "AI绘图",
-      "提示词",
-      "写实",
-      "动漫",
-      "风景"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-2079848056024105126.jpg",
-    "date": "2026-07-23",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2079848056024105126",
-    "author": "灰度笔记",
-    "prompt": "超写实动漫真人融合（Anime Realism），日系Cosplay少女，约20岁，白皙细腻肌肤，精致鹅蛋脸，小巧鼻梁，粉嫩自然唇色，超大湛蓝瞳孔，晶莹眼眸，高光眼神，慵懒半睁眼，轻启双唇露出一点点上排牙齿，神情自然温柔，带一点惊喜与亲近感；银白色长发，自然大波浪卷发，发尾渐变浅薄荷蓝，额前轻薄空气刘海，几缕碎发自然垂落脸颊，没有兽耳，没有任何动物特征，仅佩戴简洁灰色蝴蝶结发饰。",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1784907722116.8318
   },
   {
     "title": "Kling 2.6 prompt: Hyperspeed FPV in a vertical cyb...",
