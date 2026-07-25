@@ -7,17 +7,17 @@ export const runtime = 'edge'
  * About 页 SEO 元数据
  */
 export const metadata: Metadata = {
-  title: '关于我们 | CGfan',
-  description: 'CGfan 是一个 AI 提示词画廊，汇集了从 X (Twitter) 上精选的 AI 生成艺术作品和提示词。帮助创作者发现优秀的提示词，学习 AI 绘画技巧，激发创作灵感。',
+  title: '关于 | CGfan - AI 提示词策展画廊',
+  description: 'CGfan 是一个有编辑灵魂的 AI 提示词策展站。每日一味精选，附策展笔记；分类浏览、标签筛选、一键复制；涵盖 Midjourney、Gemini、GPT Image 等主流模型。',
   openGraph: {
-    title: '关于我们 | CGfan',
-    description: 'CGfan 是一个 AI 提示词画廊，汇集了从 X (Twitter) 上精选的 AI 生成艺术作品和提示词。',
+    title: '关于 | CGfan - AI 提示词策展画廊',
+    description: '每日一味精选，附策展笔记。有编辑灵魂的 AI 提示词策展站。',
     type: 'website',
   },
   twitter: {
     card: 'summary',
-    title: '关于我们 | CGfan',
-    description: 'CGfan 是一个 AI 提示词画廊，汇集了从 X (Twitter) 上精选的 AI 生成艺术作品和提示词。',
+    title: '关于 | CGfan - AI 提示词策展画廊',
+    description: '每日一味精选，附策展笔记。有编辑灵魂的 AI 提示词策展站。',
   },
 }
 
@@ -37,38 +37,50 @@ export default function AboutPage() {
             🎨 什么是 CGfan？
           </h2>
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-            CGfan 是一个 AI 提示词画廊，汇集了从 X (Twitter) 上精选的 AI 生成艺术作品和提示词。
-            我们致力于帮助创作者发现优秀的提示词，学习 AI 绘画技巧，激发创作灵感。
+            CGfan 是一个有编辑灵魂的 AI 提示词策展站。不是数据库式的 prompt 堆砌，而是有策展人筛选、点评、推荐的精选画廊。
+            我们从 X (Twitter) 上挖掘优质的 AI 生图提示词，附上示例图和策展笔记，帮你发现真正值得复制的好 prompt。
           </p>
         </section>
 
         <section>
           <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
-            ✨ 核心功能
+            ✨ 核心特色
           </h2>
           <ul className="space-y-3 text-gray-700 dark:text-gray-300">
             <li className="flex items-start gap-3">
               <span className="text-green-500 text-xl">•</span>
               <div>
-                <strong>分类浏览</strong> — 按风格分类（写实、3D、动漫、赛博朋克等），快速找到你喜欢的类型
+                <strong>每日一味</strong> — 每天精选一个 prompt，附策展笔记和亮点解读。不贪多，只选好的。
               </div>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-green-500 text-xl">•</span>
               <div>
-                <strong>完整提示词</strong> — 每条作品附带完整的 Prompt、参数设置和作者信息
+                <strong>策展人视角</strong> — 不是算法推荐，是人工筛选。每条 prompt 都有审美评分和技术评估。
               </div>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-green-500 text-xl">•</span>
               <div>
-                <strong>一键复制</strong> — 点击复制按钮，快速复制提示词到你的 AI 工具
+                <strong>分类 + 标签双维度</strong> — 按风格分类（写实、3D、海报、商业等），按标签筛选（摄影、极简、复古等），快速定位你需要的。
               </div>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-green-500 text-xl">•</span>
               <div>
-                <strong>多模型支持</strong> — 涵盖 Midjourney、Gemini、Grok、Stable Diffusion 等主流模型
+                <strong>完整提示词 + 参数</strong> — 每条作品附带完整 Prompt、Negative Prompt、模型信息和参数设置，复制即用。
+              </div>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-green-500 text-xl">•</span>
+              <div>
+                <strong>多模型支持</strong> — 涵盖 Midjourney、Gemini、GPT Image 2、Grok、Seedream 等主流模型。
+              </div>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-green-500 text-xl">•</span>
+              <div>
+                <strong>无限滚动 + 分页</strong> — 探索页支持无限滚动浏览，也支持传统分页，按需切换。
               </div>
             </li>
           </ul>
@@ -79,10 +91,10 @@ export default function AboutPage() {
             🚀 如何使用
           </h2>
           <ol className="space-y-3 text-gray-700 dark:text-gray-300 list-decimal list-inside">
-            <li>浏览首页或探索页，找到喜欢的作品</li>
-            <li>点击卡片进入详情页，查看完整提示词</li>
-            <li>点击"复制提示词"按钮</li>
-            <li>粘贴到你的 AI 工具（Midjourney、Gemini 等）</li>
+            <li>首页看「每日一味」— 每天一个精选推荐</li>
+            <li>探索页按分类/标签筛选，或搜索关键词</li>
+            <li>点击卡片进入详情页，查看完整提示词和示例图</li>
+            <li>点击「复制提示词」按钮，粘贴到你的 AI 工具</li>
             <li>根据需要调整参数，生成你自己的作品</li>
           </ol>
         </section>
@@ -109,9 +121,8 @@ export default function AboutPage() {
             📜 版权声明
           </h2>
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-            所有提示词和作品均来自 X (Twitter) 公开内容，版权归原创作者所有。
-            我们仅作为展示和分享平台，不拥有任何作品的版权。
-            如需商用，请联系原作者获取授权。
+            所有提示词和示例图均来自 X (Twitter) 公开内容，版权归原创作者所有。
+            CGfan 仅作为策展展示平台，不拥有任何作品的版权。如需商用，请联系原作者获取授权。
           </p>
         </section>
       </div>
