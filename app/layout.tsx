@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono, Noto_Serif_SC } from 'next/font/google';
 import './globals.css';
+import { ToastProvider } from '@/components/toast'
 import Header from '@/components/header';
 import Footer from '@/components/footer';
 
@@ -90,9 +91,11 @@ export default function RootLayout({
         <div className="app-bg" />
 
         <div className="relative z-10 flex min-h-screen flex-col">
+          <ToastProvider>
           <Header />
           <main id="main-content" className="flex-1 shell">{children}</main>
           <Footer />
+        </ToastProvider>
         </div>
       </body>
     </html>

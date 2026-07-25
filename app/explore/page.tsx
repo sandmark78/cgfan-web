@@ -5,6 +5,7 @@ import { getCategoryLabel } from '@/lib/category-map'
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import Pagination from '@/components/pagination'
+import { RandomButton } from '@/components/random-button'
 
 export const runtime = 'edge'
 
@@ -186,6 +187,9 @@ export default async function ExplorePage({
                 </>
               )}
             </h1>
+            <div className="mt-2">
+              <RandomButton slugs={prompts.map(p => p.slug)} />
+            </div>
           </div>
 
           {/* 无限滚动瀑布流 */}
