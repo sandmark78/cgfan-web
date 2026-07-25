@@ -34,6 +34,7 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
       link.click()
     } catch (error) {
       console.error('生成卡片失败:', error)
+      alert('下载失败，请稍后重试')
     } finally {
       setIsGenerating(false)
     }
@@ -63,6 +64,7 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
             <img
               src={prompt.cover}
               alt={prompt.title}
+              crossOrigin="anonymous"
               className="h-full w-full object-cover"
             />
           ) : (
