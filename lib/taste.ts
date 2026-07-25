@@ -14,6 +14,8 @@ export interface FavoriteItem {
   ts: number
 }
 
+const STORAGE_KEY = 'cgfan-favs'
+
 /**
  * 分析用户收藏的品味偏好
  */
@@ -51,15 +53,27 @@ export function analyzeTaste(favorites: FavoriteItem[]): TasteAnalysis {
 
 /**
  * 读取 localStorage 中的收藏（带容错）
+ * 兼容旧格式（纯 slug 数组）→ 自动迁移为新格式
  */
 export function readFavorites(): FavoriteItem[] {
   try {
-    const stored = localStorage.getItem('cgfan-favs')
+    const stored = localStorage.getItem(STORAGE_KEY)
     if (!stored) return []
     const parsed = JSON.parse(stored)
-    // 兼容旧格式（纯 slug 数组）
+    // 旧格式：纯 slug 数组 → 自动迁移
     if (Array.isArray(parsed) && parsed.length > 0 && typeof parsed[0] === 'string') {
-      return [] // 旧格式无法分析，返回空
+      const migrated: FavoriteItem[] = (parsed as string[]).map(slug => ({
+        slug,
+        title: '',
+        category: '',
+        tags: [],
+        model: '',
+        image: '',
+        ts: 0,
+      }))
+      // 写回新格式
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(migrated))
+      return migrated
     }
     return parsed as FavoriteItem[]
   } catch {
@@ -72,11 +86,14 @@ export function readFavorites(): FavoriteItem[] {
  */
 export function saveFavorite(item: FavoriteItem): void {
   const favs = readFavorites()
-  const exists = favs.find(f => f.slug === item.slug)
-  if (!exists) {
+  // 如果旧格式迁移来的空对象，替换为完整数据
+  const existingIndex = favs.findIndex(f => f.slug === item.slug)
+  if (existingIndex >= 0) {
+    favs[existingIndex] = item
+  } else {
     favs.push(item)
-    localStorage.setItem('cgfan-favs', JSON.stringify(favs))
   }
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(favs))
 }
 
 /**
@@ -84,7 +101,7 @@ export function saveFavorite(item: FavoriteItem): void {
  */
 export function removeFavorite(slug: string): void {
   const favs = readFavorites().filter(f => f.slug !== slug)
-  localStorage.setItem('cgfan-favs', JSON.stringify(favs))
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(favs))
 }
 
 /**
