@@ -8,16 +8,16 @@ export const runtime = 'edge'
  */
 export const metadata: Metadata = {
   title: '关于 | CGfan - AI 提示词策展画廊',
-  description: 'CGfan 是一个有编辑灵魂的 AI 提示词策展站。每日一味精选，附策展笔记；分类浏览、标签筛选、一键复制；涵盖 Midjourney、Gemini、GPT Image 等主流模型。',
+  description: 'CGfan 是一个有编辑灵魂的 AI 提示词策展站。每日一味精选，附策展笔记；收藏解锁品味档案；食谱卡下载分享；分类浏览、一键复制。涵盖 Midjourney、Gemini、GPT Image 等主流模型。',
   openGraph: {
     title: '关于 | CGfan - AI 提示词策展画廊',
-    description: '每日一味精选，附策展笔记。有编辑灵魂的 AI 提示词策展站。',
+    description: '每日一味精选 · 品味档案 · 食谱卡分享。有编辑灵魂的 AI 提示词策展站。',
     type: 'website',
   },
   twitter: {
     card: 'summary',
     title: '关于 | CGfan - AI 提示词策展画廊',
-    description: '每日一味精选，附策展笔记。有编辑灵魂的 AI 提示词策展站。',
+    description: '每日一味精选 · 品味档案 · 食谱卡分享。有编辑灵魂的 AI 提示词策展站。',
   },
 }
 
@@ -56,6 +56,18 @@ export default function AboutPage() {
             <li className="flex items-start gap-3">
               <span className="text-green-500 text-xl">•</span>
               <div>
+                <strong>品味档案</strong> — 收藏 5 个提示词，AI 分析你的审美偏好，生成专属美学人格卡片，支持下载分享。
+              </div>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-green-500 text-xl">•</span>
+              <div>
+                <strong>食谱卡分享</strong> — 每个 prompt 详情页可生成精美食谱卡，一键下载为 PNG，分享到社交媒体。
+              </div>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-green-500 text-xl">•</span>
+              <div>
                 <strong>策展人视角</strong> — 不是算法推荐，是人工筛选。每条 prompt 都有审美评分和技术评估。
               </div>
             </li>
@@ -69,6 +81,12 @@ export default function AboutPage() {
               <span className="text-green-500 text-xl">•</span>
               <div>
                 <strong>完整提示词 + 参数</strong> — 每条作品附带完整 Prompt、Negative Prompt、模型信息和参数设置，复制即用。
+              </div>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-green-500 text-xl">•</span>
+              <div>
+                <strong>点赞 + 收藏</strong> — 为你喜欢的 prompt 点赞，收藏到你的品味库，解锁更多个性化功能。
               </div>
             </li>
             <li className="flex items-start gap-3">
@@ -95,7 +113,9 @@ export default function AboutPage() {
             <li>探索页按分类/标签筛选，或搜索关键词</li>
             <li>点击卡片进入详情页，查看完整提示词和示例图</li>
             <li>点击「复制提示词」按钮，粘贴到你的 AI 工具</li>
-            <li>根据需要调整参数，生成你自己的作品</li>
+            <li>点击 ❤️ 点赞，点击 📦 收藏，建立你的品味库</li>
+            <li>收藏满 5 个，访问「品味档案」解锁你的美学人格卡片</li>
+            <li>在详情页「生成分享卡片」下载食谱卡，分享到社交媒体</li>
           </ol>
         </section>
 

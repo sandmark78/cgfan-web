@@ -126,6 +126,24 @@ export default function ContactPage() {
                 A: 通过邮箱 contact@cgfan.com 或 X 私信联系我们，附上作品信息和提示词。
               </p>
             </div>
+
+            <div>
+              <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
+                Q: 什么是「品味档案」？
+              </h3>
+              <p className="text-gray-700 dark:text-gray-300">
+                A: 收藏 5 个以上提示词后，访问 /taste 即可解锁你的专属美学人格卡片。AI 根据你的收藏偏好，从 20 种人格中匹配最像你的一个，生成可下载的品味卡片。
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
+                Q: 如何下载「食谱卡」？
+              </h3>
+              <p className="text-gray-700 dark:text-gray-300">
+                A: 进入任意 prompt 详情页，滚动到底部找到「生成分享卡片」区域，点击「下载食谱卡」按钮即可保存为 PNG 图片。
+              </p>
+            </div>
           </div>
         </section>
       </div>
