@@ -306,6 +306,9 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
           <><svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>下载品味卡片</>
         )}
       </button>
+      <div className="text-center text-xs text-gray-400 dark:text-gray-500">
+        收藏更多提示词后，重新访问本页即可更新匹配结果
+      </div>
     </div>
   )
 }
