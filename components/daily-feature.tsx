@@ -40,15 +40,15 @@ export default function DailyFeature() {
 
   return (
     <section className="daily-pick">
+      {/* 印章放在卡片外面，避免被裁切 */}
+      <img
+        src="/seal-daily.png"
+        alt="每日一味"
+        className="daily-seal"
+        draggable={false}
+      />
+      
       <article className="daily-card glass-card">
-        {/* 火漆角标 —— 破框，盖在卡片上 */}
-        <img
-          src="/seal-daily.png"
-          alt="每日一味"
-          className="daily-seal"
-          draggable={false}
-        />
-
         {/* 左：图 + 角标 */}
         <figure className="daily-figure">
           {prompt.cover ? (
@@ -85,9 +85,10 @@ export default function DailyFeature() {
             </div>
           )}
 
-          <p className="daily-note">{todayFeature.curatorNote}</p>
-
+          {/* 移动端：策展笔记全部折叠 */}
           <MobileCollapse>
+            <p className="daily-note">{todayFeature.curatorNote}</p>
+
             {todayFeature.tip && (
               <div className="mb-3 rounded-lg border border-green-200/40 bg-green-50/40 px-3 py-2 dark:border-green-800/30 dark:bg-green-900/20">
                 <div className="mb-0.5 text-[10px] font-medium tracking-wider text-green-600 dark:text-green-400">💡 实用技巧</div>
@@ -102,6 +103,25 @@ export default function DailyFeature() {
               </div>
             )}
           </MobileCollapse>
+
+          {/* 桌面端：策展笔记正常显示 */}
+          <div className="hidden md:block">
+            <p className="daily-note">{todayFeature.curatorNote}</p>
+
+            {todayFeature.tip && (
+              <div className="mb-3 rounded-lg border border-green-200/40 bg-green-50/40 px-3 py-2 dark:border-green-800/30 dark:bg-green-900/20">
+                <div className="mb-0.5 text-[10px] font-medium tracking-wider text-green-600 dark:text-green-400">💡 实用技巧</div>
+                <p className="text-[12px] leading-relaxed text-gray-700 dark:text-gray-300">{todayFeature.tip}</p>
+              </div>
+            )}
+
+            {todayFeature.tryChange && (
+              <div className="mb-3 border-l-2 border-amber-400/50 pl-3">
+                <div className="text-[10px] font-medium tracking-wider text-amber-600 dark:text-amber-400">✏️ 试着改一个词</div>
+                <p className="text-[12px] italic leading-relaxed text-gray-600 dark:text-gray-400">{todayFeature.tryChange}</p>
+              </div>
+            )}
+          </div>
 
           <div className="daily-actions">
             <Link href={`/prompt/${prompt.slug}`} className="daily-more">

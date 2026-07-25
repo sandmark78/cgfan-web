@@ -90,6 +90,7 @@ body {
   max-width: 56rem;
   margin: 0 auto;
   padding: 28px 16px;
+  position: relative;
 }
 
 .daily-card {
@@ -125,10 +126,10 @@ body {
   transform: scale(1.05);
 }
 
-/* 火漆角标 */
+/* 火漆角标 - 相对于 daily-pick 定位，避免被卡片裁切 */
 .daily-seal {
   position: absolute;
-  top: -16px; left: -16px;
+  top: 18px; left: 6px;
   width: 96px;
   height: auto;
   pointer-events: none;
@@ -151,7 +152,7 @@ body {
           drop-shadow(0 2px 3px rgba(0,0,0,.35));
 }
 @media (max-width: 640px) {
-  .daily-seal { width: 72px; top: -10px; left: -10px; }
+  .daily-seal { width: 72px; top: 22px; left: 10px; }
 }
 
 /* 日期签 */
