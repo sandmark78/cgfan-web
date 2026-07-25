@@ -246,6 +246,14 @@ export default function Header() {
                                       风格
                                     </Link>
                                     <div className="my-1 border-t border-gray-200 dark:border-gray-700" />
+                                    <div className="px-3 py-1 text-xs font-medium tracking-wider text-gray-400 dark:text-gray-500 uppercase">推荐</div>
+                                    <Link href="/daily" onClick={() => setIsMenuOpen(false)} className="flex items-center gap-2 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800 transition-colors">
+                                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                      </svg>
+                                      每日一味
+                                    </Link>
+                                    <div className="my-1 border-t border-gray-200 dark:border-gray-700" />
                                     <div className="px-3 py-1 text-xs font-medium tracking-wider text-gray-400 dark:text-gray-500 uppercase">更多</div>
                                     <Link href="/taste" onClick={() => setIsMenuOpen(false)} className="flex items-center gap-2 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800 transition-colors">
                                       <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
