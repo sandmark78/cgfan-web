@@ -58,7 +58,7 @@ export default function DailyFeature() {
 
           {/* 火漆角标 —— 左上角 */}
           <img
-            src="/seal-daily.svg"
+            src="/seal-daily.png"
             alt="每日一味"
             className="daily-seal"
             draggable={false}
