@@ -3129,5 +3129,97 @@
     "negativePrompt": "",
     "parameters": {},
     "mtime": 1784980349849.2966
+  },
+  {
+    "title": "故事书微缩立体模型：2x2 收藏级博物馆指南",
+    "slug": "storybook-diorama-grid",
+    "model": "GPT Image 2",
+    "category": "3d",
+    "tags": [
+      "diorama",
+      "miniature",
+      "collectible",
+      "storybook",
+      "museum"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/storybook-diorama-grid.jpg",
+    "date": "Thu Jul 23 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-25T12:34:00.000Z",
+    "source": "https://x.com/Gdgtify/status/2080778048606032374",
+    "author": "Gadgetify",
+    "prompt": "2x2 grid, do this 4 real non-copyrighted public-space books.\n\nCONCEPT ANCHOR 1: \"Minimal collectible history scene — small rounded figures, simple costumes, symbolic props, flags, icons, weapons/tools/objects, clean pedestal base\"\n\nCONCEPT ANCHOR 2: \"Open-book character/world guide — pop-up scene, title text, diagrams, object callouts, accessory panels, lore boxes, warm page texture\"\n\nCONCEPT ANCHOR 3: \"Toy theater display — central character or object staged with supporting cast, simplified background scenery, premium shelf-collectible composition\"\n\nINSTRUCTION: Find the exact visual center of these three concepts. Ignore literal historical events and existing IP. Use only the structure, proportions, and display logic. Render $SUBJECT as a collectible timeline scene that teaches itself through cute miniature figures, symbolic props, and open-book guide design.\n\nSTYLE RULES:\n- Convert $SUBJECT into a central rounded collectible figure, artifact, event, vehicle, creature, place, or concept\n- Place it on a simple base with an engraved title plaque\n- Surround it with 4–8 symbolic miniatures that explain the subject: tools, icons, companions, costumes, maps, diagrams, flags, documents, structures, or objects\n- Add an open-book or reference-page layer with short readable labels, side diagrams, callout boxes, and accessory sketches\n- Use matte clay/vinyl surfaces, soft studio lighting, clean shadows, and minimal clutter\n- Keep the proportions cute and simplified, but the information clear and intentional\n- Use muted historical colors plus a few strong accent colors related to $SUBJECT\n\nOUTPUT: A charming collectible museum-guide diorama where $SUBJECT becomes a small educational world with symbols, props, and storybook clarity.",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1784982873403.9617
+  },
+  {
+    "title": "新艺术运动时尚海报：黄金、黑色与深红",
+    "slug": "art-nouveau-fashion",
+    "model": "GPT Image 2",
+    "category": "portrait",
+    "tags": [
+      "art-nouveau",
+      "fashion",
+      "glamour",
+      "poster",
+      "editorial"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/art-nouveau-fashion.jpg",
+    "date": "Fri Jul 24 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-25T12:34:00.000Z",
+    "source": "https://x.com/RockGrokAI/status/2080729730731692170",
+    "author": "AI Aimee",
+    "prompt": "Swanky glamorous woman reclining elegantly with strong Art Nouveau aesthetic — flowing organic lines, delicate contour lines, ornate decorative patterns and swirls, rich gold, black, and crimson tones, luxurious high-fashion glamour magazine style, sensual and refined atmosphere. No words or letters.",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1784982852047.4312
+  },
+  {
+    "title": "木刻版画融合抽象肖像：雕刻与色彩的爆破",
+    "slug": "engraved-abstract-portrait",
+    "model": "GPT Image 2",
+    "category": "portrait",
+    "tags": [
+      "engraving",
+      "abstract",
+      "portrait",
+      "mixed-media",
+      "editorial"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/engraved-abstract-portrait.jpg",
+    "date": "Sat Jul 25 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-25T12:34:00.000Z",
+    "source": "https://x.com/arsalannazir07/status/2080883624015237300",
+    "author": "Marcos",
+    "prompt": "An ultra-expressive fusion of intricate engraved illustration and vibrant contemporary abstract portrait art. Highly detailed linework inspired by woodcut, linocut, and cross-hatched engraving techniques, seamlessly blended with fluid painterly rendering and translucent geometric color overlays. Complex directional hatching, flowing contour lines, layered ink strokes, and sculptural faceted planes define form with exceptional precision while preserving an organic hand-crafted aesthetic.\n\nBold mixed-media composition combining digital engraving, fine ink illustration, acrylic paint textures, expressive brushwork, and modern editorial graphic design. Vibrant yet harmonious color palette featuring rich golden ochre, burnt orange, crimson red, coral, magenta, cyan, turquoise, cobalt blue, violet, ivory, deep navy, and charcoal black. Dynamic interplay of warm and cool tones with luminous highlights, dramatic contrast, and subtle ambient glow.\n\nLayered translucent polygons, floating abstract geometric fragments, expressive scribble marks, delicate paint splatters, and elegant negative space create visual rhythm without overwhelming the subject. Fine canvas grain, subtle paper texture, controlled edge variation, premium gallery-quality finish, sophisticated contemporary fine-art aesthetic, balancing realism, abstraction, and graphic elegance. Ultra-detailed, crisp, expressive, handcrafted, without photorealistic oversharpening, without comic halftones, no text, no logo, no watermark.",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1784982859968.2158
+  },
+  {
+    "title": "Niji 动漫壁纸生成器：V-Ray 追踪 + 能量爆炸",
+    "slug": "niji-manga-wallpaper",
+    "model": "Midjourney",
+    "category": "style",
+    "tags": [
+      "niji",
+      "anime",
+      "manga",
+      "wallpaper",
+      "action"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/niji-manga-wallpaper.jpg",
+    "date": "Fri Jul 24 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-25T12:34:00.000Z",
+    "source": "https://x.com/CharaspowerAI/status/2080714737902346634",
+    "author": "Pierrick Chevallier",
+    "prompt": "[Character name] [action / power pose / energy effect] wallpaper, in the style of V-Ray tracing, vivid energy explosions, vibrant manga, powerful compositions, strong facial expression, intense emotional atmosphere.\n\nUse with Midjourney Niji mode for anime-style renders with dynamic composition, detailed character design, and dramatic lighting effects.",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1784982881006.8672
   }
 ]
