@@ -360,7 +360,7 @@ export default async function PromptDetailPage({
           生成分享卡片
         </h2>
         <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
-          下载精美的 Prompt 食谱卡，分享到社交媒体
+          下载精美的 Prompt 分享卡片，分享到社交媒体
         </p>
         <div className="mt-6">
           <PromptRecipeCard prompt={prompt} />

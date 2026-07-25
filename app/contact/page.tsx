@@ -129,19 +129,19 @@ export default function ContactPage() {
 
             <div>
               <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
-                Q: 什么是「品味档案」？
+                Q: 什么是「美学人格」？
               </h3>
               <p className="text-gray-700 dark:text-gray-300">
-                A: 收藏 5 个以上提示词后，访问 /taste 即可解锁你的专属美学人格卡片。AI 根据你的收藏偏好，从 20 种人格中匹配最像你的一个，生成可下载的品味卡片。
+                A: 收藏 5 个以上提示词后，访问 /taste 即可解锁你的专属美学人格卡片。AI 根据你的收藏偏好，从 20 种人格（光影诗人、微缩造梦师、赛博拾荒者等）中匹配最像你的一个，生成可下载的审美风格卡片。
               </p>
             </div>
 
             <div>
               <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
-                Q: 如何下载「食谱卡」？
+                Q: 如何下载 Prompt 分享卡片？
               </h3>
               <p className="text-gray-700 dark:text-gray-300">
-                A: 进入任意 prompt 详情页，滚动到底部找到「生成分享卡片」区域，点击「下载食谱卡」按钮即可保存为 PNG 图片。
+                A: 进入任意 prompt 详情页，滚动到底部找到「生成分享卡片」区域，点击「下载 Prompt 卡片」按钮即可保存为 PNG 图片，包含 prompt 预览、模型参数和标签信息。
               </p>
             </div>
           </div>

@@ -56,13 +56,13 @@ export default function AboutPage() {
             <li className="flex items-start gap-3">
               <span className="text-green-500 text-xl">•</span>
               <div>
-                <strong>品味档案</strong> — 收藏 5 个提示词，AI 分析你的审美偏好，生成专属美学人格卡片，支持下载分享。
+                <strong>美学人格</strong> — 收藏 5 个提示词，AI 分析你的审美偏好，从 20 种人格（光影诗人、微缩造梦师等）中匹配最像你的一个，生成专属风格卡片，支持下载分享。
               </div>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-green-500 text-xl">•</span>
               <div>
-                <strong>食谱卡分享</strong> — 每个 prompt 详情页可生成精美食谱卡，一键下载为 PNG，分享到社交媒体。
+                <strong>Prompt 卡片分享</strong> — 每个 prompt 详情页可生成精美分享卡片，一键下载为 PNG，包含 prompt 预览、模型参数和标签，方便分享到社交媒体。
               </div>
             </li>
             <li className="flex items-start gap-3">
@@ -114,8 +114,8 @@ export default function AboutPage() {
             <li>点击卡片进入详情页，查看完整提示词和示例图</li>
             <li>点击「复制提示词」按钮，粘贴到你的 AI 工具</li>
             <li>点击 ❤️ 点赞，点击 📦 收藏，建立你的品味库</li>
-            <li>收藏满 5 个，访问「品味档案」解锁你的美学人格卡片</li>
-            <li>在详情页「生成分享卡片」下载食谱卡，分享到社交媒体</li>
+            <li>收藏满 5 个，访问「美学人格」解锁你的专属审美风格卡片</li>
+            <li>在详情页「生成分享卡片」下载 Prompt 卡片，分享到社交媒体</li>
           </ol>
         </section>
 
