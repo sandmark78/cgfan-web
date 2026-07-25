@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { getTodayFeature, getYesterdayFeature, getTomorrowFeature } from '@/lib/daily-feature'
 import { getPromptBySlug } from '@/lib/prompts'
 import { CopyPromptButton } from '@/components/prompt/copy-prompt-button'
+import { MobileCollapse } from '@/components/mobile-collapse'
 
 export const runtime = 'edge'
 
@@ -86,19 +87,21 @@ export default function DailyFeature() {
 
           <p className="daily-note">{todayFeature.curatorNote}</p>
 
-          {todayFeature.tip && (
-            <div className="mb-3 rounded-lg border border-green-200/40 bg-green-50/40 px-3 py-2 dark:border-green-800/30 dark:bg-green-900/20">
-              <div className="mb-0.5 text-[10px] font-medium tracking-wider text-green-600 dark:text-green-400">💡 实用技巧</div>
-              <p className="text-[12px] leading-relaxed text-gray-700 dark:text-gray-300">{todayFeature.tip}</p>
-            </div>
-          )}
+          <MobileCollapse>
+            {todayFeature.tip && (
+              <div className="mb-3 rounded-lg border border-green-200/40 bg-green-50/40 px-3 py-2 dark:border-green-800/30 dark:bg-green-900/20">
+                <div className="mb-0.5 text-[10px] font-medium tracking-wider text-green-600 dark:text-green-400">💡 实用技巧</div>
+                <p className="text-[12px] leading-relaxed text-gray-700 dark:text-gray-300">{todayFeature.tip}</p>
+              </div>
+            )}
 
-          {todayFeature.tryChange && (
-            <div className="mb-3 border-l-2 border-amber-400/50 pl-3">
-              <div className="text-[10px] font-medium tracking-wider text-amber-600 dark:text-amber-400">✏️ 试着改一个词</div>
-              <p className="text-[12px] italic leading-relaxed text-gray-600 dark:text-gray-400">{todayFeature.tryChange}</p>
-            </div>
-          )}
+            {todayFeature.tryChange && (
+              <div className="mb-3 border-l-2 border-amber-400/50 pl-3">
+                <div className="text-[10px] font-medium tracking-wider text-amber-600 dark:text-amber-400">✏️ 试着改一个词</div>
+                <p className="text-[12px] italic leading-relaxed text-gray-600 dark:text-gray-400">{todayFeature.tryChange}</p>
+              </div>
+            )}
+          </MobileCollapse>
 
           <div className="daily-actions">
             <Link href={`/prompt/${prompt.slug}`} className="daily-more">

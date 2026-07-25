@@ -131,6 +131,9 @@ export default function AboutPage() {
               🐦 X (Twitter): <Link href="https://x.com/cgfan_ai" className="text-green-600 hover:text-green-700 dark:text-green-400">@cgfan_ai</Link>
             </p>
             <p className="text-gray-700 dark:text-gray-300">
+              🐙 GitHub: <Link href="https://github.com/sandmark78/cgfan-web" className="text-green-600 hover:text-green-700 dark:text-green-400">sandmark78/cgfan-web</Link>
+            </p>
+            <p className="text-gray-700 dark:text-gray-300">
               📧 邮箱: contact@cgfan.com
             </p>
           </div>
