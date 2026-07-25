@@ -354,7 +354,7 @@ export default async function PromptDetailPage({
         </div>
       )}
 
-      {/* Prompt 食谱卡 */}
+      {/* Prompt 分享卡 */}
       <div className="mt-12">
         <h2 className="font-serif text-xl font-bold text-gray-900 dark:text-white">
           生成分享卡片

@@ -200,7 +200,7 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
 
   return (
     <div className="space-y-4">
-      {/* 食谱卡预览 */}
+      {/* 分享卡预览 */}
       <div
         id="recipe-card"
         className="mx-auto max-w-md overflow-hidden rounded-2xl bg-gradient-to-br from-gray-50 to-gray-100 shadow-2xl dark:from-gray-900 dark:to-gray-950"

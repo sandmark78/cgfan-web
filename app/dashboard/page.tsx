@@ -80,7 +80,7 @@ export default async function DashboardPage() {
         </div>
       </div>
 
-      {/* 去品味档案入口 */}
+      {/* 去美学人格入口 */}
       <div className="mb-8">
         <Link
           href="/taste"

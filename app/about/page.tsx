@@ -8,16 +8,16 @@ export const runtime = 'edge'
  */
 export const metadata: Metadata = {
   title: '关于 | CGfan - AI 提示词策展画廊',
-  description: 'CGfan 是一个有编辑灵魂的 AI 提示词策展站。每日一味精选，附策展笔记；收藏解锁品味档案；食谱卡下载分享；分类浏览、一键复制。涵盖 Midjourney、Gemini、GPT Image 等主流模型。',
+  description: 'CGfan 是一个有编辑灵魂的 AI 提示词策展站。每日一味精选，附策展笔记；收藏解锁美学人格；分享卡片下载分享；分类浏览、一键复制。涵盖 Midjourney、Gemini、GPT Image 等主流模型。',
   openGraph: {
     title: '关于 | CGfan - AI 提示词策展画廊',
-    description: '每日一味精选 · 品味档案 · 食谱卡分享。有编辑灵魂的 AI 提示词策展站。',
+    description: '每日一味精选 · 美学人格 · 分享卡片。有编辑灵魂的 AI 提示词策展站。',
     type: 'website',
   },
   twitter: {
     card: 'summary',
     title: '关于 | CGfan - AI 提示词策展画廊',
-    description: '每日一味精选 · 品味档案 · 食谱卡分享。有编辑灵魂的 AI 提示词策展站。',
+    description: '每日一味精选 · 美学人格 · 分享卡片。有编辑灵魂的 AI 提示词策展站。',
   },
 }
 
