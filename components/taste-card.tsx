@@ -10,18 +10,18 @@ interface TasteCardClientProps {
   isLoggedIn: boolean
 }
 
-// ============ 配色：纯绿系 ============
+// ============ 配色：浅色绿色风格，和站点统一 ============
 const C = {
-  bgTop: '#F2F7EE', bgBot: '#D4E4C4',
-  ink: '#2F6B45',
-  inkDeep: '#1F3A2C',
-  soft: '#6B8472',
-  soft2: '#8AA091',
-  track: 'rgba(47,107,69,.13)',
-  line: 'rgba(47,107,69,.26)',
-  lineSoft: 'rgba(47,107,69,.14)',
-  pill: '#2F6B45', pillInk: '#F2F7EE',
-  spectrum: ['#1F3A2C', '#2F6B45', '#4F8F54', '#7FB069', '#A9C79B', '#C6DBB8'],
+  bgTop: '#F7FBF5', bgBot: '#E0ECD6',
+  ink: '#3D8C5A',
+  inkDeep: '#2A6B3F',
+  soft: '#7A9E7A',
+  soft2: '#9AB89A',
+  track: 'rgba(61,140,90,.12)',
+  line: 'rgba(61,140,90,.22)',
+  lineSoft: 'rgba(61,140,90,.12)',
+  pill: '#3D8C5A', pillInk: '#F7FBF5',
+  spectrum: ['#2A6B3F', '#3D8C5A', '#5DAD6A', '#7FC08A', '#A8D4A8', '#C8E4C8'],
 }
 const SERIF = '"Noto Serif SC","Songti SC",serif'
 const SANS = 'system-ui,sans-serif'
@@ -67,26 +67,35 @@ function drawLeafShadow(ctx: CanvasRenderingContext2D) {
 
 function drawWaxSeal(ctx: CanvasRenderingContext2D, cx: number, cy: number, r: number, text: string) {
   ctx.save()
-  ctx.fillStyle = '#234A31'
-  for (let a = 0; a < Math.PI * 2; a += Math.PI / 9) {
-    ctx.beginPath()
-    ctx.arc(cx + Math.cos(a) * (r - 2), cy + Math.sin(a) * (r - 2), 6, 0, Math.PI * 2)
-    ctx.fill()
+
+  // 外圈波浪线：用正弦扰动半径模拟火漆蜡的不规则边缘
+  ctx.strokeStyle = C.ink
+  ctx.lineWidth = 2
+  ctx.beginPath()
+  for (let a = 0; a <= Math.PI * 2; a += 0.05) {
+    const wave = 4 + Math.sin(a * 8) * 2.5 + Math.sin(a * 13) * 1.5
+    const x = cx + Math.cos(a) * (r + wave)
+    const y = cy + Math.sin(a) * (r + wave)
+    a === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y)
   }
-  const g = ctx.createRadialGradient(cx - r * .3, cy - r * .3, 2, cx, cy, r)
-  g.addColorStop(0, '#4F8F54'); g.addColorStop(.6, '#2F6B45'); g.addColorStop(1, '#1B3A27')
-  ctx.fillStyle = g
-  ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI * 2); ctx.fill()
-  ctx.strokeStyle = 'rgba(180,220,150,.35)'; ctx.lineWidth = 1.5
-  ctx.beginPath(); ctx.arc(cx, cy, r - 8, 0, Math.PI * 2); ctx.stroke()
-  ctx.restore()
-  ctx.save()
-  ctx.textAlign = 'center'; ctx.textBaseline = 'middle'
-  ctx.font = `900 22px ${SERIF}`
-  ctx.shadowColor = 'rgba(190,225,170,.55)'; ctx.shadowOffsetY = 1.2; ctx.shadowBlur = 0
-  ctx.fillStyle = '#16301F'
+  ctx.closePath()
+  ctx.stroke()
+
+  // 内圈平滑线
+  ctx.strokeStyle = C.line
+  ctx.lineWidth = 1.5
+  ctx.beginPath()
+  ctx.arc(cx, cy, r - 10, 0, Math.PI * 2)
+  ctx.stroke()
+
+  // 凹刻竖排文字
+  ctx.textAlign = 'center'
+  ctx.textBaseline = 'middle'
+  ctx.font = `900 20px ${SERIF}`
+  ctx.fillStyle = C.ink
   const chars = [...text], n = chars.length
-  chars.forEach((ch, i) => ctx.fillText(ch, cx, cy + (i - (n - 1) / 2) * 24))
+  chars.forEach((ch, i) => ctx.fillText(ch, cx, cy + (i - (n - 1) / 2) * 22))
+
   ctx.restore()
 }
 
@@ -359,11 +368,9 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
               <span>www.cgfan.com/taste</span>
             </div>
             <div className="grid h-[52px] w-[52px] place-items-center rounded-full text-base font-black font-serif" style={{
-              background: 'radial-gradient(circle at 40% 40%, #4F8F54, #2F6B45, #1B3A27)',
-              color: '#16301F',
+              border: '2px solid ' + C.ink,
+              color: C.ink,
               transform: 'rotate(-6deg)',
-              boxShadow: '0 0 0 2px rgba(180,220,150,0.3), inset 0 0 0 1px rgba(0,0,0,0.2)',
-              textShadow: '0 1px 0 rgba(190,225,170,0.4)',
             }}>{persona.seal}</div>
           </div>
         </div>
