@@ -24,7 +24,7 @@ export function RandomButton({ slugs }: RandomButtonProps) {
     <button
       onClick={handleClick}
       disabled={spinning}
-      className="inline-flex items-center gap-1.5 rounded-full border border-green-200/40 px-3.5 py-1.5 text-xs font-medium text-green-600 transition-all hover:bg-green-50/50 hover:border-green-300/60 disabled:opacity-50 dark:border-green-800/30 dark:text-green-400 dark:hover:bg-green-900/20"
+      className="inline-flex items-center gap-1.5 rounded-full border border-green-200/50 px-3 py-1.5 text-xs font-medium text-green-600 transition-all hover:bg-green-50/50 hover:border-green-300/60 disabled:opacity-50 dark:border-green-700/40 dark:text-green-400 dark:hover:bg-green-900/20"
     >
       <span className={`transition-transform duration-300 ${spinning ? 'rotate-180' : ''}`}>
         🎲

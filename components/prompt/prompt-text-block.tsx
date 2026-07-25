@@ -10,7 +10,7 @@ interface PromptTextBlockProps {
 /**
  * 可折叠的提示词文本块 - 长文本默认折叠，支持展开/收起
  */
-export function PromptTextBlock({ text, maxLines = 15 }: PromptTextBlockProps) {
+export function PromptTextBlock({ text, maxLines = 10 }: PromptTextBlockProps) {
   const [isExpanded, setIsExpanded] = useState(false)
   const [copied, setCopied] = useState(false)
 

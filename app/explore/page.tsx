@@ -169,7 +169,7 @@ export default async function ExplorePage({
         {/* 右侧内容 */}
         <div className="flex-1">
           {/* 标题 */}
-          <div className="mb-6">
+          <div className="mb-6 flex items-center justify-between">
             <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
               {activeFilter ? (
                 <>
@@ -187,9 +187,7 @@ export default async function ExplorePage({
                 </>
               )}
             </h1>
-            <div className="mt-2">
-              <RandomButton slugs={prompts.map(p => p.slug)} />
-            </div>
+            <RandomButton slugs={prompts.map(p => p.slug)} />
           </div>
 
           {/* 无限滚动瀑布流 */}
