@@ -169,7 +169,7 @@ export default async function ExplorePage({
         <div className="flex-1">
           {/* 标题 */}
           <div className="mb-6">
-            <h1 className="text-2xl font-bold text-white">
+            <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
               {activeFilter ? (
                 <>
                   {activeFilter}
@@ -178,7 +178,12 @@ export default async function ExplorePage({
                   </span>
                 </>
               ) : (
-                '全部提示词'
+                <>
+                  全部提示词
+                  <span className="ml-2 text-sm font-normal text-zinc-500">
+                    ({prompts.length} 个提示词)
+                  </span>
+                </>
               )}
             </h1>
           </div>
