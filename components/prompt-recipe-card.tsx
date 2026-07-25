@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { PromptData } from '@/lib/prompts'
 
 interface PromptRecipeCardProps {
@@ -9,29 +9,187 @@ interface PromptRecipeCardProps {
 
 /**
  * Prompt 食谱卡 - 可下载的精美分享卡片
+ * 使用 Canvas API 原生绘制，避免 html2canvas 的 CORS 和兼容性问题
  */
 export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
   const [isGenerating, setIsGenerating] = useState(false)
+  const imgRef = useRef<HTMLImageElement | null>(null)
+
+  // 预加载图片
+  useEffect(() => {
+    if (!prompt.cover) return
+    const img = new Image()
+    img.crossOrigin = 'anonymous'
+    img.onload = () => { imgRef.current = img }
+    img.src = prompt.cover
+  }, [prompt.cover])
 
   const handleDownload = async () => {
     setIsGenerating(true)
     try {
-      // 动态导入 html2canvas
-      const html2canvas = (await import('html2canvas')).default
-      const cardElement = document.getElementById('recipe-card')
-      
-      if (!cardElement) return
+      const canvas = document.createElement('canvas')
+      const ctx = canvas.getContext('2d')
+      if (!ctx) throw new Error('Canvas 2D context not available')
 
-      const canvas = await html2canvas(cardElement, {
-        scale: 2,
-        backgroundColor: '#ffffff',
-        useCORS: true,
+      const W = 600
+      const H = 800
+      canvas.width = W
+      canvas.height = H
+
+      // 背景
+      const bg = ctx.createLinearGradient(0, 0, 0, H)
+      bg.addColorStop(0, '#f9fafb')
+      bg.addColorStop(1, '#f3f4f6')
+      ctx.fillStyle = bg
+      ctx.fillRect(0, 0, W, H)
+
+      // 顶部绿色条
+      const headerGrad = ctx.createLinearGradient(0, 0, W, 0)
+      headerGrad.addColorStop(0, '#22c55e')
+      headerGrad.addColorStop(1, '#059669')
+      ctx.fillStyle = headerGrad
+      ctx.fillRect(0, 0, W, 120)
+
+      // 标题
+      ctx.fillStyle = '#ffffff'
+      ctx.font = 'bold 22px -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif'
+      ctx.textBaseline = 'middle'
+      const title = prompt.title.length > 28 ? prompt.title.slice(0, 28) + '...' : prompt.title
+      ctx.fillText(title, 30, 60)
+
+      // "Prompt Recipe" 标签
+      ctx.font = '12px -apple-system, sans-serif'
+      ctx.fillStyle = 'rgba(255,255,255,0.8)'
+      ctx.fillText('CGfan · Prompt Recipe', 30, 30)
+
+      // 示例图区域
+      const imgY = 120
+      const imgH = 300
+      ctx.fillStyle = '#e5e7eb'
+      ctx.fillRect(0, imgY, W, imgH)
+
+      if (imgRef.current) {
+        try {
+          ctx.drawImage(imgRef.current, 0, imgY, W, imgH)
+        } catch {
+          // 图片绘制失败，留灰底
+        }
+      }
+
+      // 内容区
+      const contentY = imgY + imgH + 24
+
+      // 三列参数
+      const params = [
+        { label: '风格', value: (prompt.tags[0] || '混合') },
+        { label: '模型', value: prompt.model },
+        { label: '难度', value: prompt.difficulty === 'beginner' ? '入门' : prompt.difficulty === 'intermediate' ? '进阶' : '高级' },
+      ]
+
+      const colW = 170
+      const gap = 15
+      const startX = 30
+      params.forEach((p, i) => {
+        const x = startX + i * (colW + gap)
+        ctx.fillStyle = '#ffffff'
+        ctx.beginPath()
+        ctx.roundRect(x, contentY, colW, 56, 8)
+        ctx.fill()
+
+        ctx.fillStyle = '#6b7280'
+        ctx.font = '11px -apple-system, sans-serif'
+        ctx.textAlign = 'center'
+        ctx.fillText(p.label, x + colW / 2, contentY + 22)
+
+        ctx.fillStyle = '#111827'
+        ctx.font = 'bold 13px -apple-system, sans-serif'
+        ctx.fillText(p.value, x + colW / 2, contentY + 42)
       })
 
+      // 关键原料
+      const tagY = contentY + 80
+      ctx.fillStyle = '#6b7280'
+      ctx.font = '11px -apple-system, sans-serif'
+      ctx.textAlign = 'left'
+      ctx.fillText('关键原料', 30, tagY)
+
+      let tagX = 30
+      const tagH = 26
+      prompt.tags.slice(0, 4).forEach((tag) => {
+        ctx.fillStyle = '#dcfce7'
+        ctx.beginPath()
+        ctx.roundRect(tagX, tagY + 10, ctx.measureText(tag).width + 20, tagH, 13)
+        ctx.fill()
+
+        ctx.fillStyle = '#166534'
+        ctx.font = '12px -apple-system, sans-serif'
+        ctx.textAlign = 'center'
+        ctx.fillText(tag, tagX + (ctx.measureText(tag).width + 20) / 2, tagY + 10 + tagH / 2 + 4)
+
+        tagX += ctx.measureText(tag).width + 28
+      })
+
+      // Prompt 预览
+      const promptY = tagY + 60
+      ctx.fillStyle = '#6b7280'
+      ctx.font = '11px -apple-system, sans-serif'
+      ctx.textAlign = 'left'
+      ctx.fillText('Prompt 预览', 30, promptY)
+
+      ctx.fillStyle = '#f3f4f6'
+      ctx.beginPath()
+      ctx.roundRect(30, promptY + 12, W - 60, 60, 8)
+      ctx.fill()
+
+      ctx.fillStyle = '#374151'
+      ctx.font = '12px -apple-system, sans-serif'
+      const previewText = prompt.prompt.slice(0, 100).replace(/\n/g, ' ') + '...'
+      ctx.textAlign = 'left'
+      ctx.textBaseline = 'top'
+
+      // 文字换行
+      const maxWidth = W - 80
+      const lines = []
+      let line = ''
+      for (const char of previewText) {
+        const testLine = line + char
+        if (ctx.measureText(testLine).width > maxWidth && line.length > 0) {
+          lines.push(line)
+          line = char
+        } else {
+          line = testLine
+        }
+      }
+      lines.push(line)
+
+      lines.slice(0, 3).forEach((l, i) => {
+        ctx.fillText(l, 44, promptY + 20 + i * 18)
+      })
+
+      // 底部水印
+      ctx.fillStyle = '#9ca3af'
+      ctx.font = '11px -apple-system, sans-serif'
+      ctx.textAlign = 'left'
+      ctx.textBaseline = 'middle'
+      ctx.fillText('www.cgfan.com', 30, H - 24)
+
+      ctx.textAlign = 'right'
+      ctx.fillText(`❤️ ${prompt.likeCount || 0}`, W - 30, H - 24)
+
+      // 下载
+      const blob = await new Promise<Blob>((resolve, reject) => {
+        canvas.toBlob((b) => {
+          if (b) resolve(b)
+          else reject(new Error('Canvas toBlob failed'))
+        }, 'image/png')
+      })
+
+      const url = URL.createObjectURL(blob)
       const link = document.createElement('a')
       link.download = `cgfan-${prompt.slug}.png`
-      link.href = canvas.toDataURL('image/png')
+      link.href = url
       link.click()
+      URL.revokeObjectURL(url)
     } catch (error) {
       console.error('生成卡片失败:', error)
       alert('下载失败，请稍后重试')
