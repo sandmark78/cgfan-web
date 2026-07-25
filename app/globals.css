@@ -99,7 +99,17 @@ body {
   padding: 0 !important;
 }
 @media (max-width: 640px) {
-  .daily-card { grid-template-columns: 1fr; }
+  .daily-card {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .daily-figure {
+    aspect-ratio: 16 / 9;
+  }
+  .daily-body {
+    padding: 16px;
+  }
 }
 
 /* 图区 */
