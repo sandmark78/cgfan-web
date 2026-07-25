@@ -10,12 +10,12 @@ export async function GET(request: NextRequest) {
   const category = searchParams.get('category')
   const tag = searchParams.get('tag')
   const q = searchParams.get('q')
+  const model = searchParams.get('model')
+  const difficulty = searchParams.get('difficulty')
 
   let prompts = getAllPrompts()
-  // 数据已按上传时间升序排列，API 需要返回最新优先
   prompts = [...prompts].reverse()
 
-  // 应用筛选
   if (q) {
     const query = q.toLowerCase()
     prompts = prompts.filter((p) =>
@@ -31,7 +31,13 @@ export async function GET(request: NextRequest) {
     prompts = prompts.filter((p) => p.tags.includes(tag))
   }
 
-  // 计算分页
+  if (model) {
+    prompts = prompts.filter((p) => p.model.toLowerCase().includes(model.toLowerCase().split(' ')[0].toLowerCase()))
+  }
+  if (difficulty) {
+    prompts = prompts.filter((p) => p.difficulty === difficulty)
+  }
+
   const total = prompts.length
   const totalPages = Math.ceil(total / pageSize)
   const startIndex = (page - 1) * pageSize

@@ -22,9 +22,11 @@ interface InfiniteGridProps {
   category?: string
   tag?: string
   q?: string
+  model?: string
+  difficulty?: string
 }
 
-export function InfiniteGrid({ initialPrompts, category, tag, q }: InfiniteGridProps) {
+export function InfiniteGrid({ initialPrompts, category, tag, q, model, difficulty }: InfiniteGridProps) {
   const [prompts, setPrompts] = useState<PromptData[]>(initialPrompts)
   const [page, setPage] = useState(1)
   const [loading, setLoading] = useState(false)
@@ -46,6 +48,8 @@ export function InfiniteGrid({ initialPrompts, category, tag, q }: InfiniteGridP
       if (category) params.append('category', category)
       if (tag) params.append('tag', tag)
       if (q) params.append('q', q)
+      if (model) params.append('model', model)
+      if (difficulty) params.append('difficulty', difficulty)
 
       const res = await fetch(`/api/prompts?${params}`)
       const data = await res.json()
@@ -63,7 +67,7 @@ export function InfiniteGrid({ initialPrompts, category, tag, q }: InfiniteGridP
     } finally {
       setLoading(false)
     }
-  }, [page, loading, hasMore, category, tag, q])
+  }, [page, loading, hasMore, category, tag, q, model, difficulty])
 
   useEffect(() => {
     if (observerRef.current) {
