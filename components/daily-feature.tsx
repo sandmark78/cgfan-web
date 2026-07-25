@@ -21,11 +21,14 @@ export async function DailyFeature() {
   }
 
   const formatDate = (date: Date) => {
-    const month = date.getMonth() + 1
     const day = date.getDate()
+    const month = date.getMonth() + 1
     const weekdays = ['日', '一', '二', '三', '四', '五', '六']
     const weekday = weekdays[date.getDay()]
-    return `${month}月${day}日 · 周${weekday}`
+    // 中文数字
+    const cnNums = ['〇', '一', '二', '三', '四', '五', '六', '七', '八', '九', '十', '十一', '十二']
+    const cnDay = day <= 10 ? cnNums[day] : day < 20 ? `十${cnNums[day - 10]}` : `二十${cnNums[day - 20]}`
+    return `${cnNums[month]}月${cnDay}日 · 周${weekday}`
   }
 
   const today = new Date()

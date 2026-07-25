@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Geist, Geist_Mono, Noto_Serif_SC } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
@@ -12,6 +12,12 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: '--font-geist-mono',
   subsets: ['latin'],
+});
+
+const notoSerif = Noto_Serif_SC({
+  variable: '--font-serif',
+  subsets: ['latin'],
+  weight: ['500', '700', '900'],
 });
 
 export const metadata: Metadata = {
@@ -69,9 +75,9 @@ export default function RootLayout({
   return (
     <html
       lang="zh-CN"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${notoSerif.variable} h-full antialiased`}
     >
-      <body className={`${geistSans.variable} ${geistMono.variable} relative min-h-screen overflow-x-hidden`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${notoSerif.variable} relative min-h-screen overflow-x-hidden`}>
         {/* 可访问性：跳到主要内容 */}
         <a
           href="#main-content"

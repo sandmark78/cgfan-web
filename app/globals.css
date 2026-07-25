@@ -2,6 +2,11 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* 双字体系统：宋体标题 + 无衬线正文 */
+@theme {
+  --font-serif: var(--font-serif), "Noto Serif SC", "Songti SC", "SimSun", serif;
+}
+
 /* ===== 设计系统变量 ===== */
 :root {
   /* 主色调 - 绿色系 */

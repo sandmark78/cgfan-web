@@ -189,12 +189,35 @@ export default async function ExplorePage({
           </div>
 
           {/* 无限滚动瀑布流 */}
-          <InfiniteGrid
-            initialPrompts={initialPrompts}
-            category={category}
-            tag={tag}
-            q={q}
-          />
+          {prompts.length === 0 ? (
+            <div className="py-24 text-center">
+              <div className="mb-6 text-6xl">🔍</div>
+              <h3 className="mb-3 font-serif text-xl font-bold text-gray-900 dark:text-white">
+                {q ? `没有找到「${q}」相关的结果` : '这里还没有内容'}
+              </h3>
+              <p className="mb-3 text-gray-500 dark:text-gray-400">
+                {q ? '试试其他关键词，或者浏览分类看看' : '换个分类或标签试试'}
+              </p>
+              <div className="mx-auto mt-8 max-w-md rounded-2xl bg-gray-50 p-5 dark:bg-gray-800/50">
+                <p className="text-sm italic text-gray-500 dark:text-gray-400">
+                  「你删掉的，比你画下的更重要。」
+                </p>
+                <p className="mt-2 text-xs text-gray-400 dark:text-gray-500">
+                  — 留白主义者
+                </p>
+              </div>
+              <Link href="/explore" className="btn-primary mt-8 inline-block">
+                浏览全部
+              </Link>
+            </div>
+          ) : (
+            <InfiniteGrid
+              initialPrompts={initialPrompts}
+              category={category}
+              tag={tag}
+              q={q}
+            />
+          )}
         </div>
       </div>
     </div>

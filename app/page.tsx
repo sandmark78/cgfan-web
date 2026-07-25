@@ -58,6 +58,17 @@ export default function Home() {
         </div>
       )}
 
+      {/* 分隔线 + 最新收录 */}
+      <div className="mx-auto mt-10 sm:mt-14 max-w-5xl px-4 sm:px-0">
+        <div className="flex items-center gap-4">
+          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-gray-200 to-transparent dark:via-gray-700" />
+          <span className="flex-shrink-0 text-xs font-medium tracking-widest text-gray-400 dark:text-gray-500">
+            · 最新收录 ·
+          </span>
+          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-gray-200 to-transparent dark:via-gray-700" />
+        </div>
+      </div>
+
       {/* 最新提示词 - 整齐网格 */}
       <div className="mt-4 sm:mt-8 px-4 sm:px-0">
         <div className="flex items-center justify-between">
