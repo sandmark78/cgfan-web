@@ -261,7 +261,7 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       await document.fonts.ready
       await document.fonts.load('900 64px "Noto Serif SC"')
 
-      const W = 600, H = 880, dpr = 2
+      const W = 533, H = 800, dpr = 2
       const canvas = document.createElement('canvas')
       canvas.width = W * dpr; canvas.height = H * dpr
       const ctx = canvas.getContext('2d')
