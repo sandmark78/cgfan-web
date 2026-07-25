@@ -211,7 +211,7 @@ body {
 .daily-actions {
   display: flex;
   align-items: center;
-  gap: 12px;
+  justify-content: space-between;
 }
 .daily-copy-btn {
   display: inline-flex;
