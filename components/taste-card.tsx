@@ -68,12 +68,12 @@ function drawLeafShadow(ctx: CanvasRenderingContext2D) {
 function drawWaxSeal(ctx: CanvasRenderingContext2D, cx: number, cy: number, r: number, text: string) {
   ctx.save()
 
-  // 外圈波浪线：用正弦扰动半径模拟火漆蜡的不规则边缘
-  ctx.strokeStyle = C.ink
-  ctx.lineWidth = 2
+  // 外圈波浪线：正弦扰动半径模拟火漆蜡边
+  ctx.strokeStyle = C.inkDeep
+  ctx.lineWidth = 2.5
   ctx.beginPath()
   for (let a = 0; a <= Math.PI * 2; a += 0.05) {
-    const wave = 4 + Math.sin(a * 8) * 2.5 + Math.sin(a * 13) * 1.5
+    const wave = 3 + Math.sin(a * 7) * 3 + Math.sin(a * 12) * 2
     const x = cx + Math.cos(a) * (r + wave)
     const y = cy + Math.sin(a) * (r + wave)
     a === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y)
@@ -85,14 +85,14 @@ function drawWaxSeal(ctx: CanvasRenderingContext2D, cx: number, cy: number, r: n
   ctx.strokeStyle = C.line
   ctx.lineWidth = 1.5
   ctx.beginPath()
-  ctx.arc(cx, cy, r - 10, 0, Math.PI * 2)
+  ctx.arc(cx, cy, r - 8, 0, Math.PI * 2)
   ctx.stroke()
 
-  // 凹刻竖排文字
+  // 中间竖排文字
   ctx.textAlign = 'center'
   ctx.textBaseline = 'middle'
   ctx.font = `900 20px ${SERIF}`
-  ctx.fillStyle = C.ink
+  ctx.fillStyle = C.inkDeep
   const chars = [...text], n = chars.length
   chars.forEach((ch, i) => ctx.fillText(ch, cx, cy + (i - (n - 1) / 2) * 22))
 
@@ -368,8 +368,8 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
               <span>www.cgfan.com/taste</span>
             </div>
             <div className="grid h-[52px] w-[52px] place-items-center rounded-full text-base font-black font-serif" style={{
-              border: '2px solid ' + C.ink,
-              color: C.ink,
+              border: '2.5px solid ' + C.inkDeep,
+              color: C.inkDeep,
               transform: 'rotate(-6deg)',
             }}>{persona.seal}</div>
           </div>
