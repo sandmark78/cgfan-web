@@ -68,15 +68,17 @@ function drawLeafShadow(ctx: CanvasRenderingContext2D) {
 function drawWaxSeal(ctx: CanvasRenderingContext2D, cx: number, cy: number, r: number, text: string) {
   ctx.save()
 
-  // 外圈波浪线：正弦扰动半径模拟火漆蜡边
+  // 外圈规则波浪：12 瓣均匀 scallop
   ctx.strokeStyle = C.inkDeep
   ctx.lineWidth = 2.5
   ctx.beginPath()
-  for (let a = 0; a <= Math.PI * 2; a += 0.05) {
-    const wave = 3 + Math.sin(a * 7) * 3 + Math.sin(a * 12) * 2
-    const x = cx + Math.cos(a) * (r + wave)
-    const y = cy + Math.sin(a) * (r + wave)
-    a === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y)
+  const scallops = 12
+  for (let i = 0; i <= scallops; i++) {
+    const a = (i / scallops) * Math.PI * 2
+    const wave = Math.sin(a * scallops / 2) * 4
+    const x = cx + Math.cos(a) * (r + wave + 3)
+    const y = cy + Math.sin(a) * (r + wave + 3)
+    i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y)
   }
   ctx.closePath()
   ctx.stroke()
@@ -96,6 +98,22 @@ function drawWaxSeal(ctx: CanvasRenderingContext2D, cx: number, cy: number, r: n
   const chars = [...text], n = chars.length
   chars.forEach((ch, i) => ctx.fillText(ch, cx, cy + (i - (n - 1) / 2) * 22))
 
+  ctx.restore()
+}
+
+function drawRibbon(ctx: CanvasRenderingContext2D, x: number, y: number, dir: number) {
+  // dir: -1 = left, 1 = right
+  ctx.save()
+  ctx.fillStyle = C.ink
+  ctx.beginPath()
+  ctx.moveTo(x, y)
+  ctx.lineTo(x + dir * 18, y + 28)
+  ctx.lineTo(x + dir * 6, y + 20)
+  ctx.lineTo(x, y + 32)
+  ctx.lineTo(x - dir * 6, y + 20)
+  ctx.lineTo(x - dir * 18, y + 28)
+  ctx.closePath()
+  ctx.fill()
   ctx.restore()
 }
 
@@ -214,6 +232,10 @@ function renderCard(ctx: CanvasRenderingContext2D, data: {
   ctx.fillStyle = C.soft2; ctx.font = `500 10px ${SANS}`
   ctx.fillText('生成于 ' + date, LX, 630)
   ctx.fillText(url, LX, 645)
+
+  // 底部左右飘带
+  drawRibbon(ctx, 40, 660, 1)
+  drawRibbon(ctx, W - 40, 660, -1)
 }
 
 export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClientProps) {
@@ -373,6 +395,15 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
               transform: 'rotate(-6deg)',
             }}>{persona.seal}</div>
           </div>
+        </div>
+        {/* 底部飘带 */}
+        <div className="relative h-8">
+          <svg className="absolute bottom-0 left-0" width="40" height="32" viewBox="0 0 40 32" fill="none">
+            <path d="M0 0 L18 28 L6 20 L0 32 L-6 20 L-18 28 Z" fill={C.ink} transform="translate(22, 2)" />
+          </svg>
+          <svg className="absolute bottom-0 right-0" width="40" height="32" viewBox="0 0 40 32" fill="none">
+            <path d="M0 0 L-18 28 L-6 20 L0 32 L6 20 L18 28 Z" fill={C.ink} transform="translate(18, 2)" />
+          </svg>
         </div>
       </div>
 
