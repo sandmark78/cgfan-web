@@ -68,19 +68,11 @@ function drawLeafShadow(ctx: CanvasRenderingContext2D) {
 function drawWaxSeal(ctx: CanvasRenderingContext2D, cx: number, cy: number, r: number, text: string) {
   ctx.save()
 
-  // 外圈规则波浪：12 瓣均匀 scallop
+  // 外圈平滑圆
   ctx.strokeStyle = C.inkDeep
   ctx.lineWidth = 2.5
   ctx.beginPath()
-  const scallops = 12
-  for (let i = 0; i <= scallops; i++) {
-    const a = (i / scallops) * Math.PI * 2
-    const wave = Math.sin(a * scallops / 2) * 4
-    const x = cx + Math.cos(a) * (r + wave + 3)
-    const y = cy + Math.sin(a) * (r + wave + 3)
-    i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y)
-  }
-  ctx.closePath()
+  ctx.arc(cx, cy, r + 2, 0, Math.PI * 2)
   ctx.stroke()
 
   // 内圈平滑线
@@ -232,10 +224,6 @@ function renderCard(ctx: CanvasRenderingContext2D, data: {
   ctx.fillStyle = C.soft2; ctx.font = `500 10px ${SANS}`
   ctx.fillText('生成于 ' + date, LX, 718)
   ctx.fillText(url, LX, 733)
-
-  // 底部左右飘带
-  drawRibbon(ctx, 36, 752, 1)
-  drawRibbon(ctx, W - 36, 752, -1)
 }
 
 export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClientProps) {
@@ -395,15 +383,6 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
               transform: 'rotate(-6deg)',
             }}>{persona.seal}</div>
           </div>
-        </div>
-        {/* 底部飘带 */}
-        <div className="relative h-8">
-          <svg className="absolute bottom-0 left-0" width="40" height="32" viewBox="0 0 40 32" fill="none">
-            <path d="M0 0 L18 28 L6 20 L0 32 L-6 20 L-18 28 Z" fill={C.ink} transform="translate(22, 2)" />
-          </svg>
-          <svg className="absolute bottom-0 right-0" width="40" height="32" viewBox="0 0 40 32" fill="none">
-            <path d="M0 0 L-18 28 L-6 20 L0 32 L6 20 L18 28 Z" fill={C.ink} transform="translate(18, 2)" />
-          </svg>
         </div>
       </div>
 
