@@ -102,7 +102,7 @@ function drawWaxSeal(ctx: CanvasRenderingContext2D, cx: number, cy: number, r: n
 function renderCard(ctx: CanvasRenderingContext2D, data: {
   persona: Persona; analysis: any; serial: string; tags: string[]; date: string; url: string
 }) {
-  const W = 600, H = 880
+  const W = 600, H = 700
   const { persona, analysis, serial, tags, date, url } = data
 
   // 背景：浅绿白渐变
@@ -126,56 +126,56 @@ function renderCard(ctx: CanvasRenderingContext2D, data: {
   ctx.textBaseline = 'alphabetic'
   ctx.textAlign = 'left'
   ctx.fillStyle = C.ink; ctx.font = `600 13px ${SANS}`
-  spaced(ctx, 'CGFAN · 美学人格', 44, 56, 2)
+  spaced(ctx, 'CGFAN · 美学人格', 44, 50, 2)
   ctx.fillStyle = C.soft2; ctx.font = `500 9px ${SANS}`
-  spaced(ctx, 'AESTHETIC PERSONALITY', 44, 72, 1.4)
+  spaced(ctx, 'AESTHETIC PERSONALITY', 44, 64, 1.4)
   ctx.textAlign = 'right'
   ctx.fillStyle = C.ink; ctx.font = `600 13px ${SANS}`
-  spaced(ctx, 'NO.' + serial, W - 44, 56, 1.5, true)
+  spaced(ctx, 'NO.' + serial, W - 44, 50, 1.5, true)
   ctx.fillStyle = C.soft2; ctx.font = `500 9px ${SANS}`
-  spaced(ctx, '探索你的美学光谱', W - 44, 72, 1.2, true)
+  spaced(ctx, '探索你的美学光谱', W - 44, 64, 1.2, true)
   ctx.textAlign = 'left'
 
   // 左侧竖线强调
   ctx.fillStyle = C.ink
-  ctx.fillRect(46, 150, 3, 168)
+  ctx.fillRect(46, 115, 3, 140)
 
   const LX = 66
 
   // 你是
   ctx.fillStyle = C.soft; ctx.font = `500 13px ${SANS}`
-  spaced(ctx, '你 是', LX, 150, 4)
+  spaced(ctx, '你 是', LX, 115, 4)
 
   // 人格名
   const name = persona.name
-  const fs = name.length >= 6 ? 52 : name.length >= 5 ? 60 : 70
+  const fs = name.length >= 6 ? 44 : name.length >= 5 ? 52 : 62
   ctx.fillStyle = C.ink; ctx.font = `900 ${fs}px ${SERIF}`
-  ctx.fillText(name, LX, 232)
+  ctx.fillText(name, LX, 175)
 
   // 英文名
-  ctx.fillStyle = C.ink; ctx.font = `600 12px ${SANS}`
-  spaced(ctx, persona.en, LX, 268, 5)
+  ctx.fillStyle = C.ink; ctx.font = `600 11px ${SANS}`
+  spaced(ctx, persona.en, LX, 200, 5)
 
   // 签名
-  ctx.fillStyle = C.soft; ctx.font = `500 17px ${SERIF}`
-  wrap(ctx, '「 ' + persona.tagline + ' 」', LX, 312, W - LX - 44, 26)
+  ctx.fillStyle = C.soft; ctx.font = `500 15px ${SERIF}`
+  wrap(ctx, '「 ' + persona.tagline + ' 」', LX, 238, W - LX - 44, 24)
 
   // 装饰短线 + 菱形
   ctx.strokeStyle = C.lineSoft; ctx.lineWidth = 1
-  ctx.beginPath(); ctx.moveTo(LX, 360); ctx.lineTo(LX + 64, 360); ctx.stroke()
+  ctx.beginPath(); ctx.moveTo(LX, 268); ctx.lineTo(LX + 64, 268); ctx.stroke()
   ctx.fillStyle = C.lineSoft; ctx.save()
-  ctx.translate(LX + 70, 360); ctx.rotate(Math.PI / 4)
+  ctx.translate(LX + 70, 268); ctx.rotate(Math.PI / 4)
   ctx.fillRect(-2.5, -2.5, 5, 5); ctx.restore()
 
   // 品味光谱
   ctx.fillStyle = C.soft; ctx.font = `500 11px ${SANS}`
-  spaced(ctx, '品 味 光 谱', LX, 400, 3)
+  spaced(ctx, '品 味 光 谱', LX, 295, 3)
 
   // 光谱条：多绿渐变
   const rows = analysis.categories.slice(0, 3)
   const trackX = 168, trackW = 300, pctX = W - 44
   rows.forEach((c: any, i: number) => {
-    const y = 432 + i * 34
+    const y = 315 + i * 28
     ctx.textAlign = 'right'; ctx.fillStyle = C.ink; ctx.font = `500 13px ${SANS}`
     ctx.fillText(c.name, trackX - 14, y + 4)
     ctx.fillStyle = C.track; rr(ctx, trackX, y - 4, trackW, 8, 4); ctx.fill()
@@ -196,24 +196,24 @@ function renderCard(ctx: CanvasRenderingContext2D, data: {
   ctx.textAlign = 'left'
 
   // 实心绿胶囊标签
-  let px = LX, py = 556
-  ctx.font = `500 12.5px ${SANS}`
+  let px = LX, py = 410
+  ctx.font = `500 12px ${SANS}`
   tags.slice(0, 4).forEach(t => {
-    const tw = ctx.measureText(t).width + 26
-    if (px + tw > W - 44) { px = LX; py += 34 }
-    ctx.fillStyle = C.pill; rr(ctx, px, py - 18, tw, 28, 14); ctx.fill()
+    const tw = ctx.measureText(t).width + 24
+    if (px + tw > W - 44) { px = LX; py += 30 }
+    ctx.fillStyle = C.pill; rr(ctx, px, py - 16, tw, 26, 13); ctx.fill()
     ctx.fillStyle = C.pillInk; ctx.textAlign = 'center'
     ctx.fillText(t, px + tw / 2, py + 1); ctx.textAlign = 'left'
-    px += tw + 10
+    px += tw + 8
   })
 
   // 右下：圆火漆章
-  drawWaxSeal(ctx, W - 92, 742, 40, persona.seal)
+  drawWaxSeal(ctx, W - 80, 590, 38, persona.seal)
 
   // 左下 meta
-  ctx.fillStyle = C.soft2; ctx.font = `500 11px ${SANS}`
-  ctx.fillText('生成于 ' + date, LX, 792)
-  ctx.fillText(url, LX, 812)
+  ctx.fillStyle = C.soft2; ctx.font = `500 10px ${SANS}`
+  ctx.fillText('生成于 ' + date, LX, 630)
+  ctx.fillText(url, LX, 645)
 }
 
 export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClientProps) {
