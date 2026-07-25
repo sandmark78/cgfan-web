@@ -10,12 +10,12 @@ interface TasteCardClientProps {
   isLoggedIn: boolean
 }
 
-const ACCENT = '#455337'
-const TEXT_DARK = '#3a3d32'
-const TEXT_SOFT = '#7a7d6e'
-const BG_CARD = '#f2ede6'
-const BG_CREAM = '#f0ece5'
-const LINE = '#d6d0c6'
+const ACCENT = '#4CAF50'
+const TEXT_DARK = '#2E7D32'
+const TEXT_SOFT = '#6B8F6B'
+const BG_CARD = '#f0fdf4'
+const BG_CREAM = '#f0fdf4'
+const LINE = '#dce8dc'
 
 export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClientProps) {
   const [persona, setPersona] = useState<Persona | null>(null)
@@ -54,14 +54,6 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       // 背景：暖米色，像手工纸
       ctx.fillStyle = BG_CARD
       ctx.fillRect(0, 0, W, H)
-
-      // 顶部细装饰线
-      ctx.strokeStyle = ACCENT
-      ctx.lineWidth = 2
-      ctx.beginPath()
-      ctx.moveTo(40, 50)
-      ctx.lineTo(90, 50)
-      ctx.stroke()
 
       // 品牌标识
       ctx.fillStyle = TEXT_SOFT
@@ -242,9 +234,7 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
     <div className="space-y-6">
       <div ref={cardRef} className="mx-auto max-w-md overflow-hidden rounded-sm shadow-lg" style={{ background: BG_CARD }}>
         <div className="p-10">
-          {/* 顶部装饰线 */}
-          <div className="mb-8 h-0.5 w-12" style={{ background: ACCENT }} />
-
+          {/* 品牌标识 + 编号 */}
           <div className="flex items-center justify-between text-[10px]" style={{ color: TEXT_SOFT }}>
             <span className="tracking-[0.28em]">CGFAN · 美学人格</span>
             <span className="tracking-[0.15em]">NO.{String((favorites.length * 137 + persona.name.length * 911) % 9000 + 1000)}</span>
