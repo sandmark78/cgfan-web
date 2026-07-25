@@ -1,44 +1,60 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { createClient } from '@/lib/supabase/client'
+import { saveFavorite, removeFavorite, isFavorited, FavoriteItem } from '@/lib/taste'
 
 interface FavoriteButtonProps {
-  promptSlug: string
+  prompt: {
+    slug: string
+    title: string
+    category: string
+    tags: string[]
+    model: string
+    cover: string
+  }
   userId?: string
   initialFavorited?: boolean
   isAuthenticated?: boolean
 }
 
 /**
- * 收藏按钮
+ * 收藏按钮 - 支持 localStorage 和 Supabase 双模式
  */
 export function FavoriteButton({
-  promptSlug,
+  prompt,
   userId,
   initialFavorited = false,
   isAuthenticated = false,
 }: FavoriteButtonProps) {
-  // 从 localStorage 读取收藏状态（未登录时用）
-  const [favorited, setFavorited] = useState(() => {
-    if (typeof window === 'undefined') return initialFavorited
-    const stored = JSON.parse(localStorage.getItem('cgfan-favs') || '[]')
-    return stored.includes(promptSlug) || initialFavorited
-  })
+  const [favorited, setFavorited] = useState(initialFavorited)
   const [loading, setLoading] = useState(false)
   const supabase = createClient()
+
+  useEffect(() => {
+    // 检查 localStorage 状态
+    if (!isAuthenticated) {
+      setFavorited(isFavorited(prompt.slug))
+    }
+  }, [prompt.slug, isAuthenticated])
 
   const handleToggle = async () => {
     // 未登录时用 localStorage
     if (!isAuthenticated) {
-      const stored = JSON.parse(localStorage.getItem('cgfan-favs') || '[]')
-      let next: string[]
       if (favorited) {
-        next = stored.filter((s: string) => s !== promptSlug)
+        removeFavorite(prompt.slug)
       } else {
-        next = [...stored, promptSlug]
+        const item: FavoriteItem = {
+          slug: prompt.slug,
+          title: prompt.title,
+          category: prompt.category,
+          tags: prompt.tags,
+          model: prompt.model,
+          image: prompt.cover,
+          ts: Date.now(),
+        }
+        saveFavorite(item)
       }
-      localStorage.setItem('cgfan-favs', JSON.stringify(next))
       setFavorited(!favorited)
       return
     }
@@ -55,7 +71,7 @@ export function FavoriteButton({
         await supabase
           .from('favorites')
           .delete()
-          .eq('prompt_slug', promptSlug)
+          .eq('prompt_slug', prompt.slug)
           .eq('user_id', userId)
 
         setFavorited(false)
@@ -63,7 +79,7 @@ export function FavoriteButton({
         // 收藏
         await supabase
           .from('favorites')
-          .insert({ prompt_slug: promptSlug, user_id: userId })
+          .insert({ prompt_slug: prompt.slug, user_id: userId })
 
         setFavorited(true)
       }

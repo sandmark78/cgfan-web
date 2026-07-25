@@ -290,7 +290,14 @@ export default async function PromptDetailPage({
                 isAuthenticated={!!user}
               />
               <FavoriteButton
-                promptSlug={prompt.slug}
+                prompt={{
+                  slug: prompt.slug,
+                  title: prompt.title,
+                  category: prompt.category,
+                  tags: prompt.tags,
+                  model: prompt.model,
+                  cover: prompt.cover,
+                }}
                 userId={user?.id}
                 initialFavorited={isFavorited}
                 isAuthenticated={!!user}
