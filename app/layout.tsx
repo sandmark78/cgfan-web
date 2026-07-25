@@ -76,9 +76,9 @@ export default function RootLayout({
   return (
     <html
       lang="zh-CN"
-      className={`${geistSans.variable} ${geistMono.variable} ${notoSerif.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className={`${geistSans.variable} ${geistMono.variable} ${notoSerif.variable} relative min-h-screen overflow-x-hidden`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} relative min-h-screen overflow-x-hidden`}>
         {/* 可访问性：跳到主要内容 */}
         <a
           href="#main-content"
