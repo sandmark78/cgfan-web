@@ -3221,5 +3221,74 @@
     "negativePrompt": "",
     "parameters": {},
     "mtime": 1784982881006.8672
+  },
+  {
+    "title": "零号站台：维多利亚蒸汽火车与迷雾中的女人",
+    "slug": "platform-zero",
+    "model": "GPT Image 2",
+    "category": "landscape",
+    "tags": [
+      "cinematic",
+      "victorian",
+      "train",
+      "mist",
+      "railway"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/platform-zero.jpg",
+    "date": "Fri Jul 24 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-25T12:43:00.000Z",
+    "source": "https://x.com/nagarjuncreates/status/2080804228587790410",
+    "author": "Nagarjuna Creates",
+    "prompt": "Create an ultra-realistic cinematic scene of a mysterious Victorian railway station known only as \"Platform Zero,\" a forgotten platform that seems to exist outside of time. The atmosphere should feel magical, haunting, and filled with untold stories.\n\nA beautiful woman stands alone on the rain-soaked platform wearing an elegant long crimson wool coat that flows naturally in the cold breeze. She holds a single vintage leather suitcase that appears well-traveled, suggesting a journey of great importance. Her expression is calm, thoughtful, and quietly determined as she watches the tracks disappear into thick rolling fog.\n\nFrom the dense mist, an enormous vintage black steam locomotive slowly emerges with glowing amber headlights piercing through the fog. Thick clouds of steam billow dramatically around the engine while polished brass details, weathered steel, and authentic Victorian craftsmanship make the train feel magnificent and timeless.\n\nThe platform is illuminated by warm antique lanterns mounted on ornate cast-iron columns. Wet cobblestone surfaces reflect the golden light from the lamps and the locomotive, creating rich cinematic reflections. Elegant wrought-iron benches, vintage luggage carts, antique station clocks, and weathered wooden details add layers of realism and history.\n\nAbove the platform hangs a beautifully designed illuminated sign reading \"PLATFORM ZERO\" in elegant serif lettering with perfectly rendered typography. Nearby, an old mechanical departure board displays mysterious destinations that shift and flicker, adding to the dreamlike quality of the scene.\n\nThe composition captures the full grandeur of the station — the massive locomotive, the solitary woman, the glowing lanterns, and the infinite fog stretching into darkness. Cinematic lighting, volumetric fog, deep contrast between warm amber light and cool blue shadows, 8K, ultra-detailed, photorealistic, cinematic color grading, epic storytelling atmosphere.",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1784983440713.0715
+  },
+  {
+    "title": "宁静河畔：柳树、木舟与苍鹭",
+    "slug": "riverside-willow",
+    "model": "Midjourney",
+    "category": "landscape",
+    "tags": [
+      "landscape",
+      "river",
+      "reflection",
+      "national-geographic",
+      "cinematic"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/riverside-willow.jpg",
+    "date": "Fri Jul 24 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-25T12:43:00.000Z",
+    "source": "https://x.com/deebeeeff/status/2080799346321420553",
+    "author": "Uncle Dave",
+    "prompt": "@midjourney prompt: A peaceful riverside lined with an elegant willow tree. wooden boat drifting gently on the water, graceful herons wading near the shore, and distant mountains. perfectly still on a mirror-calm water, its crisp reflection visible on the glassy water. The sky transitions smoothly from deep cool blue on the upper left to warm glowing orange and golden hues on the right, with soft wispy clouds catching the light. Soft, atmospheric volumetric lighting, gentle golden rim light illuminating the trees and beach, perfect symmetry in the reflections, serene and majestic mood, ultra-detailed, sharp focus, 8k resolution, professional landscape photography, National Geographic style, cinematic composition --ar 3:4 --profile s5mpvm3 mnxoi7i 892ua48 llzup9v u1yscdb f31jlp1 6pktpka 8hhmjfp fey4r6j 2hwt1bg 5uz2kfv xtg2pxc z5cd14f aapeo7t w6z9nwr klxqom5 eynj9qn tkxiiz4 dbkgol8 elwgxit nj4ajrt ufpt5t5 6lf6sa2 yagbqan pz8oy84 wsakreq yljbrjx 827b1ig jk7jdw4 dc6okxb 9nv6snq 9j9citp sf5lk2z t5cdf2v --v 7",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1784983415273.4011
+  },
+  {
+    "title": "沙漠中飘动的金色丝带：阿马齐格女人",
+    "slug": "amazigh-woman",
+    "model": "Midjourney",
+    "category": "portrait",
+    "tags": [
+      "portrait",
+      "desert",
+      "cinematic",
+      "golden-hour",
+      "midjourney-8"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/amazigh-woman.jpg",
+    "date": "Sat Jul 25 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-25T12:43:00.000Z",
+    "source": "https://x.com/michaelrabone/status/2080926085303140396",
+    "author": "Michael Rabone",
+    "prompt": "Cinematic wide open photography of Amazigh woman, her body and head wrapped in long golden orange ribbons blowing in the desert wind, golden hour --ar 16:9 --raw --profile wswelaj --s 300 --hd --v 8.2",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1784983426196.5554
   }
 ]
