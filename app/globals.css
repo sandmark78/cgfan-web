@@ -95,7 +95,7 @@ body {
 .daily-card {
   display: grid;
   grid-template-columns: 300px 1fr;
-  overflow: visible !important;
+  overflow: hidden;
   padding: 0 !important;
 }
 @media (max-width: 640px) {
