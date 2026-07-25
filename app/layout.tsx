@@ -21,6 +21,11 @@ const notoSerif = Noto_Serif_SC({
   weight: ['500', '700', '900'],
 });
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+}
+
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.cgfan.com'),
   title: {
@@ -60,7 +65,6 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
-  viewport: 'width=device-width, initial-scale=1.0',
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon-96x96.png',
