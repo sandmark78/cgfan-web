@@ -47,7 +47,16 @@ export function PromptGrid({ prompts, maxRows }: PromptGridProps) {
 
     updateDisplayCount()
     window.addEventListener('resize', updateDisplayCount)
-    return () => window.removeEventListener('resize', updateDisplayCount)
+    
+    // 兼容部分 Android 浏览器切换桌面模式不触发 resize 的问题
+    const mql = window.matchMedia('(min-width: 1024px)')
+    const handleMediaChange = () => updateDisplayCount()
+    mql.addEventListener('change', handleMediaChange)
+    
+    return () => {
+      window.removeEventListener('resize', updateDisplayCount)
+      mql.removeEventListener('change', handleMediaChange)
+    }
   }, [prompts.length, maxRows])
 
   if (prompts.length === 0) {
