@@ -120,7 +120,7 @@ function drawRibbon(ctx: CanvasRenderingContext2D, x: number, y: number, dir: nu
 function renderCard(ctx: CanvasRenderingContext2D, data: {
   persona: Persona; analysis: any; serial: string; tags: string[]; date: string; url: string
 }) {
-  const W = 600, H = 700
+  const W = 533, H = 800
   const { persona, analysis, serial, tags, date, url } = data
 
   // 背景：浅绿白渐变
@@ -136,67 +136,67 @@ function renderCard(ctx: CanvasRenderingContext2D, data: {
 
   // 标本卡双线内框
   ctx.lineWidth = 1; ctx.strokeStyle = C.line
-  rr(ctx, 20, 20, W - 40, H - 40, 14); ctx.stroke()
+  rr(ctx, 18, 24, W - 36, H - 48, 12); ctx.stroke()
   ctx.strokeStyle = C.lineSoft
-  rr(ctx, 26, 26, W - 52, H - 52, 11); ctx.stroke()
+  rr(ctx, 23, 29, W - 46, H - 58, 10); ctx.stroke()
 
   // 顶部双行标题
   ctx.textBaseline = 'alphabetic'
   ctx.textAlign = 'left'
-  ctx.fillStyle = C.ink; ctx.font = `600 13px ${SANS}`
-  spaced(ctx, 'CGFAN · 美学人格', 44, 50, 2)
-  ctx.fillStyle = C.soft2; ctx.font = `500 9px ${SANS}`
-  spaced(ctx, 'AESTHETIC PERSONALITY', 44, 64, 1.4)
+  ctx.fillStyle = C.ink; ctx.font = `600 12px ${SANS}`
+  spaced(ctx, 'CGFAN · 美学人格', 39, 56, 2)
+  ctx.fillStyle = C.soft2; ctx.font = `500 8px ${SANS}`
+  spaced(ctx, 'AESTHETIC PERSONALITY', 39, 70, 1.4)
   ctx.textAlign = 'right'
-  ctx.fillStyle = C.ink; ctx.font = `600 13px ${SANS}`
-  spaced(ctx, 'NO.' + serial, W - 44, 50, 1.5, true)
-  ctx.fillStyle = C.soft2; ctx.font = `500 9px ${SANS}`
-  spaced(ctx, '探索你的美学光谱', W - 44, 64, 1.2, true)
+  ctx.fillStyle = C.ink; ctx.font = `600 12px ${SANS}`
+  spaced(ctx, 'NO.' + serial, W - 39, 56, 1.5, true)
+  ctx.fillStyle = C.soft2; ctx.font = `500 8px ${SANS}`
+  spaced(ctx, '探索你的美学光谱', W - 39, 70, 1.2, true)
   ctx.textAlign = 'left'
 
   // 左侧竖线强调
   ctx.fillStyle = C.ink
-  ctx.fillRect(46, 115, 3, 140)
+  ctx.fillRect(41, 131, 3, 155)
 
-  const LX = 66
+  const LX = 59
 
   // 你是
-  ctx.fillStyle = C.soft; ctx.font = `500 13px ${SANS}`
-  spaced(ctx, '你 是', LX, 115, 4)
+  ctx.fillStyle = C.soft; ctx.font = `500 12px ${SANS}`
+  spaced(ctx, '你 是', LX, 131, 4)
 
   // 人格名
   const name = persona.name
-  const fs = name.length >= 6 ? 44 : name.length >= 5 ? 52 : 62
+  const fs = name.length >= 6 ? 40 : name.length >= 5 ? 48 : 56
   ctx.fillStyle = C.ink; ctx.font = `900 ${fs}px ${SERIF}`
-  ctx.fillText(name, LX, 175)
+  ctx.fillText(name, LX, 195)
 
   // 英文名
-  ctx.fillStyle = C.ink; ctx.font = `600 11px ${SANS}`
-  spaced(ctx, persona.en, LX, 200, 5)
+  ctx.fillStyle = C.ink; ctx.font = `600 10px ${SANS}`
+  spaced(ctx, persona.en, LX, 222, 5)
 
   // 签名
-  ctx.fillStyle = C.soft; ctx.font = `500 15px ${SERIF}`
-  wrap(ctx, '「 ' + persona.tagline + ' 」', LX, 238, W - LX - 44, 24)
+  ctx.fillStyle = C.soft; ctx.font = `500 14px ${SERIF}`
+  wrap(ctx, '「 ' + persona.tagline + ' 」', LX, 260, W - LX - 39, 22)
 
   // 装饰短线 + 菱形
   ctx.strokeStyle = C.lineSoft; ctx.lineWidth = 1
-  ctx.beginPath(); ctx.moveTo(LX, 268); ctx.lineTo(LX + 64, 268); ctx.stroke()
+  ctx.beginPath(); ctx.moveTo(LX, 295); ctx.lineTo(LX + 56, 295); ctx.stroke()
   ctx.fillStyle = C.lineSoft; ctx.save()
-  ctx.translate(LX + 70, 268); ctx.rotate(Math.PI / 4)
+  ctx.translate(LX + 62, 295); ctx.rotate(Math.PI / 4)
   ctx.fillRect(-2.5, -2.5, 5, 5); ctx.restore()
 
   // 品味光谱
-  ctx.fillStyle = C.soft; ctx.font = `500 11px ${SANS}`
-  spaced(ctx, '品 味 光 谱', LX, 295, 3)
+  ctx.fillStyle = C.soft; ctx.font = `500 10px ${SANS}`
+  spaced(ctx, '品 味 光 谱', LX, 325, 3)
 
   // 光谱条：多绿渐变
   const rows = analysis.categories.slice(0, 3)
-  const trackX = 168, trackW = 300, pctX = W - 44
+  const trackX = 149, trackW = 266, pctX = W - 39
   rows.forEach((c: any, i: number) => {
-    const y = 315 + i * 28
-    ctx.textAlign = 'right'; ctx.fillStyle = C.ink; ctx.font = `500 13px ${SANS}`
-    ctx.fillText(c.name, trackX - 14, y + 4)
-    ctx.fillStyle = C.track; rr(ctx, trackX, y - 4, trackW, 8, 4); ctx.fill()
+    const y = 348 + i * 28
+    ctx.textAlign = 'right'; ctx.fillStyle = C.ink; ctx.font = `500 12px ${SANS}`
+    ctx.fillText(c.name, trackX - 12, y + 4)
+    ctx.fillStyle = C.track; rr(ctx, trackX, y - 4, trackW, 7, 3.5); ctx.fill()
     const fw = Math.max(8, trackW * c.ratio)
     if (persona.prismatic) {
       let sg = ctx.createLinearGradient(trackX, 0, trackX + trackW, 0)
@@ -207,35 +207,35 @@ function renderCard(ctx: CanvasRenderingContext2D, data: {
       C.spectrum.forEach((s, k) => sg.addColorStop(k / (C.spectrum.length - 1), s))
       ctx.fillStyle = sg
     }
-    rr(ctx, trackX, y - 4, fw, 8, 4); ctx.fill()
-    ctx.textAlign = 'left'; ctx.fillStyle = C.ink; ctx.font = `600 13px ${SANS}`
+    rr(ctx, trackX, y - 4, fw, 7, 3.5); ctx.fill()
+    ctx.textAlign = 'left'; ctx.fillStyle = C.ink; ctx.font = `600 12px ${SANS}`
     ctx.fillText(Math.round(c.ratio * 100) + '%', pctX - 36, y + 4)
   })
   ctx.textAlign = 'left'
 
   // 实心绿胶囊标签
-  let px = LX, py = 410
-  ctx.font = `500 12px ${SANS}`
+  let px = LX, py = 460
+  ctx.font = `500 11px ${SANS}`
   tags.slice(0, 4).forEach(t => {
-    const tw = ctx.measureText(t).width + 24
-    if (px + tw > W - 44) { px = LX; py += 30 }
-    ctx.fillStyle = C.pill; rr(ctx, px, py - 16, tw, 26, 13); ctx.fill()
+    const tw = ctx.measureText(t).width + 22
+    if (px + tw > W - 39) { px = LX; py += 28 }
+    ctx.fillStyle = C.pill; rr(ctx, px, py - 14, tw, 24, 12); ctx.fill()
     ctx.fillStyle = C.pillInk; ctx.textAlign = 'center'
     ctx.fillText(t, px + tw / 2, py + 1); ctx.textAlign = 'left'
     px += tw + 8
   })
 
   // 右下：圆火漆章
-  drawWaxSeal(ctx, W - 80, 590, 38, persona.seal)
+  drawWaxSeal(ctx, W - 76, 680, 36, persona.seal)
 
   // 左下 meta
   ctx.fillStyle = C.soft2; ctx.font = `500 10px ${SANS}`
-  ctx.fillText('生成于 ' + date, LX, 630)
-  ctx.fillText(url, LX, 645)
+  ctx.fillText('生成于 ' + date, LX, 718)
+  ctx.fillText(url, LX, 733)
 
   // 底部左右飘带
-  drawRibbon(ctx, 40, 660, 1)
-  drawRibbon(ctx, W - 40, 660, -1)
+  drawRibbon(ctx, 36, 752, 1)
+  drawRibbon(ctx, W - 36, 752, -1)
 }
 
 export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClientProps) {
