@@ -87,7 +87,7 @@ body {
 
 /* ===== 每日一味 - 横向紧凑卡 ===== */
 .daily-pick {
-  max-width: 760px;
+  max-width: 56rem;
   margin: 0 auto;
   padding: 28px 16px;
 }
@@ -177,7 +177,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 26px 28px;
+  padding: 30px 28px;
 }
 .daily-kicker {
   font-size: 11px;
@@ -203,11 +203,7 @@ body {
   color: #6b7280;
   border-left: 2px solid rgba(208,68,46,.5);
   padding-left: 12px;
-  margin: 0 0 18px;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  margin: 0 0 12px;
 }
 .dark .daily-note {
   color: #9ca3af;

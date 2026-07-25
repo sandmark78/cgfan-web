@@ -78,10 +78,10 @@ export default function DailyFeature() {
           <p className="daily-note">{todayFeature.curatorNote}</p>
           <div className="daily-actions">
             <CopyPromptButton prompt={prompt.prompt} />
-            <Link href={`/prompt/${prompt.slug}`} className="daily-more">
-              看完整策展 →
-            </Link>
           </div>
+          <Link href={`/prompt/${prompt.slug}`} className="daily-more">
+            看完整策展 →
+          </Link>
         </div>
       </article>
 
