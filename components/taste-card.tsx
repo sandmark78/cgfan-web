@@ -54,7 +54,7 @@ export function TasteCard() {
       ctx.fillStyle = 'rgba(242, 240, 233, 0.65)'
       ctx.font = '12px -apple-system, sans-serif'
       ctx.textAlign = 'left'
-      ctx.fillText('CGFAN · 品味档案', 40, 50)
+      ctx.fillText('CGFAN · 美学人格', 40, 50)
 
       // 编号
       const serial = String((favorites.length * 137 + persona.name.length * 911) % 9000 + 1000)
@@ -204,7 +204,7 @@ export function TasteCard() {
       const url = URL.createObjectURL(blob)
       const a = document.createElement('a')
       a.href = url
-      a.download = `CGfan品味档案-${persona.name}.png`
+      a.download = `CGfan美学人格-${persona.name}.png`
       a.click()
       URL.revokeObjectURL(url)
     } catch (error) {
@@ -226,7 +226,7 @@ export function TasteCard() {
           你的品味，值得一张卡片
         </h2>
         <p className="mb-6 text-gray-600 dark:text-gray-400">
-          收藏 {5} 个提示词，解锁专属于你的品味档案
+          收藏 {5} 个提示词，解锁专属于你的美学人格
         </p>
         <div className="mb-3 h-2 overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700">
           <div
@@ -258,7 +258,7 @@ export function TasteCard() {
         <div className="p-10 text-[#F2F0E9]">
           {/* 品牌标识 */}
           <div className="flex items-center justify-between text-xs">
-            <span className="tracking-[0.28em] opacity-65">CGFAN · 品味档案</span>
+            <span className="tracking-[0.28em] opacity-65">CGFAN · 美学人格</span>
             <span className="tracking-[0.15em]" style={{ color: persona.accent }}>
               NO.{String((favorites.length * 137 + persona.name.length * 911) % 9000 + 1000)}
             </span>

@@ -8,7 +8,7 @@ interface PromptRecipeCardProps {
 }
 
 /**
- * Prompt 食谱卡 - 可下载的精美分享卡片
+ * Prompt 分享卡 - 可下载的精美分享卡片
  * 使用 Canvas API 原生绘制，避免 html2canvas 的 CORS 和兼容性问题
  */
 export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
@@ -57,10 +57,10 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
       const title = prompt.title.length > 28 ? prompt.title.slice(0, 28) + '...' : prompt.title
       ctx.fillText(title, 30, 60)
 
-      // "Prompt Recipe" 标签
+      // "Prompt Card" 标签
       ctx.font = '12px -apple-system, sans-serif'
       ctx.fillStyle = 'rgba(255,255,255,0.8)'
-      ctx.fillText('CGfan · Prompt Recipe', 30, 30)
+      ctx.fillText('CGfan · Prompt Card', 30, 30)
 
       // 示例图区域
       const imgY = 120
@@ -209,7 +209,7 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
         <div className="bg-gradient-to-r from-green-500 to-emerald-600 px-6 py-4 text-white">
           <div className="flex items-center justify-between">
             <div>
-              <div className="text-xs font-medium opacity-90">CGfan · Prompt Recipe</div>
+              <div className="text-xs font-medium opacity-90">CGfan · Prompt Card</div>
               <div className="mt-1 text-lg font-bold">{prompt.title}</div>
             </div>
             <div className="text-3xl">🎨</div>

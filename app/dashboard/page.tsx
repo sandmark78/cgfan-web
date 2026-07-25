@@ -93,7 +93,7 @@ export default async function DashboardPage() {
               </svg>
             </div>
             <div>
-              <p className="font-semibold text-gray-900 dark:text-white">我的品味档案</p>
+              <p className="font-semibold text-gray-900 dark:text-white">我的美学人格</p>
               <p className="text-sm text-gray-500 dark:text-gray-400">基于收藏生成专属美学人格卡片</p>
             </div>
           </div>
