@@ -3,16 +3,19 @@
 import Link from 'next/link'
 import { useState, useEffect, useRef } from 'react'
 import { analyzeTaste, readFavorites, FavoriteItem } from '@/lib/taste'
-import { matchPersona, rankPersonas, Persona } from '@/lib/personas'
+import { matchPersona, Persona } from '@/lib/personas'
 
 interface TasteCardClientProps {
   serverFavorites: { slug: string; title: string; category: string; tags: string[]; model: string; cover: string }[]
   isLoggedIn: boolean
 }
 
-/**
- * 品味卡片客户端组件 - 处理登录态 + localStorage 双模式
- */
+const GREEN = '#4CAF50'
+const GREEN_DARK = '#2E7D32'
+const GREEN_LIGHT = '#66BB6A'
+const BG_TOP = '#f0fdf4'
+const BG_BOTTOM = '#f5faf0'
+
 export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClientProps) {
   const [persona, setPersona] = useState<Persona | null>(null)
   const [analysis, setAnalysis] = useState<any>(null)
@@ -22,23 +25,11 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
 
   useEffect(() => {
     let favs: FavoriteItem[]
-
     if (isLoggedIn && serverFavorites.length > 0) {
-      // 登录态：从服务器数据构建
-      favs = serverFavorites.map(f => ({
-        slug: f.slug,
-        title: f.title,
-        category: f.category,
-        tags: f.tags,
-        model: f.model,
-        image: f.cover,
-        ts: Date.now(),
-      }))
+      favs = serverFavorites.map(f => ({ slug: f.slug, title: f.title, category: f.category, tags: f.tags, model: f.model, image: f.cover, ts: Date.now() }))
     } else {
-      // 未登录：从 localStorage 读取
       favs = readFavorites()
     }
-
     setFavorites(favs)
     if (favs.length >= 5) {
       const a = analyzeTaste(favs)
@@ -50,143 +41,179 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
   const handleDownload = async () => {
     if (!cardRef.current || !persona) return
     setIsGenerating(true)
-
     try {
       const canvas = document.createElement('canvas')
       const ctx = canvas.getContext('2d')
       if (!ctx) throw new Error('Canvas context not available')
 
-      const W = 600
-      const H = 900
+      const W = 600, H = 900
       canvas.width = W
       canvas.height = H
 
+      // 背景：浅绿渐变 + 玻璃质感
       const bg = ctx.createLinearGradient(0, 0, 0, H)
-      bg.addColorStop(0, '#0a0e0a')
-      bg.addColorStop(1, '#1a1f1a')
+      bg.addColorStop(0, BG_TOP)
+      bg.addColorStop(0.5, '#f8fcf5')
+      bg.addColorStop(1, BG_BOTTOM)
       ctx.fillStyle = bg
       ctx.fillRect(0, 0, W, H)
 
-      ctx.fillStyle = persona.accent
-      ctx.fillRect(0, 0, W, 8)
+      // 顶部绿色装饰条
+      ctx.fillStyle = GREEN
+      ctx.fillRect(0, 0, W, 6)
 
-      ctx.fillStyle = 'rgba(242, 240, 233, 0.65)'
-      ctx.font = '12px -apple-system, sans-serif'
+      // 品牌标识
+      ctx.fillStyle = 'rgba(46, 125, 50, 0.65)'
+      ctx.font = '11px -apple-system, sans-serif'
       ctx.textAlign = 'left'
-      ctx.fillText('CGFAN · 美学人格', 40, 50)
+      ctx.fillText('CGFAN · 美学人格', 40, 44)
 
+      // 编号
       const serial = String((favorites.length * 137 + persona.name.length * 911) % 9000 + 1000)
-      ctx.fillStyle = persona.accent
+      ctx.fillStyle = 'rgba(46, 125, 50, 0.5)'
       ctx.textAlign = 'right'
-      ctx.fillText(`NO.${serial}`, W - 40, 50)
+      ctx.fillText(`NO.${serial}`, W - 40, 44)
 
-      ctx.fillStyle = 'rgba(242, 240, 233, 0.6)'
-      ctx.font = '14px -apple-system, sans-serif'
+      // "你是" — 小字
+      ctx.fillStyle = 'rgba(46, 125, 50, 0.6)'
+      ctx.font = '13px -apple-system, sans-serif'
       ctx.textAlign = 'left'
-      ctx.fillText('你是', 40, 120)
+      ctx.fillText('你是', 40, 110)
 
-      ctx.fillStyle = '#ffffff'
+      // 人格名 — 大字宋体，深绿色
+      ctx.fillStyle = GREEN_DARK
       const name = persona.name
-      const fontSize = name.length >= 6 ? 54 : name.length >= 5 ? 62 : 76
+      const fontSize = name.length >= 6 ? 50 : name.length >= 5 ? 58 : 72
       ctx.font = `bold ${fontSize}px "Noto Serif SC", serif`
-      ctx.fillText(name, 40, 200)
+      ctx.fillText(name, 40, 175)
 
-      ctx.fillStyle = persona.accent
-      ctx.font = '600 13px -apple-system, sans-serif'
-      ctx.fillText(persona.en, 40, 230)
+      // 英文名
+      ctx.fillStyle = GREEN
+      ctx.font = '600 12px -apple-system, sans-serif'
+      ctx.fillText(persona.en, 40, 205)
 
-      ctx.fillStyle = 'rgba(242, 240, 233, 0.92)'
-      ctx.font = '500 20px "Noto Serif SC", serif'
-      ctx.fillText(`「 ${persona.tagline} 」`, 40, 280)
-
-      ctx.strokeStyle = persona.accent
-      ctx.lineWidth = 2
+      // 签名 — 带绿色左边线
+      ctx.strokeStyle = 'rgba(76, 175, 80, 0.5)'
+      ctx.lineWidth = 3
       ctx.beginPath()
-      ctx.moveTo(40, 310)
-      ctx.lineTo(100, 310)
+      ctx.moveTo(40, 235)
+      ctx.lineTo(40, 270)
       ctx.stroke()
 
-      ctx.fillStyle = 'rgba(242, 240, 233, 0.55)'
-      ctx.font = '12px -apple-system, sans-serif'
-      ctx.fillText('品味光谱', 40, 350)
+      ctx.fillStyle = 'rgba(46, 125, 50, 0.85)'
+      ctx.font = '500 18px "Noto Serif SC", serif'
+      ctx.fillText(`「 ${persona.tagline} 」`, 52, 255)
+
+      // 分隔线
+      ctx.strokeStyle = 'rgba(76, 175, 80, 0.15)'
+      ctx.lineWidth = 1
+      ctx.beginPath()
+      ctx.moveTo(40, 300)
+      ctx.lineTo(W - 40, 300)
+      ctx.stroke()
+
+      // 品味光谱
+      ctx.fillStyle = 'rgba(46, 125, 50, 0.5)'
+      ctx.font = '11px -apple-system, sans-serif'
+      ctx.fillText('品味光谱', 40, 330)
 
       const topCats = analysis.categories.slice(0, 3)
       topCats.forEach((cat: any, i: number) => {
-        const y = 380 + i * 60
-        ctx.fillStyle = 'rgba(242, 240, 233, 0.85)'
+        const y = 355 + i * 55
+
+        ctx.fillStyle = 'rgba(46, 125, 50, 0.8)'
         ctx.font = '13px -apple-system, sans-serif'
         ctx.textAlign = 'left'
         ctx.fillText(cat.name, 40, y)
 
-        ctx.fillStyle = 'rgba(255, 255, 255, 0.12)'
-        ctx.fillRect(120, y - 10, 360, 8)
+        // 进度条背景 — 极淡绿
+        ctx.fillStyle = 'rgba(76, 175, 80, 0.12)'
+        ctx.fillRect(120, y - 8, 360, 6)
 
+        // 进度条填充 — 绿色渐变
         const barWidth = Math.round(cat.ratio * 360)
         if (persona.prismatic) {
           const gradient = ctx.createLinearGradient(120, 0, 120 + barWidth, 0)
           const colors = ['#FF4D6D', '#F97316', '#EAB308', '#6A994E', '#14B8A6', '#00E5FF', '#6B8CFF', '#9B7EDE']
-          colors.forEach((color, idx) => gradient.addColorStop(idx / (colors.length - 1), color))
+          colors.forEach((c, idx) => gradient.addColorStop(idx / (colors.length - 1), c))
           ctx.fillStyle = gradient
         } else {
-          ctx.fillStyle = persona.accent
+          const barGrad = ctx.createLinearGradient(120, 0, 120 + barWidth, 0)
+          barGrad.addColorStop(0, GREEN_LIGHT)
+          barGrad.addColorStop(1, GREEN)
+          ctx.fillStyle = barGrad
         }
-        ctx.fillRect(120, y - 10, barWidth, 8)
+        ctx.fillRect(120, y - 8, barWidth, 6)
 
-        ctx.fillStyle = persona.accent
-        ctx.font = '13px -apple-system, sans-serif'
+        ctx.fillStyle = 'rgba(46, 125, 50, 0.7)'
+        ctx.font = '12px -apple-system, sans-serif'
         ctx.textAlign = 'right'
         ctx.fillText(`${Math.round(cat.ratio * 100)}%`, W - 40, y)
       })
 
+      // 关键词标签 — 绿色胶囊
       const topTags = analysis.topTags.slice(0, 4)
       let tagX = 40
-      const tagY = 580
+      const tagY = 540
 
       topTags.forEach((tag: any) => {
         const tagText = `#${tag.name}`
-        ctx.font = '13px -apple-system, sans-serif'
+        ctx.font = '12px -apple-system, sans-serif'
         const textWidth = ctx.measureText(tagText).width
         const padding = 12
 
-        ctx.fillStyle = `${persona.accent}20`
-        ctx.strokeStyle = `${persona.accent}88`
+        // 胶囊背景
+        ctx.fillStyle = 'rgba(76, 175, 80, 0.10)'
+        ctx.beginPath()
+        ctx.roundRect(tagX, tagY - 16, textWidth + padding * 2, 24, 12)
+        ctx.fill()
+
+        ctx.strokeStyle = 'rgba(76, 175, 80, 0.25)'
         ctx.lineWidth = 1
         ctx.beginPath()
-        ctx.roundRect(tagX, tagY - 18, textWidth + padding * 2, 26, 13)
-        ctx.fill()
+        ctx.roundRect(tagX, tagY - 16, textWidth + padding * 2, 24, 12)
         ctx.stroke()
 
-        ctx.fillStyle = persona.accent
-        ctx.textAlign = 'left'
-        ctx.fillText(tagText, tagX + padding, tagY)
+        ctx.fillStyle = 'rgba(46, 125, 50, 0.8)'
+        ctx.textAlign = 'center'
+        ctx.fillText(tagText, tagX + (textWidth + padding * 2) / 2, tagY + 4)
+
         tagX += textWidth + padding * 2 + 8
       })
 
-      ctx.fillStyle = 'rgba(242, 240, 233, 0.55)'
-      ctx.font = '12px -apple-system, sans-serif'
+      // 底部信息
+      ctx.fillStyle = 'rgba(46, 125, 50, 0.4)'
+      ctx.font = '11px -apple-system, sans-serif'
       ctx.textAlign = 'left'
-      ctx.fillText(`生成于 ${new Date().toLocaleDateString('zh-CN')}`, 40, H - 60)
+      ctx.fillText(`生成于 ${new Date().toLocaleDateString('zh-CN')}`, 40, H - 55)
 
-      ctx.fillStyle = 'rgba(242, 240, 233, 0.8)'
-      ctx.fillText('www.cgfan.com/taste', 40, H - 40)
+      ctx.fillStyle = 'rgba(46, 125, 50, 0.6)'
+      ctx.fillText('www.cgfan.com/taste', 40, H - 38)
 
+      // 印章 — 绿色印章
       ctx.save()
-      ctx.translate(W - 80, H - 80)
-      ctx.rotate(-8 * Math.PI / 180)
+      ctx.translate(W - 75, H - 60)
+      ctx.rotate(-6 * Math.PI / 180)
 
-      ctx.strokeStyle = persona.prismatic ? '#94A3B8' : '#C8402F'
-      ctx.lineWidth = 3
-      ctx.strokeRect(-36, -36, 72, 72)
+      if (persona.prismatic) {
+        ctx.strokeStyle = '#94A3B8'
+        ctx.fillStyle = '#94A3B8'
+      } else {
+        ctx.strokeStyle = GREEN
+        ctx.fillStyle = GREEN_DARK
+      }
+      ctx.lineWidth = 2.5
+      ctx.strokeRect(-30, -30, 60, 60)
 
-      ctx.strokeStyle = persona.prismatic ? 'rgba(148, 163, 184, 0.3)' : 'rgba(200, 64, 47, 0.3)'
-      ctx.lineWidth = 2
-      ctx.strokeRect(-32, -32, 64, 64)
+      ctx.strokeStyle = persona.prismatic ? 'rgba(148,163,184,0.3)' : 'rgba(76,175,80,0.3)'
+      ctx.lineWidth = 1.5
+      ctx.strokeRect(-27, -27, 54, 54)
 
-      ctx.fillStyle = persona.prismatic ? '#94A3B8' : '#D0442E'
-      ctx.font = '900 24px "Noto Serif SC", serif'
+      ctx.font = '900 20px "Noto Serif SC", serif'
       ctx.textAlign = 'center'
       ctx.textBaseline = 'middle'
       ctx.fillText(persona.seal, 0, 0)
+
       ctx.restore()
 
       const blob = await new Promise<Blob>((resolve) => canvas.toBlob((b) => resolve(b!), 'image/png'))
@@ -210,104 +237,87 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
     return (
       <div className="mx-auto max-w-md py-16 text-center">
         <div className="mb-8 text-6xl">🎨</div>
-        <h2 className="mb-3 font-serif text-2xl font-bold text-gray-900 dark:text-white">
-          你的品味，值得一张卡片
-        </h2>
-        <p className="mb-6 text-gray-600 dark:text-gray-400">
-          收藏 {5} 个提示词，解锁专属于你的美学人格
-        </p>
-        <div className="mb-3 h-2 overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700">
-          <div
-            className="h-full rounded-full bg-gradient-to-r from-green-500 to-emerald-600 transition-all duration-500"
-            style={{ width: `${(favCount / 5) * 100}%` }}
-          />
+        <h2 className="mb-3 font-serif text-2xl font-bold text-gray-900 dark:text-white">你的品味，值得一张卡片</h2>
+        <p className="mb-6 text-gray-600 dark:text-gray-400">收藏 {5} 个提示词，解锁专属于你的美学人格</p>
+        <div className="mb-3 h-2.5 overflow-hidden rounded-full bg-green-100 dark:bg-gray-700">
+          <div className="h-full rounded-full bg-gradient-to-r from-green-400 to-emerald-600 transition-all duration-500" style={{ width: `${(favCount / 5) * 100}%` }} />
         </div>
-        <p className="mb-8 text-sm text-gray-500 dark:text-gray-400">
-          {favCount} / 5 {need > 0 ? `· 还差 ${need} 个` : '· 即将解锁！'}
-        </p>
-        <Link href="/explore" className="btn-primary inline-block">
-          去收藏提示词 →
-        </Link>
+        <p className="mb-8 text-sm text-gray-500 dark:text-gray-400">{favCount} / 5 {need > 0 ? `· 还差 ${need} 个` : '· 即将解锁！'}</p>
+        <Link href="/explore" className="btn-primary inline-block">去收藏提示词 →</Link>
       </div>
     )
   }
 
   return (
     <div className="space-y-6">
-      <div ref={cardRef} className="mx-auto max-w-md overflow-hidden rounded-lg shadow-2xl" style={{ background: '#0a0e0a' }}>
-        <div className="h-2" style={{ background: persona.accent }} />
-        <div className="p-10 text-[#F2F0E9]">
+      <div ref={cardRef} className="mx-auto max-w-md overflow-hidden rounded-2xl shadow-lg" style={{ background: '#fafcf8' }}>
+        <div className="h-1.5" style={{ background: `linear-gradient(90deg, ${GREEN_LIGHT}, ${GREEN})` }} />
+        <div className="p-10">
           <div className="flex items-center justify-between text-xs">
-            <span className="tracking-[0.28em] opacity-65">CGFAN · 美学人格</span>
-            <span className="tracking-[0.15em]" style={{ color: persona.accent }}>
-              NO.{String((favorites.length * 137 + persona.name.length * 911) % 9000 + 1000)}
-            </span>
+            <span className="tracking-[0.28em]" style={{ color: 'rgba(46,125,50,0.65)' }}>CGFAN · 美学人格</span>
+            <span className="tracking-[0.15em]" style={{ color: 'rgba(46,125,50,0.5)' }}>NO.{String((favorites.length * 137 + persona.name.length * 911) % 9000 + 1000)}</span>
           </div>
-          <div className="mt-16">
-            <div className="text-sm tracking-[0.4em] opacity-60">你是</div>
-            <h2 className="mt-2 font-serif font-black text-white" style={{
-              fontSize: persona.name.length >= 6 ? '54px' : persona.name.length >= 5 ? '62px' : '76px',
+
+          <div className="mt-14">
+            <div className="text-sm tracking-[0.4em]" style={{ color: 'rgba(46,125,50,0.6)' }}>你是</div>
+            <h2 className="mt-2 font-serif font-black" style={{
+              fontSize: persona.name.length >= 6 ? '50px' : persona.name.length >= 5 ? '58px' : '72px',
               lineHeight: 1.05,
-              textShadow: '0 4px 30px rgba(0,0,0,0.5)',
-            }}>
-              {persona.name}
-            </h2>
-            <div className="mt-1 text-[13px] font-semibold tracking-[0.42em]" style={{ color: persona.accent }}>
-              {persona.en}
-            </div>
-            <div className="mt-6 border-l-2 pl-4 font-serif text-xl font-medium opacity-92" style={{ borderColor: persona.accent }}>
+              color: GREEN_DARK,
+            }}>{persona.name}</h2>
+            <div className="mt-1 text-xs font-semibold tracking-[0.42em]" style={{ color: GREEN }}>{persona.en}</div>
+            <div className="mt-6 border-l-[3px] pl-4 font-serif text-lg font-medium" style={{ borderColor: 'rgba(76,175,80,0.5)', color: 'rgba(46,125,50,0.85)' }}>
               「 {persona.tagline} 」
             </div>
           </div>
-          <div className="mt-10">
-            <div className="mb-3 text-xs tracking-[0.3em] opacity-55">品味光谱</div>
-            {analysis.categories.slice(0, 3).map((cat: any, i: number) => (
+
+          <div className="mt-8">
+            <div className="mb-3 text-xs tracking-[0.3em]" style={{ color: 'rgba(46,125,50,0.5)' }}>品味光谱</div>
+            {analysis.categories.slice(0, 3).map((cat: any) => (
               <div key={cat.name} className="mb-3 grid grid-cols-[72px_1fr_44px] items-center gap-3">
-                <span className="text-[13px] opacity-85">{cat.name}</span>
-                <div className="h-2 overflow-hidden rounded-full bg-white/12">
+                <span className="text-[13px]" style={{ color: 'rgba(46,125,50,0.8)' }}>{cat.name}</span>
+                <div className="h-1.5 overflow-hidden rounded-full" style={{ background: 'rgba(76,175,80,0.12)' }}>
                   <div className="h-full rounded-full" style={{
                     width: `${Math.round(cat.ratio * 100)}%`,
                     background: persona.prismatic
                       ? 'linear-gradient(90deg, #FF4D6D, #F97316, #EAB308, #6A994E, #14B8A6, #00E5FF, #6B8CFF, #9B7EDE)'
-                      : `linear-gradient(90deg, ${persona.accent}, ${persona.accent}99)`,
+                      : `linear-gradient(90deg, ${GREEN_LIGHT}, ${GREEN})`,
                   }} />
                 </div>
-                <span className="text-right text-[13px] tabular-nums" style={{ color: persona.accent }}>
-                  {Math.round(cat.ratio * 100)}%
-                </span>
+                <span className="text-right text-xs tabular-nums" style={{ color: 'rgba(46,125,50,0.7)' }}>{Math.round(cat.ratio * 100)}%</span>
               </div>
             ))}
           </div>
+
           <div className="mt-6 flex flex-wrap gap-2">
             {analysis.topTags.slice(0, 4).map((tag: any) => (
-              <span key={tag.name} className="rounded-full border px-3 py-1 text-[13px]" style={{
-                borderColor: `${persona.accent}55`,
-                color: persona.accent,
-                background: `${persona.accent}20`,
-              }}>
-                #{tag.name}
-              </span>
+              <span key={tag.name} className="rounded-full border px-3 py-1 text-xs" style={{
+                borderColor: 'rgba(76,175,80,0.25)',
+                color: 'rgba(46,125,50,0.8)',
+                background: 'rgba(76,175,80,0.08)',
+              }}>#{tag.name}</span>
             ))}
           </div>
-          <div className="mt-8 flex items-end justify-between">
-            <div className="flex flex-col gap-1 text-xs opacity-55">
+
+          <div className="mt-8 flex items-end justify-between border-t pt-6" style={{ borderColor: 'rgba(76,175,80,0.12)' }}>
+            <div className="flex flex-col gap-1 text-xs" style={{ color: 'rgba(46,125,50,0.4)' }}>
               <span>生成于 {new Date().toLocaleDateString('zh-CN')}</span>
-              <span className="opacity-80">www.cgfan.com/taste</span>
+              <span style={{ color: 'rgba(46,125,50,0.6)' }}>www.cgfan.com/taste</span>
             </div>
-            <div className="grid h-[72px] w-[72px] place-items-center rounded-[10px] border-[3px] font-serif text-2xl font-black" style={{
-              borderColor: persona.prismatic ? '#94A3B8' : '#C8402F',
-              color: persona.prismatic ? '#94A3B8' : '#D0442E',
-              transform: 'rotate(-8deg)',
-              boxShadow: `inset 0 0 0 2px ${persona.prismatic ? 'rgba(148,163,184,0.3)' : 'rgba(200,64,47,0.3)'}`,
-            }}>
-              {persona.seal}
-            </div>
+            <div className="grid h-[60px] w-[60px] place-items-center rounded-[8px] border-2 font-serif text-xl font-black" style={{
+              borderColor: persona.prismatic ? '#94A3B8' : GREEN,
+              color: persona.prismatic ? '#94A3B8' : GREEN_DARK,
+              transform: 'rotate(-6deg)',
+              boxShadow: persona.prismatic ? 'inset 0 0 0 2px rgba(148,163,184,0.3)' : 'inset 0 0 0 2px rgba(76,175,80,0.2)',
+              background: 'rgba(255,255,255,0.5)',
+            }}>{persona.seal}</div>
           </div>
         </div>
       </div>
 
       <button onClick={handleDownload} disabled={isGenerating}
-        className="btn-primary mx-auto flex items-center gap-2 px-8 py-3 disabled:opacity-50">
+        className="mx-auto flex items-center gap-2 rounded-full px-8 py-3 text-sm font-semibold text-white shadow-lg transition-all hover:shadow-xl disabled:opacity-50"
+        style={{ background: `linear-gradient(135deg, ${GREEN_LIGHT}, ${GREEN})` }}>
         {isGenerating ? (
           <><svg className="h-5 w-5 animate-spin" fill="none" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" /><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" /></svg>生成中...</>
         ) : (
