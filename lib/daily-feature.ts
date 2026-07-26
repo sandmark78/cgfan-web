@@ -19,6 +19,16 @@ export interface DailyFeature {
  */
 export const dailyFeatures: DailyFeature[] = [
   {
+    date: '2026-07-26',
+    slug: 'prompt-2080985898653565196',
+    curatorNote:
+      'AI 小说封面生成框架。这个 prompt 的精髓在于让 AI 先理解故事内核，再提取情绪和视觉符号。输入书名、类型、故事梗概，输出完全不同的封面风格——同一个框架，四种完全不同的视觉语言。',
+    highlight: '让 AI 理解故事，再设计封面',
+    technique: '故事理解 · 情绪提取 · 视觉符号',
+    tip: '关键不是直接描述封面样式，而是先让 AI 理解故事的核心冲突和情绪基调。用 [CORE MOOD] 和 [VISUAL STYLE] 字段引导 AI 从故事内核出发设计视觉。',
+    tryChange: '把 [GENRE] 从 "psychological mystery" 换成 "coming-of-age romance"，整个封面的色调和构图会完全不同',
+  },
+  {
     date: '2026-07-25',
     slug: 'bottle-city-miniature',
     curatorNote:
