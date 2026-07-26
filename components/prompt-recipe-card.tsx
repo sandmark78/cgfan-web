@@ -242,7 +242,7 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
           <div className="flex items-center justify-between">
             <div>
               <div className="text-xs font-medium opacity-90">CGfan · Prompt Card</div>
-              <div className="mt-1 text-lg font-bold">{prompt.title}</div>
+              <div className="mt-1 truncate whitespace-nowrap text-lg font-bold">{prompt.title}</div>
             </div>
             <div className="text-3xl">🎨</div>
           </div>
