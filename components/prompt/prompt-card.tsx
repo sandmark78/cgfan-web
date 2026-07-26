@@ -85,7 +85,7 @@ export function PromptCard({ prompt, priority = false }: PromptCardProps) {
   const summary = extractSummary(prompt)
 
   return (
-    <article className="glass-card group relative flex h-full flex-col overflow-hidden rounded-2xl">
+    <article className="glass-card group relative flex h-full flex-col overflow-hidden">
       <Link
         href={`/prompt/${prompt.slug}`}
         className="flex flex-1 flex-col"
@@ -118,7 +118,7 @@ export function PromptCard({ prompt, priority = false }: PromptCardProps) {
         <div className="flex flex-1 flex-col justify-between p-4">
           {/* 标题 */}
           <div>
-            <h3 className="mb-2 line-clamp-1 text-base font-semibold text-gray-900 dark:text-white">
+            <h3 className="mb-2 truncate text-base font-semibold text-gray-900 dark:text-white">
               {prompt.title}
             </h3>
 
