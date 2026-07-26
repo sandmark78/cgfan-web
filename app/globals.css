@@ -101,12 +101,17 @@ body {
 }
 @media (max-width: 640px) {
   .daily-card { grid-template-columns: 1fr; }
+  .daily-figure {
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
 }
 
 /* 图区 */
 .daily-figure {
   position: relative;
-  aspect-ratio: 4 / 5;
+  height: 100%;
+  min-height: 280px;
   overflow: hidden;
 }
 .daily-figure img.object-cover {
@@ -177,7 +182,7 @@ body {
 .daily-body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 30px 28px;
 }
 .daily-kicker {
