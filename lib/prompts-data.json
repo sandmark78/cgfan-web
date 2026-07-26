@@ -3315,157 +3315,6 @@
     "mtime": 1784983614185.24
   },
   {
-    "title": "Every street has a story when the city sleeps.",
-    "slug": "prompt-2080902363074933101",
-    "model": "Seedream",
-    "category": "style",
-    "tags": [
-      "AI绘图",
-      "提示词"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-2080902363074933101.jpg",
-    "date": "Sat Jul 25 2026 08:00:00 GMT+0800 (China Standard Time)",
-    "added": "2026-07-26T13:18:52+08:00",
-    "source": "https://x.com/i/status/2080902363074933101",
-    "author": "Heisenberg",
-    "prompt": "Every street has a story when the city sleeps.\n\nSeedream 5.0 Pro\n1.5K",
-    "negativePrompt": "",
-    "parameters": {},
-    "mtime": 1785043132403.6794
-  },
-  {
-    "title": "Bonjour, good morning ☀️🌹",
-    "slug": "prompt-2080909723100905797",
-    "model": "Common",
-    "category": "style",
-    "tags": [
-      "AI绘图",
-      "提示词",
-      "AI艺术"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-2080909723100905797.jpg",
-    "date": "Sat Jul 25 2026 08:00:00 GMT+0800 (China Standard Time)",
-    "added": "2026-07-26T13:18:52+08:00",
-    "source": "https://x.com/i/status/2080909723100905797",
-    "author": "Art Beauty by Martine 🎨🖼️",
-    "prompt": "Bonjour, good morning ☀️🌹 \n\nAime-moi d'amour\n\nCe que j'aime à voir, ce que j'aime au monde,\nCe que j'aime à voir,\nVeux-tu le savoir ?\nCe sont tes beaux yeux, c'est ta taille ronde,\nCe sont tes beaux yeux,\nTes yeux langoureux.\n\nCe que j'aime encore je vais te l'apprendre,\nCe que j'aime encore\nPlus qu'aucun trésor,\nCe sont tes doux chants, c'est ta voix si tendre,\nCe sont tes doux chants,\nPlaintifs et touchants.\n\nCe qui cause en moi la plus douce ivresse,\nCe qui cause en moi\nLe plus tendre émoi,\nC'est de voir ton cœur vibrer de tendresse,\nC'est de voir ton cœur\nTrembler de bonheur.\n\nEnfin, si tu veux répondre à ma flamme,\nEnfin si tu veux\nCombler tous mes vœux,\nJusqu'au dernier jour garde-moi ton âme,\nJusqu'au dernier jour\nAime-moi d'amour.\n\n~François-Marie Robert-Dutertre~ poète (1815-1898)\n\n#aiart\nMade with AI",
-    "negativePrompt": "",
-    "parameters": {},
-    "mtime": 1785043132406.393
-  },
-  {
-    "title": "Midjourney v8.2",
-    "slug": "prompt-2081008714308538761",
-    "model": "Midjourney",
-    "category": "style",
-    "tags": [
-      "AI绘图",
-      "提示词"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-2081008714308538761.jpg",
-    "date": "Sat Jul 25 2026 08:00:00 GMT+0800 (China Standard Time)",
-    "added": "2026-07-26T13:18:52+08:00",
-    "source": "https://x.com/i/status/2081008714308538761",
-    "author": "James Yeung",
-    "prompt": "Midjourney v8.2\n\nWow! Trying a trusted old prompt on v8.2.  It looks even better than the --preview!\n2.2K",
-    "negativePrompt": "",
-    "parameters": {},
-    "mtime": 1785043132402.8325
-  },
-  {
-    "title": "QT Your Art 1& Friends",
-    "slug": "prompt-2081023340882337949",
-    "model": "Common",
-    "category": "style",
-    "tags": [
-      "AI绘图",
-      "提示词",
-      "AI艺术"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-2081023340882337949.jpg",
-    "date": "Sat Jul 25 2026 08:00:00 GMT+0800 (China Standard Time)",
-    "added": "2026-07-26T13:18:52+08:00",
-    "source": "https://x.com/i/status/2081023340882337949",
-    "author": "Art Beauty by Martine 🎨🖼️",
-    "prompt": "QT Your Art 1& Friends\nTFTT @lordknight_ai \n\nInviting ... everyone 😃\n\nChaque point est une respiration, chaque ombre une mémoire. Une fleur née de milliers de silences, gravée entre lumière et obscurité.\n\n#AIart️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️\n⚔️ 𝕷𝖔𝖗𝖉 𝕶𝖓𝖎𝖌𝖍𝖙 ⚔️\nJul 23\nQT your Art and Artist\n\nTagging @McC3Kat @kat1212m2 @matt02101974 @Sami76494914 @MartineArtB  @Madhawk300 \nFeel free to join in 😊\n\n#AIart #digitalart #AIcommunity #AIArtCommunity #AIArtists\nMade with AI",
-    "negativePrompt": "",
-    "parameters": {},
-    "mtime": 1785043132405.973
-  },
-  {
-    "title": "Create one **hyper-realistic surreal environmental portrait*",
-    "slug": "prompt-2081055827214118996",
-    "model": "Common",
-    "category": "portrait",
-    "tags": [
-      "AI绘图",
-      "提示词",
-      "封面设计",
-      "人像",
-      "风景"
-    ],
-    "difficulty": "advanced",
-    "cover": "/images/prompts/prompt-2081055827214118996.jpg",
-    "date": "Sat Jul 25 2026 08:00:00 GMT+0800 (China Standard Time)",
-    "added": "2026-07-26T13:18:52+08:00",
-    "source": "https://x.com/i/status/2081055827214118996",
-    "author": "HEX",
-    "prompt": "Anamnesis\n\nPrompt:\n\nCreate one **hyper-realistic surreal environmental portrait** using the supplied image as the absolute authority for the character’s identity and visual world.\n\nCapture it as if photographed with an **11×14-inch large-format film camera in landscape orientation**, using a native **14:11 aspect ratio**. The result must look physically photographed, not illustrated, animated, painted, or rendered in CGI.\n\nThe character is unmistakably adult.\n\nIDENTITY LOCK\n\nPreserve the character’s exact:\n\n* Identity, species, anatomy, limb count, proportions, and silhouette\n* Facial structure, hairstyle, head shape, and expression language\n* Pigmentation, scars, tattoos, markings, and asymmetry\n* Horns, ears, tails, wings, fins, claws, prosthetics, cybernetics, armor, masks, visors, helmets, jewelry, and permanent accessories\n* Materials, palette, motifs, and source-specific design language\n\nDo not humanize, simplify, relocate, remove, conceal, replace, or redesign identity-defining traits.\n\nPreserve the original eye state exactly. Closed or concealed eyes remain closed or concealed. Never invent or reveal features beneath coverings.\n\nDo not copy the source pose, outfit, background, composition, camera angle, or rendering medium.\n\nPOSE\n\nSeat the character upright on a narrow curved environmental structure in a long **rear three-quarter pose**, facing away toward the left.\n\nThis is primarily a back view. Emphasize the back, shoulders, waist, hips, and descending upper legs.\n\nKeep the torso long, relaxed, and slightly inclined forward with a natural spinal curve. Turn the head subtly left and downward, revealing only a narrow glimpse of the cheek, jaw, mask edge, visor, muzzle, or equivalent anatomy.\n\nDo not show a full profile or camera-facing gaze.\n\nThe pelvis rests securely on the support. Keep the hips slightly closer to camera than the shoulders, forming a restrained reverse S-curve.\n\nBoth legs descend toward the lower-left or lower-center, with knees below the waist and away from the chest.\n\nBoth arms stay forward near the lap or far side. No arm may brace behind the body.\n\nPreserve all required limbs and adapt the seated pose naturally to non-human anatomy without forcing humanoid proportions.\n\nCOMPOSITION\n\nUse a strict **14:11 landscape frame**.\n\nPlace the character in the right third, occupying roughly 30–40% of the image. Position the head in the upper-right quadrant and let the body, fabric, support, and fusion descend toward the lower-center or lower-left.\n\nOpen the left two-thirds into an immense source-derived environment with clear foreground, middle ground, background, and atmospheric distance.\n\nCreate a strong visual pathway from the seated support into the center-left background. Keep the left-side viewing corridor open.\n\nUse a high viewpoint behind and slightly above the character, looking outward and downward. Apply a restrained Dutch angle and moderate wide-angle framing without anatomy distortion.\n\nENVIRONMENTAL FUSION\n\nFuse the character gradually into the environment without suggesting wounds, mutilation, amputation, trapping, or impalement.\n\nBegin with intact anatomy, then introduce source-derived seams, patterns, and material changes that develop into dimensional structures and finally merge with the environment.\n\nInclude at least one major fusion between the pelvis, hip, thigh, tail, lower body, or equivalent anatomy and the seated support.\n\nA second fusion may extend from the shoulder, upper back, hair, headpiece, wing, tail, prosthetic, or equivalent structure into the right-side environment.\n\nKeep every transition structurally readable, physically connected, and materially coherent.\n\nCLOTHING\n\nDo not copy the source outfit.\n\nUse delicate flowing sheer or translucent fabric where appropriate, maintaining tasteful, non-explicit coverage. Let it wrap naturally around the hips, pelvis, torso, upper legs, or anatomical equivalent and trail across the support.\n\n**For male characters, do not generate upper-torso clothing or fabric coverage. Keep the chest, abdomen, shoulders, and back free of added garments, wraps, straps, or drapery, except for identity-defining armor, cybernetics, prosthetics, or permanent coverings preserved from the source.**\n\nDerive its colors, texture, pattern, and material behavior from the source image.\n\nIt may transition into source-derived mist, ribbons, roots, filaments, cables, smoke, liquid, feathers, crystals, membranes, webbing, or tracery.\n\nDo not obscure identity-defining anatomy, markings, prosthetics, cybernetics, tails, wings, armor, or coverings.\n\nNo generic lingerie, underwear, censor shapes, or unnaturally attached fabric.\n\nLARGE-FORM PHOTOGRAPHY\n\nSimulate a genuine 11×14 large-format photograph with:\n\n* Controlled perspective and minimal distortion\n* Natural optical falloff\n* Subtle focal-plane control\n* Strong detail on the head, back, hips, support, fabric, and fusion points\n* Reduced contrast and detail in the distance\n* Believable lens softness rather than synthetic blur\n\nEvery surface must have realistic weight, scale, texture, reflectivity, translucency, shadow, and physical contact.\n\nFILM CHARACTER\n\nCreate a heavily aged analog-film appearance, as if the negative were pushed, duplicated, chemically mishandled, poorly stored, and later scanned.\n\nApply:\n\n* Heavy irregular silver-halide grain\n* Coarse grain clustering in shadows and midtones\n* Strong desaturation and muted chroma\n* Slightly contaminated blacks and compressed highlights\n* Uneven negative density\n* Fine scratches, dust, emulsion wear, and chemical streaking\n* Minor edge fogging and restrained light leaks\n* Slight color-layer misregistration\n* Gentle fading and imperfect archival scanning\n\nThe damage must feel random and physically embedded in the film.\n\nDo not use uniform digital noise, VHS artifacts, excessive vignette, fake sprocket holes, decorative scratch overlays, or extreme film burns.\n\nPreserve identity, anatomy, pose readability, and environmental depth.\n\nLIGHTING AND MATERIALS\n\nUse the supplied image as the authority for lighting color, temperature, contrast, glow, shadows, reflections, and mood.\n\nTranslate these into physically believable illumination.\n\nUse fog, dust, haze, particles, fragments, and light shafts only when supported by the source and without blocking the left-side environment.\n\nRender all skin, fur, scales, feathers, metal, glass, armor, fabric, stone, crystal, prosthetics, and cybernetics with realistic material behavior.\n\nAvoid generic gold light, neon accents, chrome, magical energy, or cinematic teal-and-orange grading unless present in the source.\n\nThe final image should feel intimate, contemplative, surreal, immense, weathered, immersive, and unmistakably grounded in the supplied image.\n\nHARD NEGATIVES\n\nNo front-facing pose, full side profile, centered figure, standing, kneeling, crouching, reclining, curled posture, raised knees, camera-facing gaze, or rear arm support.\n\nNo blocked left-side view, close crop, flat background, fisheye distortion, extreme foreshortening, warped anatomy, enlarged foreground body parts, or loss of scale.\n\nNo copied outfit, generic lingerie, unrelated motifs, humanization, missing or extra limbs, duplicated anatomy, fused hands, broken joints, impossible posture, cut-off anatomy, intersecting structures, wounds, gore, mutilation, or exposed internal anatomy.\n\nNo anime, manga, illustration, cel shading, graphic linework, concept art, painterly rendering, matte painting, CGI, game-engine surfaces, plastic skin, excessive HDR, artificial bokeh, oversharpening, or clean digital perfection.\n\nNo excessive fog, fake film borders, repeated scratches, text, captions, logos, signatures, or watermarks.\n\nSINGLE PASS\n\nCreate exactly one image.\n\nThe initial generation is the final deliverable. Do not automatically edit, refine, redraw, restyle, enhance, upscale, or regenerate it. Any later change must come from a separate explicit edit request.\n\n@UnholyWandering @supaipaii @AquariaCelestia @RaynTarant\nMade with AI\n1.7K",
-    "negativePrompt": "",
-    "parameters": {},
-    "mtime": 1785043132405.6277
-  },
-  {
-    "title": "A gigantic ceramic coffee cup transformed into an endless la",
-    "slug": "prompt-2081078353910473163",
-    "model": "Common",
-    "category": "product",
-    "tags": [
-      "AI绘图",
-      "提示词",
-      "商业",
-      "电影感",
-      "活力"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-2081078353910473163.jpg",
-    "date": "Sat Jul 25 2026 08:00:00 GMT+0800 (China Standard Time)",
-    "added": "2026-07-26T13:18:52+08:00",
-    "source": "https://x.com/i/status/2081078353910473163",
-    "author": "Aylin",
-    "prompt": "A gigantic ceramic coffee cup transformed into an endless lake of rich dark coffee. Hundreds of tiny miniature people are sailing elegant wooden boats, kayaking, paddleboarding, and fishing across the coffee surface. Cream swirls create winding rivers and islands, while fluffy milk foam forms snowy mountains and soft clouds. A giant golden spoon acts as a bridge over the coffee, with tiny travelers crossing it. Floating coffee beans become rocky islands where miniature cafés and lighthouses stand. Warm morning sunlight, cinematic atmosphere, premium coffee advertisement, surreal miniature world, hyper-realistic CGI, ultra detailed textures, macro photography, shallow depth of field, soft reflections, volumetric lighting, vibrant colors, clean composition, award-winning commercial photography, 8K.",
-    "negativePrompt": "",
-    "parameters": {},
-    "mtime": 1785043132403.926
-  },
-  {
-    "title": "🌸她在窗边读一张旧纸，纸上的山水与窗外的远山没有边界。",
-    "slug": "prompt-2081167617126195280",
-    "model": "Common",
-    "category": "3d",
-    "tags": [
-      "AI绘图",
-      "提示词",
-      "3D渲染",
-      "国风",
-      "动漫"
-    ],
-    "difficulty": "advanced",
-    "cover": "/images/prompts/prompt-2081167617126195280.jpg",
-    "date": "Sun Jul 26 2026 08:00:00 GMT+0800 (China Standard Time)",
-    "added": "2026-07-26T13:18:52+08:00",
-    "source": "https://x.com/i/status/2081167617126195280",
-    "author": "尘林 Spark",
-    "prompt": "抽出了一个满意的风格 ~\n\n🌸她在窗边读一张旧纸，纸上的山水与窗外的远山没有边界。\n\n——Prompt——\n生成一张 4:5 竖版、1122×1402 像素、蓝白瓷片纹样与青绿山水版画融合的当代东方女性人物画面。一位 24–30 岁明确成年的虚构东方女性作为唯一主体，黑色低盘发，清秀自然的东方五官，眼神安静而有阅读感，妆容清透，皮肤保留自然纸面与细腻肌理，整体不幼态、不网红化。\n\n时间切片是阴天上午。人物站在木质窗边，刚展开一张边缘磨损的旧纸山水图，双手分别托住纸张两侧，身体轻微侧向窗外，视线落在纸面上的远山位置。动作链保持简单：展开旧纸、低头阅读、窗外竹影与纸上山水形成呼应。\n\n人物穿瓷白色新中式立领上衣与低饱和青绿色长裙，衣服边缘用极细钴蓝滚边，袖口和腰带有少量青绿织纹。画面主色为宣纸白、瓷白和浅灰，钴蓝集中在窗边瓷片和花纹，青绿集中在纸上山水与裙摆，氧化金只作为极小的装订或扣件细节。材质重点是旧纸纤维、瓷片开片、深色木框、布料纹理与版画线条。\n\n场景只保留三个环境细节：深色木质窗框、窗边蓝白瓷片装饰、窗外淡化的青绿山水与竹影。采用大半身偏左构图，人物位于左下，右侧大面积宣纸白和浅青远山作为负空间，前景窗框形成竖向边界，中景人物与旧纸清晰，后景轻微虚化但仍可读。\n\n光线是阴天窗边的均匀漫射光，从右侧落到人物脸部、手指和旧纸边缘，避免高光过强。使用低饱和青绿、钴蓝、瓷白和暖灰版画滤镜，保留轻微旧纸裂纹、干湿不均的油墨、木刻线条和套色错位，让画面像一页现代东方设计展览中的印刷作品。\n\n负面约束：不要拼图、网格、九宫格、长图、多人、重复人物、现代品牌、Logo、水印、乱码、欧美脸、幼态脸、塑料皮肤、摄影棚硬光、3D渲染、动漫感、廉价国潮、复杂宫殿、仙侠特效、纸张文字乱码、手部畸形、额外手指、背景堆满装饰。\n尘林 Spark\n6h\n雨停后，她在蓝白瓷纹回廊收伞，远山和竹影像印在旧宣纸上。🌂🌸\n\n——Prompt——\n生成一张 4:5 竖版、1122×1402 像素、青绿山水版画与蓝白瓷器纹样融合的当代东方女性海报。一位 24–30 岁明确成年的虚构东方女性作为唯一主体，保持与系列其他画面一致的黑色低盘发、自然古典东方五官、清透皮肤和克制眼神，穿完整端庄的新中式服装，气质安静、知性、疏离而不冷漠。\n\n时间切片是雨刚停的傍晚。人物站在东方庭院回廊下，刚把一把蓝白瓷纹折伞收拢，双手握住伞柄，身体轻微朝向右侧，头部低垂，视线落在伞面残留的雨珠上。伞是画面唯一明确的主事件和视觉钩子，衣袖与伞面形成一条向下的蓝白斜线。\n\n人物穿瓷白色立领新中式长上衣与低饱和青绿色长裙，服装使用棉麻、细绢和轻微纸张压纹质感，领口、袖口和伞面使用钴蓝花卉纹，青绿只用于裙摆、竹叶和远山，极少量氧化金出现在伞骨端头。色彩比例保持瓷白和旧米白为主、钴蓝为结构、青绿为环境，避免浓艳国风。\n\n场景是雨后回廊，前景有几片湿润竹叶，中景是人物和收伞动作，后景是白墙、木柱、低矮屋檐和淡化的青绿山形。采用中景偏全身构图，人物位于右下区域，左侧留出宣纸白与远山留白，湿润石地有轻微倒影，空间纵深清楚但不堆积道具，画面保持现代艺术海报的平静秩序。\n\n光线来自雨后云层散射的柔和侧光，人物面部、手部、伞面纹样和湿地反光被轻轻抬亮，木柱和屋檐保留青灰暗部。使用低饱和青绿、瓷白、钴蓝与浅烟灰的版画滤镜，保留手工木刻线、纸张纤维、瓷釉开片和轻微套色偏移，整体像一张被印在旧宣纸上的当代东方画报。\n\n负面约束：不要拼图、网格、九宫格、长图、重复人物、多人、雨伞变形、现代品牌、Logo、水印、乱码、欧美脸、幼态脸、塑料皮肤、3D渲染、动漫感、廉价古装写真、仙侠特效、鲜艳红金、过多花纹、畸形手指、额外肢体、透视错误、杂乱背景。",
-    "negativePrompt": "",
-    "parameters": {},
-    "mtime": 1785043132403.4944
-  },
-  {
     "title": "Chanel 四款香水四格海报，每支香水一间气味空间",
     "slug": "prompt-2081019024822128648",
     "model": "GPT-Image 2",
@@ -3756,5 +3605,156 @@
     "negativePrompt": "",
     "parameters": {},
     "mtime": 1785035685561.7866
+  },
+  {
+    "title": "Every street has a story when the city sleeps.",
+    "slug": "prompt-2080902363074933101",
+    "model": "Seedream",
+    "category": "style",
+    "tags": [
+      "AI绘图",
+      "提示词"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2080902363074933101.jpg",
+    "date": "Sat Jul 25 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-26T16:02:00+08:00",
+    "source": "https://x.com/i/status/2080902363074933101",
+    "author": "Heisenberg",
+    "prompt": "Every street has a story when the city sleeps.\n\nSeedream 5.0 Pro\n1.5K",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1785043526919.6829
+  },
+  {
+    "title": "Bonjour, good morning ☀️🌹",
+    "slug": "prompt-2080909723100905797",
+    "model": "Common",
+    "category": "style",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "AI艺术"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2080909723100905797.jpg",
+    "date": "Sat Jul 25 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-26T16:02:00+08:00",
+    "source": "https://x.com/i/status/2080909723100905797",
+    "author": "Art Beauty by Martine 🎨🖼️",
+    "prompt": "Bonjour, good morning ☀️🌹 \n\nAime-moi d'amour\n\nCe que j'aime à voir, ce que j'aime au monde,\nCe que j'aime à voir,\nVeux-tu le savoir ?\nCe sont tes beaux yeux, c'est ta taille ronde,\nCe sont tes beaux yeux,\nTes yeux langoureux.\n\nCe que j'aime encore je vais te l'apprendre,\nCe que j'aime encore\nPlus qu'aucun trésor,\nCe sont tes doux chants, c'est ta voix si tendre,\nCe sont tes doux chants,\nPlaintifs et touchants.\n\nCe qui cause en moi la plus douce ivresse,\nCe qui cause en moi\nLe plus tendre émoi,\nC'est de voir ton cœur vibrer de tendresse,\nC'est de voir ton cœur\nTrembler de bonheur.\n\nEnfin, si tu veux répondre à ma flamme,\nEnfin si tu veux\nCombler tous mes vœux,\nJusqu'au dernier jour garde-moi ton âme,\nJusqu'au dernier jour\nAime-moi d'amour.\n\n~François-Marie Robert-Dutertre~ poète (1815-1898)\n\n#aiart\nMade with AI",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1785043526940.9824
+  },
+  {
+    "title": "Midjourney v8.2",
+    "slug": "prompt-2081008714308538761",
+    "model": "Midjourney",
+    "category": "style",
+    "tags": [
+      "AI绘图",
+      "提示词"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2081008714308538761.jpg",
+    "date": "Sat Jul 25 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-26T16:02:00+08:00",
+    "source": "https://x.com/i/status/2081008714308538761",
+    "author": "James Yeung",
+    "prompt": "Midjourney v8.2\n\nWow! Trying a trusted old prompt on v8.2.  It looks even better than the --preview!\n2.2K",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1785043526923.701
+  },
+  {
+    "title": "QT Your Art 1& Friends",
+    "slug": "prompt-2081023340882337949",
+    "model": "Common",
+    "category": "style",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "AI艺术"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2081023340882337949.jpg",
+    "date": "Sat Jul 25 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-26T16:02:00+08:00",
+    "source": "https://x.com/i/status/2081023340882337949",
+    "author": "Art Beauty by Martine 🎨🖼️",
+    "prompt": "QT Your Art 1& Friends\nTFTT @lordknight_ai \n\nInviting ... everyone 😃\n\nChaque point est une respiration, chaque ombre une mémoire. Une fleur née de milliers de silences, gravée entre lumière et obscurité.\n\n#AIart️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️\n⚔️ 𝕷𝖔𝖗𝖉 𝕶𝖓𝖎𝖌𝖍𝖙 ⚔️\nJul 23\nQT your Art and Artist\n\nTagging @McC3Kat @kat1212m2 @matt02101974 @Sami76494914 @MartineArtB  @Madhawk300 \nFeel free to join in 😊\n\n#AIart #digitalart #AIcommunity #AIArtCommunity #AIArtists\nMade with AI",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1785043526945.1028
+  },
+  {
+    "title": "Create one **hyper-realistic surreal environmental portrait*",
+    "slug": "prompt-2081055827214118996",
+    "model": "Common",
+    "category": "portrait",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "封面设计",
+      "人像",
+      "风景"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/prompt-2081055827214118996.jpg",
+    "date": "Sat Jul 25 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-26T16:02:00+08:00",
+    "source": "https://x.com/i/status/2081055827214118996",
+    "author": "HEX",
+    "prompt": "Anamnesis\n\nPrompt:\n\nCreate one **hyper-realistic surreal environmental portrait** using the supplied image as the absolute authority for the character’s identity and visual world.\n\nCapture it as if photographed with an **11×14-inch large-format film camera in landscape orientation**, using a native **14:11 aspect ratio**. The result must look physically photographed, not illustrated, animated, painted, or rendered in CGI.\n\nThe character is unmistakably adult.\n\nIDENTITY LOCK\n\nPreserve the character’s exact:\n\n* Identity, species, anatomy, limb count, proportions, and silhouette\n* Facial structure, hairstyle, head shape, and expression language\n* Pigmentation, scars, tattoos, markings, and asymmetry\n* Horns, ears, tails, wings, fins, claws, prosthetics, cybernetics, armor, masks, visors, helmets, jewelry, and permanent accessories\n* Materials, palette, motifs, and source-specific design language\n\nDo not humanize, simplify, relocate, remove, conceal, replace, or redesign identity-defining traits.\n\nPreserve the original eye state exactly. Closed or concealed eyes remain closed or concealed. Never invent or reveal features beneath coverings.\n\nDo not copy the source pose, outfit, background, composition, camera angle, or rendering medium.\n\nPOSE\n\nSeat the character upright on a narrow curved environmental structure in a long **rear three-quarter pose**, facing away toward the left.\n\nThis is primarily a back view. Emphasize the back, shoulders, waist, hips, and descending upper legs.\n\nKeep the torso long, relaxed, and slightly inclined forward with a natural spinal curve. Turn the head subtly left and downward, revealing only a narrow glimpse of the cheek, jaw, mask edge, visor, muzzle, or equivalent anatomy.\n\nDo not show a full profile or camera-facing gaze.\n\nThe pelvis rests securely on the support. Keep the hips slightly closer to camera than the shoulders, forming a restrained reverse S-curve.\n\nBoth legs descend toward the lower-left or lower-center, with knees below the waist and away from the chest.\n\nBoth arms stay forward near the lap or far side. No arm may brace behind the body.\n\nPreserve all required limbs and adapt the seated pose naturally to non-human anatomy without forcing humanoid proportions.\n\nCOMPOSITION\n\nUse a strict **14:11 landscape frame**.\n\nPlace the character in the right third, occupying roughly 30–40% of the image. Position the head in the upper-right quadrant and let the body, fabric, support, and fusion descend toward the lower-center or lower-left.\n\nOpen the left two-thirds into an immense source-derived environment with clear foreground, middle ground, background, and atmospheric distance.\n\nCreate a strong visual pathway from the seated support into the center-left background. Keep the left-side viewing corridor open.\n\nUse a high viewpoint behind and slightly above the character, looking outward and downward. Apply a restrained Dutch angle and moderate wide-angle framing without anatomy distortion.\n\nENVIRONMENTAL FUSION\n\nFuse the character gradually into the environment without suggesting wounds, mutilation, amputation, trapping, or impalement.\n\nBegin with intact anatomy, then introduce source-derived seams, patterns, and material changes that develop into dimensional structures and finally merge with the environment.\n\nInclude at least one major fusion between the pelvis, hip, thigh, tail, lower body, or equivalent anatomy and the seated support.\n\nA second fusion may extend from the shoulder, upper back, hair, headpiece, wing, tail, prosthetic, or equivalent structure into the right-side environment.\n\nKeep every transition structurally readable, physically connected, and materially coherent.\n\nCLOTHING\n\nDo not copy the source outfit.\n\nUse delicate flowing sheer or translucent fabric where appropriate, maintaining tasteful, non-explicit coverage. Let it wrap naturally around the hips, pelvis, torso, upper legs, or anatomical equivalent and trail across the support.\n\n**For male characters, do not generate upper-torso clothing or fabric coverage. Keep the chest, abdomen, shoulders, and back free of added garments, wraps, straps, or drapery, except for identity-defining armor, cybernetics, prosthetics, or permanent coverings preserved from the source.**\n\nDerive its colors, texture, pattern, and material behavior from the source image.\n\nIt may transition into source-derived mist, ribbons, roots, filaments, cables, smoke, liquid, feathers, crystals, membranes, webbing, or tracery.\n\nDo not obscure identity-defining anatomy, markings, prosthetics, cybernetics, tails, wings, armor, or coverings.\n\nNo generic lingerie, underwear, censor shapes, or unnaturally attached fabric.\n\nLARGE-FORM PHOTOGRAPHY\n\nSimulate a genuine 11×14 large-format photograph with:\n\n* Controlled perspective and minimal distortion\n* Natural optical falloff\n* Subtle focal-plane control\n* Strong detail on the head, back, hips, support, fabric, and fusion points\n* Reduced contrast and detail in the distance\n* Believable lens softness rather than synthetic blur\n\nEvery surface must have realistic weight, scale, texture, reflectivity, translucency, shadow, and physical contact.\n\nFILM CHARACTER\n\nCreate a heavily aged analog-film appearance, as if the negative were pushed, duplicated, chemically mishandled, poorly stored, and later scanned.\n\nApply:\n\n* Heavy irregular silver-halide grain\n* Coarse grain clustering in shadows and midtones\n* Strong desaturation and muted chroma\n* Slightly contaminated blacks and compressed highlights\n* Uneven negative density\n* Fine scratches, dust, emulsion wear, and chemical streaking\n* Minor edge fogging and restrained light leaks\n* Slight color-layer misregistration\n* Gentle fading and imperfect archival scanning\n\nThe damage must feel random and physically embedded in the film.\n\nDo not use uniform digital noise, VHS artifacts, excessive vignette, fake sprocket holes, decorative scratch overlays, or extreme film burns.\n\nPreserve identity, anatomy, pose readability, and environmental depth.\n\nLIGHTING AND MATERIALS\n\nUse the supplied image as the authority for lighting color, temperature, contrast, glow, shadows, reflections, and mood.\n\nTranslate these into physically believable illumination.\n\nUse fog, dust, haze, particles, fragments, and light shafts only when supported by the source and without blocking the left-side environment.\n\nRender all skin, fur, scales, feathers, metal, glass, armor, fabric, stone, crystal, prosthetics, and cybernetics with realistic material behavior.\n\nAvoid generic gold light, neon accents, chrome, magical energy, or cinematic teal-and-orange grading unless present in the source.\n\nThe final image should feel intimate, contemplative, surreal, immense, weathered, immersive, and unmistakably grounded in the supplied image.\n\nHARD NEGATIVES\n\nNo front-facing pose, full side profile, centered figure, standing, kneeling, crouching, reclining, curled posture, raised knees, camera-facing gaze, or rear arm support.\n\nNo blocked left-side view, close crop, flat background, fisheye distortion, extreme foreshortening, warped anatomy, enlarged foreground body parts, or loss of scale.\n\nNo copied outfit, generic lingerie, unrelated motifs, humanization, missing or extra limbs, duplicated anatomy, fused hands, broken joints, impossible posture, cut-off anatomy, intersecting structures, wounds, gore, mutilation, or exposed internal anatomy.\n\nNo anime, manga, illustration, cel shading, graphic linework, concept art, painterly rendering, matte painting, CGI, game-engine surfaces, plastic skin, excessive HDR, artificial bokeh, oversharpening, or clean digital perfection.\n\nNo excessive fog, fake film borders, repeated scratches, text, captions, logos, signatures, or watermarks.\n\nSINGLE PASS\n\nCreate exactly one image.\n\nThe initial generation is the final deliverable. Do not automatically edit, refine, redraw, restyle, enhance, upscale, or regenerate it. Any later change must come from a separate explicit edit request.\n\n@UnholyWandering @supaipaii @AquariaCelestia @RaynTarant\nMade with AI\n1.7K",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1785043526936.9248
+  },
+  {
+    "title": "A gigantic ceramic coffee cup transformed into an endless la",
+    "slug": "prompt-2081078353910473163",
+    "model": "Common",
+    "category": "product",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "商业",
+      "电影感",
+      "活力"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2081078353910473163.jpg",
+    "date": "Sat Jul 25 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-26T16:02:00+08:00",
+    "source": "https://x.com/i/status/2081078353910473163",
+    "author": "Aylin",
+    "prompt": "A gigantic ceramic coffee cup transformed into an endless lake of rich dark coffee. Hundreds of tiny miniature people are sailing elegant wooden boats, kayaking, paddleboarding, and fishing across the coffee surface. Cream swirls create winding rivers and islands, while fluffy milk foam forms snowy mountains and soft clouds. A giant golden spoon acts as a bridge over the coffee, with tiny travelers crossing it. Floating coffee beans become rocky islands where miniature cafés and lighthouses stand. Warm morning sunlight, cinematic atmosphere, premium coffee advertisement, surreal miniature world, hyper-realistic CGI, ultra detailed textures, macro photography, shallow depth of field, soft reflections, volumetric lighting, vibrant colors, clean composition, award-winning commercial photography, 8K.",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1785043526927.7742
+  },
+  {
+    "title": "🌸她在窗边读一张旧纸，纸上的山水与窗外的远山没有边界。",
+    "slug": "prompt-2081167617126195280",
+    "model": "Common",
+    "category": "3d",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "3D渲染",
+      "国风",
+      "动漫"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/prompt-2081167617126195280.jpg",
+    "date": "Sun Jul 26 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-26T16:02:00+08:00",
+    "source": "https://x.com/i/status/2081167617126195280",
+    "author": "尘林 Spark",
+    "prompt": "抽出了一个满意的风格 ~\n\n🌸她在窗边读一张旧纸，纸上的山水与窗外的远山没有边界。\n\n——Prompt——\n生成一张 4:5 竖版、1122×1402 像素、蓝白瓷片纹样与青绿山水版画融合的当代东方女性人物画面。一位 24–30 岁明确成年的虚构东方女性作为唯一主体，黑色低盘发，清秀自然的东方五官，眼神安静而有阅读感，妆容清透，皮肤保留自然纸面与细腻肌理，整体不幼态、不网红化。\n\n时间切片是阴天上午。人物站在木质窗边，刚展开一张边缘磨损的旧纸山水图，双手分别托住纸张两侧，身体轻微侧向窗外，视线落在纸面上的远山位置。动作链保持简单：展开旧纸、低头阅读、窗外竹影与纸上山水形成呼应。\n\n人物穿瓷白色新中式立领上衣与低饱和青绿色长裙，衣服边缘用极细钴蓝滚边，袖口和腰带有少量青绿织纹。画面主色为宣纸白、瓷白和浅灰，钴蓝集中在窗边瓷片和花纹，青绿集中在纸上山水与裙摆，氧化金只作为极小的装订或扣件细节。材质重点是旧纸纤维、瓷片开片、深色木框、布料纹理与版画线条。\n\n场景只保留三个环境细节：深色木质窗框、窗边蓝白瓷片装饰、窗外淡化的青绿山水与竹影。采用大半身偏左构图，人物位于左下，右侧大面积宣纸白和浅青远山作为负空间，前景窗框形成竖向边界，中景人物与旧纸清晰，后景轻微虚化但仍可读。\n\n光线是阴天窗边的均匀漫射光，从右侧落到人物脸部、手指和旧纸边缘，避免高光过强。使用低饱和青绿、钴蓝、瓷白和暖灰版画滤镜，保留轻微旧纸裂纹、干湿不均的油墨、木刻线条和套色错位，让画面像一页现代东方设计展览中的印刷作品。\n\n负面约束：不要拼图、网格、九宫格、长图、多人、重复人物、现代品牌、Logo、水印、乱码、欧美脸、幼态脸、塑料皮肤、摄影棚硬光、3D渲染、动漫感、廉价国潮、复杂宫殿、仙侠特效、纸张文字乱码、手部畸形、额外手指、背景堆满装饰。\n尘林 Spark\n6h\n雨停后，她在蓝白瓷纹回廊收伞，远山和竹影像印在旧宣纸上。🌂🌸\n\n——Prompt——\n生成一张 4:5 竖版、1122×1402 像素、青绿山水版画与蓝白瓷器纹样融合的当代东方女性海报。一位 24–30 岁明确成年的虚构东方女性作为唯一主体，保持与系列其他画面一致的黑色低盘发、自然古典东方五官、清透皮肤和克制眼神，穿完整端庄的新中式服装，气质安静、知性、疏离而不冷漠。\n\n时间切片是雨刚停的傍晚。人物站在东方庭院回廊下，刚把一把蓝白瓷纹折伞收拢，双手握住伞柄，身体轻微朝向右侧，头部低垂，视线落在伞面残留的雨珠上。伞是画面唯一明确的主事件和视觉钩子，衣袖与伞面形成一条向下的蓝白斜线。\n\n人物穿瓷白色立领新中式长上衣与低饱和青绿色长裙，服装使用棉麻、细绢和轻微纸张压纹质感，领口、袖口和伞面使用钴蓝花卉纹，青绿只用于裙摆、竹叶和远山，极少量氧化金出现在伞骨端头。色彩比例保持瓷白和旧米白为主、钴蓝为结构、青绿为环境，避免浓艳国风。\n\n场景是雨后回廊，前景有几片湿润竹叶，中景是人物和收伞动作，后景是白墙、木柱、低矮屋檐和淡化的青绿山形。采用中景偏全身构图，人物位于右下区域，左侧留出宣纸白与远山留白，湿润石地有轻微倒影，空间纵深清楚但不堆积道具，画面保持现代艺术海报的平静秩序。\n\n光线来自雨后云层散射的柔和侧光，人物面部、手部、伞面纹样和湿地反光被轻轻抬亮，木柱和屋檐保留青灰暗部。使用低饱和青绿、瓷白、钴蓝与浅烟灰的版画滤镜，保留手工木刻线、纸张纤维、瓷釉开片和轻微套色偏移，整体像一张被印在旧宣纸上的当代东方画报。\n\n负面约束：不要拼图、网格、九宫格、长图、重复人物、多人、雨伞变形、现代品牌、Logo、水印、乱码、欧美脸、幼态脸、塑料皮肤、3D渲染、动漫感、廉价古装写真、仙侠特效、鲜艳红金、过多花纹、畸形手指、额外肢体、透视错误、杂乱背景。",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1785043526932.6243
   }
 ]
