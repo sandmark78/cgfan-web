@@ -17,28 +17,14 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
   const [imageLoaded, setImageLoaded] = useState(false)
   const imgRef = useRef<HTMLImageElement | null>(null)
 
-  // 预加载图片 - 使用页面上已经显示的图片
+  // 预加载图片 - 直接加载原始图片
   useEffect(() => {
     if (!prompt.cover) {
       console.warn('没有 cover 图片路径')
       return
     }
     
-    console.log('开始查找图片，slug:', prompt.slug)
-    
-    // 查找页面上已经显示的图片元素
-    const pageImg = document.querySelector(`img[src*="${prompt.slug}"]`) as HTMLImageElement
-    
-    console.log('查找结果:', pageImg ? '找到' : '未找到')
-    
-    if (pageImg && pageImg.complete && pageImg.naturalWidth > 0) {
-      console.log('使用页面上已加载的图片:', pageImg.src.substring(0, 50))
-      imgRef.current = pageImg
-      setImageLoaded(true)
-      return
-    }
-    
-    // 如果页面上没有，则加载原始图片
+    // 构建原始图片 URL
     const imgUrl = prompt.cover.startsWith('http') 
       ? prompt.cover 
       : `${window.location.origin}${prompt.cover}`
