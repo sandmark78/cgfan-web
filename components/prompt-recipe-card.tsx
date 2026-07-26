@@ -33,49 +33,85 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
       if (!ctx) throw new Error('Canvas 2D context not available')
 
       const W = 600
-      const H = 750
+      const H = 780
       canvas.width = W
       canvas.height = H
 
       // 背景 - 浅灰渐变
       const bg = ctx.createLinearGradient(0, 0, 0, H)
-      bg.addColorStop(0, '#f8fafc')
-      bg.addColorStop(1, '#f1f5f9')
+      bg.addColorStop(0, '#f1f5f9')
+      bg.addColorStop(1, '#e2e8f0')
       ctx.fillStyle = bg
       ctx.fillRect(0, 0, W, H)
 
-      // 顶部绿色条 - 更精致
-      const headerGrad = ctx.createLinearGradient(0, 0, W, 0)
+      // 卡片主体 - 白色圆角卡片
+      const cardX = 20
+      const cardY = 20
+      const cardW = W - 40
+      const cardH = H - 40
+      const cardRadius = 24
+
+      // 卡片阴影
+      ctx.shadowColor = 'rgba(0, 0, 0, 0.08)'
+      ctx.shadowBlur = 20
+      ctx.shadowOffsetY = 8
+      ctx.fillStyle = '#ffffff'
+      ctx.beginPath()
+      ctx.roundRect(cardX, cardY, cardW, cardH, cardRadius)
+      ctx.fill()
+      ctx.shadowColor = 'transparent'
+
+      // 卡片边框（轻微）
+      ctx.strokeStyle = 'rgba(0, 0, 0, 0.05)'
+      ctx.lineWidth = 1
+      ctx.stroke()
+
+      // 顶部绿色条 - 在卡片内部
+      const headerY = cardY
+      const headerH = 90
+      ctx.save()
+      ctx.beginPath()
+      ctx.roundRect(cardX, cardY, cardW, cardH, cardRadius)
+      ctx.clip()
+      
+      const headerGrad = ctx.createLinearGradient(cardX, headerY, cardX + cardW, headerY)
       headerGrad.addColorStop(0, '#22c55e')
       headerGrad.addColorStop(1, '#059669')
       ctx.fillStyle = headerGrad
-      ctx.fillRect(0, 0, W, 100)
+      ctx.fillRect(cardX, headerY, cardW, headerH)
 
       // 标题 - 更大更醒目
       ctx.fillStyle = '#ffffff'
-      ctx.font = 'bold 24px -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif'
+      ctx.font = 'bold 22px -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif'
       ctx.textBaseline = 'middle'
-      const title = prompt.title.length > 24 ? prompt.title.slice(0, 24) + '...' : prompt.title
-      ctx.fillText(title, 24, 55)
+      const title = prompt.title.length > 26 ? prompt.title.slice(0, 26) + '...' : prompt.title
+      ctx.fillText(title, cardX + 24, headerY + 50)
 
       // "Prompt Card" 标签
-      ctx.font = '13px -apple-system, sans-serif'
-      ctx.fillStyle = 'rgba(255,255,255,0.85)'
-      ctx.fillText('CGfan · Prompt Card', 24, 28)
+      ctx.font = '12px -apple-system, sans-serif'
+      ctx.fillStyle = 'rgba(255,255,255,0.9)'
+      ctx.fillText('CGfan · Prompt Card', cardX + 24, headerY + 24)
 
-      // 示例图区域 - 无圆角，直接填充
-      const imgY = 100
-      const imgH = 340
+      ctx.restore()
+
+      // 示例图区域 - 在卡片内部，无圆角
+      const imgY = cardY + headerH
+      const imgH = 320
       
-      ctx.fillStyle = '#e2e8f0'
-      ctx.fillRect(0, imgY, W, imgH)
+      ctx.save()
+      ctx.beginPath()
+      ctx.roundRect(cardX, cardY, cardW, cardH, cardRadius)
+      ctx.clip()
+      
+      ctx.fillStyle = '#f8fafc'
+      ctx.fillRect(cardX, imgY, cardW, imgH)
       
       if (imgRef.current) {
         try {
           // object-fit: cover 效果 - 等比例裁剪填充，无圆角
           const img = imgRef.current
           const imgRatio = img.width / img.height
-          const targetRatio = W / imgH
+          const targetRatio = cardW / imgH
           let sx, sy, sw, sh
           
           if (imgRatio > targetRatio) {
@@ -92,11 +128,13 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
             sy = (img.height - sh) / 2
           }
           
-          ctx.drawImage(img, sx, sy, sw, sh, 0, imgY, W, imgH)
+          ctx.drawImage(img, sx, sy, sw, sh, cardX, imgY, cardW, imgH)
         } catch {
           // 图片绘制失败，留灰底
         }
       }
+      
+      ctx.restore()
 
       // 内容区
       const contentY = imgY + imgH + 20
@@ -108,85 +146,86 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
         { label: '难度', value: prompt.difficulty === 'beginner' ? '入门' : prompt.difficulty === 'intermediate' ? '进阶' : '高级' },
       ]
 
-      const colW = 170
-      const gap = 15
-      const startX = 24
+      const colW = 160
+      const gap = 12
+      const startX = cardX + 20
       params.forEach((p, i) => {
         const x = startX + i * (colW + gap)
         // 白色卡片背景
-        ctx.fillStyle = '#ffffff'
+        ctx.fillStyle = '#f8fafc'
         ctx.beginPath()
-        ctx.roundRect(x, contentY, colW, 60, 10)
+        ctx.roundRect(x, contentY, colW, 56, 10)
         ctx.fill()
         
-        // 轻微阴影效果
-        ctx.fillStyle = 'rgba(0,0,0,0.03)'
-        ctx.fillRect(x, contentY + 58, colW, 2)
+        // 轻微边框
+        ctx.strokeStyle = '#e2e8f0'
+        ctx.lineWidth = 1
+        ctx.stroke()
 
         // 标签
-        ctx.fillStyle = '#94a3b8'
-        ctx.font = '12px -apple-system, sans-serif'
+        ctx.fillStyle = '#64748b'
+        ctx.font = '11px -apple-system, sans-serif'
         ctx.textAlign = 'center'
-        ctx.fillText(p.label, x + colW / 2, contentY + 22)
+        ctx.fillText(p.label, x + colW / 2, contentY + 20)
 
         // 值
         ctx.fillStyle = '#1e293b'
         ctx.font = 'bold 14px -apple-system, sans-serif'
-        ctx.fillText(p.value, x + colW / 2, contentY + 44)
+        ctx.fillText(p.value, x + colW / 2, contentY + 42)
       })
 
       // 关键原料
-      const tagY = contentY + 80
+      const tagY = contentY + 76
       ctx.fillStyle = '#64748b'
-      ctx.font = 'bold 12px -apple-system, sans-serif'
+      ctx.font = 'bold 11px -apple-system, sans-serif'
       ctx.textAlign = 'left'
-      ctx.fillText('关键原料', 24, tagY)
+      ctx.fillText('关键原料', cardX + 20, tagY)
 
-      let tagX = 24
-      const tagH = 28
+      let tagX = cardX + 20
+      const tagH = 26
       prompt.tags.slice(0, 4).forEach((tag) => {
-        const tagWidth = ctx.measureText(tag).width + 24
+        const tagWidth = ctx.measureText(tag).width + 20
         // 标签背景
         ctx.fillStyle = '#dcfce7'
         ctx.beginPath()
-        ctx.roundRect(tagX, tagY + 12, tagWidth, tagH, 14)
+        ctx.roundRect(tagX, tagY + 10, tagWidth, tagH, 13)
         ctx.fill()
 
         // 标签文字
         ctx.fillStyle = '#166534'
-        ctx.font = '13px -apple-system, sans-serif'
+        ctx.font = '12px -apple-system, sans-serif'
         ctx.textAlign = 'center'
-        ctx.fillText(tag, tagX + tagWidth / 2, tagY + 12 + tagH / 2 + 4)
+        ctx.fillText(tag, tagX + tagWidth / 2, tagY + 10 + tagH / 2 + 4)
 
-        tagX += tagWidth + 12
+        tagX += tagWidth + 10
       })
 
       // Prompt 预览
-      const promptY = tagY + 65
+      const promptY = tagY + 60
       ctx.fillStyle = '#64748b'
-      ctx.font = 'bold 12px -apple-system, sans-serif'
+      ctx.font = 'bold 11px -apple-system, sans-serif'
       ctx.textAlign = 'left'
-      ctx.fillText('Prompt 预览', 24, promptY)
+      ctx.fillText('Prompt 预览', cardX + 20, promptY)
 
       // 预览框背景
       ctx.fillStyle = '#f8fafc'
       ctx.beginPath()
-      ctx.roundRect(24, promptY + 14, W - 48, 70, 10)
+      ctx.roundRect(cardX + 20, promptY + 12, cardW - 40, 65, 10)
       ctx.fill()
       
       // 预览框边框
       ctx.strokeStyle = '#e2e8f0'
       ctx.lineWidth = 1
-      ctx.strokeRect(24, promptY + 14, W - 48, 70)
+      ctx.stroke()
 
       ctx.fillStyle = '#475569'
-      ctx.font = '13px -apple-system, sans-serif'
-      const previewText = prompt.prompt.slice(0, 120).replace(/\n/g, ' ') + '...'
+      ctx.font = '12px -apple-system, sans-serif'
+      const previewText = prompt.prompt.slice(0, 110).replace(/\n/g, ' ') + '...'
       ctx.textAlign = 'left'
       ctx.textBaseline = 'top'
 
       // 文字换行
-      const maxWidth = W - 72
+      const maxWidth = cardW - 60
       const lines = []
       let line = ''
       for (const char of previewText) {
@@ -201,18 +240,19 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
       lines.push(line)
 
       lines.slice(0, 3).forEach((l, i) => {
-        ctx.fillText(l, 36, promptY + 24 + i * 20)
+        ctx.fillText(l, cardX + 32, promptY + 22 + i * 18)
       })
 
-      // 底部水印 - 更精致
-      ctx.fillStyle = '#cbd5e1'
-      ctx.font = '12px -apple-system, sans-serif'
+      // 底部水印 - 在卡片内部底部
+      const footerY = cardY + cardH - 24
+      ctx.fillStyle = '#94a3b8'
+      ctx.font = '11px -apple-system, sans-serif'
       ctx.textAlign = 'left'
       ctx.textBaseline = 'middle'
-      ctx.fillText('www.cgfan.com', 24, H - 20)
+      ctx.fillText('www.cgfan.com', cardX + 20, footerY)
 
       ctx.textAlign = 'right'
-      ctx.fillText(`❤️ ${prompt.likeCount || 0}`, W - 24, H - 20)
+      ctx.fillText(`❤️ ${prompt.likeCount || 0}`, cardX + cardW - 20, footerY)
 
       // 下载
       const blob = await new Promise<Blob>((resolve, reject) => {
