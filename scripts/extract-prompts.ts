@@ -92,7 +92,7 @@ function detectModel(content: string, frontmatterModel: string = ''): string {
     return frontmatterModel;
   }
   
-  return 'Unknown';
+  return 'Common';
 }
 
 function detectDifficulty(content: string): string {

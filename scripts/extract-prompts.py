@@ -98,7 +98,7 @@ def detect_model(content: str, frontmatter_model: str = '') -> str:
             if re.search(pattern, content_lower, re.IGNORECASE):
                 return model
     
-    return 'Unknown'
+    return 'Common'
 
 
 def detect_difficulty(content: str) -> str:
