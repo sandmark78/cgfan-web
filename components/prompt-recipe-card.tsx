@@ -24,11 +24,15 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
       return
     }
     
+    console.log('开始查找图片，slug:', prompt.slug)
+    
     // 查找页面上已经显示的图片元素
     const pageImg = document.querySelector(`img[src*="${prompt.slug}"]`) as HTMLImageElement
     
+    console.log('查找结果:', pageImg ? '找到' : '未找到')
+    
     if (pageImg && pageImg.complete && pageImg.naturalWidth > 0) {
-      console.log('使用页面上已加载的图片')
+      console.log('使用页面上已加载的图片:', pageImg.src.substring(0, 50))
       imgRef.current = pageImg
       setImageLoaded(true)
       return
