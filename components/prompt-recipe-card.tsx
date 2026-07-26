@@ -62,15 +62,46 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
       ctx.fillStyle = 'rgba(255,255,255,0.8)'
       ctx.fillText('CGfan · Prompt Card', 30, 30)
 
-      // 示例图区域
+      // 示例图区域 - 带圆角裁剪
       const imgY = 120
       const imgH = 300
+      
+      // 先用背景色填充（圆角区域外的底色）
       ctx.fillStyle = '#e5e7eb'
-      ctx.fillRect(0, imgY, W, imgH)
-
+      ctx.beginPath()
+      ctx.roundRect(0, imgY, W, imgH, 0)
+      ctx.fill()
+      
       if (imgRef.current) {
         try {
-          ctx.drawImage(imgRef.current, 0, imgY, W, imgH)
+          // 保存状态，裁剪圆角路径
+          ctx.save()
+          ctx.beginPath()
+          ctx.roundRect(0, imgY, W, imgH, 12)
+          ctx.clip()
+          
+          // object-fit: cover 效果 - 等比例裁剪填充
+          const img = imgRef.current
+          const imgRatio = img.width / img.height
+          const targetRatio = W / imgH
+          let sx, sy, sw, sh
+          
+          if (imgRatio > targetRatio) {
+            // 图片更宽 → 裁剪左右
+            sw = img.height * targetRatio
+            sh = img.height
+            sx = (img.width - sw) / 2
+            sy = 0
+          } else {
+            // 图片更高 → 裁剪上下
+            sw = img.width
+            sh = img.width / targetRatio
+            sx = 0
+            sy = (img.height - sh) / 2
+          }
+          
+          ctx.drawImage(img, sx, sy, sw, sh, 0, imgY, W, imgH)
+          ctx.restore()
         } catch {
           // 图片绘制失败，留灰底
         }
@@ -217,7 +248,7 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
         </div>
 
         {/* 示例图 */}
-        <div className="aspect-video overflow-hidden bg-gray-200 dark:bg-gray-800">
+        <div className="aspect-[4/3] overflow-hidden rounded-xl bg-gray-200 dark:bg-gray-800">
           {prompt.cover ? (
             <img
               src={prompt.cover}
