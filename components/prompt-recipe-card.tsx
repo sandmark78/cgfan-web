@@ -26,17 +26,17 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
       ? prompt.cover 
       : `${window.location.origin}${prompt.cover}`
     
+    console.log('开始加载图片:', imgUrl)
+    
     const img = new Image()
     // 不设置 crossOrigin，同域图片不需要
     img.onload = () => { 
-      if (img.naturalWidth > 0 && img.naturalHeight > 0) {
-        imgRef.current = img
-        setImageLoaded(true)
-        console.log('图片加载成功:', img.naturalWidth, 'x', img.naturalHeight)
-      }
+      console.log('图片加载成功:', img.naturalWidth, 'x', img.naturalHeight)
+      imgRef.current = img
+      setImageLoaded(true)
     }
-    img.onerror = () => { 
-      console.error('图片加载失败:', imgUrl)
+    img.onerror = (e) => { 
+      console.error('图片加载失败:', imgUrl, e)
       setImageLoaded(false)
     }
     img.src = imgUrl
