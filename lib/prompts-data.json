@@ -3409,7 +3409,7 @@
   {
     "title": "食谱信息图模板：从成品图到步骤的完整视觉叙事",
     "slug": "prompt-2081079393137709504",
-    "model": "Unknown",
+    "model": "Common",
     "category": "design",
     "tags": [
       "信息图",
@@ -3426,7 +3426,7 @@
     "prompt": "Create a clean, modern recipe infographic for [Recipe Name] with a [Background Color/Theme] and [Accent Color]. Feature a large, appetizing hero image of the finished dish at the top center. Include a recipe info card displaying Calories, Cook Time, Servings, and Spice Level (or Difficulty). Arrange ingredients with quantities around the hero image using small illustrated icons. Below, present 4–6 step-by-step cooking instructions with simple vector-style illustrations and short action captions. Add a chef's tip or serving suggestion in a colored banner at the bottom. Use elegant typography, balanced spacing, flat vector illustrations, and a premium cookbook-style layout with a clean, visually engaging design.",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1785019359039.3955
+    "mtime": 1785030023798.5264
   },
   {
     "title": "高端西餐海报：巨型字体与珠宝级食物质感",
@@ -3477,7 +3477,7 @@
   {
     "title": "日式邮票风格：穿孔边缘与和纸质感",
     "slug": "prompt-2080972341535027228",
-    "model": "Unknown",
+    "model": "Common",
     "category": "style",
     "tags": [
       "邮票",
@@ -3494,6 +3494,6 @@
     "prompt": "A Japanese-inspired postage stamp featuring a [subject], framed by [border motif] with perforated edges. The background is [color1] and [color2], with [typography style] kanji labeling. Includes paper texture for an authentic printed appearance.",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1785019358980.3025
+    "mtime": 1785030030017.4358
   }
 ]
