@@ -9,8 +9,8 @@ import { RandomButton } from '@/components/random-button'
 
 export const runtime = 'edge'
 
-const ALL_MODELS = ['GPT Image 2', 'Midjourney', 'Gemini']
-const ALL_DIFFICULTIES = ['intermediate', 'advanced']
+const ALL_MODELS = ['GPT Image 2', 'Midjourney', 'Gemini', 'Common']
+const ALL_DIFFICULTIES = ['beginner', 'intermediate', 'advanced']
 
 function getModelIcon(model: string) {
   const m = model.toLowerCase()
@@ -25,7 +25,8 @@ function getModelIcon(model: string) {
 }
 
 function getDifficultyLabel(d: string) {
-  return d === 'advanced' ? '进阶' : '入门'
+  const labels: Record<string, string> = { beginner: '入门', intermediate: '进阶', advanced: '高级' }
+  return labels[d] || d
 }
 
 export async function generateMetadata({

@@ -14,7 +14,12 @@ export async function GET(request: NextRequest) {
   const difficulty = searchParams.get('difficulty')
 
   let prompts = getAllPrompts()
-  prompts = [...prompts].reverse()
+  prompts = [...prompts].sort((a, b) => {
+    const addedA = (a as any).added || '';
+    const addedB = (b as any).added || '';
+    if (addedA && addedB) return addedB.localeCompare(addedA);
+    return 0;
+  })
 
   if (q) {
     const query = q.toLowerCase()

@@ -34,6 +34,13 @@ export function InfiniteGrid({ initialPrompts, category, tag, q, model, difficul
   const observerRef = useRef<IntersectionObserver | null>(null)
   const loadMoreRef = useRef<HTMLDivElement>(null)
 
+  // 筛选条件变化时重置状态
+  useEffect(() => {
+    setPrompts(initialPrompts)
+    setPage(1)
+    setHasMore(true)
+  }, [initialPrompts, category, tag, q, model, difficulty])
+
   const loadMore = useCallback(async () => {
     if (loading || !hasMore) return
 
