@@ -85,7 +85,7 @@ export function PromptCard({ prompt, priority = false }: PromptCardProps) {
   const summary = extractSummary(prompt)
 
   return (
-    <article className="glass-card group relative flex flex-col overflow-hidden rounded-2xl">
+    <article className="glass-card group relative flex h-full flex-col overflow-hidden rounded-2xl">
       <Link
         href={`/prompt/${prompt.slug}`}
         className="flex flex-1 flex-col"
