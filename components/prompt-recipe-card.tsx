@@ -14,26 +14,50 @@ interface PromptRecipeCardProps {
  */
 export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
   const [isGenerating, setIsGenerating] = useState(false)
+  const [imageLoaded, setImageLoaded] = useState(false)
   const imgRef = useRef<HTMLImageElement | null>(null)
 
   // 预加载图片
   useEffect(() => {
     if (!prompt.cover) return
+    
+    // 构建完整的图片 URL（同域不需要 crossOrigin）
+    const imgUrl = prompt.cover.startsWith('http') 
+      ? prompt.cover 
+      : `${window.location.origin}${prompt.cover}`
+    
     const img = new Image()
-    img.crossOrigin = 'anonymous'
-    img.onload = () => { imgRef.current = img }
-    img.src = prompt.cover
+    // 不设置 crossOrigin，同域图片不需要
+    img.onload = () => { 
+      if (img.naturalWidth > 0 && img.naturalHeight > 0) {
+        imgRef.current = img
+        setImageLoaded(true)
+        console.log('图片加载成功:', img.naturalWidth, 'x', img.naturalHeight)
+      }
+    }
+    img.onerror = () => { 
+      console.error('图片加载失败:', imgUrl)
+      setImageLoaded(false)
+    }
+    img.src = imgUrl
   }, [prompt.cover])
 
   const handleDownload = async () => {
     setIsGenerating(true)
     try {
+      // 检查图片是否已加载
+      if (!imgRef.current) {
+        alert('图片正在加载中，请稍后再试')
+        setIsGenerating(false)
+        return
+      }
+
       const canvas = document.createElement('canvas')
       const ctx = canvas.getContext('2d')
       if (!ctx) throw new Error('Canvas 2D context not available')
 
       const W = 600
-      const H = 780
+      const H = 900  // 2:3 比例
       canvas.width = W
       canvas.height = H
 
@@ -96,7 +120,7 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
 
       // 示例图区域 - 在卡片内部，无圆角
       const imgY = cardY + headerH
-      const imgH = 320
+      const imgH = 420  // 固定高度，适应布局
       
       ctx.save()
       ctx.beginPath()
@@ -108,30 +132,22 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
       
       if (imgRef.current) {
         try {
-          // object-fit: cover 效果 - 等比例裁剪填充，无圆角
           const img = imgRef.current
-          const imgRatio = img.width / img.height
-          const targetRatio = cardW / imgH
-          let sx, sy, sw, sh
+          console.log('绘制图片:', img.width, 'x', img.height, 'src:', img.src.substring(0, 50))
           
-          if (imgRatio > targetRatio) {
-            // 图片更宽 → 裁剪左右
-            sw = img.height * targetRatio
-            sh = img.height
-            sx = (img.width - sw) / 2
-            sy = 0
-          } else {
-            // 图片更高 → 裁剪上下
-            sw = img.width
-            sh = img.width / targetRatio
-            sx = 0
-            sy = (img.height - sh) / 2
-          }
-          
-          ctx.drawImage(img, sx, sy, sw, sh, cardX, imgY, cardW, imgH)
-        } catch {
-          // 图片绘制失败，留灰底
+          // 直接绘制整张图片，不做裁剪
+          ctx.drawImage(img, cardX, imgY, cardW, imgH)
+          console.log('图片绘制成功')
+        } catch (error) {
+          console.error('图片绘制失败:', error)
+          // 绘制失败时显示占位符
+          ctx.fillStyle = '#cbd5e1'
+          ctx.font = '14px -apple-system, sans-serif'
+          ctx.textAlign = 'center'
+          ctx.fillText('图片加载失败', cardX + cardW / 2, imgY + imgH / 2)
         }
+      } else {
+        console.warn('图片未加载，imgRef.current 为空')
       }
       
       ctx.restore()
