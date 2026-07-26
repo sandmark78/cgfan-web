@@ -33,13 +33,38 @@ export function InfiniteGrid({ initialPrompts, category, tag, q, model, difficul
   const [hasMore, setHasMore] = useState(true)
   const observerRef = useRef<IntersectionObserver | null>(null)
   const loadMoreRef = useRef<HTMLDivElement>(null)
+  const isInitialMount = useRef(true)
 
-  // 筛选条件变化时重置状态
+  // 筛选条件变化时从 API 重新获取数据（跳过初始加载）
   useEffect(() => {
-    setPrompts(initialPrompts)
+    if (isInitialMount.current) {
+      isInitialMount.current = false
+      return
+    }
+    setLoading(true)
     setPage(1)
     setHasMore(true)
-  }, [initialPrompts, category, tag, q, model, difficulty])
+    const fetchData = async () => {
+      try {
+        const params = new URLSearchParams({ page: '1', pageSize: '20' })
+        if (category) params.append('category', category)
+        if (tag) params.append('tag', tag)
+        if (q) params.append('q', q)
+        if (model) params.append('model', model)
+        if (difficulty) params.append('difficulty', difficulty)
+        const res = await fetch(`/api/prompts?${params}`)
+        const data = await res.json()
+        setPrompts(data.prompts || [])
+        setHasMore(data.hasMore ?? true)
+      } catch (e) {
+        console.error('Failed to fetch prompts:', e)
+        setHasMore(false)
+      } finally {
+        setLoading(false)
+      }
+    }
+    fetchData()
+  }, [category, tag, q, model, difficulty])
 
   const loadMore = useCallback(async () => {
     if (loading || !hasMore) return

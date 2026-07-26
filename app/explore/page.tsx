@@ -121,11 +121,6 @@ export default async function ExplorePage({
 
   const buildUrl = (key: string, value: string | null) => {
     const p = new URLSearchParams()
-    if (category && key !== 'category') p.set('category', category)
-    if (tag && key !== 'tag') p.set('tag', tag)
-    if (model && key !== 'model') p.set('model', model)
-    if (difficulty && key !== 'difficulty') p.set('difficulty', difficulty)
-    if (q && key !== 'q') p.set('q', q)
     if (value) p.set(key, value)
     const s = p.toString()
     return `/explore${s ? `?${s}` : ''}`
