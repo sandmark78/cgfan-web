@@ -14,7 +14,13 @@ export default function Home() {
   const categories = getAllCategories()
   // 数据已按上传时间升序排列（最早上传在前，最新上传在后）
   // 首页需要显示最新上传的12条，所以从末尾取
-  const latestPrompts = [...prompts].reverse().slice(0, 12)
+  const latestPrompts = [...prompts].sort((a, b) => {
+    const addedA = a.added || '';
+    const addedB = b.added || '';
+    // 倒序：最新在前
+    if (addedA && addedB) return addedB.localeCompare(addedA);
+    return 0;
+  }).slice(0, 12)
 
   return (
     <div className="py-3 sm:py-6">

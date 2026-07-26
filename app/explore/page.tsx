@@ -86,7 +86,12 @@ export default async function ExplorePage({
     diffCounts[p.difficulty] = (diffCounts[p.difficulty] || 0) + 1
   })
 
-  let prompts = [...allPrompts].reverse()
+  let prompts = [...allPrompts].sort((a, b) => {
+    const addedA = a.added || '';
+    const addedB = b.added || '';
+    if (addedA && addedB) return addedB.localeCompare(addedA);
+    return 0;
+  })
   let activeFilter = ''
 
   if (q) {

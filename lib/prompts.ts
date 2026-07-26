@@ -12,6 +12,7 @@ export interface PromptData {
   difficulty: 'beginner' | 'intermediate' | 'advanced'
   cover: string
   date: string
+  added: string
   source: string
   author: string
   prompt: string
