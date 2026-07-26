@@ -155,6 +155,11 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
           const img = imgRef.current
           console.log('绘制图片:', img.naturalWidth, 'x', img.naturalHeight, 'src:', img.src.substring(0, 50))
           
+          // 检查图片尺寸是否有效
+          if (img.naturalWidth === 0 || img.naturalHeight === 0) {
+            throw new Error('图片尺寸无效')
+          }
+          
           // 计算 object-fit: cover 效果
           const imgRatio = img.naturalWidth / img.naturalHeight
           const targetRatio = cardW / imgH
@@ -168,6 +173,11 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
             // 图片更高，裁剪上下
             sh = img.naturalWidth / targetRatio
             sy = (img.naturalHeight - sh) / 2
+          }
+          
+          // 检查计算结果是否有效
+          if (isNaN(sx) || isNaN(sy) || isNaN(sw) || isNaN(sh) || sw <= 0 || sh <= 0) {
+            throw new Error('图片裁剪参数无效')
           }
           
           ctx.drawImage(img, sx, sy, sw, sh, cardX, imgY, cardW, imgH)
