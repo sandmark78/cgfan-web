@@ -181,7 +181,15 @@ function normalizeDate(dateValue: any): string {
     const seconds = dateValue.getUTCSeconds();
     // 如果有时分秒分量（非全部为0），说明原本是 ISO 时间戳，保留完整 ISO
     if (hours !== 0 || minutes !== 0 || seconds !== 0) {
-      return dateValue.toISOString(); // 保留完整时间
+      // 使用 +08:00 时区输出，避免 toISOString() 转 UTC 导致排序混乱
+      const pad = (n: number) => String(n).padStart(2, '0');
+      const y = dateValue.getFullYear();
+      const m = pad(dateValue.getMonth() + 1);
+      const d = pad(dateValue.getDate());
+      const hh = pad(dateValue.getHours());
+      const mm = pad(dateValue.getMinutes());
+      const ss = pad(dateValue.getSeconds());
+      return `${y}-${m}-${d}T${hh}:${mm}:${ss}+08:00`;
     }
     // 全部为0，说明原本只是日期，只输出 YYYY-MM-DD
     return dateValue.toISOString().split('T')[0];
