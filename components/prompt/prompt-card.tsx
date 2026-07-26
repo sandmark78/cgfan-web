@@ -85,14 +85,14 @@ export function PromptCard({ prompt, priority = false }: PromptCardProps) {
   const summary = extractSummary(prompt)
 
   return (
-    <article className="glass-card group relative flex h-full flex-col overflow-hidden">
+    <article className="glass-card group relative flex h-full flex-col overflow-hidden !rounded-none">
       <Link
         href={`/prompt/${prompt.slug}`}
         className="flex flex-1 flex-col"
         aria-label={`查看 ${prompt.title} 的完整提示词`}
       >
         {/* 封面图 */}
-        <div className="relative aspect-[4/3] overflow-hidden rounded-none bg-stone-100 dark:bg-stone-800">
+        <div className="relative aspect-[4/3] overflow-hidden !rounded-none bg-stone-100 dark:bg-stone-800">
           <PromptImage src={prompt.cover} alt={prompt.title} priority={priority} />
           
           {/* 图片底部渐变遮罩 - 让徽章更清晰 */}
@@ -115,9 +115,9 @@ export function PromptCard({ prompt, priority = false }: PromptCardProps) {
         </div>
 
         {/* 内容区 */}
-        <div className="flex flex-1 flex-col justify-between p-4">
+        <div className="flex flex-1 flex-col justify-between p-4 min-w-0">
           {/* 标题 */}
-          <div>
+          <div className="min-w-0">
             <h3 className="mb-2 truncate whitespace-nowrap text-base font-semibold text-gray-900 dark:text-white">
               {prompt.title}
             </h3>
