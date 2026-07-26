@@ -45,19 +45,34 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
   const handleDownload = async () => {
     setIsGenerating(true)
     try {
-      // 检查图片是否已加载
+      // 等待图片加载
+      if (!imgRef.current && prompt.cover) {
+        console.log('等待图片加载...')
+        await new Promise((resolve) => {
+          const checkImage = () => {
+            if (imgRef.current) {
+              resolve(true)
+            } else {
+              setTimeout(checkImage, 100)
+            }
+          }
+          checkImage()
+          // 超时 5 秒
+          setTimeout(() => resolve(false), 5000)
+        })
+      }
+
       if (!imgRef.current) {
-        alert('图片正在加载中，请稍后再试')
-        setIsGenerating(false)
-        return
+        console.warn('图片未加载，继续生成卡片（无图片）')
       }
 
       const canvas = document.createElement('canvas')
       const ctx = canvas.getContext('2d')
       if (!ctx) throw new Error('Canvas 2D context not available')
 
+      // 画布尺寸 600x900 (2:3 比例)
       const W = 600
-      const H = 900  // 2:3 比例
+      const H = 900
       canvas.width = W
       canvas.height = H
 
@@ -118,9 +133,10 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
 
       ctx.restore()
 
-      // 示例图区域 - 在卡片内部，无圆角
+      // 示例图区域 - 2:3 比例，在卡片内部
       const imgY = cardY + headerH
-      const imgH = 420  // 固定高度，适应布局
+      const imgW = cardW
+      const imgH = Math.floor(imgW * 3 / 2)  // 2:3 比例
       
       ctx.save()
       ctx.beginPath()
@@ -128,15 +144,29 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
       ctx.clip()
       
       ctx.fillStyle = '#f8fafc'
-      ctx.fillRect(cardX, imgY, cardW, imgH)
+      ctx.fillRect(cardX, imgY, imgW, imgH)
       
       if (imgRef.current) {
         try {
           const img = imgRef.current
-          console.log('绘制图片:', img.width, 'x', img.height, 'src:', img.src.substring(0, 50))
+          console.log('绘制图片:', img.naturalWidth, 'x', img.naturalHeight, 'src:', img.src.substring(0, 50))
           
-          // 直接绘制整张图片，不做裁剪
-          ctx.drawImage(img, cardX, imgY, cardW, imgH)
+          // 计算 object-fit: cover 效果
+          const imgRatio = img.naturalWidth / img.naturalHeight
+          const targetRatio = imgW / imgH
+          let sx = 0, sy = 0, sw = img.naturalWidth, sh = img.naturalHeight
+          
+          if (imgRatio > targetRatio) {
+            // 图片更宽，裁剪左右
+            sw = img.naturalHeight * targetRatio
+            sx = (img.naturalWidth - sw) / 2
+          } else {
+            // 图片更高，裁剪上下
+            sh = img.naturalWidth / targetRatio
+            sy = (img.naturalHeight - sh) / 2
+          }
+          
+          ctx.drawImage(img, sx, sy, sw, sh, cardX, imgY, imgW, imgH)
           console.log('图片绘制成功')
         } catch (error) {
           console.error('图片绘制失败:', error)
