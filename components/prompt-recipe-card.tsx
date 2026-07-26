@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react'
 import { PromptData } from '@/lib/prompts'
+import { getCategoryLabel } from '@/lib/category-map'
 
 interface PromptRecipeCardProps {
   prompt: PromptData
@@ -112,7 +113,7 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
 
       // 三列参数
       const params = [
-        { label: '风格', value: (prompt.tags[0] || '混合') },
+        { label: '风格', value: getCategoryLabel(prompt.category) || '混合' },
         { label: '模型', value: prompt.model },
         { label: '难度', value: prompt.difficulty === 'beginner' ? '入门' : prompt.difficulty === 'intermediate' ? '进阶' : '高级' },
       ]
@@ -268,7 +269,7 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
             <div className="rounded-lg bg-white p-3 text-center dark:bg-gray-800">
               <div className="text-xs text-gray-500 dark:text-gray-400">风格</div>
               <div className="mt-1 text-sm font-semibold text-gray-900 dark:text-white">
-                {prompt.tags.slice(0, 2).join(' · ') || '混合'}
+                {getCategoryLabel(prompt.category) || '混合'}
               </div>
             </div>
             <div className="rounded-lg bg-white p-3 text-center dark:bg-gray-800">
