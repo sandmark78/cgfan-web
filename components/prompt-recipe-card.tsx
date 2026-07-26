@@ -239,17 +239,17 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
       >
         {/* 头部 */}
         <div className="bg-gradient-to-r from-green-500 to-emerald-600 px-6 py-4 text-white">
-          <div className="flex items-center justify-between">
-            <div>
+          <div className="flex items-center justify-between gap-3">
+            <div className="min-w-0 flex-1">
               <div className="text-xs font-medium opacity-90">CGfan · Prompt Card</div>
               <div className="mt-1 truncate whitespace-nowrap text-lg font-bold">{prompt.title}</div>
             </div>
-            <div className="text-3xl">🎨</div>
+            <div className="flex-shrink-0 text-3xl">🎨</div>
           </div>
         </div>
 
         {/* 示例图 */}
-        <div className="aspect-[4/3] overflow-hidden rounded-xl bg-gray-200 dark:bg-gray-800">
+        <div className="aspect-[4/3] overflow-hidden bg-gray-200 dark:bg-gray-800">
           {prompt.cover ? (
             <img
               src={prompt.cover}
