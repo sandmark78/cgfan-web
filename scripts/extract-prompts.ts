@@ -108,19 +108,24 @@ function detectDifficulty(content: string): string {
     }
   }
   
-  // 根据内容长度调整
-  if (content.length > 1000) {
-    scores.advanced += 2;
-  } else if (content.length > 500) {
-    scores.intermediate += 2;
+  // 根据内容长度调整难度
+  const len = content.length;
+  if (len < 200) {
+    scores.beginner += 3;      // 短提示词 → 入门
+  } else if (len < 600) {
+    scores.intermediate += 2;  // 中等长度 → 进阶
+  } else if (len > 1200) {
+    scores.advanced += 3;      // 超长提示词 → 高级
+  } else if (len > 600) {
+    scores.intermediate += 1;  // 较长 → 进阶
   }
   
   // 返回得分最高的难度
   const maxDifficulty = Object.keys(scores).reduce((a, b) => scores[a] > scores[b] ? a : b);
   
-  // 如果得分都很低，默认为 intermediate
+  // 如果得分都很低，根据内容长度决定
   if (scores[maxDifficulty] === 0) {
-    return 'intermediate';
+    return len < 300 ? 'beginner' : len > 1000 ? 'advanced' : 'intermediate';
   }
   
   return maxDifficulty;

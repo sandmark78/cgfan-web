@@ -917,7 +917,7 @@
       "product",
       "branding"
     ],
-    "difficulty": "intermediate",
+    "difficulty": "advanced",
     "cover": "/images/prompts/2080222079505293519.jpg",
     "date": "Thu Jul 23 2026 08:00:00 GMT+0800 (China Standard Time)",
     "added": "2026-07-23",
@@ -962,7 +962,7 @@
       "urban-sketch",
       "建筑"
     ],
-    "difficulty": "advanced",
+    "difficulty": "intermediate",
     "cover": "/images/prompts/2080202283971944449.jpg",
     "date": "Thu Jul 23 2026 08:00:00 GMT+0800 (China Standard Time)",
     "added": "2026-07-23",
@@ -1192,7 +1192,7 @@
       "fashion",
       "editorial"
     ],
-    "difficulty": "intermediate",
+    "difficulty": "advanced",
     "cover": "/images/prompts/2080284942458872203.jpg",
     "date": "Thu Jul 23 2026 08:00:00 GMT+0800 (China Standard Time)",
     "added": "2026-07-24",
@@ -1422,7 +1422,7 @@
       "oil painting",
       "ethereal"
     ],
-    "difficulty": "advanced",
+    "difficulty": "intermediate",
     "cover": "/images/prompts/2078497116771783012.jpg",
     "date": "Sat Jul 18 2026 08:00:00 GMT+0800 (China Standard Time)",
     "added": "2026-07-24",
@@ -1491,7 +1491,7 @@
       "产品",
       "奢华"
     ],
-    "difficulty": "intermediate",
+    "difficulty": "advanced",
     "cover": "/images/prompts/2080580873620251071.jpg",
     "date": "Fri Jul 24 2026 08:00:00 GMT+0800 (China Standard Time)",
     "added": "2026-07-24",
@@ -1606,7 +1606,7 @@
       "极简",
       "工作室"
     ],
-    "difficulty": "advanced",
+    "difficulty": "intermediate",
     "cover": "/images/prompts/2080571396745486426.jpg",
     "date": "Fri Jul 24 2026 08:00:00 GMT+0800 (China Standard Time)",
     "added": "2026-07-24",
@@ -1675,7 +1675,7 @@
       "插画",
       "中文"
     ],
-    "difficulty": "intermediate",
+    "difficulty": "advanced",
     "cover": "/images/prompts/2080136792318083513.jpg",
     "date": "Thu Jul 23 2026 08:00:00 GMT+0800 (China Standard Time)",
     "added": "2026-07-23",
@@ -1828,7 +1828,7 @@
       "汉服",
       "摄影技巧"
     ],
-    "difficulty": "advanced",
+    "difficulty": "intermediate",
     "cover": "/images/prompts/prompt-1557375307.jpg",
     "date": "2026-01-23",
     "added": "2026-07-24",
@@ -2061,7 +2061,7 @@
       "油画",
       "摄影"
     ],
-    "difficulty": "advanced",
+    "difficulty": "intermediate",
     "cover": "/images/prompts/prompt-2079942715656245356.jpg",
     "date": "2026-07-23",
     "added": "2026-07-24",
@@ -2113,7 +2113,7 @@
       "写实",
       "摄影"
     ],
-    "difficulty": "advanced",
+    "difficulty": "intermediate",
     "cover": "/images/prompts/prompt-2077211623266390489.jpg",
     "date": "2026-07-23",
     "added": "2026-07-24",
@@ -2191,7 +2191,7 @@
       "3D渲染",
       "国风"
     ],
-    "difficulty": "intermediate",
+    "difficulty": "advanced",
     "cover": "/images/prompts/prompt-2058455967961067966.jpg",
     "date": "2026-07-23",
     "added": "2026-07-24",
@@ -2269,7 +2269,7 @@
       "摄影",
       "人物"
     ],
-    "difficulty": "advanced",
+    "difficulty": "intermediate",
     "cover": "/images/prompts/prompt-2078471143313592413.jpg",
     "date": "2026-07-23",
     "added": "2026-07-24",
@@ -2728,7 +2728,7 @@
       "narrative",
       "摄影"
     ],
-    "difficulty": "intermediate",
+    "difficulty": "advanced",
     "cover": "/images/prompts/2080225665706766485.jpg",
     "date": "2026-07-23",
     "added": "2026-07-24",
@@ -3004,7 +3004,7 @@
       "neon",
       "typography"
     ],
-    "difficulty": "advanced",
+    "difficulty": "intermediate",
     "cover": "/images/prompts/dao-poster-system.jpg",
     "date": "Fri Jul 24 2026 08:00:00 GMT+0800 (China Standard Time)",
     "added": "2026-07-25T17:35:00+08:00",
@@ -3257,7 +3257,7 @@
       "national-geographic",
       "cinematic"
     ],
-    "difficulty": "advanced",
+    "difficulty": "intermediate",
     "cover": "/images/prompts/riverside-willow.jpg",
     "date": "Fri Jul 24 2026 08:00:00 GMT+0800 (China Standard Time)",
     "added": "2026-07-25T20:43:00+08:00",
@@ -3326,7 +3326,7 @@
       "海报设计",
       "GPT-Image2"
     ],
-    "difficulty": "intermediate",
+    "difficulty": "advanced",
     "cover": "/images/prompts/prompt-2081019024822128648.jpg",
     "date": "2026-07-25",
     "added": "2026-07-26T15:00:00+08:00",
@@ -3349,7 +3349,7 @@
       "戏剧光影",
       "悬崖"
     ],
-    "difficulty": "advanced",
+    "difficulty": "intermediate",
     "cover": "/images/prompts/prompt-2080998968612291010.jpg",
     "date": "2026-07-25",
     "added": "2026-07-26T15:00:00+08:00",
@@ -3463,7 +3463,7 @@
       "四格布局",
       "GPT-Image2"
     ],
-    "difficulty": "intermediate",
+    "difficulty": "advanced",
     "cover": "/images/prompts/prompt-2081039363090383111.jpg",
     "date": "2026-07-25",
     "added": "2026-07-26T16:00:00+08:00",
@@ -3615,7 +3615,7 @@
       "AI绘图",
       "提示词"
     ],
-    "difficulty": "intermediate",
+    "difficulty": "beginner",
     "cover": "/images/prompts/prompt-2080902363074933101.jpg",
     "date": "Sat Jul 25 2026 08:00:00 GMT+0800 (China Standard Time)",
     "added": "2026-07-26T16:02:00+08:00",
@@ -3656,7 +3656,7 @@
       "AI绘图",
       "提示词"
     ],
-    "difficulty": "intermediate",
+    "difficulty": "beginner",
     "cover": "/images/prompts/prompt-2081008714308538761.jpg",
     "date": "Sat Jul 25 2026 08:00:00 GMT+0800 (China Standard Time)",
     "added": "2026-07-26T16:02:00+08:00",
