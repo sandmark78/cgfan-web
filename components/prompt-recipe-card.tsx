@@ -19,7 +19,10 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
 
   // 预加载图片
   useEffect(() => {
-    if (!prompt.cover) return
+    if (!prompt.cover) {
+      console.warn('没有 cover 图片路径')
+      return
+    }
     
     // 构建完整的图片 URL（同域不需要 crossOrigin）
     const imgUrl = prompt.cover.startsWith('http') 
@@ -27,11 +30,13 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
       : `${window.location.origin}${prompt.cover}`
     
     console.log('开始加载图片:', imgUrl)
+    console.log('prompt.cover:', prompt.cover)
     
     const img = new Image()
     // 不设置 crossOrigin，同域图片不需要
     img.onload = () => { 
       console.log('图片加载成功:', img.naturalWidth, 'x', img.naturalHeight)
+      console.log('图片 URL:', img.src)
       imgRef.current = img
       setImageLoaded(true)
     }
@@ -133,10 +138,9 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
 
       ctx.restore()
 
-      // 示例图区域 - 2:3 比例，在卡片内部
+      // 示例图区域 - 在卡片内部，无圆角
       const imgY = cardY + headerH
-      const imgW = cardW
-      const imgH = Math.floor(imgW * 3 / 2)  // 2:3 比例
+      const imgH = 420  // 固定高度，适应布局
       
       ctx.save()
       ctx.beginPath()
@@ -144,7 +148,7 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
       ctx.clip()
       
       ctx.fillStyle = '#f8fafc'
-      ctx.fillRect(cardX, imgY, imgW, imgH)
+      ctx.fillRect(cardX, imgY, cardW, imgH)
       
       if (imgRef.current) {
         try {
@@ -153,7 +157,7 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
           
           // 计算 object-fit: cover 效果
           const imgRatio = img.naturalWidth / img.naturalHeight
-          const targetRatio = imgW / imgH
+          const targetRatio = cardW / imgH
           let sx = 0, sy = 0, sw = img.naturalWidth, sh = img.naturalHeight
           
           if (imgRatio > targetRatio) {
@@ -166,7 +170,7 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
             sy = (img.naturalHeight - sh) / 2
           }
           
-          ctx.drawImage(img, sx, sy, sw, sh, cardX, imgY, imgW, imgH)
+          ctx.drawImage(img, sx, sy, sw, sh, cardX, imgY, cardW, imgH)
           console.log('图片绘制成功')
         } catch (error) {
           console.error('图片绘制失败:', error)
