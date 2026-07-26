@@ -20,13 +20,13 @@ export interface DailyFeature {
 export const dailyFeatures: DailyFeature[] = [
   {
     date: '2026-07-26',
-    slug: 'prompt-2080985898653565196',
+    slug: 'prompt-2081167617126195280',
     curatorNote:
-      'AI 小说封面生成框架。这个 prompt 的精髓在于让 AI 先理解故事内核，再提取情绪和视觉符号。输入书名、类型、故事梗概，输出完全不同的封面风格——同一个框架，四种完全不同的视觉语言。',
-    highlight: '让 AI 理解故事，再设计封面',
-    technique: '故事理解 · 情绪提取 · 视觉符号',
-    tip: '关键不是直接描述封面样式，而是先让 AI 理解故事的核心冲突和情绪基调。用 [CORE MOOD] 和 [VISUAL STYLE] 字段引导 AI 从故事内核出发设计视觉。',
-    tryChange: '把 [GENRE] 从 "psychological mystery" 换成 "coming-of-age romance"，整个封面的色调和构图会完全不同',
+      '3D 渲染的东方意境——窗边读纸山水，纸上的山水与窗外远山没有边界。这个 prompt 的精髓在于"虚实结合"：窗框是现实与幻想的边界，纸上的画与窗外的景在视觉上无缝衔接。3D 渲染的物理真实感（光影、材质、景深）与中国传统山水画的诗意留白完美融合。',
+    highlight: '虚实之间，窗纸即山水',
+    technique: '画框构图 · 虚实结合 · 新中式3D',
+    tip: '要实现"纸上山水与窗外远山无缝衔接"的效果，关键在于用 "transition" 替代 "merge"——前者让 AI 理解渐变过渡，后者容易产生生硬的拼接痕迹。',
+    tryChange: '把 "paper" 换成 "silk scroll"，材质从纸的哑光变为绢的柔光，整个画面的温润感会提升一个档次',
   },
   {
     date: '2026-07-25',
