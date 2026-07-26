@@ -3756,5 +3756,257 @@
     "negativePrompt": "",
     "parameters": {},
     "mtime": 1785043526932.6243
+  },
+  {
+    "title": "Midjourney 8.2 + Personalised Profile",
+    "slug": "prompt-2081062240376226020",
+    "model": "Midjourney",
+    "category": "portrait",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "Midjourney",
+      "建筑"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2081062240376226020.jpg",
+    "date": "2026-07-25",
+    "added": "2026-07-26T19:46:05+08:00",
+    "source": "https://x.com/i/status/2081062240376226020",
+    "author": "James Yeung",
+    "prompt": "Midjourney 8.2 + Personalised Profile\n\nI found the joy of world building again!\nJames Yeung\n@jamesyeung18\n22h\nMidjourney v8.2\n\nWow! Trying a trusted old prompt on v8.2.  It looks even better than the --preview!\n5:01 PM · Jul 25, 2026\n2.1K\nViews\n4\n5\n70\n20\n\n===ARTICLE 1===\nOAK\n@_OAK200\n4h\nAmazing world james!!\n1\n1\n52\n\n===ARTICLE 2===\nHeather Cooper\n@HBCoop_\n15h\nVery nice!\n1\n1\n99\n\n===ARTICLE 3===\nAlban Glazman\n@alban_gz\n18h\nEven if it's better than before. \n\nIt takes so much time to train p codes 😭\n1\n1\n80",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785066365482.0972
+  },
+  {
+    "title": "I think you'll like this one @lavitx.",
+    "slug": "prompt-2081072883342676308",
+    "model": "Common",
+    "category": "3d",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "3D",
+      "3D渲染"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2081072883342676308.jpg",
+    "date": "2026-07-25",
+    "added": "2026-07-26T19:46:05+08:00",
+    "source": "https://x.com/i/status/2081072883342676308",
+    "author": "Bob - Art with a Hat",
+    "prompt": "QT your ride\n\nI think you'll like this one @lavitx.\nUnleashed\n@UnleashedAI99\nJul 25\nQT your ride\n(I wish!)\nCreated @budgetpixel\n00:05\nMade with AI\n5:43 PM · Jul 25, 2026\n545\nViews\n5\n2\n24\n2\n\n===ARTICLE 1===\nLux\n@lavitx\n17h\nAmazing render ❣️❣️\nOld bike have such charm, they go fast, want to bring you down, they don't brake 😁\nPure adrenaline without needing to go too fast 🤭💖💖\n2\n32\n\n===ARTICLE 2===\nGeorge Bates\n@live2rideahd\n10h\nVery cool!\n1\n1\n15\n\n===ARTICLE 3===\nValère Gbeze\n@valsthorus\n15h\nMade with AI\n1\n14",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785066365483.1787
+  },
+  {
+    "title": "TIME FOR UNLIMITED CREATIVITY. 🎬",
+    "slug": "prompt-2081089832944619735",
+    "model": "Common",
+    "category": "style",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "AI艺术"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2081089832944619735.jpg",
+    "date": "2026-07-25",
+    "added": "2026-07-26T19:46:05+08:00",
+    "source": "https://x.com/i/status/2081089832944619735",
+    "author": "Skipper VanderWall",
+    "prompt": "TIME FOR UNLIMITED CREATIVITY. 🎬\n\nThe greatest ideas appear when imagination has no boundaries.\n\nToday's featured creations are a reminder that every vision can become something extraordinary.\nMade with AI\n6:50 PM · Jul 25, 2026\n2.6K\nViews\n33\n7\n67\n4\n\n===ARTICLE 1===\nPrompt Dreamer\n@PromptDreamer81\n16h\n1\n15\n92\n\n===ARTICLE 2===\nZa-DaAiart\n@ZaDaaiart\n16h\n6\n27\n\n===ARTICLE 3===\nPaweł Padykuła Visuals 🎨\n@NeoSynthVisions\n16h\n5\n33",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785066365483.046
+  },
+  {
+    "title": "Prompt Studio: Street Photography Brutality",
+    "slug": "prompt-2081178581523165639",
+    "model": "Common",
+    "category": "photography",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "人像",
+      "摄影",
+      "人物"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2081178581523165639.jpg",
+    "date": "2026-07-26",
+    "added": "2026-07-26T19:46:05+08:00",
+    "source": "https://x.com/i/status/2081178581523165639",
+    "author": "Alexandra Aisling",
+    "prompt": "Prompt Studio: Street Photography Brutality\n\n[SUBJECT], black and white high contrast, harsh midday sun creating graphic shadow shapes across the body and ground, no fill light, blown highlights and crushed blacks, the image reading almost as shape and silhouette rather than portrait, fine grain, street photography brutality, beauty through elimination.\nMade with AI\n12:43 AM · Jul 26, 2026\n1.1K\nViews\n8\n4\n23\n15\n\n===ARTICLE 1===\nNyobium\n@NyobiumGames\n10h\n2\n22\n\n===ARTICLE 2===\nNyobium\n@NyobiumGames\n10h\n2\n20\n\n===ARTICLE 3===\nNyobium\n@NyobiumGames\n10h\n2\n18",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785066365482.3936
+  },
+  {
+    "title": "nobody paints the boring parts of the future.",
+    "slug": "prompt-2081234873923084558",
+    "model": "Midjourney",
+    "category": "style",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "Midjourney"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2081234873923084558.jpg",
+    "date": "2026-07-26",
+    "added": "2026-07-26T19:46:05+08:00",
+    "source": "https://x.com/i/status/2081234873923084558",
+    "author": "Vigo Zhao",
+    "prompt": "nobody paints the boring parts of the future.\n\na laundromat in orbit. a fuel stop on the red highway. an empty pool under the dome. the last train home.\n\none sref, four ordinary evenings. \n\n--midjourney v8.2\n4:27 AM · Jul 26, 2026\n519\nViews\n2\n5\n2\n\n===ARTICLE 1===\n赵北辰\n@VIgoZHAOi7s\n7h\nThis looks amazing!\n2\n8\n\n===ARTICLE 2===\nShara I Ai Video Creator\n@itsshara_ai\n14m\nNobody painting the boring parts of the future is a sharp observation.\n5",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785066365482.9204
+  },
+  {
+    "title": "Ultra-realistic cinematic close-up portrait of a beautiful y...",
+    "slug": "prompt-2081250398342455404",
+    "model": "GPT-Image2",
+    "category": "portrait",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "GPT-Image2",
+      "人像",
+      "摄影"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/prompt-2081250398342455404.jpg",
+    "date": "2026-07-26",
+    "added": "2026-07-26T19:46:05+08:00",
+    "source": "https://x.com/i/status/2081250398342455404",
+    "author": "AIwithMinal",
+    "prompt": "Ultra-realistic cinematic close-up portrait of a beautiful young woman lying peacefully among a dreamy field of wildflowers. Her long, naturally tousled dark brown hair spreads softly around her, surrounded by delicate white daisies, tiny white baby's-breath flowers, and soft peach-orange blossoms. She has warm glowing natural skin, delicate facial features, closed eyes, long eyelashes, and a joyful genuine smile showing natural white teeth. Warm golden sunlight filters through the flowers, creating beautiful dappled light and soft floral shadows across her face and neck. Dreamy romantic spring atmosphere, shallow depth of field, foreground flowers softly blurred with creamy bokeh, realistic skin texture, subtle film grain, soft warm tones, natural lighting, intimate editorial photography, cinematic composition, ultra-detailed, photorealistic, 8K, DSLR quality, 85mm lens, f/1.8, soft focus background, vertical 9:16 composition.\n5:28 AM · Jul 26, 2026\n379\nViews\n8\n1\n122\n4\n\n===ARTICLE 1===\nJack AI\n@JackAI62\n4h\nNice visuals loving it ❤️\n1\n9\n\n===ARTICLE 2===\nLONE WOLF\n@talktovardhan\n5h\nThe warm lighting really makes this one work.\n1\n10\n\n===ARTICLE 3===\nSharon Riley\n@Just_sharon7\n4h\nCaptured pure serenity in that sunlight.\n1\n16",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "GPT-Image2",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785066365482.263
+  },
+  {
+    "title": "Love these crystal glass sculptures! Great prompt.",
+    "slug": "prompt-2081281483575345442",
+    "model": "Common",
+    "category": "3d",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "3D"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2081281483575345442.jpg",
+    "date": "2026-07-26",
+    "added": "2026-07-26T19:46:05+08:00",
+    "source": "https://x.com/i/status/2081281483575345442",
+    "author": "Zephyra Leigh",
+    "prompt": "7:32 AM · Jul 26, 2026\n303\nViews\n12\n14\n3\n\n===ARTICLE 1===\nZephyra Leigh\n@ZephyraLeigh\n4h\n1.\n1\n23\n\n===ARTICLE 2===\nZephyra Leigh\n@ZephyraLeigh\n4h\n2.\n1\n19\n\n===ARTICLE 3===\nZephyra Leigh\n@ZephyraLeigh\n4h\n3.\n1\n1\n59\n\n===ARTICLE 4===\nZephyra Leigh\n@ZephyraLeigh\n4h\nPrompt 👇 \n\nA crystal glass sculpture of a [subject], carved from flawless transparent glass with subtle frosted details, dramatic light refractions, rainbow caustics, elegant reflections, displayed on a glossy black pedestal against a dark studio background.\nZephyra Leigh\n@ZephyraLeigh\n4h\nPrompt share : Crystal Glass Sculpture \n\n1\n68\n\n===ARTICLE 5===\nSoaima\n@soaima70480\n27m\nLove these crystal glass sculptures! Great prompt.\n2",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785066365481.7122
+  },
+  {
+    "title": "Postcards from places I dream of visiting ✈️",
+    "slug": "prompt-2081306869503799549",
+    "model": "Seedream",
+    "category": "product",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "Seedream",
+      "海报",
+      "风景"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/prompt-2081306869503799549.jpg",
+    "date": "2026-07-26",
+    "added": "2026-07-26T19:46:05+08:00",
+    "source": "https://x.com/i/status/2081306869503799549",
+    "author": "simeon-sanai",
+    "prompt": "Create an elegant handcrafted 3D paper quilling and layered papercraft travel poster for {DESTINATION} in the style of a premium vintage travel scrapbook. Artistically recreate the destination’s most iconic landmarks, architecture, landscapes, cultural symbols, bridges, streets, parks, monuments, and natural scenery using intricate paper quilling, precision paper cutouts, layered cardstock, embossed paper textures, rolled paper coils, and delicate handcrafted details. Arrange the landmarks into a cohesive, storybook-like composition with a sense of depth and perspective. Include charming local elements such as flowers, trees, waterways, mountains, traditional transportation, wildlife, or cultural motifs unique to the destination. Use warm golden-hour lighting, soft pastel skies, vibrant yet elegant colors, subtle shadows, and rich paper textures to enhance the handcrafted appearance. Add the destination name in large bold vintage travel-poster typography at the top. Highly detailed, premium craftsmanship, whimsical, colorful, nostalgic, editorial-quality travel art, ultra-high resolution, vertical poster composition.\nMade with AI\n9:13 AM · Jul 26, 2026\n543\nViews\n22\n3\n28\n5\n\n===ARTICLE 1===\nAqsa\n@Aqsahere_\n1h\nSuch a dreamy place\n1\n1\n11\n\n===ARTICLE 2===\nAyesha Afzal\n@ayeshaafzal55\n1h\nKeep growing\n1\n5\n\n===ARTICLE 3===\nZar⭕on\n@Xaroon_x\n36m\nBeautiful hand crafted 3D paper images\n1\n1\n4",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Seedream",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785066365483.3306
+  },
+  {
+    "title": "The last great wilderness, illustrated one sketch at a time....",
+    "slug": "prompt-2081307298325217321",
+    "model": "Gemini",
+    "category": "product",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "风景",
+      "3D",
+      "旅行"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2081307298325217321.jpg",
+    "date": "2026-07-26",
+    "added": "2026-07-26T19:46:05+08:00",
+    "source": "https://x.com/i/status/2081307298325217321",
+    "author": "WeWant Mars",
+    "prompt": "The last great wilderness, illustrated one sketch at a time. 🧊✨\n\n   Created with nano banana pro on @openart_ai \n\nPrompt : []\n\n                     Create a **hand-drawn vintage travel journal illustration** of **Antartica** using detailed black ink sketches with vibrant **[different colours]** watercolor highlights on a clean white paper background. Feature the country's most iconic landmarks, architecture, landscapes, cultural symbols, traditional foods, local transport, artifacts, and famous destinations arranged as a balanced travel scrapbook with handwritten labels, signposts, checklists, stamps, and decorative doodles. Include a stylized country title with a short tagline at the top, subtle watercolor splashes, and authentic local details that capture the nation's culture and charm in an elegant, artistic travel sketchbook style\n9:15 AM · Jul 26, 2026\n180\nViews\n16\n1\n23\n2\n\n===ARTICLE 1===\nkawasho_AI\n@kawasho_web\n2h\nThis series is becoming more and more amazing🥰❄️ I love how Antarctica's wildlife, landscapes, and exploration spirit are all beautifully captured on a single journal page ✨\n1\n2\n24\n\n===ARTICLE 2===\nMaria\n@thisismariaa25\n1h\nAntarctica's icy landscapes rendered in warm watercolor tones create such a beautiful visual contrast. The blend of cool scenery and warm artistic textures gives the whole piece a unique, dreamlike atmosphere. ✨\n1\n1\n16\n\n===ARTICLE 3===\nAbkr Sadiq\n@abs_uiux\n1h\nThe vintage sketchbook style, the emperor penguins, the humpback breach, McMurdo Station, the bucket list, even the “local bites”  every detail feels lived-in and lovingly observed.\n1\n1\n38",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785066365481.9414
+  },
+  {
+    "title": "🇵🇱 Poland | 🇺🇸 United States",
+    "slug": "prompt-2081309254158606603",
+    "model": "Common",
+    "category": "product",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "海报",
+      "旅行",
+      "写实"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/prompt-2081309254158606603.jpg",
+    "date": "2026-07-26",
+    "added": "2026-07-26T19:46:05+08:00",
+    "source": "https://x.com/i/status/2081309254158606603",
+    "author": "NoorAI",
+    "prompt": "Create a premium travel journal-style collage poster inspired by [COUNTRY/CITY] on a clean off-white or textured paper background. Place a realistic hand holding a vertical travel pass or postcard at the center, featuring a vibrant landmark or iconic street scene with local architecture, transportation, and a warm cinematic sky. Design the lower section of the pass as an authentic local transit card or travel ticket. Surround the centerpiece with elegant black-and-white hand-drawn sketches, handwritten annotations, arrows, and labels showcasing famous landmarks, cultural symbols, native wildlife, traditional costumes, folk art, local cuisine, and iconic objects from the destination. Add bold serif titles reading \"TRAVEL JOURNAL\" and \"[COUNTRY/CITY]\" at the top, with \"[COUNTRY/CITY] TYPOGRAPHY\" at the bottom. Maintain a refined editorial layout with balanced spacing, realistic textures, vintage scrapbook aesthetics, high-detail line art, and a harmonious mix of monochrome illustrations and a single colorful focal point for a premium travel poster look.\n9:22 AM · Jul 26, 2026\n449\nViews\n16\n2\n34\n9\n\n===ARTICLE 1===\nLaraib Fatima\n@AiwithLariab\n1h\nLove how the travel ticket turns the whole design into a story instead of just a poster\n9\n\n===ARTICLE 2===\nSnow\n@iamrealsnow\n1h\nbeautiful place\n6\n\n===ARTICLE 3===\nSairah\n@Sairah_0\n53m\nSuper creative images\n5",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785066365482.7896
   }
 ]
