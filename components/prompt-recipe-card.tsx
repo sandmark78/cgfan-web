@@ -17,26 +17,34 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
   const [imageLoaded, setImageLoaded] = useState(false)
   const imgRef = useRef<HTMLImageElement | null>(null)
 
-  // 预加载图片
+  // 预加载图片 - 使用页面上已经显示的图片
   useEffect(() => {
     if (!prompt.cover) {
       console.warn('没有 cover 图片路径')
       return
     }
     
-    // 构建完整的图片 URL（同域不需要 crossOrigin）
+    // 查找页面上已经显示的图片元素
+    const pageImg = document.querySelector(`img[src*="${prompt.slug}"]`) as HTMLImageElement
+    
+    if (pageImg && pageImg.complete && pageImg.naturalWidth > 0) {
+      console.log('使用页面上已加载的图片')
+      imgRef.current = pageImg
+      setImageLoaded(true)
+      return
+    }
+    
+    // 如果页面上没有，则加载原始图片
     const imgUrl = prompt.cover.startsWith('http') 
       ? prompt.cover 
       : `${window.location.origin}${prompt.cover}`
     
     console.log('开始加载图片:', imgUrl)
-    console.log('prompt.cover:', prompt.cover)
     
     const img = new Image()
-    // 不设置 crossOrigin，同域图片不需要
+    img.crossOrigin = 'anonymous' // 允许跨域访问
     img.onload = () => { 
       console.log('图片加载成功:', img.naturalWidth, 'x', img.naturalHeight)
-      console.log('图片 URL:', img.src)
       imgRef.current = img
       setImageLoaded(true)
     }
