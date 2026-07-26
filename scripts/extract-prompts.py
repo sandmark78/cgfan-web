@@ -295,7 +295,7 @@ def main():
     difficulty_stats = {}
     
     for prompt in all_prompts:
-        model = prompt.get('model', 'Unknown')
+        model = prompt.get('model', 'Common')
         difficulty = prompt.get('difficulty', 'Unknown')
         
         model_stats[model] = model_stats.get(model, 0) + 1
