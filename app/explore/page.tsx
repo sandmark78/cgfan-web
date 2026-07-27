@@ -1,6 +1,5 @@
 import { getAllPrompts, getAllCategories, getAllTags, getPromptsByCategory, getPromptsByTag } from '@/lib/prompts'
-import { InfiniteGrid } from '@/components/infinite-grid'
-import { PromptGrid } from '@/components/prompt/prompt-grid'
+import { PromptCard } from '@/components/prompt/prompt-card'
 import { getCategoryLabel } from '@/lib/category-map'
 import Link from 'next/link'
 import type { Metadata } from 'next'
@@ -64,15 +63,16 @@ export async function generateMetadata({
   return { title, description, alternates: { canonical }, openGraph: { title: `${title} | CGfan`, description } }
 }
 
-const PAGE_SIZE = 20
+const PAGE_SIZE = 100
 
 export default async function ExplorePage({
   searchParams,
 }: {
-  searchParams: Promise<{ category?: string; tag?: string; q?: string; model?: string; difficulty?: string }>
+  searchParams: Promise<{ category?: string; tag?: string; q?: string; model?: string; difficulty?: string; page?: string }>
 }) {
   const params = await searchParams
-  const { category, tag, q, model, difficulty } = params
+  const { category, tag, q, model, difficulty, page } = params
+  const currentPage = Math.max(1, parseInt(page || '1', 10))
 
   const categories = getAllCategories()
   const tags = getAllTags()
@@ -117,11 +117,16 @@ export default async function ExplorePage({
     activeFilter = getDifficultyLabel(difficulty)
   }
 
-  const initialPrompts = prompts.slice(0, PAGE_SIZE)
+  // 计算分页
+  const totalPages = Math.ceil(prompts.length / PAGE_SIZE)
+  const startIndex = (currentPage - 1) * PAGE_SIZE
+  const endIndex = startIndex + PAGE_SIZE
+  const pagePrompts = prompts.slice(startIndex, endIndex)
 
   const buildUrl = (key: string, value: string | null) => {
     const p = new URLSearchParams()
     if (value) p.set(key, value)
+    if (currentPage > 1 && key !== 'page') p.set('page', String(currentPage))
     const s = p.toString()
     return `/explore${s ? `?${s}` : ''}`
   }
@@ -226,14 +231,28 @@ export default async function ExplorePage({
               <Link href="/explore" className="btn-primary mt-8 inline-block">浏览全部</Link>
             </div>
           ) : (
-            <InfiniteGrid
-              initialPrompts={initialPrompts}
-              category={category}
-              tag={tag}
-              q={q}
-              model={model}
-              difficulty={difficulty}
-            />
+            <>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {pagePrompts.map((prompt, index) => (
+                  <div
+                    key={prompt.slug}
+                    className="animate-fade-in"
+                    style={{ animationDelay: `${(index % 20) * 50}ms` }}
+                  >
+                    <PromptCard prompt={prompt} />
+                  </div>
+                ))}
+              </div>
+
+              {totalPages > 1 && (
+                <Pagination
+                  current={currentPage}
+                  total={totalPages}
+                  basePath="/explore"
+                  params={{ category, tag, q, model, difficulty }}
+                />
+              )}
+            </>
           )}
         </div>
       </div>
