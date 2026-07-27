@@ -19,8 +19,6 @@ author: Alexandra Aisling
 
 ## Prompt
 
-Prompt Studio: Nano Banana Pro, Passport Odyssey, in Firefly Epic 3D scene: a weathered passport lies open, its visa stamps erupting into the destinations they represent. Each ink impression becomes a portal—[CITY 1] rises in miniature from one stamp with [DETAIL 1], [CITY 2] pushes through another with [DETAIL 2], [CITY 3] manifests with [DETAIL 3]. [LANDMARK 1], [LANDMARK 2], and [LANDMARK 3] stand at different scales across the pages. Flight paths arc overhead as glowing golden trajectories w
-
 ## Negative Prompt
 
 (none provided)
