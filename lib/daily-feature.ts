@@ -20,13 +20,13 @@ export interface DailyFeature {
 export const dailyFeatures: DailyFeature[] = [
   {
     date: '2026-07-28',
-    slug: 'honeycomb-queen-gown',
+    slug: 'chinese-paper-cut-art',
     curatorNote:
-      '蜂巢女皇——把自然界的六边形几何结构转化为高定礼服语言。这个 prompt 的精髓在于"living golden honeycombs"：蜂巢不是静态装饰，而是持续生长、重塑、扩张的活体建筑。每个 cell 里 translucent honey 在阳光下的 amber 反射，配合 levitating honey droplets，让整件礼服有了呼吸感。蜜蜂 swarm 围绕而不触碰皮肤，强化了人与自然的和谐而非威胁。色彩上 warm golden sunlight 贯穿全篇，配合 enchanted forest clearing 的 volumetric rays，是大地色系+暖调的极致表达。',
-    highlight: '自然几何结构的高定转化',
-    technique: '活体材质 · 琥珀反射 · 体积光',
-    tip: '写自然材质变服装时，关键是把材质写成"活的"——"continuously growing, reshaping, and expanding like living architecture"比"made of honeycomb"多出十倍生命力。配合"translucent honey glows warmly inside each cell"让光线穿透材质，比单纯描述表面纹理高级一个维度。',
-    tryChange: '把"golden honeycombs"换成"silver frost crystals"，整件礼服从盛夏蜂巢变成凛冬冰晶，暖调大地色瞬间转为冷调极简',
+      '中式古典立体剪纸——把非遗剪纸从平面升级为三维纸雕空间。这个 prompt 的精髓在于"通用框架"设计：用【人物角色】【故事主题】【主花卉】【主色调】四个可替换参数，让同一套技法能生成无限变体。层次结构上，从人物服饰的镂空纹样（祥云、缠枝、如意）→ 头饰的纸艺转化（步摇、珠翠变镂空结构）→ 背景的场景构建（月洞门、花窗、远山），三层递进形成真正的"立体"感。光线处理是点睛之笔——"从纸雕镂空缝隙和不同纸层之间轻柔透出"，让光成为雕刻刀，比单纯描述形状高级一个维度。',
+    highlight: '非遗剪纸的三维空间转化',
+    technique: '镂空透光 · 参数化框架 · 多层纸雕',
+    tip: '写工艺类 prompt 时，不要只描述"看起来像什么"，要描述"光怎么穿过材质"。"光线从镂空缝隙透出形成自然阴影"比"精致的剪纸"多出十倍空间感。配合"浮雕厚度"和"多层空间关系"，让 AI 理解这是立体结构而非平面贴图。',
+    tryChange: '把"柔和月光、灯笼暖光"换成"正午硬光、强阴影"，整张纸雕从古典雅致变成现代极简，光线性格决定作品情绪',
   },
   {
     date: '2026-07-27',
