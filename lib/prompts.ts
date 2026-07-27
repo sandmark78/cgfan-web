@@ -14,6 +14,7 @@ export interface PromptData {
   date: string
   added: string
   source: string
+  sourceLink: string
   author: string
   prompt: string
   negativePrompt: string

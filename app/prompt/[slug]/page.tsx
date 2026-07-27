@@ -189,8 +189,8 @@ export default async function PromptDetailPage({
             <div className="flex items-center justify-between flex-wrap gap-2">
               <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
                 <span>提示词来自</span>
-                {prompt.source && (() => {
-                  const match = prompt.source.match(/x\.com\/([^/]+)\/status/);
+                {prompt.sourceLink && (() => {
+                  const match = prompt.sourceLink.match(/x\.com\/([^/]+)\/status/);
                   const username = match && match[1] !== 'i' ? match[1] : null;
                   return username ? (
                     <a
@@ -206,9 +206,9 @@ export default async function PromptDetailPage({
                   );
                 })()}
               </div>
-              {prompt.source && (
+              {prompt.sourceLink && (
                 <a
-                  href={prompt.source}
+                  href={prompt.sourceLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1 text-xs font-medium text-green-600 dark:text-green-400 hover:underline"
