@@ -20048,49 +20048,5 @@
     "prompt": "A luxury commercial product photography shot featuring a sleek matte emerald green glass bottle with a polished gold cap, placed on a reflective dark surface. The bottle is illuminated by dramatic studio lighting with soft highlights and deep shadows, creating a premium, high-end aesthetic.\n\nBackground: seamless gradient from deep charcoal to rich black, with subtle volumetric light rays adding depth.\n\nComposition: centered product, slight low-angle perspective, shallow depth of field with crisp focus on the bottle label area.\n\nStyle: high-end advertising campaign, photorealistic, 8K resolution, shot with Phase One 150MP, Hasselblad H6D color profile.\n\nMood: sophisticated, exclusive, editorial quality — reminiscent of Dior, Chanel, or Tom Ford fragrance campaigns.\n\nAvoid: cluttered backgrounds, harsh reflections, text overlays, watermarks, low resolution, oversaturated colors.",
     "negativePrompt": "",
     "parameters": {}
-  },
-  {
-    "title": "Minimalist 3D Render — Abstract Geometric Composition",
-    "slug": "minimalist-3d-render-prompt",
-    "model": "GPT-Image2",
-    "category": "3d-render",
-    "tags": [
-      "3D render",
-      "minimalist",
-      "abstract",
-      "geometric",
-      "AI prompt"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/gemnana-2753.jpg",
-    "date": "2026-07-27",
-    "source": "https://www.cgfan.com",
-    "sourceLink": "https://www.cgfan.com/prompt/minimalist-3d-render-prompt",
-    "author": "CGfan Editorial",
-    "prompt": "A minimalist 3D render featuring abstract geometric shapes floating in a serene, gradient background. The composition includes smooth spheres, perfect cubes, and elegant torus forms arranged in a balanced, asymmetrical layout.\n\nMaterials: matte ceramic textures in soft pastel colors — blush pink, sage green, cream white, and pale lavender. Each shape has subtle surface imperfections that add tactile realism.\n\nLighting: soft studio lighting with gentle shadows, creating depth without harsh contrast. Ambient occlusion adds subtle depth to contact points.\n\nBackground: seamless gradient from warm cream at the top to cool gray at the bottom, creating a sense of infinite space.\n\nStyle: contemporary digital art, reminiscent of Beeple's early work or modern design studio aesthetics. Clean, sophisticated, gallery-quality.\n\nTechnical: rendered in Cinema 4D with Octane Render, 8K resolution, subsurface scattering on materials, ray-traced reflections.\n\nComposition: rule of thirds, negative space used intentionally to create breathing room, focal point slightly off-center.\n\nMood: calm, meditative, sophisticated — perfect for modern brand identity or editorial design.\n\nAvoid: cluttered compositions, harsh shadows, oversaturated colors, text overlays, watermarks, low-poly aesthetics.",
-    "negativePrompt": "",
-    "parameters": {}
-  },
-  {
-    "title": "Retro Sci-Fi Concept Art — Blade Runner Inspired Cityscape",
-    "slug": "retro-sci-fi-concept-art-prompt",
-    "model": "GPT-Image2",
-    "category": "concept-art",
-    "tags": [
-      "concept art",
-      "sci-fi",
-      "cyberpunk",
-      "Blade Runner",
-      "AI prompt"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/gemnana-2741.jpg",
-    "date": "2026-07-27",
-    "source": "https://www.cgfan.com",
-    "sourceLink": "https://www.cgfan.com/prompt/retro-sci-fi-concept-art-prompt",
-    "author": "CGfan Editorial",
-    "prompt": "A cinematic retro-futuristic cityscape at twilight, inspired by Blade Runner and Syd Mead concept design. Massive neo-brutalist megastructures tower over narrow streets, their concrete facades illuminated by flickering neon signs in Japanese and Chinese characters.\n\nAtmosphere: heavy rain, volumetric fog, holographic advertisements floating in the air, flying vehicles with glowing thrusters weaving between buildings.\n\nLighting: dramatic chiaroscuro with warm orange neon lights contrasting against cool blue-purple ambient fog. Street-level lighting creates pools of color on wet pavement.\n\nComposition: low-angle perspective looking up at the towering architecture, with a lone figure in a trench coat standing in the foreground for scale.\n\nStyle: Syd Mead concept art meets Moebius environmental illustration. Photorealistic materials, cinematic color grading, film grain texture.\n\nTechnical: shot on Arri Alexa 65 with Panavision anamorphic lenses, Kodak Vision3 500T film stock emulation, 8K resolution.\n\nMood: dystopian yet beautiful, melancholic, awe-inspiring — capturing the essence of 1980s cyberpunk vision of the future.\n\nDetails: visible rain droplets on camera lens, lens flares from neon lights, atmospheric haze, intricate architectural details, diverse crowd of people in futuristic clothing.\n\nAvoid: clean utopian aesthetics, bright daylight, modern glass buildings, text overlays, watermarks.",
-    "negativePrompt": "",
-    "parameters": {}
   }
 ]
