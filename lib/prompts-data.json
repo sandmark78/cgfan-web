@@ -26240,5 +26240,221 @@
       "Aspect Ratio": "9:16"
     },
     "mtime": 1785156863146.808
+  },
+  {
+    "title": "地标建筑剖面解剖图",
+    "slug": "landmark-anatomy-poster",
+    "model": "GPT-Image2",
+    "category": "design",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "海报",
+      "建筑",
+      "信息图"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/prompt-2081444405781594232.jpg",
+    "date": "Sun Jul 26 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-27T21:00:00+08:00",
+    "source": "https://x.com/i/status/2081444405781594232",
+    "sourceLink": "",
+    "author": "TechieSA",
+    "prompt": "A jaw-dropping vertical infographic poster of [LANDMARK], 4:5 aspect ratio. A dramatic 3D cutaway diorama — one quarter of the structure cleanly sliced away to reveal its hidden interior: staircases, chambers, foundations, mechanisms, structural skeleton, all rendered in exquisite miniature detail.\n\nThe landmark sits on a floating slab of terrain with surrounding ground-level context (trees, tiny people, roads, water), with a cross-section of underground foundations visible below street level.\n\nBACKGROUND: A solid deep [BACKGROUND COLOR] — rich, saturated, and flat. No gradients, no sky, no texture. The color should feel like a premium museum exhibition wall. The landmark and terrain float against it with soft shadow underneath.\n\nCUTAWAY: The interior slice reveals every hidden layer — structural skeleton, floors, rooms, mechanical systems, secret spaces — rendered with obsessive detail like a luxury collectible model. Warm interior lighting glows from within the revealed sections.\n\nCALLOUTS: 8–10 thin white hairline pointer lines extending from specific interior and exterior details to short ALL-CAPS labels. Labels placed asymmetrically, never crowding each other, balanced left and right of the landmark.\n\nTITLE: The landmark's name in massive condensed bold serif uppercase across the top. Below it, the city, country, and year in small elegant letter-spaced type.\n\nBOTTOM: One single jaw-dropping stat about [LANDMARK] in enormous display numerals spanning the full width.\n\nSTYLE: Wes Anderson symmetry, product-shot precision, museum-exhibition elegance, architectural blueprint meets luxury poster design.",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "GPT-Image2",
+      "Aspect Ratio": "9:16"
+    },
+    "mtime": 1785162867309.4968
+  },
+  {
+    "title": "蜂巢女皇高定礼服",
+    "slug": "honeycomb-queen-gown",
+    "model": "Common",
+    "category": "fantasy",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "奇幻",
+      "高定",
+      "自然"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/prompt-2081700387535360404.jpg",
+    "date": "Mon Jul 27 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-27T21:00:00+08:00",
+    "source": "https://x.com/i/status/2081700387535360404",
+    "sourceLink": "",
+    "author": "Aylin",
+    "prompt": "A breathtaking queen wearing an extravagant haute couture gown made entirely from living golden honeycombs. Thousands of perfectly geometric hexagonal honeycomb cells flow seamlessly around her body, continuously growing, reshaping, and expanding like living architecture. Rich translucent honey glows warmly inside each cell, catching sunlight and creating mesmerizing amber reflections. Tiny droplets of liquid honey slowly drip and levitate before magically returning to the dress. Swarms of elegant golden honeybees gracefully orbit around her without touching her skin, enhancing the sense of harmony rather than danger.\n\nThe gown features dramatic sculptural shoulders, a massive cathedral-length train, oversized flowing sleeves, intricate corset details, and layered honeycomb structures that bloom like flowers. Delicate beeswax textures blend with polished golden surfaces, creating an extraordinary balance between organic nature and luxurious fashion.\n\nHer crown is crafted from intertwined honeycomb structures, crystallized honey, golden beeswax roses, and luminous amber gemstones. Her jewelry consists of honey-colored diamonds, amber crystals, and tiny floating hexagonal ornaments.\n\nWarm golden sunlight pours through an enchanted forest clearing filled with flowering trees, creating cinematic volumetric rays. Thousands of glowing pollen particles, tiny floating honey droplets, and shimmering golden dust fill the atmosphere.\n\nHyperrealistic, ultra-detailed haute couture, fantasy fashion editorial, luxurious nature-inspired design, photorealistic, cinematic lighting, extraordinary textures, intricate macro details, 8K, Unreal Engine quality, masterpiece, award-winning fashion photography, Vogue editorial, magical realism.",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common",
+      "Aspect Ratio": "9:16"
+    },
+    "mtime": 1785162867310.164
+  },
+  {
+    "title": "古寺猫咪少女",
+    "slug": "ancient-cat-girl",
+    "model": "Common",
+    "category": "portrait",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "人像",
+      "古风",
+      "猫咪"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2081011752192585744.jpg",
+    "date": "Sat Jul 25 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-27T21:00:00+08:00",
+    "source": "https://x.com/i/status/2081011752192585744",
+    "sourceLink": "",
+    "author": "VoxCat",
+    "prompt": "竖幅中近景古风人像，少女蹲在青石板古寺地面，指尖轻触橘色条纹虎斑猫咪头顶；少女穿浅杏色宋制改良汉服，薄纱罩衫带浅粉小花刺绣，白色褶皱内衬，浅棕布艺飘带，双麻花辫发髻点缀浅粉小花；柔和阴天漫射自然光，无硬阴影，背景大面积虚化暖姜黄色古墙面；清透伪素颜淡妆，细柔浅棕眉，水润橘红玻璃唇，眼神清澈直视镜头，表情天真柔软；画面左右平衡构图，暖调低饱和胶片质感，柔和虚化背景，清晰保留发丝、布料纹理、猫咪绒毛，治愈清新国风写真，8K高清，细腻写实，温润柔和氛围。",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common",
+      "Aspect Ratio": "9:16"
+    },
+    "mtime": 1785162867309.9517
+  },
+  {
+    "title": "希腊海岛蓝色礼服时装大片",
+    "slug": "greek-island-fashion",
+    "model": "GPT-Image2",
+    "category": "portrait",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "人像",
+      "时装",
+      "地中海"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2081681005669154964.jpg",
+    "date": "Mon Jul 27 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-27T21:00:00+08:00",
+    "source": "https://x.com/i/status/2081681005669154964",
+    "sourceLink": "",
+    "author": "ToroJushiAi",
+    "prompt": "一位年轻成年东亚女性行走在希腊海岛风格的白色村落窄巷中，画面为完整全身构图。人物位于中央略偏右，身体侧向画面右方，正处于大步向前的瞬间：前腿大幅伸向右侧，后腿自然蹬地，步伐有力量且符合真实重力。上半身挺拔，肩膀放松，双臂自然垂落并随步伐轻微摆动。头部微微抬起并转向画面右上方，目光看向远处，不直视镜头，神情冷静、自信、克制，具有高级时装模特气场。\n\n她有精致鹅蛋脸、杏仁形深棕眼睛、自然细眉、纤细鼻梁和低饱和裸红色嘴唇。妆容精致但轻薄，肤色白皙偏暖，保留真实毛孔、细小绒毛、自然肤色变化与阳光高光。深棕黑色长发自然披散，带柔和大波浪，被海风向画面左侧吹起。佩戴小巧金色耳环。\n\n她穿一件高饱和钴蓝色高级定制短礼服，高立领、无袖、修身腰线、立体不对称裹身裙结构；裙后连接极长的大幅拖尾披风，厚实丝缎或高级哑光绉缎材质，随风向画面左侧大面积展开，形成强烈动态曲线。脚穿同色钴蓝色尖头细高跟露跟鞋。\n\n环境为米克诺斯风格建筑：纯白石灰墙、窄巷、白色石阶、深钴蓝门窗、蓝色外楼梯和木质横梁。天空纯净深蓝，地面为不规则浅灰白石板。采用强烈正午地中海阳光，从画面左上方照射，形成清晰硬阴影、高反差白墙和饱和蓝色层次。\n\n摄影风格：28mm或35mm广角镜头，低机位略微仰拍，镜头高度约膝盖，f/5.6，中深景深，人物和建筑均清晰，真实广角透视、准确腿部比例、真实布料物理运动、轻微ISO 100颗粒，高级Vogue地中海时装广告，photorealistic。",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "GPT-Image2",
+      "Aspect Ratio": "9:16"
+    },
+    "mtime": 1785162867310.2637
+  },
+  {
+    "title": "新中式绿白洛丽塔COS",
+    "slug": "lolita-green-garden",
+    "model": "Common",
+    "category": "portrait",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "人像",
+      "洛丽塔",
+      "新中式"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2081721718348124285.jpg",
+    "date": "Mon Jul 27 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-27T21:00:00+08:00",
+    "source": "https://x.com/i/status/2081721718348124285",
+    "sourceLink": "",
+    "author": "VoxCat",
+    "prompt": "9:16竖版真人 COS 写真，成年女性角色，日系清透少女写真风格，绿白配色洛丽塔服饰。\n\n角色坐在室内窗边或露台区域，采用高机位俯拍视角，镜头略微倾斜，近距离半身到大腿构图。人物身体自然放松坐姿，双腿交叠伸向画面前方，形成明显前景透视延伸；一只手轻抬靠近脸侧，另一只手自然搭在胸前或裙摆位置，姿态慵懒、优雅、带轻微俏皮感。\n\n角色拥有黑色齐刘海长发，柔顺直发自然垂落，侧边佩戴白色花朵发饰与精致金属挂饰。妆容为日系偶像风，白皙通透皮肤，淡粉腮红，红色瞳妆，清澈大眼，柔和微笑表情，气质甜美又带一点清冷感。\n\n服装为绿色 × 白色 Lolita 改良礼服：翠绿色荷叶边披肩袖，白色蕾丝内搭，黑色胸前装饰区域，金色复古徽章与精致饰品点缀，层叠白色裙摆，大面积蕾丝、褶皱、花边结构，融合 Gothic Lolita 与东方少女审美。\n\n场景为现代中式建筑露台或庭院空间，黑色桌面、白色杯具、浅色石柱、远处绿色植被背景，环境干净简约。自然阴天柔光，高曝光清透效果，大光圈浅景深，背景柔和虚化。\n\n整体视觉：日系真人 COS 摄影 × 清透少女写真 × 高级 Lolita 时装大片 × 新中式生活感。色彩：高亮度低饱和绿色、纯白、黑色点缀，冷暖平衡，通透空气感，柔和胶片质感。镜头语言：手机广角自拍感结合时尚写真摄影，轻微广角畸变，近距离亲密视角。\n\n左上角加入简洁品牌图形logo，右下角加入小签名voxCAT。高清真人摄影质感，细腻皮肤，准确手部结构，稳定人物比例，高细节。",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common",
+      "Aspect Ratio": "9:16"
+    },
+    "mtime": 1785162867309.0415
+  },
+  {
+    "title": "酒红丝绒新中式旗袍",
+    "slug": "velvet-chinese-cheongsam",
+    "model": "Common",
+    "category": "portrait",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "人像",
+      "旗袍",
+      "新中式"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2081719752322592839.jpg",
+    "date": "Mon Jul 27 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-27T21:00:00+08:00",
+    "source": "https://x.com/i/status/2081719752322592839",
+    "sourceLink": "",
+    "author": "VoxCat",
+    "prompt": "竖幅中全身棚拍人像，年轻女生穿酒红色丝绒挂脖短款改良旗袍，立领中式盘扣，胸前镂空高开叉；黑色蕾丝花边过膝丝袜，大腿金属束带；盘发搭配大朵红色绒花，佩戴小金耳钉；右手手持黑金骨架金色折扇，桌面摆放鎏金金元宝；背景是印满行书毛笔字的米白色宣纸墙面；柔和室内柔光箱布光，正面柔光补面，侧光勾勒丝绒面料光泽；浓艳新中式妆容，上扬柳叶眉，红棕眼影，正红哑光红唇，面中细闪高光；身体侧倾S曲线站姿，直视镜头，慵懒妩媚明艳表情；红金撞色高饱和暖调，复古胶片质感，清晰丝绒、蕾丝、金属道具纹理，新中式性感国风写真，8K细腻写实。",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common",
+      "Aspect Ratio": "9:16"
+    },
+    "mtime": 1785162867309.8523
+  },
+  {
+    "title": "中式古典立体剪纸通用提示词",
+    "slug": "chinese-paper-cut-art",
+    "model": "Common",
+    "category": "style",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "剪纸",
+      "非遗",
+      "中式"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2081361095227523438.jpg",
+    "date": "Sun Jul 26 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-27T21:00:00+08:00",
+    "source": "https://x.com/i/status/2081361095227523438",
+    "sourceLink": "",
+    "author": "九尾狐-FoxFairy🦊",
+    "prompt": "以【人物角色】为核心，创作一幅精致唯美、层次丰富的东方古典立体剪纸艺术作品。\n\n整体融合中国非遗剪纸、精细镂空纸雕、多层叠纸艺术、工笔重彩、戏曲美学与古典园林意境，呈现华丽细腻、清雅梦幻、富有东方韵味的收藏级艺术质感。画面必须具有明显的纸张材质、镂空边缘、浮雕厚度与多层空间关系。\n\n【人物角色】位于画面视觉中心，采用全身竖版构图，人物比例修长协调，姿态优雅舒展，动作轻盈灵动。人物手持【团扇/油纸伞/花枝/长剑/琵琶/灯笼】，神态含蓄柔美，五官精致秀丽。\n\n人物服饰保留鲜明的东方传统文化特征。宽袖、裙摆、披帛与飘带层层展开，向四周自然翻卷、旋转和延伸。服装边缘融入细密精巧的镂空剪纸纹样，包括祥云纹、缠枝花卉纹、如意纹、莲花纹、蝴蝶纹与传统吉祥纹样。\n\n头饰融合【花钿/步摇/珠翠/金丝/花卉/流苏】等元素，并转化为纤细精巧的镂空纸艺结构。\n\n背景围绕【故事主题】展开，构建层层递进的东方古典纸雕场景。可加入【圆月、月洞门、亭台楼阁、拱桥、花窗、湖面、远山、古树、祥云、灯笼、庭院】等元素。\n\n以【主花卉】作为主要装饰元素，如牡丹、梅花、荷花、桃花、桂花、兰花或山茶花。整体以【主色调】为核心，搭配象牙白、米杏色、浅金色、胭脂红、浅粉色、青绿色、雾青色、黛蓝色与香槟金等低饱和东方色彩。\n\n使用柔和月光、灯笼暖光与环境微光，让光线从纸雕镂空缝隙和不同纸层之间轻柔透出，形成自然阴影、柔和光晕和清晰浮雕厚度。\n\n可替换参数：人物角色、身份、故事主题、手持道具、主花卉、主色调、主题场景。",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common",
+      "Aspect Ratio": "9:16"
+    },
+    "mtime": 1785162867310.0562
+  },
+  {
+    "title": "错觉艺术城市海报",
+    "slug": "optical-illusion-city-sql",
+    "model": "Common",
+    "category": "style",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "错觉艺术",
+      "城市",
+      "海报"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/prompt-2081674958527225877.jpg",
+    "date": "Mon Jul 27 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-27T21:00:00+08:00",
+    "source": "https://x.com/i/status/2081674958527225877",
+    "sourceLink": "",
+    "author": "Gadgetify",
+    "prompt": "2x2 grid, 16:9, do this for european cities: -- input: $ subject create temp view subject_analysis as select extract_silhouette(:subject) as silhouette, infer_internal_rhythm(:subject) as rhythm, infer_motion_or_force(:subject) as flow, infer_landmark_forms(:subject) as structures, infer_focal_accent(:subject) as accent_zone; create temp view optical_field as select generate_optical_illusion_art_surface( flow, patterns = array[ 'radial black-white stripes', 'concentric target rings', 'checkerboard distortion', 'wavy contour ribbons', 'perspective tunnel lines', 'warped grid fields' ], intensity = 'high but readable' ) as field from subject_analysis; create temp view subject_world as select convert_to_graphic_architecture( silhouette, structures, style = 'monochrome city/object/landscape built from stripes and hard vector shapes', rule = 'subject must remain recognizable as the dominant form' ) as subject_construct from subject_analysis; create temp view red_layer as select apply_single_accent( accent_zone, color = 'pure red', forms = array['sun disk','signal light','window blocks','signage','small vehicles','symbolic mark'], restraint = '5 to 10 percent of image only' ) as red_accent from subject_analysis; render optical_field.field as background_and_ground, subject_world.subject_construct center, red_layer.red_accent on_top with palette = 'pure black, pure white, tiny gray, controlled red accent', camera = 'wide graphic perspective, poster-flat but spatially dizzying', style = 'hypnotic op-art city poster'; -- output rules: -- 1. subject becomes an optical-illusion environment or icon. -- 2. every surface is rebuilt from stripes, rings, waves, grids, or checker fields. -- 3. use one red accent as the visual hook. -- 4. make depth feel warped, impossible, and hypnotic. -- 5. keep the subject readable despite visual distortion. -- 6. avoid soft painterly shading.",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common",
+      "Aspect Ratio": "9:16"
+    },
+    "mtime": 1785162867309.7488
   }
 ]
