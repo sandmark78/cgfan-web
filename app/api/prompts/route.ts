@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { getAllPrompts } from '@/lib/prompts'
 
 export const runtime = 'edge'
+export const revalidate = 0  // 禁用缓存，每次请求都读取最新数据
 
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams
@@ -56,5 +57,9 @@ export async function GET(request: NextRequest) {
     total,
     totalPages,
     hasMore: page < totalPages,
+  }, {
+    headers: {
+      'Cache-Control': 'public, max-age=0, s-maxage=10, stale-while-revalidate=59',
+    },
   })
 }
