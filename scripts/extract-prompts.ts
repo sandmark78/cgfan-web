@@ -326,8 +326,8 @@ function parseMarkdownFile(filePath: string): PromptData | null {
       date: String(frontmatter.date || ''),
       added: normalizeDate(frontmatter.added || frontmatter.date || ''), // 统一 YYYY-MM-DD 格式
       source: frontmatter.source || '',
-      sourceLink: frontmatter.sourceLink || '',
-      author: frontmatter.author || frontmatter.source || 'Unknown',
+      sourceLink: frontmatter.sourceLink || (frontmatter.source && frontmatter.source.startsWith('http') ? frontmatter.source : ''),
+      author: frontmatter.author || 'Unknown',
       prompt: cleanedPrompt,
       negativePrompt: negativePrompt && negativePrompt !== '(none provided)' ? negativePrompt : '',
       parameters
