@@ -34,29 +34,28 @@ export function PromptTextBlock({ text, maxLines = 10 }: PromptTextBlockProps) {
   return (
     <div className="relative">
       {/* 顶部工具栏 */}
-      <div className="mb-3 flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
-        <span>{charCount.toLocaleString()} 字符 · 约 {readTime} 分钟</span>
+      <div className="mb-3 flex items-center justify-end">
         <button
           onClick={handleCopy}
-          className={`inline-flex items-center gap-1 rounded-full px-3 py-1 transition-colors ${
+          className={`inline-flex items-center gap-1.5 rounded-full px-4 py-1.5 text-sm font-medium transition-all ${
             copied
-              ? 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400'
-              : 'bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700'
+              ? 'bg-green-500 text-white shadow-md shadow-green-500/30'
+              : 'bg-green-600 text-white hover:bg-green-500 shadow-md shadow-green-600/20 hover:shadow-lg hover:shadow-green-500/30 dark:bg-green-700 dark:hover:bg-green-600 dark:shadow-green-700/30'
           }`}
         >
           {copied ? (
             <>
-              <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
               已复制
             </>
           ) : (
             <>
-              <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
               </svg>
-              复制
+              一键复制
             </>
           )}
         </button>
