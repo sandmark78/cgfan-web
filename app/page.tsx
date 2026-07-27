@@ -3,23 +3,44 @@ import { getAllPrompts, getAllCategories } from '@/lib/prompts'
 import { PromptGrid } from '@/components/prompt/prompt-grid'
 import { getCategoryLabel, getCategoryIcon } from '@/lib/category-map'
 import DailyFeature from '@/components/daily-feature'
+import { createClient } from '@/lib/supabase/server'
 
 export const runtime = 'edge'
 
 /**
  * 首页 - 绿色 + 奶白 + 毛玻璃风格
  */
-export default function Home() {
+export default async function Home() {
   const prompts = getAllPrompts()
   const categories = getAllCategories()
-  // 数据已按上传时间升序排列（最早上传在前，最新上传在后）
-  // 首页需要显示最新上传的12条，所以从末尾取
-  const latestPrompts = [...prompts].sort((a, b) => {
-    const addedA = a.added || '';
-    const addedB = b.added || '';
+  
+  // 从 Supabase 获取所有提示词的点赞数
+  const supabase = await createClient()
+  const { data: likes } = await supabase
+    .from('likes')
+    .select('prompt_slug')
+  
+  // 统计每个提示词的点赞数
+  const likeCounts: Record<string, number> = {}
+  if (likes) {
+    likes.forEach((like) => {
+      likeCounts[like.prompt_slug] = (likeCounts[like.prompt_slug] || 0) + 1
+    })
+  }
+  
+  // 给每个提示词添加点赞数
+  const promptsWithLikes = prompts.map((p) => ({
+    ...p,
+    likeCount: likeCounts[p.slug] || 0,
+  }))
+  
+  // 数据已更新，首页需要显示最新上传的12条，所以从末尾取
+  const latestPrompts = [...promptsWithLikes].sort((a, b) => {
+    const addedA = a.added || ''
+    const addedB = b.added || ''
     // 倒序：最新在前
-    if (addedA && addedB) return addedB.localeCompare(addedA);
-    return 0;
+    if (addedA && addedB) return addedB.localeCompare(addedA)
+    return 0
   }).slice(0, 12)
 
   return (
