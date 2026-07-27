@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用Gemini Nano Banana Pro打造极致写实圣诞女郎造型 #535 | Gem Nana AI 提示词库</title>
+    <meta name="description" content="本次作品利用Gemini Nano Banana Pro工具，生成一位穿着圣诞老人主题服装的女性形象，细节极为写实，呈现温暖梦幻的节日氛围。整体风格融合专业影棚摄影质感与柔和电影灯光，打造出浓郁且富有诱惑力的圣诞节视觉效果。">
+    <meta name="keywords" content="AI Prompt, Midjourney, Stable Diffusion, Gemini, DALL-E, AI image generation">
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+    <meta name="googlebot" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+    <link rel="canonical" href="https://gemnana.com/zh/case/535.html">
+    <link rel="alternate" hreflang="zh-CN" href="https://gemnana.com/zh/case/535.html">
+    <link rel="alternate" hreflang="en" href="https://gemnana.com/en/case/535.html">
+    <link rel="alternate" hreflang="x-default" href="https://gemnana.com/">
+    <link rel="stylesheet" href="/assets/style.css?v=1783832403272">
+    <style>
+      .lang-switch-link {
+        display: inline-block;
+        margin-bottom: 8px;
+        color: rgba(255,255,255,0.9);
+        text-decoration: none;
+        font-size: 12px;
+        padding: 4px 10px;
+        border: 1px solid rgba(255,255,255,0.2);
+        border-radius: 999px;
+      }
+      .lang-switch-link:hover { border-color: rgba(255,255,255,0.45); color: #fff; }
+      .case-card-link { display: block; color: inherit; text-decoration: none; }
+      .case-title,
+      .detail-title {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+      .case-title-text { flex: 1 1 auto; min-width: 0; }
+      .case-id-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 4px 10px;
+        border: 1px solid rgba(143, 177, 255, 0.4);
+        border-radius: 999px;
+        background: rgba(8, 14, 36, 0.52);
+        color: rgba(221, 232, 255, 0.96);
+        white-space: nowrap;
+        line-height: 1.2;
+      }
+      .case-id-icon { font-size: 0.95em; }
+      .case-title .case-id-pill,
+      .detail-title .case-id-pill {
+        font-size: calc(1em - 3px);
+      }
+      .fallback-badge { color: rgba(255, 183, 77, 0.95); font-size: 11px; font-weight: 500; }
+      .detail-body { max-width: 980px; }
+      .detail-block { margin-bottom: 20px; padding: 16px; border: 1px solid rgba(255,255,255,0.12); border-radius: 10px; background: rgba(10,15,35,0.45); }
+      .detail-block h3 { margin: 0 0 12px 0; color: #fff; font-size: 18px; }
+      .detail-block p { margin: 0 0 10px 0; color: rgba(255,255,255,0.86); line-height: 1.7; }
+      .detail-media-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+      .detail-media-grid img, .detail-media-grid video { width: 100%; border-radius: 8px; background: rgba(0,0,0,0.3); }
+      .source-link { color: #77c5ff; text-decoration: none; word-break: break-all; }
+      .source-link:hover { text-decoration: underline; }
+      .source-inline-link { color: inherit; text-decoration: none; border-bottom: 1px dashed rgba(125, 198, 255, 0.45); }
+      .source-inline-link:hover { color: #8cd4ff; border-bottom-color: rgba(140, 212, 255, 0.85); }
+      .prompt-head-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+      .prompt-copy-btn {
+        background: rgba(25, 225, 155, 0.18);
+        color: #dfffea;
+        border: 1px solid rgba(25, 225, 155, 0.45);
+        border-radius: 10px;
+        padding: 5px 12px;
+        font-size: 13px;
+        cursor: pointer;
+      }
+      .prompt-copy-btn:hover { background: rgba(25, 225, 155, 0.28); border-color: rgba(25, 225, 155, 0.7); }
+      .local-action-row { display: none; gap: 10px; margin-bottom: 16px; flex-wrap: wrap; }
+      .local-action-row .view-full-btn { width: auto; min-width: 180px; }
+      .pagination {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        margin: 22px 0 10px;
+        flex-wrap: wrap;
+      }
+      .pagination-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 38px;
+        height: 34px;
+        padding: 0 10px;
+        border-radius: 8px;
+        border: 1px solid rgba(139, 175, 255, 0.28);
+        color: rgba(224, 234, 255, 0.96);
+        text-decoration: none;
+        background: rgba(8, 14, 35, 0.45);
+        font-size: 13px;
+      }
+      .pagination-link:hover {
+        border-color: rgba(139, 175, 255, 0.5);
+        background: rgba(18, 28, 64, 0.78);
+      }
+      .pagination-link.active {
+        background: rgba(73, 117, 255, 0.85);
+        border-color: rgba(103, 147, 255, 0.95);
+        color: #fff;
+        pointer-events: none;
+      }
+      .pagination-ellipsis {
+        display: inline-flex;
+        align-items: center;
+        height: 34px;
+        padding: 0 4px;
+        color: rgba(200, 214, 246, 0.72);
+      }
+      .load-more-wrap {
+        margin: 12px 0 6px;
+        display: flex;
+        justify-content: center;
+      }
+      .btn-load-more {
+        border: 1px solid rgba(133, 170, 255, 0.5);
+        border-radius: 10px;
+        background: rgba(24, 37, 76, 0.88);
+        color: #eaf1ff;
+        padding: 8px 18px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      .btn-load-more:hover {
+        border-color: rgba(133, 170, 255, 0.85);
+        background: rgba(35, 53, 105, 0.95);
+      }
+      .btn-load-more:disabled {
+        opacity: 0.65;
+        cursor: not-allowed;
+      }
+    </style>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","inLanguage":"zh-CN","name":"用Gemini Nano Banana Pro打造极致写实圣诞女郎造型 #535","description":"本次作品利用Gemini Nano Banana Pro工具，生成一位穿着圣诞老人主题服装的女性形象，细节极为写实，呈现温暖梦幻的节日氛围。整体风格融合专业影棚摄影质感与柔和电影灯光，打造出浓郁且富有诱惑力的圣诞节视觉效果。","url":"https://gemnana.com/zh/case/535.html","isPartOf":{"@type":"WebSite","name":"Gem Nana","url":"https://gemnana.com"}}</script>
+  
+</head>
+<body class="layout-sidebar">
+
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1 class="logo">📚 Gem Nana</h1>
+        <p class="tagline">AI 提示词收藏库</p>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="/zh/index.html" class="nav-item ">
+          <span class="nav-icon">🏠</span>
+          <span class="nav-text">首页</span>
+          <span class="nav-count">3030</span>
+        </a>
+        <a href="/zh/image/index.html" class="nav-item active">
+          <span class="nav-icon">📷</span>
+          <span class="nav-text">图片生成</span>
+          <span class="nav-count">2997</span>
+        </a>
+        <a href="/zh/video/index.html" class="nav-item ">
+          <span class="nav-icon">🎬</span>
+          <span class="nav-text">视频生成</span>
+          <span class="nav-count">30</span>
+        </a>
+        <a href="/zh/text/index.html" class="nav-item ">
+          <span class="nav-icon">💬</span>
+          <span class="nav-text">文字提示词</span>
+          <span class="nav-count">3</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a href="/en/case/535.html" class="lang-switch-link">English</a>
+        <a href="/settings.html" class="local-settings-link">⚙️ 设置</a>
+        <p>© 2025 Gem Nana</p>
+      </div>
+    </aside>
+  
+<main class="main-content">
+
+    <div class="page-header detail-body">
+      <nav class="breadcrumb">
+        <a href="/zh/index.html">首页</a><span>›</span>
+        <a href="/zh/image/index.html">图片生成</a><span>›</span>
+        <span>#535</span>
+      </nav>
+      <h1 class="detail-title"><span class="case-id-pill"><span class="case-id-icon" aria-hidden="true">🏷️</span><span class="case-id-text">#535</span></span><span class="case-title-text">用Gemini Nano Banana Pro打造极致写实圣诞女郎造型</span></h1>
+      <p>2025-12-14　<a class="source-inline-link" href="https://x.com/ShreyaYadav___/status/2000027682533421139" target="_blank" rel="noopener noreferrer">X / Shreya Yadav</a></p>
+      <p><a class="source-link" href="/zh/image/index.html">← 返回列表</a></p>
+    </div>
+
+    <div class="detail-body">
+      <div id="localActionRow" class="local-action-row">
+        <button class="view-full-btn" id="publishBtn" onclick="publishCurrentCase(this)">发布到公众号草稿箱</button>
+        <button class="view-full-btn" id="publishXhsImageBtn" onclick="publishCurrentCaseToXhs(this, 'image')">发布图文到小红书</button>
+        
+        <button class="view-full-btn" onclick="deleteCurrentCase()">删除该案例</button>
+      </div>
+
+      <div class="detail-block"><h3>📝 内容摘要</h3><p>本次作品利用Gemini Nano Banana Pro工具，生成一位穿着圣诞老人主题服装的女性形象，细节极为写实，呈现温暖梦幻的节日氛围。整体风格融合专业影棚摄影质感与柔和电影灯光，打造出浓郁且富有诱惑力的圣诞节视觉效果。</p></div>
+      <div class="detail-block">
+        <div class="prompt-head-row">
+          <h3>🎨 中文提示词</h3>
+          <button type="button" class="prompt-copy-btn" onclick='copyPromptText("{\r\n\"任务\": \"图像生成\",\r\n\"reference_image\": \"use_uploaded_reference_image\",\r\n\"identity_constraints\": {\r\n\"face_identity\": \"与参考图像 100%完全匹配\",\r\n\"no_facial_changes\": true,\r\n\"no_body_proportion_changes\": true\r\n},\r\n“主题”： {\r\n\"性别\": \"女性\",\r\n“头发”： {\r\n“颜色”：“深金色”，\r\n\"length\": \"长\",\r\n风格：宽松、飘逸\r\n},\r\n“表情”：“严肃而又充满诱惑力”，\r\n\"gaze_direction\": \"看向左侧\",\r\n“化妆品”： {\r\n“唇膏”: “浓红色”，\r\n“眼睛”：“浓重、轮廓分明的眼线”，\r\n风格：戏剧性\r\n}\r\n},\r\n\"姿势\": {\r\n“双手”：“抬起，轻轻抚摸两侧的头发”，\r\n“姿态”：“自然、优雅、自信”\r\n},\r\n“全套服装”： {\r\n“主题”：“圣诞老人主题”，\r\n“顶部”： {\r\n类型：无肩带胸衣，\r\n\"primary_color\": \"白色\",\r\n“细节”：“上缘饰有柔软的白色毛皮，胸部下方饰有红色布带”\r\n},\r\n“底部”： {\r\n类型：迷你裙，\r\n“材质”： “红色天鹅绒”，\r\n细节：裙摆处饰有白色毛皮滚边\r\n},\r\n“腰带”： {\r\n“颜色：黑色”，\r\n\"宽度\": \"宽\",\r\n皮带扣：金或黄铜\r\n}\r\n},\r\n“配件”： {\r\n“头饰”：“经典的红白相间圣诞帽”\r\n},\r\n“背景”： {\r\n“环境”：“喜庆的圣诞节氛围”，\r\n“细节”：“装饰着暖色灯光和金色/红色饰品的圣诞树”，\r\n景深：背景柔和模糊\r\n},\r\n\"atmosphere_effects\": {\r\n“粒子”： “微小的发光粒子或雪花状闪光”，\r\n“氛围”： “喜庆、梦幻、如梦似幻的假日氛围”\r\n},\r\n“灯光”： {\r\n“风格”：“柔和的电影灯光”，\r\n色调：温暖的节日氛围\r\n},\r\n\"camera_style\": {\r\n\"photography_type\": \"专业影棚风格摄影\",\r\n\"景深\": \"浅\",\r\n“对焦”： “主体超清晰”\r\n},\r\n“质量”： {\r\n“写实主义”: “超写实主义”\r\n“分辨率”: “高分辨率”\r\n\"detail_level\": \"极其细致，照片级真实感\"\r\n}\r\n}", this)'>📋 复制</button>
+        </div>
+        <div data-nosnippet><p>{<br>&quot;任务&quot;: &quot;图像生成&quot;,<br>&quot;reference_image&quot;: &quot;use_uploaded_reference_image&quot;,<br>&quot;identity_constraints&quot;: {<br>&quot;face_identity&quot;: &quot;与参考图像 100%完全匹配&quot;,<br>&quot;no_facial_changes&quot;: true,<br>&quot;no_body_proportion_changes&quot;: true<br>},<br>“主题”： {<br>&quot;性别&quot;: &quot;女性&quot;,<br>“头发”： {<br>“颜色”：“深金色”，<br>&quot;length&quot;: &quot;长&quot;,<br>风格：宽松、飘逸<br>},<br>“表情”：“严肃而又充满诱惑力”，<br>&quot;gaze_direction&quot;: &quot;看向左侧&quot;,<br>“化妆品”： {<br>“唇膏”: “浓红色”，<br>“眼睛”：“浓重、轮廓分明的眼线”，<br>风格：戏剧性<br>}<br>},<br>&quot;姿势&quot;: {<br>“双手”：“抬起，轻轻抚摸两侧的头发”，<br>“姿态”：“自然、优雅、自信”<br>},<br>“全套服装”： {<br>“主题”：“圣诞老人主题”，<br>“顶部”： {<br>类型：无肩带胸衣，<br>&quot;primary_color&quot;: &quot;白色&quot;,<br>“细节”：“上缘饰有柔软的白色毛皮，胸部下方饰有红色布带”<br>},<br>“底部”： {<br>类型：迷你裙，<br>“材质”： “红色天鹅绒”，<br>细节：裙摆处饰有白色毛皮滚边<br>},<br>“腰带”： {<br>“颜色：黑色”，<br>&quot;宽度&quot;: &quot;宽&quot;,<br>皮带扣：金或黄铜<br>}<br>},<br>“配件”： {<br>“头饰”：“经典的红白相间圣诞帽”<br>},<br>“背景”： {<br>“环境”：“喜庆的圣诞节氛围”，<br>“细节”：“装饰着暖色灯光和金色/红色饰品的圣诞树”，<br>景深：背景柔和模糊<br>},<br>&quot;atmosphere_effects&quot;: {<br>“粒子”： “微小的发光粒子或雪花状闪光”，<br>“氛围”： “喜庆、梦幻、如梦似幻的假日氛围”<br>},<br>“灯光”： {<br>“风格”：“柔和的电影灯光”，<br>色调：温暖的节日氛围<br>},<br>&quot;camera_style&quot;: {<br>&quot;photography_type&quot;: &quot;专业影棚风格摄影&quot;,<br>&quot;景深&quot;: &quot;浅&quot;,<br>“对焦”： “主体超清晰”<br>},<br>“质量”： {<br>“写实主义”: “超写实主义”<br>“分辨率”: “高分辨率”<br>&quot;detail_level&quot;: &quot;极其细致，照片级真实感&quot;<br>}<br>}</p></div>
+      </div>
+      <div class="detail-block">
+        <div class="prompt-head-row">
+          <h3>🎨 英文提示词</h3>
+          <button type="button" class="prompt-copy-btn" onclick='copyPromptText("Try this Christmas Look using Gemini Nano Banana Pro. Try using Gemini Nano Banana Pro to create this Christmas look.\n\n{\n  \"task\": \"image_generation\",\n  \"reference_image\": \"use_uploaded_reference_image\",\n  \"identity_constraints\": {\n    \"face_identity\": \"100% exact match to reference image\",\n    \"no_facial_changes\": true,\n    \"no_body_proportion_changes\": true\n  },\n  \"subject\": {\n    \"gender\": \"female\",\n    \"hair\": {\n      \"color\": \"dark blonde\",\n      \"length\": \"long\",\n      \"style\": \"loose, flowing\"\n    },\n    \"expression\": \"serious yet seductive\",\n    \"gaze_direction\": \"looking to the left\",\n    \"makeup\": {\n      \"lipstick\": \"intense red\",\n      \"eyes\": \"bold, well-defined eyeliner\",\n      \"style\": \"dramatic\"\n    }\n  },\n  \"pose\": {\n    \"hands\": \"raised, gently touching hair on both sides\",\n    \"posture\": \"natural, elegant, confident\"\n  },\n  \"outfit\": {\n    \"theme\": \"Santa Claus inspired\",\n    \"top\": {\n      \"type\": \"strapless bustier\",\n      \"primary_color\": \"white\",\n      \"details\": \"soft white fur trim along upper edge, red fabric band just below the bust\"\n    },\n    \"bottom\": {\n      \"type\": \"mini skirt\",\n      \"material\": \"red velvet\",\n      \"details\": \"white fur trim along the hem\"\n    },\n    \"belt\": {\n      \"color\": \"black\",\n      \"width\": \"wide\",\n      \"buckle\": \"gold or brass\"\n    }\n  },\n  \"accessories\": {\n    \"headwear\": \"classic red-and-white Santa hat\"\n  },\n  \"background\": {\n    \"environment\": \"festive Christmas setting\",\n    \"details\": \"decorated Christmas tree with warm lights and gold/red ornaments\",\n    \"depth_of_field\": \"softly blurred background\"\n  },\n  \"atmosphere_effects\": {\n    \"particles\": \"small glowing light particles or snow-like sparkles\",\n    \"mood\": \"festive, magical, dreamy holiday ambiance\"\n  },\n  \"lighting\": {\n    \"style\": \"soft cinematic lighting\",\n    \"tone\": \"warm holiday glow\"\n  },\n  \"camera_style\": {\n    \"photography_type\": \"professional studio-style photography\",\n    \"depth_of_field\": \"shallow\",\n    \"focus\": \"ultra-sharp on subject\"\n  },\n  \"quality\": {\n    \"realism\": \"ultra-realistic\",\n    \"resolution\": \"high resolution\",\n    \"detail_level\": \"extremely detailed, photorealistic\"\n  }\n}", this)'>📋 复制</button>
+        </div>
+        <div data-nosnippet><p>Try this Christmas Look using Gemini Nano Banana Pro. Try using Gemini Nano Banana Pro to create this Christmas look.</p><p>{<br>  &quot;task&quot;: &quot;image_generation&quot;,<br>  &quot;reference_image&quot;: &quot;use_uploaded_reference_image&quot;,<br>  &quot;identity_constraints&quot;: {<br>    &quot;face_identity&quot;: &quot;100% exact match to reference image&quot;,<br>    &quot;no_facial_changes&quot;: true,<br>    &quot;no_body_proportion_changes&quot;: true<br>  },<br>  &quot;subject&quot;: {<br>    &quot;gender&quot;: &quot;female&quot;,<br>    &quot;hair&quot;: {<br>      &quot;color&quot;: &quot;dark blonde&quot;,<br>      &quot;length&quot;: &quot;long&quot;,<br>      &quot;style&quot;: &quot;loose, flowing&quot;<br>    },<br>    &quot;expression&quot;: &quot;serious yet seductive&quot;,<br>    &quot;gaze_direction&quot;: &quot;looking to the left&quot;,<br>    &quot;makeup&quot;: {<br>      &quot;lipstick&quot;: &quot;intense red&quot;,<br>      &quot;eyes&quot;: &quot;bold, well-defined eyeliner&quot;,<br>      &quot;style&quot;: &quot;dramatic&quot;<br>    }<br>  },<br>  &quot;pose&quot;: {<br>    &quot;hands&quot;: &quot;raised, gently touching hair on both sides&quot;,<br>    &quot;posture&quot;: &quot;natural, elegant, confident&quot;<br>  },<br>  &quot;outfit&quot;: {<br>    &quot;theme&quot;: &quot;Santa Claus inspired&quot;,<br>    &quot;top&quot;: {<br>      &quot;type&quot;: &quot;strapless bustier&quot;,<br>      &quot;primary_color&quot;: &quot;white&quot;,<br>      &quot;details&quot;: &quot;soft white fur trim along upper edge, red fabric band just below the bust&quot;<br>    },<br>    &quot;bottom&quot;: {<br>      &quot;type&quot;: &quot;mini skirt&quot;,<br>      &quot;material&quot;: &quot;red velvet&quot;,<br>      &quot;details&quot;: &quot;white fur trim along the hem&quot;<br>    },<br>    &quot;belt&quot;: {<br>      &quot;color&quot;: &quot;black&quot;,<br>      &quot;width&quot;: &quot;wide&quot;,<br>      &quot;buckle&quot;: &quot;gold or brass&quot;<br>    }<br>  },<br>  &quot;accessories&quot;: {<br>    &quot;headwear&quot;: &quot;classic red-and-white Santa hat&quot;<br>  },<br>  &quot;background&quot;: {<br>    &quot;environment&quot;: &quot;festive Christmas setting&quot;,<br>    &quot;details&quot;: &quot;decorated Christmas tree with warm lights and gold/red ornaments&quot;,<br>    &quot;depth_of_field&quot;: &quot;softly blurred background&quot;<br>  },<br>  &quot;atmosphere_effects&quot;: {<br>    &quot;particles&quot;: &quot;small glowing light particles or snow-like sparkles&quot;,<br>    &quot;mood&quot;: &quot;festive, magical, dreamy holiday ambiance&quot;<br>  },<br>  &quot;lighting&quot;: {<br>    &quot;style&quot;: &quot;soft cinematic lighting&quot;,<br>    &quot;tone&quot;: &quot;warm holiday glow&quot;<br>  },<br>  &quot;camera_style&quot;: {<br>    &quot;photography_type&quot;: &quot;professional studio-style photography&quot;,<br>    &quot;depth_of_field&quot;: &quot;shallow&quot;,<br>    &quot;focus&quot;: &quot;ultra-sharp on subject&quot;<br>  },<br>  &quot;quality&quot;: {<br>    &quot;realism&quot;: &quot;ultra-realistic&quot;,<br>    &quot;resolution&quot;: &quot;high resolution&quot;,<br>    &quot;detail_level&quot;: &quot;extremely detailed, photorealistic&quot;<br>  }<br>}</p></div>
+      </div>
+      <div class="detail-block"><h3>📷 图片</h3><div class="detail-media-grid"><img src="/images/tweet-2000027682533421139-1.jpg" alt="用Gemini Nano Banana Pro打造极致写实圣诞女郎造型" loading="lazy"></div></div>
+      
+      
+    </div>
+
+    <script>
+      (function () {
+        const isLocal = ['localhost', '127.0.0.1', '::1'].includes(window.location.hostname);
+        if (isLocal) {
+          const row = document.getElementById('localActionRow');
+          if (row) row.style.display = 'flex';
+        }
+      })();
+
+      async function copyPromptText(text, button) {
+        const value = (typeof text === 'string' ? text : '').trim();
+        if (!value) {
+          alert("该案例暂无可展示的提示词内容。");
+          return;
+        }
+        try {
+          if (navigator.clipboard && window.isSecureContext) {
+            await navigator.clipboard.writeText(value);
+          } else {
+            const ta = document.createElement('textarea');
+            ta.value = value;
+            ta.setAttribute('readonly', '');
+            ta.style.position = 'fixed';
+            ta.style.left = '-9999px';
+            document.body.appendChild(ta);
+            ta.select();
+            document.execCommand('copy');
+            document.body.removeChild(ta);
+          }
+          if (button) {
+            const original = button.textContent;
+            button.textContent = "✅ 已复制";
+            setTimeout(() => {
+              button.textContent = original;
+            }, 1200);
+          }
+        } catch (err) {
+          alert("复制失败，请手动复制");
+        }
+      }
+
+      async function publishCurrentCase(button) {
+        if (!button) return;
+        const original = button.textContent;
+        button.disabled = true;
+        button.textContent = "发布中...";
+        try {
+          const res = await fetch('/api/wechat-publish', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ itemId: 535 })
+          });
+          const data = await res.json();
+          if (!res.ok || !data.success) {
+            throw new Error((data && (data.error || data.message)) || 'Publish failed');
+          }
+          alert((data && data.data && data.data.message) || 'OK');
+        } catch (err) {
+          alert('❌ ' + (err.message || 'Publish failed'));
+        } finally {
+          button.disabled = false;
+          button.textContent = original;
+        }
+      }
+
+      async function publishCurrentCaseToXhs(button, preferredMedia) {
+        if (!button) return;
+        const original = button.textContent;
+        button.disabled = true;
+        button.textContent = "发布到小红书中...";
+        try {
+          const res = await fetch('/api/xhs-publish', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              itemId: 535,
+              preferredMedia: preferredMedia || 'image'
+            })
+          });
+          const data = await res.json();
+          if (!res.ok || !data.success) {
+            throw new Error((data && (data.error || data.message)) || 'XHS publish failed');
+          }
+          alert((data && data.data && data.data.message) || 'OK');
+        } catch (err) {
+          alert('❌ ' + (err.message || 'XHS publish failed'));
+        } finally {
+          button.disabled = false;
+          button.textContent = original;
+        }
+      }
+
+      async function deleteCurrentCase() {
+        if (!confirm("确认删除该案例？此操作不可恢复。")) return;
+        try {
+          const res = await fetch('/api/delete-content', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ id: 535 })
+          });
+          const data = await res.json();
+          if (!res.ok || !data.success) {
+            throw new Error((data && data.error) || 'Delete failed');
+          }
+          alert("删除成功");
+          window.location.href = "/zh/image/index.html";
+        } catch (err) {
+          alert('❌ ' + (err.message || 'Delete failed'));
+        }
+      }
+    </script>
+  
+</main>
+
+    <script>
+      (function () {
+        const isLocal = ['localhost', '127.0.0.1', '::1'].includes(window.location.hostname);
+        if (isLocal) {
+          document.querySelectorAll('.local-settings-link').forEach(el => { el.style.display = 'inline-block'; });
+        }
+
+        document.addEventListener('click', function (event) {
+          const el = event.target && event.target.closest ? event.target.closest('.clickable-source[data-url]') : null;
+          if (!el) return;
+          event.preventDefault();
+          event.stopPropagation();
+          const rawUrl = (el.getAttribute('data-url') || '').trim();
+          if (!rawUrl) return;
+          window.open(rawUrl, '_blank', 'noopener,noreferrer');
+        });
+      })();
+    </script>
+  
+
+</body>
+</html>

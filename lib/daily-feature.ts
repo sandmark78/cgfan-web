@@ -19,6 +19,16 @@ export interface DailyFeature {
  */
 export const dailyFeatures: DailyFeature[] = [
   {
+    date: '2026-07-27',
+    slug: 'prompt-2081281483575345442',
+    curatorNote:
+      '水晶玻璃雕塑——光在透明材质内部的折射与反射，是 AI 生图中最难驾驭的题材之一。这个 prompt 的精髓在于用 "caustic light refraction" 和 "subsurface scattering" 两个光学关键词，让模型真正理解光如何穿过玻璃。色彩上采用冷暖对比（蓝紫 vs 琥珀），让每颗雕塑都有独立的性格。',
+    highlight: '光穿过玻璃的瞬间',
+    technique: '焦散折射 · 次表面散射 · 冷暖对比',
+    tip: '写玻璃材质时，"transparent" 太笼统。用 "caustic light refraction" 让模型计算光的折射路径，用 "subsurface scattering" 模拟光在材质内部的漫射——这两个词是玻璃质感的核武器。',
+    tryChange: '把配色从 "blue-violet + amber" 换成 "emerald + rose gold"，整组雕塑会从冷峻科技感变成奢华珠宝感',
+  },
+  {
     date: '2026-07-26',
     slug: 'prompt-2081167617126195280',
     curatorNote:

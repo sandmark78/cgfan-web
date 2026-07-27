@@ -101,13 +101,26 @@ def main():
     ]
 
     if not today_prompts:
-        print(f"⚠️  {today} 没有新收录的提示词，跳过")
-        return
-
-    # 选择最新的一条（added 时间最晚的）
-    latest = max(today_prompts, key=lambda p: p.get("added", ""))
-
-    print(f"📝 选择提示词：{latest['title']}")
+        # fallback: 选最新收录的一条（还没被用作每日一味的）
+        used_slugs = set()
+        for d in existing_dates:
+            # 从 daily-feature.ts 提取已用 slug
+            pass
+        # 直接从文件内容提取已用 slug
+        with open(DAILY_FEATURE_FILE, "r", encoding="utf-8") as f:
+            content = f.read()
+        used_slugs = set(re.findall(r"slug:\s*'([^']+)'", content))
+        
+        available = [p for p in prompts if p.get("slug", "") not in used_slugs]
+        if not available:
+            print(f"️  {today} 没有新收录的提示词，且所有提示词都已用过，跳过")
+            return
+        latest = max(available, key=lambda p: p.get("added", ""))
+        print(f"📝 今天无新收录，fallback 到最新未用提示词：{latest['title']}")
+    else:
+        # 选择最新的一条（added 时间最晚的）
+        latest = max(today_prompts, key=lambda p: p.get("added", ""))
+        print(f" 选择提示词：{latest['title']}")
     print(f"   Slug: {latest['slug']}")
     print(f"   分类: {latest.get('category', 'unknown')}")
 
