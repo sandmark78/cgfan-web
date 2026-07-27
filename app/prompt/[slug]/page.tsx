@@ -197,18 +197,36 @@ export default async function PromptDetailPage({
               <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
                 <span>提示词来自</span>
                 {prompt.sourceLink && (() => {
-                  const match = prompt.sourceLink.match(/x\.com\/([^/]+)\/status/);
-                  const username = match && match[1] !== 'i' ? match[1] : null;
-                  return username ? (
-                    <a
-                      href={`https://x.com/${username}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="font-medium text-green-600 dark:text-green-400 hover:underline"
-                    >
-                      @{username}
-                    </a>
-                  ) : (
+                  // X/Twitter 链接：提取 username，链接到主页
+                  const xMatch = prompt.sourceLink.match(/x\.com\/([^/]+)\/status/);
+                  const username = xMatch && xMatch[1] !== 'i' ? xMatch[1] : null;
+                  if (username) {
+                    return (
+                      <a
+                        href={`https://x.com/${username}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-medium text-green-600 dark:text-green-400 hover:underline"
+                      >
+                        @{username}
+                      </a>
+                    );
+                  }
+                  // Gemnana 或其他来源：显示作者名，链接到 sourceLink
+                  if (prompt.sourceLink && !prompt.sourceLink.includes('x.com') && !prompt.sourceLink.includes('twitter.com')) {
+                    return (
+                      <a
+                        href={prompt.sourceLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-medium text-green-600 dark:text-green-400 hover:underline"
+                      >
+                        {prompt.author}
+                      </a>
+                    );
+                  }
+                  // Fallback：纯文本
+                  return (
                     <span className="font-medium text-gray-900 dark:text-white">{prompt.author}</span>
                   );
                 })()}
