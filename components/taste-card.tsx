@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useState, useEffect, useRef } from 'react'
+import { useRouter } from 'next/navigation'
 import { analyzeTaste, readFavorites, FavoriteItem } from '@/lib/taste'
 import { matchPersona, Persona } from '@/lib/personas'
 
@@ -220,10 +221,13 @@ function renderCard(ctx: CanvasRenderingContext2D, data: {
 }
 
 export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClientProps) {
+  const router = useRouter()
   const [persona, setPersona] = useState<Persona | null>(null)
   const [analysis, setAnalysis] = useState<any>(null)
   const [favorites, setFavorites] = useState<FavoriteItem[]>([])
   const [isGenerating, setIsGenerating] = useState(false)
+  const [showRefreshConfirm, setShowRefreshConfirm] = useState(false)
+  const [isRefreshing, setIsRefreshing] = useState(false)
   const cardRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -240,6 +244,22 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       setPersona(matchPersona(a))
     }
   }, [isLoggedIn, serverFavorites])
+
+  const handleRefresh = () => {
+    setShowRefreshConfirm(true)
+  }
+
+  const confirmRefresh = () => {
+    setIsRefreshing(true)
+    setShowRefreshConfirm(false)
+    // Clear localStorage favorites cache for non-logged-in users
+    if (!isLoggedIn) {
+      localStorage.removeItem('cgfan_favorites')
+    }
+    // Reload page to re-fetch latest favorites from server
+    router.refresh()
+    window.location.reload()
+  }
 
   const handleDownload = async () => {
     if (!persona || !analysis) return
@@ -379,18 +399,51 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
         </div>
       </div>
 
-      <button onClick={handleDownload} disabled={isGenerating}
-        className="mx-auto flex items-center gap-2 rounded-full px-8 py-3 text-sm font-semibold text-white shadow-lg transition-all hover:shadow-xl disabled:opacity-50"
-        style={{ background: C.ink }}>
-        {isGenerating ? (
-          <><svg className="h-5 w-5 animate-spin" fill="none" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" /><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" /></svg>生成中...</>
-        ) : (
-          <><svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>下载品味卡片</>
-        )}
-      </button>
-      <div className="text-center text-xs" style={{ color: C.soft2 }}>
-        收藏更多提示词后，重新访问本页即可更新匹配结果
+      {/* 操作按钮组 */}
+      <div className="flex flex-col items-center gap-3">
+        <button onClick={handleDownload} disabled={isGenerating}
+          className="flex items-center gap-2 rounded-full px-8 py-3 text-sm font-semibold text-white shadow-lg transition-all hover:shadow-xl disabled:opacity-50"
+          style={{ background: C.ink }}>
+          {isGenerating ? (
+            <><svg className="h-5 w-5 animate-spin" fill="none" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" /><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" /></svg>生成中...</>
+          ) : (
+            <><svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>下载品味卡片</>
+          )}
+        </button>
+        <button onClick={handleRefresh} disabled={isRefreshing}
+          className="flex items-center gap-1.5 rounded-full px-5 py-2 text-xs font-medium transition-all hover:shadow-md disabled:opacity-50"
+          style={{ background: C.track, color: C.ink }}>
+          <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>
+          {isRefreshing ? '刷新中...' : '根据最新收藏重新生成'}
+        </button>
       </div>
+
+      {/* 确认弹框 */}
+      {showRefreshConfirm && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm" onClick={() => setShowRefreshConfirm(false)}>
+          <div className="mx-4 w-full max-w-sm rounded-2xl p-6 shadow-2xl" style={{ background: C.bgTop }} onClick={e => e.stopPropagation()}>
+            <div className="mb-4 text-center">
+              <div className="mx-auto mb-3 grid h-12 w-12 place-items-center rounded-full" style={{ background: C.track }}>
+                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke={C.ink}><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>
+              </div>
+              <h3 className="font-serif text-lg font-bold" style={{ color: C.inkDeep }}>重新生成美学人格？</h3>
+              <p className="mt-2 text-sm" style={{ color: C.soft }}>将基于你最新的收藏重新分析品味光谱，生成全新的人格卡片。</p>
+            </div>
+            <div className="flex gap-3">
+              <button onClick={() => setShowRefreshConfirm(false)}
+                className="flex-1 rounded-full py-2.5 text-sm font-medium transition-colors hover:opacity-80"
+                style={{ background: C.track, color: C.ink }}>
+                取消
+              </button>
+              <button onClick={confirmRefresh}
+                className="flex-1 rounded-full py-2.5 text-sm font-semibold text-white shadow-md transition-all hover:shadow-lg"
+                style={{ background: C.ink }}>
+                确认刷新
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
