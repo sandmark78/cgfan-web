@@ -26024,5 +26024,32 @@
     "negativePrompt": "",
     "parameters": {},
     "mtime": 1785152292884.6943
+  },
+  {
+    "title": "晨间浴室人像",
+    "slug": "yuki-morning-bathroom-portrait",
+    "model": "GPT-Image",
+    "category": "portrait",
+    "tags": [
+      "cinematic",
+      "photorealistic",
+      "lifestyle",
+      "morning",
+      "bathroom"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/yuki-morning-bathroom-portrait.webp",
+    "date": "Sun Jul 26 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-27T20:23:45+08:00",
+    "source": "https://x.com/i/status/2081516911645589874",
+    "sourceLink": "",
+    "author": "YUKI",
+    "prompt": "Ultra-photorealistic cinematic cozy morning lifestyle portrait of a beautiful young adult East Asian woman inside a bright minimalist bathroom.\n\nShe is standing barefoot in front of a modern bathroom vanity while casually brushing her teeth. The camera is positioned outside the bathroom, shooting through a partially opened white door, naturally framing the subject and creating a voyeuristic yet cozy home atmosphere.\n\nShe turns her upper body slightly backward over her shoulder, looking directly toward the camera with a soft, sleepy morning expression and relaxed eyes. Her posture feels candid, natural, and unposed.\n\nAppearance:\n• Young East Asian woman\n• Slim, toned figure with natural body proportions\n• Long black hair tied into a messy bun\n• Soft wispy bangs framing the forehead\n• Natural makeup\n• Realistic skin texture with visible pores\n• Warm healthy skin tone\n\nOutfit:\n• Fitted white cropped T-shirt\n• Light pastel blue cotton lounge shorts\n• Barefoot\n\nEnvironment:\n• Bright minimalist bathroom\n• Large frameless mirror above a wooden vanity\n• Soft beige wood cabinets\n• White countertop\n• Toothbrush holder, toothpaste, drinking cup neatly arranged\n• Tall frosted window allowing abundant natural morning sunlight\n• Clean Scandinavian-inspired interior\n• White fluffy bath mat\n\nAdditional subject:\nA fluffy white long-haired cat quietly sitting on the bathroom countertop beside the window, calmly looking downward, adding a peaceful morning-home feeling.\n\nComposition:\n• Vertical 9:16\n• Full body\n• Shot through the doorway\n• Door frame naturally creates foreground framing\n• Subject positioned slightly off-center\n• Cat balancing the composition\n• Mirror reflecting part of the bathroom\n• Deep perspective\n• Clean negative space\n\nLighting:\nSoft diffused morning sunlight streaming through the window, gentle highlights, realistic global illumination, subtle shadows, warm neutral color grading.\n\nCamera:\nSony A7R V\n85mm lens\nf/2.0\nISO 160\nNatural depth of field\nUltra-sharp RAW photography\nHDR\nEditorial lifestyle photography\nPhotorealistic\n8K\nNo text\nNo watermark",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "GPT-Image",
+      "Aspect Ratio": "9:16"
+    },
+    "mtime": 1785155042294.691
   }
 ]
