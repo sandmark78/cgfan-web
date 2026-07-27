@@ -20,13 +20,13 @@ export interface DailyFeature {
 export const dailyFeatures: DailyFeature[] = [
   {
     date: '2026-07-27',
-    slug: 'prompt-2081306869503799549',
+    slug: 'retro-futuristic-desert',
     curatorNote:
-      '纸艺旅行海报——把整个国家的风景浓缩在一张手工纸雕里。这个 prompt 的精髓在于 "paper quilling"（纸卷工艺）和 "layered papercraft"（分层纸雕）两个工艺关键词，让 AI 模拟真实的手工纸艺质感。暖金色光线 + 柔和粉彩天空 + 丰富的纸张纹理，营造出复古旅行剪贴簿的温润感。{DESTINATION} 是变量，可以替换成任何目的地。',
-    highlight: '把国家装进一张纸雕里',
-    technique: '纸卷工艺 · 分层纸雕 · 复古剪贴簿',
-    tip: '"paper quilling" 是纸艺的核心工艺词——它让 AI 理解纸条卷曲、层叠的立体感，比 "paper art" 精准十倍。配合 "layered cardstock" 和 "embossed paper textures"，纸张的厚度感和触感就出来了。',
-    tryChange: '把 "warm golden-hour lighting" 换成 "cold moonlight"，整张海报会从温暖的旅行记忆变成神秘的夜间探险',
+      '复古未来主义沙漠加油站——80年代肌肉车停在外星加油站，chrome 油泵反射霓虹红光，远处是冰封海洋和双月牙。这个 prompt 的精髓在于分层叙事：前景（人+车+油泵）→ 中景（沙漠公路+电线杆）→ 远景（冰封山脉+双月+外星巨构）。色彩上 deep teal 天空渐变 warm orange 日落，配合 neon red chrome 反射，是 Outrun 色板的教科书级应用。引用了 Syd Mead、Moebius、Blade Runner 三个视觉基因，让 AI 精准锁定复古科幻的调性。',
+    highlight: '外星公路上的最后一个加油站',
+    technique: 'Outrun 色板 · 分层叙事 · chrome 反射',
+    tip: '复古科幻的核武器是三个名字：Syd Mead（银翼杀手概念设计）、Moebius（环境插画）、Blade Runner（氛围）。直接写 "retro sci-fi" AI 会跑偏，但写上这三个名字，调性瞬间锁定。再配合 "Kodak Ektachrome 100 film look" 模拟胶片颗粒感，整张图就有了 80 年代科幻电影海报的质感。',
+    tryChange: '把 "deep teal sky fading into warm orange sunset" 换成 "deep purple sky with aurora borealis"，整张图会从 Outrun 暖调变成北欧冷调科幻',
   },
   {
     date: '2026-07-26',

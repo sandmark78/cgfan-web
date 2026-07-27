@@ -1,14 +1,21 @@
 ---
-title: "复古未来主义风格"
-slug: 复古
+title: "复古未来主义沙漠加油站"
+slug: retro-futuristic-desert
 model: Midjourney
-category: 科幻
-tags: ["未来"]
+category: style
+tags:
+- AI绘图
+- 提示词
+- Midjourney
+- 复古未来主义
+- 科幻
+- 电影感
 difficulty: advanced
-cover: https://x.com/i/status/2081234873923084558
+cover: /images/prompts/retro-futuristic-desert.jpg
 date: '2026-07-26'
-source: 
-author: 
+added: '2026-07-26T21:33:00+08:00'
+source: "https://x.com/i/status/2081234873923084558"
+author: "simeon-sanai"
 ---
 
 ## Prompt
@@ -30,5 +37,3 @@ Kodak Ektachrome 100 film look, analog film grain, halation, slight chromatic ab
 Ultra detailed environment, impossible scale, surreal architecture, perfect composition, dramatic perspective, center framing, symmetrical balance.
 
 photorealistic, hyper detailed, masterpiece, unreal engine, octane render, ray tracing, global illumination, 8K
-
-
