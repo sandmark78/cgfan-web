@@ -26510,5 +26510,194 @@
       "Aspect Ratio": "9:16"
     },
     "mtime": 1785171841725.2876
+  },
+  {
+    "title": "2D插画转3D微缩世界框架",
+    "slug": "2d-to-3d-miniature-world",
+    "model": "Midjourney",
+    "category": "design",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "微缩",
+      "3D",
+      "框架"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/prompt-2081756035744747968.jpg",
+    "date": "Mon Jul 27 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-28T11:00:00+08:00",
+    "source": "https://x.com/i/status/2081756035744747968",
+    "sourceLink": "https://x.com/i/status/2081756035744747968",
+    "author": "Gilbert Odera | Your AI Plug",
+    "prompt": "Create a photorealistic top-down macro photograph of an artist actively drawing intricate fine black ink lines and delicate scrollwork onto [PAPER TYPE] resting on [WOODEN SURFACE / DESK SETTING]. The flat illustration should seamlessly transition into a highly detailed 3D bas-relief miniature world emerging physically from the paper, creating a convincing illusion that the drawn artwork has come alive and broken through the page.\n\nThe central scene features [MAIN CHARACTER: AGE / GENDER / HAIR / CLOTHING / POSE], rendered as a finely sculpted miniature figurine with realistic [MATERIAL: CLAY / PAPER / FABRIC / WOOL / RESIN] textures. The character interacts with [PRIMARY OBJECT / COMPANION] and is surrounded by [ENVIRONMENT / LANDSCAPE], including intricate miniature details such as [SECONDARY ELEMENTS: TREES / FLOWERS / GEARS / CORAL / MUSHROOMS / ARCHITECTURE].\n\nIntegrate [SPECIAL MATERIAL EFFECTS: WATER DROPS / GLOWING LIGHTS / SNOW / RESIN / PAINT WASHES] naturally into the composition. Fine black ink lines should flow from the artist's drawing hand into the emerging 3D scene, creating a seamless visual bridge between 2D illustration and dimensional sculpture.\n\nUse [LIGHTING STYLE] to create soft, cinematic illumination, realistic highlights, gentle or deep shadows, and strong tactile depth. Emphasize the contrast between the flat paper surface and the raised sculptural elements, with ultra-realistic textures visible in [TEXTURE DETAILS].\n\nPhotorealistic, ultra-detailed macro photography, tactile handcrafted textures, realistic depth, shallow depth of field, cinematic composition, natural material imperfections, 8K detail, premium editorial art photography, no distortion, no extra text, no watermark --ar 1:1",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney V 8.2",
+      "Aspect Ratio": "1:1"
+    },
+    "mtime": 1785173236785.587
+  },
+  {
+    "title": "阿努比斯王座蜂群环绕",
+    "slug": "anubis-throne-bees",
+    "model": "Midjourney",
+    "category": "fantasy",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "奇幻",
+      "埃及",
+      "神话"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2081771342790324321.jpg",
+    "date": "Mon Jul 27 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-28T11:00:00+08:00",
+    "source": "https://x.com/i/status/2081771342790324321",
+    "sourceLink": "https://x.com/i/status/2081771342790324321",
+    "author": "Skipper VanderWall",
+    "prompt": "Anubis sitting on his throne with an ancient Egyptian background, surrounded by bees and symbols of death, wearing black armor with yellow details, in the style of hyper-realistic illustration, hyper-detailed, hyper-photorealistic, highly detailed, cinematic.",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney V 8.2",
+      "Aspect Ratio": "1:1"
+    },
+    "mtime": 1785173236765.1792
+  },
+  {
+    "title": "花卉巨象奇幻雕塑",
+    "slug": "floral-elephant-sculpture",
+    "model": "Common",
+    "category": "fantasy",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "奇幻",
+      "花卉",
+      "自然"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/prompt-2081733627423994038.jpg",
+    "date": "Mon Jul 27 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-28T11:00:00+08:00",
+    "source": "https://x.com/i/status/2081733627423994038",
+    "sourceLink": "https://x.com/i/status/2081733627423994038",
+    "author": "Aylin",
+    "prompt": "A majestic elephant whose entire body is formed from millions of living flowers, creating an enormous walking floral sculpture. Layers of blooming roses, peonies, orchids, cherry blossoms, magnolias, lilies, hydrangeas, wisteria, and wildflowers seamlessly replace skin, each petal gently moving with the wind. Thick vines wrap naturally around the legs while lush emerald moss and delicate fern leaves fill every gap between blossoms. Giant flowering branches extend gracefully from the elephant's back like a living garden, with cascading wisteria hanging down in elegant curtains. Thousands of colorful butterflies, hummingbirds, and tiny bees orbit peacefully around the elephant, occasionally landing on blooming petals. Soft petals continuously detach, float through the air, and magically regrow, making the creature feel alive. Golden morning sunlight filters through a misty enchanted forest, creating warm volumetric rays and illuminating the vibrant floral textures. Hyper-realistic botanical details, cinematic fantasy atmosphere, ultra-detailed macro petals, vibrant natural colors, masterpiece, photorealistic, 8K, Unreal Engine, Octane Render, National Geographic wildlife photography, magical realism.",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common",
+      "Aspect Ratio": "9:16"
+    },
+    "mtime": 1785173236754.7275
+  },
+  {
+    "title": "溶洞光影探险摄影",
+    "slug": "cave-explorer-photography",
+    "model": "Common",
+    "category": "photography",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "摄影",
+      "溶洞",
+      "自然"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2081681001751683156.jpg",
+    "date": "Mon Jul 27 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-28T11:00:00+08:00",
+    "source": "https://x.com/i/status/2081681001751683156",
+    "sourceLink": "https://x.com/i/status/2081681001751683156",
+    "author": "AI Aimee",
+    "prompt": "A breathtaking professional cave photograph of a vast limestone cavern with towering stalactites and stalagmites meeting in the center, a lone explorer with headlamp for scale, dramatic warm artificial light revealing layered rock textures and cathedral-like silence, wide immersive composition.",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785173236781.5667
+  },
+  {
+    "title": "星空宇宙公主幻想",
+    "slug": "cosmic-star-princess",
+    "model": "Common",
+    "category": "portrait",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "人像",
+      "宇宙",
+      "幻想"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/prompt-2081601980959723635.jpg",
+    "date": "Mon Jul 27 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-28T11:00:00+08:00",
+    "source": "https://x.com/i/status/2081601980959723635",
+    "sourceLink": "https://x.com/i/status/2081601980959723635",
+    "author": "Zidan 子丹",
+    "prompt": "Masterpiece, ultra-detailed cosmic fantasy art, hyper-realistic anime realism, cinematic sci-fi illustration, 8K, museum-quality concept art.\n\nA beautiful young woman with delicate anime-inspired features sits gracefully on an ornate golden celestial balcony, gazing quietly into the infinite universe.\n\nShe wears an ethereal white couture dress with intricate lace embroidery, translucent silk layers, elegant fabric folds and exquisite handcrafted details. Her black hair is styled in a refined traditional updo decorated with delicate silver ornaments, creating a mysterious celestial princess atmosphere.\n\nBehind her floats a colossal ringed planet dominating the sky, with enormous atmospheric storms, frozen continents, swirling clouds and metallic cosmic textures. A smaller planet hangs in the distance above an alien frozen landscape.\n\nThe environment combines space opera grandeur with classical European palace aesthetics — ornate golden architecture, frost-covered trees, crystalline mountains, reflective icy surfaces and endless star fields.\n\nSoft moonlight and cosmic rays illuminate the scene, creating a dreamlike blue and silver colour palette. Volumetric lighting, atmospheric perspective, ultra-realistic materials, detailed skin texture, realistic hair strands, cinematic composition, dramatic scale contrast, breathtaking fantasy realism.\n\nStyle keywords: hyper-realistic anime realism, cosmic fantasy, celestial palace, space opera, baroque sci-fi, ethereal beauty, surreal realism, cinematic lighting, Unreal Engine 5 quality.",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common",
+      "Aspect Ratio": "9:16"
+    },
+    "mtime": 1785173236758.6707
+  },
+  {
+    "title": "月下荷灯东方古风人像",
+    "slug": "moonlit-lotus-lantern",
+    "model": "Common",
+    "category": "portrait",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "人像",
+      "古风",
+      "东方"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2081726799567016222.jpg",
+    "date": "Mon Jul 27 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-28T11:00:00+08:00",
+    "source": "https://x.com/i/status/2081726799567016222",
+    "sourceLink": "https://x.com/i/status/2081726799567016222",
+    "author": "尘林 Spark",
+    "prompt": "生成一张独立的4:5竖版东方古风女性高级时尚 editorial 海报主视觉，主题为\"月下荷灯\"。明确成年的20–30岁东方女性，成熟、清冷但温柔，东方淡颜，真实皮肤，黑色低盘发，青玉花饰。夏夜古风水榭，深青色夜幕、几朵低饱和夜荷、一轮朦胧月亮和一盏暖色纸灯笼，背景有柔和散景，不使用仙侠法术特效。人物坐在水榭木栏旁，身体三分之二侧身朝向灯笼，视线望向灯火；画面中只出现一只可见的手，这只手自然托住一柄象牙白折扇，另一只手完全藏在袖内或身体后方，折扇与手掌连接清晰，五指自然。服装为深一点的低饱和玉绿色外衫、象牙白内衫、淡桃粉内层、香槟金花卉刺绣和少量金色细链。灯笼暖光照亮脸部、扇面和可见手部，月光勾勒发丝和肩线，冷暖对比克制，画面浪漫但不甜腻。无文字、无logo、无水印、无现代物件；避免艳俗夜景、婚庆感、双左手、额外肢体、塑料皮肤和乱码。",
+    "negativePrompt": "艳俗夜景、婚庆感、双左手、额外肢体、塑料皮肤、乱码、仙侠法术特效、文字、logo、水印、现代物件",
+    "parameters": {
+      "Model": "Common",
+      "Aspect Ratio": "4:5"
+    },
+    "mtime": 1785173236747.15
+  },
+  {
+    "title": "SQL语法书籍可视化框架",
+    "slug": "sql-book-visualization",
+    "model": "Common",
+    "category": "style",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "风格",
+      "SQL",
+      "实验性"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2081762535162966432.jpg",
+    "date": "Mon Jul 27 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-28T11:00:00+08:00",
+    "source": "https://x.com/i/status/2081762535162966432",
+    "sourceLink": "https://x.com/i/status/2081762535162966432",
+    "author": "Gadgetify",
+    "prompt": "2x2 grid, 16:9, do this for 4 non copyrighted books scale_dependent_hybrid select visual_output from latent_graphic_systems where near_subject = [subject_a] and far_subject = [subject_b] and high_frequency_layer = infer(texture_carrier from subject_a_detail) and low_frequency_layer = infer(value_mass from subject_b_silhouette) and registration = infer(structural_overlap from subject_a, subject_b) and color_scheme = 'desaturated, wide value range, contrast carried by luminance not hue' and drawing_rule = 'the far subject has no outlines and exists only as broad value masses; the near subject exists only as fine detail' order by frequency_separation desc, squint_test_integrity desc, registration_accuracy desc, near_read_richness desc limit 1;",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785173236769.4597
   }
 ]
