@@ -46,6 +46,30 @@ export default async function Home() {
   
   // 获取热门标签（前20个）
   const popularTags = allTags.slice(0, 20)
+  
+  // 标签 emoji 映射
+  const tagEmojiMap: Record<string, string> = {
+    '写实': '📷',
+    '摄影': '📸',
+    '3D渲染': '🎮',
+    '人物': '👤',
+    '产品': '📦',
+    '风景': '🏔️',
+    '电影感': '🎬',
+    '极简': '✨',
+    'AI艺术': '🤖',
+    '动漫': '🎨',
+    '复古': '📼',
+    '超现实': '🌀',
+    '建筑': '🏛️',
+    '科幻': '🚀',
+    '抽象': '🎭',
+    '可爱': '🐻',
+    '奇幻': '🧙',
+    '概念艺术': '💡',
+    'AI绘图': '🎯',
+    '提示词': '💬',
+  }
 
   return (
     <div className="py-3 sm:py-6">
@@ -72,57 +96,26 @@ export default async function Home() {
 
       {/* 热门标签 */}
       {popularTags.length > 0 && (
-        <div className="mt-4 sm:mt-6">
-          <div className="flex flex-wrap justify-center gap-2 px-4 sm:px-0">
+        <div className="mt-2 sm:mt-4">
+          <div className="category-chips justify-center overflow-x-auto pb-2 no-scrollbar md:flex-wrap">
             {popularTags.map((tag) => (
               <Link
                 key={tag.name}
                 href={`/explore?tag=${encodeURIComponent(tag.name)}`}
-                className="rounded-full bg-white/50 dark:bg-gray-800/50 px-3 py-1.5 text-xs font-medium text-gray-700 dark:text-gray-300 transition-colors hover:bg-green-100 dark:hover:bg-green-900/30 hover:text-green-700 dark:hover:text-green-400"
-              >
-                #{tag.name}
-                <span className="ml-1 text-xs opacity-60">({tag.count})</span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {/* 分类 chips */}
-      {categories.length > 0 && (
-        <div className="mt-2 sm:mt-4">
-          <div className="category-chips justify-center overflow-x-auto pb-2 no-scrollbar md:flex-wrap">
-            {categories.map((cat) => (
-              <Link
-                key={cat.name}
-                href={`/explore?category=${encodeURIComponent(cat.name)}`}
                 className="category-chip text-xs sm:text-sm whitespace-nowrap"
               >
-                <span className="mr-1 sm:mr-2">{getCategoryIcon(cat.name)}</span>
-                {getCategoryLabel(cat.name)}
-                <span className="ml-1 sm:ml-2 text-xs opacity-60">({cat.count})</span>
+                <span className="mr-1 sm:mr-2">{tagEmojiMap[tag.name] || '🏷️'}</span>
+                {tag.name}
+                <span className="ml-1 sm:ml-2 text-xs opacity-60">({tag.count})</span>
               </Link>
             ))}
           </div>
         </div>
       )}
 
-      {/* 最新提示词 - 整齐网格 */}
+      {/* 最新提示词 */}
       <div className="mt-3 sm:mt-6 px-4 sm:px-0">
-        <div className="flex items-center justify-between">
-          <h2 className="font-serif text-lg sm:text-3xl font-bold text-gray-900 dark:text-white">
-            最新提示词
-          </h2>
-          <Link
-            href="/explore"
-            className="text-xs sm:text-sm font-medium text-green-600 transition-colors hover:text-green-700 dark:text-green-400 dark:hover:text-green-300"
-          >
-            查看全部 →
-          </Link>
-        </div>
-        <div className="mt-2 sm:mt-4">
-          <PromptGrid prompts={latestPrompts} />
-        </div>
+        <PromptGrid prompts={latestPrompts} />
       </div>
 
       {/* WebSite JSON-LD 结构化数据 */}
