@@ -19,6 +19,16 @@ export interface DailyFeature {
  */
 export const dailyFeatures: DailyFeature[] = [
   {
+    date: '2026-07-28',
+    slug: 'honeycomb-queen-gown',
+    curatorNote:
+      '蜂巢女皇——把自然界的六边形几何结构转化为高定礼服语言。这个 prompt 的精髓在于"living golden honeycombs"：蜂巢不是静态装饰，而是持续生长、重塑、扩张的活体建筑。每个 cell 里 translucent honey 在阳光下的 amber 反射，配合 levitating honey droplets，让整件礼服有了呼吸感。蜜蜂 swarm 围绕而不触碰皮肤，强化了人与自然的和谐而非威胁。色彩上 warm golden sunlight 贯穿全篇，配合 enchanted forest clearing 的 volumetric rays，是大地色系+暖调的极致表达。',
+    highlight: '自然几何结构的高定转化',
+    technique: '活体材质 · 琥珀反射 · 体积光',
+    tip: '写自然材质变服装时，关键是把材质写成"活的"——"continuously growing, reshaping, and expanding like living architecture"比"made of honeycomb"多出十倍生命力。配合"translucent honey glows warmly inside each cell"让光线穿透材质，比单纯描述表面纹理高级一个维度。',
+    tryChange: '把"golden honeycombs"换成"silver frost crystals"，整件礼服从盛夏蜂巢变成凛冬冰晶，暖调大地色瞬间转为冷调极简',
+  },
+  {
     date: '2026-07-27',
     slug: 'retro-futuristic-desert',
     curatorNote:
