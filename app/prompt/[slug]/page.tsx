@@ -251,14 +251,10 @@ export default async function PromptDetailPage({
 
           {/* 提示词 */}
           <div className="glass-card p-6">
-            <div className="mb-3 flex items-center justify-between">
+            <div className="mb-3">
               <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300">
                 Prompt:
               </h3>
-              <div className="flex items-center gap-3 text-xs text-gray-500 dark:text-gray-400">
-                <span>{prompt.prompt.length.toLocaleString()} 字符</span>
-                <span>约 {Math.ceil(prompt.prompt.length / 500)} 分钟阅读</span>
-              </div>
             </div>
             <PromptTextBlock text={formatPromptText(prompt.prompt)} maxLines={20} />
           </div>
