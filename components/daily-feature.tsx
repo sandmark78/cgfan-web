@@ -56,6 +56,7 @@ export default function DailyFeature() {
               src={prompt.cover}
               alt={prompt.title}
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
               priority
             />
@@ -104,8 +105,8 @@ export default function DailyFeature() {
             )}
           </MobileCollapse>
 
-          {/* 桌面端：策展笔记正常显示 */}
-          <div className="hidden md:block">
+          {/* 桌面端：策展笔记正常显示，使用 content-visibility 延迟渲染 */}
+          <div className="hidden md:block daily-note-content">
             <p className="daily-note">{todayFeature.curatorNote}</p>
 
             {todayFeature.tip && (

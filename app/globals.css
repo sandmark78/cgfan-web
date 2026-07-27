@@ -804,6 +804,14 @@ input[type="search"]:focus {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  content-visibility: auto;
+  contain-intrinsic-size: 0 60px;
+}
+
+/* ===== 延迟渲染优化 ===== */
+.daily-note-content {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 300px;
 }
 
 /* ── Chip / 标签 ── */
