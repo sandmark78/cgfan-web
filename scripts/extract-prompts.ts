@@ -235,6 +235,7 @@ interface PromptData {
   date: string;
   added: string; // 上传日期，用于排序
   source: string;
+  sourceLink: string;
   author: string;
   prompt: string;
   negativePrompt: string;
@@ -325,7 +326,8 @@ function parseMarkdownFile(filePath: string): PromptData | null {
       date: String(frontmatter.date || ''),
       added: normalizeDate(frontmatter.added || frontmatter.date || ''), // 统一 YYYY-MM-DD 格式
       source: frontmatter.source || '',
-      author: frontmatter.author || 'Unknown',
+      sourceLink: frontmatter.sourceLink || '',
+      author: frontmatter.author || frontmatter.source || 'Unknown',
       prompt: cleanedPrompt,
       negativePrompt: negativePrompt && negativePrompt !== '(none provided)' ? negativePrompt : '',
       parameters
