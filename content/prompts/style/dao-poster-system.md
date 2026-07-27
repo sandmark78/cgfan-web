@@ -10,6 +10,7 @@ tags: [poster, system-prompt, fisheye, neon, typography]
 difficulty: advanced
 cover: /images/prompts/dao-poster-system.jpg
 source: https://x.com/hx831126/status/2080681825505280084
+sourceLink: https://x.com/hx831126/status/2080681825505280084
 ---
 
 ROLE｜角色

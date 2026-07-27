@@ -14,6 +14,7 @@ cover: /images/prompts/playful-shadows-and-high-school-1551218134.jpg
 date: '2026-01-19'
 added: 2026-07-24
 source: https://x.com/i/status/2012718730854502440
+sourceLink: https://x.com/i/status/2012718730854502440
 author: sidona
 ---
 

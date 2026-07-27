@@ -9,6 +9,7 @@ tags: [海报, 商业, 插画, 冒险地图]
 difficulty: advanced
 cover: /images/prompts/2080670591531483339.jpg
 source: https://x.com/Gdgtify/status/2080670591531483339
+sourceLink: https://x.com/Gdgtify/status/2080670591531483339
 ---
 
 # 欧洲小吃海报生成器

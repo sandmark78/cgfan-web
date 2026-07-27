@@ -9,6 +9,7 @@ tags: [威士忌, 奢华, 海报, 商业摄影]
 difficulty: advanced
 cover: /images/prompts/2080615196691698043.jpg
 source: https://x.com/ou_zhen599/status/2080615196691698043
+sourceLink: https://x.com/ou_zhen599/status/2080615196691698043
 ---
 
 # 威士忌奢华海报

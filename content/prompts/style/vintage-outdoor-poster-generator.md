@@ -9,6 +9,7 @@ tags: [海报, 复古, 户外, 双语, 排版]
 difficulty: advanced
 cover: /images/prompts/2080560380636803368.jpg
 source: https://x.com/hx831126/status/2080560380636803368
+sourceLink: https://x.com/hx831126/status/2080560380636803368
 ---
 
 @创建图片 # INPUT KEYWORD｜输入关键词  **KEYWORD：［camping］**  

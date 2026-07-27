@@ -14,6 +14,7 @@ cover: /images/prompts/prompt-2081681001751683156.jpg
 date: 2026-07-27
 added: 2026-07-28T11:00:00+08:00
 source: https://x.com/i/status/2081681001751683156
+sourceLink: https://x.com/i/status/2081681001751683156
 author: "AI Aimee"
 ---
 

@@ -15,6 +15,7 @@ cover: /images/prompts/prompt-2081242575390826981.jpg
 date: 2026-07-26
 added: 2026-07-28T10:00:00+08:00
 source: https://x.com/i/status/2081242575390826981
+sourceLink: https://x.com/i/status/2081242575390826981
 author: "DeepBlue深藍"
 ---
 

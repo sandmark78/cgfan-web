@@ -14,6 +14,7 @@ cover: /images/prompts/prompt-2081395886882508953.jpg
 date: 2026-07-26
 added: 2026-07-27T20:34:00+08:00
 source: https://x.com/i/status/2081395886882508953
+sourceLink: https://x.com/i/status/2081395886882508953
 author: "Aylin"
 ---
 

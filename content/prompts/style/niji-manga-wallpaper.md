@@ -10,6 +10,7 @@ tags: [niji, anime, manga, wallpaper, action]
 difficulty: intermediate
 cover: /images/prompts/niji-manga-wallpaper.jpg
 source: https://x.com/CharaspowerAI/status/2080714737902346634
+sourceLink: https://x.com/CharaspowerAI/status/2080714737902346634
 ---
 
 [Character name] [action / power pose / energy effect] wallpaper, in the style of V-Ray tracing, vivid energy explosions, vibrant manga, powerful compositions, strong facial expression, intense emotional atmosphere.

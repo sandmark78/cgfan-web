@@ -9,6 +9,7 @@ tags: [咖啡, 海报, 商业, 日韩, 极简]
 difficulty: intermediate
 cover: /images/prompts/2080648358914658503.jpg
 source: https://x.com/SimplyAnnisa/status/2080648358914658503
+sourceLink: https://x.com/SimplyAnnisa/status/2080648358914658503
 ---
 
 GPT IMAGE 2 on CHATGPT

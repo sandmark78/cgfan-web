@@ -10,6 +10,7 @@ difficulty: advanced
 cover: /images/prompts/clay-render-to-dark-fantasy-cover.webp
 added: 2026-07-25T14:55:00+08:00
 source: https://x.com/DrSadek_/status/2080643089534726452
+sourceLink: https://x.com/DrSadek_/status/2080643089534726452
 ---
 
 ## Step 1: 单色粘土渲染 / Greybox 重建

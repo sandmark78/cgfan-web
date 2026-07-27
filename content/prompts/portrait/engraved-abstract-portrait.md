@@ -10,6 +10,7 @@ tags: [engraving, abstract, portrait, mixed-media, editorial]
 difficulty: advanced
 cover: /images/prompts/engraved-abstract-portrait.jpg
 source: https://x.com/arsalannazir07/status/2080883624015237300
+sourceLink: https://x.com/arsalannazir07/status/2080883624015237300
 ---
 
 An ultra-expressive fusion of intricate engraved illustration and vibrant contemporary abstract portrait art. Highly detailed linework inspired by woodcut, linocut, and cross-hatched engraving techniques, seamlessly blended with fluid painterly rendering and translucent geometric color overlays. Complex directional hatching, flowing contour lines, layered ink strokes, and sculptural faceted planes define form with exceptional precision while preserving an organic hand-crafted aesthetic.

@@ -10,6 +10,7 @@ tags: [cinematic, victorian, train, mist, railway, storytelling]
 difficulty: advanced
 cover: /images/prompts/platform-zero.jpg
 source: https://x.com/nagarjuncreates/status/2080804228587790410
+sourceLink: https://x.com/nagarjuncreates/status/2080804228587790410
 ---
 
 Create an ultra-realistic cinematic scene of a mysterious Victorian railway station known only as "Platform Zero," a forgotten platform that seems to exist outside of time. The atmosphere should feel magical, haunting, and filled with untold stories.

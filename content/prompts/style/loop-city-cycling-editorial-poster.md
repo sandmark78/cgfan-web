@@ -9,6 +9,7 @@ tags: [海报, 编辑, 城市, 骑行, 排版, 奢侈]
 difficulty: advanced
 cover: /images/prompts/2080636904152998144.jpg
 source: https://x.com/arsalannazir07/status/2080636904152998144
+sourceLink: https://x.com/arsalannazir07/status/2080636904152998144
 ---
 
 Create an ultra-realistic luxury editorial poster with a clean off-white textured paper background and a minimalist magazine layout. A dynamic low-angle cinematic photograph of a stylish young man riding a modern bicycle through an urban downtown street during golden hour. The subject wears a beige overshirt layered over a white T-shirt, relaxed black trousers, black-and-white sneakers, and a black backpack. Preserve realistic facial details, natural skin texture, and authentic motion.

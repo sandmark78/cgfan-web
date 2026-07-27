@@ -9,6 +9,7 @@ tags: [角色设定, 手账, 动漫, 插画, 中文]
 difficulty: advanced
 cover: /images/prompts/2080136792318083513.jpg
 source: https://x.com/leo_xiaolei/status/2080136792318083513
+sourceLink: https://x.com/leo_xiaolei/status/2080136792318083513
 ---
 
 Semi-realistic anime-inspired portrait of a stylish young Korean woman with a short glossy black bob tucked behind one ear, delicate round-frame glasses, and a gentle confident expression. She wears an oversized pastel lilac blouse with rolled sleeves paired with a flowing ivory A-line midi skirt. Full-body composition, standing casually with relaxed posture. Behind her is an artistic collage of hand-drawn monochrome character studies, loose pencil sketches, manga panels, playful doodles, stars, hearts, swirls, and handwritten notes scattered organically across the backdrop. Contemporary anime fashion illustration with mixed ink-and-pencil textures, clean linework, subtle cel shading, bright white background, magazine-cover aesthetic, highly detailed, ultra-sharp, vibrant yet elegant, 8K masterpiece.

@@ -15,6 +15,7 @@ cover: /images/prompts/prompt-2081484708433596766.jpg
 date: 2026-07-26
 added: 2026-07-28T10:00:00+08:00
 source: https://x.com/i/status/2081484708433596766
+sourceLink: https://x.com/i/status/2081484708433596766
 author: "尘林 Spark"
 ---
 

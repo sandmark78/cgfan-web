@@ -9,6 +9,7 @@ tags: [人像, 剪影, 教堂, 芭蕾, 背光, 电影感]
 difficulty: advanced
 cover: /images/prompts/2080576844915708137.jpg
 source: https://x.com/ou_zhen599/status/2080576844915708137
+sourceLink: https://x.com/ou_zhen599/status/2080576844915708137
 ---
 
 Create an ultra-premium cinematic portrait illustration that fully preserves the exact visual logic, atmosphere, and compositional structure of a grand backlit cathedral scene: a solitary female ballet dancer stands centered in front of a towering Gothic stained-glass window, with powerful radiant light streaming through the glass behind her, turning her figure into a dark elegant silhouette held inside a sacred atmosphere of dust, haze, and luminous beams. The image must feel realistic, ethereal, solemn, and emotionally breathtaking. The dancer must remain mostly in soft shadow, with only subtle edge light and faint body shaping visible. No visible text, no logo, no title, no typography of any kind.

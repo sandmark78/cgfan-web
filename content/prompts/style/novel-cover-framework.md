@@ -10,6 +10,7 @@ tags: [book-cover, novel, editorial, typography, framework]
 difficulty: advanced
 cover: /images/prompts/novel-cover-framework.jpg
 source: https://x.com/MrLarus/status/2080683852700278988
+sourceLink: https://x.com/MrLarus/status/2080683852700278988
 ---
 
 【小说名称】：

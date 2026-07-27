@@ -14,6 +14,7 @@ cover: /images/prompts/travel-destination-mini-dioramas-1557374678.jpg
 date: '2026-01-23'
 added: 2026-07-24
 source: https://x.com/i/status/2014212617779441724
+sourceLink: https://x.com/i/status/2014212617779441724
 author: Aleena Amir
 ---
 
