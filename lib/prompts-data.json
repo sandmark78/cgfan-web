@@ -18108,25 +18108,6 @@
     "parameters": {}
   },
   {
-    "title": "FGO FGO二部パッケージ妄想合わせ midjourney FateGrandOrder Mordred https:/...",
-    "slug": "gemnana-2743",
-    "model": "Midjourney",
-    "category": "style",
-    "tags": [
-      "AI绘图",
-      "提示词"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/gemnana-2743.jpg",
-    "date": "2026-03-31",
-    "source": "X / Token Black",
-    "sourceLink": "https://x.com/TokenBlack31/status/2039105384749965663",
-    "author": "X / Token Black",
-    "prompt": "#FGO #FGO二部套装妄想配对 #midjourney #FateGrandOrder 莫德雷德 https://t.co/lajiKID8sC",
-    "negativePrompt": "",
-    "parameters": {}
-  },
-  {
     "title": "[BRAND NAME] + [COLOR]",
     "slug": "gemnana-2753",
     "model": "Common",
