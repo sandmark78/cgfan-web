@@ -1,0 +1,24 @@
+---
+title: "daily royal self portrait 14"
+slug: gemnana-1486
+date: 2026-01-17
+added: 2026-07-27T11:31:51+08:00
+model: Midjourney
+category: style
+tags:
+  - AI绘图
+  - 提示词
+difficulty: beginner
+source: "https://gemnana.com/zh/case/1486.html"
+cover: /images/prompts/gemnana-1486.jpg
+---
+
+## Prompt
+
+每日皇家自画像 #14
+自拍 x 绘画 x Midjourney https://t.co/vi1MSi9ZbH
+
+## 美学评分
+
+- 平均分: 8.4
+- 推荐: 是

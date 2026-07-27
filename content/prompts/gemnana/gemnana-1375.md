@@ -1,0 +1,24 @@
+---
+title: "An Unexpected Foe"
+slug: gemnana-1375
+date: 2026-01-15
+added: 2026-07-27T11:31:50+08:00
+model: Midjourney
+category: style
+tags:
+  - AI绘图
+  - 提示词
+difficulty: beginner
+source: "https://gemnana.com/zh/case/1375.html"
+cover: /images/prompts/gemnana-1375.jpg
+---
+
+## Prompt
+
+意想不到的敌人
+Midjourney 在 @Somake_ai 上 https://t.co/WE6PHflP3I
+
+## 美学评分
+
+- 平均分: 8.8
+- 推荐: 是
