@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from 'react'
 import { PromptData } from '@/lib/prompts'
 import { getCategoryLabel } from '@/lib/category-map'
+import { createClient } from '@/lib/supabase/client'
 
 interface PromptRecipeCardProps {
   prompt: PromptData
@@ -15,7 +16,21 @@ interface PromptRecipeCardProps {
 export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
   const [isGenerating, setIsGenerating] = useState(false)
   const [imageLoaded, setImageLoaded] = useState(false)
+  const [likeCount, setLikeCount] = useState(prompt.likeCount || 0)
   const imgRef = useRef<HTMLImageElement | null>(null)
+
+  // 从 Supabase 获取实时点赞数
+  useEffect(() => {
+    const fetchLikeCount = async () => {
+      const supabase = createClient()
+      const { count } = await supabase
+        .from('likes')
+        .select('*', { count: 'exact', head: true })
+        .eq('prompt_slug', prompt.slug)
+      if (count !== null) setLikeCount(count)
+    }
+    fetchLikeCount()
+  }, [prompt.slug])
 
   // 预加载图片 - 直接加载原始图片
   useEffect(() => {
@@ -310,7 +325,7 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
       ctx.fillText('www.cgfan.com', cardX + 20, footerY)
 
       ctx.textAlign = 'right'
-      ctx.fillText(`❤️ ${prompt.likeCount || 0}`, cardX + cardW - 20, footerY)
+      ctx.fillText(`❤️ ${likeCount}`, cardX + cardW - 20, footerY)
 
       // 下载
       const blob = await new Promise<Blob>((resolve, reject) => {
@@ -421,7 +436,7 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
           <div className="border-t border-gray-200 pt-4 dark:border-gray-700">
             <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
               <span>www.cgfan.com</span>
-              <span>❤️ {prompt.likeCount || 0}</span>
+              <span>❤️ {likeCount}</span>
             </div>
           </div>
         </div>
