@@ -258,12 +258,24 @@ export default async function PromptDetailPage({
 
           {/* 提示词 */}
           <div className="glass-card p-6">
-            <div className="mb-3">
+            <div className="mb-3 flex items-center justify-between">
               <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300">
                 Prompt:
               </h3>
+              <button
+                onClick={() => {
+                  navigator.clipboard.writeText(prompt.prompt)
+                  // 可以添加复制成功提示
+                }}
+                className="inline-flex items-center gap-1.5 rounded-full bg-green-600 px-4 py-1.5 text-sm font-medium text-white transition-all hover:bg-green-500 hover:shadow-lg hover:shadow-green-500/30 dark:bg-green-700 dark:hover:bg-green-600 dark:shadow-green-700/30"
+              >
+                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+                一键复制
+              </button>
             </div>
-            <PromptTextBlock text={formatPromptText(prompt.prompt)} maxLines={20} />
+            <PromptTextBlock text={formatPromptText(prompt.prompt)} maxLines={20} showCopyButton={false} />
           </div>
 
           {/* 参数 chips */}

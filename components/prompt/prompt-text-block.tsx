@@ -6,11 +6,16 @@ interface PromptTextBlockProps {
   text: string
   maxLines?: number
 }
+interface PromptTextBlockProps {
+  text: string
+  maxLines?: number
+  showCopyButton?: boolean
+}
 
 /**
- * 可折叠的提示词文本块 - 长文本默认折叠，支持展开/收起
+ * 提示词文本块 - 可折叠/展开，支持复制
  */
-export function PromptTextBlock({ text, maxLines = 10 }: PromptTextBlockProps) {
+export function PromptTextBlock({ text, maxLines = 10, showCopyButton = true }: PromptTextBlockProps) {
   const [isExpanded, setIsExpanded] = useState(false)
   const [copied, setCopied] = useState(false)
 
@@ -27,39 +32,37 @@ export function PromptTextBlock({ text, maxLines = 10 }: PromptTextBlockProps) {
     }
   }
 
-  // 估算阅读时间（中文约 300字/分钟）
-  const charCount = text.length
-  const readTime = Math.max(1, Math.ceil(charCount / 300))
-
   return (
     <div className="relative">
-      {/* 顶部工具栏 */}
-      <div className="mb-3 flex items-center justify-end">
-        <button
-          onClick={handleCopy}
-          className={`inline-flex items-center gap-1.5 rounded-full px-4 py-1.5 text-sm font-medium transition-all ${
-            copied
-              ? 'bg-green-500 text-white shadow-md shadow-green-500/30'
-              : 'bg-green-600 text-white hover:bg-green-500 shadow-md shadow-green-600/20 hover:shadow-lg hover:shadow-green-500/30 dark:bg-green-700 dark:hover:bg-green-600 dark:shadow-green-700/30'
-          }`}
-        >
-          {copied ? (
-            <>
-              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-              </svg>
-              已复制
-            </>
-          ) : (
-            <>
-              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-              </svg>
-              一键复制
-            </>
-          )}
-        </button>
-      </div>
+      {/* 复制按钮 */}
+      {showCopyButton && (
+        <div className="mb-3 flex justify-end">
+          <button
+            onClick={handleCopy}
+            className={`inline-flex items-center gap-1.5 rounded-full px-4 py-1.5 text-sm font-medium transition-all ${
+              copied
+                ? 'bg-green-500 text-white shadow-md shadow-green-500/30'
+                : 'bg-green-600 text-white hover:bg-green-500 shadow-md shadow-green-600/20 hover:shadow-lg hover:shadow-green-500/30 dark:bg-green-700 dark:hover:bg-green-600 dark:shadow-green-700/30'
+            }`}
+          >
+            {copied ? (
+              <>
+                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                已复制
+              </>
+            ) : (
+              <>
+                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+                一键复制
+              </>
+            )}
+          </button>
+        </div>
+      )}
 
       {/* 文本区域 */}
       <div className="relative">
