@@ -53,7 +53,6 @@ export default function Pagination({ current, total, basePath, params = {} }: Pa
         }`}
         aria-disabled={current === 1}
         tabIndex={current === 1 ? -1 : 0}
-        scroll={false}
       >
         ← 上一页
       </Link>
@@ -74,7 +73,6 @@ export default function Pagination({ current, total, basePath, params = {} }: Pa
                 : 'bg-white/50 dark:bg-zinc-800/50 border border-white/50 dark:border-zinc-700/50 text-gray-600 dark:text-gray-400 hover:-translate-y-0.5 hover:bg-white/75 dark:hover:bg-zinc-700/75'
             }`}
             aria-current={p === current ? 'page' : undefined}
-            scroll={false}
           >
             {p}
           </Link>
@@ -91,7 +89,6 @@ export default function Pagination({ current, total, basePath, params = {} }: Pa
         }`}
         aria-disabled={current === total}
         tabIndex={current === total ? -1 : 0}
-        scroll={false}
       >
         下一页 →
       </Link>
