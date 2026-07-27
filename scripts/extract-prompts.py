@@ -254,7 +254,7 @@ def parse_markdown_file(file_path: Path) -> Optional[Dict[str, Any]]:
             'cover': frontmatter.get('cover', ''),
             'date': str(frontmatter.get('date', '')),
             'source': frontmatter.get('source', ''),
-            'author': frontmatter.get('author', 'Unknown'),
+            'author': frontmatter.get('author', '') or frontmatter.get('source', '') or 'Unknown',
             'prompt': cleaned_prompt,
             'negativePrompt': negative_prompt if negative_prompt and negative_prompt != '(none provided)' else '',
             'parameters': parameters
