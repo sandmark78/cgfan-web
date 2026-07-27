@@ -9,6 +9,8 @@ tags:
   - 艺术
 difficulty: beginner
 source: "https://gemnana.com/zh/case/8.html"
+author: "@Artedeingenio"
+authorLink: "https://x.com/Artedeingenio/status/1924032621220188340"
 cover: /images/prompts/gemnana-8.jpg
 ---
 

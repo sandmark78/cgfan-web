@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/474.html"
+author: "@UNIBRACITY"
+authorLink: "https://x.com/UNIBRACITY/status/1967129632093991164"
 cover: /images/prompts/gemnana-474.jpg
 ---
 

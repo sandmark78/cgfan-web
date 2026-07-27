@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: beginner
 source: "https://gemnana.com/zh/case/1062.html"
+author: "X / Your boyfriend"
+authorLink: "https://x.com/your_y6/status/2010669531040248279"
 cover: /images/prompts/gemnana-1062.jpg
 ---
 

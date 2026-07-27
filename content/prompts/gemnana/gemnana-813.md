@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/813.html"
+author: "X / ΛRMIN | AI"
+authorLink: "https://x.com/Arminn_Ai/status/2008952931484098637"
 cover: /images/prompts/gemnana-813.jpg
 ---
 

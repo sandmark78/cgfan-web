@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/104.html"
+author: "@mariia_gonchar"
+authorLink: "https://x.com/mariia_gonchar/status/1931774946608370013"
 cover: /images/prompts/gemnana-104.jpg
 ---
 

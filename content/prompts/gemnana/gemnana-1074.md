@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: beginner
 source: "https://gemnana.com/zh/case/1074.html"
+author: "X / designerd"
+authorLink: "https://x.com/phokuinc/status/2010730588001689893"
 cover: /images/prompts/gemnana-1074.jpg
 ---
 

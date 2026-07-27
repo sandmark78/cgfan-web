@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: beginner
 source: "https://gemnana.com/zh/case/1565.html"
+author: "X / Whisper Dan"
+authorLink: "https://x.com/AI_Ethicist_NYC/status/2013045835487936798"
 cover: /images/prompts/gemnana-1565.jpg
 ---
 

@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/88.html"
+author: "@R2_fieldworks"
+authorLink: "https://x.com/R2_fieldworks/status/1924433924106727531"
 cover: /images/prompts/gemnana-88.jpg
 ---
 

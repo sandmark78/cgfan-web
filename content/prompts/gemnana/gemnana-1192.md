@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1192.html"
+author: "X / Zara"
+authorLink: "https://x.com/ZaraIrahh/status/2011292261246718268"
 cover: /images/prompts/gemnana-1192.jpg
 ---
 

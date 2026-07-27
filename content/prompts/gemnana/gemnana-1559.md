@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1559.html"
+author: "X / TechieSA"
+authorLink: "https://x.com/TechieBySA/status/2012985517139255644"
 cover: /images/prompts/gemnana-1559.jpg
 ---
 

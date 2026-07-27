@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/585.html"
+author: "X / Matías Schrank"
+authorLink: "https://x.com/MatiasSchrank/status/2001908267208122861"
 cover: /images/prompts/gemnana-585.jpg
 ---
 

@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1185.html"
+author: "X / The Newz 2.0"
+authorLink: "https://x.com/TheNewz_816/status/2011264845187072356"
 cover: /images/prompts/gemnana-1185.jpg
 ---
 

@@ -8,6 +8,8 @@ category: style
 tags: []
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/31.html"
+author: "@ZHO_ZHO_ZHO"
+authorLink: "https://x.com/ZHO_ZHO_ZHO/status/1923999321634283862"
 cover: /images/prompts/gemnana-31.jpg
 ---
 

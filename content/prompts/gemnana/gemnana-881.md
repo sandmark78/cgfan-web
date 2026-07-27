@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/881.html"
+author: "X / Duet | AI"
+authorLink: "https://x.com/Sheldon056/status/2009458579305267681"
 cover: /images/prompts/gemnana-881.jpg
 ---
 

@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1132.html"
+author: "X / TJ"
+authorLink: "https://x.com/TAB_TAB_HH/status/2011074239994933506"
 cover: /images/prompts/gemnana-1132.jpg
 ---
 

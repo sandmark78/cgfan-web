@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/789.html"
+author: "X / Sudee🥀"
+authorLink: "https://x.com/NameIsSudee/status/2008809931550716249"
 cover: /images/prompts/gemnana-789.jpg
 ---
 

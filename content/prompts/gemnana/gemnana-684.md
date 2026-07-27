@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/684.html"
+author: "X / Aijaz"
+authorLink: "https://x.com/iamsofiaijaz/status/2008181655220154527"
 cover: /images/prompts/gemnana-684.jpg
 ---
 

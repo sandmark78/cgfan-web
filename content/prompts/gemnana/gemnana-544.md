@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/544.html"
+author: "X / Sharon Riley"
+authorLink: "https://x.com/Just_sharon7/status/2007393708338237928"
 cover: /images/prompts/gemnana-544.jpg
 ---
 

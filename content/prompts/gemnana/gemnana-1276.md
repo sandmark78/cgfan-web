@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1276.html"
+author: "X / Iqra Saifi"
+authorLink: "https://x.com/IqraSaifiii/status/2011589148990206432"
 cover: /images/prompts/gemnana-1276.jpg
 ---
 

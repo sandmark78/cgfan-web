@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/1253.html"
+author: "X / 0x ROAS"
+authorLink: "https://x.com/0xROAS/status/2011453125685608456"
 cover: /images/prompts/gemnana-1253.jpg
 ---
 

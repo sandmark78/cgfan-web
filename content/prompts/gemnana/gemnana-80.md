@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: beginner
 source: "https://gemnana.com/zh/case/80.html"
+author: "@umesh_ai"
+authorLink: "https://x.com/umesh_ai/status/1926182194159972503"
 cover: /images/prompts/gemnana-80.jpg
 ---
 

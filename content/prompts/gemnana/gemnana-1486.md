@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: beginner
 source: "https://gemnana.com/zh/case/1486.html"
+author: "X / Empress Trash 🌈🖤"
+authorLink: "https://x.com/EmpressTrash/status/2012365526866288991"
 cover: /images/prompts/gemnana-1486.jpg
 ---
 

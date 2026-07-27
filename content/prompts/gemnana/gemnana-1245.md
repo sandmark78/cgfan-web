@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1245.html"
+author: "X / Keskin"
+authorLink: "https://x.com/craftian_keskin/status/2011440040485003768"
 cover: /images/prompts/gemnana-1245.jpg
 ---
 

@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/1429.html"
+author: "X / かみさと🐬"
+authorLink: "https://x.com/kmsto/status/2012107312643870887"
 cover: /images/prompts/gemnana-1429.jpg
 ---
 

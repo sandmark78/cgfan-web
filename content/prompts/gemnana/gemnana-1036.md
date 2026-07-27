@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/1036.html"
+author: "X / ibexdream"
+authorLink: "https://x.com/ibexdream/status/2010492916397908450"
 cover: /images/prompts/gemnana-1036.jpg
 ---
 

@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: beginner
 source: "https://gemnana.com/zh/case/1239.html"
+author: "X / Daria_Surkova"
+authorLink: "https://x.com/Dari_Designs/status/2011438151399842155"
 cover: /images/prompts/gemnana-1239.jpg
 ---
 

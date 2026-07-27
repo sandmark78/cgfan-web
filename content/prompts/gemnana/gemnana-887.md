@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/887.html"
+author: "X / simply"
+authorLink: "https://x.com/kingofdairyque/status/2009490797889245228"
 cover: /images/prompts/gemnana-887.jpg
 ---
 

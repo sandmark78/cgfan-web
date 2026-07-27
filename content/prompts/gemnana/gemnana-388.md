@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/388.html"
+author: "@songguoxiansen"
+authorLink: "https://x.com/songguoxiansen/status/1981178658397229294"
 cover: /images/prompts/gemnana-388.jpg
 ---
 

@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/1334.html"
+author: "X / Cherry 2.O"
+authorLink: "https://x.com/Mind_Boticni/status/2011767339621237138"
 cover: /images/prompts/gemnana-1334.jpg
 ---
 

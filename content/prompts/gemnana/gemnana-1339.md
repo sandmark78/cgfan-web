@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: beginner
 source: "https://gemnana.com/zh/case/1339.html"
+author: "X / Miss.Pitt"
+authorLink: "https://x.com/Niniellissime/status/2011776645775118554"
 cover: /images/prompts/gemnana-1339.jpg
 ---
 

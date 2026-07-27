@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/1243.html"
+author: "X / Amira Zairi"
+authorLink: "https://x.com/azed_ai/status/2011439171760767441"
 cover: /images/prompts/gemnana-1243.jpg
 ---
 

@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/996.html"
+author: "X / Dr. Samia"
+authorLink: "https://x.com/oye_samia/status/2010284583028486414"
 cover: /images/prompts/gemnana-996.jpg
 ---
 

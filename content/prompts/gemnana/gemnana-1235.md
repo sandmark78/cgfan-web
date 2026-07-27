@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/1235.html"
+author: "X / 松果先森"
+authorLink: "https://x.com/songguoxiansen/status/2011430726990954718"
 cover: /images/prompts/gemnana-1235.jpg
 ---
 

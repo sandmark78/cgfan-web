@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/398.html"
+author: "@ShreyaYadav___"
+authorLink: "https://x.com/ShreyaYadav___/status/1985908915427758305"
 cover: /images/prompts/gemnana-398.jpg
 ---
 

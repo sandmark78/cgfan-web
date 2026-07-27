@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/676.html"
+author: "X / Abhishek Singh"
+authorLink: "https://x.com/2abhisheknaks/status/2008113093117894773"
 cover: /images/prompts/gemnana-676.jpg
 ---
 

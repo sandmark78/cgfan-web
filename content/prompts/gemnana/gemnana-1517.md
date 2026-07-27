@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1517.html"
+author: "X / simeon-sanai"
+authorLink: "https://x.com/Naiknelofar788/status/2012760270775685555"
 cover: /images/prompts/gemnana-1517.jpg
 ---
 

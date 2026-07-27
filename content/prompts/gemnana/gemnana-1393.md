@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1393.html"
+author: "X / Adam也叫吉米"
+authorLink: "https://x.com/Adam38363368936/status/2011982558876315747"
 cover: /images/prompts/gemnana-1393.jpg
 ---
 

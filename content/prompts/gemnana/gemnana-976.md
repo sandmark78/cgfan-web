@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/976.html"
+author: "X / Sophia✨"
+authorLink: "https://x.com/Sophia_here12/status/2010179276973191428"
 cover: /images/prompts/gemnana-976.jpg
 ---
 

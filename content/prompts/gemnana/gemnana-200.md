@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/200.html"
+author: "@ZHO_ZHO_ZHO"
+authorLink: "https://x.com/ZHO_ZHO_ZHO/status/1935620536090153216"
 cover: /images/prompts/gemnana-200.jpg
 ---
 

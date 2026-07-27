@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/477.html"
+author: "@NanoBanana_labs"
+authorLink: "https://x.com/NanoBanana_labs/status/1967191346017673334"
 cover: /images/prompts/gemnana-477.jpg
 ---
 

@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/706.html"
+author: "X / Milo"
+authorLink: "https://x.com/Milo_Bahi_02/status/2008388128961389047"
 cover: /images/prompts/gemnana-706.jpg
 ---
 

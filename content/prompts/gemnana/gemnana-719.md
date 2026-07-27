@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/719.html"
+author: "X / Kashberg"
+authorLink: "https://x.com/Kashberg_0/status/2008445407052050856"
 cover: /images/prompts/gemnana-719.jpg
 ---
 

@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/522.html"
+author: "X / Sebastien Jefferies"
+authorLink: "https://x.com/SebJefferies/status/1991531687147360728"
 cover: /images/prompts/gemnana-522.jpg
 ---
 

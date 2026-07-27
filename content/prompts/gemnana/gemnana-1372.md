@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/1372.html"
+author: "X / Nano Banana Pro"
+authorLink: "https://x.com/NanoBanana/status/2011857121835458929"
 cover: /images/prompts/gemnana-1372.jpg
 ---
 

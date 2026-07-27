@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/871.html"
+author: "X / ANKIT PATEL 🇮🇳 | AI"
+authorLink: "https://x.com/Ankit_patel211/status/2009339340418371647"
 cover: /images/prompts/gemnana-871.jpg
 ---
 

@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/1198.html"
+author: "X / Heisenberg"
+authorLink: "https://x.com/rovvmut_/status/2011320913908941188"
 cover: /images/prompts/gemnana-1198.jpg
 ---
 

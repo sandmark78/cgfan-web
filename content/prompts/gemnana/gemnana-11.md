@@ -10,6 +10,8 @@ tags:
   - 艺术
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/11.html"
+author: "@aziz4ai"
+authorLink: "https://x.com/aziz4ai/status/1924046710218645932"
 cover: /images/prompts/gemnana-11.jpg
 ---
 

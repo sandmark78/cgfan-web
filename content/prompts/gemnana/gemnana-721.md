@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/721.html"
+author: "X / Aarvi sharma"
+authorLink: "https://x.com/me_Aarvi/status/2008451510473289969"
 cover: /images/prompts/gemnana-721.jpg
 ---
 

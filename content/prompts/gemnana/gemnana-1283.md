@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: beginner
 source: "https://gemnana.com/zh/case/1283.html"
+author: "X / 村嶋杏奈｜クリエイター"
+authorLink: "https://x.com/nanat_anna/status/2011619572307411300"
 cover: /images/prompts/gemnana-1283.jpg
 ---
 

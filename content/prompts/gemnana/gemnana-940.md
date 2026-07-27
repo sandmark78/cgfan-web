@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/940.html"
+author: "X / Lex"
+authorLink: "https://x.com/lexx_aura/status/2009884343917818157"
 cover: /images/prompts/gemnana-940.jpg
 ---
 

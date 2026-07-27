@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1150.html"
+author: "X / Sudee🥀"
+authorLink: "https://x.com/NameIsSudee/status/2011106561838723266"
 cover: /images/prompts/gemnana-1150.jpg
 ---
 

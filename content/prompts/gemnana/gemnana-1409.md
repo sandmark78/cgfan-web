@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: beginner
 source: "https://gemnana.com/zh/case/1409.html"
+author: "X / KANA"
+authorLink: "https://x.com/KanaWorks_AI/status/2012033659143078213"
 cover: /images/prompts/gemnana-1409.jpg
 ---
 

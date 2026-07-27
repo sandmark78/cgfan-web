@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/1045.html"
+author: "X / ゆい"
+authorLink: "https://x.com/rokkadou/status/2010560555514462717"
 cover: /images/prompts/gemnana-1045.jpg
 ---
 

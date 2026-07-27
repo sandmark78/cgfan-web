@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/917.html"
+author: "X / Yaseen Khan Gul"
+authorLink: "https://x.com/YaseenK7212/status/2009672926522397130"
 cover: /images/prompts/gemnana-917.jpg
 ---
 

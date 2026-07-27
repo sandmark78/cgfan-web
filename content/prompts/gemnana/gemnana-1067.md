@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1067.html"
+author: "X / とすくん"
+authorLink: "https://x.com/tokyo_Valentine/status/2010684014953435336"
 cover: /images/prompts/gemnana-1067.jpg
 ---
 

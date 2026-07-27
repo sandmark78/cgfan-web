@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/640.html"
+author: "X / 𝐌"
+authorLink: "https://x.com/Strength04_X/status/2006986719590248769"
 cover: /images/prompts/gemnana-640.jpg
 ---
 

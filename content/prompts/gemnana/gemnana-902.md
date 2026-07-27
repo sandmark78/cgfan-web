@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: beginner
 source: "https://gemnana.com/zh/case/902.html"
+author: "X / Aijaz"
+authorLink: "https://x.com/iamsofiaijaz/status/2009623964168098296"
 cover: /images/prompts/gemnana-902.jpg
 ---
 

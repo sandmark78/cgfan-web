@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: beginner
 source: "https://gemnana.com/zh/case/1178.html"
+author: "X / もえっトン"
+authorLink: "https://x.com/dqxmoet/status/2011228582178406613"
 cover: /images/prompts/gemnana-1178.jpg
 ---
 

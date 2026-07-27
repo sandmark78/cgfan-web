@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/986.html"
+author: "X / Aleena Amir"
+authorLink: "https://x.com/aleenaamiir/status/2010241026363986218"
 cover: /images/prompts/gemnana-986.jpg
 ---
 

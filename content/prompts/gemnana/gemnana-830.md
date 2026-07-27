@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/830.html"
+author: "X / Minhaa"
+authorLink: "https://x.com/tabu_8114/status/2009125410106429774"
 cover: /images/prompts/gemnana-830.jpg
 ---
 

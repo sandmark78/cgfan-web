@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: beginner
 source: "https://gemnana.com/zh/case/1098.html"
+author: "X / Iris"
+authorLink: "https://x.com/Iris_of_AI/status/2010912687253868777"
 cover: /images/prompts/gemnana-1098.jpg
 ---
 

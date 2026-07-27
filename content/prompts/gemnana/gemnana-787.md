@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/787.html"
+author: "X / LudovicCreator"
+authorLink: "https://x.com/LudovicCreator/status/2008795769982128482"
 cover: /images/prompts/gemnana-787.jpg
 ---
 

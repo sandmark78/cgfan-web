@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/81.html"
+author: "@TheRelianceAI"
+authorLink: "https://x.com/TheRelianceAI/status/1926148686884606257"
 cover: /images/prompts/gemnana-81.jpg
 ---
 

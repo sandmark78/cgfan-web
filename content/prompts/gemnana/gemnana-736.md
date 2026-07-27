@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/736.html"
+author: "X / Gadgetify"
+authorLink: "https://x.com/Gdgtify/status/2008501550315135127"
 cover: /images/prompts/gemnana-736.jpg
 ---
 

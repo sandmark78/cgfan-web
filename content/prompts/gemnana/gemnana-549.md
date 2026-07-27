@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/549.html"
+author: "X / Sidona"
+authorLink: "https://x.com/sidona/status/2007733520303829291"
 cover: /images/prompts/gemnana-549.jpg
 ---
 

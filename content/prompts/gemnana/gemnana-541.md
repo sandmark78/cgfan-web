@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/541.html"
+author: "X / Kris Kashtanova"
+authorLink: "https://x.com/icreatelife/status/2007433097806004661"
 cover: /images/prompts/gemnana-541.jpg
 ---
 

@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/1131.html"
+author: "X / Harboriis"
+authorLink: "https://x.com/harboriis/status/2011072669941448785"
 cover: /images/prompts/gemnana-1131.jpg
 ---
 

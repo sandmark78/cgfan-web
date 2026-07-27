@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/531.html"
+author: "X / Emily"
+authorLink: "https://x.com/IamEmily2050/status/1994624635300974734"
 cover: /images/prompts/gemnana-531.jpg
 ---
 

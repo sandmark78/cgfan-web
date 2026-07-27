@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/600.html"
+author: "X / ててつろう"
+authorLink: "https://x.com/craftcapitallab/status/2002897558897848771"
 cover: /images/prompts/gemnana-600.jpg
 ---
 

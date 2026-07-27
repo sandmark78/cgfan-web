@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/598.html"
+author: "X / Smiling Khan"
+authorLink: "https://x.com/AIwithkhan/status/2002804332853653965"
 cover: /images/prompts/gemnana-598.jpg
 ---
 

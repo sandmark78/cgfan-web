@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: beginner
 source: "https://gemnana.com/zh/case/1567.html"
+author: "X / エル"
+authorLink: "https://x.com/yourself_life/status/2013067421662454104"
 cover: /images/prompts/gemnana-1567.jpg
 ---
 

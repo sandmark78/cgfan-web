@@ -1,0 +1,24 @@
+---
+title: "A highly detailed, cinematic portrait of Tom Cruise, featurin..."
+slug: gemnana-2351
+date: 2026-03-02
+added: 2026-07-27T12:54:17+08:00
+model: Common
+category: style
+tags:
+  - AI绘图
+  - 提示词
+difficulty: advanced
+source: "X / Heisenberg"
+sourceLink: "https://x.com/rovvmut_/status/2028499516119453886"
+cover: /images/prompts/gemnana-2351.jpg
+---
+
+## Prompt
+
+一幅高度细致、具有电影质感的汤姆·克鲁斯肖像，呈现出粗犷的工业美学。他有着凌乱、竖起的深金色短发，脸上带着胡茬，神情专注而疲惫。画面为特写镜头，他用右手将点燃的香烟凑到嘴边；一缕浓厚的白色烟雾向上盘旋。他的手指上戴着一枚醒目的银色印章戒指，刻有奢侈品牌互扣的“GG”标志。男子身穿一件暗红色做旧皮夹克，皮夹克上布满白色油漆斑点和深深的褶皱，里面叠穿着一件污渍斑斑的奶油色帆布围裙。画面中央用干净、白色、权威感的衬线字体写着[GUCCI]。其下方，在围裙上有较小字号的短语：“IS AI STILL JUST A PLAYTHING?”，再往下是一枚已褪色的“GUCCI”标志。背景是模糊的工业实验室或“肥皂工厂”场景。画面右侧堆放着半透明粉红色的长方形肥皂块。画面上方背景处，黯淡的工业机械和悬挂的电线沐浴在红色水平霓虹灯的照射下，营造出情绪化、高反差的氛围。整个画面带有浓重的胶片颗粒感、朦胧的氛围，以及以深红色、浅粉色和肮脏土色为主的色调。
+
+## 美学评分
+
+- 平均分: 8.6
+- 推荐: 是

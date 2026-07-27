@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/399.html"
+author: "@saniaspeaks_"
+authorLink: "https://x.com/saniaspeaks_/status/1985960595422867603"
 cover: /images/prompts/gemnana-399.jpg
 ---
 

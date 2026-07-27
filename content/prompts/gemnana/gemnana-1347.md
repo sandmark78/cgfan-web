@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1347.html"
+author: "X / Santi Torres"
+authorLink: "https://x.com/SantiTorAI/status/2011791915843477845"
 cover: /images/prompts/gemnana-1347.jpg
 ---
 

@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1049.html"
+author: "X / Maercih"
+authorLink: "https://x.com/Maercihh/status/2010582030669807956"
 cover: /images/prompts/gemnana-1049.jpg
 ---
 

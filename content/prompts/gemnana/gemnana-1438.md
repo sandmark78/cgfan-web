@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/1438.html"
+author: "X / Snow"
+authorLink: "https://x.com/iamrealsnow/status/2012135339763101836"
 cover: /images/prompts/gemnana-1438.jpg
 ---
 

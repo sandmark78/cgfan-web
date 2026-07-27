@@ -10,6 +10,8 @@ tags:
   - 创意
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/5.html"
+author: "@Anima_Labs"
+authorLink: "https://x.com/Anima_Labs/status/1924135446629728712"
 cover: /images/prompts/gemnana-5.jpg
 ---
 

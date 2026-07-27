@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1234.html"
+author: "X / cinema 🎥"
+authorLink: "https://x.com/FilmHub00/status/2011425018438115821"
 cover: /images/prompts/gemnana-1234.jpg
 ---
 

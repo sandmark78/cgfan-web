@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/1217.html"
+author: "X / La Phalène Libre 🪶 (Lilou)"
+authorLink: "https://x.com/laphalenelibre/status/2011388780205216199"
 cover: /images/prompts/gemnana-1217.jpg
 ---
 

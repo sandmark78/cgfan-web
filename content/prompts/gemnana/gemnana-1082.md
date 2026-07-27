@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/1082.html"
+author: "X / VL_Aschcroft"
+authorLink: "https://x.com/Project_VLA/status/2010767158280622499"
 cover: /images/prompts/gemnana-1082.jpg
 ---
 

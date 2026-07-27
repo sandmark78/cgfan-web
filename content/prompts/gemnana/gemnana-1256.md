@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: beginner
 source: "https://gemnana.com/zh/case/1256.html"
+author: "X / Tischeins"
+authorLink: "https://x.com/tisch_eins/status/2011468365831827764"
 cover: /images/prompts/gemnana-1256.jpg
 ---
 

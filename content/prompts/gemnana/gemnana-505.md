@@ -10,6 +10,8 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/505.html"
+author: "X / مانو بلی"
+authorLink: "https://x.com/rowanali09/status/1987442804994293778"
 cover: /images/prompts/gemnana-505.jpg
 ---
 
