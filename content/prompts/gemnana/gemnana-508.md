@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/508.html"
+sourceLink: "https://x.com/ShreyaYadav___/status/1987778015917645963"
 author: "X / Shreya Yadav"
 authorLink: "https://x.com/ShreyaYadav___/status/1987778015917645963"
 cover: /images/prompts/gemnana-508.jpg

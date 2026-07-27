@@ -8,6 +8,7 @@ category: style
 tags: []
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/30.html"
+sourceLink: "https://x.com/umesh_ai/status/1924526898840822207"
 author: "@umesh_ai"
 authorLink: "https://x.com/umesh_ai/status/1924526898840822207"
 cover: /images/prompts/gemnana-30.jpg

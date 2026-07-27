@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/536.html"
+sourceLink: "https://x.com/LudovicCreator/status/1999464392258191511"
 author: "X / LudovicCreator"
 authorLink: "https://x.com/LudovicCreator/status/1999464392258191511"
 cover: /images/prompts/gemnana-536.jpg

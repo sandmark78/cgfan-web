@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/1010.html"
+sourceLink: "https://x.com/sergeantsref/status/2010340876632137794"
 author: "X / Sgt Sref"
 authorLink: "https://x.com/sergeantsref/status/2010340876632137794"
 cover: /images/prompts/gemnana-1010.jpg

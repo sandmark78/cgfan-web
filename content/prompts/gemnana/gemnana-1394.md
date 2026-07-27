@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: beginner
 source: "https://gemnana.com/zh/case/1394.html"
+sourceLink: "https://x.com/catale7a/status/2011985645548494892"
 author: "X / 𝑪𝒂𝒕𝒂𝒍𝒆𝒚𝒂🛡"
 authorLink: "https://x.com/catale7a/status/2011985645548494892"
 cover: /images/prompts/gemnana-1394.jpg

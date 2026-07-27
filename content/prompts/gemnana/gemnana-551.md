@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/551.html"
+sourceLink: "https://x.com/xmiiru_/status/2007732049839300912"
 author: "X / Mira"
 authorLink: "https://x.com/xmiiru_/status/2007732049839300912"
 cover: /images/prompts/gemnana-551.jpg

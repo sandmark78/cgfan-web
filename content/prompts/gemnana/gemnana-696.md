@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/696.html"
+sourceLink: "https://x.com/ttmouse/status/2008273570175349157"
 author: "X / ttmouse - 豆爸"
 authorLink: "https://x.com/ttmouse/status/2008273570175349157"
 cover: /images/prompts/gemnana-696.jpg

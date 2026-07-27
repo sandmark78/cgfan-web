@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/87.html"
+sourceLink: "https://x.com/TheRelianceAI/status/1925606107608715268"
 author: "@TheRelianceAI"
 authorLink: "https://x.com/TheRelianceAI/status/1925606107608715268"
 cover: /images/prompts/gemnana-87.jpg

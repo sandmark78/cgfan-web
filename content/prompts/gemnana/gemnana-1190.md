@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/1190.html"
+sourceLink: "https://x.com/Naiknelofar788/status/2011283991870259558"
 author: "X / simeon-sanai"
 authorLink: "https://x.com/Naiknelofar788/status/2011283991870259558"
 cover: /images/prompts/gemnana-1190.jpg

@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/999.html"
+sourceLink: "https://x.com/umesh_ai/status/2010294639434310085"
 author: "X / Umesh"
 authorLink: "https://x.com/umesh_ai/status/2010294639434310085"
 cover: /images/prompts/gemnana-999.jpg

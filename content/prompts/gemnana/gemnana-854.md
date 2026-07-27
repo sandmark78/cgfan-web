@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/854.html"
+sourceLink: "https://x.com/SimplyAnnisa/status/2009251393652314271"
 author: "X / Anissa"
 authorLink: "https://x.com/SimplyAnnisa/status/2009251393652314271"
 cover: /images/prompts/gemnana-854.jpg

@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1588.html"
+sourceLink: "https://x.com/Dari_Designs/status/2013268963266904438"
 author: "X / Daria_Surkova"
 authorLink: "https://x.com/Dari_Designs/status/2013268963266904438"
 cover: /images/prompts/gemnana-1588.jpg

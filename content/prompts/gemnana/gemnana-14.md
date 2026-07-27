@@ -11,6 +11,7 @@ tags:
   - 创意
 difficulty: beginner
 source: "https://gemnana.com/zh/case/14.html"
+sourceLink: "https://x.com/azed_ai/status/1924090458298609881"
 author: "@azed_ai"
 authorLink: "https://x.com/azed_ai/status/1924090458298609881"
 cover: /images/prompts/gemnana-14.jpg

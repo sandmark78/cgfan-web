@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/866.html"
+sourceLink: "https://x.com/TheLOKII_/status/2009310549994283496"
 author: "X / LOKII"
 authorLink: "https://x.com/TheLOKII_/status/2009310549994283496"
 cover: /images/prompts/gemnana-866.jpg

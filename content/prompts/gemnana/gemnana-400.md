@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: beginner
 source: "https://gemnana.com/zh/case/400.html"
+sourceLink: "https://x.com/AmirMushich/status/1985740675871056194"
 author: "@AmirMushich"
 authorLink: "https://x.com/AmirMushich/status/1985740675871056194"
 cover: /images/prompts/gemnana-400.jpg

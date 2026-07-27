@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/919.html"
+sourceLink: "https://x.com/xIrissy/status/2009692941011571059"
 author: "X / Iris"
 authorLink: "https://x.com/xIrissy/status/2009692941011571059"
 cover: /images/prompts/gemnana-919.jpg

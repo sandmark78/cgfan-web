@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: beginner
 source: "https://gemnana.com/zh/case/1332.html"
+sourceLink: "https://x.com/ff_tatsuhiko_jp/status/2011764216320102905"
 author: "X / Tatsuhiko ▣ 龍彦"
 authorLink: "https://x.com/ff_tatsuhiko_jp/status/2011764216320102905"
 cover: /images/prompts/gemnana-1332.jpg

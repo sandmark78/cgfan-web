@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/747.html"
+sourceLink: "https://x.com/tabu_8114/status/2008543000750948734"
 author: "X / Minhaa"
 authorLink: "https://x.com/tabu_8114/status/2008543000750948734"
 cover: /images/prompts/gemnana-747.jpg

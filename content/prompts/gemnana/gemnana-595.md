@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: beginner
 source: "https://gemnana.com/zh/case/595.html"
+sourceLink: "https://x.com/AIwithkhan/status/2002647307612008814"
 author: "X / Smiling Khan"
 authorLink: "https://x.com/AIwithkhan/status/2002647307612008814"
 cover: /images/prompts/gemnana-595.jpg

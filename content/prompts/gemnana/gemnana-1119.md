@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1119.html"
+sourceLink: "https://x.com/T_st_love_love/status/2011045437734863178"
 author: "X / 五芒星"
 authorLink: "https://x.com/T_st_love_love/status/2011045437734863178"
 cover: /images/prompts/gemnana-1119.jpg

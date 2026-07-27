@@ -9,6 +9,7 @@ tags:
 
 difficulty: beginner
 source: "https://gemnana.com/zh/case/16.html"
+sourceLink: "https://x.com/TheRelianceAI/status/1923064017477628160"
 author: "@TheRelianceAI"
 authorLink: "https://x.com/TheRelianceAI/status/1923064017477628160"
 cover: /images/prompts/gemnana-16.jpg

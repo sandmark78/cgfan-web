@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/936.html"
+sourceLink: "https://x.com/AIwithSynthia/status/2009855866582003777"
 author: "X / Synthia"
 authorLink: "https://x.com/AIwithSynthia/status/2009855866582003777"
 cover: /images/prompts/gemnana-936.jpg

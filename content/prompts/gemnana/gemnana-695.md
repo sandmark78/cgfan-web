@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/695.html"
+sourceLink: "https://x.com/TechieBySA/status/2008272089682199025"
 author: "X / TechieSA"
 authorLink: "https://x.com/TechieBySA/status/2008272089682199025"
 cover: /images/prompts/gemnana-695.jpg

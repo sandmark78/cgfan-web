@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/1460.html"
+sourceLink: "https://x.com/MrDavids1/status/2012224276900851827"
 author: "X / Travis Davids"
 authorLink: "https://x.com/MrDavids1/status/2012224276900851827"
 cover: /images/prompts/gemnana-1460.jpg

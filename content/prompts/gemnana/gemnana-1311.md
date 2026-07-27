@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1311.html"
+sourceLink: "https://x.com/lilzula_009_me/status/2011708791423717619"
 author: "X / lilzula"
 authorLink: "https://x.com/lilzula_009_me/status/2011708791423717619"
 cover: /images/prompts/gemnana-1311.jpg

@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/336.html"
+sourceLink: "https://x.com/cheerselflin/status/1979203220061982872"
 author: "@cheerselflin"
 authorLink: "https://x.com/cheerselflin/status/1979203220061982872"
 cover: /images/prompts/gemnana-336.jpg

@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/615.html"
+sourceLink: "https://x.com/saniaspeaks_/status/2004107821525422107"
 author: "X / 𝗦𝗮𝗻𝗶𝗮"
 authorLink: "https://x.com/saniaspeaks_/status/2004107821525422107"
 cover: /images/prompts/gemnana-615.jpg

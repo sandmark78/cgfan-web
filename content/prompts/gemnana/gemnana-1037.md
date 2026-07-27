@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: beginner
 source: "https://gemnana.com/zh/case/1037.html"
+sourceLink: "https://x.com/AI_Ethicist_NYC/status/2010506723052732600"
 author: "X / Whisper Dan"
 authorLink: "https://x.com/AI_Ethicist_NYC/status/2010506723052732600"
 cover: /images/prompts/gemnana-1037.jpg

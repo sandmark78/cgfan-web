@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/878.html"
+sourceLink: "https://x.com/Milo_Bahi_02/status/2009430294286553161"
 author: "X / Milo"
 authorLink: "https://x.com/Milo_Bahi_02/status/2009430294286553161"
 cover: /images/prompts/gemnana-878.jpg

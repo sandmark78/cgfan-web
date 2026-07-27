@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/609.html"
+sourceLink: "https://x.com/meng_dagg695/status/2003730339542499635"
 author: "X / ShaHid WaNii"
 authorLink: "https://x.com/meng_dagg695/status/2003730339542499635"
 cover: /images/prompts/gemnana-609.jpg

@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: beginner
 source: "https://gemnana.com/zh/case/89.html"
+sourceLink: "https://x.com/BeanieBlossom/status/1925159751169810806"
 author: "@BeanieBlossom"
 authorLink: "https://x.com/BeanieBlossom/status/1925159751169810806"
 cover: /images/prompts/gemnana-89.jpg

@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/737.html"
+sourceLink: "https://x.com/Goblinrma/status/2008510469703954782"
 author: "X / (fan) 𝐆"
 authorLink: "https://x.com/Goblinrma/status/2008510469703954782"
 cover: /images/prompts/gemnana-737.jpg

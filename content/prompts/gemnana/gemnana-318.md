@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/318.html"
+sourceLink: "https://x.com/Kerroudjm/status/1969779989282246838"
 author: "@Kerroudjm"
 authorLink: "https://x.com/Kerroudjm/status/1969779989282246838"
 cover: /images/prompts/gemnana-318.jpg

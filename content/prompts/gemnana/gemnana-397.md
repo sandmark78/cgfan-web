@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/397.html"
+sourceLink: "https://x.com/saniaspeaks_/status/1986010537310961720"
 author: "@saniaspeaks_"
 authorLink: "https://x.com/saniaspeaks_/status/1986010537310961720"
 cover: /images/prompts/gemnana-397.jpg

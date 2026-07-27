@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: beginner
 source: "https://gemnana.com/zh/case/370.html"
+sourceLink: "https://x.com/eyishazyer/status/1982402120658948406"
 author: "@eyishazyer"
 authorLink: "https://x.com/eyishazyer/status/1982402120658948406"
 cover: /images/prompts/gemnana-370.jpg

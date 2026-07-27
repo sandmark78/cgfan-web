@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/1120.html"
+sourceLink: "https://x.com/0xbisc/status/2011045800017871206"
 author: "X / Latte"
 authorLink: "https://x.com/0xbisc/status/2011045800017871206"
 cover: /images/prompts/gemnana-1120.jpg

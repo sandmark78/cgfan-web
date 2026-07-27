@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/932.html"
+sourceLink: "https://x.com/Maercihh/status/2009835486144279008"
 author: "X / Maercih"
 authorLink: "https://x.com/Maercihh/status/2009835486144279008"
 cover: /images/prompts/gemnana-932.jpg

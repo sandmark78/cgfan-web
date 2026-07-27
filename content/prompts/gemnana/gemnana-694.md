@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/694.html"
+sourceLink: "https://x.com/astronomerozge1/status/2008270616206483695"
 author: "X / Özge Döner"
 authorLink: "https://x.com/astronomerozge1/status/2008270616206483695"
 cover: /images/prompts/gemnana-694.jpg

@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/342.html"
+sourceLink: "https://x.com/songguoxiansen/status/1972307026714972370"
 author: "@songguoxiansen"
 authorLink: "https://x.com/songguoxiansen/status/1972307026714972370"
 cover: /images/prompts/gemnana-342.jpg

@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1247.html"
+sourceLink: "https://x.com/cuties7377/status/2011444163863048380"
 author: "X / Cuties"
 authorLink: "https://x.com/cuties7377/status/2011444163863048380"
 cover: /images/prompts/gemnana-1247.jpg

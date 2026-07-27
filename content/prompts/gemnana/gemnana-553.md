@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/553.html"
+sourceLink: "https://x.com/ttmouse/status/2008523042629263562"
 author: "X / ttmouse - 豆爸"
 authorLink: "https://x.com/ttmouse/status/2008523042629263562"
 cover: /images/prompts/gemnana-553.jpg

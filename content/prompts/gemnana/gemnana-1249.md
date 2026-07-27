@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1249.html"
+sourceLink: "https://x.com/sadiaamir000786/status/2011444902408671530"
 author: "X / sadiaamir"
 authorLink: "https://x.com/sadiaamir000786/status/2011444902408671530"
 cover: /images/prompts/gemnana-1249.jpg

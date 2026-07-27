@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/1534.html"
+sourceLink: "https://x.com/Sheldon056/status/2012894412276473967"
 author: "X / Duet | AI"
 authorLink: "https://x.com/Sheldon056/status/2012894412276473967"
 cover: /images/prompts/gemnana-1534.jpg

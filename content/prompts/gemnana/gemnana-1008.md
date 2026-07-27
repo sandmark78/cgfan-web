@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: beginner
 source: "https://gemnana.com/zh/case/1008.html"
+sourceLink: "https://x.com/phokuinc/status/2010322184229781570"
 author: "X / designerd"
 authorLink: "https://x.com/phokuinc/status/2010322184229781570"
 cover: /images/prompts/gemnana-1008.jpg

@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: beginner
 source: "https://gemnana.com/zh/case/1025.html"
+sourceLink: "https://x.com/PanoramaJasmin/status/2010399926354956626"
 author: "X / Thamer Ossra"
 authorLink: "https://x.com/PanoramaJasmin/status/2010399926354956626"
 cover: /images/prompts/gemnana-1025.jpg

@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1431.html"
+sourceLink: "https://x.com/Just_sharon7/status/2012110717592457678"
 author: "X / Sharon Riley"
 authorLink: "https://x.com/Just_sharon7/status/2012110717592457678"
 cover: /images/prompts/gemnana-1431.jpg

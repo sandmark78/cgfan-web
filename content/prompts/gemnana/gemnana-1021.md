@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1021.html"
+sourceLink: "https://x.com/BeautyVerse_Lab/status/2010378808176873774"
 author: "X / BeautyVerse"
 authorLink: "https://x.com/BeautyVerse_Lab/status/2010378808176873774"
 cover: /images/prompts/gemnana-1021.jpg

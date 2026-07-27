@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: beginner
 source: "https://gemnana.com/zh/case/1007.html"
+sourceLink: "https://x.com/michaelrabone/status/2010320834632749530"
 author: "X / Michael Rabone"
 authorLink: "https://x.com/michaelrabone/status/2010320834632749530"
 cover: /images/prompts/gemnana-1007.jpg

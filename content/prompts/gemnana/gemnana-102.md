@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/102.html"
+sourceLink: "https://x.com/egeberkina/status/1931727106590826828"
 author: "@egeberkina"
 authorLink: "https://x.com/egeberkina/status/1931727106590826828"
 cover: /images/prompts/gemnana-102.jpg

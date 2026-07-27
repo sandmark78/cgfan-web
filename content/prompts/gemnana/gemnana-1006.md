@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1006.html"
+sourceLink: "https://x.com/AITalesNBH/status/2010320549889601837"
 author: "X / AI Tales - Not by Humans"
 authorLink: "https://x.com/AITalesNBH/status/2010320549889601837"
 cover: /images/prompts/gemnana-1006.jpg

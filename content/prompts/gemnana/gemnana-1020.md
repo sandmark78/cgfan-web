@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/1020.html"
+sourceLink: "https://x.com/iX00AI2/status/2010373557650653320"
 author: "X / iX｜AIART/AIMOVIE【2nd】"
 authorLink: "https://x.com/iX00AI2/status/2010373557650653320"
 cover: /images/prompts/gemnana-1020.jpg

@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/288.html"
+sourceLink: "https://x.com/aziz4ai/status/1964059052951875780"
 author: "@aziz4ai"
 authorLink: "https://x.com/aziz4ai/status/1964059052951875780"
 cover: /images/prompts/gemnana-288.jpg

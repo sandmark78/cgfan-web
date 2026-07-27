@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/485.html"
+sourceLink: "https://x.com/ZHO_ZHO_ZHO/status/1967915300063695300"
 author: "@aiehon_aya"
 authorLink: "https://x.com/ZHO_ZHO_ZHO/status/1967915300063695300"
 cover: /images/prompts/gemnana-485.jpg

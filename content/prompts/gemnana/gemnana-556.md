@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/556.html"
+sourceLink: "https://x.com/ZaraIrahh/status/2008910386008125614"
 author: "X / Zara"
 authorLink: "https://x.com/ZaraIrahh/status/2008910386008125614"
 cover: /images/prompts/gemnana-556.jpg

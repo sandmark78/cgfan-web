@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1544.html"
+sourceLink: "https://x.com/ChillaiKalan__/status/2012920009706922445"
 author: "X / K"
 authorLink: "https://x.com/ChillaiKalan__/status/2012920009706922445"
 cover: /images/prompts/gemnana-1544.jpg

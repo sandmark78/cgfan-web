@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/381.html"
+sourceLink: "https://x.com/songguoxiansen/status/1983347050306523506"
 author: "@songguoxiansen"
 authorLink: "https://x.com/songguoxiansen/status/1983347050306523506"
 cover: /images/prompts/gemnana-381.jpg

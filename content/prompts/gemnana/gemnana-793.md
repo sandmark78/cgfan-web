@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/793.html"
+sourceLink: "https://x.com/michaelrabone/status/2008826024319139888"
 author: "X / Michael Rabone"
 authorLink: "https://x.com/michaelrabone/status/2008826024319139888"
 cover: /images/prompts/gemnana-793.jpg

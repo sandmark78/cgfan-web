@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/777.html"
+sourceLink: "https://x.com/rovvmut_/status/2008767364675104818"
 author: "X / Heisenberg"
 authorLink: "https://x.com/rovvmut_/status/2008767364675104818"
 cover: /images/prompts/gemnana-777.jpg

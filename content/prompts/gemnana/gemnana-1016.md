@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: beginner
 source: "https://gemnana.com/zh/case/1016.html"
+sourceLink: "https://x.com/McC3Kat/status/2010362310536397130"
 author: "X / Kathleen (Kat) Anne McCarthy"
 authorLink: "https://x.com/McC3Kat/status/2010362310536397130"
 cover: /images/prompts/gemnana-1016.jpg

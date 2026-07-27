@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/750.html"
+sourceLink: "https://x.com/Sophia_here12/status/2008555126127051059"
 author: "X / Sophia✨"
 authorLink: "https://x.com/Sophia_here12/status/2008555126127051059"
 cover: /images/prompts/gemnana-750.jpg

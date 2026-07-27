@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: beginner
 source: "https://gemnana.com/zh/case/64.html"
+sourceLink: "https://x.com/azed_ai/status/1925854528831643689"
 author: "@azed_ai"
 authorLink: "https://x.com/azed_ai/status/1925854528831643689"
 cover: /images/prompts/gemnana-64.jpg

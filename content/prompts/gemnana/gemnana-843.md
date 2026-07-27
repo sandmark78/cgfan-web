@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/843.html"
+sourceLink: "https://x.com/xmliisu/status/2009206297737007306"
 author: "X / Melisa♡"
 authorLink: "https://x.com/xmliisu/status/2009206297737007306"
 cover: /images/prompts/gemnana-843.jpg

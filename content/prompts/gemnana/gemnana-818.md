@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/818.html"
+sourceLink: "https://x.com/ciguleva/status/2009025727698538804"
 author: "X / Tatiana Tsiguleva"
 authorLink: "https://x.com/ciguleva/status/2009025727698538804"
 cover: /images/prompts/gemnana-818.jpg

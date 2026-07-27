@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/876.html"
+sourceLink: "https://x.com/tisch_eins/status/2009414822966808960"
 author: "X / Tischeins"
 authorLink: "https://x.com/tisch_eins/status/2009414822966808960"
 cover: /images/prompts/gemnana-876.jpg

@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/727.html"
+sourceLink: "https://x.com/Strength04_X/status/2008470156146860416"
 author: "X / 𝐌"
 authorLink: "https://x.com/Strength04_X/status/2008470156146860416"
 cover: /images/prompts/gemnana-727.jpg

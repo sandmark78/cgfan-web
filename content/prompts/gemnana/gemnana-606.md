@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/606.html"
+sourceLink: "https://x.com/meng_dagg695/status/2003418636795674903"
 author: "X / ShaHid WaNii"
 authorLink: "https://x.com/meng_dagg695/status/2003418636795674903"
 cover: /images/prompts/gemnana-606.jpg

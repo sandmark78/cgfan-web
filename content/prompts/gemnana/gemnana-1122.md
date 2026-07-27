@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/1122.html"
+sourceLink: "https://x.com/Chili_Pepper_A/status/2011049004705177631"
 author: "X / 唐辛子"
 authorLink: "https://x.com/Chili_Pepper_A/status/2011049004705177631"
 cover: /images/prompts/gemnana-1122.jpg

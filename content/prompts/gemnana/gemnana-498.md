@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/498.html"
+sourceLink: "https://x.com/ShreyaYadav___/status/1985738257708302430"
 author: "X / Shreya Yadav"
 authorLink: "https://x.com/ShreyaYadav___/status/1985738257708302430"
 cover: /images/prompts/gemnana-498.jpg

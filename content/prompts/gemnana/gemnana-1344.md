@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/1344.html"
+sourceLink: "https://x.com/harboriis/status/2011785693056679970"
 author: "X / Harboriis"
 authorLink: "https://x.com/harboriis/status/2011785693056679970"
 cover: /images/prompts/gemnana-1344.jpg

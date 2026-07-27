@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/1128.html"
+sourceLink: "https://x.com/Aira_AIdol/status/2011068216089411697"
 author: "X / アイラ💙AIdol"
 authorLink: "https://x.com/Aira_AIdol/status/2011068216089411697"
 cover: /images/prompts/gemnana-1128.jpg

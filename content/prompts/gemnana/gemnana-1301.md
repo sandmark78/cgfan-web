@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1301.html"
+sourceLink: "https://x.com/HustleXR/status/2011675822076411914"
 author: "X / zayan"
 authorLink: "https://x.com/HustleXR/status/2011675822076411914"
 cover: /images/prompts/gemnana-1301.jpg

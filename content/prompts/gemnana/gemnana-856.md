@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/856.html"
+sourceLink: "https://x.com/hoor_world06/status/2009263472455172547"
 author: "X / Hoor"
 authorLink: "https://x.com/hoor_world06/status/2009263472455172547"
 cover: /images/prompts/gemnana-856.jpg

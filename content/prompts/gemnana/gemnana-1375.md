@@ -10,6 +10,7 @@ tags:
   - 提示词
 difficulty: beginner
 source: "https://gemnana.com/zh/case/1375.html"
+sourceLink: "https://x.com/stoneflowe41058/status/2011873349048414375"
 author: "X / Stoneflower013"
 authorLink: "https://x.com/stoneflowe41058/status/2011873349048414375"
 cover: /images/prompts/gemnana-1375.jpg
