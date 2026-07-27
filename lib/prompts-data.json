@@ -26051,5 +26051,194 @@
       "Aspect Ratio": "9:16"
     },
     "mtime": 1785155042294.691
+  },
+  {
+    "title": "矩阵中的埃及神祇",
+    "slug": "egyptian-god-matrix",
+    "model": "Common",
+    "category": "fantasy",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "埃及",
+      "科幻",
+      "奇幻"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2081544342884270455.jpg",
+    "date": "Mon Jul 27 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-27T20:34:00+08:00",
+    "source": "https://x.com/i/status/2081544342884270455",
+    "sourceLink": "",
+    "author": "Skipper VanderWall",
+    "prompt": "a human-like Egyptian God, made of gold and black with green eyes, standing in a matrix code background. fantasy art style, hyper-realistic, cinematic, full-body shot, high resolution.",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common",
+      "Aspect Ratio": "9:16"
+    },
+    "mtime": 1785156863146.468
+  },
+  {
+    "title": "FRIGG 装甲女神",
+    "slug": "frigg-power-armored-goddess",
+    "model": "Common",
+    "category": "fantasy",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "科幻",
+      "女神",
+      "机甲"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2081620096242381059.jpg",
+    "date": "Mon Jul 27 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-27T20:34:00+08:00",
+    "source": "https://x.com/i/status/2081620096242381059",
+    "sourceLink": "",
+    "author": "Skipper VanderWall",
+    "prompt": "waist up, dynamic hero angle, stunning beautiful woman, perfect symmetrical features, radiant beauty, FRIGG, power armored techno deity, molten energy weapons, chrome and gold plating, holographic runes orbiting, stunning living features framed by white, layered furs and midnight blue silk, direct eye contact, a colossal alien starship descending through storm clouds, commanding triad of cobalt blue, viridian green and, luminous classical sci fi illustration, warm painterly realism, masterful detail, iconic framing.",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common",
+      "Aspect Ratio": "9:16"
+    },
+    "mtime": 1785156863146.713
+  },
+  {
+    "title": "黄金时刻的复古窗边人像",
+    "slug": "golden-hour-vintage-window",
+    "model": "GPT-Image",
+    "category": "portrait",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "人像",
+      "金色时刻",
+      "电影感"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/prompt-2081565648564691454.jpg",
+    "date": "Mon Jul 27 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-27T20:34:00+08:00",
+    "source": "https://x.com/i/status/2081565648564691454",
+    "sourceLink": "",
+    "author": "YUKI",
+    "prompt": "Ultra-photorealistic cinematic portrait of a beautiful young adult East Asian woman standing gracefully at a large vintage French window inside an elegant old mansion during golden hour. She wears a sheer flowing ivory chiffon gown with delicate lace trim, featuring an open back and multiple translucent layers that billow dramatically in the warm breeze. Her long dark hair is styled into a loose braided ponytail with soft wispy strands framing her face. She stands with her back partially turned toward the viewer, gently looking back over her shoulder with a calm, dreamy, slightly mysterious expression. One hand lightly gathers the flowing fabric near her hip. The camera is positioned outside the open window, looking inward, creating a voyeuristic cinematic composition. Vintage wooden window frames and translucent lace curtains surround the subject, with the curtains fluttering naturally in the wind, framing her silhouette. Warm golden-hour sunlight streams through the window, producing soft volumetric rays, glowing rim light around her hair and shoulders, realistic global illumination. Elegant French interior with antique wall moldings, muted cream tones, shallow depth of field, soft bokeh, natural fabric movement, realistic skin texture, ultra-detailed translucent chiffon, premium fashion editorial photography. Shot on Sony A7R V, 85mm GM lens, f/1.4, cinematic color grading, Kodak Portra 400 tones, HDR, RAW, 8K, masterpiece. Vertical composition 9:16. No text. No watermark.",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "GPT-Image",
+      "Aspect Ratio": "9:16"
+    },
+    "mtime": 1785156863146.599
+  },
+  {
+    "title": "夏日泼水节闺蜜抓拍",
+    "slug": "water-festival-candid",
+    "model": "Common",
+    "category": "portrait",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "人像",
+      "夏日",
+      "生活"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2081597303144808724.jpg",
+    "date": "Mon Jul 27 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-27T20:34:00+08:00",
+    "source": "https://x.com/i/status/2081597303144808724",
+    "sourceLink": "",
+    "author": "DeepBlue深藍",
+    "prompt": "竖版写实 iPhone 手机抓拍人像，夏日泼水节现场，三位年轻成年东亚女性好闺蜜一起参加泼水节，被朋友用手机随手记录下最欢乐的一瞬间。现场人群、水花、彩色水盆、湿润石板路充满背景，强烈夏日阳光照射，空中大量飞溅水珠反射光芒，真实生活感强。三位闺蜜靠得很近，正在互相打闹嬉戏，不是摆拍姿势，而是朋友之间自然发生的瞬间。有人偷偷从背后泼水，有人笑着躲避，有人故意拿水盆准备反击，三人表情夸张可爱又自然，充满亲密闺蜜氛围。画面右侧第一位女性，长黑发完全被水打湿，发丝贴在脸颊和肩膀，笑着回头躲避朋友泼来的水，一只手挡在脸前，一只手拿粉色水盆准备反击。穿白色短袖上衣外搭浅蓝薄衬衫、浅色牛仔短裤。画面中央第二位女性，湿发微乱，正在捂嘴大笑，故意把水盆举起来假装攻击朋友。穿浅色吊带背心搭配高腰短裤。画面左侧第三位女性，侧身靠近两位朋友，笑着偷袭泼水。穿轻薄夏日短款上衣搭配休闲短裤。真实湿身效果：头发被水浸湿后有重量感，湿发成束贴合皮肤；脸颊、锁骨、手臂和腿部有自然水珠附着；皮肤呈现夏日被水打湿后的真实水光反射。整体风格：真实手机生活摄影，photorealistic, iPhone candid snapshot, best friends, summer water festival, playful interaction, wet hair, realistic water droplets, natural skin texture, documentary photography, handheld phone camera, imperfect framing, slight motion blur, vertical 9:16。",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common",
+      "Aspect Ratio": "9:16"
+    },
+    "mtime": 1785156863147.0227
+  },
+  {
+    "title": "宇宙之心水晶壁纸",
+    "slug": "cosmic-heart-crystal-wallpaper",
+    "model": "Common",
+    "category": "style",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "宇宙",
+      "水晶",
+      "神秘"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2081395886882508953.jpg",
+    "date": "Sun Jul 26 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-27T20:34:00+08:00",
+    "source": "https://x.com/i/status/2081395886882508953",
+    "sourceLink": "",
+    "author": "Aylin",
+    "prompt": "An ethereal cosmic wallpaper featuring a gigantic radiant heart-shaped crystal suspended in deep space, surrounded by sacred geometry, glowing golden manifestation sigils, angel numbers (111, 222, 444, 888) subtly carved into floating crystal fragments, infinite golden spiral, moon phases, celestial constellations, blooming white roses, lotus flowers, glowing butterflies, shimmering particles, flowing streams of golden energy connecting every symbol together. The background is a breathtaking galaxy filled with purple, pink, blue, and gold nebulae. Luxurious mystical aesthetic, divine feminine energy, abundance, unconditional love, destiny, soulmate attraction, high-frequency vibrations, ultra detailed, cinematic lighting, volumetric light rays, magical atmosphere, premium fantasy art, symmetrical composition, centered design, perfect smartphone wallpaper, 8K, hyper realistic, masterpiece, no text, no watermark.",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common",
+      "Aspect Ratio": "9:16"
+    },
+    "mtime": 1785156863146.3186
+  },
+  {
+    "title": "纸艺卷折地标人像",
+    "slug": "paper-quilling-landmarks",
+    "model": "Common",
+    "category": "style",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "纸艺",
+      "工艺",
+      "地标"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/prompt-2081590349420450130.jpg",
+    "date": "Mon Jul 27 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-27T20:34:00+08:00",
+    "source": "https://x.com/i/status/2081590349420450130",
+    "sourceLink": "",
+    "author": "Gilbert Odera | Your AI Plug",
+    "prompt": "Create a highly detailed 3D paper quilling and relief art composition featuring a woman in serene profile stance, standing beside a miniature, intricately handcrafted paper-sculpted iconic landmark. Set the entire composition against a soft atmospheric backdrop. The woman wears an elaborate couture-inspired dress silhouette constructed entirely from quilled paper, featuring intricate filigree, pleats, and layered petals, embellished with pearls and metallic details in gold and white. Her accessories include an elegant headpiece, while her pose gestures gracefully toward the landmark. The landmark is meticulously recreated using layered cardstock and textured paper, with intricate structural details that clearly preserve its recognizable architectural identity. Frame the central scene with an elaborate decorative arched structure, incorporating pearl strands, quilled foliage, and botanical elements. At the base, create a dense handcrafted botanical arrangement featuring roses and lilies in soft pink, cream, and gold, combining oversized paper flowers, quilled leaves, and layered petals. Use soft directional lighting to emphasize the paper texture, shallow depth of field, subtle shadows, ultra-detailed macro photography, premium editorial fashion aesthetic, 3D paper art, quilling, haute couture, 8K, photorealistic.",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common",
+      "Aspect Ratio": "9:16"
+    },
+    "mtime": 1785156863146.9146
+  },
+  {
+    "title": "昭和怀旧动漫插画四格",
+    "slug": "retro-japanese-anime-illustration",
+    "model": "GPT-Image2",
+    "category": "style",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "动漫",
+      "怀旧",
+      "日本"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/prompt-2081617461586333886.jpg",
+    "date": "Mon Jul 27 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-27T20:34:00+08:00",
+    "source": "https://x.com/i/status/2081617461586333886",
+    "sourceLink": "",
+    "author": "Johnn",
+    "prompt": "A timeless late-1980s to early-1990s Japanese anime illustration, masterfully hand-painted with richly textured backgrounds, delicate watercolor shading, subtle cel-animation aesthetics, gentle film grain, atmospheric lighting, expressive yet naturally proportioned characters, realistic urban and rural environments, emotionally driven slice-of-life storytelling, nostalgic Showa-to-Heisei transition era, soft golden light mixed with colourful neon reflections, intricate environmental storytelling, cinematic compositions, lush foliage, analog photography charm, beautifully layered depth, volumetric sunlight, quiet everyday moments, vintage anime movie atmosphere, city pop nostalgia, ultra-detailed digital artwork, masterpiece quality.\n\n1. Seaside Railway Platform: A teenage girl in a light summer school uniform waiting alone on a quiet countryside railway platform beside the ocean, gentle sea breeze moving her hair and skirt, old station clock, distant train approaching, sparkling blue water, drifting clouds, warm afternoon sunlight, nostalgic coastal atmosphere.\n\n2. Midnight Convenience Store: A young office worker stopping at a brightly lit Japanese convenience store after rain, holding a warm canned coffee, bicycle parked outside, glowing vending machines, wet pavement reflecting colourful neon signs, quiet empty streets, soft blue night sky, intimate urban solitude.\n\n3. Rooftop After School: Two classmates sitting on the rooftop of their school during sunset, sharing snacks and talking beside the chain-link fence, sports field below, distant city skyline glowing in orange light, gentle breeze, long shadows, emotional coming-of-age atmosphere.\n\n4. Summer Festival Alley: A cheerful young woman strolling through a traditional Japanese summer festival wearing a colourful yukata, paper lanterns illuminating narrow streets, golden reflection on wet pavement, fireworks in the distance, nostalgic summer evening atmosphere.",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "GPT-Image2",
+      "Aspect Ratio": "9:16"
+    },
+    "mtime": 1785156863146.808
   }
 ]
