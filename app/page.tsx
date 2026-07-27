@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { getAllPrompts, getAllCategories } from '@/lib/prompts'
+import { getAllPrompts, getAllCategories, getAllTags } from '@/lib/prompts'
 import { PromptGrid } from '@/components/prompt/prompt-grid'
 import { getCategoryLabel, getCategoryIcon } from '@/lib/category-map'
 import DailyFeature from '@/components/daily-feature'
@@ -13,6 +13,7 @@ export const runtime = 'edge'
 export default async function Home() {
   const prompts = getAllPrompts()
   const categories = getAllCategories()
+  const allTags = getAllTags()
   
   // 从 Supabase 获取所有提示词的点赞数
   const supabase = await createClient()
@@ -42,6 +43,9 @@ export default async function Home() {
     if (addedA && addedB) return addedB.localeCompare(addedA)
     return 0
   }).slice(0, 12)
+  
+  // 获取热门标签（前20个）
+  const popularTags = allTags.slice(0, 20)
 
   return (
     <div className="py-3 sm:py-6">
@@ -65,6 +69,24 @@ export default async function Home() {
 
       {/* 每日一味 - 今日推荐 */}
       <DailyFeature />
+
+      {/* 热门标签 */}
+      {popularTags.length > 0 && (
+        <div className="mt-4 sm:mt-6">
+          <div className="flex flex-wrap justify-center gap-2 px-4 sm:px-0">
+            {popularTags.map((tag) => (
+              <Link
+                key={tag.name}
+                href={`/explore?tag=${encodeURIComponent(tag.name)}`}
+                className="rounded-full bg-white/50 dark:bg-gray-800/50 px-3 py-1.5 text-xs font-medium text-gray-700 dark:text-gray-300 transition-colors hover:bg-green-100 dark:hover:bg-green-900/30 hover:text-green-700 dark:hover:text-green-400"
+              >
+                #{tag.name}
+                <span className="ml-1 text-xs opacity-60">({tag.count})</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* 分类 chips */}
       {categories.length > 0 && (

@@ -143,10 +143,17 @@ export default async function PromptDetailPage({
 
   likeCount = count || 0
 
-  // 获取相似推荐（同分类）
+  // 获取相似推荐（按标签相似度排序，包含所有来源）
   const allPrompts = getAllPrompts()
+  const currentTags = new Set(prompt.tags)
   const related = allPrompts
-    .filter((p) => p.category === prompt.category && p.slug !== slug)
+    .filter((p) => p.slug !== slug)
+    .map((p) => ({
+      ...p,
+      score: p.tags.filter((t) => currentTags.has(t)).length + (p.category === prompt.category ? 1 : 0),
+    }))
+    .filter((p) => p.score > 0)
+    .sort((a, b) => b.score - a.score)
     .slice(0, 6)
 
   // 上一篇/下一篇导航
