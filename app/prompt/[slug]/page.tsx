@@ -199,8 +199,9 @@ export default async function PromptDetailPage({
                 {prompt.sourceLink && (() => {
                   // X/Twitter 链接：提取 username，链接到主页
                   const xMatch = prompt.sourceLink.match(/x\.com\/([^/]+)\/status/);
-                  const username = xMatch && xMatch[1] !== 'i' ? xMatch[1] : null;
-                  if (username) {
+                  const username = xMatch ? xMatch[1] : null;
+                  if (username && username !== 'i') {
+                    // 有真实 username，链接到作者主页
                     return (
                       <a
                         href={`https://x.com/${username}`}
@@ -212,8 +213,8 @@ export default async function PromptDetailPage({
                       </a>
                     );
                   }
-                  // Gemnana 或其他来源：显示作者名，链接到 sourceLink
-                  if (prompt.sourceLink && !prompt.sourceLink.includes('x.com') && !prompt.sourceLink.includes('twitter.com')) {
+                  // username 是 'i'（匿名链接）或非 X 来源：显示 author 名，链接到推文
+                  if (prompt.sourceLink) {
                     return (
                       <a
                         href={prompt.sourceLink}
