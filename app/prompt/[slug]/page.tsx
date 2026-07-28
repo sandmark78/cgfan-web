@@ -365,7 +365,7 @@ export default async function PromptDetailPage({
               </svg>
               <div className="flex-1">
                 <div className="text-xs text-gray-500 dark:text-gray-400">上一篇</div>
-                <div className="line-clamp-1 text-sm font-medium text-gray-900 dark:text-white">{prevPrompt.title}</div>
+                <div className="hidden md:block line-clamp-1 text-sm font-medium text-gray-900 dark:text-white">{prevPrompt.title}</div>
               </div>
             </Link>
           ) : <div />}
@@ -376,7 +376,7 @@ export default async function PromptDetailPage({
             >
               <div className="flex-1">
                 <div className="text-xs text-gray-500 dark:text-gray-400">下一篇</div>
-                <div className="line-clamp-1 text-sm font-medium text-gray-900 dark:text-white">{nextPrompt.title}</div>
+                <div className="hidden md:block line-clamp-1 text-sm font-medium text-gray-900 dark:text-white">{nextPrompt.title}</div>
               </div>
               <svg className="h-5 w-5 text-gray-400 transition-transform group-hover:translate-x-1 group-hover:text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
