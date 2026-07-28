@@ -57,7 +57,7 @@ export default function DailyFeature() {
               alt={prompt.title}
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
-              style={{ objectFit: 'cover', objectPosition: 'center' }}
+              className="object-cover object-center"
               priority
             />
           ) : (
