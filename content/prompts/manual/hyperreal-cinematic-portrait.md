@@ -1,6 +1,6 @@
 ---
 title: "超写实电影感人像提示词"
-slug: 超写实电-影感人像-提示词
+slug: hyperreal-cinematic-portrait
 model: ChatGPT
 category: realistic
 tags:

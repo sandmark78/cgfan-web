@@ -2,7 +2,7 @@
 title: "接上一期，分享绝美AI古风女生侧颜提示词
 
 提示词prompt：中国古典美学，宋韵美学，工笔写实风格，超写实摄影，东方古风成年女子，气质清雅，五官精致，肤色细腻自然，杏眼含光，自然淡妆，浅粉唇色，神情温柔宁静，身体微微背向镜头，右肩朝向镜头，头部自然向右缓缓转动约35°，轻轻回眸凝视镜头，三分之二侧颜，Rear Three-quarter Portrait，近景半身肖像，人物占画面约75%，肩颈舒"
-slug: 接上一期-分享绝美-古风女生
+slug: chinese-ancient-style-girl
 model: Midjourney
 category: realistic
 tags:

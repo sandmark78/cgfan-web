@@ -1,6 +1,6 @@
 ---
 title: 新中式重构提示词框架：
-slug: 新中式重-构提示词-框架
+slug: neo-chinese-framework
 model: Midjourney
 category: abstract
 tags:

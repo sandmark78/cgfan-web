@@ -1,6 +1,6 @@
 ---
 title: "魏晋风古典仕女妆造提示词"
-slug: 魏晋风古-典仕女妆-造提示词
+slug: weijin-classical-lady
 model: Midjourney
 category: realistic
 tags:

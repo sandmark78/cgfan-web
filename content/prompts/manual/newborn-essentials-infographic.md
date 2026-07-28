@@ -1,6 +1,6 @@
 ---
 title: "新生儿用品必备指南信息图"
-slug: 新生儿用-品必备指-南信息图
+slug: newborn-essentials-infographic
 model: GPT-Image2
 category: design
 tags:

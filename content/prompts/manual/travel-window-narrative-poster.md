@@ -1,6 +1,6 @@
 ---
 title: "旅途窗口叙事海报"
-slug: 旅途窗口-叙事海报
+slug: travel-window-narrative-poster
 model: GPT-Image2
 category: design
 tags:

@@ -1,6 +1,6 @@
 ---
 title: "城市鸟瞰透视角色海报提示词"
-slug: 城市鸟瞰-透视角色-海报提示
+slug: city-aerial-perspective-poster
 model: Midjourney
 category: realistic
 tags:

@@ -1,6 +1,6 @@
 ---
 title: "增强AI人脸真实感提示词"
-slug: 增强-人脸真实-感提示词
+slug: enhance-face-realism
 model: Midjourney
 category: realistic
 tags:

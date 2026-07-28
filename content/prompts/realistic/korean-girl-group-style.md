@@ -1,6 +1,6 @@
 ---
 title: 【AI写真系列×韩系女团风写真🎀】第一弹
-slug: 写真系列-韩系女团-风写真
+slug: korean-girl-group-style
 model: Midjourney
 category: realistic
 tags:

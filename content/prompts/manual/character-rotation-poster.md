@@ -1,6 +1,6 @@
 ---
 title: "角色旋转海报提示词"
-slug: 角色旋转-海报提示
+slug: character-rotation-poster
 model: Midjourney
 category: realistic
 tags:

@@ -1,6 +1,6 @@
 ---
 title: "古风私房自拍视角提示词"
-slug: 古风私房-自拍视角-提示词
+slug: ancient-style-selfie-angle
 model: Midjourney
 category: realistic
 tags:

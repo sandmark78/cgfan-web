@@ -1,6 +1,6 @@
 ---
 title: "GPT-Image2 婚礼请柬美学提示词"
-slug: 婚礼请柬-美学提示
+slug: wedding-invitation-aesthetics
 model: GPT-Image2
 category: realistic
 tags:

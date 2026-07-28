@@ -1,6 +1,6 @@
 ---
 title: "告诉Grok出生时间，AI精准解读人生"
-slug: 我告诉了-我的出生-日期和时
+slug: birth-date-time-prompt
 model: Midjourney
 category: abstract
 tags:

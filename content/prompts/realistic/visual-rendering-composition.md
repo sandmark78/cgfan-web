@@ -1,6 +1,6 @@
 ---
 title: 🍌 Nano Banana Pro：视觉渲染与构图
-slug: 视觉渲染-与构图
+slug: visual-rendering-composition
 model: Midjourney
 category: realistic
 tags:

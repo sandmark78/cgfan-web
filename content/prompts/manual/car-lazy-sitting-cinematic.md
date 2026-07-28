@@ -1,6 +1,6 @@
 ---
 title: "车内慵懒坐姿电影感写真"
-slug: 车内慵懒-坐姿电影-感写真
+slug: car-lazy-sitting-cinematic
 model: Midjourney
 category: realistic
 tags:

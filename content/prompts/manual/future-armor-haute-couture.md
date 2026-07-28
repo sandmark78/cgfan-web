@@ -1,6 +1,6 @@
 ---
 title: "未来战甲高级时装提示词"
-slug: 未来战甲-高级时装-提示词
+slug: future-armor-haute-couture
 model: Midjourney
 category: realistic
 tags:

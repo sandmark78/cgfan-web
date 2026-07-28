@@ -1,6 +1,6 @@
 ---
 title: "AI创作轮廓光应用提示词"
-slug: 创作轮廓-光应用提-示词
+slug: contour-lighting-tips
 model: Midjourney
 category: realistic
 tags:

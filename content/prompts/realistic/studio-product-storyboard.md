@@ -1,6 +1,6 @@
 ---
 title: Nano Banana Pro 3×3网格高端影棚产品故事板方案
-slug: 网格高端-影棚产品-故事板方
+slug: studio-product-storyboard
 model: Midjourney
 category: realistic
 tags:
