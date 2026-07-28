@@ -904,7 +904,6 @@ input[type="search"]:focus {
   grid-template-columns: 1.1fr 1fr;
   gap: 20px;
   align-items: start;
-  overflow: hidden;
 }
 
 @media (max-width: 860px) {

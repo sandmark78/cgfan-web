@@ -190,7 +190,7 @@ export default async function PromptDetailPage({
         </div>
 
         {/* 右侧：提示词信息 */}
-        <div className="space-y-6 min-w-0">
+        <div className="space-y-6">
           {/* 来源归属 - 虚线框表示引用 */}
           <div className="rounded-xl p-4 bg-white/50 dark:bg-zinc-800/50 border border-dashed border-gray-300 dark:border-zinc-600">
             <div className="flex items-center justify-between flex-wrap gap-2">
