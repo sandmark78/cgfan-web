@@ -746,19 +746,19 @@ input[type="search"]:focus {
 
 @media (min-width: 1024px) {
   .grid-uniform {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
 @media (min-width: 640px) and (max-width: 1023px) {
   .grid-uniform {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 639px) {
   .grid-uniform {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 
