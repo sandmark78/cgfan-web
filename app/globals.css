@@ -98,6 +98,8 @@ body {
   grid-template-columns: 300px 1fr;
   overflow: hidden;
   padding: 0 !important;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 @media (max-width: 640px) {
   .daily-card { grid-template-columns: 1fr; }
@@ -449,6 +451,8 @@ body {
               box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1),
               background 0.35s ease;
   overflow: hidden;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 /* ── 卡片顶部高光：玻璃表面的光带 ── */
@@ -736,6 +740,8 @@ input[type="search"]:focus {
   display: grid;
   gap: 16px;
   align-items: stretch;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 @media (min-width: 1024px) {
