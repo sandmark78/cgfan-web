@@ -97,7 +97,7 @@ export default function RootLayout({
         <div className="relative z-10 flex min-h-screen flex-col">
           <ToastProvider>
           <Header />
-          <main id="main-content" className="flex-1 min-w-0 shell">{children}</main>
+          <main id="main-content" className="flex-1 min-w-0 max-w-full shell">{children}</main>
           <Footer />
         </ToastProvider>
         </div>
