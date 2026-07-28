@@ -15,6 +15,7 @@ date: 2026-07-27
 added: 2026-07-27T20:34:00+08:00
 source: https://x.com/i/status/2081597303144808724
 sourceLink: https://x.com/i/status/2081597303144808724
+authorLink: https://x.com/DeepBlueAIX
 author: "DeepBlue深藍"
 ---
 

@@ -15,6 +15,7 @@ date: '2026-01-23'
 added: 2026-07-24
 source: https://x.com/i/status/2014213404878324132
 sourceLink: https://x.com/i/status/2014213404878324132
+authorLink: https://x.com/AIwithkhan
 author: AIwithkhan
 ---
 

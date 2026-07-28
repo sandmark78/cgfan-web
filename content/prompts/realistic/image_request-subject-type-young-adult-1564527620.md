@@ -17,6 +17,7 @@ date: '2026-01-27'
 added: 2026-07-24
 source: https://x.com/i/status/2016087115482763660
 sourceLink: https://x.com/i/status/2016087115482763660
+authorLink: https://x.com/lenawakes
 author: Lena lenawakes
 ---
 

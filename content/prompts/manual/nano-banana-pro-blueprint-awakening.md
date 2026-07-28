@@ -14,6 +14,7 @@ date: '2026-07-23'
 added: 2026-07-24
 source: "https://x.com/i/status/2010009737816162736"
 sourceLink: "https://x.com/i/status/2010009737816162736"
+authorLink: "https://x.com/AllaAisling"
 author: "Alexandra Aisling"
 ---
 

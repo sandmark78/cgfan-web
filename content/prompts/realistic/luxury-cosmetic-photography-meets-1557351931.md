@@ -15,6 +15,7 @@ date: '2026-01-23'
 added: 2026-07-24
 source: https://x.com/i/status/2014347192321167565
 sourceLink: https://x.com/i/status/2014347192321167565
+authorLink: https://x.com/0xbisc
 author: Latte 0xbisc
 ---
 

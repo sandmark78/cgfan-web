@@ -15,6 +15,7 @@ date: '2026-01-25'
 added: 2026-07-24
 source: https://x.com/i/status/2014984098213929280
 sourceLink: https://x.com/i/status/2014984098213929280
+authorLink: https://x.com/Kashberg_0
 author: Kashberg_0
 ---
 

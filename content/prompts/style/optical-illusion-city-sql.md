@@ -15,6 +15,7 @@ date: 2026-07-27
 added: 2026-07-27T21:00:00+08:00
 source: https://x.com/i/status/2081674958527225877
 sourceLink: https://x.com/i/status/2081674958527225877
+authorLink: https://x.com/Gdgtify
 author: "Gadgetify"
 ---
 

@@ -15,6 +15,7 @@ date: 2026-07-27
 added: 2026-07-27T20:34:00+08:00
 source: https://x.com/i/status/2081544342884270455
 sourceLink: https://x.com/i/status/2081544342884270455
+authorLink: https://x.com/RobotCleopatra
 author: "Skipper VanderWall"
 ---
 

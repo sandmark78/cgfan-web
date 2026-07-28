@@ -15,6 +15,7 @@ date: '2026-01-28'
 added: 2026-07-24
 source: https://x.com/i/status/2016357678680039438
 sourceLink: https://x.com/i/status/2016357678680039438
+authorLink: https://x.com/Taaruk_
 author: Taaruk_
 ---
 

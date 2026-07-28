@@ -15,6 +15,7 @@ date: 2026-07-27
 added: 2026-07-28T11:00:00+08:00
 source: https://x.com/i/status/2081726799567016222
 sourceLink: https://x.com/i/status/2081726799567016222
+authorLink: https://x.com/chenlinspark
 author: "尘林 Spark"
 ---
 

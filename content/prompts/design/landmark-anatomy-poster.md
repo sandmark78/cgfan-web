@@ -15,6 +15,7 @@ date: 2026-07-26
 added: 2026-07-27T21:00:00+08:00
 source: https://x.com/i/status/2081444405781594232
 sourceLink: https://x.com/i/status/2081444405781594232
+authorLink: https://x.com/TechieBySA
 author: "TechieSA"
 ---
 

@@ -15,6 +15,7 @@ date: 2026-07-27
 added: 2026-07-27T21:00:00+08:00
 source: https://x.com/i/status/2081700387535360404
 sourceLink: https://x.com/i/status/2081700387535360404
+authorLink: https://x.com/aylinspace
 author: "Aylin"
 ---
 

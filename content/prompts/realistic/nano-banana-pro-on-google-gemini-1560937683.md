@@ -15,6 +15,7 @@ date: '2026-01-25'
 added: 2026-07-24
 source: https://x.com/i/status/2015282932643139964
 sourceLink: https://x.com/i/status/2015282932643139964
+authorLink: https://x.com/ChillaiKalan__
 author: K ChillaiKalan__
 ---
 

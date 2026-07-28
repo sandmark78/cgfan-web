@@ -15,6 +15,7 @@ date: '2026-01-31'
 added: 2026-07-24
 source: https://x.com/i/status/2017223007060808035
 sourceLink: https://x.com/i/status/2017223007060808035
+authorLink: https://x.com/NattyWindstorm
 author: Natty Windstorm
 ---
 

@@ -15,6 +15,7 @@ date: '2026-01-14'
 added: 2026-07-24
 source: https://x.com/i/status/2011060762454999475
 sourceLink: https://x.com/i/status/2011060762454999475
+authorLink: https://x.com/MayorKingAI
 author: MayorkingAI
 ---
 

@@ -15,6 +15,7 @@ date: 2026-07-25
 added: 2026-07-27T21:00:00+08:00
 source: https://x.com/i/status/2081011752192585744
 sourceLink: https://x.com/i/status/2081011752192585744
+authorLink: https://x.com/VoxcatAI
 author: "VoxCat"
 ---
 

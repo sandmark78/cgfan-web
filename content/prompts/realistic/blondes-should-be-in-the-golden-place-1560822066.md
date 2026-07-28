@@ -15,6 +15,7 @@ date: '2026-01-25'
 added: 2026-07-24
 source: https://x.com/i/status/2015040715169075512
 sourceLink: https://x.com/i/status/2015040715169075512
+authorLink: https://x.com/Adam38363368936
 author: Adam也叫吉米Adam38363368936
 ---
 

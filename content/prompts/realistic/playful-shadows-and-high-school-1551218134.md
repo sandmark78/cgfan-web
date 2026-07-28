@@ -15,6 +15,7 @@ date: '2026-01-19'
 added: 2026-07-24
 source: https://x.com/i/status/2012718730854502440
 sourceLink: https://x.com/i/status/2012718730854502440
+authorLink: https://x.com/sidona
 author: sidona
 ---
 

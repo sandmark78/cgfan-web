@@ -10,6 +10,7 @@ date: 2026-07-24
 added: 2026-07-24
 source: https://x.com/i/status/2080262813684015189
 sourceLink: https://x.com/i/status/2080262813684015189
+authorLink: https://x.com/MartineArtB
 author: MartineArtB
 ---
 
