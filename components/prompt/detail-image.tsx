@@ -49,16 +49,15 @@ export function DetailImage({ src, alt }: DetailImageProps) {
   return (
     <>
       <div 
-        className="cursor-zoom-in relative overflow-hidden"
+        className="aspect-[4/3] cursor-zoom-in relative overflow-hidden"
         onClick={() => setShowLightbox(true)}
       >
         <Image
           src={src}
           alt={alt}
-          width={1200}
-          height={1200}
+          fill
           sizes="(max-width: 768px) 100vw, 1200px"
-          className="w-full object-cover transition-transform hover:scale-105"
+          className="object-cover transition-transform hover:scale-105"
           priority
           onError={() => setHasError(true)}
         />
