@@ -17,15 +17,15 @@ export function ShareButton({ promptSlug, promptTitle, promptDescription }: Shar
   const [copied, setCopied] = useState(false)
   const buttonRef = useRef<HTMLButtonElement>(null)
   const menuRef = useRef<HTMLDivElement>(null)
-  const [menuPosition, setMenuPosition] = useState({ top: 0, right: 0 })
+  const [menuPosition, setMenuPosition] = useState({ top: 0, left: 0 })
 
   // 计算菜单位置
   useEffect(() => {
     if (isOpen && buttonRef.current) {
       const rect = buttonRef.current.getBoundingClientRect()
       setMenuPosition({
-        top: rect.bottom + window.scrollY + 8,
-        right: window.innerWidth - rect.right,
+        top: rect.bottom + 8,
+        left: rect.left,
       })
     }
   }, [isOpen])
@@ -124,7 +124,7 @@ export function ShareButton({ promptSlug, promptTitle, promptDescription }: Shar
             className="fixed z-[9999] w-56 rounded-lg border border-gray-200 bg-white shadow-lg dark:border-gray-700 dark:bg-gray-800"
             style={{
               top: `${menuPosition.top}px`,
-              right: `${menuPosition.right}px`,
+              left: `${menuPosition.left}px`,
             }}
           >
             <div className="py-1">
