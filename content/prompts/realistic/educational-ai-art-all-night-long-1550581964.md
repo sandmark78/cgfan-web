@@ -15,6 +15,7 @@ date: '2026-01-18'
 added: 2026-07-24
 source: https://x.com/i/status/2012669231498703282
 sourceLink: https://x.com/i/status/2012669231498703282
+authorLink: https://x.com/GirlsinAIArt
 author: Girls in AI Art｜GiAA(ギア)
 ---
 

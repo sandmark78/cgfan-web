@@ -11,6 +11,7 @@ difficulty: advanced
 cover: /images/prompts/prompt-2081306869503799549.jpg
 source: "https://www.cgfan.com"
 sourceLink: "https://www.cgfan.com/prompt/retro-futuristic-travel-poster-prompt"
+authorLink: "https://www.cgfan.com"
 ---
 
 ## Prompt

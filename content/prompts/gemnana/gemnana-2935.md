@@ -14,6 +14,7 @@ tags:
 difficulty: advanced
 source: "X / GeekCatX"
 sourceLink: "https://x.com/GeekCatX"
+authorLink: "https://x.com/GeekCatX"
 cover: /images/prompts/gemnana-2935.jpg
 ---
 

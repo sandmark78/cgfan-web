@@ -11,6 +11,7 @@ difficulty: intermediate
 cover: /images/prompts/prompt-2081250398342455404.jpg
 source: "https://www.cgfan.com"
 sourceLink: "https://www.cgfan.com/prompt/cinematic-portrait-photography-prompt"
+authorLink: "https://www.cgfan.com"
 ---
 
 ## Prompt

@@ -15,6 +15,7 @@ date: '2026-01-31'
 added: 2026-07-24
 source: https://x.com/i/status/2017166130746675620
 sourceLink: https://x.com/i/status/2017166130746675620
+authorLink: https://x.com/kashmir_ki_lark
 author: kashmir_ki_lark
 ---
 

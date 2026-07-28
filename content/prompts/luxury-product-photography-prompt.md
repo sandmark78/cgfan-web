@@ -11,6 +11,7 @@ difficulty: intermediate
 cover: /images/prompts/2080212974174974122.jpg
 source: "https://www.cgfan.com"
 sourceLink: "https://www.cgfan.com/prompt/luxury-product-photography-prompt"
+authorLink: "https://www.cgfan.com"
 ---
 
 ## Prompt
