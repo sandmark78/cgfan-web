@@ -1,5 +1,5 @@
 ---
-title: "New Style sref 3530132817"
+title: "Q版奇幻手办角色设计"
 slug: gemnana-1523
 date: 2026-01-18
 added: 2026-07-27T11:31:51+08:00

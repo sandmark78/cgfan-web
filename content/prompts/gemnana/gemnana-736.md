@@ -1,5 +1,5 @@
 ---
-title: "<instructions You are a cinematic miniat... 提示词"
+title: "微缩景观导演桌面教学"
 slug: gemnana-736
 date: 2026-01-06
 added: 2026-07-27T11:31:33+08:00

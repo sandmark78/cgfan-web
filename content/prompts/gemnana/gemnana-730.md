@@ -1,5 +1,5 @@
 ---
-title: 'image generation': {"
+title: "多帧一致的面部保真肖像"
 slug: gemnana-730
 date: 2026-01-06
 added: 2026-07-27T11:31:33+08:00

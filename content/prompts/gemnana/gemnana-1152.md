@@ -1,5 +1,5 @@
 ---
-title: "Ultra realistic 8K cinematic black and w... 提示词"
+title: "8K黑白电影感青年肖像"
 slug: gemnana-1152
 date: 2026-01-13
 added: 2026-07-27T11:31:45+08:00

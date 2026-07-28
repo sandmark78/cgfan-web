@@ -1,5 +1,5 @@
 ---
-title: 'Objective': "Create a heartwarming, whimsical portrait blend..."
+title: "小女孩与动画精灵的温暖合影"
 slug: gemnana-1189
 date: 2026-01-14
 added: 2026-07-27T11:31:45+08:00

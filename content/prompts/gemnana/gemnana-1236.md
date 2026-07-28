@@ -1,5 +1,5 @@
 ---
-title: "When pop aesthetics meet confidence… thi... 提示词"
+title: "流行美学遇上自信氛围"
 slug: gemnana-1236
 date: 2026-01-14
 added: 2026-07-27T11:31:46+08:00

@@ -1,5 +1,5 @@
 ---
-title: "Emoji变成一个花盆"
+title: "笑脸陶瓷花盆里的多肉"
 slug: gemnana-19
 date: 2025-11-06
 added: 2026-07-26T21:33:35+08:00

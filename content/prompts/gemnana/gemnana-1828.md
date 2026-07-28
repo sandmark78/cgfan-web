@@ -1,5 +1,5 @@
 ---
-title: "Create a hyper real, studio 肖像 usi..."
+title: "多臂幻影职业肖像"
 slug: gemnana-1828
 date: 2026-01-30
 added: 2026-07-27T12:54:05+08:00

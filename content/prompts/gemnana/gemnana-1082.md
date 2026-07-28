@@ -1,5 +1,5 @@
 ---
-title: "QT 某种 Red 🔴❤️"
+title: "红裙女孩的奇幻之约"
 slug: gemnana-1082
 date: 2026-01-12
 added: 2026-07-27T11:31:45+08:00

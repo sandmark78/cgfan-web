@@ -1,5 +1,5 @@
 ---
-title: "Generate a hyper realistic digital illus... 提示词"
+title: "咬开错觉蛋糕露出真实内层"
 slug: gemnana-2383
 date: 2026-03-04
 added: 2026-07-27T12:54:17+08:00

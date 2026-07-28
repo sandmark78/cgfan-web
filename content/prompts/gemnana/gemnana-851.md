@@ -1,5 +1,5 @@
 ---
-title: "Create a premium 3D rendered [FIGURE NAM... 提示词"
+title: "高端设计师乙烯基收藏公仔"
 slug: gemnana-851
 date: 2026-01-08
 added: 2026-07-27T11:31:40+08:00

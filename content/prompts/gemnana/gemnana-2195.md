@@ -1,5 +1,5 @@
 ---
-title: "A small chili plant with glossy green le... 提示词"
+title: "细雨中冒出的辣椒嫩苗"
 slug: gemnana-2195
 date: 2026-02-21
 added: 2026-07-27T12:54:10+08:00

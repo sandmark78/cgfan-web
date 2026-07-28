@@ -1,5 +1,5 @@
 ---
-title: 'content goal': "viral food visual with high appetite appeal","
+title: "街头小吃美食摄影"
 slug: gemnana-1247
 date: 2026-01-14
 added: 2026-07-27T11:31:46+08:00

@@ -1,5 +1,5 @@
 ---
-title: "Ultra cinematic premium coffee bottle la... 提示词"
+title: "黑金咖啡瓶悬浮浓缩咖啡浪"
 slug: gemnana-1430
 date: 2026-01-16
 added: 2026-07-27T11:31:50+08:00

@@ -1,5 +1,5 @@
 ---
-title: "Use the uploaded photo as inspiration fo... 提示词"
+title: "金发波浪与层叠粗金链饰"
 slug: gemnana-581
 date: 2025-12-18
 added: 2026-07-27T11:31:27+08:00

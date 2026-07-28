@@ -1,5 +1,5 @@
 ---
-title: "This SREF nails a cinematic anime look w... 提示词"
+title: "史诗云海动漫电影感风格"
 slug: gemnana-876
 date: 2026-01-09
 added: 2026-07-27T11:31:40+08:00

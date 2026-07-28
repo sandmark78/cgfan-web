@@ -1,5 +1,5 @@
 ---
-title: "[BRAND NAME]. Act as a Master of Materia... 提示词"
+title: "天然材料构筑的品牌徽标"
 slug: gemnana-2084
 date: 2026-02-11
 added: 2026-07-27T12:54:10+08:00

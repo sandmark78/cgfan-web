@@ -1,5 +1,5 @@
 ---
-title: "涂料飞溅Logo"
+title: "涂料飞溅标志设计"
 slug: gemnana-109
 date: 2025-11-06
 added: 2026-07-27T11:31:15+08:00

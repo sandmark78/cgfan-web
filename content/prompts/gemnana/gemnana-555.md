@@ -1,5 +1,5 @@
 ---
-title: "Ultra-Realistic NYC Floating Island 提示词"
+title: "纽约漂浮岛屿空中城市"
 slug: gemnana-555
 date: 2026-01-08
 added: 2026-07-27T11:31:27+08:00

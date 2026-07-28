@@ -1,5 +1,5 @@
 ---
-title: "Role: high end fashion editorial photogr... 提示词"
+title: "奢华极简时尚棚拍"
 slug: gemnana-2155
 date: 2026-02-18
 added: 2026-07-27T12:54:10+08:00

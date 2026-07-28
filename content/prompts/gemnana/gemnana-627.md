@@ -1,5 +1,5 @@
 ---
-title: "A soft, high quality plush toy of [CHARA... 提示词"
+title: "角色毛绒玩具可爱坐姿"
 slug: gemnana-627
 date: 2025-12-28
 added: 2026-07-27T11:31:27+08:00

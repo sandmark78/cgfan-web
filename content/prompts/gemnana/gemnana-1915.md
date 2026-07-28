@@ -1,5 +1,5 @@
 ---
-title: 'type': "image generation prompt","
+title: "虚空宇宙中篝火对坐的双人"
 slug: gemnana-1915
 date: 2026-02-02
 added: 2026-07-27T12:54:05+08:00

@@ -1,5 +1,5 @@
 ---
-title: "A 3x3 grid storyboard contact sheet comp... 提示词"
+title: "家庭晚餐的九格故事板"
 slug: gemnana-587
 date: 2025-12-19
 added: 2026-07-27T11:31:27+08:00

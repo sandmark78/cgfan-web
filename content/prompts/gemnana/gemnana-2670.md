@@ -1,5 +1,5 @@
 ---
-title: "Mixed media 肖像 of [SUBJECT], [EXPR..."
+title: "速写拼贴混合媒介肖像"
 slug: gemnana-2670
 date: 2026-03-24
 added: 2026-07-27T12:54:17+08:00

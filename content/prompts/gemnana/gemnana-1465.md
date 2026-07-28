@@ -1,5 +1,5 @@
 ---
-title: "[subject], premium food advertising, whi... 提示词"
+title: "高端悬浮食品广告摄影"
 slug: gemnana-1465
 date: 2026-01-16
 added: 2026-07-27T11:31:51+08:00

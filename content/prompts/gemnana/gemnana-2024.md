@@ -1,5 +1,5 @@
 ---
-title: "A cinematic fantasy scene inside a cozy... 提示词"
+title: "画布中腾出的东方巨龙"
 slug: gemnana-2024
 date: 2026-02-08
 added: 2026-07-27T12:54:10+08:00

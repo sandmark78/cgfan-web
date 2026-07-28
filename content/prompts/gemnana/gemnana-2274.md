@@ -1,5 +1,5 @@
 ---
-title: 'type': "image generation prompt","
+title: "地铁车厢里的冷调时尚肖像"
 slug: gemnana-2274
 date: 2026-02-26
 added: 2026-07-27T12:54:10+08:00

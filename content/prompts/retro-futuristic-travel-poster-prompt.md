@@ -1,5 +1,5 @@
 ---
-title: "Retro-Futuristic 旅行 Poster — Vintage..."
+title: "纸艺卷花复古旅行海报"
 slug: "retro-futuristic-travel-poster-prompt"
 author: "CGfan Editorial"
 date: 2026-07-27

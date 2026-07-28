@@ -1,5 +1,5 @@
 ---
-title: "Good morning! 2026 full stream ahead! AI... 提示词"
+title: "早安，2026全速前进"
 slug: gemnana-644
 date: 2026-01-02
 added: 2026-07-27T11:31:33+08:00

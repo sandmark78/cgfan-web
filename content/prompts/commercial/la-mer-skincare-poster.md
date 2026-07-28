@@ -1,5 +1,5 @@
 ---
-title: "La Mer 四格自然场景护肤海报生成器"
+title: "La Mer 四格自然场景护肤海报"
 slug: la-mer-skincare-poster
 author: Loriel.AI
 date: 2026-07-24

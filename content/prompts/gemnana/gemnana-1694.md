@@ -1,5 +1,5 @@
 ---
-title: "Create a brand visual storyboard for pre... 提示词"
+title: "产品九宫格视觉分镜"
 slug: gemnana-1694
 date: 2026-01-25
 added: 2026-07-27T12:53:50+08:00

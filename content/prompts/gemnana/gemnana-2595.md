@@ -1,5 +1,5 @@
 ---
-title: "midjourney 提示词"
+title: "Midjourney创作"
 slug: gemnana-2595
 date: 2026-03-18
 added: 2026-07-27T12:54:17+08:00

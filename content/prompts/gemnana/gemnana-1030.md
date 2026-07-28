@@ -1,5 +1,5 @@
 ---
-title: "This SREF creates a cold sci fi mood wit... 提示词"
+title: "迷雾蓝调冷冽科幻氛围"
 slug: gemnana-1030
 date: 2026-01-11
 added: 2026-07-27T11:31:45+08:00

@@ -1,5 +1,5 @@
 ---
-title: "Creative fashion 摄影 with distor..."
+title: "鱼眼镜头下的棋手"
 slug: gemnana-2552
 date: 2026-03-16
 added: 2026-07-27T12:54:17+08:00

@@ -1,5 +1,5 @@
 ---
-title: "🍎 Good Morning Everyone! 🍎 提示词"
+title: "苹果味的早安问候"
 slug: gemnana-1325
 date: 2026-01-15
 added: 2026-07-27T11:31:50+08:00

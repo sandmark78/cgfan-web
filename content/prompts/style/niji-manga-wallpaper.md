@@ -1,5 +1,5 @@
 ---
-title: "Niji 动漫壁纸生成器：V-Ray 追踪 + 能量爆炸"
+title: "Niji动漫壁纸：V-Ray光追爆炸"
 slug: niji-manga-wallpaper
 author: Pierrick Chevallier
 date: 2026-07-24

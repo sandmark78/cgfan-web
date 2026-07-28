@@ -1,5 +1,5 @@
 ---
-title: "A detailed transparent gashapon capsule... 提示词"
+title: "指尖扭蛋里的微缩世界"
 slug: gemnana-632
 date: 2025-12-29
 added: 2026-07-27T11:31:33+08:00

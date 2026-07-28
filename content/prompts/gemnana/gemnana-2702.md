@@ -1,5 +1,5 @@
 ---
-title: "[SUBJECT], made of smooth inflated gloss... 提示词"
+title: "光泽乙烯基玩具渲染"
 slug: gemnana-2702
 date: 2026-03-28
 added: 2026-07-27T12:54:23+08:00

@@ -1,5 +1,5 @@
 ---
-title: "cinematic 8 photo storytelling collage f... 提示词"
+title: "八格胶片记录的一天旅程"
 slug: gemnana-978
 date: 2026-01-11
 added: 2026-07-27T11:31:40+08:00

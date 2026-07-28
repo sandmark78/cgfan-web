@@ -1,0 +1,152 @@
+[
+  {
+    "slug": "gemnana-1869",
+    "title": "Cinematic 肖像 of a handsome young m...",
+    "prompt_preview": "电影感肖像，一位英俊的年轻男子，短而造型的发型和修剪整齐的胡须，戴着细金属飞行员眼镜，头后被一个发光的金色圆形光环柔和照亮。温暖的琥珀色灯光，戏剧性的低调背景，浅景深，超写实的皮肤质感，眼镜中的细微反光，情绪化且具有未来感的美学，工作室摄影，85mm 镜头效果，超高细节，高对比，深色极简背景，对称构"
+  },
+  {
+    "slug": "gemnana-1408",
+    "title": "genre': \"cinematic urban realism\",",
+    "prompt_preview": "{\n\"genre\": \"电影式的城市写实\",\n\"mood\": [\"紧张\", \"寒冷\", \"孤立\", \"静默的强烈感\"],\n\"theme\": \"一名男子处于无菌工业电梯内的静默瞬间\"\n},\n\"subject\": {\n\"description\": \"年轻男子，表情沉稳而强烈\",\n\"face\": {\n\"s"
+  },
+  {
+    "slug": "gemnana-2630",
+    "title": "{ \"prompt\": \"Photorealistic group portrait of the four member...",
+    "prompt_preview": "{   \"prompt\": \"四位 Blackpink 成员——Jisoo、Jennie、Rosé 和 Lisa——在宽阔的现代室内楼梯上合影的写实团体肖像。她们穿着协调的高端时尚主题：作为连体衣穿着的深V裁剪定制西装外套，配有乳胶 T 型前幅和光泽细高跟鞋。构图为错落有致、对称排列在木质台阶上。"
+  },
+  {
+    "slug": "gemnana-1459",
+    "title": "generation request': {",
+    "prompt_preview": "{\n\"generation_request\": {\n\"meta_data\": {\n\"tool\": \"NanoBanana Pro\",\n\"task_type\": \"text_to_image_photoreal_candid_birthday_night_indoor\",\n\"version\": \"v1"
+  },
+  {
+    "slug": "gemnana-1698",
+    "title": "[产品], centered top down flat lay, s...",
+    "prompt_preview": "[product]，居中的正上方平铺构图，被 [ingredients] 环绕，新鲜切片和整块，光泽湿润的外观，环绕产品的水花在运动中被定格，标签及表面上的露珠，温暖的米色无缝背景，柔和的定向日光，清晰真实的阴影，高端护肤品广告，极度真实的微距产品摄影，100mm镜头效果，f/8 清晰对焦，干净的构"
+  },
+  {
+    "slug": "gemnana-1828",
+    "title": "Create a hyper real, studio 肖像 usi...",
+    "prompt_preview": "创建一幅超现实、摄影棚风格的人像，使用 [USER_PHOTO] 作为精确身份参考（相同面容、发型、皮肤纹理和年龄）。将此人描绘成一位自信的 [PROFESSION]，随意坐在一把现代白色人体工学办公椅上，双腿交叉，位于画面中央。添加一种风格化的“多臂”幻觉（共6–8只手臂），从躯干后方放射，类似现"
+  },
+  {
+    "slug": "gemnana-2705",
+    "title": "[BRAND NAME] + [产品]",
+    "prompt_preview": "[BRAND NAME] + [PRODUCT]\n作为一名高级奢侈品时装艺术总监和棚内摄影师，专注于旗舰活动的高端产品主视觉、本页电商图像和移动优先的品牌内容。\nPHASE 1: FORMAT & CANVAS\n垂直格式，9:16 纵横比。画布背景：单一平面暖米白——不是纯白，也不是灰色。目标色调："
+  },
+  {
+    "slug": "gemnana-311",
+    "title": "Funko Pop风格乙烯基公仔",
+    "prompt_preview": "[角色名称] 的 Funko Pop 风格乙烯基公仔\n身着通常与 [角色] 相关联的标志性服装及配饰，其标志性风格与细节特征均自然呈现。\n姿势 / 表情\n站姿，抬头望向镜头\n表情：好奇中略带漫不经心\n相机与镜头\n相机直接置于正上方，距离极近\n超宽鱼眼镜头，营造极具张力的透视畸变效果\n柔和的圆角画框边"
+  },
+  {
+    "slug": "gemnana-2329",
+    "title": "Use the uploaded 图像 as the exact visu...",
+    "prompt_preview": "使用上传的图像作为精确的视觉参考。\n保持产品居中。\n不要更改管子的位置、光线色调、花卉摆放或色彩方案。\n保持深蓝单色美学。\n不得添加额外光源。\n不得更改色彩分级。\n相机：\n相机固定。\n禁止变焦。\n禁止旋转。\n不得更改角度。\n静态高级构图。\n动作：\n将周围蓬松的蓝色旋转云雾以超慢动作动画化。\n这些类云"
+  },
+  {
+    "slug": "gemnana-758",
+    "title": "[upload 奢华 产品 photo]",
+    "prompt_preview": "[上传奢侈品照片]\nBRAND NAME: [在此填写品牌名称]\n创建一张奢华编辑海报。保持产品完全一致且不做任何改动。使用品牌名称来推断身份，并在最符合品牌定位的位置放置真实官方标志（比例正确），带有细腻的印刷纹理。加入一位与产品完美匹配、自然佩戴产品的迷人模特。丰富深邃的色彩、HDR、高端工作室"
+  },
+  {
+    "slug": "gemnana-618",
+    "title": "Create a 3D of [物体] made of white sn...",
+    "prompt_preview": ""
+  },
+  {
+    "slug": "gemnana-1247",
+    "title": "content goal': \"viral food visual with high appetite appeal\",",
+    "prompt_preview": "{\n\"content_goal\": \"具有高度食欲吸引力的病毒式美食视觉\",\n\"image_type\": \"超写实食物摄影\",\n\"visual_style\": {\n\"aesthetic\": \"电影感美食编辑风格，优质街头小吃风格\",\n\"vibe\": \"蒸汽感、咸香、无法抗拒\",\n\"realism\":"
+  },
+  {
+    "slug": "gemnana-1466",
+    "title": "name: \"Whimsical Sketch with Magical Golden Glow Prompt Gener...",
+    "prompt_preview": "name: \"Whimsical Sketch with Magical Golden Glow Prompt Generator\"\nrole: \"你是一位专精于为独特美学（将异想天开的素描艺术与魔法般的金色光晕效果结合）生成优化提示词的资深提示词工程师。你的任务是创建能强制扩散模型生成迷人、情感充"
+  },
+  {
+    "slug": "gemnana-84",
+    "title": "渐变挤出Google I/O 2025大会视觉效果",
+    "prompt_preview": "请以以下JSON风格美学重新纹理化此图像：\n{\n\"styleAesthetic\": {\n\"title\": \"Isometric Multicolor Extrusion with Grid Control\",\n\"overallVibe\": \"Playful modern 3D iconography"
+  },
+  {
+    "slug": "gemnana-1615",
+    "title": "subject': {",
+    "prompt_preview": "{\n\"主体\": {\n\"头发\": {\n\"长度\": \"长\",\n\"颜色\": \"深色\",\n\"样式\": \"飘逸、修饰脸型\",\n\"刘海\": true,\n\"发饰\": {\n\"类型\": \"编织式\",\n\"颜色\": \"金色\"\n}\n},\n\"眼睛\": {\n\"颜色\": \"浅蓝色\",\n\"表情\": \"宁静\",\n\"凝视\": \"直视\""
+  },
+  {
+    "slug": "gemnana-1807",
+    "title": "project name': \"Distorted Luxury Motion\",",
+    "prompt_preview": "{\n\"project_name\": \"扭曲_奢华_动感\",\n\"USER_CUSTOMIZATION\": {\n\"product_description\": \"在此填写产品描述\"\n},\n\"settings\": {\n\"style\": \"前卫奢华产品摄影，抽象扭曲，梦幻空灵主义，单色为主，带有细微色彩点缀。"
+  },
+  {
+    "slug": "gemnana-1543",
+    "title": "[产品], 奢华 产品 hero shot, dar...",
+    "prompt_preview": ""
+  },
+  {
+    "slug": "gemnana-1792",
+    "title": "A close up studio 肖像 of me, mascul...",
+    "prompt_preview": "我在摄影棚的特写肖像，男性特征，质感凌乱的头发经过精心整理。\n我穿着一件黑色剪裁西装外套，结构利落、线条干净，外搭一件黑色高领毛衣，体现极简且当代的时尚风格。\n该男子戴着醒目的半透明橙色醋酸纤维太阳镜，矩形镜框略带圆润边角，光泽表面，琥珀/橙色镜片，前卫且具有标志性的时尚眼镜。\n配色概念：选择性色彩"
+  },
+  {
+    "slug": "gemnana-43",
+    "title": "Airbnb风格的图标",
+    "prompt_preview": "generate[concept] icon with this json style:\n{\n\"icon_style\": {\n\"perspective\": \"isometric\",\n\"geometry\": {\n\"proportions\": \"1:1 ratio canvas, with object"
+  },
+  {
+    "slug": "gemnana-2699",
+    "title": "A warm, cozy, and high quality 肖像...",
+    "prompt_preview": "一张温暖、舒适且高品质的年轻女性肖像，以柔和的侧面轮廓呈现。她有一头又长又波浪状的金褐色长发，微笑着，目光向下，左手轻柔地调整着一顶经典棕色羊毛报童帽的帽檐。帽子呈厚实的毡质纹理，顶部有一个小纽扣。她穿着一件超大号的粗针V领开衫，带有大胆的阿盖尔式菱形图案，颜色为奶油色与柔和的深红。开衫配有大而显眼"
+  },
+  {
+    "slug": "gemnana-652",
+    "title": "Create an infographic 图像 of [LANDMARK...",
+    "prompt_preview": "创建一张关于 [LANDMARK] 的信息图像，将地标的真实照片与蓝图风格的技术注释和图解叠加在图像上。在角落用一个手绘风格的盒子写上标题“[LANDMARK]”。添加白色粉笔风格的草图，展示关键结构数据、重要尺寸、材料用量、内部图、荷载流向箭头、剖面图、平面图，以及显著的建筑或工程特征。风格：蓝图"
+  },
+  {
+    "slug": "gemnana-603",
+    "title": "objective': \"Generate a hyper realistic black and white stre...",
+    "prompt_preview": "{\n\"objective\": \"生成一个超真实的黑白街头时尚摄影，带有选择性颜色点缀。\",\n\"image_type\": \"摄影\",\n\"prompt\": {\n\"subject\": \"一个时髦、自信的女性，正在繁忙的城市路口穿越\",\n\"wardrobe\": {\n\"outerwear\": \"中性色调的超大"
+  },
+  {
+    "slug": "gemnana-592",
+    "title": "Surreal diorama emerging from an open vintage book of \"Brave...",
+    "prompt_preview": "来自阿道斯·赫胥黎《美丽新世界》打开的一本老旧书籍中浮现出的一场超现实 Diorama：书页形成一个未来派的孵化实验室，传送带上的发光试管里有胚胎形体，穿着白色实验室制服的工人操作机器，墙上有一个巨大的全视之眼符号，传送带通过隐藏的机制运转，冷蓝色霓虹灯照明，超写实的微型雕塑，临床且诡异的氛围，仿佛"
+  },
+  {
+    "slug": "gemnana-840",
+    "title": "New Style sref 2214211433",
+    "prompt_preview": "新风格 --sref 2214211433\n层叠抽象形状人物\n全新的 Midjourney 风格，受20世纪中期几何风格启发的插画，采用大胆的平面色彩、具有纹理的印刷颗粒感，以及由层叠的抽象相连形状构成的风格化人物。\n热门提示在第一条评论 🔥 https://t.co/nLX8njzvBb\n\n##"
+  },
+  {
+    "slug": "gemnana-743",
+    "title": "image metadata': {",
+    "prompt_preview": "{\n\"image_metadata\": {\n\"type\": \"2x2 拼贴画\",\n\"style\": \"休闲、生活方式、社交媒体风格\",\n\"setting\": \"拥有白墙和明亮照明的现代公寓室内\"\n},\n\"subject\": {\n\"description\": \"长金发、肤色白皙的年轻女性\",\n\"out"
+  },
+  {
+    "slug": "gemnana-2223",
+    "title": "夜の翼 💙🪽🌑 Wings of the Night",
+    "prompt_preview": ""
+  },
+  {
+    "slug": "gemnana-777",
+    "title": "image type': \"photograph\",",
+    "prompt_preview": "{\n\"image_type\": \"照片\",\n\"orientation\": \"纵向\",\n\"aspect_ratio\": \"2:3\",\n\"composition\": {\n\"framing\": \"主体居中并具有强烈的纵向对称性\",\n\"rule_of_thirds\": \"三分法规则：主体垂直居中，气球位于右"
+  },
+  {
+    "slug": "gemnana-825",
+    "title": "A cinematic, moody 肖像 of a stylish...",
+    "prompt_preview": "一幅电影感、情绪化的肖像，描绘了一位身穿深色西装、戴着椭圆形太阳镜的时尚女性，抽着一支细中等粗细的雪茄，同时在他的手中拿着一张燃烧的扑克牌——红心国王，戏剧性的火焰和烟雾在空气中盘旋，低调照明，温暖的橙色火光照亮了她的脸，暗色模糊背景，浅景深，超真实，高对比度，电影感摄影，35mm 镜头效果，柔和的"
+  },
+  {
+    "slug": "gemnana-726",
+    "title": "Formula 1 Car sref 2331516146",
+    "prompt_preview": ""
+  },
+  {
+    "slug": "gemnana-2332",
+    "title": "奢华 产品 摄影 of a green tr...",
+    "prompt_preview": "绿色半透明的沐浴露/淋浴露瓶被两只浸没在平静水中的女性双手轻柔托持。瓶子居中，表面光泽，带有水滴，银色金属瓶盖，优雅极简的标签设计。水呈深青绿色，水面上有柔和的薄雾缭绕。白色莲花和大片绿色荷叶在双手周围漂浮。手上戴着精致纤细的黄金戒指。柔和漫射的自然光，氛围感强的水疗场景，高端护肤品广告风格，超写实"
+  }
+]

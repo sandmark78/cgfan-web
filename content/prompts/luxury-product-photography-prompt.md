@@ -1,5 +1,5 @@
 ---
-title: "奢华 产品 摄影 — Matte Bottl..."
+title: "墨绿瓶金盖：奢华产品摄影"
 slug: "luxury-product-photography-prompt"
 author: "CGfan Editorial"
 date: 2026-07-27

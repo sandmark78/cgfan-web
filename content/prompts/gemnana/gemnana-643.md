@@ -1,5 +1,5 @@
 ---
-title: "Create a highly detailed isometric 3D re... 提示词"
+title: "等距视角地标建筑3D渲染"
 slug: gemnana-643
 date: 2026-01-02
 added: 2026-07-27T11:31:33+08:00

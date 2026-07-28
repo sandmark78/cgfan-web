@@ -1,5 +1,5 @@
 ---
-title: "A Quiet Moment Behind the Counter 提示词"
+title: "柜台后的静谧时光"
 slug: gemnana-1041
 date: 2026-01-12
 added: 2026-07-27T11:31:45+08:00

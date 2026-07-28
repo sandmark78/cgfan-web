@@ -1,5 +1,5 @@
 ---
-title: "A young woman with an elegant, polished... 提示词"
+title: "绛红蕾丝礼服的优雅女性"
 slug: gemnana-2200
 date: 2026-02-21
 added: 2026-07-27T12:54:10+08:00

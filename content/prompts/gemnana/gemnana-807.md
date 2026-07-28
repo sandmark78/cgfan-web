@@ -1,5 +1,5 @@
 ---
-title: "A cute, cinematic brand fantasy scene fe... 提示词"
+title: "泰迪熊从可乐罐中探出身来"
 slug: gemnana-807
 date: 2026-01-07
 added: 2026-07-27T11:31:33+08:00

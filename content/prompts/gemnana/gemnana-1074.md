@@ -1,5 +1,5 @@
 ---
-title: "Some moments are too vast for words. 提示词"
+title: "某些瞬间浩瀚到无法言说"
 slug: gemnana-1074
 date: 2026-01-12
 added: 2026-07-27T11:31:45+08:00

@@ -1,5 +1,5 @@
 ---
-title: 'render goal': "Contemporary cinematic fashion portrait","
+title: "石墨缎面裙的电梯时尚肖像"
 slug: gemnana-755
 date: 2026-01-06
 added: 2026-07-27T11:31:33+08:00

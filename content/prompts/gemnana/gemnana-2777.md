@@ -1,5 +1,5 @@
 ---
-title: "Gemini Nano Banana 2写实提示词"
+title: "雪山之巅的巨型可乐罐"
 slug: gemnana-2777
 date: 2026-04-13
 added: 2026-07-27T12:54:24+08:00

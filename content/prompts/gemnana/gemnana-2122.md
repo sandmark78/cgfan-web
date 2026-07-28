@@ -1,5 +1,5 @@
 ---
-title: "A soft focus, cinematic 肖像 of a yo..."
+title: "金色柔焦中的梦幻少女"
 slug: gemnana-2122
 date: 2026-02-14
 added: 2026-07-27T12:54:10+08:00

@@ -1,5 +1,5 @@
 ---
-title: "Ultra realistic cinematic fashion photog... 提示词"
+title: "扶梯间的奢华时装秀"
 slug: gemnana-2439
 date: 2026-03-08
 added: 2026-07-27T12:54:17+08:00

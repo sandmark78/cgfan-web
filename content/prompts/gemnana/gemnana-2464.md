@@ -1,5 +1,5 @@
 ---
-title: "Ultra detailed large scale miniature dio... 提示词"
+title: "电影经典场景微缩模型"
 slug: gemnana-2464
 date: 2026-03-09
 added: 2026-07-27T12:54:17+08:00

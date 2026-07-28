@@ -1,5 +1,5 @@
 ---
-title: "48k Hyper realistic, A cinematic portrai... 提示词"
+title: "鸽群环绕的电影感肖像"
 slug: gemnana-2476
 date: 2026-03-10
 added: 2026-07-27T12:54:17+08:00

@@ -1,5 +1,5 @@
 ---
-title: "Create a 3×3 grid in 提示词"
+title: "九宫格商业产品视觉矩阵"
 slug: gemnana-1714
 date: 2026-01-26
 added: 2026-07-27T12:53:55+08:00

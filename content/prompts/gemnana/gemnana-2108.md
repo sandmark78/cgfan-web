@@ -1,5 +1,5 @@
 ---
-title: "Shot on a Hasselblad 907X 50C with an XC... 提示词"
+title: "哈苏镜头下的西装绅士"
 slug: gemnana-2108
 date: 2026-02-13
 added: 2026-07-27T12:54:10+08:00

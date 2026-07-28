@@ -1,5 +1,5 @@
 ---
-title: "Create a high quality stylized 3D render... 提示词"
+title: "玻璃骷髅的深夜苦读"
 slug: gemnana-1253
 date: 2026-01-14
 added: 2026-07-27T11:31:46+08:00

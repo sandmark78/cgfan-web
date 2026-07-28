@@ -1,5 +1,5 @@
 ---
-title: "Create an ultra realistic, cinematic 8K... 提示词"
+title: "街头风格的全侧身影"
 slug: gemnana-2337
 date: 2026-03-02
 added: 2026-07-27T12:54:10+08:00

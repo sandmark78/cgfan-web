@@ -1,5 +1,5 @@
 ---
-title: "Cinematic 肖像 摄影 — 金色..."
+title: "金色花田中的电影感人像"
 slug: "cinematic-portrait-photography-prompt"
 author: "CGfan Editorial"
 date: 2026-07-27

@@ -1,5 +1,5 @@
 ---
-title: "The Beauty of @midjourney V8 Alpha 提示词"
+title: "Midjourney V8之美"
 slug: gemnana-2617
 date: 2026-03-19
 added: 2026-07-27T12:54:17+08:00

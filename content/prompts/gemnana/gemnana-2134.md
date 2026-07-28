@@ -1,5 +1,5 @@
 ---
-title: "[PERSONE]. Act as a Creative Director an... 提示词"
+title: "创意总监的视觉隐喻"
 slug: gemnana-2134
 date: 2026-02-15
 added: 2026-07-27T12:54:10+08:00

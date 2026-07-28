@@ -1,5 +1,5 @@
 ---
-title: "Niji journey/Midjourney https://t.co/x3j... 提示词"
+title: "Niji动漫风格创作"
 slug: gemnana-1098
 date: 2026-01-13
 added: 2026-07-27T11:31:45+08:00

@@ -1,5 +1,5 @@
 ---
-title: "High quality stylized 3D CGI Pixar style... 提示词"
+title: "皮克斯风格文化人物镜前自拍"
 slug: gemnana-2562
 date: 2026-03-16
 added: 2026-07-27T12:54:17+08:00

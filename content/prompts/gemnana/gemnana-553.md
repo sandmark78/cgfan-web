@@ -1,5 +1,5 @@
 ---
-title: "踏雪寻梅 Nano banana pro prompt：1. 基本风格 (Art Style)• 绘画流派：没骨画风格 (Mogu Style)• 表现手法：中国传统水墨与重彩晕染，强调以"
+title: "没骨画风格的踏雪寻梅"
 slug: gemnana-553
 date: 2026-01-08
 added: 2026-07-27T11:31:27+08:00

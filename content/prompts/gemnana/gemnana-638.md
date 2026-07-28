@@ -1,5 +1,5 @@
 ---
-title: 'type': "image generation","
+title: "电影感透视超写实人像"
 slug: gemnana-638
 date: 2026-01-01
 added: 2026-07-27T11:31:33+08:00

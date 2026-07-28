@@ -1,5 +1,5 @@
 ---
-title: "There's something about C... 创作"
+title: "银叶草框住小确幸：珠光珠宝"
 slug: theres-something-about-cinestill-and-1560823000
 model: Midjourney
 category: realistic

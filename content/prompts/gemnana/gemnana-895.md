@@ -1,5 +1,5 @@
 ---
-title: "A detailed technical blueprint illustrat... 提示词"
+title: "精密机械结构技术蓝图详解"
 slug: gemnana-895
 date: 2026-01-09
 added: 2026-07-27T11:31:40+08:00

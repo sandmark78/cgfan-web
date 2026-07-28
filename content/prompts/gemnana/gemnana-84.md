@@ -1,5 +1,5 @@
 ---
-title: "渐变挤出Google I/O 2025大会视觉效果"
+title: "等距多色渐变挤出"
 slug: gemnana-84
 date: 2025-11-06
 added: 2026-07-27T11:31:11+08:00

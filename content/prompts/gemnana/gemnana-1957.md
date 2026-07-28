@@ -1,5 +1,5 @@
 ---
-title: "[Lebron James]. Act as a graphic designer specializing in "Mo..."
+title: "勒布朗·詹姆斯现代复古纪念海报"
 slug: gemnana-1957
 date: 2026-02-03
 added: 2026-07-27T12:54:05+08:00

@@ -1,5 +1,5 @@
 ---
-title: "夜の翼 💙🪽🌑 Wings of the Night"
+title: "夜之翼"
 slug: gemnana-2223
 date: 2026-02-23
 added: 2026-07-27T12:54:10+08:00

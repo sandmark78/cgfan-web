@@ -1,5 +1,5 @@
 ---
-title: "Good night, good morning, or good aftern... 提示词"
+title: "早安午安晚安问候风格"
 slug: gemnana-1332
 date: 2026-01-15
 added: 2026-07-27T11:31:50+08:00

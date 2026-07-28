@@ -1,5 +1,5 @@
 ---
-title: "A detailed ballpoint pen sketch of [CHAR... 提示词"
+title: "格子纸上的圆珠笔素描肖像"
 slug: gemnana-641
 date: 2026-01-02
 added: 2026-07-27T11:31:33+08:00

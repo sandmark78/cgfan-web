@@ -1,5 +1,5 @@
 ---
-title: 'objective': "Create a dramatic, high contrast cinematic port..."
+title: "暖光下的西装青年电影肖像"
 slug: gemnana-1532
 date: 2026-01-18
 added: 2026-07-27T11:31:51+08:00

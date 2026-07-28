@@ -1,5 +1,5 @@
 ---
-title: "Good morning creative friends. ☕️ 提示词"
+title: "极简冷调早安创意风格"
 slug: gemnana-1050
 date: 2026-01-12
 added: 2026-07-27T11:31:45+08:00

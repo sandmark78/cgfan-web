@@ -1,5 +1,5 @@
 ---
-title: "Create a hyper realistic miniature plane... 提示词"
+title: "微缩行星上的地标景观"
 slug: gemnana-768
 date: 2026-01-07
 added: 2026-07-27T11:31:33+08:00

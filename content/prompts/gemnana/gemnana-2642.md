@@ -1,5 +1,5 @@
 ---
-title: "Create a highly cinematic and realistic... 提示词"
+title: "雨夜车窗内的人像"
 slug: gemnana-2642
 date: 2026-03-22
 added: 2026-07-27T12:54:17+08:00

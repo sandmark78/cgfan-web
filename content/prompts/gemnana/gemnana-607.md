@@ -1,5 +1,5 @@
 ---
-title: 'type': "image generation prompt","
+title: "电影感街头纪实摄影"
 slug: gemnana-607
 date: 2025-12-23
 added: 2026-07-27T11:31:27+08:00

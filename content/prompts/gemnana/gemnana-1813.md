@@ -1,5 +1,5 @@
 ---
-title: "I missed the aesthetic style with Midjou... 提示词"
+title: "令人怀念的复古美学风格"
 slug: gemnana-1813
 date: 2026-01-29
 added: 2026-07-27T12:54:05+08:00

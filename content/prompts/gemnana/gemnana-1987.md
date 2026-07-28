@@ -1,5 +1,5 @@
 ---
-title: "A minimalist cinematic colored poster fe... 提示词"
+title: "碎纸片拼贴重构的面部肖像"
 slug: gemnana-1987
 date: 2026-02-05
 added: 2026-07-27T12:54:10+08:00

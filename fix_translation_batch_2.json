@@ -1,0 +1,152 @@
+[
+  {
+    "slug": "gemnana-2218",
+    "title": "[PERSONE]. Act as a Senior Art Director.",
+    "prompt_preview": "[PERSONE]。担任资深艺术总监。\n阶段 1：摄影构图。\n- 图层效果：双重曝光摄影拼贴。前景为高清动作镜头；背景为巨大纪念性轮廓。\n- 重叠：主体必须与背景图形无缝融合。\n阶段 2：情境氛围模拟。\n- 身份分析：自主识别 [PERSONE] 的核心行业（体育、音乐、电影或商业）。\n- 姿势与道"
+  },
+  {
+    "slug": "gemnana-2309",
+    "title": "An architectural blueprint of [BUILDING...",
+    "prompt_preview": "一张放置在{SURFACE}上的[BUILDING_NAME]的建筑蓝图，上面有一个从蓝图中浮现出的[BUILDING_NAME]的逼真微缩施工版——[STRUCTURAL_ELEMENT_1]、[STRUCTURAL_ELEMENT_2]、[STRUCTURAL_ELEMENT_3]、[CONST"
+  },
+  {
+    "slug": "gemnana-2447",
+    "title": "Ultra detailed large scale miniature dio...",
+    "prompt_preview": "位于[CITY]的[STADIUM NAME]的超精细大尺度微缩场景，作为高级博物馆级桌面展览模型呈现。\n真正的建筑比例模型工艺，具备极其细致的精微细节。\n[STADIUM NAME]在构图中完全可见并居中：标志性的屋顶结构、外立面细节、戏剧性升起的泛光灯塔，从地面到屋顶整个体育场都被准确呈现。\n环"
+  },
+  {
+    "slug": "gemnana-2416",
+    "title": "Using the reference picture, create A st...",
+    "prompt_preview": ""
+  },
+  {
+    "slug": "gemnana-2562",
+    "title": "High quality stylized 3D CGI Pixar style...",
+    "prompt_preview": "高质量的风格化3D CGI 皮克斯风格渲染，竖向3:4构图，来自[COUNTRY]的三位最具标志性且最易辨识的文化人物被捕捉成一幅混乱而欢乐的浴室镜子自拍；最具视觉冲击力的人物穿着最正宗的传统服饰，举起那台大型复古相机对准镜子，其余人物挤在画面中，各自穿着最具标志性的服装，展示出他们最具代表性的表情"
+  },
+  {
+    "slug": "gemnana-2533",
+    "title": "Make a hyper realistic cinematic movie p...",
+    "prompt_preview": "制作一张超写实的电影海报：一位强大的年轻女性巫师从一张破裂的黑桃皇后纸牌中冲破而出。纸牌向外炸裂，石块碎片、尘土和残骸定格在半空中。她穿着一件华丽的王室栗红与金色刺绣的中世纪奇幻夹克，面料质感丰富，细节繁复，既庄重又带有神秘感。巫师向观众伸出一只手，手指发出强烈的魔法能量，手周围环绕着细微的金色火花"
+  },
+  {
+    "slug": "gemnana-1859",
+    "title": "<instruction",
+    "prompt_preview": "输入 A 是 一种 机械 设备 或 小工具（例如：复古相机、机械手表、V8 发动机、游戏机）。\n将 该 对象 分解 成 3 个 功能 层  :\n机架（外壳）：识别 主 机身 框架 或 外壳。\n引擎（内部）：识别 主要 的 内部 机制。\n（例如：相机 -> 快门 与 反光镜。手表 -> 发条 与 擒纵"
+  },
+  {
+    "slug": "gemnana-2473",
+    "title": "A hyper realistic cinematic close up por...",
+    "prompt_preview": "超逼真的电影感特写肖像（使用上传的人脸作为参考）。\n主体仰望，微微抬起下巴，眼睛半睁，仿佛被头顶的光吸引。一束冷白色的顶灯营造戏剧性自上而下的光照，刻画面部轮廓，背景保持黑色。柔和的体积雾气形成微妙的光束。身着哑光黑色高领夹克。\n使用85mm镜头拍摄，浅景深，高对比，带有灵性、超凡的氛围。肖像模式。"
+  },
+  {
+    "slug": "gemnana-2600",
+    "title": "You can visualise your full brand identi...",
+    "prompt_preview": "你可以在一个提示语中可视化你的完整品牌识别👇\n我用 Midjourney 做了一系列插画，想快速可视化看看它作为品牌形象的效果。所以我把一堆带插画和徽标的图片发给 NB，并给了它一个提示：\n\"Create ONE final image — a bento grid layout with nine"
+  },
+  {
+    "slug": "gemnana-2432",
+    "title": "Minimalist branded flower packaging desi...",
+    "prompt_preview": "为 [brand] 的极简品牌花卉包装设计，环保纸板套带一体化手柄，雕塑般的弧形轮廓自然环绕鲜花花束，包装完全采用官方品牌色系设计，哑光表面，品牌标志干净地居中置于前面板，精密模切窗口融入设计，使花朵若隐若现地伸出，统一的色块布局与品牌识别保持一致，现代高端品牌美学，顺滑的纸质纹理，精致的结构细节，"
+  },
+  {
+    "slug": "gemnana-2985",
+    "title": "Renoise配套GPT图2海报",
+    "prompt_preview": "Renoise 中的 GPT 图像 2\n使用此提示词\n创建一张高质量的宣传海报，A4 版面，画面中包含上传的角色。上半部分：角色的头部、面部特征、面具或半身剪影应作为主要、标志性的视觉元素。中部至下半部分：以稳定或略带动态的站立姿势呈现角色的全身，形成画面的中心焦点。围绕剪影应用双重曝光与叙事拼贴技"
+  },
+  {
+    "slug": "gemnana-1030",
+    "title": "This SREF creates a cold sci fi mood wit...",
+    "prompt_preview": "这个 SREF 以迷雾般的蓝色调、庞大的结构，以及在巨大尺度下迷失的微小人物，营造出一种冷冽的科幻氛围。安静、紧张、富有电影感。\n💫 --sref 1541648910\n#midjourney #sref #aiart #tischeins https://t.co/RZyQPJdUUU\n\n## 美"
+  },
+  {
+    "slug": "gemnana-1170",
+    "title": "[PERSON NAME]. Act as a graphic designer...",
+    "prompt_preview": "[PERSON NAME]。 扮演一名平面设计师，创作一张极简、前卫的街头服饰海报。\nCOMPOSITION（融合）：\n图像是一个巨型排版名字与单色人像的创意融合。\n主题：一张高对比、黑白的全身或3/4裁切人像照片，人物居中站立，呈现冷酷且超然的表情。\n排版：人物的名字水平写满整个画面宽度。文字与身"
+  },
+  {
+    "slug": "gemnana-768",
+    "title": "Create a hyper realistic miniature plane...",
+    "prompt_preview": "创建一个极其写实的微型行星，展示 [KASHMIR]，著名地标无缝地弯曲环绕在球形表面。将粗体的 3D 白色文本 “[KASHMIR]” 自然融入到郁郁葱葱的中心公园绿地上，带有真实的阴影和立体深度。以从顶视的轨道视角拍摄，突出行星弯曲的戏剧性。使用柔和的黄金时段日光，透过部分多云的天空过滤，给翡翠"
+  },
+  {
+    "slug": "gemnana-989",
+    "title": "Ultra realistic cinematic photo, profess...",
+    "prompt_preview": "超真实电影风格照片，专业单反相机画质，8K 细节，纵向（人像）构图。\n一位时尚的年轻男子（使用参考图像，完全保留身份）随意站在一座现代玻璃空中步道上，俯瞰被柔雾环绕的郁郁葱葱的群山。他自信地靠在透明玻璃栏杆上，一只手自然搭着，脚踝交叉，姿态放松。\n他穿着一件蓝白相间的校队夹克，上面有精细的刺绣补丁和"
+  },
+  {
+    "slug": "gemnana-1337",
+    "title": "A high end commercial food photograph of...",
+    "prompt_preview": "一张高端商业食品摄影，呈现与参考图像中相同的两份塔可，保留其精确的结构、馅料、比例和排列。相机角度略微调整为更讨好的3/4近景，增强纵深感和食欲诱惑，但不改变塔可本身。柔和的电影感灯光突出玉米饼和馅料的质感，伴随轻微蒸汽和自然光泽以强调新鲜感。背景替换为干净、现代、虚化的环境，采用温暖的互补色调以增"
+  },
+  {
+    "slug": "gemnana-1086",
+    "title": "A poetic ink and paint style with misty...",
+    "prompt_preview": "一种诗意的水墨画风格，带有云雾缭绕的峰峦、柔和的天空，以及从自然过渡到城市而不失平静的静谧尺度转换。\n💫 --sref 2977395589\n#midjourney #sref #aiart #tischeins https://t.co/vcOQb9V3Fk\n\n## 美学评分\n\n- 平均分: 8."
+  },
+  {
+    "slug": "gemnana-719",
+    "title": "A realistic cinematic photograph of a ha...",
+    "prompt_preview": "一张真实感十足的电影感照片，描绘一位英俊的男子在日落时分沿着达尔湖边缘骑自行车，身着橄榄绿外套搭配浅色毛衣、黑色长裤和深色鞋子。他留着短发并经过造型，胡须修剪整齐，面对镜头平静地望去，带着略显自信的表情。温暖的黄金时段光线映照在湖面，背景是传统的夏卡拉船，船上有人在划桨，水面泛着柔和的涟漪，远处的群"
+  },
+  {
+    "slug": "gemnana-1372",
+    "title": "Create a collection of icons representin...",
+    "prompt_preview": "创建一组图标，代表 [主题]，它们属于同一主题。将它们放在 2x2 网格中（无分隔线）。背景为纯白色。将图标制作成 Risograph 印刷风格。无文字。无色彩失真。色彩鲜艳且不褪色。在色块填充内使用随机点画和沙状噪点纹理。每个图标都有粗黑色描边。\n\n## 美学评分\n\n- 平均分: 8.2\n- 推荐"
+  },
+  {
+    "slug": "gemnana-1263",
+    "title": "[BRAND NAME]. Act as a Creative Director...",
+    "prompt_preview": "[BRAND NAME]。以创意总监与时尚摄影师的身份，创作一张带有 UI 叠加层的高端编辑风格样册图像。\n1. 主体（前卫街头服饰与自然姿态）：\n一位时装模特居中站立于干净的摄影棚内。\n时装风格：造型为醒目、概念性的“现代前卫街头服饰”，诠释 [BRAND NAME] 的美学与配色。融合高端时尚与"
+  },
+  {
+    "slug": "gemnana-1041",
+    "title": "A Quiet Moment Behind the Counter",
+    "prompt_preview": ""
+  },
+  {
+    "slug": "gemnana-2228",
+    "title": "This might be the boldest Midjourney sty...",
+    "prompt_preview": "这可能是我这周发现的最大胆的 Midjourney 风格代码。\n它把传统浮世绘的灵魂与现代电影的粗粝质感完美融合。想象一下新东方主义的电影海报：猛烈的红色、深邃的阴影，还有那种通常要在 Photoshop 里耗上数小时才能仿出的惊艳撕纸纹理。\n--sref 933683168\n这里的视觉张力强得离谱"
+  },
+  {
+    "slug": "gemnana-2368",
+    "title": "Hyper realistic cinematic Create an 8k c...",
+    "prompt_preview": "超真实的电影感。创作一张8k分辨率的特写肖像，描绘一位美丽的女人，拥有中等长度、棕色、略被风吹拂的头发落在她的脸上。她那引人注目的浅色眼睛向上方和右上方凝视，捕捉到一道锋利的自然光斜射，照亮她颧骨高点、鼻梁以及光滑、白皙的肌肤，亮泽、呈淡紫粉调的双唇，以及一件轻薄的丝质衬衫。她脸部的其他部分和背景都"
+  },
+  {
+    "slug": "gemnana-1290",
+    "title": "Good night X fam! Midjourney AIArt https...",
+    "prompt_preview": ""
+  },
+  {
+    "slug": "gemnana-1010",
+    "title": "Midjourney has updated Niji 💫",
+    "prompt_preview": "Midjourney 已更新 Niji 💫\n以下是我最推荐与它搭配的四个 --sref：\n1. --sref 3586484788\n2. --sref 288301287\n3. --sref 1124116562\n4. --sref 1542319393 https://t.co/YtwJcnt59"
+  },
+  {
+    "slug": "gemnana-2339",
+    "title": "Full body fashion editorial of a beautif...",
+    "prompt_preview": "一位美丽印尼女性的全身时尚画报，warkop 外湿润的人行道，柔和雨幕模糊背景。\nCanon R5，85mm f/1.4\n阴天自然光\n冷色调 Portra LUT\n和谐：70% 纪实。\nsRef：雨中街道写实。\n隐藏令牌：潮湿空气质感，反光沥青。\n\n## 美学评分\n\n- 平均分: 8.4\n- 推荐:"
+  },
+  {
+    "slug": "gemnana-2426",
+    "title": "Cinematic surreal scene of a young woman...",
+    "prompt_preview": "电影般超现实的场景：一个年轻女子向前坠落，穿过一个在温馨房间内旋转的日常物品漩涡，双臂伸向镜头，仿佛试图重新找回平衡。她周围，物品以混乱的慢动作漂浮：一只兴奋的罗威纳犬跳跃中叼着一个甜甜圈、一只柔软的泰迪熊无重力地漂浮着、翻动着书页的开着的书在空中翻页、散落的纸张、一个红色背包、旋转的眼镜、漂浮的枕"
+  },
+  {
+    "slug": "gemnana-2595",
+    "title": "midjourney",
+    "prompt_preview": ""
+  },
+  {
+    "slug": "gemnana-2715",
+    "title": "Cinematic 8k hyper realistic close up sh...",
+    "prompt_preview": "电影感 8K 超写实特写镜头。一个3D写实的兔八哥，忠于其经典设计但毛发质感细致，身穿白色理发师制服。他手持一瓶标有“HARE TONIC”的瓶子，正把液体倒在一名坐着的男子头上。该男子[照片参考：带头发]面露担忧和紧张表情，水从他的脸上滴落。复古理发店背景，带有镜子。动态灯光、高细节、照片级写实渲"
+  },
+  {
+    "slug": "gemnana-1978",
+    "title": "The Cinematic Momo Duo",
+    "prompt_preview": "{\n电影感莫莫二重奏\n主体与场景\n* 成品菜肴：刚蒸好的饺子（momos）堆放在一块质朴的木板上。\n* 细节：光亮的面皮与精致手工褶皱，薄薄的油光，以及浓重戏剧性的蒸汽升起。\n* 解构视图：并排或分割画面展示“解构”的momo。漂浮的饺子皮、调味碎肉馅球，和散落的新鲜香草。\n动作与动态\n* 定格瞬间"
+  }
+]

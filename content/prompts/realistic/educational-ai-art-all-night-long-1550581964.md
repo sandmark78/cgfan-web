@@ -1,5 +1,5 @@
 ---
-title: 'Educational AI art : [all night long] 提示词'
+title: "通宵达旦·三格日本女子写真"
 slug: educational-ai-art-all-night-long-1550581964
 model: Midjourney
 category: realistic

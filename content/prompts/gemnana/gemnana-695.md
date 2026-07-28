@@ -1,5 +1,5 @@
 ---
-title: "Create a hyperrealistic miniature planet... 提示词"
+title: "微缩行星城市地标球体"
 slug: gemnana-695
 date: 2026-01-05
 added: 2026-07-27T11:31:33+08:00

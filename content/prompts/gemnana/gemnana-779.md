@@ -1,5 +1,5 @@
 ---
-title: "Core Intent: Create a photorealistic can... 提示词"
+title: "浅景深街头时尚抓拍"
 slug: gemnana-779
 date: 2026-01-07
 added: 2026-07-27T11:31:33+08:00

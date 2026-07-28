@@ -1,5 +1,5 @@
 ---
-title: "A hand painted isometric bird’s eye view... 提示词"
+title: "手绘复古地图鸟瞰国家风光"
 slug: gemnana-636
 date: 2025-12-31
 added: 2026-07-27T11:31:33+08:00

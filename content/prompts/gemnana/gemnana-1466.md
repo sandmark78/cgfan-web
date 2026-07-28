@@ -1,5 +1,5 @@
 ---
-title: "name: "Whimsical Sketch with Magical Golden Glow Prompt Gener..."
+title: "魔法金辉奇幻素描"
 slug: gemnana-1466
 date: 2026-01-16
 added: 2026-07-27T11:31:51+08:00

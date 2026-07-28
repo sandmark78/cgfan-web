@@ -1,5 +1,5 @@
 ---
-title: "Sydney Sweeney vibes 创作"
+title: "Sydney Sweeney超写实棚拍"
 slug: sydney-sweeney-vibes-1548950981
 model: Midjourney
 category: realistic

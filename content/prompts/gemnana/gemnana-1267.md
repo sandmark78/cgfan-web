@@ -1,5 +1,5 @@
 ---
-title: 'generation request': {"
+title: "闪光派对照相亭拼贴"
 slug: gemnana-1267
 date: 2026-01-14
 added: 2026-07-27T11:31:46+08:00

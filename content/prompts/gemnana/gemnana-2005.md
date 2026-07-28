@@ -1,5 +1,5 @@
 ---
-title: "[BRAND NAME]. Act as a Fashion Photograp... 提示词"
+title: "时尚摄影的几何空间舞台"
 slug: gemnana-2005
 date: 2026-02-06
 added: 2026-07-27T12:54:10+08:00

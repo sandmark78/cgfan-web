@@ -1,5 +1,5 @@
 ---
-title: "A hyper detailed origami style version o... 提示词"
+title: "折纸风格角色"
 slug: gemnana-2486
 date: 2026-03-11
 added: 2026-07-27T12:54:17+08:00

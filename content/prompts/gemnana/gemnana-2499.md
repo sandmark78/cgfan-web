@@ -1,5 +1,5 @@
 ---
-title: "肖像 of [your description], 面部 ill..."
+title: "废弃仓库中的戏剧性神光肖像"
 slug: gemnana-2499
 date: 2026-03-12
 added: 2026-07-27T12:54:17+08:00

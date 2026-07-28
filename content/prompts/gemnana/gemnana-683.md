@@ -1,5 +1,5 @@
 ---
-title: "A high angle, wide composition Impressio... 提示词"
+title: "雨夜街口的印象派光影油画"
 slug: gemnana-683
 date: 2026-01-05
 added: 2026-07-27T11:31:33+08:00

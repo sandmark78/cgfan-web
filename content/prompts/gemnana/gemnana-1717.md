@@ -1,5 +1,5 @@
 ---
-title: "Ultra realistic cinematic football poste... 提示词"
+title: "双重构图的足球英雄海报"
 slug: gemnana-1717
 date: 2026-01-26
 added: 2026-07-27T12:53:55+08:00

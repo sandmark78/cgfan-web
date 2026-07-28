@@ -1,5 +1,5 @@
 ---
-title: "Close up 肖像 of a young woman with..."
+title: "雀斑少女的森林光影肖像"
 slug: gemnana-1798
 date: 2026-01-28
 added: 2026-07-27T12:54:05+08:00

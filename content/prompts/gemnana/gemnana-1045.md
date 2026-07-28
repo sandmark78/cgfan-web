@@ -1,5 +1,5 @@
 ---
-title: "midjourney 提示词"
+title: "纹理与色彩的二次元旅程"
 slug: gemnana-1045
 date: 2026-01-12
 added: 2026-07-27T11:31:45+08:00

@@ -1,5 +1,5 @@
 ---
-title: "neo expressionism, zentangle, beautiful... 提示词"
+title: "新表现主义暗黑萌系禅绕画"
 slug: gemnana-933
 date: 2026-01-10
 added: 2026-07-27T11:31:40+08:00

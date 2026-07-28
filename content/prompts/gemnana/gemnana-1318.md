@@ -1,5 +1,5 @@
 ---
-title: "New Style sref 2483861691"
+title: "大胆扁平几何风故事书插画"
 slug: gemnana-1318
 date: 2026-01-15
 added: 2026-07-27T11:31:50+08:00

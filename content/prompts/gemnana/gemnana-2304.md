@@ -1,5 +1,5 @@
 ---
-title: "Un storyboard limpio en cuadrícula 3×3 c... 提示词"
+title: "品牌产品九宫格分镜展示"
 slug: gemnana-2304
 date: 2026-02-27
 added: 2026-07-27T12:54:10+08:00

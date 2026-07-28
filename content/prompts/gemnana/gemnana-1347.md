@@ -1,5 +1,5 @@
 ---
-title: "Transforma tu foto en 4 escenas de acció... 提示词"
+title: "照片变身四格动作大片"
 slug: gemnana-1347
 date: 2026-01-15
 added: 2026-07-27T11:31:50+08:00

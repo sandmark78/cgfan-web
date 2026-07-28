@@ -1,0 +1,152 @@
+[
+  {
+    "slug": "gemnana-1612",
+    "title": "奢华 fashion editorial 肖像 of a w...",
+    "prompt_preview": "奢华时尚社论肖像：一名女子站在一条雄伟的巨龙旁，她的额头轻轻靠着那带鳞的头颅。她身着精致的冰灰色高级定制礼服，饰以复杂的刺绣、水晶点缀与具有结构感的肩部线条，散发出王者般的力量与静谧的亲密感。发型为利落的编织盘发，点缀以精致且醒目的珠宝。电影感的奇幻写实、情绪静谧、神话般的优雅。冷调柔和的色彩方案，"
+  },
+  {
+    "slug": "gemnana-1800",
+    "title": "A cinematic night time 肖像 of a you...",
+    "prompt_preview": "一幅电影感的夜间肖像，描绘一位站在户外的年轻女性，柔和地被城市环境光照亮。她穿着一件深色优雅的外套，脖子上围着一条厚实的羊毛围巾。几缕松散的发丝被微风轻拂，勾勒出她的脸庞。情绪化的青绿色调分级，柔和的电影式光线，浅景深，奶油般的散景城市灯光在背景中柔和发光。平静、内省的表情，自然的皮肤质感，淡雅的妆"
+  },
+  {
+    "slug": "gemnana-2608",
+    "title": "A cinematic magazine style 肖像 of a...",
+    "prompt_preview": "一幅电影感的杂志风格肖像，描绘一位侧脸的英俊男子，戴着棕色毡礼帽，穿着奶油色西装外套。他留着短黑发，皮肤白皙，胡须修整得很干净。光线柔和且具方向性，微妙的阴影突显出面部轮廓，营造出戏剧性且高级时尚的效果。背景极简，浅灰色，创造出干净的影棚美感。\n图像顶部以大号加粗衬线体文字写着“旧钱”。图像底部以小"
+  },
+  {
+    "slug": "gemnana-1461",
+    "title": "generation request': {",
+    "prompt_preview": "{\n\"generation_request\": {\n\"meta_data\": {\n\"tool\": \"NanoBanana Pro\",\n\"task_type\": \"写实_抓拍_浪漫_夜间露营\",\n\"version\": \"v1.0_NIGHT_CAMP_TELESCOPE_STARGAZING_EN\","
+  },
+  {
+    "slug": "gemnana-2006",
+    "title": "image generation request': {",
+    "prompt_preview": "{\n\"图像生成请求\": {\n\"主体\": \"[在此处插入产品]\",\n\"环境\": {\n\"背景\": \"在 #111B24 与 #CAEFFF 之间的平滑、专业的双色渐变过渡\",\n\"照明\": \"高对比度的工作室照明，带有明亮的轮廓高光以强调光亮纹理\"\n},\n\"风格元素\": {\n\"美学\": \"Y2K Frut"
+  },
+  {
+    "slug": "gemnana-770",
+    "title": "A hyper realistic cinematic 3:4 竖版...",
+    "prompt_preview": "一幅极具真实感的电影感竖向3:4比例半身肖像，主角为一名年轻男子，其脸部与参考图像中的面孔完全一致，正随意地倚靠在一张二十世纪二十年代烟雾缭绕的酒吧桌上，手持一根复古手杖。\n他穿着灵感来自 Peaky Blinders 的定制羊毛三件套西装、马甲、领带和一顶平顶呢帽。\n头部微微向下，眼睛紧盯镜头，带"
+  },
+  {
+    "slug": "gemnana-2224",
+    "title": "わくわく 🌀 Flutter",
+    "prompt_preview": ""
+  },
+  {
+    "slug": "gemnana-661",
+    "title": "render goal': \"Natural cinematic garden portrait with timele...",
+    "prompt_preview": "{\n\"render_goal\": \"具有永恒优雅的自然电影感花园人像\",\n\"subject\": {\n\"pose\": \"女性在花园小路上自然站立，姿态放松\",\n\"expression\": \"平静沉着的自信，带着真诚的柔和微笑\"\n},\n\"wardrobe\": \"优雅的丝绸雪纺长裙，颜色为柔和的鼠尾草绿或"
+  },
+  {
+    "slug": "gemnana-907",
+    "title": "Objective': \"Create a high fashion editorial studio portrait...",
+    "prompt_preview": "{\n\"目标\": \"创建一幅高定时尚编辑风格的影室肖像，以垂直三联画形式呈现，具有电影般的奢华美学\",\n\"人物细节\": {\n\"主体\": {\n\"类型\": \"年轻女性\",\n\"发型\": \"长且顺滑的栗棕色头发\",\n\"妆容\": {\n\"风格\": \"自然、无瑕的肌肤\",\n\"重点\": \"眼部略微增强以突出神采\"\n}"
+  },
+  {
+    "slug": "gemnana-917",
+    "title": "prompt metadata': {",
+    "prompt_preview": "{\n\"提示元数据\": {\n\"标题\": \"Cinematic Royal Portrait: Ana de Armas\",\n\"版本\": \"2.0\",\n\"生成类型\": \"摄影写实 / 电影感\",\n\"纵横比\": \"3:4\",\n\"质量预设\": \"超高分辨率 / 8K / RAW\",\n\"美学风格\": \"童话王"
+  },
+  {
+    "slug": "gemnana-705",
+    "title": "Objective': \"Generate a cinematic, photorealistic portrait i...",
+    "prompt_preview": "{\n\"目标\": \"生成一张以冬季森林氛围为灵感的电影感、逼真写实的肖像\",\n\"人物设定\": {\n\"主体\": \"年轻女性\",\n\"形象\": {\n\"发型\": \"长而波浪状的深棕色头发，略带风吹拂\",\n\"眼睛\": \"浅蓝色\",\n\"皮肤\": \"白皙，带自然雀斑\",\n\"表情\": \"柔和、内省、略带忧郁\"\n},"
+  },
+  {
+    "slug": "gemnana-731",
+    "title": "overall theme': {",
+    "prompt_preview": "{\n\"overall_theme\": {\n\"description\": \"一组精选的四幕超写实画面，展示奢华、以健康为焦点的生活方式。\",\n\"mood\": \"平静、安详、平衡、雅致、宁静、焕发活力。\",\n\"style\": \"极简、奢华、现代、干净美学、充满向往感。\"\n},\n\"subject\": {"
+  },
+  {
+    "slug": "gemnana-2374",
+    "title": "Use the uploaded 图像 as the exact visu...",
+    "prompt_preview": "使用上传的图像作为罐子设计、标签、草莓、覆盆子、花朵、叶子、凝结水滴、红色渐变背景和反光表面的精确视觉参考。\n相机：\n锁定正面拍摄相机。\n不缩放。\n不旋转。\n不改变角度。\n工作室构图保持居中。\n风格：\n高端美容商业风。\n平滑组装序列。\n超写实。\n慢动作但不过分戏剧化。\n场景 – 开始（空白设置）："
+  },
+  {
+    "slug": "gemnana-793",
+    "title": "New Style sref 1088104093",
+    "prompt_preview": "新风格 --sref 1088104093\n向量扁平形状与波普图形\n新 Midjourney 风格，由简单几何形状构成的扁平向量、图形设计、高对比度颜色、粗轮廓线，以及细微的颗粒质感\n死侍 --sref 1088104093\n--sw 100 --stylize 300 --v 7 https://"
+  },
+  {
+    "slug": "gemnana-981",
+    "title": "Create a realistic 肖像 (100% identi...",
+    "prompt_preview": "创建一个真实写实的肖像（面部与真人100%相同，禁止编辑）。\n一幅超写实的黑白肖像，描绘一位年轻美丽的女性，表情平静、严肃且内省，随意地坐在一堆质朴的木箱上，置于极简主义的摄影棚环境中。她正对镜头，姿态放松而自信，双腿微微分开，一只手自然地放在两膝之间，另一只手松弛地横搭在大腿上，形成强烈的时尚编辑"
+  },
+  {
+    "slug": "gemnana-2498",
+    "title": "Cinematic double exposure 肖像 of a...",
+    "prompt_preview": ""
+  },
+  {
+    "slug": "gemnana-1482",
+    "title": "image detailed manifest': {",
+    "prompt_preview": "{\n\"图像详细清单\": {\n\"项目信息\": {\n\"图片标题\": \"Hollywood Sunset: Sydney Sweeney and Ana de Armas\",\n\"格式\": \"超高清 (UHD)\",\n\"渲染者\": \"Gemini AI 图像引擎\",\n\"时间戳\": \"2026-01-16T21"
+  },
+  {
+    "slug": "gemnana-378",
+    "title": "3D chibi风格乙烯基收藏品",
+    "prompt_preview": "3D chibi 风格乙烯基收藏品 [CHARACTER NAME] 大头，小身体，卡通比例，站在 Youtooz 风格的\n包装盒带有：透明前窗\n顶部有“YOUTOOZ COLLECTIBLES”标志\n左上角的数字标签（[#XXX]）\n底部文字：“[CHARACTER NAME]” 下方用较小的字体"
+  },
+  {
+    "slug": "gemnana-1667",
+    "title": "subject': {",
+    "prompt_preview": "{\n\"subject\": {\n\"identity\": \"用户提供的肖像\",\n\"expression\": \"宁静，毫不费力地诱人\",\n\"gaze\": \"直视，与相机对视\",\n\"pose\": \"躺在床上，用手臂支撑体重\"\n},\n\"styling\": {\n\"apparel\": {\n\"item\": \"舒适针"
+  },
+  {
+    "slug": "gemnana-1235",
+    "title": "Strict 面部 preservation using uploaded...",
+    "prompt_preview": "严格面部保留，使用上传的参考以实现完全相同的面部特征，1 名女性，及地黑色晚礼服，歌剧手套，钻石珠宝，优雅的盘发，坐在维也纳式歌剧院的红色天鹅绒包厢座位上，背景为水晶吊灯、镀金装饰、华丽的天花板，温暖的吊灯光晕，浓郁的戏剧性金色氛围，8K 超写实，奢侈珠宝品牌广告美学，1:1 纵横比，单格框架 --"
+  },
+  {
+    "slug": "gemnana-1132",
+    "title": "prompt details': {",
+    "prompt_preview": "{\n\"prompt_details\": {\n\"subject\": {\n\"description\": \"优雅的年轻女子走下宏伟的楼梯\",\n\"appearance\": \"深棕色长卷发垂落肩上，低头，表情柔和优雅，皮肤白皙\",\n\"pose\": \"下楼步行，一只手向后伸以扶住栏杆，动作富有动感但姿态端庄\""
+  },
+  {
+    "slug": "gemnana-2068",
+    "title": "[产品], premium skincare 产品 ad,...",
+    "prompt_preview": "[product]，高端护肤品广告，产品直接放置在新鲜的 [fruit_or_vegetable] 上并被其环绕，通过视觉叙事表明该产品由该成分制成，丰富饱和的色彩调色板与成分相匹配，多汁逼真的质感，可见的籽、果肉或切片，光泽高光，戏剧性的影棚照明，柔和的阴影，浅景深，微距产品摄影效果，超逼真，编辑"
+  },
+  {
+    "slug": "gemnana-2128",
+    "title": "Create a typographic art 肖像 using...",
+    "prompt_preview": "使用所上传的这张人物照片作为参考，创建一幅排版艺术肖像。\n显示一个朝左的侧面轮廓肖像。\n整个图像——包括面部、头发和面部特征——必须完全由重复出现的白色书法文本构成，所用文字为：\"[PUT WHATEVER WORDS YOU WANT HERE]\"\n文字应沿着面部和头发的自然轮廓排列，清晰地勾勒出"
+  },
+  {
+    "slug": "gemnana-2666",
+    "title": "Objective': \"Create a 3x3 Instagram style grid of low qualit...",
+    "prompt_preview": "{\n\"目标\": \"创建一个3x3的Instagram风格网格，包含同一位极其美丽的金发年轻女性在罗马旅行时使用低质量智能手机拍摄的照片，捕捉标志性地标，呈现自然无滤镜的美感。\",\n\"构图\": {\n\"布局\": \"3x3网格\",\n\"长宽比\": \"1:1\",\n\"取景\": \"每个方格展示不同的抓拍瞬间，形成"
+  },
+  {
+    "slug": "gemnana-2695",
+    "title": "Ultra realistic 4:5 竖版 format ultr...",
+    "prompt_preview": "超真实 4:5 垂直格式，13mm 超广角自拍，与 Bugs Bunny、Daffy Duck、Porky Pig、Elmer Fudd、Yosemite Sam、Tweety、Sylvester 在我的工作室。我穿着淡粉色 T 恤。我们都做着滑稽、夸张的表情。高角度拍摄。极端广角镜头，无鱼眼畸变。"
+  },
+  {
+    "slug": "gemnana-2743",
+    "title": "FGO FGO二部パッケージ妄想合わせ midjourney FateGrandOrder Mordred https:/...",
+    "prompt_preview": ""
+  },
+  {
+    "slug": "gemnana-88",
+    "title": "AirBnB 任何东西",
+    "prompt_preview": "一個高度詳盡的3D等距圖示，對象為 [OBJECT]。\n風格：Airbnb 2024 圖示語言——迷你景區/表情符號般的對象，邊緣清晰，紋理逼真，並帶有柔和的手工寫實感。\n材質：對象應清晰保留其基本特性，但看起來像由哑光與塑料材質混合而成。\n視角：三四分之二前左等距視角，稍微帶點俯視角。\n照明：來自"
+  },
+  {
+    "slug": "gemnana-1588",
+    "title": "Create ONE final 图像.",
+    "prompt_preview": "创建一张最终图像。\n一个干净的 3×3 [比例] 分镜网格，包含九个等同 [比例] 尺寸的画格，整体为 [4:5] 比例。\n以参考图像作为基础产品参考。保持相同的产品、包装设计、品牌标识、材质、颜色、比例和整体识别性，在所有九个画格中与参考图像完全一致。产品在每一帧中必须保持清晰可识别。标签、徽标和"
+  },
+  {
+    "slug": "gemnana-2571",
+    "title": "A 竖版 triptych of three cinematic,...",
+    "prompt_preview": "一组垂直的三联画，三幅夜间城市摄影，呈现电影感。主角是一名年轻男子，头发蓬乱、卷曲，呈红棕色，戴着细圆金属框眼镜。\n上部画面：男子坐在7-Eleven门店前。他穿着黑色高领毛衣外搭的一件深色格纹法兰绒衬衫。他在抓拍的瞬间，正将点着的香烟抵在嘴唇上。左侧有一个鲜亮的绿色霓虹招牌。灯光以冷冽的荧光绿光为"
+  },
+  {
+    "slug": "gemnana-1718",
+    "title": "Use The Uploaded 图像 Of The Woman As S...",
+    "prompt_preview": "使用所上传的女性图像作为严格的面部参考和身体特征 — 保持她的真实面容完全与原图一致，不做修改或风格化处理。确保在最终渲染中实现无缝、超写实的融合。黑白高端时尚编辑人像，拍摄对象为上传者，穿着宽松的白色衬衫。她一只手臂上举，部分遮挡面部，同时提起头发，营造出戏剧性且富有艺术感的构图。她的目光强烈而迷"
+  }
+]

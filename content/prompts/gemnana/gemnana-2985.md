@@ -1,5 +1,5 @@
 ---
-title: "Renoise配套GPT图2海报提示词"
+title: "双重曝光角色宣传海报"
 slug: gemnana-2985
 date: 2026-05-06
 added: 2026-07-27T12:54:24+08:00

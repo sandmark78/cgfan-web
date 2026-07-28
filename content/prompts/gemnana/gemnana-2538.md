@@ -1,5 +1,5 @@
 ---
-title: "Create a hyper realistic macro photograp... 提示词"
+title: "微距镜头下的超现实微缩世界"
 slug: gemnana-2538
 date: 2026-03-15
 added: 2026-07-27T12:54:17+08:00

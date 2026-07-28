@@ -1,5 +1,5 @@
 ---
-title: "A stunning Trompe L’oeil 3D composition,... 提示词"
+title: "撕破画纸跃入现实的人物"
 slug: gemnana-2679
 date: 2026-03-25
 added: 2026-07-27T12:54:23+08:00

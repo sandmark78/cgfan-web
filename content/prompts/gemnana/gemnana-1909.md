@@ -1,5 +1,5 @@
 ---
-title: "Commercial 奢华 产品 摄影, p..."
+title: "水滴凝驻的精华瓶"
 slug: gemnana-1909
 date: 2026-02-02
 added: 2026-07-27T12:54:05+08:00

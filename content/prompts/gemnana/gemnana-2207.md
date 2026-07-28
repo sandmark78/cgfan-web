@@ -1,5 +1,5 @@
 ---
-title: "第１回ACLコンテスト"
+title: "ACL竞赛作品"
 slug: gemnana-2207
 date: 2026-02-21
 added: 2026-07-27T12:54:10+08:00

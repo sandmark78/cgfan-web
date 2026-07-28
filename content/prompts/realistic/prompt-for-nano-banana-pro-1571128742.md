@@ -1,5 +1,5 @@
 ---
-title: '提示词 for nano banana pro:'
+title: "戏剧光影：丰盈身姿与清纯面容"
 slug: prompt-for-nano-banana-pro-1571128742
 model: Midjourney
 category: realistic

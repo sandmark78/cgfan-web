@@ -1,5 +1,5 @@
 ---
-title: "A cinematic 4 panel photo collage showin... 提示词"
+title: "城市漫步四格胶片"
 slug: gemnana-682
 date: 2026-01-05
 added: 2026-07-27T11:31:33+08:00

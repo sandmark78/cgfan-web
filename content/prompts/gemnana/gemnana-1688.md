@@ -1,5 +1,5 @@
 ---
-title: "Create an ultra realistic cinematic 8K p... 提示词"
+title: "黑装男子混凝土墙电影肖像"
 slug: gemnana-1688
 date: 2026-01-25
 added: 2026-07-27T12:53:50+08:00

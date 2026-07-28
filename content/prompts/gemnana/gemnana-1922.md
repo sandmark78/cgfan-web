@@ -1,5 +1,5 @@
 ---
-title: "A highly realistic sculpture of a [objec... 提示词"
+title: "面包雕塑超写实造型"
 slug: gemnana-1922
 date: 2026-02-02
 added: 2026-07-27T12:54:05+08:00

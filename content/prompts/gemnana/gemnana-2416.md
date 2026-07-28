@@ -1,5 +1,5 @@
 ---
-title: "Using the reference picture, create A st... 提示词"
+title: "参考图场景重现"
 slug: gemnana-2416
 date: 2026-03-06
 added: 2026-07-27T12:54:17+08:00

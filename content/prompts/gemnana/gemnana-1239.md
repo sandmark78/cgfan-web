@@ -1,5 +1,5 @@
 ---
-title: "Bold, graphic and playful Midjourney sty... 提示词"
+title: "大胆图形风趣味插画"
 slug: gemnana-1239
 date: 2026-01-14
 added: 2026-07-27T11:31:46+08:00

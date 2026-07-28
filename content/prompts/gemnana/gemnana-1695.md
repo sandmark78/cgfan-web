@@ -1,5 +1,5 @@
 ---
-title: "Walter White editorial surreal, centered... 提示词"
+title: "沃尔特·怀特的冰毒光环超现实肖像"
 slug: gemnana-1695
 date: 2026-01-25
 added: 2026-07-27T12:53:55+08:00

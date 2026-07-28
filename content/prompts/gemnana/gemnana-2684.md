@@ -1,5 +1,5 @@
 ---
-title: "Transform this movie poster into a child... 提示词"
+title: "电影海报变成蜡笔涂鸦"
 slug: gemnana-2684
 date: 2026-03-26
 added: 2026-07-27T12:54:23+08:00

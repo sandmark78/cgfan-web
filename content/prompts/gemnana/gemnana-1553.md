@@ -1,5 +1,5 @@
 ---
-title: "Good night friends. Rest well and rememb... 提示词"
+title: "晚安祝福"
 slug: gemnana-1553
 date: 2026-01-18
 added: 2026-07-27T11:31:51+08:00

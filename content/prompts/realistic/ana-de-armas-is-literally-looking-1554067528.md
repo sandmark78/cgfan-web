@@ -1,5 +1,5 @@
 ---
-title: "Ana de Armas 超写实肖像"
+title: "Ana de Armas超写实肖像"
 slug: ana-de-armas-is-literally-looking-1554067528
 model: Midjourney
 category: realistic

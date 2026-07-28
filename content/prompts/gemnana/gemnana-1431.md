@@ -1,5 +1,5 @@
 ---
-title: "奢华 产品 摄影 of artisanal..."
+title: "香草研磨咖啡的奢华静物"
 slug: gemnana-1431
 date: 2026-01-16
 added: 2026-07-27T11:31:50+08:00

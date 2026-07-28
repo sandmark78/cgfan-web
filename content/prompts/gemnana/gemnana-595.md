@@ -1,5 +1,5 @@
 ---
-title: "From anime to realism without losing sou... 提示词"
+title: "从动漫到写实的灵魂跨越"
 slug: gemnana-595
 date: 2025-12-21
 added: 2026-07-27T11:31:27+08:00

@@ -1,5 +1,5 @@
 ---
-title: "I really like this SREF for its ornate a... 提示词"
+title: "新艺术风格蓝金装饰美学"
 slug: gemnana-870
 date: 2026-01-08
 added: 2026-07-27T11:31:40+08:00

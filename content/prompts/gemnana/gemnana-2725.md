@@ -1,5 +1,5 @@
 ---
-title: 'prompt': "An open children’s picture book rests on a wooden..."
+title: "童书里的小种子在发芽"
 slug: gemnana-2725
 date: 2026-03-30
 added: 2026-07-27T12:54:23+08:00

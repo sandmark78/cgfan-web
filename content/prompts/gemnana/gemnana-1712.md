@@ -1,5 +1,5 @@
 ---
-title: "Niji journey/Midjourney https://t.co/h8Q... 提示词"
+title: "风格探索之旅"
 slug: gemnana-1712
 date: 2026-01-26
 added: 2026-07-27T12:53:55+08:00

@@ -1,5 +1,5 @@
 ---
-title: "[PERSON NAME]. Act as a graphic designer... 提示词"
+title: "排版与人像融合的街头海报"
 slug: gemnana-1170
 date: 2026-01-13
 added: 2026-07-27T11:31:45+08:00

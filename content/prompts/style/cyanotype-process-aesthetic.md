@@ -1,5 +1,5 @@
 ---
-title: "蓝晒法 Cyanotype 工艺美学：普鲁士蓝肖像"
+title: "蓝晒工艺：普鲁士蓝肖像"
 slug: cyanotype-process-aesthetic
 author: Alexandra Aisling
 date: 2026-07-25

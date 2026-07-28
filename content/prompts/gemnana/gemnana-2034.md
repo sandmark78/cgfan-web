@@ -1,5 +1,5 @@
 ---
-title: "Fantastic digital painting of a young ma... 提示词"
+title: "霓虹火焰中的胜利少年"
 slug: gemnana-2034
 date: 2026-02-08
 added: 2026-07-27T12:54:10+08:00

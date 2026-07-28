@@ -1,5 +1,5 @@
 ---
-title: "アクアシルク 🌊 Aqua Silk"
+title: "水丝飘渺的流动质感"
 slug: gemnana-2225
 date: 2026-02-23
 added: 2026-07-27T12:54:10+08:00

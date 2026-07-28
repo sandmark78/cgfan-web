@@ -1,5 +1,5 @@
 ---
-title: "2x2 grid, do this for 4 important years... 提示词"
+title: "历史年份发明的3D字体雕塑"
 slug: gemnana-2609
 date: 2026-03-19
 added: 2026-07-27T12:54:17+08:00

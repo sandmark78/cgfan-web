@@ -1,5 +1,5 @@
 ---
-title: "A photorealistic editorial style portrai... 提示词"
+title: "四格胶片接触片人像"
 slug: gemnana-1245
 date: 2026-01-14
 added: 2026-07-27T11:31:46+08:00

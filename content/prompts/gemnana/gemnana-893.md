@@ -1,5 +1,5 @@
 ---
-title: 'render goal': "High fashion transformation portrait","
+title: "瓷器纹理高定礼服的优雅转型肖像"
 slug: gemnana-893
 date: 2026-01-09
 added: 2026-07-27T11:31:40+08:00

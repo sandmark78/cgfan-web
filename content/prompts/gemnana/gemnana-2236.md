@@ -1,5 +1,5 @@
 ---
-title: 'prompt': "Ultra realistic beach selfie of a young woman with..."
+title: "红花遮眼的海滩红发少女"
 slug: gemnana-2236
 date: 2026-02-24
 added: 2026-07-27T12:54:10+08:00

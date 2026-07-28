@@ -1,5 +1,5 @@
 ---
-title: "An aerial photograph captures a surreal... 提示词"
+title: "棕榈岛上的巨型咖啡杯航拍"
 slug: gemnana-943
 date: 2026-01-10
 added: 2026-07-27T11:31:40+08:00

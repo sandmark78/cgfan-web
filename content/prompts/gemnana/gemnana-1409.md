@@ -1,5 +1,5 @@
 ---
-title: "Cat and Shoji door–Nano Banana Pro–Promp... 提示词"
+title: "障子门前的猫"
 slug: gemnana-1409
 date: 2026-01-16
 added: 2026-07-27T11:31:50+08:00

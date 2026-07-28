@@ -1,0 +1,152 @@
+[
+  {
+    "slug": "gemnana-2503",
+    "title": "Generate a 3D isometric diorama illustra...",
+    "prompt_preview": "生成一个 3D 等角小景插画，描绘 [CHARACTER] 在家工作，坐在带有笔记本电脑和窗户的办公桌前。手工毛毡质感，形状圆润抛光，封闭在一个六边形圆角立方体框架内。房间装饰、颜色、家具、墙面艺术和配饰都能让人立即认出是 [CHARACTER] —— 反映出他们的标志性风格、标志性物品、服装和个性"
+  },
+  {
+    "slug": "gemnana-2692",
+    "title": "A hyper realistic 3D photo concept showi...",
+    "prompt_preview": "一个超写实的 3D 照片概念，展示一只手拿着一张方形宝丽来照片，照片上标有“ELEMENT”。照片内是 [ELEMENT] 的特写，并从照片框无缝流出进入现实世界，自然地与下方表面互动。“ELEMENT” 字样整洁地印在照片的白色边框上。真实的电影质感灯光、超精细的纹理、艺术性的构图，1080×10"
+  },
+  {
+    "slug": "gemnana-1688",
+    "title": "Create an ultra realistic cinematic 8K p...",
+    "prompt_preview": "创建一幅超写实电影感 8K 肖像，使用人脸参考完全一致（100% 相同，不做更改）——保留原始面部特征、比例、皮肤纹理、头发和表情。一名男子戴着黑色太阳镜，穿着黑色 T 恤、黑色皮夹克、深色牛仔裤和黑色匡威风格运动鞋，随意坐在混凝土墙沿上。一条腿弯曲，另一条自然下垂。他的姿态放松，散发出冷静自信。一"
+  },
+  {
+    "slug": "gemnana-2682",
+    "title": "Pixar 3D CGI animated movie poster style...",
+    "prompt_preview": "Pixar 风格的 3D CGI 动画电影海报风格，群星阵容，呈现来自 [MOVIE/SHOW] 的最具标志性和辨识度的角色，全部以 Pixar 风格的 3D 动画角色呈现，具有夸张、富有表情的面部、光滑风格化的皮肤、大眼睛、厚重的比例。角色自动选择为来自 [MOVIE/SHOW] 的最著名的英雄和"
+  },
+  {
+    "slug": "gemnana-2645",
+    "title": "Pixar/Disney 3D CGI animated movie poste...",
+    "prompt_preview": "皮克斯/迪士尼 3D CGI 动画电影海报。柔和的体积光照、平滑的皮下散射皮肤着色、富有表现力的皮克斯风格面部、精致的工作室级渲染质量。纵向海报，3:4 比例。\n剧集/电影：[SHOW/MOVIE]\n自动挑选 [SHOW/MOVIE] 中最具代表性的 3 位角色。将每位渲染为皮克斯风格的 3D CG"
+  },
+  {
+    "slug": "gemnana-2614",
+    "title": "A detailed, collectible style 3D render...",
+    "prompt_preview": "详尽、收藏级风格的 3D 渲染，呈现一排线性队列的十二个相同人形，采用动态的对角 3/4 透视沿队列向远处延展。\n这些人形排列在深色渐变的影棚地面上，景深逐渐变浅，使最远端的角色细节较少。\n具体姿势序列：\n队列必须沿线遵循一个明确的姿势序列：\n第一位且最近的角色双臂垂于两侧站立。\n第二位角色双臂交叉"
+  },
+  {
+    "slug": "gemnana-1125",
+    "title": "Winter Vogue",
+    "prompt_preview": ""
+  },
+  {
+    "slug": "gemnana-709",
+    "title": "A hyper realistic, cinematic close up of...",
+    "prompt_preview": "一个极其真实、电影感的特写镜头，展示一块新鲜出炉的 pepperoni 披萨片从披萨上被抬起，长而戏剧性的奶酪拉丝如丝带般向下延展。\n金黄略带焦痕的外皮，纹理清晰，起泡的马苏里拉奶酪，光泽诱人的 pepperoni 薄片，新鲜罗勒叶点缀其上，以及散落在披萨上的多汁樱桃番茄。\n从热腾腾的披萨片上升起的"
+  },
+  {
+    "slug": "gemnana-1216",
+    "title": "A high definition, realistic 3D social m...",
+    "prompt_preview": "高清、写实的 3D 社交媒体头像风格。画面描绘一位年轻的英国女孩，拥有光滑、笔直的白色头发和清晰细致的面容。她穿着搭配一致的耐克品牌服饰，包括一套高档的黑红色耐克运动套装，能看到明显的 Swoosh 徽标。脚上是一双经典的红、白、黑配色耐克 Air Jordan 运动鞋。她坐在一个白色 Instag"
+  },
+  {
+    "slug": "gemnana-1437",
+    "title": "Present a clear, 45° top down isometric...",
+    "prompt_preview": "呈现一个清晰的、45° 俯视等轴测微缩 3D 卡通场景，内容为来自 [MOVIE/SHOW] 的标志性场景 [SCENE NAME]，具有柔和细腻的纹理、逼真的 PBR 材质以及柔和逼真的光照。\n创建一个小型抬高的立体场景底座，包含该场景最具识别性的元素，必要时附带微小风格化人物（无面部细节）。\n使"
+  },
+  {
+    "slug": "gemnana-2559",
+    "title": "A hyper realistic 3D anatomical human [o...",
+    "prompt_preview": "一个超写实的3D人体[器官]解剖模型，采用半透明磨砂聚碳酸酯制成，呈奶白哑光表面，柔和地散射光线。工业注塑成型细节、细微的微纹理，以及带有精密接缝的圆润边缘。内部复杂的机械组件取代了有机组织：微型齿轮、活塞、电路和工程化舱室在壳体内可见，但透过外壳略显模糊。表面自然嵌入了一个低调的白色 Apple"
+  },
+  {
+    "slug": "gemnana-1922",
+    "title": "A highly realistic sculpture of a [objec...",
+    "prompt_preview": "一件极其真实的[object]雕塑，完全由[bread type]制成，照片级写实，极其细致的面包质感，真实的内部结构，金黄褐色的外壳，带有细微的起泡，来自烘焙釉面的自然光泽，合适的位置可见明显的层状纹理或疏松的气孔，若相关则镶嵌芝麻或罂粟籽，微小裂纹和烤焦的边缘，真实的厚度与重量，工作室产品照明，"
+  },
+  {
+    "slug": "gemnana-951",
+    "title": "Create a hyper realistic 3D holographic...",
+    "prompt_preview": "创建一个超现实的3D全息蓝图投影，展示一辆[CAR NAME]从深蓝色技术蓝图纸上以发光的青蓝色线框模型出现，放置在木制车间工作台上。该车辆呈发光的电蓝色线框线条，带有网格图案和透明表面，营造出未来派的全息效果。3D模型悬浮在平放的蓝图图纸上方，配以戏剧性的灯光和明亮的青色光晕。周围摆放精密制图工具"
+  },
+  {
+    "slug": "gemnana-2124",
+    "title": "Ultra realistic Cinematic Close up Portr...",
+    "prompt_preview": "超写实电影风格特写肖像，将主体替换为我的参考图片。\n一位年轻女性，从肩部以上展现，头部略微转向，目光看向画外，表情柔和、沉思。面部比例自然，皮肤纹理可见，保留细微的雀斑和精细细节。\n松散、略显凌乱的发丝散落在脸颊，营造自然、亲密的氛围；身着细肩带黑色上衣，造型简约，无重装饰。灯光具有戏剧性和电影质感"
+  },
+  {
+    "slug": "gemnana-666",
+    "title": "A hyper detailed origami [FOOD ITEM] fol...",
+    "prompt_preview": ""
+  },
+  {
+    "slug": "gemnana-965",
+    "title": "[BRAND NAME]. Act as a vector illustrato...",
+    "prompt_preview": "[BRAND NAME]。作为一名矢量插画师，设计一套时尚、高端的“贴纸页”套装。\n任务：\n将 [BRAND NAME] 的品牌识别拆解成一套有趣、统一的贴纸设计，大约 8–10 个独特贴纸，排列在同一张贴纸页上。\n内容生成：不仅限于制作标志。自主构思组合：\n吉祥物/角色：风格化的半身人物，佩戴与品"
+  },
+  {
+    "slug": "gemnana-996",
+    "title": "Don’t watch the clock; do what it does....",
+    "prompt_preview": "别看钟表；学它那样做。继续前进。\nGemini Nano Banana Pro + Grok 想象。\n提示 ⤵️\n创建一张电影感的黑白社论时尚摄影，画面中一位年轻女性自信地坐在一把简单的木凳上，地点为一片开阔且略显野性的草地，一匹强健的黑马紧靠在她身后。她一只手松松地牵着马缰绳，流露出沉静的掌控感。"
+  },
+  {
+    "slug": "gemnana-695",
+    "title": "Create a hyperrealistic miniature planet...",
+    "prompt_preview": "创建一个超写实的微型行星，展示 [CITY]，其著名地标在球形表面无缝曲线环绕。将粗体3D白色文本“[CITY]”自然融入到郁郁葱葱的中央公园绿地，具有真实的阴影与立体深度。以俯瞰的轨道角度捕捉，强调行星曲率的戏剧性。使用柔和的黄金时段日光透过多云的天空，照在翡翠绿的草地和周围树木上，投射柔和的阴影"
+  },
+  {
+    "slug": "gemnana-1239",
+    "title": "Bold, graphic and playful Midjourney sty...",
+    "prompt_preview": ""
+  },
+  {
+    "slug": "gemnana-1328",
+    "title": "8K Ultra Realistic Promotional",
+    "prompt_preview": "8K 超写实宣传\n呈现一个清晰的、45° 俯视等轴侧微缩 3D 场景，展示 [SUBWAY SYSTEM / LINE NAME]。场景包含风格化的立体模型元素，如站台、微缩列车、楼梯间、标识牌、瓷砖墙、自动售货机和候车乘客。\n使用柔和、精致的纹理、逼真的 PBR 材质，以及带有细微阴影的逼真光照以"
+  },
+  {
+    "slug": "gemnana-887",
+    "title": "A highly realistic mirror selfie of a yo...",
+    "prompt_preview": "一张通过带镀铬金属边框和支架的圆形台面镜反射拍摄的高度写实的年轻女性镜子自拍。构图感觉亲密自然，像一个安静的个人护理时刻。\n她穿着一件白色的细肩带背心。头上包着一条柔软的灰米色毛巾，盘成头巾式，完全遮住了头发。在她左眼下方，贴着一副金色水凝胶眼贴——半圆形，略带反光并有细微的金属光泽。\n她的面部看起"
+  },
+  {
+    "slug": "gemnana-2390",
+    "title": "A transparent cup filled with fresh Spri...",
+    "prompt_preview": "一个透明杯盛着新鲜的雪碧柠檬汽水，悬浮在空中，周围环绕着闪耀的柠檬青柠汽水飞溅、明亮的冰块，以及在饮料周围爆裂的微小碳酸泡泡。杯子采用绿色极简文字设计，呈现清新、干净的品牌形象。超现实的饮料产品摄影，配以专业工作室照明，纹理细节清晰，具备显微级清晰度，仿佛用索尼 A7S 拍摄。黑色与霓虹绿色背景突出"
+  },
+  {
+    "slug": "gemnana-555",
+    "title": "Ultra-Realistic NYC Floating Island",
+    "prompt_preview": "超逼真宣传\n创作一张超高清、超逼真的数字海报，描绘一个漂浮的微型岛屿，形状像[纽约]，静静地坐落在天上的白云之上。融合标志性地标、自然风光（如森林、山脉或海滩），以及[美国]独有的文化元素。使用大号白色 3D 字母将“[美国]”雕刻在陆地上。添加艺术细节，如鸟类（[美国]本土物种）、电影般的灯光、鲜"
+  },
+  {
+    "slug": "gemnana-1338",
+    "title": "Input Variable: [INSERT PODCAST NAME]",
+    "prompt_preview": "输入变量: [INSERT PODCAST NAME]\n系统说明:\n担任媒体考古学家。创建一个 2x2 网格。\n策展: 识别与输入相似的 4 个“隐藏宝石”播客。\n时代推断: 对每个播客，确定其“灵魂时代”（例如，是粗糙的模拟音质？光滑的数字？复古广播？）。\n容器: 生成一个与该时代相关的音频设备（"
+  },
+  {
+    "slug": "gemnana-897",
+    "title": "A clean, modern personal branding mockup...",
+    "prompt_preview": "一个干净、现代的个人品牌演示图，展现面向女性创作者或企业家的统一视觉识别。场景包括一个极简品牌套件，展示在柔和中性色背景上：一个带框的肖像配以优雅的排版字体、一个圆形标志，嵌有手绘线条画脸部的插图，以及印有同一标志的品牌周边用品，如白色T恤、手提袋和陶瓷杯。一个网格风格的社交媒体排布展现肖像摄影、幕"
+  },
+  {
+    "slug": "gemnana-986",
+    "title": "Ultra high quality, hyper realistic comm...",
+    "prompt_preview": "超高品质、极度写实的商业美食摄影，拍摄对象为 [COUNTRY FOOD NAME]，以 8K 细节呈现，画幅比例为（4:3 或 3:4）。\n食物以多种高档视觉变体呈现，每种都以电影般方式突出纹理、层次和新鲜度。\n食物细节：\n– 正宗的 [COUNTRY] 美食呈现\n– 清晰可见的层次、馅料或特定于"
+  },
+  {
+    "slug": "gemnana-2322",
+    "title": "Ultra realistic top down geographic map...",
+    "prompt_preview": "超写实的俯视地理地图，具有精确的制图准确性，清晰地定义[COUNTRY]的真实地理语境。\n从[ CITY]的精确真实世界坐标处，一座高度细致的微缩3D场景有机地从地图表面升起，完全与其真实位置对齐。\n该微缩场景呈现城市的代表性建筑、典型自然地标和真实的文化元素，仿佛从地图中雕刻而出，无缝融入地图之中"
+  },
+  {
+    "slug": "gemnana-736",
+    "title": "<instructions You are a cinematic miniat...",
+    "prompt_preview": "你是一位具有电影感的微缩景观导演和博物馆展览设计师。将任何主题转换为桌面级场景，通过实体对象、笔记和一个微型“专家”人偶来解释它。 逻辑 1) 推断该主题的3–5个核心概念、它的时代（若有的话），以及它的“证明/验证时刻”。 2) 选择一个“主文物”（书籍、蓝图、地图、账本、实验室日志、代码打印件、"
+  },
+  {
+    "slug": "gemnana-627",
+    "title": "A soft, high quality plush toy of [CHARA...",
+    "prompt_preview": "一只柔软、高品质的[CHARACTER]毛绒玩具，头部过大、身体较小、四肢短胖。采用毛绒面料，缝线清晰可见，面部特征以绣花呈现。毛绒玩具以坐姿或立姿呈现于中性背景前。表情可爱或富有表现力，如有相关，会穿着简约的衣物或标志性配饰。光线柔和、均匀，呈现真实、可收藏的毛绒玩具质感。居中显示全身视图。\n\n#"
+  },
+  {
+    "slug": "gemnana-864",
+    "title": "This SREF leans into surreal adventure w...",
+    "prompt_preview": ""
+  }
+]

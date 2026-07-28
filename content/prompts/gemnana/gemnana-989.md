@@ -1,5 +1,5 @@
 ---
-title: "Ultra realistic cinematic photo, profess... 提示词"
+title: "玻璃栈道上的时尚青年"
 slug: gemnana-989
 date: 2026-01-11
 added: 2026-07-27T11:31:40+08:00

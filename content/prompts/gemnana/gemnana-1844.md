@@ -1,5 +1,5 @@
 ---
-title: "8K Ultra Realistic Promotional 提示词"
+title: "黑白影棚中的彩色奢华腕表"
 slug: gemnana-1844
 date: 2026-01-31
 added: 2026-07-27T12:54:05+08:00

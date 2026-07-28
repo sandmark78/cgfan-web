@@ -1,5 +1,5 @@
 ---
-title: "SQL语法书籍可视化框架"
+title: "SQL语法书籍可视化"
 slug: sql-book-visualization
 model: Common
 category: style

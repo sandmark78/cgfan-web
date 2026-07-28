@@ -1,5 +1,5 @@
 ---
-title: "The Eiffel Tower is wrapped in an unreal... 提示词"
+title: "埃菲尔铁塔缠绕红色毛线"
 slug: gemnana-2644
 date: 2026-03-22
 added: 2026-07-27T12:54:17+08:00

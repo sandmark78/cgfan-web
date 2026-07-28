@@ -1,0 +1,152 @@
+[
+  {
+    "slug": "gemnana-1351",
+    "title": "prompt': \"cute cozy isometric 3D miniature bathroom diorama,...",
+    "prompt_preview": "{\n\"prompt\": \"可爱温馨的等轴测 3D 微缩浴室场景模型，温暖舒适的美学，详细的微小房间角落视角，温暖的赤陶土和米色配色，小型日式浴室场景，奶油色陶瓷地铁砖配温暖的木质饰边，复古脚爪浴缸装满蓝色泡沫，浴缸上的木质浴盘放着打开的笔记本、绿色杯子、肥皂、蜡烛、小盆栽，金色黄铜弯曲的浴帘杆配米色"
+  },
+  {
+    "slug": "gemnana-2078",
+    "title": "image generation': {",
+    "prompt_preview": "{\n\"image_generation\": {\n\"subject\": {\n\"description\": \"时尚的年轻女子坐在高高云层之上的飞机机翼上\",\n\"pose\": \"随意地坐在飞机机翼上，一只手向前伸出仿佛在自拍，姿态放松但自信\",\n\"expression\": \"平静、自信、沉着\",\n\"gaz"
+  },
+  {
+    "slug": "gemnana-1180",
+    "title": "Cinematic street 摄影 capturing a...",
+    "prompt_preview": "电影感的街头摄影，捕捉运动中的瞬间，带有人群模糊效果。俯视拍摄的我站在斑马线上静止不动，身穿白色纽扣衬衫、黑色宽松外套和橄榄绿色工装裤。被动感模糊的人群匆匆从身边掠过。氛围感十足的城市灯光，35mm 胶片美学，浅景深，肖像清晰对焦，展现出艺术且永恒的风格。\n\n## 美学评分\n\n- 平均分: 8.4"
+  },
+  {
+    "slug": "gemnana-1122",
+    "title": "プロンプトもご提供いただいていて、とても勉強になります…！NijiV7×nanobanana × sref＋NijiV7...",
+    "prompt_preview": "还提供了提示词，真的学到很多…！NijiV7×nanobanana × sref＋NijiV7 × 的流程\n手办超可爱💕\n这份立体感和存在感真的很戳我。\n#NijiV7\n#nanobanana https://t.co/GdDQwlvq2B\n\n## 美学评分\n\n- 平均分: 8.8\n- 推荐: 是"
+  },
+  {
+    "slug": "gemnana-1365",
+    "title": "A cinematic winter 肖像 of a handsom...",
+    "prompt_preview": "电影感的冬季人像，一个英俊的男人在蓝调时刻站在被雪覆盖的松林中，穿着深色羽绒夹克、羊毛围巾、手套和靴子，背着背包。他一手握着一盏发光的灯笼，温暖的光照在他脚下的雪地上。空中有柔和的雪花飘落，远处背景是被雪覆盖的群山，冷蓝色调的调色与灯笼带来的暖橙色形成对比。浅景深、超真实、高细节、情绪化氛围、电影感"
+  },
+  {
+    "slug": "gemnana-979",
+    "title": "Use 100% of the uploaded reference 图像...",
+    "prompt_preview": "对已上传的参考图像的面部、身份和面部结构使用100%相同——不要更改面部特征。一张高对比度的黑白时尚肖像，描绘一位二十岁后期的英俊青年，黑发，修剪得体的黑色胡须，从肩后回头望向镜头。他穿着一件时尚的黑色皮夹克，皮质纹理清晰可见，戴着现代风格的矩形太阳镜，镜片为深红色调。\n\n## 美学评分\n\n- 平均"
+  },
+  {
+    "slug": "gemnana-1056",
+    "title": "New Style sref 815518890",
+    "prompt_preview": "新风格 --sref 815518890\nX 光生物发光透明感\n全新的 Midjourney 风格，带有发光的 X 光质感、超现实、半透明且熠熠生辉的艺术，将科学解剖学与空灵的生物发光幻想相融合。\n透明巴哥犬 --sref 815518890\n--ar 1:1 --sw 100 --stylize"
+  },
+  {
+    "slug": "gemnana-848",
+    "title": "request type': \"image generation prompt\",",
+    "prompt_preview": "{\n\"请求类型\": \"图像生成提示\",\n\"来源素材\": {\n\"需要输入\": true,\n\"描述\": \"用户为面部参考上传的图像。\"\n},\n\"技术规格\": {\n\"分辨率\": \"64K DSLR 拍摄分辨率\",\n\"纵横比\": \"9:16\",\n\"渲染引擎\": [\n\"Octane Render\",\n\"Unr"
+  },
+  {
+    "slug": "gemnana-1027",
+    "title": "generation request': {",
+    "prompt_preview": "{\n\"generation_request\": {\n\"meta_data\": {\n\"tool\": \"NanoBanana Pro\",\n\"task_type\": \"写实 电影感 时尚 联络片\",\n\"version\": \"v1.0_红裙_亲密_编辑风格_3x3_无文字\",\n\"priority\": \"最高"
+  },
+  {
+    "slug": "gemnana-2149",
+    "title": "[产品], 3–4 identical units of the pr...",
+    "prompt_preview": "[product]，3–4个相同的产品单元悬浮在半空中，被新鲜的[fruit/vegetable]及由产品原料制成的切片环绕，成分悬浮在产品周围，动态平衡构图，超洁净纯白背景，无渐变，无色偏，柔和影棚灯光，悬浮物体下方真实柔和的阴影，光泽包装反射，多汁成分质感，高端护肤品编辑风格，超写实产品摄影，微"
+  },
+  {
+    "slug": "gemnana-2716",
+    "title": "A high fashion, cinematic 肖像 of a...",
+    "prompt_preview": "一张具有高级时尚、电影感的年轻女性肖像，呈现干练现代的美学。她位于低角度镜头中，俯视镜头，表情自信且宁静。场景为极简、高调明亮的环境，配有抽象的白色建筑结构，并有一条醒目的垂直粉色粗条纹。\n模特：一位年轻女性，拥有优雅且轮廓分明的下颌线，深色头发盘成有质感、略显「蓬松/凌乱」的高髻，伴有松散的细碎发"
+  },
+  {
+    "slug": "gemnana-182",
+    "title": "鸟类羽毛制成LOGO",
+    "prompt_preview": ""
+  },
+  {
+    "slug": "gemnana-1899",
+    "title": "A slow, sensual 奢华 巧克力 commerc...",
+    "prompt_preview": "一则慢节奏、感官诱人的奢华巧克力广告片，以超高清拍摄。场景在接近黑暗中拉开序幕：一个高级浓咖色礼盒，点缀柔和的金色装饰，在反光表面上缓慢旋转。温暖的聚光灯照亮压印标题“SWEET PROMISE”，采用优雅的衬线字体，配以低调的植物图案。随着盒盖以慢动作轻轻掀起，熔融的牛奶巧克力向上迸涌，呈现出违抗"
+  },
+  {
+    "slug": "gemnana-2732",
+    "title": "A studio 肖像, medium shot of a",
+    "prompt_preview": ""
+  },
+  {
+    "slug": "gemnana-2623",
+    "title": "Ultra detailed stylized 3D 肖像 usin...",
+    "prompt_preview": "使用提供的参考照片 勒布朗·詹姆斯 作为精确面部基础，制作超细致风格化3D肖像。\n完美保留该人物——面部形状、骨骼结构、下颌线、眼睛、鼻子、嘴唇、肤色、痕迹、雀斑、表情和比例完全一致。\n绝对不要以任何方式修改面部身份。\n仅转换为高端风格化3D写实。\n头部与元素：\n仅浮空头部（无颈、无肩、无身体）\n严"
+  },
+  {
+    "slug": "gemnana-2497",
+    "title": "Use a user uploaded 图像 as the source...",
+    "prompt_preview": "使用用户上传的图像作为源，将人物转换为风格化的 3D 角色，同时保留身份、面部结构、姿势、发型、服装和整体构图，完全与照片中所示一致。结果应清楚地与真实人物相似。\n视觉风格为风格化的 3D 角色，具有柔和的极简卡通 3D 美学，受类似皮克斯的视觉启发但更为极简，玩具人偶渲染风格，以及干净的产品式角色"
+  },
+  {
+    "slug": "gemnana-949",
+    "title": "resolution': \"8K UHD\",",
+    "prompt_preview": "{\n\"resolution\": \"8K 超高清\",\n\"aspect_ratio\": \"3:4\",\n\"image_style\": \"超写实商业美食摄影\",\n\"global_settings\": {\n\"quality\": \"超高细节、极致锐利对焦、优质街头美食清晰度\",\n\"lighting\": \"受控工"
+  },
+  {
+    "slug": "gemnana-849",
+    "title": "output settings': {",
+    "prompt_preview": "{\n\"输出设置\": {\n\"长宽比\": \"4:5\",\n\"方向\": \"竖向\",\n\"分辨率目标\": \"超高分辨率\",\n\"渲染风格\": \"超写实抓拍街头电影静帧\",\n\"清晰度\": \"清晰但自然\",\n\"胶片颗粒\": \"细微的35mm颗粒\",\n\"颜色分级\": \"克制的电影写实主义\",\n\"动态范围\": \"自然（非"
+  },
+  {
+    "slug": "gemnana-1166",
+    "title": "scene type': \"photorealistic fashion portrait\",",
+    "prompt_preview": "{\n\"scene_type\": \"写实时尚肖像\",\n\"subject\": {\n\"gender\": \"女性\",\n\"age_range\": \"20岁出头\",\n\"skin_tone\": \"白皙\",\n\"expression\": \"平静，自信\",\n\"gaze\": \"直视镜头\",\n\"hair\": {\n\"colo"
+  },
+  {
+    "slug": "gemnana-818",
+    "title": "2026 plan:",
+    "prompt_preview": "2026年计划：\n每月推出一个新的 Perplexity × Tatiana 风格！\n先用这件绝对惊人的作品开场：\n--chaos 10 --exp 30 --sref 3737544406 --profile xc42mvx --v 7\n在 Midjourney 试试看 ✨\n\n## 美学评分\n\n-"
+  },
+  {
+    "slug": "gemnana-1195",
+    "title": "A high fashion editorial 肖像 of a w...",
+    "prompt_preview": "一张高级时尚编辑肖像，画面中一位女性优雅地斜倚在极简摄影棚内悬浮的白色石阶上。她穿着一件柔和的祖母绿缎面礼服，雕塑般的褶皱层层垂落。一条腿伸展，姿态既放松又充满掌控感。她身后是一幅大幅色调肖像，用极简的笔触表现她的面容。柔和的摄影棚光线、细腻的光影变化、精致的优雅、艺术性平衡、奢华的编辑氛围，1:1"
+  },
+  {
+    "slug": "gemnana-1255",
+    "title": "产品 ad style AI 图像 on a mountain...",
+    "prompt_preview": "产品广告风格的 AI 图像，位于云海之上的山峰。由 Google Nano Banana Pro 创建。使用的提示：超逼真的电影感图像，一罐白色的 Monster Energy Ultra 罐矗立在云海之上的尖锐山峰上，极高海拔氛围，戏剧性的暴风雨天空，金色日出穿透云层，狂风卷起罐周围的雪和雾，罐体"
+  },
+  {
+    "slug": "gemnana-1321",
+    "title": "content goal': \"clean, elegant, viral side pose visual\",",
+    "prompt_preview": "{\n\"content_goal\": \"干净、优雅、易传播的侧身视觉\",\n\"image_type\": \"超写实生活方式 / 编辑人像\",\n\"visual_style\": {\n\"aesthetic\": \"电影感、编辑风、现代极简\",\n\"vibe\": \"自信、优雅、高端\",\n\"realism\": \"高端专"
+  },
+  {
+    "slug": "gemnana-2597",
+    "title": "subject and pose': \"Mina from TWICE, a beautiful Japanese wo...",
+    "prompt_preview": "{\n\"subject_and_pose\": \"来自TWICE的Mina，一位优雅的日本美人，具有精致的“黑天鹅”气质，鼻子上带着一小颗美人痣，深邃有神的眼睛，优雅而饱满的沙漏型身材。她留着又长又波浪的铂金金发，坐在一个抬高的台沿上。双腿垂下，赤脚脚尖向下指，双手轻放在腿上。她面向前方，目光平静而直视"
+  },
+  {
+    "slug": "gemnana-277",
+    "title": "创建Airbnb创意广告",
+    "prompt_preview": ""
+  },
+  {
+    "slug": "gemnana-1679",
+    "title": "reference image': {",
+    "prompt_preview": "{\n\"reference_image\": {\n\"use_same_face\": true,\n\"instruction\": \"使用参考图像中完全相同的面孔，不改变面部特征\"\n},\n\"scene\": \"超真实的电影工作室环境\",\n\"concept\": \"一名女性监督一个以她的微型自我为主角的幕后电影微缩"
+  },
+  {
+    "slug": "gemnana-1739",
+    "title": "project name': \"Premium Dark Horizon Product Reveal\",",
+    "prompt_preview": "{\n\"project_name\": \"Premium_Dark_Horizon_Product_Reveal\",\n\"USER_CUSTOMIZATION\": {\n\"INSTRUCTIONS\": \"将 'current_setting' 替换为你想要渲染的产品。系统将自动将其置于一个特定、固定的姿势："
+  },
+  {
+    "slug": "gemnana-1729",
+    "title": "task': \"Generate a hyper real studio photograph that matches...",
+    "prompt_preview": "{\n\"task\": \"生成一张超真实的棚拍照片，构图与参考图匹配：画面中心为一位身着礼服的成年人，四周有许多只手从各个边缘进入画面，将物品递向该人物，背景为与主题色调相匹配的幕布。\",\n\"variables\": {\n\"USER_PHOTO\": \">\",\n\"SUBJECT_THEME\": \">\",\n\""
+  },
+  {
+    "slug": "gemnana-105",
+    "title": "刺绣logo",
+    "prompt_preview": "一件超逼真的刺绣纺织艺术作品，主题为[SUBJECT]，由彩色线和柔软织物质感制成。设计具有密集的触觉缝线和模拟实际形态与品牌的立体刺绣。置于简洁的米白色织物背景上，采用干净的影棚灯光和清晰的特写视角。强调线迹、纹理和手工不完美以获得逼真的软雕塑外观。\n\n## 美学评分\n\n- 平均分: 8.0\n-"
+  },
+  {
+    "slug": "gemnana-294",
+    "title": "手办-ZBrush建模屏显与万代风格包装盒",
+    "prompt_preview": "NanoBanana手办提示词：\n在现实的风格和环境中，创建图像中角色的 1/7 比例商业化人物形象。\n将图形放置在电脑桌上，使用没有任何文字的圆形透明丙烯酸底座。\n在电脑屏幕上，显示人物的ZBrush建模过程。\n在电脑屏幕旁边，放置一个印有原创艺术品的BANDAl风格玩具包装盒。\n\n## 美学评分"
+  }
+]

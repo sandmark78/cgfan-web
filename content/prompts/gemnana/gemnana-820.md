@@ -1,5 +1,5 @@
 ---
-title: "function recommend(x) { Determine type(x... 提示词"
+title: "雕刻书块中的推荐世界"
 slug: gemnana-820
 date: 2026-01-08
 added: 2026-07-27T11:31:39+08:00

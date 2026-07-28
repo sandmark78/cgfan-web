@@ -1,5 +1,5 @@
 ---
-title: "New Style sref 1236693939"
+title: "七十年代太空探险故事书插画"
 slug: gemnana-1496
 date: 2026-01-17
 added: 2026-07-27T11:31:51+08:00

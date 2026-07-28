@@ -1,5 +1,5 @@
 ---
-title: "Luxury cosmetic photograp... 创作"
+title: "冰凝之美：奢华护肤品摄影"
 slug: luxury-cosmetic-photography-meets-1557351931
 model: Midjourney
 category: realistic

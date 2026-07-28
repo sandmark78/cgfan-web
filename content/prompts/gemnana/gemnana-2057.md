@@ -1,5 +1,5 @@
 ---
-title: "promptmoon 提示词"
+title: "碎镜之问：谁是实体"
 slug: gemnana-2057
 date: 2026-02-09
 added: 2026-07-27T12:54:10+08:00

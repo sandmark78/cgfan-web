@@ -1,5 +1,5 @@
 ---
-title: 'prompt': "Ultra detailed stylized portrait using my face as..."
+title: "建筑蓝图风格的几何分割肖像"
 slug: gemnana-1640
 date: 2026-01-21
 added: 2026-07-27T12:53:44+08:00

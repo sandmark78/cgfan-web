@@ -1,5 +1,5 @@
 ---
-title: "A cinematic fashion studio scene of a wo... 提示词"
+title: "缝制迷你裙的裁缝少女"
 slug: gemnana-2159
 date: 2026-02-18
 added: 2026-07-27T12:54:10+08:00

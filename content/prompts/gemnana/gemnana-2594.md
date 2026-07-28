@@ -1,5 +1,5 @@
 ---
-title: "An architectural blueprint of {BUILDING... 提示词"
+title: "建筑蓝图中浮现的迷你模型"
 slug: gemnana-2594
 date: 2026-03-18
 added: 2026-07-27T12:54:17+08:00

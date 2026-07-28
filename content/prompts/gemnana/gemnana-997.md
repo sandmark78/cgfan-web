@@ -1,5 +1,5 @@
 ---
-title: "This SREF nails a high contrast grayscal... 提示词"
+title: "高对比灰度雕塑感肖像"
 slug: gemnana-997
 date: 2026-01-11
 added: 2026-07-27T11:31:40+08:00

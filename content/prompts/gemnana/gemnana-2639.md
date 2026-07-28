@@ -1,5 +1,5 @@
 ---
-title: "midjourney 提示词"
+title: "幻游之旅"
 slug: gemnana-2639
 date: 2026-03-22
 added: 2026-07-27T12:54:17+08:00

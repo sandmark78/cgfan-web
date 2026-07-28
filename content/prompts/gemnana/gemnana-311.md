@@ -1,5 +1,5 @@
 ---
-title: "Funko Pop风格乙烯基公仔"
+title: "Funko Pop鱼眼视角公仔"
 slug: gemnana-311
 date: 2025-11-06
 added: 2026-07-27T11:31:15+08:00

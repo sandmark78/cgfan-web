@@ -1,5 +1,5 @@
 ---
-title: "<instructions you are a world class visu... 提示词"
+title: "游戏世界的立体微缩场景设计"
 slug: gemnana-827
 date: 2026-01-08
 added: 2026-07-27T11:31:39+08:00

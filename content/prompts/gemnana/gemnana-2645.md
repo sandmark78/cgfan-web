@@ -1,5 +1,5 @@
 ---
-title: "Pixar/Disney 3D CGI animated movie poste... 提示词"
+title: "迪士尼皮克斯三角色海报"
 slug: gemnana-2645
 date: 2026-03-22
 added: 2026-07-27T12:54:17+08:00

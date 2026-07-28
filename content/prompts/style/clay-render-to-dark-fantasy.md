@@ -1,5 +1,5 @@
 ---
-title: "Clay Render → 暗黑奇幻电影画面：两步去噪工作流"
+title: "黏土渲染转暗黑奇幻"
 slug: clay-render-to-dark-fantasy
 author: DrSadek
 date: 2026-07-21

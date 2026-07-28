@@ -1,5 +1,5 @@
 ---
-title: 'Objective': "Create a realistic candid street photograph wit..."
+title: "街头转身瞬间的纪实肖像"
 slug: gemnana-772
 date: 2026-01-07
 added: 2026-07-27T11:31:33+08:00

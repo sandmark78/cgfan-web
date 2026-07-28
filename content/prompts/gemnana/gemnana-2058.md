@@ -1,5 +1,5 @@
 ---
-title: "[cake type], hyper realistic food photog... 提示词"
+title: "名画风格奶油蛋糕"
 slug: gemnana-2058
 date: 2026-02-09
 added: 2026-07-27T12:54:10+08:00

@@ -1,5 +1,5 @@
 ---
-title: "A surreal, ultra realistic scene of a yo... 提示词"
+title: "金框中走出的文艺复兴少女"
 slug: gemnana-2135
 date: 2026-02-15
 added: 2026-07-27T12:54:10+08:00

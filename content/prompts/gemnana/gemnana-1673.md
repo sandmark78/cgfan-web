@@ -1,5 +1,5 @@
 ---
-title: "A clean 3×3 storyboard grid with nine eq... 提示词"
+title: "九宫格品牌产品分镜展示"
 slug: gemnana-1673
 date: 2026-01-25
 added: 2026-07-27T12:53:50+08:00

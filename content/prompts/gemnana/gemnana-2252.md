@@ -1,5 +1,5 @@
 ---
-title: "Style & Composition: High fashion editor... 提示词"
+title: "高时尚分割排版海报"
 slug: gemnana-2252
 date: 2026-02-24
 added: 2026-07-27T12:54:10+08:00

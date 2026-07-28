@@ -1,5 +1,5 @@
 ---
-title: "A hyper realistic, cinematic close up po... 提示词"
+title: "饱经风霜的战士凝视"
 slug: gemnana-690
 date: 2026-01-05
 added: 2026-07-27T11:31:33+08:00

@@ -1,5 +1,5 @@
 ---
-title: "A French New Wave–style minimalist lover... 提示词"
+title: "法式新浪潮黑白恋人场景"
 slug: gemnana-1682
 date: 2026-01-25
 added: 2026-07-27T12:53:50+08:00

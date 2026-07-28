@@ -1,5 +1,5 @@
 ---
-title: "Quality is remembered long after price i... 提示词"
+title: "品质长存，价格易忘"
 slug: gemnana-1361
 date: 2026-01-15
 added: 2026-07-27T11:31:50+08:00

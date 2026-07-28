@@ -1,5 +1,5 @@
 ---
-title: "This SREF has a retro sci fi illustratio... 提示词"
+title: "复古科幻插画中的宁静城市"
 slug: gemnana-715
 date: 2026-01-06
 added: 2026-07-27T11:31:33+08:00

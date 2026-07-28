@@ -1,5 +1,5 @@
 ---
-title: "Create a typographic illustration shaped... 提示词"
+title: "文字填充轮廓的排版造型插图"
 slug: gemnana-631
 date: 2025-12-29
 added: 2026-07-27T11:31:33+08:00

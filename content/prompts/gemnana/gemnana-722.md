@@ -1,5 +1,5 @@
 ---
-title: 'Objective': "Create a joyful, cinematic fantasy photograph s..."
+title: "魔法童话乐园里的快乐自拍"
 slug: gemnana-722
 date: 2026-01-06
 added: 2026-07-27T11:31:33+08:00

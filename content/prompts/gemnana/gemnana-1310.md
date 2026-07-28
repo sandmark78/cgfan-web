@@ -1,5 +1,5 @@
 ---
-title: "Nano Banana Pro 提示词"
+title: "极繁主义美国乡村场景"
 slug: gemnana-1310
 date: 2026-01-15
 added: 2026-07-27T11:31:50+08:00

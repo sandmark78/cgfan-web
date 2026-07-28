@@ -1,5 +1,5 @@
 ---
-title: "[upload 奢华 产品 photo]"
+title: "奢华品牌编辑海报"
 slug: gemnana-758
 date: 2026-01-06
 added: 2026-07-27T11:31:33+08:00

@@ -1,5 +1,5 @@
 ---
-title: "btw since a friend thought the cover ima... 提示词"
+title: "朋友以为封面图是真的"
 slug: gemnana-2069
 date: 2026-02-10
 added: 2026-07-27T12:54:10+08:00

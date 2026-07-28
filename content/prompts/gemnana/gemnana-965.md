@@ -1,5 +1,5 @@
 ---
-title: "[BRAND NAME]. Act as a vector illustrato... 提示词"
+title: "品牌矢量插画贴纸页"
 slug: gemnana-965
 date: 2026-01-10
 added: 2026-07-27T11:31:40+08:00

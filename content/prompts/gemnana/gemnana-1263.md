@@ -1,5 +1,5 @@
 ---
-title: "[BRAND NAME]. Act as a Creative Director... 提示词"
+title: "高端时尚街头服饰样册"
 slug: gemnana-1263
 date: 2026-01-14
 added: 2026-07-27T11:31:46+08:00

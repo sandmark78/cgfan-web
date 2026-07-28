@@ -1,5 +1,5 @@
 ---
-title: "A cinematic 肖像 of a young man stan..."
+title: "人潮中静立的深色大衣少年"
 slug: gemnana-2256
 date: 2026-02-25
 added: 2026-07-27T12:54:10+08:00

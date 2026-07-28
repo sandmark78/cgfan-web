@@ -1,5 +1,5 @@
 ---
-title: 'generation request': {"
+title: "冬日电影感三联画"
 slug: gemnana-670
 date: 2026-01-04
 added: 2026-07-27T11:31:33+08:00

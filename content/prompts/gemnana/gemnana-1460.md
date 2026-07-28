@@ -1,5 +1,5 @@
 ---
-title: "Create a 2x2 grid 图像. In each frame i..."
+title: "鱼眼四格涂鸦男孩街拍"
 slug: gemnana-1460
 date: 2026-01-16
 added: 2026-07-27T11:31:51+08:00

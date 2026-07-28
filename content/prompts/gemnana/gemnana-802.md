@@ -1,5 +1,5 @@
 ---
-title: "A bold pop art illustration style with p... 提示词"
+title: "大胆撞色波普艺术插画"
 slug: gemnana-802
 date: 2026-01-07
 added: 2026-07-27T11:31:33+08:00

@@ -1,5 +1,5 @@
 ---
-title: "Generate a 3D isometric diorama illustra... 提示词"
+title: "毛毡居家办公微缩景"
 slug: gemnana-2503
 date: 2026-03-12
 added: 2026-07-27T12:54:17+08:00

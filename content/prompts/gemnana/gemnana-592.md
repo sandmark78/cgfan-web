@@ -1,5 +1,5 @@
 ---
-title: "Surreal diorama emerging from an open vintage book of "Brave..."
+title: "《美丽新世界》书中微缩世界"
 slug: gemnana-592
 date: 2025-12-20
 added: 2026-07-27T11:31:27+08:00

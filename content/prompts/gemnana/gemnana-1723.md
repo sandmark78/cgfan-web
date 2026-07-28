@@ -1,5 +1,5 @@
 ---
-title: "High quality realistic commercial shot o... 提示词"
+title: "可可果荚半开露出新鲜豆粒"
 slug: gemnana-1723
 date: 2026-01-26
 added: 2026-07-27T12:53:59+08:00

@@ -1,5 +1,5 @@
 ---
-title: "{ "prompt": "Photorealistic group portrait of the four member..."
+title: "Blackpink楼梯时尚群像"
 slug: gemnana-2630
 date: 2026-03-21
 added: 2026-07-27T12:54:17+08:00

@@ -1,5 +1,5 @@
 ---
-title: "A hyper realistic cinematic close up por... 提示词"
+title: "仰望光束的特写肖像"
 slug: gemnana-2473
 date: 2026-03-10
 added: 2026-07-27T12:54:17+08:00

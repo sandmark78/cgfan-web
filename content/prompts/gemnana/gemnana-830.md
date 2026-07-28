@@ -1,5 +1,5 @@
 ---
-title: "Gemini Nano Banana Pro 🍌 提示词"
+title: "蓝天下的九格姿态拼贴"
 slug: gemnana-830
 date: 2026-01-08
 added: 2026-07-27T11:31:39+08:00

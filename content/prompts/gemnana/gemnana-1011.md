@@ -1,5 +1,5 @@
 ---
-title: "Make a miniature, full body, isometric,... 提示词"
+title: "等距微缩全身人偶"
 slug: gemnana-1011
 date: 2026-01-11
 added: 2026-07-27T11:31:40+08:00

@@ -1,5 +1,5 @@
 ---
-title: 'generation request': {"
+title: "白裙诗意写实风少女"
 slug: gemnana-1463
 date: 2026-01-16
 added: 2026-07-27T11:31:51+08:00

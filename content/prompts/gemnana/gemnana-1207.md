@@ -1,5 +1,5 @@
 ---
-title: 'content goal': "viral food visual with extreme craving appeal","
+title: "极致诱惑的美食视觉大片"
 slug: gemnana-1207
 date: 2026-01-14
 added: 2026-07-27T11:31:46+08:00

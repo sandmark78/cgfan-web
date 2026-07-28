@@ -1,5 +1,5 @@
 ---
-title: "Hyper realistic cinematic Create an 8k c... 提示词"
+title: "八K特写仰望光影肖像"
 slug: gemnana-2368
 date: 2026-03-03
 added: 2026-07-27T12:54:17+08:00

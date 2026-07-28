@@ -1,5 +1,5 @@
 ---
-title: "An architectural floor plan of a [LOCATI... 提示词"
+title: "平面图上浮起的微型人间"
 slug: gemnana-2505
 date: 2026-03-12
 added: 2026-07-27T12:54:17+08:00

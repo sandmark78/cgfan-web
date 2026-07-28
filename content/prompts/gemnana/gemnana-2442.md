@@ -1,5 +1,5 @@
 ---
-title: "Ultra detailed large scale miniature arc... 提示词"
+title: "博物馆级地标微缩建筑沙盘"
 slug: gemnana-2442
 date: 2026-03-08
 added: 2026-07-27T12:54:17+08:00

@@ -1,5 +1,5 @@
 ---
-title: "Create a high quality vector art illustr... 提示词"
+title: "矢量艺术车贴插画"
 slug: gemnana-1266
 date: 2026-01-14
 added: 2026-07-27T11:31:46+08:00

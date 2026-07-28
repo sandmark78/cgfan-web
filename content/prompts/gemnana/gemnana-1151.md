@@ -1,5 +1,5 @@
 ---
-title: "Close up 肖像 of a young man Noor wi..."
+title: "少年与白波斯猫的对视"
 slug: gemnana-1151
 date: 2026-01-13
 added: 2026-07-27T11:31:45+08:00

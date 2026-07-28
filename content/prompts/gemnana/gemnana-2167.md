@@ -1,5 +1,5 @@
 ---
-title: "エーテリアル 🌸 Ethereal"
+title: "空灵幻境"
 slug: gemnana-2167
 date: 2026-02-19
 added: 2026-07-27T12:54:10+08:00

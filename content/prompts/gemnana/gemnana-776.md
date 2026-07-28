@@ -1,5 +1,5 @@
 ---
-title: "8k Ultra Realistic Promotional 提示词"
+title: "超真实彩色粘土微缩世界"
 slug: gemnana-776
 date: 2026-01-07
 added: 2026-07-27T11:31:33+08:00

@@ -1,5 +1,5 @@
 ---
-title: "Ultra realistic cinematic two frame comp... 提示词"
+title: "双画框倒茶奇境"
 slug: gemnana-2450
 date: 2026-03-09
 added: 2026-07-27T12:54:17+08:00

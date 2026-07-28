@@ -1,5 +1,5 @@
 ---
-title: 'render goal': "Elegant metamorphosis fashion portrait","
+title: "紫裙化蝶的优雅蜕变"
 slug: gemnana-856
 date: 2026-01-08
 added: 2026-07-27T11:31:40+08:00

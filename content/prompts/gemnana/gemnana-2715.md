@@ -1,5 +1,5 @@
 ---
-title: "Cinematic 8k hyper realistic close up sh... 提示词"
+title: "兔八哥理发师的电影场景"
 slug: gemnana-2715
 date: 2026-03-29
 added: 2026-07-27T12:54:23+08:00

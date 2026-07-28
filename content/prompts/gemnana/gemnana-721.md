@@ -1,5 +1,5 @@
 ---
-title: "unfolds beside a tranquil pond, where ge... 提示词"
+title: "金色池塘边沉思的夏日少女"
 slug: gemnana-721
 date: 2026-01-06
 added: 2026-07-27T11:31:33+08:00
