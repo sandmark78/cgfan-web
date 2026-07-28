@@ -19,13 +19,22 @@ export function ShareButton({ promptSlug, promptTitle, promptDescription }: Shar
   const menuRef = useRef<HTMLDivElement>(null)
   const [menuPosition, setMenuPosition] = useState({ top: 0, left: 0 })
 
-  // 计算菜单位置
+  // 计算菜单位置（带边界检测）
   useEffect(() => {
     if (isOpen && buttonRef.current) {
       const rect = buttonRef.current.getBoundingClientRect()
+      const menuWidth = 224 // w-56 = 14rem = 224px
+      const viewportWidth = window.innerWidth
+      
+      // 计算左侧位置，确保不超出右边界
+      let left = rect.left
+      if (left + menuWidth > viewportWidth) {
+        left = Math.max(8, viewportWidth - menuWidth - 8) // 留出 8px 边距
+      }
+      
       setMenuPosition({
         top: rect.bottom + 8,
-        left: rect.left,
+        left: left,
       })
     }
   }, [isOpen])
