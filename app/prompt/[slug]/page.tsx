@@ -342,7 +342,11 @@ export default async function PromptDetailPage({
                 initialFavorited={isFavorited}
                 isAuthenticated={!!user}
               />
-              <ShareButton promptSlug={prompt.slug} promptTitle={prompt.title} />
+              <ShareButton 
+                promptSlug={prompt.slug} 
+                promptTitle={prompt.title}
+                promptDescription={prompt.prompt}
+              />
             </div>
           </div>
         </div>
@@ -395,7 +399,7 @@ export default async function PromptDetailPage({
       )}
 
       {/* Prompt 分享卡 */}
-      <div className="mt-12">
+      <div className="mt-12" data-share-card>
         <h2 className="font-serif text-xl font-bold text-gray-900 dark:text-white">
           生成分享卡片
         </h2>
