@@ -15,9 +15,20 @@ interface ShareButtonProps {
 export function ShareButton({ promptSlug, promptTitle, promptDescription }: ShareButtonProps) {
   const [isOpen, setIsOpen] = useState(false)
   const [copied, setCopied] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
   const buttonRef = useRef<HTMLButtonElement>(null)
   const menuRef = useRef<HTMLDivElement>(null)
   const [menuPosition, setMenuPosition] = useState({ top: 0, left: 0 })
+
+  // 检测是否是移动端
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768)
+    }
+    checkMobile()
+    window.addEventListener('resize', checkMobile)
+    return () => window.removeEventListener('resize', checkMobile)
+  }, [])
 
   // 计算菜单位置（带边界检测）
   useEffect(() => {
@@ -105,11 +116,22 @@ export function ShareButton({ promptSlug, promptTitle, promptDescription }: Shar
     setIsOpen(false)
   }
 
+  // 点击分享按钮
+  const handleShareClick = () => {
+    if (isMobile) {
+      // 移动端直接复制链接
+      handleCopyLink()
+    } else {
+      // 桌面端显示下拉菜单
+      setIsOpen(!isOpen)
+    }
+  }
+
   return (
     <div className="relative">
       <button
         ref={buttonRef}
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={handleShareClick}
         className="flex items-center gap-2 rounded-full bg-gray-100 px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700"
       >
         <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -121,12 +143,15 @@ export function ShareButton({ promptSlug, promptTitle, promptDescription }: Shar
           />
         </svg>
         {copied ? '已复制' : '分享'}
-        <svg className={`h-3 w-3 transition-transform ${isOpen ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-        </svg>
+        {!isMobile && (
+          <svg className={`h-3 w-3 transition-transform ${isOpen ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+          </svg>
+        )}
       </button>
 
-      {isOpen &&
+      {/* 桌面端才显示下拉菜单 */}
+      {!isMobile && isOpen &&
         createPortal(
           <div
             ref={menuRef}
