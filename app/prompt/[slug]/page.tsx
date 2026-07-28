@@ -197,6 +197,19 @@ export default async function PromptDetailPage({
               <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
                 <span>提示词来自</span>
                 {prompt.sourceLink && (() => {
+                  // 优先使用 authorLink（作者主页）
+                  if (prompt.authorLink) {
+                    return (
+                      <a
+                        href={prompt.authorLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-medium text-green-600 dark:text-green-400 hover:underline"
+                      >
+                        {prompt.author}
+                      </a>
+                    );
+                  }
                   // X/Twitter 链接：提取 username，链接到主页
                   const xMatch = prompt.sourceLink.match(/x\.com\/([^/]+)\/status/);
                   const username = xMatch ? xMatch[1] : null;

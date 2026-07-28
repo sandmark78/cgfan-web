@@ -18,6 +18,7 @@ interface PromptData {
   date: string
   source: string
   author: string
+  authorLink?: string
   prompt: string
   negativePrompt: string
   parameters: Record<string, string>
@@ -59,6 +60,7 @@ function parseMarkdownFile(filePath: string): PromptData {
     date: data.date,
     source: data.source || '',
     author: data.author || 'Unknown',
+    authorLink: data.authorLink || '',
     prompt,
     negativePrompt,
     parameters,

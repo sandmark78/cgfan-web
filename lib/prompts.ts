@@ -16,6 +16,7 @@ export interface PromptData {
   source: string
   sourceLink: string
   author: string
+  authorLink?: string
   prompt: string
   negativePrompt: string
   parameters: Record<string, string>
