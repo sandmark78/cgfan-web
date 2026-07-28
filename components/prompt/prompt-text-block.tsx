@@ -67,7 +67,7 @@ export function PromptTextBlock({ text, maxLines = 10, showCopyButton = true }: 
       {/* 文本区域 */}
       <div className="relative min-w-0">
         <pre
-          className={`whitespace-pre-wrap max-w-full overflow-x-auto text-sm leading-relaxed text-gray-600 dark:text-gray-400 ${
+          className={`whitespace-pre-wrap max-w-full overflow-x-auto overflow-wrap-break-word word-break-break-word text-sm leading-relaxed text-gray-600 dark:text-gray-400 ${
             shouldCollapse && !isExpanded ? `line-clamp-[${maxLines}]` : ''
           }`}
           style={shouldCollapse && !isExpanded ? { display: '-webkit-box', WebkitLineClamp: maxLines, WebkitBoxOrient: 'vertical', overflow: 'hidden' } : undefined}
