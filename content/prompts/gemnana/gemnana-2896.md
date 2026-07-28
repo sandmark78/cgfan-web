@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / tsubaki_ew"
 sourceLink: "https://x.com/tsubaki_ew/status/2045259289993048284"
+authorLink: "https://x.com/tsubaki_ew"
 cover: /images/prompts/gemnana-2896.jpg
 ---
 

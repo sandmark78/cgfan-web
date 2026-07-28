@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / Harboriis"
 sourceLink: "https://x.com/harboriis/status/2022872175397736736"
+authorLink: "https://x.com/harboriis"
 cover: /images/prompts/gemnana-2124.jpg
 ---
 

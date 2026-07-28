@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / 𝗦𝗮𝗻𝗶𝗮"
 sourceLink: "https://x.com/saniaspeaks_/status/2025153830552494523"
+authorLink: "https://x.com/saniaspeaks_"
 cover: /images/prompts/gemnana-2201.jpg
 ---
 

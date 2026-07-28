@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / Kaan"
 sourceLink: "https://x.com/kaanakz/status/2027814444437307602"
+authorLink: "https://x.com/kaanakz"
 cover: /images/prompts/gemnana-2321.jpg
 ---
 

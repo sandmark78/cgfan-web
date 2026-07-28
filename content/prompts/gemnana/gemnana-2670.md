@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / MayorkingAI"
 sourceLink: "https://x.com/MayorKingAI/status/2036534946433736932"
+authorLink: "https://x.com/MayorKingAI"
 cover: /images/prompts/gemnana-2670.jpg
 ---
 

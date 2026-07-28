@@ -11,6 +11,7 @@ tags:
 difficulty: beginner
 source: "X / Iris（アイリス）"
 sourceLink: "https://x.com/Iris_of_AI/status/2032607643718545747"
+authorLink: "https://x.com/Iris_of_AI"
 cover: /images/prompts/gemnana-2516.jpg
 ---
 

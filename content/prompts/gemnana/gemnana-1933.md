@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / LifeWithArt"
 sourceLink: "https://x.com/lifewithart_/status/2018492012861817216"
+authorLink: "https://x.com/lifewithart_"
 cover: /images/prompts/gemnana-1933.jpg
 ---
 

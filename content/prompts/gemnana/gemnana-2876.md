@@ -11,6 +11,7 @@ tags:
 difficulty: beginner
 source: "X / meng_dagg695"
 sourceLink: "https://x.com/meng_dagg695/status/2032019839070716170"
+authorLink: "https://x.com/meng_dagg695"
 cover: /images/prompts/gemnana-2876.jpg
 ---
 

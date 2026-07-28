@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / Amara"
 sourceLink: "https://x.com/sassyamara_/status/2015758548199002294"
+authorLink: "https://x.com/sassyamara_"
 cover: /images/prompts/gemnana-1726.jpg
 ---
 

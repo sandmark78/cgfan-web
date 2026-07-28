@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / 𝐌"
 sourceLink: "https://x.com/Strength04_X/status/2016528524543488246"
+authorLink: "https://x.com/Strength04_X"
 cover: /images/prompts/gemnana-1804.jpg
 ---
 

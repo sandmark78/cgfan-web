@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / Minahil"
 sourceLink: "https://x.com/Minahil42298354/status/2025148839301091523"
+authorLink: "https://x.com/Minahil42298354"
 cover: /images/prompts/gemnana-2200.jpg
 ---
 

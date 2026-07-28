@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "@Kerroudjm"
 sourceLink: "https://x.com/Kerroudjm/status/1931742320233230743"
+authorLink: "https://x.com/Kerroudjm"
 cover: /images/prompts/gemnana-107.jpg
 ---
 

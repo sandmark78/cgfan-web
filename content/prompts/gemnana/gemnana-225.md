@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "@Dd41Giant"
 sourceLink: "https://x.com/Dd41Giant/status/1944402963855769744"
+authorLink: "https://x.com/Dd41Giant"
 cover: /images/prompts/gemnana-225.jpg
 ---
 

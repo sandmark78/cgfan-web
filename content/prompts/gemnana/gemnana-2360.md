@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / Alexandra Aisling"
 sourceLink: "https://x.com/AllaAisling/status/2028672209544175970"
+authorLink: "https://x.com/AllaAisling"
 cover: /images/prompts/gemnana-2360.jpg
 ---
 

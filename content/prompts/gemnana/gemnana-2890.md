@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / TanShilong"
 sourceLink: "https://x.com/TanShilong/status/2045435090923356415"
+authorLink: "https://x.com/TanShilong"
 cover: /images/prompts/gemnana-2890.jpg
 ---
 

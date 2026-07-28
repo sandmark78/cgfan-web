@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / Karlos"
 sourceLink: "https://x.com/de_mon010/status/2044331476578382329"
+authorLink: "https://x.com/de_mon010"
 cover: /images/prompts/gemnana-2796.jpg
 ---
 

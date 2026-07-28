@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / 摆烂程序媛"
 sourceLink: "https://x.com/wanerfu/status/2017116581164454309"
+authorLink: "https://x.com/wanerfu"
 cover: /images/prompts/gemnana-1820.jpg
 ---
 

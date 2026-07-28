@@ -11,6 +11,7 @@ tags:
 difficulty: beginner
 source: "X / スノク200"
 sourceLink: "https://x.com/sunouku/status/2035655259247591702"
+authorLink: "https://x.com/sunouku"
 cover: /images/prompts/gemnana-2639.jpg
 ---
 

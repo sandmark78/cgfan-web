@@ -14,6 +14,7 @@ tags:
 difficulty: advanced
 source: "X / BubbleBrain"
 sourceLink: "https://x.com/BubbleBrain/status/2051826980757336380"
+authorLink: "https://x.com/BubbleBrain"
 cover: /images/prompts/gemnana-2984.jpg
 ---
 

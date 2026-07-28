@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "@Kerroudjm"
 sourceLink: "https://x.com/Kerroudjm/status/1944730614323671129"
+authorLink: "https://x.com/Kerroudjm"
 cover: /images/prompts/gemnana-236.jpg
 ---
 

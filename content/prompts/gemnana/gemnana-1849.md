@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / K"
 sourceLink: "https://x.com/ChillaiKalan__/status/2017517770578227637"
+authorLink: "https://x.com/ChillaiKalan__"
 cover: /images/prompts/gemnana-1849.jpg
 ---
 

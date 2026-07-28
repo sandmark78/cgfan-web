@@ -11,6 +11,7 @@ tags:
 difficulty: beginner
 source: "@Artedeingenio"
 sourceLink: "https://x.com/Artedeingenio/status/1935369568408523045"
+authorLink: "https://x.com/Artedeingenio"
 cover: /images/prompts/gemnana-191.jpg
 ---
 

@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / K"
 sourceLink: "https://x.com/ChillaiKalan__/status/2034783762769486109"
+authorLink: "https://x.com/ChillaiKalan__"
 cover: /images/prompts/gemnana-2619.jpg
 ---
 

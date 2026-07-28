@@ -11,6 +11,7 @@ tags:
 difficulty: beginner
 source: "X / Zayn Hao"
 sourceLink: "https://x.com/ZaynHao/status/2034103289185505560"
+authorLink: "https://x.com/ZaynHao"
 cover: /images/prompts/gemnana-2590.jpg
 ---
 

@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / Taaruk"
 sourceLink: "https://x.com/Taaruk_/status/2016491419570155780"
+authorLink: "https://x.com/Taaruk_"
 cover: /images/prompts/gemnana-1800.jpg
 ---
 

@@ -11,6 +11,7 @@ tags:
 difficulty: beginner
 source: "X / revelinai"
 sourceLink: "https://x.com/revelinai/status/2034717127492706329"
+authorLink: "https://x.com/revelinai"
 cover: /images/prompts/gemnana-2617.jpg
 ---
 

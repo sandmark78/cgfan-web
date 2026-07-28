@@ -11,6 +11,7 @@ tags:
 difficulty: beginner
 source: "X / 青波🐈AIart"
 sourceLink: "https://x.com/Aonami_bluewave/status/2013930814564888623"
+authorLink: "https://x.com/Aonami_bluewave"
 cover: /images/prompts/gemnana-1645.jpg
 ---
 

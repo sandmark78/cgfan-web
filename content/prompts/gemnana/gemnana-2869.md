@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / Fujimoto_hina"
 sourceLink: "https://x.com/Fujimoto_hina/status/2027748030825500722"
+authorLink: "https://x.com/Fujimoto_hina"
 cover: /images/prompts/gemnana-2869.jpg
 ---
 

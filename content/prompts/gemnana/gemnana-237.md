@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "@TechieBySA"
 sourceLink: "https://x.com/TechieBySA/status/1944386743865622718"
+authorLink: "https://x.com/TechieBySA"
 cover: /images/prompts/gemnana-237.jpg
 ---
 

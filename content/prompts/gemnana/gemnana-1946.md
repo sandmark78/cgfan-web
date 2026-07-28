@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / Hazel"
 sourceLink: "https://x.com/sassyhazel_/status/2018639862036115956"
+authorLink: "https://x.com/sassyhazel_"
 cover: /images/prompts/gemnana-1946.jpg
 ---
 

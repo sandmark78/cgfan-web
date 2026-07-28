@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / Picts by AI"
 sourceLink: "https://x.com/pictsbyai/status/2031053123196694930"
+authorLink: "https://x.com/pictsbyai"
 cover: /images/prompts/gemnana-2461.jpg
 ---
 

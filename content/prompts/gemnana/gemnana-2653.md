@@ -11,6 +11,7 @@ tags:
 difficulty: beginner
 source: "X / kurahu@AIart"
 sourceLink: "https://x.com/kurahu_capten/status/2036066577343496224"
+authorLink: "https://x.com/kurahu_capten"
 cover: /images/prompts/gemnana-2653.jpg
 ---
 

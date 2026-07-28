@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "@miilesus"
 sourceLink: "https://x.com/miilesus/status/1930266127961059739"
+authorLink: "https://x.com/miilesus"
 cover: /images/prompts/gemnana-253.jpg
 ---
 

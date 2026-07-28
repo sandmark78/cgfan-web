@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / simeon-sanai"
 sourceLink: "https://x.com/Naiknelofar788/status/2028853502358003808"
+authorLink: "https://x.com/Naiknelofar788"
 cover: /images/prompts/gemnana-2368.jpg
 ---
 

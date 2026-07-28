@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / Sidona"
 sourceLink: "https://x.com/sidona/status/2016001706392498633"
+authorLink: "https://x.com/sidona"
 cover: /images/prompts/gemnana-1747.jpg
 ---
 

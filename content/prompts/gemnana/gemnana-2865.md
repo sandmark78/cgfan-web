@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / Naiknelofar788"
 sourceLink: "https://x.com/Naiknelofar788/status/2025972876554510482"
+authorLink: "https://x.com/Naiknelofar788"
 cover: /images/prompts/gemnana-2865.jpg
 ---
 

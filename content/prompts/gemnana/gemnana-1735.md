@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / Sharon Riley"
 sourceLink: "https://x.com/Just_sharon7/status/2015812732977824176"
+authorLink: "https://x.com/Just_sharon7"
 cover: /images/prompts/gemnana-1735.jpg
 ---
 

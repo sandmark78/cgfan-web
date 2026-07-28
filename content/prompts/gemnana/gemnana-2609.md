@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / Gadgetify"
 sourceLink: "https://x.com/Gdgtify/status/2034557489258078352"
+authorLink: "https://x.com/Gdgtify"
 cover: /images/prompts/gemnana-2609.jpg
 ---
 

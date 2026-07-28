@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / Maercih"
 sourceLink: "https://x.com/Maercihh/status/2021190087657353591"
+authorLink: "https://x.com/Maercihh"
 cover: /images/prompts/gemnana-2066.jpg
 ---
 

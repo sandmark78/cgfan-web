@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / 𓆩𝐀𝐛𝐢𝐝 𝐇𝐮𝐬𝐬𝐚𝐢𝐧𓆪"
 sourceLink: "https://x.com/AbidkingB/status/2023968383021314440"
+authorLink: "https://x.com/AbidkingB"
 cover: /images/prompts/gemnana-2153.jpg
 ---
 

@@ -11,6 +11,7 @@ tags:
 difficulty: beginner
 source: "X / lilimliliychan"
 sourceLink: "https://x.com/lilimliliychan/status/2045114760937804187"
+authorLink: "https://x.com/lilimliliychan"
 cover: /images/prompts/gemnana-2894.jpg
 ---
 

@@ -11,6 +11,7 @@ tags:
 difficulty: beginner
 source: "@LudovicCreator"
 sourceLink: "https://x.com/LudovicCreator/status/1937027922679775432"
+authorLink: "https://x.com/LudovicCreator"
 cover: /images/prompts/gemnana-144.jpg
 ---
 

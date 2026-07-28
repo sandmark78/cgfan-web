@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / Saman | AI"
 sourceLink: "https://x.com/Samann_ai/status/2018708807371628802"
+authorLink: "https://x.com/Samann_ai"
 cover: /images/prompts/gemnana-1953.jpg
 ---
 

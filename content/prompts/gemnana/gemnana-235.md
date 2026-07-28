@@ -11,6 +11,7 @@ tags:
 difficulty: beginner
 source: "@CharaspowerAI"
 sourceLink: "https://x.com/CharaspowerAI/status/1944796547587125663"
+authorLink: "https://x.com/CharaspowerAI"
 cover: /images/prompts/gemnana-235.jpg
 ---
 

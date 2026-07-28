@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / Duet | AI"
 sourceLink: "https://x.com/Sheldon056/status/2016088197714084320"
+authorLink: "https://x.com/Sheldon056"
 cover: /images/prompts/gemnana-1760.jpg
 ---
 

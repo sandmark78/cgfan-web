@@ -11,6 +11,7 @@ tags:
 difficulty: beginner
 source: "X / Whisper Dan"
 sourceLink: "https://x.com/AI_Ethicist_NYC/status/2014376712641888696"
+authorLink: "https://x.com/AI_Ethicist_NYC"
 cover: /images/prompts/gemnana-1652.jpg
 ---
 

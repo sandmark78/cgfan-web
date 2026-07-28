@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / Amira Zairi"
 sourceLink: "https://x.com/azed_ai/status/2021258256619012365"
+authorLink: "https://x.com/azed_ai"
 cover: /images/prompts/gemnana-2068.jpg
 ---
 

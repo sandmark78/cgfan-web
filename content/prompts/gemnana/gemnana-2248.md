@@ -11,6 +11,7 @@ tags:
 difficulty: beginner
 source: "X / Next Step ©"
 sourceLink: "https://x.com/nextstepst/status/2026308234420666586"
+authorLink: "https://x.com/nextstepst"
 cover: /images/prompts/gemnana-2248.jpg
 ---
 

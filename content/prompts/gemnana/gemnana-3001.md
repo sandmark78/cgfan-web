@@ -14,6 +14,7 @@ tags:
 difficulty: advanced
 source: "X / Anissa"
 sourceLink: "https://x.com/SimplyAnnisa/status/2058218788101947667"
+authorLink: "https://x.com/SimplyAnnisa"
 cover: /images/prompts/gemnana-3001.jpg
 ---
 

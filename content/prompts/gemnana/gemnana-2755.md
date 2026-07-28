@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / Naya"
 sourceLink: "https://x.com/NayaVerseee/status/2022755222343553200"
+authorLink: "https://x.com/NayaVerseee"
 cover: /images/prompts/gemnana-2755.jpg
 ---
 

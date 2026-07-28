@@ -14,6 +14,7 @@ tags:
 difficulty: advanced
 source: "X / xiaoxiaodong01"
 sourceLink: "https://x.com/xiaoxiaodong01/status/2046252164717416641"
+authorLink: "https://x.com/xiaoxiaodong01"
 cover: /images/prompts/gemnana-2939.jpg
 ---
 

@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "@alban_gz"
 sourceLink: "https://x.com/alban_gz/status/1938553802400899205"
+authorLink: "https://x.com/alban_gz"
 cover: /images/prompts/gemnana-172.jpg
 ---
 

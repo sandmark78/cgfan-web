@@ -14,6 +14,7 @@ tags:
 difficulty: advanced
 source: "X / @hectornaranjo96"
 sourceLink: "https://x.com/hectornaranjo96/status/2074642693574054207"
+authorLink: "https://x.com/hectornaranjo96"
 cover: /images/prompts/gemnana-3025.jpg
 ---
 

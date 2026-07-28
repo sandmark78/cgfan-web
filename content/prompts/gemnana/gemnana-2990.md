@@ -14,6 +14,7 @@ tags:
 difficulty: intermediate
 source: "X / Cherry 2.O"
 sourceLink: "https://x.com/Mind_Boticni/status/2053730892103782706"
+authorLink: "https://x.com/Mind_Boticni"
 cover: /images/prompts/gemnana-2990.jpg
 ---
 

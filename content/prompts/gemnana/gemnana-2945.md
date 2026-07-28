@@ -14,6 +14,7 @@ tags:
 difficulty: intermediate
 source: "X / 李岳"
 sourceLink: "https://x.com/liyue_ai/status/2046962895775580442"
+authorLink: "https://x.com/liyue_ai"
 cover: /images/prompts/gemnana-2945.jpg
 ---
 

@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "@AleRVG"
 sourceLink: "https://x.com/AleRVG/status/1969145551846363567"
+authorLink: "https://x.com/AleRVG"
 cover: /images/prompts/gemnana-315.jpg
 ---
 

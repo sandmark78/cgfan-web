@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / Shams"
 sourceLink: "https://x.com/ShamsAmin56/status/2021519254151942239"
+authorLink: "https://x.com/ShamsAmin56"
 cover: /images/prompts/gemnana-2077.jpg
 ---
 

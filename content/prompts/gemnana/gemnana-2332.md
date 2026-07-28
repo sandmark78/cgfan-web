@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / Oogie"
 sourceLink: "https://x.com/oggii_0/status/2028125035433714003"
+authorLink: "https://x.com/oggii_0"
 cover: /images/prompts/gemnana-2332.jpg
 ---
 

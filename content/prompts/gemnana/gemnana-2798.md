@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / 不等 AI 离子"
 sourceLink: "https://x.com/alupbn121/status/2045040830227050885"
+authorLink: "https://x.com/alupbn121"
 cover: /images/prompts/gemnana-2798.jpg
 ---
 

@@ -11,6 +11,7 @@ tags:
 difficulty: beginner
 source: "X / INK"
 sourceLink: "https://x.com/0xInk_/status/2025243318284943714"
+authorLink: "https://x.com/0xInk_"
 cover: /images/prompts/gemnana-2203.jpg
 ---
 

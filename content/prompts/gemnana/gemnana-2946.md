@@ -14,6 +14,7 @@ tags:
 difficulty: advanced
 source: "X / 宝玉"
 sourceLink: "https://x.com/dotey/status/2047185615955918962"
+authorLink: "https://x.com/dotey"
 cover: /images/prompts/gemnana-2946.jpg
 ---
 

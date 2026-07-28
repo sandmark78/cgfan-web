@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / Aijaz"
 sourceLink: "https://x.com/iamsofiaijaz/status/2020317156085494141"
+authorLink: "https://x.com/iamsofiaijaz"
 cover: /images/prompts/gemnana-2024.jpg
 ---
 

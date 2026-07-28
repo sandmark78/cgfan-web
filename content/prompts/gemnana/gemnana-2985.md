@@ -14,6 +14,7 @@ tags:
 difficulty: advanced
 source: "X / Kiki"
 sourceLink: "https://x.com/Mayz1169/status/2051936378880135223"
+authorLink: "https://x.com/Mayz1169"
 cover: /images/prompts/gemnana-2985.jpg
 ---
 

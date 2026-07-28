@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / old_pgmrs_will"
 sourceLink: "https://x.com/old_pgmrs_will/status/2045440101359198302"
+authorLink: "https://x.com/old_pgmrs_will"
 cover: /images/prompts/gemnana-2895.jpg
 ---
 

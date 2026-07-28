@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / Hania Ai"
 sourceLink: "https://x.com/HaniaAi12/status/2033501597330809017"
+authorLink: "https://x.com/HaniaAi12"
 cover: /images/prompts/gemnana-2558.jpg
 ---
 

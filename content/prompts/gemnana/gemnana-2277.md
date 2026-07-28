@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / Moon_WLF | AI & CRYPTO"
 sourceLink: "https://x.com/cryptomoon/status/2026983640195019106"
+authorLink: "https://x.com/cryptomoon"
 cover: /images/prompts/gemnana-2277.jpg
 ---
 

@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / Saman | AI"
 sourceLink: "https://x.com/Samann_ai/status/2015781209490526596"
+authorLink: "https://x.com/Samann_ai"
 cover: /images/prompts/gemnana-1729.jpg
 ---
 

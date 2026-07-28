@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / Max"
 sourceLink: "https://x.com/Max__Build/status/2017469861811859752"
+authorLink: "https://x.com/Max__Build"
 cover: /images/prompts/gemnana-1844.jpg
 ---
 

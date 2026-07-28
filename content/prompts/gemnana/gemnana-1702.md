@@ -11,6 +11,7 @@ tags:
 difficulty: beginner
 source: "X / Nellina | AI"
 sourceLink: "https://x.com/Nellina_Nati/status/2015440743972716805"
+authorLink: "https://x.com/Nellina_Nati"
 cover: /images/prompts/gemnana-1702.jpg
 ---
 

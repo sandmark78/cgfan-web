@@ -11,6 +11,7 @@ tags:
 difficulty: beginner
 source: "X / Token Black"
 sourceLink: "https://x.com/TokenBlack31/status/2039105384749965663"
+authorLink: "https://x.com/TokenBlack31"
 cover: /images/prompts/gemnana-2743.jpg
 ---
 

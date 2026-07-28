@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / 猫小姐学AI"
 sourceLink: "https://x.com/MissCat_AI/status/2015236449755676732"
+authorLink: "https://x.com/MissCat_AI"
 cover: /images/prompts/gemnana-1669.jpg
 ---
 

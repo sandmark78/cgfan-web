@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "@hc_dsn"
 sourceLink: "https://x.com/hc_dsn/status/1937118859083047137"
+authorLink: "https://x.com/hc_dsn"
 cover: /images/prompts/gemnana-157.jpg
 ---
 

@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / VoxcatAI"
 sourceLink: "https://x.com/VoxcatAI/status/2045131503001342302"
+authorLink: "https://x.com/VoxcatAI"
 cover: /images/prompts/gemnana-2881.jpg
 ---
 

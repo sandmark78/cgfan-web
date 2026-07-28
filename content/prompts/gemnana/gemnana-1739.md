@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / Lloyd Creates"
 sourceLink: "https://x.com/lloydcreates/status/2015866705197580703"
+authorLink: "https://x.com/lloydcreates"
 cover: /images/prompts/gemnana-1739.jpg
 ---
 

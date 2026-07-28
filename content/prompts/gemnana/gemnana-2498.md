@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / Kashberg"
 sourceLink: "https://x.com/Kashberg_0/status/2031893424979546397"
+authorLink: "https://x.com/Kashberg_0"
 cover: /images/prompts/gemnana-2498.jpg
 ---
 

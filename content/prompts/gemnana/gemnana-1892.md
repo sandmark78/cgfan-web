@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / stepfanie tyler"
 sourceLink: "https://x.com/stepfanie/status/2018022624560107537"
+authorLink: "https://x.com/stepfanie"
 cover: /images/prompts/gemnana-1892.jpg
 ---
 

@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / Firat Bilal"
 sourceLink: "https://x.com/firatbilal/status/2029139993218740519"
+authorLink: "https://x.com/firatbilal"
 cover: /images/prompts/gemnana-2380.jpg
 ---
 

@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / Muhammad Waseem 🇵🇰"
 sourceLink: "https://x.com/Itswsm105f/status/2015296685354721690"
+authorLink: "https://x.com/Itswsm105f"
 cover: /images/prompts/gemnana-1682.jpg
 ---
 

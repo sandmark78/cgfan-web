@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / Daria_Surkova"
 sourceLink: "https://x.com/Dari_Designs/status/2034283698850562128"
+authorLink: "https://x.com/Dari_Designs"
 cover: /images/prompts/gemnana-2600.jpg
 ---
 

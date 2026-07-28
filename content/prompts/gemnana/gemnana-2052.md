@@ -11,6 +11,7 @@ tags:
 difficulty: beginner
 source: "X / Madao_TK"
 sourceLink: "https://x.com/Madao_TK26/status/2020812622107488651"
+authorLink: "https://x.com/Madao_TK26"
 cover: /images/prompts/gemnana-2052.jpg
 ---
 

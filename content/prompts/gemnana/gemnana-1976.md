@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / Oogie"
 sourceLink: "https://x.com/oggii_0/status/2019094555501686847"
+authorLink: "https://x.com/oggii_0"
 cover: /images/prompts/gemnana-1976.jpg
 ---
 

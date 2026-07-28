@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / Next Step ©"
 sourceLink: "https://x.com/nextstepst/status/2026177935053304222"
+authorLink: "https://x.com/nextstepst"
 cover: /images/prompts/gemnana-2237.jpg
 ---
 

@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / auqib"
 sourceLink: "https://x.com/auqibhabib/status/2029721401033384149"
+authorLink: "https://x.com/auqibhabib"
 cover: /images/prompts/gemnana-2416.jpg
 ---
 

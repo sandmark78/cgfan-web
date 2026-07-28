@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "@TheRelianceAI"
 sourceLink: "https://x.com/TheRelianceAI/status/1936480873378955432"
+authorLink: "https://x.com/TheRelianceAI"
 cover: /images/prompts/gemnana-195.jpg
 ---
 

@@ -11,6 +11,7 @@ tags:
 difficulty: beginner
 source: "X / もしもし@Aiart"
 sourceLink: "https://x.com/moshimoshi_ai/status/2020981900094087326"
+authorLink: "https://x.com/moshimoshi_ai"
 cover: /images/prompts/gemnana-2059.jpg
 ---
 

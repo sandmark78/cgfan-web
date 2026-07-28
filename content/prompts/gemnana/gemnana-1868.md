@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / 宝玉"
 sourceLink: "https://x.com/dotey/status/2017759194703642945"
+authorLink: "https://x.com/dotey"
 cover: /images/prompts/gemnana-1868.jpg
 ---
 

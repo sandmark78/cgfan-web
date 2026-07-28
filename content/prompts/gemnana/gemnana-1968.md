@@ -11,6 +11,7 @@ tags:
 difficulty: beginner
 source: "X / エル"
 sourceLink: "https://x.com/yourself_life/status/2018979770411983357"
+authorLink: "https://x.com/yourself_life"
 cover: /images/prompts/gemnana-1968.jpg
 ---
 

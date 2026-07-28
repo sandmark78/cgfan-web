@@ -11,6 +11,7 @@ tags:
 difficulty: beginner
 source: "@umesh_ai"
 sourceLink: "https://x.com/umesh_ai/status/1942635640816034224"
+authorLink: "https://x.com/umesh_ai"
 cover: /images/prompts/gemnana-214.jpg
 ---
 

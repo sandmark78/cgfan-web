@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / Keskin"
 sourceLink: "https://x.com/craftian_keskin/status/2016146144590541290"
+authorLink: "https://x.com/craftian_keskin"
 cover: /images/prompts/gemnana-1770.jpg
 ---
 

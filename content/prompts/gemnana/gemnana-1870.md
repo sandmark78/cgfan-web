@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / Meem"
 sourceLink: "https://x.com/mehvishs25/status/2017793115147444527"
+authorLink: "https://x.com/mehvishs25"
 cover: /images/prompts/gemnana-1870.jpg
 ---
 

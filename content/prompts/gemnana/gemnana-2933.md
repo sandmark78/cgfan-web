@@ -14,6 +14,7 @@ tags:
 difficulty: advanced
 source: "X / liyue_ai"
 sourceLink: "https://x.com/liyue_ai/status/2046243132774494607"
+authorLink: "https://x.com/liyue_ai"
 cover: /images/prompts/gemnana-2933.jpg
 ---
 

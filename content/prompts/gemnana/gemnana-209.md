@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "@aziz4ai"
 sourceLink: "https://x.com/aziz4ai/status/1935749368876867967"
+authorLink: "https://x.com/aziz4ai"
 cover: /images/prompts/gemnana-209.jpg
 ---
 

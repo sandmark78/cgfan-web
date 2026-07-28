@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / Edizkan ⭕🦇"
 sourceLink: "https://x.com/edizkan_/status/2034672885021675997"
+authorLink: "https://x.com/edizkan_"
 cover: /images/prompts/gemnana-2614.jpg
 ---
 

@@ -11,6 +11,7 @@ tags:
 difficulty: beginner
 source: "X / kanesi"
 sourceLink: "https://x.com/ai_image123/status/2035550727129661601"
+authorLink: "https://x.com/ai_image123"
 cover: /images/prompts/gemnana-2635.jpg
 ---
 

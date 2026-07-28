@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / gemini prompts"
 sourceLink: "https://x.com/gemini_prompts/status/2044280291020394963"
+authorLink: "https://x.com/gemini_prompts"
 cover: /images/prompts/gemnana-2781.jpg
 ---
 

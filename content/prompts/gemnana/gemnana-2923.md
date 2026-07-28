@@ -14,6 +14,7 @@ tags:
 difficulty: beginner
 source: "X / liyue_ai"
 sourceLink: "https://x.com/liyue_ai/status/2045137549149286858"
+authorLink: "https://x.com/liyue_ai"
 cover: /images/prompts/gemnana-2923.jpg
 ---
 

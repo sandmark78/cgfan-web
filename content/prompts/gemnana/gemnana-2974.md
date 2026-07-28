@@ -14,6 +14,7 @@ tags:
 difficulty: advanced
 source: "X / Jarvis AI"
 sourceLink: "https://x.com/jarvis_og_AI/status/2051258089819816338"
+authorLink: "https://x.com/jarvis_og_AI"
 cover: /images/prompts/gemnana-2974.jpg
 ---
 

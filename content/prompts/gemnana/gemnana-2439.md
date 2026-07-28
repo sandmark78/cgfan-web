@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / Synthia"
 sourceLink: "https://x.com/AIwithSynthia/status/2030443205599404475"
+authorLink: "https://x.com/AIwithSynthia"
 cover: /images/prompts/gemnana-2439.jpg
 ---
 

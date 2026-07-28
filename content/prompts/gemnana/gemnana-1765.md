@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / TJ"
 sourceLink: "https://x.com/TAB_TAB_HH/status/2016114863441899809"
+authorLink: "https://x.com/TAB_TAB_HH"
 cover: /images/prompts/gemnana-1765.jpg
 ---
 

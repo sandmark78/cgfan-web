@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / WasifAI"
 sourceLink: "https://x.com/doctorwasif/status/2020188222287229390"
+authorLink: "https://x.com/doctorwasif"
 cover: /images/prompts/gemnana-2023.jpg
 ---
 

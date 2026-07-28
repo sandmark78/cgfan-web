@@ -11,6 +11,7 @@ tags:
 difficulty: beginner
 source: "@vkuoo"
 sourceLink: "https://x.com/vkuoo/status/1930564137526137166"
+authorLink: "https://x.com/vkuoo"
 cover: /images/prompts/gemnana-254.jpg
 ---
 

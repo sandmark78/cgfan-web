@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / Dr. Samia"
 sourceLink: "https://x.com/oye_samia/status/2024027461520937070"
+authorLink: "https://x.com/oye_samia"
 cover: /images/prompts/gemnana-2155.jpg
 ---
 

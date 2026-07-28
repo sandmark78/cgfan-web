@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / てんねん"
 sourceLink: "https://x.com/munou_ac/status/2033168077458940058"
+authorLink: "https://x.com/munou_ac"
 cover: /images/prompts/gemnana-2541.jpg
 ---
 

@@ -11,6 +11,7 @@ tags:
 difficulty: beginner
 source: "@BeanieBlossom"
 sourceLink: "https://x.com/BeanieBlossom/status/1936756146817372428"
+authorLink: "https://x.com/BeanieBlossom"
 cover: /images/prompts/gemnana-148.jpg
 ---
 

@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / Kus"
 sourceLink: "https://x.com/tamayo888/status/2044814686701678977"
+authorLink: "https://x.com/tamayo888"
 cover: /images/prompts/gemnana-2807.jpg
 ---
 

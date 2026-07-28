@@ -14,6 +14,7 @@ tags:
 difficulty: advanced
 source: "X / Hania Ai"
 sourceLink: "https://x.com/HaniaAi12/status/2051258832069030030"
+authorLink: "https://x.com/HaniaAi12"
 cover: /images/prompts/gemnana-2973.jpg
 ---
 

@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / Midjourney Sref and prompt Library"
 sourceLink: "https://x.com/promptsref/status/2032789063757955235"
+authorLink: "https://x.com/promptsref"
 cover: /images/prompts/gemnana-2525.jpg
 ---
 

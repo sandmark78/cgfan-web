@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / Umesh"
 sourceLink: "https://x.com/umesh_ai/status/2037936526055879092"
+authorLink: "https://x.com/umesh_ai"
 cover: /images/prompts/gemnana-2704.jpg
 ---
 

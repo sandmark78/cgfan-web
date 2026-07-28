@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / Professor"
 sourceLink: "https://x.com/Professor_134/status/2022898659336298658"
+authorLink: "https://x.com/Professor_134"
 cover: /images/prompts/gemnana-2127.jpg
 ---
 

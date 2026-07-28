@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / DrSadek 🪶"
 sourceLink: "https://x.com/DrSadek_/status/2033136123342401904"
+authorLink: "https://x.com/DrSadek_"
 cover: /images/prompts/gemnana-2538.jpg
 ---
 

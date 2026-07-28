@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / Alice"
 sourceLink: "https://x.com/youngcatwoman/status/2034263300872249674"
+authorLink: "https://x.com/youngcatwoman"
 cover: /images/prompts/gemnana-2597.jpg
 ---
 

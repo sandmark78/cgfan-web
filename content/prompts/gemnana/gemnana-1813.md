@@ -11,6 +11,7 @@ tags:
 difficulty: beginner
 source: "X / 𝕄𝔸𝕋ℝ𝕀𝕏"
 sourceLink: "https://x.com/matrixmurals/status/2016814576562475142"
+authorLink: "https://x.com/matrixmurals"
 cover: /images/prompts/gemnana-1813.jpg
 ---
 

@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / VL_Aschcroft"
 sourceLink: "https://x.com/Project_VLA/status/2037534354176684347"
+authorLink: "https://x.com/Project_VLA"
 cover: /images/prompts/gemnana-2688.jpg
 ---
 

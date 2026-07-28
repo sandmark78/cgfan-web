@@ -11,6 +11,7 @@ tags:
 difficulty: beginner
 source: "X / Fernando 🌺🌌"
 sourceLink: "https://x.com/zetalyrae/status/2021277400353693860"
+authorLink: "https://x.com/zetalyrae"
 cover: /images/prompts/gemnana-2069.jpg
 ---
 

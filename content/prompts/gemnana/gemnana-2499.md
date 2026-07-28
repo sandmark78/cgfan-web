@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / Nikhil"
 sourceLink: "https://x.com/NikhilRajX/status/2032013831548125557"
+authorLink: "https://x.com/NikhilRajX"
 cover: /images/prompts/gemnana-2499.jpg
 ---
 

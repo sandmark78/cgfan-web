@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / AmirMušić"
 sourceLink: "https://x.com/AmirMushich/status/2025631713729106049"
+authorLink: "https://x.com/AmirMushich"
 cover: /images/prompts/gemnana-2218.jpg
 ---
 

@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / Abhishek Singh"
 sourceLink: "https://x.com/2abhisheknaks/status/2018268581017121046"
+authorLink: "https://x.com/2abhisheknaks"
 cover: /images/prompts/gemnana-1915.jpg
 ---
 

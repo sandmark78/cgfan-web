@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / lilzula"
 sourceLink: "https://x.com/lilzula_009_me/status/2015218587531636805"
+authorLink: "https://x.com/lilzula_009_me"
 cover: /images/prompts/gemnana-1667.jpg
 ---
 

@@ -11,6 +11,7 @@ tags:
 difficulty: beginner
 source: "X / Amira Zairi"
 sourceLink: "https://x.com/azed_ai/status/2041516883523072252"
+authorLink: "https://x.com/azed_ai"
 cover: /images/prompts/gemnana-2767.jpg
 ---
 

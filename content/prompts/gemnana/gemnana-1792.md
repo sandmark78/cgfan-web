@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / Abhi"
 sourceLink: "https://x.com/Abhiew_/status/2016414841779704227"
+authorLink: "https://x.com/Abhiew_"
 cover: /images/prompts/gemnana-1792.jpg
 ---
 

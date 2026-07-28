@@ -14,6 +14,7 @@ tags:
 difficulty: intermediate
 source: "X / Minahil"
 sourceLink: "https://x.com/Minahil42298354/status/2051451976970293578"
+authorLink: "https://x.com/Minahil42298354"
 cover: /images/prompts/gemnana-2978.jpg
 ---
 

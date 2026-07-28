@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / 松果先森"
 sourceLink: "https://x.com/songguoxiansen/status/2015257114529419733"
+authorLink: "https://x.com/songguoxiansen"
 cover: /images/prompts/gemnana-1673.jpg
 ---
 

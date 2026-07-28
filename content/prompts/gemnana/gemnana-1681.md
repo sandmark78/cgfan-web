@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / Heisenberg"
 sourceLink: "https://x.com/rovvmut_/status/2015286261171486982"
+authorLink: "https://x.com/rovvmut_"
 cover: /images/prompts/gemnana-1681.jpg
 ---
 

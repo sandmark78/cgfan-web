@@ -11,6 +11,7 @@ tags:
 difficulty: beginner
 source: "@azed_ai"
 sourceLink: "https://x.com/azed_ai/status/1934928547971559565"
+authorLink: "https://x.com/azed_ai"
 cover: /images/prompts/gemnana-121.jpg
 ---
 

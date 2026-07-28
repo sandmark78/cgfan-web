@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "@Arminn_Ai"
 sourceLink: "https://x.com/Arminn_Ai/status/1954985717609730175"
+authorLink: "https://x.com/Arminn_Ai"
 cover: /images/prompts/gemnana-247.jpg
 ---
 

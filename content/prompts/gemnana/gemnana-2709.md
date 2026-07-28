@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / Cherry 2.O"
 sourceLink: "https://x.com/Mind_Boticni/status/2038182355743977689"
+authorLink: "https://x.com/Mind_Boticni"
 cover: /images/prompts/gemnana-2709.jpg
 ---
 

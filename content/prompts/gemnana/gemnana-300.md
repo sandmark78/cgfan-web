@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "@CharaspowerAI"
 sourceLink: "https://x.com/CharaspowerAI/status/1967264596630045063"
+authorLink: "https://x.com/CharaspowerAI"
 cover: /images/prompts/gemnana-300.jpg
 ---
 

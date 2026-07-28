@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / 两斤"
 sourceLink: "https://x.com/0x00_Krypt/status/2034216567253373196"
+authorLink: "https://x.com/0x00_Krypt"
 cover: /images/prompts/gemnana-2594.jpg
 ---
 

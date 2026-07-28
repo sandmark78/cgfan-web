@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / skt-GT"
 sourceLink: "https://x.com/sktGT1016/status/2034244617294713304"
+authorLink: "https://x.com/sktGT1016"
 cover: /images/prompts/gemnana-2596.jpg
 ---
 

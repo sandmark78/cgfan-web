@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X"
 sourceLink: "](https://x.com/Toshi_nyaruo_AI/status/2045025277538107420"
+authorLink: "https://x.com/Toshi_nyaruo_AI"
 cover: /images/prompts/gemnana-2897.jpg
 ---
 

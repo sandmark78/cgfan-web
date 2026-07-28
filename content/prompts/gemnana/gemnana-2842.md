@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / 李岳"
 sourceLink: "https://x.com/liyue_ai/status/2035272858809901395"
+authorLink: "https://x.com/liyue_ai"
 cover: /images/prompts/gemnana-2842.jpg
 ---
 

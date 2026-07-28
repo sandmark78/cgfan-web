@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / ΛRMIN | AI"
 sourceLink: "https://x.com/Arminn_Ai/status/2019338808009920744"
+authorLink: "https://x.com/Arminn_Ai"
 cover: /images/prompts/gemnana-1987.jpg
 ---
 

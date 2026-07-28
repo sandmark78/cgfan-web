@@ -11,6 +11,7 @@ tags:
 difficulty: beginner
 source: "X / 𝐌"
 sourceLink: "https://x.com/Strength04_X/status/2015486383713116644"
+authorLink: "https://x.com/Strength04_X"
 cover: /images/prompts/gemnana-1706.jpg
 ---
 

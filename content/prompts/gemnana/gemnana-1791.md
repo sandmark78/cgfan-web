@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / 路飞 🏴‍☠️ AI 研究员🧐"
 sourceLink: "https://x.com/0xluffy_eth/status/2016406912624140536"
+authorLink: "https://x.com/0xluffy_eth"
 cover: /images/prompts/gemnana-1791.jpg
 ---
 

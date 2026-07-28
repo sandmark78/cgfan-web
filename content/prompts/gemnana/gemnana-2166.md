@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / gauche"
 sourceLink: "https://x.com/gaucheai/status/2024417018477207552"
+authorLink: "https://x.com/gaucheai"
 cover: /images/prompts/gemnana-2166.jpg
 ---
 

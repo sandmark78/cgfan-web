@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / MrDasOnX"
 sourceLink: "https://x.com/MrDasOnX/status/2028087254757867560"
+authorLink: "https://x.com/MrDasOnX"
 cover: /images/prompts/gemnana-2870.jpg
 ---
 

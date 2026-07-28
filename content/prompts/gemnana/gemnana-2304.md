@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / arc."
 sourceLink: "https://x.com/arceyul/status/2027526257018024246"
+authorLink: "https://x.com/arceyul"
 cover: /images/prompts/gemnana-2304.jpg
 ---
 

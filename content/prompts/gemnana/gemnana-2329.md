@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / Zara"
 sourceLink: "https://x.com/ZaraIrahh/status/2028077442074566800"
+authorLink: "https://x.com/ZaraIrahh"
 cover: /images/prompts/gemnana-2329.jpg
 ---
 

@@ -11,6 +11,7 @@ tags:
 difficulty: advanced
 source: "X / Emily"
 sourceLink: "https://x.com/IamEmily2050/status/2024545041193324550"
+authorLink: "https://x.com/IamEmily2050"
 cover: /images/prompts/gemnana-2177.jpg
 ---
 

@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / エル"
 sourceLink: "https://x.com/yourself_life/status/2020896578299699647"
+authorLink: "https://x.com/yourself_life"
 cover: /images/prompts/gemnana-2057.jpg
 ---
 

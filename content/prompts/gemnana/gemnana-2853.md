@@ -11,6 +11,7 @@ tags:
 difficulty: intermediate
 source: "X / SSSS.CRYPTOMANAI"
 sourceLink: "https://x.com/SSSS_CRYPTOMAN/status/2046457894502285567"
+authorLink: "https://x.com/SSSS_CRYPTOMAN"
 cover: /images/prompts/gemnana-2853.jpg
 ---
 

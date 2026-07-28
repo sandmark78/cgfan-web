@@ -11,6 +11,7 @@ tags:
 difficulty: beginner
 source: "@TheRelianceAI"
 sourceLink: "https://x.com/TheRelianceAI/status/1944695498025173261"
+authorLink: "https://x.com/TheRelianceAI"
 cover: /images/prompts/gemnana-226.jpg
 ---
 
