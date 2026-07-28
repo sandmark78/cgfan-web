@@ -1,5 +1,5 @@
 ---
-title: ""prompt": "Cinematic film still, extreme top down MEDIUM shot..."
+title: 'prompt': "Cinematic film still, extreme top down MEDIUM shot..."
 slug: gemnana-1021
 date: 2026-01-11
 added: 2026-07-27T11:31:40+08:00

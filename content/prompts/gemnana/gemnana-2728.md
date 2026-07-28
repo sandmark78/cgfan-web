@@ -1,5 +1,5 @@
 ---
-title: ""raw prompt": "K pop idol Sana (TWICE) posing on a sunlit bal..."
+title: 'raw prompt': "K pop idol Sana (TWICE) posing on a sunlit bal..."
 slug: gemnana-2728
 date: 2026-03-30
 added: 2026-07-27T12:54:23+08:00

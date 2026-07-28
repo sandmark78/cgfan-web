@@ -1,5 +1,5 @@
 ---
-title: ""prompt metadata": {"
+title: 'prompt metadata': {"
 slug: gemnana-917
 date: 2026-01-09
 added: 2026-07-27T11:31:40+08:00

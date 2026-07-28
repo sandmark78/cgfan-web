@@ -1,5 +1,5 @@
 ---
-title: ""prompt": "Ultra realistic macro photography of miniature con..."
+title: 'prompt': "Ultra realistic macro photography of miniature con..."
 slug: gemnana-2083
 date: 2026-02-11
 added: 2026-07-27T12:54:10+08:00

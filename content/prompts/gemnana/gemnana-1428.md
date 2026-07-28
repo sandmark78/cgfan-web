@@ -1,5 +1,5 @@
 ---
-title: ""style": "ultra realistic studio portrait","
+title: 'style': "ultra realistic studio portrait","
 slug: gemnana-1428
 date: 2026-01-16
 added: 2026-07-27T11:31:50+08:00

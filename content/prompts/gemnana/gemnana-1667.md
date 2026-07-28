@@ -1,5 +1,5 @@
 ---
-title: ""subject": {"
+title: 'subject': {"
 slug: gemnana-1667
 date: 2026-01-25
 added: 2026-07-27T12:53:44+08:00

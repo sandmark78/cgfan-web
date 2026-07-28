@@ -1,5 +1,5 @@
 ---
-title: ""ultra high fidelity request": {"
+title: 'ultra high fidelity request': {"
 slug: gemnana-2072
 date: 2026-02-11
 added: 2026-07-27T12:54:10+08:00

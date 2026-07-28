@@ -1,5 +1,5 @@
 ---
-title: ""render goal": "Narrative cinematic fashion portrait","
+title: 'render goal': "Narrative cinematic fashion portrait","
 slug: gemnana-729
 date: 2026-01-06
 added: 2026-07-27T11:31:33+08:00

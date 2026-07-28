@@ -1,5 +1,5 @@
 ---
-title: ""subject and pose": "Mina from TWICE, a beautiful Japanese wo..."
+title: 'subject and pose': "Mina from TWICE, a beautiful Japanese wo..."
 slug: gemnana-2597
 date: 2026-03-18
 added: 2026-07-27T12:54:17+08:00

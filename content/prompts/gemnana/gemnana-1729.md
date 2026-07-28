@@ -1,5 +1,5 @@
 ---
-title: ""task": "Generate a hyper real studio photograph that matches..."
+title: 'task': "Generate a hyper real studio photograph that matches..."
 slug: gemnana-1729
 date: 2026-01-26
 added: 2026-07-27T12:53:59+08:00

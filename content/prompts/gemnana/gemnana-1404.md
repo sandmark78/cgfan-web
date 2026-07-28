@@ -1,5 +1,5 @@
 ---
-title: ""Objective": "Create a stylized fashion portrait with bold co..."
+title: 'Objective': "Create a stylized fashion portrait with bold co..."
 slug: gemnana-1404
 date: 2026-01-16
 added: 2026-07-27T11:31:50+08:00

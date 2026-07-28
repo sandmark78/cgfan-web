@@ -1,5 +1,5 @@
 ---
-title: ""Objective": "Create a moody cinematic portrait capturing qui..."
+title: 'Objective': "Create a moody cinematic portrait capturing qui..."
 slug: gemnana-1441
 date: 2026-01-16
 added: 2026-07-27T11:31:50+08:00

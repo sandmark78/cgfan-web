@@ -1,5 +1,5 @@
 ---
-title: ""prompt": {"
+title: 'prompt': {"
 slug: gemnana-1765
 date: 2026-01-27
 added: 2026-07-27T12:54:05+08:00

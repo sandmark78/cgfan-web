@@ -237,6 +237,7 @@ interface PromptData {
   source: string;
   sourceLink: string;
   author: string;
+  authorLink?: string;
   prompt: string;
   negativePrompt: string;
   parameters: Record<string, string>;
@@ -328,6 +329,7 @@ function parseMarkdownFile(filePath: string): PromptData | null {
       source: frontmatter.source || '',
       sourceLink: frontmatter.sourceLink || (frontmatter.source && frontmatter.source.startsWith('http') ? frontmatter.source : ''),
       author: frontmatter.author || 'Unknown',
+      authorLink: frontmatter.authorLink || '',
       prompt: cleanedPrompt,
       negativePrompt: negativePrompt && negativePrompt !== '(none provided)' ? negativePrompt : '',
       parameters

@@ -1,5 +1,5 @@
 ---
-title: ""canvas": {"
+title: 'canvas': {"
 slug: gemnana-606
 date: 2025-12-23
 added: 2026-07-27T11:31:27+08:00

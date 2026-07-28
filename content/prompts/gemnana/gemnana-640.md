@@ -1,5 +1,5 @@
 ---
-title: ""type": "image generation","
+title: 'type': "image generation","
 slug: gemnana-640
 date: 2026-01-02
 added: 2026-07-27T11:31:33+08:00

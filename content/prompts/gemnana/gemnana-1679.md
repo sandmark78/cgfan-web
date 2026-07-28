@@ -1,5 +1,5 @@
 ---
-title: ""reference image": {"
+title: 'reference image': {"
 slug: gemnana-1679
 date: 2026-01-25
 added: 2026-07-27T12:53:50+08:00

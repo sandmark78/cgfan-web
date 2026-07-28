@@ -1,5 +1,5 @@
 ---
-title: ""task": "Create an iPhone realistic photobooth collage (4 pho..."
+title: 'task': "Create an iPhone realistic photobooth collage (4 pho..."
 slug: gemnana-789
 date: 2026-01-07
 added: 2026-07-27T11:31:33+08:00

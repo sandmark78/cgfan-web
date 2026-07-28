@@ -1,5 +1,5 @@
 ---
-title: ""prompt": "High fashion editorial portrait, young woman with..."
+title: 'prompt': "High fashion editorial portrait, young woman with..."
 slug: gemnana-2166
 date: 2026-02-19
 added: 2026-07-27T12:54:10+08:00

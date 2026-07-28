@@ -1,5 +1,5 @@
 ---
-title: ""project name": "Distorted Luxury Motion","
+title: 'project name': "Distorted Luxury Motion","
 slug: gemnana-1807
 date: 2026-01-28
 added: 2026-07-27T12:54:05+08:00

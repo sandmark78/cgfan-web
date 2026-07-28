@@ -1,5 +1,5 @@
 ---
-title: ""prompt type": "hyper realistic portrait","
+title: 'prompt type': "hyper realistic portrait","
 slug: gemnana-1393
 date: 2026-01-16
 added: 2026-07-27T11:31:50+08:00

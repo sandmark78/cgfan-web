@@ -1,5 +1,5 @@
 ---
-title: ""image type": "studio fashion portrait","
+title: 'image type': "studio fashion portrait","
 slug: gemnana-634
 date: 2025-12-30
 added: 2026-07-27T11:31:33+08:00

@@ -1,5 +1,5 @@
 ---
-title: ""prompt": "Ultra realistic beach selfie of a young woman with..."
+title: 'prompt': "Ultra realistic beach selfie of a young woman with..."
 slug: gemnana-2236
 date: 2026-02-24
 added: 2026-07-27T12:54:10+08:00

@@ -1,5 +1,5 @@
 ---
-title: ""description": "A colossal woman standing in a city street, a..."
+title: 'description': "A colossal woman standing in a city street, a..."
 slug: gemnana-1130
 date: 2026-01-13
 added: 2026-07-27T11:31:45+08:00

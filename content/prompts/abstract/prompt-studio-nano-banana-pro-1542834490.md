@@ -16,11 +16,6 @@ added: 2026-07-24
 source: https://x.com/i/status/2011097657385619460
 sourceLink: https://x.com/i/status/2011097657385619460
 authorLink: https://x.com/AllaAisling
-error: page.evaluate: return not in function
-evaluate@debugger eval code:290:30
-@debugger eval code:1:44
-
-errorType: js_error
 author: Alexandra Aisling
 ---
 

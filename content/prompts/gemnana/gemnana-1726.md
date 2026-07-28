@@ -1,5 +1,5 @@
 ---
-title: ""render goal": "High fashion cinematic motion shot","
+title: 'render goal': "High fashion cinematic motion shot","
 slug: gemnana-1726
 date: 2026-01-26
 added: 2026-07-27T12:53:59+08:00

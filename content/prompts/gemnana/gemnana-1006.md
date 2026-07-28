@@ -1,5 +1,5 @@
 ---
-title: ""project": "MPNB — Studio Editorial","
+title: 'project': "MPNB — Studio Editorial","
 slug: gemnana-1006
 date: 2026-01-11
 added: 2026-07-27T11:31:40+08:00

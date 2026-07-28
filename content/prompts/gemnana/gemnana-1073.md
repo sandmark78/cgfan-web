@@ -1,5 +1,5 @@
 ---
-title: ""Objective": "Create a dramatic black and white cinematic por..."
+title: 'Objective': "Create a dramatic black and white cinematic por..."
 slug: gemnana-1073
 date: 2026-01-12
 added: 2026-07-27T11:31:45+08:00

@@ -1,5 +1,5 @@
 ---
-title: ""task": "image analysis to generation prompt","
+title: 'task': "image analysis to generation prompt","
 slug: gemnana-628
 date: 2025-12-29
 added: 2026-07-27T11:31:27+08:00

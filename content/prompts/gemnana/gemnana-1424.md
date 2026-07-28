@@ -1,5 +1,5 @@
 ---
-title: ""prompt structure": {"
+title: 'prompt structure': {"
 slug: gemnana-1424
 date: 2026-01-16
 added: 2026-07-27T11:31:50+08:00

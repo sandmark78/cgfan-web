@@ -1,5 +1,5 @@
 ---
-title: ""image generation": {"
+title: 'image generation': {"
 slug: gemnana-2078
 date: 2026-02-11
 added: 2026-07-27T12:54:10+08:00

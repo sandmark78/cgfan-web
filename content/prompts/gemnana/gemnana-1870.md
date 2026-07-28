@@ -1,5 +1,5 @@
 ---
-title: ""campaign metadata": {"
+title: 'campaign metadata': {"
 slug: gemnana-1870
 date: 2026-02-01
 added: 2026-07-27T12:54:05+08:00

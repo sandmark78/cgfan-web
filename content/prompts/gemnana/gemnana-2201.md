@@ -1,5 +1,5 @@
 ---
-title: ""type": "image generation prompt","
+title: 'type': "image generation prompt","
 slug: gemnana-2201
 date: 2026-02-21
 added: 2026-07-27T12:54:10+08:00

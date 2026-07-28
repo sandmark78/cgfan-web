@@ -1,5 +1,5 @@
 ---
-title: ""genre": "cinematic urban realism","
+title: 'genre': "cinematic urban realism","
 slug: gemnana-1408
 date: 2026-01-16
 added: 2026-07-27T11:31:50+08:00

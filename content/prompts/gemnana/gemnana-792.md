@@ -1,5 +1,5 @@
 ---
-title: ""Objective": "Create a hyper realistic studio portrait blendi..."
+title: 'Objective': "Create a hyper realistic studio portrait blendi..."
 slug: gemnana-792
 date: 2026-01-07
 added: 2026-07-27T11:31:33+08:00

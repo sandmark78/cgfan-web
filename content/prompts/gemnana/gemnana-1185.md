@@ -1,5 +1,5 @@
 ---
-title: ""image description": "A high quality, cinematic portrait of a..."
+title: 'image description': "A high quality, cinematic portrait of a..."
 slug: gemnana-1185
 date: 2026-01-14
 added: 2026-07-27T11:31:45+08:00
