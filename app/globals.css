@@ -993,3 +993,29 @@ input[type="search"]:focus {
 .animate-slide-up {
   animation: slide-up 0.3s cubic-bezier(.22,1,.36,1) both;
 }
+
+/* ===== 移动端防溢出全局修复 ===== */
+@media (max-width: 768px) {
+  /* 代码块和长文本安全换行 */
+  pre, code {
+    white-space: pre-wrap !important;
+    overflow-wrap: break-word !important;
+    word-break: break-word !important;
+    overflow-x: auto;
+    max-width: 100%;
+  }
+
+  /* Flex/Grid 子元素防撑开 */
+  .detail-layout > div,
+  .flex > div,
+  .grid > div {
+    min-width: 0;
+  }
+
+  /* 媒体元素防溢出 */
+  img, iframe, video, svg {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block;
+  }
+}
