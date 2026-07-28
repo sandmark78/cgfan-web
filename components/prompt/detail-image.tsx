@@ -58,7 +58,7 @@ export function DetailImage({ src, alt }: DetailImageProps) {
           width={1200}
           height={1200}
           sizes="(max-width: 768px) 100vw, 1200px"
-          className="w-full h-auto"
+          className="max-w-full h-auto"
           priority
           onError={() => setHasError(true)}
         />
