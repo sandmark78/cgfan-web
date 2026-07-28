@@ -15,7 +15,6 @@ sourceLink: "https://x.com/i/status/2009298156748722252"
 authorLink: "https://x.com/iamsofiaijaz"
 author: "Aijaz"
 ---
-
 ## Prompt
 
 A hyper-realistic cinematic close-up portrait of a young woman's face in profile, intense turquoise-blue eye in sharp focus, wind-blown strands of wet hair crossing her face, tiny water droplets and floating particles suspended in the air, stormy and ethereal atmosphere, teal and blue color grading, soft glowing highlights, dramatic moody lighting, shallow depth of field, ultra-fine skin texture, emotional and introspective expression, fantasy realism style, high contrast, volumetric mist, particles and sparks around the face, 8K resolution, cinematic color grading, film still look, masterpiece, ultra-detailed, photorealistic, shot on 85mm lens, f/1.8, Unreal Engine, Octane render look.

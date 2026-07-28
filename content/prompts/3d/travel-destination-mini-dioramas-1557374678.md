@@ -18,7 +18,6 @@ sourceLink: https://x.com/i/status/2014212617779441724
 authorLink: https://x.com/aleenaamiir
 author: Aleena Amir
 ---
-
 ## Prompt
 
 Travel Destination Mini Dioramas Gemini Nano Banana Pro Prompt: “Present a clear, 45° top-down isometric miniature 3D diorama of the travel destination [CITY / COUNTRY], highlighting its most famous attractions: [ATTRACTION 1], [ATTRACTION 2]. Use soft refined textures, realistic PBR materials, and gentle golden-hour lighting. Create a compact raised base with skyline silhouettes, terrain features, and tiny stylized tourists (no facial details). Use a clean solid [BACKGROUND COLOR] background. A

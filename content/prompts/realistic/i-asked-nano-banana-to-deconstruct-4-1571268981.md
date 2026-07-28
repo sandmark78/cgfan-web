@@ -18,7 +18,6 @@ sourceLink: https://x.com/i/status/2017611578284401056
 authorLink: https://x.com/Gdgtify
 author: Gadgetify
 ---
-
 ## Prompt
 
 I asked Nano Banana to deconstruct 4 old complex gadgets from the 1900s. Prompt: <instructionInput A is a Mechanical Device or Gadget (e.g., Vintage Camera, Mechanical Watch, V8 Engine, Game Console). Deconstruct the object into 3 Functional Layers : Chassis (The Shell): Identify the main body frame or housing. Engine (The Guts): Identify the primary internal mechanism. (e.g., Camera -Shutter & Mirrors. Watch -Mainspring & Escapement. Engine -Pistons). Interface (The Control): Identify the butto

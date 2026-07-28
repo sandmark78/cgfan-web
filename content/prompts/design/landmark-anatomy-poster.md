@@ -18,7 +18,6 @@ sourceLink: https://x.com/i/status/2081444405781594232
 authorLink: https://x.com/TechieBySA
 author: "TechieSA"
 ---
-
 ## Prompt
 
 A jaw-dropping vertical infographic poster of [LANDMARK], 4:5 aspect ratio. A dramatic 3D cutaway diorama — one quarter of the structure cleanly sliced away to reveal its hidden interior: staircases, chambers, foundations, mechanisms, structural skeleton, all rendered in exquisite miniature detail.

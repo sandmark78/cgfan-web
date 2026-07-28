@@ -18,7 +18,6 @@ sourceLink: https://x.com/i/status/2017420332458774791
 authorLink: https://x.com/mehvishs25
 author: Meem (mehvishs25)
 ---
-
 ## Prompt
 
 Nano Banana Pro and GPT image 1.5 Prompt: { "master_prompt": { "global_settings": { "resolution": "8K ultra-high-definition", "aspect_ratio": "3:4 vertical", "style": "hyper-realistic AI-edited commercial product photography", "sharpness": "extreme clarity, micro-detail visibility", "lighting_quality": "cinematic studio lighting with controlled highlights and shadows", "motion_freeze": "high-speed capture, frozen splashes and particles", "noise": "none", "artifacts": "none" }, "module_1_image_1_

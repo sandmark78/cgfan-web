@@ -18,7 +18,6 @@ sourceLink: https://x.com/i/status/2013588573065220479
 authorLink: https://x.com/YaseenK7212
 author: Yaseen Khan Gul (YaseenK7212)
 ---
-
 ## Prompt
 
 Ana de Armas is literally looking gorgeous here Gemini Nano Banana Pro Prompt: { "project_metadata": { "version": "2.0", "target_quality": "Hyper-Realistic / Photogrammetric", "aspect_ratio": "3:4", "reference_parameters": { "identity_preservation": "High (Strictly maintain facial geometry and hairstyle from reference image)", "facial_integrity": "Unmodified facial features, zero distortion" } }, "subject_details": { "human_attributes": { "physique": "Curvy, well-defined silhouette", "skin_textu

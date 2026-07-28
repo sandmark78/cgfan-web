@@ -18,7 +18,6 @@ sourceLink: https://x.com/i/status/2016491419570155780
 authorLink: https://x.com/Taaruk_
 author: Taaruk_
 ---
-
 ## Prompt
 
 Nano Banana pro image generation Prompt: A cinematic night-time portrait of a young woman standing outdoors, softly lit by ambient city lights. She wears a dark elegant coat with a thick wool scarf wrapped around her neck. Loose strands of hair gently blown by the wind frame her face. Moody teal-green color grading, soft cinematic lighting, shallow depth of field, creamy bokeh city lights glowing in the background. Calm, introspective expression, natural skin texture, subtle makeup, film-like so

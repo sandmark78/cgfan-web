@@ -13,7 +13,6 @@ author: "@ZHO_ZHO_ZHO"
 authorLink: "https://x.com/ZHO_ZHO_ZHO"
 cover: /images/prompts/gemnana-31.jpg
 ---
-
 ## Prompt
 
 High-resolution studio portrait featuring a stunning young model, "Anne Hathaway," as the main subject. She has straight black hair, set against a plain white background with no discernible elements. Her face is slightly turned to the side, but her gaze is directly facing the camera, with an intense, focused expression, unwavering.

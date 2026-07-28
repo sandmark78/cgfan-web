@@ -13,7 +13,6 @@ source: "https://www.cgfan.com"
 sourceLink: "https://www.cgfan.com/prompt/luxury-product-photography-prompt"
 authorLink: "https://www.cgfan.com"
 ---
-
 ## Prompt
 
 A luxury commercial product photography shot featuring a sleek matte emerald green glass bottle with a polished gold cap, placed on a reflective dark surface. The bottle is illuminated by dramatic studio lighting with soft highlights and deep shadows, creating a premium, high-end aesthetic.

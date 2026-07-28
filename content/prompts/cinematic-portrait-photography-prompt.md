@@ -13,7 +13,6 @@ source: "https://www.cgfan.com"
 sourceLink: "https://www.cgfan.com/prompt/cinematic-portrait-photography-prompt"
 authorLink: "https://www.cgfan.com"
 ---
-
 ## Prompt
 
 Ultra-realistic cinematic close-up portrait of a beautiful young woman lying peacefully among a dreamy field of wildflowers during golden hour. Her face is softly illuminated by warm sunset light, creating gentle shadows and highlights that accentuate her natural beauty.

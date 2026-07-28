@@ -18,7 +18,6 @@ sourceLink: https://x.com/i/status/2015040715169075512
 authorLink: https://x.com/Adam38363368936
 author: Adam也叫吉米Adam38363368936
 ---
-
 ## Prompt
 
 Blondes should be in the golden place. Nano Banana Prompt { "image_metadata": { "style": "Hyper-realistic Cinematic", "resolution": { "target": "8k" }, "lighting": { "environment": { "type": "Nighttime", "effect": "Cityglow" }, "reflection": { "type": "Golden", "effect": "Reflections" }, "balance": "Balanced" }, "composition": { "shot": { "type": "Medium shot", "perspective": "Hot pose" }, "depth_of_field": { "type": "Shallow", "effect": "Bokeh background" } } }, "subject": { "identity": { "name

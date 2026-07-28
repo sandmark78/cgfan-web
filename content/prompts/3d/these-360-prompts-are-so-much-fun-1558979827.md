@@ -18,7 +18,6 @@ sourceLink: https://x.com/i/status/2014696369680793776
 authorLink: https://x.com/Gdgtify
 author: Gdgtify
 ---
-
 ## Prompt
 
 Another Nano Banana Pro prompt for visualizing the evolution of inventions. Prompt: a 2x2 grid, each panel with a new random historical invention <instructionsInput Variable: [input] (e.g., Antikythera Mechanism, The Aeolipile (Steam Engine), The Gutenberg Press) System Instruction: Generate a hyper-realistic, macro "Maker's Workbench" showing the evolutionary lineage of an ancient technology. CRITICAL: Do NOT invent futuristic items. Show the Real-World Historical Successors of the artifact. Se

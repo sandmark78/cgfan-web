@@ -18,7 +18,6 @@ sourceLink: https://x.com/i/status/2017223007060808035
 authorLink: https://x.com/NattyWindstorm
 author: Natty Windstorm
 ---
-
 ## Prompt
 
 {"content":"Untamed energy🐾 made by Nano Banana Pro on https://t.co/nNCgo11Z9L✨ { \"prompt\": \"Cinematic desert road scene at golden hour. A confident tattooed woman with long blonde hair poses on the hood of a vintage luxury convertible, wearing a black cutout one-piece swimsuit and gold jewelry. A calm cheetah sits beside her on the car hood. Warm sunlight, dusty highway stretching into distant mountains, dramatic shadows, sun flare, high fashion editorial style, surreal yet realistic mood.\"

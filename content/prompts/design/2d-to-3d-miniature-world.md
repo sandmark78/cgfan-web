@@ -18,7 +18,6 @@ sourceLink: https://x.com/i/status/2081756035744747968
 authorLink: https://x.com/yourPlugAI
 author: "Gilbert Odera | Your AI Plug"
 ---
-
 ## Prompt
 
 Create a photorealistic top-down macro photograph of an artist actively drawing intricate fine black ink lines and delicate scrollwork onto [PAPER TYPE] resting on [WOODEN SURFACE / DESK SETTING]. The flat illustration should seamlessly transition into a highly detailed 3D bas-relief miniature world emerging physically from the paper, creating a convincing illusion that the drawn artwork has come alive and broken through the page.

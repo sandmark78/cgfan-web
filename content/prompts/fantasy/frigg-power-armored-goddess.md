@@ -18,7 +18,6 @@ sourceLink: https://x.com/i/status/2081620096242381059
 authorLink: https://x.com/RobotCleopatra
 author: "Skipper VanderWall"
 ---
-
 ## Prompt
 
 waist up, dynamic hero angle, stunning beautiful woman, perfect symmetrical features, radiant beauty, FRIGG, power armored techno deity, molten energy weapons, chrome and gold plating, holographic runes orbiting, stunning living features framed by white, layered furs and midnight blue silk, direct eye contact, a colossal alien starship descending through storm clouds, commanding triad of cobalt blue, viridian green and, luminous classical sci fi illustration, warm painterly realism, masterful detail, iconic framing.

@@ -18,7 +18,6 @@ sourceLink: https://x.com/i/status/2015282932643139964
 authorLink: https://x.com/ChillaiKalan__
 author: K ChillaiKalan__
 ---
-
 ## Prompt
 
 Nano Banana Pro on Google Gemini Prompt: Ultra-realistic cinematic medium close-up portrait of the reference person, slightly turned to the side while looking toward the camera. Wearing a black turtleneck and dark jacket, modern and minimalist fashion style. Deep blue background with a smooth gradient, combined with contrasting magenta and blue lighting. Strong blue light coming from one side and magenta light from the opposite side, both colors reflecting clearly on the face and skin, creating 

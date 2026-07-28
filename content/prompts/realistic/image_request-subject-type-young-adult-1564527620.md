@@ -20,7 +20,6 @@ sourceLink: https://x.com/i/status/2016087115482763660
 authorLink: https://x.com/lenawakes
 author: Lena lenawakes
 ---
-
 ## Prompt
 
 { "image_request": { "subject": { "type": "Young adult woman", "identity_constraint": "Use the uploaded image as a reference.", "expression": "Use the uploaded image as a reference.", "gaze": "Use the uploaded image as a reference.", "emotion": "Use the uploaded image as a reference." }, "pose_and_framing": { "pose": "Sitting on the floor", "posture": "Relaxed yet elegant, legs positioned naturally", "framing": "Full-body to three-quarter portrait", "composition": "Centered subject against a cle

@@ -18,7 +18,6 @@ sourceLink: https://x.com/i/status/2012527817477828745
 authorLink: https://x.com/songguoxiansen
 author: 松果先森
 ---
-
 ## Prompt
 
 Nano Banana Pro 3×3网格高端影棚产品故事板方案 Nano Banana Pro提示词： { "OverallLayout": { "Format": "3×3 grid storyboard, nine equal panels on 4:5 ratio canvas", "Style": "High-end designer mockup, editorial, curated, design-driven", "Focus": "Form, composition, materiality, visual rhythm over lifestyle narrative", "ProductConsistency": "Exact same product, packaging, branding, materials, colors, proportions maintained across all nine panels", "ProductRecognition": "Product clearly recognizable in every frame, 

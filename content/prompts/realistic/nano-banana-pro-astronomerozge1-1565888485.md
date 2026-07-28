@@ -18,7 +18,6 @@ sourceLink: https://x.com/i/status/2016215595209871366
 authorLink: https://x.com/astronomerozge1
 author: astronomerozge1
 ---
-
 ## Prompt
 
 Nano Banana Pro [@bageldotcom] 🖤 Prompt: { "generation_request": { "meta_data": { "tool": "NanoBanana Pro", "task_type": "photoreal_editorial_beauty_contact_sheet", "version": "v1.0_9PANEL_STUDIO_GLAM_FUR_JEWELRY_NO_TEXT_EN", "priority": "highest", "language": "en" }, "references": { "reference_image_face": { "source": "UPLOAD_REFERENCE_IMAGE (REQUIRED)", "purpose": "FACE_IDENTITY_LOCK", "strict_lock": true, "face_similarity_priority": "MAX", "no_identity_blending": true, "no_beautify": true, "n

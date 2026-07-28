@@ -18,7 +18,6 @@ sourceLink: https://x.com/i/status/2014213404878324132
 authorLink: https://x.com/AIwithkhan
 author: AIwithkhan
 ---
-
 ## Prompt
 
 Image on Google Gemini Nano Banana Prompt 👇 Ultra-realistic cinematic studio portrait of a woman directing a miniature film set starring a tiny lifelike version of herself. She adjusts a miniature camera while the small figure stands under scaled studio lights. The miniature self matches her exact appearance, outfit, and natural expression. The environment includes mini tripods, clapperboards, light modifiers, and film reels. Moody cinematic lighting enhances realism, skin texture, and micro-set

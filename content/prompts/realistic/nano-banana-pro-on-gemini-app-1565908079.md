@@ -18,7 +18,6 @@ sourceLink: https://x.com/i/status/2016357678680039438
 authorLink: https://x.com/Taaruk_
 author: Taaruk_
 ---
-
 ## Prompt
 
 Nano Banana pro on Gemini app. { "image_prompt": { "main_description": "Poetic cinematic close-up portrait of a young woman partially obscured by soft pink blossoms and petals in the foreground.", "subject_details": { "appearance": "Young woman, expressive green eyes, calm introspective expression, natural beauty", "skin_texture": "Ultra-realistic skin texture", "apparel": "Shimmering rose-gold high-neck dress that catches warm sunlight" }, "composition_and_framing": { "framing": "Close-up, face

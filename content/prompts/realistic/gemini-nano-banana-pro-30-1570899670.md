@@ -18,7 +18,6 @@ sourceLink: https://x.com/i/status/2017166130746675620
 authorLink: https://x.com/kashmir_ki_lark
 author: kashmir_ki_lark
 ---
-
 ## Prompt
 
 Gemini nano banana pro 3.0 Prompt: Cute, innocent young adult blonde woman sitting comfortably on a neatly made bed, relaxed natural posture with legs gently bent, shoulders soft and at ease. Long, soft, flowing blonde hair styled in loose natural waves, silky texture, subtle shine, a few delicate strands framing her face. Clear blue eyes with a gentle sparkle, long natural lashes, delicate eyebrows, smooth fair complexion with a soft healthy glow, subtle blush on cheeks, light pink lips, minima

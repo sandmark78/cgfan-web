@@ -400,31 +400,6 @@
     "mtime": 1785197999121.569
   },
   {
-    "title": "奢侈品产品摄影",
-    "slug": 2080212974174974200,
-    "model": "GPT-Image2",
-    "category": "product",
-    "tags": [
-      "product",
-      "luxury",
-      "commercial",
-      "bottle",
-      "写实"
-    ],
-    "difficulty": "advanced",
-    "cover": "/images/prompts/2080212974174974122.jpg",
-    "date": "2026-07-23",
-    "added": "2026-07-24",
-    "source": "https://x.com/iamrealsnow/status/2080212974174974122",
-    "sourceLink": "https://x.com/iamrealsnow/status/2080212974174974122",
-    "author": "Snow",
-    "authorLink": "https://x.com/iamrealsnow",
-    "prompt": "A luxury commercial product photography shot featuring a sleek matte emerald green glass bottle with a tall cylindrical neck, rounded shoulders, and a premium brushed gold cap. The fictional brand name VERDARA is elegantly printed in embossed gold typography with a minimalist botanical emblem. The bottle is centered against a rich emerald green textured paper backdrop.\n\nThe paper is dramatically torn open across the middle, revealing an overflowing bed of fresh green grapes, sliced kiwi, mint leaves, and sparkling lime wedges hidden beneath. A curled section of torn paper on the lower left adds depth and realism. Several fruits are scattered naturally across the foreground.\n\nElegant editorial typography appears in the upper left:\n\n\"Sip Into Pure Freshness\"\n\n\"Sip\" in modern handwritten brush script, \"Into Pure Freshness\" in sophisticated high-fashion serif typography.\n\nThe bottle label features premium botanical illustrations of kiwi, grapes, mint, and lime with subtle metallic foil accents. Hyper-realistic glass reflections, natural condensation droplets, premium studio lighting, soft shadows, vibrant colors, razor-sharp focus, luxury beverage advertisement, photorealistic, ultra-detailed, award-winning commercial product photography, minimalist composition, 8K.",
-    "negativePrompt": "",
-    "parameters": {},
-    "mtime": 1785197999121.7068
-  },
-  {
     "title": "产品爆炸商业摄影生成器",
     "slug": "product-explosion-commercial-photography",
     "model": "Gemini",
@@ -806,34 +781,6 @@
     "mtime": 1785204607947.5261
   },
   {
-    "title": "Kling 2.6 提示词: Hyperspeed FPV in a ve...",
-    "slug": "kling-26-prompt-hyperspeed-fpv-in-a-1543070080",
-    "model": "Midjourney",
-    "category": "cyberpunk",
-    "tags": [
-      "Kling",
-      "AI Video Generation",
-      "Kling 2.6",
-      "Cyberpunk",
-      "FPV Cinematography"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/kling-26-prompt-hyperspeed-fpv-in-a-1543070080.jpg",
-    "date": "2026-01-14",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2011060762454999475",
-    "sourceLink": "https://x.com/i/status/2011060762454999475",
-    "author": "MayorkingAI",
-    "authorLink": "https://x.com/MayorKingAI",
-    "prompt": "Kling 2.6 prompt: Hyperspeed FPV in a vertical cyberpunk city Prompt: A massive vertical cyberpunk city at night, endless layers of neon-lit architecture stacked into the sky, holographic ads flickering in the rain. The Hyperspeed FPV camera drops from the upper megastructures at extreme speed, diving through glowing traffic lanes, skimming past flying vehicles, threading between balconies, cables, and steam vents without cutting. The camera slices through a crowded mid-level market filled with",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1785204608065.0286
-  },
-  {
     "title": "物品信息图",
     "slug": "object-infographics-by-nano-banana-pro-1570554885",
     "model": "Gemini",
@@ -860,286 +807,6 @@
       "Aspect Ratio": "16:9"
     },
     "mtime": 1785206992415.2168
-  },
-  {
-    "title": "钢铁侠产品摄影",
-    "slug": "iron-man-1571237926",
-    "model": "Midjourney",
-    "category": "abstract",
-    "tags": [
-      "艺术",
-      "AI生成艺术",
-      "JSON提示词",
-      "产品设计",
-      "图像参考"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/iron-man-1571237926.jpg",
-    "date": "2026-01-31",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2016960334838567332",
-    "sourceLink": "https://x.com/i/status/2016960334838567332",
-    "author": "Ege egeberkina",
-    "authorLink": "https://x.com/egeberkina",
-    "prompt": "Iron Man { \"reference_images\": { \"product_image\": \"UPLOADED_IMAGE\", \"usage_rule\": \"Use the uploaded image as the exact visual reference for the product’s form, proportions, materials, and overall identity. Do not redesign or reinterpret the product.\" }, \"layout\": { \"canvas\": { \"orientation\": \"vertical\", \"aspect_ratio\": \"3:4\", \"background\": \"warm neutral paper-like surface\" }, \"structure\": { \"top_section\": \"lifestyle_hero\", \"bottom_section\": \"technical_specification\" } }, \"top_section\": { \"type\":",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1785206992415.49
-  },
-  {
-    "title": "冰封山脉中世纪大战",
-    "slug": "kling-26-prompt-1542371129",
-    "model": "Midjourney",
-    "category": "abstract",
-    "tags": [
-      "视频",
-      "Kling",
-      "Kling 2.6",
-      "FPV Cinematic",
-      "AI Video Generation"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/kling-26-prompt-1542371129.jpg",
-    "date": "2026-01-14",
-    "added": "2026-07-24",
-    "source": "https://x.com/MayorKingAI/status/2010763673942589880?s=20",
-    "sourceLink": "https://x.com/MayorKingAI/status/2010763673942589880?s=20",
-    "author": "MayorKingAI",
-    "authorLink": "https://x.com/MayorKingAI",
-    "prompt": "Kling 2.6 Prompt High in a frozen mountain range beneath storm-filled skies, a massive medieval battle erupts as the Hyperspeed FPV camera races inches above the snow-covered ground, weaving between armored warriors clashing swords and shields, sparks and blood flying in slow streaks of motion blur. The camera suddenly accelerates upward, chasing flaming arrows cutting through the air, spinning tightly around massive wooden catapults launching fireballs, then surging forward through a crumbling",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1785206992416.2417
-  },
-  {
-    "title": "跨界球鞋概念设计",
-    "slug": "cross-brand-sneaker-collaboration-1570896016",
-    "model": "Midjourney",
-    "category": "abstract",
-    "tags": [
-      "广告",
-      "球鞋设计",
-      "品牌合作",
-      "概念鞋款",
-      "创意提示"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/cross-brand-sneaker-collaboration-1570896016.jpg",
-    "date": "2026-01-31",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2017542008722886797",
-    "sourceLink": "https://x.com/i/status/2017542008722886797",
-    "author": "Latte0xbisc",
-    "authorLink": "https://x.com/0xbisc",
-    "prompt": "Cross-brand sneaker collaboration 👟 Prompt: [BRAND NAME] Act as a world-class Footwear Design Director and high-end Product Photographer. THE TASK You must autonomously conceptualize and render a hyper-realistic “Concept Sneaker Collaboration” between the input brand and a specialized sports/outdoor brand of your choosing. PHASE 1: DIVERSE PARTNER SELECTION (THE “MATCHMAKER”) CRITICAL: Do NOT default to Nike or Adidas unless they are the absolute 100% perfect archetype match. You must DIVERSIFY",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1785206992416.4934
-  },
-  {
-    "title": "发明进化四宫格",
-    "slug": "these-360-prompts-are-so-much-fun-1558979827",
-    "model": "Gemini",
-    "category": "3d",
-    "tags": [
-      "摄影",
-      "Stargate",
-      "Arduino",
-      "AI",
-      "3D Printing"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/these-360-prompts-are-so-much-fun-1558979827.jpg",
-    "date": "2026-01-24",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2014696369680793776",
-    "sourceLink": "https://x.com/i/status/2014696369680793776",
-    "author": "Gdgtify",
-    "authorLink": "https://x.com/Gdgtify",
-    "prompt": "Another Nano Banana Pro prompt for visualizing the evolution of inventions. Prompt: a 2x2 grid, each panel with a new random historical invention <instructionsInput Variable: [input] (e.g., Antikythera Mechanism, The Aeolipile (Steam Engine), The Gutenberg Press) System Instruction: Generate a hyper-realistic, macro \"Maker's Workbench\" showing the evolutionary lineage of an ancient technology. CRITICAL: Do NOT invent futuristic items. Show the Real-World Historical Successors of the artifact. Se",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1785206992417.2825
-  },
-  {
-    "title": "旅行地标微缩立体模型",
-    "slug": "travel-destination-mini-dioramas-1557374678",
-    "model": "Gemini",
-    "category": "3d",
-    "tags": [
-      "艺术",
-      "AI",
-      "Dioramas",
-      "3D",
-      "Gemini"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/travel-destination-mini-dioramas-1557374678.jpg",
-    "date": "2026-01-23",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2014212617779441724",
-    "sourceLink": "https://x.com/i/status/2014212617779441724",
-    "author": "Aleena Amir",
-    "authorLink": "https://x.com/aleenaamiir",
-    "prompt": "Travel Destination Mini Dioramas Gemini Nano Banana Pro Prompt: “Present a clear, 45° top-down isometric miniature 3D diorama of the travel destination [CITY / COUNTRY], highlighting its most famous attractions: [ATTRACTION 1], [ATTRACTION 2]. Use soft refined textures, realistic PBR materials, and gentle golden-hour lighting. Create a compact raised base with skyline silhouettes, terrain features, and tiny stylized tourists (no facial details). Use a clean solid [BACKGROUND COLOR] background. A",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1785206992417.4436
-  },
-  {
-    "title": "导演微缩片场的电影人",
-    "slug": "image-on-google-gemini-nano-banana-1557350912",
-    "model": "Gemini",
-    "category": "realistic",
-    "tags": [
-      "摄影",
-      "AIArt",
-      "GoogleGemini",
-      "CinematicPortrait",
-      "AIgenerated"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/image-on-google-gemini-nano-banana-1557350912.jpg",
-    "date": "2026-01-23",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2014213404878324132",
-    "sourceLink": "https://x.com/i/status/2014213404878324132",
-    "author": "AIwithkhan",
-    "authorLink": "https://x.com/AIwithkhan",
-    "prompt": "Image on Google Gemini Nano Banana Prompt 👇 Ultra-realistic cinematic studio portrait of a woman directing a miniature film set starring a tiny lifelike version of herself. She adjusts a miniature camera while the small figure stands under scaled studio lights. The miniature self matches her exact appearance, outfit, and natural expression. The environment includes mini tripods, clapperboards, light modifiers, and film reels. Moody cinematic lighting enhances realism, skin texture, and micro-set",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1785206992418.1316
-  },
-  {
-    "title": "夜色酒红 静谧奢华",
-    "slug": "night-vibes-1555336734",
-    "model": "Midjourney",
-    "category": "realistic",
-    "tags": [
-      "摄影",
-      "AI Art",
-      "Fashion",
-      "Luxury",
-      "Photography"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/night-vibes-1555336734.jpg",
-    "date": "2026-01-21",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2013637545712640047",
-    "sourceLink": "https://x.com/i/status/2013637545712640047",
-    "author": "Margot_Miaa",
-    "authorLink": "https://x.com/Margot_Miaa",
-    "prompt": "Night Vibes Quiet luxury in motion 🖤✨ Some days call for deep burgundy and zero apologies. Prompt ⬇️ Stylish young woman with long wavy brown hair, flawless makeup with bold eyeliner and glossy lips, wearing elegant maroon high-neck long-sleeve midi dress with pleated skirt and black statement belt with gold buckle, delicate silver necklace and bracelet, standing in modern luxury hotel room with mirror reflection, soft dramatic lighting, confident pose holding phone like taking selfie, cinematic",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1785206992418.4417
-  },
-  {
-    "title": "粉樱遮面的诗意人像",
-    "slug": "nano-banana-pro-on-gemini-app-1565908079",
-    "model": "Gemini",
-    "category": "realistic",
-    "tags": [
-      "摄影",
-      "AIArt",
-      "ImageGeneration",
-      "AIprompts",
-      "Cinematic"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/nano-banana-pro-on-gemini-app-1565908079.jpg",
-    "date": "2026-01-28",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2016357678680039438",
-    "sourceLink": "https://x.com/i/status/2016357678680039438",
-    "author": "Taaruk_",
-    "authorLink": "https://x.com/Taaruk_",
-    "prompt": "Nano Banana pro on Gemini app. { \"image_prompt\": { \"main_description\": \"Poetic cinematic close-up portrait of a young woman partially obscured by soft pink blossoms and petals in the foreground.\", \"subject_details\": { \"appearance\": \"Young woman, expressive green eyes, calm introspective expression, natural beauty\", \"skin_texture\": \"Ultra-realistic skin texture\", \"apparel\": \"Shimmering rose-gold high-neck dress that catches warm sunlight\" }, \"composition_and_framing\": { \"framing\": \"Close-up, face",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1785206992418.8423
-  },
-  {
-    "title": "拆解四件百年机械装置",
-    "slug": "i-asked-nano-banana-to-deconstruct-4-1571268981",
-    "model": "Gemini",
-    "category": "realistic",
-    "tags": [
-      "艺术",
-      "人工智能生成",
-      "微型摄影",
-      "机械解构",
-      "工业设计"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/i-asked-nano-banana-to-deconstruct-4-1571268981.jpg",
-    "date": "2026-01-31",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2017611578284401056",
-    "sourceLink": "https://x.com/i/status/2017611578284401056",
-    "author": "Gadgetify",
-    "authorLink": "https://x.com/Gdgtify",
-    "prompt": "I asked Nano Banana to deconstruct 4 old complex gadgets from the 1900s. Prompt: <instructionInput A is a Mechanical Device or Gadget (e.g., Vintage Camera, Mechanical Watch, V8 Engine, Game Console). Deconstruct the object into 3 Functional Layers : Chassis (The Shell): Identify the main body frame or housing. Engine (The Guts): Identify the primary internal mechanism. (e.g., Camera -Shutter & Mirrors. Watch -Mainspring & Escapement. Engine -Pistons). Interface (The Control): Identify the butto",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1785206992419.13
-  },
-  {
-    "title": "野性力量动物肖像",
-    "slug": "untamed-energy-1570898796",
-    "model": "Gemini",
-    "category": "realistic",
-    "tags": [
-      "摄影",
-      "AI生成艺术",
-      "时尚摄影",
-      "沙漠风景",
-      "猎豹元素"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/untamed-energy-1570898796.jpg",
-    "date": "2026-01-31",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2017223007060808035",
-    "sourceLink": "https://x.com/i/status/2017223007060808035",
-    "author": "Natty Windstorm",
-    "authorLink": "https://x.com/NattyWindstorm",
-    "prompt": "{\"content\":\"Untamed energy🐾 made by Nano Banana Pro on https://t.co/nNCgo11Z9L✨ { \\\"prompt\\\": \\\"Cinematic desert road scene at golden hour. A confident tattooed woman with long blonde hair poses on the hood of a vintage luxury convertible, wearing a black cutout one-piece swimsuit and gold jewelry. A calm cheetah sits beside her on the car hood. Warm sunlight, dusty highway stretching into distant mountains, dramatic shadows, sun flare, high fashion editorial style, surreal yet realistic mood.\\\"",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1785206992419.3394
   },
   {
     "title": "手工巧克力奢华产品摄影",
@@ -1170,62 +837,6 @@
     "mtime": 1785206992419.7695
   },
   {
-    "title": "金色时光金发女郎",
-    "slug": "blondes-should-be-in-the-golden-place-1560822066",
-    "model": "Gemini",
-    "category": "realistic",
-    "tags": [
-      "摄影",
-      "AI绘画",
-      "NanoBananaPrompt",
-      "金发美女",
-      "城市夜景"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/blondes-should-be-in-the-golden-place-1560822066.jpg",
-    "date": "2026-01-25",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2015040715169075512",
-    "sourceLink": "https://x.com/i/status/2015040715169075512",
-    "author": "Adam也叫吉米Adam38363368936",
-    "authorLink": "https://x.com/Adam38363368936",
-    "prompt": "Blondes should be in the golden place. Nano Banana Prompt { \"image_metadata\": { \"style\": \"Hyper-realistic Cinematic\", \"resolution\": { \"target\": \"8k\" }, \"lighting\": { \"environment\": { \"type\": \"Nighttime\", \"effect\": \"Cityglow\" }, \"reflection\": { \"type\": \"Golden\", \"effect\": \"Reflections\" }, \"balance\": \"Balanced\" }, \"composition\": { \"shot\": { \"type\": \"Medium shot\", \"perspective\": \"Hot pose\" }, \"depth_of_field\": { \"type\": \"Shallow\", \"effect\": \"Bokeh background\" } } }, \"subject\": { \"identity\": { \"name",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1785206992420.094
-  },
-  {
-    "title": "电影感戏剧光影人像",
-    "slug": "nano-banana-pro-image-generation-1566916201",
-    "model": "Gemini",
-    "category": "realistic",
-    "tags": [
-      "摄影",
-      "AI Image Generation",
-      "Cinematic Photography",
-      "Night Portrait",
-      "Prompt Engineering"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/nano-banana-pro-image-generation-1566916201.jpg",
-    "date": "2026-01-29",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2016491419570155780",
-    "sourceLink": "https://x.com/i/status/2016491419570155780",
-    "author": "Taaruk_",
-    "authorLink": "https://x.com/Taaruk_",
-    "prompt": "Nano Banana pro image generation Prompt: A cinematic night-time portrait of a young woman standing outdoors, softly lit by ambient city lights. She wears a dark elegant coat with a thick wool scarf wrapped around her neck. Loose strands of hair gently blown by the wind frame her face. Moody teal-green color grading, soft cinematic lighting, shallow depth of field, creamy bokeh city lights glowing in the background. Calm, introspective expression, natural skin texture, subtle makeup, film-like so",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1785206992420.2546
-  },
-  {
     "title": "银叶三叶草微距晨露",
     "slug": "framing-luck-with-silver-clovers-1570845953",
     "model": "Midjourney",
@@ -1252,90 +863,6 @@
       "Aspect Ratio": "16:9"
     },
     "mtime": 1785206992420.4275
-  },
-  {
-    "title": "蓝花花园柔光人像",
-    "slug": "meta-ai-1553309424",
-    "model": "Midjourney",
-    "category": "realistic",
-    "tags": [
-      "摄影",
-      "AI Art",
-      "AI Prompt",
-      "Photography",
-      "Meta AI"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/meta-ai-1553309424.jpg",
-    "date": "2026-01-20",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2013223063828255204",
-    "sourceLink": "https://x.com/i/status/2013223063828255204",
-    "author": "ZaraIrahh",
-    "authorLink": "https://x.com/American",
-    "prompt": "Meta AI Prompt: A soft editorial portrait of a beautiful young woman (American) in a pastel garden of blue wildflowers, subject gazing downward gently, warm-platinum waves, glowing cheeks, dreamy haze, soft floral wind motion. [Camera] Canon R5 [Lens] 50mm f/1.2 — dreamy spherical bokeh [Light] Softbox diffused + natural ambient haze [LUT] Petra Collins Milk-Blue Haze LUT [Harmony] baby blue, lavender, blush pink [sRef] analog bloom, milk haze, surreal softness [Tokens] ultra-soft diffusion, haz",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1785206992420.645
-  },
-  {
-    "title": "黑白时尚大片",
-    "slug": "nano-banana-pro-on-artingai-1542365093",
-    "model": "Gemini",
-    "category": "realistic",
-    "tags": [
-      "摄影",
-      "Nanobanana",
-      "AIArt",
-      "NanoBananaPro",
-      "HighFashion"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/nano-banana-pro-on-artingai-1542365093.jpg",
-    "date": "2026-01-14",
-    "added": "2026-07-24",
-    "source": "https://x.com/ChillaiKalan__/status/2010663134743368058?s=20",
-    "sourceLink": "https://x.com/ChillaiKalan__/status/2010663134743368058?s=20",
-    "author": "K ChillaiKalan__",
-    "authorLink": "https://x.com/ChillaiKalan__",
-    "prompt": "Nano Banana Pro on @artingai Try it here → https://t.co/t4hQHl7iYo… Prompt: Use the attached image of the model as facial reference and physical features. Black and white high-fashion editorial portrait of uploaded person, wearing a loose white blouse. She poses with one arm raised, partially covering her face while holding her hair up, creating a dramatic and artistic composition. Her gaze is intense and captivating, directed toward the camera, exuding a strong, enigmatic aura. Background: mini",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1785206992421.0215
-  },
-  {
-    "title": "戏剧光影英雄人像",
-    "slug": "gemini-nano-banana-pro-1558266253",
-    "model": "Gemini",
-    "category": "realistic",
-    "tags": [
-      "摄影",
-      "AI Photography",
-      "Prompt Engineering",
-      "Gemini Nano",
-      "Portrait Photography"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/gemini-nano-banana-pro-1558266253.jpg",
-    "date": "2026-01-23",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2014576740492869761",
-    "sourceLink": "https://x.com/i/status/2014576740492869761",
-    "author": "Lex (lexx_aura)",
-    "authorLink": "https://x.com/lexx_aura",
-    "prompt": "Gemini Nano Banana Pro Prompt: { \"meta\": { \"title\": \"Heroic Dramatic Studio Portrait\", \"role\": \"World-class photographer specializing in editorial portraits\", \"aesthetic\": \"Dramatic, saturated studio lighting with a heroic feel\" }, \"constraints\": { \"identity_anchor\": { \"source\": \"ATTACHED REFERENCE PHOTO\", \"strictness\": \"Critical\", \"instruction\": \"Perfectly preserve exact facial features, skin tone, hairstyle, and natural likeness without changes.\" }, \"clothing_anchor\": { \"source\": \"EXACTLY AS I",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1785206992421.2236
   },
   {
     "title": "网球运动动感人像",
@@ -1366,90 +893,6 @@
     "mtime": 1785206992421.3188
   },
   {
-    "title": "Nano Banana Pro on Google... Nano Banana Pro 创作",
-    "slug": "nano-banana-pro-on-google-gemini-1560937683",
-    "model": "Gemini",
-    "category": "realistic",
-    "tags": [
-      "摄影",
-      "AI Art",
-      "Google Gemini",
-      "Cinematic Photography",
-      "Portrait Prompt"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/nano-banana-pro-on-google-gemini-1560937683.jpg",
-    "date": "2026-01-25",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2015282932643139964",
-    "sourceLink": "https://x.com/i/status/2015282932643139964",
-    "author": "K ChillaiKalan__",
-    "authorLink": "https://x.com/ChillaiKalan__",
-    "prompt": "Nano Banana Pro on Google Gemini Prompt: Ultra-realistic cinematic medium close-up portrait of the reference person, slightly turned to the side while looking toward the camera. Wearing a black turtleneck and dark jacket, modern and minimalist fashion style. Deep blue background with a smooth gradient, combined with contrasting magenta and blue lighting. Strong blue light coming from one side and magenta light from the opposite side, both colors reflecting clearly on the face and skin, creating",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1785206992421.6858
-  },
-  {
-    "title": "8K超写实商业摄影",
-    "slug": "nano-banana-pro-and-gpt-image-15-1570554631",
-    "model": "Gemini",
-    "category": "realistic",
-    "tags": [
-      "广告",
-      "摄影",
-      "AI图像生成",
-      "商业产品摄影",
-      "GPT Prompt"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/nano-banana-pro-and-gpt-image-15-1570554631.jpg",
-    "date": "2026-01-31",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2017420332458774791",
-    "sourceLink": "https://x.com/i/status/2017420332458774791",
-    "author": "Meem (mehvishs25)",
-    "authorLink": "https://x.com/mehvishs25",
-    "prompt": "Nano Banana Pro and GPT image 1.5 Prompt: { \"master_prompt\": { \"global_settings\": { \"resolution\": \"8K ultra-high-definition\", \"aspect_ratio\": \"3:4 vertical\", \"style\": \"hyper-realistic AI-edited commercial product photography\", \"sharpness\": \"extreme clarity, micro-detail visibility\", \"lighting_quality\": \"cinematic studio lighting with controlled highlights and shadows\", \"motion_freeze\": \"high-speed capture, frozen splashes and particles\", \"noise\": \"none\", \"artifacts\": \"none\" }, \"module_1_image_1_",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1785206992422.4675
-  },
-  {
-    "title": "Google Gemini Nano Banana... 创作",
-    "slug": "google-gemini-nano-banana-pro-1560822510",
-    "model": "Gemini",
-    "category": "realistic",
-    "tags": [
-      "摄影",
-      "AIArt",
-      "CinematicPortrait",
-      "GeminiNano",
-      "PromptEngineering"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/google-gemini-nano-banana-pro-1560822510.jpg",
-    "date": "2026-01-25",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2014984098213929280",
-    "sourceLink": "https://x.com/i/status/2014984098213929280",
-    "author": "Kashberg_0",
-    "authorLink": "https://x.com/Kashberg_0",
-    "prompt": "Google Gemini Nano Banana Pro Prompt: Moody cinematic portrait of a young woman with clear fair skin and barely-there makeup, warm natural lips. Loose dark brown hair, softly textured. Calm, self-assured expression. She’s wearing a fitted black turtleneck sweater, clean lines, understated elegance. Dark minimal background fading into black. Gentle diffused front light, soft shadows, subtle film grain, organic color grading, shallow depth of field, high-end editorial feel.",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1785206992422.8762
-  },
-  {
     "title": "产品爆炸分解图",
     "slug": "exploded-products-by-nano-banana-pro-on-1542362450",
     "model": "Gemini",
@@ -1476,62 +919,6 @@
       "Aspect Ratio": "16:9"
     },
     "mtime": 1785206992423.2097
-  },
-  {
-    "title": "Gemini 柔软午后时光",
-    "slug": "gemini-nano-banana-pro-30-1570899670",
-    "model": "Gemini",
-    "category": "realistic",
-    "tags": [
-      "摄影",
-      "人工智能绘画",
-      "图片生成",
-      "视觉艺术",
-      "创意提示"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/gemini-nano-banana-pro-30-1570899670.jpg",
-    "date": "2026-01-31",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2017166130746675620",
-    "sourceLink": "https://x.com/i/status/2017166130746675620",
-    "author": "kashmir_ki_lark",
-    "authorLink": "https://x.com/kashmir_ki_lark",
-    "prompt": "Gemini nano banana pro 3.0 Prompt: Cute, innocent young adult blonde woman sitting comfortably on a neatly made bed, relaxed natural posture with legs gently bent, shoulders soft and at ease. Long, soft, flowing blonde hair styled in loose natural waves, silky texture, subtle shine, a few delicate strands framing her face. Clear blue eyes with a gentle sparkle, long natural lashes, delicate eyebrows, smooth fair complexion with a soft healthy glow, subtle blush on cheeks, light pink lips, minima",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1785206992423.4326
-  },
-  {
-    "title": "就是这一刻",
-    "slug": "is-this-it-1570846371",
-    "model": "Midjourney",
-    "category": "realistic",
-    "tags": [
-      "摄影",
-      "人工智能绘画",
-      "复古唱片店",
-      "摄影提示词",
-      "时尚穿搭"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/is-this-it-1570846371.jpg",
-    "date": "2026-01-31",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2017493378167111734",
-    "sourceLink": "https://x.com/i/status/2017493378167111734",
-    "author": "Sidona sidona",
-    "authorLink": "https://x.com/sidona",
-    "prompt": "Is this it? Yes. This is it. この瞬間を待ってた。 找到的那一刻，什么都值了。 ————prompt👇 { \"portrait_prompt\": { \"subject\": { \"description\": \"Based on <User Portrait, a young woman crouching in a vintage record store, excitedly holding up a vinyl record she just found\", \"pose\": \"Squatting or kneeling by record crates, holding vinyl up toward camera\" }, \"attire\": { \"type\": \"White camisole, charcoal mini skirt riding up slightly, black lace socks, black loafers\", \"accessory\": \"Mustard yellow bag set down beside her\" }, \"",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1785206992423.5308
   },
   {
     "title": "四叶草框住的小确幸",
@@ -1588,34 +975,6 @@
       "Aspect Ratio": "16:9"
     },
     "mtime": 1785206992423.951
-  },
-  {
-    "title": "Nano Banana Pro 九宫格写真",
-    "slug": "nano-banana-pro-astronomerozge1-1565888485",
-    "model": "Gemini",
-    "category": "realistic",
-    "tags": [
-      "摄影",
-      "AI生成",
-      "NanoBananaPro",
-      "时尚摄影",
-      "编辑图片"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/nano-banana-pro-astronomerozge1-1565888485.jpg",
-    "date": "2026-01-28",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2016215595209871366",
-    "sourceLink": "https://x.com/i/status/2016215595209871366",
-    "author": "astronomerozge1",
-    "authorLink": "https://x.com/astronomerozge1",
-    "prompt": "Nano Banana Pro [@bageldotcom] 🖤 Prompt: { \"generation_request\": { \"meta_data\": { \"tool\": \"NanoBanana Pro\", \"task_type\": \"photoreal_editorial_beauty_contact_sheet\", \"version\": \"v1.0_9PANEL_STUDIO_GLAM_FUR_JEWELRY_NO_TEXT_EN\", \"priority\": \"highest\", \"language\": \"en\" }, \"references\": { \"reference_image_face\": { \"source\": \"UPLOAD_REFERENCE_IMAGE (REQUIRED)\", \"purpose\": \"FACE_IDENTITY_LOCK\", \"strict_lock\": true, \"face_similarity_priority\": \"MAX\", \"no_identity_blending\": true, \"no_beautify\": true, \"n",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1785206992424.1848
   },
   {
     "title": "胶片颗粒·半调黑色电影",
@@ -1829,34 +1188,6 @@
     "mtime": 1785208541566.2903
   },
   {
-    "title": "蓝图觉醒·建筑从纸面升起",
-    "slug": "nano-banana-pro-blueprint-awakening",
-    "model": "Adobe Firefly",
-    "category": "3d",
-    "tags": [
-      "AI绘图",
-      "提示词",
-      "Adobe Firefly",
-      "3D场景",
-      "3D渲染"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-2010009737816162736.jpg",
-    "date": "2026-07-23",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2010009737816162736",
-    "sourceLink": "https://x.com/i/status/2010009737816162736",
-    "author": "Alexandra Aisling",
-    "authorLink": "https://x.com/AllaAisling",
-    "prompt": "Epic 3D scene: a massive architectural blueprint of [BUILDING/STRUCTURE] pinned to a drafting table, its ink lines rising off the paper into fully realized construction. Blue lines become steel beams mid-weld, floor plans inflate into furnished rooms, elevation drawings push outward into facades with working windows. Construction phases coexist simultaneously: foundation being poured in one corner while the penthouse is already inhabited in another. Tiny workers, cranes, and scaffolding swarm the rising structure. The flat drawing and the living building merge at impossible angles. Technical annotations float as dimensional signage. Architect's coffee cup sits at the edge, casting shadow across unbuilt sections. Extreme scale contrast, construction dust catching afternoon light, 8K, photorealistic.",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Adobe Firefly",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1785208541567.7024
-  },
-  {
     "title": "3D胶囊玩具：可爱城市微缩",
     "slug": "3d-capsule-toy-kawaii-diorama",
     "model": "GPT-Image2",
@@ -1880,62 +1211,6 @@
     "negativePrompt": "",
     "parameters": {},
     "mtime": 1785209441170.2043
-  },
-  {
-    "title": "Ana de Armas超写实肖像",
-    "slug": "ana-de-armas-is-literally-looking-1554067528",
-    "model": "Gemini",
-    "category": "realistic",
-    "tags": [
-      "摄影",
-      "AI_Art",
-      "AnaDeArmas",
-      "GeminiNano",
-      "Photorealistic"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/ana-de-armas-is-literally-looking-1554067528.jpg",
-    "date": "2026-01-20",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2013588573065220479",
-    "sourceLink": "https://x.com/i/status/2013588573065220479",
-    "author": "Yaseen Khan Gul (YaseenK7212)",
-    "authorLink": "https://x.com/YaseenK7212",
-    "prompt": "Ana de Armas is literally looking gorgeous here Gemini Nano Banana Pro Prompt: { \"project_metadata\": { \"version\": \"2.0\", \"target_quality\": \"Hyper-Realistic / Photogrammetric\", \"aspect_ratio\": \"3:4\", \"reference_parameters\": { \"identity_preservation\": \"High (Strictly maintain facial geometry and hairstyle from reference image)\", \"facial_integrity\": \"Unmodified facial features, zero distortion\" } }, \"subject_details\": { \"human_attributes\": { \"physique\": \"Curvy, well-defined silhouette\", \"skin_textu",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1785209441171.0774
-  },
-  {
-    "title": "戏剧光影：丰盈身姿与清纯面容",
-    "slug": "prompt-for-nano-banana-pro-1571128742",
-    "model": "Gemini",
-    "category": "realistic",
-    "tags": [
-      "摄影",
-      "AI绘画",
-      "写真创作",
-      "夜景人像",
-      "时尚摄影"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-for-nano-banana-pro-1571128742.jpg",
-    "date": "2026-01-31",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2017591867249201307",
-    "sourceLink": "https://x.com/i/status/2017591867249201307",
-    "author": "Anissa (SimplyAnnisa)",
-    "authorLink": "https://x.com/SimplyAnnisa",
-    "prompt": "Prompt for nano banana pro: Masterpiece, best quality, detailed lighting, dramatic shadows, voluptuous body, innocent face. (Use a 100% identical reference face) Create an ultra-realistic portrait of a young Asian woman at night, 9:16 ratio (vertical portrait). Medium shot (waist up), taken using a phone's rear camera with a strong flash, with Hongyadong (Hongya Cave) in Chongqing, China as the backdrop. Background: The background must be an exact copy of Hongyadong Chongqing, a highly viral and",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1785209441171.1877
   },
   {
     "title": "银叶草框住小确幸：珠光珠宝",
@@ -1964,62 +1239,6 @@
       "Aspect Ratio": "16:9"
     },
     "mtime": 1785209441171.4233
-  },
-  {
-    "title": "Sydney Sweeney超写实棚拍",
-    "slug": "sydney-sweeney-vibes-1548950981",
-    "model": "Gemini",
-    "category": "realistic",
-    "tags": [
-      "摄影",
-      "Nanobanana",
-      "AI Art",
-      "Nano Banana Pro",
-      "AI Prompt"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/sydney-sweeney-vibes-1548950981.jpg",
-    "date": "2026-01-17",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2011913223964852336",
-    "sourceLink": "https://x.com/i/status/2011913223964852336",
-    "author": "Melisa♡ xmliisu",
-    "authorLink": "https://x.com/xmliisu",
-    "prompt": "Sydney Sweeney vibes ✨ Nano Banana Pro Prompt: { \"style\": \"ultra-realistic studio portrait\", \"subject\": { \"gender\": \"female\", \"age\": \"young adult\", \"pose\": \"leaning slightly forward toward the camera\", \"expression\": \"playful, flirty\", \"facial_details\": { \"wink\": true, \"tongue_out\": true, \"freckles\": \"natural across fair skin\", \"makeup\": { \"blush\": \"soft pink\", \"lips\": \"glossy\" } }, \"hair\": { \"color\": \"blonde\", \"length\": \"long\", \"part\": \"side-parted\", \"style\": \"falling naturally over shoulders\" }",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1785209441171.5898
-  },
-  {
-    "title": "冰凝之美：奢华护肤品摄影",
-    "slug": "luxury-cosmetic-photography-meets-1557351931",
-    "model": "Gemini",
-    "category": "realistic",
-    "tags": [
-      "摄影",
-      "AI Photography",
-      "Hyperrealism",
-      "Luxury Skincare",
-      "Cold Tech Aesthetic"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/luxury-cosmetic-photography-meets-1557351931.jpg",
-    "date": "2026-01-23",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2014347192321167565",
-    "sourceLink": "https://x.com/i/status/2014347192321167565",
-    "author": "Latte 0xbisc",
-    "authorLink": "https://x.com/0xbisc",
-    "prompt": "Luxury cosmetic photography meets frozen perfection 🧊 Nano Banana Pro PROMPT : Hyper-realistic luxury skincare product shot with a random cosmetic container design as the clear hero object, floating at the center with a slight diagonal tilt. Numerous medium-to-large crystal-clear ice blocks fully surround and wrap the product from all directions, filling the frame edge to edge, creating a dense frozen environment. The ice pieces overlap in depth, pressing visually toward the product without form",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1785209441171.6858
   },
   {
     "title": "LOOP城市骑行奢侈编辑海报",
@@ -2296,34 +1515,6 @@
     "mtime": 1785209441176.779
   },
   {
-    "title": "愤怒的🐦",
-    "slug": "angry-bird",
-    "model": "Midjourney",
-    "category": "3d",
-    "tags": [
-      "摄影",
-      "AI生成",
-      "时尚摄影",
-      "3D动画",
-      "中式审美"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-1553147716.jpg",
-    "date": "2026-01-20",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2013243043873456445",
-    "sourceLink": "https://x.com/i/status/2013243043873456445",
-    "author": "行者AI视频 (joshesye)",
-    "authorLink": "https://x.com/joshesye",
-    "prompt": "愤怒的🐦 这个可以来一张 还是中式审美好看 { \"prompt\": \"A high-resolution fashion studio portrait of a confident young woman in a textured red knit sweater, black fitted pants, and red sneakers, standing casually with her arm resting on one of two oversized, round, fluffy 3D cartoon red birds with bold eyebrows and bright yellow beaks. The birds are rendered in a high-quality 3D animation style, contrasting with the photorealistic woman. The entire scene is a clean monochrome red studio background with soft, diffuse",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1785230725097.8071
-  },
-  {
     "title": "告诉Grok出生时间，AI精准解读人生",
     "slug": "birth-date-time-prompt",
     "model": "Grok",
@@ -2380,34 +1571,6 @@
     "mtime": 1785230790866.1929
   },
   {
-    "title": "新中式重构提示词框架：",
-    "slug": "neo-chinese-framework",
-    "model": "Midjourney",
-    "category": "abstract",
-    "tags": [
-      "AI Art",
-      "Midjourney",
-      "Chinese Aesthetic",
-      "Prompt Engineering",
-      "Guochao"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-1547290906.jpg",
-    "date": "2026-01-16",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2012005928942604516",
-    "sourceLink": "https://x.com/i/status/2012005928942604516",
-    "author": "VoxCat",
-    "authorLink": "https://x.com/VoxcatAI",
-    "prompt": "新中式重构提示词框架： 不管你输入什么主题，都先自动分类（灵兽/偃甲/器物/意象）， 再强制注入“三位一体”美学： 白玉为骨（羊脂玉结构）｜流金为血（金缮液态金强调裂纹/关节）｜水墨为魂（吐息/烟/能量全部水墨化）。 示例：哥斯拉走灵兽化，背鳍/鳞刺直接转成「千里江山」层叠墨山，画面用大留白+边缘光+黑金红青传统配色。 Prompt 👇 # Role: New Chinese Aesthetic Architect ## 1. Goal You are an expert in \"New Chinese Style\" (Guochao) AI image generation. Your task is to take ANY user input (Subject), analyze its nature, effectively categorize it, and generate a specific Midjourney Prompt that reimagines it with an Oriental Fantasy aesthetic. ## 2. Core Aesth",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1785230790866.449
-  },
-  {
     "title": "🍌 Nano Banana Pro：视觉渲染与构图",
     "slug": "visual-rendering-composition",
     "model": "Midjourney",
@@ -2434,118 +1597,6 @@
       "Aspect Ratio": "16:9"
     },
     "mtime": 1785230790867.269
-  },
-  {
-    "title": "【AI写真系列×韩系女团风】第三弹",
-    "slug": "korean-girl-group-part3",
-    "model": "Gemini",
-    "category": "realistic",
-    "tags": [
-      "摄影",
-      "AI绘画",
-      "AI写真",
-      "提示词工程",
-      "韩系女团风"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-1567028630.jpg",
-    "date": "2026-01-29",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2016803276566737364",
-    "sourceLink": "https://x.com/i/status/2016803276566737364",
-    "author": "骑司Chase (qisi_ai)",
-    "authorLink": "https://x.com/qisi_ai",
-    "prompt": "【AI写真系列✨×韩系女团风📷】第三弹 红色细框眼镜、白色蕾丝小裙、粉色丝巾、天使羽翼与毛绒发饰，把“幼态、复古、俏皮、轻微性感”的气质牢牢钉住～ ✅ 图一为直接生成 ✅ 图二为使用参考图生成 ✍️中文提示词（Nano Banana Pro）： 一、画面版式 1 画幅比例：竖幅三比四，四宫格拼图，二行二列排列 2 镜头组合：两张近景特写加两张半身到全身，人物占画面比例大 3 背景统一：同一灰色无缝背景，四格色调与光线一致，边缘留少量灰底空白 二、人物主体 参考来源：以上传参考图作为严格身份来源 一致性要求：零偏差 1 人物设定：年轻少女，甜酷可爱与轻微性感并存 2 面部特征：大眼圆润，鼻梁小巧，唇形饱满，脸颊与眼下高饱和腮红 3 妆容质感：底妆干净微雾面，腮红面积大且集中，唇部高光水润镜面 4 配饰标识：红色细框眼镜，作为强识别点贯穿四格 三、发型与头饰 1 发型：深棕长发，侧边大波浪辫子垂落，刘海厚且蓬松，少量碎发自然散落 2 头饰：毛绒小熊发夹与发圈点缀，发侧还有小熊挂件与背包元素呼应 四、服装造型与道具 1 服装：白色吊带上衣与白色层叠荷叶边短裙，肩带与胸前有粉色蝴蝶结装饰 2",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1785230790868.105
-  },
-  {
-    "title": "【AI写真系列×韩系女团风写真🎀】第一弹",
-    "slug": "korean-girl-group-style",
-    "model": "Gemini",
-    "category": "realistic",
-    "tags": [
-      "摄影",
-      "AI写真",
-      "韩系女团风",
-      "Nano Banana Pro",
-      "结构化提示词"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-1560926143.jpg",
-    "date": "2026-01-25",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2014961007068905955",
-    "sourceLink": "https://x.com/i/status/2014961007068905955",
-    "author": "骑司Chase",
-    "authorLink": "https://x.com/qisi_ai",
-    "prompt": "【AI写真系列✨×韩系女团风写真🎀】第一弹 从T-ARA到张元英、柳智敏，韩国女团一直影响着时代主流审美，似乎永不过时......所以我花了20分钟，把韩系女团风写真用Nano Banana Pro解决了 ✅ 图一为上传参考图效果 ✅ 图二为直接使用效果 ✍️中文提示词： 一、画面构图 1 版式：整体为3:4比例，四宫格拼图，3:4小图用2×2排列 2 取景：近景到特写为主，人物占画面大比例 3 角度：平视近拍，轻微左右变化，统一干净背景 二、人物主体 1 参考来源：以上传参考图作为严格身份来源 2 一致性要求：零偏差 3 脸部：脸型精致、眼睛偏大、右眼下方点了一颗小痣，鼻梁细长 4 肤质：白皙带淡粉，皮肤细腻，有轻微柔焦 5 细节：鼻梁与面中高光明显，脸颊与鼻尖轻微泛红，散落少量雀斑点 三、妆容细节 1 底妆：通透干净，轻薄雾面带微光 2 腮红：粉色集中在脸颊与鼻梁两侧 3 眼妆：自然放大，睫毛纤长，眼神清澈 4 唇妆：水润嘟嘟唇，淡粉到蜜桃渐变，唇峰柔和 四、发型与头饰 1 发型：黑色长直发，中分，发量饱满，自然垂落 2 碎发：额前少量发丝自然飘动 3 发饰：左右各一枚粉色发夹，颜",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1785230790868.3672
-  },
-  {
-    "title": "Nano Banana Pro 3×3网格高端影棚产品故事板方案",
-    "slug": "studio-product-storyboard",
-    "model": "Gemini",
-    "category": "realistic",
-    "tags": [
-      "摄影",
-      "产品摄影",
-      "故事板",
-      "AI提示词",
-      "品牌设计"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-1549173264.jpg",
-    "date": "2026-01-17",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2012527817477828745",
-    "sourceLink": "https://x.com/i/status/2012527817477828745",
-    "author": "松果先森",
-    "authorLink": "https://x.com/songguoxiansen",
-    "prompt": "Nano Banana Pro 3×3网格高端影棚产品故事板方案 Nano Banana Pro提示词： { \"OverallLayout\": { \"Format\": \"3×3 grid storyboard, nine equal panels on 4:5 ratio canvas\", \"Style\": \"High-end designer mockup, editorial, curated, design-driven\", \"Focus\": \"Form, composition, materiality, visual rhythm over lifestyle narrative\", \"ProductConsistency\": \"Exact same product, packaging, branding, materials, colors, proportions maintained across all nine panels\", \"ProductRecognition\": \"Product clearly recognizable in every frame,",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1785230790868.4946
-  },
-  {
-    "title": "【AI写真系列×韩系女团风】第二弹",
-    "slug": "korean-girl-group-part2",
-    "model": "Midjourney",
-    "category": "realistic",
-    "tags": [
-      "摄影",
-      "AI写真",
-      "韩系女团风",
-      "结构化提示词",
-      "AI人像生成"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-1566509130.jpg",
-    "date": "2026-01-29",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2016725035310862814",
-    "sourceLink": "https://x.com/i/status/2016725035310862814",
-    "author": "骑司Chase qisi_ai",
-    "authorLink": "https://x.com/qisi_ai",
-    "prompt": "【AI写真系列✨×韩系女团风📷】第二弹 女团风的高级穿搭，满满的克制感，甜美中带着酷飒 ✍️中文提示词： 一、版式与构图 1 画幅比例：整体竖幅四比五 2 版式：四宫格拼图，二乘二排列，无边框 3 景别：近景到特写，人物占画面大比例，肩颈与上半身为主 4 角度：平视为主，轻微侧转与俯仰变化，统一干净背景 二、人物主体 1 优先以上传参考图作为严格身份来源 2 一致性要求：零偏差 3 性别气质：年轻女性，清冷甜感并存，安静克制 4 脸部特征：鹅蛋脸偏小，五官精致，大眼圆润，鼻梁细直，唇形饱满 5 肤色肤质：白皙偏粉，细腻通透，柔焦磨皮但保留高光反射 6 眼神表情：湿润清澈的凝视，微微放空与若有所思，嘴唇微张或轻抿 三、妆发细节 1 底妆：轻薄通透，面中与鼻梁高光明显 2 腮红：大面积粉雾腮红，集中在苹果肌并延伸到鼻梁两侧 3 眼妆：干净放大感，细长睫毛，淡淡卧蚕与浅棕眼影 4 唇妆：水润镜面感，蜜桃粉到玫瑰粉渐变 5 发型：黑色长直发，中分贴头顶，顺直垂落；少量发丝斜掠过脸颊与鼻梁形成标志线条 四、服饰与道具 1 外搭：黑色宽松西装外套，垫肩感轻微 2 内搭：白色缎面吊带或抹胸上衣，胸前",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1785230790868.7183
   },
   {
     "title": "GPT Image 2生图小技巧：3D CG转写实风",
@@ -2602,34 +1653,6 @@
       "Aspect Ratio": "9:16"
     },
     "mtime": 1785230790873.2622
-  },
-  {
-    "title": "接上一期，分享绝美AI古风女生侧颜提示词\n提示词prompt：中国古典美学，宋韵美学，工笔写实风格，超写实摄影，东方古风成年女子，气质清雅，五官精致，肤色细腻自然，杏眼含光，自然淡妆，浅粉唇色，神情温柔宁静，身体微微背向镜头，右肩朝向镜头，头部自然向右缓缓转动约35°，轻轻回眸凝视镜头，三分之二侧颜，Rear Three-quarter Portrait，近景半身肖像，人物占画面约75%，肩颈舒",
-    "slug": "chinese-ancient-style-girl",
-    "model": "Midjourney",
-    "category": "realistic",
-    "tags": [
-      "AI绘图",
-      "提示词",
-      "国风",
-      "写实",
-      "油画"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-2078522659567239382.jpg",
-    "date": "2026-07-23",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2078522659567239382",
-    "sourceLink": "https://x.com/i/status/2078522659567239382",
-    "author": "灰度笔记",
-    "authorLink": "https://x.com/GrayNoteLab",
-    "prompt": "中国古典美学，宋韵美学，工笔写实风格，超写实摄影，东方古风成年女子，气质清雅，五官精致，肤色细腻自然，杏眼含光，自然淡妆，浅粉唇色，神情温柔宁静，身体微微背向镜头，右肩朝向镜头，头部自然向右缓缓转动约35°，轻轻回眸凝视镜头，三分之二侧颜，Rear Three-quarter Portrait，近景半身肖像，人物占画面约75%，肩颈舒展，白色轻纱交领古裙，月白色真丝外衫，轻盈飘逸，真实丝绸纹理，低位松散盘发，乌黑长发自然垂落，几缕碎发轻拂脸颊，发间仅点缀一朵半开的白玉兰，一支温润白玉发簪固定发髻，几颗天然珍珠若隐若现地点缀于发丝之间，细长银色流苏耳饰自然垂落，整体发饰极简雅致，不使用莲蓬、荷花等大型植物发饰，画面右下角一朵盛开的粉色山茶花作为前景虚化，左侧淡雅竹影虚化，背景采用宣纸留白质感，浅灰青渐变背景，隐约水墨晕染纹理，若隐若现的窗棂光影，极浅景深，奶油散景，柔和晨光透过窗棂形成自然侧逆光，发丝轮廓光细腻勾勒边缘，柔光均匀照亮面部，真实皮肤纹理，真实发丝，空气中漂浮细微尘埃，整体低饱和、低对比，高级东方电影感，宋画留白构图，极简构图，高级审美，85mm人像镜头，f1.4，大光圈，HDR，8K。",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "Midjourney v6",
-      "Aspect Ratio": "16:9"
-    },
-    "mtime": 1785230790873.3594
   },
   {
     "title": "魏晋风古典仕女妆造提示词",
@@ -2912,34 +1935,6 @@
     "mtime": 1785230790874.5112
   },
   {
-    "title": "超写实电影感人像提示词",
-    "slug": "hyperreal-cinematic-portrait",
-    "model": "ChatGPT",
-    "category": "realistic",
-    "tags": [
-      "AI绘图",
-      "提示词",
-      "3D渲染",
-      "写实",
-      "摄影"
-    ],
-    "difficulty": "intermediate",
-    "cover": "/images/prompts/prompt-2009298156748722252.jpg",
-    "date": "2026-07-23",
-    "added": "2026-07-24",
-    "source": "https://x.com/i/status/2009298156748722252",
-    "sourceLink": "https://x.com/i/status/2009298156748722252",
-    "author": "Aijaz",
-    "authorLink": "https://x.com/iamsofiaijaz",
-    "prompt": "A hyper-realistic cinematic close-up portrait of a young woman's face in profile, intense turquoise-blue eye in sharp focus, wind-blown strands of wet hair crossing her face, tiny water droplets and floating particles suspended in the air, stormy and ethereal atmosphere, teal and blue color grading, soft glowing highlights, dramatic moody lighting, shallow depth of field, ultra-fine skin texture, emotional and introspective expression, fantasy realism style, high contrast, volumetric mist, particles and sparks around the face, 8K resolution, cinematic color grading, film still look, masterpiece, ultra-detailed, photorealistic, shot on 85mm lens, f/1.8, Unreal Engine, Octane render look.",
-    "negativePrompt": "",
-    "parameters": {
-      "Model": "ChatGPT",
-      "Aspect Ratio": "1:1"
-    },
-    "mtime": 1785230790874.6064
-  },
-  {
     "title": "角色旋转海报提示词",
     "slug": "character-rotation-poster",
     "model": "Midjourney",
@@ -2966,6 +1961,1011 @@
       "Aspect Ratio": "9:16"
     },
     "mtime": 1785230790874.702
+  },
+  {
+    "title": "钢铁侠产品摄影",
+    "slug": "iron-man-1571237926",
+    "model": "Midjourney",
+    "category": "abstract",
+    "tags": [
+      "艺术",
+      "AI生成艺术",
+      "JSON提示词",
+      "产品设计",
+      "图像参考"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/iron-man-1571237926.jpg",
+    "date": "2026-01-31",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2016960334838567332",
+    "sourceLink": "https://x.com/i/status/2016960334838567332",
+    "author": "Ege egeberkina",
+    "authorLink": "https://x.com/egeberkina",
+    "prompt": "Iron Man { \"reference_images\": { \"product_image\": \"UPLOADED_IMAGE\", \"usage_rule\": \"Use the uploaded image as the exact visual reference for the product’s form, proportions, materials, and overall identity. Do not redesign or reinterpret the product.\" }, \"layout\": { \"canvas\": { \"orientation\": \"vertical\", \"aspect_ratio\": \"3:4\", \"background\": \"warm neutral paper-like surface\" }, \"structure\": { \"top_section\": \"lifestyle_hero\", \"bottom_section\": \"technical_specification\" } }, \"top_section\": { \"type\":",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785238838424.9734
+  },
+  {
+    "title": "新中式重构提示词框架：",
+    "slug": "neo-chinese-framework",
+    "model": "Midjourney",
+    "category": "abstract",
+    "tags": [
+      "AI Art",
+      "Midjourney",
+      "Chinese Aesthetic",
+      "Prompt Engineering",
+      "Guochao"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-1547290906.jpg",
+    "date": "2026-01-16",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2012005928942604516",
+    "sourceLink": "https://x.com/i/status/2012005928942604516",
+    "author": "VoxCat",
+    "authorLink": "https://x.com/VoxcatAI",
+    "prompt": "新中式重构提示词框架： 不管你输入什么主题，都先自动分类（灵兽/偃甲/器物/意象）， 再强制注入“三位一体”美学： 白玉为骨（羊脂玉结构）｜流金为血（金缮液态金强调裂纹/关节）｜水墨为魂（吐息/烟/能量全部水墨化）。\n 示例：哥斯拉走灵兽化，背鳍/鳞刺直接转成「千里江山」层叠墨山，画面用大留白+边缘光+黑金红青传统配色。\n Prompt 👇 # Role: New Chinese Aesthetic Architect ## 1. Goal You are an expert in \"New Chinese Style\" (Guochao) AI image generation. Your task is to take ANY user input (Subject), analyze its nature, effectively categorize it, and generate a specific Midjourney Prompt that reimagines it with an Oriental Fantasy aesthetic. ## 2. Core Aesth",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785238838425.2603
+  },
+  {
+    "title": "冰封山脉中世纪大战",
+    "slug": "kling-26-prompt-1542371129",
+    "model": "Midjourney",
+    "category": "abstract",
+    "tags": [
+      "视频",
+      "Kling",
+      "Kling 2.6",
+      "FPV Cinematic",
+      "AI Video Generation"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/kling-26-prompt-1542371129.jpg",
+    "date": "2026-01-14",
+    "added": "2026-07-24",
+    "source": "https://x.com/MayorKingAI/status/2010763673942589880?s=20",
+    "sourceLink": "https://x.com/MayorKingAI/status/2010763673942589880?s=20",
+    "author": "MayorKingAI",
+    "authorLink": "https://x.com/MayorKingAI",
+    "prompt": "Kling 2.6 Prompt High in a frozen mountain range beneath storm-filled skies, a massive medieval battle erupts as the Hyperspeed FPV camera races inches above the snow-covered ground, weaving between armored warriors clashing swords and shields, sparks and blood flying in slow streaks of motion blur. The camera suddenly accelerates upward, chasing flaming arrows cutting through the air, spinning tightly around massive wooden catapults launching fireballs, then surging forward through a crumbling",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785238838425.419
+  },
+  {
+    "title": "跨界球鞋概念设计",
+    "slug": "cross-brand-sneaker-collaboration-1570896016",
+    "model": "Midjourney",
+    "category": "abstract",
+    "tags": [
+      "广告",
+      "球鞋设计",
+      "品牌合作",
+      "概念鞋款",
+      "创意提示"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/cross-brand-sneaker-collaboration-1570896016.jpg",
+    "date": "2026-01-31",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2017542008722886797",
+    "sourceLink": "https://x.com/i/status/2017542008722886797",
+    "author": "Latte0xbisc",
+    "authorLink": "https://x.com/0xbisc",
+    "prompt": "Cross-brand sneaker collaboration 👟 Prompt: [BRAND NAME] Act as a world-class Footwear Design Director and high-end Product Photographer. THE TASK You must autonomously conceptualize and render a hyper-realistic “Concept Sneaker Collaboration” between the input brand and a specialized sports/outdoor brand of your choosing. PHASE 1: DIVERSE PARTNER SELECTION (THE “MATCHMAKER”) CRITICAL: Do NOT default to Nike or Adidas unless they are the absolute 100% perfect archetype match. You must DIVERSIFY",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785238838425.7065
+  },
+  {
+    "title": "发明进化四宫格",
+    "slug": "these-360-prompts-are-so-much-fun-1558979827",
+    "model": "Gemini",
+    "category": "3d",
+    "tags": [
+      "摄影",
+      "Stargate",
+      "Arduino",
+      "AI",
+      "3D Printing"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/these-360-prompts-are-so-much-fun-1558979827.jpg",
+    "date": "2026-01-24",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2014696369680793776",
+    "sourceLink": "https://x.com/i/status/2014696369680793776",
+    "author": "Gdgtify",
+    "authorLink": "https://x.com/Gdgtify",
+    "prompt": "Another Nano Banana Pro prompt for visualizing the evolution of inventions. Prompt: a 2x2 grid, each panel with a new random historical invention <instructionsInput Variable: [input] (e.g., Antikythera Mechanism, The Aeolipile (Steam Engine), The Gutenberg Press) System Instruction: Generate a hyper-realistic, macro \"Maker's Workbench\" showing the evolutionary lineage of an ancient technology. CRITICAL: Do NOT invent futuristic items. Show the Real-World Historical Successors of the artifact. Se",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785238838426.741
+  },
+  {
+    "title": "旅行地标微缩立体模型",
+    "slug": "travel-destination-mini-dioramas-1557374678",
+    "model": "Gemini",
+    "category": "3d",
+    "tags": [
+      "艺术",
+      "AI",
+      "Dioramas",
+      "3D",
+      "Gemini"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/travel-destination-mini-dioramas-1557374678.jpg",
+    "date": "2026-01-23",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2014212617779441724",
+    "sourceLink": "https://x.com/i/status/2014212617779441724",
+    "author": "Aleena Amir",
+    "authorLink": "https://x.com/aleenaamiir",
+    "prompt": "Travel Destination Mini Dioramas Gemini Nano Banana Pro Prompt: “Present a clear, 45° top-down isometric miniature 3D diorama of the travel destination [CITY / COUNTRY], highlighting its most famous attractions: [ATTRACTION 1], [ATTRACTION 2]. Use soft refined textures, realistic PBR materials, and gentle golden-hour lighting. Create a compact raised base with skyline silhouettes, terrain features, and tiny stylized tourists (no facial details). Use a clean solid [BACKGROUND COLOR] background. A",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785238838427.0176
+  },
+  {
+    "title": "愤怒的🐦",
+    "slug": "angry-bird",
+    "model": "Midjourney",
+    "category": "3d",
+    "tags": [
+      "摄影",
+      "AI生成",
+      "时尚摄影",
+      "3D动画",
+      "中式审美"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-1553147716.jpg",
+    "date": "2026-01-20",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2013243043873456445",
+    "sourceLink": "https://x.com/i/status/2013243043873456445",
+    "author": "行者AI视频 (joshesye)",
+    "authorLink": "https://x.com/joshesye",
+    "prompt": "愤怒的🐦 这个可以来一张 还是中式审美好看 { \"prompt\": \"A high-resolution fashion studio portrait of a confident young woman in a textured red knit sweater, black fitted pants, and red sneakers, standing casually with her arm resting on one of two oversized, round, fluffy 3D cartoon red birds with bold eyebrows and bright yellow beaks. The birds are rendered in a high-quality 3D animation style, contrasting with the photorealistic woman. The entire scene is a clean monochrome red studio background with soft, diffuse",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785238838427.5215
+  },
+  {
+    "title": "导演微缩片场的电影人",
+    "slug": "image-on-google-gemini-nano-banana-1557350912",
+    "model": "Gemini",
+    "category": "realistic",
+    "tags": [
+      "摄影",
+      "AIArt",
+      "GoogleGemini",
+      "CinematicPortrait",
+      "AIgenerated"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/image-on-google-gemini-nano-banana-1557350912.jpg",
+    "date": "2026-01-23",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2014213404878324132",
+    "sourceLink": "https://x.com/i/status/2014213404878324132",
+    "author": "AIwithkhan",
+    "authorLink": "https://x.com/AIwithkhan",
+    "prompt": "Image on Google Gemini Nano Banana Prompt 👇 Ultra-realistic cinematic studio portrait of a woman directing a miniature film set starring a tiny lifelike version of herself. She adjusts a miniature camera while the small figure stands under scaled studio lights. The miniature self matches her exact appearance, outfit, and natural expression. The environment includes mini tripods, clapperboards, light modifiers, and film reels. Moody cinematic lighting enhances realism, skin texture, and micro-set",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785238838427.852
+  },
+  {
+    "title": "【AI写真系列×韩系女团风】第二弹",
+    "slug": "korean-girl-group-part2",
+    "model": "Midjourney",
+    "category": "realistic",
+    "tags": [
+      "摄影",
+      "AI写真",
+      "韩系女团风",
+      "结构化提示词",
+      "AI人像生成"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-1566509130.jpg",
+    "date": "2026-01-29",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2016725035310862814",
+    "sourceLink": "https://x.com/i/status/2016725035310862814",
+    "author": "骑司Chase qisi_ai",
+    "authorLink": "https://x.com/qisi_ai",
+    "prompt": "【AI写真系列✨×韩系女团风📷】第二弹 女团风的高级穿搭，满满的克制感，甜美中带着酷飒 ✍️中文提示词： 一、版式与构图 1 画幅比例：整体竖幅四比五 2 版式：四宫格拼图，二乘二排列，无边框 3 景别：近景到特写，人物占画面大比例，肩颈与上半身为主 4 角度：平视为主，轻微侧转与俯仰变化，统一干净背景 二、人物主体 1 优先以上传参考图作为严格身份来源 2 一致性要求：零偏差 3 性别气质：年轻女性，清冷甜感并存，安静克制 4 脸部特征：鹅蛋脸偏小，五官精致，大眼圆润，鼻梁细直，唇形饱满 5 肤色肤质：白皙偏粉，细腻通透，柔焦磨皮但保留高光反射 6 眼神表情：湿润清澈的凝视，微微放空与若有所思，嘴唇微张或轻抿 三、妆发细节 1 底妆：轻薄通透，面中与鼻梁高光明显 2 腮红：大面积粉雾腮红，集中在苹果肌并延伸到鼻梁两侧 3 眼妆：干净放大感，细长睫毛，淡淡卧蚕与浅棕眼影 4 唇妆：水润镜面感，蜜桃粉到玫瑰粉渐变 5 发型：黑色长直发，中分贴头顶，顺直垂落；\n少量发丝斜掠过脸颊与鼻梁形成标志线条 四、服饰与道具 1 外搭：黑色宽松西装外套，垫肩感轻微 2 内搭：白色缎面吊带或抹胸上衣，胸前",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785238838428.1104
+  },
+  {
+    "title": "夜色酒红 静谧奢华",
+    "slug": "night-vibes-1555336734",
+    "model": "Midjourney",
+    "category": "realistic",
+    "tags": [
+      "摄影",
+      "AI Art",
+      "Fashion",
+      "Luxury",
+      "Photography"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/night-vibes-1555336734.jpg",
+    "date": "2026-01-21",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2013637545712640047",
+    "sourceLink": "https://x.com/i/status/2013637545712640047",
+    "author": "Margot_Miaa",
+    "authorLink": "https://x.com/Margot_Miaa",
+    "prompt": "Night Vibes Quiet luxury in motion 🖤✨ Some days call for deep burgundy and zero apologies. Prompt ⬇️ Stylish young woman with long wavy brown hair, flawless makeup with bold eyeliner and glossy lips, wearing elegant maroon high-neck long-sleeve midi dress with pleated skirt and black statement belt with gold buckle, delicate silver necklace and bracelet, standing in modern luxury hotel room with mirror reflection, soft dramatic lighting, confident pose holding phone like taking selfie, cinematic",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785238838428.4902
+  },
+  {
+    "title": "粉樱遮面的诗意人像",
+    "slug": "nano-banana-pro-on-gemini-app-1565908079",
+    "model": "Gemini",
+    "category": "realistic",
+    "tags": [
+      "摄影",
+      "AIArt",
+      "ImageGeneration",
+      "AIprompts",
+      "Cinematic"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/nano-banana-pro-on-gemini-app-1565908079.jpg",
+    "date": "2026-01-28",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2016357678680039438",
+    "sourceLink": "https://x.com/i/status/2016357678680039438",
+    "author": "Taaruk_",
+    "authorLink": "https://x.com/Taaruk_",
+    "prompt": "Nano Banana pro on Gemini app. { \"image_prompt\": { \"main_description\": \"Poetic cinematic close-up portrait of a young woman partially obscured by soft pink blossoms and petals in the foreground.\", \"subject_details\": { \"appearance\": \"Young woman, expressive green eyes, calm introspective expression, natural beauty\", \"skin_texture\": \"Ultra-realistic skin texture\", \"apparel\": \"Shimmering rose-gold high-neck dress that catches warm sunlight\" }, \"composition_and_framing\": { \"framing\": \"Close-up, face",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785238838428.6985
+  },
+  {
+    "title": "拆解四件百年机械装置",
+    "slug": "i-asked-nano-banana-to-deconstruct-4-1571268981",
+    "model": "Gemini",
+    "category": "realistic",
+    "tags": [
+      "艺术",
+      "人工智能生成",
+      "微型摄影",
+      "机械解构",
+      "工业设计"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/i-asked-nano-banana-to-deconstruct-4-1571268981.jpg",
+    "date": "2026-01-31",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2017611578284401056",
+    "sourceLink": "https://x.com/i/status/2017611578284401056",
+    "author": "Gadgetify",
+    "authorLink": "https://x.com/Gdgtify",
+    "prompt": "I asked Nano Banana to deconstruct 4 old complex gadgets from the 1900s. Prompt: <instructionInput A is a Mechanical Device or Gadget (e.g., Vintage Camera, Mechanical Watch, V8 Engine, Game Console). Deconstruct the object into 3 Functional Layers : Chassis (The Shell): Identify the main body frame or housing. Engine (The Guts): Identify the primary internal mechanism. (e.g., Camera -Shutter & Mirrors. Watch -Mainspring & Escapement. Engine -Pistons). Interface (The Control): Identify the butto",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785238838428.8025
+  },
+  {
+    "title": "野性力量动物肖像",
+    "slug": "untamed-energy-1570898796",
+    "model": "Gemini",
+    "category": "realistic",
+    "tags": [
+      "摄影",
+      "AI生成艺术",
+      "时尚摄影",
+      "沙漠风景",
+      "猎豹元素"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/untamed-energy-1570898796.jpg",
+    "date": "2026-01-31",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2017223007060808035",
+    "sourceLink": "https://x.com/i/status/2017223007060808035",
+    "author": "Natty Windstorm",
+    "authorLink": "https://x.com/NattyWindstorm",
+    "prompt": "{\"content\":\"Untamed energy🐾 made by Nano Banana Pro on https://t.co/nNCgo11Z9L✨ { \\\"prompt\\\": \\\"Cinematic desert road scene at golden hour. A confident tattooed woman with long blonde hair poses on the hood of a vintage luxury convertible, wearing a black cutout one-piece swimsuit and gold jewelry. A calm cheetah sits beside her on the car hood. Warm sunlight, dusty highway stretching into distant mountains, dramatic shadows, sun flare, high fashion editorial style, surreal yet realistic mood.\\\"",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785238838428.898
+  },
+  {
+    "title": "【AI写真系列×韩系女团风】第三弹",
+    "slug": "korean-girl-group-part3",
+    "model": "Gemini",
+    "category": "realistic",
+    "tags": [
+      "摄影",
+      "AI绘画",
+      "AI写真",
+      "提示词工程",
+      "韩系女团风"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-1567028630.jpg",
+    "date": "2026-01-29",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2016803276566737364",
+    "sourceLink": "https://x.com/i/status/2016803276566737364",
+    "author": "骑司Chase (qisi_ai)",
+    "authorLink": "https://x.com/qisi_ai",
+    "prompt": "【AI写真系列✨×韩系女团风📷】第三弹 红色细框眼镜、白色蕾丝小裙、粉色丝巾、天使羽翼与毛绒发饰，把“幼态、复古、俏皮、轻微性感”的气质牢牢钉住～ ✅ 图一为直接生成 ✅ 图二为使用参考图生成 ✍️中文提示词（Nano Banana Pro）： 一、画面版式 1 画幅比例：竖幅三比四，四宫格拼图，二行二列排列 2 镜头组合：两张近景特写加两张半身到全身，人物占画面比例大 3 背景统一：同一灰色无缝背景，四格色调与光线一致，边缘留少量灰底空白 二、人物主体 参考来源：以上传参考图作为严格身份来源 一致性要求：零偏差 1 人物设定：年轻少女，甜酷可爱与轻微性感并存 2 面部特征：大眼圆润，鼻梁小巧，唇形饱满，脸颊与眼下高饱和腮红 3 妆容质感：底妆干净微雾面，腮红面积大且集中，唇部高光水润镜面 4 配饰标识：红色细框眼镜，作为强识别点贯穿四格 三、发型与头饰 1 发型：深棕长发，侧边大波浪辫子垂落，刘海厚且蓬松，少量碎发自然散落 2 头饰：毛绒小熊发夹与发圈点缀，发侧还有小熊挂件与背包元素呼应 四、服装造型与道具 1 服装：白色吊带上衣与白色层叠荷叶边短裙，肩带与胸前有粉色蝴蝶结装饰 2",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785238838429.0447
+  },
+  {
+    "title": "金色时光金发女郎",
+    "slug": "blondes-should-be-in-the-golden-place-1560822066",
+    "model": "Gemini",
+    "category": "realistic",
+    "tags": [
+      "摄影",
+      "AI绘画",
+      "NanoBananaPrompt",
+      "金发美女",
+      "城市夜景"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/blondes-should-be-in-the-golden-place-1560822066.jpg",
+    "date": "2026-01-25",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2015040715169075512",
+    "sourceLink": "https://x.com/i/status/2015040715169075512",
+    "author": "Adam也叫吉米Adam38363368936",
+    "authorLink": "https://x.com/Adam38363368936",
+    "prompt": "Blondes should be in the golden place. Nano Banana Prompt { \"image_metadata\": { \"style\": \"Hyper-realistic Cinematic\", \"resolution\": { \"target\": \"8k\" }, \"lighting\": { \"environment\": { \"type\": \"Nighttime\", \"effect\": \"Cityglow\" }, \"reflection\": { \"type\": \"Golden\", \"effect\": \"Reflections\" }, \"balance\": \"Balanced\" }, \"composition\": { \"shot\": { \"type\": \"Medium shot\", \"perspective\": \"Hot pose\" }, \"depth_of_field\": { \"type\": \"Shallow\", \"effect\": \"Bokeh background\" } } }, \"subject\": { \"identity\": { \"name",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785238838429.2454
+  },
+  {
+    "title": "电影感戏剧光影人像",
+    "slug": "nano-banana-pro-image-generation-1566916201",
+    "model": "Gemini",
+    "category": "realistic",
+    "tags": [
+      "摄影",
+      "AI Image Generation",
+      "Cinematic Photography",
+      "Night Portrait",
+      "Prompt Engineering"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/nano-banana-pro-image-generation-1566916201.jpg",
+    "date": "2026-01-29",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2016491419570155780",
+    "sourceLink": "https://x.com/i/status/2016491419570155780",
+    "author": "Taaruk_",
+    "authorLink": "https://x.com/Taaruk_",
+    "prompt": "Nano Banana pro image generation Prompt: A cinematic night-time portrait of a young woman standing outdoors, softly lit by ambient city lights. She wears a dark elegant coat with a thick wool scarf wrapped around her neck. Loose strands of hair gently blown by the wind frame her face. Moody teal-green color grading, soft cinematic lighting, shallow depth of field, creamy bokeh city lights glowing in the background. Calm, introspective expression, natural skin texture, subtle makeup, film-like so",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785238838429.496
+  },
+  {
+    "title": "蓝花花园柔光人像",
+    "slug": "meta-ai-1553309424",
+    "model": "Midjourney",
+    "category": "realistic",
+    "tags": [
+      "摄影",
+      "AI Art",
+      "AI Prompt",
+      "Photography",
+      "Meta AI"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/meta-ai-1553309424.jpg",
+    "date": "2026-01-20",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2013223063828255204",
+    "sourceLink": "https://x.com/i/status/2013223063828255204",
+    "author": "ZaraIrahh",
+    "authorLink": "https://x.com/American",
+    "prompt": "Meta AI Prompt: A soft editorial portrait of a beautiful young woman (American) in a pastel garden of blue wildflowers, subject gazing downward gently, warm-platinum waves, glowing cheeks, dreamy haze, soft floral wind motion. [Camera] Canon R5 [Lens] 50mm f/1.2 — dreamy spherical bokeh [Light] Softbox diffused + natural ambient haze [LUT] Petra Collins Milk-Blue Haze LUT [Harmony] baby blue, lavender, blush pink [sRef] analog bloom, milk haze, surreal softness [Tokens] ultra-soft diffusion, haz",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785238838429.6494
+  },
+  {
+    "title": "Ana de Armas超写实肖像",
+    "slug": "ana-de-armas-is-literally-looking-1554067528",
+    "model": "Gemini",
+    "category": "realistic",
+    "tags": [
+      "摄影",
+      "AI_Art",
+      "AnaDeArmas",
+      "GeminiNano",
+      "Photorealistic"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/ana-de-armas-is-literally-looking-1554067528.jpg",
+    "date": "2026-01-20",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2013588573065220479",
+    "sourceLink": "https://x.com/i/status/2013588573065220479",
+    "author": "Yaseen Khan Gul (YaseenK7212)",
+    "authorLink": "https://x.com/YaseenK7212",
+    "prompt": "Ana de Armas is literally looking gorgeous here Gemini Nano Banana Pro Prompt: { \"project_metadata\": { \"version\": \"2.0\", \"target_quality\": \"Hyper-Realistic / Photogrammetric\", \"aspect_ratio\": \"3:4\", \"reference_parameters\": { \"identity_preservation\": \"High (Strictly maintain facial geometry and hairstyle from reference image)\", \"facial_integrity\": \"Unmodified facial features, zero distortion\" } }, \"subject_details\": { \"human_attributes\": { \"physique\": \"Curvy, well-defined silhouette\", \"skin_textu",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785238838429.7527
+  },
+  {
+    "title": "戏剧光影：丰盈身姿与清纯面容",
+    "slug": "prompt-for-nano-banana-pro-1571128742",
+    "model": "Gemini",
+    "category": "realistic",
+    "tags": [
+      "摄影",
+      "AI绘画",
+      "写真创作",
+      "夜景人像",
+      "时尚摄影"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-for-nano-banana-pro-1571128742.jpg",
+    "date": "2026-01-31",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2017591867249201307",
+    "sourceLink": "https://x.com/i/status/2017591867249201307",
+    "author": "Anissa (SimplyAnnisa)",
+    "authorLink": "https://x.com/SimplyAnnisa",
+    "prompt": "Prompt for nano banana pro: Masterpiece, best quality, detailed lighting, dramatic shadows, voluptuous body, innocent face. (Use a 100% identical reference face) Create an ultra-realistic portrait of a young Asian woman at night, 9:16 ratio (vertical portrait). Medium shot (waist up), taken using a phone's rear camera with a strong flash, with Hongyadong (Hongya Cave) in Chongqing, China as the backdrop. Background: The background must be an exact copy of Hongyadong Chongqing, a highly viral and",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785238838429.8572
+  },
+  {
+    "title": "黑白时尚大片",
+    "slug": "nano-banana-pro-on-artingai-1542365093",
+    "model": "Gemini",
+    "category": "realistic",
+    "tags": [
+      "摄影",
+      "Nanobanana",
+      "AIArt",
+      "NanoBananaPro",
+      "HighFashion"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/nano-banana-pro-on-artingai-1542365093.jpg",
+    "date": "2026-01-14",
+    "added": "2026-07-24",
+    "source": "https://x.com/ChillaiKalan__/status/2010663134743368058?s=20",
+    "sourceLink": "https://x.com/ChillaiKalan__/status/2010663134743368058?s=20",
+    "author": "K ChillaiKalan__",
+    "authorLink": "https://x.com/ChillaiKalan__",
+    "prompt": "Nano Banana Pro on @artingai Try it here → https://t.co/t4hQHl7iYo… Prompt: Use the attached image of the model as facial reference and physical features. Black and white high-fashion editorial portrait of uploaded person, wearing a loose white blouse. She poses with one arm raised, partially covering her face while holding her hair up, creating a dramatic and artistic composition. Her gaze is intense and captivating, directed toward the camera, exuding a strong, enigmatic aura. Background: mini",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785238838429.955
+  },
+  {
+    "title": "戏剧光影英雄人像",
+    "slug": "gemini-nano-banana-pro-1558266253",
+    "model": "Gemini",
+    "category": "realistic",
+    "tags": [
+      "摄影",
+      "AI Photography",
+      "Prompt Engineering",
+      "Gemini Nano",
+      "Portrait Photography"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/gemini-nano-banana-pro-1558266253.jpg",
+    "date": "2026-01-23",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2014576740492869761",
+    "sourceLink": "https://x.com/i/status/2014576740492869761",
+    "author": "Lex (lexx_aura)",
+    "authorLink": "https://x.com/lexx_aura",
+    "prompt": "Gemini Nano Banana Pro Prompt: { \"meta\": { \"title\": \"Heroic Dramatic Studio Portrait\", \"role\": \"World-class photographer specializing in editorial portraits\", \"aesthetic\": \"Dramatic, saturated studio lighting with a heroic feel\" }, \"constraints\": { \"identity_anchor\": { \"source\": \"ATTACHED REFERENCE PHOTO\", \"strictness\": \"Critical\", \"instruction\": \"Perfectly preserve exact facial features, skin tone, hairstyle, and natural likeness without changes.\" }, \"clothing_anchor\": { \"source\": \"EXACTLY AS I",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785238838430.091
+  },
+  {
+    "title": "Nano Banana Pro on Google... Nano Banana Pro 创作",
+    "slug": "nano-banana-pro-on-google-gemini-1560937683",
+    "model": "Gemini",
+    "category": "realistic",
+    "tags": [
+      "摄影",
+      "AI Art",
+      "Google Gemini",
+      "Cinematic Photography",
+      "Portrait Prompt"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/nano-banana-pro-on-google-gemini-1560937683.jpg",
+    "date": "2026-01-25",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2015282932643139964",
+    "sourceLink": "https://x.com/i/status/2015282932643139964",
+    "author": "K ChillaiKalan__",
+    "authorLink": "https://x.com/ChillaiKalan__",
+    "prompt": "Nano Banana Pro on Google Gemini Prompt: Ultra-realistic cinematic medium close-up portrait of the reference person, slightly turned to the side while looking toward the camera. Wearing a black turtleneck and dark jacket, modern and minimalist fashion style. Deep blue background with a smooth gradient, combined with contrasting magenta and blue lighting. Strong blue light coming from one side and magenta light from the opposite side, both colors reflecting clearly on the face and skin, creating",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785238838430.31
+  },
+  {
+    "title": "Sydney Sweeney超写实棚拍",
+    "slug": "sydney-sweeney-vibes-1548950981",
+    "model": "Gemini",
+    "category": "realistic",
+    "tags": [
+      "摄影",
+      "Nanobanana",
+      "AI Art",
+      "Nano Banana Pro",
+      "AI Prompt"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/sydney-sweeney-vibes-1548950981.jpg",
+    "date": "2026-01-17",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2011913223964852336",
+    "sourceLink": "https://x.com/i/status/2011913223964852336",
+    "author": "Melisa♡ xmliisu",
+    "authorLink": "https://x.com/xmliisu",
+    "prompt": "Sydney Sweeney vibes ✨ Nano Banana Pro Prompt: { \"style\": \"ultra-realistic studio portrait\", \"subject\": { \"gender\": \"female\", \"age\": \"young adult\", \"pose\": \"leaning slightly forward toward the camera\", \"expression\": \"playful, flirty\", \"facial_details\": { \"wink\": true, \"tongue_out\": true, \"freckles\": \"natural across fair skin\", \"makeup\": { \"blush\": \"soft pink\", \"lips\": \"glossy\" } }, \"hair\": { \"color\": \"blonde\", \"length\": \"long\", \"part\": \"side-parted\", \"style\": \"falling naturally over shoulders\" }",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785238838430.4072
+  },
+  {
+    "title": "冰凝之美：奢华护肤品摄影",
+    "slug": "luxury-cosmetic-photography-meets-1557351931",
+    "model": "Gemini",
+    "category": "realistic",
+    "tags": [
+      "摄影",
+      "AI Photography",
+      "Hyperrealism",
+      "Luxury Skincare",
+      "Cold Tech Aesthetic"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/luxury-cosmetic-photography-meets-1557351931.jpg",
+    "date": "2026-01-23",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2014347192321167565",
+    "sourceLink": "https://x.com/i/status/2014347192321167565",
+    "author": "Latte 0xbisc",
+    "authorLink": "https://x.com/0xbisc",
+    "prompt": "Luxury cosmetic photography meets frozen perfection 🧊 Nano Banana Pro PROMPT : Hyper-realistic luxury skincare product shot with a random cosmetic container design as the clear hero object, floating at the center with a slight diagonal tilt. Numerous medium-to-large crystal-clear ice blocks fully surround and wrap the product from all directions, filling the frame edge to edge, creating a dense frozen environment. The ice pieces overlap in depth, pressing visually toward the product without form",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785238838430.5059
+  },
+  {
+    "title": "8K超写实商业摄影",
+    "slug": "nano-banana-pro-and-gpt-image-15-1570554631",
+    "model": "Gemini",
+    "category": "realistic",
+    "tags": [
+      "广告",
+      "摄影",
+      "AI图像生成",
+      "商业产品摄影",
+      "GPT Prompt"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/nano-banana-pro-and-gpt-image-15-1570554631.jpg",
+    "date": "2026-01-31",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2017420332458774791",
+    "sourceLink": "https://x.com/i/status/2017420332458774791",
+    "author": "Meem (mehvishs25)",
+    "authorLink": "https://x.com/mehvishs25",
+    "prompt": "Nano Banana Pro and GPT image 1.5 Prompt: { \"master_prompt\": { \"global_settings\": { \"resolution\": \"8K ultra-high-definition\", \"aspect_ratio\": \"3:4 vertical\", \"style\": \"hyper-realistic AI-edited commercial product photography\", \"sharpness\": \"extreme clarity, micro-detail visibility\", \"lighting_quality\": \"cinematic studio lighting with controlled highlights and shadows\", \"motion_freeze\": \"high-speed capture, frozen splashes and particles\", \"noise\": \"none\", \"artifacts\": \"none\" }, \"module_1_image_1_",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785238838430.6008
+  },
+  {
+    "title": "Nano Banana Pro 3×3网格高端影棚产品故事板方案",
+    "slug": "studio-product-storyboard",
+    "model": "Gemini",
+    "category": "realistic",
+    "tags": [
+      "摄影",
+      "产品摄影",
+      "故事板",
+      "AI提示词",
+      "品牌设计"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-1549173264.jpg",
+    "date": "2026-01-17",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2012527817477828745",
+    "sourceLink": "https://x.com/i/status/2012527817477828745",
+    "author": "松果先森",
+    "authorLink": "https://x.com/songguoxiansen",
+    "prompt": "Nano Banana Pro 3×3网格高端影棚产品故事板方案 Nano Banana Pro提示词： { \"OverallLayout\": { \"Format\": \"3×3 grid storyboard, nine equal panels on 4:5 ratio canvas\", \"Style\": \"High-end designer mockup, editorial, curated, design-driven\", \"Focus\": \"Form, composition, materiality, visual rhythm over lifestyle narrative\", \"ProductConsistency\": \"Exact same product, packaging, branding, materials, colors, proportions maintained across all nine panels\", \"ProductRecognition\": \"Product clearly recognizable in every frame,",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785238838430.7507
+  },
+  {
+    "title": "Google Gemini Nano Banana... 创作",
+    "slug": "google-gemini-nano-banana-pro-1560822510",
+    "model": "Gemini",
+    "category": "realistic",
+    "tags": [
+      "摄影",
+      "AIArt",
+      "CinematicPortrait",
+      "GeminiNano",
+      "PromptEngineering"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/google-gemini-nano-banana-pro-1560822510.jpg",
+    "date": "2026-01-25",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2014984098213929280",
+    "sourceLink": "https://x.com/i/status/2014984098213929280",
+    "author": "Kashberg_0",
+    "authorLink": "https://x.com/Kashberg_0",
+    "prompt": "Google Gemini Nano Banana Pro Prompt: Moody cinematic portrait of a young woman with clear fair skin and barely-there makeup, warm natural lips. Loose dark brown hair, softly textured. Calm, self-assured expression. She’s wearing a fitted black turtleneck sweater, clean lines, understated elegance. Dark minimal background fading into black. Gentle diffused front light, soft shadows, subtle film grain, organic color grading, shallow depth of field, high-end editorial feel.",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785238838430.8508
+  },
+  {
+    "title": "Gemini 柔软午后时光",
+    "slug": "gemini-nano-banana-pro-30-1570899670",
+    "model": "Gemini",
+    "category": "realistic",
+    "tags": [
+      "摄影",
+      "人工智能绘画",
+      "图片生成",
+      "视觉艺术",
+      "创意提示"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/gemini-nano-banana-pro-30-1570899670.jpg",
+    "date": "2026-01-31",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2017166130746675620",
+    "sourceLink": "https://x.com/i/status/2017166130746675620",
+    "author": "kashmir_ki_lark",
+    "authorLink": "https://x.com/kashmir_ki_lark",
+    "prompt": "Gemini nano banana pro 3.0 Prompt: Cute, innocent young adult blonde woman sitting comfortably on a neatly made bed, relaxed natural posture with legs gently bent, shoulders soft and at ease. Long, soft, flowing blonde hair styled in loose natural waves, silky texture, subtle shine, a few delicate strands framing her face. Clear blue eyes with a gentle sparkle, long natural lashes, delicate eyebrows, smooth fair complexion with a soft healthy glow, subtle blush on cheeks, light pink lips, minima",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785238838430.9902
+  },
+  {
+    "title": "【AI写真系列×韩系女团风写真🎀】第一弹",
+    "slug": "korean-girl-group-style",
+    "model": "Gemini",
+    "category": "realistic",
+    "tags": [
+      "摄影",
+      "AI写真",
+      "韩系女团风",
+      "Nano Banana Pro",
+      "结构化提示词"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-1560926143.jpg",
+    "date": "2026-01-25",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2014961007068905955",
+    "sourceLink": "https://x.com/i/status/2014961007068905955",
+    "author": "骑司Chase",
+    "authorLink": "https://x.com/qisi_ai",
+    "prompt": "【AI写真系列✨×韩系女团风写真🎀】第一弹 从T-ARA到张元英、柳智敏，韩国女团一直影响着时代主流审美，似乎永不过时......所以我花了20分钟，把韩系女团风写真用Nano Banana Pro解决了 ✅ 图一为上传参考图效果 ✅ 图二为直接使用效果 ✍️中文提示词： 一、画面构图 1 版式：整体为3:4比例，四宫格拼图，3:4小图用2×2排列 2 取景：近景到特写为主，人物占画面大比例 3 角度：平视近拍，轻微左右变化，统一干净背景 二、人物主体 1 参考来源：以上传参考图作为严格身份来源 2 一致性要求：零偏差 3 脸部：脸型精致、眼睛偏大、右眼下方点了一颗小痣，鼻梁细长 4 肤质：白皙带淡粉，皮肤细腻，有轻微柔焦 5 细节：鼻梁与面中高光明显，脸颊与鼻尖轻微泛红，散落少量雀斑点 三、妆容细节 1 底妆：通透干净，轻薄雾面带微光 2 腮红：粉色集中在脸颊与鼻梁两侧 3 眼妆：自然放大，睫毛纤长，眼神清澈 4 唇妆：水润嘟嘟唇，淡粉到蜜桃渐变，唇峰柔和 四、发型与头饰 1 发型：黑色长直发，中分，发量饱满，自然垂落 2 碎发：额前少量发丝自然飘动 3 发饰：左右各一枚粉色发夹，颜",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785238838431.0889
+  },
+  {
+    "title": "就是这一刻",
+    "slug": "is-this-it-1570846371",
+    "model": "Midjourney",
+    "category": "realistic",
+    "tags": [
+      "摄影",
+      "人工智能绘画",
+      "复古唱片店",
+      "摄影提示词",
+      "时尚穿搭"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/is-this-it-1570846371.jpg",
+    "date": "2026-01-31",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2017493378167111734",
+    "sourceLink": "https://x.com/i/status/2017493378167111734",
+    "author": "Sidona sidona",
+    "authorLink": "https://x.com/sidona",
+    "prompt": "Is this it? Yes. This is it. この瞬間を待ってた。\n 找到的那一刻，什么都值了。\n ————prompt👇 { \"portrait_prompt\": { \"subject\": { \"description\": \"Based on <User Portrait, a young woman crouching in a vintage record store, excitedly holding up a vinyl record she just found\", \"pose\": \"Squatting or kneeling by record crates, holding vinyl up toward camera\" }, \"attire\": { \"type\": \"White camisole, charcoal mini skirt riding up slightly, black lace socks, black loafers\", \"accessory\": \"Mustard yellow bag set down beside her\" }, \"",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785238838431.3635
+  },
+  {
+    "title": "Nano Banana Pro 九宫格写真",
+    "slug": "nano-banana-pro-astronomerozge1-1565888485",
+    "model": "Gemini",
+    "category": "realistic",
+    "tags": [
+      "摄影",
+      "AI生成",
+      "NanoBananaPro",
+      "时尚摄影",
+      "编辑图片"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/nano-banana-pro-astronomerozge1-1565888485.jpg",
+    "date": "2026-01-28",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2016215595209871366",
+    "sourceLink": "https://x.com/i/status/2016215595209871366",
+    "author": "astronomerozge1",
+    "authorLink": "https://x.com/astronomerozge1",
+    "prompt": "Nano Banana Pro [@bageldotcom] 🖤 Prompt: { \"generation_request\": { \"meta_data\": { \"tool\": \"NanoBanana Pro\", \"task_type\": \"photoreal_editorial_beauty_contact_sheet\", \"version\": \"v1.0_9PANEL_STUDIO_GLAM_FUR_JEWELRY_NO_TEXT_EN\", \"priority\": \"highest\", \"language\": \"en\" }, \"references\": { \"reference_image_face\": { \"source\": \"UPLOAD_REFERENCE_IMAGE (REQUIRED)\", \"purpose\": \"FACE_IDENTITY_LOCK\", \"strict_lock\": true, \"face_similarity_priority\": \"MAX\", \"no_identity_blending\": true, \"no_beautify\": true, \"n",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785238838431.5547
+  },
+  {
+    "title": "奢侈品产品摄影",
+    "slug": 2080212974174974200,
+    "model": "GPT-Image2",
+    "category": "product",
+    "tags": [
+      "product",
+      "luxury",
+      "commercial",
+      "bottle",
+      "写实"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/2080212974174974122.jpg",
+    "date": "2026-07-23",
+    "added": "2026-07-24",
+    "source": "https://x.com/iamrealsnow/status/2080212974174974122",
+    "sourceLink": "https://x.com/iamrealsnow/status/2080212974174974122",
+    "author": "Snow",
+    "authorLink": "https://x.com/iamrealsnow",
+    "prompt": "A luxury commercial product photography shot featuring a sleek matte emerald green glass bottle with a tall cylindrical neck, rounded shoulders, and a premium brushed gold cap. The fictional brand name VERDARA is elegantly printed in embossed gold typography with a minimalist botanical emblem. The bottle is centered against a rich emerald green textured paper backdrop.\n\nThe paper is dramatically torn open across the middle, revealing an overflowing bed of fresh green grapes, sliced kiwi, mint leaves, and sparkling lime wedges hidden beneath. A curled section of torn paper on the lower left adds depth and realism. Several fruits are scattered naturally across the foreground.\n\nElegant editorial typography appears in the upper left:\n\n\"Sip Into Pure Freshness\"\n\n\"Sip\" in modern handwritten brush script, \"Into Pure Freshness\" in sophisticated high-fashion serif typography.\n\nThe bottle label features premium botanical illustrations of kiwi, grapes, mint, and lime with subtle metallic foil accents. Hyper-realistic glass reflections, natural condensation droplets, premium studio lighting, soft shadows, vibrant colors, razor-sharp focus, luxury beverage advertisement, photorealistic, ultra-detailed, award-winning commercial product photography, minimalist composition, 8K.",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1785238838437.0994
+  },
+  {
+    "title": "蓝图觉醒·建筑从纸面升起",
+    "slug": "nano-banana-pro-blueprint-awakening",
+    "model": "Adobe Firefly",
+    "category": "3d",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "Adobe Firefly",
+      "3D场景",
+      "3D渲染"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2010009737816162736.jpg",
+    "date": "2026-07-23",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2010009737816162736",
+    "sourceLink": "https://x.com/i/status/2010009737816162736",
+    "author": "Alexandra Aisling",
+    "authorLink": "https://x.com/AllaAisling",
+    "prompt": "Epic 3D scene: a massive architectural blueprint of [BUILDING/STRUCTURE] pinned to a drafting table, its ink lines rising off the paper into fully realized construction. Blue lines become steel beams mid-weld, floor plans inflate into furnished rooms, elevation drawings push outward into facades with working windows. Construction phases coexist simultaneously: foundation being poured in one corner while the penthouse is already inhabited in another. Tiny workers, cranes, and scaffolding swarm the rising structure. The flat drawing and the living building merge at impossible angles. Technical annotations float as dimensional signage. Architect's coffee cup sits at the edge, casting shadow across unbuilt sections. Extreme scale contrast, construction dust catching afternoon light, 8K, photorealistic.",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Adobe Firefly",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785238838439.16
+  },
+  {
+    "title": "超写实电影感人像提示词",
+    "slug": "hyperreal-cinematic-portrait",
+    "model": "ChatGPT",
+    "category": "realistic",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "3D渲染",
+      "写实",
+      "摄影"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2009298156748722252.jpg",
+    "date": "2026-07-23",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2009298156748722252",
+    "sourceLink": "https://x.com/i/status/2009298156748722252",
+    "author": "Aijaz",
+    "authorLink": "https://x.com/iamsofiaijaz",
+    "prompt": "A hyper-realistic cinematic close-up portrait of a young woman's face in profile, intense turquoise-blue eye in sharp focus, wind-blown strands of wet hair crossing her face, tiny water droplets and floating particles suspended in the air, stormy and ethereal atmosphere, teal and blue color grading, soft glowing highlights, dramatic moody lighting, shallow depth of field, ultra-fine skin texture, emotional and introspective expression, fantasy realism style, high contrast, volumetric mist, particles and sparks around the face, 8K resolution, cinematic color grading, film still look, masterpiece, ultra-detailed, photorealistic, shot on 85mm lens, f/1.8, Unreal Engine, Octane render look.",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "ChatGPT",
+      "Aspect Ratio": "1:1"
+    },
+    "mtime": 1785238838439.4456
+  },
+  {
+    "title": "接上一期，分享绝美AI古风女生侧颜提示词\n提示词prompt：中国古典美学，宋韵美学，工笔写实风格，超写实摄影，东方古风成年女子，气质清雅，五官精致，肤色细腻自然，杏眼含光，自然淡妆，浅粉唇色，神情温柔宁静，身体微微背向镜头，右肩朝向镜头，头部自然向右缓缓转动约35°，轻轻回眸凝视镜头，三分之二侧颜，Rear Three-quarter Portrait，近景半身肖像，人物占画面约75%，肩颈舒",
+    "slug": "chinese-ancient-style-girl",
+    "model": "Midjourney",
+    "category": "realistic",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "国风",
+      "写实",
+      "油画"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2078522659567239382.jpg",
+    "date": "2026-07-23",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2078522659567239382",
+    "sourceLink": "https://x.com/i/status/2078522659567239382",
+    "author": "灰度笔记",
+    "authorLink": "https://x.com/GrayNoteLab",
+    "prompt": "中国古典美学，宋韵美学，工笔写实风格，超写实摄影，东方古风成年女子，气质清雅，五官精致，肤色细腻自然，杏眼含光，自然淡妆，浅粉唇色，神情温柔宁静，身体微微背向镜头，右肩朝向镜头，头部自然向右缓缓转动约35°，轻轻回眸凝视镜头，三分之二侧颜，Rear Three-quarter Portrait，近景半身肖像，人物占画面约75%，肩颈舒展，白色轻纱交领古裙，月白色真丝外衫，轻盈飘逸，真实丝绸纹理，低位松散盘发，乌黑长发自然垂落，几缕碎发轻拂脸颊，发间仅点缀一朵半开的白玉兰，一支温润白玉发簪固定发髻，几颗天然珍珠若隐若现地点缀于发丝之间，细长银色流苏耳饰自然垂落，整体发饰极简雅致，不使用莲蓬、荷花等大型植物发饰，画面右下角一朵盛开的粉色山茶花作为前景虚化，左侧淡雅竹影虚化，背景采用宣纸留白质感，浅灰青渐变背景，隐约水墨晕染纹理，若隐若现的窗棂光影，极浅景深，奶油散景，柔和晨光透过窗棂形成自然侧逆光，发丝轮廓光细腻勾勒边缘，柔光均匀照亮面部，真实皮肤纹理，真实发丝，空气中漂浮细微尘埃，整体低饱和、低对比，高级东方电影感，宋画留白构图，极简构图，高级审美，85mm人像镜头，f1.4，大光圈，HDR，8K。",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785238838439.6887
+  },
+  {
+    "title": "Kling 2.6 提示词: Hyperspeed FPV in a ve...",
+    "slug": "kling-26-prompt-hyperspeed-fpv-in-a-1543070080",
+    "model": "Midjourney",
+    "category": "cyberpunk",
+    "tags": [
+      "Kling",
+      "AI Video Generation",
+      "Kling 2.6",
+      "Cyberpunk",
+      "FPV Cinematography"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/kling-26-prompt-hyperspeed-fpv-in-a-1543070080.jpg",
+    "date": "2026-01-14",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2011060762454999475",
+    "sourceLink": "https://x.com/i/status/2011060762454999475",
+    "author": "MayorkingAI",
+    "authorLink": "https://x.com/MayorKingAI",
+    "prompt": "Kling 2.6 prompt: Hyperspeed FPV in a vertical cyberpunk city Prompt: A massive vertical cyberpunk city at night, endless layers of neon-lit architecture stacked into the sky, holographic ads flickering in the rain. The Hyperspeed FPV camera drops from the upper megastructures at extreme speed, diving through glowing traffic lanes, skimming past flying vehicles, threading between balconies, cables, and steam vents without cutting. The camera slices through a crowded mid-level market filled with",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v6",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785238838493.8098
   },
   {
     "title": "黏土渲染转暗黑奇幻",
@@ -3641,7 +3641,7 @@
       "Model": "Common",
       "Aspect Ratio": "16:9"
     },
-    "mtime": 1785209441177.486
+    "mtime": 1785238838438.8643
   },
   {
     "title": "野花丛中安睡的超写实少女",
@@ -3669,7 +3669,7 @@
       "Model": "GPT-Image2",
       "Aspect Ratio": "16:9"
     },
-    "mtime": 1785208541567.6033
+    "mtime": 1785238838438.9668
   },
   {
     "title": "梦想目的地的纸艺明信片",
@@ -3697,7 +3697,7 @@
       "Model": "Seedream",
       "Aspect Ratio": "16:9"
     },
-    "mtime": 1785208541567.9106
+    "mtime": 1785238838439.3435
   },
   {
     "title": "波兰与美国旅行手账拼贴",
@@ -3725,7 +3725,7 @@
       "Model": "Common",
       "Aspect Ratio": "16:9"
     },
-    "mtime": 1785208541567.1675
+    "mtime": 1785238838438.4739
   },
   {
     "title": "按键删除周一",
@@ -3770,7 +3770,7 @@
     "prompt": "An ultra-high resolution 8K cinematic render of the [Brand Name] logo, sculpted entirely from flowing crystal-clear water. The liquid forms every curve and edge of the brand’s logo with fluid precision, highlighted by vibrant neon accents inspired by [Brand Name]’s color identity. The background is pitch black, creating sharp contrast and drama. The lighting is dynamic, revealing sharp reflections, glowing edges, and the motion of water as it ripples and splashes. Droplets, shine, and soft glass-like textures give the logo a surreal, luxurious, and futuristic appearance — poster-quality, 1:1 format.",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1785197974434.2295
+    "mtime": 1785238838453.8142
   },
   {
     "title": "品牌奢华之物从天而降",
@@ -3880,7 +3880,7 @@
     "prompt": "High-resolution studio portrait featuring a stunning young model, \"Anne Hathaway,\" as the main subject. She has straight black hair, set against a plain white background with no discernible elements. Her face is slightly turned to the side, but her gaze is directly facing the camera, with an intense, focused expression, unwavering.\nHer entire face is composed of puzzle pieces—each piece clearly visible with neat edges and a delicate three-dimensional quality. She gently pinches a puzzle piece just removed from her cheek with her fingers, revealing a hollow black void beneath.\nThe lighting is concentrated and directional, almost shadowless, precisely outlining her skin contours and the three-dimensional puzzle structure. The overall atmosphere is surreal, precise, and highly realistic.\nAt the top, there is a fashion magazine-style title \"ZHOGUE\" positioned behind the figure.",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1785197974482.8672
+    "mtime": 1785238838481.2798
   },
   {
     "title": "复古未来主义沙漠加油站",
@@ -3905,7 +3905,7 @@
     "prompt": "A cinematic retro-futuristic desert gas station at twilight, lone man standing beside a polished 1980s American muscle car while refueling, chrome gas pump reflecting neon red lights, vintage roadside diner in the distance, telephone poles stretching endlessly across the desert highway.\n\nGigantic futuristic mushroom-shaped megastructures floating above the landscape, enormous UFO-like architectural towers, surreal alien civilization integrated into the desert.\n\nA frozen ocean and massive icy mountains on the horizon, two crescent moons hanging low in the sky, distant alien planet atmosphere, cosmic horizon.\n\nDeep teal sky fading into warm orange sunset, glowing cyan atmosphere, vibrant neon red reflections, heavy chrome surfaces, cinematic volumetric lighting, subtle haze.\n\nUltra reflective metallic materials, glossy chrome, mirror reflections everywhere, strong rim lighting, glowing highlights, diffraction starburst lens flares, bloom.\n\n1980s synthwave aesthetic mixed with NASA retro space art, Syd Mead concept design, Moebius environmental illustration, Blade Runner mood, Outrun color palette.\n\nKodak Ektachrome 100 film look, analog film grain, halation, slight chromatic aberration, vintage sci-fi movie poster, high dynamic range.\n\nUltra detailed environment, impossible scale, surreal architecture, perfect composition, dramatic perspective, center framing, symmetrical balance.\n\nphotorealistic, hyper detailed, masterpiece, unreal engine, octane render, ray tracing, global illumination, 8K",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1785200036268.643
+    "mtime": 1785238838436.0713
   },
   {
     "title": "品牌之爱话术",
@@ -4324,10 +4324,10 @@
     "sourceLink": "https://x.com/dotey/status/1924288320881750108",
     "author": "@dotey",
     "authorLink": "https://x.com/dotey",
-    "prompt": "一幅高分辨率的垂直视角、皮克斯风格的3D角色插画。主角：萨尔瓦多·达利——被描绘成一个高挑、修长、略带夸张的皮克斯风格3D角色。穿着经典的蓝色衬衫、黄色领带、高腰的格纹裤子，带吊带，和皮鞋。他的标志性、向上翻翘的长胡子、乌黑光亮的头发、拱起的显著眉毛，以及略带怪异的姿态。胸部挺起，one hand on hip，头略向后仰，呈他典型的戏剧性夸张风格。背景：平坦、干净的黄色背景，带有细微表面纹理。来自左上方的强烈日光在他背后的墙上投下清晰且拉长的阴影。核心概念——影子作为精神投射：他身后投射的影子并不映射他的身体形状。相反，它的形状取自他最具标志性的作品之一——一块超现实的融化时钟，长长的滴落的臂膀，灵感来自《记忆的永恒》。融化时钟的阴影呈对角状，从他的肩部开始，横向伸展至黄墙上，超现实而流动，同时又明显具有象征意义。这个阴影是达利的遗产可视化的体现——通过时间、梦境和视觉扭曲，象征性地延展他的身份。照明与渲染：类似皮克斯的渲染，纹理细致但风格化。使用微妙的胶片颗粒感、柔和阴影和温暖的色调。阴影内部的微光斑点以营造梦幻质感。排版（左上角）：用极简的黑色无衬线字体写着“Salvador Dalí”，“Dalí”加粗。",
+    "prompt": "一幅高分辨率的垂直视角、皮克斯风格的3D角色插画。\n主角：萨尔瓦多·达利——被描绘成一个高挑、修长、略带夸张的皮克斯风格3D角色。\n穿着经典的蓝色衬衫、黄色领带、高腰的格纹裤子，带吊带，和皮鞋。\n他的标志性、向上翻翘的长胡子、乌黑光亮的头发、拱起的显著眉毛，以及略带怪异的姿态。\n胸部挺起，one hand on hip，头略向后仰，呈他典型的戏剧性夸张风格。\n背景：平坦、干净的黄色背景，带有细微表面纹理。\n来自左上方的强烈日光在他背后的墙上投下清晰且拉长的阴影。\n核心概念——影子作为精神投射：他身后投射的影子并不映射他的身体形状。\n相反，它的形状取自他最具标志性的作品之一——一块超现实的融化时钟，长长的滴落的臂膀，灵感来自《记忆的永恒》。\n融化时钟的阴影呈对角状，从他的肩部开始，横向伸展至黄墙上，超现实而流动，同时又明显具有象征意义。\n这个阴影是达利的遗产可视化的体现——通过时间、梦境和视觉扭曲，象征性地延展他的身份。\n照明与渲染：类似皮克斯的渲染，纹理细致但风格化。\n使用微妙的胶片颗粒感、柔和阴影和温暖的色调。\n阴影内部的微光斑点以营造梦幻质感。\n排版（左上角）：用极简的黑色无衬线字体写着“Salvador Dalí”，“Dalí”加粗。",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1785197974477.408
+    "mtime": 1785238838478.473
   },
   {
     "title": "捷克木偶风格",
@@ -6146,10 +6146,10 @@
     "sourceLink": "https://x.com/cheerselflin/status/1979203307873931360",
     "author": "@cheerselflin",
     "authorLink": "https://x.com/cheerselflin",
-    "prompt": "一位年轻美丽的日本女性，有着瓷器般的肌肤、柔和的妆容和鲜红的嘴唇，栗色的直发扎成马尾辫，齐刘海修饰着她的脸型，身穿一件合身的浅蓝色警服衬衫，上面有金色的纽扣和徽章，一条深绿色的扁平丝带领带在领口处打结，两条短尾巴像礼物蝴蝶结一样垂下来，海军蓝裙子，深色腰带配黄铜扣，白手套，黑色鞋子，双膝并拢坐着，双手轻轻地交叉放在玻璃杯上，姿态平静而优雅，氧气清新的自然妆容搭配半透明的露珠底妆，几乎看不见的眼线，柔软的直眉，脸颊上淡淡的玫瑰色腮红，微妙的内眼角高光使她的眼睛看起来明亮而通透，嘴唇是干净的鲜红色，但不油腻，她的姿势精致而沉稳：坐在狭窄的卡座中的一张狭窄的木凳上，脚踝略微向后弯曲，躯干从臀部微微向前倾斜，前臂放松，戴着手套的双手轻轻地重叠在小玻璃杯放在两膝之间，下巴微微低垂，直视镜头，两侧各站着两名年纪稍长的穿制服的日本警察，左边的男子从门口探出身子，帽子微微倾斜，穿着短袖制式警服，一肘撑在膝盖上，手随意地垂着，表情专注而平静；右边的男子穿着条纹短袖衬衫，系着深色领带和警徽，帽子镶着金边，双臂紧紧地交叉在胸前，身体朝着女人倾斜，一副矜持、若有所思的样子，身处一间灯光昏暗的小酒吧里，里面摆满了老式的日本海报、旧酒瓶、狭窄的木墙、杂乱的架子，细致的物理环境：从门口拍摄，磨损的木门框形成了框中框；磨损的漆面横梁，手写的日文单据和价格标签夹在餐具之间，电线和小饰品悬挂在头顶，玻璃器皿和酒瓶紧紧地堆放在浅浅的架子上，脚下是一条小过道，漆木上反射着微弱的光线，空气潮湿；一两个裸露的白炽灯泡投射出局部琥珀色的光晕，迅速消失在黑暗中，相机视角和比例：近距离交谈（约 1-1.5 米）的亲密视线视角，经典的 35 毫米焦距感，3：4 宽高的垂直人像取景，轻微的中央重点构图强调了紧凑展位中的三人组，温暖的白炽灯光带有怀旧的琥珀色调，低饱和度色彩，细腻的 35 毫米胶片颗粒纹理，略微过度曝光的高光，复古的 1980 年代模拟快照美学，坦率的构图，浅景深，电影调色，荒木经惟和森山大道的街头摄影风格",
+    "prompt": "一位年轻美丽的日本女性，有着瓷器般的肌肤、柔和的妆容和鲜红的嘴唇，栗色的直发扎成马尾辫，齐刘海修饰着她的脸型，身穿一件合身的浅蓝色警服衬衫，上面有金色的纽扣和徽章，一条深绿色的扁平丝带领带在领口处打结，两条短尾巴像礼物蝴蝶结一样垂下来，海军蓝裙子，深色腰带配黄铜扣，白手套，黑色鞋子，双膝并拢坐着，双手轻轻地交叉放在玻璃杯上，姿态平静而优雅，氧气清新的自然妆容搭配半透明的露珠底妆，几乎看不见的眼线，柔软的直眉，脸颊上淡淡的玫瑰色腮红，微妙的内眼角高光使她的眼睛看起来明亮而通透，嘴唇是干净的鲜红色，但不油腻，她的姿势精致而沉稳：坐在狭窄的卡座中的一张狭窄的木凳上，脚踝略微向后弯曲，躯干从臀部微微向前倾斜，前臂放松，戴着手套的双手轻轻地重叠在小玻璃杯放在两膝之间，下巴微微低垂，直视镜头，两侧各站着两名年纪稍长的穿制服的日本警察，左边的男子从门口探出身子，帽子微微倾斜，穿着短袖制式警服，一肘撑在膝盖上，手随意地垂着，表情专注而平静；\n右边的男子穿着条纹短袖衬衫，系着深色领带和警徽，帽子镶着金边，双臂紧紧地交叉在胸前，身体朝着女人倾斜，一副矜持、若有所思的样子，身处一间灯光昏暗的小酒吧里，里面摆满了老式的日本海报、旧酒瓶、狭窄的木墙、杂乱的架子，细致的物理环境：从门口拍摄，磨损的木门框形成了框中框；\n磨损的漆面横梁，手写的日文单据和价格标签夹在餐具之间，电线和小饰品悬挂在头顶，玻璃器皿和酒瓶紧紧地堆放在浅浅的架子上，脚下是一条小过道，漆木上反射着微弱的光线，空气潮湿；\n一两个裸露的白炽灯泡投射出局部琥珀色的光晕，迅速消失在黑暗中，相机视角和比例：近距离交谈（约 1-1.5 米）的亲密视线视角，经典的 35 毫米焦距感，3：4 宽高的垂直人像取景，轻微的中央重点构图强调了紧凑展位中的三人组，温暖的白炽灯光带有怀旧的琥珀色调，低饱和度色彩，细腻的 35 毫米胶片颗粒纹理，略微过度曝光的高光，复古的 1980 年代模拟快照美学，坦率的构图，浅景深，电影调色，荒木经惟和森山大道的街头摄影风格",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1785197974458.6104
+    "mtime": 1785238838467.4011
   },
   {
     "title": "人物和大型耿鬼",
@@ -8491,10 +8491,10 @@
     "sourceLink": "https://x.com/Xaroonx/status/2001501757478998348",
     "author": "X / Zar⭕on",
     "authorLink": "https://x.com/Xaroonx",
-    "prompt": "使用上传的照片作为女性外貌的灵感来源；不要改变我的身体特征。她的深金色长发，波浪形，蓬松，风格为略显凌乱的半扎发，鬓发散落在脸颊周围，增加层次感和真实感。她佩戴四条分层的粗金项链：一条带有小块红玛瑙的吊坠，一条像洪都拉斯地图且内置国旗的项链。她还佩戴极大金圈耳环、三只金手镯，以及每个手指上都戴着粗砺的金戒指。指甲长、杏形、中性色。鼻环清晰可见。她正在以略微抬高的角度自拍，头略微偏向一边，嘴唇微噘，像是在飞吻。她直视镜头，表情自信而性感，眼睛被浓密的睫毛与清晰的眉形强调。她拥有无瑕的古铜色肌肤，脸颊、鼻子与额头带有柔和的腮红，嘴唇丰满且光泽，呈暖裸色。轮廓清晰，质感细腻。她有极长、乌黑的直发，优雅地用两束头发框住脸部。她穿着白色紧身背心，胸肋区域有交叉带的设计，搭配浅色破旧牛仔裤。颈部佩戴细金链，耳朵配有小金圈耳环。背景为昏暗且柔焦的画面，背后有一面大镜子，不分散注意力。绿色植物点缀。灯光：柔和的暖光闪光灯，提升肌肤与皮肤的光泽，呈现典型的 2000 年代初的光泽。效果：柔和的肤色光泽、略微饱和的色彩、嘴唇和皮肤的细腻光泽、温暖的金色高光、短浅景深（散景）。摄影风格：Y2K 风格魅力，复古夜晚外观，奢华、性感，且经过极致数字化编辑，灵感来源于名人自拍。",
+    "prompt": "使用上传的照片作为女性外貌的灵感来源；\n不要改变我的身体特征。\n她的深金色长发，波浪形，蓬松，风格为略显凌乱的半扎发，鬓发散落在脸颊周围，增加层次感和真实感。\n她佩戴四条分层的粗金项链：一条带有小块红玛瑙的吊坠，一条像洪都拉斯地图且内置国旗的项链。\n她还佩戴极大金圈耳环、三只金手镯，以及每个手指上都戴着粗砺的金戒指。\n指甲长、杏形、中性色。\n鼻环清晰可见。\n她正在以略微抬高的角度自拍，头略微偏向一边，嘴唇微噘，像是在飞吻。\n她直视镜头，表情自信而性感，眼睛被浓密的睫毛与清晰的眉形强调。\n她拥有无瑕的古铜色肌肤，脸颊、鼻子与额头带有柔和的腮红，嘴唇丰满且光泽，呈暖裸色。\n轮廓清晰，质感细腻。\n她有极长、乌黑的直发，优雅地用两束头发框住脸部。\n她穿着白色紧身背心，胸肋区域有交叉带的设计，搭配浅色破旧牛仔裤。\n颈部佩戴细金链，耳朵配有小金圈耳环。\n背景为昏暗且柔焦的画面，背后有一面大镜子，不分散注意力。\n绿色植物点缀。\n灯光：柔和的暖光闪光灯，提升肌肤与皮肤的光泽，呈现典型的 2000 年代初的光泽。\n效果：柔和的肤色光泽、略微饱和的色彩、嘴唇和皮肤的细腻光泽、温暖的金色高光、短浅景深（散景）。\n摄影风格：Y2K 风格魅力，复古夜晚外观，奢华、性感，且经过极致数字化编辑，灵感来源于名人自拍。",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1785208541609.1353
+    "mtime": 1785238838477.3733
   },
   {
     "title": "勉強日和🐰AIにAIを教えてもらおう❣",
@@ -8927,10 +8927,10 @@
     "sourceLink": "https://x.com/meng_dagg695/status/2003650158064730620",
     "author": "X / ShaHid WaNii",
     "authorLink": "https://x.com/meng_dagg695",
-    "prompt": "内容翻译：影像类型为工作室时尚人像摄影；分辨率目标为8K 超高清；纵向竖屏。构图为中景人像，裁切从头部到胸部中部，主体居中略偏右，镜头角度为视线水平。姿势为身体向左三分之二转身，头部朝向相机，一臂抬起并放置在头部后方或头顶，另一臂自然下垂放松。主体为女性年轻成人，肤色从浅到中等，表情为中性到略显严肃，直视相机，传达自信与从容。五官细节为椭圆形脸、肤质平滑均匀，妆容以强化的眼线与睫毛膏为主，唇色深沉偏莓红，整体妆容适中而精致；耳垂佩戴有左鼻孔小鼻环。眼睛部分可通过偏色镜片略见。佩戴窄矩形太阳镜，镜片为深色、框架为细金属，戴在鼻梁略低处。发色为中棕色，配有强烈品红/紫色灯光高光，发型为长发、松散而微微波浪，中分。服饰为外套为仿皮毛大衣，颜色从深灰到黑色，质地厚实丰厚，剪裁偏大，披挂在肩部，略呈宽松。内搭无袖上衣，黑色，领口笔直或略微圆弧。项链为细链，金属质感，锁骨处清晰可见。照明为工作室灯光，主光来自前左，柔和而有方向；辅光颜色为 magenta/purple，从上方及背后照射，特别照亮头发和肩部；对比度中等至高，面部和 glasses 处有柔和高光，下巴颈部有柔和阴影。背景为工作室背景幕布，深紫色渐变，光滑无缝，无背景物体。色彩风格以紫色、品红、黑色、深灰为主，点缀肤色与银色金属感。画质方面锐利，细节丰富，几乎无噪点，广域动态范围。整体风格为时尚编辑风格，情绪偏 moody、时尚且自信，具有现代感。",
+    "prompt": "内容翻译：影像类型为工作室时尚人像摄影；\n分辨率目标为8K 超高清；\n纵向竖屏。\n构图为中景人像，裁切从头部到胸部中部，主体居中略偏右，镜头角度为视线水平。\n姿势为身体向左三分之二转身，头部朝向相机，一臂抬起并放置在头部后方或头顶，另一臂自然下垂放松。\n主体为女性年轻成人，肤色从浅到中等，表情为中性到略显严肃，直视相机，传达自信与从容。\n五官细节为椭圆形脸、肤质平滑均匀，妆容以强化的眼线与睫毛膏为主，唇色深沉偏莓红，整体妆容适中而精致；\n耳垂佩戴有左鼻孔小鼻环。\n眼睛部分可通过偏色镜片略见。\n佩戴窄矩形太阳镜，镜片为深色、框架为细金属，戴在鼻梁略低处。\n发色为中棕色，配有强烈品红/紫色灯光高光，发型为长发、松散而微微波浪，中分。\n服饰为外套为仿皮毛大衣，颜色从深灰到黑色，质地厚实丰厚，剪裁偏大，披挂在肩部，略呈宽松。\n内搭无袖上衣，黑色，领口笔直或略微圆弧。\n项链为细链，金属质感，锁骨处清晰可见。\n照明为工作室灯光，主光来自前左，柔和而有方向；\n辅光颜色为 magenta/purple，从上方及背后照射，特别照亮头发和肩部；\n对比度中等至高，面部和 glasses 处有柔和高光，下巴颈部有柔和阴影。\n背景为工作室背景幕布，深紫色渐变，光滑无缝，无背景物体。\n色彩风格以紫色、品红、黑色、深灰为主，点缀肤色与银色金属感。\n画质方面锐利，细节丰富，几乎无噪点，广域动态范围。\n整体风格为时尚编辑风格，情绪偏 moody、时尚且自信，具有现代感。",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1785209441188.7593
+    "mtime": 1785238838450.5923
   },
   {
     "title": "时尚人像摄影写真",
@@ -9902,10 +9902,10 @@
     "sourceLink": "https://x.com/harboriis/status/2008199272785928409",
     "author": "X / Harboriis",
     "authorLink": "https://x.com/harboriis",
-    "prompt": "一幅高度写实、电影化的特写肖像，描绘一位历经战火的年迈中世纪战士，略微低头，但通过锐利、冰冷的钢蓝色眼睛与镜头对视，眼中充满强烈的张力与反抗。他那饱经风霜、深皱且受阳光侵蚀的皮肤布满无数疤痕、割伤和干涸的血渍，额头上有一道新缝合成 X 形的伤口。他浓密、蓬乱的花白胡须和八字胡勾勒出方正粗犷的下颌线；短而粗糙的灰发因汗水和泥土而结成污垢。每一个毛孔、皱纹和皮肤瑕疵都呈现出极端细节。他的鼻梁坚挺且略有弯曲，耳朵因无数战斗而疤痕累累、饱经风霜。表情严峻、威胁性十足，既充满智慧又充满痛苦，眉头紧锁，双唇紧抿。他的身体裹着一件破旧的重棕色羊毛斗篷，边缘磨损，部分覆盖着具有金属质感并反射细微高光的深色中世纪锁子甲\n背景阴暗且情绪化，纯黑并带有柔和的大气雾霾以突显主体。电影级工作室\n灯光：来自摄像机上方左侧的单一柔和主光在面部投下戏剧性阴影，下方有微弱补光以略微照亮下部面部结构，营造出极强的对比和深度。轻微的轮廓光点亮肩膀和胡须边缘以实现分离。使用 Canon EOS R5 + RF 85mm f/1.2 镜头，光圈 f/1.2 拍摄，以获得超浅景深，仅对眼睛实现极致锐利的刀锋对焦，胡须和肩膀呈现柔和衰减虚化。ISO 100，快门速度 1/250 秒。\n色彩调色板：去饱和的大地色调、深棕、柔和灰、血红、钢黑。电影级调色：平衡的青绿与橙色调以营造戏剧氛围，浓重的电影化阴影，辅以细微的胶片颗粒质感以增强真实感。画面感觉原始、情感充沛，像一部史诗级暗黑奇幻电影的海报定格。 --ar 3:4 --v 6.1 --style raw-quality 2 --stylize 50",
+    "prompt": "一幅高度写实、电影化的特写肖像，描绘一位历经战火的年迈中世纪战士，略微低头，但通过锐利、冰冷的钢蓝色眼睛与镜头对视，眼中充满强烈的张力与反抗。\n他那饱经风霜、深皱且受阳光侵蚀的皮肤布满无数疤痕、割伤和干涸的血渍，额头上有一道新缝合成 X 形的伤口。\n他浓密、蓬乱的花白胡须和八字胡勾勒出方正粗犷的下颌线；\n短而粗糙的灰发因汗水和泥土而结成污垢。\n每一个毛孔、皱纹和皮肤瑕疵都呈现出极端细节。\n他的鼻梁坚挺且略有弯曲，耳朵因无数战斗而疤痕累累、饱经风霜。\n表情严峻、威胁性十足，既充满智慧又充满痛苦，眉头紧锁，双唇紧抿。\n他的身体裹着一件破旧的重棕色羊毛斗篷，边缘磨损，部分覆盖着具有金属质感并反射细微高光的深色中世纪锁子甲\n背景阴暗且情绪化，纯黑并带有柔和的大气雾霾以突显主体。\n电影级工作室\n灯光：来自摄像机上方左侧的单一柔和主光在面部投下戏剧性阴影，下方有微弱补光以略微照亮下部面部结构，营造出极强的对比和深度。\n轻微的轮廓光点亮肩膀和胡须边缘以实现分离。\n使用 Canon EOS R5 + RF 85mm f/1.2 镜头，光圈 f/1.2 拍摄，以获得超浅景深，仅对眼睛实现极致锐利的刀锋对焦，胡须和肩膀呈现柔和衰减虚化。\nISO 100，快门速度 1/250 秒。\n\n色彩调色板：去饱和的大地色调、深棕、柔和灰、血红、钢黑。\n电影级调色：平衡的青绿与橙色调以营造戏剧氛围，浓重的电影化阴影，辅以细微的胶片颗粒质感以增强真实感。\n画面感觉原始、情感充沛，像一部史诗级暗黑奇幻电影的海报定格。\n --ar 3:4 --v 6.1 --style raw-quality 2 --stylize 50",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1785208541592.1404
+    "mtime": 1785238838461.717
   },
   {
     "title": "产品超现实创意广告",
@@ -10349,10 +10349,10 @@
     "sourceLink": "https://x.com/Strength04_X/status/2008470156146860416",
     "author": "X / 𝐌",
     "authorLink": "https://x.com/Strength04_X",
-    "prompt": "将这张图片 [上传你的图片] 转换为 64K DSLR 拍摄分辨率的时尚都市风格拼贴，由多张抓拍街头风格照片组成，竖向分割布局。场景设定在具有欧洲风格的城市街道，石板铺成的人行道、历史建筑，以及克制的中性低调色调。整体氛围现代、艺术感强、以生活方式为驱动，融合时尚摄影与日常城市生活瞬间。主角是一位时尚前卫的年轻女性（与上传图片中的面孔同一张脸），长发黑色，穿着一套协调的复古风格装扮。她透过肢体语言和表情表现出自信、玩味、略带叛逆的态度。她的装扮包括棕色格纹西装外套、白色衬衫、淡黄色领带，搭配宽松深色裤装和双色皮革鞋。她佩戴一顶棕色贴合帽、一副大号琥珀色镜片的飞行员太阳镜、银色圆环耳环，以及一个小型斜挎包。某些镜头中可见白色无线耳机，强化休闲、现代生活方式美学。\n左侧面板：通过玻璃表面拍摄的反射镜头，显示主体（与上传图片中的面孔相同）将智能手机举到脸前进行拍照。反射略微扭曲场景，城市元素如路面标记和建筑立面与玻璃融合，形成层叠的深度感。\n右上面板：从高角度俯视主体（与上传图片中的面孔相同），她向镜头前倾，唇部噘起成俏皮的噘嘴，强调她富有表现力的个性和大胆的眼镜。\n右下角面板：一个特写自拍角度，她直视镜头，同时手持一个透明塑料杯中的冰咖啡，耳机入耳，阳光柔和地照亮她的脸和太阳镜。\n在拼贴画中部叠加一个极简音乐播放器界面，半透明，显示一个正在暂停或正在播放的曲目及进度条和控件，增添数字化、生活方式科技美学。界面在图像之上悬浮，与拼贴画无缝融合，强化日常生活的氛围。\n光线为自然日光，带有柔和阴影。色调克制，偏向泥土色系的棕色、灰色、黄色，辅以微妙的胶片颗粒感和略微去饱和的编辑色调。整体氛围自然而酷感十足、真实感十足、现代感，融合街头时尚、音乐文化和随性城市探索。\n风格与质量标签：街头风格摄影、生活方式编辑、都市美学、抓拍瞬间、复古风格装扮、自然光、克制色调分级、微妙胶片颗粒感、现代拼贴布局、高分辨率、Instagram 编辑风格。\nOctane 渲染 & Unreal Engine 5。",
+    "prompt": "将这张图片 [上传你的图片] 转换为 64K DSLR 拍摄分辨率的时尚都市风格拼贴，由多张抓拍街头风格照片组成，竖向分割布局。\n场景设定在具有欧洲风格的城市街道，石板铺成的人行道、历史建筑，以及克制的中性低调色调。\n整体氛围现代、艺术感强、以生活方式为驱动，融合时尚摄影与日常城市生活瞬间。\n主角是一位时尚前卫的年轻女性（与上传图片中的面孔同一张脸），长发黑色，穿着一套协调的复古风格装扮。\n她透过肢体语言和表情表现出自信、玩味、略带叛逆的态度。\n她的装扮包括棕色格纹西装外套、白色衬衫、淡黄色领带，搭配宽松深色裤装和双色皮革鞋。\n她佩戴一顶棕色贴合帽、一副大号琥珀色镜片的飞行员太阳镜、银色圆环耳环，以及一个小型斜挎包。\n某些镜头中可见白色无线耳机，强化休闲、现代生活方式美学。\n\n左侧面板：通过玻璃表面拍摄的反射镜头，显示主体（与上传图片中的面孔相同）将智能手机举到脸前进行拍照。\n反射略微扭曲场景，城市元素如路面标记和建筑立面与玻璃融合，形成层叠的深度感。\n\n右上面板：从高角度俯视主体（与上传图片中的面孔相同），她向镜头前倾，唇部噘起成俏皮的噘嘴，强调她富有表现力的个性和大胆的眼镜。\n\n右下角面板：一个特写自拍角度，她直视镜头，同时手持一个透明塑料杯中的冰咖啡，耳机入耳，阳光柔和地照亮她的脸和太阳镜。\n\n在拼贴画中部叠加一个极简音乐播放器界面，半透明，显示一个正在暂停或正在播放的曲目及进度条和控件，增添数字化、生活方式科技美学。\n界面在图像之上悬浮，与拼贴画无缝融合，强化日常生活的氛围。\n\n光线为自然日光，带有柔和阴影。\n色调克制，偏向泥土色系的棕色、灰色、黄色，辅以微妙的胶片颗粒感和略微去饱和的编辑色调。\n整体氛围自然而酷感十足、真实感十足、现代感，融合街头时尚、音乐文化和随性城市探索。\n\n风格与质量标签：街头风格摄影、生活方式编辑、都市美学、抓拍瞬间、复古风格装扮、自然光、克制色调分级、微妙胶片颗粒感、现代拼贴布局、高分辨率、Instagram 编辑风格。\n\nOctane 渲染 & Unreal Engine 5。",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1785204609029.3774
+    "mtime": 1785238838465.1023
   },
   {
     "title": "This SREF has a warm, animated storybook... 提示词",
@@ -10546,10 +10546,10 @@
     "sourceLink": "https://x.com/Gdgtify/status/2008501550315135127",
     "author": "X / Gadgetify",
     "authorLink": "https://x.com/Gdgtify",
-    "prompt": "你是一位具有电影感的微缩景观导演和博物馆展览设计师。将任何主题转换为桌面级场景，通过实体对象、笔记和一个微型“专家”人偶来解释它。 逻辑 1) 推断该主题的3–5个核心概念、它的时代（若有的话），以及它的“证明/验证时刻”。 2) 选择一个“主文物”（书籍、蓝图、地图、账本、实验室日志、代码打印件、卷轴），它能够承载图解和注释。 3) 构建6–10个辅助道具，象征性地代表这些概念（工具、仪器、代币、材料、日常物品）。 4) 增添一个权威信号（头条、印章、证书、封印、奖牌、同行评审信、法律文书）。 5) 放置一个被拟人化的微型人物（“讲解者”），让它与主文物互动（写作、测量、组装）。 6) 以温暖、电影感的静物画来构思：浅景深、尘埃微粒、触感十足的木材/金属/纸张、微擦痕、咖啡渍的真实感。 7) 确保每个道具通过细微的标签、草图或图标学符号具有清晰的用途——不要泛泛的杂乱无章。 绘制： (a) 一个单一的英雄场景、 (b) 5个道具要点及它们象征的含义、 (c) 相机与灯光笔记、 (d) 可选的需要避免的负向线索（例如不可辨认的文字块、随机方程式）。 场景必须完全从给定主题中推断出来。",
+    "prompt": "你是一位具有电影感的微缩景观导演和博物馆展览设计师。\n将任何主题转换为桌面级场景，通过实体对象、笔记和一个微型“专家”人偶来解释它。\n 逻辑 1) 推断该主题的3–5个核心概念、它的时代（若有的话），以及它的“证明/验证时刻”。\n 2) 选择一个“主文物”（书籍、蓝图、地图、账本、实验室日志、代码打印件、卷轴），它能够承载图解和注释。\n 3) 构建6–10个辅助道具，象征性地代表这些概念（工具、仪器、代币、材料、日常物品）。\n 4) 增添一个权威信号（头条、印章、证书、封印、奖牌、同行评审信、法律文书）。\n 5) 放置一个被拟人化的微型人物（“讲解者”），让它与主文物互动（写作、测量、组装）。\n 6) 以温暖、电影感的静物画来构思：浅景深、尘埃微粒、触感十足的木材/金属/纸张、微擦痕、咖啡渍的真实感。\n 7) 确保每个道具通过细微的标签、草图或图标学符号具有清晰的用途——不要泛泛的杂乱无章。\n 绘制： (a) 一个单一的英雄场景、 (b) 5个道具要点及它们象征的含义、 (c) 相机与灯光笔记、 (d) 可选的需要避免的负向线索（例如不可辨认的文字块、随机方程式）。\n 场景必须完全从给定主题中推断出来。",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1785208541584.7688
+    "mtime": 1785238838455.8079
   },
   {
     "title": "Chat GPT 图像 1.5 🎨",
@@ -11303,10 +11303,10 @@
     "sourceLink": "https://x.com/Strength04_X/status/2008872906911314231",
     "author": "X / 𝐌",
     "authorLink": "https://x.com/Strength04_X",
-    "prompt": "专业摄影，中景偏广镜头。一座庞大、逼真的立体模型世界占满整个工作空间的视野，描绘了郊区后院的剖面，其中一个困惑的外星人正滑稽地错误使用日常地球物品。结构包含典型的木栅栏和花园小屋，与一个部分被灌木掩盖的UFO融合（带有柔和的LED底光）。精细细节包括：一个戴着花盆当帽子的迷你绿色外星人小雕像，试图像遛狗一样用牵引绳“遛”一台吸尘器；用花园水管当电话；全副衣着坐在鸟浴盆里倒着读披萨菜单；并试图把电视遥控器像种子一样种进土里。一只困惑的金毛犬人偶歪着头注视着。露台上，迷你人偶从窗帘后偷看，表情震惊且困惑。草坪上摆放错误的物品：颠倒插在地里的雨伞装满了麦片、吊在树枝上的躺椅、喷水器直直往上喷水。背景完全由实体三维形式构成，包括带灯的雕刻泡沫邻居房屋、黏土树木以及带有微小星星的喷绘晚间天空，绝对没有平面背景。一位现实风格的人类工匠位于后景右侧，正在积极地调整场景，使用细镊子调整微小吸尘器的“牵引绳”，对这荒诞情景咧嘴大笑。双层工作区照明与温暖的郊区晚间灯光以及柔和的UFO光（蓝绿色LED）相结合，突出正常郊区质感与超现实外星混乱之间的对比。将场景构图为9:16竖向纵横比，构图平衡且无裁切元素。确保所有主要主体、关键动作和面部特征保持在中央安全区内，避免在所选纵横比下边缘裁切。如果场景中出现人类创作者或工匠，请将该人物呈现为现实个体。使用上传的图像参考作为创作者的精确面部身份。保持面部结构、比例和相似度的一致性。不要重新诠释、风格化或替换该面孔。",
+    "prompt": "专业摄影，中景偏广镜头。\n一座庞大、逼真的立体模型世界占满整个工作空间的视野，描绘了郊区后院的剖面，其中一个困惑的外星人正滑稽地错误使用日常地球物品。\n结构包含典型的木栅栏和花园小屋，与一个部分被灌木掩盖的UFO融合（带有柔和的LED底光）。\n精细细节包括：一个戴着花盆当帽子的迷你绿色外星人小雕像，试图像遛狗一样用牵引绳“遛”一台吸尘器；\n用花园水管当电话；\n全副衣着坐在鸟浴盆里倒着读披萨菜单；\n并试图把电视遥控器像种子一样种进土里。\n一只困惑的金毛犬人偶歪着头注视着。\n露台上，迷你人偶从窗帘后偷看，表情震惊且困惑。\n草坪上摆放错误的物品：颠倒插在地里的雨伞装满了麦片、吊在树枝上的躺椅、喷水器直直往上喷水。\n背景完全由实体三维形式构成，包括带灯的雕刻泡沫邻居房屋、黏土树木以及带有微小星星的喷绘晚间天空，绝对没有平面背景。\n一位现实风格的人类工匠位于后景右侧，正在积极地调整场景，使用细镊子调整微小吸尘器的“牵引绳”，对这荒诞情景咧嘴大笑。\n双层工作区照明与温暖的郊区晚间灯光以及柔和的UFO光（蓝绿色LED）相结合，突出正常郊区质感与超现实外星混乱之间的对比。\n将场景构图为9:16竖向纵横比，构图平衡且无裁切元素。\n确保所有主要主体、关键动作和面部特征保持在中央安全区内，避免在所选纵横比下边缘裁切。\n如果场景中出现人类创作者或工匠，请将该人物呈现为现实个体。\n使用上传的图像参考作为创作者的精确面部身份。\n保持面部结构、比例和相似度的一致性。\n不要重新诠释、风格化或替换该面孔。",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1785209441195.301
+    "mtime": 1785238838456.3677
   },
   {
     "title": "大胆撞色波普艺术插画",
@@ -12750,10 +12750,10 @@
     "sourceLink": "https://x.com/Sheldon056/status/2009458579305267681",
     "author": "X / Duet | AI",
     "authorLink": "https://x.com/Sheldon056",
-    "prompt": "将这张图片 [上传你的图片] 转换为64K DSLR拍摄分辨率的创意城市街头肖像，主角是一位青年男子（与上传图片中的面孔相同），坐在安静城市街道的路缘上，旁边配有一张与他本人形象相同的风格化卡通插图。现实中的主体（与上传图片相同的面孔）随意坐在混凝土人行道边缘，一手托着头，呈现出无聊、沉思的姿态。他略微抬头，表情中性、内省，传达出一种安静的思考与城市孤独感。他穿着一件低调的赭红色带绳织纹理的针织毛衣，宽松合身；深色宽松的牛仔裤，裤脚处有细致的缝线细节；以及朴素的棕色皮靴。配饰包括一条层叠的银色链条狗牌，牌上写有姓名 “[Add Text]”；手指上的戒指；黑框眼镜；以及正前方有粗体刺绣字样的浅色棒球帽。头发短而深色，胡须纹理清晰。旁边的人行道上坐着一个同样面孔的卡通版小自我，与他在穿着和姿势上完全一致——同样的毛衣、牛仔裤、靴子、帽子、眼镜，以及面部表情。卡通人物线条干净，使用暖色调的柔和哑光，并以手绘动画风格呈现，现实感与插画感之间形成一种俏皮的对比。卡通形象的比例相对较小，强调一种陪伴感或内在自我的概念。背景包括纹理化的鹅卵石路面、路缘，以及窗边的建筑外立面，墙体为低调的黄色，近窗处有绿色瓷砖铺砌的砖墙。色调以大地色为主，克制且自然的日光提供柔和、均匀的光线与真实的阴影。整体构图将街头摄影、时尚人像与混合媒介数字艺术融合，唤起身份认同、自我反思与创造力的主题。\n风格与情绪关键词：都市街头摄影、休闲时尚人像、混合媒介艺术、真人与卡通角色二重奏、内省情绪、低饱和度的大地色调、柔和自然光、真实质感、创意叙事、高分辨率细节、电影现实主义。Octane渲染与虚幻引擎",
+    "prompt": "将这张图片 [上传你的图片] 转换为64K DSLR拍摄分辨率的创意城市街头肖像，主角是一位青年男子（与上传图片中的面孔相同），坐在安静城市街道的路缘上，旁边配有一张与他本人形象相同的风格化卡通插图。\n现实中的主体（与上传图片相同的面孔）随意坐在混凝土人行道边缘，一手托着头，呈现出无聊、沉思的姿态。\n他略微抬头，表情中性、内省，传达出一种安静的思考与城市孤独感。\n他穿着一件低调的赭红色带绳织纹理的针织毛衣，宽松合身；\n深色宽松的牛仔裤，裤脚处有细致的缝线细节；\n以及朴素的棕色皮靴。\n配饰包括一条层叠的银色链条狗牌，牌上写有姓名 “[Add Text]”；\n手指上的戒指；\n黑框眼镜；\n以及正前方有粗体刺绣字样的浅色棒球帽。\n头发短而深色，胡须纹理清晰。\n旁边的人行道上坐着一个同样面孔的卡通版小自我，与他在穿着和姿势上完全一致——同样的毛衣、牛仔裤、靴子、帽子、眼镜，以及面部表情。\n卡通人物线条干净，使用暖色调的柔和哑光，并以手绘动画风格呈现，现实感与插画感之间形成一种俏皮的对比。\n卡通形象的比例相对较小，强调一种陪伴感或内在自我的概念。\n背景包括纹理化的鹅卵石路面、路缘，以及窗边的建筑外立面，墙体为低调的黄色，近窗处有绿色瓷砖铺砌的砖墙。\n色调以大地色为主，克制且自然的日光提供柔和、均匀的光线与真实的阴影。\n整体构图将街头摄影、时尚人像与混合媒介数字艺术融合，唤起身份认同、自我反思与创造力的主题。\n\n风格与情绪关键词：都市街头摄影、休闲时尚人像、混合媒介艺术、真人与卡通角色二重奏、内省情绪、低饱和度的大地色调、柔和自然光、真实质感、创意叙事、高分辨率细节、电影现实主义。\nOctane渲染与虚幻引擎",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1785209441207.379
+    "mtime": 1785238838468.1792
   },
   {
     "title": "主题乐园中的咖啡女孩",
@@ -13242,10 +13242,10 @@
     "sourceLink": "https://x.com/TechieBySA/status/2009695503664239086",
     "author": "X / TechieSA",
     "authorLink": "https://x.com/TechieBySA",
-    "prompt": "描绘 [LANDMARK] 冻结在永恒的施工状态中。 摄像机与角度（锁定）：45° 提升等距视角，摄像机距离固定，使整个地标约占画面70%。无倾斜变化。 结构：下部区域完全竣工，坚固且一眼可辨。上部区域平滑过渡为未完成的施工：脚手架、起重机、裸露的梁、缆线和骨架式结构。完成与未完成之间的过渡线清晰可见且在建筑上精确定位。 比例与细节：在脚手架上放置小型静止的施工工人以示比例。恰好包含1–2台施工机械（起重臂、升降机或吊装机），静止不动。无运动，无模糊，无掉落的碎屑。 材料（保持一致）：已完成区域：抛光石材 / 玻璃 / 钢（根据地标适配）。未完成区域：原始混凝土、钢梁、缆线、结构框架。材料干净、真实，并在所有渲染中保持一致。 光线（锁定）：来自左上方的柔和中性电影灯光。曝光平衡，阴影柔和，无戏剧性高光。 构图（锁定）：完美居中，对称平衡。地标置于微妙的基座或地面平面上。方形画幅 1080×1080。 背景（锁定）：极简中性天空或工作室灰背景。无云，无渐变，无干扰。 风格：超写实建筑渲染。干净、精确、宁静且宏伟。无风格化处理，无绘画效果。 氛围：永恒、安静、沉思。冻结的进度——永不完工，永不衰败。",
+    "prompt": "描绘 [LANDMARK] 冻结在永恒的施工状态中。\n 摄像机与角度（锁定）：45° 提升等距视角，摄像机距离固定，使整个地标约占画面70%。\n无倾斜变化。\n 结构：下部区域完全竣工，坚固且一眼可辨。\n上部区域平滑过渡为未完成的施工：脚手架、起重机、裸露的梁、缆线和骨架式结构。\n完成与未完成之间的过渡线清晰可见且在建筑上精确定位。\n 比例与细节：在脚手架上放置小型静止的施工工人以示比例。\n恰好包含1–2台施工机械（起重臂、升降机或吊装机），静止不动。\n无运动，无模糊，无掉落的碎屑。\n 材料（保持一致）：已完成区域：抛光石材 / 玻璃 / 钢（根据地标适配）。\n未完成区域：原始混凝土、钢梁、缆线、结构框架。\n材料干净、真实，并在所有渲染中保持一致。\n 光线（锁定）：来自左上方的柔和中性电影灯光。\n曝光平衡，阴影柔和，无戏剧性高光。\n 构图（锁定）：完美居中，对称平衡。\n地标置于微妙的基座或地面平面上。\n方形画幅 1080×1080。\n 背景（锁定）：极简中性天空或工作室灰背景。\n无云，无渐变，无干扰。\n 风格：超写实建筑渲染。\n干净、精确、宁静且宏伟。\n无风格化处理，无绘画效果。\n 氛围：永恒、安静、沉思。\n冻结的进度——永不完工，永不衰败。",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1785209441199.0908
+    "mtime": 1785238838459.6135
   },
   {
     "title": "白色泡沫堆叠的品牌徽标雕塑",
@@ -15973,10 +15973,10 @@
     "sourceLink": "https://x.com/Xaroonx/status/2011438513569337757",
     "author": "X / Zar⭕on",
     "authorLink": "https://x.com/Xaroonx",
-    "prompt": "将此图像 [上传你的图片] 转换为 64K DSLR 拍摄分辨率的四格时尚拼贴，展示同一主体以统一的大地色系极简街头服饰美学造型，拍摄于宁静、现代的混凝土庭院或室内天井空间。环境色调低调宁静，浅灰色墙面、原始水泥地面，以及增强内敛氛围的细腻自然装饰元素。主体（与上传图像相同的面容）为运动型身材、呈中性气质的年轻成人，发型蓬松有型，表情冷静、内省。佩戴纤细的黑色矩形眼镜、银色首饰（项链和耳环），前臂和手部覆盖复杂的黑灰色纹身袖。\n服装与造型:-\n宽大的棕色T恤，胸前有小而极简的图案或字母\n极度宽松的棕色工装裤，带有大号实用口袋并呈现厚重垂感\n粗白色绳带腰带松松系着，在腰间戏剧性垂下\n夸张厚底的白色运动鞋\n大型米白色帆布单肩包斜挎，增添质感与对比\n色彩盘为暖色且中性：棕色、褐灰色、米色、米白和柔和灰色。\n各格中的动作:-\n双臂交叉站立，放松但自信\n坐在混凝土台阶上，前倾呈沉思姿态\n随意坐着，一条腿弯曲，手拿眼镜或触碰面部\n以悠然的姿态强调宽大廓形与层次质感\n背景与道具:-\n极简装饰，包括编织稻草垫、木箱和方形花盆中的枝条插置\n小型有框墙面艺术作品以干净的网格排列\n柔和的自然日光，阴影漫射，无刺眼高光\n氛围与美感:- 整体氛围为静谧奢华与日式极简街头风的结合，融合现代时尚、实用主义设计与沉静的编辑式造型。画面感觉如同时尚造型册或生活方式社论，突出廓形、质地和不费力的酷感。\n风格关键词:- 极简街头服饰、中性色调、宽松时尚、实用工装裤、中性风格、时尚编辑拼贴、现代禅意美学、日式灵感时尚、低饱和色调。",
+    "prompt": "将此图像 [上传你的图片] 转换为 64K DSLR 拍摄分辨率的四格时尚拼贴，展示同一主体以统一的大地色系极简街头服饰美学造型，拍摄于宁静、现代的混凝土庭院或室内天井空间。\n环境色调低调宁静，浅灰色墙面、原始水泥地面，以及增强内敛氛围的细腻自然装饰元素。\n主体（与上传图像相同的面容）为运动型身材、呈中性气质的年轻成人，发型蓬松有型，表情冷静、内省。\n佩戴纤细的黑色矩形眼镜、银色首饰（项链和耳环），前臂和手部覆盖复杂的黑灰色纹身袖。\n\n服装与造型:-\n宽大的棕色T恤，胸前有小而极简的图案或字母\n极度宽松的棕色工装裤，带有大号实用口袋并呈现厚重垂感\n粗白色绳带腰带松松系着，在腰间戏剧性垂下\n夸张厚底的白色运动鞋\n大型米白色帆布单肩包斜挎，增添质感与对比\n色彩盘为暖色且中性：棕色、褐灰色、米色、米白和柔和灰色。\n\n各格中的动作:-\n双臂交叉站立，放松但自信\n坐在混凝土台阶上，前倾呈沉思姿态\n随意坐着，一条腿弯曲，手拿眼镜或触碰面部\n以悠然的姿态强调宽大廓形与层次质感\n背景与道具:-\n极简装饰，包括编织稻草垫、木箱和方形花盆中的枝条插置\n小型有框墙面艺术作品以干净的网格排列\n柔和的自然日光，阴影漫射，无刺眼高光\n氛围与美感:- 整体氛围为静谧奢华与日式极简街头风的结合，融合现代时尚、实用主义设计与沉静的编辑式造型。\n画面感觉如同时尚造型册或生活方式社论，突出廓形、质地和不费力的酷感。\n\n风格关键词:- 极简街头服饰、中性色调、宽松时尚、实用工装裤、中性风格、时尚编辑拼贴、现代禅意美学、日式灵感时尚、低饱和色调。",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1785204612430.3904
+    "mtime": 1785238838492.522
   },
   {
     "title": "影视IP3D收藏卡牌",
@@ -16911,10 +16911,10 @@
     "sourceLink": "https://x.com/Strength04_X/status/2011770206839062641",
     "author": "X / 𝐌",
     "authorLink": "https://x.com/Strength04_X",
-    "prompt": "一张高端商业食品摄影，呈现与参考图像中相同的两份塔可，保留其精确的结构、馅料、比例和排列。相机角度略微调整为更讨好的3/4近景，增强纵深感和食欲诱惑，但不改变塔可本身。柔和的电影感灯光突出玉米饼和馅料的质感，伴随轻微蒸汽和自然光泽以强调新鲜感。背景替换为干净、现代、虚化的环境，采用温暖的互补色调以增强食物而不分散注意力。浅景深，塔可聚焦清晰，反差丰富，色彩自然，达到高级餐厅广告品质。不添加或移除任何成分，可精炼构图、灯光和环境。\n图像 2：对图中塔可的爆炸视图商业展示，以高级菜谱式拆解呈现。\n该塔可被拆解为四种可见成分，精确匹配原始塔可的构成、颜色和质地。不包含额外成分。\n成分被分离并在垂直堆叠中排列，自下而上均匀间隔，悬浮就位，排列精确对齐和对称。\n成分顺序（从下到上）：\n软小麦塔可薄饼\n切丝红甘蓝\n烤鸡块\n酱汁与点缀（顶部放一小撮混合点缀，由切丁的洋葱、番茄和欧芹组成，总计约5–6个小方丁，轻度混合，自然地放置在顶部）\n每种成分在视觉上都应清晰可辨，形状与质地一目了然。\n标注设计要求：\n– 大号、粗体无衬线字体，在信息流尺度下也具备高可读性\n– 每个标注置于实心或略带圆角的矩形色块内\n– 每个色块的背景色需与对应成分颜色微妙呼应（番茄红、莴苣绿、肉类暖棕、酱汁白/奶油色、面饼米色）\n– 高对比度文字（亮底深字或暗底浅字）\n– 粗实、干净的连接线清晰指向每个成分\n– 不使用降低可读性的透明效果\n– 注释在视觉上必须优于背景但不得遮挡食材\n背景应柔和、中性、有氛围，带微妙纵深和柔和渐变，灵感来源于高端食品广告。\n整体风格干净、现代、诱人，具备商业可用性，不带技术或示意图式的感觉。\n不添加额外元素，不替换，不重新诠释成分。",
+    "prompt": "一张高端商业食品摄影，呈现与参考图像中相同的两份塔可，保留其精确的结构、馅料、比例和排列。\n相机角度略微调整为更讨好的3/4近景，增强纵深感和食欲诱惑，但不改变塔可本身。\n柔和的电影感灯光突出玉米饼和馅料的质感，伴随轻微蒸汽和自然光泽以强调新鲜感。\n背景替换为干净、现代、虚化的环境，采用温暖的互补色调以增强食物而不分散注意力。\n浅景深，塔可聚焦清晰，反差丰富，色彩自然，达到高级餐厅广告品质。\n不添加或移除任何成分，可精炼构图、灯光和环境。\n\n图像 2：对图中塔可的爆炸视图商业展示，以高级菜谱式拆解呈现。\n\n该塔可被拆解为四种可见成分，精确匹配原始塔可的构成、颜色和质地。\n不包含额外成分。\n\n成分被分离并在垂直堆叠中排列，自下而上均匀间隔，悬浮就位，排列精确对齐和对称。\n\n成分顺序（从下到上）：\n软小麦塔可薄饼\n切丝红甘蓝\n烤鸡块\n酱汁与点缀（顶部放一小撮混合点缀，由切丁的洋葱、番茄和欧芹组成，总计约5–6个小方丁，轻度混合，自然地放置在顶部）\n每种成分在视觉上都应清晰可辨，形状与质地一目了然。\n\n标注设计要求：\n– 大号、粗体无衬线字体，在信息流尺度下也具备高可读性\n– 每个标注置于实心或略带圆角的矩形色块内\n– 每个色块的背景色需与对应成分颜色微妙呼应（番茄红、莴苣绿、肉类暖棕、酱汁白/奶油色、面饼米色）\n– 高对比度文字（亮底深字或暗底浅字）\n– 粗实、干净的连接线清晰指向每个成分\n– 不使用降低可读性的透明效果\n– 注释在视觉上必须优于背景但不得遮挡食材\n背景应柔和、中性、有氛围，带微妙纵深和柔和渐变，灵感来源于高端食品广告。\n\n整体风格干净、现代、诱人，具备商业可用性，不带技术或示意图式的感觉。\n\n不添加额外元素，不替换，不重新诠释成分。",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1785208541578.2976
+    "mtime": 1785238838450.066
   },
   {
     "title": "播客考古隐藏宝石网格",
@@ -20361,10 +20361,10 @@
     "sourceLink": "https://x.com/Samann_ai/status/2017190762346078697",
     "author": "Unknown",
     "authorLink": "https://x.com/Samann_ai",
-    "prompt": "创建一幅超现实、摄影棚风格的人像，使用 [USER_PHOTO] 作为精确身份参考（相同面容、发型、皮肤纹理和年龄）。将此人描绘成一位自信的 [PROFESSION]，随意坐在一把现代白色人体工学办公椅上，双腿交叉，位于画面中央。添加一种风格化的“多臂”幻觉（共6–8只手臂），从躯干后方放射，类似现代受湿婆/毗湿奴启发的轮廓，但要照片级逼真：每只额外的手臂必须具有正确的解剖结构、可信的关节、肌腱、皮肤毛孔和自然阴影；手指不可扭曲变形。\n道具（必须与职业相关）：自动选择并放置真实 [PROFESSION] 会使用的不同工具，每只手/手臂对应一个道具，所有道具在设计上都清晰可辨且准确。示例类别：主要工具、次要工具、通讯设备、测量/诊断工具、配件，以及一个“主打”道具。主/前手务必握持一部真实的智能手机。避免通用的随机物品——每个道具必须合理且逻辑上属于该 [PROFESSION]。如果 [PROFESSION] 属于数字/科技：包含笔记本电脑、平板、相机/监视器、测光表、触控笔、键盘、麦克风等。如果 [PROFESSION] 属于医疗：听诊器、病历夹、检耳镜、注射器（安全/临床）等。如果 [PROFESSION] 属于烹饪：厨师刀、夹子、摆盘镊子、食谱平板等。（始终与 [PROFESSION] 匹配。）\n背景色（主题匹配）：使用无缝纸质摄影棚背景，选用与职业主题相匹配的单一主色（例如：创意/媒体使用暖芥末色，医疗使用冷青色，工程使用石墨/钢灰，户外使用浓郁橄榄色，奢侈品使用深酒红）。颜色需与肤色和服装互相补色。添加细微的渐变衰减和柔和的反光以增加深度（背景不可平面单调）。\n灯光与布景：高端商业摄影棚质感。相机左侧一个大型柔光主灯，右侧有受控的补光，清晰的轮廓光用于分离主体，且道具上有真实感的镜面高光。在主体后方（部分可见处）加入一个大型圆形银色反光盘以增强视觉效果。地面上添加与光源方向一致的细微阴影。\n服装与造型：服装须符合顶级 [PROFESSION] 的可信形象（干净、现代、略作风格化），具有质地细节（面料纹理、缝线）。添加极少量的配饰（手表/手链），呈现高级感。表情：专注、略带强度，处于“专注投入”的状态。\n构图与镜头：全身竖构图（4:5），50mm 镜头视角，平视相机，面部对焦锐利，浅景深但道具仍可辨识。皮肤超细节、自然色彩分级、高动态范围、清晰的微对比度。\n真实规则：禁止卡通化、禁止CGI外观。不得出现额外面孔或重复头部。手部必须符合解剖（5指），不得出现融化的物体，除非自然存在否则不可有无法辨认的文字或标识。保持场景整洁且高端。\n输出：照片级超现实社论摄影，8K 细节，摄影棚级修图，自然皮肤质感保留。",
+    "prompt": "创建一幅超现实、摄影棚风格的人像，使用 [USER_PHOTO] 作为精确身份参考（相同面容、发型、皮肤纹理和年龄）。\n将此人描绘成一位自信的 [PROFESSION]，随意坐在一把现代白色人体工学办公椅上，双腿交叉，位于画面中央。\n添加一种风格化的“多臂”幻觉（共6–8只手臂），从躯干后方放射，类似现代受湿婆/毗湿奴启发的轮廓，但要照片级逼真：每只额外的手臂必须具有正确的解剖结构、可信的关节、肌腱、皮肤毛孔和自然阴影；\n手指不可扭曲变形。\n\n道具（必须与职业相关）：自动选择并放置真实 [PROFESSION] 会使用的不同工具，每只手/手臂对应一个道具，所有道具在设计上都清晰可辨且准确。\n示例类别：主要工具、次要工具、通讯设备、测量/诊断工具、配件，以及一个“主打”道具。\n主/前手务必握持一部真实的智能手机。\n避免通用的随机物品——每个道具必须合理且逻辑上属于该 [PROFESSION]。\n如果 [PROFESSION] 属于数字/科技：包含笔记本电脑、平板、相机/监视器、测光表、触控笔、键盘、麦克风等。\n如果 [PROFESSION] 属于医疗：听诊器、病历夹、检耳镜、注射器（安全/临床）等。\n如果 [PROFESSION] 属于烹饪：厨师刀、夹子、摆盘镊子、食谱平板等。\n（始终与 [PROFESSION] 匹配。\n）\n背景色（主题匹配）：使用无缝纸质摄影棚背景，选用与职业主题相匹配的单一主色（例如：创意/媒体使用暖芥末色，医疗使用冷青色，工程使用石墨/钢灰，户外使用浓郁橄榄色，奢侈品使用深酒红）。\n颜色需与肤色和服装互相补色。\n添加细微的渐变衰减和柔和的反光以增加深度（背景不可平面单调）。\n\n灯光与布景：高端商业摄影棚质感。\n相机左侧一个大型柔光主灯，右侧有受控的补光，清晰的轮廓光用于分离主体，且道具上有真实感的镜面高光。\n在主体后方（部分可见处）加入一个大型圆形银色反光盘以增强视觉效果。\n地面上添加与光源方向一致的细微阴影。\n\n服装与造型：服装须符合顶级 [PROFESSION] 的可信形象（干净、现代、略作风格化），具有质地细节（面料纹理、缝线）。\n添加极少量的配饰（手表/手链），呈现高级感。\n表情：专注、略带强度，处于“专注投入”的状态。\n\n构图与镜头：全身竖构图（4:5），50mm 镜头视角，平视相机，面部对焦锐利，浅景深但道具仍可辨识。\n皮肤超细节、自然色彩分级、高动态范围、清晰的微对比度。\n\n真实规则：禁止卡通化、禁止CGI外观。\n不得出现额外面孔或重复头部。\n手部必须符合解剖（5指），不得出现融化的物体，除非自然存在否则不可有无法辨认的文字或标识。\n保持场景整洁且高端。\n\n输出：照片级超现实社论摄影，8K 细节，摄影棚级修图，自然皮肤质感保留。",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1785209441190.6077
+    "mtime": 1785238838452.451
   },
   {
     "title": "青绿隧道中的皮衣烟雾青年",
@@ -20831,10 +20831,10 @@
     "sourceLink": "https://x.com/Just_sharon7/status/2017969858017931581",
     "author": "Unknown",
     "authorLink": "https://x.com/Just_sharon7",
-    "prompt": "奢华热带身体去角质膏产品摄影，打开的罐子里是明亮鲜艳的黄橙色芒果与百香果身体磨砂膏，绵密打发的奶油质地，能见到明显的果粒，Marine Life 品牌，优雅简约的包装，白色盖子微微掀起，多汁的芒果方块和对半切开的百香果环绕漂浮，金黄色液体和果汁在空中动感飞溅，新鲜异国水果片悬浮于空中，光滑湿润的水滴，鲜亮多汁的色彩，诱人且高级的美感，温暖的黄金时刻光线，暖桃色调的柔和散景背景，高度细节化，电影般的产品镜头，商业广告风格，8K，超逼真\n视频提示\n超奢华热带身体磨砂膏商业视频。打开的 Marine Life 芒果与百香果身体磨砂膏罐子，呈现绵密打发的质地和可见果粒。白色盖子微微掀起。多汁的芒果方块和对半切开的百香果在罐子周围动态漂浮。金黄色液体和果汁在空中戏剧性地飞溅。新鲜的异国水果片在产品周围悬停并旋转。罐子和水果上有光滑湿润的水滴，强调新鲜感与奢华感。温暖的黄金时刻光线，暖桃色调的柔和散景背景。镜头慢速环绕产品，捕捉质地、光泽和鲜明色彩的超逼真 8K 细节。电影级特写，飞溅和漂浮水果的顺滑慢动作，商业广告风格。背景简约以增强高级美感。\n可选镜头/效果：\n先以极近距离特写展示打发质地，然后拉远镜头，呈现漂浮的水果。\n用逆光慢动作拍摄果汁飞溅，以突出水滴。\n缓慢旋转360°环绕罐子展示产品。\n对焦从前景水果拉至产品标签。\n利用温暖金色光线制造细微镜头光晕，营造电影化的奢华感。",
+    "prompt": "奢华热带身体去角质膏产品摄影，打开的罐子里是明亮鲜艳的黄橙色芒果与百香果身体磨砂膏，绵密打发的奶油质地，能见到明显的果粒，Marine Life 品牌，优雅简约的包装，白色盖子微微掀起，多汁的芒果方块和对半切开的百香果环绕漂浮，金黄色液体和果汁在空中动感飞溅，新鲜异国水果片悬浮于空中，光滑湿润的水滴，鲜亮多汁的色彩，诱人且高级的美感，温暖的黄金时刻光线，暖桃色调的柔和散景背景，高度细节化，电影般的产品镜头，商业广告风格，8K，超逼真\n视频提示\n超奢华热带身体磨砂膏商业视频。\n打开的 Marine Life 芒果与百香果身体磨砂膏罐子，呈现绵密打发的质地和可见果粒。\n白色盖子微微掀起。\n多汁的芒果方块和对半切开的百香果在罐子周围动态漂浮。\n金黄色液体和果汁在空中戏剧性地飞溅。\n新鲜的异国水果片在产品周围悬停并旋转。\n罐子和水果上有光滑湿润的水滴，强调新鲜感与奢华感。\n温暖的黄金时刻光线，暖桃色调的柔和散景背景。\n镜头慢速环绕产品，捕捉质地、光泽和鲜明色彩的超逼真 8K 细节。\n电影级特写，飞溅和漂浮水果的顺滑慢动作，商业广告风格。\n背景简约以增强高级美感。\n\n可选镜头/效果：\n先以极近距离特写展示打发质地，然后拉远镜头，呈现漂浮的水果。\n\n用逆光慢动作拍摄果汁飞溅，以突出水滴。\n\n缓慢旋转360°环绕罐子展示产品。\n\n对焦从前景水果拉至产品标签。\n\n利用温暖金色光线制造细微镜头光晕，营造电影化的奢华感。",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1785204615089.9695
+    "mtime": 1785238838470.8213
   },
   {
     "title": "钩针编织微缩机场",
@@ -22221,10 +22221,10 @@
     "sourceLink": "https://x.com/harboriis/status/2022288144545259558",
     "author": "Unknown",
     "authorLink": "https://x.com/harboriis",
-    "prompt": "使用 Hasselblad 907X 50C 搭配 XCD 90mm f/2.5 镜头拍摄，光圈 f/2.8 浅景深强调西装的精确贴合，而背景溶解为画意般的色块；以 16-bit RAW 拍摄，具有高动态范围和柔和的胶片颗粒感，以保留羊毛质感和彩色光的光晕，同时避免“刺眼”的数字锐化。构图为紧密人像，裁至胸中部，视角与眼平，稍微三分之四转体；模特偏离中心，使彩绘玻璃的图案在负空间中可读。姿势沉稳端庄：肩部放开，姿态自信但不紧张；一只手整齐地调整领带结或领口线，另一只手插在裤兜中，略微掀开西装外套，露出层次感穿搭。表情克制而沉思；目光越过镜头略为远视，仿佛远处有音乐在响起。服装：带有复古味道的男士西装——结构分明的双排扣羊毛西装外套配以利落的翻领，高腰褶皱长裤，白衬衫与窄领带，擦亮的牛津鞋，以及简约的方巾。场景：复古的装饰艺术（Art Deco）大厅，深色木质、黄铜元素，以及一扇高大的彩绘玻璃窗，将宝石般的几何光影投射到西装与背景上。光线：一侧暖调实用补光，另一侧为彩绘玻璃的彩色光，电影感的对比，带有“彩绘玻璃”阴影。结果 — 复古社论风格：具有图形感、精致、奢华且永恒。",
+    "prompt": "使用 Hasselblad 907X 50C 搭配 XCD 90mm f/2.5 镜头拍摄，光圈 f/2.8 浅景深强调西装的精确贴合，而背景溶解为画意般的色块；\n以 16-bit RAW 拍摄，具有高动态范围和柔和的胶片颗粒感，以保留羊毛质感和彩色光的光晕，同时避免“刺眼”的数字锐化。\n构图为紧密人像，裁至胸中部，视角与眼平，稍微三分之四转体；\n模特偏离中心，使彩绘玻璃的图案在负空间中可读。\n姿势沉稳端庄：肩部放开，姿态自信但不紧张；\n一只手整齐地调整领带结或领口线，另一只手插在裤兜中，略微掀开西装外套，露出层次感穿搭。\n表情克制而沉思；\n目光越过镜头略为远视，仿佛远处有音乐在响起。\n服装：带有复古味道的男士西装——结构分明的双排扣羊毛西装外套配以利落的翻领，高腰褶皱长裤，白衬衫与窄领带，擦亮的牛津鞋，以及简约的方巾。\n场景：复古的装饰艺术（Art Deco）大厅，深色木质、黄铜元素，以及一扇高大的彩绘玻璃窗，将宝石般的几何光影投射到西装与背景上。\n光线：一侧暖调实用补光，另一侧为彩绘玻璃的彩色光，电影感的对比，带有“彩绘玻璃”阴影。\n结果 — 复古社论风格：具有图形感、精致、奢华且永恒。",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1785208541620.7012
+    "mtime": 1785238838486.742
   },
   {
     "title": "精致影楼风人像写真",
@@ -22294,10 +22294,10 @@
     "sourceLink": "https://x.com/ChillaiKalan__/status/2022733333218955487",
     "author": "Unknown",
     "authorLink": "https://x.com/ChillaiKalan__",
-    "prompt": "一张柔焦、电影风格的人像，描绘一位五官精致、浅金色头发的年轻女性，捕捉到她运动中的瞬间。她的面部呈现局部模糊和重影，随风流动的发丝被定格在半摆动的状态，营造出梦幻飘渺的运动效果。表情宁静且稍显恍惚，双唇微张，眼神轻睁。整个画面被金色米褐和棕褐色调浸染，唤起怀旧且画意盎然的氛围。光线自然且漫射，自近窗射入，在她的皮肤上投射温暖的光晕，并照亮在画面中舞动的发丝。使用 Canon EOS R5 搭配 85mm 镜头拍摄，光圈 f/1.2，ISO 320，快门 1/8 秒，故意采用慢速曝光并手持移动以制造艺术性的运动模糊。对焦柔和，景深浅，使主体从淡米色的背景中被分离出来。在 Adobe Lightroom 和 Photoshop 中进行后期处理：应用电影感 LUT，通过分割色调增强温暖（暗部为柔和的琥珀色，高光为乳白色），降低清晰度，并使用位移图层和径向模糊滤镜细化运动拖尾。非常细腻的颗粒感增添了胶片质感。最终情绪：富有情感、朦胧、诗意。风格参考：纯艺术人像、复古时尚社论与模拟胶片梦境序列。4K 超高分辨率，无强烈对比，保留平滑的渐变。",
+    "prompt": "一张柔焦、电影风格的人像，描绘一位五官精致、浅金色头发的年轻女性，捕捉到她运动中的瞬间。\n她的面部呈现局部模糊和重影，随风流动的发丝被定格在半摆动的状态，营造出梦幻飘渺的运动效果。\n表情宁静且稍显恍惚，双唇微张，眼神轻睁。\n整个画面被金色米褐和棕褐色调浸染，唤起怀旧且画意盎然的氛围。\n光线自然且漫射，自近窗射入，在她的皮肤上投射温暖的光晕，并照亮在画面中舞动的发丝。\n使用 Canon EOS R5 搭配 85mm 镜头拍摄，光圈 f/1.2，ISO 320，快门 1/8 秒，故意采用慢速曝光并手持移动以制造艺术性的运动模糊。\n对焦柔和，景深浅，使主体从淡米色的背景中被分离出来。\n在 Adobe Lightroom 和 Photoshop 中进行后期处理：应用电影感 LUT，通过分割色调增强温暖（暗部为柔和的琥珀色，高光为乳白色），降低清晰度，并使用位移图层和径向模糊滤镜细化运动拖尾。\n非常细腻的颗粒感增添了胶片质感。\n最终情绪：富有情感、朦胧、诗意。\n风格参考：纯艺术人像、复古时尚社论与模拟胶片梦境序列。\n4K 超高分辨率，无强烈对比，保留平滑的渐变。",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1785209441208.0784
+    "mtime": 1785238838468.8752
   },
   {
     "title": "电影感女性侧颜特写",
@@ -22516,10 +22516,10 @@
     "sourceLink": "https://x.com/Naiknelofar788/status/2023256749310988332",
     "author": "Unknown",
     "authorLink": "https://x.com/Naiknelofar788",
-    "prompt": "低角度特写肖像：一位白金金发女性佩戴夸张的大型雕塑感太阳镜，镜片由娇嫩半透明的叠层花瓣制成，呈鲜艳的洋红、琥珀和丁香色调，每片花瓣可见细腻的丝绸纹理，柔和的金色光线从边缘透过；一圈奢华高级定制的颈圈项链由密集叠层的同色花瓣构成，完美包裹整个颈部，具备立体感和有机曲线。她下巴微微抬起，棱角分明，神情自信；鼻梁上点缀着细腻的雀斑；双唇自然滋润有光泽，唇峰处带有柔和高光。细软的白金发丝被温暖的微风轻轻托起，发梢呈现细腻的动态。她站在带有柔和纹理的建筑背景前，温暖的赤土色墙面被金色夕阳光照洗，垂坠的丁香色九重葛和带琥珀色调的石材细节点缀其间，背景融化成奶油般的洋红与薰衣草色散景并带有柔和的氛围光晕。丰富的黄金时刻阳光均匀照亮她的面庞，柔和的阴影勾勒轮廓，来自赤土表面的暖色反射光增强了皮肤的光泽感，微弱的轮廓光勾勒出她的发丝和肩部。超写实的高定时尚编辑摄影风格，电影感的宝石色调调色在琥珀高光、柔和丁香暗部与洋红点缀之间取得平衡；浅景深与优雅的长焦压缩相结合，睫毛与花瓣轮廓呈刀锋般清晰对焦。拍摄器材与参数：Sony A1，70–200mm 镜头于 135mm，f/2，ISO 125，1/1000s，专业编辑级清晰度，博物馆级细节，竖构图 2:3，目光位于上三分之一线\n–ar 2:3 –v 6 –s 900 –q 3 –style raw –no 文字、过重阴影、镜头畸变、过度饱和、伪影、人为光晕",
+    "prompt": "低角度特写肖像：一位白金金发女性佩戴夸张的大型雕塑感太阳镜，镜片由娇嫩半透明的叠层花瓣制成，呈鲜艳的洋红、琥珀和丁香色调，每片花瓣可见细腻的丝绸纹理，柔和的金色光线从边缘透过；\n一圈奢华高级定制的颈圈项链由密集叠层的同色花瓣构成，完美包裹整个颈部，具备立体感和有机曲线。\n她下巴微微抬起，棱角分明，神情自信；\n鼻梁上点缀着细腻的雀斑；\n双唇自然滋润有光泽，唇峰处带有柔和高光。\n细软的白金发丝被温暖的微风轻轻托起，发梢呈现细腻的动态。\n她站在带有柔和纹理的建筑背景前，温暖的赤土色墙面被金色夕阳光照洗，垂坠的丁香色九重葛和带琥珀色调的石材细节点缀其间，背景融化成奶油般的洋红与薰衣草色散景并带有柔和的氛围光晕。\n丰富的黄金时刻阳光均匀照亮她的面庞，柔和的阴影勾勒轮廓，来自赤土表面的暖色反射光增强了皮肤的光泽感，微弱的轮廓光勾勒出她的发丝和肩部。\n超写实的高定时尚编辑摄影风格，电影感的宝石色调调色在琥珀高光、柔和丁香暗部与洋红点缀之间取得平衡；\n浅景深与优雅的长焦压缩相结合，睫毛与花瓣轮廓呈刀锋般清晰对焦。\n拍摄器材与参数：Sony A1，70–200mm 镜头于 135mm，f/2，ISO 125，1/1000s，专业编辑级清晰度，博物馆级细节，竖构图 2:3，目光位于上三分之一线\n–ar 2:3 –v 6 –s 900 –q 3 –style raw –no 文字、过重阴影、镜头畸变、过度饱和、伪影、人为光晕",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1785204616282.6616
+    "mtime": 1785238838465.4695
   },
   {
     "title": "体育场越野摩托特技飞车",
@@ -22830,10 +22830,10 @@
     "sourceLink": "https://x.com/Just_sharon7/status/2024794186906759514",
     "author": "Unknown",
     "authorLink": "https://x.com/Just_sharon7",
-    "prompt": "一个超现实、极简的奢华广告场景，置于干净现代的摄影棚内，柔和中性灰背景、戏剧性定向照明和细微电影感阴影。一根巨大的超大号 Dr.Jart+ Pore Remedy Pure Mastic Butter Mask 管（浅蓝色管身、白色标签、粗黑体 “Dr.Jart+” 字样清晰可见）像纪念碑般胜利地矗立在高大的多层白色大理石基座上。基座周围有 20–30 名穿着配套米色/象牙白制服和工装的逼真微型男性工人，拉着系在巨大管子周围的粗绳，奋力用劲、动作充满动感、肌肉绷紧，主要向前拉扯。\n在前景放置一位高挑优雅的西方女性，二十多岁后期，位置靠近镜头以增强广告焦点。她站在基座的略前方，构图从腰部至大腿中段，营造高端美妆广告的感觉。她有光泽的白皙肌肤、鲜明的颧骨、柔和自然的妆容和光亮的肌肤质感，发型为整洁的低髻，目光自信且具有高定时尚感，直视镜头。她穿着结构感象牙白裁剪西装连衣裙，搭配极简金色配饰和裸色高跟鞋。一只手轻触巨型管子，身体微微转向它，营造强烈的主角与产品关联。\n在基座脚下放置一座大型开放的莲花雕塑，呈柔和粉褐色调。高端商业护肤摄影，超写实 3D 渲染，超清 8K 细节，电影式构图，浅景深略微虚化微型工人同时保持女性与产品清晰突出，奢华美妆广告美学，史诗般的尺度对比，干净优雅的摄影棚环境，由 Veo 拍摄。",
+    "prompt": "一个超现实、极简的奢华广告场景，置于干净现代的摄影棚内，柔和中性灰背景、戏剧性定向照明和细微电影感阴影。\n一根巨大的超大号 Dr.Jart+ Pore Remedy Pure Mastic Butter Mask 管（浅蓝色管身、白色标签、粗黑体 “Dr.Jart+” 字样清晰可见）像纪念碑般胜利地矗立在高大的多层白色大理石基座上。\n基座周围有 20–30 名穿着配套米色/象牙白制服和工装的逼真微型男性工人，拉着系在巨大管子周围的粗绳，奋力用劲、动作充满动感、肌肉绷紧，主要向前拉扯。\n\n在前景放置一位高挑优雅的西方女性，二十多岁后期，位置靠近镜头以增强广告焦点。\n她站在基座的略前方，构图从腰部至大腿中段，营造高端美妆广告的感觉。\n她有光泽的白皙肌肤、鲜明的颧骨、柔和自然的妆容和光亮的肌肤质感，发型为整洁的低髻，目光自信且具有高定时尚感，直视镜头。\n她穿着结构感象牙白裁剪西装连衣裙，搭配极简金色配饰和裸色高跟鞋。\n一只手轻触巨型管子，身体微微转向它，营造强烈的主角与产品关联。\n\n在基座脚下放置一座大型开放的莲花雕塑，呈柔和粉褐色调。\n高端商业护肤摄影，超写实 3D 渲染，超清 8K 细节，电影式构图，浅景深略微虚化微型工人同时保持女性与产品清晰突出，奢华美妆广告美学，史诗般的尺度对比，干净优雅的摄影棚环境，由 Veo 拍摄。",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1785204616486.241
+    "mtime": 1785238838472.2317
   },
   {
     "title": "霓虹夜色中的野马跑车青年",
@@ -23488,10 +23488,10 @@
     "sourceLink": "https://x.com/Arminn_Ai/status/2027470188644626803",
     "author": "Unknown",
     "authorLink": "https://x.com/Arminn_Ai",
-    "prompt": "一张照片级真实、细节高度丰富的商业产品摄影，表现一个标准铝制 [Type of Soda Can]，居中置于简约、有纹理的 [Background Color] 纸质背景上，可见细微纤维。画面中横向贯穿一整幅的单条连续纸撕裂带，从最右端无缝延伸至最左端。撕裂通道切穿了易拉罐的金属罐身，并在两侧继续延伸到背景上，带有轻微且几乎不可察觉的向左上方斜度。撕裂通道明显更宽，露出一层密集、闪亮且充满活力的 [Description of Fruit Segments/Sacs/Berries]，紧密填充其内。在该撕裂处极最左端附近，纸张被整齐地卷成一个紧实、真实的卷圈，占据了几乎整个左侧边距。罐身采用新设计的极简品牌标识：上部有用对比色 [Ink Color] 绘制的风格化、抽象线描的 [Fruit Branch/Plant] 插图，置于罐面细腻哑光的几何 [Pattern Type] 图案之上。其下方以优雅、现代的深色字体印有品牌名“[Brand Name]”，并配有较小的技术文字“330ml - 天然提取物”及一个小型“可回收”标志。撕裂通道下方还有一个小而精致的果实图形。光线柔和且具有电影感，在撕裂的纸边和左侧大卷圈下投下细腻的投影。8K 分辨率，展现纤维纸与光滑果实质感的微距细节。",
+    "prompt": "一张照片级真实、细节高度丰富的商业产品摄影，表现一个标准铝制 [Type of Soda Can]，居中置于简约、有纹理的 [Background Color] 纸质背景上，可见细微纤维。\n画面中横向贯穿一整幅的单条连续纸撕裂带，从最右端无缝延伸至最左端。\n撕裂通道切穿了易拉罐的金属罐身，并在两侧继续延伸到背景上，带有轻微且几乎不可察觉的向左上方斜度。\n撕裂通道明显更宽，露出一层密集、闪亮且充满活力的 [Description of Fruit Segments/Sacs/Berries]，紧密填充其内。\n在该撕裂处极最左端附近，纸张被整齐地卷成一个紧实、真实的卷圈，占据了几乎整个左侧边距。\n罐身采用新设计的极简品牌标识：上部有用对比色 [Ink Color] 绘制的风格化、抽象线描的 [Fruit Branch/Plant] 插图，置于罐面细腻哑光的几何 [Pattern Type] 图案之上。\n其下方以优雅、现代的深色字体印有品牌名“[Brand Name]”，并配有较小的技术文字“330ml - 天然提取物”及一个小型“可回收”标志。\n撕裂通道下方还有一个小而精致的果实图形。\n光线柔和且具有电影感，在撕裂的纸边和左侧大卷圈下投下细腻的投影。\n8K 分辨率，展现纤维纸与光滑果实质感的微距细节。",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1785208541587.854
+    "mtime": 1785238838458.359
   },
   {
     "title": "品牌产品九宫格分镜展示",
@@ -23985,10 +23985,10 @@
     "sourceLink": "https://x.com/harboriis/status/2029064691482542266",
     "author": "Unknown",
     "authorLink": "https://x.com/harboriis",
-    "prompt": "超写实、光泽杂志风格的人像，年轻男性模特，秃顶，表情严峻粗犷，面部质感清晰（毛孔、胡茬阴影、细微疤痕）。相机位于鞋子高度（极低角度），广角视角，模特向镜头倾斜，身体前倾，手持一罐 Pepsi 极其靠近镜头——罐身标签完全面向观众且清晰可读，金属反光真实。穿着红色 Adidas 运动服，Adidas 标志可见，干净的白色运动鞋，一只脚向前踏在前景中。城市化的苏联1990年代街道环境：风化的混凝土、复古店招、老旧汽车、时代感涂鸦、小水洼。晴朗的白天，强烈直射阳光投下锐利的电影感阴影，温暖的阳光高光，沥青上有轻微湿反光，鞋附近有细微水花以增强动态感。浅景深（面部和罐子锐利对焦，背景奶油般虚化），超高细节，高对比，鲜艳色彩，温暖阳光配合细微青橙分级。商业编辑级修图风格，但保留皮肤质感，增强罐身标签和金属部分的清晰度，真实的镜面高光，自然的微对比。构图：Pepsi 罐突出于右前景，视线略高于中心，为刊头/Logo 留出负空间--v 7 --style raw --quality 2 --ar 9:16 --chaos 3 --stylize 499-weird 99--exp 50",
+    "prompt": "超写实、光泽杂志风格的人像，年轻男性模特，秃顶，表情严峻粗犷，面部质感清晰（毛孔、胡茬阴影、细微疤痕）。\n相机位于鞋子高度（极低角度），广角视角，模特向镜头倾斜，身体前倾，手持一罐 Pepsi 极其靠近镜头——罐身标签完全面向观众且清晰可读，金属反光真实。\n穿着红色 Adidas 运动服，Adidas 标志可见，干净的白色运动鞋，一只脚向前踏在前景中。\n城市化的苏联1990年代街道环境：风化的混凝土、复古店招、老旧汽车、时代感涂鸦、小水洼。\n晴朗的白天，强烈直射阳光投下锐利的电影感阴影，温暖的阳光高光，沥青上有轻微湿反光，鞋附近有细微水花以增强动态感。\n浅景深（面部和罐子锐利对焦，背景奶油般虚化），超高细节，高对比，鲜艳色彩，温暖阳光配合细微青橙分级。\n商业编辑级修图风格，但保留皮肤质感，增强罐身标签和金属部分的清晰度，真实的镜面高光，自然的微对比。\n构图：Pepsi 罐突出于右前景，视线略高于中心，为刊头/Logo 留出负空间--v 7 --style raw --quality 2 --ar 9:16 --chaos 3 --stylize 499-weird 99--exp 50",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1785208541593.857
+    "mtime": 1785238838463.1287
   },
   {
     "title": "手工针毡羊毛微缩小物",
@@ -24924,10 +24924,10 @@
     "sourceLink": "https://x.com/TechieBySA/status/2032557237437116521",
     "author": "Unknown",
     "authorLink": "https://x.com/TechieBySA",
-    "prompt": "高质量风格化 3D CGI 皮克斯风格渲染，纵向 3:4 构图；来自 [SHOW/MOVIE] 的最具代表性的角色被捕捉为一个混乱而欢乐的浴室镜子自拍；最为人熟知的角色举着一台大型复古相机对着镜子，其他角色紧挤在他们周围的画面中，每个人都展示他们最标志性的表情或姿势；每个人都穿着与原作相符的标志性服装；所有人挤在一起，营造经典的拥挤自拍氛围；面部比例在迪士尼/皮克斯动画风格中略作夸张，眼睛富有表情，同时忠实保留每个角色在 [SHOW/MOVIE] 中最可识别的特征、发型和服装；浴室镜子上有逼真的牙膏飞溅痕迹和细微污渍；镜中反射显示粗体黑色的皮克斯风格字样，写着“[SHOW/MOVIE]❤️”；浴室背景的风格与 [SHOW/MOVIE] 的世界相匹配，主题道具和与 [SHOW/MOVIE] 相关的彩蛋自然地摆放在场景周围；照明结合柔和的环境浴室光与明亮的相机闪光在镜中反射，产生柔和的镜面高光；温暖的皮克斯风格色彩分级，忠实于 [SHOW/MOVIE] 的视觉基调，平滑的高光衰减，精致的迪士尼/皮克斯电影级角色着色，超精细 4K 渲染，无水印",
+    "prompt": "高质量风格化 3D CGI 皮克斯风格渲染，纵向 3:4 构图；\n来自 [SHOW/MOVIE] 的最具代表性的角色被捕捉为一个混乱而欢乐的浴室镜子自拍；\n最为人熟知的角色举着一台大型复古相机对着镜子，其他角色紧挤在他们周围的画面中，每个人都展示他们最标志性的表情或姿势；\n每个人都穿着与原作相符的标志性服装；\n所有人挤在一起，营造经典的拥挤自拍氛围；\n面部比例在迪士尼/皮克斯动画风格中略作夸张，眼睛富有表情，同时忠实保留每个角色在 [SHOW/MOVIE] 中最可识别的特征、发型和服装；\n浴室镜子上有逼真的牙膏飞溅痕迹和细微污渍；\n镜中反射显示粗体黑色的皮克斯风格字样，写着“[SHOW/MOVIE]❤️”；\n浴室背景的风格与 [SHOW/MOVIE] 的世界相匹配，主题道具和与 [SHOW/MOVIE] 相关的彩蛋自然地摆放在场景周围；\n照明结合柔和的环境浴室光与明亮的相机闪光在镜中反射，产生柔和的镜面高光；\n温暖的皮克斯风格色彩分级，忠实于 [SHOW/MOVIE] 的视觉基调，平滑的高光衰减，精致的迪士尼/皮克斯电影级角色着色，超精细 4K 渲染，无水印",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1785208541617.2654
+    "mtime": 1785238838484
   },
   {
     "title": "「こちら管制、全機――発進準備、いいな？」",
@@ -25894,10 +25894,10 @@
     "sourceLink": "https://x.com/youngcatwoman/status/2035292835247751289",
     "author": "Unknown",
     "authorLink": "https://x.com/youngcatwoman",
-    "prompt": "{   \"prompt\": \"四位 Blackpink 成员——Jisoo、Jennie、Rosé 和 Lisa——在宽阔的现代室内楼梯上合影的写实团体肖像。她们穿着协调的高端时尚主题：作为连体衣穿着的深V裁剪定制西装外套，配有乳胶 T 型前幅和光泽细高跟鞋。构图为错落有致、对称排列在木质台阶上。 --ar 3:4\",   \"subject\": {     \"jisoo\": \"在最顶端的台阶上，金智秀（Kim Jisoo）有着及腰的深巧克力色长发，心形唇，神情优雅且安详。她穿着一件皇家蓝的西装连体衣。\",     \"jennie\": \"坐在下一阶的 Jennie Kim 留着长而波浪状的浓咖啡色头发，眼神锐利如猫，身体微微前倾。她穿着一件绯红色的西装连体衣。\",     \"rose\": \"在 Jennie 旁边，朴彩英（Park Chaeyoung，Rosé）留着极长的铂金金发，侧脸纤细而空灵。她穿着柔和的粉彩粉色西装连体衣。\",     \"lisa\": \"在较低的台阶上，Lalisa Manobal（Lisa）有着乌黑的发色、标志性的浓密齐刘海和大而富有表现力的眼睛。她穿着木炭灰色的西装连体衣。\",     \"jewelry\": \"每位成员佩戴配套的银色圈式耳环和细银链，链上垂有小圆形吊坠。\"   },   \"outfit\": {     \"clothing\": \"四件不同颜色的深V定制西装外套：皇家蓝、绯红、柔粉和木炭灰，每件外套内搭同色的乳胶 T 型前幅连体衣。\",     \"shoes\": \"搭配统一风格的光面漆皮细高跟单鞋，颜色为黑色、红色、裸色和银色。\"   },   \"pose\": {     \"body\": \"群体以错落式排列坐于台阶踏面上，形成强烈且对称的时尚编辑构图。\",     \"legs\": \"腿部以多样姿势呈现，或分开或倾斜，以展示高端时尚鞋款与楼梯的建筑线条。\",     \"hands\": \"手部摆放优雅，有的放在膝上，有的触碰台阶或靠近面部。\"   },   \"background\": {     \"environment\": \"极简、现代感的室内楼梯，空间开阔。\",     \"structure\": \"宽阔的浅橡木踏面，干净的白色立板和纯白的墙面。\"   },   \"color_grading\": \"柔和、漫散的影棚级灯光。高端时尚的色彩搭配，在鲜明西装色彩与中性木色及白色背景之间取得平衡。\",   \"exact_colors\": {     \"jisoo_blue\": \"#002366\",     \"jennie_red\": \"#990000\",     \"rose_pink\": \"#F4C2C2\",     \"lisa_gray\": \"#36454F\",     \"hair_blonde\": \"#EAE5D9\",     \"hair_dark\": \"#1A1110\",     \"stair_wood\": \"#9B7653\"   } }",
+    "prompt": "{   \"prompt\": \"四位 Blackpink 成员——Jisoo、Jennie、Rosé 和 Lisa——在宽阔的现代室内楼梯上合影的写实团体肖像。\n她们穿着协调的高端时尚主题：作为连体衣穿着的深V裁剪定制西装外套，配有乳胶 T 型前幅和光泽细高跟鞋。\n构图为错落有致、对称排列在木质台阶上。\n --ar 3:4\",   \"subject\": {     \"jisoo\": \"在最顶端的台阶上，金智秀（Kim Jisoo）有着及腰的深巧克力色长发，心形唇，神情优雅且安详。\n她穿着一件皇家蓝的西装连体衣。\n\",     \"jennie\": \"坐在下一阶的 Jennie Kim 留着长而波浪状的浓咖啡色头发，眼神锐利如猫，身体微微前倾。\n她穿着一件绯红色的西装连体衣。\n\",     \"rose\": \"在 Jennie 旁边，朴彩英（Park Chaeyoung，Rosé）留着极长的铂金金发，侧脸纤细而空灵。\n她穿着柔和的粉彩粉色西装连体衣。\n\",     \"lisa\": \"在较低的台阶上，Lalisa Manobal（Lisa）有着乌黑的发色、标志性的浓密齐刘海和大而富有表现力的眼睛。\n她穿着木炭灰色的西装连体衣。\n\",     \"jewelry\": \"每位成员佩戴配套的银色圈式耳环和细银链，链上垂有小圆形吊坠。\n\"   },   \"outfit\": {     \"clothing\": \"四件不同颜色的深V定制西装外套：皇家蓝、绯红、柔粉和木炭灰，每件外套内搭同色的乳胶 T 型前幅连体衣。\n\",     \"shoes\": \"搭配统一风格的光面漆皮细高跟单鞋，颜色为黑色、红色、裸色和银色。\n\"   },   \"pose\": {     \"body\": \"群体以错落式排列坐于台阶踏面上，形成强烈且对称的时尚编辑构图。\n\",     \"legs\": \"腿部以多样姿势呈现，或分开或倾斜，以展示高端时尚鞋款与楼梯的建筑线条。\n\",     \"hands\": \"手部摆放优雅，有的放在膝上，有的触碰台阶或靠近面部。\n\"   },   \"background\": {     \"environment\": \"极简、现代感的室内楼梯，空间开阔。\n\",     \"structure\": \"宽阔的浅橡木踏面，干净的白色立板和纯白的墙面。\n\"   },   \"color_grading\": \"柔和、漫散的影棚级灯光。\n高端时尚的色彩搭配，在鲜明西装色彩与中性木色及白色背景之间取得平衡。\n\",   \"exact_colors\": {     \"jisoo_blue\": \"#002366\",     \"jennie_red\": \"#990000\",     \"rose_pink\": \"#F4C2C2\",     \"lisa_gray\": \"#36454F\",     \"hair_blonde\": \"#EAE5D9\",     \"hair_dark\": \"#1A1110\",     \"stair_wood\": \"#9B7653\"   } }",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1785209441190.1357
+    "mtime": 1785238838451.8606
   },
   {
     "title": "昨日のNano Banana記事、",
@@ -26702,10 +26702,10 @@
     "sourceLink": "https://x.com/Strength04_X/status/2038224276835471420",
     "author": "Unknown",
     "authorLink": "https://x.com/Strength04_X",
-    "prompt": "一款坚固的哑光黑计时码表，配以醒目的橙色点缀，被紧密框住在两块有纹理的岩石之间，形成一种天然的晕影，将全部注意力引向表盘；场景以超近微距视角开启，镜头缓慢横移穿过狭窄的岩缝，保持亲密且压缩的视野，不进行拉远，仿佛在严酷的高山环境中发现了被隐藏的手表。寒冷的山间空气微微拂动画面中的细小尘粒和淡淡雾气，捕捉从上方洒落的柔和漫射日光；与此同时，低角度的暖阳轻扫岩面并柔和地反射到表盘上，在冷色阴影与暖色高光之间形成鲜明对比。镜头在近距离继续受控地微轨道环绕手表，使镜面高光在拉丝金属表圈、刻纹螺丝和略带纹理的橡胶表带上流动，强调耐用性与高端工艺。当光线穿过蓝宝石水晶镜面时，橙色时标与指针微微发光，呈现出清晰的反光和轻微的曲率畸变。在虚化的背景中，高耸的山峰保持柔和的失焦，增加景深而不分散注意力；与此同时，环境中的微小震动使基座附近的细石略微移动，增强了真实感。随着镜头推进，微弱的微风掠过表带，带来几乎察觉不到的摆动，光照强度则自然波动，仿佛头顶云层掠过。序列以一个固定的超紧凑主视觉构图结束，完美居中于岩石框架内；表盘呈现高对比度与刀锋般锐利的细节，影调、质感与受控高光之间的电影化互动，强化了高端且以冒险为核心的品牌形象。",
+    "prompt": "一款坚固的哑光黑计时码表，配以醒目的橙色点缀，被紧密框住在两块有纹理的岩石之间，形成一种天然的晕影，将全部注意力引向表盘；\n场景以超近微距视角开启，镜头缓慢横移穿过狭窄的岩缝，保持亲密且压缩的视野，不进行拉远，仿佛在严酷的高山环境中发现了被隐藏的手表。\n寒冷的山间空气微微拂动画面中的细小尘粒和淡淡雾气，捕捉从上方洒落的柔和漫射日光；\n与此同时，低角度的暖阳轻扫岩面并柔和地反射到表盘上，在冷色阴影与暖色高光之间形成鲜明对比。\n镜头在近距离继续受控地微轨道环绕手表，使镜面高光在拉丝金属表圈、刻纹螺丝和略带纹理的橡胶表带上流动，强调耐用性与高端工艺。\n当光线穿过蓝宝石水晶镜面时，橙色时标与指针微微发光，呈现出清晰的反光和轻微的曲率畸变。\n在虚化的背景中，高耸的山峰保持柔和的失焦，增加景深而不分散注意力；\n与此同时，环境中的微小震动使基座附近的细石略微移动，增强了真实感。\n随着镜头推进，微弱的微风掠过表带，带来几乎察觉不到的摆动，光照强度则自然波动，仿佛头顶云层掠过。\n序列以一个固定的超紧凑主视觉构图结束，完美居中于岩石框架内；\n表盘呈现高对比度与刀锋般锐利的细节，影调、质感与受控高光之间的电影化互动，强化了高端且以冒险为核心的品牌形象。",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1785210081858.34
+    "mtime": 1785238838444.7131
   },
   {
     "title": "minimalist 奢华 产品 摄影 of...",
@@ -27238,10 +27238,10 @@
     "sourceLink": "https://x.com/old_pgmrs_will/status/2046144801071079612",
     "author": "Unknown",
     "authorLink": "https://x.com/old_pgmrs_will",
-    "prompt": "一个十几岁中期的机甲女孩，苍白的皮肤被烟尘和盐雾染污，锐利的琥珀色眼睛，发光的HUD准星，腰间的灰白色头发绑成高马尾，在海风中飘扬，肩膀、前臂和小腿上覆盖哑光枪金属外骨骼装甲，关节处裸露的液压活塞，胸甲上发光的青色冷却液线，一件过大的油渍机库夹克半滑落一肩， 右肩上挂着一门巨大的轨道炮，领口挂着军牌和磨损的红丝带，站在一个生锈的钢制平台上，站在黑暗水面上，身体不对劲地站在左侧，体重单腿着地，左手紧握炮带，头微微转向镜头，带着安静的挑衅目光， 蒸汽从她的后推进器喷发，马尾和夹克在咸风中横向飘扬，黄昏时分一座巨大的废弃海城，巨大的未知用途巨型建筑错落地从海洋中升起，骨白色的巨石塔与藤壶钢融合，弯曲成环形结构，锈蚀的骨架与死缆交织，黑色巨浪在电塔间翻滚， 船难 哈在脚下被吞噬，浓厚的海雾附着在基座上，上层建筑刺入破碎的天空，塔楼高处闪烁着零星的微弱灯光，如同远方的眼睛，阴郁低调的灯光，阴沉天空中冷淡的青绿色环境，远处摄像机右侧建筑透出温暖的琥珀钠光，塔楼后方低垂的太阳强光雕刻出她的轮廓， 体积神射穿透海雾，湿润的高光在她的装甲上，35毫米变形镜头，略低角度从肩膀上方俯视结构，中广角镜头，浅景深，前景柔焦时锈迹斑斑，水平镜头光晕，细腻的大气雾气将远处巨构压缩成层叠的剪影，电影感十足的动漫主视觉效果， 如画般的数字插画配以清晰的线条艺术，去饱和的海洋色调，青绿色、骨白色和锈色，配以温暖的小点缀灯，胶片颗粒感，高对比度编辑海报美学。格式 16：9。",
+    "prompt": "一个十几岁中期的机甲女孩，苍白的皮肤被烟尘和盐雾染污，锐利的琥珀色眼睛，发光的HUD准星，腰间的灰白色头发绑成高马尾，在海风中飘扬，肩膀、前臂和小腿上覆盖哑光枪金属外骨骼装甲，关节处裸露的液压活塞，胸甲上发光的青色冷却液线，一件过大的油渍机库夹克半滑落一肩， 右肩上挂着一门巨大的轨道炮，领口挂着军牌和磨损的红丝带，站在一个生锈的钢制平台上，站在黑暗水面上，身体不对劲地站在左侧，体重单腿着地，左手紧握炮带，头微微转向镜头，带着安静的挑衅目光， 蒸汽从她的后推进器喷发，马尾和夹克在咸风中横向飘扬，黄昏时分一座巨大的废弃海城，巨大的未知用途巨型建筑错落地从海洋中升起，骨白色的巨石塔与藤壶钢融合，弯曲成环形结构，锈蚀的骨架与死缆交织，黑色巨浪在电塔间翻滚， 船难 哈在脚下被吞噬，浓厚的海雾附着在基座上，上层建筑刺入破碎的天空，塔楼高处闪烁着零星的微弱灯光，如同远方的眼睛，阴郁低调的灯光，阴沉天空中冷淡的青绿色环境，远处摄像机右侧建筑透出温暖的琥珀钠光，塔楼后方低垂的太阳强光雕刻出她的轮廓， 体积神射穿透海雾，湿润的高光在她的装甲上，35毫米变形镜头，略低角度从肩膀上方俯视结构，中广角镜头，浅景深，前景柔焦时锈迹斑斑，水平镜头光晕，细腻的大气雾气将远处巨构压缩成层叠的剪影，电影感十足的动漫主视觉效果， 如画般的数字插画配以清晰的线条艺术，去饱和的海洋色调，青绿色、骨白色和锈色，配以温暖的小点缀灯，胶片颗粒感，高对比度编辑海报美学。\n格式 16：9。",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1785200794182.252
+    "mtime": 1785238838483.6184
   },
   {
     "title": "GPT-Image 2.0稳定可用",
@@ -27628,10 +27628,10 @@
     "sourceLink": "https://x.com/old_pgmrs_will/status/2045440101359198302",
     "author": "Unknown",
     "authorLink": "https://x.com/old_pgmrs_will",
-    "prompt": "“一张采用分层蒙太奇构图的电影海报。背景为日落时分的海滨小镇，平静的海面倒映着耀眼的日光眩光，薄雾笼罩的天空中有远处飞鸟，沿海公路旁立着电线杆剪影。左侧中景处，一位身着深灰色外套、留着深色卷发的中年男子站在混凝土海堤边，神情忧郁地低头凝视，被傍晚的阳光逆光勾勒轮廓。右侧前景主体为一张大幅特写年轻女子侧脸肖像，她望向右侧，身穿带白色条纹的深色水手校服，湿润的黑发贴在脸颊，柔和漫射光线下，一滴泪珠从她脸颊滑落。画面下方中央前景处，一只柴犬抬头朝右侧望去，红棕色毛发被温暖的轮廓光点亮。画面最底端为一条横向电影胶片，内含五幅独立矩形场景缩略图：女孩与柴犬在海滩、女孩骑车望向海面、女孩与男子坐在室内桌前、男子与女孩在海滩面对面站立、女孩拥抱柴犬的特写。画面叠加指定文字：左上角为深青绿色大号衬线字体标题《风间静语》，下方副标题为「—— 致那日的你 ——」；标题下方为小号深色衬线正文：“逝去之物，不复归来。然而，只要心灵稍稍相连，我们便能再度直面明日。” 画面右侧中部为深色衬线字体文字：“曾有一段时光，是你教会我如何生活。我永不会忘。” 左下角为大号白色文字：“10 月 31 日 周五 影院上映”。右下角为小号白色无衬线字体演职人员表：“主演：福波真子 / 桐嶋秀作 原作与剧本：柴野麻吕 导演：今仓七海 主题曲：SyVa《看得见海的地方》（Dogstar★唱片） 制作：《夕凪之尾》影视伙伴 制作公司：DABUSHIBANU-NU 发行：GOODSHIBALERS ©2026《夕凪之尾》影视伙伴”。\n分段提示词：\n图层索引：0\n片段：“背景为日落时分的海滨小镇，平静海面倒映耀眼日光眩光，薄雾天空中有远处飞鸟，沿海公路旁有电线杆剪影。”\n图层索引：1\n片段：“左侧中景处，身着深灰色外套、留深色卷发的中年男子站在混凝土海堤边，神情忧郁低头，被傍晚阳光逆光照射。”\n图层索引：2\n片段：“右侧前景主体为大幅特写年轻女子侧脸肖像，她望向右侧，身穿带白条纹的深色水手校服，湿润黑发贴脸，柔和漫射光下一滴泪珠滑落脸颊。”\n图层索引：3\n片段：“画面下方中央前景处，一只柴犬抬头望向右侧，红棕色毛发被温暖轮廓光点亮。”\n图层索引：4\n片段：“画面最底端为横向电影胶片，内含五幅独立矩形场景缩略图：女孩与柴犬在海滩、女孩骑车望向水面、女孩与男子坐在室内桌前、男子与女孩在海滩面对面、女孩拥抱柴犬特写。”\n图层索引：[5,6,7,8]\n片段：“画面叠加指定文字：左上角为深青绿色大号衬线字体《风间静语》，下方副标题「—— 致那日的你 ——」；其下小号深色衬线正文：“逝去之物，不复归来。然而，只要心灵稍稍相连，我们便能再度直面明日。” 右侧中部深色衬线文字：“曾有一段时光，是你教会我如何生活。我永不会忘。” 左下角大号白色文字：“10 月 31 日 周五 影院上映”。右下角小号白色无衬线字体演职信息：“主演：福波真子 / 桐嶋秀作 原作与剧本：柴野麻吕 导演：今仓七海 主题曲：SyVa《看得见海的地方》（Dogstar★唱片） 制作：《夕凪之尾》影视伙伴 制作公司：DABUSHIBANU-NU 发行：GOODSHIBALERS ©2026《夕凪之尾》影视伙伴”。\n负面提示词：\n“平光照明，无质感表面，对称构图，底部留白空荡，文字缺失，翻译文字，改写文字，3D 渲染，卡通风格，高对比生硬阴影，干涩头发，明亮欢快表情”",
+    "prompt": "“一张采用分层蒙太奇构图的电影海报。\n背景为日落时分的海滨小镇，平静的海面倒映着耀眼的日光眩光，薄雾笼罩的天空中有远处飞鸟，沿海公路旁立着电线杆剪影。\n左侧中景处，一位身着深灰色外套、留着深色卷发的中年男子站在混凝土海堤边，神情忧郁地低头凝视，被傍晚的阳光逆光勾勒轮廓。\n右侧前景主体为一张大幅特写年轻女子侧脸肖像，她望向右侧，身穿带白色条纹的深色水手校服，湿润的黑发贴在脸颊，柔和漫射光线下，一滴泪珠从她脸颊滑落。\n画面下方中央前景处，一只柴犬抬头朝右侧望去，红棕色毛发被温暖的轮廓光点亮。\n画面最底端为一条横向电影胶片，内含五幅独立矩形场景缩略图：女孩与柴犬在海滩、女孩骑车望向海面、女孩与男子坐在室内桌前、男子与女孩在海滩面对面站立、女孩拥抱柴犬的特写。\n画面叠加指定文字：左上角为深青绿色大号衬线字体标题《风间静语》，下方副标题为「—— 致那日的你 ——」；\n标题下方为小号深色衬线正文：“逝去之物，不复归来。\n然而，只要心灵稍稍相连，我们便能再度直面明日。\n” 画面右侧中部为深色衬线字体文字：“曾有一段时光，是你教会我如何生活。\n我永不会忘。\n” 左下角为大号白色文字：“10 月 31 日 周五 影院上映”。\n右下角为小号白色无衬线字体演职人员表：“主演：福波真子 / 桐嶋秀作 原作与剧本：柴野麻吕 导演：今仓七海 主题曲：SyVa《看得见海的地方》（Dogstar★唱片） 制作：《夕凪之尾》影视伙伴 制作公司：DABUSHIBANU-NU 发行：GOODSHIBALERS ©2026《夕凪之尾》影视伙伴”。\n\n分段提示词：\n图层索引：0\n片段：“背景为日落时分的海滨小镇，平静海面倒映耀眼日光眩光，薄雾天空中有远处飞鸟，沿海公路旁有电线杆剪影。\n”\n图层索引：1\n片段：“左侧中景处，身着深灰色外套、留深色卷发的中年男子站在混凝土海堤边，神情忧郁低头，被傍晚阳光逆光照射。\n”\n图层索引：2\n片段：“右侧前景主体为大幅特写年轻女子侧脸肖像，她望向右侧，身穿带白条纹的深色水手校服，湿润黑发贴脸，柔和漫射光下一滴泪珠滑落脸颊。\n”\n图层索引：3\n片段：“画面下方中央前景处，一只柴犬抬头望向右侧，红棕色毛发被温暖轮廓光点亮。\n”\n图层索引：4\n片段：“画面最底端为横向电影胶片，内含五幅独立矩形场景缩略图：女孩与柴犬在海滩、女孩骑车望向水面、女孩与男子坐在室内桌前、男子与女孩在海滩面对面、女孩拥抱柴犬特写。\n”\n图层索引：[5,6,7,8]\n片段：“画面叠加指定文字：左上角为深青绿色大号衬线字体《风间静语》，下方副标题「—— 致那日的你 ——」；\n其下小号深色衬线正文：“逝去之物，不复归来。\n然而，只要心灵稍稍相连，我们便能再度直面明日。\n” 右侧中部深色衬线文字：“曾有一段时光，是你教会我如何生活。\n我永不会忘。\n” 左下角大号白色文字：“10 月 31 日 周五 影院上映”。\n右下角小号白色无衬线字体演职信息：“主演：福波真子 / 桐嶋秀作 原作与剧本：柴野麻吕 导演：今仓七海 主题曲：SyVa《看得见海的地方》（Dogstar★唱片） 制作：《夕凪之尾》影视伙伴 制作公司：DABUSHIBANU-NU 发行：GOODSHIBALERS ©2026《夕凪之尾》影视伙伴”。\n\n负面提示词：\n“平光照明，无质感表面，对称构图，底部留白空荡，文字缺失，翻译文字，改写文字，3D 渲染，卡通风格，高对比生硬阴影，干涩头发，明亮欢快表情”",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1785200794133.131
+    "mtime": 1785238838446.0566
   },
   {
     "title": "GPT图像生成惊艳角色立绘",
@@ -28122,10 +28122,10 @@
     "sourceLink": "https://x.com/BubbleBrain/status/2051826980757336380",
     "author": "Unknown",
     "authorLink": "https://x.com/BubbleBrain",
-    "prompt": "一组散落的冲印照片快照，摆放在一张木桌上，展示了一系列虚构的成年东亚女性在夜晚的酒店房间里独自一人的抓拍瞬间。逼真摄影、日式负片胶片质感、色调压低、对比度较低、略带偏绿的色调、柔和的高光晕染、可见的胶片颗粒、机位直闪。主体：成年东亚女性，短黑发，自然美感，神情平静且略显疏离，带有微妙的性感吸引力，不与任何真实人物相似。服装：性感地解开纽扣的白色衬衫，露出一点点胸部线条与精致蕾丝内衣，黑色迷你短裙，裙摆略微向上滑至大腿，随意慵懒的造型，衣料呈现自然褶皱，以一种得体却诱人的方式稍显凌乱。场景：小型酒店房间，带有图案床单的床、床头台灯、窗帘部分拉上，透过窗户可隐约见到夜色城市灯光。捕捉的瞬间：* 以放松又带诱惑的姿势躺在床上，身体微微拱起，一条膝盖礼貌性地弯起，暗示性地伸出 * 坐在床上向下看，双腿优雅交叠以突出她的曲线，背部微微拱起 * 靠在床头板上，双臂抬到头顶上方，背部性感地拱起，衬衫在胸口处被拉开 * 在桌边吃简单的食物，慢慢把一口食物送到嘴唇，动作带着一丝感性的触感 * 从玻璃杯中饮水，头微微后仰，嘴唇以性感的姿态贴在杯沿 * 身体从肩后转回，衬衫从两侧滑落到肩上，回头以神秘而遥远的目光凝视。构图：每一张都是抓拍快照，不完美的取景、略微偏角度，自然且未经摆拍。灯光：强烈的直闪与昏暗的环境钨丝灯光结合，形成强对比与一次性胶片相机般的怀旧观感。排列：多张冲印照片随机散落在木质表面，彼此略微重叠，构成叙事拼贴。氛围：安静、亲密、略显孤寂，深夜独处；日常写实与微妙性感并存，未露骨。4K，超高细节，逼真摄影，无文字，无水印。",
+    "prompt": "一组散落的冲印照片快照，摆放在一张木桌上，展示了一系列虚构的成年东亚女性在夜晚的酒店房间里独自一人的抓拍瞬间。\n逼真摄影、日式负片胶片质感、色调压低、对比度较低、略带偏绿的色调、柔和的高光晕染、可见的胶片颗粒、机位直闪。\n主体：成年东亚女性，短黑发，自然美感，神情平静且略显疏离，带有微妙的性感吸引力，不与任何真实人物相似。\n服装：性感地解开纽扣的白色衬衫，露出一点点胸部线条与精致蕾丝内衣，黑色迷你短裙，裙摆略微向上滑至大腿，随意慵懒的造型，衣料呈现自然褶皱，以一种得体却诱人的方式稍显凌乱。\n场景：小型酒店房间，带有图案床单的床、床头台灯、窗帘部分拉上，透过窗户可隐约见到夜色城市灯光。\n捕捉的瞬间：* 以放松又带诱惑的姿势躺在床上，身体微微拱起，一条膝盖礼貌性地弯起，暗示性地伸出 * 坐在床上向下看，双腿优雅交叠以突出她的曲线，背部微微拱起 * 靠在床头板上，双臂抬到头顶上方，背部性感地拱起，衬衫在胸口处被拉开 * 在桌边吃简单的食物，慢慢把一口食物送到嘴唇，动作带着一丝感性的触感 * 从玻璃杯中饮水，头微微后仰，嘴唇以性感的姿态贴在杯沿 * 身体从肩后转回，衬衫从两侧滑落到肩上，回头以神秘而遥远的目光凝视。\n构图：每一张都是抓拍快照，不完美的取景、略微偏角度，自然且未经摆拍。\n灯光：强烈的直闪与昏暗的环境钨丝灯光结合，形成强对比与一次性胶片相机般的怀旧观感。\n排列：多张冲印照片随机散落在木质表面，彼此略微重叠，构成叙事拼贴。\n氛围：安静、亲密、略显孤寂，深夜独处；\n日常写实与微妙性感并存，未露骨。\n4K，超高细节，逼真摄影，无文字，无水印。",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1785200794133.249
+    "mtime": 1785238838446.8381
   },
   {
     "title": "双重曝光角色宣传海报",
@@ -28300,7 +28300,7 @@
     "prompt": "A luxury commercial product photography shot featuring a sleek matte emerald green glass bottle with a polished gold cap, placed on a reflective dark surface. The bottle is illuminated by dramatic studio lighting with soft highlights and deep shadows, creating a premium, high-end aesthetic.\n\nBackground: seamless gradient from deep charcoal to rich black, with subtle volumetric light rays adding depth.\n\nComposition: centered product, slight low-angle perspective, shallow depth of field with crisp focus on the bottle label area.\n\nStyle: high-end advertising campaign, photorealistic, 8K resolution, shot with Phase One 150MP, Hasselblad H6D color profile.\n\nMood: sophisticated, exclusive, editorial quality — reminiscent of Dior, Chanel, or Tom Ford fragrance campaigns.\n\nAvoid: cluttered backgrounds, harsh reflections, text overlays, watermarks, low resolution, oversaturated colors.",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1785209441169.0762
+    "mtime": 1785238838424.3674
   },
   {
     "title": "金色花田中的电影感人像",
@@ -28325,7 +28325,7 @@
     "prompt": "Ultra-realistic cinematic close-up portrait of a beautiful young woman lying peacefully among a dreamy field of wildflowers during golden hour. Her face is softly illuminated by warm sunset light, creating gentle shadows and highlights that accentuate her natural beauty.\n\nComposition: shallow depth of field, 85mm lens, f/1.4 aperture, subject in sharp focus with creamy bokeh background.\n\nLighting: golden hour backlight with subtle rim lighting on hair, soft fill light from the side, volumetric light rays filtering through the scene.\n\nMood: serene, ethereal, romantic — capturing a moment of quiet contemplation.\n\nTechnical: photorealistic skin texture, natural makeup, wind-swept hair, shot on Sony A7R IV with Zeiss Batis 85mm, Kodak Portra 400 film emulation.\n\nStyle: Vogue editorial, fashion campaign quality, award-winning photography aesthetic.\n\nAvoid: harsh shadows, oversaturated colors, plastic skin, artificial poses, text overlays, watermarks.",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1785209441168.9744
+    "mtime": 1785238838424.2305
   },
   {
     "title": "纸艺卷花复古旅行海报",
@@ -30240,7 +30240,7 @@
       "Model": "Common",
       "Aspect Ratio": "9:16"
     },
-    "mtime": 1785200492022.56
+    "mtime": 1785238838494.8044
   },
   {
     "title": "黄金时刻的复古窗边人像",
@@ -30268,7 +30268,7 @@
       "Model": "GPT-Image",
       "Aspect Ratio": "9:16"
     },
-    "mtime": 1785199849764.7812
+    "mtime": 1785238838432.494
   },
   {
     "title": "夏日泼水节闺蜜抓拍",
@@ -30290,13 +30290,13 @@
     "sourceLink": "https://x.com/i/status/2081597303144808724",
     "author": "DeepBlue深藍",
     "authorLink": "https://x.com/DeepBlueAIX",
-    "prompt": "竖版写实 iPhone 手机抓拍人像，夏日泼水节现场，三位年轻成年东亚女性好闺蜜一起参加泼水节，被朋友用手机随手记录下最欢乐的一瞬间。现场人群、水花、彩色水盆、湿润石板路充满背景，强烈夏日阳光照射，空中大量飞溅水珠反射光芒，真实生活感强。三位闺蜜靠得很近，正在互相打闹嬉戏，不是摆拍姿势，而是朋友之间自然发生的瞬间。有人偷偷从背后泼水，有人笑着躲避，有人故意拿水盆准备反击，三人表情夸张可爱又自然，充满亲密闺蜜氛围。画面右侧第一位女性，长黑发完全被水打湿，发丝贴在脸颊和肩膀，笑着回头躲避朋友泼来的水，一只手挡在脸前，一只手拿粉色水盆准备反击。穿白色短袖上衣外搭浅蓝薄衬衫、浅色牛仔短裤。画面中央第二位女性，湿发微乱，正在捂嘴大笑，故意把水盆举起来假装攻击朋友。穿浅色吊带背心搭配高腰短裤。画面左侧第三位女性，侧身靠近两位朋友，笑着偷袭泼水。穿轻薄夏日短款上衣搭配休闲短裤。真实湿身效果：头发被水浸湿后有重量感，湿发成束贴合皮肤；脸颊、锁骨、手臂和腿部有自然水珠附着；皮肤呈现夏日被水打湿后的真实水光反射。整体风格：真实手机生活摄影，photorealistic, iPhone candid snapshot, best friends, summer water festival, playful interaction, wet hair, realistic water droplets, natural skin texture, documentary photography, handheld phone camera, imperfect framing, slight motion blur, vertical 9:16。",
+    "prompt": "竖版写实 iPhone 手机抓拍人像，夏日泼水节现场，三位年轻成年东亚女性好闺蜜一起参加泼水节，被朋友用手机随手记录下最欢乐的一瞬间。\n现场人群、水花、彩色水盆、湿润石板路充满背景，强烈夏日阳光照射，空中大量飞溅水珠反射光芒，真实生活感强。\n三位闺蜜靠得很近，正在互相打闹嬉戏，不是摆拍姿势，而是朋友之间自然发生的瞬间。\n有人偷偷从背后泼水，有人笑着躲避，有人故意拿水盆准备反击，三人表情夸张可爱又自然，充满亲密闺蜜氛围。\n画面右侧第一位女性，长黑发完全被水打湿，发丝贴在脸颊和肩膀，笑着回头躲避朋友泼来的水，一只手挡在脸前，一只手拿粉色水盆准备反击。\n穿白色短袖上衣外搭浅蓝薄衬衫、浅色牛仔短裤。\n画面中央第二位女性，湿发微乱，正在捂嘴大笑，故意把水盆举起来假装攻击朋友。\n穿浅色吊带背心搭配高腰短裤。\n画面左侧第三位女性，侧身靠近两位朋友，笑着偷袭泼水。\n穿轻薄夏日短款上衣搭配休闲短裤。\n真实湿身效果：头发被水浸湿后有重量感，湿发成束贴合皮肤；\n脸颊、锁骨、手臂和腿部有自然水珠附着；\n皮肤呈现夏日被水打湿后的真实水光反射。\n整体风格：真实手机生活摄影，photorealistic, iPhone candid snapshot, best friends, summer water festival, playful interaction, wet hair, realistic water droplets, natural skin texture, documentary photography, handheld phone camera, imperfect framing, slight motion blur, vertical 9:16。",
     "negativePrompt": "",
     "parameters": {
       "Model": "Common",
       "Aspect Ratio": "9:16"
     },
-    "mtime": 1785199912027.9905
+    "mtime": 1785238838433.5068
   },
   {
     "title": "宇宙之心水晶壁纸",
@@ -30324,7 +30324,7 @@
       "Model": "Common",
       "Aspect Ratio": "9:16"
     },
-    "mtime": 1785200167265.5654
+    "mtime": 1785238838436.546
   },
   {
     "title": "纸艺卷折地标人像",
@@ -30352,7 +30352,7 @@
       "Model": "Common",
       "Aspect Ratio": "9:16"
     },
-    "mtime": 1785200005916.914
+    "mtime": 1785238838435.106
   },
   {
     "title": "昭和怀旧动漫插画四格",
@@ -30380,7 +30380,7 @@
       "Model": "GPT-Image2",
       "Aspect Ratio": "9:16"
     },
-    "mtime": 1785199950791.6274
+    "mtime": 1785238838434.104
   },
   {
     "title": "地标建筑剖面解剖图",
@@ -30408,7 +30408,7 @@
       "Model": "GPT-Image2",
       "Aspect Ratio": "9:16"
     },
-    "mtime": 1785199580319.1387
+    "mtime": 1785238838426.0728
   },
   {
     "title": "蜂巢女皇高定礼服",
@@ -30436,7 +30436,7 @@
       "Model": "Common",
       "Aspect Ratio": "9:16"
     },
-    "mtime": 1785200478257.0554
+    "mtime": 1785238838494.495
   },
   {
     "title": "古寺猫咪少女",
@@ -30604,7 +30604,7 @@
       "Model": "Common",
       "Aspect Ratio": "9:16"
     },
-    "mtime": 1785200013569.3242
+    "mtime": 1785238838435.2927
   },
   {
     "title": "商场扶梯抓拍夏日连衣短裙",
@@ -30688,7 +30688,7 @@
       "Model": "Midjourney V 8.2",
       "Aspect Ratio": "1:1"
     },
-    "mtime": 1785199588421.5078
+    "mtime": 1785238838426.41
   },
   {
     "title": "阿努比斯王座蜂群环绕",
@@ -30744,7 +30744,7 @@
       "Model": "Common",
       "Aspect Ratio": "9:16"
     },
-    "mtime": 1785200471584.2993
+    "mtime": 1785238838494.2305
   },
   {
     "title": "溶洞光影探险摄影",
@@ -30822,13 +30822,13 @@
     "sourceLink": "https://x.com/i/status/2081726799567016222",
     "author": "尘林 Spark",
     "authorLink": "https://x.com/chenlinspark",
-    "prompt": "生成一张独立的4:5竖版东方古风女性高级时尚 editorial 海报主视觉，主题为\"月下荷灯\"。明确成年的20–30岁东方女性，成熟、清冷但温柔，东方淡颜，真实皮肤，黑色低盘发，青玉花饰。夏夜古风水榭，深青色夜幕、几朵低饱和夜荷、一轮朦胧月亮和一盏暖色纸灯笼，背景有柔和散景，不使用仙侠法术特效。人物坐在水榭木栏旁，身体三分之二侧身朝向灯笼，视线望向灯火；画面中只出现一只可见的手，这只手自然托住一柄象牙白折扇，另一只手完全藏在袖内或身体后方，折扇与手掌连接清晰，五指自然。服装为深一点的低饱和玉绿色外衫、象牙白内衫、淡桃粉内层、香槟金花卉刺绣和少量金色细链。灯笼暖光照亮脸部、扇面和可见手部，月光勾勒发丝和肩线，冷暖对比克制，画面浪漫但不甜腻。无文字、无logo、无水印、无现代物件；避免艳俗夜景、婚庆感、双左手、额外肢体、塑料皮肤和乱码。",
+    "prompt": "生成一张独立的4:5竖版东方古风女性高级时尚 editorial 海报主视觉，主题为\"月下荷灯\"。\n明确成年的20–30岁东方女性，成熟、清冷但温柔，东方淡颜，真实皮肤，黑色低盘发，青玉花饰。\n夏夜古风水榭，深青色夜幕、几朵低饱和夜荷、一轮朦胧月亮和一盏暖色纸灯笼，背景有柔和散景，不使用仙侠法术特效。\n人物坐在水榭木栏旁，身体三分之二侧身朝向灯笼，视线望向灯火；\n画面中只出现一只可见的手，这只手自然托住一柄象牙白折扇，另一只手完全藏在袖内或身体后方，折扇与手掌连接清晰，五指自然。\n服装为深一点的低饱和玉绿色外衫、象牙白内衫、淡桃粉内层、香槟金花卉刺绣和少量金色细链。\n灯笼暖光照亮脸部、扇面和可见手部，月光勾勒发丝和肩线，冷暖对比克制，画面浪漫但不甜腻。\n无文字、无logo、无水印、无现代物件；\n避免艳俗夜景、婚庆感、双左手、额外肢体、塑料皮肤和乱码。",
     "negativePrompt": "艳俗夜景、婚庆感、双左手、额外肢体、塑料皮肤、乱码、仙侠法术特效、文字、logo、水印、现代物件",
     "parameters": {
       "Model": "Common",
       "Aspect Ratio": "4:5"
     },
-    "mtime": 1785199865340.2915
+    "mtime": 1785238838432.7268
   },
   {
     "title": "SQL语法书籍可视化",
@@ -30856,7 +30856,7 @@
       "Model": "Common",
       "Aspect Ratio": "16:9"
     },
-    "mtime": 1785209441174.9146
+    "mtime": 1785238838435.5593
   },
   {
     "title": "纸上成真·京剧花旦妆造设定稿",
@@ -31177,10 +31177,10 @@
     "sourceLink": "https://x.com/i/status/2081696877125480627",
     "author": "小小东",
     "authorLink": "https://x.com/xiaoxiaodong01",
-    "prompt": "用东方留白美学、宋式雅正秩序、侘寂哲学、瑞士国际主义网格、现代编辑设计体系与新东方主义视觉体系进行设计，以原研哉、田中一光、杉浦康平、吕敬人、Josef Müller-Brockmann、Massimo Vignelli 的美学方法辅助构建；配色遵循低饱和主调、冷暖微对比、明度层级分区、单一高纯度强调、大片无色留白与视觉重量平衡原则，形成克制而醒目的配色逻辑；构图采用中轴对称、垂直叙事、黄金分割、模块化网格、上下疏密反差、中心聚焦、边缘弱化、尺度跳跃与大面积负空间，让信息呈现出建筑般的秩序和呼吸感；主体视觉以平面化、版画化、丝网印刷化、低频网点、颗粒噪点、轻微套色偏移、纸张纤维和旧印刷墨迹质感进行转译，细节精致但不过度写实；字体搭配采用高对比宋体或明朝体中文、现代高反差衬线英文与极简无衬线小字形成三级信息系统，中文主标题进行纵向重组、字距拉伸、局部叠压、错位切分、字形穿插、重心偏移和单字放大处理，使文字既承担信息功能又成为核心图形，英文标题使用高瘦比例、优雅细衬线与宽松字距，辅助文字以极小字号、严格对齐和出版物式排版强化高级感；整体升级为更纯净、更克制、更精确的高端文化视觉，呈现静谧、清冷、雅致、疏离、隐逸、诗性、东方、理性、古典、当代、含蓄、神秘、沉静、奢华、文人气、收藏感、时间感与高级编辑感。\n\n————\n主题: 诗句解析——念奴娇赤壁\n\n用途：课件ppt\n\n一共10张，每张都不一样的排版、信息呈现逻辑\n\n能被老师用作获奖课件。\n\n比例16:9",
+    "prompt": "用东方留白美学、宋式雅正秩序、侘寂哲学、瑞士国际主义网格、现代编辑设计体系与新东方主义视觉体系进行设计，以原研哉、田中一光、杉浦康平、吕敬人、Josef Müller-Brockmann、Massimo Vignelli 的美学方法辅助构建；\n配色遵循低饱和主调、冷暖微对比、明度层级分区、单一高纯度强调、大片无色留白与视觉重量平衡原则，形成克制而醒目的配色逻辑；\n构图采用中轴对称、垂直叙事、黄金分割、模块化网格、上下疏密反差、中心聚焦、边缘弱化、尺度跳跃与大面积负空间，让信息呈现出建筑般的秩序和呼吸感；\n主体视觉以平面化、版画化、丝网印刷化、低频网点、颗粒噪点、轻微套色偏移、纸张纤维和旧印刷墨迹质感进行转译，细节精致但不过度写实；\n字体搭配采用高对比宋体或明朝体中文、现代高反差衬线英文与极简无衬线小字形成三级信息系统，中文主标题进行纵向重组、字距拉伸、局部叠压、错位切分、字形穿插、重心偏移和单字放大处理，使文字既承担信息功能又成为核心图形，英文标题使用高瘦比例、优雅细衬线与宽松字距，辅助文字以极小字号、严格对齐和出版物式排版强化高级感；\n整体升级为更纯净、更克制、更精确的高端文化视觉，呈现静谧、清冷、雅致、疏离、隐逸、诗性、东方、理性、古典、当代、含蓄、神秘、沉静、奢华、文人气、收藏感、时间感与高级编辑感。\n\n————\n主题: 诗句解析——念奴娇赤壁\n\n用途：课件ppt\n\n一共10张，每张都不一样的排版、信息呈现逻辑\n\n能被老师用作获奖课件。\n\n比例16:9",
     "negativePrompt": "",
     "parameters": {},
-    "mtime": 1785237853345.1912
+    "mtime": 1785238805024.2964
   },
   {
     "title": "漫画角色档案：紫色调人物设定图",

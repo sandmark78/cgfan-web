@@ -18,7 +18,6 @@ sourceLink: https://x.com/i/status/2014576740492869761
 authorLink: https://x.com/lexx_aura
 author: Lex (lexx_aura)
 ---
-
 ## Prompt
 
 Gemini Nano Banana Pro Prompt: { "meta": { "title": "Heroic Dramatic Studio Portrait", "role": "World-class photographer specializing in editorial portraits", "aesthetic": "Dramatic, saturated studio lighting with a heroic feel" }, "constraints": { "identity_anchor": { "source": "ATTACHED REFERENCE PHOTO", "strictness": "Critical", "instruction": "Perfectly preserve exact facial features, skin tone, hairstyle, and natural likeness without changes." }, "clothing_anchor": { "source": "EXACTLY AS I

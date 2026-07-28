@@ -18,7 +18,6 @@ sourceLink: https://x.com/i/status/2011060762454999475
 authorLink: https://x.com/MayorKingAI
 author: MayorkingAI
 ---
-
 ## Prompt
 
 Kling 2.6 prompt: Hyperspeed FPV in a vertical cyberpunk city Prompt: A massive vertical cyberpunk city at night, endless layers of neon-lit architecture stacked into the sky, holographic ads flickering in the rain. The Hyperspeed FPV camera drops from the upper megastructures at extreme speed, diving through glowing traffic lanes, skimming past flying vehicles, threading between balconies, cables, and steam vents without cutting. The camera slices through a crowded mid-level market filled with 

@@ -19,7 +19,6 @@ sourceLink: "https://x.com/i/status/2081234873923084558"
 authorLink: "https://x.com/VigoCreativeAI"
 author: "simeon-sanai"
 ---
-
 ## Prompt
 
 A cinematic retro-futuristic desert gas station at twilight, lone man standing beside a polished 1980s American muscle car while refueling, chrome gas pump reflecting neon red lights, vintage roadside diner in the distance, telephone poles stretching endlessly across the desert highway.

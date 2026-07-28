@@ -18,7 +18,6 @@ sourceLink: https://x.com/i/status/2014984098213929280
 authorLink: https://x.com/Kashberg_0
 author: Kashberg_0
 ---
-
 ## Prompt
 
 Google Gemini Nano Banana Pro Prompt: Moody cinematic portrait of a young woman with clear fair skin and barely-there makeup, warm natural lips. Loose dark brown hair, softly textured. Calm, self-assured expression. She’s wearing a fitted black turtleneck sweater, clean lines, understated elegance. Dark minimal background fading into black. Gentle diffused front light, soft shadows, subtle film grain, organic color grading, shallow depth of field, high-end editorial feel.

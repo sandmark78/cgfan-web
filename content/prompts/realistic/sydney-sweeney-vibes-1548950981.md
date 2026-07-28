@@ -18,7 +18,6 @@ sourceLink: https://x.com/i/status/2011913223964852336
 authorLink: https://x.com/xmliisu
 author: Melisa♡ xmliisu
 ---
-
 ## Prompt
 
 Sydney Sweeney vibes ✨ Nano Banana Pro Prompt: { "style": "ultra-realistic studio portrait", "subject": { "gender": "female", "age": "young adult", "pose": "leaning slightly forward toward the camera", "expression": "playful, flirty", "facial_details": { "wink": true, "tongue_out": true, "freckles": "natural across fair skin", "makeup": { "blush": "soft pink", "lips": "glossy" } }, "hair": { "color": "blonde", "length": "long", "part": "side-parted", "style": "falling naturally over shoulders" }

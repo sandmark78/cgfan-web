@@ -18,7 +18,6 @@ sourceLink: https://x.com/ChillaiKalan__/status/2010663134743368058?s=20
 authorLink: https://x.com/ChillaiKalan__
 author: K ChillaiKalan__
 ---
-
 ## Prompt
 
 Nano Banana Pro on @artingai Try it here → https://t.co/t4hQHl7iYo… Prompt: Use the attached image of the model as facial reference and physical features. Black and white high-fashion editorial portrait of uploaded person, wearing a loose white blouse. She poses with one arm raised, partially covering her face while holding her hair up, creating a dramatic and artistic composition. Her gaze is intense and captivating, directed toward the camera, exuding a strong, enigmatic aura. Background: mini

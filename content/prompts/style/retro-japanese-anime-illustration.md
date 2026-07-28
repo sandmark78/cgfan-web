@@ -18,7 +18,6 @@ sourceLink: https://x.com/i/status/2081617461586333886
 authorLink: https://x.com/john_my07
 author: "Johnn"
 ---
-
 ## Prompt
 
 A timeless late-1980s to early-1990s Japanese anime illustration, masterfully hand-painted with richly textured backgrounds, delicate watercolor shading, subtle cel-animation aesthetics, gentle film grain, atmospheric lighting, expressive yet naturally proportioned characters, realistic urban and rural environments, emotionally driven slice-of-life storytelling, nostalgic Showa-to-Heisei transition era, soft golden light mixed with colourful neon reflections, intricate environmental storytelling, cinematic compositions, lush foliage, analog photography charm, beautifully layered depth, volumetric sunlight, quiet everyday moments, vintage anime movie atmosphere, city pop nostalgia, ultra-detailed digital artwork, masterpiece quality.

@@ -18,7 +18,6 @@ sourceLink: https://x.com/i/status/2081395886882508953
 authorLink: https://x.com/aylinspace
 author: "Aylin"
 ---
-
 ## Prompt
 
 An ethereal cosmic wallpaper featuring a gigantic radiant heart-shaped crystal suspended in deep space, surrounded by sacred geometry, glowing golden manifestation sigils, angel numbers (111, 222, 444, 888) subtly carved into floating crystal fragments, infinite golden spiral, moon phases, celestial constellations, blooming white roses, lotus flowers, glowing butterflies, shimmering particles, flowing streams of golden energy connecting every symbol together. The background is a breathtaking galaxy filled with purple, pink, blue, and gold nebulae. Luxurious mystical aesthetic, divine feminine energy, abundance, unconditional love, destiny, soulmate attraction, high-frequency vibrations, ultra detailed, cinematic lighting, volumetric light rays, magical atmosphere, premium fantasy art, symmetrical composition, centered design, perfect smartphone wallpaper, 8K, hyper realistic, masterpiece, no text, no watermark.
