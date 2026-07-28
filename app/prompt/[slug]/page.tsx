@@ -185,7 +185,7 @@ export default async function PromptDetailPage({
       {/* 两栏布局 */}
       <div className="detail-layout">
         {/* 左侧：示例图 */}
-        <div className="relative overflow-hidden rounded-xl">
+        <div className="relative overflow-hidden rounded-xl min-w-0">
           <DetailImage src={prompt.cover} alt={prompt.title} />
         </div>
 
