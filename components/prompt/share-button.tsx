@@ -30,12 +30,14 @@ export function ShareButton({ promptSlug, promptTitle, promptDescription }: Shar
     return () => window.removeEventListener('resize', checkMobile)
   }, [])
 
-  // 计算菜单位置（带边界检测）
+  // 计算菜单位置（带边界检测，防止超出视口）
   useEffect(() => {
     if (isOpen && buttonRef.current) {
       const rect = buttonRef.current.getBoundingClientRect()
       const menuWidth = 224 // w-56 = 14rem = 224px
+      const menuHeight = 160 // 估算菜单高度（3个按钮 + padding）
       const viewportWidth = window.innerWidth
+      const viewportHeight = window.innerHeight
       
       // 计算左侧位置，确保不超出右边界
       let left = rect.left
@@ -43,10 +45,13 @@ export function ShareButton({ promptSlug, promptTitle, promptDescription }: Shar
         left = Math.max(8, viewportWidth - menuWidth - 8) // 留出 8px 边距
       }
       
-      setMenuPosition({
-        top: rect.bottom + 8,
-        left: left,
-      })
+      // 计算顶部位置，如果下方空间不够就向上弹出
+      let top = rect.bottom + 8
+      if (top + menuHeight > viewportHeight) {
+        top = rect.top - menuHeight - 8 // 向上弹出，留出 8px 边距
+      }
+      
+      setMenuPosition({ top, left })
     }
   }, [isOpen])
 
@@ -118,13 +123,8 @@ export function ShareButton({ promptSlug, promptTitle, promptDescription }: Shar
 
   // 点击分享按钮
   const handleShareClick = () => {
-    if (isMobile) {
-      // 移动端直接复制链接
-      handleCopyLink()
-    } else {
-      // 桌面端显示下拉菜单
-      setIsOpen(!isOpen)
-    }
+    // 所有设备都显示下拉菜单（带边界检测防止溢出）
+    setIsOpen(!isOpen)
   }
 
   return (
@@ -143,15 +143,13 @@ export function ShareButton({ promptSlug, promptTitle, promptDescription }: Shar
           />
         </svg>
         {copied ? '已复制' : '分享'}
-        {!isMobile && (
-          <svg className={`h-3 w-3 transition-transform ${isOpen ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-          </svg>
-        )}
+        <svg className={`h-3 w-3 transition-transform ${isOpen ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+        </svg>
       </button>
 
-      {/* 桌面端才显示下拉菜单 */}
-      {!isMobile && isOpen &&
+      {/* 下拉菜单（所有设备都显示，带边界检测防止溢出） */}
+      {isOpen &&
         createPortal(
           <div
             ref={menuRef}
