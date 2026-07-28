@@ -1,5 +1,5 @@
 ---
-title: Champagne problems, literally.
+title: "香槟气泡里的珠宝梦"
 slug: champagne-problems-literally-1565919957
 model: Midjourney
 category: realistic

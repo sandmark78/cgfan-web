@@ -1,5 +1,5 @@
 ---
-title: Gemini nano banana pro 3.0
+title: "Gemini 柔软午后时光"
 slug: gemini-nano-banana-pro-30-1570899670
 model: Midjourney
 category: realistic

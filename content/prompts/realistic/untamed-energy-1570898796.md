@@ -1,5 +1,5 @@
 ---
-title: Untamed energy🐾
+title: "野性力量动物肖像"
 slug: untamed-energy-1570898796
 model: Midjourney
 category: realistic

@@ -1,5 +1,5 @@
 ---
-title: "A hyper realistic 8k medium shot, captured with a standard le..."
+title: "A hyper realistic 8k medium shot, captur... 提示词"
 slug: gemnana-704
 date: 2026-01-06
 added: 2026-07-27T11:31:33+08:00

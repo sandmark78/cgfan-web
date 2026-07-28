@@ -1,5 +1,5 @@
 ---
-title: "Goog morning. 💛☕️"
+title: "Goog morning. 💛☕️ 提示词"
 slug: gemnana-1492
 date: 2026-01-17
 added: 2026-07-27T11:31:51+08:00

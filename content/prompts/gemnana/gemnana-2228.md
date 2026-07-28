@@ -1,5 +1,5 @@
 ---
-title: "This might be the boldest Midjourney style code I've found al..."
+title: "This might be the boldest Midjourney sty... 提示词"
 slug: gemnana-2228
 date: 2026-02-23
 added: 2026-07-27T12:54:10+08:00

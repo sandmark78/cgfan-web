@@ -1,5 +1,5 @@
 ---
-title: "Hyper realistic cinematic product photograph of a luxury spor..."
+title: "Hyper realistic cinematic 产品 photog..."
 slug: gemnana-2025
 date: 2026-02-08
 added: 2026-07-27T12:54:10+08:00

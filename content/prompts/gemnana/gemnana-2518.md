@@ -1,5 +1,5 @@
 ---
-title: "cinematic portrait of a young woman standing perfectly still..."
+title: "cinematic 肖像 of a young woman stan..."
 slug: gemnana-2518
 date: 2026-03-14
 added: 2026-07-27T12:54:17+08:00

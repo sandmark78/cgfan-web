@@ -1,5 +1,5 @@
 ---
-title: "Ultra realistic dramatic portrait of a man or woman (from upl..."
+title: "Ultra realistic dramatic 肖像 of a m..."
 slug: gemnana-2271
 date: 2026-02-26
 added: 2026-07-27T12:54:10+08:00

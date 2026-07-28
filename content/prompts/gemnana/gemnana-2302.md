@@ -1,5 +1,5 @@
 ---
-title: "A photorealistic, highly detailed commercial product photogra..."
+title: "A photorealistic, highly detailed commer... 提示词"
 slug: gemnana-2302
 date: 2026-02-27
 added: 2026-07-27T12:54:10+08:00

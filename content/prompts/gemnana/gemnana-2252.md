@@ -1,5 +1,5 @@
 ---
-title: "Style & Composition: High fashion editorial typography poster..."
+title: "Style & Composition: High fashion editor... 提示词"
 slug: gemnana-2252
 date: 2026-02-24
 added: 2026-07-27T12:54:10+08:00

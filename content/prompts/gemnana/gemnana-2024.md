@@ -1,5 +1,5 @@
 ---
-title: "A cinematic fantasy scene inside a cozy artist’s studio. A yo..."
+title: "A cinematic fantasy scene inside a cozy... 提示词"
 slug: gemnana-2024
 date: 2026-02-08
 added: 2026-07-27T12:54:10+08:00

@@ -1,5 +1,5 @@
 ---
-title: "[product setup], minimalist product photo, clean warm studio..."
+title: "[产品 setup], minimalist 产品 phot..."
 slug: gemnana-2280
 date: 2026-02-26
 added: 2026-07-27T12:54:10+08:00

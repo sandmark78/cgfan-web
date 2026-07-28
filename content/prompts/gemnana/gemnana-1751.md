@@ -1,5 +1,5 @@
 ---
-title: "Ultra realistic cinematic medium close up portrait of the ref..."
+title: "Ultra realistic cinematic medium close u... 提示词"
 slug: gemnana-1751
 date: 2026-01-27
 added: 2026-07-27T12:54:05+08:00

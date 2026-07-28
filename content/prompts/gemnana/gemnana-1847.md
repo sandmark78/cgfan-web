@@ -1,5 +1,5 @@
 ---
-title: "Portrait of a 21 year old man of appearance with masculine fa..."
+title: "肖像 of a 21 year old man of appeara..."
 slug: gemnana-1847
 date: 2026-01-31
 added: 2026-07-27T12:54:05+08:00

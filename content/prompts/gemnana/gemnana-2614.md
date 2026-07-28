@@ -1,5 +1,5 @@
 ---
-title: "A detailed, collectible style 3D render of a linear processio..."
+title: "A detailed, collectible style 3D render... 提示词"
 slug: gemnana-2614
 date: 2026-03-19
 added: 2026-07-27T12:54:17+08:00

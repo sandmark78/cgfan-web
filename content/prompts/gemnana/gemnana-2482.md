@@ -1,5 +1,5 @@
 ---
-title: "A highly detailed pebble mosaic portrait of a beautiful woman..."
+title: "A highly detailed pebble mosaic 肖像..."
 slug: gemnana-2482
 date: 2026-03-10
 added: 2026-07-27T12:54:17+08:00

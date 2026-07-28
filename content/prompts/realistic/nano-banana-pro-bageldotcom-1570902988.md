@@ -1,5 +1,5 @@
 ---
-title: Nano Banana Pro @bageldotcom 🎾
+title: "网球运动动感人像"
 slug: nano-banana-pro-bageldotcom-1570902988
 model: Midjourney
 category: realistic

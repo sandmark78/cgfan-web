@@ -1,5 +1,5 @@
 ---
-title: "Realistic, 3D, product, and historical visuals, all generated..."
+title: "Realistic, 3D, 产品, and historical v..."
 slug: gemnana-601
 date: 2025-12-22
 added: 2026-07-27T11:31:27+08:00

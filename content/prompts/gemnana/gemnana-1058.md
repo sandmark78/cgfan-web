@@ -1,5 +1,5 @@
 ---
-title: "Use the attached image of the model as facial reference and p..."
+title: "Use the attached 图像 of the model as f..."
 slug: gemnana-1058
 date: 2026-01-12
 added: 2026-07-27T11:31:45+08:00

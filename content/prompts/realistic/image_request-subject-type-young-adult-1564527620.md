@@ -1,5 +1,5 @@
 ---
-title: '{ "image_request": { "subject": { "type": "Young a...
+title: "年轻女性人像写真"
   "Use the uploaded image as a reference.", "expression": "Use the uploaded image
   as a reference.", "gaze": "Use the uploaded image as a reference.", "emotion":'
 slug: image_request-subject-type-young-adult-1564527620

@@ -1,5 +1,5 @@
 ---
-title: "A minimalist studio photograph fashion ad. At the top center,..."
+title: "A minimalist studio photograph fashion a... 提示词"
 slug: gemnana-1198
 date: 2026-01-14
 added: 2026-07-27T11:31:45+08:00

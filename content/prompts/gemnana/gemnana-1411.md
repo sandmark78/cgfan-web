@@ -1,5 +1,5 @@
 ---
-title: "A cinematic portrait of a young man in the uploaded image sit..."
+title: "A cinematic 肖像 of a young man in t..."
 slug: gemnana-1411
 date: 2026-01-16
 added: 2026-07-27T11:31:50+08:00

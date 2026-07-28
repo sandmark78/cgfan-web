@@ -1,5 +1,5 @@
 ---
-title: "Drop your Sunday Dragon"
+title: "Drop your Sunday Dragon 提示词"
 slug: gemnana-1524
 date: 2026-01-18
 added: 2026-07-27T11:31:51+08:00

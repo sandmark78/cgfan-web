@@ -1,5 +1,5 @@
 ---
-title: "Chat GPT Image 1.5 🎨"
+title: "Chat GPT 图像 1.5 🎨"
 slug: gemnana-737
 date: 2026-01-06
 added: 2026-07-27T11:31:33+08:00

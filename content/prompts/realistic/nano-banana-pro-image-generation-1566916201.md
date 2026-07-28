@@ -1,5 +1,5 @@
 ---
-title: Nano Banana pro image generation
+title: "电影感戏剧光影人像"
 slug: nano-banana-pro-image-generation-1566916201
 model: Midjourney
 category: realistic

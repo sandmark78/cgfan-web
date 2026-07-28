@@ -1,5 +1,5 @@
 ---
-title: "A bold, high contrast digital portrait of a young man in side..."
+title: "A bold, high contrast digital 肖像 o..."
 slug: gemnana-2055
 date: 2026-02-09
 added: 2026-07-27T12:54:10+08:00

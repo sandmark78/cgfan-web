@@ -1,5 +1,5 @@
 ---
-title: "Convert this image into a dramatic, stylized portrait (use th..."
+title: "Convert this 图像 into a dramatic, styl..."
 slug: gemnana-1696
 date: 2026-01-25
 added: 2026-07-27T12:53:55+08:00

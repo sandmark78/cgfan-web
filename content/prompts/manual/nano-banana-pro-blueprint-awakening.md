@@ -1,5 +1,5 @@
 ---
-title: "Nano Banana Pro Blueprint Awakening"
+title: "Nano Banana Pro Blueprint Awakening 提示词"
 slug: nano-banana-pro-blueprint-awakening
 model: Adobe Firefly
 category: 3d

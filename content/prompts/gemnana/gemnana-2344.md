@@ -1,5 +1,5 @@
 ---
-title: "A colossal hand gripping an enormous vintage fountain pen, ca..."
+title: "A colossal hand gripping an enormous vin... 提示词"
 slug: gemnana-2344
 date: 2026-03-02
 added: 2026-07-27T12:54:17+08:00

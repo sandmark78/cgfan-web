@@ -1,5 +1,5 @@
 ---
-title: "This SREF nails a retro poster vibe with flat shapes, warm pa..."
+title: "This SREF nails a retro poster vibe with... 提示词"
 slug: gemnana-810
 date: 2026-01-07
 added: 2026-07-27T11:31:33+08:00

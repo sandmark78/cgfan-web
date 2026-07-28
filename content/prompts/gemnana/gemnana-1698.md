@@ -1,5 +1,5 @@
 ---
-title: "[product], centered top down flat lay, surrounded by [ingredi..."
+title: "[产品], centered top down flat lay, s..."
 slug: gemnana-1698
 date: 2026-01-25
 added: 2026-07-27T12:53:55+08:00

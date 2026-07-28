@@ -1,5 +1,5 @@
 ---
-title: "This SREF brings a clean retro look with bold colors, vintage..."
+title: "This SREF brings a clean retro look with... 提示词"
 slug: gemnana-814
 date: 2026-01-07
 added: 2026-07-27T11:31:33+08:00

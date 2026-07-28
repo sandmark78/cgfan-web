@@ -1,5 +1,5 @@
 ---
-title: "Ultra realistic 4:5 vertical format ultra wide angle 13mm sel..."
+title: "Ultra realistic 4:5 竖版 format ultr..."
 slug: gemnana-2695
 date: 2026-03-28
 added: 2026-07-27T12:54:23+08:00

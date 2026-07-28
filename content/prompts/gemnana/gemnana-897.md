@@ -1,5 +1,5 @@
 ---
-title: "A clean, modern personal branding mockup featuring a cohesive..."
+title: "A clean, modern personal branding mockup... 提示词"
 slug: gemnana-897
 date: 2026-01-09
 added: 2026-07-27T11:31:40+08:00

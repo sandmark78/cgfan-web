@@ -1,5 +1,5 @@
 ---
-title: "Professional photography, medium wide shot. A massive, realis..."
+title: "Professional 摄影, medium wide sh..."
 slug: gemnana-801
 date: 2026-01-07
 added: 2026-07-27T11:31:33+08:00

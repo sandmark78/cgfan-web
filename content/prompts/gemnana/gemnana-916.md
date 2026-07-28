@@ -1,5 +1,5 @@
 ---
-title: "Natural street portrait inspired by Scott Schuman, woman walk..."
+title: "Natural street 肖像 inspired by Scot..."
 slug: gemnana-916
 date: 2026-01-09
 added: 2026-07-27T11:31:40+08:00

@@ -1,5 +1,5 @@
 ---
-title: "You can visualise your full brand identity in one prompt👇"
+title: "You can visualise your full brand identi... 提示词"
 slug: gemnana-2600
 date: 2026-03-18
 added: 2026-07-27T12:54:17+08:00

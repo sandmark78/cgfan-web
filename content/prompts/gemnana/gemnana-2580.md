@@ -1,5 +1,5 @@
 ---
-title: "CORE OBJECTIVE: Create a professional 8k studio editorial bas..."
+title: "CORE OBJECTIVE: Create a professional 8k... 提示词"
 slug: gemnana-2580
 date: 2026-03-17
 added: 2026-07-27T12:54:17+08:00

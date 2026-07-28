@@ -1,5 +1,5 @@
 ---
-title: "A product photo in a premium advertising style. Two tall matt..."
+title: "A 产品 photo in a premium advertising..."
 slug: gemnana-1943
 date: 2026-02-03
 added: 2026-07-27T12:54:05+08:00

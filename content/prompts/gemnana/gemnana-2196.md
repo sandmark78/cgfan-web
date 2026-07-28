@@ -1,5 +1,5 @@
 ---
-title: "A cinematic fashion editorial portrait of male model for a GQ..."
+title: "A cinematic fashion editorial 肖像 o..."
 slug: gemnana-2196
 date: 2026-02-21
 added: 2026-07-27T12:54:10+08:00

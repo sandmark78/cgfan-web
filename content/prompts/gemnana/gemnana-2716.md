@@ -1,5 +1,5 @@
 ---
-title: "A high fashion, cinematic portrait of a young woman with a sh..."
+title: "A high fashion, cinematic 肖像 of a..."
 slug: gemnana-2716
 date: 2026-03-29
 added: 2026-07-27T12:54:23+08:00

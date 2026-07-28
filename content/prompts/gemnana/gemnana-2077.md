@@ -1,5 +1,5 @@
 ---
-title: "Highly detailed caricature figurine of [SUBJECT] as a cute bu..."
+title: "Highly detailed caricature figurine of [... 提示词"
 slug: gemnana-2077
 date: 2026-02-11
 added: 2026-07-27T12:54:10+08:00

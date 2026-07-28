@@ -1,5 +1,5 @@
 ---
-title: "Create a dramatic, digital painting style portrait of a male..."
+title: "Create a dramatic, digital painting styl... 提示词"
 slug: gemnana-2170
 date: 2026-02-19
 added: 2026-07-27T12:54:10+08:00

@@ -1,5 +1,5 @@
 ---
-title: "A high fashion editorial portrait of a woman reclining elegan..."
+title: "A high fashion editorial 肖像 of a w..."
 slug: gemnana-1195
 date: 2026-01-14
 added: 2026-07-27T11:31:45+08:00

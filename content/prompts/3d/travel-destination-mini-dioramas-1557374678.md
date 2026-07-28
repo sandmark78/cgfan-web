@@ -1,5 +1,5 @@
 ---
-title: Travel Destination Mini Dioramas
+title: "旅行地标微缩立体模型"
 slug: travel-destination-mini-dioramas-1557374678
 model: Midjourney
 category: 3d

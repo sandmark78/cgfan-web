@@ -1,5 +1,5 @@
 ---
-title: "Generate a photorealistic medium full body shot of a young wo..."
+title: "Generate a photorealistic medium full bo... 提示词"
 slug: gemnana-1104
 date: 2026-01-13
 added: 2026-07-27T11:31:45+08:00

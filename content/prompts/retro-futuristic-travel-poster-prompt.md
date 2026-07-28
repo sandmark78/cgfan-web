@@ -1,5 +1,5 @@
 ---
-title: "Retro-Futuristic Travel Poster — Vintage Paper Quilling Style"
+title: "Retro-Futuristic 旅行 Poster — Vintage..."
 slug: "retro-futuristic-travel-poster-prompt"
 author: "CGfan Editorial"
 date: 2026-07-27

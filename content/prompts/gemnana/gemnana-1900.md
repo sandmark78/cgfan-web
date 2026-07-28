@@ -1,5 +1,5 @@
 ---
-title: "A cinematic vintage fashion portrait of a graceful young woma..."
+title: "A cinematic vintage fashion 肖像 of..."
 slug: gemnana-1900
 date: 2026-02-02
 added: 2026-07-27T12:54:05+08:00

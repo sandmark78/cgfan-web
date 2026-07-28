@@ -1,5 +1,5 @@
 ---
-title: "Ultra realistic top down photograph of detergent foam forming..."
+title: "Ultra realistic top down photograph of d... 提示词"
 slug: gemnana-2226
 date: 2026-02-23
 added: 2026-07-27T12:54:10+08:00

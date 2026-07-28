@@ -1,5 +1,5 @@
 ---
-title: "A cinematic portrait of a young man standing still in the mid..."
+title: "A cinematic 肖像 of a young man stan..."
 slug: gemnana-2256
 date: 2026-02-25
 added: 2026-07-27T12:54:10+08:00

@@ -1,5 +1,5 @@
 ---
-title: "Use the provided image strictly as the reference for the subj..."
+title: "Use the provided 图像 strictly as the r..."
 slug: gemnana-2546
 date: 2026-03-15
 added: 2026-07-27T12:54:17+08:00

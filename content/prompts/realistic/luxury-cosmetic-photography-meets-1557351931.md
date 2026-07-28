@@ -1,5 +1,5 @@
 ---
-title: Luxury cosmetic photography meets frozen perfection 🧊
+title: "Luxury cosmetic photograp... 创作"
 slug: luxury-cosmetic-photography-meets-1557351931
 model: Midjourney
 category: realistic

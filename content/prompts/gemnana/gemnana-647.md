@@ -1,5 +1,5 @@
 ---
-title: "A hyper realistic travel advertisement in square format (1080..."
+title: "A hyper realistic 旅行 advertisement i..."
 slug: gemnana-647
 date: 2026-01-02
 added: 2026-07-27T11:31:33+08:00

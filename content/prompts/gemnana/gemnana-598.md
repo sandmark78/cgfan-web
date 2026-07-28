@@ -1,5 +1,5 @@
 ---
-title: "GPT Image 1.5 on Higgsfield keeps multi shot scenes consisten..."
+title: "GPT 图像 1.5 on Higgsfield keeps multi..."
 slug: gemnana-598
 date: 2025-12-21
 added: 2026-07-27T11:31:27+08:00

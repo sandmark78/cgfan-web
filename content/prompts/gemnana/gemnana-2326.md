@@ -1,5 +1,5 @@
 ---
-title: "A hyper realistic, 8k, high fidelity photograph captured with..."
+title: "A hyper realistic, 8k, high fidelity pho... 提示词"
 slug: gemnana-2326
 date: 2026-03-01
 added: 2026-07-27T12:54:10+08:00

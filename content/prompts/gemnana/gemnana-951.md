@@ -1,5 +1,5 @@
 ---
-title: "Create a hyper realistic 3D holographic blueprint projection..."
+title: "Create a hyper realistic 3D holographic... 提示词"
 slug: gemnana-951
 date: 2026-01-10
 added: 2026-07-27T11:31:40+08:00

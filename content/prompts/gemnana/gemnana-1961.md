@@ -1,5 +1,5 @@
 ---
-title: "Input Variable: [Any Famous Building Guggenheim, Burj Khalifa..."
+title: "Input Variable: [Any Famous Building Gug... 提示词"
 slug: gemnana-1961
 date: 2026-02-04
 added: 2026-07-27T12:54:05+08:00

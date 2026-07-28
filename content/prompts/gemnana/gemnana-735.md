@@ -1,5 +1,5 @@
 ---
-title: "A high detail, cinematic shot of an astronaut floating in out..."
+title: "A high detail, cinematic shot of an astr... 提示词"
 slug: gemnana-735
 date: 2026-01-06
 added: 2026-07-27T11:31:33+08:00

@@ -1,5 +1,5 @@
 ---
-title: "[upload luxury product photo]"
+title: "[upload 奢华 产品 photo]"
 slug: gemnana-758
 date: 2026-01-06
 added: 2026-07-27T11:31:33+08:00

@@ -1,5 +1,5 @@
 ---
-title: "A hyper detailed 3D render of a collectible chess piece desig..."
+title: "A hyper detailed 3D render of a collecti... 提示词"
 slug: gemnana-645
 date: 2026-01-02
 added: 2026-07-27T11:31:33+08:00

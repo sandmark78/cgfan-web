@@ -1,5 +1,5 @@
 ---
-title: "A stylish man wearing a tan suit and sunglasses is featured i..."
+title: "A stylish man wearing a tan suit and sun... 提示词"
 slug: gemnana-630
 date: 2025-12-29
 added: 2026-07-27T11:31:27+08:00

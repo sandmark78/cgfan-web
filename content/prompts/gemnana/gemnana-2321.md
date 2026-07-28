@@ -1,5 +1,5 @@
 ---
-title: "Create a single film noir–style cinematic image divided into..."
+title: "Create a single film noir–style cinemati... 提示词"
 slug: gemnana-2321
 date: 2026-02-28
 added: 2026-07-27T12:54:10+08:00

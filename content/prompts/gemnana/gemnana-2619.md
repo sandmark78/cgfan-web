@@ -1,5 +1,5 @@
 ---
-title: "Ultra realistic cinematic portrait of a stylish man in a blac..."
+title: "Ultra realistic cinematic 肖像 of a..."
 slug: gemnana-2619
 date: 2026-03-20
 added: 2026-07-27T12:54:17+08:00

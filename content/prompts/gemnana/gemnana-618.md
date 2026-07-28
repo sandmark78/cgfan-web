@@ -1,5 +1,5 @@
 ---
-title: "Create a 3D of [OBJECT] made of white snow. The voluminous ar..."
+title: "Create a 3D of [物体] made of white sn..."
 slug: gemnana-618
 date: 2025-12-25
 added: 2026-07-27T11:31:27+08:00

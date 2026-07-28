@@ -1,5 +1,5 @@
 ---
-title: "Minimalist food photograph, [1080x1080] – a single [FOOD] res..."
+title: "Minimalist food photograph, [1080x1080]... 提示词"
 slug: gemnana-677
 date: 2026-01-05
 added: 2026-07-27T11:31:33+08:00

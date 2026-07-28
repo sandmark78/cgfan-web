@@ -1,5 +1,5 @@
 ---
-title: "Use the uploaded image as a reference for the character. Crea..."
+title: "Use the uploaded 图像 as a reference fo..."
 slug: gemnana-1179
 date: 2026-01-14
 added: 2026-07-27T11:31:45+08:00

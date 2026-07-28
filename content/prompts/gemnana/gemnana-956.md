@@ -1,5 +1,5 @@
 ---
-title: "A dramatic black and white studio portrait of a thoughtful ma..."
+title: "A dramatic black and white studio portra... 提示词"
 slug: gemnana-956
 date: 2026-01-10
 added: 2026-07-27T11:31:40+08:00

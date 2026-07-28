@@ -1,5 +1,5 @@
 ---
-title: "A young woman with an elegant, polished look. In one frame, s..."
+title: "A young woman with an elegant, polished... 提示词"
 slug: gemnana-2200
 date: 2026-02-21
 added: 2026-07-27T12:54:10+08:00

@@ -1,5 +1,5 @@
 ---
-title: "This SREF nails a cinematic anime look with epic scale, soft..."
+title: "This SREF nails a cinematic anime look w... 提示词"
 slug: gemnana-876
 date: 2026-01-09
 added: 2026-07-27T11:31:40+08:00

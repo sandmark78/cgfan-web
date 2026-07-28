@@ -1,5 +1,5 @@
 ---
-title: "A cinematic 3×3 grid of film still frames featuring the same..."
+title: "A cinematic 3×3 grid of film still frame... 提示词"
 slug: gemnana-936
 date: 2026-01-10
 added: 2026-07-27T11:31:40+08:00

@@ -1,5 +1,5 @@
 ---
-title: "A serene minimalist landscape style with soft gradients."
+title: "A serene minimalist landscape style with... 提示词"
 slug: gemnana-1528
 date: 2026-01-18
 added: 2026-07-27T11:31:51+08:00

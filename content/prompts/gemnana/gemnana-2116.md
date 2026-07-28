@@ -1,5 +1,5 @@
 ---
-title: "Create a portrait without changing the facial features. A bla..."
+title: "Create a 肖像 without changing the f..."
 slug: gemnana-2116
 date: 2026-02-14
 added: 2026-07-27T12:54:10+08:00

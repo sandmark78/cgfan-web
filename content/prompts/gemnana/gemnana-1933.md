@@ -1,5 +1,5 @@
 ---
-title: "Sharing my submission for"
+title: "Sharing my submission for 提示词"
 slug: gemnana-1933
 date: 2026-02-03
 added: 2026-07-27T12:54:05+08:00

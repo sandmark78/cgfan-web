@@ -1,5 +1,5 @@
 ---
-title: "Create a typographic art portrait using the uploaded photo of..."
+title: "Create a typographic art 肖像 using..."
 slug: gemnana-2128
 date: 2026-02-15
 added: 2026-07-27T12:54:10+08:00

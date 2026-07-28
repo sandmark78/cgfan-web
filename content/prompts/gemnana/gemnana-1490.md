@@ -1,5 +1,5 @@
 ---
-title: "Transform the original photo into a dramatic, photorealistic,..."
+title: "Transform the original photo into a dram... 提示词"
 slug: gemnana-1490
 date: 2026-01-17
 added: 2026-07-27T11:31:51+08:00

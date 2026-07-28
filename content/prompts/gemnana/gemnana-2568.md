@@ -1,5 +1,5 @@
 ---
-title: "Use the image I sent. Create a hand drawn portrait illustrati..."
+title: "Use the 图像 I sent. Create a hand draw..."
 slug: gemnana-2568
 date: 2026-03-16
 added: 2026-07-27T12:54:17+08:00

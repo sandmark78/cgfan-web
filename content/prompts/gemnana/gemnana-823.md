@@ -1,5 +1,5 @@
 ---
-title: "Ultra Realistic Promotional"
+title: "Ultra Realistic Promotional 提示词"
 slug: gemnana-823
 date: 2026-01-08
 added: 2026-07-27T11:31:39+08:00

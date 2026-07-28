@@ -1,5 +1,5 @@
 ---
-title: "[BRAND NAME]. Act as a Creative Director and Still Life Photo..."
+title: "[BRAND NAME]. Act as a Creative Director... 提示词"
 slug: gemnana-1738
 date: 2026-01-26
 added: 2026-07-27T12:53:59+08:00

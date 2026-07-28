@@ -1,5 +1,5 @@
 ---
-title: "2×2 grid luxury perfume advertisement for Chanel perfume, fou..."
+title: "2×2 grid 奢华 perfume advertisement fo..."
 slug: gemnana-1770
 date: 2026-01-27
 added: 2026-07-27T12:54:05+08:00

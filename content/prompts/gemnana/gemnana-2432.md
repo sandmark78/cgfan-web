@@ -1,5 +1,5 @@
 ---
-title: "Minimalist branded flower packaging design for [brand], eco f..."
+title: "Minimalist branded flower packaging desi... 提示词"
 slug: gemnana-2432
 date: 2026-03-07
 added: 2026-07-27T12:54:17+08:00

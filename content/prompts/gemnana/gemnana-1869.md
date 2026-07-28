@@ -1,5 +1,5 @@
 ---
-title: "Cinematic portrait of a handsome young man with short styled..."
+title: "Cinematic 肖像 of a handsome young m..."
 slug: gemnana-1869
 date: 2026-02-01
 added: 2026-07-27T12:54:05+08:00

@@ -1,5 +1,5 @@
 ---
-title: "Transform this image [UPLOAD YOU'RE IMAGE] into a 64K DSLR sh..."
+title: "Transform this 图像 [UPLOAD YOU'RE IMAG..."
 slug: gemnana-1241
 date: 2026-01-14
 added: 2026-07-27T11:31:46+08:00

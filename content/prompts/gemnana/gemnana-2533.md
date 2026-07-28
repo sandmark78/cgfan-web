@@ -1,5 +1,5 @@
 ---
-title: "Make a hyper realistic cinematic movie poster of a powerful y..."
+title: "Make a hyper realistic cinematic movie p... 提示词"
 slug: gemnana-2533
 date: 2026-03-15
 added: 2026-07-27T12:54:17+08:00

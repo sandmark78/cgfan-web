@@ -1,5 +1,5 @@
 ---
-title: "Create a 2x2 cinematic grid featuring the same characters and..."
+title: "Create a 2x2 cinematic grid featuring th... 提示词"
 slug: gemnana-761
 date: 2026-01-06
 added: 2026-07-27T11:31:33+08:00

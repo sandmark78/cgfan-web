@@ -1,5 +1,5 @@
 ---
-title: "Cinematic Portrait Photography — Golden Hour Editorial"
+title: "Cinematic 肖像 摄影 — 金色..."
 slug: "cinematic-portrait-photography-prompt"
 author: "CGfan Editorial"
 date: 2026-07-27

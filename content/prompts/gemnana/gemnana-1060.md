@@ -1,5 +1,5 @@
 ---
-title: "Create a hyper realistic underwater close range portrait capt..."
+title: "Create a hyper realistic underwater clos... 提示词"
 slug: gemnana-1060
 date: 2026-01-12
 added: 2026-07-27T11:31:45+08:00

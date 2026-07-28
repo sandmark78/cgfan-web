@@ -1,5 +1,5 @@
 ---
-title: "[BRAND NAME]. Act as a vector illustrator designing a trendy,..."
+title: "[BRAND NAME]. Act as a vector illustrato... 提示词"
 slug: gemnana-965
 date: 2026-01-10
 added: 2026-07-27T11:31:40+08:00

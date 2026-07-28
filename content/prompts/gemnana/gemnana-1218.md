@@ -1,5 +1,5 @@
 ---
-title: "8K Ultra Realistic Promotional"
+title: "8K Ultra Realistic Promotional 提示词"
 slug: gemnana-1218
 date: 2026-01-14
 added: 2026-07-27T11:31:46+08:00

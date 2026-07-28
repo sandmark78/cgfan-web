@@ -1,5 +1,5 @@
 ---
-title: "A close up studio portrait of me, masculine features, texture..."
+title: "A close up studio 肖像 of me, mascul..."
 slug: gemnana-1792
 date: 2026-01-28
 added: 2026-07-27T12:54:05+08:00

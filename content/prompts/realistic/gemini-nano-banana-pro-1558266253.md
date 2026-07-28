@@ -1,5 +1,5 @@
 ---
-title: Gemini Nano Banana Pro
+title: "戏剧光影英雄人像"
 slug: gemini-nano-banana-pro-1558266253
 model: Midjourney
 category: realistic

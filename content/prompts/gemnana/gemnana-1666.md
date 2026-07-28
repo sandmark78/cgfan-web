@@ -1,5 +1,5 @@
 ---
-title: "[person], [pose], oversized product in the attached image as..."
+title: "[person], [pose], oversized 产品 in t..."
 slug: gemnana-1666
 date: 2026-01-24
 added: 2026-07-27T12:53:44+08:00

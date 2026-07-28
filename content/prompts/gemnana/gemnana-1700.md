@@ -1,5 +1,5 @@
 ---
-title: "Vertical 4:5 surreal 3D scene featuring a photorealistic char..."
+title: "竖版 4:5 surreal 3D scene featuring..."
 slug: gemnana-1700
 date: 2026-01-25
 added: 2026-07-27T12:53:55+08:00

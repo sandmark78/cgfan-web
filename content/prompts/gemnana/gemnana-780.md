@@ -1,5 +1,5 @@
 ---
-title: "A panning studio portrait of a mysterious female figure captu..."
+title: "A panning studio 肖像 of a mysteriou..."
 slug: gemnana-780
 date: 2026-01-07
 added: 2026-07-27T11:31:33+08:00

@@ -1,5 +1,5 @@
 ---
-title: "A high end commercial food photograph of the same two tacos f..."
+title: "A high end commercial food photograph of... 提示词"
 slug: gemnana-1337
 date: 2026-01-15
 added: 2026-07-27T11:31:50+08:00

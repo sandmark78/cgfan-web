@@ -1,5 +1,5 @@
 ---
-title: "Ultra clean modern recipe infographic. Showcase [FOOD] in a v..."
+title: "Ultra clean modern recipe infographic. S... 提示词"
 slug: gemnana-1559
 date: 2026-01-18
 added: 2026-07-27T11:31:51+08:00

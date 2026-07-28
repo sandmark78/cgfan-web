@@ -1,5 +1,5 @@
 ---
-title: "A hyper detailed, adorable golden hamster in a bright, cheerf..."
+title: "A hyper detailed, adorable 金色 hamste..."
 slug: gemnana-1914
 date: 2026-02-02
 added: 2026-07-27T12:54:05+08:00

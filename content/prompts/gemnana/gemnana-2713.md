@@ -1,5 +1,5 @@
 ---
-title: "minimalist luxury product photography of an edible sculpture..."
+title: "minimalist 奢华 产品 摄影 of..."
 slug: gemnana-2713
 date: 2026-03-29
 added: 2026-07-27T12:54:23+08:00

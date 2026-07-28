@@ -1,5 +1,5 @@
 ---
-title: "A cinematic fashion portrait of a young woman with a short wa..."
+title: "A cinematic fashion 肖像 of a young..."
 slug: gemnana-935
 date: 2026-01-10
 added: 2026-07-27T11:31:40+08:00

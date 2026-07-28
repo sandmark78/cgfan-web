@@ -1,5 +1,5 @@
 ---
-title: "Cinematic double exposure portrait of a woman in side profile..."
+title: "Cinematic double exposure 肖像 of a..."
 slug: gemnana-2498
 date: 2026-03-12
 added: 2026-07-27T12:54:17+08:00

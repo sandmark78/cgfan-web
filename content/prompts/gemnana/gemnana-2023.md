@@ -1,5 +1,5 @@
 ---
-title: "Editorial 3x3 photo grid in a clean soft beige studio. Charac..."
+title: "Editorial 3x3 photo grid in a clean soft... 提示词"
 slug: gemnana-2023
 date: 2026-02-07
 added: 2026-07-27T12:54:10+08:00

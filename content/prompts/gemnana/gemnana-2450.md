@@ -1,5 +1,5 @@
 ---
-title: "Ultra realistic cinematic two frame composition. In the top g..."
+title: "Ultra realistic cinematic two frame comp... 提示词"
 slug: gemnana-2450
 date: 2026-03-09
 added: 2026-07-27T12:54:17+08:00

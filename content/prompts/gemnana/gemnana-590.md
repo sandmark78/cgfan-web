@@ -1,5 +1,5 @@
 ---
-title: "Hyperrealistic dark fantasy portrait of a mysterious hooded m..."
+title: "Hyperrealistic dark fantasy 肖像 of..."
 slug: gemnana-590
 date: 2025-12-20
 added: 2026-07-27T11:31:27+08:00

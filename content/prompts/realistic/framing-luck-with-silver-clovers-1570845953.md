@@ -1,5 +1,5 @@
 ---
-title: Framing luck with silver clovers.
+title: "银叶三叶草微距晨露"
 slug: framing-luck-with-silver-clovers-1570845953
 model: Midjourney
 category: realistic

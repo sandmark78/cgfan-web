@@ -1,5 +1,5 @@
 ---
-title: "This SREF has a playful sci fi cartoon style with clean ink l..."
+title: "This SREF has a playful sci fi cartoon s... 提示词"
 slug: gemnana-1090
 date: 2026-01-12
 added: 2026-07-27T11:31:45+08:00

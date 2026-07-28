@@ -1,5 +1,5 @@
 ---
-title: "A cinematic portrait of a person is sitting in soft dramatic..."
+title: "A cinematic 肖像 of a person is sitt..."
 slug: gemnana-615
 date: 2025-12-25
 added: 2026-07-27T11:31:27+08:00

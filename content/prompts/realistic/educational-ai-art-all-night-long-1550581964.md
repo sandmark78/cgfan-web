@@ -1,5 +1,5 @@
 ---
-title: 'Educational AI art : [all night long]'
+title: 'Educational AI art : [all night long] 提示词'
 slug: educational-ai-art-all-night-long-1550581964
 model: Midjourney
 category: realistic

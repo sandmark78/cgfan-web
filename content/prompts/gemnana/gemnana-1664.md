@@ -1,5 +1,5 @@
 ---
-title: "I was working on some new character designs"
+title: "I was working on some new character desi... 提示词"
 slug: gemnana-1664
 date: 2026-01-24
 added: 2026-07-27T12:53:44+08:00

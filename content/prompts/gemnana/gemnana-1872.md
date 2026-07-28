@@ -1,5 +1,5 @@
 ---
-title: "A cinematic, ultra realistic scene of a stylish man wearing s..."
+title: "A cinematic, ultra realistic scene of a... 提示词"
 slug: gemnana-1872
 date: 2026-02-01
 added: 2026-07-27T12:54:05+08:00

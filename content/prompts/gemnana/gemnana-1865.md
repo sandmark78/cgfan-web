@@ -1,5 +1,5 @@
 ---
-title: "[BRAND NAME] design language, object reimagined as an unexpec..."
+title: "[BRAND NAME] design language, 物体 rei..."
 slug: gemnana-1865
 date: 2026-01-31
 added: 2026-07-27T12:54:05+08:00

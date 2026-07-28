@@ -1,5 +1,5 @@
 ---
-title: I asked Nano Banana to deconstruct 4 old complex g...
+title: "拆解四件百年机械装置"
 slug: i-asked-nano-banana-to-deconstruct-4-1571268981
 model: Midjourney
 category: realistic

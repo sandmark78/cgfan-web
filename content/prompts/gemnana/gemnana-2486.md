@@ -1,5 +1,5 @@
 ---
-title: "A hyper detailed origami style version of a person, folded fr..."
+title: "A hyper detailed origami style version o... 提示词"
 slug: gemnana-2486
 date: 2026-03-11
 added: 2026-07-27T12:54:17+08:00

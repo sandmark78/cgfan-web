@@ -1,5 +1,5 @@
 ---
-title: Nano Banana Pro @astronomerozge1 💘
+title: "Nano Banana Pro 九宫格写真"
 slug: nano-banana-pro-astronomerozge1-1565888485
 model: Midjourney
 category: realistic

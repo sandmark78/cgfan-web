@@ -1,5 +1,5 @@
 ---
-title: "A hyper realistic, high speed commercial photograph featuring..."
+title: "A hyper realistic, high speed commercial... 提示词"
 slug: gemnana-2209
 date: 2026-02-22
 added: 2026-07-27T12:54:10+08:00

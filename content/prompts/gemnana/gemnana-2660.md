@@ -1,5 +1,5 @@
 ---
-title: "Create an ultra photorealistic cinematic portrait of a man vi..."
+title: "Create an ultra photorealistic cinematic... 提示词"
 slug: gemnana-2660
 date: 2026-03-24
 added: 2026-07-27T12:54:17+08:00

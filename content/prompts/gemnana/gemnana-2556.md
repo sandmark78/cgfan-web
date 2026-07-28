@@ -1,5 +1,5 @@
 ---
-title: "Cinematic portrait of a stylish man standing on a busy subway..."
+title: "Cinematic 肖像 of a stylish man stan..."
 slug: gemnana-2556
 date: 2026-03-16
 added: 2026-07-27T12:54:17+08:00

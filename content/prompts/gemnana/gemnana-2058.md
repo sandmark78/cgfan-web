@@ -1,5 +1,5 @@
 ---
-title: "[cake type], hyper realistic food photography, cake decorated..."
+title: "[cake type], hyper realistic food photog... 提示词"
 slug: gemnana-2058
 date: 2026-02-09
 added: 2026-07-27T12:54:10+08:00

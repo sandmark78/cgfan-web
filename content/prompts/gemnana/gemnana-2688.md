@@ -1,5 +1,5 @@
 ---
-title: "Well Censorship by @grok is on the rise once again I guess, y..."
+title: "Well Censorship by @grok is on the rise... 提示词"
 slug: gemnana-2688
 date: 2026-03-27
 added: 2026-07-27T12:54:23+08:00

@@ -1,5 +1,5 @@
 ---
-title: "[PERSONE]. Act as a Senior Art Director."
+title: "[PERSONE]. Act as a Senior Art Director. 提示词"
 slug: gemnana-2218
 date: 2026-02-22
 added: 2026-07-27T12:54:10+08:00

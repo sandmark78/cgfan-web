@@ -1,5 +1,5 @@
 ---
-title: "Role: high end fashion editorial photographer shooting a luxu..."
+title: "Role: high end fashion editorial photogr... 提示词"
 slug: gemnana-2155
 date: 2026-02-18
 added: 2026-07-27T12:54:10+08:00

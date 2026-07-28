@@ -1,5 +1,5 @@
 ---
-title: "A stunning 3D Chinese animation style close up of a beautiful..."
+title: "A stunning 3D Chinese animation style cl... 提示词"
 slug: gemnana-1868
 date: 2026-02-01
 added: 2026-07-27T12:54:05+08:00

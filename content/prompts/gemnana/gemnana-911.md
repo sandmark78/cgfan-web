@@ -1,5 +1,5 @@
 ---
-title: "Use the uploaded image as an img to img reference, preserving..."
+title: "Use the uploaded 图像 as an img to img..."
 slug: gemnana-911
 date: 2026-01-09
 added: 2026-07-27T11:31:40+08:00

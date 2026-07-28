@@ -1,5 +1,5 @@
 ---
-title: "Ultra realistic cinematic portrait of a young East Asian woma..."
+title: "Ultra realistic cinematic 肖像 of a..."
 slug: gemnana-1976
 date: 2026-02-04
 added: 2026-07-27T12:54:10+08:00

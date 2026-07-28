@@ -1,5 +1,5 @@
 ---
-title: "Compare GPT Image 1.5 vs Nanobanana Pro dentro de ImagineArt."
+title: "Compare GPT 图像 1.5 vs Nanobanana Pro..."
 slug: gemnana-585
 date: 2025-12-19
 added: 2026-07-27T11:31:27+08:00

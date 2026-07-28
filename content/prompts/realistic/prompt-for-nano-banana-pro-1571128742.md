@@ -1,5 +1,5 @@
 ---
-title: 'Prompt for nano banana pro:'
+title: '提示词 for nano banana pro:'
 slug: prompt-for-nano-banana-pro-1571128742
 model: Midjourney
 category: realistic

@@ -1,5 +1,5 @@
 ---
-title: "A square, 1:1 photorealistic close up photograph of an incred..."
+title: "A square, 1:1 photorealistic close up ph... 提示词"
 slug: gemnana-967
 date: 2026-01-10
 added: 2026-07-27T11:31:40+08:00

@@ -1,5 +1,5 @@
 ---
-title: "Present a clear, 45° top down isometric miniature 3D cartoon..."
+title: "Present a clear, 45° top down isometric... 提示词"
 slug: gemnana-1107
 date: 2026-01-13
 added: 2026-07-27T11:31:45+08:00

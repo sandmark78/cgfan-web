@@ -1,5 +1,5 @@
 ---
-title: "A hyper realistic 1080x1080 photograph of a glass cube dioram..."
+title: "A hyper realistic 1080x1080 photograph o... 提示词"
 slug: gemnana-808
 date: 2026-01-07
 added: 2026-07-27T11:31:33+08:00

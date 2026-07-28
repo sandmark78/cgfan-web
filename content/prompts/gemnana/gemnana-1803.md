@@ -1,5 +1,5 @@
 ---
-title: "[brand name], complete brand identity grid, 3x3 layout, nine..."
+title: "[brand name], complete brand identity gr... 提示词"
 slug: gemnana-1803
 date: 2026-01-28
 added: 2026-07-27T12:54:05+08:00

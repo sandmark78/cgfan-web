@@ -1,5 +1,5 @@
 ---
-title: "Create a realistic portrait (100% identical face, no editing..."
+title: "Create a realistic 肖像 (100% identi..."
 slug: gemnana-981
 date: 2026-01-11
 added: 2026-07-27T11:31:40+08:00

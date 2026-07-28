@@ -1,5 +1,5 @@
 ---
-title: "Luxury Product Photography — Matte Bottle Commercial Shot"
+title: "奢华 产品 摄影 — Matte Bottl..."
 slug: "luxury-product-photography-prompt"
 author: "CGfan Editorial"
 date: 2026-07-27

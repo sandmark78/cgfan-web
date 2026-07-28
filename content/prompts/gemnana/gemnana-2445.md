@@ -1,5 +1,5 @@
 ---
-title: "Create a high end promotional poster for International Women'..."
+title: "Create a high end promotional poster for... 提示词"
 slug: gemnana-2445
 date: 2026-03-08
 added: 2026-07-27T12:54:17+08:00

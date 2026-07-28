@@ -1,5 +1,5 @@
 ---
-title: "Vertical snack advertising visual with playful anthropomorphi..."
+title: "竖版 snack advertising visual with p..."
 slug: gemnana-1120
 date: 2026-01-13
 added: 2026-07-27T11:31:45+08:00

@@ -1,5 +1,5 @@
 ---
-title: "A soft focus, cinematic portrait of a young woman with delica..."
+title: "A soft focus, cinematic 肖像 of a yo..."
 slug: gemnana-2122
 date: 2026-02-14
 added: 2026-07-27T12:54:10+08:00

@@ -1,5 +1,5 @@
 ---
-title: "Create a hyper realistic macro photograph of a miniature surr..."
+title: "Create a hyper realistic macro photograp... 提示词"
 slug: gemnana-2538
 date: 2026-03-15
 added: 2026-07-27T12:54:17+08:00

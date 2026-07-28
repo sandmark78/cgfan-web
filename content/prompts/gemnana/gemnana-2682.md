@@ -1,5 +1,5 @@
 ---
-title: "Pixar 3D CGI animated movie poster style, ensemble cast featu..."
+title: "Pixar 3D CGI animated movie poster style... 提示词"
 slug: gemnana-2682
 date: 2026-03-26
 added: 2026-07-27T12:54:23+08:00

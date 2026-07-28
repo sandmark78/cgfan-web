@@ -1,5 +1,5 @@
 ---
-title: "Ultra cinematic vertical composition of coffee elements suspe..."
+title: "Ultra cinematic 竖版 composition of..."
 slug: gemnana-1936
 date: 2026-02-03
 added: 2026-07-27T12:54:05+08:00

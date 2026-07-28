@@ -1,5 +1,5 @@
 ---
-title: "A cinematic, hyper realistic close up portrait of a mysteriou..."
+title: "A cinematic, hyper realistic close up po... 提示词"
 slug: gemnana-1769
 date: 2026-01-27
 added: 2026-07-27T12:54:05+08:00

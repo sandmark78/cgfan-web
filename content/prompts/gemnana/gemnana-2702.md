@@ -1,5 +1,5 @@
 ---
-title: "[SUBJECT], made of smooth inflated glossy vinyl plastic, ultr..."
+title: "[SUBJECT], made of smooth inflated gloss... 提示词"
 slug: gemnana-2702
 date: 2026-03-28
 added: 2026-07-27T12:54:23+08:00

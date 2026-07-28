@@ -1,5 +1,5 @@
 ---
-title: "A vertical triptych of three cinematic, night time urban phot..."
+title: "A 竖版 triptych of three cinematic,..."
 slug: gemnana-2571
 date: 2026-03-17
 added: 2026-07-27T12:54:17+08:00

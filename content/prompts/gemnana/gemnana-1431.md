@@ -1,5 +1,5 @@
 ---
-title: "Luxury product photography of artisanal vanilla ground coffee..."
+title: "奢华 产品 摄影 of artisanal..."
 slug: gemnana-1431
 date: 2026-01-16
 added: 2026-07-27T11:31:50+08:00

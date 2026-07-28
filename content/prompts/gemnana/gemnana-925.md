@@ -1,5 +1,5 @@
 ---
-title: "This SREF plays with airy eastern fantasy vibes, soft mist, b..."
+title: "This SREF plays with airy eastern fantas... 提示词"
 slug: gemnana-925
 date: 2026-01-10
 added: 2026-07-27T11:31:40+08:00

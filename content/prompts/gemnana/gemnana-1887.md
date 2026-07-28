@@ -1,5 +1,5 @@
 ---
-title: "Luxurious tropical body scrub product photography, open jar o..."
+title: "Luxurious tropical body scrub 产品 ph..."
 slug: gemnana-1887
 date: 2026-02-01
 added: 2026-07-27T12:54:05+08:00

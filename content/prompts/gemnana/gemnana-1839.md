@@ -1,5 +1,5 @@
 ---
-title: "[BRAND NAME]:"
+title: "[BRAND NAME]: 提示词"
 slug: gemnana-1839
 date: 2026-01-30
 added: 2026-07-27T12:54:05+08:00

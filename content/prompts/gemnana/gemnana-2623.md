@@ -1,5 +1,5 @@
 ---
-title: "Ultra detailed stylized 3D portrait using the provided refere..."
+title: "Ultra detailed stylized 3D 肖像 usin..."
 slug: gemnana-2623
 date: 2026-03-20
 added: 2026-07-27T12:54:17+08:00

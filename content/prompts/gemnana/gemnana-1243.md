@@ -1,5 +1,5 @@
 ---
-title: "[product], luxury packaging reveal scene, premium unboxing mo..."
+title: "[产品], 奢华 packaging reveal scene..."
 slug: gemnana-1243
 date: 2026-01-14
 added: 2026-07-27T11:31:46+08:00

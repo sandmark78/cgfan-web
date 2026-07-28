@@ -1,5 +1,5 @@
 ---
-title: 'Prompt share: Line art'
+title: '提示词 分享: 线稿艺术'
 slug: prompt-share-line-art-1551217833
 model: Midjourney
 category: abstract

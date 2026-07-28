@@ -1,5 +1,5 @@
 ---
-title: "Create a highly cinematic and realistic photo of a person usi..."
+title: "Create a highly cinematic and realistic... 提示词"
 slug: gemnana-2642
 date: 2026-03-22
 added: 2026-07-27T12:54:17+08:00

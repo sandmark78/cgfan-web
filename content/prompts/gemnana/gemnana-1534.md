@@ -1,5 +1,5 @@
 ---
-title: "Extreme close up cinematic portrait of a young man with dark,..."
+title: "Extreme close up cinematic 肖像 of a..."
 slug: gemnana-1534
 date: 2026-01-18
 added: 2026-07-27T11:31:51+08:00

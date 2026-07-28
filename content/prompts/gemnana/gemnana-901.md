@@ -1,5 +1,5 @@
 ---
-title: "A cinematic golden hour photograph of a young woman standing..."
+title: "A cinematic 金色 hour photograph of a..."
 slug: gemnana-901
 date: 2026-01-09
 added: 2026-07-27T11:31:40+08:00

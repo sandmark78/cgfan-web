@@ -1,5 +1,5 @@
 ---
-title: "[PERSON NAME]."
+title: "[PERSON NAME]. 提示词"
 slug: gemnana-873
 date: 2026-01-08
 added: 2026-07-27T11:31:40+08:00

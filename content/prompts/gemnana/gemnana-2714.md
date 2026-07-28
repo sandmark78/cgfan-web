@@ -1,5 +1,5 @@
 ---
-title: "Create a typographic illustration shaped like a [OBJECT], whe..."
+title: "Create a typographic illustration shaped... 提示词"
 slug: gemnana-2714
 date: 2026-03-29
 added: 2026-07-27T12:54:23+08:00

@@ -1,5 +1,5 @@
 ---
-title: "This Midjourney style feels like someone turned a fashion edi..."
+title: "This Midjourney style feels like someone... 提示词"
 slug: gemnana-2540
 date: 2026-03-15
 added: 2026-07-27T12:54:17+08:00

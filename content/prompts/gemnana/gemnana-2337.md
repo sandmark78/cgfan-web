@@ -1,5 +1,5 @@
 ---
-title: "Create an ultra realistic, cinematic 8K image with high contr..."
+title: "Create an ultra realistic, cinematic 8K... 提示词"
 slug: gemnana-2337
 date: 2026-03-02
 added: 2026-07-27T12:54:10+08:00

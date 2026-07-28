@@ -1,5 +1,5 @@
 ---
-title: "The image presents a striking vertical composition where the..."
+title: "The 图像 presents a striking 竖版 c..."
 slug: gemnana-2612
 date: 2026-03-19
 added: 2026-07-27T12:54:17+08:00

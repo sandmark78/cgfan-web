@@ -1,5 +1,5 @@
 ---
-title: "Niji journey/Midjourney https://t.co/x3j5qA9TBn"
+title: "Niji journey/Midjourney https://t.co/x3j... 提示词"
 slug: gemnana-1098
 date: 2026-01-13
 added: 2026-07-27T11:31:45+08:00

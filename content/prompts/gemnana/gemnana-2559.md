@@ -1,5 +1,5 @@
 ---
-title: "A hyper realistic 3D anatomical human [organ] made from semi..."
+title: "A hyper realistic 3D anatomical human [o... 提示词"
 slug: gemnana-2559
 date: 2026-03-16
 added: 2026-07-27T12:54:17+08:00

@@ -1,5 +1,5 @@
 ---
-title: "A hyper realistic 8K close up portrait of a person's head and..."
+title: "A hyper realistic 8K close up 肖像 o..."
 slug: gemnana-1760
 date: 2026-01-27
 added: 2026-07-27T12:54:05+08:00

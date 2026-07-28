@@ -1,5 +1,5 @@
 ---
-title: "[BRAND NAME] + [PRODUCT]"
+title: "[BRAND NAME] + [产品]"
 slug: gemnana-2705
 date: 2026-03-28
 added: 2026-07-27T12:54:23+08:00

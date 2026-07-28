@@ -1,5 +1,5 @@
 ---
-title: "Ultra realistic cinematic close up portrait of a young man wi..."
+title: "Ultra realistic cinematic close up portr... 提示词"
 slug: gemnana-1190
 date: 2026-01-14
 added: 2026-07-27T11:31:45+08:00

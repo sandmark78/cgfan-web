@@ -1,5 +1,5 @@
 ---
-title: "Using the provided photos, create a highly detailed, professi..."
+title: "Using the provided photos, create a high... 提示词"
 slug: gemnana-1344
 date: 2026-01-15
 added: 2026-07-27T11:31:50+08:00

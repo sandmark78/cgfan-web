@@ -1,5 +1,5 @@
 ---
-title: "Create an image in 4:5 ratio, with hyper realistic aesthetics..."
+title: "Create an 图像 in 4:5 ratio, with hyper..."
 slug: gemnana-2214
 date: 2026-02-22
 added: 2026-07-27T12:54:10+08:00

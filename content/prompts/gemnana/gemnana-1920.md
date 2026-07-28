@@ -1,5 +1,5 @@
 ---
-title: "Low angle luxury product photography of a black ribbed glass..."
+title: "Low angle 奢华 产品 摄影 of..."
 slug: gemnana-1920
 date: 2026-02-02
 added: 2026-07-27T12:54:05+08:00

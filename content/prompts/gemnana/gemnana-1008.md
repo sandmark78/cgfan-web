@@ -1,5 +1,5 @@
 ---
-title: "Bold shapes, sharp silhouettes, and a cinematic sun."
+title: "Bold shapes, sharp silhouettes, and a ci... 提示词"
 slug: gemnana-1008
 date: 2026-01-11
 added: 2026-07-27T11:31:40+08:00

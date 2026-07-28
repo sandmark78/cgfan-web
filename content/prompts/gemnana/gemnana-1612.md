@@ -1,5 +1,5 @@
 ---
-title: "Luxury fashion editorial portrait of a woman standing beside..."
+title: "奢华 fashion editorial 肖像 of a w..."
 slug: gemnana-1612
 date: 2026-01-20
 added: 2026-07-27T11:31:51+08:00

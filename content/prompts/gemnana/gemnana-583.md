@@ -1,5 +1,5 @@
 ---
-title: "moody cinematic portrait of a man in dark jacket, front facin..."
+title: "moody cinematic 肖像 of a man in dar..."
 slug: gemnana-583
 date: 2025-12-19
 added: 2026-07-27T11:31:27+08:00

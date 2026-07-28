@@ -1,5 +1,5 @@
 ---
-title: "A high resolution advertising photograph of a realistic, mini..."
+title: "A high resolution advertising photograph... 提示词"
 slug: gemnana-2730
 date: 2026-03-30
 added: 2026-07-27T12:54:23+08:00

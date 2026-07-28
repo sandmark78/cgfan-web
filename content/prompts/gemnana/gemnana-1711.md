@@ -1,5 +1,5 @@
 ---
-title: "Create a cinematic, high fashion half length portrait of me w..."
+title: "Create a cinematic, high fashion half le... 提示词"
 slug: gemnana-1711
 date: 2026-01-26
 added: 2026-07-27T12:53:55+08:00

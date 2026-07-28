@@ -1,5 +1,5 @@
 ---
-title: "[INPUT IMAGE: USER PHOTO] Use the person in the input image a..."
+title: "[INPUT 图像: USER PHOTO] Use the person..."
 slug: gemnana-1857
 date: 2026-01-31
 added: 2026-07-27T12:54:05+08:00

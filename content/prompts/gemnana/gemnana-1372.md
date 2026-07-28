@@ -1,5 +1,5 @@
 ---
-title: "Create a collection of icons representing [a theme], they bel..."
+title: "Create a collection of icons representin... 提示词"
 slug: gemnana-1372
 date: 2026-01-15
 added: 2026-07-27T11:31:50+08:00

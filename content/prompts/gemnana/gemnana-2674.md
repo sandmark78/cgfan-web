@@ -1,5 +1,5 @@
 ---
-title: "Create a creative photo of a person using the face from the u..."
+title: "Create a creative photo of a person usin... 提示词"
 slug: gemnana-2674
 date: 2026-03-25
 added: 2026-07-27T12:54:23+08:00

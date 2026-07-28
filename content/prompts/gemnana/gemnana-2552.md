@@ -1,5 +1,5 @@
 ---
-title: "Creative fashion photography with distorted perspective (wide..."
+title: "Creative fashion 摄影 with distor..."
 slug: gemnana-2552
 date: 2026-03-16
 added: 2026-07-27T12:54:17+08:00

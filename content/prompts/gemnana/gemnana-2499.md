@@ -1,5 +1,5 @@
 ---
-title: "Portrait of [your description], face illuminated by dramatic..."
+title: "肖像 of [your description], 面部 ill..."
 slug: gemnana-2499
 date: 2026-03-12
 added: 2026-07-27T12:54:17+08:00

@@ -1,5 +1,5 @@
 ---
-title: "Luxury skincare commercial, ultra premium aesthetic. Use the..."
+title: "奢华 skincare commercial, ultra premiu..."
 slug: gemnana-2310
 date: 2026-02-28
 added: 2026-07-27T12:54:10+08:00

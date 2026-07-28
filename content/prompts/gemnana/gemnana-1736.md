@@ -1,5 +1,5 @@
 ---
-title: "use the uploaded photo as the exact identity reference. keep..."
+title: "use the uploaded photo as the exact iden... 提示词"
 slug: gemnana-1736
 date: 2026-01-26
 added: 2026-07-27T12:53:59+08:00

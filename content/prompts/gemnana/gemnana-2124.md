@@ -1,5 +1,5 @@
 ---
-title: "Ultra realistic Cinematic Close up Portrait, Replace Subject..."
+title: "Ultra realistic Cinematic Close up Portr... 提示词"
 slug: gemnana-2124
 date: 2026-02-15
 added: 2026-07-27T12:54:10+08:00

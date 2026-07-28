@@ -1,5 +1,5 @@
 ---
-title: "​A high definition cinematic portrait of a sophisticated woma..."
+title: "​A high definition cinematic 肖像 of..."
 slug: gemnana-1748
 date: 2026-01-27
 added: 2026-07-27T12:54:05+08:00

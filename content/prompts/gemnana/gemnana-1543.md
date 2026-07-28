@@ -1,5 +1,5 @@
 ---
-title: "[product], luxury product hero shot, dark velvet background,..."
+title: "[产品], 奢华 产品 hero shot, dar..."
 slug: gemnana-1543
 date: 2026-01-18
 added: 2026-07-27T11:31:51+08:00

@@ -1,5 +1,5 @@
 ---
-title: "A slow, sensual luxury chocolate commercial shot in ultra hig..."
+title: "A slow, sensual 奢华 巧克力 commerc..."
 slug: gemnana-1899
 date: 2026-02-02
 added: 2026-07-27T12:54:05+08:00

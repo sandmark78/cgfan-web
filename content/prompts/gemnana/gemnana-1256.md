@@ -1,5 +1,5 @@
 ---
-title: "This SREF goes full psychedelic."
+title: "This SREF goes full psychedelic. 提示词"
 slug: gemnana-1256
 date: 2026-01-14
 added: 2026-07-27T11:31:46+08:00

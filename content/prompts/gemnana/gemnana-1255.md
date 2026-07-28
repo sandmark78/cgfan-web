@@ -1,5 +1,5 @@
 ---
-title: "Product ad style AI image on a mountain peak above clouds Cre..."
+title: "产品 ad style AI 图像 on a mountain..."
 slug: gemnana-1255
 date: 2026-01-14
 added: 2026-07-27T11:31:46+08:00

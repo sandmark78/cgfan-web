@@ -1,5 +1,5 @@
 ---
-title: "Surreal comedic scene inside a modern kitchen: a young man be..."
+title: "Surreal comedic scene inside a modern ki... 提示词"
 slug: gemnana-2126
 date: 2026-02-15
 added: 2026-07-27T12:54:10+08:00

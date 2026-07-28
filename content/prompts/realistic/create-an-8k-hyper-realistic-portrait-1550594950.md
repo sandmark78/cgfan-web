@@ -1,5 +1,5 @@
 ---
-title: Create an 8K hyper-realistic portrait in vertical...
+title: "8K超写实竖版人像"
   face with 100% identical accuracy — absolutely no facial changes or facial structure
   alterations.
 slug: create-an-8k-hyper-realistic-portrait-1550594950

@@ -1,5 +1,5 @@
 ---
-title: "A bold, graphic city style with flat colors and clean lines."
+title: "A bold, graphic city style with flat col... 提示词"
 slug: gemnana-1443
 date: 2026-01-16
 added: 2026-07-27T11:31:50+08:00

@@ -1,5 +1,5 @@
 ---
-title: "Ultra realistic, glossy magazine style portrait of a young ma..."
+title: "Ultra realistic, glossy magazine style p... 提示词"
 slug: gemnana-2376
 date: 2026-03-04
 added: 2026-07-27T12:54:17+08:00

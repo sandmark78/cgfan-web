@@ -1,5 +1,5 @@
 ---
-title: "[BRAND NAME] + [COLOR]"
+title: "[BRAND NAME] + [COLOR] 提示词"
 slug: gemnana-2753
 date: 2026-04-01
 added: 2026-07-27T12:54:24+08:00

@@ -1,5 +1,5 @@
 ---
-title: "A high detail artistic 3D portrait of the person in the photo..."
+title: "A high detail artistic 3D 肖像 of th..."
 slug: gemnana-1953
 date: 2026-02-03
 added: 2026-07-27T12:54:05+08:00

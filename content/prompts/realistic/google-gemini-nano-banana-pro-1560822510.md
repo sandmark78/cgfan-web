@@ -1,5 +1,5 @@
 ---
-title: Google Gemini Nano Banana Pro
+title: "Google Gemini Nano Banana... 创作"
 slug: google-gemini-nano-banana-pro-1560822510
 model: Midjourney
 category: realistic

@@ -1,5 +1,5 @@
 ---
-title: "just a car made with Midjourney"
+title: "just a car made with Midjourney 提示词"
 slug: gemnana-2203
 date: 2026-02-21
 added: 2026-07-27T12:54:10+08:00

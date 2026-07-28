@@ -1,5 +1,5 @@
 ---
-title: Nano Banana Pro and GPT image 1.5
+title: "8K超写实商业摄影"
 slug: nano-banana-pro-and-gpt-image-15-1570554631
 model: Midjourney
 category: realistic

@@ -1,5 +1,5 @@
 ---
-title: "Use The Uploaded Image Of The Woman As Strict Facial Referenc..."
+title: "Use The Uploaded 图像 Of The Woman As S..."
 slug: gemnana-1718
 date: 2026-01-26
 added: 2026-07-27T12:53:59+08:00

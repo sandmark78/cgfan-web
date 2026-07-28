@@ -1,5 +1,5 @@
 ---
-title: "Create a 3×3 grid in"
+title: "Create a 3×3 grid in 提示词"
 slug: gemnana-1714
 date: 2026-01-26
 added: 2026-07-27T12:53:55+08:00

@@ -1,5 +1,5 @@
 ---
-title: "I got my head checked"
+title: "I got my head checked 提示词"
 slug: gemnana-1095
 date: 2026-01-12
 added: 2026-07-27T11:31:45+08:00

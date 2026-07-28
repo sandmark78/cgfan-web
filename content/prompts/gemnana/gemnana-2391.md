@@ -1,5 +1,5 @@
 ---
-title: "Ultra realistic luxury cosmetic product photography of a deep..."
+title: "Ultra realistic 奢华 化妆品 产品..."
 slug: gemnana-2391
 date: 2026-03-04
 added: 2026-07-27T12:54:17+08:00

@@ -1,5 +1,5 @@
 ---
-title: "A refined fashion editorial image with a 3:4 aspect ratio, sp..."
+title: "A refined fashion editorial 图像 with a..."
 slug: gemnana-914
 date: 2026-01-09
 added: 2026-07-27T11:31:40+08:00

@@ -1,5 +1,5 @@
 ---
-title: "Close up black and white portrait of a man use image face ref..."
+title: "Close up black and white 肖像 of a m..."
 slug: gemnana-902
 date: 2026-01-09
 added: 2026-07-27T11:31:40+08:00

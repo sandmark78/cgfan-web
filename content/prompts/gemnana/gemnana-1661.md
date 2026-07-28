@@ -1,5 +1,5 @@
 ---
-title: "A futuristic cyber aesthetic portrait of a young woman wearin..."
+title: "A futuristic cyber aesthetic 肖像 of..."
 slug: gemnana-1661
 date: 2026-01-24
 added: 2026-07-27T12:53:44+08:00

@@ -1,5 +1,5 @@
 ---
-title: "Cinematic portrait of a confident football player sitting on..."
+title: "Cinematic 肖像 of a confident footba..."
 slug: gemnana-2521
 date: 2026-03-14
 added: 2026-07-27T12:54:17+08:00

@@ -1,5 +1,5 @@
 ---
-title: "Create an image using the exact same face as the reference im..."
+title: "Create an 图像 using the exact same fac..."
 slug: gemnana-1192
 date: 2026-01-14
 added: 2026-07-27T11:31:45+08:00

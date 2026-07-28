@@ -1,5 +1,5 @@
 ---
-title: "Cinematic close up portrait of a young man standing in heavy..."
+title: "Cinematic close up 肖像 of a young m..."
 slug: gemnana-2449
 date: 2026-03-09
 added: 2026-07-27T12:54:17+08:00

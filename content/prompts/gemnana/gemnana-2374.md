@@ -1,5 +1,5 @@
 ---
-title: "Use the uploaded image as the exact visual reference for jar..."
+title: "Use the uploaded 图像 as the exact visu..."
 slug: gemnana-2374
 date: 2026-03-04
 added: 2026-07-27T12:54:17+08:00

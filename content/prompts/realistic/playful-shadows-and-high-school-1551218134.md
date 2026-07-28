@@ -1,5 +1,5 @@
 ---
-title: Playful shadows and high-school nostalgia captured...
+title: "四叶草框住的小确幸"
 slug: playful-shadows-and-high-school-1551218134
 model: Midjourney
 category: realistic
