@@ -1,5 +1,5 @@
 ---
-title: 'Prompt Studio: Nano Banana Pro, Typewriter Conjuri...'
+title: "打字机召唤复古故事"
 slug: prompt-studio-nano-banana-pro-1557350335
 model: Midjourney
 category: abstract

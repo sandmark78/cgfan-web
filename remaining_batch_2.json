@@ -1,0 +1,152 @@
+[
+  {
+    "slug": "gemnana-2101",
+    "title": "image generation request': {",
+    "prompt_preview": "{\n\"image_generation_request\": {\n\"subject\": \"[PRODUCT]\",\n\"product_finish\": {\n\"primary\": \"哑光黑，带有微弱的光吸收效果\",\n\"secondary\": \"抛光金属银，具有镜面般的反射\",\n\"treatment\": \""
+  },
+  {
+    "slug": "gemnana-834",
+    "title": "prompt type': \"Ultra Photorealistic 2x2 Grid Collage\",",
+    "prompt_preview": "{\n\"prompt_type\": \"超写实 2x2 网格拼贴\",\n\"format\": {\n\"layout\": \"2x2 网格分屏\",\n\"aspect_ratio\": \"9:16\",\n\"panel_count\": 4\n},\n\"art_style\": {\n\"aesthetic\": \"高端生活方式摄影，c"
+  },
+  {
+    "slug": "gemnana-911",
+    "title": "Use the uploaded 图像 as an img to img...",
+    "prompt_preview": "使用上传的图像作为图像到图像（img-to-img）参考，保留完整面部相似度和身份，并创作一幅看起来画在有横线的笔记本纸上的作品，使用圆珠笔、墨水和荧光记号笔，呈现真实的墨水吸收、分层笔压、污渍、污点、折痕和磨损的边缘。风格融合了混乱的涂鸦艺术、漫画注释和粗糙素描，具有粗细变化的线条、松散的笔触、凌"
+  },
+  {
+    "slug": "gemnana-612",
+    "title": "image type': \"fashion portrait photography\",",
+    "prompt_preview": "{\n\"image_type\": \"时尚肖像摄影\",\n\"resolution_target\": \"8K 超高清\",\n\"aspect_ratio\": \"竖向（约2:3）\",\n\"camera\": {\n\"shot_type\": \"中近景肖像\",\n\"camera_angle\": \"略微倾斜，主体向右三刻位转身"
+  },
+  {
+    "slug": "gemnana-583",
+    "title": "moody cinematic 肖像 of a man in dar...",
+    "prompt_preview": "moody cinematic portrait of a man in dark jacket, front facing but slightly turned, minimal expression, dark teal and cyan studio lighting, smooth gra"
+  },
+  {
+    "slug": "gemnana-800",
+    "title": "image description': {",
+    "prompt_preview": "{\n\"image_description\": {\n\"subject\": {\n\"person\": \"参考图片中具有独特面部特征的年轻女性\",\n\"pose\": \"侧身坐在宽阔的石壁上，直视镜头，神情平静而自信\",\n\"hair\": \"深棕色长卷发顺着背部垂下\",\n\"makeup\": \"全套专业妆容，锐利修"
+  },
+  {
+    "slug": "gemnana-940",
+    "title": "project meta': {",
+    "prompt_preview": "{\n\"project_meta\": {\n\"title\": \"单色橙色高级时装画报\",\n\"style\": \"超写实，8K，奢华杂志美学\",\n\"mood\": \"大胆、迷人、自信、诱人\"\n},\n\"environment\": {\n\"setting\": \"极简专业工作室\",\n\"background\": \"纯色"
+  },
+  {
+    "slug": "gemnana-1770",
+    "title": "2×2 grid 奢华 perfume advertisement fo...",
+    "prompt_preview": "2×2 网格奢华香水广告，针对香奈儿香水，四张各具特色但统一的高端商业图像，优雅的巴黎美学，永恒的时尚品牌定位。\nPanel 1 – 主打产品优雅\n极简主义工作室拍摄，一只香奈儿香水瓶置于反光表面中央。柔和漫射光突显玻璃的透明感、清晰边缘和标志性标签。中性色背景：米色、象牙白或柔和黑。奢华、宁静、具"
+  },
+  {
+    "slug": "gemnana-1661",
+    "title": "A futuristic cyber aesthetic 肖像 of...",
+    "prompt_preview": "一幅未来感的赛博美学肖像，描绘一位年轻女性戴着发光的霓虹黄色眼镜，面部和夹克上投射出发光的数学方程式。背景有柔和的蓝色散景光，营造出高科技氛围。超真实的细节，锐利的眼神，光滑的皮肤，以及鲜明的色彩对比。科幻数码光晕风格，沉浸而现代。她的表情冷静而专注。光线鲜艳且具有电影感，眼镜上有反光，衣物上有温暖"
+  },
+  {
+    "slug": "gemnana-1552",
+    "title": "ちょっと時間ができたのでNanoBananaの石化表現を色々お試し。「彫刻の荒いエッジ」「石の塊を彫った髪の毛」「厚みのあ...",
+    "prompt_preview": ""
+  },
+  {
+    "slug": "gemnana-1887",
+    "title": "Luxurious tropical body scrub 产品 ph...",
+    "prompt_preview": "奢华热带身体去角质膏产品摄影，打开的罐子里是明亮鲜艳的黄橙色芒果与百香果身体磨砂膏，绵密打发的奶油质地，能见到明显的果粒，Marine Life 品牌，优雅简约的包装，白色盖子微微掀起，多汁的芒果方块和对半切开的百香果环绕漂浮，金黄色液体和果汁在空中动感飞溅，新鲜异国水果片悬浮于空中，光滑湿润的水滴"
+  },
+  {
+    "slug": "gemnana-1726",
+    "title": "render goal': \"High fashion cinematic motion shot\",",
+    "prompt_preview": "{\n\"render_goal\": \"高定时尚电影感运动镜头\",\n\"focus\": \"面料动态\",\n\"wardrobe\": {\n\"outfit\": \"长而飘逸的服装\",\n\"motion\": \"布料在风中夸张地展开\"\n},\n\"environment\": {\n\"location\": \"开放的高处空间（屋顶"
+  },
+  {
+    "slug": "gemnana-1666",
+    "title": "[person], [pose], oversized 产品 in t...",
+    "prompt_preview": ""
+  },
+  {
+    "slug": "gemnana-1914",
+    "title": "A hyper detailed, adorable 金色 hamste...",
+    "prompt_preview": "一只超细致、可爱的金色仓鼠，置身于明亮、欢快的健身房中，以流畅的电影化运动呈现。这只胖乎乎、蓬松圆润的仓鼠，用两只小爪子举起超大的黑色哑铃，努力时身体微微弹跳。它戴着俏皮的罩耳式耳机、反戴的米色棒球帽，以及柔软的灰色举重腰带。嘴巴张开发出兴奋的吱吱声，眼睛闪耀着喜悦与决心。温暖柔和的光线与轻柔的阴影"
+  },
+  {
+    "slug": "gemnana-1920",
+    "title": "Low angle 奢华 产品 摄影 of...",
+    "prompt_preview": "低角度奢华产品摄影：一只有肋纹的黑色玻璃香水瓶放置在暗色水平台座上，从下方拍摄以营造英雄式、宏伟的感觉。瓶身为 Tom Ford Black Orchid，哑光黑质感清晰可见。\n戏剧性的低调影棚照明。来自上方且略偏左的柔和漫射主光，轻柔照亮标签与顶部，展现体积与质感。来自后方且偏右的强烈硬质红色轮廓"
+  },
+  {
+    "slug": "gemnana-1732",
+    "title": "image generation': {",
+    "prompt_preview": "{\n\"image_generation\": {\n\"subject\": {\n\"description\": \"年轻女子坐在宁静的欧洲老街的石阶上\",\n\"pose\": \"随意地坐在磨损的石阶上，双腿微微交叉，手里拿着笔记本和笔\",\n\"expression\": \"若有所思、平静、内省\",\n\"action\":"
+  },
+  {
+    "slug": "gemnana-1681",
+    "title": "meta': {",
+    "prompt_preview": "{\n\"元数据\": {\n\"图像质量\": \"非常高\",\n\"图像类型\": \"数字艺术 / 人工智能生成（三联画拼贴）\",\n\"分辨率估计\": \"高分辨率垂直拼贴\",\n\"文件特性\": {\n\"压缩伪影\": \"低\",\n\"噪点水平\": \"低\",\n\"镜头类型估计\": \"每个面板不同（汽车为广角，女性为人像/85mm，"
+  },
+  {
+    "slug": "gemnana-1450",
+    "title": "九十年代复古报纸 bitmap 风格探索",
+    "prompt_preview": "探索风格 --sref 4121453566\n这个 Midjourney 风格将根据你的提示在1990年代位图、复古报纸、平面设计和标志之间切换\n太空巴哥犬 --sref 4121453566\n--sw 100 --stylize 300 --v 7\n狐狸标志 --sref 4121453566\n-"
+  },
+  {
+    "slug": "gemnana-2728",
+    "title": "raw prompt': \"K pop idol Sana (TWICE) posing on a sunlit bal...",
+    "prompt_preview": ""
+  },
+  {
+    "slug": "gemnana-2066",
+    "title": "style': \"cinematic realism, high end editorial photography\",",
+    "prompt_preview": "{\n\"style\": \"电影写实，高端编辑摄影\",\n\"subject\": {\n\"type\": \"女性\",\n\"age_range\": \"二十多岁中期\",\n\"pose\": \"侧身坐在长凳上，手持一本打开的书，头微微转向镜头外\",\n\"expression\": \"平静、沉思、目光有些疏远\",\n\"wardro"
+  },
+  {
+    "slug": "gemnana-2037",
+    "title": "[产品], futuristic high end ad, trans...",
+    "prompt_preview": ""
+  },
+  {
+    "slug": "gemnana-2177",
+    "title": "intent': {",
+    "prompt_preview": "{\n\"intent\": {\n\"summary\": \"土地艺术摄影：一名女性通过沙中一条特定的注水沟渠与海洋相连，符合所提供的示意图。\",\n\"strategy\": \"结构精确：将“线”定义为挖掘的沟渠，以防止水流混乱。\"\n},\n\"frame\": {\n\"aspect_ratio\": \"3:2\",\n\"sh"
+  },
+  {
+    "slug": "gemnana-902",
+    "title": "Close up black and white 肖像 of a m...",
+    "prompt_preview": ""
+  },
+  {
+    "slug": "gemnana-601",
+    "title": "Realistic, 3D, 产品, and historical v...",
+    "prompt_preview": ""
+  },
+  {
+    "slug": "gemnana-590",
+    "title": "Hyperrealistic dark fantasy 肖像 of...",
+    "prompt_preview": "超现实黑暗奇幻肖像，描绘一个神秘的披风法师站在降雪中；同一个人（保持原始面部特征完全一致）。冷蓝色环境照明，脸部细致的阴影细节，指尖间小心托着发光的魔法球，手部被柔和的金色光照亮，面部遍布古代符文纹身，细微的疤痕，专注而强烈的目光，披风表面湿润的质感与雪花休息在织物上，深色皮甲饰有雕纹和编织绳，电影"
+  },
+  {
+    "slug": "gemnana-842",
+    "title": "resolution': \"8K UHD\",",
+    "prompt_preview": "{\n\"resolution\": \"8K 超高清\",\n\"aspect_ratio\": \"3:4\",\n\"image_style\": \"超写实商业甜点摄影\",\n\"global_settings\": {\n\"quality\": \"极致高细节、刀锋般锐利的对焦、奢华甜点清晰度\",\n\"lighting\": \"受控"
+  },
+  {
+    "slug": "gemnana-2184",
+    "title": "A surreal, minimalist 奢华 advertising...",
+    "prompt_preview": "一个超现实、极简的奢华广告场景，置于干净现代的摄影棚内，柔和中性灰背景、戏剧性定向照明和细微电影感阴影。一根巨大的超大号 Dr.Jart+ Pore Remedy Pure Mastic Butter Mask 管（浅蓝色管身、白色标签、粗黑体 “Dr.Jart+” 字样清晰可见）像纪念碑般胜利地矗"
+  },
+  {
+    "slug": "gemnana-885",
+    "title": "A cinematic street 肖像 of a young w...",
+    "prompt_preview": "一张电影感的街头肖像，描绘一位年轻女性在繁忙的城市人群中静立，周围被运动模糊包围。她留着短而略显凌乱的头发，面容平静、内省，直视镜头。她穿着柔软的米色毛衣和有质感的棕色裙子，饰品极少。背景是一条充满行人、动态十足的城市街道，营造出梦幻般的长曝光效果。浅景深，主体清晰对焦，人群模糊，自然柔和的日光，低"
+  },
+  {
+    "slug": "gemnana-2392",
+    "title": "image generation request': {",
+    "prompt_preview": "{\n\"image_generation_request\": {\n\"subject\": {\n\"placeholder\": \"[在此插入您的产品]\",\n\"positioning\": \"居中对齐，完全置中，悬浮于空中\",\n\"framing\": \"物体完全可见，无裁剪，无边缘截断，产品周围留有充足的留白\""
+  },
+  {
+    "slug": "gemnana-994",
+    "title": "New Style sref 3543270584",
+    "prompt_preview": "新风格 --sref 3543270584\n速写感、富有表现力的角色\n新的 Midjourney 风格，大胆、速写感、图形化的插画，采用鲜艳的扁平色彩，富有表现力且俏皮的角色夸张，以及手绘、充满活力的感觉\n金刚狼 --sref 3543270584\n--sw 100 --stylize 300 --"
+  }
+]

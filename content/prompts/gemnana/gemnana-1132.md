@@ -1,5 +1,5 @@
 ---
-title: 'prompt details': {"
+title: "优雅女子扶栏走下回旋楼梯"
 slug: gemnana-1132
 date: 2026-01-13
 added: 2026-07-27T11:31:45+08:00

@@ -1,5 +1,5 @@
 ---
-title: 'image type': "photographic portrait","
+title: "低角度紧特写肖像"
 slug: gemnana-678
 date: 2026-01-05
 added: 2026-07-27T11:31:33+08:00

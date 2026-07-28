@@ -1,5 +1,5 @@
 ---
-title: 'model': "Nano Banana Pro","
+title: "Nano Banana Pro 模型"
 slug: gemnana-724
 date: 2026-01-06
 added: 2026-07-27T11:31:33+08:00

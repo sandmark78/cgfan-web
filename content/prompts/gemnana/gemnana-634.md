@@ -1,5 +1,5 @@
 ---
-title: 'image type': "studio fashion portrait","
+title: "8K 工作室时尚全身肖像"
 slug: gemnana-634
 date: 2025-12-30
 added: 2026-07-27T11:31:33+08:00

@@ -1,5 +1,5 @@
 ---
-title: "panning shot of a blurry female silhouet... 提示词"
+title: "模糊女性剪影平移"
 slug: gemnana-2248
 date: 2026-02-24
 added: 2026-07-27T12:54:10+08:00

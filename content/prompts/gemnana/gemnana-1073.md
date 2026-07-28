@@ -1,5 +1,5 @@
 ---
-title: 'Objective': "Create a dramatic black and white cinematic por..."
+title: "黑白电影人像，色彩点睛"
 slug: gemnana-1073
 date: 2026-01-12
 added: 2026-07-27T11:31:45+08:00

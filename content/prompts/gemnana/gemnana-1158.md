@@ -1,5 +1,5 @@
 ---
-title: "Sometimes I want to stay alone away from... 提示词"
+title: "独自远离喧嚣，黑色礁石上的风中身影"
 slug: gemnana-1158
 date: 2026-01-13
 added: 2026-07-27T11:31:45+08:00

@@ -1,5 +1,5 @@
 ---
-title: 'Prompt Studio: Nano Banana Pro, Passport Odyssey, in Firefly'
+title: "Nano Banana Pro 护照奥德赛"
 slug: prompt-studio-nano-banana-pro-passport-1552462717
 model: Midjourney
 category: 3d

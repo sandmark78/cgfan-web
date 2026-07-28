@@ -1,5 +1,5 @@
 ---
-title: 'Prompt Studio: Nano Banana Pro Expedition Planning...'
+title: "Nano Banana Pro 探险计划"
 slug: prompt-studio-nano-banana-pro-1542834490
 model: Midjourney
 category: abstract

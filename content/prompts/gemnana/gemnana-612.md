@@ -1,5 +1,5 @@
 ---
-title: 'image type': "fashion portrait photography","
+title: "时尚肖像，中近景倾斜构图"
 slug: gemnana-612
 date: 2025-12-24
 added: 2026-07-27T11:31:27+08:00

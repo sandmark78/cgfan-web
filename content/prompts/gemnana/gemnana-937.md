@@ -1,5 +1,5 @@
 ---
-title: 'image type':"
+title: "高端健身编辑摄影，力量感运动姿态"
 slug: gemnana-937
 date: 2026-01-10
 added: 2026-07-27T11:31:40+08:00

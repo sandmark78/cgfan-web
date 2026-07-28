@@ -1,5 +1,5 @@
 ---
-title: "New Style sref 1088104093"
+title: "向量扁平波普新风格，几何死侍图形"
 slug: gemnana-793
 date: 2026-01-07
 added: 2026-07-27T11:31:33+08:00

@@ -1,5 +1,5 @@
 ---
-title: 'image generation request': {"
+title: "悬浮失重虚空中的产品，无支架极简构图"
 slug: gemnana-2315
 date: 2026-02-28
 added: 2026-07-27T12:54:10+08:00

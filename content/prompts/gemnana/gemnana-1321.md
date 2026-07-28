@@ -1,5 +1,5 @@
 ---
-title: 'content goal': "clean, elegant, viral side pose visual","
+title: "极简侧身，优雅电影感"
 slug: gemnana-1321
 date: 2026-01-15
 added: 2026-07-27T11:31:50+08:00

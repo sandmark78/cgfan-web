@@ -1,5 +1,5 @@
 ---
-title: "🎨 IMAGINERY TOKENS MIDJOURNEY V7 🎨 提示词"
+title: "想象力代币，抽象概念可视化"
 slug: gemnana-787
 date: 2026-01-07
 added: 2026-07-27T11:31:33+08:00

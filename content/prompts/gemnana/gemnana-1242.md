@@ -1,5 +1,5 @@
 ---
-title: "[Terminator] (Or any movie/book/anime) 提示词"
+title: "影视IP3D收藏卡牌"
 slug: gemnana-1242
 date: 2026-01-14
 added: 2026-07-27T11:31:46+08:00

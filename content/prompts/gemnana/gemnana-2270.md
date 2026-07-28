@@ -1,5 +1,5 @@
 ---
-title: 'image generation request': {"
+title: "悬浮产品居中拍摄，包装展示"
 slug: gemnana-2270
 date: 2026-02-26
 added: 2026-07-27T12:54:10+08:00

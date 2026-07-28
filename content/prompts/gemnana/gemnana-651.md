@@ -1,5 +1,5 @@
 ---
-title: "Create an ultra realistic sky scene wher... 提示词"
+title: "云朵聚成物体轮廓，超写实天空"
 slug: gemnana-651
 date: 2026-01-03
 added: 2026-07-27T11:31:33+08:00

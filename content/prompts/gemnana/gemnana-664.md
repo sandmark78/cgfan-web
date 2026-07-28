@@ -1,5 +1,5 @@
 ---
-title: 'render goal': "Art couture cinematic portrait","
+title: "水墨笔触长裙，高定电影感肖像"
 slug: gemnana-664
 date: 2026-01-04
 added: 2026-07-27T11:31:33+08:00

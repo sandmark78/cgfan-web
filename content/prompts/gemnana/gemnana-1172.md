@@ -1,5 +1,5 @@
 ---
-title: 'subject details': {"
+title: "主体细节精致刻画"
 slug: gemnana-1172
 date: 2026-01-13
 added: 2026-07-27T11:31:45+08:00

@@ -1,5 +1,5 @@
 ---
-title: 'prompt': "Cinematic film still, extreme top down MEDIUM shot..."
+title: "摩天楼顶俯拍凝望深渊"
 slug: gemnana-1021
 date: 2026-01-11
 added: 2026-07-27T11:31:40+08:00

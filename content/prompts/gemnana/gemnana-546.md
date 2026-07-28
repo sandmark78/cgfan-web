@@ -1,5 +1,5 @@
 ---
-title: "Gemini Nano Banana Pro Prompt:{  "image_generation_prompt": {    "subject": {      "description""
+title: "Nano Banana Pro 图像生成"
 slug: gemnana-546
 date: 2026-01-04
 added: 2026-07-27T11:31:27+08:00

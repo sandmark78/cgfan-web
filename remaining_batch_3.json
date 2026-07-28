@@ -1,0 +1,152 @@
+[
+  {
+    "slug": "gemnana-2270",
+    "title": "image generation request': {",
+    "prompt_preview": "{\n\"image_generation_request\": {\n\"subject_settings\": {\n\"product_placeholder\": \"[在此插入产品名称]\",\n\"positioning\": \"绝对居中、悬浮、漂浮、悬于半空中\",\n\"framing\": \"全视角、无裁剪、产品必须"
+  },
+  {
+    "slug": "gemnana-664",
+    "title": "render goal': \"Art couture cinematic portrait\",",
+    "prompt_preview": "{\n\"render_goal\": \"艺术高定电影感肖像\",\n\"subject\": {\n\"pose\": \"女性站立，略微侧身\",\n\"expression\": \"柔和而聪慧的微笑\"\n},\n\"wardrobe\": \"由层叠的类书法笔触纹理面料组成的飘逸长裙\",\n\"environment\": {\n\"loca"
+  },
+  {
+    "slug": "gemnana-775",
+    "title": "subject': {",
+    "prompt_preview": "{\n\"subject\": {\n\"description\": \"年轻的东亚女性，侧身轮廓，回头看向观者。\",\n\"pose\": \"越过肩膀看向观者，微微歪头，身体与镜头成斜角。\",\n\"expression\": \"柔和，介于中性与略带忧郁的凝视，沉思的目光，微张的双唇。\"\n},\n\"clothing\": {"
+  },
+  {
+    "slug": "gemnana-936",
+    "title": "A cinematic 3×3 grid of film still frame... 提示词",
+    "prompt_preview": "一个电影感的3×3剧照网格，呈现同一对情侣在黄昏时分乡间公路短暂停车的情景。一个短发深色发丝的年轻女子，穿着浅色带图案的上衣，站在一辆奶油色复古敞篷车旁，周围是一条乡间土路，开阔的田野和连绵起伏的丘陵延伸到远方。这里的每一帧都展示不同的电影化角度：极近特写她的面部，展现自然的皮肤质感；两人倚在车上的"
+  },
+  {
+    "slug": "gemnana-1118",
+    "title": "Ultra Realistic Promotional 提示词",
+    "prompt_preview": "超写实宣传\n呈现一幅清晰的、45°俯视等距微缩3D卡通场景，场景主题为 [MELBOURNE CRICKET STADIUM]，采用柔和细腻的纹理、真实的PBR材质和温和逼真的光照。使用纯色背景 [绿色、白色或粉色]。在顶部中央以大号加粗文字显示该体育场名称，紧接其下以中号文字显示其实际座位容量，并"
+  },
+  {
+    "slug": "gemnana-1289",
+    "title": "A raw, candid street style shot of refer... 提示词",
+    "prompt_preview": "一张原始、坦率的街头风格抓拍，拍到 reference 在雨水浸透的新东京小巷中奔跑，回头一瞥。她穿着一件超大号的 \"Crimson Red\" 做旧牛仔夹克，带着安全别针和补丁，背面绣有白色的 [YOUR TEXT] 品牌字样。内搭是一件撕破的乐队T恤。镜头上的雨滴造成自然的失真。背景是模糊的红色霓"
+  },
+  {
+    "slug": "gemnana-1058",
+    "title": "Use the attached 图像 of the model as f...",
+    "prompt_preview": "使用所附模特图像作为面部参考和体貌特征。黑白高端时尚编辑人像，所拍摄者穿着宽松的白色衬衫。她以一只手臂抬起的姿势，部分遮挡面部，同时用手把头发束起，营造出戏剧性且富有艺术感的构图。她的目光强烈且迷人，直视镜头，散发出强烈而神秘的气场。背景：极简的平面墙面，强烈的自然日光投射出清晰的阴影，增加深度与对"
+  },
+  {
+    "slug": "gemnana-2320",
+    "title": "Playful designer packaging for [产品...",
+    "prompt_preview": "为[产品名称]设计的俏皮包装，创意盒子呈产品形状，正面面板集成卡通脸，超大开窗切割展示真实内容作为角色表情的一部分，光滑亚光纸板材质，大胆平面图形设计，现代极简品牌风格，有限的柔和粉彩色彩调，圆润友好的形状，简洁的排版，高端3D包装模型渲染，柔和的工作室灯光，纯白背景，下方细微真实接触阴影，超高细节"
+  },
+  {
+    "slug": "gemnana-734",
+    "title": "A candid lifestyle 肖像 of a young w...",
+    "prompt_preview": "一次随性生活方式肖像，主角是一位年轻女性，坐在户外的巴黎咖啡馆，双手端着一个陶瓷咖啡杯。她有短发，柔软蓬松的银灰色鲍勃头，素颜妆容，面带温和微笑，目光略微偏向一侧。她穿着米色针织毛衣和高腰蓝色牛仔裤，极简珠宝，佩戴着一条精致的项链。场景展现经典的欧洲街区建筑、石造建筑、咖啡馆的椅子和桌子、盆栽植物，"
+  },
+  {
+    "slug": "gemnana-1009",
+    "title": "Double exposure portraits with glowing c... 提示词",
+    "prompt_preview": "使用此 SREF 的双重曝光人像，包含发光的城市景观、温暖的漏光，以及静谧的电影氛围。\n💫 --sref 1360071822\n#midjourney #sref #aiart #tischeins https://t.co/JGbBP0xqRe\n\n## 美学评分\n\n- 平均分: 8.2\n- 推荐:"
+  },
+  {
+    "slug": "gemnana-600",
+    "title": "超Kawaii Pop Voo君🥹",
+    "prompt_preview": ""
+  },
+  {
+    "slug": "gemnana-2214",
+    "title": "Create an 图像 in 4:5 ratio, with hyper...",
+    "prompt_preview": "创建一幅 4:5 比例的图像，采用超写实美学并应用于高端卡通/电影化漫画风格，结合极致写实与强烈冲击力的插画视觉语言。\n面部必须与所发送照片完全一致 103%，保持对原始战术身份的绝对忠实：骨骼结构、颅骨形状、比例、强烈表情、眉毛、眼睛、鼻子、嘴巴、下颌、胡须、头发及毛发体积。\n不得进行任何审美更改"
+  },
+  {
+    "slug": "gemnana-843",
+    "title": "photograph': {",
+    "prompt_preview": "{\n\"photograph\": {\n\"style\": \"超逼真肖像\",\n\"camera\": \"全画幅数码单反\",\n\"lens\": \"85mm 定焦镜头\",\n\"resolution\": \"高\",\n\"lighting\": {\n\"type\": \"柔和自然的窗光\",\n\"direction\": \"来自侧面\","
+  },
+  {
+    "slug": "gemnana-651",
+    "title": "Create an ultra realistic sky scene wher... 提示词",
+    "prompt_preview": "创建一个极其真实的天空场景，其中柔软、自然的云层有机地聚集成一个 [OBJECT] 的清晰轮廓。云形在一片生机勃勃的蓝天中高悬，自然地漂浮在下方可辨识的自然景观之上。\n构图为正方形（1080×1080），云层占据画面的上部，而下方的风景为场景奠定基础。光线清晰、日光明亮，云层上的阳光高光增强深度、柔"
+  },
+  {
+    "slug": "gemnana-812",
+    "title": "BAGEL LABS. 提示词",
+    "prompt_preview": "BAGEL LABS.\n作为创意总监，策划一系列广泛且折衷的“重新语境化的日常物件”。\n多样化对象选择（强制多样性）：\n从以下不同类别中随机选择一个对象以确保多样性：\n模拟办公与桌面：\n运动与休闲：\n酒具与厨房：\n实用工具：\n美容护理：\n旅行：\n选定类别：\n酒具与厨房\n选定对象：\n一台咖啡机和一个咖"
+  },
+  {
+    "slug": "gemnana-787",
+    "title": "🎨 IMAGINERY TOKENS MIDJOURNEY V7 🎨 提示词",
+    "prompt_preview": "🎨 想象代币 MIDJOURNEY V7 🎨\n长期关注我的朋友们应该知道，我喜欢玩这些想象代币，看看 AI 会如何对它们作出反应。\n这里有4个新的代币，以及一些可能的解释：\n* Thoughtfog: 想法像雾气一样泄露在空气中，化作可见的薄雾。\n* Anxietectonics: 焦虑构造学：压力"
+  },
+  {
+    "slug": "gemnana-2002",
+    "title": "style': \"high fashion editorial, minimalist surrealism\",",
+    "prompt_preview": "{\n\"风格\": \"高级时尚编辑，极简超现实主义\",\n\"主体\": \"一位自信的女性随意倚靠在一个超大号绿色皮革靴子雕塑上\",\n\"姿势\": \"放松却有力量的站姿，身体略成角度，一只手拿着一个小手提包\",\n\"服装\": {\n\"上装\": \"祖母绿贴身无袖上衣\",\n\"下装\": \"同色系绿色皮革紧身裤\",\n\"鞋履"
+  },
+  {
+    "slug": "gemnana-2271",
+    "title": "Ultra realistic dramatic 肖像 of a m...",
+    "prompt_preview": ""
+  },
+  {
+    "slug": "gemnana-1018",
+    "title": "render goal': \"Narrative cinematic fashion portrait\",",
+    "prompt_preview": "{\n\"render_goal\": \"叙事性电影感时尚肖像\",\n\"subject\": {\n\"pose\": \"女性行走，手持雨伞，放松的步态\",\n\"expression\": \"俏皮自信的冷笑\"\n},\n\"wardrobe\": \"时髦海军蓝风衣搭配皮靴\",\n\"environment\": {\n\"locatio"
+  },
+  {
+    "slug": "gemnana-1158",
+    "title": "Sometimes I want to stay alone away from... 提示词",
+    "prompt_preview": "有时候我想独自远离城市生活的喧嚣\n写实 by gemini nano banana\n提示 👇\n广角镜头，主体充当对抗狂风的锚。站在锯齿状的黑色岩石海岸线上，身后海浪在灰色的模糊中拍打。主体迎风前倾。服装是由一层层巨大的、无定形的原米色羊毛和做旧针织品构成，形成看起来像被侵蚀的雕塑般的轮廓。光线阴沉、"
+  },
+  {
+    "slug": "gemnana-1049",
+    "title": "scene': \"Urban street portrait on a quiet city sidewalk\",",
+    "prompt_preview": "{\n\"场景\": \"宁静城市人行道上的街头人像\",\n\"主体\": {\n\"性别\": \"女性\",\n\"年龄范围\": \"二十几岁后期到三十岁出头\",\n\"表情\": \"中性、内省、冷静自信\",\n\"姿势\": \"随意站立，微微靠着砖墙，重心偏向一条腿，手臂放松\",\n\"目光\": \"直视镜头，泰然自若，低调存在感\"\n},"
+  },
+  {
+    "slug": "gemnana-774",
+    "title": "A stylish woman taking a mirror selfie o... 提示词",
+    "prompt_preview": "一个时髦的女人在欧洲的鹅卵石街道上对着镜子自拍，穿着棕色粗花呢西装外套、白衬衫配奶油色领带、深色宽腿长裤和棕色皮鞋，搭配棕色报童帽和琥珀色镜片的飞行员太阳镜，长发乌黑并有自然波浪，手里在脸前拿着一部黑色智能手机，整体造型受复古男装启发，秋季配色，具有电影质感的街头摄影，浅景深，柔和的自然光，背景为古"
+  },
+  {
+    "slug": "gemnana-634",
+    "title": "image type': \"studio fashion portrait\",",
+    "prompt_preview": "{\n\"image_type\": \"工作室时尚肖像\",\n\"resolution_target\": \"8K 超高清\",\n\"orientation\": \"竖向\",\n\"framing\": {\n\"shot_type\": \"全身照\",\n\"camera_angle\": \"正对镜头，视线水平\",\n\"subject_"
+  },
+  {
+    "slug": "gemnana-2360",
+    "title": "3D miniature scene, a [JAPANESE ONSEN VI... 提示词",
+    "prompt_preview": "3D 微型场景，一个【日本温泉乡】，有【木制浴场、从天然温泉升起的蒸汽、石灯、枫树的秋色、穿着迷你浴衣的客人提着木桶】，呈现为一个小型平台立体模型。平台由天然温泉岩石雕刻而成并带有矿物沉积。侧视，可爱黏土风格，微型立体模型，柔和渲染的光效，温暖的蒸汽漫散光线，浅色背景。\n\n## 美学评分\n\n- 平均"
+  },
+  {
+    "slug": "gemnana-937",
+    "title": "image type':",
+    "prompt_preview": "{\n\"image_type\": \"运动展示姿势的编辑摄影\",\n\"visual_style\": \"高端健身编辑风格，电影质感，精品感\",\n\"composition\": {\n\"framing\": \"全身，强劲的站姿，强调肌肉线条\",\n\"camera_angle\": \"略低角度以增强力量感和统治感\",\n\""
+  },
+  {
+    "slug": "gemnana-1059",
+    "title": "[产品], high end 产品 advertising,...",
+    "prompt_preview": ""
+  },
+  {
+    "slug": "gemnana-976",
+    "title": "Calm eyes, simple elegance. 提示词",
+    "prompt_preview": ""
+  },
+  {
+    "slug": "gemnana-2321",
+    "title": "Create a single film noir–style cinemati... 提示词",
+    "prompt_preview": "将单幅黑色电影风格的电影画面划分为四个水平面板，全部描绘相同的拳击手和相同的擂台环境，通过光线、氛围和四个回合的叙事进展实现统一。\n整体风格：\n复古黑色电影照明、低调照明、硬阴影照明、分割灯光、情绪凝重紧张的氛围、最少的补光、极深的黑色、鲜明的对比、可见的胶片颗粒、轻微暗角、空气中由汗水和尘土形成的"
+  },
+  {
+    "slug": "gemnana-1399",
+    "title": "Role: Literary Curator & Typewriter Scul... 提示词",
+    "prompt_preview": "角色：文学策展人与打字机雕塑家\n输入：[诗人或诗歌，例如：T.S. 艾略特，巴勃罗·聂鲁达]\n阶段一：诗歌声音分析\n识别诗人的标志性节奏、反复出现的意象和情感核心\n选择4位当代或较不知名但具有相似感性的诗人\n提取他们作品中反复出现的5-8个实物对象\n阶段二：视觉呈现\n目标：2x2 网格的“打字机输出"
+  },
+  {
+    "slug": "gemnana-894",
+    "title": "subject': {",
+    "prompt_preview": "{\n\"subject\": {\n\"person\": \"女性，外表看起来二十多或三十多岁\",\n\"pose_and_expression\": [\n\"站在窗边，望向窗外，放松\",\n\"伸手拿柜台上的瓶子，手部为焦点\",\n\"照镜子，微笑\",\n\"手从瓶中按出精华，特写\",\n\"精华滴在指尖，微距拍摄\",\n\"将精华涂"
+  }
+]

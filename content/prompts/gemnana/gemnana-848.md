@@ -1,5 +1,5 @@
 ---
-title: 'request type': "image generation prompt","
+title: "64K DSLR 超写实人像渲染"
 slug: gemnana-848
 date: 2026-01-08
 added: 2026-07-27T11:31:40+08:00

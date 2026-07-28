@@ -1,5 +1,5 @@
 ---
-title: ""Ultra realistic studio portrait of a young woman in a three..."
+title: "深红背景下的黑色西装，超写实工作室肖像"
 slug: gemnana-1544
 date: 2026-01-18
 added: 2026-07-27T11:31:51+08:00

@@ -1,5 +1,5 @@
 ---
-title: "New Style sref 3543270584"
+title: "速写感插画，大胆扁平色彩"
 slug: gemnana-994
 date: 2026-01-11
 added: 2026-07-27T11:31:40+08:00

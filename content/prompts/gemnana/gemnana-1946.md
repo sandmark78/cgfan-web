@@ -1,5 +1,5 @@
 ---
-title: 'prompt type': "viral makeup product visual","
+title: "ASMR奶油美妆质地特写"
 slug: gemnana-1946
 date: 2026-02-03
 added: 2026-07-27T12:54:05+08:00

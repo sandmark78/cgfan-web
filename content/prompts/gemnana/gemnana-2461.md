@@ -1,5 +1,5 @@
 ---
-title: 'metadata': {"
+title: "三分法构图，编辑风格人像"
 slug: gemnana-2461
 date: 2026-03-09
 added: 2026-07-27T12:54:17+08:00

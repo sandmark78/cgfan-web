@@ -1,5 +1,5 @@
 ---
-title: "A massive, photorealistic cumulus cloud... 提示词"
+title: "积云雕塑Q版萌化"
 slug: gemnana-2547
 date: 2026-03-15
 added: 2026-07-27T12:54:17+08:00

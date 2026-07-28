@@ -1,5 +1,5 @@
 ---
-title: "<instructions Input Variable: [INSERT BA... 提示词"
+title: "视听透视乐队四格"
 slug: gemnana-1031
 date: 2026-01-11
 added: 2026-07-27T11:31:45+08:00

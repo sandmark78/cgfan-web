@@ -1,5 +1,5 @@
 ---
-title: 'generation request': {"
+title: "NanoBanana Pro 夜间露营观星，浪漫抓拍写实"
 slug: gemnana-1461
 date: 2026-01-16
 added: 2026-07-27T11:31:51+08:00

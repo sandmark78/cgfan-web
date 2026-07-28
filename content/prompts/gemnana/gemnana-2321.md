@@ -1,5 +1,5 @@
 ---
-title: "Create a single film noir–style cinemati... 提示词"
+title: "黑色电影风格，四格拳击手擂台叙事"
 slug: gemnana-2321
 date: 2026-02-28
 added: 2026-07-27T12:54:10+08:00

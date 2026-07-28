@@ -1,5 +1,5 @@
 ---
-title: "文艺复兴时期的解剖学研究"
+title: "Nano Banana Pro 图像生成"
 slug: gemnana-121
 date: 2025-11-06
 added: 2026-07-27T19:38:12+08:00

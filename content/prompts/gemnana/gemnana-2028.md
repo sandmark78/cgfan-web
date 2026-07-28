@@ -1,5 +1,5 @@
 ---
-title: 'request': {"
+title: "AI 图像生成请求"
 slug: gemnana-2028
 date: 2026-02-08
 added: 2026-07-27T12:54:10+08:00

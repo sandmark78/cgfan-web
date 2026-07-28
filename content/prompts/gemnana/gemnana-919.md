@@ -1,5 +1,5 @@
 ---
-title: 'prompt type': "Ultra Photorealistic Portrait","
+title: "湿润肌肤，侧面轮廓特写"
 slug: gemnana-919
 date: 2026-01-09
 added: 2026-07-27T11:31:40+08:00

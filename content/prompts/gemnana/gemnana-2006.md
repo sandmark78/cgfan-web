@@ -1,5 +1,5 @@
 ---
-title: 'image generation request': {"
+title: "Y2K 未来主义产品摄影，高对比双色渐变"
 slug: gemnana-2006
 date: 2026-02-06
 added: 2026-07-27T12:54:10+08:00

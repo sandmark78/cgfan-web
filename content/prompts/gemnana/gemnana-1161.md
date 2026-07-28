@@ -1,5 +1,5 @@
 ---
-title: "Druid of the Wasteland 提示词"
+title: "废土德鲁伊"
 slug: gemnana-1161
 date: 2026-01-13
 added: 2026-07-27T11:31:45+08:00

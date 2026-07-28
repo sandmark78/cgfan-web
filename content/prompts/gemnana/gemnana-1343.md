@@ -1,5 +1,5 @@
 ---
-title: "A warm, painterly illustration style wit... 提示词"
+title: "温暖手绘质感插画"
 slug: gemnana-1343
 date: 2026-01-15
 added: 2026-07-27T11:31:50+08:00

@@ -1,5 +1,5 @@
 ---
-title: 'Objective': "Create a stylized fashion portrait with bold co..."
+title: "大胆撞色时尚肖像，捧脸惊讶的戏剧瞬间"
 slug: gemnana-1404
 date: 2026-01-16
 added: 2026-07-27T11:31:50+08:00

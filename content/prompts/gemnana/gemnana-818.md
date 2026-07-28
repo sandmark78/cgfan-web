@@ -1,5 +1,5 @@
 ---
-title: "2026 plan:"
+title: "Perplexity × Tatiana 新风格"
 slug: gemnana-818
 date: 2026-01-07
 added: 2026-07-27T11:31:33+08:00

@@ -1,5 +1,5 @@
 ---
-title: 'resolution': "8K UHD","
+title: "8K 超写实商业美食摄影"
 slug: gemnana-949
 date: 2026-01-10
 added: 2026-07-27T11:31:40+08:00
