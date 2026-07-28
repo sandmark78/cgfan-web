@@ -118,7 +118,11 @@ body {
 }
 .daily-figure img.object-cover {
   transition: transform 1.2s cubic-bezier(.22,1,.36,1);
-  object-position: center center !important;
+}
+@media (max-width: 640px) {
+  .daily-figure img.object-cover {
+    object-position: center;
+  }
 }
 .daily-card:hover .daily-figure img.object-cover {
   transform: scale(1.05);
@@ -168,6 +172,7 @@ body {
   border-radius: 8px;
   color: #F2F0E9;
   white-space: nowrap;
+  overflow: hidden;
 }
 .daily-date-day {
   font-family: var(--font-serif), "Noto Serif SC", serif;
