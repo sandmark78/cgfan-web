@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/351.html"
 sourceLink: "https://x.com/xmliisu/status/1980161909828526514"
 author: "@xmliisu"
-authorLink: "https://x.com/xmliisu/status/1980161909828526514"
+authorLink: "https://x.com/xmliisu"
 cover: /images/prompts/gemnana-351.jpg
 ---
 

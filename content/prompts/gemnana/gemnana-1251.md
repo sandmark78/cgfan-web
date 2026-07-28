@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/1251.html"
 sourceLink: "https://x.com/coffeetime2022/status/2011446886021148758"
 author: "X / ナツ|プロフィールデザイナー"
-authorLink: "https://x.com/coffeetime2022/status/2011446886021148758"
+authorLink: "https://x.com/coffeetime2022"
 cover: /images/prompts/gemnana-1251.jpg
 ---
 

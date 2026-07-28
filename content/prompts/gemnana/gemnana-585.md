@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/585.html"
 sourceLink: "https://x.com/MatiasSchrank/status/2001908267208122861"
 author: "X / Matías Schrank"
-authorLink: "https://x.com/MatiasSchrank/status/2001908267208122861"
+authorLink: "https://x.com/MatiasSchrank"
 cover: /images/prompts/gemnana-585.jpg
 ---
 

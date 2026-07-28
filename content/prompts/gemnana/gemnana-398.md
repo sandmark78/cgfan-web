@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/398.html"
 sourceLink: "https://x.com/ShreyaYadav___/status/1985908915427758305"
 author: "@ShreyaYadav___"
-authorLink: "https://x.com/ShreyaYadav___/status/1985908915427758305"
+authorLink: "https://x.com/ShreyaYadav___"
 cover: /images/prompts/gemnana-398.jpg
 ---
 

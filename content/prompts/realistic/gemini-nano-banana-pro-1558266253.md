@@ -15,6 +15,7 @@ date: '2026-01-23'
 added: 2026-07-24
 source: https://x.com/i/status/2014576740492869761
 sourceLink: https://x.com/i/status/2014576740492869761
+authorLink: https://x.com/lexx_aura
 author: Lex (lexx_aura)
 ---
 

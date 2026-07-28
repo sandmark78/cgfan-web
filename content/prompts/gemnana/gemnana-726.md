@@ -12,7 +12,7 @@ difficulty: beginner
 source: "https://gemnana.com/zh/case/726.html"
 sourceLink: "https://x.com/michaelrabone/status/2008463557860491719"
 author: "X / Michael Rabone"
-authorLink: "https://x.com/michaelrabone/status/2008463557860491719"
+authorLink: "https://x.com/michaelrabone"
 cover: /images/prompts/gemnana-726.jpg
 ---
 

@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/474.html"
 sourceLink: "https://x.com/UNIBRACITY/status/1967129632093991164"
 author: "@UNIBRACITY"
-authorLink: "https://x.com/UNIBRACITY/status/1967129632093991164"
+authorLink: "https://x.com/UNIBRACITY"
 cover: /images/prompts/gemnana-474.jpg
 ---
 

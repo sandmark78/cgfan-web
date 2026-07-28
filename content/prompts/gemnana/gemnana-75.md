@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/75.html"
 sourceLink: "https://x.com/CharaspowerAI/status/1925593447802540408"
 author: "@CharaspowerAI"
-authorLink: "https://x.com/CharaspowerAI/status/1925593447802540408"
+authorLink: "https://x.com/CharaspowerAI"
 cover: /images/prompts/gemnana-75.jpg
 ---
 

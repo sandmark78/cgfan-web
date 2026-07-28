@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/1411.html"
 sourceLink: "https://x.com/rovvmut_/status/2012039630506639728"
 author: "X / Heisenberg"
-authorLink: "https://x.com/rovvmut_/status/2012039630506639728"
+authorLink: "https://x.com/rovvmut_"
 cover: /images/prompts/gemnana-1411.jpg
 ---
 

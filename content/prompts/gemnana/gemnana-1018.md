@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/1018.html"
 sourceLink: "https://x.com/hoor_world06/status/2010371975164944841"
 author: "X / Hoor"
-authorLink: "https://x.com/hoor_world06/status/2010371975164944841"
+authorLink: "https://x.com/hoor_world06"
 cover: /images/prompts/gemnana-1018.jpg
 ---
 

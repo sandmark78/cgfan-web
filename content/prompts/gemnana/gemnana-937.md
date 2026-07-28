@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/937.html"
 sourceLink: "https://x.com/cuties7377/status/2009861254341333164"
 author: "X / Cuties"
-authorLink: "https://x.com/cuties7377/status/2009861254341333164"
+authorLink: "https://x.com/cuties7377"
 cover: /images/prompts/gemnana-937.jpg
 ---
 

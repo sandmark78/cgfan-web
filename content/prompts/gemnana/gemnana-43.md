@@ -10,7 +10,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/43.html"
 sourceLink: "https://x.com/hc_dsn/status/1924665909073084507"
 author: "@hc_dsn"
-authorLink: "https://x.com/hc_dsn/status/1924665909073084507"
+authorLink: "https://x.com/hc_dsn"
 cover: /images/prompts/gemnana-43.jpg
 ---
 

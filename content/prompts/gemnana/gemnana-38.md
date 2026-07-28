@@ -12,7 +12,7 @@ difficulty: beginner
 source: "https://gemnana.com/zh/case/38.html"
 sourceLink: "https://x.com/AllaAisling/status/1924231647894896732"
 author: "@AllaAisling"
-authorLink: "https://x.com/AllaAisling/status/1924231647894896732"
+authorLink: "https://x.com/AllaAisling"
 cover: /images/prompts/gemnana-38.jpg
 ---
 

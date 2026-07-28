@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/1438.html"
 sourceLink: "https://x.com/iamrealsnow/status/2012135339763101836"
 author: "X / Snow"
-authorLink: "https://x.com/iamrealsnow/status/2012135339763101836"
+authorLink: "https://x.com/iamrealsnow"
 cover: /images/prompts/gemnana-1438.jpg
 ---
 

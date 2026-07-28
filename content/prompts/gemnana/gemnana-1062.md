@@ -12,7 +12,7 @@ difficulty: beginner
 source: "https://gemnana.com/zh/case/1062.html"
 sourceLink: "https://x.com/your_y6/status/2010669531040248279"
 author: "X / Your boyfriend"
-authorLink: "https://x.com/your_y6/status/2010669531040248279"
+authorLink: "https://x.com/your_y6"
 cover: /images/prompts/gemnana-1062.jpg
 ---
 

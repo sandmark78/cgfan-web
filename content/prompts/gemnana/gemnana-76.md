@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/76.html"
 sourceLink: "https://x.com/CharaspowerAI/status/1923778050845528388"
 author: "@CharaspowerAI"
-authorLink: "https://x.com/CharaspowerAI/status/1923778050845528388"
+authorLink: "https://x.com/CharaspowerAI"
 cover: /images/prompts/gemnana-76.jpg
 ---
 

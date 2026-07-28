@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/381.html"
 sourceLink: "https://x.com/songguoxiansen/status/1983347050306523506"
 author: "@songguoxiansen"
-authorLink: "https://x.com/songguoxiansen/status/1983347050306523506"
+authorLink: "https://x.com/songguoxiansen"
 cover: /images/prompts/gemnana-381.jpg
 ---
 

@@ -12,7 +12,7 @@ difficulty: beginner
 source: "https://gemnana.com/zh/case/1339.html"
 sourceLink: "https://x.com/Niniellissime/status/2011776645775118554"
 author: "X / Miss.Pitt"
-authorLink: "https://x.com/Niniellissime/status/2011776645775118554"
+authorLink: "https://x.com/Niniellissime"
 cover: /images/prompts/gemnana-1339.jpg
 ---
 

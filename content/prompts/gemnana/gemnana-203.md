@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/203.html"
 sourceLink: "https://x.com/TechieBySA/status/1942928111244394788"
 author: "@TechieBySA"
-authorLink: "https://x.com/TechieBySA/status/1942928111244394788"
+authorLink: "https://x.com/TechieBySA"
 cover: /images/prompts/gemnana-203.jpg
 ---
 

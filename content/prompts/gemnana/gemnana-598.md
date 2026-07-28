@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/598.html"
 sourceLink: "https://x.com/AIwithkhan/status/2002804332853653965"
 author: "X / Smiling Khan"
-authorLink: "https://x.com/AIwithkhan/status/2002804332853653965"
+authorLink: "https://x.com/AIwithkhan"
 cover: /images/prompts/gemnana-598.jpg
 ---
 

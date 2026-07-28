@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/582.html"
 sourceLink: "https://x.com/KanaWorks_AI/status/2001845214898733515"
 author: "X / KANA"
-authorLink: "https://x.com/KanaWorks_AI/status/2001845214898733515"
+authorLink: "https://x.com/KanaWorks_AI"
 cover: /images/prompts/gemnana-582.jpg
 ---
 

@@ -11,6 +11,7 @@ difficulty: intermediate
 cover: /images/prompts/minimalist-ocean-sailboat.jpg
 source: https://x.com/Naiknelofar788/status/2080720887314264212
 sourceLink: https://x.com/Naiknelofar788/status/2080720887314264212
+authorLink: https://x.com/Naiknelofar788
 ---
 
 Prompt 1: An ultra-minimalist aerial drone photograph of a vast deep-blue ocean stretching endlessly in every direction. A single small white sailboat is perfectly isolated near the center of the frame, emphasizing solitude, freedom, and scale. The sea has subtle ripples and rich navy-to-cobalt blue tones with natural texture. The composition features extensive negative space, creating a calm, cinematic, and peaceful atmosphere. Shot from a very high altitude with a top-down telephoto perspective, the sailboat appears tiny against the immense ocean. Soft natural daylight, realistic water reflections, crisp details, photorealistic, fine art travel photography, luxury editorial aesthetic, National Geographic style, Hasselblad medium-format camera, 100mm lens, ultra-sharp focus, HDR, 8K resolution, clean composition, minimalist color palette, no land, no horizon, no people visible, only the solitary sailboat surrounded by endless sea.

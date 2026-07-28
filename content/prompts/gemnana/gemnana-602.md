@@ -12,7 +12,7 @@ difficulty: beginner
 source: "https://gemnana.com/zh/case/602.html"
 sourceLink: "https://x.com/hc_dsn/status/2003072041889800346"
 author: "X / Howard Chen ✦"
-authorLink: "https://x.com/hc_dsn/status/2003072041889800346"
+authorLink: "https://x.com/hc_dsn"
 cover: /images/prompts/gemnana-602.jpg
 ---
 

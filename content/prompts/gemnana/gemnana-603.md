@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/603.html"
 sourceLink: "https://x.com/meng_dagg695/status/2003075417305928072"
 author: "X / ShaHid WaNii"
-authorLink: "https://x.com/meng_dagg695/status/2003075417305928072"
+authorLink: "https://x.com/meng_dagg695"
 cover: /images/prompts/gemnana-603.jpg
 ---
 

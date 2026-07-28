@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/323.html"
 sourceLink: "https://x.com/karatademada/status/1977343963745923372"
 author: "@karatademada"
-authorLink: "https://x.com/karatademada/status/1977343963745923372"
+authorLink: "https://x.com/karatademada"
 cover: /images/prompts/gemnana-323.jpg
 ---
 

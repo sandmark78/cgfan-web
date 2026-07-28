@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/1078.html"
 sourceLink: "https://x.com/Kashberg_0/status/2010733433157505149"
 author: "X / Kashberg"
-authorLink: "https://x.com/Kashberg_0/status/2010733433157505149"
+authorLink: "https://x.com/Kashberg_0"
 cover: /images/prompts/gemnana-1078.jpg
 ---
 

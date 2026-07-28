@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/1158.html"
 sourceLink: "https://x.com/PiyariArisha/status/2011114481015795906"
 author: "X / Vera Collins"
-authorLink: "https://x.com/PiyariArisha/status/2011114481015795906"
+authorLink: "https://x.com/PiyariArisha"
 cover: /images/prompts/gemnana-1158.jpg
 ---
 

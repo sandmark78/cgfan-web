@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/788.html"
 sourceLink: "https://x.com/iamsofiaijaz/status/2008809100369674649"
 author: "X / Aijaz"
-authorLink: "https://x.com/iamsofiaijaz/status/2008809100369674649"
+authorLink: "https://x.com/iamsofiaijaz"
 cover: /images/prompts/gemnana-788.jpg
 ---
 

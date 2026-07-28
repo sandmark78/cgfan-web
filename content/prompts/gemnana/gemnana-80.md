@@ -12,7 +12,7 @@ difficulty: beginner
 source: "https://gemnana.com/zh/case/80.html"
 sourceLink: "https://x.com/umesh_ai/status/1926182194159972503"
 author: "@umesh_ai"
-authorLink: "https://x.com/umesh_ai/status/1926182194159972503"
+authorLink: "https://x.com/umesh_ai"
 cover: /images/prompts/gemnana-80.jpg
 ---
 

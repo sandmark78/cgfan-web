@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/940.html"
 sourceLink: "https://x.com/lexx_aura/status/2009884343917818157"
 author: "X / Lex"
-authorLink: "https://x.com/lexx_aura/status/2009884343917818157"
+authorLink: "https://x.com/lexx_aura"
 cover: /images/prompts/gemnana-940.jpg
 ---
 

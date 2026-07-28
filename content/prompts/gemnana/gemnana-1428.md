@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/1428.html"
 sourceLink: "https://x.com/TheNewz_816/status/2012105583739261226"
 author: "X / The Newz 2.0"
-authorLink: "https://x.com/TheNewz_816/status/2012105583739261226"
+authorLink: "https://x.com/TheNewz_816"
 cover: /images/prompts/gemnana-1428.jpg
 ---
 

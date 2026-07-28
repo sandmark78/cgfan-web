@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/541.html"
 sourceLink: "https://x.com/icreatelife/status/2007433097806004661"
 author: "X / Kris Kashtanova"
-authorLink: "https://x.com/icreatelife/status/2007433097806004661"
+authorLink: "https://x.com/icreatelife"
 cover: /images/prompts/gemnana-541.jpg
 ---
 

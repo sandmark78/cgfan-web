@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/776.html"
 sourceLink: "https://x.com/Milo_Bahi_02/status/2008765662488059907"
 author: "X / Milo"
-authorLink: "https://x.com/Milo_Bahi_02/status/2008765662488059907"
+authorLink: "https://x.com/Milo_Bahi_02"
 cover: /images/prompts/gemnana-776.jpg
 ---
 

@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/563.html"
 sourceLink: "https://x.com/BubbleBrain/status/2009311435646726423"
 author: "X / BubbleBrain"
-authorLink: "https://x.com/BubbleBrain/status/2009311435646726423"
+authorLink: "https://x.com/BubbleBrain"
 cover: /images/prompts/gemnana-563.jpg
 ---
 

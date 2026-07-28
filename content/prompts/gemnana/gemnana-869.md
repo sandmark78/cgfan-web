@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/869.html"
 sourceLink: "https://x.com/TechieBySA/status/2009335963672301968"
 author: "X / TechieSA"
-authorLink: "https://x.com/TechieBySA/status/2009335963672301968"
+authorLink: "https://x.com/TechieBySA"
 cover: /images/prompts/gemnana-869.jpg
 ---
 

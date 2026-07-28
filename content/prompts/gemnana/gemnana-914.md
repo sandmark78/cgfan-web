@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/914.html"
 sourceLink: "https://x.com/craftian_keskin/status/2009665973058515294"
 author: "X / Keskin"
-authorLink: "https://x.com/craftian_keskin/status/2009665973058515294"
+authorLink: "https://x.com/craftian_keskin"
 cover: /images/prompts/gemnana-914.jpg
 ---
 

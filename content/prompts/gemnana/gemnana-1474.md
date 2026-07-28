@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/1474.html"
 sourceLink: "https://x.com/owata_aiart/status/2012320408259739898"
 author: "X / セレスティア💖学園長"
-authorLink: "https://x.com/owata_aiart/status/2012320408259739898"
+authorLink: "https://x.com/owata_aiart"
 cover: /images/prompts/gemnana-1474.jpg
 ---
 

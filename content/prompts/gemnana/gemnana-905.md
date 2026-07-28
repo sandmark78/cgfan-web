@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/905.html"
 sourceLink: "https://x.com/azed_ai/status/2009625733933736157"
 author: "X / Amira Zairi"
-authorLink: "https://x.com/azed_ai/status/2009625733933736157"
+authorLink: "https://x.com/azed_ai"
 cover: /images/prompts/gemnana-905.jpg
 ---
 

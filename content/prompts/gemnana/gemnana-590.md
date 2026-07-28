@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/590.html"
 sourceLink: "https://x.com/harboriis/status/2002280797315989960"
 author: "X / Harboriis"
-authorLink: "https://x.com/harboriis/status/2002280797315989960"
+authorLink: "https://x.com/harboriis"
 cover: /images/prompts/gemnana-590.jpg
 ---
 

@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/1234.html"
 sourceLink: "https://x.com/FilmHub00/status/2011425018438115821"
 author: "X / cinema 🎥"
-authorLink: "https://x.com/FilmHub00/status/2011425018438115821"
+authorLink: "https://x.com/FilmHub00"
 cover: /images/prompts/gemnana-1234.jpg
 ---
 

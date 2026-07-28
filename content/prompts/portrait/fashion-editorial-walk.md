@@ -11,6 +11,7 @@ difficulty: advanced
 cover: /images/prompts/fashion-editorial-walk.jpg
 source: https://x.com/ToroJushiAi/status/2080775030368301215
 sourceLink: https://x.com/ToroJushiAi/status/2080775030368301215
+authorLink: https://x.com/ToroJushiAi
 ---
 
 一位年轻成年东亚女性模特行走在现代地标建筑广场上，几乎全身入镜。镜头采用超低机位仰拍，人物位于画面中央略偏左，身体向前迈步，形成强烈的大跨步动态：前腿大步向前伸出，后腿向后支撑，步伐有力量感。上半身挺直，肩颈舒展，头部微微抬起并转向画面左上方，目光看向远处，不直视镜头，神情冷静、自信、疏离，具有高级时尚感。

@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/1195.html"
 sourceLink: "https://x.com/AIwithkhan/status/2011306880740835746"
 author: "X / Smiling Khan"
-authorLink: "https://x.com/AIwithkhan/status/2011306880740835746"
+authorLink: "https://x.com/AIwithkhan"
 cover: /images/prompts/gemnana-1195.jpg
 ---
 

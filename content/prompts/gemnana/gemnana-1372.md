@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/1372.html"
 sourceLink: "https://x.com/NanoBanana/status/2011857121835458929"
 author: "X / Nano Banana Pro"
-authorLink: "https://x.com/NanoBanana/status/2011857121835458929"
+authorLink: "https://x.com/NanoBanana"
 cover: /images/prompts/gemnana-1372.jpg
 ---
 

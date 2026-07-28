@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/955.html"
 sourceLink: "https://x.com/tisch_eins/status/2009973504653873193"
 author: "X / Tischeins"
-authorLink: "https://x.com/tisch_eins/status/2009973504653873193"
+authorLink: "https://x.com/tisch_eins"
 cover: /images/prompts/gemnana-955.jpg
 ---
 

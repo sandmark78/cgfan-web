@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/81.html"
 sourceLink: "https://x.com/TheRelianceAI/status/1926148686884606257"
 author: "@TheRelianceAI"
-authorLink: "https://x.com/TheRelianceAI/status/1926148686884606257"
+authorLink: "https://x.com/TheRelianceAI"
 cover: /images/prompts/gemnana-81.jpg
 ---
 

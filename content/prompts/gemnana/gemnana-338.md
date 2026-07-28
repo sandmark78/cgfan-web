@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/338.html"
 sourceLink: "https://x.com/cheerselflin/status/1979203307873931360"
 author: "@cheerselflin"
-authorLink: "https://x.com/cheerselflin/status/1979203307873931360"
+authorLink: "https://x.com/cheerselflin"
 cover: /images/prompts/gemnana-338.jpg
 ---
 

@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/1334.html"
 sourceLink: "https://x.com/Mind_Boticni/status/2011767339621237138"
 author: "X / Cherry 2.O"
-authorLink: "https://x.com/Mind_Boticni/status/2011767339621237138"
+authorLink: "https://x.com/Mind_Boticni"
 cover: /images/prompts/gemnana-1334.jpg
 ---
 

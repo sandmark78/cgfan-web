@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/512.html"
 sourceLink: "https://x.com/xmliisu/status/1987873107156078650"
 author: "X / Melisa♡"
-authorLink: "https://x.com/xmliisu/status/1987873107156078650"
+authorLink: "https://x.com/xmliisu"
 cover: /images/prompts/gemnana-512.jpg
 ---
 

@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/501.html"
 sourceLink: "https://x.com/YaseenK7212/status/1986747235862790574"
 author: "X / Yaseen Khan Gul"
-authorLink: "https://x.com/YaseenK7212/status/1986747235862790574"
+authorLink: "https://x.com/YaseenK7212"
 cover: /images/prompts/gemnana-501.jpg
 ---
 

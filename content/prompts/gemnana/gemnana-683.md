@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/683.html"
 sourceLink: "https://x.com/Mystveil7/status/2008178703705297280"
 author: "X / آ"
-authorLink: "https://x.com/Mystveil7/status/2008178703705297280"
+authorLink: "https://x.com/Mystveil7"
 cover: /images/prompts/gemnana-683.jpg
 ---
 

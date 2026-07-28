@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/531.html"
 sourceLink: "https://x.com/IamEmily2050/status/1994624635300974734"
 author: "X / Emily"
-authorLink: "https://x.com/IamEmily2050/status/1994624635300974734"
+authorLink: "https://x.com/IamEmily2050"
 cover: /images/prompts/gemnana-531.jpg
 ---
 

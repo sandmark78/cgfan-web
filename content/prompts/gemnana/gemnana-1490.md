@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/1490.html"
 sourceLink: "https://x.com/Ankit_patel211/status/2012389636329644376"
 author: "X / ANKIT PATEL 🇮🇳 | AI"
-authorLink: "https://x.com/Ankit_patel211/status/2012389636329644376"
+authorLink: "https://x.com/Ankit_patel211"
 cover: /images/prompts/gemnana-1490.jpg
 ---
 

@@ -12,7 +12,7 @@ difficulty: beginner
 source: "https://gemnana.com/zh/case/93.html"
 sourceLink: "https://x.com/TheRelianceAI/status/1925098220398465145"
 author: "@TheRelianceAI"
-authorLink: "https://x.com/TheRelianceAI/status/1925098220398465145"
+authorLink: "https://x.com/TheRelianceAI"
 cover: /images/prompts/gemnana-93.jpg
 ---
 

@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/1336.html"
 sourceLink: "https://x.com/saniaspeaks_/status/2011768680279834631"
 author: "X / 𝗦𝗮𝗻𝗶𝗮"
-authorLink: "https://x.com/saniaspeaks_/status/2011768680279834631"
+authorLink: "https://x.com/saniaspeaks_"
 cover: /images/prompts/gemnana-1336.jpg
 ---
 

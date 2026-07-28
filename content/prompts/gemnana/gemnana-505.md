@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/505.html"
 sourceLink: "https://x.com/rowanali09/status/1987442804994293778"
 author: "X / مانو بلی"
-authorLink: "https://x.com/rowanali09/status/1987442804994293778"
+authorLink: "https://x.com/rowanali09"
 cover: /images/prompts/gemnana-505.jpg
 ---
 

@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/775.html"
 sourceLink: "https://x.com/tabu_8114/status/2008765230441246824"
 author: "X / Minhaa"
-authorLink: "https://x.com/tabu_8114/status/2008765230441246824"
+authorLink: "https://x.com/tabu_8114"
 cover: /images/prompts/gemnana-775.jpg
 ---
 

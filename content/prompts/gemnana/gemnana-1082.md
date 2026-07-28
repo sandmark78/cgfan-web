@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/1082.html"
 sourceLink: "https://x.com/Project_VLA/status/2010767158280622499"
 author: "X / VL_Aschcroft"
-authorLink: "https://x.com/Project_VLA/status/2010767158280622499"
+authorLink: "https://x.com/Project_VLA"
 cover: /images/prompts/gemnana-1082.jpg
 ---
 

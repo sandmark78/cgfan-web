@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/535.html"
 sourceLink: "https://x.com/ShreyaYadav___/status/2000027682533421139"
 author: "X / Shreya Yadav"
-authorLink: "https://x.com/ShreyaYadav___/status/2000027682533421139"
+authorLink: "https://x.com/ShreyaYadav___"
 cover: /images/prompts/gemnana-535.jpg
 ---
 

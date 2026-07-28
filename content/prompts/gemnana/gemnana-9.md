@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/9.html"
 sourceLink: "https://x.com/firatbilal/status/1923627963251052769"
 author: "@firatbilal"
-authorLink: "https://x.com/firatbilal/status/1923627963251052769"
+authorLink: "https://x.com/firatbilal"
 cover: /images/prompts/gemnana-9.jpg
 ---
 

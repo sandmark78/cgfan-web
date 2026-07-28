@@ -12,7 +12,7 @@ difficulty: beginner
 source: "https://gemnana.com/zh/case/1113.html"
 sourceLink: "https://x.com/MissCat_AI/status/2011036512692183462"
 author: "X / 猫小姐学AI"
-authorLink: "https://x.com/MissCat_AI/status/2011036512692183462"
+authorLink: "https://x.com/MissCat_AI"
 cover: /images/prompts/gemnana-1113.jpg
 ---
 

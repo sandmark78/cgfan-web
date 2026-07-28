@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/1347.html"
 sourceLink: "https://x.com/SantiTorAI/status/2011791915843477845"
 author: "X / Santi Torres"
-authorLink: "https://x.com/SantiTorAI/status/2011791915843477845"
+authorLink: "https://x.com/SantiTorAI"
 cover: /images/prompts/gemnana-1347.jpg
 ---
 

@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/1532.html"
 sourceLink: "https://x.com/2abhisheknaks/status/2012888202760384949"
 author: "X / Abhishek Singh"
-authorLink: "https://x.com/2abhisheknaks/status/2012888202760384949"
+authorLink: "https://x.com/2abhisheknaks"
 cover: /images/prompts/gemnana-1532.jpg
 ---
 

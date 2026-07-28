@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/1351.html"
 sourceLink: "https://x.com/Just_sharon7/status/2011801500541206983"
 author: "X / Sharon Riley"
-authorLink: "https://x.com/Just_sharon7/status/2011801500541206983"
+authorLink: "https://x.com/Just_sharon7"
 cover: /images/prompts/gemnana-1351.jpg
 ---
 

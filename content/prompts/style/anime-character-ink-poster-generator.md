@@ -10,6 +10,7 @@ difficulty: advanced
 cover: /images/prompts/2080546079431692580.jpg
 source: https://x.com/Naiknelofar788/status/2080546079431692580
 sourceLink: https://x.com/Naiknelofar788/status/2080546079431692580
+authorLink: https://x.com/Naiknelofar788
 ---
 
 Based on the provided Logo, create a "promotional poster" for an anime (Female) character that maintains the identity and characteristics of the logo, using a main vertical visual composition (4:5 ratio). Respect the predominant ethnicity and skin tone of the mentioned country.

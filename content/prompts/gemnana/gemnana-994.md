@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/994.html"
 sourceLink: "https://x.com/michaelrabone/status/2010275507909398880"
 author: "X / Michael Rabone"
-authorLink: "https://x.com/michaelrabone/status/2010275507909398880"
+authorLink: "https://x.com/michaelrabone"
 cover: /images/prompts/gemnana-994.jpg
 ---
 

@@ -17,6 +17,7 @@ date: '2026-01-18'
 added: 2026-07-24
 source: https://x.com/i/status/2012578660453405071
 sourceLink: https://x.com/i/status/2012578660453405071
+authorLink: https://x.com/OOTD
 author: simplykingofdairyque
 ---
 

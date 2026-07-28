@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/1176.html"
 sourceLink: "https://x.com/Natuty2025/status/2011203422880743481"
 author: "X / なつ|AIアート"
-authorLink: "https://x.com/Natuty2025/status/2011203422880743481"
+authorLink: "https://x.com/Natuty2025"
 cover: /images/prompts/gemnana-1176.jpg
 ---
 

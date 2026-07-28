@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/842.html"
 sourceLink: "https://x.com/kaanakz/status/2009204329236828239"
 author: "X / Kaan"
-authorLink: "https://x.com/kaanakz/status/2009204329236828239"
+authorLink: "https://x.com/kaanakz"
 cover: /images/prompts/gemnana-842.jpg
 ---
 

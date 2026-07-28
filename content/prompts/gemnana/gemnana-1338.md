@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/1338.html"
 sourceLink: "https://x.com/Gdgtify/status/2011776378556064255"
 author: "X / Gadgetify"
-authorLink: "https://x.com/Gdgtify/status/2011776378556064255"
+authorLink: "https://x.com/Gdgtify"
 cover: /images/prompts/gemnana-1338.jpg
 ---
 

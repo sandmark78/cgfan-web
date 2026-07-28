@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/662.html"
 sourceLink: "https://x.com/hoor_world06/status/2007746849243795509"
 author: "X / Hoor"
-authorLink: "https://x.com/hoor_world06/status/2007746849243795509"
+authorLink: "https://x.com/hoor_world06"
 cover: /images/prompts/gemnana-662.jpg
 ---
 

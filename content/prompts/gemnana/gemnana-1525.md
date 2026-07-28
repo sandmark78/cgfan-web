@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/1525.html"
 sourceLink: "https://x.com/iX00AI/status/2012840790226346239"
 author: "X / iX | AI Video Creator"
-authorLink: "https://x.com/iX00AI/status/2012840790226346239"
+authorLink: "https://x.com/iX00AI"
 cover: /images/prompts/gemnana-1525.jpg
 ---
 

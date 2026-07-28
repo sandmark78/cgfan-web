@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/366.html"
 sourceLink: "https://x.com/IqraSaifiii/status/1982469385156489563"
 author: "@IqraSaifiii"
-authorLink: "https://x.com/IqraSaifiii/status/1982469385156489563"
+authorLink: "https://x.com/IqraSaifiii"
 cover: /images/prompts/gemnana-366.jpg
 ---
 

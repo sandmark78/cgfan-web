@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/1421.html"
 sourceLink: "https://x.com/Just_sharon7/status/2012069929860923448"
 author: "X / Sharon Riley"
-authorLink: "https://x.com/Just_sharon7/status/2012069929860923448"
+authorLink: "https://x.com/Just_sharon7"
 cover: /images/prompts/gemnana-1421.jpg
 ---
 

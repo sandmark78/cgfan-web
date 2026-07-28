@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/730.html"
 sourceLink: "https://x.com/harboriis/status/2008484790287430022"
 author: "X / Harboriis"
-authorLink: "https://x.com/harboriis/status/2008484790287430022"
+authorLink: "https://x.com/harboriis"
 cover: /images/prompts/gemnana-730.jpg
 ---
 

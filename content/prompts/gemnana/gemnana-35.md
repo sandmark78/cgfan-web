@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/35.html"
 sourceLink: "https://x.com/dotey/status/1924288320881750108"
 author: "@dotey"
-authorLink: "https://x.com/dotey/status/1924288320881750108"
+authorLink: "https://x.com/dotey"
 cover: /images/prompts/gemnana-35.jpg
 ---
 

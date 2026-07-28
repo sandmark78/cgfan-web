@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/1552.html"
 sourceLink: "https://x.com/geexEARBrjKIXfp/status/2012965053947941028"
 author: "X / のりまし"
-authorLink: "https://x.com/geexEARBrjKIXfp/status/2012965053947941028"
+authorLink: "https://x.com/geexEARBrjKIXfp"
 cover: /images/prompts/gemnana-1552.jpg
 ---
 

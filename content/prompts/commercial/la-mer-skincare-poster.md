@@ -11,6 +11,7 @@ difficulty: advanced
 cover: /images/prompts/la-mer-skincare-poster.jpg
 source: https://x.com/ou_zhen599/status/2080699209632952468
 sourceLink: https://x.com/ou_zhen599/status/2080699209632952468
+authorLink: https://x.com/ou_zhen599
 ---
 
 Create an ultra-premium 2x2 four-panel skincare campaign poster for La Mer, with absolute brand consistency but four completely different fantasy natural environments. Each quadrant must feel like a distinct magical world with its own ecological identity, color atmosphere, and cinematic mood, yet all four must still clearly belong to one unified La Mer visual universe. The product must remain the absolute protagonist in every panel, fully integrated into nature as if it naturally belongs there.

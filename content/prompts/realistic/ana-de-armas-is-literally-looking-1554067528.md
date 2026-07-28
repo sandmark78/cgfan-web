@@ -15,6 +15,7 @@ date: '2026-01-20'
 added: 2026-07-24
 source: https://x.com/i/status/2013588573065220479
 sourceLink: https://x.com/i/status/2013588573065220479
+authorLink: https://x.com/YaseenK7212
 author: Yaseen Khan Gul (YaseenK7212)
 ---
 

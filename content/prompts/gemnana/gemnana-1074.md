@@ -12,7 +12,7 @@ difficulty: beginner
 source: "https://gemnana.com/zh/case/1074.html"
 sourceLink: "https://x.com/phokuinc/status/2010730588001689893"
 author: "X / designerd"
-authorLink: "https://x.com/phokuinc/status/2010730588001689893"
+authorLink: "https://x.com/phokuinc"
 cover: /images/prompts/gemnana-1074.jpg
 ---
 

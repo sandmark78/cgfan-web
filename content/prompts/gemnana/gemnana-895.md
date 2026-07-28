@@ -12,7 +12,7 @@ difficulty: beginner
 source: "https://gemnana.com/zh/case/895.html"
 sourceLink: "https://x.com/TechieBySA/status/2009585651554116028"
 author: "X / TechieSA"
-authorLink: "https://x.com/TechieBySA/status/2009585651554116028"
+authorLink: "https://x.com/TechieBySA"
 cover: /images/prompts/gemnana-895.jpg
 ---
 

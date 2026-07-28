@@ -11,6 +11,7 @@ difficulty: intermediate
 cover: /images/prompts/cyanotype-aesthetic.jpg
 source: https://x.com/AllaAisling/status/2080812273250263097
 sourceLink: https://x.com/AllaAisling/status/2080812273250263097
+authorLink: https://x.com/AllaAisling
 ---
 
 [SUBJECT], cyanotype process aesthetic, everything rendered in prussian blue and white, botanical or architectural elements contact-printed around the subject, the image reading as both photograph and blueprint, UV light artifacts at the edges, the oldest photographic feeling.

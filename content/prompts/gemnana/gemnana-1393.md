@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/1393.html"
 sourceLink: "https://x.com/Adam38363368936/status/2011982558876315747"
 author: "X / Adam也叫吉米"
-authorLink: "https://x.com/Adam38363368936/status/2011982558876315747"
+authorLink: "https://x.com/Adam38363368936"
 cover: /images/prompts/gemnana-1393.jpg
 ---
 

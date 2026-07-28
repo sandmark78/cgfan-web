@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/797.html"
 sourceLink: "https://x.com/Sophia_here12/status/2008846206227632397"
 author: "X / Sophia✨"
-authorLink: "https://x.com/Sophia_here12/status/2008846206227632397"
+authorLink: "https://x.com/Sophia_here12"
 cover: /images/prompts/gemnana-797.jpg
 ---
 

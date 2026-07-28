@@ -11,6 +11,7 @@ cover: /images/prompts/editorial-screenprint-dam-worker.webp
 added: 2026-07-25T14:56:00+08:00
 source: https://x.com/gridzzle/status/2080609314138390780
 sourceLink: https://x.com/gridzzle/status/2080609314138390780
+authorLink: https://x.com/gridzzle
 ---
 
 ## 1. 大坝维护工 — 溢洪道中央的攀登者

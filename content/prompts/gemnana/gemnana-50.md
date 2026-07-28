@@ -10,7 +10,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/50.html"
 sourceLink: "https://x.com/icreatelife/status/1925268371227971871"
 author: "@icreatelife"
-authorLink: "https://x.com/icreatelife/status/1925268371227971871"
+authorLink: "https://x.com/icreatelife"
 cover: /images/prompts/gemnana-50.jpg
 ---
 

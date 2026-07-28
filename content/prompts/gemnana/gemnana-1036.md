@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/1036.html"
 sourceLink: "https://x.com/ibexdream/status/2010492916397908450"
 author: "X / ibexdream"
-authorLink: "https://x.com/ibexdream/status/2010492916397908450"
+authorLink: "https://x.com/ibexdream"
 cover: /images/prompts/gemnana-1036.jpg
 ---
 

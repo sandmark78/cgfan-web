@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/1294.html"
 sourceLink: "https://x.com/TAB_TAB_HH/status/2011649352746278926"
 author: "X / TJ"
-authorLink: "https://x.com/TAB_TAB_HH/status/2011649352746278926"
+authorLink: "https://x.com/TAB_TAB_HH"
 cover: /images/prompts/gemnana-1294.jpg
 ---
 

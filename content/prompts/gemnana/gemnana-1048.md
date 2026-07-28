@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/1048.html"
 sourceLink: "https://x.com/SimplyAnnisa/status/2010578685070582235"
 author: "X / Anissa"
-authorLink: "https://x.com/SimplyAnnisa/status/2010578685070582235"
+authorLink: "https://x.com/SimplyAnnisa"
 cover: /images/prompts/gemnana-1048.jpg
 ---
 

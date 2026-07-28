@@ -12,7 +12,7 @@ difficulty: beginner
 source: "https://gemnana.com/zh/case/449.html"
 sourceLink: "https://x.com/AIimagined/status/1961431851245211958"
 author: "@AIimagined"
-authorLink: "https://x.com/AIimagined/status/1961431851245211958"
+authorLink: "https://x.com/AIimagined"
 cover: /images/prompts/gemnana-449.jpg
 ---
 

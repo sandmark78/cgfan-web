@@ -11,6 +11,7 @@ difficulty: advanced
 cover: /images/prompts/novel-cover-framework.jpg
 source: https://x.com/MrLarus/status/2080683852700278988
 sourceLink: https://x.com/MrLarus/status/2080683852700278988
+authorLink: https://x.com/MrLarus
 ---
 
 【小说名称】：

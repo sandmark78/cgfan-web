@@ -11,6 +11,7 @@ difficulty: intermediate
 cover: /images/prompts/amazigh-woman.jpg
 source: https://x.com/michaelrabone/status/2080926085303140396
 sourceLink: https://x.com/michaelrabone/status/2080926085303140396
+authorLink: https://x.com/michaelrabone
 ---
 
 Cinematic wide open photography of Amazigh woman, her body and head wrapped in long golden orange ribbons blowing in the desert wind, golden hour --ar 16:9 --raw --profile wswelaj --s 300 --hd --v 8.2

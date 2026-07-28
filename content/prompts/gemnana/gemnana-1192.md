@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/1192.html"
 sourceLink: "https://x.com/ZaraIrahh/status/2011292261246718268"
 author: "X / Zara"
-authorLink: "https://x.com/ZaraIrahh/status/2011292261246718268"
+authorLink: "https://x.com/ZaraIrahh"
 cover: /images/prompts/gemnana-1192.jpg
 ---
 

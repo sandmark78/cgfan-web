@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/1180.html"
 sourceLink: "https://x.com/kingofdairyque/status/2011249682153132335"
 author: "X / simply"
-authorLink: "https://x.com/kingofdairyque/status/2011249682153132335"
+authorLink: "https://x.com/kingofdairyque"
 cover: /images/prompts/gemnana-1180.jpg
 ---
 

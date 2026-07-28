@@ -11,6 +11,7 @@ difficulty: advanced
 cover: /images/prompts/character-reference-prompt.jpg
 source: https://x.com/Ciri_ai/status/2080867597806133589
 sourceLink: https://x.com/Ciri_ai/status/2080867597806133589
+authorLink: https://x.com/Ciri_ai
 ---
 
 Use the uploaded character reference image as the strict identity and outfit reference.

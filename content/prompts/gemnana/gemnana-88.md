@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/88.html"
 sourceLink: "https://x.com/R2_fieldworks/status/1924433924106727531"
 author: "@R2_fieldworks"
-authorLink: "https://x.com/R2_fieldworks/status/1924433924106727531"
+authorLink: "https://x.com/R2_fieldworks"
 cover: /images/prompts/gemnana-88.jpg
 ---
 

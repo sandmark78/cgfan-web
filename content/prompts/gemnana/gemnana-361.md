@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/361.html"
 sourceLink: "https://x.com/hellokaton/status/1980121853474791580"
 author: "@hellokaton"
-authorLink: "https://x.com/hellokaton/status/1980121853474791580"
+authorLink: "https://x.com/hellokaton"
 cover: /images/prompts/gemnana-361.jpg
 ---
 

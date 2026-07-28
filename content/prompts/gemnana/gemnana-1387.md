@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/1387.html"
 sourceLink: "https://x.com/vt_pharma/status/2011940450215903352"
 author: "X / 飴村ファーマ🍬💊@薬学系VTuber"
-authorLink: "https://x.com/vt_pharma/status/2011940450215903352"
+authorLink: "https://x.com/vt_pharma"
 cover: /images/prompts/gemnana-1387.jpg
 ---
 

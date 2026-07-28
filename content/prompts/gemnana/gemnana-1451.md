@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/1451.html"
 sourceLink: "https://x.com/Dari_Designs/status/2012178722615329176"
 author: "X / Daria_Surkova"
-authorLink: "https://x.com/Dari_Designs/status/2012178722615329176"
+authorLink: "https://x.com/Dari_Designs"
 cover: /images/prompts/gemnana-1451.jpg
 ---
 

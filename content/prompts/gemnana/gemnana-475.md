@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/475.html"
 sourceLink: "https://x.com/ImperfectEngel/status/1961833518163481001"
 author: "@ImperfectEngel"
-authorLink: "https://x.com/ImperfectEngel/status/1961833518163481001"
+authorLink: "https://x.com/ImperfectEngel"
 cover: /images/prompts/gemnana-475.jpg
 ---
 

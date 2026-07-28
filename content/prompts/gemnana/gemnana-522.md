@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/522.html"
 sourceLink: "https://x.com/SebJefferies/status/1991531687147360728"
 author: "X / Sebastien Jefferies"
-authorLink: "https://x.com/SebJefferies/status/1991531687147360728"
+authorLink: "https://x.com/SebJefferies"
 cover: /images/prompts/gemnana-522.jpg
 ---
 

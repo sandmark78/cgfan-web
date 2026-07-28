@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/104.html"
 sourceLink: "https://x.com/mariia_gonchar/status/1931774946608370013"
 author: "@mariia_gonchar"
-authorLink: "https://x.com/mariia_gonchar/status/1931774946608370013"
+authorLink: "https://x.com/mariia_gonchar"
 cover: /images/prompts/gemnana-104.jpg
 ---
 

@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/1089.html"
 sourceLink: "https://x.com/laphalenelibre/status/2010809915724497119"
 author: "X / La Phalène Libre 🪶 (Lilou)"
-authorLink: "https://x.com/laphalenelibre/status/2010809915724497119"
+authorLink: "https://x.com/laphalenelibre"
 cover: /images/prompts/gemnana-1089.jpg
 ---
 

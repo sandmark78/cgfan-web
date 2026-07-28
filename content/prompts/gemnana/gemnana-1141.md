@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/1141.html"
 sourceLink: "https://x.com/SimplyAnnisa/status/2011081163109236916"
 author: "X / Anissa"
-authorLink: "https://x.com/SimplyAnnisa/status/2011081163109236916"
+authorLink: "https://x.com/SimplyAnnisa"
 cover: /images/prompts/gemnana-1141.jpg
 ---
 

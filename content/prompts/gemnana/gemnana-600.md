@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/600.html"
 sourceLink: "https://x.com/craftcapitallab/status/2002897558897848771"
 author: "X / ててつろう"
-authorLink: "https://x.com/craftcapitallab/status/2002897558897848771"
+authorLink: "https://x.com/craftcapitallab"
 cover: /images/prompts/gemnana-600.jpg
 ---
 

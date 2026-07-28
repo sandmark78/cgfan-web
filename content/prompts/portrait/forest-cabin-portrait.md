@@ -10,6 +10,7 @@ difficulty: intermediate
 cover: /images/prompts/2080510789065093167.jpg
 source: https://x.com/qoobee2036/status/2080510789065093167
 sourceLink: https://x.com/qoobee2036/status/2080510789065093167
+authorLink: https://x.com/qoobee2036
 ---
 
 # 森林木屋人像

@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/379.html"
 sourceLink: "https://x.com/Samann_ai/status/1982774584198991988"
 author: "@Samann_ai"
-authorLink: "https://x.com/Samann_ai/status/1982774584198991988"
+authorLink: "https://x.com/Samann_ai"
 cover: /images/prompts/gemnana-379.jpg
 ---
 

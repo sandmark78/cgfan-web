@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/1093.html"
 sourceLink: "https://x.com/tokyo_Valentine/status/2010849689973993624"
 author: "X / とすくん"
-authorLink: "https://x.com/tokyo_Valentine/status/2010849689973993624"
+authorLink: "https://x.com/tokyo_Valentine"
 cover: /images/prompts/gemnana-1093.jpg
 ---
 

@@ -10,6 +10,7 @@ difficulty: advanced
 cover: /images/prompts/2080580873620251071.jpg
 source: https://x.com/ou_zhen599/status/2080580873620251071
 sourceLink: https://x.com/ou_zhen599/status/2080580873620251071
+authorLink: https://x.com/ou_zhen599
 ---
 
 Create an ultra-premium fragrance advertising poster for Terre d'Hermès, built around one hyper-real perfume bottle as the absolute hero product, emerging from a sculptural desert-earth environment with an explosive upward arc of sand, dust, and dry soil particles behind and around it. The image must feel refined, elemental, masculine, geological, and mythic, like a world-class luxury fragrance campaign. The product must remain the central visual protagonist. Surround it with an exquisitely controlled environment of sand grains, dry earth, fractured soil, weathered root-like dead wood, and only the faintest residual traces of withered botanical matter, all composed with high-end restraint. The scene must feel both realistic and monumental, as if the perfume has been born from the dry memory of the earth itself. Use elegant English title typography, subtle official-feeling brand logic, minimal support text, and an overall composition with strong impact yet extreme control.

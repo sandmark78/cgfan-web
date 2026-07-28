@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/270.html"
 sourceLink: "https://x.com/miilesus/status/1921944436684038496"
 author: "@miilesus"
-authorLink: "https://x.com/miilesus/status/1921944436684038496"
+authorLink: "https://x.com/miilesus"
 cover: /images/prompts/gemnana-270.jpg
 ---
 

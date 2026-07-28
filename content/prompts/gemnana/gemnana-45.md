@@ -10,7 +10,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/45.html"
 sourceLink: "https://x.com/Artedeingenio/status/1920423915211375060"
 author: "@Artedeingenio"
-authorLink: "https://x.com/Artedeingenio/status/1920423915211375060"
+authorLink: "https://x.com/Artedeingenio"
 cover: /images/prompts/gemnana-45.jpg
 ---
 

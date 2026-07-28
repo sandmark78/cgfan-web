@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/965.html"
 sourceLink: "https://x.com/AmirMushich/status/2010070395974504565"
 author: "X / AmirMušić"
-authorLink: "https://x.com/AmirMushich/status/2010070395974504565"
+authorLink: "https://x.com/AmirMushich"
 cover: /images/prompts/gemnana-965.jpg
 ---
 

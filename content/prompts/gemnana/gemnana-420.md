@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/420.html"
 sourceLink: "https://x.com/umesh_ai/status/1960370946562564353"
 author: "@umesh_ai"
-authorLink: "https://x.com/umesh_ai/status/1960370946562564353"
+authorLink: "https://x.com/umesh_ai"
 cover: /images/prompts/gemnana-420.jpg
 ---
 

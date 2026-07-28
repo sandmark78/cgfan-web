@@ -12,7 +12,7 @@ difficulty: beginner
 source: "https://gemnana.com/zh/case/1223.html"
 sourceLink: "https://x.com/moshimoshi_ai/status/2011395368173572569"
 author: "X / もしもし@Aiart"
-authorLink: "https://x.com/moshimoshi_ai/status/2011395368173572569"
+authorLink: "https://x.com/moshimoshi_ai"
 cover: /images/prompts/gemnana-1223.jpg
 ---
 

@@ -15,6 +15,7 @@ date: '2026-01-19'
 added: 2026-07-24
 source: https://x.com/i/status/2012841665359483325
 sourceLink: https://x.com/i/status/2012841665359483325
+authorLink: https://x.com/azed_ai
 author: Amira Zairi (azed_ai)
 ---
 

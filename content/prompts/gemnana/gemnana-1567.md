@@ -12,7 +12,7 @@ difficulty: beginner
 source: "https://gemnana.com/zh/case/1567.html"
 sourceLink: "https://x.com/yourself_life/status/2013067421662454104"
 author: "X / エル"
-authorLink: "https://x.com/yourself_life/status/2013067421662454104"
+authorLink: "https://x.com/yourself_life"
 cover: /images/prompts/gemnana-1567.jpg
 ---
 

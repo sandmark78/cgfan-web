@@ -10,7 +10,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/28.html"
 sourceLink: "https://x.com/B_4AI/status/1924410511392719343"
 author: "@B_4AI"
-authorLink: "https://x.com/B_4AI/status/1924410511392719343"
+authorLink: "https://x.com/B_4AI"
 cover: /images/prompts/gemnana-28.jpg
 ---
 

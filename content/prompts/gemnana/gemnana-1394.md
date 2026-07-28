@@ -12,7 +12,7 @@ difficulty: beginner
 source: "https://gemnana.com/zh/case/1394.html"
 sourceLink: "https://x.com/catale7a/status/2011985645548494892"
 author: "X / 𝑪𝒂𝒕𝒂𝒍𝒆𝒚𝒂🛡"
-authorLink: "https://x.com/catale7a/status/2011985645548494892"
+authorLink: "https://x.com/catale7a"
 cover: /images/prompts/gemnana-1394.jpg
 ---
 

@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/1150.html"
 sourceLink: "https://x.com/NameIsSudee/status/2011106561838723266"
 author: "X / Sudee🥀"
-authorLink: "https://x.com/NameIsSudee/status/2011106561838723266"
+authorLink: "https://x.com/NameIsSudee"
 cover: /images/prompts/gemnana-1150.jpg
 ---
 

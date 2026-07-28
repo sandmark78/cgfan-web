@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/866.html"
 sourceLink: "https://x.com/TheLOKII_/status/2009310549994283496"
 author: "X / LOKII"
-authorLink: "https://x.com/TheLOKII_/status/2009310549994283496"
+authorLink: "https://x.com/TheLOKII_"
 cover: /images/prompts/gemnana-866.jpg
 ---
 

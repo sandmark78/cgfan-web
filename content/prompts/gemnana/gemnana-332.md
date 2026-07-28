@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/332.html"
 sourceLink: "https://x.com/MANISH1027512/status/1978041705623343437"
 author: "@MANISH1027512"
-authorLink: "https://x.com/MANISH1027512/status/1978041705623343437"
+authorLink: "https://x.com/MANISH1027512"
 cover: /images/prompts/gemnana-332.jpg
 ---
 

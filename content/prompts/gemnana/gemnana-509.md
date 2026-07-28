@@ -12,7 +12,7 @@ difficulty: beginner
 source: "https://gemnana.com/zh/case/509.html"
 sourceLink: "https://x.com/LudovicCreator/status/1987867842952224973"
 author: "X / LudovicCreator"
-authorLink: "https://x.com/LudovicCreator/status/1987867842952224973"
+authorLink: "https://x.com/LudovicCreator"
 cover: /images/prompts/gemnana-509.jpg
 ---
 

@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/1058.html"
 sourceLink: "https://x.com/ChillaiKalan__/status/2010663134743368058"
 author: "X / K"
-authorLink: "https://x.com/ChillaiKalan__/status/2010663134743368058"
+authorLink: "https://x.com/ChillaiKalan__"
 cover: /images/prompts/gemnana-1058.jpg
 ---
 

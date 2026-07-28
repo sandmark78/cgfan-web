@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/1045.html"
 sourceLink: "https://x.com/rokkadou/status/2010560555514462717"
 author: "X / ゆい"
-authorLink: "https://x.com/rokkadou/status/2010560555514462717"
+authorLink: "https://x.com/rokkadou"
 cover: /images/prompts/gemnana-1045.jpg
 ---
 

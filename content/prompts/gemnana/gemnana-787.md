@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/787.html"
 sourceLink: "https://x.com/LudovicCreator/status/2008795769982128482"
 author: "X / LudovicCreator"
-authorLink: "https://x.com/LudovicCreator/status/2008795769982128482"
+authorLink: "https://x.com/LudovicCreator"
 cover: /images/prompts/gemnana-787.jpg
 ---
 

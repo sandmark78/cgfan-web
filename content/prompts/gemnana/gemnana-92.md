@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/92.html"
 sourceLink: "https://x.com/alban_gz/status/1925446996468371893"
 author: "@alban_gz"
-authorLink: "https://x.com/alban_gz/status/1925446996468371893"
+authorLink: "https://x.com/alban_gz"
 cover: /images/prompts/gemnana-92.jpg
 ---
 

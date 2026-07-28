@@ -11,6 +11,7 @@ difficulty: advanced
 cover: /images/prompts/storybook-diorama-grid.jpg
 source: https://x.com/Gdgtify/status/2080778048606032374
 sourceLink: https://x.com/Gdgtify/status/2080778048606032374
+authorLink: https://x.com/Gdgtify
 ---
 
 2x2 grid, do this 4 real non-copyrighted public-space books.

@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/314.html"
 sourceLink: "https://x.com/Arminn_Ai/status/1969446581788426252"
 author: "@Arminn_Ai"
-authorLink: "https://x.com/Arminn_Ai/status/1969446581788426252"
+authorLink: "https://x.com/Arminn_Ai"
 cover: /images/prompts/gemnana-314.jpg
 ---
 

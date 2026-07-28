@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/193.html"
 sourceLink: "https://x.com/alex_prompter/status/1935739243352989945"
 author: "@alex_prompter"
-authorLink: "https://x.com/alex_prompter/status/1935739243352989945"
+authorLink: "https://x.com/alex_prompter"
 cover: /images/prompts/gemnana-193.jpg
 ---
 

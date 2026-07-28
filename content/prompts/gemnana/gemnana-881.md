@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/881.html"
 sourceLink: "https://x.com/Sheldon056/status/2009458579305267681"
 author: "X / Duet | AI"
-authorLink: "https://x.com/Sheldon056/status/2009458579305267681"
+authorLink: "https://x.com/Sheldon056"
 cover: /images/prompts/gemnana-881.jpg
 ---
 

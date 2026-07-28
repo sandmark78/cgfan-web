@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/899.html"
 sourceLink: "https://x.com/astronomerozge1/status/2009613642522661037"
 author: "X / Özge Döner"
-authorLink: "https://x.com/astronomerozge1/status/2009613642522661037"
+authorLink: "https://x.com/astronomerozge1"
 cover: /images/prompts/gemnana-899.jpg
 ---
 

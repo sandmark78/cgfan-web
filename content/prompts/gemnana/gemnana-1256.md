@@ -12,7 +12,7 @@ difficulty: beginner
 source: "https://gemnana.com/zh/case/1256.html"
 sourceLink: "https://x.com/tisch_eins/status/2011468365831827764"
 author: "X / Tischeins"
-authorLink: "https://x.com/tisch_eins/status/2011468365831827764"
+authorLink: "https://x.com/tisch_eins"
 cover: /images/prompts/gemnana-1256.jpg
 ---
 

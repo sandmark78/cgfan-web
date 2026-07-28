@@ -12,7 +12,7 @@ difficulty: beginner
 source: "https://gemnana.com/zh/case/1290.html"
 sourceLink: "https://x.com/AI_Ethicist_NYC/status/2011640329435296043"
 author: "X / Whisper Dan"
-authorLink: "https://x.com/AI_Ethicist_NYC/status/2011640329435296043"
+authorLink: "https://x.com/AI_Ethicist_NYC"
 cover: /images/prompts/gemnana-1290.jpg
 ---
 

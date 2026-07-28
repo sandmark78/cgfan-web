@@ -11,7 +11,7 @@ difficulty: beginner
 source: "https://gemnana.com/zh/case/19.html"
 sourceLink: "https://x.com/azed_ai/status/1923739813414568075"
 author: "@azed_ai"
-authorLink: "https://x.com/azed_ai/status/1923739813414568075"
+authorLink: "https://x.com/azed_ai"
 cover: /images/prompts/gemnana-19.jpg
 ---
 

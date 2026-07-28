@@ -11,6 +11,7 @@ difficulty: intermediate
 cover: /images/prompts/art-nouveau-fashion.jpg
 source: https://x.com/RockGrokAI/status/2080729730731692170
 sourceLink: https://x.com/RockGrokAI/status/2080729730731692170
+authorLink: https://x.com/RockGrokAI
 ---
 
 Swanky glamorous woman reclining elegantly with strong Art Nouveau aesthetic — flowing organic lines, delicate contour lines, ornate decorative patterns and swirls, rich gold, black, and crimson tones, luxurious high-fashion glamour magazine style, sensual and refined atmosphere. No words or letters.

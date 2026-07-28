@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/996.html"
 sourceLink: "https://x.com/oye_samia/status/2010284583028486414"
 author: "X / Dr. Samia"
-authorLink: "https://x.com/oye_samia/status/2010284583028486414"
+authorLink: "https://x.com/oye_samia"
 cover: /images/prompts/gemnana-996.jpg
 ---
 

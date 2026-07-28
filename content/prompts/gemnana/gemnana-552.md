@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/552.html"
 sourceLink: "https://x.com/berryxia/status/2007371413628272679"
 author: "X / Berryxia.AI"
-authorLink: "https://x.com/berryxia/status/2007371413628272679"
+authorLink: "https://x.com/berryxia"
 cover: /images/prompts/gemnana-552.jpg
 ---
 

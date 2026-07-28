@@ -10,6 +10,7 @@ difficulty: advanced
 cover: /images/prompts/2080670591531483339.jpg
 source: https://x.com/Gdgtify/status/2080670591531483339
 sourceLink: https://x.com/Gdgtify/status/2080670591531483339
+authorLink: https://x.com/Gdgtify
 ---
 
 # 欧洲小吃海报生成器

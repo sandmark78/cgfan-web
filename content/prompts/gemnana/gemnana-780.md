@@ -12,7 +12,7 @@ difficulty: advanced
 source: "https://gemnana.com/zh/case/780.html"
 sourceLink: "https://x.com/kingofdairyque/status/2008773580893679871"
 author: "X / simply"
-authorLink: "https://x.com/kingofdairyque/status/2008773580893679871"
+authorLink: "https://x.com/kingofdairyque"
 cover: /images/prompts/gemnana-780.jpg
 ---
 

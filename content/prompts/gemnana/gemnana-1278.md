@@ -12,7 +12,7 @@ difficulty: beginner
 source: "https://gemnana.com/zh/case/1278.html"
 sourceLink: "https://x.com/dqxmoet/status/2011592975776936004"
 author: "X / もえっトン"
-authorLink: "https://x.com/dqxmoet/status/2011592975776936004"
+authorLink: "https://x.com/dqxmoet"
 cover: /images/prompts/gemnana-1278.jpg
 ---
 

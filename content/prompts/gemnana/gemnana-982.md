@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/982.html"
 sourceLink: "https://x.com/AIwithSynthia/status/2010213849618886946"
 author: "X / Synthia"
-authorLink: "https://x.com/AIwithSynthia/status/2010213849618886946"
+authorLink: "https://x.com/AIwithSynthia"
 cover: /images/prompts/gemnana-982.jpg
 ---
 

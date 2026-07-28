@@ -12,7 +12,7 @@ difficulty: beginner
 source: "https://gemnana.com/zh/case/1283.html"
 sourceLink: "https://x.com/nanat_anna/status/2011619572307411300"
 author: "X / 村嶋杏奈｜クリエイター"
-authorLink: "https://x.com/nanat_anna/status/2011619572307411300"
+authorLink: "https://x.com/nanat_anna"
 cover: /images/prompts/gemnana-1283.jpg
 ---
 

@@ -12,7 +12,7 @@ difficulty: beginner
 source: "https://gemnana.com/zh/case/573.html"
 sourceLink: "https://x.com/berryxia/status/2003105126438019556"
 author: "X / Berryxia.AI"
-authorLink: "https://x.com/berryxia/status/2003105126438019556"
+authorLink: "https://x.com/berryxia"
 cover: /images/prompts/gemnana-573.jpg
 ---
 

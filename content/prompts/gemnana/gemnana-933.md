@@ -12,7 +12,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/933.html"
 sourceLink: "https://x.com/miyakoukisima/status/2009840188772773998"
 author: "X / miya"
-authorLink: "https://x.com/miyakoukisima/status/2009840188772773998"
+authorLink: "https://x.com/miyakoukisima"
 cover: /images/prompts/gemnana-933.jpg
 ---
 

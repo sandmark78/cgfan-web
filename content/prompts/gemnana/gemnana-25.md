@@ -10,7 +10,7 @@ difficulty: intermediate
 source: "https://gemnana.com/zh/case/25.html"
 sourceLink: "https://x.com/michaelrabone/status/1924374502529438005"
 author: "@michaelrabone"
-authorLink: "https://x.com/michaelrabone/status/1924374502529438005"
+authorLink: "https://x.com/michaelrabone"
 cover: /images/prompts/gemnana-25.jpg
 ---
 
