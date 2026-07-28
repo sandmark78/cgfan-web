@@ -88,7 +88,7 @@ export function PromptCard({ prompt, priority = false }: PromptCardProps) {
     <article className="glass-card group relative flex h-full flex-col overflow-hidden min-w-0">
       <Link
         href={`/prompt/${prompt.slug}`}
-        className="flex flex-1 flex-col"
+        className="flex flex-1 flex-col min-w-0"
         aria-label={`查看 ${prompt.title} 的完整提示词`}
       >
         {/* 封面图 */}
