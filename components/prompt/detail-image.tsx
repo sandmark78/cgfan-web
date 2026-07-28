@@ -48,8 +48,7 @@ export function DetailImage({ src, alt }: DetailImageProps) {
 
   return (
     <>
-      {/* 临时隐藏图片 */}
-      {/* <div 
+      <div 
         className="cursor-zoom-in relative overflow-hidden"
         onClick={() => setShowLightbox(true)}
       >
@@ -63,7 +62,7 @@ export function DetailImage({ src, alt }: DetailImageProps) {
           priority
           onError={() => setHasError(true)}
         />
-      </div> */}
+      </div>
 
       {/* Lightbox */}
       {showLightbox && (
