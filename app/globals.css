@@ -1013,9 +1013,8 @@ input[type="search"]:focus {
   }
 
   /* 媒体元素防溢出 */
-  img, iframe, video, svg {
+  iframe, video, svg {
     max-width: 100% !important;
-    height: auto !important;
     display: block;
   }
 }
