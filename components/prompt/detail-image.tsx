@@ -48,12 +48,12 @@ export function DetailImage({ src, alt }: DetailImageProps) {
 
   return (
     <>
-      <div 
+      {/* 临时隐藏图片 */}
+      {/* <div 
         className="cursor-zoom-in relative overflow-hidden"
         onClick={() => setShowLightbox(true)}
       >
-        {/* 临时隐藏图片，用于测试 */}
-        {/* <Image
+        <Image
           src={src}
           alt={alt}
           width={1200}
@@ -62,11 +62,8 @@ export function DetailImage({ src, alt }: DetailImageProps) {
           className="w-full object-cover transition-transform hover:scale-105"
           priority
           onError={() => setHasError(true)}
-        /> */}
-        <div className="aspect-square w-full bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center">
-          <span className="text-6xl">🎨</span>
-        </div>
-      </div>
+        />
+      </div> */}
 
       {/* Lightbox */}
       {showLightbox && (
