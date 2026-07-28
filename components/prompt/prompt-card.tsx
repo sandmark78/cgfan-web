@@ -123,7 +123,7 @@ export function PromptCard({ prompt, priority = false }: PromptCardProps) {
             </h3>
 
             {/* 摘要 */}
-            <p className="mb-3 line-clamp-2 text-sm text-gray-600 dark:text-gray-400">
+            <p className="mb-3 line-clamp-2 break-words text-sm text-gray-600 dark:text-gray-400">
               {summary}
             </p>
           </div>
