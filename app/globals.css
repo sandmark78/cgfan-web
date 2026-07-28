@@ -366,7 +366,7 @@ body {
 
 /* ===== 内容层毛玻璃效果 ===== */
 .shell {
-  max-width: 1120px;
+  max-width: min(1120px, 100%);
   margin: 0 auto;
   padding: 16px clamp(12px, 3vw, 32px);
   position: relative;
