@@ -669,6 +669,7 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
   ] as const
 
   return (
+    <>
     <div className="rounded-2xl border border-white/30 bg-white/70 p-8 shadow-lg backdrop-blur-xl dark:border-white/10 dark:bg-white/5">
       {/* 头部：人格信息 + 收藏数徽章 */}
       <div className="flex items-start justify-between mb-6">
@@ -730,34 +731,37 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
         })}
       </div>
 
-      {/* 操作按钮 */}
-      <div className="mt-8 flex flex-col items-center gap-3">
-        <div className="flex gap-3">
-          <button
-            onClick={handleDownloadCard}
-            disabled={isGenerating}
-            className="inline-flex items-center gap-2 rounded-full bg-emerald-600 px-6 py-3 text-sm font-semibold text-white shadow-md transition-all hover:bg-emerald-500 hover:shadow-lg disabled:opacity-50"
-          >
-            <Download className="h-4 w-4" />
-            {isGenerating ? '生成中...' : '下载美学人格卡片'}
-          </button>
-          <a
-            href="/explore"
-            className="inline-flex items-center gap-2 rounded-full bg-emerald-600 px-8 py-3 text-sm font-semibold text-white shadow-md transition-all hover:bg-emerald-500 hover:shadow-lg"
-          >
-            继续收藏
-            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </a>
-          <button
-            onClick={() => setShowRetakeConfirm(true)}
-            className="inline-flex items-center gap-2 rounded-full border border-gray-300 bg-white px-6 py-3 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:hover:bg-gray-800"
-          >
-            重新测试
-          </button>
-        </div>
+      {/* 操作按钮 - 在卡片内部 */}
+      <div className="mt-8 flex items-center justify-center">
+        <button
+          onClick={() => setShowRetakeConfirm(true)}
+          className="inline-flex items-center gap-2 rounded-full border border-gray-300 bg-white px-6 py-3 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:hover:bg-gray-800"
+        >
+          重新测试
+        </button>
       </div>
+    </div>
+
+    {/* 操作按钮 - 在卡片外面 */}
+    <div className="mt-6 flex items-center justify-center gap-3">
+      <button
+        onClick={handleDownloadCard}
+        disabled={isGenerating}
+        className="inline-flex items-center gap-2 rounded-full bg-emerald-600 px-6 py-3 text-sm font-semibold text-white shadow-md transition-all hover:bg-emerald-500 hover:shadow-lg disabled:opacity-50"
+      >
+        <Download className="h-4 w-4" />
+        {isGenerating ? '生成中...' : '下载美学人格卡片'}
+      </button>
+      <a
+        href="/explore"
+        className="inline-flex items-center gap-2 rounded-full bg-emerald-600 px-8 py-3 text-sm font-semibold text-white shadow-md transition-all hover:bg-emerald-500 hover:shadow-lg"
+      >
+        继续收藏
+        <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+    </div>
 
       {/* 重新测试确认弹窗 */}
       {showRetakeConfirm && (
@@ -779,6 +783,6 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
           </div>
         </div>
       )}
-    </div>
+    </>
   )
 }
