@@ -136,24 +136,25 @@ function RadarChart({ vector, size = 280, dimensions }: {
     return { x: center + labelRadius * Math.cos(rad), y: center + labelRadius * Math.sin(rad) }
   }
 
-  // 生成平滑曲线路径
+  // 生成直线路径（不使用贝塞尔曲线）
   const dataPoints = dimensions.map((d, i) => {
     const angle = -90 + i * angleStep
     return getPoint(angle, vector[d.key as keyof AestheticVector])
   })
   
+  // 使用直线连接
   let path = `M ${dataPoints[0].x} ${dataPoints[0].y}`
   for (let i = 1; i < dataPoints.length; i++) {
-    const prev = dataPoints[i - 1]
-    const curr = dataPoints[i]
-    const next = dataPoints[(i + 1) % dataPoints.length]
-    const cp1x = prev.x + (curr.x - prev.x) / 3
-    const cp1y = prev.y + (curr.y - prev.y) / 3
-    const cp2x = curr.x - (next.x - prev.x) / 6
-    const cp2y = curr.y - (next.y - prev.y) / 6
-    path += ` C ${cp1x} ${cp1y}, ${cp2x} ${cp2y}, ${curr.x} ${curr.y}`
+    path += ` L ${dataPoints[i].x} ${dataPoints[i].y}`
   }
   path += ' Z'
+
+  // 只显示顶部和底部的维度（去掉左右两边的各2个）
+  // 8个维度索引：0(顶部), 1(右上), 2(右), 3(右下), 4(底部), 5(左下), 6(左), 7(左上)
+  // 去掉：1(右上), 2(右), 6(左), 7(左上)
+  const visibleDimensions = dimensions.filter((_, i) => {
+    return i !== 1 && i !== 2 && i !== 6 && i !== 7
+  })
 
   return (
     <div className="relative" style={{ width: size, height: size }}>
@@ -188,7 +189,7 @@ function RadarChart({ vector, size = 280, dimensions }: {
           return <line key={i} x1={center} y1={center} x2={p.x} y2={p.y} stroke="#10b981" strokeWidth={0.5} opacity={0.3} />
         })}
         
-        {/* 数据区域 */}
+        {/* 数据区域（直线连接） */}
         <path d={path} fill="url(#radarFill)" stroke="#10b981" strokeWidth={2} />
         
         {/* 数据点 */}
@@ -197,8 +198,9 @@ function RadarChart({ vector, size = 280, dimensions }: {
         ))}
       </svg>
       
-      {/* 维度标签（使用HTML覆盖在SVG上） */}
-      {dimensions.map((dim, i) => {
+      {/* 只显示顶部和底部的维度标签 */}
+      {visibleDimensions.map((dim) => {
+        const i = dimensions.findIndex(d => d.key === dim.key)
         const angle = -90 + i * angleStep
         const labelPoint = getLabelPoint(angle)
         const IconComponent = DIMENSION_ICONS[dim.key]
@@ -434,10 +436,10 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
         {/* 收藏数徽章 */}
         <div className="flex flex-col items-center">
           <div className="relative">
-            <div className="w-16 h-16 rounded-full bg-gradient-to-br from-emerald-400 to-emerald-600 flex items-center justify-center shadow-lg">
+            <div className="w-16 h-16 rounded-full bg-gradient-to-br from-emerald-400 to-emerald-600 flex flex-col items-center justify-center shadow-lg">
               <span className="text-2xl font-bold text-white">{profile.favoriteCount}</span>
+              <span className="text-[10px] text-white/80">收藏数</span>
             </div>
-            <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 text-[10px] text-gray-600 dark:text-gray-400 whitespace-nowrap">收藏数</div>
           </div>
         </div>
       </div>
