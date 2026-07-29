@@ -21,6 +21,23 @@ export interface PromptData {
   negativePrompt: string
   parameters: Record<string, string>
   likeCount?: number
+  promptDNA?: {
+    dna: {
+      styles?: [string, number][]
+      lighting?: [string, number][]
+      composition?: [string, number][]
+      material?: [string, number][]
+    }
+    metrics: {
+      complexity: number
+      reproducibility: number
+    }
+    recommended_models: {
+      model: string
+      level: string
+      score: number
+    }[]
+  }
 }
 
 // 解码 Base64 数据（防止直接抓取）

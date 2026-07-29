@@ -8,6 +8,7 @@ import { PromptGrid } from '@/components/prompt/prompt-grid'
 import { DetailImage } from '@/components/prompt/detail-image'
 import { PromptTextBlock } from '@/components/prompt/prompt-text-block'
 import { PromptRecipeCard } from '@/components/prompt-recipe-card'
+import { PromptDNA } from '@/components/prompt/prompt-dna'
 import { createClient } from '@/lib/supabase/server'
 import { getCategoryLabel } from '@/lib/category-map'
 import Link from 'next/link'
@@ -287,6 +288,15 @@ export default async function PromptDetailPage({
               </div>
             )}
           </div>
+
+          {/* Prompt DNA 分析 */}
+          {prompt.promptDNA && (
+            <PromptDNA
+              dna={prompt.promptDNA.dna}
+              metrics={prompt.promptDNA.metrics}
+              recommendedModels={prompt.promptDNA.recommended_models}
+            />
+          )}
 
           {/* 提示词 */}
           <div className="glass-card p-6">
