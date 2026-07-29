@@ -3,7 +3,6 @@ import { getAllPrompts, getAllCategories, getAllTags } from '@/lib/prompts'
 import { PromptGrid } from '@/components/prompt/prompt-grid'
 import { getCategoryLabel, getCategoryIcon } from '@/lib/category-map'
 import DailyFeature from '@/components/daily-feature'
-import { AestheticQuiz } from '@/components/aesthetic-quiz'
 import { createClient } from '@/lib/supabase/server'
 
 export const runtime = 'edge'
@@ -83,23 +82,35 @@ export default async function Home() {
                 <p className="mx-auto mt-1.5 sm:mt-3 max-w-2xl text-sm sm:text-lg text-gray-600 dark:text-gray-400 leading-snug">
                   每天精选一个 AI 提示词，附示例图和策展笔记。不贪多，只选好的，复制即用。
                 </p>
-        <div className="mt-3 sm:mt-5 flex items-center justify-center gap-3 sm:gap-4">
+        <div className="mt-3 sm:mt-5 flex items-center justify-center gap-3 sm:gap-4 flex-wrap">
           <Link href="/explore" className="btn-primary text-sm sm:text-base px-5 sm:px-7 py-2 sm:py-2.5">
             开始浏览
           </Link>
           <Link href="/about" className="btn-secondary text-sm sm:text-base px-5 sm:px-7 py-2 sm:py-2.5">
             了解更多
           </Link>
+          <Link
+            href="/taste"
+            className="group relative inline-flex items-center gap-1.5 rounded-full bg-green-600 px-4 py-2 text-sm font-medium text-white shadow-sm transition-all hover:bg-green-500 hover:shadow-md dark:bg-green-700 dark:hover:bg-green-600"
+          >
+            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+            </svg>
+            美学人格
+            {/* Tooltip */}
+            <div className="pointer-events-none absolute -top-16 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-lg bg-gray-900 px-3 py-2 text-xs text-white opacity-0 shadow-lg transition-opacity group-hover:opacity-100 dark:bg-gray-100 dark:text-gray-900">
+              <div className="font-medium">发现你的美学人格</div>
+              <div className="mt-0.5 text-gray-300 dark:text-gray-600">3 道题，30 秒，找到你的审美基因</div>
+              {/* 箭头 */}
+              <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 h-2 w-2 rotate-45 bg-gray-900 dark:bg-gray-100" />
+            </div>
+          </Link>
         </div>
       </div>
 
       {/* 每日一味 - 今日推荐 */}
       <DailyFeature />
-
-      {/* 美学人格 - 快速测试 */}
-      <div className="max-w-md mx-auto mt-3 sm:mt-4">
-        <AestheticQuiz />
-      </div>
 
       {/* 热门标签 */}
       {popularTags.length > 0 && (
