@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { UserProfile, loadProfile, clearProfile, getGrowthStage, GROWTH_STAGES } from '@/lib/aesthetic-dynamic'
+import { UserProfile, loadProfile, saveProfile, clearProfile, getGrowthStage, GROWTH_STAGES } from '@/lib/aesthetic-dynamic'
 import { BASE_PERSONAS, BasePersona } from '@/lib/aesthetic-engine'
 import { AestheticGrowthChart } from './aesthetic-growth-chart'
 import { AestheticQuiz } from './aesthetic-quiz'
@@ -19,13 +19,27 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
 
   useEffect(() => {
     const saved = loadProfile()
+    
+    // 同步实际收藏数
+    if (serverFavorites && serverFavorites.length > 0) {
+      saved.favoriteCount = serverFavorites.length
+      saveProfile(saved)
+    } else {
+      // 尝试从 localStorage 读取
+      const localFavs = JSON.parse(localStorage.getItem('cgfan_favorites') || '[]')
+      if (localFavs.length > 0) {
+        saved.favoriteCount = localFavs.length
+        saveProfile(saved)
+      }
+    }
+    
     setProfile(saved)
     
     if (saved.currentPersonaId) {
       const persona = BASE_PERSONAS.find(p => p.id === saved.currentPersonaId)
       setCurrentPersona(persona || null)
     }
-  }, [])
+  }, [serverFavorites])
 
   const handleRetake = () => {
     clearProfile()

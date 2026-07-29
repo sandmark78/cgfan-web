@@ -51,6 +51,18 @@ export function AestheticQuiz() {
         answers: newAnswers,
         timestamp: Date.now()
       }))
+
+      // 更新 UserProfile
+      const { loadProfile, saveProfile } = require('@/lib/aesthetic-dynamic')
+      const profile = loadProfile()
+      profile.hasCompletedQuiz = true
+      profile.currentPersonaId = persona.id
+      
+      // 同步实际收藏数
+      const favorites = JSON.parse(localStorage.getItem('cgfan_favorites') || '[]')
+      profile.favoriteCount = favorites.length
+      
+      saveProfile(profile)
     }
   }
 
