@@ -1,10 +1,10 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { UserProfile, loadProfile, saveProfile, clearProfile, getGrowthStage, GROWTH_STAGES } from '@/lib/aesthetic-dynamic'
 import { BASE_PERSONAS, BasePersona, AestheticVector } from '@/lib/aesthetic-engine'
 import { AestheticQuiz } from './aesthetic-quiz'
-import { Puzzle, Palette, Heart, Waves, Star, Scale, ScrollText, Paintbrush } from 'lucide-react'
+import { Puzzle, Palette, Heart, Waves, Star, Scale, ScrollText, Paintbrush, Download } from 'lucide-react'
 
 interface TasteCardClientProps {
   serverFavorites?: Array<{ slug: string; title: string; category: string; tags: string[]; model: string; cover: string }>
@@ -309,6 +309,7 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
   const [showRetakeConfirm, setShowRetakeConfirm] = useState(false)
   const [showQuiz, setShowQuiz] = useState(false)
   const [refreshKey, setRefreshKey] = useState(0)
+  const [isGenerating, setIsGenerating] = useState(false)
 
   useEffect(() => {
     const saved = loadProfile()
@@ -391,6 +392,260 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
     setCurrentPersona(null)
     setShowRetakeConfirm(false)
     setShowQuiz(true)
+  }
+
+  const handleDownloadCard = async () => {
+    if (!profile || !currentPersona) return
+    setIsGenerating(true)
+    
+    try {
+      const canvas = document.createElement('canvas')
+      const dpr = window.devicePixelRatio || 2
+      const W = 533
+      const H = 800
+      canvas.width = W * dpr
+      canvas.height = H * dpr
+      canvas.style.width = W + 'px'
+      canvas.style.height = H + 'px'
+      
+      const ctx = canvas.getContext('2d')
+      if (!ctx) throw new Error('Canvas context not available')
+      
+      ctx.scale(dpr, dpr)
+      
+      // 配色
+      const C = {
+        bgTop: '#F7FBF5',
+        bgBot: '#E0ECD6',
+        ink: '#3D8C5A',
+        inkDeep: '#2A6B3F',
+        soft: '#7A9E7A',
+        soft2: '#9AB89A',
+        track: 'rgba(61,140,90,.12)',
+        line: 'rgba(61,140,90,.22)',
+        lineSoft: 'rgba(61,140,90,.12)',
+        pill: '#3D8C5A',
+        pillInk: '#F7FBF5',
+        spectrum: ['#2A6B3F', '#3D8C5A', '#5DAD6A', '#7FC08A', '#A8D4A8', '#C8E4C8'],
+      }
+      
+      // 背景渐变
+      const bg = ctx.createLinearGradient(0, 0, 0, H)
+      bg.addColorStop(0, C.bgTop)
+      bg.addColorStop(1, C.bgBot)
+      ctx.fillStyle = bg
+      ctx.fillRect(0, 0, W, H)
+      
+      // 左上窗光效果
+      const windowLight = ctx.createRadialGradient(120, 90, 10, 320, 200, 400)
+      windowLight.addColorStop(0, 'rgba(255,255,255,0.15)')
+      windowLight.addColorStop(1, 'rgba(255,255,255,0)')
+      ctx.fillStyle = windowLight
+      ctx.fillRect(0, 0, W, H)
+      
+      // 双线内框
+      ctx.strokeStyle = C.line
+      ctx.lineWidth = 1
+      ctx.strokeRect(24, 24, W - 48, H - 48)
+      ctx.strokeStyle = C.lineSoft
+      ctx.strokeRect(28, 28, W - 56, H - 56)
+      
+      // 左侧竖线强调
+      const LX = 41
+      ctx.fillStyle = C.ink
+      ctx.fillRect(LX, 56, 3, 155)
+      
+      // 顶部双行标题
+      ctx.font = `700 11px -apple-system, "PingFang SC", sans-serif`
+      ctx.fillStyle = C.ink
+      ctx.textAlign = 'left'
+      ctx.fillText('CGfan · Aesthetic Persona', LX, 56)
+      
+      // 编号
+      const serialNum = ((profile.favoriteCount * 137 + currentPersona.name.length * 911) % 9000 + 1000).toString()
+      ctx.font = `600 10px -apple-system, sans-serif`
+      ctx.fillStyle = C.soft2
+      ctx.textAlign = 'right'
+      ctx.fillText(`No.${serialNum}`, W - 39, 56)
+      
+      // "你是"
+      const nameY = 131
+      ctx.font = `500 14px "Noto Serif SC", serif`
+      ctx.fillStyle = C.soft
+      ctx.textAlign = 'left'
+      ctx.fillText('你是', LX, nameY)
+      
+      // 人格名
+      const nameSize = currentPersona.name.length >= 6 ? 40 : currentPersona.name.length === 5 ? 48 : 56
+      ctx.font = `900 ${nameSize}px "Noto Serif SC", serif`
+      ctx.fillStyle = C.ink
+      ctx.fillText(currentPersona.name, LX, nameY + 64)
+      
+      // 英文名
+      ctx.font = `600 10px -apple-system, sans-serif`
+      ctx.fillStyle = C.soft2
+      ctx.fillText(currentPersona.en.toUpperCase(), LX, nameY + 91)
+      
+      // 描述（换行）
+      const descY = nameY + 129
+      ctx.font = `500 14px "Noto Serif SC", serif`
+      ctx.fillStyle = C.soft
+      
+      // 简单的文字换行
+      const maxWidth = W - LX - 39
+      const words = currentPersona.description.split('')
+      let line = ''
+      let lineY = descY
+      const lineSpacing = 20
+      
+      for (let i = 0; i < words.length; i++) {
+        const testLine = line + words[i]
+        if (ctx.measureText(testLine).width > maxWidth && line.length > 0) {
+          ctx.fillText(line, LX, lineY)
+          line = words[i]
+          lineY += lineSpacing
+          if (lineY > descY + lineSpacing * 2) break // 最多3行
+        } else {
+          line = testLine
+        }
+      }
+      if (line && lineY <= descY + lineSpacing * 2) {
+        ctx.fillText(line, LX, lineY)
+      }
+      
+      // 装饰短线+菱形
+      const decoY = descY + lineSpacing * 3 + 20
+      ctx.strokeStyle = C.lineSoft
+      ctx.lineWidth = 1
+      ctx.beginPath()
+      ctx.moveTo(LX, decoY)
+      ctx.lineTo(LX + 40, decoY)
+      ctx.stroke()
+      
+      ctx.fillStyle = C.ink
+      ctx.beginPath()
+      ctx.moveTo(LX + 50, decoY)
+      ctx.lineTo(LX + 55, decoY - 4)
+      ctx.lineTo(LX + 60, decoY)
+      ctx.lineTo(LX + 55, decoY + 4)
+      ctx.closePath()
+      ctx.fill()
+      
+      // 品味光谱标题
+      const spectrumTitleY = decoY + 35
+      ctx.font = `bold 11px -apple-system, sans-serif`
+      ctx.fillStyle = C.ink
+      ctx.textAlign = 'left'
+      ctx.fillText('品味光谱', LX, spectrumTitleY)
+      
+      // 三条光谱条
+      const barStartY = spectrumTitleY + 23
+      const barW = 266
+      const barH = 8
+      const barGap = 28
+      
+      for (let i = 0; i < 3; i++) {
+        const y = barStartY + i * barGap
+        // 轨道底
+        ctx.fillStyle = C.track
+        ctx.beginPath()
+        ctx.roundRect(LX, y, barW, barH, 4)
+        ctx.fill()
+        
+        // 渐变条
+        const grad = ctx.createLinearGradient(LX, y, LX + barW, y)
+        C.spectrum.forEach((color, idx) => {
+          grad.addColorStop(idx / (C.spectrum.length - 1), color)
+        })
+        ctx.fillStyle = grad
+        ctx.beginPath()
+        ctx.roundRect(LX, y, barW * (0.4 + i * 0.2), barH, 4)
+        ctx.fill()
+      }
+      
+      // 标签胶囊
+      const tagY = barStartY + 3 * barGap + 30
+      const tags = [stage.name, currentPersona.name, `${profile.favoriteCount} 收藏`]
+      let tagX = LX
+      
+      tags.forEach((tag) => {
+        ctx.font = `500 11px -apple-system, sans-serif`
+        const tagWidth = ctx.measureText(tag).width + 24
+        ctx.fillStyle = C.pill
+        ctx.beginPath()
+        ctx.roundRect(tagX, tagY, tagWidth, 24, 12)
+        ctx.fill()
+        
+        ctx.fillStyle = C.pillInk
+        ctx.textAlign = 'center'
+        ctx.fillText(tag, tagX + tagWidth / 2, tagY + 16)
+        tagX += tagWidth + 10
+      })
+      
+      // 圆火漆章
+      const sealX = W - 76
+      const sealY = tagY + 80
+      const sealR = 36
+      
+      // 外圈波浪
+      ctx.strokeStyle = C.inkDeep
+      ctx.lineWidth = 2.5
+      ctx.beginPath()
+      for (let a = 0; a < Math.PI * 2; a += 0.05) {
+        const wave = Math.sin(a * 8) * 3.5
+        const r = sealR + 2 + wave
+        const x = sealX + Math.cos(a) * r
+        const y = sealY + Math.sin(a) * r
+        if (a === 0) ctx.moveTo(x, y)
+        else ctx.lineTo(x, y)
+      }
+      ctx.closePath()
+      ctx.stroke()
+      
+      // 内圈
+      ctx.strokeStyle = C.line
+      ctx.lineWidth = 1.5
+      ctx.beginPath()
+      ctx.arc(sealX, sealY, sealR - 8, 0, Math.PI * 2)
+      ctx.stroke()
+      
+      // 竖排文字
+      ctx.fillStyle = C.inkDeep
+      ctx.font = `900 20px "Noto Serif SC", serif`
+      ctx.textAlign = 'center'
+      const sealText = '美学'
+      sealText.split('').forEach((ch, i) => {
+        ctx.fillText(ch, sealX, sealY + (i - 0.5) * 22)
+      })
+      
+      // 底部 meta
+      const metaY = H - 60
+      ctx.fillStyle = C.soft2
+      ctx.font = `10px -apple-system, sans-serif`
+      ctx.textAlign = 'left'
+      const date = new Date().toLocaleDateString('zh-CN')
+      ctx.fillText(date, LX, metaY)
+      ctx.fillText('www.cgfan.com', LX, metaY + 15)
+      
+      // 下载
+      canvas.toBlob((blob) => {
+        if (!blob) {
+          alert('生成失败，请重试')
+          return
+        }
+        const url = URL.createObjectURL(blob)
+        const a = document.createElement('a')
+        a.href = url
+        a.download = `cgfan-aesthetic-${currentPersona.id}.png`
+        a.click()
+        URL.revokeObjectURL(url)
+        setIsGenerating(false)
+      }, 'image/png')
+    } catch (error) {
+      console.error('生成卡片失败:', error)
+      alert('生成失败，请重试')
+      setIsGenerating(false)
+    }
   }
 
   if (showQuiz || !profile || !currentPersona) {
@@ -494,6 +749,16 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
             重新测试
           </button>
         </div>
+        
+        {/* 下载美学人格卡片 */}
+        <button
+          onClick={handleDownloadCard}
+          disabled={isGenerating}
+          className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-white px-6 py-2.5 text-sm font-medium text-emerald-700 transition-colors hover:bg-emerald-50 dark:border-emerald-800 dark:bg-gray-900 dark:text-emerald-400 dark:hover:bg-gray-800 disabled:opacity-50"
+        >
+          <Download className="h-4 w-4" />
+          {isGenerating ? '生成中...' : '下载美学人格卡片'}
+        </button>
       </div>
 
       {/* 重新测试确认弹窗 */}
