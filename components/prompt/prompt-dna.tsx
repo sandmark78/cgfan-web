@@ -19,7 +19,16 @@ interface PromptDNAProps {
 }
 
 export function PromptDNA({ dna, metrics, recommendedModels }: PromptDNAProps) {
-  if (!dna && !metrics && !recommendedModels) return null
+  // 检查是否有实际内容可展示
+  const hasStyles = dna?.styles && dna.styles.length > 0
+  const hasLighting = dna?.lighting && dna.lighting.length > 0
+  const hasComposition = dna?.composition && dna.composition.length > 0
+  const hasMaterial = dna?.material && dna.material.length > 0
+  const hasModels = recommendedModels && recommendedModels.length > 0
+  const hasMetrics = metrics && (metrics.complexity !== undefined || metrics.reproducibility !== undefined)
+  
+  // 没有任何内容可展示时不渲染
+  if (!hasStyles && !hasLighting && !hasComposition && !hasMaterial && !hasModels && !hasMetrics) return null
 
   return (
     <div className="glass-card p-6">
