@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 interface PromptTextBlockProps {
   text: string
@@ -18,9 +18,20 @@ interface PromptTextBlockProps {
 export function PromptTextBlock({ text, maxLines = 10, showCopyButton = true }: PromptTextBlockProps) {
   const [isExpanded, setIsExpanded] = useState(false)
   const [copied, setCopied] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768)
+    }
+    checkMobile()
+    window.addEventListener('resize', checkMobile)
+    return () => window.removeEventListener('resize', checkMobile)
+  }, [])
 
   const lineCount = text.split('\n').length
-  const shouldCollapse = lineCount > maxLines
+  // 移动端始终折叠，桌面端根据行数判断
+  const shouldCollapse = isMobile || lineCount > maxLines
 
   const handleCopy = async () => {
     try {
