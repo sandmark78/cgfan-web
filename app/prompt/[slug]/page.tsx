@@ -342,10 +342,11 @@ export default async function PromptDetailPage({
                 initialFavorited={isFavorited}
                 isAuthenticated={!!user}
               />
-              <ShareButton 
-                promptSlug={prompt.slug} 
+              <ShareButton
+                promptSlug={prompt.slug}
                 promptTitle={prompt.title}
                 promptDescription={prompt.prompt}
+                className="ml-auto"
               />
             </div>
           </div>

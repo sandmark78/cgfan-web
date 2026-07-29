@@ -7,12 +7,13 @@ interface ShareButtonProps {
   promptSlug: string
   promptTitle: string
   promptDescription?: string
+  className?: string
 }
 
 /**
  * 分享按钮 - 下拉菜单（复制链接/生成分享卡/分享到X）
  */
-export function ShareButton({ promptSlug, promptTitle, promptDescription }: ShareButtonProps) {
+export function ShareButton({ promptSlug, promptTitle, promptDescription, className = '' }: ShareButtonProps) {
   const [isOpen, setIsOpen] = useState(false)
   const [copied, setCopied] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
@@ -128,7 +129,7 @@ export function ShareButton({ promptSlug, promptTitle, promptDescription }: Shar
   }
 
   return (
-    <div className="relative">
+    <div className={`relative ${className}`}>
       <button
         ref={buttonRef}
         onClick={handleShareClick}
