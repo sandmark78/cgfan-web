@@ -97,11 +97,47 @@ export default async function ExplorePage({
 
   if (q) {
     const query = q.toLowerCase()
-    prompts = prompts.filter(p =>
-      p.title.toLowerCase().includes(query) || p.prompt.toLowerCase().includes(query) ||
-      p.tags.some(t => t.toLowerCase().includes(query)) || p.author.toLowerCase().includes(query) ||
-      p.model.toLowerCase().includes(query)
-    )
+    // 改进的搜索：带相关性评分
+    const searchResults = prompts.map(p => {
+      let score = 0
+      const title = p.title.toLowerCase()
+      const prompt = p.prompt.toLowerCase()
+      const tags = p.tags.map(t => t.toLowerCase())
+      const author = p.author.toLowerCase()
+      const model = p.model.toLowerCase()
+      const category = p.category.toLowerCase()
+      
+      // 标题完全匹配：权重最高
+      if (title === query) score += 100
+      // 标题包含：权重高
+      else if (title.includes(query)) score += 50
+      
+      // 标签完全匹配：权重高
+      if (tags.some(t => t === query)) score += 40
+      // 标签包含：权重中等
+      else if (tags.some(t => t.includes(query))) score += 25
+      
+      // 分类匹配：权重中等
+      if (category === query) score += 30
+      else if (category.includes(query)) score += 20
+      
+      // 作者匹配：权重中等
+      if (author === query) score += 30
+      else if (author.includes(query)) score += 20
+      
+      // 模型匹配：权重中等
+      if (model === query) score += 30
+      else if (model.includes(query)) score += 20
+      
+      // 内容包含：权重较低
+      if (prompt.includes(query)) score += 10
+      
+      return { prompt: p, score }
+    }).filter(item => item.score > 0)
+    
+    // 按相关性排序
+    searchResults.sort((a, b) => b.score - a.score)
+    prompts = searchResults.map(item => item.prompt)
     activeFilter = `"${q}"`
   } else if (category) {
     prompts = getPromptsByCategory(category)
