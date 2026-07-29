@@ -311,7 +311,7 @@ export default async function PromptDetailPage({
               </h3>
               <div className="params">
                 {Object.entries(prompt.parameters).map(([key, value]) => (
-                  <div key={key} className="param-chip">
+                  <div key={key} className="param-chip text-sm">
                     <span className="font-medium">{key}:</span> {value}
                   </div>
                 ))}
