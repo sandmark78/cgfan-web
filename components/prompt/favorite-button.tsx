@@ -94,14 +94,14 @@ export function FavoriteButton({
     <button
       onClick={handleToggle}
       disabled={loading}
-      className={`flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm transition-colors ${
+      className={`flex items-center gap-1 rounded-full px-2.5 py-1 text-xs transition-colors ${
         favorited
           ? 'bg-yellow-500/20 text-yellow-400 hover:bg-yellow-500/30'
           : 'bg-zinc-800 text-zinc-400 hover:bg-zinc-700 hover:text-zinc-300'
       }`}
     >
       <svg
-        className={`h-4 w-4 ${favorited ? 'fill-current' : ''}`}
+        className={`h-3.5 w-3.5 ${favorited ? 'fill-current' : ''}`}
         fill={favorited ? 'currentColor' : 'none'}
         viewBox="0 0 24 24"
         stroke="currentColor"

@@ -69,14 +69,14 @@ export function LikeButton({
     <button
       onClick={handleToggle}
       disabled={loading}
-      className={`flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm transition-colors ${
+      className={`flex items-center gap-1 rounded-full px-2.5 py-1 text-xs transition-colors ${
         liked
           ? 'bg-red-500/20 text-red-400 hover:bg-red-500/30'
           : 'bg-zinc-800 text-zinc-400 hover:bg-zinc-700 hover:text-zinc-300'
       }`}
     >
       <svg
-        className={`h-4 w-4 ${liked ? 'fill-current' : ''}`}
+        className={`h-3.5 w-3.5 ${liked ? 'fill-current' : ''}`}
         fill={liked ? 'currentColor' : 'none'}
         viewBox="0 0 24 24"
         stroke="currentColor"

@@ -154,13 +154,16 @@ export default function DailyFeature() {
             className="daily-nav-link daily-nav-next"
           >
             <span className="daily-nav-label">明天</span>
-            <span className="daily-nav-title">可期</span>
+            <span className="daily-nav-title">{getPromptBySlug(tomorrowFeature.slug)?.title || '可期'}</span>
             <svg className="daily-nav-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </Link>
         ) : (
-          <div className="text-sm text-gray-400 dark:text-gray-600">可期</div>
+          <div className="daily-nav-link daily-nav-next" style={{ cursor: 'default' }}>
+            <span className="daily-nav-label">明天</span>
+            <span className="daily-nav-title">可期</span>
+          </div>
         )}
       </div>
     </section>
