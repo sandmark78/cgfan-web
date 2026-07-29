@@ -11,7 +11,7 @@ interface TasteCardClientProps {
   isLoggedIn?: boolean
 }
 
-// 从提示词计算8维向量（简化版，基于分类和标签）
+// 从提示词计算8维向量（增强版，基于分类和标签）
 function calculateVectorFromPrompt(prompt: { category: string; tags: string[] }): AestheticVector {
   const vector: AestheticVector = {
     complexity: 50,
@@ -27,48 +27,159 @@ function calculateVectorFromPrompt(prompt: { category: string; tags: string[] })
   // 基于分类调整
   switch (prompt.category) {
     case 'photography':
+      vector.narrative += 25
+      vector.colorIntensity += 15
+      vector.fluency += 10
+      break
+    case 'photorealistic':
+      vector.fluency += 30
       vector.narrative += 20
-      vector.colorIntensity += 10
+      vector.stylization -= 20
       break
     case '3d':
-      vector.complexity += 20
-      vector.stylization += 15
+      vector.complexity += 25
+      vector.stylization += 20
+      vector.novelty += 15
       break
     case 'poster':
-      vector.colorIntensity += 15
-      vector.novelty += 10
+      vector.colorIntensity += 20
+      vector.novelty += 15
+      vector.complexity += 10
       break
     case 'portrait':
+      vector.narrative += 20
+      vector.arousal += 15
+      vector.fluency += 10
+      break
+    case 'product':
+      vector.fluency += 20
+      vector.complexity += 10
+      vector.harmony += 15
+      break
+    case 'illustration':
+      vector.stylization += 25
+      vector.novelty += 20
+      vector.colorIntensity += 15
+      break
+    case 'anime':
+      vector.stylization += 30
+      vector.novelty += 25
+      vector.colorIntensity += 20
+      break
+    case 'retro':
+      vector.novelty -= 15
+      vector.narrative += 20
+      vector.harmony += 15
+      break
+    case 'minimalist':
+      vector.complexity -= 25
+      vector.fluency += 30
+      vector.harmony += 20
+      break
+    case 'sci-fi':
+      vector.novelty += 30
+      vector.stylization += 25
+      vector.arousal += 20
+      break
+    case 'fantasy':
+      vector.novelty += 25
+      vector.stylization += 20
+      vector.arousal += 15
+      break
+    case 'landscape':
+      vector.harmony += 25
       vector.narrative += 15
-      vector.arousal += 10
+      vector.fluency += 10
+      break
+    case 'concept-art':
+      vector.novelty += 30
+      vector.stylization += 25
+      vector.complexity += 15
       break
   }
 
-  // 基于标签调整
+  // 基于标签调整（增强匹配）
   const tags = prompt.tags.map(t => t.toLowerCase())
+  const tagStr = tags.join(' ')
   
-  if (tags.some(t => t.includes('极简') || t.includes('minimal'))) {
-    vector.complexity -= 20
-    vector.fluency += 20
-    vector.harmony += 15
-  }
-  
-  if (tags.some(t => t.includes('赛博') || t.includes('cyber'))) {
-    vector.colorIntensity += 20
-    vector.novelty += 15
-    vector.stylization += 20
-  }
-  
-  if (tags.some(t => t.includes('东方') || t.includes('eastern'))) {
+  // 极简相关
+  if (tagStr.includes('极简') || tagStr.includes('minimal') || tagStr.includes('简约') || tagStr.includes('留白')) {
+    vector.complexity -= 25
+    vector.fluency += 30
     vector.harmony += 20
-    vector.narrative += 15
-    vector.fluency += 10
   }
   
-  if (tags.some(t => t.includes('复古') || t.includes('retro'))) {
-    vector.novelty -= 15
-    vector.narrative += 15
+  // 赛博朋克/科幻
+  if (tagStr.includes('赛博') || tagStr.includes('cyber') || tagStr.includes('科幻') || tagStr.includes('sci-fi')) {
+    vector.colorIntensity += 25
+    vector.novelty += 20
+    vector.stylization += 25
+    vector.arousal += 15
+  }
+  
+  // 东方美学
+  if (tagStr.includes('东方') || tagStr.includes('eastern') || tagStr.includes('中国') || tagStr.includes('水墨') || tagStr.includes('古风')) {
+    vector.harmony += 25
+    vector.narrative += 20
+    vector.fluency += 15
     vector.stylization += 10
+  }
+  
+  // 复古/怀旧
+  if (tagStr.includes('复古') || tagStr.includes('retro') || tagStr.includes('怀旧') || tagStr.includes('vintage')) {
+    vector.novelty -= 15
+    vector.narrative += 20
+    vector.stylization += 15
+    vector.harmony += 10
+  }
+  
+  // 电影感/叙事
+  if (tagStr.includes('电影') || tagStr.includes('cinematic') || tagStr.includes('叙事') || tagStr.includes('故事')) {
+    vector.narrative += 30
+    vector.arousal += 20
+    vector.colorIntensity += 15
+  }
+  
+  // 3D/渲染
+  if (tagStr.includes('3d') || tagStr.includes('渲染') || tagStr.includes('render') || tagStr.includes('blender')) {
+    vector.complexity += 25
+    vector.stylization += 20
+    vector.novelty += 15
+  }
+  
+  // 摄影/写实
+  if (tagStr.includes('摄影') || tagStr.includes('photography') || tagStr.includes('写实') || tagStr.includes('realistic')) {
+    vector.fluency += 25
+    vector.narrative += 15
+    vector.stylization -= 15
+  }
+  
+  // 抽象/艺术
+  if (tagStr.includes('抽象') || tagStr.includes('abstract') || tagStr.includes('艺术') || tagStr.includes('art')) {
+    vector.novelty += 25
+    vector.stylization += 20
+    vector.complexity += 10
+  }
+  
+  // 动漫/二次元
+  if (tagStr.includes('动漫') || tagStr.includes('anime') || tagStr.includes('二次元') || tagStr.includes('manga')) {
+    vector.stylization += 30
+    vector.novelty += 25
+    vector.colorIntensity += 20
+  }
+  
+  // 奇幻/魔幻
+  if (tagStr.includes('奇幻') || tagStr.includes('fantasy') || tagStr.includes('魔幻') || tagStr.includes('神话')) {
+    vector.novelty += 25
+    vector.stylization += 20
+    vector.arousal += 15
+  }
+  
+  // 微缩/细节
+  if (tagStr.includes('微缩') || tagStr.includes('miniature') || tagStr.includes('细节') || tagStr.includes('detail')) {
+    vector.complexity += 30
+    vector.novelty += 20
+    vector.fluency += 10
   }
 
   // 确保所有值在0-100范围内
