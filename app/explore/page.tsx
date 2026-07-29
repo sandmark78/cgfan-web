@@ -8,7 +8,7 @@ import { RandomButton } from '@/components/random-button'
 
 export const runtime = 'edge'
 
-const ALL_MODELS = ['GPT Image 2', 'Midjourney', 'Gemini', 'Common']
+const ALL_MODELS = ['GPT Image 2', 'Midjourney', 'Gemini', '通用 Prompt']
 const ALL_DIFFICULTIES = ['beginner', 'intermediate', 'advanced']
 
 function getModelIcon(model: string) {
