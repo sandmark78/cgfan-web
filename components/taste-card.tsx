@@ -149,12 +149,8 @@ function RadarChart({ vector, size = 280, dimensions }: {
   }
   path += ' Z'
 
-  // 只显示顶部和底部的维度（去掉左右两边的各2个）
-  // 8个维度索引：0(顶部), 1(右上), 2(右), 3(右下), 4(底部), 5(左下), 6(左), 7(左上)
-  // 去掉：1(右上), 2(右), 6(左), 7(左上)
-  const visibleDimensions = dimensions.filter((_, i) => {
-    return i !== 1 && i !== 2 && i !== 6 && i !== 7
-  })
+  // 显示所有8个维度标签
+  const visibleDimensions = dimensions
 
   return (
     <div className="relative" style={{ width: size, height: size }}>
