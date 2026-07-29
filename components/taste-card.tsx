@@ -4,22 +4,23 @@ import { useState, useEffect } from 'react'
 import { UserProfile, loadProfile, saveProfile, clearProfile, getGrowthStage, GROWTH_STAGES } from '@/lib/aesthetic-dynamic'
 import { BASE_PERSONAS, BasePersona, AestheticVector } from '@/lib/aesthetic-engine'
 import { AestheticQuiz } from './aesthetic-quiz'
+import { Puzzle, Palette, Heart, Waves, Star, Scale, ScrollText, Paintbrush } from 'lucide-react'
 
 interface TasteCardClientProps {
   serverFavorites?: Array<{ slug: string; title: string; category: string; tags: string[]; model: string; cover: string }>
   isLoggedIn?: boolean
 }
 
-// 维度图标映射
-const DIMENSION_ICONS: Record<string, string> = {
-  complexity: '🧩',
-  colorIntensity: '🌈',
-  arousal: '❤️',
-  fluency: '🌊',
-  novelty: '⭐',
-  harmony: '⚖️',
-  narrative: '📜',
-  stylization: '🖌️',
+// 维度图标映射（使用 lucide-react 图标）
+const DIMENSION_ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
+  complexity: Puzzle,
+  colorIntensity: Palette,
+  arousal: Heart,
+  fluency: Waves,
+  novelty: Star,
+  harmony: Scale,
+  narrative: ScrollText,
+  stylization: Paintbrush,
 }
 
 // 从提示词计算8维向量
@@ -112,28 +113,34 @@ function calculateVectorFromPrompt(prompt: { category: string; tags: string[] })
 }
 
 // 雷达图组件
-function RadarChart({ vector, size = 220 }: { vector: AestheticVector; size?: number }) {
+function RadarChart({ vector, size = 280, dimensions }: { 
+  vector: AestheticVector
+  size?: number
+  dimensions: readonly { key: string; label: string }[]
+}) {
   const center = size / 2
-  const maxRadius = size * 0.38
-  const dimensions = [
-    { key: 'complexity', label: '复杂度', angle: -90 },
-    { key: 'colorIntensity', label: '色彩强度', angle: -45 },
-    { key: 'arousal', label: '情绪唤醒', angle: 0 },
-    { key: 'narrative', label: '叙事性', angle: 45 },
-    { key: 'stylization', label: '风格化', angle: 90 },
-    { key: 'novelty', label: '新奇性', angle: 135 },
-    { key: 'harmony', label: '和谐度', angle: 180 },
-    { key: 'fluency', label: '处理流畅', angle: 225 },
-  ]
-
+  const maxRadius = size * 0.35
+  const labelRadius = size * 0.48
+  
+  // 8个维度均匀分布在360度
+  const angleStep = 360 / dimensions.length
+  
   const getPoint = (angle: number, value: number) => {
     const rad = (angle * Math.PI) / 180
     const distance = (value / 100) * maxRadius
     return { x: center + distance * Math.cos(rad), y: center + distance * Math.sin(rad) }
   }
 
+  const getLabelPoint = (angle: number) => {
+    const rad = (angle * Math.PI) / 180
+    return { x: center + labelRadius * Math.cos(rad), y: center + labelRadius * Math.sin(rad) }
+  }
+
   // 生成平滑曲线路径
-  const dataPoints = dimensions.map(d => getPoint(d.angle, vector[d.key as keyof AestheticVector]))
+  const dataPoints = dimensions.map((d, i) => {
+    const angle = -90 + i * angleStep
+    return getPoint(angle, vector[d.key as keyof AestheticVector])
+  })
   
   let path = `M ${dataPoints[0].x} ${dataPoints[0].y}`
   for (let i = 1; i < dataPoints.length; i++) {
@@ -149,43 +156,71 @@ function RadarChart({ vector, size = 220 }: { vector: AestheticVector; size?: nu
   path += ' Z'
 
   return (
-    <svg width={size} height={size} className="overflow-visible">
-      <defs>
-        <radialGradient id="radarFill" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stopColor="#10b981" stopOpacity="0.4" />
-          <stop offset="100%" stopColor="#10b981" stopOpacity="0.15" />
-        </radialGradient>
-      </defs>
+    <div className="relative" style={{ width: size, height: size }}>
+      <svg width={size} height={size} className="overflow-visible">
+        <defs>
+          <radialGradient id="radarFill" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stopColor="#10b981" stopOpacity="0.4" />
+            <stop offset="100%" stopColor="#10b981" stopOpacity="0.15" />
+          </radialGradient>
+        </defs>
+        
+        {/* 背景网格 */}
+        {[0.25, 0.5, 0.75, 1].map((scale, i) => (
+          <polygon
+            key={i}
+            points={dimensions.map((_, idx) => {
+              const angle = -90 + idx * angleStep
+              const p = getPoint(angle, scale * 100)
+              return `${p.x},${p.y}`
+            }).join(' ')}
+            fill="none"
+            stroke="#10b981"
+            strokeWidth={0.5}
+            opacity={0.2 + i * 0.1}
+          />
+        ))}
+        
+        {/* 辐射线 */}
+        {dimensions.map((_, i) => {
+          const angle = -90 + i * angleStep
+          const p = getPoint(angle, 100)
+          return <line key={i} x1={center} y1={center} x2={p.x} y2={p.y} stroke="#10b981" strokeWidth={0.5} opacity={0.3} />
+        })}
+        
+        {/* 数据区域 */}
+        <path d={path} fill="url(#radarFill)" stroke="#10b981" strokeWidth={2} />
+        
+        {/* 数据点 */}
+        {dataPoints.map((p, i) => (
+          <circle key={i} cx={p.x} cy={p.y} r={4} fill="#10b981" />
+        ))}
+      </svg>
       
-      {/* 背景网格 */}
-      {[0.25, 0.5, 0.75, 1].map((scale, i) => (
-        <polygon
-          key={i}
-          points={dimensions.map(d => {
-            const p = getPoint(d.angle, scale * 100)
-            return `${p.x},${p.y}`
-          }).join(' ')}
-          fill="none"
-          stroke="#10b981"
-          strokeWidth={0.5}
-          opacity={0.2 + i * 0.1}
-        />
-      ))}
-      
-      {/* 辐射线 */}
-      {dimensions.map((d, i) => {
-        const p = getPoint(d.angle, 100)
-        return <line key={i} x1={center} y1={center} x2={p.x} y2={p.y} stroke="#10b981" strokeWidth={0.5} opacity={0.3} />
+      {/* 维度标签（使用HTML覆盖在SVG上） */}
+      {dimensions.map((dim, i) => {
+        const angle = -90 + i * angleStep
+        const labelPoint = getLabelPoint(angle)
+        const IconComponent = DIMENSION_ICONS[dim.key]
+        const value = Math.round(vector[dim.key as keyof AestheticVector])
+        
+        return (
+          <div
+            key={dim.key}
+            className="absolute flex flex-col items-center gap-1"
+            style={{
+              left: labelPoint.x,
+              top: labelPoint.y,
+              transform: 'translate(-50%, -50%)',
+            }}
+          >
+            <IconComponent className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
+            <div className="text-xs font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap">{dim.label}</div>
+            <div className="text-sm font-bold text-emerald-600 dark:text-emerald-400">{value}</div>
+          </div>
+        )
       })}
-      
-      {/* 数据区域 */}
-      <path d={path} fill="url(#radarFill)" stroke="#10b981" strokeWidth={2} />
-      
-      {/* 数据点 */}
-      {dataPoints.map((p, i) => (
-        <circle key={i} cx={p.x} cy={p.y} r={3} fill="#10b981" />
-      ))}
-    </svg>
+    </div>
   )
 }
 
@@ -418,35 +453,9 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       </div>
 
       {/* 雷达图 + 四周维度 */}
-      <div className="relative flex items-center justify-center mb-6" style={{ minHeight: 280 }}>
-        {/* 左侧维度 */}
-        <div className="absolute left-0 top-1/2 -translate-y-1/2 space-y-4">
-          {dimensions.slice(0, 2).map(dim => (
-            <div key={dim.key} className="flex items-center gap-2">
-              <span className="text-xl">{DIMENSION_ICONS[dim.key]}</span>
-              <div>
-                <div className="text-xs text-gray-500 dark:text-gray-400">{dim.label}</div>
-                <div className="text-lg font-bold text-gray-900 dark:text-white">{Math.round(profile.vector[dim.key])}</div>
-              </div>
-            </div>
-          ))}
-        </div>
-        
+      <div className="relative flex items-center justify-center mb-6" style={{ minHeight: 320 }}>
         {/* 中间雷达图 */}
-        <RadarChart vector={profile.vector} size={220} />
-        
-        {/* 右侧维度 */}
-        <div className="absolute right-0 top-1/2 -translate-y-1/2 space-y-4">
-          {dimensions.slice(2, 4).map(dim => (
-            <div key={dim.key} className="flex items-center gap-2">
-              <span className="text-xl">{DIMENSION_ICONS[dim.key]}</span>
-              <div>
-                <div className="text-xs text-gray-500 dark:text-gray-400">{dim.label}</div>
-                <div className="text-lg font-bold text-gray-900 dark:text-white">{Math.round(profile.vector[dim.key])}</div>
-              </div>
-            </div>
-          ))}
-        </div>
+        <RadarChart vector={profile.vector} size={280} dimensions={dimensions} />
       </div>
 
       {/* 成长曲线 */}
@@ -454,17 +463,20 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
 
       {/* 底部维度卡片 */}
       <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
-        {dimensions.map(dim => (
-          <div key={dim.key} className="rounded-xl bg-white/50 p-3 backdrop-blur-sm dark:bg-white/5">
-            <div className="flex items-center justify-between mb-1">
-              <span className="text-xs text-gray-600 dark:text-gray-400">{dim.label}</span>
-              <span className="text-lg">{DIMENSION_ICONS[dim.key]}</span>
+        {dimensions.map(dim => {
+          const IconComponent = DIMENSION_ICONS[dim.key]
+          return (
+            <div key={dim.key} className="rounded-xl bg-white/50 p-3 backdrop-blur-sm dark:bg-white/5">
+              <div className="flex items-center justify-between mb-1">
+                <span className="text-xs text-gray-600 dark:text-gray-400">{dim.label}</span>
+                <IconComponent className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
+              </div>
+              <div className="text-xl font-bold text-gray-900 dark:text-white">
+                {Math.round(profile.vector[dim.key])}
+              </div>
             </div>
-            <div className="text-xl font-bold text-gray-900 dark:text-white">
-              {Math.round(profile.vector[dim.key])}
-            </div>
-          </div>
-        ))}
+          )
+        })}
       </div>
 
       {/* 操作按钮 */}
