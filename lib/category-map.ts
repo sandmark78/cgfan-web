@@ -13,6 +13,9 @@ export const CATEGORY_MAP: Record<string, { label: string; icon: string }> = {
   photography: { label: '摄影', icon: '📸' },
   product: { label: '产品', icon: '📦' },
   design: { label: '设计', icon: '🎯' },
+  commercial: { label: '商业', icon: '💼' },
+  fantasy: { label: '奇幻', icon: '🧙' },
+  poster: { label: '海报', icon: '🖼️' },
 }
 
 /**

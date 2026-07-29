@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { getAllPrompts, getAllCategories, getAllTags } from '@/lib/prompts'
+import { getAllPrompts, getAllCategories } from '@/lib/prompts'
 import { PromptGrid } from '@/components/prompt/prompt-grid'
 import { getCategoryLabel, getCategoryIcon } from '@/lib/category-map'
 import DailyFeature from '@/components/daily-feature'
@@ -13,7 +13,6 @@ export const runtime = 'edge'
 export default async function Home() {
   const prompts = getAllPrompts()
   const categories = getAllCategories()
-  const allTags = getAllTags()
   
   // 从 Supabase 获取所有提示词的点赞数
   const supabase = await createClient()
@@ -44,32 +43,8 @@ export default async function Home() {
     return 0
   }).slice(0, 12)
   
-  // 获取热门标签（前20个）
-  const popularTags = allTags.slice(0, 20)
-  
-  // 标签 emoji 映射
-  const tagEmojiMap: Record<string, string> = {
-    '写实': '📷',
-    '摄影': '📸',
-    '3D渲染': '🎮',
-    '人物': '👤',
-    '产品': '📦',
-    '风景': '🏔️',
-    '电影感': '🎬',
-    '极简': '✨',
-    'AI艺术': '🤖',
-    '动漫': '🎨',
-    '复古': '📼',
-    '超现实': '🌀',
-    '建筑': '🏛️',
-    '科幻': '🚀',
-    '抽象': '🎭',
-    '可爱': '🐻',
-    '奇幻': '🧙',
-    '概念艺术': '💡',
-    'AI绘图': '🎯',
-    '提示词': '💬',
-  }
+  // 获取热门分类（按数量排序）
+  const popularCategories = categories.sort((a, b) => b.count - a.count)
 
   return (
     <div className="py-3 sm:py-6">
@@ -94,19 +69,19 @@ export default async function Home() {
       {/* 每日一味 - 今日推荐 */}
       <DailyFeature />
 
-      {/* 热门标签 */}
-      {popularTags.length > 0 && (
+      {/* 热门分类 */}
+      {popularCategories.length > 0 && (
         <div className="mt-2 sm:mt-4">
           <div className="category-chips justify-center overflow-x-auto pb-2 no-scrollbar md:flex-wrap">
-            {popularTags.map((tag) => (
+            {popularCategories.map((cat) => (
               <Link
-                key={tag.name}
-                href={`/explore?tag=${encodeURIComponent(tag.name)}`}
+                key={cat.name}
+                href={`/explore?category=${encodeURIComponent(cat.name)}`}
                 className="category-chip text-xs sm:text-sm whitespace-nowrap"
               >
-                <span className="mr-1 sm:mr-2">{tagEmojiMap[tag.name] || '🏷️'}</span>
-                {tag.name}
-                <span className="ml-1 sm:ml-2 text-xs opacity-60">({tag.count})</span>
+                <span className="mr-1 sm:mr-2">{getCategoryIcon(cat.name)}</span>
+                {getCategoryLabel(cat.name)}
+                <span className="ml-1 sm:ml-2 text-xs opacity-60">({cat.count})</span>
               </Link>
             ))}
           </div>

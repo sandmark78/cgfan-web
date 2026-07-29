@@ -36,7 +36,7 @@ export async function generateMetadata({
   const description = prompt.prompt.slice(0, 160).replace(/\n/g, ' ')
 
   return {
-    title: `${prompt.title} | CGfan`,
+    title: prompt.title,
     description,
     alternates: {
       canonical: `${baseUrl}/prompt/${slug}`,

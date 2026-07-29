@@ -252,7 +252,7 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
       ctx.fillStyle = '#64748b'
       ctx.font = 'bold 11px -apple-system, sans-serif'
       ctx.textAlign = 'left'
-      ctx.fillText('关键原料', cardX + 20, tagY)
+      ctx.fillText('核心标签', cardX + 20, tagY)
 
       let tagX = cardX + 20
       const tagH = 26
@@ -405,10 +405,10 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
             </div>
           </div>
 
-          {/* 关键原料 */}
+          {/* 核心标签 */}
           <div className="mb-4">
             <div className="mb-2 text-xs font-medium uppercase tracking-wider text-gray-500 dark:text-gray-400">
-              关键原料
+              核心标签
             </div>
             <div className="flex flex-wrap gap-2">
               {prompt.tags.slice(0, 4).map((tag) => (
