@@ -30,8 +30,9 @@ export function PromptTextBlock({ text, maxLines = 10, showCopyButton = true }: 
   }, [])
 
   const lineCount = text.split('\n').length
-  // 移动端始终折叠，桌面端根据行数判断
-  const shouldCollapse = isMobile || lineCount > maxLines
+  const charCount = text.length
+  // 移动端始终折叠，桌面端根据字数或行数判断（超过300字或超过10行）
+  const shouldCollapse = isMobile || charCount > 300 || lineCount > maxLines
 
   const handleCopy = async () => {
     try {
