@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { UserProfile, loadProfile, clearProfile, getGrowthStage, GROWTH_STAGES } from '@/lib/aesthetic-dynamic'
 import { BASE_PERSONAS, BasePersona } from '@/lib/aesthetic-engine'
 import { AestheticGrowthChart } from './aesthetic-growth-chart'
+import { AestheticQuiz } from './aesthetic-quiz'
 
 interface TasteCardClientProps {
   serverFavorites?: Array<{ slug: string; title: string; category: string; tags: string[]; model: string; cover: string }>
@@ -13,7 +14,8 @@ interface TasteCardClientProps {
 export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClientProps) {
   const [profile, setProfile] = useState<UserProfile | null>(null)
   const [currentPersona, setCurrentPersona] = useState<BasePersona | null>(null)
-  const [showClearConfirm, setShowClearConfirm] = useState(false)
+  const [showRetakeConfirm, setShowRetakeConfirm] = useState(false)
+  const [showQuiz, setShowQuiz] = useState(false)
 
   useEffect(() => {
     const saved = loadProfile()
@@ -25,34 +27,20 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
     }
   }, [])
 
-  const handleClearData = () => {
+  const handleRetake = () => {
     clearProfile()
+    localStorage.removeItem('cgfan_quiz_result')
     setProfile(null)
     setCurrentPersona(null)
-    setShowClearConfirm(false)
-    window.location.reload()
+    setShowRetakeConfirm(false)
+    setShowQuiz(true)
   }
 
-  // 未开始状态
-  if (!profile || !currentPersona) {
+  // 显示测试组件
+  if (showQuiz || !profile || !currentPersona) {
     return (
-      <div className="rounded-lg border border-gray-200 bg-white p-8 text-center dark:border-gray-800 dark:bg-gray-900">
-        <div className="mb-4 text-6xl">🎨</div>
-        <h3 className="mb-2 text-xl font-semibold text-gray-900 dark:text-white">
-          开始你的美学之旅
-        </h3>
-        <p className="mb-6 text-sm text-gray-500 dark:text-gray-400">
-          完成 4 道测试题，发现你的初始美学人格
-        </p>
-        <a
-          href="/taste/quiz"
-          className="inline-flex items-center gap-2 rounded-full bg-green-600 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-green-700"
-        >
-          开始测试
-          <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-          </svg>
-        </a>
+      <div className="rounded-lg border border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-900">
+        <AestheticQuiz />
       </div>
     )
   }
@@ -175,35 +163,42 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
           </svg>
         </a>
         <button
-          onClick={() => setShowClearConfirm(true)}
+          onClick={() => setShowRetakeConfirm(true)}
           className="inline-flex items-center gap-2 rounded-full border border-gray-300 bg-white px-6 py-3 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:hover:bg-gray-800"
         >
           重新测试
         </button>
       </div>
 
-      {/* 清除确认对话框 */}
-      {showClearConfirm && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
-          <div className="mx-4 w-full max-w-sm rounded-lg bg-white p-6 dark:bg-gray-900">
-            <h3 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">
-              确认重新测试？
-            </h3>
-            <p className="mb-6 text-sm text-gray-500 dark:text-gray-400">
-              这将清除你当前的美学人格数据和收藏历史，重新开始测试。
-            </p>
+      {/* 重新测试确认弹窗 */}
+      {showRetakeConfirm && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm">
+          <div className="mx-4 w-full max-w-md rounded-2xl bg-white p-6 shadow-2xl dark:bg-gray-900">
+            <div className="mb-4 text-center">
+              <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-green-100 dark:bg-green-900/30">
+                <svg className="h-6 w-6 text-green-600 dark:text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                确认重新测试？
+              </h3>
+              <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
+                这将清除你当前的美学人格数据，重新开始测试。
+              </p>
+            </div>
             <div className="flex gap-3">
               <button
-                onClick={() => setShowClearConfirm(false)}
-                className="flex-1 rounded-full border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:hover:bg-gray-800"
+                onClick={() => setShowRetakeConfirm(false)}
+                className="flex-1 rounded-full border border-gray-300 bg-white px-4 py-2.5 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:hover:bg-gray-800"
               >
                 取消
               </button>
               <button
-                onClick={handleClearData}
-                className="flex-1 rounded-full bg-red-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-red-700"
+                onClick={handleRetake}
+                className="flex-1 rounded-full bg-green-600 px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-green-700"
               >
-                确认清除
+                确认重新测试
               </button>
             </div>
           </div>
