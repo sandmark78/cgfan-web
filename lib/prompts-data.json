@@ -3151,6 +3151,86 @@
     "mtime": 1785306955866.148
   },
   {
+    "title": "GPT 图像生成二代",
+    "slug": "gpt-image2",
+    "model": "Midjourney",
+    "category": "editorial",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "GPT-Image2",
+      "人物"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2045013913901867334.jpg",
+    "date": "2026-07-23",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2045013913901867334",
+    "sourceLink": "https://x.com/i/status/2045013913901867334",
+    "author": "古一",
+    "authorLink": "https://x.com/MANISH1027512",
+    "prompt": "基于此角色和背景，请制作一份类似官方设定资料的角色资料卡。\n・包含三视图：正面、侧面和背面\n・添加角色面部表情的变化・分解并展示服装和装备的详细部分\n・添加色板・包含世界观设定的简要说明\n・总体上，使用有组织的布局（白色背景）\n\n碉堡了家人们~~😍\n\n它读出了人物背后的性格特征，甚至世界观、角色设定都给你写好了，还非常之合理！！\n\n\"优雅，是力量最温柔的表达！\"",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney"
+    },
+    "mtime": 1785311204363.0935
+  },
+  {
+    "title": "8K超写实竖版人像",
+    "slug": "create-an-8k-hyper-realistic-portrait-1550594950",
+    "model": "Midjourney",
+    "category": "photography",
+    "tags": [
+      "摄影",
+      "AI_Image_Generation",
+      "Hyperrealistic_Portrait",
+      "Vintage_Photography",
+      "Cinematic_Lighting"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/create-an-8k-hyper-realistic-portrait-1550594950.jpg",
+    "date": "2026-01-18",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2012578660453405071",
+    "sourceLink": "https://x.com/i/status/2012578660453405071",
+    "author": "simplykingofdairyqueen",
+    "authorLink": "https://x.com/OOTD",
+    "prompt": "Create an 8K hyper-realistic vertical portrait photograph with 100% identical facial accuracy — absolutely no facial changes or facial structure alterations.",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney"
+    },
+    "mtime": 1785311247931.735
+  },
+  {
+    "title": "年轻女性人像写真",
+    "slug": "image_request-subject-type-young-adult-1564527620",
+    "model": "Midjourney",
+    "category": "photography",
+    "tags": [
+      "摄影",
+      "AI Art",
+      "Fashion Photography",
+      "Image Prompt",
+      "Studio Portrait"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/image_request-subject-type-young-adult-1564527620.jpg",
+    "date": "2026-01-27",
+    "added": "2026-07-24",
+    "source": "https://x.com/i/status/2016087115482763660",
+    "sourceLink": "https://x.com/i/status/2016087115482763660",
+    "author": "Lena lenawakes",
+    "authorLink": "https://x.com/lenawakes",
+    "prompt": "Use the uploaded image as a reference. Create a young adult woman portrait with relaxed yet elegant posture, full-body to three-quarter portrait framing, centered subject against a clean background.",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney"
+    },
+    "mtime": 1785311271384.842
+  },
+  {
     "title": "黏土渲染转暗黑奇幻",
     "slug": "clay-render-to-dark-fantasy",
     "model": "GPT Image 2",
@@ -3797,6 +3877,173 @@
     "negativePrompt": "",
     "parameters": {},
     "mtime": 1785306955757.9702
+  },
+  {
+    "title": "白色奢华：超写实时尚肖像",
+    "slug": "prompt-2078507713919615410",
+    "model": "Common",
+    "category": "photorealistic",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "商业",
+      "封面设计",
+      "香水"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2078507713919615410.jpg",
+    "date": "Sat Jul 18 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-26T16:01:00+08:00",
+    "source": "https://x.com/i/status/2078507713919615410",
+    "sourceLink": "https://x.com/i/status/2078507713919615410",
+    "author": "Aylin",
+    "authorLink": "https://x.com/aylinspace",
+    "prompt": "Create an ultra-realistic luxury fashion portrait inspired by the concept of \"White Luxury.\"\nA breathtakingly beautiful woman embodies timeless elegance, purity, sophistication, and quiet wealth. She wears an extraordinary white haute couture gown crafted from layers of silk, satin, organza, chiffon, tulle, lace, and flowing couture fabrics. The gown features dramatic sculptural silhouettes, a sweeping cathedral-length train, exquisite embroidery, hand-sewn pearl details, subtle crystal embellishments, and refined haute couture craftsmanship.\nHer jewelry is exceptionally luxurious, featuring flawless diamonds, white sapphires, platinum, white gold, pearls, moonstone, and opals. She wears elegant long satin gloves, a sophisticated couture hat or sculptural headpiece, delicate veil details, and timeless luxury accessories.\nThe setting radiates understated wealth and refined elegance: polished white marble floors, breathtaking modern architecture, floor-to-ceiling windows, soft natural daylight, flowing white curtains, premium cream leather furniture, a glossy white grand piano, fresh white orchids, luxury perfume bottles, subtle reflections, crystal chandeliers, and an atmosphere of absolute serenity. A white Rolls-Royce Phantom or another ultra-luxury vehicle may appear naturally in the background without dominating the composition.\nThe entire image follows a monochromatic palette of ivory, snow white, pearl, cream, platinum, soft silver, alabaster, and delicate champagne highlights. Every detail communicates exclusivity, craftsmanship, timeless beauty, and quiet luxury rather than extravagance.\nLuxury editorial photography, Vogue cover aesthetic, cinematic soft lighting, volumetric light rays, ethereal atmosphere, high dynamic range, ultra-realistic skin, flawless makeup, elegant pose, intricate fabric textures, premium craftsmanship, masterpiece composition, hyper-detailed, photorealistic, 8K, fashion campaign, award-winning photography.\nAvoid bright colors, gold dominance, excessive glitter, fantasy costumes, cartoon style, cheap luxury aesthetics, text, logos, watermarks, low quality, oversaturation, distorted anatomy.\nAylin\nJul 17\nPrompt:\nCreate an ultra-realistic luxury fashion portrait inspired by the concept of \"Black Luxury.\"\nA breathtakingly beautiful woman embodies timeless elegance, power, mystery, and wealth. She wears an extraordinary black haute couture gown crafted from layers of silk, velvet, satin, organza, and intricate lace. The dress features dramatic sculptural silhouettes, a sweeping cathedral-length train, refined embroidery, and subtle crystal embellishments that shimmer under cinematic lighting.\nHer jewelry is made of black diamonds, onyx, obsidian, and platinum, designed with exceptional craftsmanship. Long satin gloves, an elegant statement headpiece, and sophisticated accessories complete the couture styling.\nThe setting radiates quiet luxury: polished black marble floors, grand architectural interiors, floor-to-ceiling windows, minimalist modern design, soft candlelight, premium leather furniture, glossy grand piano, luxury perfume bottles, and subtle reflections. A black Rolls-Royce or another ultra-luxury vehicle may appear naturally in the background without dominating the composition.\nThe entire image follows a monochromatic palette of deep black, charcoal, graphite, silver, and subtle platinum highlights. Every detail communicates exclusivity, sophistication, and understated wealth rather than excess.\nLuxury editorial photography, Vogue cover aesthetic, cinematic lighting, volumetric light rays, dramatic contrast, ultra-realistic skin, flawless makeup, elegant pose, intricate fabric textures, premium craftsmanship, masterpiece composition, hyper-detailed, photorealistic, 8K, fashion campaign, award-winning photography.\nAvoid bright colors, gold dominance, excessive glitter, fantasy costumes, cartoon style, cheap luxury aesthetics, text, logos, watermarks, low quality, oversaturation, distorted anatomy.\n2.6K",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1785311233276.7676
+  },
+  {
+    "title": "专业配色指南创作记",
+    "slug": "prompt-2080917657058980289",
+    "model": "Common",
+    "category": "editorial",
+    "tags": [
+      "AI绘图",
+      "提示词"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2080917657058980289.jpg",
+    "date": "Sat Jul 25 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-26T16:01:00+08:00",
+    "source": "https://x.com/i/status/2080917657058980289",
+    "sourceLink": "https://x.com/i/status/2080917657058980289",
+    "author": "مصمم Ai",
+    "authorLink": "https://x.com/alotaibiai3",
+    "prompt": "🎨 هل سبق أن احتجت لونًا مناسبًا، ثم قضيت دقائق تبحث عن درجته أو كوده؟\nلهذا السبب أنشأت دليل الألوان الاحترافي.\nسلسلة تضم 16 لونًا أساسيًا، وكل دليل يحتوي على:\n✓ أشهر درجات اللون\n✓ أكواد HEX / RGB / CMYK\n✓ الدلالة النفسية\n✓ الاستخدامات الأكثر شيوعًا\n✓ تنسيقات لونية جاهزة للمصممين\nهدفي أن تكون هذه السلسلة مرجعًا عربيًا يعود إليه كل مصمم وصانع محتوى.\nإذا رأيت أنها تستحق، فاحفظها وشاركها مع من يهتم بالتصميم.\nAlotaibiAi3\nمن الفكرة… إلى الأثر.\n3.1K",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1785311233283.8203
+  },
+  {
+    "title": "金色天际城市回响",
+    "slug": "prompt-2081082521086017635",
+    "model": "Common",
+    "category": "editorial",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "海报",
+      "人像",
+      "电影感"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2081082521086017635.jpg",
+    "date": "Sat Jul 25 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-26T16:01:00+08:00",
+    "source": "https://x.com/i/status/2081082521086017635",
+    "sourceLink": "https://x.com/i/status/2081082521086017635",
+    "author": "Gopal Tiwari",
+    "authorLink": "https://x.com/imGopalTiwari",
+    "prompt": "Ultra-realistic IMAX-level Netflix-style cinematic double-exposure editorial poster, 4:5 vertical composition, use the uploaded image as the primary composition and layout reference, but transform the subject into a stylish women-perspective design. Create a beautiful young adult woman shown in a large dominant left-facing side-profile portrait against a clean minimal warm beige background. She wears elegant oversized brown-tinted sunglasses with glossy frames, and her expression feels calm, introspective and self-assured, with relaxed brows, softly focused eyes hidden slightly behind the glasses, gently closed lips and a graceful feminine jawline. Her skin should appear smooth and luminous, and her dark hair should be softly styled with subtle natural volume. Integrate the right half of her face, neck and upper body with a refined double-exposure collage made of vertical translucent rectangular strips. Inside these strips, reveal a cinematic golden-hour road scene with a tiny lone female figure walking forward into warm sunlight, surrounded by tall dark evergreen trees, atmospheric depth and long shadows. Blend additional layered fragments of urban architecture and faint city textures into the lower strips, creating a sophisticated balance between nature and city life. Keep the composition clean, modern and artistic, with soft transparency, seamless transitions, refined layering and plenty of negative space on the left. Use a muted beige, charcoal, soft grey and warm golden color palette, subtle grain, premium poster aesthetics, realistic textures, elegant contrast, photorealistic detailing and a visually polished high-end editorial finish. Negative Prompt: male face, cluttered layout, harsh colours, messy collage, extra people, distorted sunglasses, bad anatomy, exaggerated expression, cartoon look, oversaturated tones, blur, text overload, watermark, logo.",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1785311233288.3943
+  },
+  {
+    "title": "绯红奢华：超写实时尚肖像",
+    "slug": "prompt-2081093455493681632",
+    "model": "Common",
+    "category": "photorealistic",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "商业",
+      "封面设计",
+      "香水"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2081093455493681632.jpg",
+    "date": "Sat Jul 25 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-26T16:01:00+08:00",
+    "source": "https://x.com/i/status/2081093455493681632",
+    "sourceLink": "https://x.com/i/status/2081093455493681632",
+    "author": "Aylin",
+    "authorLink": "https://x.com/aylinspace",
+    "prompt": "Create an ultra-realistic luxury fashion portrait inspired by the concept of \"Crimson Luxury.\" A breathtakingly beautiful woman embodies timeless elegance, passion, sophistication, and old-world opulence. She wears an extraordinary deep burgundy haute couture gown crafted from layers of velvet, silk satin, and flowing couture fabrics. The gown features dramatic sculptural silhouettes, a sweeping cathedral-length train, exquisite embroidery, hand-sewn ruby details, subtle garnet embellishments, and refined haute couture craftsmanship.\nHer jewelry is exceptionally luxurious, featuring flawless rubies, rose gold, dark garnets, and antique-cut diamonds. She wears elegant long velvet gloves, a sophisticated couture headpiece, and timeless luxury accessories.\nThe setting radiates old-world wealth and refined elegance: polished dark wood floors, breathtaking classical architecture, tall arched windows, warm candlelit ambiance, deep red velvet curtains, premium dark leather furniture, an antique grand piano, fresh red roses, crystal decanters, subtle reflections, ornate chandeliers, and an atmosphere of dramatic intimacy. A vintage burgundy luxury vehicle may appear naturally in the background without dominating the composition.\nThe entire image follows a monochromatic palette of burgundy, wine red, deep crimson, dark garnet, and warm gold highlights. Every detail communicates exclusivity, craftsmanship, timeless beauty, and dramatic luxury rather than extravagance.\nLuxury editorial photography, Vogue cover aesthetic, cinematic warm lighting, volumetric light rays, dramatic atmosphere, high dynamic range, ultra-realistic skin, flawless makeup, elegant pose, intricate fabric textures, premium craftsmanship, masterpiece composition, hyper-detailed, photorealistic, 8K, fashion campaign, award-winning photography.\nAvoid bright colors, gold dominance, excessive glitter, fantasy costumes, cartoon style, cheap luxury aesthetics, text, logos, watermarks, low quality, oversaturation, distorted anatomy.\nAylin\nJul 18\nPrompt:\nCreate an ultra-realistic luxury fashion portrait inspired by the concept of \"White Luxury.\"\nA breathtakingly beautiful woman embodies timeless elegance, purity, sophistication, and quiet wealth. She wears an extraordinary white haute couture gown crafted from layers of silk, satin, organza, chiffon, tulle, lace, and flowing couture fabrics. The gown features dramatic sculptural silhouettes, a sweeping cathedral-length train, exquisite embroidery, hand-sewn pearl details, subtle crystal embellishments, and refined haute couture craftsmanship.\nHer jewelry is exceptionally luxurious, featuring flawless diamonds, white sapphires, platinum, white gold, pearls, moonstone, and opals. She wears elegant long satin gloves, a sophisticated couture hat or sculptural headpiece, delicate veil details, and timeless luxury accessories.\nThe setting radiates understated wealth and refined elegance: polished white marble floors, breathtaking modern architecture, floor-to-ceiling windows, soft natural daylight, flowing white curtains, premium cream leather furniture, a glossy white grand piano, fresh white orchids, luxury perfume bottles, subtle reflections, crystal chandeliers, and an atmosphere of absolute serenity. A white Rolls-Royce Phantom or another ultra-luxury vehicle may appear naturally in the background without dominating the composition.\nThe entire image follows a monochromatic palette of ivory, snow white, pearl, cream, platinum, soft silver, alabaster, and delicate champagne highlights. Every detail communicates exclusivity, craftsmanship, timeless beauty, and quiet luxury rather than extravagance.\nLuxury editorial photography, Vogue cover aesthetic, cinematic soft lighting, volumetric light rays, ethereal atmosphere, high dynamic range, ultra-realistic skin, flawless makeup, elegant pose, intricate fabric textures, premium craftsmanship, masterpiece composition, hyper-detailed, photorealistic, 8K, fashion campaign, award-winning photography.\nAvoid bright colors, gold dominance, excessive glitter, fantasy costumes, cartoon style, cheap luxury aesthetics, text, logos, watermarks, low quality, oversaturation, distorted anatomy.",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1785311233290.4294
+  },
+  {
+    "title": "城市入眠，街巷皆有故事",
+    "slug": "prompt-2080902363074933101",
+    "model": "Seedream",
+    "category": "editorial",
+    "tags": [
+      "AI绘图",
+      "提示词"
+    ],
+    "difficulty": "beginner",
+    "cover": "/images/prompts/prompt-2080902363074933101.jpg",
+    "date": "Sat Jul 25 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-26T16:02:00+08:00",
+    "source": "https://x.com/i/status/2080902363074933101",
+    "sourceLink": "https://x.com/i/status/2080902363074933101",
+    "author": "Heisenberg",
+    "authorLink": "https://x.com/rovvmut_",
+    "prompt": "Every street has a story when the city sleeps.\nSeedream 5.0 Pro\n1.5K",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1785311233279.3416
+  },
+  {
+    "title": "晨光早安，向阳而生",
+    "slug": "prompt-2080909723100905797",
+    "model": "Common",
+    "category": "editorial",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "AI艺术"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2080909723100905797.jpg",
+    "date": "Sat Jul 25 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-26T16:02:00+08:00",
+    "source": "https://x.com/i/status/2080909723100905797",
+    "sourceLink": "https://x.com/i/status/2080909723100905797",
+    "author": "Art Beauty by Martine 🎨🖼️",
+    "authorLink": "https://x.com/MartineArtB",
+    "prompt": "Bonjour, good morning ☀️🌹 \nAime-moi d'amour\nCe que j'aime à voir, ce que j'aime au monde,\nCe que j'aime à voir,\nVeux-tu le savoir ?\nCe sont tes beaux yeux, c'est ta taille ronde,\nCe sont tes beaux yeux,\nTes yeux langoureux.\nCe que j'aime encore je vais te l'apprendre,\nCe que j'aime encore\nPlus qu'aucun trésor,\nCe sont tes doux chants, c'est ta voix si tendre,\nCe sont tes doux chants,\nPlaintifs et touchants.\nCe qui cause en moi la plus douce ivresse,\nCe qui cause en moi\nLe plus tendre émoi,\nC'est de voir ton cœur vibrer de tendresse,\nC'est de voir ton cœur\nTrembler de bonheur.\nEnfin, si tu veux répondre à ma flamme,\nEnfin si tu veux\nCombler tous mes vœux,\nJusqu'au dernier jour garde-moi ton âme,\nJusqu'au dernier jour\nAime-moi d'amour.\n~François-Marie Robert-Dutertre~ poète (1815-1898)\n#aiart",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1785311233281.6436
+  },
+  {
+    "title": "巨杯咖啡湖，微缩小人泛舟",
+    "slug": "prompt-2081078353910473163",
+    "model": "Common",
+    "category": "editorial",
+    "tags": [
+      "AI绘图",
+      "提示词",
+      "商业",
+      "电影感",
+      "活力"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2081078353910473163.jpg",
+    "date": "Sat Jul 25 2026 08:00:00 GMT+0800 (China Standard Time)",
+    "added": "2026-07-26T16:02:00+08:00",
+    "source": "https://x.com/i/status/2081078353910473163",
+    "sourceLink": "https://x.com/i/status/2081078353910473163",
+    "author": "Aylin",
+    "authorLink": "https://x.com/aylinspace",
+    "prompt": "A gigantic ceramic coffee cup transformed into an endless lake of rich dark coffee. Hundreds of tiny miniature people are sailing elegant wooden boats, kayaking, paddleboarding, and fishing across the coffee surface. Cream swirls create winding rivers and islands, while fluffy milk foam forms snowy mountains and soft clouds. A giant golden spoon acts as a bridge over the coffee, with tiny travelers crossing it. Floating coffee beans become rocky islands where miniature cafés and lighthouses stand. Warm morning sunlight, cinematic atmosphere, premium coffee advertisement, surreal miniature world, hyper-realistic CGI, ultra detailed textures, macro photography, shallow depth of field, soft reflections, volumetric lighting, vibrant colors, clean composition, award-winning commercial photography, 8K.",
+    "negativePrompt": "",
+    "parameters": {},
+    "mtime": 1785311233286.1687
   },
   {
     "title": "烈日高反差黑白街头摄影",
