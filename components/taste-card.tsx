@@ -199,37 +199,54 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
 
   useEffect(() => {
     const saved = loadProfile()
+    let hasChanges = false
     
-    // 同步实际收藏数
+    // 同步实际收藏数和 history
     if (serverFavorites && serverFavorites.length > 0) {
       saved.favoriteCount = serverFavorites.length
       
-      // 如果 history 为空但有收藏，初始化 history
-      if (saved.history.length === 0 && serverFavorites.length > 0) {
-        saved.history = serverFavorites.map((fav, index) => ({
+      // 检查是否有新收藏需要添加到 history
+      const existingSlugs = new Set(saved.history.map(h => h.slug))
+      const newFavorites = serverFavorites.filter(fav => !existingSlugs.has(fav.slug))
+      
+      if (newFavorites.length > 0) {
+        // 添加新收藏到 history
+        const newHistoryItems = newFavorites.map((fav, index) => ({
           slug: fav.slug,
           vector: calculateVectorFromPrompt(fav),
-          timestamp: Date.now() - (serverFavorites.length - index) * 1000,
+          timestamp: Date.now() - (newFavorites.length - index) * 1000,
         }))
+        saved.history = [...saved.history, ...newHistoryItems]
+        hasChanges = true
       }
       
-      saveProfile(saved)
+      if (hasChanges) {
+        saveProfile(saved)
+      }
     } else {
       // 尝试从 localStorage 读取
       const localFavs = JSON.parse(localStorage.getItem('cgfan_favorites') || '[]')
       if (localFavs.length > 0) {
         saved.favoriteCount = localFavs.length
         
-        // 如果 history 为空但有收藏，初始化 history
-        if (saved.history.length === 0 && localFavs.length > 0) {
-          saved.history = localFavs.map((fav: any, index: number) => ({
+        // 检查是否有新收藏需要添加到 history
+        const existingSlugs = new Set(saved.history.map(h => h.slug))
+        const newFavorites = localFavs.filter((fav: any) => !existingSlugs.has(fav.slug))
+        
+        if (newFavorites.length > 0) {
+          // 添加新收藏到 history
+          const newHistoryItems = newFavorites.map((fav: any, index: number) => ({
             slug: fav.slug,
             vector: calculateVectorFromPrompt(fav),
-            timestamp: Date.now() - (localFavs.length - index) * 1000,
+            timestamp: Date.now() - (newFavorites.length - index) * 1000,
           }))
+          saved.history = [...saved.history, ...newHistoryItems]
+          hasChanges = true
         }
         
-        saveProfile(saved)
+        if (hasChanges) {
+          saveProfile(saved)
+        }
       }
     }
     
