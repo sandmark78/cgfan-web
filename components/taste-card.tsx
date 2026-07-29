@@ -733,6 +733,14 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       {/* 操作按钮 */}
       <div className="mt-8 flex flex-col items-center gap-3">
         <div className="flex gap-3">
+          <button
+            onClick={handleDownloadCard}
+            disabled={isGenerating}
+            className="inline-flex items-center gap-2 rounded-full bg-emerald-600 px-6 py-3 text-sm font-semibold text-white shadow-md transition-all hover:bg-emerald-500 hover:shadow-lg disabled:opacity-50"
+          >
+            <Download className="h-4 w-4" />
+            {isGenerating ? '生成中...' : '下载美学人格卡片'}
+          </button>
           <a
             href="/explore"
             className="inline-flex items-center gap-2 rounded-full bg-emerald-600 px-8 py-3 text-sm font-semibold text-white shadow-md transition-all hover:bg-emerald-500 hover:shadow-lg"
@@ -749,16 +757,6 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
             重新测试
           </button>
         </div>
-        
-        {/* 下载美学人格卡片 */}
-        <button
-          onClick={handleDownloadCard}
-          disabled={isGenerating}
-          className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-white px-6 py-2.5 text-sm font-medium text-emerald-700 transition-colors hover:bg-emerald-50 dark:border-emerald-800 dark:bg-gray-900 dark:text-emerald-400 dark:hover:bg-gray-800 disabled:opacity-50"
-        >
-          <Download className="h-4 w-4" />
-          {isGenerating ? '生成中...' : '下载美学人格卡片'}
-        </button>
       </div>
 
       {/* 重新测试确认弹窗 */}
