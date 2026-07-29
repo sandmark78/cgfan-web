@@ -2,7 +2,7 @@
 title: "Gemini 柔软午后时光"
 slug: gemini-nano-banana-pro-30-1570899670
 model: Midjourney
-category: realistic
+category: photography
 tags:
 - 摄影
 - 人工智能绘画

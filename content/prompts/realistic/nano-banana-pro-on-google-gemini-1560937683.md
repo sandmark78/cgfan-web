@@ -2,7 +2,7 @@
 title: "Nano Banana Pro on Google... Nano Banana Pro 创作"
 slug: nano-banana-pro-on-google-gemini-1560937683
 model: Midjourney
-category: realistic
+category: photography
 tags:
 - 摄影
 - AI Art

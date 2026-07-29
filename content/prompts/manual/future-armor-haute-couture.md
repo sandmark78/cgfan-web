@@ -2,7 +2,7 @@
 title: "未来战甲高级时装提示词"
 slug: future-armor-haute-couture
 model: Midjourney
-category: realistic
+category: editorial
 tags:
 - AI绘图
 - 提示词

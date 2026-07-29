@@ -4,7 +4,7 @@ slug: clay-render-to-dark-fantasy
 author: DrSadek
 date: 2026-07-21
 model: GPT Image 2
-category: style
+category: fantasy
 tags: [clay-render, dark-fantasy, cinematic, two-step, denoise, GPT-Image2]
 difficulty: advanced
 cover: /images/prompts/clay-render-to-dark-fantasy-cover.webp

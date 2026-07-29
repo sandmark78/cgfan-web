@@ -2,7 +2,7 @@
 title: "跨界球鞋概念设计"
 slug: cross-brand-sneaker-collaboration-1570896016
 model: Midjourney
-category: abstract
+category: product
 tags:
 - 广告
 - 球鞋设计

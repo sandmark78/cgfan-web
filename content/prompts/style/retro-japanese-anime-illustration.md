@@ -2,7 +2,7 @@
 title: "昭和怀旧动漫插画四格"
 slug: retro-japanese-anime-illustration
 model: GPT-Image2
-category: style
+category: illustration
 tags:
   - AI绘图
   - 提示词

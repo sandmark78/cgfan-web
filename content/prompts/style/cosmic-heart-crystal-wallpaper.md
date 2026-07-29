@@ -2,7 +2,7 @@
 title: "宇宙之心水晶壁纸"
 slug: cosmic-heart-crystal-wallpaper
 model: Common
-category: style
+category: editorial
 tags:
   - AI绘图
   - 提示词

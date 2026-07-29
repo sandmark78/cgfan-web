@@ -4,7 +4,7 @@ slug: editorial-screenprint-against-the-weight
 author: Ahmed
 date: 2026-07-24
 model: GPT Image 2
-category: style
+category: editorial
 tags: [editorial-screenprint, minimal-color, silhouette, series, GPT-Image2]
 difficulty: intermediate
 cover: /images/prompts/editorial-screenprint-dam-worker.webp

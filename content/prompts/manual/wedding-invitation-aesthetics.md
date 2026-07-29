@@ -2,7 +2,7 @@
 title: "GPT-Image2 婚礼请柬美学提示词"
 slug: wedding-invitation-aesthetics
 model: GPT-Image2
-category: realistic
+category: editorial
 tags:
 - AI绘图
 - 提示词

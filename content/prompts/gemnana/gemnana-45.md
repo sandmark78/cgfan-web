@@ -4,7 +4,7 @@ slug: gemnana-45
 date: 2025-11-06
 added: 2026-07-26T22:00:00+08:00
 model: Common
-category: style
+category: retro
 tags: []
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/45.html"

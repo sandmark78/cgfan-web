@@ -4,7 +4,7 @@ slug: gemnana-1098
 date: 2026-01-13
 added: 2026-07-27T11:31:45+08:00
 model: Midjourney
-category: style
+category: anime
 tags:
   - AI绘图
   - 提示词

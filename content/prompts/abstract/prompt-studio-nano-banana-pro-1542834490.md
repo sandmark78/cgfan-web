@@ -2,7 +2,7 @@
 title: "Nano Banana Pro 探险计划"
 slug: prompt-studio-nano-banana-pro-1542834490
 model: Midjourney
-category: abstract
+category: editorial
 tags:
 - Nanobanana
 - AI Art

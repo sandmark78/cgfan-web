@@ -2,7 +2,7 @@
 title: "发明进化四宫格"
 slug: these-360-prompts-are-so-much-fun-1558979827
 model: Midjourney
-category: 3d
+category: photography
 tags:
 - 摄影
 - Stargate

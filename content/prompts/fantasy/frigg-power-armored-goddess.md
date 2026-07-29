@@ -2,7 +2,7 @@
 title: "FRIGG 装甲女神"
 slug: frigg-power-armored-goddess
 model: Common
-category: fantasy
+category: sci-fi
 tags:
   - AI绘图
   - 提示词

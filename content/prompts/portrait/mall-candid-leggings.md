@@ -2,7 +2,7 @@
 title: "商场扶梯抓拍夏日连衣短裙"
 slug: mall-candid-leggings
 model: Common
-category: portrait
+category: photography
 tags:
   - AI绘图
   - 提示词

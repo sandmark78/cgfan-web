@@ -4,7 +4,7 @@ slug: gemnana-8
 date: 2025-11-06
 added: 2026-07-26T21:33:35+08:00
 model: Common
-category: style
+category: editorial
 tags:
   - 艺术
 difficulty: beginner

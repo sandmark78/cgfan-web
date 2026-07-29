@@ -4,7 +4,7 @@ title: "年轻女性人像写真"
   as a reference.", "gaze": "Use the uploaded image as a reference.", "emotion":'
 slug: image_request-subject-type-young-adult-1564527620
 model: Midjourney
-category: realistic
+category: photography
 tags:
 - 摄影
 - AI Art

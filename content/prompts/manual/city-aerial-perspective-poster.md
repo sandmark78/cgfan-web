@@ -2,7 +2,7 @@
 title: "城市鸟瞰透视角色海报提示词"
 slug: city-aerial-perspective-poster
 model: Midjourney
-category: realistic
+category: poster
 tags:
 - AI绘图
 - 提示词

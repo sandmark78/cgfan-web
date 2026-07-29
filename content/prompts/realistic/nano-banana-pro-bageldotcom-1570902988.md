@@ -2,7 +2,7 @@
 title: "网球运动动感人像"
 slug: nano-banana-pro-bageldotcom-1570902988
 model: Midjourney
-category: realistic
+category: photography
 tags:
 - 摄影
 - AI图像生成

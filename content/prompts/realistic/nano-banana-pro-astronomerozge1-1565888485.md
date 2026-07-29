@@ -2,7 +2,7 @@
 title: "Nano Banana Pro 九宫格写真"
 slug: nano-banana-pro-astronomerozge1-1565888485
 model: Midjourney
-category: realistic
+category: editorial
 tags:
 - 摄影
 - AI生成

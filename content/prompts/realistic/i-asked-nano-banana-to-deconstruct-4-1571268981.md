@@ -2,7 +2,7 @@
 title: "拆解四件百年机械装置"
 slug: i-asked-nano-banana-to-deconstruct-4-1571268981
 model: Midjourney
-category: realistic
+category: photography
 tags:
 - 艺术
 - 人工智能生成

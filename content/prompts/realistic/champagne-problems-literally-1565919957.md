@@ -2,7 +2,7 @@
 title: "香槟气泡里的珠宝梦"
 slug: champagne-problems-literally-1565919957
 model: Midjourney
-category: realistic
+category: photography
 tags:
 - 摄影
 - photography

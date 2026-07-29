@@ -2,7 +2,7 @@
 title: 30 分钟，AI 生成全套电商产品素材！
 slug: ecommerce-product-suite
 model: Midjourney
-category: abstract
+category: product
 tags:
 - 广告
 - AI电商

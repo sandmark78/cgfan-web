@@ -2,7 +2,7 @@
 title: "冰凝之美：奢华护肤品摄影"
 slug: luxury-cosmetic-photography-meets-1557351931
 model: Midjourney
-category: realistic
+category: photography
 tags:
 - 摄影
 - AI Photography

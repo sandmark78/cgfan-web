@@ -4,7 +4,7 @@ slug: gemnana-1717
 date: 2026-01-26
 added: 2026-07-27T12:53:55+08:00
 model: Common
-category: style
+category: poster
 tags:
   - AI绘图
   - 提示词

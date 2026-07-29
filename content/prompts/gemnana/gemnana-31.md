@@ -4,7 +4,7 @@ slug: gemnana-31
 date: 2025-11-06
 added: 2026-07-26T21:00:00+08:00
 model: Common
-category: style
+category: photorealistic
 tags: []
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/31.html"

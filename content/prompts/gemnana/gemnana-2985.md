@@ -4,7 +4,7 @@ slug: gemnana-2985
 date: 2026-05-06
 added: 2026-07-27T12:54:24+08:00
 model: AI
-category: style
+category: poster
 tags:
   - 提示词
   - AI绘图

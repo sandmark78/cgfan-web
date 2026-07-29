@@ -2,7 +2,7 @@
 title: 【AI写真系列×韩系女团风】第三弹
 slug: korean-girl-group-part3
 model: Midjourney
-category: realistic
+category: photography
 tags:
 - 摄影
 - AI绘画

@@ -2,7 +2,7 @@
 title: 新中式重构提示词框架：
 slug: neo-chinese-framework
 model: Midjourney
-category: abstract
+category: editorial
 tags:
 - AI Art
 - Midjourney

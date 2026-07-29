@@ -8,7 +8,7 @@ title: "Gemini的香蕉人像人脸内容的时期做过类似的教程有专门
 1.  皮肤的真实层次 区域差异化：T区油光明显、鼻翼有黑头、脸颊微干有细纹、下巴易有粉刺 微血管与色素：轻微红血丝、色斑不均匀、自然的血管透肤感 光线反应：不同光源下皮肤颜色、油光、反光都要真实变"
 slug: banana-portrait-face-period
 model: Midjourney
-category: realistic
+category: portrait
 tags:
 - AI绘图
 - 提示词

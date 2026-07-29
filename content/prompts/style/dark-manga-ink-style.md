@@ -5,7 +5,7 @@ author: VoxCat
 date: 2026-07-22
 added: 2026-07-24
 model: GPT-Image2
-category: style
+category: editorial
 tags: [dark, manga, ink, woodcut, silk-screen, high-contrast]
 difficulty: advanced
 cover: /images/prompts/2079912938538951156.jpg

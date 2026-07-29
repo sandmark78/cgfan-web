@@ -2,7 +2,7 @@
 title: "增强AI人脸真实感提示词"
 slug: enhance-face-realism
 model: Midjourney
-category: realistic
+category: photorealistic
 tags:
 - AI绘图
 - 提示词

@@ -4,7 +4,7 @@ slug: gemnana-1666
 date: 2026-01-24
 added: 2026-07-27T12:53:44+08:00
 model: Common
-category: style
+category: product
 tags:
   - AI绘图
   - 提示词

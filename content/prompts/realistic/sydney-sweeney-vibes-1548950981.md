@@ -2,7 +2,7 @@
 title: "Sydney Sweeney超写实棚拍"
 slug: sydney-sweeney-vibes-1548950981
 model: Midjourney
-category: realistic
+category: photography
 tags:
 - 摄影
 - Nanobanana

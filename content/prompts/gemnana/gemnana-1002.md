@@ -4,7 +4,7 @@ slug: gemnana-1002
 date: 2026-01-11
 added: 2026-07-27T11:31:40+08:00
 model: Common
-category: style
+category: editorial
 tags:
   - AI绘图
   - 提示词

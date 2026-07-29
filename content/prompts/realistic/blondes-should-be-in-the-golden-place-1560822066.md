@@ -2,7 +2,7 @@
 title: "金色时光金发女郎"
 slug: blondes-should-be-in-the-golden-place-1560822066
 model: Midjourney
-category: realistic
+category: photography
 tags:
 - 摄影
 - AI绘画

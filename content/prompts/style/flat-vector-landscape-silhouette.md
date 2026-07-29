@@ -4,7 +4,7 @@ slug: flat-vector-landscape-silhouette
 author: Gadgetify
 date: 2026-07-24
 model: GPT Image 2
-category: style
+category: editorial
 tags: [矢量, 剪影, 扁平, 极简, 双色]
 difficulty: intermediate
 cover: /images/prompts/2080629318309556345.jpg

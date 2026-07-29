@@ -4,7 +4,7 @@ slug: gemnana-566
 date: 2026-01-10
 added: 2026-07-27T11:31:27+08:00
 model: Nano Banana
-category: style
+category: photorealistic
 tags:
   - AI绘图
   - 提示词

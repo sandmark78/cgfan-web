@@ -4,7 +4,7 @@ slug: gemnana-3005
 date: 2026-05-25
 added: 2026-07-27T12:54:24+08:00
 model: GPT-Image2
-category: style
+category: fantasy
 tags:
   - 提示词
   - AI绘图

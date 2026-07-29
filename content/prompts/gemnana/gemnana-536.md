@@ -4,7 +4,7 @@ slug: gemnana-536
 date: 2025-12-14
 added: 2026-07-27T11:31:27+08:00
 model: Leonardo
-category: style
+category: fantasy
 tags:
   - AI绘图
   - 提示词

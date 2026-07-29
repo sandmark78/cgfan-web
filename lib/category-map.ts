@@ -2,20 +2,23 @@
  * 分类名中英文映射
  */
 export const CATEGORY_MAP: Record<string, { label: string; icon: string }> = {
-  realistic: { label: '写实风格', icon: '📷' },
-  anime: { label: '动漫风格', icon: '🎨' },
-  '3d': { label: '3D 渲染', icon: '🎮' },
-  abstract: { label: '抽象', icon: '🎭' },
-  cyberpunk: { label: '赛博朋克', icon: '🌃' },
-  portrait: { label: '人物', icon: '👤' },
-  landscape: { label: '风景', icon: '🏔️' },
-  style: { label: '风格', icon: '🎨' },
   photography: { label: '摄影', icon: '📸' },
+  photorealistic: { label: '超写实', icon: '🎯' },
+  portrait: { label: '人像', icon: '👤' },
+  landscape: { label: '风景', icon: '🏞️' },
   product: { label: '产品', icon: '📦' },
-  design: { label: '设计', icon: '🎯' },
-  commercial: { label: '商业', icon: '💼' },
-  fantasy: { label: '奇幻', icon: '🧙' },
   poster: { label: '海报', icon: '🖼️' },
+  editorial: { label: '编辑设计', icon: '📰' },
+  illustration: { label: '插画', icon: '🎨' },
+  concept_art: { label: '概念艺术', icon: '💡' },
+  '3d': { label: '3D渲染', icon: '🎮' },
+  anime: { label: '动漫', icon: '🎌' },
+  cyberpunk: { label: '赛博朋克', icon: '🌃' },
+  'sci-fi': { label: '科幻', icon: '🚀' },
+  fantasy: { label: '奇幻', icon: '🧙' },
+  retro: { label: '复古', icon: '📼' },
+  minimalist: { label: '极简', icon: '⚪' },
+  abstract: { label: '抽象', icon: '🎭' },
 }
 
 /**

@@ -4,7 +4,7 @@ slug: watercolor-storybook-illustration
 author: Eesha
 date: 2026-07-24
 model: ChatGPT
-category: style
+category: illustration
 tags: [水彩, 故事书, 插画, 儿童, 极简]
 difficulty: intermediate
 cover: /images/prompts/2080652535405400276.jpg

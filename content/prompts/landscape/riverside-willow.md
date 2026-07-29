@@ -5,7 +5,7 @@ author: Uncle Dave
 date: 2026-07-24
 added: 2026-07-25T20:43:00+08:00
 model: Midjourney
-category: landscape
+category: editorial
 tags: [landscape, river, reflection, national-geographic, cinematic]
 difficulty: intermediate
 cover: /images/prompts/riverside-willow.jpg

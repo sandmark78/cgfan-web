@@ -4,7 +4,7 @@ slug: gemnana-601
 date: 2025-12-22
 added: 2026-07-27T11:31:27+08:00
 model: Common
-category: style
+category: product
 tags:
   - AI绘图
   - 提示词

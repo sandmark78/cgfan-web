@@ -2,7 +2,7 @@
 title: "魏晋风古典仕女妆造提示词"
 slug: weijin-classical-lady
 model: Midjourney
-category: realistic
+category: editorial
 tags:
 - AI绘图
 - 提示词

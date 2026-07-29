@@ -2,7 +2,7 @@
 title: "地标建筑剖面解剖图"
 slug: landmark-anatomy-poster
 model: GPT-Image2
-category: design
+category: poster
 tags:
   - AI绘图
   - 提示词

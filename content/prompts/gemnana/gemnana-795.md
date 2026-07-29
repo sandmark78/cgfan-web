@@ -4,7 +4,7 @@ slug: gemnana-795
 date: 2026-01-07
 added: 2026-07-27T11:31:33+08:00
 model: Midjourney
-category: style
+category: sci-fi
 tags:
   - AI绘图
   - 提示词

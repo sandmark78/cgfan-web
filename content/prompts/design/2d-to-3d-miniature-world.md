@@ -2,7 +2,7 @@
 title: "2D插画转3D微缩世界框架"
 slug: 2d-to-3d-miniature-world
 model: Midjourney
-category: design
+category: illustration
 tags:
   - AI绘图
   - 提示词

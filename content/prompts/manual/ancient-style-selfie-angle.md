@@ -2,7 +2,7 @@
 title: "古风私房自拍视角提示词"
 slug: ancient-style-selfie-angle
 model: Midjourney
-category: realistic
+category: editorial
 tags:
 - AI绘图
 - 提示词

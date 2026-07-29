@@ -2,7 +2,7 @@
 title: "SQL语法书籍可视化"
 slug: sql-book-visualization
 model: Common
-category: style
+category: editorial
 tags:
   - AI绘图
   - 提示词

@@ -4,7 +4,7 @@ slug: terre-hermes-desert-perfume-poster
 author: Loriel.AI
 date: 2026-07-24
 model: GPT Image 2
-category: commercial
+category: poster
 tags: [香水, 海报, 沙漠, 产品, 奢华]
 difficulty: advanced
 cover: /images/prompts/2080580873620251071.jpg

@@ -4,7 +4,7 @@ slug: product-explosion-commercial-photography
 author: Laraib Fatima
 date: 2026-07-24
 model: Gemini
-category: commercial
+category: product
 tags: [产品, 商业, 摄影, 爆炸, 高速]
 difficulty: intermediate
 cover: /images/prompts/2080633180277879240.jpg

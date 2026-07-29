@@ -4,7 +4,7 @@ slug: gemnana-504
 date: 2025-11-08
 added: 2026-07-27T11:31:27+08:00
 model: Gemini
-category: style
+category: editorial
 tags:
   - AI绘图
   - 提示词

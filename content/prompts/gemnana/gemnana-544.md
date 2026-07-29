@@ -4,7 +4,7 @@ slug: gemnana-544
 date: 2026-01-04
 added: 2026-07-27T11:31:27+08:00
 model: Gemini
-category: style
+category: minimalist
 tags:
   - AI绘图
   - 提示词

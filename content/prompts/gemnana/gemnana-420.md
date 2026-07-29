@@ -4,7 +4,7 @@ slug: gemnana-420
 date: 2025-11-07
 added: 2026-07-27T11:31:27+08:00
 model: Nano Banana
-category: style
+category: editorial
 tags:
   - AI绘图
   - 提示词

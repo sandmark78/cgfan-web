@@ -4,7 +4,7 @@ slug: modern-asian-cafe-poster
 author: Anissa
 date: 2026-07-24
 model: GPT Image 2
-category: commercial
+category: poster
 tags: [咖啡, 海报, 商业, 日韩, 极简]
 difficulty: intermediate
 cover: /images/prompts/2080648358914658503.jpg

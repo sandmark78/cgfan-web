@@ -4,7 +4,7 @@ slug: gemnana-2304
 date: 2026-02-27
 added: 2026-07-27T12:54:10+08:00
 model: Gemini
-category: style
+category: product
 tags:
   - AI绘图
   - 提示词

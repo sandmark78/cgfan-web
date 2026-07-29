@@ -4,7 +4,7 @@ slug: gemnana-2850
 date: 2026-04-20
 added: 2026-07-27T12:54:24+08:00
 model: GPT-Image
-category: style
+category: illustration
 tags:
   - AI绘图
   - 提示词

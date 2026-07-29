@@ -4,7 +4,7 @@ slug: gemnana-834
 date: 2026-01-08
 added: 2026-07-27T11:31:39+08:00
 model: Common
-category: style
+category: photorealistic
 tags:
   - AI绘图
   - 提示词

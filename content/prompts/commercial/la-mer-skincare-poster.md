@@ -5,7 +5,7 @@ author: Loriel.AI
 date: 2026-07-24
 added: 2026-07-25T17:35:00+08:00
 model: GPT Image 2
-category: commercial
+category: poster
 tags: [skincare, poster, commercial, luxury, editorial]
 difficulty: advanced
 cover: /images/prompts/la-mer-skincare-poster.jpg

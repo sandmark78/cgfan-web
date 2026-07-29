@@ -5,7 +5,7 @@ author: Pierrick Chevallier
 date: 2026-07-24
 added: 2026-07-25T20:34:00+08:00
 model: Midjourney
-category: style
+category: anime
 tags: [niji, anime, manga, wallpaper, action]
 difficulty: intermediate
 cover: /images/prompts/niji-manga-wallpaper.jpg

@@ -2,7 +2,7 @@
 title: "错觉艺术城市海报"
 slug: optical-illusion-city-sql
 model: Common
-category: style
+category: poster
 tags:
   - AI绘图
   - 提示词

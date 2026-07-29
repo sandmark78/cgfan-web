@@ -4,7 +4,7 @@ slug: gemnana-1648
 date: 2026-01-21
 added: 2026-07-27T12:53:44+08:00
 model: Midjourney
-category: style
+category: editorial
 tags:
   - AI绘图
   - 提示词

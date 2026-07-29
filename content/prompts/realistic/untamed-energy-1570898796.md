@@ -2,7 +2,7 @@
 title: "野性力量动物肖像"
 slug: untamed-energy-1570898796
 model: Midjourney
-category: realistic
+category: photography
 tags:
 - 摄影
 - AI生成艺术

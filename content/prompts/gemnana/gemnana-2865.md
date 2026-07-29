@@ -4,7 +4,7 @@ slug: gemnana-2865
 date: 2026-02-24
 added: 2026-07-27T12:54:24+08:00
 model: GPT-Image2
-category: style
+category: poster
 tags:
   - AI绘图
   - 提示词

@@ -5,7 +5,7 @@ author: AI Aimee
 date: 2026-07-24
 added: 2026-07-25T20:34:00+08:00
 model: GPT Image 2
-category: portrait
+category: poster
 tags: [art-nouveau, fashion, glamour, poster, editorial]
 difficulty: intermediate
 cover: /images/prompts/art-nouveau-fashion.jpg

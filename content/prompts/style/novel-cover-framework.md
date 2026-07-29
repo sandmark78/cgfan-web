@@ -5,7 +5,7 @@ author: Larus Canus
 date: 2026-07-24
 added: 2026-07-25T19:50:00+08:00
 model: GPT Image 2
-category: style
+category: editorial
 tags: [book-cover, novel, editorial, typography, framework]
 difficulty: advanced
 cover: /images/prompts/novel-cover-framework.jpg

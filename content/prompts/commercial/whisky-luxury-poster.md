@@ -4,7 +4,7 @@ slug: whisky-luxury-poster
 author: Loriel.AI
 date: 2026-07-24
 model: GPT-Image2
-category: commercial
+category: poster
 tags: [威士忌, 奢华, 海报, 商业摄影]
 difficulty: advanced
 cover: /images/prompts/2080615196691698043.jpg

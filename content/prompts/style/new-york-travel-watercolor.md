@@ -4,7 +4,7 @@ slug: new-york-travel-watercolor
 author: Sairah
 date: 2026-07-24
 model: GPT-Image2
-category: style
+category: illustration
 tags: [水彩, 插画, 旅行, 纽约, 自由女神]
 difficulty: intermediate
 cover: /images/prompts/2080691509817639347.jpg

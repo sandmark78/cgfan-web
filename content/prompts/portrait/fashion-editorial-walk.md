@@ -5,7 +5,7 @@ author: ToroJushiAi
 date: 2026-07-24
 added: 2026-07-25T20:46:00+08:00
 model: GPT Image 2
-category: portrait
+category: editorial
 tags: [fashion, editorial, architecture, golden-hour, cinematic]
 difficulty: advanced
 cover: /images/prompts/fashion-editorial-walk.jpg

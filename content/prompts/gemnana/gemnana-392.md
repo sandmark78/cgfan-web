@@ -4,7 +4,7 @@ slug: gemnana-392
 date: 2025-11-06
 added: 2026-07-27T11:31:27+08:00
 model: ChatGPT
-category: style
+category: 3d
 tags:
   - AI绘图
   - 提示词

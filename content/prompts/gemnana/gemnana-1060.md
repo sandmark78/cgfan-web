@@ -4,7 +4,7 @@ slug: gemnana-1060
 date: 2026-01-12
 added: 2026-07-27T11:31:45+08:00
 model: Common
-category: style
+category: portrait
 tags:
   - AI绘图
   - 提示词

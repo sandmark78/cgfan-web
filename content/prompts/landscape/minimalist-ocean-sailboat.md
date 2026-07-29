@@ -5,7 +5,7 @@ author: simeon-sanai
 date: 2026-07-24
 added: 2026-07-25T19:50:00+08:00
 model: GPT Image 2
-category: landscape
+category: minimalist
 tags: [aerial, minimalist, ocean, forest, national-geographic]
 difficulty: intermediate
 cover: /images/prompts/minimalist-ocean-sailboat.jpg

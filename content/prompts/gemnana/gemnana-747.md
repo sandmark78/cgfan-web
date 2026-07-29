@@ -4,7 +4,7 @@ slug: gemnana-747
 date: 2026-01-06
 added: 2026-07-27T11:31:33+08:00
 model: Gemini
-category: style
+category: portrait
 tags:
   - AI绘图
   - 提示词

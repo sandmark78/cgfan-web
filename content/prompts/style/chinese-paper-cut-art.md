@@ -2,7 +2,7 @@
 title: "中式古典立体剪纸通用提示词"
 slug: chinese-paper-cut-art
 model: Common
-category: style
+category: editorial
 tags:
   - AI绘图
   - 提示词

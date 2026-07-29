@@ -4,7 +4,7 @@ slug: gemnana-509
 date: 2025-11-10
 added: 2026-07-27T11:31:27+08:00
 model: Grok
-category: style
+category: landscape
 tags:
   - AI绘图
   - 提示词

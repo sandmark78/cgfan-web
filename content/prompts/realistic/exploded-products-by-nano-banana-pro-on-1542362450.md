@@ -2,7 +2,7 @@
 title: "产品爆炸分解图"
 slug: exploded-products-by-nano-banana-pro-on-1542362450
 model: Midjourney
-category: realistic
+category: product
 tags:
 - 摄影
 - Nanobanana

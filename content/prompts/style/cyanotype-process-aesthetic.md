@@ -5,7 +5,7 @@ author: Alexandra Aisling
 date: 2026-07-25
 added: 2026-07-25T17:35:00+08:00
 model: GPT Image 2
-category: style
+category: editorial
 tags: [cyanotype, aesthetic, vintage, photography, blueprint]
 difficulty: intermediate
 cover: /images/prompts/cyanotype-aesthetic.jpg

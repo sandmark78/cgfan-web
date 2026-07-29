@@ -2,7 +2,7 @@
 title: "龙与少女"
 slug: dragon-and-girl
 model: Midjourney
-category: fantasy
+category: editorial
 tags: [dragon, chinese-dragon, hanfu, fantasy, cinematic]
 difficulty: advanced
 cover: /images/prompts/dragon-and-girl.jpg

@@ -4,7 +4,7 @@ slug: gemnana-1813
 date: 2026-01-29
 added: 2026-07-27T12:54:05+08:00
 model: Midjourney
-category: style
+category: retro
 tags:
   - AI绘图
   - 提示词

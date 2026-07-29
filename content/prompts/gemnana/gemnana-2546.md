@@ -4,7 +4,7 @@ slug: gemnana-2546
 date: 2026-03-15
 added: 2026-07-27T12:54:17+08:00
 model: Common
-category: style
+category: photorealistic
 tags:
   - AI绘图
   - 提示词

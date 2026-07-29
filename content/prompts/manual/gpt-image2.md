@@ -14,7 +14,7 @@ prompt:
 ・总体上，使用有组织的布局（白色"
 slug: gpt-image2
 model: Midjourney
-category: realistic
+category: editorial
 tags:
 - AI绘图
 - 提示词

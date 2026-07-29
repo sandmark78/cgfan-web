@@ -4,7 +4,7 @@ slug: gemnana-1700
 date: 2026-01-25
 added: 2026-07-27T12:53:55+08:00
 model: Common
-category: style
+category: 3d
 tags:
   - AI绘图
   - 提示词

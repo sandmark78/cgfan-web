@@ -4,7 +4,7 @@ slug: gemnana-1528
 date: 2026-01-18
 added: 2026-07-27T11:31:51+08:00
 model: Midjourney
-category: style
+category: minimalist
 tags:
   - AI绘图
   - 提示词

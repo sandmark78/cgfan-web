@@ -2,7 +2,7 @@
 title: 【AI写真系列×韩系女团风写真🎀】第一弹
 slug: korean-girl-group-style
 model: Midjourney
-category: realistic
+category: photography
 tags:
 - 摄影
 - AI写真

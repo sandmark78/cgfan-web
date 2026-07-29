@@ -4,7 +4,7 @@ slug: european-snacks-poster-generator
 author: Gadgetify
 date: 2026-07-24
 model: GPT-Image2
-category: commercial
+category: poster
 tags: [海报, 商业, 插画, 冒险地图]
 difficulty: advanced
 cover: /images/prompts/2080670591531483339.jpg
