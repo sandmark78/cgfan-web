@@ -196,6 +196,7 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
   const [currentPersona, setCurrentPersona] = useState<BasePersona | null>(null)
   const [showRetakeConfirm, setShowRetakeConfirm] = useState(false)
   const [showQuiz, setShowQuiz] = useState(false)
+  const [refreshKey, setRefreshKey] = useState(0)
 
   useEffect(() => {
     const saved = loadProfile()
@@ -209,7 +210,7 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       const existingSlugs = new Set(saved.history.map(h => h.slug))
       const newFavorites = serverFavorites.filter(fav => !existingSlugs.has(fav.slug))
       
-      if (newFavorites.length > 0) {
+      if (newFavorites.length > 0 || saved.history.length === 0) {
         // 添加新收藏到 history
         const newHistoryItems = newFavorites.map((fav, index) => ({
           slug: fav.slug,
@@ -217,6 +218,35 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
           timestamp: Date.now() - (newFavorites.length - index) * 1000,
         }))
         saved.history = [...saved.history, ...newHistoryItems]
+        hasChanges = true
+      }
+      
+      // 重新计算 8 维向量（基于所有收藏的平均值）
+      if (saved.history.length > 0) {
+        const avgVector: AestheticVector = {
+          complexity: 0,
+          colorIntensity: 0,
+          arousal: 0,
+          fluency: 0,
+          novelty: 0,
+          harmony: 0,
+          narrative: 0,
+          stylization: 0,
+        }
+        
+        saved.history.forEach(item => {
+          Object.keys(avgVector).forEach(key => {
+            const k = key as keyof AestheticVector
+            avgVector[k] += item.vector[k]
+          })
+        })
+        
+        Object.keys(avgVector).forEach(key => {
+          const k = key as keyof AestheticVector
+          avgVector[k] = Math.round(avgVector[k] / saved.history.length)
+        })
+        
+        saved.vector = avgVector
         hasChanges = true
       }
       
@@ -233,7 +263,7 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
         const existingSlugs = new Set(saved.history.map(h => h.slug))
         const newFavorites = localFavs.filter((fav: any) => !existingSlugs.has(fav.slug))
         
-        if (newFavorites.length > 0) {
+        if (newFavorites.length > 0 || saved.history.length === 0) {
           // 添加新收藏到 history
           const newHistoryItems = newFavorites.map((fav: any, index: number) => ({
             slug: fav.slug,
@@ -241,6 +271,35 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
             timestamp: Date.now() - (newFavorites.length - index) * 1000,
           }))
           saved.history = [...saved.history, ...newHistoryItems]
+          hasChanges = true
+        }
+        
+        // 重新计算 8 维向量
+        if (saved.history.length > 0) {
+          const avgVector: AestheticVector = {
+            complexity: 0,
+            colorIntensity: 0,
+            arousal: 0,
+            fluency: 0,
+            novelty: 0,
+            harmony: 0,
+            narrative: 0,
+            stylization: 0,
+          }
+          
+          saved.history.forEach(item => {
+            Object.keys(avgVector).forEach(key => {
+              const k = key as keyof AestheticVector
+              avgVector[k] += item.vector[k]
+            })
+          })
+          
+          Object.keys(avgVector).forEach(key => {
+            const k = key as keyof AestheticVector
+            avgVector[k] = Math.round(avgVector[k] / saved.history.length)
+          })
+          
+          saved.vector = avgVector
           hasChanges = true
         }
         
@@ -256,7 +315,7 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       const persona = BASE_PERSONAS.find(p => p.id === saved.currentPersonaId)
       setCurrentPersona(persona || null)
     }
-  }, [serverFavorites])
+  }, [serverFavorites, refreshKey])
 
   const handleRetake = () => {
     clearProfile()
