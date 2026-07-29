@@ -75,7 +75,7 @@ export default async function ExplorePage({
   const currentPage = Math.max(1, parseInt(page || '1', 10))
 
   const categories = getAllCategories()
-  const tags = getAllTags()
+  const tags = getAllTags().filter(tag => tag.name !== 'AI绘图' && tag.name !== '提示词')
 
   // 统计模型和难度分布
   const allPrompts = getAllPrompts()

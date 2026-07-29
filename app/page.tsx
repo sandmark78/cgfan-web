@@ -43,8 +43,10 @@ export default async function Home() {
     return 0
   }).slice(0, 12)
   
-  // 获取热门标签（前20个）
-  const popularTags = getAllTags().slice(0, 20)
+  // 获取热门标签（前20个，排除 AI绘图 和 提示词）
+  const popularTags = getAllTags()
+    .filter(tag => tag.name !== 'AI绘图' && tag.name !== '提示词')
+    .slice(0, 20)
   
   // 标签 emoji 映射
   const tagEmojiMap: Record<string, string> = {
