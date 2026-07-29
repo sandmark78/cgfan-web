@@ -2,13 +2,82 @@
 
 import { useState, useEffect } from 'react'
 import { UserProfile, loadProfile, saveProfile, clearProfile, getGrowthStage, GROWTH_STAGES } from '@/lib/aesthetic-dynamic'
-import { BASE_PERSONAS, BasePersona } from '@/lib/aesthetic-engine'
+import { BASE_PERSONAS, BasePersona, AestheticVector } from '@/lib/aesthetic-engine'
 import { AestheticGrowthChart } from './aesthetic-growth-chart'
 import { AestheticQuiz } from './aesthetic-quiz'
 
 interface TasteCardClientProps {
   serverFavorites?: Array<{ slug: string; title: string; category: string; tags: string[]; model: string; cover: string }>
   isLoggedIn?: boolean
+}
+
+// 从提示词计算8维向量（简化版，基于分类和标签）
+function calculateVectorFromPrompt(prompt: { category: string; tags: string[] }): AestheticVector {
+  const vector: AestheticVector = {
+    complexity: 50,
+    colorIntensity: 50,
+    arousal: 50,
+    fluency: 50,
+    novelty: 50,
+    harmony: 50,
+    narrative: 50,
+    stylization: 50,
+  }
+
+  // 基于分类调整
+  switch (prompt.category) {
+    case 'photography':
+      vector.narrative += 20
+      vector.colorIntensity += 10
+      break
+    case '3d':
+      vector.complexity += 20
+      vector.stylization += 15
+      break
+    case 'poster':
+      vector.colorIntensity += 15
+      vector.novelty += 10
+      break
+    case 'portrait':
+      vector.narrative += 15
+      vector.arousal += 10
+      break
+  }
+
+  // 基于标签调整
+  const tags = prompt.tags.map(t => t.toLowerCase())
+  
+  if (tags.some(t => t.includes('极简') || t.includes('minimal'))) {
+    vector.complexity -= 20
+    vector.fluency += 20
+    vector.harmony += 15
+  }
+  
+  if (tags.some(t => t.includes('赛博') || t.includes('cyber'))) {
+    vector.colorIntensity += 20
+    vector.novelty += 15
+    vector.stylization += 20
+  }
+  
+  if (tags.some(t => t.includes('东方') || t.includes('eastern'))) {
+    vector.harmony += 20
+    vector.narrative += 15
+    vector.fluency += 10
+  }
+  
+  if (tags.some(t => t.includes('复古') || t.includes('retro'))) {
+    vector.novelty -= 15
+    vector.narrative += 15
+    vector.stylization += 10
+  }
+
+  // 确保所有值在0-100范围内
+  Object.keys(vector).forEach(key => {
+    const k = key as keyof AestheticVector
+    vector[k] = Math.max(0, Math.min(100, vector[k]))
+  })
+
+  return vector
 }
 
 export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClientProps) {
@@ -23,12 +92,32 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
     // 同步实际收藏数
     if (serverFavorites && serverFavorites.length > 0) {
       saved.favoriteCount = serverFavorites.length
+      
+      // 如果 history 为空但有收藏，初始化 history
+      if (saved.history.length === 0 && serverFavorites.length > 0) {
+        saved.history = serverFavorites.map((fav, index) => ({
+          slug: fav.slug,
+          vector: calculateVectorFromPrompt(fav),
+          timestamp: Date.now() - (serverFavorites.length - index) * 1000,
+        }))
+      }
+      
       saveProfile(saved)
     } else {
       // 尝试从 localStorage 读取
       const localFavs = JSON.parse(localStorage.getItem('cgfan_favorites') || '[]')
       if (localFavs.length > 0) {
         saved.favoriteCount = localFavs.length
+        
+        // 如果 history 为空但有收藏，初始化 history
+        if (saved.history.length === 0 && localFavs.length > 0) {
+          saved.history = localFavs.map((fav: any, index: number) => ({
+            slug: fav.slug,
+            vector: calculateVectorFromPrompt(fav),
+            timestamp: Date.now() - (localFavs.length - index) * 1000,
+          }))
+        }
+        
         saveProfile(saved)
       }
     }
