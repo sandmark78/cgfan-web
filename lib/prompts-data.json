@@ -31765,6 +31765,222 @@
     "mtime": 1785306955757.436
   },
   {
+    "title": "旅行微缩立体画：椰壳里的世界地标",
+    "slug": "prompt-2082336401916571926",
+    "model": "GPT-Image2",
+    "category": "3d",
+    "tags": [
+      "微缩",
+      "3D渲染",
+      "旅行",
+      "手工感",
+      "写实"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/prompt-2082336401916571926.jpg",
+    "date": "2026-07-29",
+    "added": "2026-07-29T15:00:00+08:00",
+    "source": "https://x.com/i/status/2082336401916571926",
+    "sourceLink": "https://x.com/i/status/2082336401916571926",
+    "author": "Saul Goodman",
+    "authorLink": "",
+    "prompt": "Create a highly detailed, whimsical 3D handcrafted clay diorama inside an opened natural container that perfectly represents {LOCATION}. The container should match the destination's theme (such as a coconut, shell, geode, treasure chest, flower, or another location-appropriate natural object) and reveal a breathtaking miniature landscape of {LOCATION}.\n\nInside the diorama, include {LOCATION}'s most iconic landmarks, natural scenery, architecture, vegetation, beaches, mountains, lakes, rivers, wildlife, cultural heritage, and signature local elements. Everything should look like premium handcrafted polymer clay with realistic textures, tiny details, soft sculpted edges, and intricate miniature craftsmanship.\n\nThe water should overflow naturally from the container, creating a magical cascading waterfall onto an antique vintage map centered on {LOCATION}.\n\nArrange charming travel-themed accessories around the container:\n- Vintage passport\n- Boarding pass\n- Retro camera\n- Compass\n- Suitcase with {LOCATION}-themed stickers\n- Travel notebook with an inspirational travel quote\n- Seashells or location-appropriate decorative items\n- Native flowers or plants\n- Tiny sailboat, canoe, or another destination-appropriate vehicle\n\nAdd elegant scrapbook typography on the right side:\n\nMy Travel Diary\n\n{LOCATION}\n\n• {TAGLINE 1}\n• {TAGLINE 2}\n• {TAGLINE 3}\n\nDate badge: {MONTH YEAR}\n\nBoarding pass text: Adventure Awaits\n\nNotebook quote: Collecting memories, not things\n\nUse warm golden lighting, shallow depth of field, creamy bokeh background, soft shadows, premium travel poster composition, pastel colours with vibrant turquoise water where appropriate, ultra-detailed polymer clay textures, realistic handcrafted imperfections, cinematic product photography, luxury travel souvenir aesthetic, centred composition, portrait orientation, 8K resolution, hyper-realistic miniature art, Instagram-worthy travel keepsake.",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "GPT-Image2"
+    },
+    "mtime": 1785308876940.5303
+  },
+  {
+    "title": "东方禅意壁纸：花影入庭",
+    "slug": "prompt-2078116052224131219",
+    "model": "GPT-Image2",
+    "category": "editorial",
+    "tags": [
+      "东方美学",
+      "极简",
+      "新中式",
+      "国风",
+      "人物"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2078116052224131219.jpg",
+    "date": "2026-07-17",
+    "added": "2026-07-29T15:00:00+08:00",
+    "source": "https://x.com/i/status/2078116052224131219",
+    "sourceLink": "https://x.com/i/status/2078116052224131219",
+    "author": "李岳",
+    "authorLink": "",
+    "prompt": "场景与意象：玉青色花窗、玫红花影、女子、浅金小饰件、干净留白空间\n构图与空间：中心偏下构图，花窗作为背景主体，人物位于中下部，画面上方和侧边保留足够留白\n色彩控制：暖白作为明亮基底，玉青用于花窗与部分背景结构，玫红只用于花影与少量局部点睛，浅金用于小饰件高光，人物服装可用珍珠白或浅粉白；避免全图玫红或全图玉青\n光线与质感：柔和自然光，干净平面海报感，轻微纸感，色彩鲜明清透\n画幅比例：9:16 \n补充要求：整体偏女性审美和小红书封面感，人物要精致小巧，画面干净高级，不压暗\n李岳\n@liyue_ai\nJul 16\nGPT Image 2生成美学壁纸：跳出清凉。\n\n提示词：\n主题方向：东方禅意极简插画\n风格分支：高对比灵动型\n主体内容：一位蹲在青石边看鲤鱼跃水的人物\n情绪母题：灵动、治愈、松弛、夏日感\n场景与意象：亮朱红鲤鱼、深湖蓝池水、玉白留白、青石、少量水花\n构图与空间：中心偏下构图，鲤鱼跃起作为主视觉，人物位于一侧，水面与留白构成明快空间\n色彩控制：玉白作为背景基底，深湖蓝用于池水层次，亮朱红用于鲤鱼主体和少量反光，墨青用于人物和青石结构；避免全图红蓝互相污染\n光线与质感：明亮自然光，水面反光清晰，宣纸肌理，清透颗粒\n画幅比例：9:16 \n补充要求：鲤鱼动作要有张力，但画面整体仍然简洁、轻盈、不拥挤",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "GPT-Image2"
+    },
+    "mtime": 1785308876943.0076
+  },
+  {
+    "title": "烛光晚餐人像：温暖电影感",
+    "slug": "prompt-2082330497804644433",
+    "model": "GPT-Image2",
+    "category": "photography",
+    "tags": [
+      "人像",
+      "摄影",
+      "电影感",
+      "写实",
+      "人物"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/prompt-2082330497804644433.jpg",
+    "date": "2026-07-29",
+    "added": "2026-07-29T15:00:00+08:00",
+    "source": "https://x.com/i/status/2082330497804644433",
+    "sourceLink": "https://x.com/i/status/2082330497804644433",
+    "author": "AIwithMinal",
+    "authorLink": "",
+    "prompt": "Ultra-realistic cinematic portrait of a beautiful young woman sitting at an intimate candlelit dinner table at night. She has long, voluminous dark brown hair, flawless fair skin, soft natural glam makeup, glossy pink lips, and expressive brown eyes. She rests her chin gently on one hand while gazing off to the side with a warm, dreamy smile. She wears a delicate blush-pink satin lace camisole with a matching sheer robe, complemented by a fine gold pendant necklace. A glowing candle in a glass holder softly illuminates her face, creating warm golden highlights and deep cinematic shadows. A small vase with red roses and scattered rose petals decorate the wooden table, adding a romantic atmosphere. The background is almost completely black with subtle warm bokeh lights in the distance, emphasizing the cozy evening mood. Shot with an 85mm lens at f/1.4, shallow depth of field, creamy bokeh, ultra-detailed skin texture, HDR, natural color grading, soft cinematic lighting, luxury lifestyle photography, photorealistic, 8K, high-end editorial quality, vertical composition (9:16).\n5:00 AM · Jul 29, 2026\n203",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "GPT-Image2"
+    },
+    "mtime": 1785308876942.7441
+  },
+  {
+    "title": "时尚人像海报：动态模糊肖像",
+    "slug": "prompt-2082309134582423822",
+    "model": "GPT-Image2",
+    "category": "poster",
+    "tags": [
+      "人像",
+      "海报",
+      "时尚",
+      "写实",
+      "摄影"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2082309134582423822.jpg",
+    "date": "2026-07-29",
+    "added": "2026-07-29T15:00:00+08:00",
+    "source": "https://x.com/i/status/2082309134582423822",
+    "sourceLink": "https://x.com/i/status/2082309134582423822",
+    "author": "Duet | AI",
+    "authorLink": "",
+    "prompt": "Create a premium cinematic poster-style portrait of the uploaded person in a clean beige studio environment, aspect ratio 4:5. The composition closely follows the reference design. A large side-profile portrait of the uploaded person dominates the background, occupying approximately 70-75% of the frame height, facing left with a calm, confident expression. Behind the large portrait, add strong horizontal motion blur streaks extending toward the right side, creating a dynamic sense of movement. In the foreground, place a smaller full-body version of the uploaded person standing in front of the larger portrait, occupying approximately 30-35% of the frame height. He is wearing stylish beige-tan casual clothing matching the reference aesthetic: a relaxed overshirt/jacket, light-wash loose-fit jeans, and casual sneakers. Add modern transparent eyeglasses. Both hands are casually tucked into his trouser pockets. His stance matches the reference exactly: one leg crossed naturally in front of the other, leaning slightly with a relaxed, confident posture. He is looking slightly toward the brand text area rather than directly at the camera. Place a large modern branding text element behind the foreground figure, partially obscured by his body, using the word \"PROMPT\" in bold futuristic typography. The text should feel integrated into the design, with subtle transparency and layered depth effects. Add minimal geometric UI-style design elements and soft translucent panels around the text area for a contemporary creative-director look. Soft editorial lighting, luxury fashion campaign aesthetic, high-end digital poster design, ultra-detailed facial features, sharp focus on the subject, subtle shadows beneath the standing figure, clean background, premium color grading, realistic textures, professional photography, modern creative branding artwork. No logos, no watermarks, no extra text except \"PROMPT\".",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "GPT-Image2"
+    },
+    "mtime": 1785308876942.4102
+  },
+  {
+    "title": "东京极简旅行海报：马克笔手绘风",
+    "slug": "prompt-2082323788969255156",
+    "model": "GPT-Image2",
+    "category": "poster",
+    "tags": [
+      "海报",
+      "极简",
+      "旅行",
+      "摄影",
+      "建筑"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/prompt-2082323788969255156.jpg",
+    "date": "2026-07-29",
+    "added": "2026-07-29T15:00:00+08:00",
+    "source": "https://x.com/i/status/2082323788969255156",
+    "sourceLink": "https://x.com/i/status/2082323788969255156",
+    "author": "Ciri",
+    "authorLink": "",
+    "prompt": "Create a 3:4 vertical minimalist marker-pen travel poster of TOKYO on warm ivory paper.\n\nSTYLE:\nUse a rough hand-drawn marker-pen illustration style with thick cobalt-blue contours, broken edges, visible stroke direction, dry-skip texture, and incomplete flat fills. Keep the image graphic, clean, and naturally unfinished. Let the warm ivory paper remain visible in large uncolored areas.\n\nTEXT:\nAdd the title \"TOKYO\" at the top in bold hand-drawn uppercase marker letters, slightly irregular, spontaneous, and organic.\n\nSCENE:\nDepict a storytelling scene on a quiet riverside promenade overlooking the Sumida River. A couple stands near the riverside railing in the lower third, one lightly leaning toward the other. Tokyo Skytree appears in the mid-distance as the main landmark, with a simple bridge hint crossing the river, a few minimal water lines, and a faint city skyline suggestion stretching behind.\n\nCOMPOSITION:\nUse the riverside railing as a simple foreground anchor, the couple as the emotional focal point, and Tokyo Skytree as the central location cue. Keep the river and sky minimal with generous blank paper around them.\n\nBACKGROUND SIMPLIFICATION:\nInclude only 4 key cues: riverside railing, Tokyo Skytree, river suggestion, and a faint skyline silhouette. Avoid crowds, vehicles, boats, dense buildings, and cluttered city details.\n\nFINISH:\nThe couple and railing should be moderately resolved. The Skytree and skyline should remain simplified, partially colored, and lightly outlined.\n\nno logos, no readable signs, no clutter, no photorealism, no polished digital look --ar 3:4 --v 8.2",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "GPT-Image2"
+    },
+    "mtime": 1785308876942.032
+  },
+  {
+    "title": "奢侈品腕表广告：不可能的视觉隐喻",
+    "slug": "prompt-2082296965136838819",
+    "model": "Common",
+    "category": "product",
+    "tags": [
+      "商业",
+      "奢侈品",
+      "极简",
+      "写实",
+      "摄影"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2082296965136838819.jpg",
+    "date": "2026-07-29",
+    "added": "2026-07-29T15:00:00+08:00",
+    "source": "https://x.com/i/status/2082296965136838819",
+    "sourceLink": "https://x.com/i/status/2082296965136838819",
+    "author": "Zephyra Leigh",
+    "authorLink": "",
+    "prompt": "Create ONE timeless luxury advertising visual.\n\nFirst, silently analyze the craftsmanship, heritage, precision, materials, target customer and emotional value.\n\nExpress the product's greatest strength through ONE impossible yet believable visual metaphor.\n\nThe watch must remain physically accurate and fully recognizable.\n\nART DIRECTION:\nSwiss luxury campaign, photorealistic macro photography, premium reflections, cinematic lighting, sophisticated minimalism, elegant negative space, luxury editorial composition.\n\nAvoid:\nexploded views, floating parts, unnecessary props, busy backgrounds.\n\nCOPY:\nExactly THREE words.\n\nAspect Ratio 16:9\n80",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common"
+    },
+    "mtime": 1785308876941.5745
+  },
+  {
+    "title": "面霜广告分镜：好莱坞级故事板",
+    "slug": "prompt-2082331258072514792",
+    "model": "GPT-Image2",
+    "category": "product",
+    "tags": [
+      "商业",
+      "护肤品",
+      "电影感",
+      "写实",
+      "摄影"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/prompt-2082331258072514792.jpg",
+    "date": "2026-07-29",
+    "added": "2026-07-29T15:00:00+08:00",
+    "source": "https://x.com/i/status/2082331258072514792",
+    "sourceLink": "https://x.com/i/status/2082331258072514792",
+    "author": "Soaima",
+    "authorLink": "",
+    "prompt": "Create a premium Hollywood-style advertising storyboard sheet for a luxury moisturizing face cream commercial. Display 10 ultra-realistic cinematic storyboard frames arranged in a 2×5 presentation grid on a pristine white storyboard board. Each frame features a thin black border, bold scene numbers (01–10), a duration timestamp, and a concise production caption beneath it. The overall design should resemble a professional advertising agency pitch board for a world-class skincare campaign.\nTitle: DEEP HYDRATION\nSubtitle: 15-Second Premium Face Cream Commercial\nScene 01 (0.0–1.5s) — Pure Reveal\nA luxurious crystal-glass face cream jar slowly rises from perfectly clear water, surrounded by soft white light, delicate mist, and elegant ripples, creating an atmosphere of purity and luxury.\nScene 02 (1.5–3.0s) — Premium Detail\nExtreme macro beauty shot of the premium glass jar covered in sparkling condensation. Sharp reflections emphasize the luxurious glass craftsmanship and premium packaging.\nScene 03 (3.0–4.5s) — Hydration Ingredients\nPure water droplets, hyaluronic acid molecules, aloe vera gel, white blossoms, botanical extracts, and moisture particles gracefully float around the product in slow motion.\nScene 04 (4.5–6.0s) — Hydration Burst\nCrystal-clear water splashes dynamically around the cream jar while glowing hydration particles and delicate botanical petals swirl elegantly through the air.\nScene 05 (6.0–7.5s) — Cream Texture\nA silky ribbon of rich white moisturizer flows gracefully through the air, twisting smoothly around the product to showcase its luxurious texture.\nScene 06 (7.5–9.0s) — Skin Absorption\nMacro close-up of the cream spreading effortlessly across flawless, healthy skin. Hydration particles glow beneath the surface, revealing a radiant, moisturized finish.\nScene 07 (9.0–10.5s) — Healthy Glow\nBeautiful hydrated skin illuminated by soft natural daylight. Tiny floating water droplets and subtle botanical elements reinforce freshness, softness, and long-lasting moisture.\nScene 08 (10.5–12.0s) — Hydration Freeze\nTime freezes as water splashes, floating droplets, cream ribbons, botanical petals, and glowing hydration particles create a perfectly balanced premium beauty composition.\nScene 09 (12.0–13.5s) — Hero Product\nThe face cream jar stands proudly on a reflective glass surface surrounded by crystal-clear water, luminous hydration particles, and soft volumetric light in a dramatic hero shot.\nScene 10 (13.5–15.0s) — Brand Signature\nMinimal white studio background. The brand logo fades in gracefully with the elegant tagline:\n\"Hydration That Lasts.\"\nCaption: Brand Signature\nVisual Direction\nInspired by world-class luxury hydration skincare campaigns emphasizing purity, deep moisture, luminous healthy skin, silky cream textures, crystal-clear water, botanical science, and clean beauty aesthetics.\nColor Palette\nPure White\nSoft Sky Blue\nCrystal Water Blue\nSilver Highlights\nNatural Beige\nLighting\nSoft beauty lighting, diffused daylight, volumetric glow, clean studio reflections, premium cosmetic illumination.\nCamera\nARRI Alexa 35, Cooke Anamorphic 50mm lens, macro beauty cinematography, ultra slow motion, shallow depth of field, precision focus.\nStyle\nLuxury skincare advertising, premium beauty campaign, high-end cosmetic photography, Hollywood commercial storyboard, advertising agency presentation board, ultra-photorealistic, HDR, 8K, masterpiece quality, impeccable product realism, cinematic composition, flawless visual storytelling.\n00:15\n5:03 AM · Jul 29, 2026\n205",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "GPT-Image2"
+    },
+    "mtime": 1785308876942.236
+  },
+  {
+    "title": "不锈钢高定礼服：工业与时尚的碰撞",
+    "slug": "prompt-2082347552964251648",
+    "model": "Common",
+    "category": "product",
+    "tags": [
+      "时尚",
+      "工业设计",
+      "超现实",
+      "3D渲染",
+      "写实"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/prompt-2082347552964251648.jpg",
+    "date": "2026-07-29",
+    "added": "2026-07-29T15:00:00+08:00",
+    "source": "https://x.com/i/status/2082347552964251648",
+    "sourceLink": "https://x.com/i/status/2082347552964251648",
+    "author": "Aylin",
+    "authorLink": "",
+    "prompt": "An extraordinary supermodel wearing an extravagant haute couture gown constructed entirely from thick solid industrial-grade 304/316 stainless steel. Every visible component is fabricated from authentic engineering materials: heavy brushed stainless steel plates, forged stainless steel panels, cold-rolled stainless steel sheets, laser-cut structural components, CNC-machined stainless steel blocks, precision folded sheet metal, and industrial structural assemblies. The dress is assembled like heavy industrial equipment rather than sewn like clothing.\n\nMassive sculptural corsetry, monumental armored skirts, sharp architectural geometry, articulated mechanical joints, overlapping structural steel scales, exposed reinforcement ribs, engineered support frames, welded gussets, and an impossibly long cathedral train create an overwhelming fusion of heavy industry and haute couture.\n\nThe material is unmistakably authentic industrial stainless steel used in factories, chemical plants, shipbuilding, pressure vessels, structural fabrication, food-processing equipment, heavy machinery, and industrial piping. The metal must appear extremely thick, rigid, dense, cold, and immensely heavy. It must never resemble silver, chrome, aluminum, platinum, titanium, polished jewelry, decorative metal, metallic fabric, foil, or painted surfaces.\n\nEvery surface exhibits authentic industrial manufacturing details: directional brushed grain, CNC machining marks, cold-rolled mill finish, microscopic scratches, forged textures, visible TIG weld beads, heat-affected blue and straw temper colors surrounding welds, laser-cut edges with realistic heat tint, precision press-brake bends, folded sheet-metal geometry, exposed reinforcement plates, structural gussets, welded brackets, industrial flanges, heavy hex bolts, large steel rivets, mechanical fasteners, precision engineering tolerances, and subtle workshop wear.\n\nPhysically accurate PBR rendering of genuine 304/316 stainless steel with correct metallic roughness, anisotropic reflections, realistic Fresnel behavior, authentic stainless steel optical properties, crisp industrial reflections, subtle oxidation, realistic weight, thickness, and structural rigidity. The gown looks fabricated inside a heavy steel workshop by industrial engineers, not by jewelers or fashion artisans.\n\nParis Haute Couture runway, cinematic lighting, luxury fashion editorial, museum-quality masterpiece, ultra photorealistic, hyper realistic, HDR, 8K, physically accurate metallurgy, extreme macro detail, industrial engineering aesthetics, no fabric, no textile, no leather, no plastic, entirely constructed from thick solid industrial stainless steel.\n6:08 AM · Jul 29, 2026\n72",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common"
+    },
+    "mtime": 1785308876941.3638
+  },
+  {
     "title": "红颜祸水·妲己：狐魅众生手机抓拍",
     "slug": "prompt-2081550367939305848",
     "model": "Common",
@@ -31845,5 +32061,113 @@
       "Model": "Common"
     },
     "mtime": 1785306955762.059
+  },
+  {
+    "title": "东方美学壁纸：燕归人未至",
+    "slug": "prompt-2081670969278750758",
+    "model": "GPT-Image2",
+    "category": "editorial",
+    "tags": [
+      "东方美学",
+      "敦煌",
+      "极简",
+      "工笔",
+      "国风"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/prompt-2081670969278750758.jpg",
+    "date": "2026-07-27",
+    "added": "2026-07-29T18:00:00+08:00",
+    "source": "https://x.com/i/status/2081670969278750758",
+    "sourceLink": "https://x.com/i/status/2081670969278750758",
+    "author": "李岳",
+    "authorLink": "",
+    "prompt": "9:16 竖版，新中式东方美学极简插画，敦煌壁画与现代国潮视觉融合，东方古典丝路意境海报。画面以高饱和朱砂红、赤红渐变背景为主，上半部与左侧保留大面积纯净留白，下方是一片暖白色、象牙白的空旷地面，远处仅有若隐若现的淡灰水墨山丘和轻雾，空间安静辽阔。\n\n画面右上方垂落一组巨大、轻盈、飘逸的透明丝绸与薄纱，丝带从画面顶部延伸而下，在空中形成优雅的 S 形曲线和多层交叠的旋转结构。纱幔材质晶莹剔透，具有琉璃、欧根纱、珍珠薄膜般的半透明质感，边缘柔软发光，表面出现淡粉、月白、浅金、青绿、虹彩色的细腻折射，高光通透，层次丰富，像被风吹动的天女飘带。\n\n部分丝带内部镶嵌精美的敦煌纹样与传统织锦纹样，包括青绿色缠枝花卉、宝相花、祥云、莲花、朱红牡丹、鎏金描边和复古矿物色纹饰。纹样以石青、石绿、朱砂、鎏金、米黄为主，与透明纱幔相互穿插，既有古典壁画装饰性，又具有现代高级时尚质感。\n\n数只黑蓝色燕子围绕丝带上下穿梭飞翔，燕子采用简洁细腻的工笔插画造型，深靛蓝羽毛、白色腹部、朱红色喙部，长尾舒展，飞行动势各不相同，有的迎风上扬，有的向下俯冲，有的沿丝带盘旋，形成富有节奏感的视觉引导。\n\n画面左下方靠近地平线的位置，安排一个极小比例的古代白衣旅人骑着白马缓慢前行。人物戴简洁古冠，穿月白色或浅米色长袍，白马配有少量朱红、青蓝色鞍具，人物与马匹造型简洁精致，带有传统工笔画与现代扁平插画结合的感觉。马匹下方留有柔和细长的灰色投影，强调寂静旅途和辽阔空间。\n\n整体构图上重下轻、右密左疏，巨大飘带与微小旅人形成强烈尺度对比，大面积负空间，画面具有\"风从天外来、孤旅入山河\"的诗意叙事。高饱和但不刺眼，色彩清透，红、青绿、月白、鎏金形成鲜明对比。精致东方装饰画，国风艺术海报，敦煌飞天元素，丝路幻想，工笔线描，矿物颜料质感，轻微岩彩颗粒，柔和光晕，细腻描金，高级平面设计，干净背景，画面无文字，无边框，高完成度。",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "GPT-Image2"
+    },
+    "mtime": 1785309560984.8223
+  },
+  {
+    "title": "超近景微距海报：日系实验设计",
+    "slug": "prompt-2078643205139218869",
+    "model": "Common",
+    "category": "poster",
+    "tags": [
+      "微距",
+      "实验设计",
+      "日系",
+      "印刷质感",
+      "写实"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2078643205139218869.jpg",
+    "date": "2026-07-19",
+    "added": "2026-07-29T18:00:00+08:00",
+    "source": "https://x.com/i/status/2078643205139218869",
+    "sourceLink": "https://x.com/i/status/2078643205139218869",
+    "author": "VoxCat",
+    "authorLink": "",
+    "prompt": "创作一张竖版实验设计海报，主题为【主体】。整体风格结合超近景微距摄影、日系实验平面设计、瑞士网格排版、Y2K 几何数字字体、独立杂志封面感、印刷海报质感。\n\n【主体】采用极近距离局部特写方式呈现，不追求完整展示，而是选择最有识别度的局部进入画面，例如脸部、鼻尖、嘴部、下巴、毛发、表面纹理、边缘轮廓或结构细节。镜头使用超低机位近距离仰拍或贴近式广角微距视角，制造明显的近大远小透视和\"日常物体被拍成巨型景观\"的视觉效果。\n\n画面为 9:16 竖版构图。外围保留干净的大面积白色边框，内部主体区域像一张被嵌入纸面的纵向海报。主体从画面一侧大幅切入，并超出版面边缘，形成强烈裁切感和体量压迫感。主体通常占据画面下半部和右侧的大部分空间，另一侧保留大面积纯净背景色块，形成鲜明的视觉留白与动态平衡。\n\n背景采用高饱和纯净单色底，优先使用明亮天蓝、青蓝、冰蓝、电蓝等颜色，与主体形成鲜明冷暖对比。主体如果具有暖色毛发、皮肤、金属、木质或表面纹理，应在蓝色背景衬托下显得更加突出。整体配色保持简洁、鲜明、克制，以 1 个主色 + 主体本身颜色 + 白色纸面为核心。\n\n版式中加入大尺寸几何展示文字，文字不只是信息，也是一种图形结构。字形应具有超粗无衬线、几何切角、模块化笔画、数字感、未来感、建筑感，以大面积块状方式横跨画面上方或中上区域，与主体局部发生穿插、遮挡、切割和叠压关系。文字可采用标题、缩写、字母、数字、日期、短词等形式，重点是视觉造型感，而不是信息量。\n\n左上角或上方加入一组小型日期/编号/星期/期号信息，使用窄体科技感字体。左下角可放一个较大的风格词或标题词。右下角加入极小号信息排版，例如海报编号、设计署名、系列名或短句说明。整体文字系统形成巨型标题 + 小型辅助信息 + 微型角落排版的层级关系。\n\n成像质感强调照片与印刷结合的感觉。画面表面加入细腻颗粒、纸张纹理、轻微磨损、划痕、褪色、油墨不均、旧海报摩擦痕迹、丝网印刷感、Risograph 气息、轻微复印海报质感。背景色块不是绝对数字平涂，而是带有轻微斑驳与颗粒。主体细节保持足够清晰，尤其是毛发、表皮、边缘、胡须、纤维、反光等微观质感。\n\n整体氛围应呈现冷幽默、青年文化、独立设计、实验视觉、可爱与硬核并存的感觉。画面既有强烈平面设计感，又保留摄影对象的真实触感。最终效果像一张独立设计海报/潮流杂志封面/宠物艺术海报/实验视觉 poster。",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common"
+    },
+    "mtime": 1785309611577.0754
+  },
+  {
+    "title": "实验设计海报：超近景微距摄影",
+    "slug": "prompt-2079137990971113714",
+    "model": "Common",
+    "category": "poster",
+    "tags": [
+      "实验设计",
+      "微距",
+      "日系",
+      "瑞士网格",
+      "写实"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2079137990971113714.jpg",
+    "date": "2026-07-20",
+    "added": "2026-07-29T18:00:00+08:00",
+    "source": "https://x.com/i/status/2079137990971113714",
+    "sourceLink": "https://x.com/i/status/2079137990971113714",
+    "author": "VoxCat",
+    "authorLink": "",
+    "prompt": "创作一张竖版实验设计海报，主题为【主体】。整体风格结合超近景微距摄影、日系实验平面设计、瑞士网格排版、Y2K 几何数字字体、独立杂志封面感、印刷海报质感。\n\n【主体】采用极近距离局部特写方式呈现，不追求完整展示，而是选择最有识别度的局部进入画面，例如脸部、鼻尖、嘴部、下巴、毛发、表面纹理、边缘轮廓或结构细节。镜头使用超低机位近距离仰拍或贴近式广角微距视角，制造明显的近大远小透视和\"日常物体被拍成巨型景观\"的视觉效果。\n\n画面为 9:16 竖版构图。外围保留干净的大面积白色边框，内部主体区域像一张被嵌入纸面的纵向海报。主体从画面一侧大幅切入，并超出版面边缘，形成强烈裁切感和体量压迫感。主体通常占据画面下半部和右侧的大部分空间，另一侧保留大面积纯净背景色块，形成鲜明的视觉留白与动态平衡。\n\n背景采用高饱和纯净单色底，优先使用明亮天蓝、青蓝、冰蓝、电蓝等颜色，与主体形成鲜明冷暖对比。主体如果具有暖色毛发、皮肤、金属、木质或表面纹理，应在蓝色背景衬托下显得更加突出。整体配色保持简洁、鲜明、克制，以 1 个主色 + 主体本身颜色 + 白色纸面为核心。\n\n版式中加入大尺寸几何展示文字，文字不只是信息，也是一种图形结构。字形应具有超粗无衬线、几何切角、模块化笔画、数字感、未来感、建筑感，以大面积块状方式横跨画面上方或中上区域，与主体局部发生穿插、遮挡、切割和叠压关系。文字可采用标题、缩写、字母、数字、日期、短词等形式，重点是视觉造型感，而不是信息量。\n\n左上角或上方加入一组小型日期/编号/星期/期号信息，使用窄体科技感字体。左下角可放一个较大的风格词或标题词。右下角加入极小号信息排版，例如海报编号、设计署名、系列名或短句说明。整体文字系统形成巨型标题 + 小型辅助信息 + 微型角落排版的层级关系。\n\n成像质感强调照片与印刷结合的感觉。画面表面加入细腻颗粒、纸张纹理、轻微磨损、划痕、褪色、油墨不均、旧海报摩擦痕迹、丝网印刷感、Risograph 气息、轻微复印海报质感。背景色块不是绝对数字平涂，而是带有轻微斑驳与颗粒。主体细节保持足够清晰，尤其是毛发、表皮、边缘、胡须、纤维、反光等微观质感。\n\n整体氛围应呈现冷幽默、青年文化、独立设计、实验视觉、可爱与硬核并存的感觉。画面既有强烈平面设计感，又保留摄影对象的真实触感。最终效果像一张独立设计海报/潮流杂志封面/宠物艺术海报/实验视觉 poster。",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common"
+    },
+    "mtime": 1785309611580.5212
+  },
+  {
+    "title": "极简角色海报：镂空风景拼贴",
+    "slug": "prompt-2079392090564551018",
+    "model": "Common",
+    "category": "poster",
+    "tags": [
+      "极简",
+      "角色",
+      "拼贴",
+      "日系",
+      "写实"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2079392090564551018.jpg",
+    "date": "2026-07-21",
+    "added": "2026-07-29T18:00:00+08:00",
+    "source": "https://x.com/i/status/2079392090564551018",
+    "sourceLink": "https://x.com/i/status/2079392090564551018",
+    "author": "VoxCat",
+    "authorLink": "",
+    "prompt": "一张日系极简平面设计海报，竖版构图，高饱和纯色背景。画面中央为一个高度图形化、极简化的【主体角色】形象，主体以大面积纯色轮廓构成，头部从画面上方或中央探出，面部细节简化但保留最有识别度的五官特征。主体身体或轮廓中央形成一个夸张流畅的镂空区域，内部填充与主题强绑定的真实摄影风景【如蓝天、云层、海洋、城市、森林、夜景等】，形成 flat illustration × photomontage collage 的超现实拼贴效果。整体配色控制在 3 种以内，图形简洁、构图稳定、留白明确，具有日本独立艺术海报、唱片封面与现代杂志设计气质。画面中加入简洁的英文标题排版，位置克制，整体氛围清爽、梦幻、带一点轻怪诞与情绪感。",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common"
+    },
+    "mtime": 1785309611574.2874
   }
 ]
