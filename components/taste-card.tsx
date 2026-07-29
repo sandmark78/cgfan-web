@@ -203,20 +203,18 @@ function RadarChart({ vector, size = 280, dimensions }: {
         const i = dimensions.findIndex(d => d.key === dim.key)
         const angle = -90 + i * angleStep
         const labelPoint = getLabelPoint(angle)
-        const IconComponent = DIMENSION_ICONS[dim.key]
         const value = Math.round(vector[dim.key as keyof AestheticVector])
         
         return (
           <div
             key={dim.key}
-            className="absolute flex flex-col items-center gap-1"
+            className="absolute flex flex-col items-center gap-0.5"
             style={{
               left: labelPoint.x,
               top: labelPoint.y,
               transform: 'translate(-50%, -50%)',
             }}
           >
-            <IconComponent className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
             <div className="text-xs font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap">{dim.label}</div>
             <div className="text-sm font-bold text-emerald-600 dark:text-emerald-400">{value}</div>
           </div>
@@ -500,9 +498,6 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
             重新测试
           </button>
         </div>
-        <a href="/explore" className="text-xs text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300">
-          去逛逛 →
-        </a>
       </div>
 
       {/* 重新测试确认弹窗 */}
