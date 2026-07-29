@@ -14,6 +14,7 @@ export default async function TastePage() {
   const { data: { user } } = await supabase.auth.getUser()
 
   let serverFavorites: { slug: string; title: string; category: string; tags: string[]; model: string; cover: string }[] = []
+  let quizPersonality: { personality: string; tags: string[] } | null = null
 
   if (user) {
     // 登录态：从 Supabase 读取收藏
@@ -45,7 +46,7 @@ export default async function TastePage() {
           美学人格
         </h1>
         <p className="mt-3 text-gray-600 dark:text-gray-400">
-          收藏 5 个提示词，解锁专属于你的美学人格
+          收藏越多，人格越丰富
         </p>
       </div>
 

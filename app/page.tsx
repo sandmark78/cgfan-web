@@ -3,6 +3,7 @@ import { getAllPrompts, getAllCategories, getAllTags } from '@/lib/prompts'
 import { PromptGrid } from '@/components/prompt/prompt-grid'
 import { getCategoryLabel, getCategoryIcon } from '@/lib/category-map'
 import DailyFeature from '@/components/daily-feature'
+import { AestheticQuiz } from '@/components/aesthetic-quiz'
 import { createClient } from '@/lib/supabase/server'
 
 export const runtime = 'edge'
@@ -94,6 +95,11 @@ export default async function Home() {
 
       {/* 每日一味 - 今日推荐 */}
       <DailyFeature />
+
+      {/* 美学人格 - 快速测试 */}
+      <div className="max-w-md mx-auto mt-3 sm:mt-4">
+        <AestheticQuiz />
+      </div>
 
       {/* 热门标签 */}
       {popularTags.length > 0 && (

@@ -297,17 +297,56 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
     }
   }
 
+  // ── 成长阶段 ──
+  const STAGES = [
+    { need: 5, label: '解锁人格', icon: '🌱' },
+    { need: 20, label: '品味光谱', icon: '🌿' },
+    { need: 50, label: '审美进化', icon: '🌳' },
+    { need: 100, label: '策展人认证', icon: '🏆' },
+  ]
+
   if (!persona || !analysis) {
     const favCount = favorites.length
     const need = 5 - favCount
+    const currentStage = STAGES.reduce((acc, s, i) => favCount >= s.need ? i : acc, -1)
+    const nextStage = STAGES[currentStage + 1]
+    const progressToNext = nextStage ? favCount / nextStage.need : 1
     return (
       <div className="mx-auto max-w-md py-16 text-center">
         <div className="mb-8 text-6xl">🎨</div>
         <h2 className="mb-3 font-serif text-2xl font-bold text-gray-900 dark:text-white">你的品味，值得一张卡片</h2>
-        <p className="mb-6 text-gray-600 dark:text-gray-400">收藏 {5} 个提示词，解锁专属于你的美学人格</p>
-        <div className="mb-3 h-2.5 overflow-hidden rounded-full bg-[#D4E4C4] dark:bg-gray-700">
-          <div className="h-full rounded-full bg-gradient-to-r from-[#7FB069] to-[#2F6B45] transition-all duration-500" style={{ width: `${(favCount / 5) * 100}%` }} />
+        
+        {/* 成长阶段展示 */}
+        <div className="mb-8 space-y-3">
+          {STAGES.map((stage, i) => {
+            const unlocked = favCount >= stage.need
+            const current = i === currentStage + 1
+            return (
+              <div key={stage.need} className={`flex items-center gap-3 rounded-xl p-3 text-left transition-all ${
+                unlocked ? 'bg-green-50 dark:bg-green-900/20' :
+                current ? 'bg-emerald-50 dark:bg-emerald-900/20 ring-1 ring-green-500' :
+                'bg-gray-50 dark:bg-gray-800/30 opacity-50'
+              }`}>
+                <span className="text-2xl">{unlocked ? '✅' : stage.icon}</span>
+                <div className="flex-1">
+                  <div className="text-sm font-medium text-gray-900 dark:text-white">
+                    {stage.label}
+                  </div>
+                  <div className="text-xs text-gray-500 dark:text-gray-400">
+                    {unlocked ? '已解锁' : `收藏 ${stage.need} 个提示词`}
+                  </div>
+                </div>
+                {unlocked && <span className="text-xs text-green-600 dark:text-green-400 font-medium">✓</span>}
+                {current && (
+                  <div className="h-2 w-20 overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700">
+                    <div className="h-full rounded-full bg-green-500" style={{ width: `${progressToNext * 100}%` }} />
+                  </div>
+                )}
+              </div>
+            )
+          })}
         </div>
+        
         <p className="mb-8 text-sm text-gray-500 dark:text-gray-400">{favCount} / 5 {need > 0 ? `· 还差 ${need} 个` : '· 即将解锁！'}</p>
         <Link href="/explore" className="inline-flex items-center gap-2 rounded-full px-8 py-3 text-sm font-semibold text-white shadow-lg"
           style={{ background: '#2F6B45' }}>去收藏提示词 →</Link>
