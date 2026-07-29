@@ -397,8 +397,13 @@ function main() {
     }
   });
   
-  // 写入 JSON
-  fs.writeFileSync(outputFile, JSON.stringify(allPrompts, null, 2), 'utf-8');
+  // 写入 TypeScript 文件（Base64 编码，防止直接抓取）
+  const jsonString = JSON.stringify(allPrompts, null, 2);
+  const encoded = Buffer.from(jsonString).toString('base64');
+  const tsContent = `export default \`${encoded}\`;\n`;
+  fs.writeFileSync(outputFile.replace('.json', '.ts'), tsContent, 'utf-8');
+  fs.writeFileSync(outputFile.replace('.json', '.ts'), tsContent, 'utf-8');
+  fs.writeFileSync(outputFile.replace('.json', '.ts'), tsContent, 'utf-8');
   
   // 统计信息
   const modelStats: Record<string, number> = {};

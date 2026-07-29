@@ -1,4 +1,4 @@
-import promptsData from './prompts-data.json'
+import promptsDataEncoded from './prompts-data'
 
 /**
  * 提示词数据结构
@@ -23,7 +23,11 @@ export interface PromptData {
   likeCount?: number
 }
 
-const staticPrompts = promptsData as unknown as PromptData[]
+// 解码 Base64 数据（防止直接抓取）
+const jsonString = typeof promptsDataEncoded === 'string' 
+  ? Buffer.from(promptsDataEncoded, 'base64').toString('utf-8')
+  : JSON.stringify(promptsDataEncoded)
+const staticPrompts = JSON.parse(jsonString) as unknown as PromptData[]
 
 /**
  * 获取所有提示词
