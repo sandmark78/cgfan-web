@@ -289,15 +289,6 @@ export default async function PromptDetailPage({
             )}
           </div>
 
-          {/* Prompt DNA 分析 */}
-          {prompt.promptDNA && (
-            <PromptDNA
-              dna={prompt.promptDNA.dna}
-              metrics={prompt.promptDNA.metrics}
-              recommendedModels={prompt.promptDNA.recommended_models}
-            />
-          )}
-
           {/* 提示词 */}
           <div className="glass-card p-6">
             <div className="mb-3 flex items-center justify-between">
@@ -313,20 +304,13 @@ export default async function PromptDetailPage({
             <PromptTextBlock text={formatPromptText(prompt.prompt)} maxLines={20} showCopyButton={false} />
           </div>
 
-          {/* 参数 chips */}
-          {Object.keys(prompt.parameters).length > 0 && (
-            <div className="glass-card p-6">
-              <h3 className="mb-4 text-sm font-semibold text-gray-700 dark:text-gray-300">
-                参数
-              </h3>
-              <div className="params">
-                {Object.entries(prompt.parameters).map(([key, value]) => (
-                  <div key={key} className="param-chip text-sm">
-                    <span className="font-medium">{key}:</span> {value}
-                  </div>
-                ))}
-              </div>
-            </div>
+          {/* Prompt DNA 分析 */}
+          {prompt.promptDNA && (
+            <PromptDNA
+              dna={prompt.promptDNA.dna}
+              metrics={prompt.promptDNA.metrics}
+              recommendedModels={prompt.promptDNA.recommended_models}
+            />
           )}
 
           {/* 操作按钮 */}
