@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react'
 import { UserProfile, loadProfile, saveProfile, clearProfile, getGrowthStage, GROWTH_STAGES } from '@/lib/aesthetic-dynamic'
 import { BASE_PERSONAS, BasePersona, AestheticVector } from '@/lib/aesthetic-engine'
-import { AestheticGrowthChart } from './aesthetic-growth-chart'
 import { AestheticQuiz } from './aesthetic-quiz'
 
 interface TasteCardClientProps {
@@ -11,7 +10,19 @@ interface TasteCardClientProps {
   isLoggedIn?: boolean
 }
 
-// 从提示词计算8维向量（增强版，基于分类和标签）
+// 维度图标映射
+const DIMENSION_ICONS: Record<string, string> = {
+  complexity: '🧩',
+  colorIntensity: '🌈',
+  arousal: '❤️',
+  fluency: '🌊',
+  novelty: '⭐',
+  harmony: '⚖️',
+  narrative: '📜',
+  stylization: '🖌️',
+}
+
+// 从提示词计算8维向量
 function calculateVectorFromPrompt(prompt: { category: string; tags: string[] }): AestheticVector {
   const vector: AestheticVector = {
     complexity: 50,
@@ -24,171 +35,241 @@ function calculateVectorFromPrompt(prompt: { category: string; tags: string[] })
     stylization: 50,
   }
 
-  // 基于分类调整
   switch (prompt.category) {
     case 'photography':
-      vector.narrative += 25
-      vector.colorIntensity += 15
-      vector.fluency += 10
-      break
+      vector.narrative += 25; vector.colorIntensity += 15; vector.fluency += 10; break
     case 'photorealistic':
-      vector.fluency += 30
-      vector.narrative += 20
-      vector.stylization -= 20
-      break
+      vector.fluency += 30; vector.narrative += 20; vector.stylization -= 20; break
     case '3d':
-      vector.complexity += 25
-      vector.stylization += 20
-      vector.novelty += 15
-      break
+      vector.complexity += 25; vector.stylization += 20; vector.novelty += 15; break
     case 'poster':
-      vector.colorIntensity += 20
-      vector.novelty += 15
-      vector.complexity += 10
-      break
+      vector.colorIntensity += 20; vector.novelty += 15; vector.complexity += 10; break
     case 'portrait':
-      vector.narrative += 20
-      vector.arousal += 15
-      vector.fluency += 10
-      break
+      vector.narrative += 20; vector.arousal += 15; vector.fluency += 10; break
     case 'product':
-      vector.fluency += 20
-      vector.complexity += 10
-      vector.harmony += 15
-      break
+      vector.fluency += 20; vector.complexity += 10; vector.harmony += 15; break
     case 'illustration':
-      vector.stylization += 25
-      vector.novelty += 20
-      vector.colorIntensity += 15
-      break
+      vector.stylization += 25; vector.novelty += 20; vector.colorIntensity += 15; break
     case 'anime':
-      vector.stylization += 30
-      vector.novelty += 25
-      vector.colorIntensity += 20
-      break
+      vector.stylization += 30; vector.novelty += 25; vector.colorIntensity += 20; break
     case 'retro':
-      vector.novelty -= 15
-      vector.narrative += 20
-      vector.harmony += 15
-      break
+      vector.novelty -= 15; vector.narrative += 20; vector.harmony += 15; break
     case 'minimalist':
-      vector.complexity -= 25
-      vector.fluency += 30
-      vector.harmony += 20
-      break
+      vector.complexity -= 25; vector.fluency += 30; vector.harmony += 20; break
     case 'sci-fi':
-      vector.novelty += 30
-      vector.stylization += 25
-      vector.arousal += 20
-      break
+      vector.novelty += 30; vector.stylization += 25; vector.arousal += 20; break
     case 'fantasy':
-      vector.novelty += 25
-      vector.stylization += 20
-      vector.arousal += 15
-      break
+      vector.novelty += 25; vector.stylization += 20; vector.arousal += 15; break
     case 'landscape':
-      vector.harmony += 25
-      vector.narrative += 15
-      vector.fluency += 10
-      break
+      vector.harmony += 25; vector.narrative += 15; vector.fluency += 10; break
     case 'concept-art':
-      vector.novelty += 30
-      vector.stylization += 25
-      vector.complexity += 15
-      break
+      vector.novelty += 30; vector.stylization += 25; vector.complexity += 15; break
   }
 
-  // 基于标签调整（增强匹配）
   const tags = prompt.tags.map(t => t.toLowerCase())
   const tagStr = tags.join(' ')
   
-  // 极简相关
   if (tagStr.includes('极简') || tagStr.includes('minimal') || tagStr.includes('简约') || tagStr.includes('留白')) {
-    vector.complexity -= 25
-    vector.fluency += 30
-    vector.harmony += 20
+    vector.complexity -= 25; vector.fluency += 30; vector.harmony += 20
   }
-  
-  // 赛博朋克/科幻
   if (tagStr.includes('赛博') || tagStr.includes('cyber') || tagStr.includes('科幻') || tagStr.includes('sci-fi')) {
-    vector.colorIntensity += 25
-    vector.novelty += 20
-    vector.stylization += 25
-    vector.arousal += 15
+    vector.colorIntensity += 25; vector.novelty += 20; vector.stylization += 25; vector.arousal += 15
   }
-  
-  // 东方美学
   if (tagStr.includes('东方') || tagStr.includes('eastern') || tagStr.includes('中国') || tagStr.includes('水墨') || tagStr.includes('古风')) {
-    vector.harmony += 25
-    vector.narrative += 20
-    vector.fluency += 15
-    vector.stylization += 10
+    vector.harmony += 25; vector.narrative += 20; vector.fluency += 15; vector.stylization += 10
   }
-  
-  // 复古/怀旧
   if (tagStr.includes('复古') || tagStr.includes('retro') || tagStr.includes('怀旧') || tagStr.includes('vintage')) {
-    vector.novelty -= 15
-    vector.narrative += 20
-    vector.stylization += 15
-    vector.harmony += 10
+    vector.novelty -= 15; vector.narrative += 20; vector.stylization += 15; vector.harmony += 10
   }
-  
-  // 电影感/叙事
   if (tagStr.includes('电影') || tagStr.includes('cinematic') || tagStr.includes('叙事') || tagStr.includes('故事')) {
-    vector.narrative += 30
-    vector.arousal += 20
-    vector.colorIntensity += 15
+    vector.narrative += 30; vector.arousal += 20; vector.colorIntensity += 15
   }
-  
-  // 3D/渲染
   if (tagStr.includes('3d') || tagStr.includes('渲染') || tagStr.includes('render') || tagStr.includes('blender')) {
-    vector.complexity += 25
-    vector.stylization += 20
-    vector.novelty += 15
+    vector.complexity += 25; vector.stylization += 20; vector.novelty += 15
   }
-  
-  // 摄影/写实
   if (tagStr.includes('摄影') || tagStr.includes('photography') || tagStr.includes('写实') || tagStr.includes('realistic')) {
-    vector.fluency += 25
-    vector.narrative += 15
-    vector.stylization -= 15
+    vector.fluency += 25; vector.narrative += 15; vector.stylization -= 15
   }
-  
-  // 抽象/艺术
   if (tagStr.includes('抽象') || tagStr.includes('abstract') || tagStr.includes('艺术') || tagStr.includes('art')) {
-    vector.novelty += 25
-    vector.stylization += 20
-    vector.complexity += 10
+    vector.novelty += 25; vector.stylization += 20; vector.complexity += 10
   }
-  
-  // 动漫/二次元
   if (tagStr.includes('动漫') || tagStr.includes('anime') || tagStr.includes('二次元') || tagStr.includes('manga')) {
-    vector.stylization += 30
-    vector.novelty += 25
-    vector.colorIntensity += 20
+    vector.stylization += 30; vector.novelty += 25; vector.colorIntensity += 20
   }
-  
-  // 奇幻/魔幻
   if (tagStr.includes('奇幻') || tagStr.includes('fantasy') || tagStr.includes('魔幻') || tagStr.includes('神话')) {
-    vector.novelty += 25
-    vector.stylization += 20
-    vector.arousal += 15
+    vector.novelty += 25; vector.stylization += 20; vector.arousal += 15
   }
-  
-  // 微缩/细节
   if (tagStr.includes('微缩') || tagStr.includes('miniature') || tagStr.includes('细节') || tagStr.includes('detail')) {
-    vector.complexity += 30
-    vector.novelty += 20
-    vector.fluency += 10
+    vector.complexity += 30; vector.novelty += 20; vector.fluency += 10
   }
 
-  // 确保所有值在0-100范围内
   Object.keys(vector).forEach(key => {
     const k = key as keyof AestheticVector
     vector[k] = Math.max(0, Math.min(100, vector[k]))
   })
 
   return vector
+}
+
+// 雷达图组件
+function RadarChart({ vector, size = 220 }: { vector: AestheticVector; size?: number }) {
+  const center = size / 2
+  const maxRadius = size * 0.38
+  const dimensions = [
+    { key: 'complexity', label: '复杂度', angle: -90 },
+    { key: 'colorIntensity', label: '色彩强度', angle: -45 },
+    { key: 'arousal', label: '情绪唤醒', angle: 0 },
+    { key: 'narrative', label: '叙事性', angle: 45 },
+    { key: 'stylization', label: '风格化', angle: 90 },
+    { key: 'novelty', label: '新奇性', angle: 135 },
+    { key: 'harmony', label: '和谐度', angle: 180 },
+    { key: 'fluency', label: '处理流畅', angle: 225 },
+  ]
+
+  const getPoint = (angle: number, value: number) => {
+    const rad = (angle * Math.PI) / 180
+    const distance = (value / 100) * maxRadius
+    return { x: center + distance * Math.cos(rad), y: center + distance * Math.sin(rad) }
+  }
+
+  // 生成平滑曲线路径
+  const dataPoints = dimensions.map(d => getPoint(d.angle, vector[d.key as keyof AestheticVector]))
+  
+  let path = `M ${dataPoints[0].x} ${dataPoints[0].y}`
+  for (let i = 1; i < dataPoints.length; i++) {
+    const prev = dataPoints[i - 1]
+    const curr = dataPoints[i]
+    const next = dataPoints[(i + 1) % dataPoints.length]
+    const cp1x = prev.x + (curr.x - prev.x) / 3
+    const cp1y = prev.y + (curr.y - prev.y) / 3
+    const cp2x = curr.x - (next.x - prev.x) / 6
+    const cp2y = curr.y - (next.y - prev.y) / 6
+    path += ` C ${cp1x} ${cp1y}, ${cp2x} ${cp2y}, ${curr.x} ${curr.y}`
+  }
+  path += ' Z'
+
+  return (
+    <svg width={size} height={size} className="overflow-visible">
+      <defs>
+        <radialGradient id="radarFill" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stopColor="#10b981" stopOpacity="0.4" />
+          <stop offset="100%" stopColor="#10b981" stopOpacity="0.15" />
+        </radialGradient>
+      </defs>
+      
+      {/* 背景网格 */}
+      {[0.25, 0.5, 0.75, 1].map((scale, i) => (
+        <polygon
+          key={i}
+          points={dimensions.map(d => {
+            const p = getPoint(d.angle, scale * 100)
+            return `${p.x},${p.y}`
+          }).join(' ')}
+          fill="none"
+          stroke="#10b981"
+          strokeWidth={0.5}
+          opacity={0.2 + i * 0.1}
+        />
+      ))}
+      
+      {/* 辐射线 */}
+      {dimensions.map((d, i) => {
+        const p = getPoint(d.angle, 100)
+        return <line key={i} x1={center} y1={center} x2={p.x} y2={p.y} stroke="#10b981" strokeWidth={0.5} opacity={0.3} />
+      })}
+      
+      {/* 数据区域 */}
+      <path d={path} fill="url(#radarFill)" stroke="#10b981" strokeWidth={2} />
+      
+      {/* 数据点 */}
+      {dataPoints.map((p, i) => (
+        <circle key={i} cx={p.x} cy={p.y} r={3} fill="#10b981" />
+      ))}
+    </svg>
+  )
+}
+
+// 成长曲线组件
+function GrowthCurve({ history }: { history: Array<{ slug: string; vector: AestheticVector; timestamp: number }> }) {
+  if (history.length < 2) return null
+  
+  const padding = { top: 15, right: 15, bottom: 25, left: 35 }
+  const width = 600
+  const height = 140
+  const chartWidth = width - padding.left - padding.right
+  const chartHeight = height - padding.top - padding.bottom
+  
+  const xScale = (i: number) => padding.left + (i / (history.length - 1)) * chartWidth
+  const yScale = (v: number) => padding.top + chartHeight - (v / 100) * chartHeight
+  
+  // 计算平均值
+  const avgData = history.map(h => {
+    const values = Object.values(h.vector)
+    return values.reduce((a, b) => a + b, 0) / values.length
+  })
+  
+  // 生成平滑路径
+  const points = avgData.map((v, i) => ({ x: xScale(i), y: yScale(v) }))
+  let path = `M ${points[0].x} ${points[0].y}`
+  for (let i = 1; i < points.length; i++) {
+    const prev = points[i - 1]
+    const curr = points[i]
+    const next = points[i + 1]
+    const cp1x = prev.x + (curr.x - prev.x) / 3
+    const cp1y = prev.y + (curr.y - prev.y) / 3
+    const cp2x = curr.x - (next ? (next.x - prev.x) / 6 : (curr.x - prev.x) / 3)
+    const cp2y = curr.y - (next ? (next.y - prev.y) / 6 : (curr.y - prev.y) / 3)
+    path += ` C ${cp1x} ${cp1y}, ${cp2x} ${cp2y}, ${curr.x} ${curr.y}`
+  }
+  
+  const areaPath = `${path} L ${points[points.length - 1].x} ${yScale(0)} L ${points[0].x} ${yScale(0)} Z`
+
+  return (
+    <div className="mt-6">
+      <div className="flex items-center justify-between mb-3">
+        <h4 className="text-sm font-semibold text-gray-800 dark:text-gray-200">审美成长曲线</h4>
+        <span className="text-xs text-gray-500 dark:text-gray-400">{history.length} 次收藏</span>
+      </div>
+      <svg width="100%" height={height} viewBox={`0 0 ${width} ${height}`} className="overflow-visible">
+        <defs>
+          <linearGradient id="curveGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stopColor="#10b981" stopOpacity="0.3" />
+            <stop offset="100%" stopColor="#10b981" stopOpacity="0.05" />
+          </linearGradient>
+        </defs>
+        
+        {/* 网格线 */}
+        {[0, 25, 50, 75, 100].map(v => (
+          <g key={v}>
+            <line x1={padding.left} y1={yScale(v)} x2={width - padding.right} y2={yScale(v)} stroke="#10b981" strokeWidth={0.5} opacity={0.15} />
+            <text x={padding.left - 5} y={yScale(v)} textAnchor="end" dominantBaseline="middle" className="fill-gray-400" fontSize={10}>{v}</text>
+          </g>
+        ))}
+        
+        {/* 面积填充 */}
+        <path d={areaPath} fill="url(#curveGradient)" />
+        
+        {/* 曲线 */}
+        <path d={path} fill="none" stroke="#10b981" strokeWidth={2.5} strokeLinecap="round" />
+        
+        {/* 数据点 */}
+        {points.map((p, i) => (
+          <g key={i}>
+            <circle cx={p.x} cy={p.y} r={i === points.length - 1 ? 4 : 2} fill="#10b981" />
+            {i === points.length - 1 && (
+              <text x={p.x + 8} y={p.y - 8} className="fill-emerald-600" fontSize={10} fontWeight="bold">新纪录</text>
+            )}
+          </g>
+        ))}
+        
+        {/* X轴标签 */}
+        {history.map((_, i) => {
+          if (i % Math.ceil(history.length / 8) !== 0 && i !== history.length - 1) return null
+          return <text key={i} x={xScale(i)} y={height - 5} textAnchor="middle" className="fill-gray-400" fontSize={10}>{i + 1}</text>
+        })}
+      </svg>
+    </div>
+  )
 }
 
 export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClientProps) {
@@ -202,115 +283,70 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
     const saved = loadProfile()
     let hasChanges = false
     
-    // 同步实际收藏数和 history
     if (serverFavorites && serverFavorites.length > 0) {
       saved.favoriteCount = serverFavorites.length
-      
-      // 检查是否有新收藏需要添加到 history
       const existingSlugs = new Set(saved.history.map(h => h.slug))
       const newFavorites = serverFavorites.filter(fav => !existingSlugs.has(fav.slug))
       
       if (newFavorites.length > 0 || saved.history.length === 0) {
-        // 添加新收藏到 history
-        const newHistoryItems = newFavorites.map((fav, index) => ({
+        saved.history = [...saved.history, ...newFavorites.map((fav, index) => ({
           slug: fav.slug,
           vector: calculateVectorFromPrompt(fav),
           timestamp: Date.now() - (newFavorites.length - index) * 1000,
-        }))
-        saved.history = [...saved.history, ...newHistoryItems]
+        }))]
         hasChanges = true
       }
       
-      // 重新计算 8 维向量（基于所有收藏的平均值）
       if (saved.history.length > 0) {
-        const avgVector: AestheticVector = {
-          complexity: 0,
-          colorIntensity: 0,
-          arousal: 0,
-          fluency: 0,
-          novelty: 0,
-          harmony: 0,
-          narrative: 0,
-          stylization: 0,
-        }
-        
+        const avgVector: AestheticVector = { complexity: 0, colorIntensity: 0, arousal: 0, fluency: 0, novelty: 0, harmony: 0, narrative: 0, stylization: 0 }
         saved.history.forEach(item => {
-          Object.keys(avgVector).forEach(key => {
-            const k = key as keyof AestheticVector
-            avgVector[k] += item.vector[k]
+          (Object.keys(avgVector) as (keyof AestheticVector)[]).forEach(key => {
+            avgVector[key] += item.vector[key]
           })
         })
-        
-        Object.keys(avgVector).forEach(key => {
-          const k = key as keyof AestheticVector
-          avgVector[k] = Math.round(avgVector[k] / saved.history.length)
+        ;(Object.keys(avgVector) as (keyof AestheticVector)[]).forEach(key => {
+          avgVector[key] = Math.round(avgVector[key] / saved.history.length)
         })
-        
         saved.vector = avgVector
         hasChanges = true
       }
       
-      if (hasChanges) {
-        saveProfile(saved)
-      }
+      if (hasChanges) saveProfile(saved)
     } else {
-      // 尝试从 localStorage 读取
       const localFavs = JSON.parse(localStorage.getItem('cgfan_favorites') || '[]')
       if (localFavs.length > 0) {
         saved.favoriteCount = localFavs.length
-        
-        // 检查是否有新收藏需要添加到 history
         const existingSlugs = new Set(saved.history.map(h => h.slug))
         const newFavorites = localFavs.filter((fav: any) => !existingSlugs.has(fav.slug))
         
         if (newFavorites.length > 0 || saved.history.length === 0) {
-          // 添加新收藏到 history
-          const newHistoryItems = newFavorites.map((fav: any, index: number) => ({
+          saved.history = [...saved.history, ...newFavorites.map((fav: any, index: number) => ({
             slug: fav.slug,
             vector: calculateVectorFromPrompt(fav),
             timestamp: Date.now() - (newFavorites.length - index) * 1000,
-          }))
-          saved.history = [...saved.history, ...newHistoryItems]
+          }))]
           hasChanges = true
         }
         
-        // 重新计算 8 维向量
         if (saved.history.length > 0) {
-          const avgVector: AestheticVector = {
-            complexity: 0,
-            colorIntensity: 0,
-            arousal: 0,
-            fluency: 0,
-            novelty: 0,
-            harmony: 0,
-            narrative: 0,
-            stylization: 0,
-          }
-          
+          const avgVector: AestheticVector = { complexity: 0, colorIntensity: 0, arousal: 0, fluency: 0, novelty: 0, harmony: 0, narrative: 0, stylization: 0 }
           saved.history.forEach(item => {
-            Object.keys(avgVector).forEach(key => {
-              const k = key as keyof AestheticVector
-              avgVector[k] += item.vector[k]
+            (Object.keys(avgVector) as (keyof AestheticVector)[]).forEach(key => {
+              avgVector[key] += item.vector[key]
             })
           })
-          
-          Object.keys(avgVector).forEach(key => {
-            const k = key as keyof AestheticVector
-            avgVector[k] = Math.round(avgVector[k] / saved.history.length)
+          ;(Object.keys(avgVector) as (keyof AestheticVector)[]).forEach(key => {
+            avgVector[key] = Math.round(avgVector[key] / saved.history.length)
           })
-          
           saved.vector = avgVector
           hasChanges = true
         }
         
-        if (hasChanges) {
-          saveProfile(saved)
-        }
+        if (hasChanges) saveProfile(saved)
       }
     }
     
     setProfile(saved)
-    
     if (saved.currentPersonaId) {
       const persona = BASE_PERSONAS.find(p => p.id === saved.currentPersonaId)
       setCurrentPersona(persona || null)
@@ -326,138 +362,133 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
     setShowQuiz(true)
   }
 
-  // 显示测试组件
   if (showQuiz || !profile || !currentPersona) {
     return (
-      <div className="rounded-lg border border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-900">
+      <div className="rounded-2xl border border-white/20 bg-white/60 p-6 backdrop-blur-xl dark:border-white/10 dark:bg-white/5">
         <AestheticQuiz />
       </div>
     )
   }
 
   const stage = getGrowthStage(profile.favoriteCount)
-  const nextStage = GROWTH_STAGES.find(s => s.range[0] > profile.favoriteCount)
-  const progress = nextStage
-    ? ((profile.favoriteCount - stage.range[0]) / (nextStage.range[0] - stage.range[0])) * 100
-    : 100
+  const dimensions = [
+    { key: 'complexity', label: '复杂度' },
+    { key: 'colorIntensity', label: '色彩强度' },
+    { key: 'arousal', label: '情绪唤醒' },
+    { key: 'fluency', label: '处理流畅' },
+    { key: 'novelty', label: '新奇性' },
+    { key: 'harmony', label: '和谐度' },
+    { key: 'narrative', label: '叙事性' },
+    { key: 'stylization', label: '风格化' },
+  ] as const
 
   return (
-    <div className="space-y-6">
-      {/* 人格卡片 */}
-      <div className="overflow-hidden rounded-lg border border-gray-200 bg-gradient-to-br from-green-50 to-emerald-50 dark:border-gray-800 dark:from-green-950 dark:to-emerald-950">
-        <div className="p-8">
-          {/* 头部 */}
-          <div className="mb-6 flex items-start justify-between">
-            <div>
-              <div className="mb-2 flex items-center gap-2">
-                <span className="text-3xl">{stage.icon}</span>
-                <span className="text-sm font-medium text-green-700 dark:text-green-400">
-                  {stage.name}
-                </span>
-              </div>
-              <h2 className="font-serif text-3xl font-bold text-gray-900 dark:text-white">
-                {currentPersona.name}
-              </h2>
-              <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">
-                {currentPersona.en}
-              </p>
-            </div>
-            <div className="text-right">
-              <div className="text-3xl font-bold text-green-600 dark:text-green-400">
-                {profile.favoriteCount}
-              </div>
-              <div className="text-xs text-gray-500 dark:text-gray-400">
-                收藏数
-              </div>
-            </div>
+    <div className="rounded-2xl border border-white/30 bg-white/70 p-8 shadow-lg backdrop-blur-xl dark:border-white/10 dark:bg-white/5">
+      {/* 头部：人格信息 + 收藏数徽章 */}
+      <div className="flex items-start justify-between mb-6">
+        <div className="flex items-center gap-4">
+          {/* 树形图标 */}
+          <div className="text-5xl"></div>
+          <div>
+            <div className="text-xs font-medium text-emerald-600 dark:text-emerald-400 mb-1">{stage.name}</div>
+            <h2 className="font-serif text-3xl font-bold text-gray-900 dark:text-white">{currentPersona.name}</h2>
+            <p className="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wider">{currentPersona.en}</p>
           </div>
-
-          {/* 签名 */}
-          <blockquote className="mb-6 border-l-4 border-green-600 pl-4 font-serif text-lg italic text-gray-700 dark:text-gray-300">
-            {currentPersona.tagline}
-          </blockquote>
-
-          {/* 描述 */}
-          <p className="mb-6 text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-            {currentPersona.description}
-          </p>
-
-          {/* 成长进度 */}
-          {nextStage && (
-            <div className="mb-6">
-              <div className="mb-2 flex items-center justify-between text-xs">
-                <span className="text-gray-600 dark:text-gray-400">
-                  距离 {nextStage.icon} {nextStage.name} 还需 {nextStage.range[0] - profile.favoriteCount} 次收藏
-                </span>
-                <span className="font-medium text-green-600 dark:text-green-400">
-                  {Math.round(progress)}%
-                </span>
-              </div>
-              <div className="h-2 overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700">
-                <div
-                  className="h-full bg-gradient-to-r from-green-500 to-emerald-500 transition-all duration-500"
-                  style={{ width: `${progress}%` }}
-                />
-              </div>
+        </div>
+        
+        {/* 收藏数徽章 */}
+        <div className="flex flex-col items-center">
+          <div className="relative">
+            <div className="w-16 h-16 rounded-full bg-gradient-to-br from-emerald-400 to-emerald-600 flex items-center justify-center shadow-lg">
+              <span className="text-2xl font-bold text-white">{profile.favoriteCount}</span>
             </div>
-          )}
-
-          {/* 8维数据 */}
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-            {Object.entries(profile.vector).map(([key, value]) => {
-              const labels: Record<string, string> = {
-                complexity: '复杂度',
-                colorIntensity: '色彩强度',
-                arousal: '情绪唤醒',
-                fluency: '处理流畅',
-                novelty: '新奇性',
-                harmony: '和谐度',
-                narrative: '叙事性',
-                stylization: '风格化',
-              }
-              return (
-                <div key={key} className="rounded-lg bg-white/60 p-3 dark:bg-gray-800/60">
-                  <div className="mb-1 text-xs text-gray-600 dark:text-gray-400">
-                    {labels[key]}
-                  </div>
-                  <div className="flex items-baseline gap-1">
-                    <span className="text-2xl font-bold text-gray-900 dark:text-white">
-                      {Math.round(value)}
-                    </span>
-                  </div>
-                  <div className="mt-1 h-1 overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700">
-                    <div
-                      className="h-full bg-green-500 transition-all duration-500"
-                      style={{ width: `${value}%` }}
-                    />
-                  </div>
-                </div>
-              )
-            })}
+            <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 text-[10px] text-gray-600 dark:text-gray-400 whitespace-nowrap">收藏数</div>
           </div>
         </div>
       </div>
 
+      {/* 引言 */}
+      <div className="mb-6 pl-4 border-l-4 border-emerald-500">
+        <p className="font-serif text-lg italic text-gray-700 dark:text-gray-300 mb-2">
+          「{currentPersona.tagline}」
+        </p>
+        <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+          {currentPersona.description}
+        </p>
+      </div>
+
+      {/* 雷达图 + 四周维度 */}
+      <div className="relative flex items-center justify-center mb-6" style={{ minHeight: 280 }}>
+        {/* 左侧维度 */}
+        <div className="absolute left-0 top-1/2 -translate-y-1/2 space-y-4">
+          {dimensions.slice(0, 2).map(dim => (
+            <div key={dim.key} className="flex items-center gap-2">
+              <span className="text-xl">{DIMENSION_ICONS[dim.key]}</span>
+              <div>
+                <div className="text-xs text-gray-500 dark:text-gray-400">{dim.label}</div>
+                <div className="text-lg font-bold text-gray-900 dark:text-white">{Math.round(profile.vector[dim.key])}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+        
+        {/* 中间雷达图 */}
+        <RadarChart vector={profile.vector} size={220} />
+        
+        {/* 右侧维度 */}
+        <div className="absolute right-0 top-1/2 -translate-y-1/2 space-y-4">
+          {dimensions.slice(2, 4).map(dim => (
+            <div key={dim.key} className="flex items-center gap-2">
+              <span className="text-xl">{DIMENSION_ICONS[dim.key]}</span>
+              <div>
+                <div className="text-xs text-gray-500 dark:text-gray-400">{dim.label}</div>
+                <div className="text-lg font-bold text-gray-900 dark:text-white">{Math.round(profile.vector[dim.key])}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
       {/* 成长曲线 */}
-      <AestheticGrowthChart profile={profile} />
+      <GrowthCurve history={profile.history} />
+
+      {/* 底部维度卡片 */}
+      <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
+        {dimensions.map(dim => (
+          <div key={dim.key} className="rounded-xl bg-white/50 p-3 backdrop-blur-sm dark:bg-white/5">
+            <div className="flex items-center justify-between mb-1">
+              <span className="text-xs text-gray-600 dark:text-gray-400">{dim.label}</span>
+              <span className="text-lg">{DIMENSION_ICONS[dim.key]}</span>
+            </div>
+            <div className="text-xl font-bold text-gray-900 dark:text-white">
+              {Math.round(profile.vector[dim.key])}
+            </div>
+          </div>
+        ))}
+      </div>
 
       {/* 操作按钮 */}
-      <div className="flex justify-center gap-4">
-        <a
-          href="/explore"
-          className="inline-flex items-center gap-2 rounded-full bg-green-600 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-green-700"
-        >
-          继续收藏
-          <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-          </svg>
+      <div className="mt-8 flex flex-col items-center gap-3">
+        <div className="flex gap-3">
+          <a
+            href="/explore"
+            className="inline-flex items-center gap-2 rounded-full bg-emerald-600 px-8 py-3 text-sm font-semibold text-white shadow-md transition-all hover:bg-emerald-500 hover:shadow-lg"
+          >
+            继续收藏
+            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+          <button
+            onClick={() => setShowRetakeConfirm(true)}
+            className="inline-flex items-center gap-2 rounded-full border border-gray-300 bg-white px-6 py-3 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:hover:bg-gray-800"
+          >
+            重新测试
+          </button>
+        </div>
+        <a href="/explore" className="text-xs text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300">
+          去逛逛 →
         </a>
-        <button
-          onClick={() => setShowRetakeConfirm(true)}
-          className="inline-flex items-center gap-2 rounded-full border border-gray-300 bg-white px-6 py-3 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:hover:bg-gray-800"
-        >
-          重新测试
-        </button>
       </div>
 
       {/* 重新测试确认弹窗 */}
@@ -465,31 +496,17 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm">
           <div className="mx-4 w-full max-w-md rounded-2xl bg-white p-6 shadow-2xl dark:bg-gray-900">
             <div className="mb-4 text-center">
-              <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-green-100 dark:bg-green-900/30">
-                <svg className="h-6 w-6 text-green-600 dark:text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-emerald-100 dark:bg-emerald-900/30">
+                <svg className="h-6 w-6 text-emerald-600 dark:text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                确认重新测试？
-              </h3>
-              <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-                这将清除你当前的美学人格数据，重新开始测试。
-              </p>
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">确认重新测试？</h3>
+              <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">这将清除你当前的美学人格数据，重新开始测试。</p>
             </div>
             <div className="flex gap-3">
-              <button
-                onClick={() => setShowRetakeConfirm(false)}
-                className="flex-1 rounded-full border border-gray-300 bg-white px-4 py-2.5 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:hover:bg-gray-800"
-              >
-                取消
-              </button>
-              <button
-                onClick={handleRetake}
-                className="flex-1 rounded-full bg-green-600 px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-green-700"
-              >
-                确认重新测试
-              </button>
+              <button onClick={() => setShowRetakeConfirm(false)} className="flex-1 rounded-full border border-gray-300 bg-white px-4 py-2.5 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:hover:bg-gray-800">取消</button>
+              <button onClick={handleRetake} className="flex-1 rounded-full bg-emerald-600 px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-emerald-700">确认重新测试</button>
             </div>
           </div>
         </div>
