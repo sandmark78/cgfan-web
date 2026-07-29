@@ -1,6 +1,7 @@
 import { createClient } from '@/lib/supabase/server'
 import { getAllPrompts } from '@/lib/prompts'
 import { TasteCardClient } from '@/components/taste-card'
+import { AestheticQuiz } from '@/components/aesthetic-quiz'
 
 export const runtime = 'edge'
 
@@ -14,7 +15,6 @@ export default async function TastePage() {
   const { data: { user } } = await supabase.auth.getUser()
 
   let serverFavorites: { slug: string; title: string; category: string; tags: string[]; model: string; cover: string }[] = []
-  let quizPersonality: { personality: string; tags: string[] } | null = null
 
   if (user) {
     // 登录态：从 Supabase 读取收藏
@@ -48,6 +48,11 @@ export default async function TastePage() {
         <p className="mt-3 text-gray-600 dark:text-gray-400">
           收藏越多，人格越丰富
         </p>
+      </div>
+
+      {/* 快速测试入口 */}
+      <div className="mb-12">
+        <AestheticQuiz />
       </div>
 
       <TasteCardClient serverFavorites={serverFavorites} isLoggedIn={!!user} />
