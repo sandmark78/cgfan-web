@@ -32,24 +32,21 @@ for m in re.finditer(r'[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{
     camofox_cmd(f'close "{m.group()}" 2>/dev/null')
 run("sleep 1")
 
-# ====== Step 2: 并行开 tab ======
-print(f"🚀 并行打开 {len(ids)} 个 tab...")
+# ====== Step 2: 串行开 tab（Camofox 单线程，并发会失败） ======
+print(f"🚀 串行打开 {len(ids)} 个 tab...")
 tabs = {}
 
-def open_tab(tid):
-    out = camofox_cmd(f'open "https://x.com/i/status/{tid}" 2>&1')
+for i, tid in enumerate(ids, 1):
+    out = camofox_cmd(f'open "https://x.com/i/status/{tid}" 2>&1', timeout=60)
     m = re.search(r'[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}', out)
-    return tid, m.group() if m else None
-
-with ThreadPoolExecutor(max_workers=5) as pool:
-    futures = {pool.submit(open_tab, tid): tid for tid in ids}
-    for f in as_completed(futures):
-        tid, tab = f.result()
-        if tab:
-            tabs[tid] = tab
-            print(f"  ✅ {tid} → {tab[:8]}...")
-        else:
-            print(f"  ❌ {tid} 打开失败")
+    if m:
+        tab = m.group()
+        tabs[tid] = tab
+        print(f"  [{i}/{len(ids)}] ✅ {tid} → {tab[:8]}...")
+    else:
+        print(f"  [{i}/{len(ids)}] ❌ {tid} 打开失败")
+    # 每个 tab 间隔 0.5s，避免并发冲突
+    run("sleep 0.5")
 
 # ====== Step 3: 统一等待 ======
 print("⏳ 等待页面加载 (3s)...")
