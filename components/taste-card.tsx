@@ -1,483 +1,209 @@
 'use client'
 
-import Link from 'next/link'
-import { useState, useEffect, useRef } from 'react'
-import { useRouter } from 'next/navigation'
-import { analyzeTaste, readFavorites, FavoriteItem } from '@/lib/taste'
-import { matchPersona, Persona } from '@/lib/personas'
+import { useState, useEffect } from 'react'
+import { UserProfile, loadProfile, clearProfile, getGrowthStage, GROWTH_STAGES } from '@/lib/aesthetic-dynamic'
+import { BASE_PERSONAS, BasePersona } from '@/lib/aesthetic-engine'
+import { AestheticGrowthChart } from './aesthetic-growth-chart'
 
 interface TasteCardClientProps {
-  serverFavorites: { slug: string; title: string; category: string; tags: string[]; model: string; cover: string }[]
-  isLoggedIn: boolean
-}
-
-// ============ 配色：浅色绿色风格，和站点统一 ============
-const C = {
-  bgTop: '#F7FBF5', bgBot: '#E0ECD6',
-  ink: '#3D8C5A',
-  inkDeep: '#2A6B3F',
-  soft: '#7A9E7A',
-  soft2: '#9AB89A',
-  track: 'rgba(61,140,90,.12)',
-  line: 'rgba(61,140,90,.22)',
-  lineSoft: 'rgba(61,140,90,.12)',
-  pill: '#3D8C5A', pillInk: '#F7FBF5',
-  spectrum: ['#2A6B3F', '#3D8C5A', '#5DAD6A', '#7FC08A', '#A8D4A8', '#C8E4C8'],
-}
-const SERIF = '"Noto Serif SC","Songti SC",serif'
-const SANS = 'system-ui,sans-serif'
-
-function rr(ctx: CanvasRenderingContext2D, x: number, y: number, w: number, h: number, r: number) {
-  ctx.beginPath()
-  ctx.moveTo(x + r, y)
-  ctx.arcTo(x + w, y, x + w, y + h, r)
-  ctx.arcTo(x + w, y + h, x, y + h, r)
-  ctx.arcTo(x, y + h, x, y, r)
-  ctx.arcTo(x, y, x + w, y, r)
-  ctx.closePath()
-}
-
-function spaced(ctx: CanvasRenderingContext2D, str: string, x: number, y: number, sp: number, right?: boolean) {
-  const widths = [...str].map(ch => ctx.measureText(ch).width + sp)
-  const total = widths.reduce((a, b) => a + b, 0) - sp
-  let cx = right ? x - total : x
-  ctx.textAlign = 'left'
-  ;[...str].forEach((ch, i) => { ctx.fillText(ch, cx, y); cx += widths[i] })
-}
-
-function wrap(ctx: CanvasRenderingContext2D, str: string, x: number, y: number, maxW: number, lh: number) {
-  let line = '', yy = y
-  for (const ch of str) {
-    if (ctx.measureText(line + ch).width > maxW) { ctx.fillText(line, x, yy); line = ch; yy += lh }
-    else line += ch
-  }
-  ctx.fillText(line, x, yy)
-}
-
-function drawWaxSeal(ctx: CanvasRenderingContext2D, cx: number, cy: number, r: number, text: string) {
-  ctx.save()
-
-  // 外圈平滑波浪：8 个正弦波
-  ctx.strokeStyle = C.inkDeep
-  ctx.lineWidth = 2.5
-  ctx.beginPath()
-  for (let a = 0; a <= Math.PI * 2; a += 0.03) {
-    const wave = Math.sin(a * 8) * 3.5
-    const x = cx + Math.cos(a) * (r + 2 + wave)
-    const y = cy + Math.sin(a) * (r + 2 + wave)
-    a === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y)
-  }
-  ctx.closePath()
-  ctx.stroke()
-
-  // 内圈平滑线
-  ctx.strokeStyle = C.line
-  ctx.lineWidth = 1.5
-  ctx.beginPath()
-  ctx.arc(cx, cy, r - 8, 0, Math.PI * 2)
-  ctx.stroke()
-
-  // 中间竖排文字
-  ctx.textAlign = 'center'
-  ctx.textBaseline = 'middle'
-  ctx.font = `900 20px ${SERIF}`
-  ctx.fillStyle = C.inkDeep
-  const chars = [...text], n = chars.length
-  chars.forEach((ch, i) => ctx.fillText(ch, cx, cy + (i - (n - 1) / 2) * 22))
-
-  ctx.restore()
-}
-
-function drawRibbon(ctx: CanvasRenderingContext2D, x: number, y: number, dir: number) {
-  // dir: -1 = left, 1 = right
-  ctx.save()
-  ctx.fillStyle = C.ink
-  ctx.beginPath()
-  ctx.moveTo(x, y)
-  ctx.lineTo(x + dir * 18, y + 28)
-  ctx.lineTo(x + dir * 6, y + 20)
-  ctx.lineTo(x, y + 32)
-  ctx.lineTo(x - dir * 6, y + 20)
-  ctx.lineTo(x - dir * 18, y + 28)
-  ctx.closePath()
-  ctx.fill()
-  ctx.restore()
-}
-
-function renderCard(ctx: CanvasRenderingContext2D, data: {
-  persona: Persona; analysis: any; serial: string; tags: string[]; date: string; url: string
-}) {
-  const W = 533, H = 800
-  const { persona, analysis, serial, tags, date, url } = data
-
-  // 背景：浅绿白渐变
-  let g = ctx.createLinearGradient(0, 0, W * .3, H)
-  g.addColorStop(0, C.bgTop); g.addColorStop(1, C.bgBot)
-  ctx.fillStyle = g; ctx.fillRect(0, 0, W, H)
-
-  // 纸感：左上窗光 + 叶影
-  let rg = ctx.createRadialGradient(120, 90, 10, 120, 90, 320)
-  rg.addColorStop(0, 'rgba(255,255,255,.5)'); rg.addColorStop(1, 'rgba(255,255,255,0)')
-  ctx.fillStyle = rg; ctx.fillRect(0, 0, W, H)
-
-  // 标本卡双线内框
-  ctx.lineWidth = 1; ctx.strokeStyle = C.line
-  rr(ctx, 18, 24, W - 36, H - 48, 12); ctx.stroke()
-  ctx.strokeStyle = C.lineSoft
-  rr(ctx, 23, 29, W - 46, H - 58, 10); ctx.stroke()
-
-  // 顶部双行标题
-  ctx.textBaseline = 'alphabetic'
-  ctx.textAlign = 'left'
-  ctx.fillStyle = C.ink; ctx.font = `600 12px ${SANS}`
-  spaced(ctx, 'CGFAN · 美学人格', 39, 56, 2)
-  ctx.fillStyle = C.soft2; ctx.font = `500 8px ${SANS}`
-  spaced(ctx, 'AESTHETIC PERSONALITY', 39, 70, 1.4)
-  ctx.textAlign = 'right'
-  ctx.fillStyle = C.ink; ctx.font = `600 12px ${SANS}`
-  spaced(ctx, 'NO.' + serial, W - 39, 56, 1.5, true)
-  ctx.fillStyle = C.soft2; ctx.font = `500 8px ${SANS}`
-  spaced(ctx, '探索你的美学光谱', W - 39, 70, 1.2, true)
-  ctx.textAlign = 'left'
-
-  // 左侧竖线强调
-  ctx.fillStyle = C.ink
-  ctx.fillRect(41, 131, 3, 155)
-
-  const LX = 59
-
-  // 你是
-  ctx.fillStyle = C.soft; ctx.font = `500 12px ${SANS}`
-  spaced(ctx, '你 是', LX, 131, 4)
-
-  // 人格名
-  const name = persona.name
-  const fs = name.length >= 6 ? 40 : name.length >= 5 ? 48 : 56
-  ctx.fillStyle = C.ink; ctx.font = `900 ${fs}px ${SERIF}`
-  ctx.fillText(name, LX, 195)
-
-  // 英文名
-  ctx.fillStyle = C.ink; ctx.font = `600 10px ${SANS}`
-  spaced(ctx, persona.en, LX, 222, 5)
-
-  // 签名
-  ctx.fillStyle = C.soft; ctx.font = `500 14px ${SERIF}`
-  wrap(ctx, '「 ' + persona.tagline + ' 」', LX, 260, W - LX - 39, 22)
-
-  // 装饰短线 + 菱形
-  ctx.strokeStyle = C.lineSoft; ctx.lineWidth = 1
-  ctx.beginPath(); ctx.moveTo(LX, 295); ctx.lineTo(LX + 56, 295); ctx.stroke()
-  ctx.fillStyle = C.lineSoft; ctx.save()
-  ctx.translate(LX + 62, 295); ctx.rotate(Math.PI / 4)
-  ctx.fillRect(-2.5, -2.5, 5, 5); ctx.restore()
-
-  // 品味光谱
-  ctx.fillStyle = C.soft; ctx.font = `500 10px ${SANS}`
-  spaced(ctx, '品 味 光 谱', LX, 325, 3)
-
-  // 光谱条：多绿渐变
-  const rows = analysis.categories.slice(0, 3)
-  const trackX = 149, trackW = 266, pctX = W - 39
-  rows.forEach((c: any, i: number) => {
-    const y = 348 + i * 28
-    ctx.textAlign = 'right'; ctx.fillStyle = C.ink; ctx.font = `500 12px ${SANS}`
-    ctx.fillText(c.name, trackX - 12, y + 4)
-    ctx.fillStyle = C.track; rr(ctx, trackX, y - 4, trackW, 7, 3.5); ctx.fill()
-    const fw = Math.max(8, trackW * c.ratio)
-    if (persona.prismatic) {
-      let sg = ctx.createLinearGradient(trackX, 0, trackX + trackW, 0)
-      '#FF4D6D,#F97316,#EAB308,#6A994E,#14B8A6,#00E5FF,#6B8CFF,#9B7EDE'.split(',').forEach((c, k) => sg.addColorStop(k / 7, c))
-      ctx.fillStyle = sg
-    } else {
-      let sg = ctx.createLinearGradient(trackX, 0, trackX + trackW, 0)
-      C.spectrum.forEach((s, k) => sg.addColorStop(k / (C.spectrum.length - 1), s))
-      ctx.fillStyle = sg
-    }
-    rr(ctx, trackX, y - 4, fw, 7, 3.5); ctx.fill()
-    ctx.textAlign = 'left'; ctx.fillStyle = C.ink; ctx.font = `600 12px ${SANS}`
-    ctx.fillText(Math.round(c.ratio * 100) + '%', pctX - 36, y + 4)
-  })
-  ctx.textAlign = 'left'
-
-  // 实心绿胶囊标签
-  let px = LX, py = 460
-  ctx.font = `500 11px ${SANS}`
-  tags.slice(0, 4).forEach(t => {
-    const tw = ctx.measureText(t).width + 22
-    if (px + tw > W - 39) { px = LX; py += 28 }
-    ctx.fillStyle = C.pill; rr(ctx, px, py - 14, tw, 24, 12); ctx.fill()
-    ctx.fillStyle = C.pillInk; ctx.textAlign = 'center'
-    ctx.fillText(t, px + tw / 2, py + 1); ctx.textAlign = 'left'
-    px += tw + 8
-  })
-
-  // 右下：圆火漆章
-  drawWaxSeal(ctx, W - 76, 680, 36, persona.seal)
-
-  // 左下 meta
-  ctx.fillStyle = C.soft2; ctx.font = `500 10px ${SANS}`
-  ctx.fillText('生成于 ' + date, LX, 718)
-  ctx.fillText(url, LX, 733)
+  serverFavorites?: Array<{ slug: string; title: string; category: string; tags: string[]; model: string; cover: string }>
+  isLoggedIn?: boolean
 }
 
 export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClientProps) {
-  const router = useRouter()
-  const [persona, setPersona] = useState<Persona | null>(null)
-  const [analysis, setAnalysis] = useState<any>(null)
-  const [favorites, setFavorites] = useState<FavoriteItem[]>([])
-  const [isGenerating, setIsGenerating] = useState(false)
-  const [showRefreshConfirm, setShowRefreshConfirm] = useState(false)
-  const [isRefreshing, setIsRefreshing] = useState(false)
-  const cardRef = useRef<HTMLDivElement>(null)
+  const [profile, setProfile] = useState<UserProfile | null>(null)
+  const [currentPersona, setCurrentPersona] = useState<BasePersona | null>(null)
+  const [showClearConfirm, setShowClearConfirm] = useState(false)
 
   useEffect(() => {
-    let favs: FavoriteItem[]
-    if (isLoggedIn && serverFavorites.length > 0) {
-      favs = serverFavorites.map(f => ({ slug: f.slug, title: f.title, category: f.category, tags: f.tags, model: f.model, image: f.cover, ts: Date.now() }))
-    } else {
-      favs = readFavorites()
+    const saved = loadProfile()
+    setProfile(saved)
+    
+    if (saved.currentPersonaId) {
+      const persona = BASE_PERSONAS.find(p => p.id === saved.currentPersonaId)
+      setCurrentPersona(persona || null)
     }
-    setFavorites(favs)
-    if (favs.length >= 5) {
-      const a = analyzeTaste(favs)
-      setAnalysis(a)
-      setPersona(matchPersona(a))
-    }
-  }, [isLoggedIn, serverFavorites])
+  }, [])
 
-  const handleRefresh = () => {
-    setShowRefreshConfirm(true)
-  }
-
-  const confirmRefresh = () => {
-    setIsRefreshing(true)
-    setShowRefreshConfirm(false)
-    // Clear localStorage favorites cache for non-logged-in users
-    if (!isLoggedIn) {
-      localStorage.removeItem('cgfan_favorites')
-    }
-    // Reload page to re-fetch latest favorites from server
-    router.refresh()
+  const handleClearData = () => {
+    clearProfile()
+    setProfile(null)
+    setCurrentPersona(null)
+    setShowClearConfirm(false)
     window.location.reload()
   }
 
-  const handleDownload = async () => {
-    if (!persona || !analysis) return
-    setIsGenerating(true)
-    try {
-      await document.fonts.ready
-      await document.fonts.load('900 64px "Noto Serif SC"')
-
-      const W = 533, H = 800, dpr = 2
-      const canvas = document.createElement('canvas')
-      canvas.width = W * dpr; canvas.height = H * dpr
-      const ctx = canvas.getContext('2d')
-      if (!ctx) throw new Error('Canvas context not available')
-      ctx.scale(dpr, dpr)
-
-      const serial = String((favorites.length * 137 + persona.name.length * 911) % 9000 + 1000)
-      const tags = analysis.topTags.slice(0, 4).map((t: any) => `#${t.name}`)
-      const date = new Date().toLocaleDateString('zh-CN')
-      const url = 'www.cgfan.com/taste'
-
-      renderCard(ctx, { persona, analysis, serial, tags, date, url })
-
-      const blob = await new Promise<Blob>((resolve) => canvas.toBlob((b) => resolve(b!), 'image/png'))
-      const blobUrl = URL.createObjectURL(blob)
-      const a = document.createElement('a')
-      a.href = blobUrl
-      a.download = `CGfan美学人格-${persona.name}.png`
-      a.click()
-      URL.revokeObjectURL(blobUrl)
-    } catch (error) {
-      console.error('生成卡片失败:', error)
-      alert('下载失败，请稍后重试')
-    } finally {
-      setIsGenerating(false)
-    }
-  }
-
-  // ── 成长阶段 ──
-  const STAGES = [
-    { need: 5, label: '解锁人格', icon: '🌱' },
-    { need: 20, label: '品味光谱', icon: '🌿' },
-    { need: 50, label: '审美进化', icon: '🌳' },
-    { need: 100, label: '策展人认证', icon: '🏆' },
-  ]
-
-  if (!persona || !analysis) {
-    const favCount = favorites.length
-    const need = 5 - favCount
-    const currentStage = STAGES.reduce((acc, s, i) => favCount >= s.need ? i : acc, -1)
-    const nextStage = STAGES[currentStage + 1]
-    const progressToNext = nextStage ? favCount / nextStage.need : 1
+  // 未开始状态
+  if (!profile || !currentPersona) {
     return (
-      <div className="mx-auto max-w-md py-16 text-center">
-        <div className="mb-8 text-6xl">🎨</div>
-        <h2 className="mb-3 font-serif text-2xl font-bold text-gray-900 dark:text-white">你的品味，值得一张卡片</h2>
-        
-        {/* 成长阶段展示 */}
-        <div className="mb-8 space-y-3">
-          {STAGES.map((stage, i) => {
-            const unlocked = favCount >= stage.need
-            const current = i === currentStage + 1
-            return (
-              <div key={stage.need} className={`flex items-center gap-3 rounded-xl p-3 text-left transition-all ${
-                unlocked ? 'bg-green-50 dark:bg-green-900/20' :
-                current ? 'bg-emerald-50 dark:bg-emerald-900/20 ring-1 ring-green-500' :
-                'bg-gray-50 dark:bg-gray-800/30 opacity-50'
-              }`}>
-                <span className="text-2xl">{unlocked ? '✅' : stage.icon}</span>
-                <div className="flex-1">
-                  <div className="text-sm font-medium text-gray-900 dark:text-white">
-                    {stage.label}
-                  </div>
-                  <div className="text-xs text-gray-500 dark:text-gray-400">
-                    {unlocked ? '已解锁' : `收藏 ${stage.need} 个提示词`}
-                  </div>
-                </div>
-                {unlocked && <span className="text-xs text-green-600 dark:text-green-400 font-medium">✓</span>}
-                {current && (
-                  <div className="h-2 w-20 overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700">
-                    <div className="h-full rounded-full bg-green-500" style={{ width: `${progressToNext * 100}%` }} />
-                  </div>
-                )}
-              </div>
-            )
-          })}
-        </div>
-        
-        <p className="mb-8 text-sm text-gray-500 dark:text-gray-400">{favCount} / 5 {need > 0 ? `· 还差 ${need} 个` : '· 即将解锁！'}</p>
-        <Link href="/explore" className="inline-flex items-center gap-2 rounded-full px-8 py-3 text-sm font-semibold text-white shadow-lg"
-          style={{ background: '#2F6B45' }}>去收藏提示词 →</Link>
+      <div className="rounded-lg border border-gray-200 bg-white p-8 text-center dark:border-gray-800 dark:bg-gray-900">
+        <div className="mb-4 text-6xl">🎨</div>
+        <h3 className="mb-2 text-xl font-semibold text-gray-900 dark:text-white">
+          开始你的美学之旅
+        </h3>
+        <p className="mb-6 text-sm text-gray-500 dark:text-gray-400">
+          完成 4 道测试题，发现你的初始美学人格
+        </p>
+        <a
+          href="/taste/quiz"
+          className="inline-flex items-center gap-2 rounded-full bg-green-600 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-green-700"
+        >
+          开始测试
+          <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
       </div>
     )
   }
 
-  const serial = String((favorites.length * 137 + persona.name.length * 911) % 9000 + 1000)
-  const tags = analysis.topTags.slice(0, 4).map((t: any) => `#${t.name}`)
+  const stage = getGrowthStage(profile.favoriteCount)
+  const nextStage = GROWTH_STAGES.find(s => s.range[0] > profile.favoriteCount)
+  const progress = nextStage
+    ? ((profile.favoriteCount - stage.range[0]) / (nextStage.range[0] - stage.range[0])) * 100
+    : 100
 
   return (
     <div className="space-y-6">
-      {/* 预览卡片 */}
-      <div ref={cardRef} className="mx-auto max-w-md overflow-hidden rounded-sm shadow-lg" style={{ background: `linear-gradient(180deg, ${C.bgTop}, ${C.bgBot})` }}>
-        <div className="p-10">
-          {/* 顶部双行 */}
-          <div className="flex items-baseline justify-between">
+      {/* 人格卡片 */}
+      <div className="overflow-hidden rounded-lg border border-gray-200 bg-gradient-to-br from-green-50 to-emerald-50 dark:border-gray-800 dark:from-green-950 dark:to-emerald-950">
+        <div className="p-8">
+          {/* 头部 */}
+          <div className="mb-6 flex items-start justify-between">
             <div>
-              <div className="text-[12px] font-semibold" style={{ color: C.ink, letterSpacing: '0.15em' }}>CGFAN · 美学人格</div>
-              <div className="text-[8px] font-medium" style={{ color: C.soft2, letterSpacing: '0.1em' }}>AESTHETIC PERSONALITY</div>
+              <div className="mb-2 flex items-center gap-2">
+                <span className="text-3xl">{stage.icon}</span>
+                <span className="text-sm font-medium text-green-700 dark:text-green-400">
+                  {stage.name}
+                </span>
+              </div>
+              <h2 className="font-serif text-3xl font-bold text-gray-900 dark:text-white">
+                {currentPersona.name}
+              </h2>
+              <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">
+                {currentPersona.en}
+              </p>
             </div>
             <div className="text-right">
-              <div className="text-[12px] font-semibold" style={{ color: C.ink, letterSpacing: '0.1em' }}>NO.{serial}</div>
-              <div className="text-[8px] font-medium" style={{ color: C.soft2, letterSpacing: '0.08em' }}>探索你的美学光谱</div>
-            </div>
-          </div>
-
-          {/* 左侧竖线 + 内容 */}
-          <div className="mt-10 flex gap-5">
-            <div className="w-[3px] flex-shrink-0" style={{ background: C.ink, minHeight: '200px' }} />
-            <div className="flex-1">
-              <div className="text-[11px] font-medium tracking-[0.4em]" style={{ color: C.soft }}>你 是</div>
-              <h2 className="mt-2 font-serif font-black leading-tight" style={{
-                fontSize: persona.name.length >= 6 ? '52px' : persona.name.length >= 5 ? '60px' : '70px',
-                color: C.ink,
-              }}>{persona.name}</h2>
-              <div className="mt-1 text-[11px] font-semibold tracking-[0.42em]" style={{ color: C.ink }}>{persona.en}</div>
-              <div className="mt-6 font-serif text-base font-medium" style={{ color: C.soft }}>
-                「 {persona.tagline} 」
+              <div className="text-3xl font-bold text-green-600 dark:text-green-400">
+                {profile.favoriteCount}
+              </div>
+              <div className="text-xs text-gray-500 dark:text-gray-400">
+                收藏数
               </div>
             </div>
           </div>
 
-          {/* 装饰短线 + 菱形 */}
-          <div className="mt-6 mb-8 flex items-center gap-2">
-            <div className="h-px w-14" style={{ background: C.lineSoft }} />
-            <div className="h-1.5 w-1.5 rotate-45" style={{ background: C.lineSoft }} />
-          </div>
+          {/* 签名 */}
+          <blockquote className="mb-6 border-l-4 border-green-600 pl-4 font-serif text-lg italic text-gray-700 dark:text-gray-300">
+            {currentPersona.tagline}
+          </blockquote>
 
-          {/* 品味光谱 */}
-          <div className="text-[10px] font-medium tracking-[0.3em]" style={{ color: C.soft }}>品 味 光 谱</div>
-          {analysis.categories.slice(0, 3).map((cat: any) => (
-            <div key={cat.name} className="mt-3 grid grid-cols-[72px_1fr_44px] items-center gap-3">
-              <span className="text-[12px]" style={{ color: C.ink }}>{cat.name}</span>
-              <div className="h-2 overflow-hidden rounded-full" style={{ background: C.track }}>
-                <div className="h-full rounded-full" style={{
-                  width: `${Math.round(cat.ratio * 100)}%`,
-                  background: persona.prismatic
-                    ? 'linear-gradient(90deg, #FF4D6D, #F97316, #EAB308, #6A994E, #14B8A6, #00E5FF, #6B8CFF, #9B7EDE)'
-                    : `linear-gradient(90deg, ${C.spectrum[0]}, ${C.spectrum[1]}, ${C.spectrum[2]}, ${C.spectrum[3]}, ${C.spectrum[4]}, ${C.spectrum[5]})`,
-                }} />
+          {/* 描述 */}
+          <p className="mb-6 text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+            {currentPersona.description}
+          </p>
+
+          {/* 成长进度 */}
+          {nextStage && (
+            <div className="mb-6">
+              <div className="mb-2 flex items-center justify-between text-xs">
+                <span className="text-gray-600 dark:text-gray-400">
+                  距离 {nextStage.icon} {nextStage.name} 还需 {nextStage.range[0] - profile.favoriteCount} 次收藏
+                </span>
+                <span className="font-medium text-green-600 dark:text-green-400">
+                  {Math.round(progress)}%
+                </span>
               </div>
-              <span className="text-right text-[11px] font-semibold tabular-nums" style={{ color: C.ink }}>{Math.round(cat.ratio * 100)}%</span>
+              <div className="h-2 overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700">
+                <div
+                  className="h-full bg-gradient-to-r from-green-500 to-emerald-500 transition-all duration-500"
+                  style={{ width: `${progress}%` }}
+                />
+              </div>
             </div>
-          ))}
+          )}
 
-          {/* 实心绿胶囊标签 */}
-          <div className="mt-6 flex flex-wrap gap-2">
-            {tags.map((tag: string) => (
-              <span key={tag} className="rounded-full px-3 py-1.5 text-[11px] font-medium" style={{
-                background: C.pill,
-                color: C.pillInk,
-              }}>{tag}</span>
-            ))}
-          </div>
-
-          {/* 底部：meta + 印章 */}
-          <div className="mt-8 flex items-end justify-between">
-            <div className="flex flex-col gap-1 text-[10px]" style={{ color: C.soft2 }}>
-              <span>生成于 {new Date().toLocaleDateString('zh-CN')}</span>
-              <span>www.cgfan.com/taste</span>
-            </div>
-            <div className="grid h-[52px] w-[52px] place-items-center rounded-full text-base font-black font-serif" style={{
-              border: '2.5px solid ' + C.inkDeep,
-              color: C.inkDeep,
-              transform: 'rotate(-6deg)',
-            }}>{persona.seal}</div>
+          {/* 8维数据 */}
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+            {Object.entries(profile.vector).map(([key, value]) => {
+              const labels: Record<string, string> = {
+                complexity: '复杂度',
+                colorIntensity: '色彩强度',
+                arousal: '情绪唤醒',
+                fluency: '处理流畅',
+                novelty: '新奇性',
+                harmony: '和谐度',
+                narrative: '叙事性',
+                stylization: '风格化',
+              }
+              return (
+                <div key={key} className="rounded-lg bg-white/60 p-3 dark:bg-gray-800/60">
+                  <div className="mb-1 text-xs text-gray-600 dark:text-gray-400">
+                    {labels[key]}
+                  </div>
+                  <div className="flex items-baseline gap-1">
+                    <span className="text-2xl font-bold text-gray-900 dark:text-white">
+                      {Math.round(value)}
+                    </span>
+                  </div>
+                  <div className="mt-1 h-1 overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700">
+                    <div
+                      className="h-full bg-green-500 transition-all duration-500"
+                      style={{ width: `${value}%` }}
+                    />
+                  </div>
+                </div>
+              )
+            })}
           </div>
         </div>
       </div>
 
-      {/* 操作按钮组 */}
-      <div className="flex flex-col items-center gap-3">
-        <button onClick={handleDownload} disabled={isGenerating}
-          className="flex items-center gap-2 rounded-full px-8 py-3 text-sm font-semibold text-white shadow-lg transition-all hover:shadow-xl disabled:opacity-50"
-          style={{ background: C.ink }}>
-          {isGenerating ? (
-            <><svg className="h-5 w-5 animate-spin" fill="none" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" /><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" /></svg>生成中...</>
-          ) : (
-            <><svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>下载品味卡片</>
-          )}
-        </button>
-        <button onClick={handleRefresh} disabled={isRefreshing}
-          className="flex items-center gap-1.5 rounded-full px-5 py-2 text-xs font-medium transition-all hover:shadow-md disabled:opacity-50"
-          style={{ background: C.track, color: C.ink }}>
-          <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>
-          {isRefreshing ? '刷新中...' : '根据最新收藏重新生成'}
+      {/* 成长曲线 */}
+      <AestheticGrowthChart profile={profile} />
+
+      {/* 操作按钮 */}
+      <div className="flex justify-center gap-4">
+        <a
+          href="/explore"
+          className="inline-flex items-center gap-2 rounded-full bg-green-600 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-green-700"
+        >
+          继续收藏
+          <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+        <button
+          onClick={() => setShowClearConfirm(true)}
+          className="inline-flex items-center gap-2 rounded-full border border-gray-300 bg-white px-6 py-3 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:hover:bg-gray-800"
+        >
+          重新测试
         </button>
       </div>
 
-      {/* 确认弹框 */}
-      {showRefreshConfirm && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm" onClick={() => setShowRefreshConfirm(false)}>
-          <div className="mx-4 w-full max-w-sm rounded-2xl p-6 shadow-2xl" style={{ background: C.bgTop }} onClick={e => e.stopPropagation()}>
-            <div className="mb-4 text-center">
-              <div className="mx-auto mb-3 grid h-12 w-12 place-items-center rounded-full" style={{ background: C.track }}>
-                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke={C.ink}><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>
-              </div>
-              <h3 className="font-serif text-lg font-bold" style={{ color: C.inkDeep }}>重新生成美学人格？</h3>
-              <p className="mt-2 text-sm" style={{ color: C.soft }}>将基于你最新的收藏重新分析品味光谱，生成全新的人格卡片。</p>
-            </div>
+      {/* 清除确认对话框 */}
+      {showClearConfirm && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
+          <div className="mx-4 w-full max-w-sm rounded-lg bg-white p-6 dark:bg-gray-900">
+            <h3 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">
+              确认重新测试？
+            </h3>
+            <p className="mb-6 text-sm text-gray-500 dark:text-gray-400">
+              这将清除你当前的美学人格数据和收藏历史，重新开始测试。
+            </p>
             <div className="flex gap-3">
-              <button onClick={() => setShowRefreshConfirm(false)}
-                className="flex-1 rounded-full py-2.5 text-sm font-medium transition-colors hover:opacity-80"
-                style={{ background: C.track, color: C.ink }}>
+              <button
+                onClick={() => setShowClearConfirm(false)}
+                className="flex-1 rounded-full border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:hover:bg-gray-800"
+              >
                 取消
               </button>
-              <button onClick={confirmRefresh}
-                className="flex-1 rounded-full py-2.5 text-sm font-semibold text-white shadow-md transition-all hover:shadow-lg"
-                style={{ background: C.ink }}>
-                确认刷新
+              <button
+                onClick={handleClearData}
+                className="flex-1 rounded-full bg-red-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-red-700"
+              >
+                确认清除
               </button>
             </div>
           </div>
