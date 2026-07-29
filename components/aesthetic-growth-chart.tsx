@@ -1,5 +1,6 @@
 'use client'
 
+import { useState } from 'react'
 import { UserProfile } from '@/lib/aesthetic-dynamic'
 
 interface AestheticGrowthChartProps {
@@ -8,6 +9,7 @@ interface AestheticGrowthChartProps {
 
 export function AestheticGrowthChart({ profile }: AestheticGrowthChartProps) {
   const { history } = profile
+  const [showDetails, setShowDetails] = useState(false)
   
   if (history.length < 2) {
     return (
@@ -21,14 +23,14 @@ export function AestheticGrowthChart({ profile }: AestheticGrowthChartProps) {
 
   // 8 个维度的配置 - 绿色系配色
   const dimensions = [
-    { key: 'complexity', label: '复杂度', color: '#059669' },      // emerald-600
-    { key: 'colorIntensity', label: '色彩强度', color: '#10b981' }, // emerald-500
-    { key: 'arousal', label: '情绪唤醒', color: '#34d399' },        // emerald-400
-    { key: 'fluency', label: '处理流畅', color: '#6ee7b7' },        // emerald-300
-    { key: 'novelty', label: '新奇性', color: '#14b8a6' },          // teal-500
-    { key: 'harmony', label: '和谐度', color: '#2dd4bf' },          // teal-400
-    { key: 'narrative', label: '叙事性', color: '#0d9488' },        // teal-600
-    { key: 'stylization', label: '风格化', color: '#0f766e' },      // teal-700
+    { key: 'complexity', label: '复杂度', color: '#059669', group: '视觉' },
+    { key: 'colorIntensity', label: '色彩强度', color: '#10b981', group: '视觉' },
+    { key: 'fluency', label: '处理流畅', color: '#34d399', group: '视觉' },
+    { key: 'arousal', label: '情绪唤醒', color: '#14b8a6', group: '情感' },
+    { key: 'narrative', label: '叙事性', color: '#2dd4bf', group: '情感' },
+    { key: 'harmony', label: '和谐度', color: '#0d9488', group: '情感' },
+    { key: 'novelty', label: '新奇性', color: '#0f766e', group: '风格' },
+    { key: 'stylization', label: '风格化', color: '#115e59', group: '风格' },
   ] as const
 
   // 计算图表参数
@@ -38,17 +40,21 @@ export function AestheticGrowthChart({ profile }: AestheticGrowthChartProps) {
   const chartWidth = width - padding.left - padding.right
   const chartHeight = height - padding.top - padding.bottom
 
-  // X 轴：收藏次数（索引）
   const xScale = (i: number) => padding.left + (i / (history.length - 1)) * chartWidth
-  
-  // Y 轴：0-100
   const yScale = (v: number) => padding.top + chartHeight - (v / 100) * chartHeight
 
+  // 计算平均值曲线
+  const avgHistory = history.map(h => {
+    const values = dimensions.map(d => h.vector[d.key as keyof typeof h.vector])
+    const avg = values.reduce((a, b) => a + b, 0) / values.length
+    return { vector: { avg } }
+  })
+
   // 生成平滑贝塞尔曲线路径
-  const generateSmoothPath = (dimKey: keyof typeof history[0]['vector']) => {
-    const points = history.map((h, i) => ({
+  const generateSmoothPath = (data: any[], key: string) => {
+    const points = data.map((h, i) => ({
       x: xScale(i),
-      y: yScale(h.vector[dimKey]),
+      y: yScale(h.vector[key] || 0),
     }))
     
     if (points.length < 2) return ''
@@ -60,7 +66,6 @@ export function AestheticGrowthChart({ profile }: AestheticGrowthChartProps) {
       const curr = points[i]
       const next = points[i + 1]
       
-      // 控制点计算（平滑曲线）
       const cp1x = prev.x + (curr.x - prev.x) / 3
       const cp1y = prev.y + (curr.y - prev.y) / 3
       
@@ -73,14 +78,36 @@ export function AestheticGrowthChart({ profile }: AestheticGrowthChartProps) {
     return path
   }
 
-  // 生成面积填充路径
-  const generateAreaPath = (dimKey: keyof typeof history[0]['vector']) => {
-    const linePath = generateSmoothPath(dimKey)
-    const lastX = xScale(history.length - 1)
+  const generateAreaPath = (data: typeof history | typeof avgHistory, key: string) => {
+    const linePath = generateSmoothPath(data, key)
+    const lastX = xScale(data.length - 1)
     const firstX = xScale(0)
     const bottomY = yScale(0)
     
     return `${linePath} L ${lastX} ${bottomY} L ${firstX} ${bottomY} Z`
+  }
+
+  // 计算趋势（上升/下降/稳定）
+  const getTrend = (key: keyof typeof history[0]['vector']) => {
+    if (history.length < 3) return 'stable'
+    const recent = history.slice(-3)
+    const values = recent.map(h => h.vector[key])
+    const diff = values[2] - values[0]
+    if (diff > 5) return 'up'
+    if (diff < -5) return 'down'
+    return 'stable'
+  }
+
+  const trendIcon = (trend: string) => {
+    if (trend === 'up') return '↑'
+    if (trend === 'down') return '↓'
+    return '→'
+  }
+
+  const trendColor = (trend: string) => {
+    if (trend === 'up') return 'text-green-600 dark:text-green-400'
+    if (trend === 'down') return 'text-red-600 dark:text-red-400'
+    return 'text-gray-500 dark:text-gray-400'
   }
 
   return (
@@ -89,24 +116,35 @@ export function AestheticGrowthChart({ profile }: AestheticGrowthChartProps) {
         <h4 className="text-lg font-semibold text-gray-900 dark:text-white">
           审美成长曲线
         </h4>
-        <span className="text-xs text-gray-500 dark:text-gray-400">
-          {history.length} 次收藏
-        </span>
+        <div className="flex items-center gap-3">
+          <span className="text-xs text-gray-500 dark:text-gray-400">
+            {history.length} 次收藏
+          </span>
+          <button
+            onClick={() => setShowDetails(!showDetails)}
+            className="rounded-lg bg-white/20 px-3 py-1 text-xs font-medium text-gray-700 backdrop-blur-sm transition-colors hover:bg-white/30 dark:bg-white/10 dark:text-gray-300 dark:hover:bg-white/20"
+          >
+            {showDetails ? '收起详情' : '查看详情'}
+          </button>
+        </div>
       </div>
 
       <div className="overflow-x-auto">
         <svg width={width} height={height} className="min-w-[600px]">
-          {/* 定义渐变 */}
           <defs>
-            {dimensions.map((dim, i) => (
+            <linearGradient id="gradient-avg" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stopColor="#10b981" stopOpacity="0.3" />
+              <stop offset="100%" stopColor="#10b981" stopOpacity="0.05" />
+            </linearGradient>
+            {dimensions.map((dim) => (
               <linearGradient key={dim.key} id={`gradient-${dim.key}`} x1="0%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" stopColor={dim.color} stopOpacity="0.3" />
-                <stop offset="100%" stopColor={dim.color} stopOpacity="0.05" />
+                <stop offset="0%" stopColor={dim.color} stopOpacity="0.2" />
+                <stop offset="100%" stopColor={dim.color} stopOpacity="0.02" />
               </linearGradient>
             ))}
           </defs>
 
-          {/* 网格线 - 毛玻璃效果 */}
+          {/* 网格线 */}
           {[0, 25, 50, 75, 100].map(v => (
             <g key={v}>
               <line
@@ -146,64 +184,95 @@ export function AestheticGrowthChart({ profile }: AestheticGrowthChartProps) {
             )
           })}
 
-          {/* 面积填充（渐变） */}
-          {dimensions.map(dim => (
-            <path
-              key={`area-${dim.key}`}
-              d={generateAreaPath(dim.key)}
-              fill={`url(#gradient-${dim.key})`}
-              className="transition-all duration-500"
-            />
-          ))}
-
-          {/* 平滑曲线 */}
-          {dimensions.map(dim => (
-            <path
-              key={dim.key}
-              d={generateSmoothPath(dim.key)}
-              fill="none"
-              stroke={dim.color}
-              strokeWidth={2.5}
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="transition-all duration-500"
-              opacity={0.8}
-            />
-          ))}
-
-          {/* 数据点 */}
-          {dimensions.map(dim =>
-            history.map((h, i) => (
-              <circle
-                key={`${dim.key}-${i}`}
-                cx={xScale(i)}
-                cy={yScale(h.vector[dim.key])}
-                r={i === history.length - 1 ? 4 : 2}
-                fill={dim.color}
+          {/* 默认视图：平均值曲线 */}
+          {!showDetails && (
+            <>
+              <path
+                d={generateAreaPath(avgHistory, 'avg')}
+                fill="url(#gradient-avg)"
                 className="transition-all duration-500"
-                opacity={i === history.length - 1 ? 1 : 0.6}
               />
-            ))
+              <path
+                d={generateSmoothPath(avgHistory, 'avg')}
+                fill="none"
+                stroke="#10b981"
+                strokeWidth={3}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="transition-all duration-500"
+              />
+              {avgHistory.map((h, i) => (
+                <circle
+                  key={i}
+                  cx={xScale(i)}
+                  cy={yScale(h.vector.avg)}
+                  r={i === avgHistory.length - 1 ? 5 : 2}
+                  fill="#10b981"
+                  className="transition-all duration-500"
+                  opacity={i === avgHistory.length - 1 ? 1 : 0.6}
+                />
+              ))}
+            </>
           )}
+
+          {/* 详细视图：8个维度 */}
+          {showDetails && dimensions.map(dim => (
+            <g key={dim.key}>
+              <path
+                d={generateAreaPath(history, dim.key)}
+                fill={`url(#gradient-${dim.key})`}
+                className="transition-all duration-500"
+              />
+              <path
+                d={generateSmoothPath(history, dim.key)}
+                fill="none"
+                stroke={dim.color}
+                strokeWidth={2}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="transition-all duration-500"
+                opacity={0.7}
+              />
+            </g>
+          ))}
         </svg>
       </div>
 
-      {/* 图例 - 毛玻璃效果 */}
-      <div className="mt-4 flex flex-wrap gap-4 rounded-xl bg-white/20 p-3 backdrop-blur-sm dark:bg-white/5">
-        {dimensions.map(dim => (
-          <div key={dim.key} className="flex items-center gap-2">
+      {/* 维度指标卡片 */}
+      <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
+        {dimensions.map(dim => {
+          const trend = getTrend(dim.key)
+          const currentValue = Math.round(profile.vector[dim.key])
+          return (
             <div
-              className="h-3 w-3 rounded-full shadow-sm"
-              style={{ backgroundColor: dim.color }}
-            />
-            <span className="text-xs text-gray-600 dark:text-gray-400">
-              {dim.label}
-            </span>
-            <span className="text-xs font-semibold text-gray-900 dark:text-white">
-              {Math.round(profile.vector[dim.key])}
-            </span>
-          </div>
-        ))}
+              key={dim.key}
+              className="rounded-xl bg-white/20 p-3 backdrop-blur-sm dark:bg-white/5"
+            >
+              <div className="mb-1 flex items-center justify-between">
+                <span className="text-xs text-gray-600 dark:text-gray-400">
+                  {dim.label}
+                </span>
+                <span className={`text-xs font-bold ${trendColor(trend)}`}>
+                  {trendIcon(trend)}
+                </span>
+              </div>
+              <div className="flex items-baseline gap-1">
+                <span className="text-2xl font-bold text-gray-900 dark:text-white">
+                  {currentValue}
+                </span>
+              </div>
+              <div className="mt-1 h-1.5 overflow-hidden rounded-full bg-gray-200/50 dark:bg-gray-700/50">
+                <div
+                  className="h-full rounded-full transition-all duration-500"
+                  style={{ 
+                    width: `${currentValue}%`,
+                    backgroundColor: dim.color 
+                  }}
+                />
+              </div>
+            </div>
+          )
+        })}
       </div>
     </div>
   )
