@@ -2968,6 +2968,189 @@
     "mtime": 1785238838493.8098
   },
   {
+    "title": "黄昏外景：魔法时刻后的魔法时刻",
+    "slug": "prompt-2082193121862185213",
+    "model": "Common",
+    "category": "photography",
+    "tags": [
+      ""
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2082193121862185213.jpg",
+    "date": "2026-07-28",
+    "added": "2026-07-29",
+    "source": "https://x.com/i/status/2082193121862185213",
+    "sourceLink": "https://x.com/i/status/2082193121862185213",
+    "author": "Alexandra Aisling",
+    "authorLink": "",
+    "prompt": "[SUBJECT], dusk exterior, the sky still holding pale blue-violet above while the ground has already gone dark, the subject caught in that five-minute window when ambient sky and rising artificial light are equal, no harsh shadows because the light is coming from everywhere and nowhere, fine grain, color grade of indigo and warm amber, the magic hour after the magic hour.",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common"
+    },
+    "mtime": 1785292161213.951
+  },
+  {
+    "title": "VoxCat @VoxcatAI 以【角色/主题】为主体，创...",
+    "slug": "prompt-2082011409333072015",
+    "model": "Common",
+    "category": "portrait",
+    "tags": [
+      "水墨",
+      "东方美学",
+      "国风",
+      "抽象",
+      "人物"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2082011409333072015.jpg",
+    "date": "2026-07-28",
+    "added": "2026-07-29",
+    "source": "https://x.com/i/status/2082011409333072015",
+    "sourceLink": "https://x.com/i/status/2082011409333072015",
+    "author": "VoxCat",
+    "authorLink": "",
+    "prompt": "VoxCat\n@VoxcatAI\n以【角色/主题】为主体，创作一幅东方水墨艺术插画。\n主体由黑色墨迹自然形成，采用写意水墨表现方式，将【角色/主题】的核心特征融入墨色结构中。轮廓不完全清晰，通过湿墨晕染、干笔飞白、墨色渗透与随机笔触表现形态，像生命从宣纸中自然浮现。\n整体风格：\n中国写意水墨 × 日本墨绘 × 当代东方艺术插画。\n画面采用极简构图，大面积宣纸留白，黑白高对比，墨色由浓到淡自然过渡，局部出现墨点飞溅、毛笔扫痕、不规则墨迹边缘，保留手工绘画的不确定性与艺术感。\n强调：\n抽象意象化造型、东方禅意、安静神秘气质、艺术海报感、手工水墨质感、自然晕染纹理。\n画面加入 VOXCAT 品牌元素：\n左上角加入简洁现代图形 logo，由 stylized “V” 与猫元素结合构成，线条干净、具有识别度；\n右下角加入小型手写签名“voxCAT”，其中 vox 小写、CAT 大写，尺寸克制，与水墨留白自然融合；\n若画面包含服饰或道具，可在局部加入低调 VOXCAT 织标、压纹或暗纹细节。\n高清艺术插画，宣纸纹理，墨迹细节丰富，东方极简美学。\nVoxCat\n@VoxcatAI\nJan 4\n新中式水墨绘本，致敬80年代上美影风格。强调大巧若拙的毛笔触感与宣纸纹理，低饱和矿物色，极简留白构图。画面人物为主体视觉，比例3:4，[此处替换你的主体描述]。",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common"
+    },
+    "mtime": 1785292161215.4475
+  },
+  {
+    "title": "东方古典女性：淡蓝宋制长裙团扇写真",
+    "slug": "prompt-2082132791169606066",
+    "model": "Common",
+    "category": "portrait",
+    "tags": [
+      "杂志",
+      "东方美学",
+      "国风",
+      "写实",
+      "动漫"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2082132791169606066.jpg",
+    "date": "2026-07-28",
+    "added": "2026-07-29",
+    "source": "https://x.com/i/status/2082132791169606066",
+    "sourceLink": "https://x.com/i/status/2082132791169606066",
+    "author": "灰度笔记",
+    "authorLink": "",
+    "prompt": "3:4竖构图，超写实东方古典女性肖像摄影，电影级东方美学写真，高级Editorial艺术摄影风格，真实摄影质感，非插画，非动漫。",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common"
+    },
+    "mtime": 1785292161216.8955
+  },
+  {
+    "title": "draco @DracoVibeCoding ONE PIE...",
+    "slug": "prompt-2082118905829662756",
+    "model": "Common",
+    "category": "portrait",
+    "tags": [
+      "",
+      "摄影",
+      "人物"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2082118905829662756.jpg",
+    "date": "2026-07-28",
+    "added": "2026-07-29",
+    "source": "https://x.com/i/status/2082118905829662756",
+    "sourceLink": "https://x.com/i/status/2082118905829662756",
+    "author": "draco",
+    "authorLink": "",
+    "prompt": "draco\n@DracoVibeCoding\nONE PIECE girls 剪纸镂空窗棂style~\n---\n请使用下面的prompt生成8张独立的图片（不是拼接多张图片到一张图片里，而是8张独立图片）：\n比例：9:16\n主题：{女孩}发呆的仰望天空~\n风格：非遗剪纸纹样 + 镂空窗棂 + 多层纸雕浮雕 + 新中式国潮插画\n构图：莫兰迪色调的纯色色块作为骨架 \n镜头：full body view; lower angle view; side view;\n人物：{女孩} random adult female character from {ONE PIECE} ，东亚审美，韩系Kpop女神范儿，眼睛大而清透，水润唇彩，牛奶肌肤白皙；detailed skin texture with a few moles & clear detailed skin pores；高鼻梁，鹅蛋脸，尖下巴；身材纤细匀称，尤其腿苗条纤细笔直；细吊带+超短裙；\n负向约束：不要凸点；不要出现手指/脚趾缺失（或多余）等肢体瑕疵；",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common"
+    },
+    "mtime": 1785292161218.3113
+  },
+  {
+    "title": "东方冬日茶室：结霜窗旁青瓷盖碗",
+    "slug": "prompt-2082130207637713348",
+    "model": "Common",
+    "category": "portrait",
+    "tags": [
+      "杂志",
+      "东方美学",
+      "国风",
+      "写实",
+      "摄影"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2082130207637713348.jpg",
+    "date": "2026-07-28",
+    "added": "2026-07-29",
+    "source": "https://x.com/i/status/2082130207637713348",
+    "sourceLink": "https://x.com/i/status/2082130207637713348",
+    "author": "尘林 Spark",
+    "authorLink": "",
+    "prompt": "生成一张独立的 4:5 竖版东方女性生活方式 editorial 摄影海报。人物为明确成年的 20–30 岁虚构东亚女性，气质端庄安静，真实皮肤，成熟自然妆容，低盘发配少量珍珠与淡玉饰件。深冬室内，人物坐在结霜的木格窗旁，窗外只有朦胧白雪与灰蓝庭院轮廓；前景一只小型陶炉、一只青瓷盖碗和向上缓慢弯曲的细薄茶汽形成季节视觉锚点，不出现梅花。她穿象牙白夹棉织锦斗篷，内搭霜玉色交领长衣，内衬有极淡的灰紫色，刺绣精细克制，厚度与冬季一致。人物大半身偏右构图，一只可见的手自然环握青瓷杯身，五指关系清楚，另一只手完全藏在斗篷内。50–85mm 人像镜头，平视，浅景深；窗外冷灰蓝柔光塑造脸部轮廓，陶炉提供很轻的暖色反光，冷暖层次高级克制，霜窗纹理与茶汽清晰，左侧保留 35% 安静留白，东方冬日生活方式杂志摄影。无文字、无 logo、无水印；避免仙气法术、夸张大雪进入室内、塑料皮肤、过度磨皮、廉价皮草、现代暖气与电器、蒸汽遮挡脸、杯子变形、额外手臂、多手多指、畸形手指。\n尘林 Spark\n@chenlinspark\nJul 27\n这张很有感觉 ~",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common"
+    },
+    "mtime": 1785292161219.7378
+  },
+  {
+    "title": "GPT Image 人像：花园黄昏四连拍",
+    "slug": "prompt-2082147503466844335",
+    "model": "Common",
+    "category": "portrait",
+    "tags": [
+      "人像",
+      "电影感",
+      "杂志",
+      "摄影",
+      "写实"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2082147503466844335.jpg",
+    "date": "2026-07-28",
+    "added": "2026-07-29",
+    "source": "https://x.com/i/status/2082147503466844335",
+    "sourceLink": "https://x.com/i/status/2082147503466844335",
+    "author": "Taaruk",
+    "authorLink": "",
+    "prompt": "Ultra-realistic cinematic portrait of a young woman relaxing outdoors in a lush garden during golden hour, eyes gently closed with a peaceful smile, short slightly messy black bob haircut, thin round metal glasses, oversized olive-green linen shirt layered over a ribbed beige tank top, reclining comfortably in a wooden lounge chair, soft breeze moving her hair, warm golden sunlight illuminating her face, vibrant blue sky with fluffy white clouds, leafy branches framing the scene, creamy bokeh, natural skin texture, Kodak Portra 400 film look, subtle film grain, soft pastel greens and blues, Leica M11, Summilux 50mm f/1.4, shallow depth of field, editorial lifestyle photography, serene summer atmosphere, timeless nostalgic aesthetic, HDR, 8K.",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common"
+    },
+    "mtime": 1785292161221.1643
+  },
+  {
+    "title": "赛博朋克生物机械：银发冰蓝瞳女性",
+    "slug": "prompt-2082135947085529592",
+    "model": "Common",
+    "category": "portrait",
+    "tags": [
+      "人像",
+      "电影感",
+      "时尚",
+      "摄影",
+      "赛博朋克"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2082135947085529592.jpg",
+    "date": "2026-07-28",
+    "added": "2026-07-29",
+    "source": "https://x.com/i/status/2082135947085529592",
+    "sourceLink": "https://x.com/i/status/2082135947085529592",
+    "author": "Zidan 子丹",
+    "authorLink": "",
+    "prompt": "Masterpiece, ultra-realistic cinematic cyberpunk portrait, futuristic biomechanical female, hyper-detailed sci-fi fashion photography, 8K, IMAX quality, photorealistic industrial design.",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common"
+    },
+    "mtime": 1785292161222.5554
+  },
+  {
     "title": "黏土渲染转暗黑奇幻",
     "slug": "clay-render-to-dark-fantasy",
     "model": "GPT Image 2",
@@ -31256,5 +31439,411 @@
     "negativePrompt": "",
     "parameters": {},
     "mtime": 1785234457850.3184
+  },
+  {
+    "title": "赛博动漫女性：青霓虹边缘光",
+    "slug": "prompt-2082208586382430277",
+    "model": "Midjourney",
+    "category": "anime",
+    "tags": [
+      "动漫",
+      "赛博朋克",
+      "人像",
+      "电影感",
+      "科幻"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/prompt-2082208586382430277.jpg",
+    "date": "2026-07-28",
+    "added": "2026-07-29T00:00:00+08:00",
+    "source": "https://x.com/i/status/2082208586382430277",
+    "sourceLink": "https://x.com/i/status/2082208586382430277",
+    "author": "Kōda",
+    "authorLink": "https://x.com/aimikoda",
+    "prompt": "full body view of a mysterious anime woman, long flowing white hair, futuristic shirt with glowing cyan neon trim, black bikini underneath, emotionless expression, standing perfectly centered, minimal composition, dark navy background, electric blue glow, intense cyan rim lighting, luminous hair, cinematic cyber fashion, soft bloom, high contrast, clean line art, premium anime illustration, moody atmosphere --ar 9:16 --sref 2688930422 --profile 8mk73g6 --stylize 1000 --hd",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Midjourney v8.2",
+      "Aspect Ratio": "9:16",
+      "Style Reference": "2688930422",
+      "Stylize": "1000",
+      "HD": "enabled"
+    },
+    "mtime": 1785292161223.901
+  },
+  {
+    "title": "产品广告剖面图：Reality Autopsy",
+    "slug": "prompt-2082038968615395329",
+    "model": "GPT Image 2",
+    "category": "product",
+    "tags": [
+      "产品",
+      "广告",
+      "商业",
+      "GPT-Image2",
+      "写实"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/prompt-2082038968615395329.jpg",
+    "date": "2026-07-28",
+    "added": "2026-07-29T00:00:00+08:00",
+    "source": "https://x.com/i/status/2082038968615395329",
+    "sourceLink": "https://x.com/i/status/2082038968615395329",
+    "author": "AZIZ | AI 🇸🇦",
+    "authorLink": "https://x.com/aziz4ai",
+    "prompt": "Use the uploaded product image as the single source of truth and create one premium campaign-ready advertisement for this product only.\n\nSilently analyze the product's category, function, audience, emotional promise, brand personality, silhouette, materials, colors, packaging, typography, logo behavior, ingredients or construction, and most ownable selling point.\n\nCORE CONCEPT:\nKeep the real product completely whole, accurate, and untouched. Slice open the environment around or beneath it in one precise, impossible cross-section, revealing hidden layers that visually explain what the product does, how it feels, what it contains, or why it matters.\n\nBuild every exposed layer from the product's real DNA. Layers may represent materials, ingredients, technology, craftsmanship, performance, energy, emotion, process, or sensory experience. Avoid random decoration. Every visible layer must communicate a real product benefit or brand promise.\n\nThe cross-section must feel dimensional and physically believable, with clear depth, material thickness, realistic transitions, shadows, fractures, pressure, reflections, and tactile micro-details. The product remains the undisputed hero and must never be dissected, damaged, buried, or visually overwhelmed.\n\nPRODUCT DNA LOCK:\nPreserve the product exactly: shape, proportions, structure, packaging, logo, label, typography, colors, materials, textures, finishes, reflections, and every visible detail. Do not redesign, recolor, relabel, distort, simplify, duplicate, open, cut, or invent product features.\n\nCREATIVE LOOP:\nSilently generate five different cross-section concepts grounded in the uploaded product. Score them for visual hook, originality, brand fit, instant readability, realism, product focus, and commercial strength. Reject anything generic, cluttered, confusing, or below 9/10. Produce only the strongest final concept.\n\nBRAND COMMUNICATION:\nIntegrate the real brand logo naturally. Create one original headline or slogan of two words maximum, based specifically on the selected product and revealed layers. Match the brand's authentic language, typography, scale, placement, and visual tone.\n\nCOMPOSITION:\nOne hero product, one dominant environmental cross-section, refined negative space, bold editorial framing, cinematic commercial lighting, premium material accuracy, realistic contact shadows, controlled debris, sophisticated depth, and clean visual hierarchy.\n\n16:9. One standalone image. No grid, no collage, no split screen, no miniature world, no biological anatomy, no infographic icons, no arrows, no floating labels, no repeated products, no unrelated props, no mockup presentation, and no random text.",
+    "negativePrompt": "No grid, no collage, no split screen, no miniature world, no biological anatomy, no infographic icons, no arrows, no floating labels, no repeated products, no unrelated props, no mockup presentation, and no random text.",
+    "parameters": {
+      "Model": "GPT Image 2",
+      "Aspect Ratio": "16:9"
+    },
+    "mtime": 1785292161225.2473
+  },
+  {
+    "title": "GPT Image 2 写实技巧：3D CG 转写实",
+    "slug": "prompt-2058455967961067966",
+    "model": "GPT-Image2",
+    "category": "portrait",
+    "tags": [
+      "东方美学",
+      "摄影",
+      "人像",
+      "portrait",
+      "写实"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/prompt-2058455967961067966.jpg",
+    "date": "2026-05-24",
+    "added": "2026-07-29T11:49:04+08:00",
+    "source": "https://x.com/i/status/2058455967961067966",
+    "sourceLink": "https://x.com/i/status/2058455967961067966",
+    "author": "李岳",
+    "authorLink": "",
+    "prompt": "兄弟们，分享一个GPT Image 2生图小技巧：\n昨天这个写实的图片是用3D CG转换的。\nGPT Image 2直接生成写实风，很容易失败，但是非写实风格放的比较宽。\n所以之前发布的很多都是接近真实的3D CG风格，然后再转成写实风。\n提示词：\n生成一张 9:16 竖版二次元风格的 3D CG 高精度角色插画。 \n画面中是一位成年东方幻想系女性角色，站在明亮的户外泳池中，身体半浸在清澈蓝色池水里，水位约到大腿上方。人物位于画面中央，构图为半身到大腿的中近景，双手自然握住左右两侧的不锈钢泳池扶梯，身体轻微侧转，姿态自然、安静、优雅，整体气质清冷、柔和、梦幻。\n角色拥有精致柔和的东方幻想系五官，成年女性气质，脸型自然可爱，眼神微微慵懒、安静、温柔，嘴唇轻轻张开，表情克制。皮肤白皙通透，带有真实水珠、湿润高光和柔和次表面散射质感。\n发型为高饱和蓝色长发，发丝蓬松柔软，带有自然凌乱感和湿润光泽，前额有轻盈刘海，部分发丝自然垂落在脸侧和肩部。\n服装为简洁高级的白色比基尼泳装，材质带有轻微珠光和湿润反光，版型干净得体，重点呈现夏日泳池氛围和高级角色质感。泳装细节自然精致，可有细绳、金属小扣、侧边绑带和小流苏装饰，但整体保持简洁高级。 \n背景为明亮的户外泳池场景，蓝色池水清澈通透，水面有真实波纹、阳光反射、闪烁高光和柔和散景。远处有泳池边缘、白色躺椅、玻璃围栏、树木和晴朗天空。整体光线为夏日午后自然阳光，画面明亮、清爽、通透，带有轻微逆光和柔和镜头光晕。\n整体风格为高级二次元 3D CG 角色渲染，细节精致，材质真实，皮肤柔和，头发高光丰富，泳池水面真实，画面干净明亮，梦幻但不杂乱，商业级角色插画质感，高分辨率，精致渲染。\n李岳\nGPT Image 2生成写实风图片：蓝夏微光。\n提示词：\n生成一张 9:16 竖版真实摄影风格人像照片。\n画面中是一位20岁以上成年东方女性，站在明亮的户外泳池中，身体半浸在清澈蓝色池水里，水位约到大腿上方。人物位于画面中央，构图为半身到大腿的中近景，双手自然握住左右两侧的不锈钢泳池扶梯，身体轻微侧转，姿态自然放松，像真实泳池度假写真拍摄。\n整体是一张高质量真实相机拍摄的人像照片。使用全画幅相机质感，85mm人像镜头，浅景深，真实自然光，RAW摄影质感，轻微镜头畸变，真实皮肤纹理，真实湿发质感。\n人物拥有自然精致的东方五官，脸型柔和，五官不要过度动漫化，眼睛大小真实自然，表情安静温柔，嘴唇微微张开。皮肤白皙但保留真实细节，包括轻微毛孔、自然肤色层次、细小水珠、真实湿润高光，不要过度磨皮，不要塑料皮肤，不要CG皮肤。\n头发为蓝色染发，但保持真实染发质感：发根略深，发丝有深浅变化，湿发自然结缕，部分发丝贴在脸侧、肩颈和锁骨附近，头发不要像二次元发片，不要过度发光。\n服装为简洁高级的白色比基尼泳装，材质真实，湿润后略有自然反光和贴合感，但保持得体。细节可有细绳、金属小扣、侧边绑带和小流苏装饰，整体干净高级。\n背景为真实户外泳池场景，蓝色池水清澈，有自然波纹、真实阳光反射、泳池边缘、白色躺椅、玻璃围栏、树木和晴朗天空。背景略微虚化，但保留真实摄影空间感。\n光线为夏日午后自然阳光，画面明亮清爽，但不过曝。减少梦幻光晕，减少夸张闪光，减少CG渲染感。整体色彩鲜艳但真实，蓝色池水清透，皮肤自然。\n摄影风格：真实高清写真，真实相机拍摄，商业泳池人像摄影，RAW photo, photorealistic, natural skin texture, realistic wet hair, realistic water reflections, high resolution, clean composition.",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "GPT-Image2"
+    },
+    "mtime": 1785299477793.7366
+  },
+  {
+    "title": "电影人像海报：故事感比干净更重要",
+    "slug": "prompt-2080225665706766485",
+    "model": "Common",
+    "category": "portrait",
+    "tags": [
+      "电影感",
+      "时尚",
+      "人像",
+      "portrait",
+      "摄影"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2080225665706766485.jpg",
+    "date": "2026-07-23",
+    "added": "2026-07-29T11:49:04+08:00",
+    "source": "https://x.com/i/status/2080225665706766485",
+    "sourceLink": "https://x.com/i/status/2080225665706766485",
+    "author": "Derek Wen｜德里克文",
+    "authorLink": "",
+    "prompt": "很多人做电影人像海报，画面太“干净”了。\n主体清、背景清、文字清，结果就是没有故事。\n电影感真正迷人的地方，是这种关系：\n你看得见主角，却看不清前面掠过的是谁。\n今天分享这个方向：前景虚焦叙事海报。清晰人物站中景，模糊身影从镜头前掠过。\n瞬间从“单人肖像”变成“有情绪的场景”。\n🎯 核心提示词：\n生成一张电影感人物海报。 \n主题：【填写标题】 \n主体：【男性 / 女性 / 亚洲人物 / 西方人物 / 时尚人物】 \n配色：【暮紫色 / 深蓝灰 / 冷灰白 + 暖橙光】 \n比例：【9:16】 \n画面核心机制： 一个主体人物位于中景，清晰对焦。 同时有另一个人物或一个模糊身影从镜头前方很近的位置掠过， 形成大面积柔和前景虚焦。 整体使用傍晚光线、薄雾感、轻微颗粒和电影级空间深度。 前景模糊人物不需要清晰五官，只作为情绪和叙事张力来源。 中景主体保持清晰、克制、有情绪。 画面有明显前景、中景、背景层次。 排版采用高级编辑海报方式， 加入少量精致标题和2—4组短句。 要求： 安静、克制、略带悬念， 像独立电影海报、时尚杂志封面、情绪叙事海报。 \n避免普通街拍感、廉价虚化和过度戏剧化表演。\n核心逻辑只有一句话：\n一个清晰人物 + 一个模糊经过者。前景虚焦不是干扰，是故事入口。\n有人路过、有人靠近、有关系发生、有时间在流动。中景主体要安静：站着、回头、侧身、凝视、等待。\n越克制，越有电影感。光线决定气质：暮色、冷灰白、深蓝夜色、暖橙街灯。\n延伸玩法：情绪海报、时尚封面、品牌氛围、双人关系（一清一虚更戏剧）。\n参数重点：\n前景模糊要“大”——整个人影大面积掠过，不是小配件。\n主体稳在中景，颜色克制（暮紫灰蓝、冷灰暖橙、深蓝银灰）。\n避坑：模糊太弱像脏污、主体也糊、变成街拍、前景抢戏、色彩过艳。试试这个提示词，让你的海报开始讲故事。\n一句话总结：\n不是虚焦本身，而是“有人经过时，主角还站在那里”的时间感。",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common"
+    },
+    "mtime": 1785299477793.9048
+  },
+  {
+    "title": " Ember Kiss 艺术人像：火焰之吻",
+    "slug": "prompt-2081996076048134198",
+    "model": "Common",
+    "category": "portrait",
+    "tags": [
+      "AI绘图",
+      "摄影",
+      "人像",
+      "portrait",
+      "人物"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2081996076048134198.jpg",
+    "date": "2026-07-28",
+    "added": "2026-07-29T11:49:04+08:00",
+    "source": "https://x.com/i/status/2081996076048134198",
+    "sourceLink": "https://x.com/i/status/2081996076048134198",
+    "author": "Oblivion",
+    "authorLink": "",
+    "prompt": "Photoshoot 05 – “Ember Kiss”\nModel: Voruun\nConcept: Artistic close-up celebrating the power of the mouth as both weapon and invitation\nLocation / Set: Pure black void studio, zero environmental props\nLighting: Single dramatic warm side-light with soft fall-off, subtle rim highlight on the hair\nFocus: Extreme beauty portrait emphasizing  lip art\nLip design: High-gloss molten copper-to-crimson metallic lipstick that appears to shift like liquid metal and living flame, with micro-fine gold leaf flecks catching the light along the cupid’s bow and lower lip.\nHair & presentation: Her natural fiery red-orange hair loosely swept across one side of the face, a few strands kissing the cheek.\nExpression: Direct, unapologetic, quietly commanding\nL4STD4ZE\nChallenge:  Lips Art 💋\nConnect with other artists.\n✨️ Ignite your imagination with stunning, surreal, or artistic #LipsArt. \nEveryone is welcome!",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common"
+    },
+    "mtime": 1785299477793.5635
+  },
+  {
+    "title": "晨光中的东方少女：梦幻电影感人像",
+    "slug": "prompt-2082111369261064297",
+    "model": "GPT-Image2",
+    "category": "portrait",
+    "tags": [
+      "摄影",
+      "人像",
+      "portrait",
+      "电影感",
+      "AI绘图"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/prompt-2082111369261064297.jpg",
+    "date": "2026-07-28",
+    "added": "2026-07-29T11:49:04+08:00",
+    "source": "https://x.com/i/status/2082111369261064297",
+    "sourceLink": "https://x.com/i/status/2082111369261064297",
+    "author": "禁止对AI动情（已失败）",
+    "authorLink": "",
+    "prompt": "☀️☀️\nprompt-image2:\nmasterpiece, best quality, dreamy cinematic portrait photography, soft natural light, poetic floral atmosphere, shallow depth of field, delicate film softness\nA clearly adult woman in a close-up half-body portrait, leaning beside a pale sunlit wall or doorway. One arm rests loosely above her head, head slightly tilted, lips gently parted, with a soft, dreamy, languid expression.\nShe wears a delicate ivory French-style camisole crop top with thin straps, subtle lace trim, light ruching, and soft flowing fabric.\nBlurred coral-pink ranunculus, white cosmos flowers, green leaves, and stems frame the foreground, with several flowers very close to the lens.\nStrong midday sunlight filters naturally through flowers and foliage, casting prominent irregular dappled shadows across her face, neck, shoulders, raised arm, and clothing. Warm overexposed highlights blend with cool olive-green shadows, creating an accidental, organic garden-light effect.\nMinimal blurred background of pale walls and dark green foliage. Dreamy, hazy, romantic, slightly nostalgic summer mood, muted contrast, faint film grain, gentle greenish undertone, soft ivory, dusty pink, coral, faded red, and muted green palette.\nAvoid studio lighting, HDR, commercial fashion styling, heavy makeup, stiff poses, flat lighting, oversaturated colors, plastic skin, and cluttered backgrounds.",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "GPT-Image2"
+    },
+    "mtime": 1785299477792.817
+  },
+  {
+    "title": "亚洲城市微缩立体书：四城纸艺场景",
+    "slug": "prompt-2082221056652443680",
+    "model": "Common",
+    "category": "portrait",
+    "tags": [
+      "AI绘图",
+      "3D渲染",
+      "城市",
+      "portrait",
+      "摄影"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2082221056652443680.jpg",
+    "date": "2026-07-28",
+    "added": "2026-07-29T11:49:04+08:00",
+    "source": "https://x.com/i/status/2082221056652443680",
+    "sourceLink": "https://x.com/i/status/2082221056652443680",
+    "author": "Gadgetify",
+    "authorLink": "",
+    "prompt": "2x2 grid, 16:9, do this for 4 important Asian cities: Generate a photoreal miniature pop-up book diorama for [SUBJECT].Rules:- infer SUBJECT_DNA automatically- use BASE_DOCUMENT as the physical foundation- the subject must rise from the page as a paper-engineered 3D world- include inferred landmarks, architecture, terrain, infrastructure, cultural motifs, and small scale cues- show folded platforms, stairs, slots, hinges, support struts, and hidden paper mechanics- integrate the subject name or symbolic typography as raised paper letters or structural forms- the base page should contain an inferred map, diagram, blueprint, or printed context relevant to SUBJECT- everything must feel crafted from paper, cardstock, ink, miniature model materials, and precise pop-up engineering- no hard-coded city, landmark, tower, temple, map, color, or text unless supplied",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common"
+    },
+    "mtime": 1785299477792.9475
+  },
+  {
+    "title": "GPT Image 2 贴纸表：图片转贴纸",
+    "slug": "prompt-2081980605747880354",
+    "model": "GPT-Image2",
+    "category": "style",
+    "tags": [
+      "style",
+      "贴纸",
+      "AI绘图",
+      "提示词",
+      "摄影"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2081980605747880354.jpg",
+    "date": "2026-07-28",
+    "added": "2026-07-29T11:49:04+08:00",
+    "source": "https://x.com/i/status/2081980605747880354",
+    "sourceLink": "https://x.com/i/status/2081980605747880354",
+    "author": "Oogie",
+    "authorLink": "",
+    "prompt": "Turn your  image into a premium sticker sheet using GPT image 2 \nPrompt : Turn the uploaded photo into a premium sticker sheet featuring the same person in 6 different moods and daily-life situations. Style: Cute 2D Pixar-inspired cartoon illustration, clean vector-like artwork, expressive face, adorable proportions, soft shading, vibrant colors, highly detailed. Layout: 6 separate stickers arranged vertically in a 9:16 canvas. Solid black background.\nEach sticker has a thick white die-cut sticker border. Each sticker must be clearly separated from the others — no touching, no overlapping, leave visible black space between every sticker. Keep the character recognizable from the uploaded photo (hair, facial features, skin tone, outfit style). Stickers: Work Mode – focused at a laptop, headphones on. Happy Meal – enjoying favorite food with a joyful expression. Overthinking – resting head on hand with a thinking cloud.\nNeed Coffee – sleepy and low-energy holding a coffee cup. Main Character Energy – confident pose with sparkle effects. Me Time – cozy hoodie, warm drink, relaxed expression. Add cute doodles around each sticker such as hearts, sparkles, stars, music notes, clouds, lightning bolts, and emojis. Include the caption text directly attached to (touching) the bottom of each sticker's white border — as if the text label is part of the sticker itself, seamlessly connected to the white die-cut edge.\nCaptions: \"Work Mode\", \"Happy Meal\", \"Overthinking\", \"Need Coffee\", \"Main Character Energy\", \"Me Time\". Stylish handwritten font, white or pastel color. Professional sticker-pack design, social media sticker set, clean composition, high contrast, ultra cute, trendy aesthetic, crisp outlines, premium quality, black background, white sticker borders, 9:16 aspect ratio.\nEach sticker has a thick white die-cut sticker border. Each sticker must be clearly separated from the others — no touching, no overlapping, leave visible black space between every sticker. Keep the character recognizable from the uploaded photo (hair, facial features, skin tone, outfit style). Stickers: Work Mode – focused at a laptop, headphones on. Happy Meal – enjoying favorite food with a joyful expression. Overthinking – resting head on hand with a thinking cloud.\nNeed Coffee – sleepy and low-energy holding a coffee cup. Main Character Energy – confident pose with sparkle effects. Me Time – cozy hoodie, warm drink, relaxed expression. Add cute doodles around each sticker such as hearts, sparkles, stars, music notes, clouds, lightning bolts, and emojis. Include the caption text directly attached to (touching) the bottom of each sticker's white border — as if the text label is part of the sticker itself, seamlessly connected to the white die-cut edge.\nCaptions: \"Work Mode\", \"Happy Meal\", \"Overthinking\", \"Need Coffee\", \"Main Character Energy\", \"Me Time\". Stylish handwritten font, white or pastel color. Professional sticker-pack design, social media sticker set, clean composition, high contrast, ultra cute, trendy aesthetic, crisp outlines, premium quality, black background, white sticker borders, 9:16 aspect ratio.",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "GPT-Image2"
+    },
+    "mtime": 1785299477794.107
+  },
+  {
+    "title": "埃及神话矩阵：金色神祇觉醒",
+    "slug": "prompt-2082072074492027038",
+    "model": "Common",
+    "category": "style",
+    "tags": [
+      "style"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2082072074492027038.jpg",
+    "date": "2026-07-28",
+    "added": "2026-07-29T11:49:04+08:00",
+    "source": "https://x.com/i/status/2082072074492027038",
+    "sourceLink": "https://x.com/i/status/2082072074492027038",
+    "author": "Skipper VanderWall",
+    "authorLink": "",
+    "prompt": "TIME FOR VISIONS TO UNFOLD. 🎬\nEvery artwork reveals a story that could only be told through the eyes of its creator.\nToday's featured creations celebrate the beauty of unique perspectives brought to life.",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common"
+    },
+    "mtime": 1785299477792.4958
+  },
+  {
+    "title": "城市背景生成器：摄影合成神器",
+    "slug": "prompt-2082083838604517870",
+    "model": "Common",
+    "category": "style",
+    "tags": [
+      "摄影",
+      "电影感",
+      "写实",
+      "style",
+      "AI绘图"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/prompt-2082083838604517870.jpg",
+    "date": "2026-07-28",
+    "added": "2026-07-29T11:49:04+08:00",
+    "source": "https://x.com/i/status/2082083838604517870",
+    "sourceLink": "https://x.com/i/status/2082083838604517870",
+    "author": "محمد المناع | Mohammed Al-Manna",
+    "authorLink": "",
+    "prompt": "ماتفهم بالتصوير او تبي خلفيات لمدن بجودة عالية وتصوير احترافي ؟\nكل الي عليك تكتب اسم المدينة في البرومبت وهو بيخلي طيارة الدرون تطير للسماء وتصور لك المدينة الي تبيها بثواني وبجودة جدا عالية وتوزيع اضاءة خرافي . \nالبرومبت ⬇️\nCreate an ultra-photorealistic, world-class aerial drone photograph of **{زيلامسي}**, captured as if by an award-winning aerial photographer using a professional cinema drone. \nPRIMARY OBJECTIVE\nProduce a breathtaking cityscape that is indistinguishable from a real high-end drone photograph, suitable as a premium desktop wallpaper.\nCITY\n{CITY_NAME}\nOUTPUT FORMAT\nDesktop Wallpaper (Landscape 16:9)\nNative widescreen composition optimized for desktop use.\nLeave clean negative space where appropriate for desktop icons.\nDo not crop from another aspect ratio.\nPHOTOGRAPHY STYLE\nReal aerial drone photography only.\nAbsolutely NO CGI, digital art, matte painting, illustration, fantasy, or AI-looking aesthetics.\nCAMERA\n• DJI Inspire 3\n• Zenmuse X9 Full Frame Camera\n• 50mm equivalent lens\n• 8K RAW\n• HDR\n• Ultra-high dynamic range\n• Razor-sharp optical detail\n• Natural lens rendering\n• Professional aerial photography\nCOMPOSITION\nCapture the city from an extraordinary cinematic drone perspective that immediately feels premium and authentic.\nThe AI should intelligently choose the most visually striking viewpoint according to the city's geography and architecture.\nPossible compositions include:\n• perfectly balanced skyline\n• rivers flowing through the city\n• coastal waterfront\n• dramatic mountain backdrop\n• illuminated highways creating leading lines\n• bridges\n• modern skyscrapers\n• historic districts\n• urban symmetry\n• layered depth\n• beautiful foreground, midground, and background separation\n• elegant negative space\n• natural visual flow\nLIGHTING\nUse physically accurate cinematic lighting.\nAutomatically select whichever condition best suits the city:\n• sunrise\n• golden hour\n• sunset\n• blue hour\n• early night with city lights\n• post-rain reflections\n• soft volumetric sunlight\n• realistic cloud shadows\n• atmospheric haze\n• subtle god rays\nCOLOR GRADING\nLuxury cinematic color grading inspired by:\n• National Geographic\n• Apple Wallpapers\n• Sony Alpha Gallery\n• DJI MasterShots\nNatural colors only.\nRich contrast.\nNo oversaturation.\nNo unrealistic teal/orange grading.\nVISUAL REALISM\nEvery element must look genuinely photographed.\nInclude realistic:\n• atmospheric perspective\n• rooftop details\n• roads\n• traffic\n• parks\n• rivers\n• coastline\n• mountains\n• glass reflections\n• long-distance haze\n• natural shadows\n• physically accurate lighting\n• weather consistency\nDETAIL LEVEL\nExtreme realism throughout the frame.\nBuildings must display authentic architectural detail.\nRoad networks should appear naturally complex.\nWater should contain realistic reflections and subtle ripples.\nTrees and vegetation should appear naturally distributed.\nQUALITY\nMuseum-quality realism.\nUltra-photorealistic.\nAward-winning aerial drone photography.\nTrue-to-life lighting.\nProfessional travel photography.\nCinematic atmosphere.\n8K HDR.\nExtremely detailed.\nNatural perspective.\nNo text.\nNo logos.\nNo watermark.\nNo people looking at the camera.\nNo visual artifacts.",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common"
+    },
+    "mtime": 1785299477793.2507
+  },
+  {
+    "title": "地中海电影感：阳光海岸人像",
+    "slug": "prompt-2082183396365877442",
+    "model": "Common",
+    "category": "style",
+    "tags": [
+      "写实",
+      "style",
+      "AI绘图",
+      "电影感",
+      "摄影"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2082183396365877442.jpg",
+    "date": "2026-07-28",
+    "added": "2026-07-29T11:49:04+08:00",
+    "source": "https://x.com/i/status/2082183396365877442",
+    "sourceLink": "https://x.com/i/status/2082183396365877442",
+    "author": "MayorkingAI",
+    "authorLink": "",
+    "prompt": "Cinematic [shot type] of [main character or characters] [specific action] in [Mediterranean location] during a warm summer [time of day], [natural body language and facial expression], wearing authentic casual 1990s summer clothing, sun-kissed skin, slightly windswept hair, warm Mediterranean sunlight, sparkling blue sea, soft coastal breeze, natural candid moment, realistic environment, nostalgic 1990s summer movie aesthetic, intimate coming-of-age atmosphere, warm slightly faded colors, subtle fine 35mm film grain, refined analog texture, photorealistic film still --profile xbwxyy8 --ar 16:9",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common"
+    },
+    "mtime": 1785299477792.645
+  },
+  {
+    "title": "欧洲古堡纸雕：哥特式建筑风格",
+    "slug": "prompt-2082289107217383559",
+    "model": "Common",
+    "category": "style",
+    "tags": [
+      "style",
+      "AI绘图",
+      "剪纸",
+      "建筑"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2082289107217383559.jpg",
+    "date": "2026-07-29",
+    "added": "2026-07-29T11:49:04+08:00",
+    "source": "https://x.com/i/status/2082289107217383559",
+    "sourceLink": "https://x.com/i/status/2082289107217383559",
+    "author": "九尾狐-FoxFairy🦊",
+    "authorLink": "",
+    "prompt": "我以中世纪古堡视频和之前做的纸雕艺术品为灵感，做了一版具有欧洲建筑风格的通用提示词。这个分别是：哥特式城堡，古希腊神庙，巴洛克宫殿，北欧古堡。这是欧洲建筑风格提示词，在评论区👇，可以替换欧洲建筑主体，建筑类型，历史时期，代表性建筑细节，主花卉和主色调等。如果大家喜欢，我可以多做一些这样的艺术品设计的提示词。\n九尾狐-FoxFairy🦊\n月亮开始变红了，马儿快一点，再快一点，快要赶不上吸血鬼家族的婚礼了。。。\n我做了一个哥特式吸血鬼风格的视频。首次使用Ling-3.0-flash写视频脚本 + 可灵做视频的配合方式。感觉还可以，优化了好多轮，终于把视频做了出来。 \n一辆马车正急促地穿行在崎岖蜿蜒的山路上，车轮颠簸，夜风呼啸，远处的月亮也在缓缓染成猩红的血月。车上的人显然心急如焚，只为赶上那场神秘又盛大的吸血鬼家族婚礼。整个画面氛围感拉满，紧张、诡谲又充满故事性。\n00:24",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common"
+    },
+    "mtime": 1785299477793.3916
+  },
+  {
+    "title": "红颜祸水·妲己：狐魅众生手机抓拍",
+    "slug": "prompt-2081550367939305848",
+    "model": "Common",
+    "category": "portrait",
+    "tags": [
+      "古风",
+      "人像",
+      "手机摄影",
+      "电影感",
+      "写实"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2081550367939305848.jpg",
+    "date": "2026-07-27",
+    "added": "2026-07-29T15:30:00+08:00",
+    "source": "https://x.com/i/status/2081550367939305848",
+    "sourceLink": "https://x.com/i/status/2081550367939305848",
+    "author": "DeepBlue深藍",
+    "authorLink": "",
+    "prompt": "【红颜祸水 · 妲己｜狐魅众生】\n\n真实手机抓拍摄影，iPhone 16 Pro，50mm 主摄镜头，9:16 竖构图，Apple Smart HDR，自然曝光，自动白平衡，Live Photo 抓拍瞬间，轻微手持晃动，真实胶片颗粒，电影纪实摄影，仿佛宴席中的宾客举起手机偷偷记录下这一瞬间。\n\n商朝鹿台夜宴，数百盏宫灯映照着青铜酒器与丝竹歌舞，灯火璀璨，人群熙攘，空气中弥漫着酒香与檀木香，整座宫殿金红交织，充满盛世与危机并存的氛围。\n\n年轻成年东亚女性，妲己，约22至26岁，绝世容颜，肤色冷白细腻，真实皮肤纹理，狭长凤眼，眼尾自然微微上扬，眼神灵动却难以捉摸，双唇自然嫣红，身材丰盈性感但真实，上围饱满约H罩杯，胸型自然有承托，腰身纤细，腰臀比例协调，腿部修长匀称。身穿深酒红织锦商代王妃礼服，朱红轻纱披帛轻覆肩头，月白内衬衬托肤色，赤金狐纹暗绣随着灯火若隐若现，赤金流苏步摇随着步伐轻轻摆动。\n\n环境人像构图，她缓缓穿过宴席，没有刻意回头，也没有刻意展现任何姿态，只是在经过的一瞬间轻轻抬起眼眸，与镜头短暂对视。她神情平静，嘴角只有一丝几乎无法察觉的浅笑，却让周围宾客、侍女、大臣都不自觉停下动作，有人举杯停在半空，有人回头凝望，有人低声交谈，仿佛整个宴席的目光都自然汇聚到她身上。宫灯映照下，她礼服上的狐纹短暂浮现，又随着光线变化重新隐没，所有魅力都来自她的神情、眼神与气场，而不是夸张的妖异特效。\n\n真实电影剧照质感，手机摄影风格，人物自然，光影真实，环境细节丰富，没有摆拍，没有商业摄影棚痕迹，历史感与传奇感并存。",
+    "negativePrompt": "动漫，二次元，CG，AI感，塑料皮肤，过度磨皮，美颜，HDR过强，兽耳，狐狸尾巴，九尾狐本体，妖气，法术，魔法特效，现代建筑，现代服饰，现代元素，低质量，畸形肢体，多余手指，文字，水印。",
+    "parameters": {
+      "Model": "Common",
+      "Aspect Ratio": "9:16"
+    },
+    "mtime": 1785299019072.5276
+  },
+  {
+    "title": "轮廓宇宙海报：双重曝光叙事合成",
+    "slug": "prompt-2045418028733538620",
+    "model": "GPT-Image2",
+    "category": "style",
+    "tags": [
+      "海报",
+      "双重曝光",
+      "叙事",
+      "水彩",
+      "写实"
+    ],
+    "difficulty": "advanced",
+    "cover": "/images/prompts/prompt-2045418028733538620.jpg",
+    "date": "2026-04-18",
+    "added": "2026-07-29T15:30:00+08:00",
+    "source": "https://x.com/i/status/2045418028733538620",
+    "sourceLink": "https://x.com/i/status/2045418028733538620",
+    "author": "Larus Canus",
+    "authorLink": "",
+    "prompt": "请根据【主题：xxx】自动生成一张高审美的\"轮廓宇宙 / 收藏版叙事海报\"风格作品。不要将画面局限于固定器物或常见容器，不要优先默认瓶子、沙漏、玻璃罩、怀表之类的常规载体，而是由 AI 根据主题自行判断并选择一个最契合、最有象征意义、轮廓最强、最适合承载完整叙事世界的主轮廓载体。这个主轮廓可以是器物、建筑、门、塔、拱门、穹顶、楼梯井、长廊、雕像、侧脸、眼睛、手掌、头骨、羽翼、面具、镜面、王座、圆环、裂缝、光幕、阴影、几何结构、空间切面、舞台框景、抽象符号或其他更有创意与主题代表性的视觉轮廓，要求合理布局。优先选择最能放大主题气质、最能形成强烈视觉记忆点、最能体现史诗感、神秘感、诗意感或设计感的轮廓，而不是最安全、最普通、最常见的容器。\n\n画面的核心不是简单把世界装进某个物体里，而是让完整的主题世界自然生长在这个主轮廓之中、之内、之上、之边界里或与其结构融为一体，形成一种\"主题宇宙依附于一个象征性轮廓展开\"的高级叙事效果。主轮廓必须清晰、优雅、有辨识度，并在整体构图中占据核心地位。轮廓内部或边界中需要自动生成与主题强绑定的完整叙事世界，内容应当丰富、饱满、层次清晰，包括最能代表主题的标志性场景、核心建筑或空间结构、象征符号与隐喻元素、角色关系或文明痕迹、远景中景近景的空间递进、具有命运感和情绪张力的氛围层次，以及门、台阶、桥梁、水面、烟雾、路径、光源、遗迹、机械结构、自然景观、抽象形态、生物或道具等叙事细节。所有元素必须统一、自然、有主次、有层级地融合，像一个完整世界真实孕育在这个轮廓结构之中，而不是简单拼贴、裁切填充、素材堆叠或模板化背景。\n\n整体构图需要具有强烈的收藏版海报气质与高级设计感，大结构稳定，主轮廓强烈明确，内部世界具有纵深、秩序和呼吸感，细节丰富但不拥挤，内容丰满但不杂乱，可以适度加入小比例人物剪影、远处建筑、光柱、门洞、桥、阶梯、回廊、倒影、天光或远景结构来增强尺度感、故事感与史诗感。整体画面要安静、宏大、凝练、富有余味，不要平均铺满，不要廉价热闹，不要无重点堆砌。\n\n风格融合收藏版电影海报构图、高级叙事型视觉设计、梦幻水彩质感与纸张印刷品气质，强调纸张颗粒感、边缘飞白、水彩刷痕、轻微晕染、空气透视、柔和雾化、局部体积光、光雾穿透、大面积留白与克制版式，让画面看起来像设计师完成的高端收藏版视觉作品，而不是普通 AI 跑图。整体气质要高级、诗意、宏大、神圣、怀旧、安静、具有传说感和叙事感。\n\n色彩由 AI 根据主题自动判断并匹配最合适的高级配色方案，但必须保持统一、克制、耐看、低饱和、高级，不要杂乱高饱和，不要廉价霓虹感，不要塑料数码感。配色可以围绕黑金灰、冷蓝灰、雾白灰、褐红米白、暗铜、旧纸色、深海蓝、暮色紫、银灰等体系自由变化，但必须始终服务主题，并保持海报级审美与整体和谐。\n\n最终要求：第一眼有强烈的主题识别度和轮廓记忆点，第二眼有完整丰富的叙事世界，第三眼仍有细节和余味。轮廓选择必须具有创意和主题匹配度，尽量避免重复、保守、常见的容器套路，优先选择更有象征性、更有空间感、更有设计潜力的轮廓形式。不要普通背景拼接，不要生硬裁切，不要模板化奇幻素材，不要游戏宣传图感，不要过度卡通化，不要过度写实导致失去艺术感，不要形式大于内容。如果合适，可以自然加入低调克制的标题、编号、签名或落款，让它更像收藏版海报设计的一部分，但不要喧宾夺主。",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "GPT-Image2"
+    },
+    "mtime": 1785299060048.2546
+  },
+  {
+    "title": "三层拼贴仙侠海报：裸眼3D跨框效果",
+    "slug": "prompt-2082027881186877691",
+    "model": "Common",
+    "category": "style",
+    "tags": [
+      "仙侠",
+      "海报",
+      "拼贴",
+      "3D效果",
+      "3D渲染"
+    ],
+    "difficulty": "intermediate",
+    "cover": "/images/prompts/prompt-2082027881186877691.jpg",
+    "date": "2026-07-28",
+    "added": "2026-07-29T15:30:00+08:00",
+    "source": "https://x.com/i/status/2082027881186877691",
+    "sourceLink": "https://x.com/i/status/2082027881186877691",
+    "author": "VoxCat",
+    "authorLink": "",
+    "prompt": "以【角色】为主体，创作一张 2:3 竖版真人 COS 东方仙侠电影海报。\n\n画面采用 Editorial Magazine 三层横向拼贴构图。整体由三张横向照片组成，三层宽度一致、横向铺满画布，高度接近平均，层与层之间使用黑色细分割线。\n\n第一层为春日东方园林环境远景，包含樱花、湖面、古树、亭台楼阁与天空留白。人物位于画面偏右，手持角色武器，建立完整环境与世界观。\n\n第二层为横向人物近景，人物位于右侧，突出面部、妆容、瞳色、发型、标志性饰品与服装细节；左侧保留园林、花枝、湖面与自然景深。\n\n第三层为整张海报的主视觉人物层，使用超广角近距离拍摄。第三层不是被限制在底部框内的普通照片，而是位于所有拼贴照片上方的最高图层。人物主体占据整张海报约 80%，头部、身体、长发、衣袖、飘带与武器从第三层向上延伸，明显突破第三层边界，跨越并遮挡第二层，局部进入第一层。\n\n人物必须打断黑色分割线，身体与武器覆盖前两层局部区域，形成清晰的 Out-of-Frame、Breaking the Grid、Magazine Cutout、Hero Image Overlay 裸眼 3D 跨框效果。第一层与第二层作为背景照片存在，第三层人物主图悬浮在整个拼贴版式最上方，不可被限制在第三层矩形内部。\n\n第三层采用强透视超广角构图，靠近镜头的武器、手臂、衣袖或飘带明显放大，人物面部保持清晰，高低层次明确，形成冲出画面的空间纵深感。\n\n保留【角色】原有发型、发色、瞳色、标志性饰品、武器、主题配色与核心设计元素，将服装改造为高还原真人 COS 版本，使用真实刺绣、织锦、轻纱、金属饰件与层叠布料。\n\n整体风格为新中式仙侠、东方幻想、春日园林、商业 COS 摄影、高亮度低饱和、清透空气感、柔和胶片色彩、电影级光影、真实皮肤质感与真实服装材质。",
+    "negativePrompt": "",
+    "parameters": {
+      "Model": "Common"
+    },
+    "mtime": 1785298996374.9453
   }
 ]
