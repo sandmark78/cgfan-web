@@ -195,14 +195,20 @@ function extractTags(content: string, existingTags: string[]): string[] {
  * 主处理函数
  */
 function main() {
-  const promptsPath = path.join(process.cwd(), 'lib/prompts-data.json');
+  const promptsPath = path.join(process.cwd(), 'lib/prompts-data.ts');
   
   if (!fs.existsSync(promptsPath)) {
-    console.error('❌ 找不到 prompts-data.json');
+    console.error('❌ 找不到 prompts-data.ts');
     process.exit(1);
   }
   
-  const promptsData: PromptData[] = JSON.parse(fs.readFileSync(promptsPath, 'utf-8'));
+  const tsContent = fs.readFileSync(promptsPath, 'utf-8');
+  const base64Match = tsContent.match(/export default `([^`]+)`/);
+  if (!base64Match) {
+    console.error('❌ 无法解析 prompts-data.ts');
+    process.exit(1);
+  }
+  const promptsData: PromptData[] = JSON.parse(Buffer.from(base64Match[1], 'base64').toString('utf-8'));
   
   console.log(`📊 当前提示词: ${promptsData.length} 条`);
   console.log(`🎯 质量门槛: 提示词 ≥ ${QUALITY_GATES.MIN_PROMPT_LENGTH} 字符`);

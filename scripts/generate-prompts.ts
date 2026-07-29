@@ -89,7 +89,10 @@ const promptsDir = path.join(process.cwd(), 'content/prompts')
 const prompts = traverseDir(promptsDir)
   .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 
-const outputPath = path.join(process.cwd(), 'lib/prompts-data.json')
-fs.writeFileSync(outputPath, JSON.stringify(prompts, null, 2))
+const outputPath = path.join(process.cwd(), 'lib/prompts-data.ts')
+const jsonString = JSON.stringify(prompts, null, 2)
+const encoded = Buffer.from(jsonString).toString('base64')
+const tsContent = `export default \`${encoded}\`;\n`
+fs.writeFileSync(outputPath, tsContent)
 
 console.log(`✅ Generated ${prompts.length} prompts to ${outputPath}`)

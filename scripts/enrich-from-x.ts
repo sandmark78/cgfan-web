@@ -133,9 +133,15 @@ async function main() {
   
   console.log(`📊 建立索引: ${tweetIndex.size} 条推文链接`);
   
-  // 读取 prompts-data.json
-  const promptsPath = path.join(process.cwd(), 'lib/prompts-data.json');
-  const promptsData: PromptData[] = JSON.parse(fs.readFileSync(promptsPath, 'utf-8'));
+  // 读取 prompts-data.ts (Base64 编码)
+  const promptsPath = path.join(process.cwd(), 'lib/prompts-data.ts');
+  const tsContent = fs.readFileSync(promptsPath, 'utf-8');
+  const base64Match = tsContent.match(/export default `([^`]+)`/);
+  if (!base64Match) {
+    console.error('❌ 无法解析 prompts-data.ts');
+    process.exit(1);
+  }
+  const promptsData: PromptData[] = JSON.parse(Buffer.from(base64Match[1], 'base64').toString('utf-8'));
   
   console.log(`📝 当前提示词: ${promptsData.length} 条`);
   

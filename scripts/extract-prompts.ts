@@ -342,7 +342,7 @@ function parseMarkdownFile(filePath: string): PromptData | null {
 
 function main() {
   const contentDir = path.join(process.cwd(), 'content/prompts');
-  const outputFile = path.join(process.cwd(), 'lib/prompts-data.json');
+  const outputFile = path.join(process.cwd(), 'lib/prompts-data.ts');
   
   const allPrompts: PromptData[] = [];
   let skippedCount = 0;
