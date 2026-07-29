@@ -18,15 +18,25 @@ from datetime import datetime
 from pathlib import Path
 
 WORKDIR = "/Users/mac/.hermes/profiles/cgfan/workspace/cgfan-web"
-PROMPTS_DATA = os.path.join(WORKDIR, "lib/prompts-data.json")
+PROMPTS_DATA = os.path.join(WORKDIR, "lib/prompts-data.ts")
 DAILY_FEATURE_FILE = os.path.join(WORKDIR, "lib/daily-feature.ts")
 IMAGE_TASTE_FILE = os.path.join(WORKDIR, "docs/IMAGE_TASTE.md")
 
 
 def load_prompts():
-    """加载所有提示词数据"""
+    """加载所有提示词数据（从 Base64 编码的 TypeScript 文件）"""
+    import base64
     with open(PROMPTS_DATA, "r", encoding="utf-8") as f:
-        return json.load(f)
+        content = f.read()
+    
+    # 提取 Base64 字符串：export default `...`;
+    match = re.search(r'export default `([^`]+)`', content)
+    if not match:
+        raise ValueError("无法解析 prompts-data.ts 文件")
+    
+    encoded = match.group(1)
+    decoded = base64.b64decode(encoded).decode('utf-8')
+    return json.loads(decoded)
 
 
 def parse_daily_features():

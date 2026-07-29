@@ -270,7 +270,7 @@ def parse_markdown_file(file_path: Path) -> Optional[Dict[str, Any]]:
 def main():
     """主函数"""
     content_dir = Path('/Users/mac/.hermes/profiles/cgfan/workspace/cgfan-web/content/prompts')
-    output_file = Path('/Users/mac/.hermes/profiles/cgfan/workspace/cgfan-web/lib/prompts-data.json')
+    output_file = Path('/Users/mac/.hermes/profiles/cgfan/workspace/cgfan-web/lib/prompts-data.ts')
     
     all_prompts = []
     error_count = 0
@@ -287,9 +287,14 @@ def main():
     # 按上传时间排序（优先 added ISO 时间戳，无则 mtime）
     all_prompts.sort(key=lambda x: x.get('added', x.get('date', '')), reverse=False)
     
-    # 写入 JSON
+    # 写入 TypeScript 文件（Base64 编码）
+    import base64
+    json_str = json.dumps(all_prompts, ensure_ascii=False, indent=2)
+    encoded = base64.b64encode(json_str.encode('utf-8')).decode('utf-8')
+    ts_content = f'export default `{encoded}`;\n'
+    
     with open(output_file, 'w', encoding='utf-8') as f:
-        json.dump(all_prompts, f, ensure_ascii=False, indent=2)
+        f.write(ts_content)
     
     # 统计信息
     model_stats = {}
