@@ -1,28 +1,42 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
-import { 
-  QUIZ_QUESTIONS, 
-  processQuizAnswers, 
-  type BasePersona,
-  type QuizOption 
-} from '@/lib/aesthetic-engine'
+import { QUIZ_QUESTIONS, type QuizOption } from '@/lib/quiz-questions'
+import { processQuizAnswers, type BasePersona } from '@/lib/aesthetic-engine'
 
 /**
  * 美学人格快速测试组件
  * 4道题，30秒，基于8维美学空间匹配12种基础人格
+ * 已完成测试的用户不会显示此组件
  */
 export function AestheticQuiz() {
   const router = useRouter()
   const [step, setStep] = useState(0) // 0=未开始, 1-4=答题中, 5=完成
   const [answers, setAnswers] = useState<QuizOption[]>([])
   const [result, setResult] = useState<BasePersona | null>(null)
+  const [hasCompletedQuiz, setHasCompletedQuiz] = useState(false)
+
+  // 检查用户是否已完成测试
+  useEffect(() => {
+    const saved = localStorage.getItem('cgfan_quiz_result')
+    if (saved) {
+      try {
+        const data = JSON.parse(saved)
+        if (data.persona) {
+          setHasCompletedQuiz(true)
+          setResult(data.persona)
+        }
+      } catch (e) {
+        console.error('Failed to parse quiz result:', e)
+      }
+    }
+  }, [])
 
   const handleAnswer = (option: QuizOption) => {
     const newAnswers = [...answers, option]
     setAnswers(newAnswers)
-    
+
     if (step < 4) {
       setStep(step + 1)
     } else {
@@ -30,7 +44,7 @@ export function AestheticQuiz() {
       const persona = processQuizAnswers(newAnswers)
       setResult(persona)
       setStep(5)
-      
+
       // 保存到 localStorage
       localStorage.setItem('cgfan_quiz_result', JSON.stringify({
         persona,
@@ -44,10 +58,17 @@ export function AestheticQuiz() {
     setStep(0)
     setAnswers([])
     setResult(null)
+    setHasCompletedQuiz(false)
+    localStorage.removeItem('cgfan_quiz_result')
   }
 
   const handleExplore = () => {
     router.push('/explore')
+  }
+
+  // 如果用户已完成测试，不显示组件
+  if (hasCompletedQuiz) {
+    return null
   }
 
   // 未开始
@@ -61,7 +82,7 @@ export function AestheticQuiz() {
         <p className="mb-6 text-sm text-gray-600 dark:text-gray-400">
           4 道题，30 秒，找到你的审美基因
         </p>
-        <button 
+        <button
           onClick={() => setStep(1)}
           className="inline-flex items-center gap-2 rounded-full bg-green-600 px-8 py-3 text-sm font-semibold text-white shadow-md transition-all hover:bg-green-500 hover:shadow-lg"
         >
@@ -77,7 +98,7 @@ export function AestheticQuiz() {
   // 答题中 (step 1-4)
   if (step >= 1 && step <= 4) {
     const question = QUIZ_QUESTIONS[step - 1]
-    
+
     return (
       <div className="rounded-2xl bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 p-8 dark:from-green-900/20 dark:via-emerald-900/20 dark:to-teal-900/20">
         {/* 进度条 */}
@@ -87,7 +108,7 @@ export function AestheticQuiz() {
             <span>第 {step} 题</span>
           </div>
           <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700">
-            <div 
+            <div
               className="h-full rounded-full bg-green-500 transition-all duration-500"
               style={{ width: `${(step / 4) * 100}%` }}
             />
@@ -95,17 +116,20 @@ export function AestheticQuiz() {
         </div>
 
         {/* 问题 */}
-        <h3 className="mb-5 text-center text-lg font-bold text-gray-900 dark:text-white">
+        <h3 className="mb-2 text-center text-lg font-bold text-gray-900 dark:text-white">
           {question.question}
         </h3>
+        <p className="mb-5 text-center text-sm text-gray-500 dark:text-gray-400">
+          {question.subtitle}
+        </p>
 
-        {/* 选项 */}
-        <div className="grid grid-cols-2 gap-3">
+        {/* 选项 - 3x2 网格 */}
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
           {question.options.map((option) => (
             <button
               key={option.text}
               onClick={() => handleAnswer(option)}
-              className="group flex flex-col items-center gap-2 rounded-xl border-2 border-gray-200 bg-white/60 p-5 transition-all hover:border-green-500 hover:shadow-md dark:border-gray-700 dark:bg-gray-800/40 dark:hover:border-green-500"
+              className="group flex flex-col items-center gap-2 rounded-xl border-2 border-gray-200 bg-white/60 p-4 transition-all hover:border-green-500 hover:shadow-md dark:border-gray-700 dark:bg-gray-800/40 dark:hover:border-green-500"
             >
               <span className="text-3xl">{option.emoji}</span>
               <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
@@ -145,7 +169,7 @@ export function AestheticQuiz() {
         </div>
 
         <div className="mt-6 flex flex-col items-center gap-3">
-          <button 
+          <button
             onClick={handleExplore}
             className="inline-flex items-center gap-2 rounded-full bg-green-600 px-8 py-3 text-sm font-semibold text-white shadow-md transition-all hover:bg-green-500 hover:shadow-lg"
           >
@@ -154,7 +178,7 @@ export function AestheticQuiz() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </button>
-          <button 
+          <button
             onClick={handleRetake}
             className="text-xs text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300 underline"
           >
