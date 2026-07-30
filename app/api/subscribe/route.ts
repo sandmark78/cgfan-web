@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { Resend } from 'resend'
 
+export const runtime = 'edge'
+
 const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function POST(request: NextRequest) {
@@ -17,7 +19,7 @@ export async function POST(request: NextRequest) {
 
     // 发送确认邮件
     const { data, error } = await resend.emails.send({
-      from: 'CGfan <noreply@cgfan.com>',
+      from: 'CGfan <noreply@send.cgfan.com>',
       to: [email],
       subject: '确认订阅 CGfan 每日一味',
       html: `
