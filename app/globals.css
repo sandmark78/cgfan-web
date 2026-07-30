@@ -196,7 +196,7 @@ body {
           drop-shadow(0 2px 3px rgba(0,0,0,.35));
 }
 @media (max-width: 640px) {
-  .daily-seal { width: 72px; top: 17px; left: -15px; }
+  .daily-seal { width: 72px; top: 17px; left: -10px; }
 }
 
 /* 日期签 */
