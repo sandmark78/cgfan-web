@@ -25,7 +25,7 @@ export default function DailyHistory() {
       </div>
 
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        {allFeatures.map((feature) => {
+        {allFeatures.map((feature, index) => {
           const prompt = getPromptBySlug(feature.slug)
           if (!prompt) return null
 
@@ -39,7 +39,8 @@ export default function DailyHistory() {
             <Link
               key={feature.slug}
               href={`/prompt/${prompt.slug}`}
-              className="group relative overflow-hidden rounded-xl bg-white/60 backdrop-blur-sm transition-all hover:scale-105 hover:shadow-lg dark:bg-gray-800/60"
+              className="group relative overflow-hidden rounded-xl bg-white/60 backdrop-blur-sm transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl hover:shadow-green-500/20 dark:bg-gray-800/60 dark:hover:shadow-green-400/10 animate-fade-in-up"
+              style={{ animationDelay: `${index * 100}ms` }}
             >
               {/* 图片 */}
               <div className="relative aspect-square overflow-hidden">
@@ -49,7 +50,7 @@ export default function DailyHistory() {
                     alt={prompt.title}
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-                    className="object-cover transition-transform duration-300 group-hover:scale-110"
+                    className="object-cover transition-transform duration-500 ease-out group-hover:scale-110 group-hover:rotate-1"
                   />
                 ) : (
                   <div className="flex h-full items-center justify-center bg-gray-200 text-4xl dark:bg-gray-800">
@@ -57,8 +58,11 @@ export default function DailyHistory() {
                   </div>
                 )}
 
+                {/* 渐变遮罩 */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+
                 {/* 日期标签 */}
-                <div className="absolute bottom-2 right-2 rounded-lg bg-white/90 px-2 py-1 text-center backdrop-blur-sm dark:bg-gray-900/90">
+                <div className="absolute bottom-2 right-2 rounded-lg bg-white/90 px-2 py-1 text-center backdrop-blur-sm transition-all duration-300 group-hover:scale-110 group-hover:bg-white dark:bg-gray-900/90 dark:group-hover:bg-gray-900">
                   <div className="text-xs font-bold text-gray-900 dark:text-white">{day}</div>
                   <div className="text-[10px] text-gray-600 dark:text-gray-400">{cnMonth}月</div>
                 </div>
@@ -66,13 +70,13 @@ export default function DailyHistory() {
 
               {/* 内容 */}
               <div className="p-4">
-                <h3 className="mb-2 line-clamp-2 font-serif text-sm font-bold text-gray-900 group-hover:text-green-600 dark:text-white dark:group-hover:text-green-400">
+                <h3 className="mb-2 line-clamp-2 font-serif text-sm font-bold text-gray-900 transition-colors duration-300 group-hover:text-green-600 dark:text-white dark:group-hover:text-green-400">
                   {prompt.title}
                 </h3>
                 {feature.technique && (
                   <div className="flex flex-wrap gap-1">
                     {feature.technique.split(' · ').slice(0, 2).map((t: string) => (
-                      <span key={t} className="rounded-full bg-green-100 px-2 py-0.5 text-[10px] text-green-700 dark:bg-green-900/30 dark:text-green-400">
+                      <span key={t} className="rounded-full bg-green-100 px-2 py-0.5 text-[10px] text-green-700 transition-all duration-300 group-hover:bg-green-200 group-hover:scale-105 dark:bg-green-900/30 dark:text-green-400 dark:group-hover:bg-green-900/50">
                         {t}
                       </span>
                     ))}
