@@ -451,15 +451,15 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       ctx.fillText(currentPersona.name, W / 2, nameY)
       
       // ── 英文名（居中） ─
-      ctx.font = `300 14px -apple-system, "Helvetica Neue", sans-serif`
+      ctx.font = `300 28px -apple-system, "Helvetica Neue", sans-serif`
       ctx.fillStyle = C.soft
       ctx.letterSpacing = '2px'
-      ctx.fillText(currentPersona.en, W / 2, nameY + 36)
+      ctx.fillText(currentPersona.en, W / 2, nameY + 56)
       ctx.letterSpacing = '0px'
       
       // ── Tagline（居中，宋体斜体） ──
-      const taglineY = nameY + 80
-      ctx.font = `italic 500 20px "Noto Serif SC", "Songti SC", serif`
+      const taglineY = nameY + 100
+      ctx.font = `italic 500 40px "Noto Serif SC", "Songti SC", serif`
       ctx.fillStyle = C.inkMid
       ctx.textAlign = 'center'
       ctx.fillText(`「${currentPersona.tagline}」`, W / 2, taglineY)
@@ -491,10 +491,10 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
         ctx.fillText(line, W / 2, ly)
       }
       
-      // ── 8维雷达图（规则圆形布局，在月牙中间） ──
+      // ── 8维雷达图（规则圆形布局，中心对齐罗盘） ──
       const radarCX = 540
-      const radarCY = 900
-      const radarR = 180
+      const radarCY = 960
+      const radarR = 162
       
       const dims = [
         { key: 'complexity', label: '复杂度' },
