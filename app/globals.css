@@ -173,7 +173,7 @@ body {
 /* 火漆角标 - 相对于 daily-pick 定位，避免被卡片裁切 */
 .daily-seal {
   position: absolute;
-  top: 13px; left: 1px;
+  top: 13px; left: -15px;
   width: 96px;
   height: auto;
   pointer-events: none;
