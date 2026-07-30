@@ -37,7 +37,7 @@ export default function sitemap() {
     },
     ...prompts.map((prompt) => ({
       url: `${baseUrl}/prompt/${prompt.slug}`,
-      lastModified: new Date(prompt.date),
+      lastModified: prompt.date ? new Date(prompt.date) : new Date(),
       changeFrequency: 'weekly' as const,
       priority: 0.6,
     })),
