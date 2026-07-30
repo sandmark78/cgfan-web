@@ -401,199 +401,247 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
     try {
       const canvas = document.createElement('canvas')
       const dpr = window.devicePixelRatio || 2
-      const W = 533
-      const H = 800
+      // 1080×1350 = 4:5 竖版，适合社交媒体
+      const W = 1080
+      const H = 1350
       canvas.width = W * dpr
       canvas.height = H * dpr
-      canvas.style.width = W + 'px'
-      canvas.style.height = H + 'px'
+      canvas.style.width = (W / 2) + 'px'
+      canvas.style.height = (H / 2) + 'px'
       
       const ctx = canvas.getContext('2d')
       if (!ctx) throw new Error('Canvas context not available')
       
       ctx.scale(dpr, dpr)
       
-      // 配色
+      // ── 配色：克制的绿系 ──
       const C = {
-        bgTop: '#F7FBF5',
-        bgBot: '#E0ECD6',
-        ink: '#3D8C5A',
-        inkDeep: '#2A6B3F',
-        soft: '#7A9E7A',
-        soft2: '#9AB89A',
-        track: 'rgba(61,140,90,.12)',
-        line: 'rgba(61,140,90,.22)',
-        lineSoft: 'rgba(61,140,90,.12)',
-        pill: '#3D8C5A',
-        pillInk: '#F7FBF5',
-        spectrum: ['#2A6B3F', '#3D8C5A', '#5DAD6A', '#7FC08A', '#A8D4A8', '#C8E4C8'],
+        bg:       '#F8FAF6',
+        ink:      '#2D5F3E',    // 深墨绿
+        inkMid:   '#4A8C62',    // 中绿
+        inkLight: '#7BAF8E',    // 浅绿
+        soft:     '#8FA898',    // 灰绿
+        softest:  '#B8C9BE',    // 最淡
+        line:     'rgba(45,95,62,0.12)',
+        radar:    'rgba(74,140,98,0.15)',
+        radarStroke: '#4A8C62',
+        accent:   '#C4553A',    // 印章红（唯一暖色点缀）
       }
       
-      // 背景渐变
-      const bg = ctx.createLinearGradient(0, 0, 0, H)
-      bg.addColorStop(0, C.bgTop)
-      bg.addColorStop(1, C.bgBot)
-      ctx.fillStyle = bg
+      // ── 背景 ──
+      ctx.fillStyle = C.bg
       ctx.fillRect(0, 0, W, H)
       
-      // 左上窗光效果
-      const windowLight = ctx.createRadialGradient(120, 90, 10, 320, 200, 400)
-      windowLight.addColorStop(0, 'rgba(255,255,255,0.15)')
-      windowLight.addColorStop(1, 'rgba(255,255,255,0)')
-      ctx.fillStyle = windowLight
-      ctx.fillRect(0, 0, W, H)
+      // 极淡的纹理感（噪点模拟）
+      for (let i = 0; i < 3000; i++) {
+        const x = Math.random() * W
+        const y = Math.random() * H
+        ctx.fillStyle = `rgba(45,95,62,${Math.random() * 0.02})`
+        ctx.fillRect(x, y, 1, 1)
+      }
       
-      // 双线内框
+      // ── 细线边框 ──
+      const M = 48 // 边距
       ctx.strokeStyle = C.line
       ctx.lineWidth = 1
-      ctx.strokeRect(24, 24, W - 48, H - 48)
-      ctx.strokeStyle = C.lineSoft
-      ctx.strokeRect(28, 28, W - 56, H - 56)
+      ctx.strokeRect(M, M, W - M * 2, H - M * 2)
       
-      // 左侧竖线强调
-      const LX = 41
-      ctx.fillStyle = C.ink
-      ctx.fillRect(LX, 56, 3, 155)
-      
-      // 顶部双行标题
-      ctx.font = `700 11px -apple-system, "PingFang SC", sans-serif`
-      ctx.fillStyle = C.ink
+      // ── 顶部品牌区 ──
+      const topY = M + 40
+      ctx.font = `600 13px -apple-system, "Helvetica Neue", sans-serif`
+      ctx.fillStyle = C.soft
       ctx.textAlign = 'left'
-      ctx.fillText('CGfan · Aesthetic Persona', LX, 56)
+      ctx.letterSpacing = '3px'
+      ctx.fillText('C G F A N', M + 32, topY)
       
-      // 编号
+      // 右侧编号
       const serialNum = ((profile.favoriteCount * 137 + currentPersona.name.length * 911) % 9000 + 1000).toString()
-      ctx.font = `600 10px -apple-system, sans-serif`
-      ctx.fillStyle = C.soft2
       ctx.textAlign = 'right'
-      ctx.fillText(`No.${serialNum}`, W - 39, 56)
+      ctx.font = `400 12px -apple-system, sans-serif`
+      ctx.fillStyle = C.softest
+      ctx.fillText(`No.${serialNum}`, W - M - 32, topY)
       
-      // "你是"
-      const nameY = 131
-      ctx.font = `500 14px "Noto Serif SC", serif`
-      ctx.fillStyle = C.soft
-      ctx.textAlign = 'left'
-      ctx.fillText('你是', LX, nameY)
+      // ── 分隔细线 ──
+      const divY = topY + 28
+      ctx.strokeStyle = C.line
+      ctx.lineWidth = 0.5
+      ctx.beginPath()
+      ctx.moveTo(M + 32, divY)
+      ctx.lineTo(W - M - 32, divY)
+      ctx.stroke()
       
-      // 人格名
-      const nameSize = currentPersona.name.length >= 6 ? 40 : currentPersona.name.length === 5 ? 48 : 56
-      ctx.font = `900 ${nameSize}px "Noto Serif SC", serif`
+      // ── 人格名（大字宋体） ──
+      const nameY = divY + 100
+      const nameLen = currentPersona.name.length
+      const nameSize = nameLen >= 6 ? 72 : nameLen === 5 ? 84 : nameLen === 4 ? 96 : 108
+      ctx.font = `900 ${nameSize}px "Noto Serif SC", "Songti SC", "SimSun", serif`
       ctx.fillStyle = C.ink
-      ctx.fillText(currentPersona.name, LX, nameY + 64)
+      ctx.textAlign = 'left'
+      ctx.fillText(currentPersona.name, M + 56, nameY)
       
-      // 英文名
-      ctx.font = `600 10px -apple-system, sans-serif`
-      ctx.fillStyle = C.soft2
-      ctx.fillText(currentPersona.en.toUpperCase(), LX, nameY + 91)
-      
-      // 描述（换行）
-      const descY = nameY + 129
-      ctx.font = `500 14px "Noto Serif SC", serif`
+      // ── 英文名 ──
+      ctx.font = `300 14px -apple-system, "Helvetica Neue", sans-serif`
       ctx.fillStyle = C.soft
+      ctx.fillText(currentPersona.en, M + 58, nameY + 36)
       
-      // 简单的文字换行
-      const maxWidth = W - LX - 39
-      const words = currentPersona.description.split('')
+      // ── Tagline（宋体斜体） ──
+      const taglineY = nameY + 80
+      ctx.font = `italic 500 20px "Noto Serif SC", "Songti SC", serif`
+      ctx.fillStyle = C.inkMid
+      ctx.fillText(`「${currentPersona.tagline}」`, M + 56, taglineY)
+      
+      // ── 描述文字 ──
+      const descY = taglineY + 48
+      ctx.font = `400 15px "Noto Serif SC", "Songti SC", serif`
+      ctx.fillStyle = C.soft
+      const maxTextW = W - M * 2 - 112
+      const chars = currentPersona.description.split('')
       let line = ''
-      let lineY = descY
-      const lineSpacing = 20
+      let ly = descY
+      const lineH = 26
+      let lineCount = 0
       
-      for (let i = 0; i < words.length; i++) {
-        const testLine = line + words[i]
-        if (ctx.measureText(testLine).width > maxWidth && line.length > 0) {
-          ctx.fillText(line, LX, lineY)
-          line = words[i]
-          lineY += lineSpacing
-          if (lineY > descY + lineSpacing * 2) break // 最多3行
+      for (let i = 0; i < chars.length; i++) {
+        const testLine = line + chars[i]
+        if (ctx.measureText(testLine).width > maxTextW && line.length > 0) {
+          ctx.fillText(line, M + 56, ly)
+          line = chars[i]
+          ly += lineH
+          lineCount++
+          if (lineCount >= 3) break
         } else {
           line = testLine
         }
       }
-      if (line && lineY <= descY + lineSpacing * 2) {
-        ctx.fillText(line, LX, lineY)
+      if (line && lineCount < 3) {
+        ctx.fillText(line, M + 56, ly)
       }
       
-      // 装饰短线+菱形
-      const decoY = descY + lineSpacing * 3 + 20
-      ctx.strokeStyle = C.lineSoft
-      ctx.lineWidth = 1
+      // ── 雷达图（核心视觉） ──
+      const radarCX = W / 2
+      const radarCY = ly + 260
+      const radarR = 160
+      const dims = [
+        { key: 'complexity', label: '复杂度' },
+        { key: 'colorIntensity', label: '色彩' },
+        { key: 'arousal', label: '情绪' },
+        { key: 'fluency', label: '流畅' },
+        { key: 'novelty', label: '新奇' },
+        { key: 'harmony', label: '和谐' },
+        { key: 'narrative', label: '叙事' },
+        { key: 'stylization', label: '风格' },
+      ] as const
+      
+      const angleStep = (Math.PI * 2) / 8
+      
+      // 背景网格（4层）
+      for (let ring = 1; ring <= 4; ring++) {
+        const r = (radarR * ring) / 4
+        ctx.beginPath()
+        for (let i = 0; i <= 8; i++) {
+          const angle = -Math.PI / 2 + i * angleStep
+          const x = radarCX + Math.cos(angle) * r
+          const y = radarCY + Math.sin(angle) * r
+          if (i === 0) ctx.moveTo(x, y)
+          else ctx.lineTo(x, y)
+        }
+        ctx.closePath()
+        ctx.strokeStyle = C.radar
+        ctx.lineWidth = 1
+        ctx.stroke()
+      }
+      
+      // 辐射线
+      for (let i = 0; i < 8; i++) {
+        const angle = -Math.PI / 2 + i * angleStep
+        ctx.beginPath()
+        ctx.moveTo(radarCX, radarCY)
+        ctx.lineTo(
+          radarCX + Math.cos(angle) * radarR,
+          radarCY + Math.sin(angle) * radarR
+        )
+        ctx.strokeStyle = C.radar
+        ctx.lineWidth = 0.5
+        ctx.stroke()
+      }
+      
+      // 数据区域
       ctx.beginPath()
-      ctx.moveTo(LX, decoY)
-      ctx.lineTo(LX + 40, decoY)
+      for (let i = 0; i <= 8; i++) {
+        const idx = i % 8
+        const angle = -Math.PI / 2 + idx * angleStep
+        const val = profile.vector[dims[idx].key as keyof typeof profile.vector] / 100
+        const x = radarCX + Math.cos(angle) * radarR * val
+        const y = radarCY + Math.sin(angle) * radarR * val
+        if (i === 0) ctx.moveTo(x, y)
+        else ctx.lineTo(x, y)
+      }
+      ctx.closePath()
+      ctx.fillStyle = 'rgba(74,140,98,0.12)'
+      ctx.fill()
+      ctx.strokeStyle = C.radarStroke
+      ctx.lineWidth = 2
       ctx.stroke()
       
-      ctx.fillStyle = C.ink
-      ctx.beginPath()
-      ctx.moveTo(LX + 50, decoY)
-      ctx.lineTo(LX + 55, decoY - 4)
-      ctx.lineTo(LX + 60, decoY)
-      ctx.lineTo(LX + 55, decoY + 4)
-      ctx.closePath()
-      ctx.fill()
-      
-      // 品味光谱标题
-      const spectrumTitleY = decoY + 35
-      ctx.font = `bold 11px -apple-system, sans-serif`
-      ctx.fillStyle = C.ink
-      ctx.textAlign = 'left'
-      ctx.fillText('品味光谱', LX, spectrumTitleY)
-      
-      // 三条光谱条
-      const barStartY = spectrumTitleY + 23
-      const barW = 266
-      const barH = 8
-      const barGap = 28
-      
-      for (let i = 0; i < 3; i++) {
-        const y = barStartY + i * barGap
-        // 轨道底
-        ctx.fillStyle = C.track
+      // 数据点 + 标签
+      for (let i = 0; i < 8; i++) {
+        const angle = -Math.PI / 2 + i * angleStep
+        const val = profile.vector[dims[i].key as keyof typeof profile.vector] / 100
+        const px = radarCX + Math.cos(angle) * radarR * val
+        const py = radarCY + Math.sin(angle) * radarR * val
+        
+        // 数据点
         ctx.beginPath()
-        ctx.roundRect(LX, y, barW, barH, 4)
+        ctx.arc(px, py, 4, 0, Math.PI * 2)
+        ctx.fillStyle = C.inkMid
         ctx.fill()
         
-        // 渐变条
-        const grad = ctx.createLinearGradient(LX, y, LX + barW, y)
-        C.spectrum.forEach((color, idx) => {
-          grad.addColorStop(idx / (C.spectrum.length - 1), color)
-        })
-        ctx.fillStyle = grad
-        ctx.beginPath()
-        ctx.roundRect(LX, y, barW * (0.4 + i * 0.2), barH, 4)
-        ctx.fill()
+        // 标签
+        const labelR = radarR + 32
+        const lx = radarCX + Math.cos(angle) * labelR
+        const ly2 = radarCY + Math.sin(angle) * labelR
+        const v = Math.round(profile.vector[dims[i].key as keyof typeof profile.vector])
+        
+        ctx.font = `500 13px -apple-system, "PingFang SC", sans-serif`
+        ctx.fillStyle = C.soft
+        ctx.textAlign = 'center'
+        ctx.textBaseline = 'middle'
+        ctx.fillText(`${dims[i].label}`, lx, ly2 - 9)
+        
+        ctx.font = `700 15px -apple-system, sans-serif`
+        ctx.fillStyle = C.ink
+        ctx.fillText(`${v}`, lx, ly2 + 9)
       }
       
-      // 标签胶囊
-      const tagY = barStartY + 3 * barGap + 30
-      const tags = [stage.name, currentPersona.name, `${profile.favoriteCount} 收藏`]
-      let tagX = LX
+      // ── 底部区域 ──
+      const bottomY = H - M - 40
       
-      tags.forEach((tag) => {
-        ctx.font = `500 11px -apple-system, sans-serif`
-        const tagWidth = ctx.measureText(tag).width + 24
-        ctx.fillStyle = C.pill
-        ctx.beginPath()
-        ctx.roundRect(tagX, tagY, tagWidth, 24, 12)
-        ctx.fill()
-        
-        ctx.fillStyle = C.pillInk
-        ctx.textAlign = 'center'
-        ctx.fillText(tag, tagX + tagWidth / 2, tagY + 16)
-        tagX += tagWidth + 10
-      })
+      // 左侧：日期
+      ctx.font = `400 12px -apple-system, sans-serif`
+      ctx.fillStyle = C.softest
+      ctx.textAlign = 'left'
+      ctx.textBaseline = 'alphabetic'
+      const date = new Date().toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' })
+      ctx.fillText(date, M + 32, bottomY)
       
-      // 圆火漆章
-      const sealX = W - 76
-      const sealY = tagY + 80
-      const sealR = 36
+      // 中间：网址
+      ctx.textAlign = 'center'
+      ctx.font = `600 12px -apple-system, sans-serif`
+      ctx.fillStyle = C.soft
+      ctx.fillText('www.cgfan.com', W / 2, bottomY)
+      
+      // 右侧：火漆章
+      const sealX = W - M - 72
+      const sealY = bottomY - 8
+      const sealR = 28
       
       // 外圈波浪
-      ctx.strokeStyle = C.inkDeep
-      ctx.lineWidth = 2.5
+      ctx.strokeStyle = C.accent
+      ctx.lineWidth = 2
       ctx.beginPath()
       for (let a = 0; a < Math.PI * 2; a += 0.05) {
-        const wave = Math.sin(a * 8) * 3.5
-        const r = sealR + 2 + wave
+        const wave = Math.sin(a * 8) * 2.5
+        const r = sealR + wave
         const x = sealX + Math.cos(a) * r
         const y = sealY + Math.sin(a) * r
         if (a === 0) ctx.moveTo(x, y)
@@ -603,31 +651,21 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       ctx.stroke()
       
       // 内圈
-      ctx.strokeStyle = C.line
-      ctx.lineWidth = 1.5
       ctx.beginPath()
-      ctx.arc(sealX, sealY, sealR - 8, 0, Math.PI * 2)
+      ctx.arc(sealX, sealY, sealR - 7, 0, Math.PI * 2)
+      ctx.strokeStyle = `${C.accent}66`
+      ctx.lineWidth = 1
       ctx.stroke()
       
-      // 竖排文字
-      ctx.fillStyle = C.inkDeep
-      ctx.font = `900 20px "Noto Serif SC", serif`
+      // 章内文字
+      ctx.fillStyle = C.accent
+      ctx.font = `900 16px "Noto Serif SC", serif`
       ctx.textAlign = 'center'
-      const sealText = '美学'
-      sealText.split('').forEach((ch, i) => {
-        ctx.fillText(ch, sealX, sealY + (i - 0.5) * 22)
-      })
+      ctx.textBaseline = 'middle'
+      ctx.fillText('美', sealX, sealY - 9)
+      ctx.fillText('学', sealX, sealY + 11)
       
-      // 底部 meta
-      const metaY = H - 60
-      ctx.fillStyle = C.soft2
-      ctx.font = `10px -apple-system, sans-serif`
-      ctx.textAlign = 'left'
-      const date = new Date().toLocaleDateString('zh-CN')
-      ctx.fillText(date, LX, metaY)
-      ctx.fillText('www.cgfan.com', LX, metaY + 15)
-      
-      // 下载
+      // ── 下载 ──
       canvas.toBlob((blob) => {
         if (!blob) {
           alert('生成失败，请重试')
