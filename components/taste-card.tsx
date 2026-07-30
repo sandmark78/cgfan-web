@@ -450,8 +450,8 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       ctx.textAlign = 'center'
       ctx.fillText(currentPersona.name, W / 2, nameY)
       
-      // ── 英文名（居中） ─
-      ctx.font = `300 28px -apple-system, "Helvetica Neue", sans-serif`
+      // ── 英文名（居中） ──
+      ctx.font = `300 22px -apple-system, "Helvetica Neue", sans-serif`
       ctx.fillStyle = C.soft
       ctx.letterSpacing = '2px'
       ctx.fillText(currentPersona.en, W / 2, nameY + 56)
@@ -459,7 +459,7 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       
       // ── Tagline（居中，宋体斜体） ──
       const taglineY = nameY + 100
-      ctx.font = `italic 500 40px "Noto Serif SC", "Songti SC", serif`
+      ctx.font = `italic 500 32px "Noto Serif SC", "Songti SC", serif`
       ctx.fillStyle = C.inkMid
       ctx.textAlign = 'center'
       ctx.fillText(`「${currentPersona.tagline}」`, W / 2, taglineY)
@@ -491,9 +491,9 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
         ctx.fillText(line, W / 2, ly)
       }
       
-      // ── 8维雷达图（规则圆形布局，中心对齐罗盘） ──
+      // ── 8维雷达图（规则圆形布局，中心对齐图片中心） ──
       const radarCX = 540
-      const radarCY = 960
+      const radarCY = 675
       const radarR = 162
       
       const dims = [
