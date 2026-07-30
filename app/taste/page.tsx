@@ -50,11 +50,6 @@ export default async function TastePage() {
         </p>
       </div>
 
-      {/* 快速测试入口 */}
-      <div className="mb-12">
-        <AestheticQuiz />
-      </div>
-
       <TasteCardClient serverFavorites={serverFavorites} isLoggedIn={!!user} />
     </div>
   )
