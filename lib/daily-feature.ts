@@ -19,6 +19,15 @@ export interface DailyFeature {
  */
 export const dailyFeatures: DailyFeature[] = [
   {
+    date: '2026-07-30',
+    slug: 'novel-cover-framework',
+    curatorNote: '这个提示词展示了 AI 图像生成的创意可能性。',
+    highlight: 'AI 小说封面生成框架：故事驱动封面设计...',
+    technique: 'editorial · AI绘图',
+    tip: '具体的描述比抽象的形容更有效，用 'neon red chaise lounge' 而不是 'colorful furniture'。',
+    tryChange: '把提示词中的颜色或材质描述换成对比色/对比材质，观察整体氛围的变化。',
+  },
+  {
     date: '2026-07-29',
     slug: 'prompt-2081696877125480627',
     curatorNote:
