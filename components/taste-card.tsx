@@ -441,6 +441,13 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       // 绘制背景图（铺满画布）
       ctx.drawImage(bgImg, 0, 0, W, H)
       
+      // ── 右上角编号 ──
+      const serialNum = ((profile.favoriteCount * 137 + currentPersona.name.length * 911) % 9000 + 1000).toString()
+      ctx.font = `400 16px -apple-system, sans-serif`
+      ctx.fillStyle = C.softest
+      ctx.textAlign = 'right'
+      ctx.fillText(`No.${serialNum}`, W - 70, 80)
+      
       // ── 人格名（居中，大字宋体） ──
       const nameY = 300
       const nameLen = currentPersona.name.length
@@ -509,9 +516,9 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       
       const angleStep = (Math.PI * 2) / 8
       
-      // 背景网格（4层）
-      for (let ring = 1; ring <= 4; ring++) {
-        const r = (radarR * ring) / 4
+      // 背景网格（3层）
+      for (let ring = 1; ring <= 3; ring++) {
+        const r = (radarR * ring) / 3
         ctx.beginPath()
         for (let i = 0; i <= 8; i++) {
           const angle = -Math.PI / 2 + i * angleStep
@@ -575,7 +582,7 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
         ctx.stroke()
         
         // 标签
-        const labelR = radarR + 32
+        const labelR = radarR + 25
         const lx = radarCX + Math.cos(angle) * labelR
         const ly = radarCY + Math.sin(angle) * labelR
         const v = Math.round(profile.vector[dims[i].key as keyof typeof profile.vector])
@@ -619,7 +626,7 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
         if (qLine) qLines.push(qLine)
         
         // 文字（右对齐，无框）
-        ctx.font = `italic 400 15px "Noto Serif SC", "Songti SC", serif`
+        ctx.font = `italic 400 30px "Noto Serif SC", "Songti SC", serif`
         ctx.fillStyle = C.soft
         ctx.textAlign = 'right'
         ctx.textBaseline = 'top'
@@ -627,13 +634,13 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
         let qly = quoteStartY
         for (const line of qLines) {
           ctx.fillText(line, W / 2 + 210 - boxPadX, qly)
-          qly += qLineH
+          qly += qLineH * 2
         }
         
         if (quoteAuthor) {
-          ctx.font = `500 14px -apple-system, "Helvetica Neue", sans-serif`
+          ctx.font = `500 28px -apple-system, "Helvetica Neue", sans-serif`
           ctx.fillStyle = C.inkMid
-          ctx.fillText(quoteAuthor, W / 2 + 210 - boxPadX, qly + 4)
+          ctx.fillText(quoteAuthor, W / 2 + 210 - boxPadX, qly + 8)
         }
         
         ctx.textBaseline = 'alphabetic'
