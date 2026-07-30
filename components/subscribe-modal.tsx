@@ -13,16 +13,27 @@ export default function SubscribeModal({ isOpen, onClose }: { isOpen: boolean; o
 
     setStatus('loading')
     try {
-      // TODO: 集成邮件订阅服务（如 Mailchimp、ConvertKit 等）
-      await new Promise(resolve => setTimeout(resolve, 1000))
-      setStatus('success')
-      setEmail('')
-      setTimeout(() => {
-        onClose()
-        setStatus('idle')
-      }, 2000)
+      const res = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      })
+      
+      const data = await res.json()
+      
+      if (data.success) {
+        setStatus('success')
+        setEmail('')
+        setTimeout(() => {
+          onClose()
+          setStatus('idle')
+        }, 2000)
+      } else {
+        setStatus('error')
+      }
     } catch (error) {
       setStatus('error')
+      console.error('Subscribe error:', error)
     }
   }
 

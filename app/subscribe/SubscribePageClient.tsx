@@ -13,12 +13,24 @@ export default function SubscribePageClient() {
 
     setStatus('loading')
     try {
-      // TODO: 集成邮件订阅服务（如 Mailchimp、ConvertKit 等）
-      await new Promise(resolve => setTimeout(resolve, 1000))
-      setStatus('success')
-      setEmail('')
+      const res = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      })
+      
+      const data = await res.json()
+      
+      if (data.success) {
+        setStatus('success')
+        setEmail('')
+      } else {
+        setStatus('error')
+        console.error('Subscribe failed:', data.message)
+      }
     } catch (error) {
       setStatus('error')
+      console.error('Subscribe error:', error)
     }
   }
 
