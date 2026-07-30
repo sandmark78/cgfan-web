@@ -39,7 +39,7 @@ export default function DailyHistory() {
             <Link
               key={feature.slug}
               href={`/prompt/${prompt.slug}`}
-              className="group relative overflow-hidden rounded-xl bg-white/60 backdrop-blur-sm transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl hover:shadow-green-500/20 dark:bg-gray-800/60 dark:hover:shadow-green-400/10 animate-fade-in-up"
+              className="group glass-card block overflow-hidden animate-fade-in-up"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               {/* 图片 */}
