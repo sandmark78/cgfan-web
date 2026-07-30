@@ -130,6 +130,7 @@ body {
 @media (max-width: 640px) {
   .daily-card { grid-template-columns: 1fr; }
   .daily-figure {
+    width: 100%;
     height: auto;
     aspect-ratio: 4 / 3;
     min-height: 240px;
