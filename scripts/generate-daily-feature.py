@@ -14,7 +14,7 @@
 import json
 import os
 import re
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 
 WORKDIR = "/Users/mac/.hermes/profiles/cgfan/workspace/cgfan-web"
@@ -166,6 +166,10 @@ def main():
         print(f"✅ {today} 已有每日一味数据，跳过")
         return
 
+    # 计算昨天的日期
+    yesterday = datetime.now() - timedelta(days=1)
+    yesterday_str = yesterday.strftime("%Y-%m-%d")
+
     # 加载提示词数据
     prompts = load_prompts()
 
@@ -173,36 +177,36 @@ def main():
     favorites = parse_favorite_images()
     print(f"📊 从品味画像中找到 {len(favorites)} 张'最喜欢'图片")
 
-    # === 选题逻辑（质量优先） ===
+    # === 选题逻辑（质量优先，选昨天上传的最高分） ===
 
     selected = None
     selection_reason = ""
 
-    # 优先级 1: 今天收录的 + 高分的
-    today_prompts = [
+    # 优先级 1: 昨天上传的 + 高分的（从品味画像中找）
+    yesterday_prompts = [
         p for p in prompts
-        if p.get("added", "").startswith(today)
+        if p.get("added", "").startswith(yesterday_str)
     ]
 
-    if today_prompts:
-        print(f"📝 今天收录了 {len(today_prompts)} 条提示词")
+    if yesterday_prompts:
+        print(f"📝 昨天（{yesterday_str}）收录了 {len(yesterday_prompts)} 条提示词")
 
-        # 检查今天的是否在"最喜欢"列表中
+        # 从高分列表中找昨天上传的
         for fav in favorites:
-            slug = find_slug_by_title(today_prompts, fav["title"])
+            slug = find_slug_by_title(yesterday_prompts, fav["title"])
             if slug and slug not in existing_slugs:
-                selected = next((p for p in today_prompts if p.get("slug") == slug), None)
-                selection_reason = f"今天收录 + 高分（{fav['score']}/80）"
+                selected = next((p for p in yesterday_prompts if p.get("slug") == slug), None)
+                selection_reason = f"昨天上传 + 高分（{fav['score']}/80）"
                 break
 
-        # 如果今天没有高分的，选今天最新的
+        # 如果昨天没有高分的，选昨天最新的
         if not selected:
-            selected = max(today_prompts, key=lambda p: p.get("added", ""))
-            selection_reason = "今天收录的最新提示词"
+            selected = max(yesterday_prompts, key=lambda p: p.get("added", ""))
+            selection_reason = "昨天上传的最新提示词"
 
-    # 优先级 2: 历史高分的 + 没用过的
+    # 优先级 2: 历史高分的 + 没用过的（从品味画像中找）
     if not selected and favorites:
-        print(f"🔍 今天无新收录，从历史高分中查找...")
+        print(f"🔍 昨天无新收录，从历史高分中查找...")
         for fav in favorites:
             slug = find_slug_by_title(prompts, fav["title"])
             if slug and slug not in existing_slugs:
