@@ -676,37 +676,61 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
         ctx.fillText(`${v}`, lx, ly2 + 9)
       }
       
-      // ── 名人名言（雷达图下方，右对齐） ──
+      // ── 名人名言（雷达图下方，透明框 + 居中对齐 + 右对齐文字） ──
       if (currentPersona.quote) {
-        const quoteStartY = radarCY + radarR + 60
-        ctx.font = `italic 400 15px "Noto Serif SC", "Songti SC", serif`
-        ctx.fillStyle = C.soft
-        ctx.textAlign = 'right'
+        const quoteStartY = radarCY + radarR + 50
+        const boxW = 380 // 大于雷达图直径 280
+        const boxX = (W - boxW) / 2
+        const boxPadX = 28
+        const boxPadY = 20
+        const textW = boxW - boxPadX * 2
         
         // 解析名言，分离句子和作者
         const quoteParts = currentPersona.quote.split('——')
         const quoteText = quoteParts[0].trim()
         const quoteAuthor = quoteParts[1] ? `—— ${quoteParts[1].trim()}` : ''
         
-        // 绘制名言句子（完整显示，自动换行）
-        const maxQuoteW = W - M * 2 - 120
+        // 先计算行数确定框高度
+        ctx.font = `italic 400 15px "Noto Serif SC", "Songti SC", serif`
         const quoteChars = quoteText.split('')
         let qLine = ''
-        let qly = quoteStartY
+        const qLines: string[] = []
         const qLineH = 24
         
         for (let i = 0; i < quoteChars.length; i++) {
           const testLine = qLine + quoteChars[i]
-          if (ctx.measureText(testLine).width > maxQuoteW && qLine.length > 0) {
-            ctx.fillText(qLine, W - M - 60, qly)
+          if (ctx.measureText(testLine).width > textW && qLine.length > 0) {
+            qLines.push(qLine)
             qLine = quoteChars[i]
-            qly += qLineH
           } else {
             qLine = testLine
           }
         }
-        if (qLine) {
-          ctx.fillText(qLine, W - M - 60, qly)
+        if (qLine) qLines.push(qLine)
+        
+        const authorLineH = quoteAuthor ? 28 : 0
+        const boxH = boxPadY * 2 + qLines.length * qLineH + authorLineH
+        
+        // 绘制透明框（圆角矩形）
+        ctx.save()
+        ctx.fillStyle = 'rgba(45,95,62,0.04)'
+        ctx.strokeStyle = 'rgba(45,95,62,0.10)'
+        ctx.lineWidth = 0.5
+        ctx.beginPath()
+        ctx.roundRect(boxX, quoteStartY, boxW, boxH, 8)
+        ctx.fill()
+        ctx.stroke()
+        ctx.restore()
+        
+        // 绘制名言文字（右对齐）
+        ctx.font = `italic 400 15px "Noto Serif SC", "Songti SC", serif`
+        ctx.fillStyle = C.soft
+        ctx.textAlign = 'right'
+        ctx.textBaseline = 'top'
+        
+        let qly = quoteStartY + boxPadY
+        for (const line of qLines) {
+          ctx.fillText(line, boxX + boxW - boxPadX, qly)
           qly += qLineH
         }
         
@@ -714,8 +738,10 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
         if (quoteAuthor) {
           ctx.font = `500 14px -apple-system, "Helvetica Neue", sans-serif`
           ctx.fillStyle = C.inkMid
-          ctx.fillText(quoteAuthor, W - M - 60, qly + 8)
+          ctx.fillText(quoteAuthor, boxX + boxW - boxPadX, qly + 4)
         }
+        
+        ctx.textBaseline = 'alphabetic'
       }
       
       // ── 底部区域 ──
