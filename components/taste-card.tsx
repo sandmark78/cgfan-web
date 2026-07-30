@@ -733,18 +733,18 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
     </div>
 
     {/* 操作按钮 - 在卡片外面 */}
-    <div className="mt-6 flex items-center justify-center gap-3">
+    <div className="mt-6 flex items-center justify-center gap-3 flex-wrap">
       <button
         onClick={handleDownloadCard}
         disabled={isGenerating}
-        className="inline-flex items-center gap-2 rounded-full bg-emerald-600 px-6 py-3 text-sm font-semibold text-white shadow-md transition-all hover:bg-emerald-500 hover:shadow-lg disabled:opacity-50"
+        className="btn-primary inline-flex items-center gap-2 disabled:opacity-50"
       >
         <Download className="h-4 w-4" />
         {isGenerating ? '生成中...' : '下载美学人格卡片'}
       </button>
       <a
         href="/explore"
-        className="inline-flex items-center gap-2 rounded-full bg-emerald-600 px-8 py-3 text-sm font-semibold text-white shadow-md transition-all hover:bg-emerald-500 hover:shadow-lg"
+        className="btn-primary inline-flex items-center gap-2"
       >
         继续收藏
         <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -753,7 +753,7 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       </a>
       <button
         onClick={() => setShowRetakeConfirm(true)}
-        className="inline-flex items-center gap-2 rounded-full border border-gray-300 bg-white px-6 py-3 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:hover:bg-gray-800"
+        className="btn-secondary"
       >
         重新测试
       </button>
