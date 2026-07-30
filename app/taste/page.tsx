@@ -56,12 +56,6 @@ export default async function TastePage() {
       </div>
 
       <TasteCardClient serverFavorites={serverFavorites} isLoggedIn={!!user} />
-
-      <div className="mt-12 text-center">
-        <a href="/explore" className="btn-secondary inline-block">
-          去逛逛 →
-        </a>
-      </div>
     </div>
   )
 }
