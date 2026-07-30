@@ -441,15 +441,8 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       // 绘制背景图（铺满画布）
       ctx.drawImage(bgImg, 0, 0, W, H)
       
-      // ── 右上角编号 ──
-      const serialNum = ((profile.favoriteCount * 137 + currentPersona.name.length * 911) % 9000 + 1000).toString()
-      ctx.font = `400 16px -apple-system, sans-serif`
-      ctx.fillStyle = C.softest
-      ctx.textAlign = 'right'
-      ctx.fillText(`No.${serialNum}`, W - 70, 80)
-      
       // ── 人格名（居中，大字宋体） ──
-      const nameY = 330  // 下移30px
+      const nameY = 360  // 下移30px
       const nameLen = currentPersona.name.length
       const nameSize = nameLen >= 6 ? 72 : nameLen === 5 ? 84 : nameLen === 4 ? 96 : 108
       ctx.font = `900 ${nameSize}px "Noto Serif SC", "Songti SC", "SimSun", serif`
@@ -671,12 +664,6 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       ctx.textBaseline = 'alphabetic'
       const date = new Date().toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' })
       ctx.fillText(date, 70, bottomY)
-      
-      // 中间：网址
-      ctx.textAlign = 'center'
-      ctx.font = `600 12px -apple-system, sans-serif`
-      ctx.fillStyle = C.soft
-      ctx.fillText('www.cgfan.com', W / 2, bottomY)
       
       // ── 下载 ──
       canvas.toBlob((blob) => {
