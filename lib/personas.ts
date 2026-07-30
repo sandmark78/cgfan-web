@@ -1,6 +1,7 @@
 /**
- * 美学人格系统 - 36 种审美类型
- * 20 种基础人格（探索期）+ 16 种深度人格（沉浸期进化）
+ * 美学人格系统 v2.0 - 36 种审美类型
+ * 12 种基础人格（探索期）+ 24 种深度人格（沉浸期进化）
+ * 每个基础人格进化为 3 个深度人格
  */
 
 export interface Persona {
@@ -44,80 +45,135 @@ const P = (
 
 export const PERSONAS: Persona[] = [
   // ═══════════════════════════════════════
-  // 基础人格（20 种）
+  // 基础人格（12 种）
   // ═══════════════════════════════════════
 
-  // ── 光与影 ──
+  // 1. 留白主义者
+  P('minimalist', '留白主义者', 'THE MINIMALIST', '你删掉的，比你画下的更重要。', '#D8D3C8', '留白', { 抽象: 1.8 }, ['极简', '留白', '单色', '禅']),
+
+  // 2. 光影诗人
   P('light-poet', '光影诗人', 'THE LIGHT POET', '你相信一束光，能讲完整个故事。', '#EAB308', '光影', { 写实: 2, 摄影: 1 }, ['光线', '逆光', '氛围', '光影']),
-  P('film-purist', '胶片守旧派', 'THE FILM PURIST', '数码太干净，你偏爱那点颗粒。', '#9C8468', '守旧', { 摄影: 1.5, 写实: 1 }, ['胶片', '颗粒', '模拟', '胶片颗粒']),
-  P('monochromist', '黑白默片人', 'THE MONOCHROMIST', '去掉颜色，你才看清本质。', '#C7C7C7', '黑白', { 摄影: 1.5, 抽象: 0.8 }, ['黑白', '单色', '默片', '纪实']),
+
+  // 3. 色彩暴徒
+  P('color-riot', '色彩暴徒', 'THE COLOR RIOT', '你的眼睛，容不下一点灰。', '#FF4D6D', '暴徒', { 抽象: 1, 动漫: 0.6 }, ['高饱和', '撞色', '鲜艳', '色彩', '波普']),
+
+  // 4. 山野拾光人
   P('nature-gatherer', '山野拾光人', 'THE NATURE GATHERER', '你收藏的不是图，是风、雾和光。', '#6A994E', '拾光', { 写实: 1, 摄影: 1.2 }, ['自然', '风景', '植物', '山', '海', '雾', '森林', '花']),
 
-  // ── 空间与结构 ──
+  // 5. 微缩造梦师
   P('miniature', '微缩造梦师', 'THE MINIATURE DREAMER', '你把世界装进瓶子，再还给世界。', '#14B8A6', '造梦', { 微缩: 2.5, '3D': 1.8, 等距视角: 1.5 }, ['微缩', '等距', '模型', '瓶', '玻璃']),
+
+  // 6. 建筑解构者
   P('decon', '建筑解构者', 'THE DECONSTRUCTIVIST', '你在秩序里，寻找裂缝的美。', '#8B9DC3', '解构', { 建筑: 2.2, '3D': 0.8 }, ['建筑', '结构', '解构', '空间']),
-  P('geometrist', '几何纯粹派', 'THE GEOMETRIST', '世界在你眼里，是圆与方的合唱。', '#1D4ED8', '几何', { 抽象: 2, '3D': 0.6 }, ['几何', '抽象', '形状', '构成']),
+
+  // 7. 都市漫游者
   P('urban', '都市漫游者', 'THE URBAN WANDERER', '凌晨三点的城市，是你的画廊。', '#6B8CFF', '漫游', { 摄影: 1.5, 写实: 0.8 }, ['城市', '夜景', '街头', '街', '都市']),
 
-  // ── 色彩与情绪 ──
-  P('color-riot', '色彩暴徒', 'THE COLOR RIOT', '你的眼睛，容不下一点灰。', '#FF4D6D', '暴徒', { 抽象: 1, 动漫: 0.6 }, ['高饱和', '撞色', '鲜艳', '色彩', '波普']),
-  P('minimalist', '留白主义者', 'THE MINIMALIST', '你删掉的，比你画下的更重要。', '#D8D3C8', '留白', { 抽象: 1.8 }, ['极简', '留白', '单色', '禅']),
-  P('vaporwave', '蒸汽波旅人', 'THE VAPORWAVE DRIFTER', '你活在一场永不落幕的日落里。', '#F472B6', '蒸汽', { 抽象: 0.8, 动漫: 0.6 }, ['蒸汽波', '合成器', '复古未来', '霓虹']),
-  P('cyber', '赛博拾荒者', 'THE CYBER SCAVENGER', '你在霓虹废墟里，捡拾未来。', '#00E5FF', '拾荒', { '3D': 0.8, 写实: 0.5 }, ['赛博朋克', '霓虹', '科幻', '废墟']),
-
-  // ── 幻想与叙事 ──
+  // 8. 二次元织梦人
   P('anime', '二次元织梦人', 'THE ANIME WEAVER', '你的想象力，自带滤镜。', '#FF9770', '织梦', { 动漫: 2.5 }, ['动漫', '插画', '二次元', '赛璐璐', '日系']),
+
+  // 9. 超现实造境师
   P('surreal', '超现实造境师', 'THE SURREALIST', '你的梦，比现实更有条理。', '#9B7EDE', '造境', { 抽象: 1.2, 写实: 0.5 }, ['超现实', '梦境', '奇幻', 'surreal']),
-  P('dark-tale', '暗黑童话家', 'THE DARK STORYTELLER', '你的童话里，森林会吃人。', '#8E3B46', '暗黑', { 写实: 0.5, 抽象: 0.6 }, ['暗黑', '哥特', '童话', '诡异', '森林']),
+
+  // 10. 未来主义先知
   P('futurist', '未来主义先知', 'THE FUTURIST', '你提前看到了下一个世纪。', '#38BDF8', '先知', { '3D': 1, 写实: 0.4 }, ['未来', '科幻', '机械', '太空']),
 
-  // ── 东方与时光 ──
-  P('ukiyo', '浮世绘匠人', 'THE UKIYO-E ARTISAN', '一笔一划，都是东方的呼吸。', '#D0442E', '浮世', { 动漫: 0.8, 写实: 0.4 }, ['浮世绘', '日系', '水墨', '传统', '东方']),
-  P('retro', '复古时光机', 'THE RETRO TRAVELER', '你的审美，停在某个更好的年代。', '#B45309', '复古', { 写实: 0.8, 摄影: 0.8 }, ['复古', '怀旧', '年代', '老照片', 'vintage']),
-  P('earthly', '烟火人间客', 'THE EARTHLY OBSERVER', '你爱的不是风景，是人间烟火。', '#F97316', '烟火', { 摄影: 1.3, 写实: 0.8 }, ['人文', '街头', '食物', '生活', '市井', '烟火']),
+  // 11. 东方意境师
+  P('eastern', '东方意境师', 'THE EASTERN MASTER', '你的每一笔，都是千年的呼吸。', '#DC2626', '意境', { 动漫: 0.8, 写实: 0.4 }, ['浮世绘', '日系', '水墨', '传统', '东方']),
 
-  // ── 兜底 ──
+  // 12. 杂食审美家（兜底）
   P('eclectic', '杂食审美家', 'THE ECLECTIC', '你的品味没有边界，只有好奇心。', '#94A3B8', '杂食', {}, []),
 
   // ═══════════════════════════════════════
-  // 深度人格（16 种）- 收藏 20+ 解锁
+  // 深度人格（24 种）- 收藏 20+ 解锁
+  // 每个基础人格进化 3 个深度人格
   // ═══════════════════════════════════════
 
-  // ── 光与影进化 ──
+  // ── 1. 留白主义者 → 3 个深度 ──
+  P('zen-master', '空寂大师', 'THE ZEN MASTER', '你在虚无中，看见万物的本质。', '#A8A29E', '空寂', { 抽象: 2.5 }, ['极简', '留白', '禅', '虚无', '本质'], 0.8, true, 'minimalist'),
+  P('minimal-architect', '极简建筑师', 'THE MINIMAL ARCHITECT', '你用最少的元素，构建最大的空间。', '#78716C', '极简', { 抽象: 2, '3D': 0.8 }, ['极简', '建筑', '结构', '空间', '秩序'], 0.8, true, 'minimalist'),
+  P('quiet-poet', '静谧诗人', 'THE QUIET POET', '你的诗，写在留白里。', '#D6D3D1', '静谧', { 抽象: 1.8, 摄影: 0.8 }, ['极简', '留白', '静谧', '诗意', '呼吸'], 0.8, true, 'minimalist'),
+
+  // ── 2. 光影诗人 → 3 个深度 ──
   P('light-chaser', '追光者', 'THE LIGHT CHASER', '你不只是看光，你在追逐光的方向。', '#F59E0B', '追光', { 写实: 3, 摄影: 2 }, ['光线', '逆光', '黄金时刻', '丁达尔', '光晕'], 0.8, true, 'light-poet'),
-  P('darkroom', '暗房守望者', 'THE DARKROOM KEEPER', '你在显影液里，等待时间凝固。', '#78716C', '暗房', { 摄影: 2.5, 写实: 1.5 }, ['胶片', '颗粒', '暗房', '银盐', '模拟'], 0.8, true, 'film-purist'),
+  P('atmosphere-creator', '氛围营造师', 'THE ATMOSPHERE CREATOR', '你卖的不是画面，是空气。', '#FBBF24', '氛围', { 写实: 2.5, 摄影: 1.5 }, ['光线', '氛围', '雾气', '朦胧', '空气感'], 0.8, true, 'light-poet'),
+  P('emotion-catcher', '情绪捕手', 'THE EMOTION CATCHER', '你捕捉的不是瞬间，是情绪。', '#FCD34D', '捕手', { 写实: 2, 摄影: 2 }, ['光线', '情绪', '瞬间', '故事', '氛围'], 0.8, true, 'light-poet'),
 
-  // ── 自然与空间进化 ──
+  // ── 3. 色彩暴徒 → 3 个深度 ──
+  P('color-alchemist', '色彩炼金术师', 'THE COLOR ALCHEMIST', '你把颜色炼成魔法。', '#E11D48', '炼金', { 抽象: 2, 动漫: 1 }, ['高饱和', '撞色', '鲜艳', '色彩', '魔法'], 0.8, true, 'color-riot'),
+  P('chromatic-rebel', '色谱叛逆者', 'THE CHROMATIC REBEL', '你的调色盘，是秩序的敌人。', '#F43F5E', '叛逆', { 抽象: 1.5, 动漫: 0.8 }, ['高饱和', '撞色', '叛逆', '混乱', '秩序'], 0.8, true, 'color-riot'),
+  P('neon-dreamer', '霓虹造梦者', 'THE NEON DREAMER', '你活在永不褪色的夜里。', '#EC4899', '霓虹', { 抽象: 1.2, 动漫: 1 }, ['高饱和', '霓虹', '夜晚', '发光', '赛博'], 0.8, true, 'color-riot'),
+
+  // ── 4. 山野拾光人 → 3 个深度 ──
   P('nature-child', '自然之子', 'CHILD OF NATURE', '你与万物同频，风是你的语言。', '#059669', '自然', { 写实: 2, 摄影: 2 }, ['自然', '风景', '植物', '山', '海', '雾', '森林', '花', '大地'], 0.8, true, 'nature-gatherer'),
-  P('space-poet', '空间诗人', 'THE SPACE POET', '你用建筑写诗，用空间叙事。', '#6366F1', '空间', { 建筑: 3, '3D': 1.5 }, ['建筑', '结构', '解构', '空间', '秩序', '裂缝'], 0.8, true, 'decon'),
+  P('wilderness-poet', '荒野诗人', 'THE WILDERNESS POET', '你在无人之境，写下大地的诗。', '#10B981', '荒野', { 写实: 2.5, 摄影: 1.5 }, ['自然', '荒野', '无人', '大地', '孤独'], 0.8, true, 'nature-gatherer'),
+  P('season-watcher', '季节观察者', 'THE SEASON WATCHER', '你看见时间，在叶脉里流动。', '#34D399', '季节', { 写实: 2, 摄影: 2 }, ['自然', '季节', '时间', '叶', '变化'], 0.8, true, 'nature-gatherer'),
+
+  // ── 5. 微缩造梦师 → 3 个深度 ──
   P('micro-creator', '微观造物主', 'THE MICRO CREATOR', '你在针尖上建造宇宙。', '#0D9488', '造物', { 微缩: 3.5, '3D': 2.5 }, ['微缩', '等距', '模型', '瓶', '玻璃', '细节', '精致'], 0.8, true, 'miniature'),
-  P('form-alchemist', '形式炼金师', 'THE FORM ALCHEMIST', '你把形状炼成黄金。', '#2563EB', '炼金', { 抽象: 3, '3D': 1 }, ['几何', '抽象', '形状', '构成', '纯粹', '数学'], 0.8, true, 'geometrist'),
+  P('miniature-storyteller', '微缩叙事者', 'THE MINIATURE STORYTELLER', '你在方寸之间，讲述完整的世界。', '#14B8A6', '叙事', { 微缩: 3, '3D': 2 }, ['微缩', '等距', '故事', '世界', '细节'], 0.8, true, 'miniature'),
+  P('detail-hunter', '细节猎人', 'THE DETAIL HUNTER', '你相信魔鬼藏在细节里。', '#5EEAD4', '猎人', { 微缩: 2.5, '3D': 2 }, ['微缩', '细节', '精致', '纹理', '观察'], 0.8, true, 'miniature'),
 
-  // ── 城市与色彩进化 ──
+  // ── 6. 建筑解构者 → 3 个深度 ──
+  P('space-poet', '空间诗人', 'THE SPACE POET', '你用建筑写诗，用空间叙事。', '#6366F1', '空间', { 建筑: 3, '3D': 1.5 }, ['建筑', '结构', '解构', '空间', '秩序', '裂缝'], 0.8, true, 'decon'),
+  P('structure-alchemist', '结构炼金师', 'THE STRUCTURE ALCHEMIST', '你把钢筋水泥炼成诗。', '#818CF8', '炼金', { 建筑: 2.5, '3D': 2 }, ['建筑', '结构', '解构', '炼金', '转化'], 0.8, true, 'decon'),
+  P('void-architect', '虚空建筑师', 'THE VOID ARCHITECT', '你建造的不是墙，是空隙。', '#A5B4FC', '虚空', { 建筑: 2, '3D': 2.5 }, ['建筑', '结构', '虚空', '留白', '空间'], 0.8, true, 'decon'),
+
+  // ── 7. 都市漫游者 → 3 个深度 ──
   P('city-archaeologist', '城市考古学家', 'THE CITY ARCHAEOLOGIST', '你在街角挖掘被遗忘的故事。', '#4F46E5', '考古', { 摄影: 2.5, 写实: 1.5 }, ['城市', '夜景', '街头', '街', '都市', '废墟', '遗忘'], 0.8, true, 'urban'),
-  P('color-alchemist', '色彩炼金术师', 'THE COLOR ALCHEMIST', '你把颜色炼成魔法。', '#E11D48', '炼金', { 抽象: 2, 动漫: 1 }, ['高饱和', '撞色', '鲜艳', '色彩', '波普', '魔法'], 0.8, true, 'color-riot'),
-  P('time-traveler', '时光旅人', 'THE TIME TRAVELER', '你在时间的褶皱里寻找永恒。', '#DB2777', '旅人', { 抽象: 1.5, 动漫: 1 }, ['蒸汽波', '合成器', '复古未来', '霓虹', '永恒', '褶皱'], 0.8, true, 'vaporwave'),
-  P('future-archaeologist', '未来考古学家', 'THE FUTURE ARCHAEOLOGIST', '你从未来挖掘现在的遗迹。', '#06B6D4', '考古', { '3D': 1.5, 写实: 1 }, ['赛博朋克', '霓虹', '科幻', '废墟', '遗迹', '未来'], 0.8, true, 'cyber'),
+  P('night-walker', '夜行者', 'THE NIGHT WALKER', '凌晨四点，城市只属于你。', '#6366F1', '夜行', { 摄影: 2, 写实: 2 }, ['城市', '夜景', '街头', '夜', '孤独', '行走'], 0.8, true, 'urban'),
+  P('street-philosopher', '街头哲学家', 'THE STREET PHILOSOPHER', '你在喧嚣中，思考存在的意义。', '#818CF8', '哲学', { 摄影: 2, 写实: 1.5 }, ['城市', '街头', '哲学', '思考', '存在'], 0.8, true, 'urban'),
 
-  // ── 幻想与叙事进化 ──
+  // ── 8. 二次元织梦人 → 3 个深度 ──
   P('dimension-traveler', '次元旅行者', 'THE DIMENSION TRAVELER', '你在平行宇宙间自由穿梭。', '#EA580C', '次元', { 动漫: 3.5 }, ['动漫', '插画', '二次元', '赛璐璐', '日系', '平行', '穿梭'], 0.8, true, 'anime'),
-  P('dream-architect', '梦境建筑师', 'THE DREAM ARCHITECT', '你用想象力建造不可能的建筑。', '#7C3AED', '筑梦', { 抽象: 2, 写实: 1 }, ['超现实', '梦境', '奇幻', 'surreal', '建筑', '不可能'], 0.8, true, 'surreal'),
-  P('abyss-narrator', '深渊叙事者', 'THE ABYSS NARRATOR', '你在黑暗中讲述最温柔的故事。', '#991B1B', '深渊', { 写实: 1, 抽象: 1 }, ['暗黑', '哥特', '童话', '诡异', '森林', '深渊', '温柔'], 0.8, true, 'dark-tale'),
-  P('oracle', '时空预言家', 'THE ORACLE', '你看见了所有人还没看见的未来。', '#0284C7', '预言', { '3D': 1.5, 写实: 0.8 }, ['未来', '科幻', '机械', '太空', '预言', '看见'], 0.8, true, 'futurist'),
+  P('anime-storyteller', '动漫叙事者', 'THE ANIME STORYTELLER', '你用画笔，编织另一个世界。', '#F97316', '叙事', { 动漫: 3 }, ['动漫', '插画', '二次元', '故事', '世界'], 0.8, true, 'anime'),
+  P('cel-shade-dreamer', '赛璐璐造梦者', 'THE CEL-SHADE DREAMER', '你的梦，是平涂的。', '#FB923C', '赛璐', { 动漫: 2.5 }, ['动漫', '插画', '二次元', '赛璐璐', '平涂'], 0.8, true, 'anime'),
 
-  // ── 东方与时光进化 ──
-  P('eastern-master', '东方意境师', 'THE EASTERN MASTER', '你的每一笔，都是千年的呼吸。', '#DC2626', '意境', { 动漫: 1.2, 写实: 0.8 }, ['浮世绘', '日系', '水墨', '传统', '东方', '意境', '千年'], 0.8, true, 'ukiyo'),
-  P('nostalgia-keeper', '时光收藏家', 'THE NOSTALGIA KEEPER', '你收藏的不是旧物，是旧时光里的温度。', '#92400E', '收藏', { 写实: 1.5, 摄影: 1.5 }, ['复古', '怀旧', '年代', '老照片', 'vintage', '温度', '旧物'], 0.8, true, 'retro'),
+  // ── 9. 超现实造境师 → 3 个深度 ──
+  P('dream-architect', '梦境建筑师', 'THE DREAM ARCHITECT', '你用想象力建造不可能的建筑。', '#7C3AED', '筑梦', { 抽象: 2, 写实: 1 }, ['超现实', '梦境', '奇幻', 'surreal', '建筑', '不可能'], 0.8, true, 'surreal'),
+  P('reality-bender', '现实扭曲者', 'THE REALITY BENDER', '你让不可能，变得可信。', '#8B5CF6', '扭曲', { 抽象: 2.5, 写实: 0.8 }, ['超现实', '扭曲', '不可能', '奇幻', '梦境'], 0.8, true, 'surreal'),
+  P('paradox-creator', '悖论创造者', 'THE PARADOX CREATOR', '你活在逻辑的反面。', '#A78BFA', '悖论', { 抽象: 2, 写实: 1.2 }, ['超现实', '悖论', '矛盾', '逻辑', '反面'], 0.8, true, 'surreal'),
+
+  // ── 10. 未来主义先知 → 3 个深度 ──
+  P('oracle', '时空预言家', 'THE ORACLE', '你看见了所有人还没看见的未来。', '#0284C7', '预言', { '3D': 1.5, 写实: 0.8 }, ['未来', '科幻', '机械', '太空', '预言', '看见'], 0.8, true, 'futurist'),
+  P('cyber-architect', '赛博建筑师', 'THE CYBER ARCHITECT', '你用代码，建造明天的城市。', '#0EA5E9', '赛博', { '3D': 2, 写实: 0.6 }, ['未来', '科幻', '赛博', '建筑', '代码'], 0.8, true, 'futurist'),
+  P('space-explorer', '太空探索者', 'THE SPACE EXPLORER', '你的眼睛，望向光年之外。', '#38BDF8', '太空', { '3D': 1.8, 写实: 0.5 }, ['未来', '科幻', '太空', '探索', '光年'], 0.8, true, 'futurist'),
+
+  // ── 11. 东方意境师 → 3 个深度 ──
+  P('ink-master', '水墨宗师', 'THE INK MASTER', '你的笔尖，藏着千年的墨香。', '#DC2626', '水墨', { 动漫: 1, 写实: 0.6 }, ['水墨', '东方', '传统', '笔', '墨'], 0.8, true, 'eastern'),
+  P('zen-gardener', '禅意园丁', 'THE ZEN GARDENER', '你种的不是花，是心境。', '#EF4444', '禅意', { 动漫: 0.8, 写实: 0.8 }, ['东方', '禅', '意境', '心境', '留白'], 0.8, true, 'eastern'),
+  P('ukiyo-spirit', '浮世之魂', 'THE UKIYO SPIRIT', '你是浮世绘里，走出来的灵魂。', '#F87171', '浮世', { 动漫: 1.2, 写实: 0.5 }, ['浮世绘', '东方', '传统', '灵魂', '浮世'], 0.8, true, 'eastern'),
+
+  // ── 12. 杂食审美家 → 3 个深度（特殊进化） ──
+  P('aesthetic-explorer', '美学探险家', 'THE AESTHETIC EXPLORER', '你在未知中，发现新的美。', '#64748B', '探险', { 摄影: 1, 写实: 1, 抽象: 1 }, ['多元', '探索', '未知', '发现', '美'], 0.8, true, 'eclectic'),
+  P('style-mixer', '风格混搭师', 'THE STYLE MIXER', '你把不可能，变成新可能。', '#94A3B8', '混搭', { 摄影: 0.8, 抽象: 1.2 }, ['多元', '混搭', '融合', '创新', '可能'], 0.8, true, 'eclectic'),
+  P('border-breaker', '边界打破者', 'THE BORDER BREAKER', '你的品味，没有围墙。', '#CBD5E1', '破界', { 摄影: 1, 抽象: 1, '3D': 0.8 }, ['多元', '边界', '打破', '自由', '无界'], 0.8, true, 'eclectic'),
 ]
 
 // 杂食审美家特殊标记
 export const ECLECTIC = PERSONAS.find(p => p.id === 'eclectic')!
 ECLECTIC.prismatic = true
 
-// 基础人格
+// 基础人格（12 种）
 export const BASE_PERSONAS = PERSONAS.filter(p => !p.deep)
-// 深度人格
+// 深度人格（24 种）
 export const DEEP_PERSONAS = PERSONAS.filter(p => p.deep)
+
+// 进化规则
+export const EVOLUTION_MAP: Record<string, string[]> = {
+  'minimalist': ['zen-master', 'minimal-architect', 'quiet-poet'],
+  'light-poet': ['light-chaser', 'atmosphere-creator', 'emotion-catcher'],
+  'color-riot': ['color-alchemist', 'chromatic-rebel', 'neon-dreamer'],
+  'nature-gatherer': ['nature-child', 'wilderness-poet', 'season-watcher'],
+  'miniature': ['micro-creator', 'miniature-storyteller', 'detail-hunter'],
+  'decon': ['space-poet', 'structure-alchemist', 'void-architect'],
+  'urban': ['city-archaeologist', 'night-walker', 'street-philosopher'],
+  'anime': ['dimension-traveler', 'anime-storyteller', 'cel-shade-dreamer'],
+  'surreal': ['dream-architect', 'reality-bender', 'paradox-creator'],
+  'futurist': ['oracle', 'cyber-architect', 'space-explorer'],
+  'eastern': ['ink-master', 'zen-gardener', 'ukiyo-spirit'],
+  'eclectic': ['aesthetic-explorer', 'style-mixer', 'border-breaker'],
+}
 
 // 统一打分
 function score(p: Persona, a: TasteAnalysis): number {
