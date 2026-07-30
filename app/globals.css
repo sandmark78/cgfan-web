@@ -111,6 +111,7 @@ body {
 }
 @media (max-width: 640px) {
   .daily-pick {
+    max-width: 100%;
     padding: 20px 0;
   }
   .daily-card {
