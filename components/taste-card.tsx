@@ -528,39 +528,8 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       ctx.fillText('🍃', W / 2 + ctx.measureText(`「${currentPersona.tagline}」`).width / 2 + 10, taglineY + 6)
       ctx.globalAlpha = 1
       
-      // ── 名人名言（居中，斜体 + 引号装饰） ──
-      let quoteEndY = taglineY
-      if (currentPersona.quote) {
-        const quoteY = taglineY + 50
-        ctx.font = `italic 400 14px "Noto Serif SC", "Songti SC", serif`
-        ctx.fillStyle = C.soft
-        const maxQuoteW = W - M * 2 - 160
-        const quoteChars = currentPersona.quote.split('')
-        let qLine = ''
-        let qly = quoteY
-        const qLineH = 22
-        let qLineCount = 0
-        
-        for (let i = 0; i < quoteChars.length; i++) {
-          const testLine = qLine + quoteChars[i]
-          if (ctx.measureText(testLine).width > maxQuoteW && qLine.length > 0) {
-            ctx.fillText(qLine, W / 2, qly)
-            qLine = quoteChars[i]
-            qly += qLineH
-            qLineCount++
-            if (qLineCount >= 2) break
-          } else {
-            qLine = testLine
-          }
-        }
-        if (qLine && qLineCount < 2) {
-          ctx.fillText(qLine, W / 2, qly)
-        }
-        quoteEndY = qly + 10
-      }
-      
       // ── 描述文字（居中） ──
-      const descY = quoteEndY + 40
+      const descY = taglineY + 48
       ctx.font = `400 15px "Noto Serif SC", "Songti SC", serif`
       ctx.fillStyle = C.soft
       const maxTextW = W - M * 2 - 112
@@ -705,6 +674,48 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
         ctx.font = `700 15px -apple-system, sans-serif`
         ctx.fillStyle = C.ink
         ctx.fillText(`${v}`, lx, ly2 + 9)
+      }
+      
+      // ── 名人名言（雷达图下方，右对齐） ──
+      if (currentPersona.quote) {
+        const quoteStartY = radarCY + radarR + 60
+        ctx.font = `italic 400 15px "Noto Serif SC", "Songti SC", serif`
+        ctx.fillStyle = C.soft
+        ctx.textAlign = 'right'
+        
+        // 解析名言，分离句子和作者
+        const quoteParts = currentPersona.quote.split('——')
+        const quoteText = quoteParts[0].trim()
+        const quoteAuthor = quoteParts[1] ? `—— ${quoteParts[1].trim()}` : ''
+        
+        // 绘制名言句子（完整显示，自动换行）
+        const maxQuoteW = W - M * 2 - 120
+        const quoteChars = quoteText.split('')
+        let qLine = ''
+        let qly = quoteStartY
+        const qLineH = 24
+        
+        for (let i = 0; i < quoteChars.length; i++) {
+          const testLine = qLine + quoteChars[i]
+          if (ctx.measureText(testLine).width > maxQuoteW && qLine.length > 0) {
+            ctx.fillText(qLine, W - M - 60, qly)
+            qLine = quoteChars[i]
+            qly += qLineH
+          } else {
+            qLine = testLine
+          }
+        }
+        if (qLine) {
+          ctx.fillText(qLine, W - M - 60, qly)
+          qly += qLineH
+        }
+        
+        // 绘制作者名字（右对齐）
+        if (quoteAuthor) {
+          ctx.font = `500 14px -apple-system, "Helvetica Neue", sans-serif`
+          ctx.fillStyle = C.inkMid
+          ctx.fillText(quoteAuthor, W - M - 60, qly + 8)
+        }
       }
       
       // ── 底部区域 ──
