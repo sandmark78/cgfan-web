@@ -516,22 +516,35 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       
       const angleStep = (Math.PI * 2) / 8
       
-      // 背景网格（3层）
-      for (let ring = 1; ring <= 3; ring++) {
-        const r = (radarR * ring) / 3
-        ctx.beginPath()
-        for (let i = 0; i <= 8; i++) {
-          const angle = -Math.PI / 2 + i * angleStep
-          const x = radarCX + Math.cos(angle) * r
-          const y = radarCY + Math.sin(angle) * r
-          if (i === 0) ctx.moveTo(x, y)
-          else ctx.lineTo(x, y)
-        }
-        ctx.closePath()
-        ctx.strokeStyle = C.radar
-        ctx.lineWidth = 1
-        ctx.stroke()
+      // 背景网格（2层：中圈50，外圈100）
+      // 中圈 = 50分
+      ctx.beginPath()
+      for (let i = 0; i <= 8; i++) {
+        const angle = -Math.PI / 2 + i * angleStep
+        const r = radarR * 0.5
+        const x = radarCX + Math.cos(angle) * r
+        const y = radarCY + Math.sin(angle) * r
+        if (i === 0) ctx.moveTo(x, y)
+        else ctx.lineTo(x, y)
       }
+      ctx.closePath()
+      ctx.strokeStyle = C.radar
+      ctx.lineWidth = 1
+      ctx.stroke()
+      
+      // 外圈 = 100分
+      ctx.beginPath()
+      for (let i = 0; i <= 8; i++) {
+        const angle = -Math.PI / 2 + i * angleStep
+        const x = radarCX + Math.cos(angle) * radarR
+        const y = radarCY + Math.sin(angle) * radarR
+        if (i === 0) ctx.moveTo(x, y)
+        else ctx.lineTo(x, y)
+      }
+      ctx.closePath()
+      ctx.strokeStyle = C.radar
+      ctx.lineWidth = 1
+      ctx.stroke()
       
       // 辐射线
       for (let i = 0; i < 8; i++) {
