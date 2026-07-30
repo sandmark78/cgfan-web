@@ -435,30 +435,14 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       await new Promise<void>((resolve, reject) => {
         bgImg.onload = () => resolve()
         bgImg.onerror = () => reject(new Error('Background image load failed'))
-        bgImg.src = '/images/taste-card-bg.png'
+        bgImg.src = '/images/taste-card-bg.jpg'
       })
       
       // 绘制背景图（铺满画布）
       ctx.drawImage(bgImg, 0, 0, W, H)
       
-      // ─ 顶部品牌区 ──
-      const topY = 60
-      ctx.font = `600 13px -apple-system, "Helvetica Neue", sans-serif`
-      ctx.fillStyle = C.soft
-      ctx.textAlign = 'left'
-      ctx.letterSpacing = '3px'
-      ctx.fillText('C G F A N', 70, topY)
-      
-      // 右侧编号
-      const serialNum = ((profile.favoriteCount * 137 + currentPersona.name.length * 911) % 9000 + 1000).toString()
-      ctx.textAlign = 'right'
-      ctx.font = `400 12px -apple-system, sans-serif`
-      ctx.fillStyle = C.softest
-      ctx.fillText(`No.${serialNum}`, W - 70, topY)
-      ctx.letterSpacing = '0px'
-      
       // ── 人格名（居中，大字宋体） ──
-      const nameY = 200
+      const nameY = 300
       const nameLen = currentPersona.name.length
       const nameSize = nameLen >= 6 ? 72 : nameLen === 5 ? 84 : nameLen === 4 ? 96 : 108
       ctx.font = `900 ${nameSize}px "Noto Serif SC", "Songti SC", "SimSun", serif`
@@ -507,23 +491,10 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
         ctx.fillText(line, W / 2, ly)
       }
       
-      // ── 8维雷达图（叠加在吊坠金点上） ──
-      // 吊坠8个金点坐标（从背景图提取）
-      // 罗盘中心约 (540, 960)
-      const compassCX = 540
-      const compassCY = 960
-      
-      // 8个金点位置（对应8维度，从左上顺时针）
-      const goldDots = [
-        { x: 281, y: 768 },  // 左上 → complexity 复杂度
-        { x: 789, y: 767 },  // 右上 → colorIntensity 色彩
-        { x: 764, y: 807 },  // 右中上 → arousal 情绪
-        { x: 802, y: 857 },  // 右中 → fluency 流畅
-        { x: 711, y: 892 },  // 右下 → novelty 新奇
-        { x: 362, y: 943 },  // 左下 → harmony 和谐
-        { x: 443, y: 975 },  // 底部左 → narrative 叙事
-        { x: 622, y: 983 },  // 底部右 → stylization 风格
-      ]
+      // ── 8维雷达图（规则圆形布局，在月牙中间） ──
+      const radarCX = 540
+      const radarCY = 900
+      const radarR = 180
       
       const dims = [
         { key: 'complexity', label: '复杂度' },
@@ -536,24 +507,49 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
         { key: 'stylization', label: '风格' },
       ] as const
       
-      // 计算每个金点到罗盘中心的距离作为最大半径
-      const maxDistances = goldDots.map(dot => {
-        const dx = dot.x - compassCX
-        const dy = dot.y - compassCY
-        return Math.sqrt(dx * dx + dy * dy)
-      })
+      const angleStep = (Math.PI * 2) / 8
       
-      // 绘制雷达数据区域
+      // 背景网格（4层）
+      for (let ring = 1; ring <= 4; ring++) {
+        const r = (radarR * ring) / 4
+        ctx.beginPath()
+        for (let i = 0; i <= 8; i++) {
+          const angle = -Math.PI / 2 + i * angleStep
+          const x = radarCX + Math.cos(angle) * r
+          const y = radarCY + Math.sin(angle) * r
+          if (i === 0) ctx.moveTo(x, y)
+          else ctx.lineTo(x, y)
+        }
+        ctx.closePath()
+        ctx.strokeStyle = C.radar
+        ctx.lineWidth = 1
+        ctx.stroke()
+      }
+      
+      // 辐射线
+      for (let i = 0; i < 8; i++) {
+        const angle = -Math.PI / 2 + i * angleStep
+        ctx.beginPath()
+        ctx.moveTo(radarCX, radarCY)
+        ctx.lineTo(
+          radarCX + Math.cos(angle) * radarR,
+          radarCY + Math.sin(angle) * radarR
+        )
+        ctx.strokeStyle = C.radar
+        ctx.lineWidth = 0.5
+        ctx.stroke()
+      }
+      
+      // 数据区域
       ctx.beginPath()
       for (let i = 0; i <= 8; i++) {
         const idx = i % 8
+        const angle = -Math.PI / 2 + idx * angleStep
         const val = profile.vector[dims[idx].key as keyof typeof profile.vector] / 100
-        const dx = goldDots[idx].x - compassCX
-        const dy = goldDots[idx].y - compassCY
-        const px = compassCX + dx * val
-        const py = compassCY + dy * val
-        if (i === 0) ctx.moveTo(px, py)
-        else ctx.lineTo(px, py)
+        const x = radarCX + Math.cos(angle) * radarR * val
+        const y = radarCY + Math.sin(angle) * radarR * val
+        if (i === 0) ctx.moveTo(x, y)
+        else ctx.lineTo(x, y)
       }
       ctx.closePath()
       ctx.fillStyle = 'rgba(74,140,98,0.18)'
@@ -562,14 +558,14 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       ctx.lineWidth = 2.5
       ctx.stroke()
       
-      // 数据点
+      // 数据点 + 标签
       for (let i = 0; i < 8; i++) {
+        const angle = -Math.PI / 2 + i * angleStep
         const val = profile.vector[dims[i].key as keyof typeof profile.vector] / 100
-        const dx = goldDots[i].x - compassCX
-        const dy = goldDots[i].y - compassCY
-        const px = compassCX + dx * val
-        const py = compassCY + dy * val
+        const px = radarCX + Math.cos(angle) * radarR * val
+        const py = radarCY + Math.sin(angle) * radarR * val
         
+        // 数据点
         ctx.beginPath()
         ctx.arc(px, py, 5, 0, Math.PI * 2)
         ctx.fillStyle = C.inkMid
@@ -577,39 +573,29 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
         ctx.strokeStyle = '#fff'
         ctx.lineWidth = 1.5
         ctx.stroke()
-      }
-      
-      // 维度标签（放在金点外侧）
-      ctx.font = `600 13px -apple-system, "PingFang SC", sans-serif`
-      ctx.textAlign = 'center'
-      ctx.textBaseline = 'middle'
-      
-      for (let i = 0; i < 8; i++) {
-        const dot = goldDots[i]
-        const dx = dot.x - compassCX
-        const dy = dot.y - compassCY
-        const dist = Math.sqrt(dx * dx + dy * dy)
-        // 标签放在金点外侧 25px
-        const labelX = compassCX + (dx / dist) * (dist + 28)
-        const labelY = compassCY + (dy / dist) * (dist + 28)
+        
+        // 标签
+        const labelR = radarR + 32
+        const lx = radarCX + Math.cos(angle) * labelR
+        const ly = radarCY + Math.sin(angle) * labelR
         const v = Math.round(profile.vector[dims[i].key as keyof typeof profile.vector])
         
+        ctx.font = `500 13px -apple-system, "PingFang SC", sans-serif`
         ctx.fillStyle = C.soft
-        ctx.fillText(`${dims[i].label}`, labelX, labelY - 8)
-        ctx.font = `700 14px -apple-system, sans-serif`
+        ctx.textAlign = 'center'
+        ctx.textBaseline = 'middle'
+        ctx.fillText(`${dims[i].label}`, lx, ly - 9)
+        
+        ctx.font = `700 15px -apple-system, sans-serif`
         ctx.fillStyle = C.ink
-        ctx.fillText(`${v}`, labelX, labelY + 8)
-        ctx.font = `600 13px -apple-system, "PingFang SC", sans-serif`
+        ctx.fillText(`${v}`, lx, ly + 9)
       }
       
-      // ── 名人名言（透明框 + 居中 + 右对齐文字） ──
+      // ── 名人名言（全透明，右对齐文字） ──
       if (currentPersona.quote) {
-        const quoteStartY = 1100
-        const boxW = 420
-        const boxX = (W - boxW) / 2
+        const quoteStartY = 1120
         const boxPadX = 28
-        const boxPadY = 18
-        const textW = boxW - boxPadX * 2
+        const textW = 420 - boxPadX * 2
         
         const quoteParts = currentPersona.quote.split('——')
         const quoteText = quoteParts[0].trim()
@@ -632,36 +618,22 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
         }
         if (qLine) qLines.push(qLine)
         
-        const authorLineH = quoteAuthor ? 28 : 0
-        const boxH = boxPadY * 2 + qLines.length * qLineH + authorLineH
-        
-        // 透明框
-        ctx.save()
-        ctx.fillStyle = 'rgba(248,250,246,0.75)'
-        ctx.strokeStyle = 'rgba(45,95,62,0.12)'
-        ctx.lineWidth = 0.5
-        ctx.beginPath()
-        ctx.roundRect(boxX, quoteStartY, boxW, boxH, 8)
-        ctx.fill()
-        ctx.stroke()
-        ctx.restore()
-        
-        // 文字（右对齐）
+        // 文字（右对齐，无框）
         ctx.font = `italic 400 15px "Noto Serif SC", "Songti SC", serif`
         ctx.fillStyle = C.soft
         ctx.textAlign = 'right'
         ctx.textBaseline = 'top'
         
-        let qly = quoteStartY + boxPadY
+        let qly = quoteStartY
         for (const line of qLines) {
-          ctx.fillText(line, boxX + boxW - boxPadX, qly)
+          ctx.fillText(line, W / 2 + 210 - boxPadX, qly)
           qly += qLineH
         }
         
         if (quoteAuthor) {
           ctx.font = `500 14px -apple-system, "Helvetica Neue", sans-serif`
           ctx.fillStyle = C.inkMid
-          ctx.fillText(quoteAuthor, boxX + boxW - boxPadX, qly + 4)
+          ctx.fillText(quoteAuthor, W / 2 + 210 - boxPadX, qly + 4)
         }
         
         ctx.textBaseline = 'alphabetic'
@@ -683,12 +655,6 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       ctx.font = `600 12px -apple-system, sans-serif`
       ctx.fillStyle = C.soft
       ctx.fillText('www.cgfan.com', W / 2, bottomY)
-      
-      // 右侧：编号（火漆章已在背景图中）
-      ctx.textAlign = 'right'
-      ctx.font = `400 12px -apple-system, sans-serif`
-      ctx.fillStyle = C.softest
-      ctx.fillText(`No.${serialNum}`, W - 70, bottomY)
       
       // ── 下载 ──
       canvas.toBlob((blob) => {
