@@ -797,6 +797,19 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       </button>
     </div>
 
+    {/* 订阅引导 */}
+    <div className="mt-6 max-w-md mx-auto rounded-xl bg-green-50/60 dark:bg-green-900/20 px-4 py-3 border border-green-200/40 dark:border-green-800/30">
+      <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">
+        <span className="text-green-600 dark:text-green-400 font-medium">📧 订阅每日推送</span> · 每天 9:00 收到精选提示词
+      </p>
+      <a href="/subscribe" className="btn-primary inline-flex items-center gap-1.5 text-xs px-3 py-1.5">
+        免费订阅
+        <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+    </div>
+
     {/* 重新测试确认弹窗 */}
     {showRetakeConfirm && (
       <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm">
