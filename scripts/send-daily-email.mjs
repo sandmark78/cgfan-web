@@ -2,11 +2,37 @@
 /**
  * 每日一味邮件发送脚本
  * 用于 cron job 定时调用
+ * 
+ * 数据来源：从 GitHub 读取 lib/daily-feature.ts
  */
 
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL
 const SUPABASE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY
 const RESEND_API_KEY = process.env.RESEND_API_KEY
+
+async function getTodayFeature() {
+  // 从 GitHub 读取 daily-feature.ts
+  const response = await fetch('https://raw.githubusercontent.com/sandmark78/cgfan-web/main/lib/daily-feature.ts')
+  const content = await response.text()
+  
+  // 获取今天的日期
+  const today = new Date().toISOString().split('T')[0]
+  
+  // 解析数据（简单提取）
+  const dateMatch = content.match(new RegExp(`date:\\s*'${today}'[\\s\\S]*?slug:\\s*'([^']+)'[\\s\\S]*?curatorNote:\\s*'([^']+)'[\\s\\S]*?highlight:\\s*'([^']+)'[\\s\\S]*?tip:\\s*'([^']+)'`, 'm'))
+  
+  if (!dateMatch) {
+    return null
+  }
+  
+  return {
+    date: today,
+    slug: dateMatch[1],
+    curatorNote: dateMatch[2],
+    highlight: dateMatch[3],
+    tip: dateMatch[4],
+  }
+}
 
 async function sendDailyEmail() {
   if (!SUPABASE_URL || !SUPABASE_KEY || !RESEND_API_KEY) {
@@ -15,21 +41,13 @@ async function sendDailyEmail() {
   }
 
   // 获取今日精选
-  const today = new Date().toISOString().split('T')[0]
-  const response = await fetch(`${SUPABASE_URL}/rest/v1/daily_features?date=eq.${today}&select=*`, {
-    headers: {
-      'apikey': SUPABASE_KEY,
-      'Authorization': `Bearer ${SUPABASE_KEY}`
-    }
-  })
-
-  const features = await response.json()
-  if (features.length === 0) {
+  const feature = await getTodayFeature()
+  if (!feature) {
     console.log('No daily feature for today')
     return
   }
 
-  const feature = features[0]
+  console.log(`Today's feature: ${feature.highlight}`)
 
   // 获取所有已确认的订阅者
   const subscribersResponse = await fetch(`${SUPABASE_URL}/rest/v1/subscribers?confirmed=eq.true&select=email`, {
@@ -45,6 +63,8 @@ async function sendDailyEmail() {
     return
   }
 
+  console.log(`Sending to ${subscribers.length} subscribers...`)
+
   // 发送邮件
   const { Resend } = await import('resend')
   const resend = new Resend(RESEND_API_KEY)
@@ -55,10 +75,10 @@ async function sendDailyEmail() {
       await resend.emails.send({
         from: 'CGfan <noreply@send.cgfan.com>',
         to: subscriber.email,
-        subject: `每日一味：${feature.title}`,
+        subject: `每日一味：${feature.highlight}`,
         html: `
           <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
-            <h1 style="color: #2D5F3E; font-size: 24px; margin-bottom: 16px;">${feature.title}</h1>
+            <h1 style="color: #2D5F3E; font-size: 24px; margin-bottom: 16px;">${feature.highlight}</h1>
             <p style="color: #4A4A4A; font-size: 16px; line-height: 1.6; margin-bottom: 24px;">
               ${feature.curatorNote}
             </p>
@@ -80,8 +100,9 @@ async function sendDailyEmail() {
         `,
       })
       sentCount++
+      console.log(`✓ Sent to ${subscriber.email}`)
     } catch (error) {
-      console.error(`Failed to send to ${subscriber.email}:`, error)
+      console.error(`✗ Failed to send to ${subscriber.email}:`, error.message)
     }
   }
 
@@ -99,7 +120,7 @@ async function sendDailyEmail() {
     })
   })
 
-  console.log(`Sent ${sentCount} emails for ${feature.title}`)
+  console.log(`\n✅ Sent ${sentCount}/${subscribers.length} emails for "${feature.highlight}"`)
 }
 
 sendDailyEmail().catch(console.error)
