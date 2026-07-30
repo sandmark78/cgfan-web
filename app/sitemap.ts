@@ -35,11 +35,20 @@ export default function sitemap() {
       changeFrequency: 'yearly',
       priority: 0.3,
     },
-    ...prompts.map((prompt) => ({
-      url: `${baseUrl}/prompt/${prompt.slug}`,
-      lastModified: prompt.date ? new Date(prompt.date) : new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.6,
-    })),
+    ...prompts.map((prompt) => {
+      let lastMod = new Date()
+      if (prompt.date) {
+        const d = new Date(prompt.date)
+        if (!isNaN(d.getTime())) {
+          lastMod = d
+        }
+      }
+      return {
+        url: `${baseUrl}/prompt/${prompt.slug}`,
+        lastModified: lastMod,
+        changeFrequency: 'weekly' as const,
+        priority: 0.6,
+      }
+    }),
   ]
 }
