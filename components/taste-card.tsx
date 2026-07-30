@@ -462,8 +462,34 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       ctx.fillStyle = C.softest
       ctx.fillText(`No.${serialNum}`, W - M - 32, topY)
       
+      // ── 树形图标（居中顶部） ──
+      const treeCX = W / 2
+      const treeCY = topY + 70
+      ctx.save()
+      ctx.translate(treeCX, treeCY)
+      // 树干
+      ctx.fillStyle = C.inkMid
+      ctx.beginPath()
+      ctx.moveTo(-8, 30)
+      ctx.lineTo(-4, -10)
+      ctx.quadraticCurveTo(0, -20, 4, -10)
+      ctx.lineTo(8, 30)
+      ctx.closePath()
+      ctx.fill()
+      // 树冠（多层椭圆叠加）
+      const treeColors = [C.ink, C.inkMid, C.inkLight]
+      for (let i = 0; i < 3; i++) {
+        ctx.fillStyle = treeColors[i]
+        ctx.globalAlpha = 0.9 - i * 0.2
+        ctx.beginPath()
+        ctx.ellipse(0, -15 - i * 8, 35 - i * 5, 25 - i * 3, 0, 0, Math.PI * 2)
+        ctx.fill()
+      }
+      ctx.globalAlpha = 1
+      ctx.restore()
+      
       // ── 分隔细线 ──
-      const divY = topY + 28
+      const divY = treeCY + 50
       ctx.strokeStyle = C.line
       ctx.lineWidth = 0.5
       ctx.beginPath()
@@ -471,27 +497,38 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       ctx.lineTo(W - M - 32, divY)
       ctx.stroke()
       
-      // ── 人格名（大字宋体） ──
-      const nameY = divY + 100
+      // ─ 人格名（居中，大字宋体） ──
+      const nameY = divY + 90
       const nameLen = currentPersona.name.length
       const nameSize = nameLen >= 6 ? 72 : nameLen === 5 ? 84 : nameLen === 4 ? 96 : 108
       ctx.font = `900 ${nameSize}px "Noto Serif SC", "Songti SC", "SimSun", serif`
       ctx.fillStyle = C.ink
-      ctx.textAlign = 'left'
-      ctx.fillText(currentPersona.name, M + 56, nameY)
+      ctx.textAlign = 'center'
+      ctx.fillText(currentPersona.name, W / 2, nameY)
       
-      // ── 英文名 ──
+      // ── 英文名（居中） ──
       ctx.font = `300 14px -apple-system, "Helvetica Neue", sans-serif`
       ctx.fillStyle = C.soft
-      ctx.fillText(currentPersona.en, M + 58, nameY + 36)
+      ctx.letterSpacing = '2px'
+      ctx.fillText(currentPersona.en, W / 2, nameY + 36)
+      ctx.letterSpacing = '0px'
       
-      // ── Tagline（宋体斜体） ──
+      // ── Tagline（居中，宋体斜体 + 叶子装饰） ──
       const taglineY = nameY + 80
       ctx.font = `italic 500 20px "Noto Serif SC", "Songti SC", serif`
       ctx.fillStyle = C.inkMid
-      ctx.fillText(`「${currentPersona.tagline}」`, M + 56, taglineY)
+      ctx.textAlign = 'center'
+      ctx.fillText(`「${currentPersona.tagline}」`, W / 2, taglineY)
       
-      // ── 描述文字 ──
+      // 叶子装饰
+      ctx.font = `20px serif`
+      ctx.fillStyle = C.inkLight
+      ctx.globalAlpha = 0.5
+      ctx.fillText('🍃', W / 2 - ctx.measureText(`「${currentPersona.tagline}」`).width / 2 - 30, taglineY + 6)
+      ctx.fillText('🍃', W / 2 + ctx.measureText(`「${currentPersona.tagline}」`).width / 2 + 10, taglineY + 6)
+      ctx.globalAlpha = 1
+      
+      // ── 描述文字（居中） ──
       const descY = taglineY + 48
       ctx.font = `400 15px "Noto Serif SC", "Songti SC", serif`
       ctx.fillStyle = C.soft
@@ -505,7 +542,7 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       for (let i = 0; i < chars.length; i++) {
         const testLine = line + chars[i]
         if (ctx.measureText(testLine).width > maxTextW && line.length > 0) {
-          ctx.fillText(line, M + 56, ly)
+          ctx.fillText(line, W / 2, ly)
           line = chars[i]
           ly += lineH
           lineCount++
@@ -515,13 +552,13 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
         }
       }
       if (line && lineCount < 3) {
-        ctx.fillText(line, M + 56, ly)
+        ctx.fillText(line, W / 2, ly)
       }
       
-      // ── 雷达图（核心视觉） ──
+      // ── 雷达图（核心视觉，居中 + 宝石 + 月牙装饰） ──
       const radarCX = W / 2
       const radarCY = ly + 260
-      const radarR = 160
+      const radarR = 140
       const dims = [
         { key: 'complexity', label: '复杂度' },
         { key: 'colorIntensity', label: '色彩' },
@@ -582,6 +619,31 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       ctx.fill()
       ctx.strokeStyle = C.radarStroke
       ctx.lineWidth = 2
+      ctx.stroke()
+      
+      // 中心宝石
+      const gemR = 25
+      const gemGrad = ctx.createRadialGradient(radarCX, radarCY, 0, radarCX, radarCY, gemR)
+      gemGrad.addColorStop(0, '#4A8C62')
+      gemGrad.addColorStop(1, '#2D5F3E')
+      ctx.beginPath()
+      ctx.arc(radarCX, radarCY, gemR, 0, Math.PI * 2)
+      ctx.fillStyle = gemGrad
+      ctx.fill()
+      // 宝石高光
+      ctx.beginPath()
+      ctx.arc(radarCX - 6, radarCY - 6, 8, 0, Math.PI * 2)
+      ctx.fillStyle = 'rgba(255,255,255,0.3)'
+      ctx.fill()
+      
+      // 月牙装饰（底部弧形）
+      ctx.strokeStyle = C.inkMid
+      ctx.lineWidth = 2
+      ctx.beginPath()
+      ctx.arc(radarCX, radarCY + 20, radarR + 20, Math.PI * 0.15, Math.PI * 0.85)
+      ctx.stroke()
+      ctx.beginPath()
+      ctx.arc(radarCX, radarCY + 20, radarR + 35, Math.PI * 0.15, Math.PI * 0.85)
       ctx.stroke()
       
       // 数据点 + 标签
