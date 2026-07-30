@@ -109,6 +109,11 @@ body {
   padding: 28px 16px;
   position: relative;
 }
+@media (max-width: 640px) {
+  .daily-pick {
+    padding: 20px 16px;
+  }
+}
 
 .daily-card {
   display: grid;
