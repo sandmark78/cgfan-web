@@ -56,7 +56,13 @@ export default function AboutPage() {
             <li className="flex items-start gap-3">
               <span className="text-green-500 text-xl">•</span>
               <div>
-                <strong>美学人格</strong> — 收藏 5 个提示词，AI 分析你的审美偏好，从 20 种人格（光影诗人、微缩造梦师等）中匹配最像你的一个，生成专属风格卡片，支持下载分享。
+                <strong>美学人格</strong> — 收藏 20 个提示词，AI 分析你的审美偏好，从 36 种人格（20 基础 + 24 深度进化）中匹配最像你的一个，生成专属风格卡片，支持下载分享。
+              </div>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-green-500 text-xl">•</span>
+              <div>
+                <strong>Prompt DNA 分析</strong> — 每条提示词自动分析风格特征、光线特征、构图特征、材质特征，智能推荐适用模型。
               </div>
             </li>
             <li className="flex items-start gap-3">
@@ -109,13 +115,14 @@ export default function AboutPage() {
             🚀 如何使用
           </h2>
           <ol className="space-y-3 text-gray-700 dark:text-gray-300 list-decimal list-inside">
-            <li>首页看「每日一味」— 每天一个精选推荐</li>
+            <li>首页看「每日一味」— 每天一个精选推荐，查看往期精选</li>
             <li>探索页按分类/标签筛选，或搜索关键词</li>
-            <li>点击卡片进入详情页，查看完整提示词和示例图</li>
+            <li>点击卡片进入详情页，查看完整提示词、示例图和 Prompt DNA 分析</li>
             <li>点击「复制提示词」按钮，粘贴到你的 AI 工具</li>
             <li>点击 ❤️ 点赞，点击 📦 收藏，建立你的品味库</li>
-            <li>收藏满 5 个，访问「美学人格」解锁你的专属审美风格卡片</li>
+            <li>收藏满 20 个，访问「美学人格」解锁你的专属审美风格卡片（36 种人格）</li>
             <li>在详情页「生成分享卡片」下载 Prompt 卡片，分享到社交媒体</li>
+            <li>订阅我们的邮件或 RSS，每天自动接收精选推荐</li>
           </ol>
         </section>
 
