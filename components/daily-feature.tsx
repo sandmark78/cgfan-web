@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { getTodayFeature, getYesterdayFeature, getTomorrowFeature } from '@/lib/daily-feature'
+import { getTodayFeature } from '@/lib/daily-feature'
 import { getPromptBySlug } from '@/lib/prompts'
 import { CopyPromptButton } from '@/components/prompt/copy-prompt-button'
 import { MobileCollapse } from '@/components/mobile-collapse'
@@ -13,8 +13,6 @@ export const runtime = 'edge'
  */
 export default function DailyFeature() {
   const todayFeature = getTodayFeature()
-  const yesterdayFeature = getYesterdayFeature()
-  const tomorrowFeature = getTomorrowFeature()
 
   if (!todayFeature) return null
 
@@ -32,11 +30,6 @@ export default function DailyFeature() {
 
   // 序号
   const serial = String((day * 137 + month * 911) % 9000 + 1000)
-
-  const yesterday = new Date(today)
-  yesterday.setDate(yesterday.getDate() - 1)
-  const tomorrow = new Date(today)
-  tomorrow.setDate(tomorrow.getDate() + 1)
 
   return (
     <section className="daily-pick">
@@ -132,40 +125,6 @@ export default function DailyFeature() {
           </div>
         </div>
       </article>
-
-      {/* 底部导航 */}
-      <div className="daily-nav">
-        {yesterdayFeature ? (
-          <Link
-            href={`/prompt/${yesterdayFeature.slug}`}
-            className="daily-nav-link daily-nav-prev"
-          >
-            <svg className="daily-nav-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-            <span className="daily-nav-label">昨天</span>
-            <span className="daily-nav-title">{getPromptBySlug(yesterdayFeature.slug)?.title || '未知'}</span>
-          </Link>
-        ) : <div />}
-
-        {tomorrowFeature ? (
-          <Link
-            href={`/prompt/${tomorrowFeature.slug}`}
-            className="daily-nav-link daily-nav-next"
-          >
-            <span className="daily-nav-label">明天</span>
-            <span className="daily-nav-title">{getPromptBySlug(tomorrowFeature.slug)?.title || '可期'}</span>
-            <svg className="daily-nav-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </Link>
-        ) : (
-          <div className="daily-nav-link daily-nav-next" style={{ cursor: 'default' }}>
-            <span className="daily-nav-label">明天</span>
-            <span className="daily-nav-title">可期</span>
-          </div>
-        )}
-      </div>
     </section>
   )
 }
