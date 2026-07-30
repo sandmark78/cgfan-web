@@ -449,7 +449,7 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       ctx.fillText(`No.${serialNum}`, W - 70, 80)
       
       // ── 人格名（居中，大字宋体） ──
-      const nameY = 300
+      const nameY = 330  // 下移30px
       const nameLen = currentPersona.name.length
       const nameSize = nameLen >= 6 ? 72 : nameLen === 5 ? 84 : nameLen === 4 ? 96 : 108
       ctx.font = `900 ${nameSize}px "Noto Serif SC", "Songti SC", "SimSun", serif`
@@ -613,7 +613,7 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       
       // ── 名人名言（居中，作者署名右对齐） ──
       if (currentPersona.quote) {
-        const quoteStartY = 1050  // 上移，配合8维图缩小
+        const quoteStartY = 1080  // 下移30px
         const boxPadX = 28
         const textW = 420 - boxPadX * 2
         
