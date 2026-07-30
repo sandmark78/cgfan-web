@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react'
 import { createClient } from '@/lib/supabase/client'
 import type { User } from '@supabase/supabase-js'
 import { useRouter } from 'next/navigation'
+import SubscribeModal from './subscribe-modal'
 
 /**
  * 顶部导航栏 - 毛玻璃效果
@@ -15,6 +16,9 @@ export default function Header() {
   const [searchQuery, setSearchQuery] = useState('')
   const [user, setUser] = useState<User | null>(null)
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false)
+  const [isSubscribeModalOpen, setIsSubscribeModalOpen] = useState(false)
+  const [email, setEmail] = useState('')
+  const [subscribeStatus, setSubscribeStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
   const supabase = createClient()
   const router = useRouter()
 
@@ -57,6 +61,26 @@ export default function Header() {
     setUser(null)
     setIsUserMenuOpen(false)
     router.refresh()
+  }
+
+  const handleSubscribe = async (e: React.FormEvent) => {
+    e.preventDefault()
+    if (!email.trim()) return
+
+    setSubscribeStatus('loading')
+    try {
+      // TODO: 集成邮件订阅服务（如 Mailchimp、ConvertKit 等）
+      // 这里暂时模拟成功
+      await new Promise(resolve => setTimeout(resolve, 1000))
+      setSubscribeStatus('success')
+      setEmail('')
+      setTimeout(() => {
+        setIsSubscribeModalOpen(false)
+        setSubscribeStatus('idle')
+      }, 2000)
+    } catch (error) {
+      setSubscribeStatus('error')
+    }
   }
 
   // 获取用户显示名称
@@ -119,6 +143,18 @@ export default function Header() {
                 <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
               </svg>
             )}
+          </button>
+
+          {/* 订阅按钮 */}
+          <button
+            onClick={() => setIsSubscribeModalOpen(true)}
+            className="hidden sm:flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+            aria-label="订阅"
+          >
+            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            订阅
           </button>
 
           {/* 用户区域 */}
@@ -262,6 +298,12 @@ export default function Header() {
                                       </svg>
                                       美学人格
                                     </Link>
+                                    <Link href="/subscribe" onClick={() => setIsMenuOpen(false)} className="flex items-center gap-2 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800 transition-colors">
+                                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                      </svg>
+                                      订阅更新
+                                    </Link>
                                     <Link href="/about" onClick={() => setIsMenuOpen(false)} className="flex items-center gap-2 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800 transition-colors">
                                       <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -275,6 +317,9 @@ export default function Header() {
           </div>
         </div>
       </nav>
+
+      {/* 订阅弹窗 */}
+      <SubscribeModal isOpen={isSubscribeModalOpen} onClose={() => setIsSubscribeModalOpen(false)} />
     </header>
   )
 }

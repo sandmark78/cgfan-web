@@ -56,6 +56,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://www.cgfan.com',
+    types: {
+      'application/rss+xml': '/daily/feed.xml',
+    },
   },
   robots: {
     index: true,
