@@ -358,12 +358,21 @@ export function matchBasePersona(userVector: AestheticVector): BasePersona {
  */
 export function processQuizAnswers(
   selectedOptions: QuizOption[]
-): BasePersona {
+): BasePersona & { accent: string; seal: string; cats: Record<string, number>; tags: string[] } {
   // 1. 从答案计算用户向量
   const userVector = calculateVectorFromTest(
     selectedOptions.map(opt => opt.vector)
   )
   
   // 2. 匹配最相似的人格
-  return matchBasePersona(userVector)
+  const base = matchBasePersona(userVector)
+  
+  // 3. 扩展为完整 Persona 格式（兼容 personas.ts 的 Persona 接口）
+  return {
+    ...base,
+    accent: '#94A3B8',
+    seal: '美学',
+    cats: {},
+    tags: [],
+  }
 }

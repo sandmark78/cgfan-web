@@ -2,7 +2,8 @@
 
 import { useState, useEffect, useRef } from 'react'
 import { UserProfile, loadProfile, saveProfile, clearProfile, getGrowthStage, GROWTH_STAGES } from '@/lib/aesthetic-dynamic'
-import { BASE_PERSONAS, BasePersona, AestheticVector } from '@/lib/aesthetic-engine'
+import { BASE_PERSONAS, Persona } from '@/lib/personas'
+import { AestheticVector } from '@/lib/aesthetic-engine'
 import { AestheticQuiz } from './aesthetic-quiz'
 import { Puzzle, Palette, Heart, Waves, Star, Scale, ScrollText, Paintbrush, Download } from 'lucide-react'
 
@@ -305,7 +306,7 @@ function GrowthCurve({ history }: { history: Array<{ slug: string; vector: Aesth
 
 export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClientProps) {
   const [profile, setProfile] = useState<UserProfile | null>(null)
-  const [currentPersona, setCurrentPersona] = useState<BasePersona | null>(null)
+  const [currentPersona, setCurrentPersona] = useState<Persona | null>(null)
   const [showRetakeConfirm, setShowRetakeConfirm] = useState(false)
   const [showQuiz, setShowQuiz] = useState(false)
   const [refreshKey, setRefreshKey] = useState(0)
@@ -495,7 +496,7 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       ctx.font = `400 15px "Noto Serif SC", "Songti SC", serif`
       ctx.fillStyle = C.soft
       const maxTextW = W - M * 2 - 112
-      const chars = currentPersona.description.split('')
+      const chars = (currentPersona.description || '').split('')
       let line = ''
       let ly = descY
       const lineH = 26
@@ -738,7 +739,7 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
           「{currentPersona.tagline}」
         </p>
         <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-          {currentPersona.description}
+          {currentPersona.description || ''}
         </p>
       </div>
 

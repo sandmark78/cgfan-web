@@ -3,7 +3,8 @@
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import { QUIZ_QUESTIONS, type QuizOption } from '@/lib/quiz-questions'
-import { processQuizAnswers, type BasePersona } from '@/lib/aesthetic-engine'
+import { processQuizAnswers } from '@/lib/aesthetic-engine'
+import { type Persona } from '@/lib/personas'
 
 /**
  * 美学人格快速测试组件
@@ -14,7 +15,7 @@ export function AestheticQuiz() {
   const router = useRouter()
   const [step, setStep] = useState(0) // 0=未开始, 1-4=答题中, 5=完成
   const [answers, setAnswers] = useState<QuizOption[]>([])
-  const [result, setResult] = useState<BasePersona | null>(null)
+  const [result, setResult] = useState<Persona | null>(null)
   const [hasCompletedQuiz, setHasCompletedQuiz] = useState(false)
 
   // 检查用户是否已完成测试

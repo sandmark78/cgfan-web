@@ -11,6 +11,7 @@ export interface Persona {
   name: string
   en: string
   tagline: string
+  description?: string  // 详细描述（可选）
   accent: string
   seal: string
   cats: Record<string, number>
