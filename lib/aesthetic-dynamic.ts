@@ -1,14 +1,19 @@
 /**
- * 美学人格系统 v2.0 - Phase 2: 动态系统
- * EMA动态更新、稳定性计算、纠正机制、成长阶段
+ * 美学人格系统 v2.0 - 动态系统
+ * 整合 personas.ts（36人格）+ aesthetic-engine.ts（8维算法）
+ * EMA动态更新、稳定性计算、进化机制、成长阶段
  */
 
 import { 
   AestheticVector, 
-  BasePersona, 
-  BASE_PERSONAS, 
   cosineSimilarity 
 } from './aesthetic-engine'
+import {
+  Persona,
+  BASE_PERSONAS,
+  DEEP_PERSONAS,
+  EVOLUTION_MAP,
+} from './personas'
 
 // ═══════════════════════════════════════════════════════════════
 // 1. 用户画像数据结构
@@ -19,7 +24,7 @@ export interface UserProfile {
   vector: AestheticVector
   /** 稳定性指标 (0-1)，越高越稳定 */
   stability: number
-  /** 当前匹配的基础人格ID */
+  /** 当前匹配的人格ID（基础或深度） */
   currentPersonaId: string
   /** 收藏数量 */
   favoriteCount: number
@@ -66,28 +71,13 @@ export function createEmptyProfile(): UserProfile {
 /**
  * 计算学习率 alpha
  * 收藏越多，学习率越低（越稳定）
- * 
- * @param favoriteCount 当前收藏数量
- * @returns 学习率 (0.1 - 1.0)
  */
 export function calculateLearningRate(favoriteCount: number): number {
-  // 使用平方根衰减，确保：
-  // - 1个收藏时 alpha ≈ 1.0（完全信任新数据）
-  // - 10个收藏时 alpha ≈ 0.32
-  // - 50个收藏时 alpha ≈ 0.14
-  // - 100个收藏时 alpha ≈ 0.1（最低）
   return Math.max(0.1, 1 / Math.sqrt(favoriteCount + 1))
 }
 
 /**
  * 指数移动平均（EMA）更新用户向量
- * 
- * 公式: new_vector = old_vector * (1 - alpha) + new_data * alpha
- * 
- * @param oldVector 旧向量
- * @param newData 新数据向量
- * @param alpha 学习率
- * @returns 更新后的向量
  */
 export function emaUpdate(
   oldVector: AestheticVector,
@@ -110,10 +100,6 @@ export function emaUpdate(
 
 /**
  * 计算向量变化的平均幅度
- * 
- * @param oldVector 旧向量
- * @param newVector 新向量
- * @returns 平均变化幅度 (0-100)
  */
 export function calculateVectorChange(
   oldVector: AestheticVector,
@@ -131,47 +117,147 @@ export function calculateVectorChange(
 
 /**
  * 计算稳定性指标
- * 
- * 稳定性 = 1 - (平均变化幅度 / 100)
- * 
- * @param change 平均变化幅度
- * @returns 稳定性 (0-1)
  */
 export function calculateStability(change: number): number {
   return Math.max(0, Math.min(1, 1 - change / 100))
 }
 
 // ═══════════════════════════════════════════════════════════════
-// 4. 纠正机制
+// 4. 人格匹配（整合 8 维向量 + 收藏标签）
 // ═══════════════════════════════════════════════════════════════
 
 /**
- * 检查是否需要纠正人格匹配
- * 
- * 当用户向量与当前人格的相似度 < 0.6 时，触发纠正
- * 
- * @param profile 用户画像
- * @returns 需要纠正时返回新的人格ID，否则返回null
+ * 用 8 维向量匹配最相似的基础人格
+ */
+export function matchBasePersonaByVector(userVector: AestheticVector): Persona {
+  let bestMatch = BASE_PERSONAS[0]
+  let bestSimilarity = 0
+  
+  for (const persona of BASE_PERSONAS) {
+    if (!persona.vector) continue
+    const similarity = cosineSimilarity(userVector, persona.vector)
+    if (similarity > bestSimilarity) {
+      bestSimilarity = similarity
+      bestMatch = persona
+    }
+  }
+  
+  return bestMatch
+}
+
+/**
+ * 用 8 维向量匹配最相似的深度人格
+ * 只从当前基础人格的进化分支中选择
+ */
+export function matchDeepPersonaByVector(
+  userVector: AestheticVector,
+  basePersonaId: string
+): Persona | null {
+  const evolutionTargets = EVOLUTION_MAP[basePersonaId]
+  if (!evolutionTargets) return null
+  
+  const deepTargets = DEEP_PERSONAS.filter(p => evolutionTargets.includes(p.id))
+  
+  let bestMatch: Persona | null = null
+  let bestSimilarity = 0
+  
+  for (const persona of deepTargets) {
+    if (!persona.vector) continue
+    const similarity = cosineSimilarity(userVector, persona.vector)
+    if (similarity > bestSimilarity) {
+      bestSimilarity = similarity
+      bestMatch = persona
+    }
+  }
+  
+  return bestMatch
+}
+
+// ═══════════════════════════════════════════════════════════════
+// 5. 进化系统
+// ═══════════════════════════════════════════════════════════════
+
+/**
+ * 检查是否可以进化
+ * 条件：收藏≥20 + 稳定性≥0.7
+ */
+export function canEvolve(profile: UserProfile): boolean {
+  return profile.favoriteCount >= 20 && profile.stability >= 0.7
+}
+
+/**
+ * 检查是否应该进化到深度人格
+ * 返回进化后的深度人格ID，不需要进化返回null
+ */
+export function checkEvolution(profile: UserProfile): string | null {
+  if (!canEvolve(profile)) return null
+  
+  const currentPersona = [...BASE_PERSONAS, ...DEEP_PERSONAS].find(p => p.id === profile.currentPersonaId)
+  if (!currentPersona) return null
+  
+  // 如果已经是深度人格，检查是否应该换到同基础的其他深度
+  if (currentPersona.deep) {
+    const baseId = currentPersona.evolvesFrom
+    if (!baseId) return null
+    
+    const deepMatch = matchDeepPersonaByVector(profile.vector, baseId)
+    if (deepMatch && deepMatch.id !== profile.currentPersonaId) {
+      // 只有新匹配的深度人格相似度明显更高才切换
+      const currentSim = currentPersona.vector 
+        ? cosineSimilarity(profile.vector, currentPersona.vector) 
+        : 0
+      const newSim = deepMatch.vector 
+        ? cosineSimilarity(profile.vector, deepMatch.vector) 
+        : 0
+      
+      if (newSim > currentSim + 0.05) {
+        return deepMatch.id
+      }
+    }
+    return null
+  }
+  
+  // 基础人格 → 尝试进化到深度人格
+  const deepMatch = matchDeepPersonaByVector(profile.vector, currentPersona.id)
+  if (deepMatch) {
+    const currentSim = currentPersona.vector 
+      ? cosineSimilarity(profile.vector, currentPersona.vector) 
+      : 0
+    const deepSim = deepMatch.vector 
+      ? cosineSimilarity(profile.vector, deepMatch.vector) 
+      : 0
+    
+    // 深度人格匹配度更高，触发进化
+    if (deepSim > currentSim) {
+      return deepMatch.id
+    }
+  }
+  
+  return null
+}
+
+/**
+ * 纠正机制：当用户向量与当前人格相似度 < 0.6 时，重新匹配
  */
 export function checkCorrection(profile: UserProfile): string | null {
-  const currentPersona = BASE_PERSONAS.find(p => p.id === profile.currentPersonaId)
-  if (!currentPersona) return null
+  const allPersonas = [...BASE_PERSONAS, ...DEEP_PERSONAS]
+  const currentPersona = allPersonas.find(p => p.id === profile.currentPersonaId)
+  if (!currentPersona?.vector) return null
   
   const similarity = cosineSimilarity(profile.vector, currentPersona.vector)
   
-  // 相似度低于0.6，说明当前人格不再匹配
   if (similarity < 0.6) {
-    // 重新匹配最相似的人格
-    const similarities = BASE_PERSONAS.map(persona => ({
-      id: persona.id,
-      similarity: cosineSimilarity(profile.vector, persona.vector)
-    }))
+    // 如果已经可以进化，在深度人格里找
+    if (canEvolve(profile)) {
+      const baseId = currentPersona.deep ? currentPersona.evolvesFrom! : currentPersona.id
+      const deepMatch = matchDeepPersonaByVector(profile.vector, baseId)
+      if (deepMatch) return deepMatch.id
+    }
     
-    similarities.sort((a, b) => b.similarity - a.similarity)
-    
-    // 如果新匹配的人格相似度更高，返回新ID
-    if (similarities[0].id !== profile.currentPersonaId) {
-      return similarities[0].id
+    // 否则在基础人格里找
+    const baseMatch = matchBasePersonaByVector(profile.vector)
+    if (baseMatch.id !== profile.currentPersonaId) {
+      return baseMatch.id
     }
   }
   
@@ -179,7 +265,7 @@ export function checkCorrection(profile: UserProfile): string | null {
 }
 
 // ═══════════════════════════════════════════════════════════════
-// 5. 成长阶段系统
+// 6. 成长阶段系统
 // ═══════════════════════════════════════════════════════════════
 
 export interface GrowthStage {
@@ -228,24 +314,12 @@ export const GROWTH_STAGES: GrowthStage[] = [
   }
 ]
 
-/**
- * 获取当前成长阶段
- * 
- * @param favoriteCount 收藏数量
- * @returns 当前成长阶段
- */
 export function getGrowthStage(favoriteCount: number): GrowthStage {
   return GROWTH_STAGES.find(s => 
     favoriteCount >= s.range[0] && favoriteCount <= s.range[1]
   ) || GROWTH_STAGES[0]
 }
 
-/**
- * 获取已解锁的功能列表
- * 
- * @param favoriteCount 收藏数量
- * @returns 已解锁的功能列表
- */
 export function getUnlockedFeatures(favoriteCount: number): string[] {
   const currentStage = getGrowthStage(favoriteCount)
   const currentIndex = GROWTH_STAGES.indexOf(currentStage)
@@ -256,12 +330,13 @@ export function getUnlockedFeatures(favoriteCount: number): string[] {
 }
 
 // ═══════════════════════════════════════════════════════════════
-// 6. 核心更新流程
+// 7. 核心更新流程
 // ═══════════════════════════════════════════════════════════════
 
 export interface UpdateResult {
   profile: UserProfile
   corrected: boolean
+  evolved: boolean
   newPersonaId?: string
   stageChanged: boolean
   oldStage?: GrowthStage
@@ -270,11 +345,6 @@ export interface UpdateResult {
 
 /**
  * 更新用户画像（收藏新提示词时调用）
- * 
- * @param profile 当前用户画像
- * @param newVector 新收藏的提示词向量
- * @param slug 提示词slug
- * @returns 更新结果
  */
 export function updateProfile(
   profile: UserProfile,
@@ -294,12 +364,13 @@ export function updateProfile(
   const change = calculateVectorChange(oldVector, updatedVector)
   const stability = calculateStability(change)
   
-  // 4. 检查纠正
+  // 4. 构建临时画像
+  const newFavoriteCount = profile.favoriteCount + 1
   const tempProfile: UserProfile = {
     ...profile,
     vector: updatedVector,
     stability,
-    favoriteCount: profile.favoriteCount + 1,
+    favoriteCount: newFavoriteCount,
     lastUpdated: Date.now(),
     history: [
       ...profile.history,
@@ -307,24 +378,32 @@ export function updateProfile(
     ]
   }
   
-  const correctedPersonaId = checkCorrection(tempProfile)
-  const corrected = correctedPersonaId !== null
-  const finalPersonaId = correctedPersonaId || profile.currentPersonaId
+  // 5. 检查进化（优先于纠正）
+  const evolvedPersonaId = checkEvolution(tempProfile)
+  const evolved = evolvedPersonaId !== null
   
-  // 5. 构建最终画像
+  // 6. 检查纠正
+  const correctedPersonaId = !evolved ? checkCorrection(tempProfile) : null
+  const corrected = correctedPersonaId !== null
+  
+  // 7. 确定最终人格
+  const finalPersonaId = evolvedPersonaId || correctedPersonaId || profile.currentPersonaId
+  
+  // 8. 构建最终画像
   const finalProfile: UserProfile = {
     ...tempProfile,
     currentPersonaId: finalPersonaId
   }
   
-  // 6. 检查阶段变化
+  // 9. 检查阶段变化
   const newStage = getGrowthStage(finalProfile.favoriteCount)
   const stageChanged = newStage.name !== oldStage.name
   
   return {
     profile: finalProfile,
     corrected,
-    newPersonaId: corrected ? correctedPersonaId : undefined,
+    evolved,
+    newPersonaId: (evolved || corrected) ? finalPersonaId : undefined,
     stageChanged,
     oldStage: stageChanged ? oldStage : undefined,
     newStage: stageChanged ? newStage : undefined
@@ -332,14 +411,11 @@ export function updateProfile(
 }
 
 // ═══════════════════════════════════════════════════════════════
-// 7. LocalStorage 持久化
+// 8. LocalStorage 持久化
 // ═══════════════════════════════════════════════════════════════
 
 const PROFILE_STORAGE_KEY = 'cgfan-aesthetic-profile'
 
-/**
- * 保存用户画像到 localStorage
- */
 export function saveProfile(profile: UserProfile): void {
   try {
     localStorage.setItem(PROFILE_STORAGE_KEY, JSON.stringify(profile))
@@ -348,9 +424,6 @@ export function saveProfile(profile: UserProfile): void {
   }
 }
 
-/**
- * 从 localStorage 读取用户画像
- */
 export function loadProfile(): UserProfile {
   try {
     const stored = localStorage.getItem(PROFILE_STORAGE_KEY)
@@ -358,7 +431,6 @@ export function loadProfile(): UserProfile {
     
     const parsed = JSON.parse(stored)
     
-    // 验证数据结构
     if (!parsed.vector || !parsed.currentPersonaId) {
       return createEmptyProfile()
     }
@@ -370,9 +442,6 @@ export function loadProfile(): UserProfile {
   }
 }
 
-/**
- * 清除用户画像（用于测试或重置）
- */
 export function clearProfile(): void {
   localStorage.removeItem(PROFILE_STORAGE_KEY)
 }
