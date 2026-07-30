@@ -111,7 +111,10 @@ body {
 }
 @media (max-width: 640px) {
   .daily-pick {
-    padding: 20px 16px;
+    padding: 20px 0;
+  }
+  .daily-card {
+    border-radius: var(--radius);
   }
 }
 
