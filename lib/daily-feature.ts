@@ -20,12 +20,12 @@ export interface DailyFeature {
 export const dailyFeatures: DailyFeature[] = [
   {
     date: '2026-07-30',
-    slug: 'novel-cover-framework',
-    curatorNote: '这个提示词展示了 AI 图像生成的创意可能性。',
-    highlight: 'AI 小说封面生成框架：故事驱动封面设计...',
-    technique: 'editorial · AI绘图',
-    tip: '具体的描述比抽象的形容更有效，用 "neon red chaise lounge" 而不是 "colorful furniture"。',
-    tryChange: '把提示词中的颜色或材质描述换成对比色/对比材质，观察整体氛围的变化。',
+    slug: 'prompt-2078116052224131219',
+    curatorNote: '东方禅意美学的极致表达。玉青、玫红、暖白三色构建出「花影入庭」的诗意场景，大量留白与极简构图完美诠释了「少即是多」的设计哲学。提示词中对光线、材质、氛围的精准控制，让 AI 生成出具有东方水墨韵味的现代壁纸。',
+    highlight: '东方禅意壁纸：花影入庭',
+    technique: '东方美学 · 极简留白 · 有限配色',
+    tip: '东方美学的核心是「留白」和「意境」。用「玉青」「暖白」等具体色彩词，配合「禅意」「诗意」等氛围词，比笼统的「中国风」更有效。',
+    tryChange: '把「花影入庭」换成「月照松间」，从春日温婉转为秋夜清冷，观察色彩和氛围的变化。',
   },
   {
     date: '2026-07-29',
