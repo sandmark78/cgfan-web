@@ -135,6 +135,9 @@ body {
     aspect-ratio: 4 / 3;
     min-height: 240px;
   }
+  .daily-title {
+    font-size: 15px;
+  }
   .daily-date {
     right: 10px;
     bottom: 10px;
