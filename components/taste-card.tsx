@@ -501,7 +501,7 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       // ── 8维雷达图（规则圆形布局，中心对齐图片中心） ──
       const radarCX = 540
       const radarCY = 675
-      const radarR = 162
+      const radarR = 113  // 162 * 0.7 = 113.4，缩小30%
       
       const dims = [
         { key: 'complexity', label: '复杂度' },
@@ -595,7 +595,7 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
         ctx.stroke()
         
         // 标签
-        const labelR = radarR + 25
+        const labelR = radarR + 18  // 25 * 0.7 = 17.5，同比内收
         const lx = radarCX + Math.cos(angle) * labelR
         const ly = radarCY + Math.sin(angle) * labelR
         const v = Math.round(profile.vector[dims[i].key as keyof typeof profile.vector])
@@ -611,9 +611,9 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
         ctx.fillText(`${v}`, lx, ly + 9)
       }
       
-      // ── 名人名言（全透明，右对齐文字） ──
+      // ── 名人名言（居中，作者署名右对齐） ──
       if (currentPersona.quote) {
-        const quoteStartY = 1120
+        const quoteStartY = 1050  // 上移，配合8维图缩小
         const boxPadX = 28
         const textW = 420 - boxPadX * 2
         
@@ -638,21 +638,23 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
         }
         if (qLine) qLines.push(qLine)
         
-        // 文字（右对齐，无框）
+        // 名言居中
         ctx.font = `italic 400 22px "Noto Serif SC", "Songti SC", serif`
         ctx.fillStyle = C.soft
-        ctx.textAlign = 'right'
+        ctx.textAlign = 'center'
         ctx.textBaseline = 'top'
         
         let qly = quoteStartY
         for (const line of qLines) {
-          ctx.fillText(line, W / 2 + 210 - boxPadX, qly)
+          ctx.fillText(line, W / 2, qly)
           qly += qLineH * 2
         }
         
+        // 作者署名右对齐
         if (quoteAuthor) {
           ctx.font = `500 22px -apple-system, "Helvetica Neue", sans-serif`
           ctx.fillStyle = C.inkMid
+          ctx.textAlign = 'right'
           ctx.fillText(quoteAuthor, W / 2 + 210 - boxPadX, qly + 8)
         }
         
