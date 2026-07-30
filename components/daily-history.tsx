@@ -39,8 +39,7 @@ export default function DailyHistory() {
             <Link
               key={feature.slug}
               href={`/prompt/${prompt.slug}`}
-              className="group glass-card block overflow-hidden animate-fade-in-up"
-              style={{ animationDelay: `${index * 100}ms` }}
+              className="group glass-card block overflow-hidden"
             >
               {/* 图片 */}
               <div className="relative aspect-square overflow-hidden">
