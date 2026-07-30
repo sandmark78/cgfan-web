@@ -528,8 +528,39 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       ctx.fillText('🍃', W / 2 + ctx.measureText(`「${currentPersona.tagline}」`).width / 2 + 10, taglineY + 6)
       ctx.globalAlpha = 1
       
+      // ── 名人名言（居中，斜体 + 引号装饰） ──
+      let quoteEndY = taglineY
+      if (currentPersona.quote) {
+        const quoteY = taglineY + 50
+        ctx.font = `italic 400 14px "Noto Serif SC", "Songti SC", serif`
+        ctx.fillStyle = C.soft
+        const maxQuoteW = W - M * 2 - 160
+        const quoteChars = currentPersona.quote.split('')
+        let qLine = ''
+        let qly = quoteY
+        const qLineH = 22
+        let qLineCount = 0
+        
+        for (let i = 0; i < quoteChars.length; i++) {
+          const testLine = qLine + quoteChars[i]
+          if (ctx.measureText(testLine).width > maxQuoteW && qLine.length > 0) {
+            ctx.fillText(qLine, W / 2, qly)
+            qLine = quoteChars[i]
+            qly += qLineH
+            qLineCount++
+            if (qLineCount >= 2) break
+          } else {
+            qLine = testLine
+          }
+        }
+        if (qLine && qLineCount < 2) {
+          ctx.fillText(qLine, W / 2, qly)
+        }
+        quoteEndY = qly + 10
+      }
+      
       // ── 描述文字（居中） ──
-      const descY = taglineY + 48
+      const descY = quoteEndY + 40
       ctx.font = `400 15px "Noto Serif SC", "Songti SC", serif`
       ctx.fillStyle = C.soft
       const maxTextW = W - M * 2 - 112

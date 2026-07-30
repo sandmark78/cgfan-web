@@ -56,7 +56,7 @@ export default function AboutPage() {
             <li className="flex items-start gap-3">
               <span className="text-green-500 text-xl">•</span>
               <div>
-                <strong>美学人格</strong> — 收藏 20 个提示词，AI 分析你的审美偏好，从 36 种人格（20 基础 + 24 深度进化）中匹配最像你的一个，生成专属风格卡片，支持下载分享。
+                <strong>美学人格</strong> — 收藏 20 个提示词，AI 分析你的审美偏好，从 36 种人格（12 基础 + 24 深度进化）中匹配最像你的一个，生成专属风格卡片，支持下载分享。
               </div>
             </li>
             <li className="flex items-start gap-3">
