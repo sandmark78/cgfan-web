@@ -183,7 +183,7 @@ export default async function ExplorePage({
           currentModel={model}
           currentDifficulty={difficulty}
           currentTag={tag}
-          buildUrl={buildUrl}
+          currentPage={currentPage}
         />
 
         <div className="flex gap-8">

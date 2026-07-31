@@ -15,7 +15,7 @@ interface FilterDrawerProps {
   currentModel?: string
   currentDifficulty?: string
   currentTag?: string
-  buildUrl: (key: string, value: string | null) => string
+  currentPage?: number
 }
 
 export function FilterDrawer({
@@ -29,9 +29,17 @@ export function FilterDrawer({
   currentModel,
   currentDifficulty,
   currentTag,
-  buildUrl,
+  currentPage = 1,
 }: FilterDrawerProps) {
   const [isOpen, setIsOpen] = useState(false)
+
+  const buildUrl = (key: string, value: string | null) => {
+    const p = new URLSearchParams()
+    if (value) p.set(key, value)
+    if (currentPage > 1 && key !== 'page') p.set('page', String(currentPage))
+    const s = p.toString()
+    return `/explore${s ? `?${s}` : ''}`
+  }
 
   return (
     <>
