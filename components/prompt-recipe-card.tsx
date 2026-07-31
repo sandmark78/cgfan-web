@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
+import Image from 'next/image'
 import { PromptData } from '@/lib/prompts'
 import { getCategoryLabel } from '@/lib/category-map'
 import { createClient } from '@/lib/supabase/client'
@@ -46,14 +47,14 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
     
     console.log('开始加载图片:', imgUrl)
     
-    const img = new Image()
+    const img = new window.Image()
     img.crossOrigin = 'anonymous' // 允许跨域访问
     img.onload = () => { 
       console.log('图片加载成功:', img.naturalWidth, 'x', img.naturalHeight)
       imgRef.current = img
       setImageLoaded(true)
     }
-    img.onerror = (e) => { 
+    img.onerror = (e: any) => { 
       console.error('图片加载失败:', imgUrl, e)
       setImageLoaded(false)
     }
@@ -370,11 +371,13 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
         {/* 示例图 */}
         <div className="aspect-[4/3] overflow-hidden bg-gray-200 dark:bg-gray-800">
           {prompt.cover ? (
-            <img
+            <Image
               src={prompt.cover}
               alt={prompt.title}
+              fill
+              sizes="(max-width: 768px) 100vw, 400px"
               crossOrigin="anonymous"
-              className="h-full w-full object-cover"
+              className="object-cover"
             />
           ) : (
             <div className="flex h-full items-center justify-center text-6xl">🎨</div>

@@ -34,9 +34,11 @@ export default function DailyFeature() {
   return (
     <section className="daily-pick">
       {/* 印章放在卡片外面，避免被裁切 */}
-      <img
+      <Image
         src="/seal-daily.png"
         alt="每日一味"
+        width={80}
+        height={80}
         className="daily-seal"
         draggable={false}
       />

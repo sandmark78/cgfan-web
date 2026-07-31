@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import { createClient } from '@/lib/supabase/server'
+import Image from 'next/image'
+import { createClient } from '@/lib/supabase/client'
 
 /**
  * 用户菜单组件
@@ -27,10 +28,12 @@ export default async function UserMenu() {
         className="flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur-sm transition-colors hover:bg-white/20"
       >
         {user.user_metadata?.avatar_url && (
-          <img
+          <Image
             src={user.user_metadata.avatar_url}
             alt={user.user_metadata?.name || 'User'}
-            className="h-6 w-6 rounded-full"
+            width={24}
+            height={24}
+            className="rounded-full"
           />
         )}
         <span>{user.user_metadata?.name || user.email}</span>

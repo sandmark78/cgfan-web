@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import { createClient } from '@/lib/supabase/client'
 import type { User } from '@supabase/supabase-js'
@@ -166,10 +167,12 @@ export default function Header() {
                 aria-label="用户菜单"
               >
                 {getUserAvatar() ? (
-                  <img
+                  <Image
                     src={getUserAvatar()!}
                     alt="avatar"
-                    className="h-7 w-7 rounded-full border-2 border-white dark:border-gray-700"
+                    width={28}
+                    height={28}
+                    className="rounded-full border-2 border-white dark:border-gray-700"
                   />
                 ) : (
                   <div className="h-7 w-7 rounded-full bg-gradient-to-br from-green-400 to-emerald-600 flex items-center justify-center text-white text-xs font-bold border-2 border-white dark:border-gray-700">

@@ -850,6 +850,7 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       <button
         onClick={handleDownloadCard}
         disabled={isGenerating}
+        aria-label="下载美学人格卡片"
         className="btn-primary inline-flex items-center gap-2 disabled:opacity-50"
       >
         <Download className="h-4 w-4" />
@@ -857,6 +858,7 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       </button>
       <button
         onClick={handleSharePersona}
+        aria-label="分享我的人格"
         className="btn-secondary inline-flex items-center gap-2"
       >
         <Share2 className="h-4 w-4" />
@@ -864,6 +866,7 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       </button>
       <a
         href="/explore"
+        aria-label="继续收藏提示词"
         className="btn-primary inline-flex items-center gap-2"
       >
         继续收藏
@@ -873,6 +876,7 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       </a>
       <button
         onClick={() => setShowRetakeConfirm(true)}
+        aria-label="重新测试美学人格"
         className="btn-secondary"
       >
         重新测试

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { getAllPrompts } from '@/lib/prompts'
 
 /**
@@ -60,12 +61,13 @@ export default function NotFound() {
             >
               <div className="aspect-video overflow-hidden bg-gray-100 dark:bg-gray-800">
                 {prompt.cover ? (
-                  <img
+                  <Image
                     src={prompt.cover}
                     alt={prompt.title}
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     loading={index === 0 ? 'eager' : 'lazy'}
-                    decoding="async"
-                    className="h-full w-full object-cover transition-transform group-hover:scale-105"
+                    className="object-cover transition-transform group-hover:scale-105"
                   />
                 ) : (
                   <div className="flex h-full items-center justify-center text-4xl text-gray-400">

@@ -102,6 +102,7 @@ export function EmailSignInForm() {
           <button
             type="button"
             onClick={() => setIsLogin(!isLogin)}
+            aria-label={isLogin ? '切换到注册' : '切换到登录'}
             className="text-green-600 hover:underline dark:text-green-400"
           >
             {isLogin ? '没有账号？注册' : '已有账号？登录'}
@@ -109,6 +110,7 @@ export function EmailSignInForm() {
           {isLogin && (
             <button
               type="button"
+              aria-label="忘记密码"
               className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
             >
               忘记密码？
