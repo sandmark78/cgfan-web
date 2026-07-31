@@ -424,9 +424,12 @@ def main():
             print(f"   构图:{scores['composition']:.1f} 色彩:{scores['color']:.1f} 光影:{scores['lighting']:.1f} 细节:{scores['detail']:.1f}")
             print(f"   创意:{scores['creativity']:.1f} 技术:{scores['technical']:.1f} 审美:{scores['aesthetic']:.1f} 策展:{scores['curation']:.1f}")
             
-            # 60分以上保留
+            # 60分以上保留，60分以下加入候选清单
             if total_score < 60:
-                print(f"⏭️  评分低于60，跳过")
+                print(f"⏭️  评分低于60，加入候选清单")
+                # 保存候选（即使低分，方便人工筛选）
+                from scripts.auto_collect.save_candidate import save_candidate
+                save_candidate(tweet, prompt, title, model, scores, total_score, category)
                 results['rejected'] += 1
                 continue
             
