@@ -72,12 +72,17 @@ export default function DailyHistory() {
                 <h3 className="mb-2 line-clamp-2 font-serif text-sm font-bold text-gray-900 transition-colors duration-300 group-hover:text-green-600 dark:text-white dark:group-hover:text-green-400">
                   {prompt.title}
                 </h3>
-                {feature.technique && (
+                {prompt.tags && prompt.tags.length > 0 && (
                   <div className="flex flex-wrap gap-1">
-                    {feature.technique.split(' · ').slice(0, 2).map((t: string) => (
-                      <span key={t} className="rounded-full bg-green-100 px-2 py-0.5 text-[10px] text-green-700 transition-all duration-300 group-hover:bg-green-200 group-hover:scale-105 dark:bg-green-900/30 dark:text-green-400 dark:group-hover:bg-green-900/50">
+                    {prompt.tags.slice(0, 3).map((t: string) => (
+                      <Link
+                        key={t}
+                        href={`/explore?tag=${encodeURIComponent(t)}`}
+                        onClick={(e) => e.stopPropagation()}
+                        className="rounded-full bg-green-100 px-2 py-0.5 text-[10px] text-green-700 transition-all duration-300 group-hover:bg-green-200 group-hover:scale-105 dark:bg-green-900/30 dark:text-green-400 dark:group-hover:bg-green-900/50"
+                      >
                         {t}
-                      </span>
+                      </Link>
                     ))}
                   </div>
                 )}
