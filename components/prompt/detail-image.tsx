@@ -49,16 +49,15 @@ export function DetailImage({ src, alt }: DetailImageProps) {
   return (
     <>
       <div 
-        className="cursor-zoom-in relative overflow-hidden max-w-full"
+        className="cursor-zoom-in relative overflow-hidden max-w-full aspect-square"
         onClick={() => setShowLightbox(true)}
       >
         <Image
           src={src}
           alt={alt}
-          width={1200}
-          height={1200}
+          fill
           sizes="(max-width: 768px) 100vw, 1200px"
-          className="w-full h-auto object-cover transition-transform hover:scale-105"
+          className="object-cover transition-transform hover:scale-105"
           priority
           onError={() => setHasError(true)}
         />
@@ -86,11 +85,9 @@ export function DetailImage({ src, alt }: DetailImageProps) {
             className="relative max-h-[90vh] max-w-[90vw] animate-in zoom-in-95 duration-200"
             onClick={(e) => e.stopPropagation()}
           >
-            <Image
+            <img
               src={src}
               alt={alt}
-              width={1920}
-              height={1080}
               className="max-h-[90vh] max-w-[90vw] object-contain shadow-2xl"
             />
           </div>
