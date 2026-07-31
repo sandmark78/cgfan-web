@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 抓取指定作者的最新推文ID
-用法: python3 fetch-author-tweets.py @username
+用法: python3 fetch_author_tweets.py @username
 输出: 推文ID列表（最近24小时内）
 """
 
@@ -21,7 +21,7 @@ def camofox_cmd(cmd, timeout=30):
     return run(f"camofox {cmd}", timeout=timeout)
 
 def fetch_latest_tweets(username):
-    """抓取作者最新推文"""
+    """抓取作者最新推文ID"""
     username = username.replace('@', '')
     url = f"https://x.com/{username}"
     
@@ -44,34 +44,40 @@ def fetch_latest_tweets(username):
     print(f"✅ 页面已打开: {tab[:8]}...")
     
     # 等待页面加载
-    run("sleep 5")
+    run("sleep 3")
     
-    # 提取推文ID和时间
+    # 只提取推文ID和时间（简化版，复用 batch-fetch-tweets.py 的逻辑）
     EXTRACT_JS = """JSON.stringify(
         Array.from(document.querySelectorAll('article')).slice(0, 10).map(article => {
-            const timeEl = article.querySelector('time');
             const linkEl = article.querySelector('a[href*="/status/"]');
+            if (!linkEl) return null;
             
-            if (!timeEl || !linkEl) return null;
-            
-            const datetime = timeEl.getAttribute('datetime');
             const href = linkEl.getAttribute('href');
             const match = href.match(/\\/status\\/(\\d+)/);
-            
             if (!match) return null;
+            
+            // 提取时间（相对时间如 1h, 2d）
+            let timeText = '';
+            const spans = article.querySelectorAll('span');
+            for (const span of spans) {
+                const text = span.innerText || '';
+                if (/^\\d+[smhd]$/.test(text)) {
+                    timeText = text;
+                    break;
+                }
+            }
             
             return {
                 id: match[1],
-                datetime: datetime,
-                text: article.innerText.substring(0, 200)
+                time: timeText
             };
         }).filter(x => x !== null)
     )"""
     
-    with open("/tmp/extract_tweets.js", "w") as f:
+    with open("/tmp/extract_ids.js", "w") as f:
         f.write(EXTRACT_JS)
     
-    out = run(f"""camofox eval "$(cat /tmp/extract_tweets.js)" "{tab}" 2>&1""", timeout=15)
+    out = run(f"""camofox eval "$(cat /tmp/extract_ids.js)" "{tab}" 2>&1""", timeout=15)
     
     # 关闭 tab
     run(f'camofox close "{tab}" 2>/dev/null')
@@ -82,8 +88,8 @@ def fetch_latest_tweets(username):
         if line.startswith('result:'):
             try:
                 tweets = json.loads(line[7:].strip())
-            except:
-                pass
+            except Exception as e:
+                print(f"⚠️ JSON 解析失败: {e}")
             break
     
     # 过滤最近24小时的推文
@@ -91,12 +97,32 @@ def fetch_latest_tweets(username):
     recent_tweets = []
     
     for tweet in tweets:
-        try:
-            tweet_time = datetime.fromisoformat(tweet['datetime'].replace('Z', '+00:00'))
-            if tweet_time.replace(tzinfo=None) >= cutoff:
+        time_str = tweet.get('time', '')
+        if time_str:
+            match = re.match(r'(\d+)([smhd])', time_str.lower())
+            if match:
+                value = int(match.group(1))
+                unit = match.group(2)
+                
+                if unit == 's':
+                    tweet_time = datetime.now() - timedelta(seconds=value)
+                elif unit == 'm':
+                    tweet_time = datetime.now() - timedelta(minutes=value)
+                elif unit == 'h':
+                    tweet_time = datetime.now() - timedelta(hours=value)
+                elif unit == 'd':
+                    tweet_time = datetime.now() - timedelta(days=value)
+                else:
+                    continue
+                
+                if tweet_time >= cutoff:
+                    recent_tweets.append(tweet)
+            else:
+                # 无法解析时间，默认包含
                 recent_tweets.append(tweet)
-        except:
-            pass
+        else:
+            # 没有时间信息，默认包含
+            recent_tweets.append(tweet)
     
     print(f"✅ 找到 {len(tweets)} 条推文，其中 {len(recent_tweets)} 条在最近24小时内")
     
@@ -104,7 +130,7 @@ def fetch_latest_tweets(username):
 
 if __name__ == '__main__':
     if len(sys.argv) < 2:
-        print("用法: python3 fetch-author-tweets.py @username")
+        print("用法: python3 fetch_author_tweets.py @username")
         sys.exit(1)
     
     username = sys.argv[1]
