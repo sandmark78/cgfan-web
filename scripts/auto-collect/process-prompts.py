@@ -37,8 +37,14 @@ def identify_model(text):
     return '通用 Prompt'
 
 # ====== 复用技能：多格式 prompt 提取 ======
-def extract_clean_prompt(all_text):
-    """从完整推文中提取 prompt，支持多种格式（复用 prompt-extraction-patterns.md）"""
+def extract_clean_prompt(all_text, imgs=None):
+    """从完整推文中提取 prompt，支持多种格式（复用 prompt-extraction-patterns.md）
+    
+    提取优先级：
+    1. 正文中的提示词标记（提示词：/ Prompt: 等）
+    2. 正文中的内联 prompt（靠特征关键词识别）
+    3. 图片 ALT text（很多作者把 prompt 写在图片描述里）
+    """
     articles = re.findall(r'===ARTICLE \d+===(.*?)(?====ARTICLE|\Z)', all_text, re.DOTALL)
     
     for art in articles:
@@ -68,6 +74,26 @@ def extract_clean_prompt(all_text):
             prompt = extract_inline_prompt(art)
             if prompt and len(prompt) > 50:
                 return clean_prompt(prompt)
+    
+    # 格式3: 从图片 ALT text 提取（最后手段）
+    if imgs:
+        for img in imgs:
+            alt = img.get('alt', '') if isinstance(img, dict) else ''
+            # ALT text 必须足够长才像是 prompt（不是简单的图片描述）
+            if len(alt) > 80:
+                # 检查是否包含 prompt 特征词
+                prompt_indicators = [
+                    'illustration', 'portrait', 'landscape', 'scene', 'render',
+                    'cinematic', 'detailed', 'style', 'aesthetic', 'composition',
+                    'lighting', 'color', 'texture', 'atmosphere', 'mood',
+                    'photography', 'camera', 'lens', 'aspect ratio',
+                    'ultra', 'highly detailed', 'realistic', 'fantasy',
+                    'vintage', 'retro', 'futuristic', 'surreal',
+                ]
+                alt_lower = alt.lower()
+                if any(kw in alt_lower for kw in prompt_indicators):
+                    print(f"  📸 从图片 ALT text 提取到 prompt ({len(alt)} 字符)")
+                    return alt.strip()
     
     return None
 
@@ -368,7 +394,8 @@ def main():
         
         # 提取 prompt（复用成熟技能的多格式提取）
         all_text = tweet.get('allText', '')
-        prompt = extract_clean_prompt(all_text)
+        imgs = tweet.get('imgs', [])
+        prompt = extract_clean_prompt(all_text, imgs)
         
         if not prompt:
             # 降级：取 ARTICLE 中最长的文本块

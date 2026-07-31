@@ -59,7 +59,7 @@ results = {}
 # 先把 JS 代码写到文件，避免引号嵌套问题
 EXTRACT_JS = """JSON.stringify({
   allText: Array.from(document.querySelectorAll("article")).map((a,i) => "===ARTICLE " + i + "===\\n" + a.innerText).join("\\n\\n"),
-  imgs: Array.from(document.querySelectorAll("img")).filter(img => img.src.includes("pbs.twimg.com/media/")).map(img => img.src),
+  imgs: Array.from(document.querySelectorAll("img")).filter(img => img.src.includes("pbs.twimg.com/media/")).map(img => ({ src: img.src, alt: img.alt || "" })),
   author: (document.querySelector('article [data-testid="User-Name"]') || {}).innerText?.split("\\n")[0] || "",
   date: (() => { const t = document.querySelector("article time"); return t ? new Date(t.getAttribute("datetime")).toISOString().split("T")[0] : ""; })()
 })"""
@@ -122,7 +122,8 @@ def download_image(tid, data):
     imgs = data.get('imgs', [])
     if not imgs:
         return tid, 0
-    img_url = imgs[0]
+    img = imgs[0]
+    img_url = img['src'] if isinstance(img, dict) else img
     clean_url = img_url.split('?')[0] + '?format=jpg&name=orig'
     out_path = f"public/images/prompts/prompt-{tid}.jpg"
     run(f'curl -s -L -H "User-Agent: Mozilla/5.0" -o "{out_path}" "{clean_url}"')
