@@ -19,6 +19,15 @@ export interface DailyFeature {
  */
 export const dailyFeatures: DailyFeature[] = [
   {
+    date: '2026-07-31',
+    slug: 'prompt-2082436485740118403',
+    curatorNote: '这个提示词展示了 AI 图像生成的创意可能性。',
+    highlight: '中国风温室：青花瓷鸟笼花鸟构图...',
+    technique: 'editorial · AI绘图',
+    tip: '具体的描述比抽象的形容更有效，用 'neon red chaise lounge' 而不是 'colorful furniture'。',
+    tryChange: '把提示词中的颜色或材质描述换成对比色/对比材质，观察整体氛围的变化。',
+  },
+  {
     date: '2026-07-30',
     slug: 'prompt-2078116052224131219',
     curatorNote: '东方禅意美学的极致表达。玉青、玫红、暖白三色构建出「花影入庭」的诗意场景，大量留白与极简构图完美诠释了「少即是多」的设计哲学。提示词中对光线、材质、氛围的精准控制，让 AI 生成出具有东方水墨韵味的现代壁纸。',
