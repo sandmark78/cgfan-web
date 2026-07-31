@@ -24,6 +24,19 @@ export default function DailyPage() {
         </p>
       </div>
 
+      {/* 订阅引导 */}
+      <div className="mb-10 rounded-xl bg-green-50/60 dark:bg-green-900/20 px-6 py-4 border border-green-200/40 dark:border-green-800/30 text-center">
+        <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">
+          <span className="text-green-600 dark:text-green-400 font-medium">📧 每日推送</span> · 每天 9:00 自动发送精选提示词到邮箱
+        </p>
+        <a href="/subscribe" className="btn-primary inline-flex items-center gap-1.5 text-sm px-4 py-2">
+          免费订阅
+          <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+
       <div className="space-y-8">
         {features.map((feature) => {
           const prompt = getPromptBySlug(feature.slug)
