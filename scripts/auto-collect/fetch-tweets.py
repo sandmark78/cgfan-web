@@ -2,6 +2,8 @@
 """
 自动采集高分作者推文
 每天运行，抓取指定作者最近24小时的推文
+
+⚠️ 关键：Camofox 最多同时开10个tab，必须分批处理
 """
 
 import json
@@ -16,6 +18,38 @@ def load_authors():
     with open(config_path, 'r', encoding='utf-8') as f:
         return json.load(f)
 
+def batch_fetch(tweet_ids, batch_size=8):
+    """分批调用 batch-fetch-tweets.py，每批最多8条（留2个tab余量）"""
+    all_results = []
+    
+    for i in range(0, len(tweet_ids), batch_size):
+        batch = tweet_ids[i:i+batch_size]
+        batch_num = i // batch_size + 1
+        total_batches = (len(tweet_ids) + batch_size - 1) // batch_size
+        
+        print(f"\n📦 批次 {batch_num}/{total_batches}: {len(batch)} 条推文")
+        
+        tweet_ids_str = ' '.join(batch)
+        result = subprocess.run(
+            f"python3 scripts/batch-fetch-tweets.py {tweet_ids_str}",
+            shell=True, timeout=120,
+            capture_output=True, text=True
+        )
+        
+        # 读取本批次结果
+        batch_path = Path("/tmp/tweets_batch.json")
+        if batch_path.exists():
+            with open(batch_path, 'r') as f:
+                batch_data = json.load(f)
+            all_results.extend(batch_data)
+            print(f"  ✅ 本批次采集 {len(batch_data)}/{len(batch)} 条")
+            # 删除临时文件，避免下一批覆盖
+            batch_path.unlink()
+        else:
+            print(f"  ❌ 本批次无数据")
+    
+    return all_results
+
 def main():
     config = load_authors()
     authors = config['authors']
@@ -26,19 +60,16 @@ def main():
     all_tweet_ids = []
     
     for i, author in enumerate(authors, 1):
-        print(f"\n{'='*60}")
-        print(f"[{i}/{len(authors)}] 作者: {author['name']} ({author['twitter']})")
-        print(f"历史平均分: {author['avg_score']}")
-        print(f"{'='*60}\n")
+        print(f"\n[{i}/{len(authors)}] {author['name']} ({author['twitter']})")
         
-        # 限制每个作者抓取时间
+        # 抓取该作者的最新推文
         result = subprocess.run(
             ['python3', str(Path(__file__).parent / 'fetch_author_tweets.py'), author['twitter']],
             capture_output=True, text=True, timeout=30
         )
         
         if result.returncode != 0:
-            print(f"⚠️  抓取失败: {result.stderr[:200]}")
+            print(f"  ⚠️ 抓取失败")
             continue
         
         # 从输出中提取推文ID
@@ -49,35 +80,31 @@ def main():
         
         if tweet_ids:
             all_tweet_ids.extend(tweet_ids)
-            print(f"✅ 找到 {len(tweet_ids)} 条新推文")
+            print(f"  ✅ {len(tweet_ids)} 条新推文")
         else:
-            print("⏭️  没有新推文")
+            print(f"  ⏭️ 没有新推文")
     
+    # 去重
+    all_tweet_ids = list(set(all_tweet_ids))
     print(f"\n{'='*60}")
-    print(f"采集完成，共 {len(all_tweet_ids)} 条新推文")
+    print(f"共 {len(all_tweet_ids)} 条去重后的新推文")
     print(f"{'='*60}\n")
     
     if not all_tweet_ids:
         print("没有新推文需要处理")
         return
     
-    # 去重
-    all_tweet_ids = list(set(all_tweet_ids))
-    print(f"去重后: {len(all_tweet_ids)} 条推文")
+    # 分批采集（每批8条，避免Camofox并发限制）
+    print(f"🔄 开始分批采集推文内容（每批8条）...")
+    all_data = batch_fetch(all_tweet_ids, batch_size=8)
     
-    # 调用批量采集脚本
-    print(f"\n🔄 开始批量采集推文内容...")
-    tweet_ids_str = ' '.join(all_tweet_ids)
-    result = subprocess.run(
-        f"python3 scripts/batch-fetch-tweets.py {tweet_ids_str}",
-        shell=True, timeout=300
-    )
+    # 保存合并结果
+    output_path = Path("/tmp/tweets_batch.json")
+    with open(output_path, 'w', encoding='utf-8') as f:
+        json.dump(all_data, f, ensure_ascii=False, indent=2)
     
-    if result.returncode != 0:
-        print(f"❌ 批量采集失败")
-        return
-    
-    print(f"✅ 批量采集完成")
+    print(f"\n📊 总共采集 {len(all_data)}/{len(all_tweet_ids)} 条推文内容")
+    print(f"💾 数据已保存到: {output_path}")
 
 if __name__ == '__main__':
     main()
