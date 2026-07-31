@@ -6,7 +6,7 @@ import { BASE_PERSONAS, Persona } from '@/lib/personas'
 import { AestheticVector } from '@/lib/aesthetic-engine'
 import { getPersonaRarity, getPersonaCompatibility } from '@/lib/persona-rarity'
 import { AestheticQuiz } from './aesthetic-quiz'
-import { Puzzle, Palette, Heart, Waves, Star, Scale, ScrollText, Paintbrush, Download, Sparkles } from 'lucide-react'
+import { Puzzle, Palette, Heart, Waves, Star, Scale, ScrollText, Paintbrush, Download, Sparkles, Share2 } from 'lucide-react'
 
 interface TasteCardClientProps {
   serverFavorites?: Array<{ slug: string; title: string; category: string; tags: string[]; model: string; cover: string }>
@@ -394,6 +394,36 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
     setCurrentPersona(null)
     setShowRetakeConfirm(false)
     setShowQuiz(true)
+  }
+
+  const handleSharePersona = async () => {
+    if (!profile || !currentPersona) return
+    
+    const rarity = getPersonaRarity(currentPersona.id)
+    const shareUrl = `${window.location.origin}/api/og-persona?name=${encodeURIComponent(currentPersona.name)}&nickname=${encodeURIComponent(currentPersona.nickname)}&rarity=${rarity.tier}&traits=${encodeURIComponent(currentPersona.tags.slice(0, 3).join(','))}`
+    
+    const shareText = `我在 CGfan 的美学人格是「${currentPersona.name}」${currentPersona.nickname ? `（${currentPersona.nickname}）` : ''}，${rarity.label}人格！来发现你的美学人格 →`
+    
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: '我的美学人格',
+          text: shareText,
+          url: window.location.origin + '/taste',
+        })
+      } catch (err) {
+        // User cancelled or share failed
+        console.log('Share cancelled')
+      }
+    } else {
+      // Fallback: copy to clipboard
+      try {
+        await navigator.clipboard.writeText(`${shareText}\n${window.location.origin}/taste`)
+        alert('已复制到剪贴板！')
+      } catch (err) {
+        alert('分享链接生成失败')
+      }
+    }
   }
 
   const handleDownloadCard = async () => {
@@ -824,6 +854,13 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       >
         <Download className="h-4 w-4" />
         {isGenerating ? '生成中...' : '下载美学人格卡片'}
+      </button>
+      <button
+        onClick={handleSharePersona}
+        className="btn-secondary inline-flex items-center gap-2"
+      >
+        <Share2 className="h-4 w-4" />
+        分享我的人格
       </button>
       <a
         href="/explore"
