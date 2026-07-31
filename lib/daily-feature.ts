@@ -21,11 +21,11 @@ export const dailyFeatures: DailyFeature[] = [
   {
     date: '2026-07-31',
     slug: 'prompt-2082436485740118403',
-    curatorNote: '这个提示词展示了 AI 图像生成的创意可能性。',
-    highlight: '中国风温室：青花瓷鸟笼花鸟构图...',
-    technique: 'editorial · AI绘图',
-    tip: "具体的描述比抽象的形容更有效，用 'neon red chaise lounge' 而不是 'colorful furniture'。",
-    tryChange: '把提示词中的颜色或材质描述换成对比色/对比材质，观察整体氛围的变化。',
+    curatorNote: 'Chinoiserie（中国风）的教科书级示范。这个 prompt 的精髓在于「材质叙事」：青花瓷鸟笼（porcelain birdcages）+ 金属装饰（ornate）+ 植物（wisteria, camellias, bamboo）三层材质叠加，让 AI 理解这不是简单的「中国元素堆砌」，而是有工艺逻辑的空间构建。色彩控制精准：ivory（象牙白）做底、jade（玉绿）提气、cobalt（钴蓝）点睛、gold（金）收边——四色构建出「雅而不寡」的东方调性。构图上 foreground birdcages → midground flowers → background trailing wisteria 三层递进，形成真正的「温室」纵深感。',
+    highlight: 'Chinoiserie 的材质叙事与四色构建',
+    technique: 'Chinoiserie 风格 · 材质分层 · 四色控制',
+    tip: "写东方美学 prompt 时，用 'Chinoiserie' 比 'Chinese style' 精准十倍——前者是西方艺术史对东方工艺的特定理解，自带 'delicate brushwork' 和 'intricate details' 的视觉基因。色彩不要写 'soft colors'，要具体到材质名：'ivory, jade, cobalt, gold' 比 'white, green, blue, yellow' 多出工艺感和文化重量。",
+    tryChange: "把 'soft ivory, jade, cobalt, and gold tones' 换成 'muted celadon, vermillion, and antique bronze'，整张图会从「清宫雅趣」变成「文人案头」——色彩性格决定东方美学的朝代气质。",
   },
   {
     date: '2026-07-30',
