@@ -18,20 +18,27 @@ async function getTodayFeature() {
   // 获取今天的日期
   const today = new Date().toISOString().split('T')[0]
   
-  // 解析数据（简单提取）
-  const dateMatch = content.match(new RegExp(`date:\\s*'${today}'[\\s\\S]*?slug:\\s*'([^']+)'[\\s\\S]*?curatorNote:\\s*'([^']+)'[\\s\\S]*?highlight:\\s*'([^']+)'[\\s\\S]*?tip:\\s*'([^']+)'`, 'm'))
-  
-  if (!dateMatch) {
+  // 先找到今天的条目块
+  const todayBlockMatch = content.match(new RegExp(`date:\\s*'${today}'[\\s\\S]*?^\\s{2}\\}`, 'm'))
+  if (!todayBlockMatch) {
     return null
   }
+  const block = todayBlockMatch[0]
   
-  return {
-    date: today,
-    slug: dateMatch[1],
-    curatorNote: dateMatch[2],
-    highlight: dateMatch[3],
-    tip: dateMatch[4],
+  // 提取各字段（支持单引号和双引号）
+  const extractField = (field) => {
+    const m = block.match(new RegExp(`${field}:\\s*(?:'([^']*)'|"([^"]*)")`))
+    return m ? (m[1] ?? m[2]) : null
   }
+  
+  const slug = extractField('slug')
+  const curatorNote = extractField('curatorNote')
+  const highlight = extractField('highlight')
+  const tip = extractField('tip')
+  
+  if (!slug) return null
+  
+  return { date: today, slug, curatorNote, highlight, tip }
 }
 
 async function sendDailyEmail() {
