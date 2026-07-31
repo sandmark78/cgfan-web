@@ -236,15 +236,19 @@ def main():
     with open(DAILY_FEATURE_FILE, "r", encoding="utf-8") as f:
         content = f.read()
 
+    # 转义单引号，避免破坏 TypeScript 字符串
+    def escape_ts(s):
+        return s.replace("'", "\\'").replace('\n', ' ')
+    
     # 构造新的条目
     new_entry = f"""  {{
     date: '{today}',
     slug: '{selected['slug']}',
-    curatorNote: '{note}',
-    highlight: '{selected['title'][:30]}...',
-    technique: '{selected.get('category', 'style')} · AI绘图',
-    tip: '{tip}',
-    tryChange: '{try_change}',
+    curatorNote: '{escape_ts(note)}',
+    highlight: '{escape_ts(selected['title'][:30])}...',
+    technique: '{escape_ts(selected.get('category', 'style'))} · AI绘图',
+    tip: '{escape_ts(tip)}',
+    tryChange: '{escape_ts(try_change)}',
   }},
 """
 
