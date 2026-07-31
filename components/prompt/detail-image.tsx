@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import Image from 'next/image'
 
 interface DetailImageProps {
   src: string
@@ -49,16 +48,13 @@ export function DetailImage({ src, alt }: DetailImageProps) {
   return (
     <>
       <div 
-        className="cursor-zoom-in relative overflow-hidden max-w-full aspect-square"
+        className="cursor-zoom-in relative overflow-hidden max-w-full"
         onClick={() => setShowLightbox(true)}
       >
-        <Image
+        <img
           src={src}
           alt={alt}
-          fill
-          sizes="(max-width: 768px) 100vw, 1200px"
-          className="object-cover transition-transform hover:scale-105"
-          priority
+          className="detail-image w-full object-cover transition-transform hover:scale-105"
           onError={() => setHasError(true)}
         />
       </div>
