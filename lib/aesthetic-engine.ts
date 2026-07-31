@@ -358,7 +358,7 @@ export function matchBasePersona(userVector: AestheticVector): BasePersona {
  */
 export function processQuizAnswers(
   selectedOptions: QuizOption[]
-): BasePersona & { accent: string; seal: string; cats: Record<string, number>; tags: string[] } {
+): BasePersona & { accent: string; seal: string; cats: Record<string, number>; tags: string[]; nickname: string } {
   // 1. 从答案计算用户向量
   const userVector = calculateVectorFromTest(
     selectedOptions.map(opt => opt.vector)
@@ -374,5 +374,6 @@ export function processQuizAnswers(
     seal: '美学',
     cats: {},
     tags: [],
+    nickname: 'UNK', // 默认值，实际使用时从 PERSONAS 获取
   }
 }
