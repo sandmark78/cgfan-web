@@ -4,8 +4,9 @@ import { useState, useEffect, useRef } from 'react'
 import { UserProfile, loadProfile, saveProfile, clearProfile, getGrowthStage, GROWTH_STAGES } from '@/lib/aesthetic-dynamic'
 import { BASE_PERSONAS, Persona } from '@/lib/personas'
 import { AestheticVector } from '@/lib/aesthetic-engine'
+import { getPersonaRarity, getPersonaCompatibility } from '@/lib/persona-rarity'
 import { AestheticQuiz } from './aesthetic-quiz'
-import { Puzzle, Palette, Heart, Waves, Star, Scale, ScrollText, Paintbrush, Download } from 'lucide-react'
+import { Puzzle, Palette, Heart, Waves, Star, Scale, ScrollText, Paintbrush, Download, Sparkles } from 'lucide-react'
 
 interface TasteCardClientProps {
   serverFavorites?: Array<{ slug: string; title: string; category: string; tags: string[]; model: string; cover: string }>
@@ -709,14 +710,29 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
   return (
     <>
     <div className="rounded-2xl border border-white/30 bg-white/70 p-8 shadow-lg backdrop-blur-xl dark:border-white/10 dark:bg-white/5">
-      {/* 头部：人格信息 + 收藏数徽章 */}
+      {/* 头部：人格信息 + 昵称稀有度 + 收藏数徽章 */}
       <div className="flex items-start justify-between mb-6">
         <div className="flex items-center gap-4">
-          {/* 树形图标 */}
           <div className="text-5xl"></div>
           <div>
-            <div className="text-xs font-medium text-emerald-600 dark:text-emerald-400 mb-1">{stage.name}</div>
-            <h2 className="font-serif text-3xl font-bold text-gray-900 dark:text-white">{currentPersona.name}</h2>
+            <div className="flex items-center gap-2 mb-1">
+              <span className="text-xs font-medium text-emerald-600 dark:text-emerald-400">{stage.name}</span>
+              {(() => {
+                const rarity = getPersonaRarity(currentPersona.id)
+                const tierColors: Record<string, string> = { common: 'bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400', rare: 'bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-400', epic: 'bg-purple-100 text-purple-700 dark:bg-purple-900/40 dark:text-purple-400', legendary: 'bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-400' }
+                return (
+                  <span className={`px-2 py-0.5 rounded-full text-xs font-semibold ${tierColors[rarity.tier] || tierColors.common}`}>
+                    {rarity.label} · {rarity.percentage}%
+                  </span>
+                )
+              })()}
+            </div>
+            <h2 className="font-serif text-3xl font-bold text-gray-900 dark:text-white">
+              {currentPersona.name}
+              <span className="ml-2 text-lg font-mono font-normal text-gray-400 dark:text-gray-500 align-middle">
+                {currentPersona.nickname}
+              </span>
+            </h2>
             <p className="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wider">{currentPersona.en}</p>
           </div>
         </div>
@@ -726,7 +742,7 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
           <div className="relative">
             <div className="w-16 h-16 rounded-full bg-gradient-to-br from-emerald-400 to-emerald-600 flex flex-col items-center justify-center shadow-lg">
               <span className="text-2xl font-bold text-white">{profile.favoriteCount}</span>
-              <span className="text-[10px] text-white/80">收藏数</span>
+              <span className="text-[10px] text-white/80">收藏</span>
             </div>
           </div>
         </div>
@@ -768,6 +784,35 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
           )
         })}
       </div>
+
+      {/* 互补人格推荐 */}
+      {(() => {
+        const compatibilities = getPersonaCompatibility(currentPersona.id)
+        if (compatibilities.length === 0) return null
+        return (
+          <div className="mt-6 rounded-xl bg-white/50 p-4 backdrop-blur-sm dark:bg-white/5">
+            <div className="flex items-center gap-2 mb-3">
+              <Sparkles className="h-4 w-4 text-emerald-600 dark:text-emerald-400" />
+              <h4 className="text-sm font-semibold text-gray-800 dark:text-gray-200">审美互补人格</h4>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {compatibilities.map((comp, i) => (
+                <div key={i} className="flex items-center gap-2 rounded-lg bg-white/60 px-3 py-2 shadow-sm dark:bg-gray-800/40">
+                  <div className="text-xs font-bold text-gray-800 dark:text-gray-200">{comp.persona.name}</div>
+                  <span className="text-[10px] text-gray-400 dark:text-gray-500">{comp.persona.nickname}</span>
+                  <div className="flex items-center gap-1">
+                    <div className="h-1.5 w-12 rounded-full bg-gray-200 dark:bg-gray-700">
+                      <div className="h-full rounded-full bg-emerald-500" style={{ width: `${comp.compatibility}%` }} />
+                    </div>
+                    <span className="text-[10px] font-medium text-emerald-600 dark:text-emerald-400">{comp.compatibility}%</span>
+                  </div>
+                  <span className="text-[10px] text-gray-500 dark:text-gray-400">{comp.reason}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )
+      })()}
     </div>
 
     {/* 操作按钮 - 在卡片外面 */}

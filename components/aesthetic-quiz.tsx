@@ -38,13 +38,13 @@ export function AestheticQuiz() {
     const newAnswers = [...answers, option]
     setAnswers(newAnswers)
 
-    if (step < 4) {
+    if (step < 8) {
       setStep(step + 1)
     } else {
       // 最后一题，计算结果
       const persona = processQuizAnswers(newAnswers)
       setResult(persona)
-      setStep(5)
+      setStep(9)
 
       // 保存到 localStorage
       localStorage.setItem('cgfan_quiz_result', JSON.stringify({
@@ -93,7 +93,7 @@ export function AestheticQuiz() {
           发现你的美学人格
         </h3>
         <p className="mb-6 text-sm text-gray-600 dark:text-gray-400">
-          4 道题，30 秒，找到你的审美基因
+          8 道题，60 秒，找到你的审美基因
         </p>
         <button
           onClick={() => setStep(1)}
@@ -108,8 +108,8 @@ export function AestheticQuiz() {
     )
   }
 
-  // 答题中 (step 1-4)
-  if (step >= 1 && step <= 4) {
+  // 答题中 (step 1-8)
+  if (step >= 1 && step <= 8) {
     const question = QUIZ_QUESTIONS[step - 1]
 
     return (
@@ -117,13 +117,13 @@ export function AestheticQuiz() {
         {/* 进度条 */}
         <div className="mb-6">
           <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
-            <span>{step} / 4</span>
+            <span>{step} / 8</span>
             <span>第 {step} 题</span>
           </div>
           <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700">
             <div
               className="h-full rounded-full bg-green-500 transition-all duration-500"
-              style={{ width: `${(step / 4) * 100}%` }}
+              style={{ width: `${(step / 8) * 100}%` }}
             />
           </div>
         </div>
@@ -155,8 +155,8 @@ export function AestheticQuiz() {
     )
   }
 
-  // 完成 (step 5)
-  if (step === 5 && result) {
+  // 完成 (step 9)
+  if (step === 9 && result) {
     return (
       <div className="rounded-2xl bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 p-8 text-center dark:from-green-900/20 dark:via-emerald-900/20 dark:to-teal-900/20">
         <div className="mb-2 text-xs font-medium uppercase tracking-wider text-green-600 dark:text-green-400">
