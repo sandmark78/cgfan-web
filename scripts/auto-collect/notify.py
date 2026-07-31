@@ -65,11 +65,16 @@ def send_telegram(message):
         return False
     
     url = f'https://api.telegram.org/bot{BOT_TOKEN}/sendMessage'
+    
+    # 将 Telegram Markdown 转换为 HTML
+    import re
+    html_message = re.sub(r'\*(.+?)\*', r'<b>\1</b>', message)
+    
     data = {
         'chat_id': CHAT_ID,
-        'text': message,
-        'parse_mode': 'Markdown',
-        'disable_web_page_preview': True,
+        'text': html_message,
+        'parse_mode': 'HTML',
+        'link_preview_options': {'is_disabled': True},
     }
     
     try:

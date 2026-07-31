@@ -5,6 +5,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import Pagination from '@/components/pagination'
 import { RandomButton } from '@/components/random-button'
+import { FilterDrawer } from '@/components/filter-drawer'
 
 export const runtime = 'edge'
 
@@ -168,8 +169,24 @@ export default async function ExplorePage({
   }
 
   return (
-    <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
-      <div className="flex gap-8">
+    <>
+      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+        {/* 移动端筛选抽屉 */}
+        <FilterDrawer
+          categories={categories}
+          models={ALL_MODELS}
+          modelCounts={modelCounts}
+          difficulties={ALL_DIFFICULTIES}
+          diffCounts={diffCounts}
+          tags={tags}
+          currentCategory={category}
+          currentModel={model}
+          currentDifficulty={difficulty}
+          currentTag={tag}
+          buildUrl={buildUrl}
+        />
+
+        <div className="flex gap-8">
         <aside className="hidden w-56 shrink-0 lg:block">
           {/* 分类 */}
           <div className="mb-6">
@@ -290,8 +307,9 @@ export default async function ExplorePage({
               )}
             </>
           )}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }

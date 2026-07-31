@@ -353,8 +353,8 @@ curation: {scores['curation']:.1f}/10
     output_dir = Path(f"content/prompts/{category}")
     output_dir.mkdir(parents=True, exist_ok=True)
     
-    # 使用中文标题命名（匹配现有文件命名规范）
-    output_path = output_dir / f"{title}.md"
+    # 使用 tweet_id 命名（避免中文标题冲突导致覆盖）
+    output_path = output_dir / f"prompt-{tweet_id}.md"
     with open(output_path, 'w', encoding='utf-8') as f:
         f.write(content)
     
@@ -364,7 +364,9 @@ curation: {scores['curation']:.1f}/10
 def main():
     print("🔧 开始处理采集到的推文\n")
     
-    tweets_path = Path("/tmp/tweets_batch.json")
+    # 使用 PID 后缀避免竞态条件
+    pid = os.getpid()
+    tweets_path = Path(f"/tmp/tweets_batch_{pid}.json")
     if not tweets_path.exists():
         print("❌ 未找到采集数据")
         return
