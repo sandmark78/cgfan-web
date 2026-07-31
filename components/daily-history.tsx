@@ -75,14 +75,14 @@ export default function DailyHistory() {
                 {prompt.tags && prompt.tags.length > 0 && (
                   <div className="flex flex-wrap gap-1">
                     {prompt.tags.slice(0, 3).map((t: string) => (
-                      <Link
+                      <a
                         key={t}
                         href={`/explore?tag=${encodeURIComponent(t)}`}
                         onClick={(e) => e.stopPropagation()}
                         className="rounded-full bg-green-100 px-2 py-0.5 text-[10px] text-green-700 transition-all duration-300 group-hover:bg-green-200 group-hover:scale-105 dark:bg-green-900/30 dark:text-green-400 dark:group-hover:bg-green-900/50"
                       >
                         {t}
-                      </Link>
+                      </a>
                     ))}
                   </div>
                 )}
