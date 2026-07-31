@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { createClient } from '@/lib/supabase/client'
+import { createClient } from '@/lib/supabase/server'
 
 /**
  * 用户菜单组件
