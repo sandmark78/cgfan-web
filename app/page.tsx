@@ -83,7 +83,7 @@ export default async function Home() {
             {/* Tooltip */}
             <div className="pointer-events-none absolute -top-16 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-lg bg-gray-900 px-3 py-2 text-xs text-white opacity-0 shadow-lg transition-opacity group-hover:opacity-100 dark:bg-gray-100 dark:text-gray-900">
               <div className="font-medium">发现你的美学人格</div>
-              <div className="mt-0.5 text-gray-300 dark:text-gray-600">3 道题，30 秒，找到你的审美基因</div>
+              <div className="mt-0.5 text-gray-300 dark:text-gray-600">8 道题，60 秒，找到你的审美基因</div>
               {/* 箭头 */}
               <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 h-2 w-2 rotate-45 bg-gray-900 dark:bg-gray-100" />
             </div>

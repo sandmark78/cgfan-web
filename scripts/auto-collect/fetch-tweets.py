@@ -39,10 +39,13 @@ def batch_fetch(tweet_ids, batch_size=8):
         # 读取本批次结果
         batch_path = Path("/tmp/tweets_batch.json")
         if batch_path.exists():
-            with open(batch_path, 'r') as f:
-                batch_data = json.load(f)
-            all_results.extend(batch_data)
-            print(f"  ✅ 本批次采集 {len(batch_data)}/{len(batch)} 条")
+            try:
+                with open(batch_path, 'r') as f:
+                    batch_data = json.load(f)
+                all_results.extend(batch_data)
+                print(f"  ✅ 本批次采集 {len(batch_data)}/{len(batch)} 条")
+            except (json.JSONDecodeError, IOError) as e:
+                print(f"  ⚠️ 本批次数据损坏: {e}")
             # 删除临时文件，避免下一批覆盖
             batch_path.unlink()
         else:
@@ -74,9 +77,10 @@ def main():
                 author_ok = True
                 break
             else:
-                print(f"  ⚠️ 尝试 {attempt+1}/3 失败，等待 {attempt*5} 秒...")
+                delay = (attempt + 1) * 5
+                print(f"  ⚠️ 尝试 {attempt+1}/3 失败，等待 {delay} 秒...")
                 import time
-                time.sleep(attempt * 5)
+                time.sleep(delay)
         
         if not author_ok:
             print(f"  ❌ 抓取失败（3次重试后放弃）")

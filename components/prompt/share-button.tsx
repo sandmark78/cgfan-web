@@ -133,6 +133,7 @@ export function ShareButton({ promptSlug, promptTitle, promptDescription, classN
       <button
         ref={buttonRef}
         onClick={handleShareClick}
+        aria-label="分享"
         className="flex items-center gap-1 rounded-full bg-gray-100 px-2.5 py-1 text-xs text-gray-700 transition-colors hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700"
       >
         <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -149,7 +150,7 @@ export function ShareButton({ promptSlug, promptTitle, promptDescription, classN
         </svg>
       </button>
 
-      {/* 下拉菜单（所有设备都显示，带边界检测防止溢出） */}
+      {/* 下拉菜单 */}
       {isOpen &&
         createPortal(
           <div
@@ -163,6 +164,7 @@ export function ShareButton({ promptSlug, promptTitle, promptDescription, classN
             <div className="py-1">
               <button
                 onClick={handleCopyLink}
+                aria-label={copied ? '已复制链接' : '复制链接'}
                 className="flex w-full items-center gap-3 px-4 py-2.5 text-left text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
               >
                 <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -172,6 +174,7 @@ export function ShareButton({ promptSlug, promptTitle, promptDescription, classN
               </button>
               <button
                 onClick={handleGenerateCard}
+                aria-label="生成分享卡片"
                 className="flex w-full items-center gap-3 px-4 py-2.5 text-left text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
               >
                 <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -181,6 +184,7 @@ export function ShareButton({ promptSlug, promptTitle, promptDescription, classN
               </button>
               <button
                 onClick={handleShareToX}
+                aria-label="分享到 X"
                 className="flex w-full items-center gap-3 px-4 py-2.5 text-left text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
               >
                 <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">

@@ -172,6 +172,7 @@ export default function Header() {
                     alt="avatar"
                     width={28}
                     height={28}
+                    unoptimized
                     className="rounded-full border-2 border-white dark:border-gray-700"
                   />
                 ) : (

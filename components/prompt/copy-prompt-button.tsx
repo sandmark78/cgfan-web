@@ -32,6 +32,7 @@ export function CopyPromptButton({ prompt, label = '复制提示词', className 
     <button
       onClick={handleCopy}
       className={`daily-copy-btn ${className} ${copied ? 'copied' : ''}`}
+      aria-label={copied ? '已复制' : label}
     >
       {copied ? '✓ 已复制' : label}
     </button>

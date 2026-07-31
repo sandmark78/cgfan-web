@@ -94,6 +94,7 @@ export function FavoriteButton({
     <button
       onClick={handleToggle}
       disabled={loading}
+      aria-label={favorited ? '取消收藏' : '收藏'}
       className={`flex items-center gap-1 rounded-full px-2.5 py-1 text-xs transition-colors ${
         favorited
           ? 'bg-yellow-500/20 text-yellow-400 hover:bg-yellow-500/30'

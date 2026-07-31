@@ -33,6 +33,7 @@ export default async function UserMenu() {
             alt={user.user_metadata?.name || 'User'}
             width={24}
             height={24}
+            unoptimized
             className="rounded-full"
           />
         )}

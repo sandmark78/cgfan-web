@@ -69,6 +69,7 @@ export function LikeButton({
     <button
       onClick={handleToggle}
       disabled={loading}
+      aria-label={liked ? '取消点赞' : '点赞'}
       className={`flex items-center gap-1 rounded-full px-2.5 py-1 text-xs transition-colors ${
         liked
           ? 'bg-red-500/20 text-red-400 hover:bg-red-500/30'
