@@ -45,12 +45,9 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
       ? prompt.cover 
       : `${window.location.origin}${prompt.cover}`
     
-    console.log('开始加载图片:', imgUrl)
-    
     const img = new window.Image()
     img.crossOrigin = 'anonymous' // 允许跨域访问
     img.onload = () => { 
-      console.log('图片加载成功:', img.naturalWidth, 'x', img.naturalHeight)
       imgRef.current = img
       setImageLoaded(true)
     }
@@ -66,7 +63,6 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
     try {
       // 等待图片加载
       if (!imgRef.current && prompt.cover) {
-        console.log('等待图片加载...')
         await new Promise((resolve) => {
           const checkImage = () => {
             if (imgRef.current) {
@@ -167,7 +163,6 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
       if (imgRef.current) {
         try {
           const img = imgRef.current
-          console.log('绘制图片:', img.naturalWidth, 'x', img.naturalHeight, 'src:', img.src.substring(0, 50))
           
           // 检查图片尺寸是否有效
           if (img.naturalWidth === 0 || img.naturalHeight === 0) {
@@ -195,7 +190,6 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
           }
           
           ctx.drawImage(img, sx, sy, sw, sh, cardX, imgY, cardW, imgH)
-          console.log('图片绘制成功')
         } catch (error) {
           console.error('图片绘制失败:', error)
           // 绘制失败时显示占位符
