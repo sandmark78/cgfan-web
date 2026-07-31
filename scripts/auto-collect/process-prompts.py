@@ -386,61 +386,67 @@ def main():
         print(f"处理推文: {tweet_id}")
         print(f"{'='*60}")
         
-        # 去重检查
-        if is_duplicate(tweet_id):
-            print(f"⏭️  已采集过，跳过")
-            results['duplicate'] += 1
-            continue
+        try:
+            # 去重检查
+            if is_duplicate(tweet_id):
+                print(f"⏭️  已采集过，跳过")
+                results['duplicate'] += 1
+                continue
+            
+            # 提取 prompt（复用成熟技能的多格式提取）
+            all_text = tweet.get('allText', '')
+            imgs = tweet.get('imgs', [])
+            prompt = extract_clean_prompt(all_text, imgs)
+            
+            if not prompt:
+                # 降级：取 ARTICLE 中最长的文本块
+                articles = re.findall(r'===ARTICLE \d+===(.*?)(?====ARTICLE|\Z)', all_text, re.DOTALL)
+                if articles:
+                    prompt = max(articles, key=len).strip()
+            
+            if not prompt or len(prompt) < 50:
+                print("❌ 无法提取prompt或prompt太短")
+                results['rejected'] += 1
+                continue
+            
+            print(f"✅ 提取到prompt ({len(prompt)} 字符)")
+            
+            # 模型识别（复用成熟技能的可信度优先策略）
+            model = identify_model(all_text)
+            print(f"🤖 模型: {model}")
+            
+            # 8维度评分
+            images = tweet.get('imgs', [])
+            scores, total_score = score_8_dimensions(prompt, images)
+            print(f"📊 评分: {total_score:.0f}/80")
+            print(f"   构图:{scores['composition']:.1f} 色彩:{scores['color']:.1f} 光影:{scores['lighting']:.1f} 细节:{scores['detail']:.1f}")
+            print(f"   创意:{scores['creativity']:.1f} 技术:{scores['technical']:.1f} 审美:{scores['aesthetic']:.1f} 策展:{scores['curation']:.1f}")
+            
+            # 60分以上保留
+            if total_score < 60:
+                print(f"⏭️  评分低于60，跳过")
+                results['rejected'] += 1
+                continue
+            
+            # 生成标题
+            title = generate_title(prompt)
+            print(f"📝 标题: {title}")
+            
+            # 确定分类
+            category = get_category(prompt, title)
+            print(f"📂 分类: {category}")
+            
+            # 创建 markdown 文件
+            md_path = create_markdown(tweet, prompt, title, model, scores, total_score, category)
+            print(f"💾 文件: {md_path}")
+            
+            results['processed'] += 1
+            results['accepted'] += 1
         
-        # 提取 prompt（复用成熟技能的多格式提取）
-        all_text = tweet.get('allText', '')
-        imgs = tweet.get('imgs', [])
-        prompt = extract_clean_prompt(all_text, imgs)
-        
-        if not prompt:
-            # 降级：取 ARTICLE 中最长的文本块
-            articles = re.findall(r'===ARTICLE \d+===(.*?)(?====ARTICLE|\Z)', all_text, re.DOTALL)
-            if articles:
-                prompt = max(articles, key=len).strip()
-        
-        if not prompt or len(prompt) < 50:
-            print("❌ 无法提取prompt或prompt太短")
+        except Exception as e:
+            print(f"❌ 处理失败: {e}")
             results['rejected'] += 1
             continue
-        
-        print(f"✅ 提取到prompt ({len(prompt)} 字符)")
-        
-        # 模型识别（复用成熟技能的可信度优先策略）
-        model = identify_model(all_text)
-        print(f"🤖 模型: {model}")
-        
-        # 8维度评分
-        images = tweet.get('imgs', [])
-        scores, total_score = score_8_dimensions(prompt, images)
-        print(f"📊 评分: {total_score:.0f}/80")
-        print(f"   构图:{scores['composition']:.1f} 色彩:{scores['color']:.1f} 光影:{scores['lighting']:.1f} 细节:{scores['detail']:.1f}")
-        print(f"   创意:{scores['creativity']:.1f} 技术:{scores['technical']:.1f} 审美:{scores['aesthetic']:.1f} 策展:{scores['curation']:.1f}")
-        
-        # 60分以上保留
-        if total_score < 60:
-            print(f"⏭️  评分低于60，跳过")
-            results['rejected'] += 1
-            continue
-        
-        # 生成标题
-        title = generate_title(prompt)
-        print(f"📝 标题: {title}")
-        
-        # 确定分类
-        category = get_category(prompt, title)
-        print(f"📂 分类: {category}")
-        
-        # 创建 markdown 文件
-        md_path = create_markdown(tweet, prompt, title, model, scores, total_score, category)
-        print(f"💾 文件: {md_path}")
-        
-        results['processed'] += 1
-        results['accepted'] += 1
     
     print(f"\n{'='*60}")
     print(f"处理完成")

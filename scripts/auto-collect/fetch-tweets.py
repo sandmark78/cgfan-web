@@ -62,14 +62,24 @@ def main():
     for i, author in enumerate(authors, 1):
         print(f"\n[{i}/{len(authors)}] {author['name']} ({author['twitter']})")
         
-        # 抓取该作者的最新推文
-        result = subprocess.run(
-            ['python3', str(Path(__file__).parent / 'fetch_author_tweets.py'), author['twitter']],
-            capture_output=True, text=True, timeout=30
-        )
+        # 抓取该作者的最新推文（带重试）
+        author_ok = False
+        for attempt in range(3):
+            result = subprocess.run(
+                ['python3', str(Path(__file__).parent / 'fetch_author_tweets.py'), author['twitter']],
+                capture_output=True, text=True, timeout=30
+            )
+            
+            if result.returncode == 0:
+                author_ok = True
+                break
+            else:
+                print(f"  ⚠️ 尝试 {attempt+1}/3 失败，等待 {attempt*5} 秒...")
+                import time
+                time.sleep(attempt * 5)
         
-        if result.returncode != 0:
-            print(f"  ⚠️ 抓取失败")
+        if not author_ok:
+            print(f"  ❌ 抓取失败（3次重试后放弃）")
             continue
         
         # 从输出中提取推文ID
