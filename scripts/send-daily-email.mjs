@@ -15,8 +15,11 @@ async function getTodayFeature() {
   const response = await fetch('https://raw.githubusercontent.com/sandmark78/cgfan-web/main/lib/daily-feature.ts')
   const content = await response.text()
   
-  // 获取今天的日期
-  const today = new Date().toISOString().split('T')[0]
+  // 获取今天的日期（北京时间 UTC+8）
+  const now = new Date()
+  const beijingOffset = 8 * 60 * 60 * 1000
+  const beijingNow = new Date(now.getTime() + beijingOffset)
+  const today = beijingNow.toISOString().split('T')[0]
   
   // 先找到今天的条目块
   const todayBlockMatch = content.match(new RegExp(`date:\\s*'${today}'[\\s\\S]*?^\\s{2}\\}`, 'm'))

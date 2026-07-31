@@ -156,8 +156,13 @@ def generate_curator_note(prompt, taste_profile):
 def main():
     os.chdir(WORKDIR)
 
+    # 使用北京时间（UTC+8）
+    from datetime import timezone, timedelta
+    beijing_tz = timezone(timedelta(hours=8))
+    now_beijing = datetime.now(beijing_tz)
+
     # 检查今天是否已有每日一味
-    today = datetime.now().strftime("%Y-%m-%d")
+    today = now_beijing.strftime("%Y-%m-%d")
     existing_features = parse_daily_features()  # [(date, slug), ...]
     existing_dates = [d for d, s in existing_features]
     existing_slugs = set(s for d, s in existing_features)
@@ -166,8 +171,8 @@ def main():
         print(f"✅ {today} 已有每日一味数据，跳过")
         return
 
-    # 计算昨天的日期
-    yesterday = datetime.now() - timedelta(days=1)
+    # 计算昨天的日期（北京时间）
+    yesterday = now_beijing - timedelta(days=1)
     yesterday_str = yesterday.strftime("%Y-%m-%d")
 
     # 加载提示词数据
