@@ -497,7 +497,7 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       ctx.textAlign = 'center'
       
       // ── 人格名（居中，大字宋体） ──
-      const nameY = 360  // 下移30px
+      const nameY = 385  // 下移25px
       const nameLen = currentPersona.name.length
       const nameSize = nameLen >= 6 ? 96 : nameLen === 5 ? 108 : nameLen === 4 ? 120 : 132
       ctx.font = `900 ${nameSize}px "Noto Serif SC", "Songti SC", "SimSun", serif`
@@ -548,7 +548,7 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       
       // ── 8维雷达图（规则圆形布局，中心对齐图片中心） ──
       const radarCX = 540
-      const radarCY = 675
+      const radarCY = 700  // 下移25px
       const radarR = 113  // 162 * 0.7 = 113.4，缩小30%
       
       const dims = [
