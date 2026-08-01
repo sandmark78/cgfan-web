@@ -1,7 +1,6 @@
 import { getAllPrompts, getPromptBySlug } from '@/lib/prompts'
 import { notFound } from 'next/navigation'
 import { CopyPromptButton } from '@/components/prompt/copy-prompt-button'
-import { FloatingCopyButton } from '@/components/prompt/floating-copy-button'
 import { LikeButton } from '@/components/prompt/like-button'
 import { FavoriteButton } from '@/components/prompt/favorite-button'
 import { ShareButton } from '@/components/prompt/share-button'
@@ -165,33 +164,19 @@ export default async function PromptDetailPage({
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-8">
-      {/* 移动端浮动复制按钮 */}
-      <FloatingCopyButton prompt={prompt.prompt} />
-      
-      {/* 返回按钮 + 面包屑导航 */}
-      <div className="mb-8 flex items-center gap-4">
-        <Link
-          href="/explore"
-          className="flex items-center gap-1 rounded-lg bg-gray-100 px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-200 dark:bg-zinc-800 dark:text-gray-300 dark:hover:bg-zinc-700"
-        >
-          <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-          </svg>
-          返回
+      {/* 面包屑导航 */}
+      <nav className="mb-8 text-sm text-gray-600 dark:text-gray-400">
+        <Link href="/" className="transition-colors hover:text-green-600 dark:hover:text-green-400">
+          首页
         </Link>
-        <nav className="text-sm text-gray-600 dark:text-gray-400">
-          <Link href="/" className="transition-colors hover:text-green-600 dark:hover:text-green-400">
-            首页
-          </Link>
-          <span className="mx-2">/</span>
-          <Link
-            href={`/explore?category=${prompt.category}`}
-            className="transition-colors hover:text-green-600 dark:hover:text-green-400"
-          >
-            {getCategoryLabel(prompt.category)}
-          </Link>
-        </nav>
-      </div>
+        <span className="mx-2">/</span>
+        <Link
+          href={`/explore?category=${prompt.category}`}
+          className="transition-colors hover:text-green-600 dark:hover:text-green-400"
+        >
+          {getCategoryLabel(prompt.category)}
+        </Link>
+      </nav>
 
       {/* 主标题 */}
       <h1 className="mb-8 text-3xl font-bold text-gray-900 dark:text-white">
