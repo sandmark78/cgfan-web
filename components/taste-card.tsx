@@ -686,7 +686,7 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
         
         // 名言居中
         ctx.font = `italic 400 22px "Noto Serif SC", "Songti SC", serif`
-        ctx.fillStyle = C.soft
+        ctx.fillStyle = C.inkMid
         ctx.textAlign = 'center'
         ctx.textBaseline = 'top'
         
@@ -699,7 +699,7 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
         // 作者署名右对齐
         if (quoteAuthor) {
           ctx.font = `500 22px -apple-system, "Helvetica Neue", sans-serif`
-          ctx.fillStyle = C.inkMid
+          ctx.fillStyle = C.ink
           ctx.textAlign = 'right'
           ctx.fillText(quoteAuthor, W / 2 + 210 - boxPadX, qly + 8)
         }
