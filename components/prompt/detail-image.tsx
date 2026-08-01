@@ -78,13 +78,13 @@ export function DetailImage({ src, alt }: DetailImageProps) {
 
           {/* 图片容器 */}
           <div 
-            className="relative max-h-[90vh] max-w-[90vw] animate-in zoom-in-95 duration-200"
+            className="relative max-h-[85vh] max-w-4xl animate-in zoom-in-95 duration-200"
             onClick={(e) => e.stopPropagation()}
           >
             <img
               src={src}
               alt={alt}
-              className="max-h-[90vh] max-w-[90vw] object-contain shadow-2xl"
+              className="max-h-[85vh] max-w-full object-contain shadow-2xl"
             />
           </div>
         </div>
