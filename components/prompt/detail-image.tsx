@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import Image from 'next/image'
 
 interface DetailImageProps {
   src: string
@@ -23,14 +22,12 @@ export function DetailImage({ src, alt }: DetailImageProps) {
   }
 
   return (
-    <div className="relative overflow-hidden w-full h-[300px] max-w-[500px]">
-      <Image
+    <div className="relative overflow-hidden rounded-xl w-full">
+      <img
         src={src}
         alt={alt}
-        fill
-        sizes="(max-width: 768px) 100vw, 600px"
-        className="object-cover transition-transform hover:scale-105"
-        priority
+        className="w-full h-auto object-cover"
+        style={{ maxHeight: '300px', maxWidth: '500px' }}
         onError={() => setHasError(true)}
       />
     </div>
