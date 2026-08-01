@@ -126,11 +126,40 @@ def download_image(tid, data):
     img_url = img['src'] if isinstance(img, dict) else img
     clean_url = img_url.split('?')[0] + '?format=jpg&name=orig'
     out_path = f"public/images/prompts/prompt-{tid}.jpg"
-    run(f'curl -s -L -H "User-Agent: Mozilla/5.0" -o "{out_path}" "{clean_url}"')
-    # Safari 兼容修复
-    run(f'sips -s format jpeg -s formatOptions best "{out_path}" --out "{out_path}" 2>/dev/null')
+    
+    # 重试 3 次下载
+    for attempt in range(3):
+        run(f'curl -s -L -H "User-Agent: Mozilla/5.0" -o "{out_path}" "{clean_url}"')
+        try:
+            size = os.path.getsize(out_path)
+            if size > 0:
+                break  # 下载成功
+        except:
+            pass
+        if attempt < 2:
+            print(f"  ⚠️  {tid}: 下载失败，重试 {attempt+2}/3...")
+            import time
+            time.sleep(2)
+        else:
+            # 三次都失败，删空文件
+            try:
+                os.remove(out_path)
+            except:
+                pass
+            return tid, 0
+    
+    # Safari 兼容修复（失败不影响）
+    try:
+        run(f'sips -s format jpeg -s formatOptions best "{out_path}" --out "{out_path}" 2>/dev/null')
+    except:
+        pass
+    
+    # 最终验证
     try:
         size = os.path.getsize(out_path)
+        if size == 0:
+            os.remove(out_path)
+            return tid, 0
         return tid, size
     except:
         return tid, 0
