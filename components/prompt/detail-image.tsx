@@ -57,7 +57,7 @@ export function DetailImage({ src, alt }: DetailImageProps) {
           alt={alt}
           fill
           sizes="(max-width: 768px) 100vw, 600px"
-          className="object-cover transition-transform hover:scale-105"
+          className="object-contain transition-transform hover:scale-105"
           priority
           onError={() => setHasError(true)}
         />
