@@ -1,6 +1,6 @@
 import { readdirSync, readFileSync, existsSync } from 'fs'
 import { join } from 'path'
-import Image from 'next/image'
+import { CandidateImage } from './candidate-image'
 
 interface Candidate {
   id: number
@@ -92,20 +92,7 @@ export default function CandidatesPage() {
 
                   {/* 图片 */}
                   <div className="relative h-24 w-24 flex-shrink-0 overflow-hidden rounded-lg bg-gray-100 dark:bg-gray-800">
-                    {c.cover ? (
-                      <Image
-                        src={c.cover}
-                        alt={c.title}
-                        fill
-                        className="object-cover"
-                        sizes="96px"
-                        unoptimized
-                      />
-                    ) : (
-                      <div className="flex h-full items-center justify-center text-2xl">
-                        🎨
-                      </div>
-                    )}
+                    <CandidateImage cover={c.cover} title={c.title} />
                   </div>
 
                   {/* 内容 */}
