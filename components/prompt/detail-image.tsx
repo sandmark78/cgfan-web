@@ -49,7 +49,7 @@ export function DetailImage({ src, alt }: DetailImageProps) {
   return (
     <>
       <div 
-        className="cursor-zoom-in relative overflow-hidden w-full aspect-[4/3] max-h-[60vh]"
+        className="cursor-zoom-in relative overflow-hidden w-full aspect-[4/3] max-h-[500px]"
         onClick={() => setShowLightbox(true)}
       >
         <Image
