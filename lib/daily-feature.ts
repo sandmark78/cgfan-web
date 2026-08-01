@@ -19,6 +19,15 @@ export interface DailyFeature {
  */
 export const dailyFeatures: DailyFeature[] = [
   {
+    date: '2026-08-01',
+    slug: 'prompt-2083028260385112169',
+    curatorNote: '人像摄影提示词，重点在于光影和情绪的把控。 使用 Midjourney 模型生成。',
+    highlight: '未来科幻少女云端平台...',
+    technique: 'portrait · AI绘图',
+    tip: '用 \'Rembrandt lighting\' 或 \'golden hour\' 这样的专业术语，比 \'beautiful light\' 更精准。',
+    tryChange: '把提示词中的颜色或材质描述换成对比色/对比材质，观察整体氛围的变化。',
+  },
+  {
     date: '2026-07-31',
     slug: 'prompt-2082436485740118403',
     curatorNote: 'Chinoiserie（中国风）的教科书级示范。这个 prompt 的精髓在于「材质叙事」：青花瓷鸟笼（porcelain birdcages）+ 金属装饰（ornate）+ 植物（wisteria, camellias, bamboo）三层材质叠加，让 AI 理解这不是简单的「中国元素堆砌」，而是有工艺逻辑的空间构建。色彩控制精准：ivory（象牙白）做底、jade（玉绿）提气、cobalt（钴蓝）点睛、gold（金）收边——四色构建出「雅而不寡」的东方调性。构图上 foreground birdcages → midground flowers → background trailing wisteria 三层递进，形成真正的「温室」纵深感。',
