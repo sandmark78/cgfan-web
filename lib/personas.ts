@@ -1,7 +1,7 @@
 /**
- * 美学人格系统 v2.0 - 36 种审美类型
- * 12 种基础人格（探索期）+ 24 种深度人格（沉浸期进化）
- * 每个基础人格进化为 3 个深度人格
+ * 美学人格系统 v2.0 - 48 种审美类型
+ * 12 种基础人格（探索期）+ 36 种深度人格（沉浸期进化）
+ * 每个基础人格进化为 3 个深度人格（12 × 3 = 36）
  */
 
 import { AestheticVector } from './aesthetic-engine'
@@ -206,21 +206,21 @@ export const PERSONAS: Persona[] = [
 
   // ── 3. 色彩暴徒 → 3 个深度 ──
   P('color-alchemist', '色彩炼金术师', 'THE COLOR ALCHEMIST', 
-    'UNK', '色块交融的瞬间，你点石成金。',
+    'CAL', '色块交融的瞬间，你点石成金。',
     '"色彩是直接对灵魂施加影响的手段。" —— 康定斯基',
     '#E11D48', '炼金', 
     { 抽象: 2, 动漫: 1 }, ['高饱和', '撞色', '鲜艳', '色彩', '魔法'],
     { complexity: 75, colorIntensity: 98, arousal: 90, fluency: 45, novelty: 80, harmony: 30, narrative: 55, stylization: 70 },
     0.8, true, 'color-riot'),
   P('chromatic-rebel', '色谱叛逆者', 'THE CHROMATIC REBEL', 
-    'UNK', '拒绝现实的平庸，用最狂野的调色板发声。',
+    'CRB', '拒绝现实的平庸，用最狂野的调色板发声。',
     '"我不画事物原本的样子，我只画我对它的感受。" —— 梵高',
     '#F43F5E', '叛逆', 
     { 抽象: 1.5, 动漫: 0.8 }, ['高饱和', '撞色', '叛逆', '混乱', '秩序'],
     { complexity: 80, colorIntensity: 95, arousal: 85, fluency: 40, novelty: 85, harmony: 25, narrative: 45, stylization: 75 },
     0.8, true, 'color-riot'),
   P('neon-dreamer', '霓虹造梦者', 'THE NEON DREAMER', 
-    'UNK', '在高饱和度的夜色里，你编织流光溢彩的梦。',
+    'NEO', '在高饱和度的夜色里，你编织流光溢彩的梦。',
     '"在光与影的缝隙里，霓虹是黑夜未竟的梦境。" —— 押井守',
     '#EC4899', '霓虹', 
     { 抽象: 1.2, 动漫: 1 }, ['高饱和', '霓虹', '夜晚', '发光', '赛博'],
@@ -229,21 +229,21 @@ export const PERSONAS: Persona[] = [
 
   // ── 4. 山野拾光人 → 3 个深度 ──
   P('nature-child', '自然之子', 'CHILD OF NATURE', 
-    'UNK', '你的灵魂属于大地，每一寸呼吸都顺应自然。',
+    'NCH', '你的灵魂属于大地，每一寸呼吸都顺应自然。',
     '"走进自然，就等于走回了自己。" —— 约翰·缪尔',
     '#059669', '自然', 
     { 写实: 2, 摄影: 2 }, ['自然', '风景', '植物', '山', '海', '雾', '森林', '花', '大地'],
     { complexity: 40, colorIntensity: 50, arousal: 35, fluency: 80, novelty: 55, harmony: 90, narrative: 65, stylization: 30 },
     0.8, true, 'nature-gatherer'),
   P('wilderness-poet', '荒野诗人', 'THE WILDERNESS POET', 
-    'UNK', '在人迹罕至之处，你读懂了最深沉的史诗。',
+    'WPO', '在人迹罕至之处，你读懂了最深沉的史诗。',
     '"在荒野深处，时间不再按秒流动，而是按季节沉淀。" —— 梭罗',
     '#10B981', '荒野', 
     { 写实: 2.5, 摄影: 1.5 }, ['自然', '荒野', '无人', '大地', '孤独'],
     { complexity: 50, colorIntensity: 45, arousal: 45, fluency: 70, novelty: 60, harmony: 85, narrative: 80, stylization: 35 },
     0.8, true, 'nature-gatherer'),
   P('season-watcher', '季节观察者', 'THE SEASON WATCHER', 
-    'UNK', '四时更迭的变化，就是你最奢侈的展品。',
+    'SEA', '四时更迭的变化，就是你最奢侈的展品。',
     '"春有百花秋有月，夏有凉风冬有雪。" —— 慧开禅师',
     '#34D399', '季节', 
     { 写实: 2, 摄影: 2 }, ['自然', '季节', '时间', '叶', '变化'],
@@ -252,21 +252,21 @@ export const PERSONAS: Persona[] = [
 
   // ── 5. 微缩造梦师 → 3 个深度 ──
   P('micro-creator', '微观造物主', 'THE MICRO CREATOR', 
-    'UNK', '俯瞰一滴水、一颗沙，你在微观里重铸宇宙。',
+    'MCR', '俯瞰一滴水、一颗沙，你在微观里重铸宇宙。',
     '"当你足够专注，最小的微尘里也藏着完整的宇宙。" —— 帕拉塞尔苏斯',
     '#0D9488', '造物', 
     { 微缩: 3.5, '3D': 2.5 }, ['微缩', '等距', '模型', '瓶', '玻璃', '细节', '精致'],
     { complexity: 90, colorIntensity: 65, arousal: 55, fluency: 60, novelty: 85, harmony: 75, narrative: 70, stylization: 80 },
     0.8, true, 'miniature'),
   P('miniature-storyteller', '微缩叙事者', 'THE MINIATURE STORYTELLER', 
-    'UNK', '尺寸之间，藏着一整部未被讲述的传奇。',
+    'MST', '尺寸之间，藏着一整部未被讲述的传奇。',
     '"细节不仅仅是细节，它们构成了设计的整体。" —— 查尔斯·伊姆斯',
     '#14B8A6', '叙事', 
     { 微缩: 3, '3D': 2 }, ['微缩', '等距', '故事', '世界', '细节'],
     { complexity: 85, colorIntensity: 60, arousal: 50, fluency: 65, novelty: 80, harmony: 70, narrative: 85, stylization: 75 },
     0.8, true, 'miniature'),
   P('detail-hunter', '细节猎人', 'THE DETAIL HUNTER', 
-    'UNK', '别人掠过的无意义角落，是你绝密的天堂。',
+    'DET', '别人掠过的无意义角落，是你绝密的天堂。',
     '"上帝存在于细节之中。" —— 瓦尔堡',
     '#5EEAD4', '猎人', 
     { 微缩: 2.5, '3D': 2 }, ['微缩', '细节', '精致', '纹理', '观察'],
@@ -275,14 +275,14 @@ export const PERSONAS: Persona[] = [
 
   // ── 6. 建筑解构者 → 3 个深度 ──
   P('space-poet', '空间诗人', 'THE SPACE POET', 
-    'UNK', '你用线与面的重组，赋予空间呼吸感与诗意。',
+    'SPA', '你用线与面的重组，赋予空间呼吸感与诗意。',
     '"空间是诗意的盛器，光是它的语言。" —— 安藤忠雄',
     '#6366F1', '空间', 
     { 建筑: 3, '3D': 1.5 }, ['建筑', '结构', '解构', '空间', '秩序', '裂缝'],
     { complexity: 75, colorIntensity: 40, arousal: 50, fluency: 65, novelty: 75, harmony: 55, narrative: 70, stylization: 75 },
     0.8, true, 'decon'),
   P('structure-alchemist', '结构炼金师', 'THE STRUCTURE ALCHEMIST', 
-    'UNK', '拆解物质的张力，在几何的交界处建立秩序。',
+    'SAC', '拆解物质的张力，在几何的交界处建立秩序。',
     '"结构是光的赋予者。" —— 路易斯·康',
     '#818CF8', '炼金', 
     { 建筑: 2.5, '3D': 2 }, ['建筑', '结构', '解构', '炼金', '转化'],
@@ -298,7 +298,7 @@ export const PERSONAS: Persona[] = [
 
   // ── 7. 都市漫游者 → 3 个深度 ──
   P('city-archaeologist', '城市考古学家', 'THE CITY ARCHAEOLOGIST', 
-    'UNK', '穿行于砖石与霓虹间，你发掘被遗忘的都市记忆。',
+    'CIT', '穿行于砖石与霓虹间，你发掘被遗忘的都市记忆。',
     '"城市是一本巨大的书，每一砖一瓦都是未被擦除的历史。" —— 卡尔维诺',
     '#4F46E5', '考古', 
     { 摄影: 2.5, 写实: 1.5 }, ['城市', '夜景', '街头', '街', '都市', '废墟', '遗忘'],
@@ -312,7 +312,7 @@ export const PERSONAS: Persona[] = [
     { complexity: 60, colorIntensity: 75, arousal: 75, fluency: 55, novelty: 65, harmony: 50, narrative: 80, stylization: 60 },
     0.8, true, 'urban'),
   P('street-philosopher', '街头哲学家', 'THE STREET PHILOSOPHER', 
-    'UNK', '人潮熙攘过往，你站在街角默默解构人间百态。',
+    'STP', '人潮熙攘过往，你站在街角默默解构人间百态。',
     '"街道是最好的剧场，每个人都在出演自己。" —— 薇薇安·迈尔',
     '#818CF8', '哲学', 
     { 摄影: 2, 写实: 1.5 }, ['城市', '街头', '哲学', '思考', '存在'],
@@ -321,21 +321,21 @@ export const PERSONAS: Persona[] = [
 
   // ── 8. 二次元织梦人 → 3 个深度 ──
   P('dimension-traveler', '次元旅行者', 'THE DIMENSION TRAVELER', 
-    'UNK', '跨越现实的壁垒，你在平行世界里寻找归宿。',
+    'DMT', '跨越现实的壁垒，你在平行世界里寻找归宿。',
     '"现实世界只是无数可能世界中的一个。" —— 莱布尼茨',
     '#EA580C', '次元', 
     { 动漫: 3.5 }, ['动漫', '插画', '二次元', '赛璐璐', '日系', '平行', '穿梭'],
     { complexity: 65, colorIntensity: 80, arousal: 80, fluency: 65, novelty: 75, harmony: 60, narrative: 85, stylization: 95 },
     0.8, true, 'anime'),
   P('anime-storyteller', '动漫叙事者', 'THE ANIME STORYTELLER', 
-    'UNK', '每一道勾线与分镜，都承载着最动人的羁绊。',
+    'AST', '每一道勾线与分镜，都承载着最动人的羁绊。',
     '"线条和线条交错的地方，是一个全新的世界。" —— 新海诚',
     '#F97316', '叙事', 
     { 动漫: 3 }, ['动漫', '插画', '二次元', '故事', '世界'],
     { complexity: 60, colorIntensity: 75, arousal: 70, fluency: 70, novelty: 70, harmony: 65, narrative: 95, stylization: 90 },
     0.8, true, 'anime'),
   P('cel-shade-dreamer', '赛璐璐造梦者', 'THE CEL-SHADE DREAMER', 
-    'UNK', '纯粹的手绘质感，定格了永不褪色的青春理想。',
+    'CEL', '纯粹的手绘质感，定格了永不褪色的青春理想。',
     '"帧与帧之间的间隙，是人类想象力跳跃的空间。" —— 今敏',
     '#FB923C', '赛璐', 
     { 动漫: 2.5 }, ['动漫', '插画', '二次元', '赛璐璐', '平涂'],
@@ -344,7 +344,7 @@ export const PERSONAS: Persona[] = [
 
   // ── 9. 超现实造境师 → 3 个深度 ──
   P('dream-architect', '梦境建筑师', 'THE DREAM ARCHITECT', 
-    'UNK', '潜意识里的荒诞，在你手中构筑起严密的逻辑。',
+    'DRA', '潜意识里的荒诞，在你手中构筑起严密的逻辑。',
     '"梦境是潜意识的剧场，现实不过是它的序幕。" —— 弗洛伊德',
     '#7C3AED', '筑梦', 
     { 抽象: 2, 写实: 1 }, ['超现实', '梦境', '奇幻', 'surreal', '建筑', '不可能'],
@@ -358,7 +358,7 @@ export const PERSONAS: Persona[] = [
     { complexity: 75, colorIntensity: 65, arousal: 80, fluency: 35, novelty: 95, harmony: 40, narrative: 85, stylization: 95 },
     0.8, true, 'surreal'),
   P('paradox-creator', '悖论创造者', 'THE PARADOX CREATOR', 
-    'UNK', '在不可能的几何里，你铺设通往无穷的阶梯。',
+    'PDC', '在不可能的几何里，你铺设通往无穷的阶梯。',
     '"艺术的本质，是用不合理的秩序去重构合理的世界。" —— 埃舍尔',
     '#A78BFA', '悖论', 
     { 抽象: 2, 写实: 1.2 }, ['超现实', '悖论', '矛盾', '逻辑', '反面'],
@@ -367,7 +367,7 @@ export const PERSONAS: Persona[] = [
 
   // ── 10. 未来主义先知 → 3 个深度 ──
   P('oracle', '时空预言家', 'THE ORACLE', 
-    'UNK', '站在时间轴的两端，你注视着沧海桑田的变迁。',
+    'ORL', '站在时间轴的两端，你注视着沧海桑田的变迁。',
     '"时间不是流逝的，是我们穿越了它。" —— 爱因斯坦',
     '#0284C7', '预言', 
     { '3D': 1.5, 写实: 0.8 }, ['未来', '科幻', '机械', '太空', '预言', '看见'],
@@ -397,14 +397,14 @@ export const PERSONAS: Persona[] = [
     { complexity: 45, colorIntensity: 40, arousal: 40, fluency: 85, novelty: 65, harmony: 95, narrative: 80, stylization: 75 },
     0.8, true, 'eastern'),
   P('zen-gardener', '禅意园丁', 'THE ZEN GARDENER', 
-    'UNK', '一石一木皆是修行，静观天地自在圆融。',
+    'ZGA', '一石一木皆是修行，静观天地自在圆融。',
     '"一石一沙皆有禅，不着一字尽得风流。" —— 梦窗疏石',
     '#EF4444', '禅意', 
     { 动漫: 0.8, 写实: 0.8 }, ['东方', '禅', '意境', '心境', '留白'],
     { complexity: 35, colorIntensity: 45, arousal: 35, fluency: 85, novelty: 55, harmony: 95, narrative: 75, stylization: 70 },
     0.8, true, 'eastern'),
   P('ukiyo-spirit', '浮世之魂', 'THE UKIYO SPIRIT', 
-    'UNK', '游走于红尘喧嚣，你把瞬息万变的人生定格成画。',
+    'UKI', '游走于红尘喧嚣，你把瞬息万变的人生定格成画。',
     '"活在当下，赏月、观雪、看樱花，这就是浮世的美。" —— 浅井了意',
     '#F87171', '浮世', 
     { 动漫: 1.2, 写实: 0.5 }, ['浮世绘', '东方', '传统', '灵魂', '浮世'],
@@ -413,7 +413,7 @@ export const PERSONAS: Persona[] = [
 
   // ── 12. 杂食审美家 → 3 个深度（特殊进化） ──
   P('aesthetic-explorer', '美学探险家', 'THE AESTHETIC EXPLORER', 
-    'UNK', '踏入未知的美学领地，每一次发现都是一次狂欢。',
+    'AEX', '踏入未知的美学领地，每一次发现都是一次狂欢。',
     '"美无处不在，对于我们的眼睛，不是缺少美，而是缺少发现。" —— 罗丹',
     '#64748B', '探险', 
     { 摄影: 1, 写实: 1, 抽象: 1 }, ['多元', '探索', '未知', '发现', '美'],
@@ -427,7 +427,7 @@ export const PERSONAS: Persona[] = [
     { complexity: 60, colorIntensity: 60, arousal: 60, fluency: 50, novelty: 75, harmony: 50, narrative: 55, stylization: 65 },
     0.8, true, 'eclectic'),
   P('border-breaker', '边界打破者', 'THE BORDER BREAKER', 
-    'UNK', '没有定义能束缚你，你本身就是规则的改写者。',
+    'BBR', '没有定义能束缚你，你本身就是规则的改写者。',
     '"一切艺术形式的终点，都是打破固有规则的界限。" —— 毕加索',
     '#CBD5E1', '破界', 
     { 摄影: 1, 抽象: 1, '3D': 0.8 }, ['多元', '边界', '打破', '自由', '无界'],
