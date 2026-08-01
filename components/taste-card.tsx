@@ -499,7 +499,7 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       // ── 人格名（居中，大字宋体） ──
       const nameY = 360  // 下移30px
       const nameLen = currentPersona.name.length
-      const nameSize = nameLen >= 6 ? 72 : nameLen === 5 ? 84 : nameLen === 4 ? 96 : 108
+      const nameSize = nameLen >= 6 ? 96 : nameLen === 5 ? 108 : nameLen === 4 ? 120 : 132
       ctx.font = `900 ${nameSize}px "Noto Serif SC", "Songti SC", "SimSun", serif`
       ctx.fillStyle = C.ink
       ctx.textAlign = 'center'
