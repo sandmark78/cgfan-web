@@ -484,14 +484,16 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       // ── 徽章（顶部中央，参考图位置） ──
       const badgeSize = 280
       const badgeX = (W - badgeSize) / 2
-      const badgeY = -10
+      const badgeY = 0
       ctx.drawImage(badgeImg, badgeX, badgeY, badgeSize, badgeSize)
       
       // ── 人格缩写（右上角，参考图位置） ──
-      ctx.font = `400 28px -apple-system, "Helvetica Neue", sans-serif`
+      ctx.font = `400 24px -apple-system, "Helvetica Neue", sans-serif`
       ctx.fillStyle = C.ink
       ctx.textAlign = 'right'
+      ctx.letterSpacing = '4px'
       ctx.fillText(currentPersona.nickname, W - 84, 100)
+      ctx.letterSpacing = '0px'
       ctx.textAlign = 'center'
       
       // ── 人格名（居中，大字宋体） ──
