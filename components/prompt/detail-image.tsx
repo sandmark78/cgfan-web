@@ -48,7 +48,7 @@ export function DetailImage({ src, alt }: DetailImageProps) {
 
   return (
     <div 
-      className="relative overflow-hidden w-full h-[400px] max-w-[600px]"
+      className="relative overflow-hidden w-full h-[300px] max-w-[500px]"
     >
       <Image
         src={src}
