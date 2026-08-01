@@ -478,7 +478,7 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       await new Promise<void>((resolve) => {
         badgeImg.onload = () => resolve()
         badgeImg.onerror = () => resolve() // 徽章加载失败不阻塞
-        badgeImg.src = `/images/personas/${currentPersona.nickname}.png`
+        badgeImg.src = `/images/personas/${currentPersona.nickname}.png?v=${Date.now()}`
       })
       
       // ── 徽章（顶部中央，参考图位置） ──
