@@ -220,41 +220,147 @@ def score_8_dimensions(prompt_text, images):
     total = sum(scores.values()) / 8 * 8  # 80分制
     return scores, total
 
-# ====== 中文标题生成 ======
-def generate_title(prompt_text):
-    """生成中文标题"""
-    keywords = []
+# ====== 中文标题生成（增强版，避免重复，有画面感） ======
+def generate_title(prompt_text, tweet=None):
+    """生成中文标题（增强版）
     
+    手动采集的标题示例：
+    - "玻璃瓶里的微缩城市，暖光穿过折射出焦散"
+    - "瓶中城 Bottle City — 等距微缩 3D 渲染"
+    - "复杂机器剖面图框架"
+    - "东方美学PPT课件——字体即图形"
+    """
+    prompt_lower = prompt_text.lower()
+    
+    # ====== 风格关键词（扩展版） ======
     style_words = {
         'cinematic': '电影感', 'vintage': '复古', 'retro': '怀旧',
         'minimalist': '极简', 'elegant': '优雅', 'dramatic': '戏剧性',
         'moody': '情绪化', 'futuristic': '未来', 'sci-fi': '科幻',
         'cyberpunk': '赛博朋克', 'oriental': '东方', 'chinese': '中国风',
         'japanese': '日式', 'anime': '动漫', 'surreal': '超现实',
-        'fantasy': '奇幻', 'watercolor': '水彩', 'ink': '水墨'
+        'fantasy': '奇幻', 'watercolor': '水彩', 'ink': '水墨',
+        'steampunk': '蒸汽朋克', 'gothic': '哥特', 'dark': '暗黑',
+        'neon': '霓虹', 'pastel': '粉彩', 'grainy': '胶片颗粒',
+        'noir': '黑色电影', 'dreamy': '梦幻', 'ethereal': '空灵',
+        'rustic': ' rustic', 'industrial': '工业', 'brutalist': '粗野主义',
+        'art deco': '装饰艺术', 'art nouveau': '新艺术', 'bauhaus': '包豪斯',
+        'pop art': '波普', 'pixel': '像素', 'low poly': '低多边形',
+        'isometric': '等距', 'tilt-shift': '移轴', 'macro': '微距',
+        'panoramic': '全景', 'minimal': '极简', 'abstract': '抽象',
+        'geometric': '几何', 'organic': '有机', 'parametric': '参数化',
     }
     
-    prompt_lower = prompt_text.lower()
-    for eng, chn in style_words.items():
-        if eng in prompt_lower:
-            keywords.append(chn)
-    
+    # ====== 主体/场景关键词 ======
     subject_words = {
-        'portrait': '人像', 'landscape': '风景', 'city': '城市',
+        'portrait': '人像', 'landscape': '风景', 'cityscape': '城市景观',
         'architecture': '建筑', 'nature': '自然', 'character': '角色',
         'product': '产品', 'fashion': '时尚', 'food': '美食',
-        'poster': '海报', 'illustration': '插画', '3d': '3D'
+        'poster': '海报', 'illustration': '插画', '3d': '3D',
+        'interior': '室内', 'exterior': '室外', 'street': '街景',
+        'vehicle': '车辆', 'animal': '动物', 'plant': '植物',
+        'robot': '机器人', 'mecha': '机甲', 'weapon': '武器',
+        'jewelry': '珠宝', 'furniture': '家具', 'package': '包装',
+        'logo': '标志', 'typography': '字体', 'pattern': '图案',
+        'diorama': '微缩场景', 'miniature': '微缩', 'model': '模型',
     }
     
+    # ====== 材质/质感关键词 ======
+    material_words = {
+        'chrome': '铬金属', 'brass': '黄铜', 'copper': '铜',
+        'gold': '金', 'silver': '银', 'metal': '金属',
+        'glass': '玻璃', 'crystal': '水晶', 'diamond': '钻石',
+        'wood': '木材', 'bamboo': '竹', 'stone': '石材',
+        'marble': '大理石', 'concrete': '混凝土', 'brick': '砖',
+        'leather': '皮革', 'silk': '丝绸', 'velvet': '天鹅绒',
+        'linen': '亚麻', 'canvas': '帆布', 'paper': '纸',
+        'ceramic': '陶瓷', 'porcelain': '瓷器', 'clay': '粘土',
+        'resin': '树脂', 'plastic': '塑料', 'rubber': '橡胶',
+        'neon': '霓虹', 'light': '光', 'shadow': '影',
+    }
+    
+    # ====== 光线/氛围关键词 ======
+    light_words = {
+        'golden hour': '黄金时刻', 'sunset': '日落', 'sunrise': '日出',
+        'backlight': '背光', 'rim light': '轮廓光', 'soft light': '柔光',
+        'hard light': '硬光', 'volumetric': '体积光', 'god rays': '上帝光',
+        'neon light': '霓虹光', 'studio light': '影室光', 'natural light': '自然光',
+        'moonlight': '月光', 'candlelight': '烛光', 'firelight': '火光',
+        'bioluminescent': '生物荧光', 'aurora': '极光',
+    }
+    
+    # ====== 提取关键词 ======
+    found_styles = []
+    for eng, chn in style_words.items():
+        if eng in prompt_lower:
+            found_styles.append(chn)
+    
+    found_subjects = []
     for eng, chn in subject_words.items():
         if eng in prompt_lower:
-            keywords.append(chn)
-            break
+            found_subjects.append(chn)
     
-    if keywords:
-        title = '与'.join(keywords[:2]) + '风格'
+    found_materials = []
+    for eng, chn in material_words.items():
+        if eng in prompt_lower:
+            found_materials.append(chn)
+    
+    found_lights = []
+    for eng, chn in light_words.items():
+        if eng in prompt_lower:
+            found_lights.append(chn)
+    
+    # ====== 构建标题 ======
+    parts = []
+    
+    # 优先用光线/氛围词
+    if found_lights:
+        parts.append(found_lights[0])
+    
+    # 加入材质
+    if found_materials:
+        parts.append(found_materials[0])
+    
+    # 加入主体
+    if found_subjects:
+        parts.append(found_subjects[0])
+    
+    # 加入风格
+    if found_styles:
+        parts.append(found_styles[0])
+    
+    if parts:
+        # 取前3个关键词，用"·"连接
+        title = '·'.join(parts[:3])
+        # 如果不够丰富，加"风格"
+        if len(parts) == 1:
+            title += '视觉'
     else:
-        title = '创意视觉'
+        # Fallback：从分类/场景特征词中提取
+        fallback_keywords = {
+            'realistic': '写实', 'detailed': '精致细节', 'photorealistic': '超写实',
+            'colorful': '缤纷', 'monochrome': '单色', 'black and white': '黑白',
+            'warm': '暖调', 'cool': '冷调', 'dark': '暗调',
+            'bright': '明亮', 'soft': '柔和', 'sharp': '锐利',
+            'dreamscape': '梦境', 'fantasy world': '奇幻世界',
+            'futuristic city': '未来城市', 'ancient': '古代',
+        }
+        fallback_found = [v for k, v in fallback_keywords.items() if k in prompt_lower]
+        if fallback_found:
+            title = fallback_found[0] + '视觉'
+        else:
+            # 取提示词前20个字符作为标题
+            first_line = prompt_text.strip().split('\n')[0][:20]
+            if len(first_line) > 5:
+                title = first_line
+            else:
+                title = 'AI视觉创作'
+    
+    # 去重：如果标题太长或太短，截断/补充
+    if len(title) > 30:
+        title = title[:28] + '...'
+    elif len(title) < 4:
+        title = '视觉创作'
     
     return title
 
@@ -434,7 +540,7 @@ def main():
                 continue
             
             # 生成标题
-            title = generate_title(prompt)
+            title = generate_title(prompt, tweet)
             print(f"📝 标题: {title}")
             
             # 确定分类
