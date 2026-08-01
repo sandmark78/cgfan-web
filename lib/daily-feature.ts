@@ -21,11 +21,11 @@ export const dailyFeatures: DailyFeature[] = [
   {
     date: '2026-08-01',
     slug: 'prompt-2083028260385112169',
-    curatorNote: '人像摄影提示词，重点在于光影和情绪的把控。 使用 Midjourney 模型生成。',
-    highlight: '未来科幻少女云端平台...',
-    technique: 'portrait · AI绘图',
-    tip: '用 \'Rembrandt lighting\' 或 \'golden hour\' 这样的专业术语，比 \'beautiful light\' 更精准。',
-    tryChange: '把提示词中的颜色或材质描述换成对比色/对比材质，观察整体氛围的变化。',
+    curatorNote: '这个 prompt 的问题在于「大而全」——既想写人像又想写建筑，既想写胶片又想写数字崩坏，结果每个元素都只是点到为止。真正的教训是：AI 提示词需要「聚焦一个核心」。比如只写 Brutalist architecture 的碎片化崩坏，或者只写 Jennifer Lawrence 的街拍人像，不要混在一起。代码里能看到两个完全不同的 Midjourney prompt 用 --sref 73575448 绑在一起，但风格差异太大，sref 也救不了。',
+    highlight: '提示词需要聚焦，不要大而全',
+    technique: '人像摄影 · 建筑摄影 · 风格统一',
+    tip: '写 prompt 时遵循「一个场景一个核心」原则。想拍人像就只写人像（人物+服装+情绪+光线），想拍建筑就只写建筑（材质+结构+环境），不要混。--sref 统一风格的前提是主体一致，否则风格参考会互相打架。',
+    tryChange: '把两个场景拆成两个独立 prompt：第一个只写 Brutalist architecture 的崩坏碎片（去掉人像元素），用 --ar 16:9；第二个只写 Jennifer Lawrence 的街拍人像（去掉建筑元素），用 --ar 9:16。各跑一次对比，你会发现分开后每张图都更干净。',
   },
   {
     date: '2026-07-31',

@@ -97,11 +97,12 @@ def find_slug_by_title(prompts, title):
 
 
 def generate_curator_note(prompt, taste_profile):
-    """根据提示词和品味画像生成策展笔记"""
+    """根据提示词和品味画像生成策展笔记（非模板化，基于实际内容）"""
     title = prompt.get("title", "")
     category = prompt.get("category", "")
     tags = prompt.get("tags", [])
     model = prompt.get("model", "")
+    prompt_text = prompt.get("prompt", "")[:300]
 
     # 从品味画像中提取相关偏好
     strong_preferences = []
@@ -114,42 +115,67 @@ def generate_curator_note(prompt, taste_profile):
     if "电影感" in title or "电影感" in str(tags):
         strong_preferences.append("电影感叙事")
 
-    # 根据分类和偏好生成笔记
-    if category == "product":
-        note = f"这是一个商业产品摄影提示词，展示了如何用 AI 生成专业的品牌视觉。"
-        tip = "关键是用具体的材质描述（如 'jewel-like highlights'）而不是笼统的 'high quality'。"
-    elif category == "portrait":
-        note = f"人像摄影提示词，重点在于光影和情绪的把控。"
-        tip = "用 'Rembrandt lighting' 或 'golden hour' 这样的专业术语，比 'beautiful light' 更精准。"
-    elif category == "landscape":
-        note = f"风景摄影提示词，展示了如何用 AI 捕捉自然的壮丽。"
-        tip = "加入 'atmospheric perspective' 和 'depth layers' 让画面更有纵深感。"
-    elif category == "style":
-        note = f"风格化艺术提示词，探索了独特的视觉语言。"
-        if strong_preferences:
-            note += f" 这个提示词符合「{'、'.join(strong_preferences)}」的偏好方向。"
-        tip = "用具体的艺术运动名称（如 'Art Nouveau'、'Bauhaus'）比 'artistic style' 更有效。"
-    elif category == "3d":
-        note = f"3D 渲染提示词，展示了如何用 AI 生成逼真的三维场景。"
-        tip = "指定渲染引擎（如 'Octane Render'、'V-Ray'）和材质类型会让结果更专业。"
-    elif category == "design":
-        note = f"设计类提示词，展示了如何用 AI 辅助视觉设计工作流。"
-        if "东方" in title:
-            note += " 融合东方美学与现代设计体系，字体排版即图形。"
-        tip = "具体的设计体系描述（如 'Swiss grid'、'东方留白'）比笼统的 'modern design' 更精准。"
+    # 从提示词内容中提取关键技法
+    key_techniques = []
+    prompt_lower = prompt_text.lower()
+    technique_keywords = [
+        "cinematic lighting", "体积光", "背光", "柔光", "硬光", "霓虹光",
+        "octane render", "v-ray", "blender", "cycles",
+        "subsurface scattering", "caustic", "焦散", "折射",
+        "tilt-shift", "移轴", "macro", "微距",
+        "risograph", "孔版", "丝网",
+        "art nouveau", "bauhaus", "swiss", "包豪斯",
+        "chinoiserie", "中国风", "东方", "水墨",
+        "cyberpunk", "赛博朋克", "synthwave", "outrun",
+        "minimalist", "极简", "留白",
+        "grain", "胶片", "film look", "kodak", "35mm",
+        "depth of field", "景深", "bokeh",
+        "volumetric", "体积", "atmospheric",
+    ]
+    for kw in technique_keywords:
+        if kw in prompt_lower:
+            key_techniques.append(kw)
+
+    # 收集标签
+    tag_str = " · ".join(tags[:3]) if tags else category
+
+    # 根据提示词内容生成具体笔记
+    note_parts = []
+    
+    # 提取主体描述
+    subjects = []
+    for s in ["portrait", "landscape", "cityscape", "architecture", "product", "character", "still life", "abstract"]:
+        if s in prompt_lower:
+            subjects.append(s)
+    
+    if subjects:
+        note_parts.append(f"这个 prompt 的核心主体是{'、'.join(subjects)}。")
+    
+    if key_techniques:
+        note_parts.append(f"关键技法：{'、'.join(key_techniques[:3])}。")
+    
+    if strong_preferences:
+        note_parts.append(f"符合「{'、'.join(strong_preferences)}」的偏好方向。")
+    
+    if model and model != "通用 Prompt":
+        note_parts.append(f"使用 {model} 模型。")
+    
+    note = " ".join(note_parts) if note_parts else f"这个提示词展示了 AI 图像生成的创意可能性。"
+    
+    # 生成具体技巧（基于提示词内容，非模板）
+    if key_techniques:
+        tip = f"关键技法「{key_techniques[0]}」是精准控制输出质量的核心词。"
     else:
-        note = f"这个提示词展示了 AI 图像生成的创意可能性。"
-        tip = "具体的描述比抽象的形容更有效，用 'neon red chaise lounge' 而不是 'colorful furniture'。"
-
-    # 根据标签补充细节
-    if "GPT-Image2" in tags:
-        note += " 使用 GPT-Image 2 模型生成。"
-    elif "Midjourney" in tags:
-        note += " 使用 Midjourney 模型生成。"
-
+        tip = "具体的专业术语比笼统的形容词更有效。"
+    
     # 生成"试着改一个词"
-    try_change = "把提示词中的颜色或材质描述换成对比色/对比材质，观察整体氛围的变化。"
-
+    if "--ar" in prompt_text:
+        try_change = "试着改 --ar 比例，从 16:9 改成 4:3 或 1:1，构图会完全不一样。"
+    elif "色彩" in tag_str or "color" in prompt_lower:
+        try_change = "把色彩描述词换成对比色系，观察情绪变化。"
+    else:
+        try_change = "把核心材质或光线词换一个方向，观察整体氛围的变化。"
+    
     return note, tip, try_change
 
 
