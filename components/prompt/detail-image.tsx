@@ -47,52 +47,18 @@ export function DetailImage({ src, alt }: DetailImageProps) {
   }
 
   return (
-    <>
-      <div 
-        className="cursor-zoom-in relative overflow-hidden w-full h-[400px]"
-        onClick={() => setShowLightbox(true)}
-      >
-        <Image
-          src={src}
-          alt={alt}
-          fill
-          sizes="(max-width: 768px) 100vw, 600px"
-          className="object-cover transition-transform hover:scale-105"
-          priority
-          onError={() => setHasError(true)}
-        />
-      </div>
-
-      {/* Lightbox */}
-      {showLightbox && (
-        <div 
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm animate-in fade-in duration-200"
-          onClick={() => setShowLightbox(false)}
-        >
-          {/* 关闭按钮 */}
-          <button
-            onClick={() => setShowLightbox(false)}
-            className="absolute right-4 top-4 z-10 rounded-full bg-white/10 p-2 text-white backdrop-blur-md transition-colors hover:bg-white/20"
-            aria-label="关闭"
-          >
-            <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-
-          {/* 图片容器 */}
-          <div 
-            className="relative max-h-[90vh] max-w-[90vw] animate-in zoom-in-95 duration-200"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <img
-              src={src}
-              alt={alt}
-              className="max-h-[90vh] max-w-[90vw] object-contain shadow-2xl"
-            />
-          </div>
-        </div>
-      )}
-    </>
+    <div 
+      className="relative overflow-hidden w-full h-[400px] max-w-[600px]"
+    >
+      <Image
+        src={src}
+        alt={alt}
+        fill
+        sizes="(max-width: 768px) 100vw, 600px"
+        className="object-cover transition-transform hover:scale-105"
+        priority
+        onError={() => setHasError(true)}
+      />
+    </div>
   )
 }
