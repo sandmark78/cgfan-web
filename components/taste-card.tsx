@@ -472,6 +472,28 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       // 绘制背景图（铺满画布）
       ctx.drawImage(bgImg, 0, 0, W, H)
       
+      // ── 加载人格徽章 ──
+      const badgeImg = new Image()
+      badgeImg.crossOrigin = 'anonymous'
+      await new Promise<void>((resolve) => {
+        badgeImg.onload = () => resolve()
+        badgeImg.onerror = () => resolve() // 徽章加载失败不阻塞
+        badgeImg.src = `/images/personas/${currentPersona.nickname}.png`
+      })
+      
+      // ── 徽章（顶部中央，参考图位置） ──
+      const badgeSize = 160
+      const badgeX = (W - badgeSize) / 2
+      const badgeY = 40
+      ctx.drawImage(badgeImg, badgeX, badgeY, badgeSize, badgeSize)
+      
+      // ── 人格缩写（右上角，参考图位置） ──
+      ctx.font = `700 28px -apple-system, "Helvetica Neue", sans-serif`
+      ctx.fillStyle = C.ink
+      ctx.textAlign = 'right'
+      ctx.fillText(currentPersona.nickname, W - 60, 100)
+      ctx.textAlign = 'center'
+      
       // ── 人格名（居中，大字宋体） ──
       const nameY = 360  // 下移30px
       const nameLen = currentPersona.name.length
