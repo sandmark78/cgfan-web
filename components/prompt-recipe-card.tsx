@@ -363,7 +363,7 @@ export function PromptRecipeCard({ prompt }: PromptRecipeCardProps) {
         </div>
 
         {/* 示例图 */}
-        <div className="aspect-[4/3] overflow-hidden bg-gray-200 dark:bg-gray-800">
+        <div className="relative aspect-[4/3] overflow-hidden bg-gray-200 dark:bg-gray-800">
           {prompt.cover ? (
             <Image
               src={prompt.cover}
