@@ -19,6 +19,15 @@ export interface DailyFeature {
  */
 export const dailyFeatures: DailyFeature[] = [
   {
+    date: '2026-08-02',
+    slug: 'prompt-2083190950470557941',
+    curatorNote: '唐风美学CG人像的完整范式。从人物设定（狭长凤眼、含情眼神、胭脂唇色）到造型设计（精工凤冠、珍珠流苏材质反光），再到光影系统（暖金主光聚焦面部、冷色辅光塑造体积、边缘光勾勒发丝轮廓），三层递进构建出「含蓄东方美」的情绪张力。色彩体系用胭脂粉+鎏金为主色、冷青蓝灰为辅色，低饱和高质感避免艳俗。',
+    highlight: '85mm f1.4浅景深 + 柔焦辉光 + 胶片颗粒，三重质感叠加营造盛唐旧梦氛围',
+    technique: '唐风美学 · CG写实人像 · 电影级布光',
+    tip: '用 "caustic light refraction" 替代 "柔焦辉光" 可以获得更锐利的珠宝折射光效，适合突出凤冠宝石细节。',
+    tryChange: '把「胭脂粉+鎏金」换成「靛蓝+银白」，观察从盛唐华丽到宋瓷清冷的氛围转变。',
+  },
+  {
     date: '2026-08-01',
     slug: 'prompt-2083028260385112169',
     curatorNote: '这个 prompt 的问题在于「大而全」——既想写人像又想写建筑，既想写胶片又想写数字崩坏，结果每个元素都只是点到为止。真正的教训是：AI 提示词需要「聚焦一个核心」。比如只写 Brutalist architecture 的碎片化崩坏，或者只写 Jennifer Lawrence 的街拍人像，不要混在一起。代码里能看到两个完全不同的 Midjourney prompt 用 --sref 73575448 绑在一起，但风格差异太大，sref 也救不了。',
