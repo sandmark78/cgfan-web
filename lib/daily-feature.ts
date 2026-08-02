@@ -108,7 +108,7 @@ export const dailyFeatures: DailyFeature[] = [
     date: '2026-07-24',
     slug: 'retro-futuristic-vector-travel-poster',
     curatorNote:
-      '复古未来主义旅行海报。关键技巧：用 "risograph print" 模拟孔版印刷的颗粒感，配合 "limited color palette" 限制配色，反而比堆砌细节更有味道。',
+      '复古未来主义旅行海报的教科书级示范。这个 prompt 的核心技巧在于「材质模拟」——用 "risograph print" 触发 AI 对孔版印刷的视觉记忆，自动叠加套色不准的错位感和油墨颗粒质感，比笼统的 "retro poster" 精准十倍。配色策略是「有限调色板」哲学：只选 teal（青绿）和 orange（暖橙）两个主色，通过明度变化构建层次，反而比堆砌十几种颜色更有设计感。字体处理上，"bold sans-serif typography" 配合 "slight texture overlay" 让文字既有现代感又融入复古氛围。构图采用经典的「中心对称 + 放射状元素」，视觉焦点清晰，信息层级分明。这个 prompt 证明了：限制是创意的催化剂，越克制越有味道。',
     highlight: '限制配色，反而更有味道',
     technique: '孔版印刷 · 有限配色 · 矢量排版',
     tip: '"risograph print" 是复古海报的核武器——它让 AI 模拟孔版印刷的套色不准和颗粒感，比直接写 "retro style" 精准十倍。',
@@ -118,7 +118,7 @@ export const dailyFeatures: DailyFeature[] = [
     date: '2026-07-23',
     slug: '3d-capsule-toy-kawaii-diorama',
     curatorNote:
-      '3D 胶囊玩具风格的城市微缩场景。这个 prompt 的精髓在于 "kawaii urban diorama"——把可爱和都市感结合，用 tilt-shift 镜头营造微缩模型的错觉。',
+      '3D 胶囊玩具风格的城市微缩场景，这个 prompt 展示了「可爱美学」与「都市感」的完美结合。核心技巧在于「移轴摄影模拟」——用 "tilt-shift photography" 触发 AI 对微缩模型拍摄手法的理解，自动产生浅景深和焦点压缩效果，让真实城市场景看起来像精致的玩具模型。材质处理上，"plastic texture" 和 "glossy finish" 赋予建筑表面玩具般的质感和光泽，配合 "soft ambient occlusion" 营造出柔和的阴影过渡。配色采用高饱和度的糖果色系，但通过 "pastel tones" 降低明度对比，避免过于刺眼。构图上 "isometric view" 等距视角让画面具有游戏场景的视觉特征，信息层级清晰。这个 prompt 的精髓在于：用摄影技法模拟实体玩具的视觉特征，而不是简单地堆砌 "cute" 和 "kawaii" 关键词。',
     highlight: '可爱与都市的完美融合',
     technique: '移轴摄影 · 微缩模型 · 日系可爱',
     tip: '想做出"玩具感"的关键词是 "tilt-shift" 和 "macro photography"——前者模拟微缩模型的景深错觉，后者让细节放大到像真的在拍一个实体模型。',

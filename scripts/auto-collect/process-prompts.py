@@ -131,31 +131,38 @@ def clean_prompt(prompt):
     # 通常在 prompt 末尾，以作者名/日期/互动数据开头
     lines = prompt.split('\n')
     clean_lines = []
+    
     for line in lines:
         stripped = line.strip()
+        
         # 跳过作者信息行（中文名+英文名 或 @handle）
         if re.match(r'^[A-Za-z\u4e00-\u9fff]+\s*$', stripped) and len(stripped) < 20:
             continue
         if re.match(r'^@[A-Za-z0-9_]+$', stripped):
             continue
+        
         # 跳过日期时间行
         if re.match(r'^\w+\s+\d{1,2}$', stripped):  # "Jul 31" "Aug 2"
             continue
         if re.match(r'^\d{1,2}:\d{2}\s*(AM|PM)', stripped, re.IGNORECASE):
             continue
+        
         # 跳过互动数据行（纯数字如 5, 8, 1.3K）
         if re.match(r'^[\d,.]+[KMB]?$', stripped) and len(stripped) < 10:
             continue
+        
         # 跳过常见推文 UI 文字
         if stripped in ['Views', 'Made with AI', 'Made with Gemini', 'Show more', '显示更多', 'View replies', '查看回复', '回复']:
             continue
+        
         # 跳过 "提示词Prompt：" 标记行（保留内容，只跳过标记）
         if re.match(r'^提示词\s*Prompt[：:]?\s*$', stripped):
             continue
+        
         # 跳过 @创建图片 命令标记（GPT 的中文命令）
         if stripped.startswith('@创建图片') or stripped.startswith('@Create image'):
-            # 但保留后面的内容
             continue
+        
         clean_lines.append(line)
     
     prompt = '\n'.join(clean_lines)
@@ -177,7 +184,13 @@ def clean_prompt(prompt):
         if match:
             prompt = prompt[:match.start()].strip()
     
-    return prompt
+    # 最终清理：移除所有残留的 @handle
+    prompt = re.sub(r'@[A-Za-z0-9_]+', '', prompt)
+    
+    # 移除所有残留的日期格式
+    prompt = re.sub(r'\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d{1,2}\b', '', prompt)
+    
+    return prompt.strip()
 
 # ====== 去重检查（基于 slug，不是文件名） ======
 def is_duplicate(tweet_id):

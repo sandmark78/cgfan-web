@@ -3,6 +3,7 @@ title: "Nano Banana Pro 护照奥德赛"
 slug: prompt-studio-nano-banana-pro-passport-1552462717
 model: Midjourney
 category: 3d
+tags: ["人像", "3D", "插画", "动物", "编辑"]
 tags:
 - AI Art
 - Creative Prompt
@@ -17,6 +18,7 @@ source: https://x.com/i/status/2013269718572965934
 sourceLink: https://x.com/i/status/2013269718572965934
 authorLink: https://x.com/AllaAisling
 author: Alexandra Aisling
+
 ---
 
 ## Prompt
