@@ -133,7 +133,7 @@ def main():
     print(f"🔄 开始分批采集推文内容（每批8条）...")
     all_data = []
     try:
-        all_data = batch_fetch(all_tweet_ids, batch_size=10)
+        all_data = batch_fetch(all_tweet_ids, batch_size=8)
     except Exception as e:
         print(f"⚠️ 分批采集失败: {e}")
     
