@@ -89,8 +89,8 @@ export default async function ExplorePage({
   })
 
   let prompts = [...allPrompts].sort((a, b) => {
-    const addedA = a.added || '';
-    const addedB = b.added || '';
+    const addedA = String(a.added || '');
+    const addedB = String(b.added || '');
     if (addedA && addedB) return addedB.localeCompare(addedA);
     return 0;
   })
