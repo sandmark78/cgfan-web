@@ -27,10 +27,19 @@ def fetch_latest_tweets(username):
     
     print(f"🔍 抓取 @{username} 的最新推文...")
     
-    # 清理旧 tab
-    tabs_output = camofox_cmd("get-tabs 2>/dev/null")
-    for m in re.finditer(r'[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}', tabs_output):
-        camofox_cmd(f'close "{m.group()}" 2>/dev/null')
+    # 强制清理所有旧 tab（用 kill 确保干净）
+    try:
+        tabs_output = camofox_cmd("get-tabs 2>/dev/null", timeout=10)
+        for m in re.finditer(r'[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}', tabs_output):
+            try:
+                camofox_cmd(f'close "{m.group()}" 2>/dev/null', timeout=5)
+            except Exception:
+                pass
+    except Exception:
+        # 如果 get-tabs 卡住，直接 kill 所有 camofox 进程
+        import subprocess as sp
+        sp.run("pkill -f camoufox 2>/dev/null", shell=True)
+        run("sleep 2")
     run("sleep 1")
     
     # 打开作者主页
@@ -133,8 +142,19 @@ if __name__ == '__main__':
         print("用法: python3 fetch_author_tweets.py @username")
         sys.exit(1)
     
+    # 全局超时保护：25秒后自动退出
+    import signal
+    def handler(signum, frame):
+        print("⏰ 全局超时（25s），退出")
+        sys.exit(1)
+    signal.alarm(25)
+    signal.signal(signal.SIGALRM, handler)
+    
     username = sys.argv[1]
     tweets = fetch_latest_tweets(username)
+    
+    # 取消闹钟
+    signal.alarm(0)
     
     # 输出推文ID
     tweet_ids = [t['id'] for t in tweets]

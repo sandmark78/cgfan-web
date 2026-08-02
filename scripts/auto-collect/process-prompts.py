@@ -470,12 +470,17 @@ curation: {scores['curation']:.1f}/10
 def main():
     print("🔧 开始处理采集到的推文\n")
     
-    # 使用 PID 后缀避免竞态条件
+    # 使用 PID 后缀避免竞态条件，同时兼容无 PID 的旧格式
     pid = os.getpid()
     tweets_path = Path(f"/tmp/tweets_batch_{pid}.json")
     if not tweets_path.exists():
-        print("❌ 未找到采集数据")
-        return
+        # 兼容旧格式：无 PID 后缀
+        alt_path = Path("/tmp/tweets_batch.json")
+        if alt_path.exists():
+            tweets_path = alt_path
+        else:
+            print("❌ 未找到采集数据")
+            return
     
     with open(tweets_path, 'r', encoding='utf-8') as f:
         tweets = json.load(f)

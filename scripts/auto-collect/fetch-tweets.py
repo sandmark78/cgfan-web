@@ -11,12 +11,40 @@ import subprocess
 import sys
 from pathlib import Path
 from datetime import datetime
+import time
+import os
+import signal
 
 def load_authors():
     """加载作者列表"""
     config_path = Path(__file__).parent / 'authors.json'
     with open(config_path, 'r', encoding='utf-8') as f:
         return json.load(f)
+
+def fetch_author_with_timeout(script_path, author_twitter, timeout=30):
+    """用 Popen + communicate 实现可靠超时"""
+    try:
+        proc = subprocess.Popen(
+            ['python3', script_path, author_twitter],
+            stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+            text=True
+        )
+        stdout, stderr = proc.communicate(timeout=timeout)
+        tweet_ids = []
+        for line in stdout.split('\n'):
+            if line.strip().isdigit() and len(line.strip()) >= 15:
+                tweet_ids.append(line.strip())
+        return tweet_ids, None
+    except subprocess.TimeoutExpired:
+        proc.kill()
+        proc.wait(timeout=5)
+        return [], "超时"
+    except Exception as e:
+        try:
+            proc.kill()
+        except:
+            pass
+        return [], str(e)[:200]
 
 def batch_fetch(tweet_ids, batch_size=8):
     """分批调用 batch-fetch-tweets.py，每批最多8条（留2个tab余量）"""
@@ -30,11 +58,17 @@ def batch_fetch(tweet_ids, batch_size=8):
         print(f"\n📦 批次 {batch_num}/{total_batches}: {len(batch)} 条推文")
         
         tweet_ids_str = ' '.join(batch)
-        result = subprocess.run(
-            f"python3 scripts/batch-fetch-tweets.py {tweet_ids_str}",
-            shell=True, timeout=120,
-            capture_output=True, text=True
-        )
+        try:
+            proc = subprocess.Popen(
+                f"python3 scripts/batch-fetch-tweets.py {tweet_ids_str}",
+                shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True
+            )
+            stdout, stderr = proc.communicate(timeout=60)
+        except subprocess.TimeoutExpired:
+            proc.kill()
+            proc.wait(timeout=5)
+            print(f"  ⏰ 本批次超时（60s），跳过", flush=True)
+            continue
         
         # 读取本批次结果
         batch_path = Path("/tmp/tweets_batch.json")
@@ -62,41 +96,28 @@ def main():
     
     all_tweet_ids = []
     
+    # 先清理所有 camofox 进程，避免残留 tab 干扰
+    subprocess.run("pkill -f camoufox 2>/dev/null", shell=True)
+    time.sleep(3)
+    
     for i, author in enumerate(authors, 1):
         print(f"\n[{i}/{len(authors)}] {author['name']} ({author['twitter']})")
         
-        # 抓取该作者的最新推文（带重试）
-        author_ok = False
-        for attempt in range(3):
-            result = subprocess.run(
-                ['python3', str(Path(__file__).parent / 'fetch_author_tweets.py'), author['twitter']],
-                capture_output=True, text=True, timeout=30
-            )
-            
-            if result.returncode == 0:
-                author_ok = True
-                break
-            else:
-                delay = (attempt + 1) * 5
-                print(f"  ⚠️ 尝试 {attempt+1}/3 失败，等待 {delay} 秒...")
-                import time
-                time.sleep(delay)
+        sys.stdout.flush()
+        print(f"  开始抓取...", flush=True)
         
-        if not author_ok:
-            print(f"  ❌ 抓取失败（3次重试后放弃）")
+        author_script = str(Path(__file__).parent / 'fetch_author_tweets.py')
+        tweet_ids, error = fetch_author_with_timeout(author_script, author['twitter'], timeout=30)
+        
+        if error:
+            print(f"  ⏰ {error}，跳过", flush=True)
             continue
-        
-        # 从输出中提取推文ID
-        tweet_ids = []
-        for line in result.stdout.split('\n'):
-            if line.strip().isdigit() and len(line.strip()) >= 15:
-                tweet_ids.append(line.strip())
         
         if tweet_ids:
             all_tweet_ids.extend(tweet_ids)
-            print(f"  ✅ {len(tweet_ids)} 条新推文")
+            print(f"  ✅ {len(tweet_ids)} 条新推文", flush=True)
         else:
-            print(f"  ⏭️ 没有新推文")
+            print(f"  ⏭️ 没有新推文", flush=True)
     
     # 去重
     all_tweet_ids = list(set(all_tweet_ids))
@@ -110,7 +131,11 @@ def main():
     
     # 分批采集（每批8条，避免Camofox并发限制）
     print(f"🔄 开始分批采集推文内容（每批8条）...")
-    all_data = batch_fetch(all_tweet_ids, batch_size=8)
+    all_data = []
+    try:
+        all_data = batch_fetch(all_tweet_ids, batch_size=10)
+    except Exception as e:
+        print(f"⚠️ 分批采集失败: {e}")
     
     # 保存合并结果
     output_path = Path("/tmp/tweets_batch.json")
