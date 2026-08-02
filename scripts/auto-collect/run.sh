@@ -1,5 +1,5 @@
 #!/bin/bash
-# 自动采集主脚本 — 加固版
+# 自动采集主脚本 — 混合处理版（脚本格式清理 + LLM语义处理）
 # 每天运行一次，带日志持久化、重试、结果通知
 
 set -o pipefail
@@ -21,7 +21,7 @@ log() {
 # 清理30天前的日志
 find "$LOG_DIR" -name "*.log" -mtime +30 -delete 2>/dev/null
 
-log "🤖 CGfan 自动采集系统 (加固版)"
+log "🤖 CGfan 自动采集系统 (混合处理版)"
 log "========================"
 log "开始时间: $(date '+%Y-%m-%d %H:%M:%S')"
 log "日志文件: $LOG_FILE"
@@ -30,7 +30,7 @@ log ""
 cd "$WORKSPACE_DIR"
 
 # ====== 步骤 1: 抓取推文（带重试） ======
-log "📥 步骤 1/2: 抓取作者最新推文"
+log "📥 步骤 1/3: 抓取作者最新推文"
 FETCH_OK=false
 for attempt in 1 2 3; do
     log "  尝试 $attempt/3..."
@@ -56,7 +56,6 @@ done
 
 if [ "$FETCH_OK" != "true" ]; then
     log "❌ 抓取失败（3次重试后放弃）"
-    # 发送失败通知
     python3 "$SCRIPT_DIR/notify.py" --status fail --step fetch --log "$LOG_FILE"
     exit 1
 fi
@@ -68,16 +67,16 @@ if [ ! -f "/tmp/tweets_batch.json" ]; then
     exit 0
 fi
 
-# ====== 步骤 2: 处理提示词（带重试） ======
+# ====== 步骤 2: 混合处理（脚本格式清理 + LLM语义处理） ======
 log ""
-log "🔧 步骤 2/2: 处理提示词"
+log "🔧 步骤 2/3: 混合处理提示词（脚本 + LLM）"
 PROCESS_OK=false
 for attempt in 1 2; do
     log "  尝试 $attempt/2..."
     if python3 -c "
 import subprocess, sys
 try:
-    result = subprocess.run(['python3', '$SCRIPT_DIR/process-prompts.py'], timeout=300, capture_output=True, text=True)
+    result = subprocess.run(['python3', '$SCRIPT_DIR/process-prompts-hybrid.py'], timeout=600, capture_output=True, text=True)
     print(result.stdout)
     if result.returncode != 0:
         print(result.stderr, file=sys.stderr)
@@ -95,8 +94,40 @@ except subprocess.TimeoutExpired:
 done
 
 if [ "$PROCESS_OK" != "true" ]; then
-    log "❌ 处理失败（2次重试后放弃）"
+    log "❌ 混合处理失败（2次重试后放弃）"
     python3 "$SCRIPT_DIR/notify.py" --status fail --step process --log "$LOG_FILE"
+    exit 1
+fi
+
+# 检查是否有处理结果
+if [ ! -f "/tmp/llm_processed.json" ]; then
+    log "⚠️  没有生成处理结果，流程结束"
+    python3 "$SCRIPT_DIR/notify.py" --status empty --log "$LOG_FILE"
+    exit 0
+fi
+
+# ====== 步骤 3: 生成markdown文件并部署 ======
+log ""
+log "📝 步骤 3/3: 生成markdown文件并部署"
+DEPLOY_OK=false
+if python3 -c "
+import subprocess, sys
+try:
+    result = subprocess.run(['python3', '$SCRIPT_DIR/generate-markdown.py'], timeout=300, capture_output=True, text=True)
+    print(result.stdout)
+    if result.returncode != 0:
+        print(result.stderr, file=sys.stderr)
+        sys.exit(result.returncode)
+except subprocess.TimeoutExpired:
+    print('❌ 生成超时', file=sys.stderr)
+    sys.exit(1)
+" >> "$LOG_FILE" 2>&1; then
+    DEPLOY_OK=true
+fi
+
+if [ "$DEPLOY_OK" != "true" ]; then
+    log "❌ 生成markdown失败"
+    python3 "$SCRIPT_DIR/notify.py" --status fail --step deploy --log "$LOG_FILE"
     exit 1
 fi
 
