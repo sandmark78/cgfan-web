@@ -89,10 +89,14 @@ export default async function ExplorePage({
   })
 
   let prompts = [...allPrompts].sort((a, b) => {
+    // 优先按 added 降序（最新添加的在前），其次按 slug 降序（保证稳定排序）
     const addedA = a.added || '';
     const addedB = b.added || '';
-    if (addedA && addedB) return addedB.localeCompare(addedA);
-    return 0;
+    if (addedA !== addedB) return addedB.localeCompare(addedA);
+    // 相同日期时按 slug 降序
+    const slugA = a.slug || '';
+    const slugB = b.slug || '';
+    return slugB.localeCompare(slugA);
   })
   let activeFilter = ''
 
