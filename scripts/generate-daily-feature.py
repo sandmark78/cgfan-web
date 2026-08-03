@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 """
-每日一味自动生成脚本（质量优先版）
+每日一味自动生成脚本（品味优先版）
 
 选题优先级：
-1. 今天收录的 + 用户评分高的（从 IMAGE_TASTE.md 的"最喜欢"列表）
-2. 历史高分的 + 没用过的（从"最喜欢"列表中找）
-3. 最新收录的（fallback）
+1. 用户明确说"最喜欢"的图（IMAGE_TASTE.md 中标记「→ 最喜欢」的）
+2. AI 评的高分图（IMAGE_TASTE.md 中评分最高的）
+3. 历史"最喜欢"中没用过的
+4. 历史高分中没用过的
+5. 最新收录的（fallback）
 
 用法：
   python3 scripts/generate-daily-feature.py
@@ -81,6 +83,51 @@ def parse_favorite_images():
     # 按分数降序排序
     favorites.sort(key=lambda x: x["score"], reverse=True)
     return favorites
+
+
+def parse_user_confirmed_favorites():
+    """从 IMAGE_TASTE.md 解析用户明确确认的"最喜欢"图片
+    查找多种格式：
+    1. ✅ 标题（作者）→ 最喜欢
+    2. **最喜欢**：标题
+    3. 标题 → 最喜欢，
+    """
+    if not os.path.exists(IMAGE_TASTE_FILE):
+        return set()
+
+    with open(IMAGE_TASTE_FILE, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    confirmed = set()
+
+    # 格式1：✅ 标题（作者）→ 最喜欢
+    # 匹配表格行中的：| - ✅ 标题（作者）→ 最喜欢
+    for m in re.finditer(r'✅\s*\*{0,2}([^|（\n]+?)(?:（[^）]+）)?\s*→\s*\*{0,2}最喜欢', content):
+        title = m.group(1).strip()
+        # 清理：去除序号、星号、引号、管道符
+        title = re.sub(r'^\d+号', '', title).strip()
+        title = title.strip('*「」| ')
+        if title and len(title) > 2:
+            confirmed.add(title)
+
+    # 格式2：**最喜欢**：标题（作者）
+    for m in re.finditer(r'\*{2}最喜欢\*{2}[：:]\s*(.+?)(?:\n|$)', content):
+        title = m.group(1).strip()
+        title = re.sub(r'[（(].+?[）)]', '', title).strip()
+        title = re.sub(r'^\d+号', '', title).strip()
+        title = title.strip('*「」')
+        if title:
+            confirmed.add(title)
+
+    # 格式3：标题 → 最喜欢，
+    for m in re.finditer(r'(?:的|：)\s*(.+?)\s*→\s*最喜欢[，,]', content):
+        title = m.group(1).strip()
+        title = re.sub(r'[（(].+?[）)]', '', title).strip()
+        title = title.strip('*「」')
+        if title:
+            confirmed.add(title)
+
+    return confirmed
 
 
 def find_slug_by_title(prompts, title):
@@ -209,51 +256,42 @@ def main():
     favorites = parse_favorite_images()
     print(f"📊 从品味画像中找到 {len(favorites)} 张'最喜欢'图片")
 
-    # === 选题逻辑（质量优先，从 IMAGE_TASTE.md 最喜欢列表匹配） ===
+    # === 选题逻辑（品味优先） ===
+    # 优先级：用户确认最喜欢 > 高分图 > 历史最喜欢没用过 > 历史高分没用过 > 最新收录
 
     selected = None
     selection_reason = ""
 
-    # 优先级 1: 昨天收录的（按 date 字段）
-    yesterday_prompts = [
-        p for p in prompts
-        if p.get("date", "").startswith(yesterday_str)
-    ]
+    # 从"最喜欢"列表中区分：用户确认的 vs 普通高分
+    # 用户确认的"最喜欢"：在 IMAGE_TASTE.md 正文中标记了「→ 最喜欢」的
+    user_confirmed_titles = parse_user_confirmed_favorites()
+    print(f"📊 用户确认最喜欢：{len(user_confirmed_titles)} 张")
+    print(f"📊 高分图片（最喜欢列表）：{len(favorites)} 张")
 
-    if yesterday_prompts:
-        print(f"📝 昨天（{yesterday_str}）收录了 {len(yesterday_prompts)} 条提示词")
-        # 优先从"最喜欢"列表中找昨天收录的
-        for fav in favorites:
-            slug = find_slug_by_title(yesterday_prompts, fav["title"])
+    # 优先级 1: 用户确认"最喜欢"的 + 未使用
+    for fav in favorites:  # favorites 已按分数降序
+        if fav["title"] in user_confirmed_titles:
+            slug = find_slug_by_title(prompts, fav["title"])
             if slug and slug not in existing_slugs:
-                selected = next((p for p in yesterday_prompts if p.get("slug") == slug), None)
+                selected = next((p for p in prompts if p.get("slug") == slug), None)
                 if selected:
-                    selection_reason = f"昨天收录 + 最喜欢（{fav['score']}/80）"
+                    selection_reason = f"用户确认最喜欢（{fav['score']}/80）"
                     break
 
-        # 如果最喜欢没有，选昨天收录中最新的一条（未被使用的）
-        if not selected:
-            for p in yesterday_prompts:
-                if p.get("slug", "") not in existing_slugs:
-                    selected = p
-                    selection_reason = f"昨天收录 + 最新未使用"
-                    break
-
-    # 优先级 2: 从"最喜欢"列表中找未使用的（按分数降序）
+    # 优先级 2: 高分图（最喜欢列表中，按分数降序）+ 未使用
     if not selected:
-        print(f"🔍 昨天无可用，从最喜欢列表中查找未使用的...")
+        print(f"🔍 无可用用户最喜欢，从高分列表中查找...")
         for fav in favorites:
             slug = find_slug_by_title(prompts, fav["title"])
             if slug and slug not in existing_slugs:
                 selected = next((p for p in prompts if p.get("slug") == slug), None)
                 if selected:
-                    selection_reason = f"最喜欢（{fav['score']}/80）+ 未使用"
+                    selection_reason = f"高分图（{fav['score']}/80）+ 未使用"
                     break
 
     # 优先级 3: 最新收录的未使用 prompt（fallback）
     if not selected:
         print(f"🔍 从最新收录中找未使用的...")
-        # 按 date 降序排列，找第一个未使用的
         sorted_prompts = sorted(prompts, key=lambda p: p.get("date", ""), reverse=True)
         for p in sorted_prompts:
             if p.get("slug", "") not in existing_slugs:
