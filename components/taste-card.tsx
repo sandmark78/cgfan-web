@@ -317,33 +317,35 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
     const saved = loadProfile()
     let hasChanges = false
     
-    // 合并服务端收藏和本地收藏
-    const allFavorites: Array<{ slug: string; title: string; category: string; tags: string[]; model: string; cover: string }> = []
+    // 只显示一个来源：优先服务端，否则本地
+    let favorites: Array<{ slug: string; title: string; category: string; tags: string[]; model: string; cover: string }> = []
     
-    // 服务端收藏（Supabase）
     if (serverFavorites && serverFavorites.length > 0) {
-      allFavorites.push(...serverFavorites)
+      favorites = serverFavorites
+    } else {
+      const localFavs = JSON.parse(localStorage.getItem('cgfan_favorites') || '[]')
+      if (localFavs.length > 0) {
+        favorites = localFavs
+      }
     }
     
-    // 本地收藏（localStorage）
-    const localFavs = JSON.parse(localStorage.getItem('cgfan_favorites') || '[]')
-    if (localFavs.length > 0) {
-      allFavorites.push(...localFavs)
-    }
-    
-    if (allFavorites.length > 0) {
-      saved.favoriteCount = allFavorites.length
-      const existingSlugs = new Set(saved.history.map(h => h.slug))
-      const newFavorites = allFavorites.filter(fav => !existingSlugs.has(fav.slug))
+    if (favorites.length > 0) {
+      saved.favoriteCount = favorites.length
       
-      if (newFavorites.length > 0 || saved.history.length === 0) {
-        saved.history = [...saved.history, ...newFavorites.map((fav, index) => ({
+      // 用当前收藏重建 history（去重 + 清理已取消的收藏）
+      const currentSlugs = new Set(favorites.map(f => f.slug))
+      saved.history = favorites.map((fav, index) => {
+        // 检查是否已有历史记录
+        const existing = saved.history.find(h => h.slug === fav.slug)
+        if (existing) return existing
+        // 新建历史记录
+        return {
           slug: fav.slug,
           vector: calculateVectorFromPrompt(fav),
-          timestamp: Date.now() - (newFavorites.length - index) * 1000,
-        }))]
-        hasChanges = true
-      }
+          timestamp: Date.now() - (favorites.length - index) * 1000,
+        }
+      })
+      hasChanges = true
       
       if (saved.history.length > 0) {
         const avgVector: AestheticVector = { complexity: 0, colorIntensity: 0, arousal: 0, fluency: 0, novelty: 0, harmony: 0, narrative: 0, stylization: 0 }
@@ -356,7 +358,6 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
           avgVector[key] = Math.round(avgVector[key] / saved.history.length)
         })
         saved.vector = avgVector
-        hasChanges = true
       }
       
       if (hasChanges) saveProfile(saved)
