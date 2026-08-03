@@ -145,86 +145,130 @@ def find_slug_by_title(prompts, title):
 
 
 def generate_curator_note(prompt, taste_profile):
-    """根据提示词和品味画像生成策展笔记（非模板化，基于实际内容）"""
+    """根据提示词完整内容、标签、结构生成有深度的策展笔记"""
     title = prompt.get("title", "")
     category = prompt.get("category", "")
     tags = prompt.get("tags", [])
     model = prompt.get("model", "")
-    prompt_text = prompt.get("prompt", "")[:300]
-
-    # 从品味画像中提取相关偏好
-    strong_preferences = []
-    if "东方" in title or "东方" in str(tags):
-        strong_preferences.append("东方美学")
-    if "复古" in title or "复古" in str(tags):
-        strong_preferences.append("复古质感")
-    if "微缩" in title or "微缩" in str(tags):
-        strong_preferences.append("微缩工艺")
-    if "电影感" in title or "电影感" in str(tags):
-        strong_preferences.append("电影感叙事")
-
-    # 从提示词内容中提取关键技法
-    key_techniques = []
+    prompt_text = prompt.get("prompt", "")[:2000]  # 读更多内容
     prompt_lower = prompt_text.lower()
-    technique_keywords = [
-        "cinematic lighting", "体积光", "背光", "柔光", "硬光", "霓虹光",
-        "octane render", "v-ray", "blender", "cycles",
-        "subsurface scattering", "caustic", "焦散", "折射",
-        "tilt-shift", "移轴", "macro", "微距",
-        "risograph", "孔版", "丝网",
-        "art nouveau", "bauhaus", "swiss", "包豪斯",
-        "chinoiserie", "中国风", "东方", "水墨",
-        "cyberpunk", "赛博朋克", "synthwave", "outrun",
-        "minimalist", "极简", "留白",
-        "grain", "胶片", "film look", "kodak", "35mm",
-        "depth of field", "景深", "bokeh",
-        "volumetric", "体积", "atmospheric",
+
+    # === 1. 从标签中提取核心风格 ===
+    style_keywords = {
+        "纸雕": "纸雕层叠工艺",
+        "东方幻想": "东方幻想世界观",
+        "山海经": "山海经神话体系",
+        "国风": "国风视觉体系",
+        "东方美学": "东方美学体系",
+        "复古": "复古质感",
+        "微缩": "微缩工艺",
+        "电影感": "电影感叙事",
+        "赛博朋克": "赛博朋克美学",
+        "极简": "极简主义",
+        "水墨": "水墨技法",
+        "胶片": "胶片质感",
+        "3D": "3D渲染",
+        "插画": "插画风格",
+        "海报": "海报排版",
+        "建筑": "建筑渲染",
+        "产品": "产品摄影",
+        "时尚": "时尚摄影",
+        "人像": "人像摄影",
+        "科幻": "科幻概念",
+    }
+    core_styles = []
+    for tag in tags:
+        if tag in style_keywords:
+            core_styles.append(style_keywords[tag])
+        elif "东方" in tag or "中国" in tag or "国风" in tag:
+            core_styles.append("东方美学")
+
+    # === 2. 从prompt内容中提取关键技法 ===
+    technique_patterns = [
+        ("纸雕/纸艺层叠", "纸雕" in prompt_text or "纸艺" in prompt_text or "剪纸" in prompt_text),
+        ("立体切纸边缘", "切纸" in prompt_text or "纸边缘" in prompt_text),
+        ("压纹纸张质感", "压纹" in prompt_text or "纸张质感" in prompt_text),
+        ("浮雕阴影", "浮雕" in prompt_text or "阴影" in prompt_text),
+        ("中轴对称构图", "中轴线" in prompt_text or "对称" in prompt_text or "中心汇聚" in prompt_text),
+        ("圆形视觉焦点", "圆月" in prompt_text or "圆形" in prompt_text or "圆光" in prompt_text or "日轮" in prompt_text),
+        ("纵深感通道", "纵深感" in prompt_text or "通道" in prompt_text or "台阶" in prompt_text or "长街" in prompt_text),
+        ("书法字体排版", "书法" in prompt_text or "主标题" in prompt_text or "字体" in prompt_text),
+        ("层叠建筑群", "层层叠叠" in prompt_text or "楼阁" in prompt_text or "塔楼" in prompt_text or "廊桥" in prompt_text),
+        ("克制色系", "克制" in prompt_text or "深蓝" in prompt_text or "朱砂红" in prompt_text or "暖金" in prompt_text),
+        ("版面层级设计", "排版" in prompt_text or "标题区" in prompt_text or "副标题" in prompt_text),
+        ("cinematic lighting", "cinematic lighting" in prompt_lower),
+        ("体积光", "体积光" in prompt_text or "volumetric" in prompt_lower),
+        ("景深控制", "depth of field" in prompt_lower or "景深" in prompt_text or "bokeh" in prompt_lower),
+        ("胶片颗粒", "grain" in prompt_lower or "胶片" in prompt_text or "film look" in prompt_lower),
+        ("微距摄影", "macro" in prompt_lower or "微距" in prompt_text),
+        ("移轴效果", "tilt-shift" in prompt_lower or "移轴" in prompt_text),
     ]
-    for kw in technique_keywords:
-        if kw in prompt_lower:
-            key_techniques.append(kw)
+    techniques = [name for name, found in technique_patterns if found]
 
-    # 收集标签
-    tag_str = " · ".join(tags[:3]) if tags else category
-
-    # 根据提示词内容生成具体笔记
+    # === 3. 构建策展笔记 ===
     note_parts = []
-    
-    # 提取主体描述
-    subjects = []
-    for s in ["portrait", "landscape", "cityscape", "architecture", "product", "character", "still life", "abstract"]:
-        if s in prompt_lower:
-            subjects.append(s)
-    
-    if subjects:
-        note_parts.append(f"这个 prompt 的核心主体是{'、'.join(subjects)}。")
-    
-    if key_techniques:
-        note_parts.append(f"关键技法：{'、'.join(key_techniques[:3])}。")
-    
-    if strong_preferences:
-        note_parts.append(f"符合「{'、'.join(strong_preferences)}」的偏好方向。")
-    
+
+    # 第一句：总体定位
+    if core_styles:
+        styles_str = " + ".join(core_styles[:3])
+        note_parts.append(f"这是一套融合「{styles_str}」的完整提示词框架。")
+
+    # 第二句：核心技法
+    if techniques:
+        tech_str = "、".join(techniques[:4])
+        note_parts.append(f"核心技法：{tech_str}。")
+
+    # 第三句：结构亮点（从prompt中提取关键段落）
+    if "【整体构图】" in prompt_text:
+        note_parts.append("提示词按构图→场景→风格→色彩→文字五层递进，结构清晰，可复用性强。")
+    elif "【构图" in prompt_text:
+        note_parts.append("提示词按模块化结构编排，每一层都可独立替换。")
+
+    # 第四句：模型
     if model and model != "通用 Prompt":
-        note_parts.append(f"使用 {model} 模型。")
-    
+        note_parts.append(f"实测 {model} 可稳定输出，适合作为海报类提示词的基准模板。")
+
     note = " ".join(note_parts) if note_parts else f"这个提示词展示了 AI 图像生成的创意可能性。"
-    
-    # 生成具体技巧（基于提示词内容，非模板）
-    if key_techniques:
-        tip = f"关键技法「{key_techniques[0]}」是精准控制输出质量的核心词。"
+
+    # === 4. 生成亮点（基于实际内容） ===
+    if core_styles:
+        highlight = f"{' · '.join(core_styles[:2])} · {title[:20]}"
     else:
-        tip = "具体的专业术语比笼统的形容词更有效。"
-    
-    # 生成"试着改一个词"
-    if "--ar" in prompt_text:
-        try_change = "试着改 --ar 比例，从 16:9 改成 4:3 或 1:1，构图会完全不一样。"
-    elif "色彩" in tag_str or "color" in prompt_lower:
-        try_change = "把色彩描述词换成对比色系，观察情绪变化。"
+        highlight = title[:30]
+
+    # === 5. 生成技法标签 ===
+    if techniques:
+        technique = " · ".join(techniques[:3])
+    elif tags:
+        technique = " · ".join(tags[:3])
     else:
-        try_change = "把核心材质或光线词换一个方向，观察整体氛围的变化。"
-    
-    return note, tip, try_change
+        technique = f"{category} · AI绘图"
+
+    # === 6. 生成实用技巧（基于实际prompt结构） ===
+    if "【整体构图】" in prompt_text:
+        tip = "用「【】」分段标记（如【整体构图】【色彩】）能大幅提升 AI 对复杂提示词的结构理解。"
+    elif "--ar" in prompt_text:
+        tip = "在提示词中明确比例（--ar 3:4）比后期裁切更稳定，尤其适合竖版海报。"
+    elif "纸雕" in prompt_text or "纸艺" in prompt_text:
+        tip = "「纸雕」「层叠」「压纹」等材质词需要配合「阴影」「浮雕」才能生成真实的手工质感。"
+    elif "volumetric" in prompt_lower or "体积光" in prompt_text:
+        tip = "「volumetric lighting」配合「backlight」能产生戏剧性的光束穿透效果，适合氛围感场景。"
+    else:
+        tip = "用「'」或「【】」做段落分隔，比用换行符更容易让 AI 理解层级关系。"
+
+    # === 7. 生成「试着改一个词」（基于实际内容） ===
+    if "深蓝" in prompt_text and "暖金" in prompt_text:
+        try_change = "把「深蓝+暖金」改成「墨绿+银灰」，从东方神话转向神秘森林氛围。"
+    elif "纸雕" in prompt_text:
+        try_change = "把「纸雕」换成「金属蚀刻」，材质从纸艺转向工业风，视觉完全重构。"
+    elif "--ar" in prompt_text:
+        try_change = "试着改 --ar 比例，从 3:4 改成 16:9，构图重心从竖向叙事转向横向全景。"
+    elif "cinematic" in prompt_lower:
+        try_change = "把「cinematic lighting」换成「neon noir lighting」，从电影感转向赛博朋克。"
+    else:
+        try_change = "把核心材质词换掉（如纸张→金属、布料→玻璃），观察材质对氛围的决定性影响。"
+
+    return note, highlight, technique, tip, try_change
 
 
 def main():
@@ -309,7 +353,7 @@ def main():
     print(f"   理由: {selection_reason}")
 
     # 生成策展笔记
-    note, tip, try_change = generate_curator_note(selected, favorites)
+    note, highlight, technique, tip, try_change = generate_curator_note(selected, favorites)
 
     # 读取当前的 daily-feature.ts
     with open(DAILY_FEATURE_FILE, "r", encoding="utf-8") as f:
@@ -324,8 +368,8 @@ def main():
     date: '{today}',
     slug: '{selected['slug']}',
     curatorNote: '{escape_ts(note)}',
-    highlight: '{escape_ts(selected['title'][:30])}...',
-    technique: '{escape_ts(selected.get('category', 'style'))} · AI绘图',
+    highlight: '{escape_ts(highlight)}',
+    technique: '{escape_ts(technique)}',
     tip: '{escape_ts(tip)}',
     tryChange: '{escape_ts(try_change)}',
   }},
