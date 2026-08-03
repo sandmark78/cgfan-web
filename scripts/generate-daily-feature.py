@@ -64,9 +64,10 @@ def parse_favorite_images():
     if start == -1:
         return []
 
-    # 提取表格行：| # | 图片 | 作者 | ... | 总分 |
+    # 提取表格行：| # | 图片 | 作者 | 8维度分数 | 总分 |
     # 格式：| 1 | AI 小说封面生成框架 | Larus Canus | 9 | 8 | 9 | 8 | 9 | 9 | 9 | 9 | 70/80 |
-    table_pattern = r"\|\s*\d+\s*\|\s*([^|]+)\s*\|\s*([^|]+)\s*\|[^|]+\|[^|]+\|[^|]+\|[^|]+\|[^|]+\|[^|]+\|[^|]+\|[^|]+\|\s*(\d+)/80\s*\|"
+    # 总分可能是小数如 68.5/80
+    table_pattern = r"\|\s*\d+\s*\|\s*([^|]+?)\s*\|\s*([^|]+?)\s*\|(?:[^|]*\|){8}\s*([\d.]+)/80\s*\|"
     matches = re.findall(table_pattern, content[start:])
 
     favorites = []
@@ -74,7 +75,7 @@ def parse_favorite_images():
         favorites.append({
             "title": title.strip(),
             "author": author.strip(),
-            "score": int(score),
+            "score": float(score),
         })
 
     # 按分数降序排序
@@ -208,62 +209,56 @@ def main():
     favorites = parse_favorite_images()
     print(f"📊 从品味画像中找到 {len(favorites)} 张'最喜欢'图片")
 
-    # === 选题逻辑（质量优先，只选有评分的prompt） ===
+    # === 选题逻辑（质量优先，从 IMAGE_TASTE.md 最喜欢列表匹配） ===
 
     selected = None
     selection_reason = ""
 
-    # 过滤出有评分的prompt（必须有 score 字段）
-    scored_prompts = [p for p in prompts if p.get("score") is not None]
-
-    # 优先级 1: 昨天上传的 + 评分最高的（从 IMAGE_TASTE.md 的"最喜欢"中找）
+    # 优先级 1: 昨天收录的（按 date 字段）
     yesterday_prompts = [
         p for p in prompts
-        if p.get("added", "").startswith(yesterday_str)
+        if p.get("date", "").startswith(yesterday_str)
     ]
 
     if yesterday_prompts:
         print(f"📝 昨天（{yesterday_str}）收录了 {len(yesterday_prompts)} 条提示词")
-        # 只考虑有评分的
-        yesterday_scored = [p for p in yesterday_prompts if p.get("score") is not None]
-
-        # 优先从"最喜欢"列表中找
+        # 优先从"最喜欢"列表中找昨天收录的
         for fav in favorites:
-            slug = find_slug_by_title(yesterday_scored, fav["title"])
+            slug = find_slug_by_title(yesterday_prompts, fav["title"])
             if slug and slug not in existing_slugs:
-                selected = next((p for p in yesterday_scored if p.get("slug") == slug), None)
+                selected = next((p for p in yesterday_prompts if p.get("slug") == slug), None)
                 if selected:
-                    selection_reason = f"昨天上传 + 最喜欢（{fav['score']}/80）"
+                    selection_reason = f"昨天收录 + 最喜欢（{fav['score']}/80）"
                     break
 
-        # 如果最喜欢列表没有，选昨天有评分中最高分的
-        if not selected and yesterday_scored:
-            yesterday_scored.sort(key=lambda p: p.get("score", 0), reverse=True)
-            for p in yesterday_scored:
+        # 如果最喜欢没有，选昨天收录中最新的一条（未被使用的）
+        if not selected:
+            for p in yesterday_prompts:
                 if p.get("slug", "") not in existing_slugs:
                     selected = p
-                    selection_reason = f"昨天上传 + 最高分（{p.get('score', 0)}/80）"
+                    selection_reason = f"昨天收录 + 最新未使用"
                     break
 
-    # 优先级 2: 历史有评分的 + 没用过的（从"最喜欢"列表中找）
+    # 优先级 2: 从"最喜欢"列表中找未使用的（按分数降序）
     if not selected:
-        print(f"🔍 昨天无可用评分，从历史评分中查找...")
+        print(f"🔍 昨天无可用，从最喜欢列表中查找未使用的...")
         for fav in favorites:
-            slug = find_slug_by_title(scored_prompts, fav["title"])
+            slug = find_slug_by_title(prompts, fav["title"])
             if slug and slug not in existing_slugs:
-                selected = next((p for p in scored_prompts if p.get("slug") == slug), None)
+                selected = next((p for p in prompts if p.get("slug") == slug), None)
                 if selected:
-                    selection_reason = f"历史最喜欢（{fav['score']}/80）+ 未使用"
+                    selection_reason = f"最喜欢（{fav['score']}/80）+ 未使用"
                     break
 
-    # 优先级 3: 历史有评分的 + 最高分 + 没用过的
+    # 优先级 3: 最新收录的未使用 prompt（fallback）
     if not selected:
-        print(f"🔍 从历史有评分中找最高分...")
-        scored_prompts.sort(key=lambda p: p.get("score", 0), reverse=True)
-        for p in scored_prompts:
+        print(f"🔍 从最新收录中找未使用的...")
+        # 按 date 降序排列，找第一个未使用的
+        sorted_prompts = sorted(prompts, key=lambda p: p.get("date", ""), reverse=True)
+        for p in sorted_prompts:
             if p.get("slug", "") not in existing_slugs:
                 selected = p
-                selection_reason = f"历史最高分（{p.get('score', 0)}/80）+ 未使用"
+                selection_reason = f"最新收录 + 未使用"
                 break
 
     if not selected:
