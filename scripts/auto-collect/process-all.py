@@ -435,8 +435,11 @@ for i, tweet in enumerate(filtered_tweets, 1):
     total_score = score_prompt(prompt, tweet)
     print(f"  Score: {total_score}/80")
     
-    if total_score < 60:
-        print(f"  ✗ Score too low ({total_score}/80), skipping")
+    if total_score < 65:
+        print(f"  ✗ Score too low ({total_score}/80), saving as candidate")
+        # 保存候选（方便人工筛选）
+        from scripts.auto_collect.save_candidate import save_candidate
+        save_candidate(tweet, prompt, title, model, {}, total_score, category)
         continue
     
     # Create markdown file
