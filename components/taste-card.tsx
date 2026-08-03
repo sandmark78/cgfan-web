@@ -387,6 +387,31 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
     }
   }, [serverFavorites, refreshKey])
 
+  // 监听收藏变化：用户从详情页返回时自动更新8维向量
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'visible') {
+        setRefreshKey(k => k + 1)
+      }
+    }
+    const handleStorageChange = (e: StorageEvent) => {
+      if (e.key === 'cgfan_favorites') {
+        setRefreshKey(k => k + 1)
+      }
+    }
+    // 自定义事件：收藏按钮触发
+    const handleFavChanged = () => setRefreshKey(k => k + 1)
+    
+    document.addEventListener('visibilitychange', handleVisibilityChange)
+    window.addEventListener('storage', handleStorageChange)
+    window.addEventListener('cgfan:favorites-changed', handleFavChanged)
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange)
+      window.removeEventListener('storage', handleStorageChange)
+      window.removeEventListener('cgfan:favorites-changed', handleFavChanged)
+    }
+  }, [])
+
   const handleRetake = () => {
     clearProfile()
     localStorage.removeItem('cgfan_quiz_result')
@@ -499,7 +524,8 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       // ── 人格名（居中，大字宋体） ──
       const nameY = 395  // 下移10px
       const nameLen = currentPersona.name.length
-      const nameSize = nameLen >= 6 ? 96 : nameLen === 5 ? 108 : nameLen === 4 ? 120 : 132
+      // 字体更大：3字160px, 4字148px, 5字132px, 6字+120px
+      const nameSize = nameLen >= 6 ? 120 : nameLen === 5 ? 132 : nameLen === 4 ? 148 : 160
       ctx.font = `900 ${nameSize}px "Noto Serif SC", "Songti SC", "SimSun", serif`
       ctx.fillStyle = C.ink
       ctx.textAlign = 'center'

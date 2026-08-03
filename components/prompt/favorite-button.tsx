@@ -56,6 +56,8 @@ export function FavoriteButton({
         saveFavorite(item)
       }
       setFavorited(!favorited)
+      // 通知美学人格页面更新8维向量
+      window.dispatchEvent(new CustomEvent('cgfan:favorites-changed'))
       return
     }
 
