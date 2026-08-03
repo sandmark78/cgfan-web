@@ -194,8 +194,15 @@ def main():
     
     # 逐条处理
     preprocessed = []
+    skipped_video = 0
     for tweet in tweets:
         tweet_id = tweet['id']
+        
+        # 视频过滤
+        if tweet.get('has_video'):
+            print(f"🎬 跳过视频: {tweet_id}")
+            skipped_video += 1
+            continue
         
         # 去重检查
         if is_duplicate(tweet_id):
