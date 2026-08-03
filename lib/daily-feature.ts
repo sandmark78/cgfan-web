@@ -20,13 +20,14 @@ export interface DailyFeature {
 export const dailyFeatures: DailyFeature[] = [
   {
     date: '2026-08-03',
-    slug: 'prompt-2083947335445319717',
-    curatorNote: '字体不再是平面排版元素，而是可触摸的巨型雕塑结构。Larus Canus 的 TYPE CONTACT 系列让人体与 3D 字母产生物理互动——攀援、穿越、倚靠、破壁，四种方向对应四种身体语言。核心在于「字即建筑」：字母的 counter（内腔）变成可坐的空间，stroke（笔画）变成可踩的台阶，整体需要可信的重量感、接触阴影和前后景深。GPT-Image2 在处理人体与几何体的空间关系上表现出色，材质从半透明钴蓝到哑光黑再到深绿，色彩克制但质感分明。',
-    highlight: '字体作为建筑——人体攀援、穿越、倚靠巨型3D字母的四种物理互动方向',
-    technique: '3D字体雕塑 · 人体空间互动 · 时尚海报排版',
-    tip: '用 "monumental sculptural structure" 替代 "3D letter" 可以强化字母的建筑感和体量感，让 AI 更关注重量、阴影和空间纵深。',
-    tryChange: '把 "translucent cobalt-blue" 换成 "weathered concrete with moss"，观察从时尚海报到废土美学的氛围转变。',
+    slug: 'prompt-2079921414392660223',
+    curatorNote: '关键技法：东方。 符合「东方美学」的偏好方向。 使用 GPT-Image2 模型。',
+    highlight: '纸雕东方幻想：山海经异兽神话海报...',
+    technique: 'poster · AI绘图',
+    tip: '关键技法「东方」是精准控制输出质量的核心词。',
+    tryChange: '把核心材质或光线词换一个方向，观察整体氛围的变化。',
   },
+  
   {
     date: '2026-08-02',
     slug: 'prompt-2083190950470557941',
