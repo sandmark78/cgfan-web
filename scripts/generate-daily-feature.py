@@ -145,130 +145,112 @@ def find_slug_by_title(prompts, title):
 
 
 def generate_curator_note(prompt, taste_profile):
-    """根据提示词完整内容、标签、结构生成有深度的策展笔记"""
+    """调用 LLM 分析完整 prompt 内容，生成有深度的策展笔记"""
+    import requests
+    import yaml
+
+    # 读取 API 配置
+    with open(os.path.expanduser("~/.hermes/profiles/cgfan/config.yaml"), "r") as f:
+        config = yaml.safe_load(f)
+    provider = config["providers"]["sensenova"]
+    api_key = provider["api_key"]
+    base_url = provider["base_url"]
+    model = provider["model"]
+
     title = prompt.get("title", "")
     category = prompt.get("category", "")
     tags = prompt.get("tags", [])
-    model = prompt.get("model", "")
-    prompt_text = prompt.get("prompt", "")[:2000]  # 读更多内容
-    prompt_lower = prompt_text.lower()
+    model_name = prompt.get("model", "通用 Prompt")
+    prompt_text = prompt.get("prompt", "")[:3000]
+    slug = prompt.get("slug", "")
 
-    # === 1. 从标签中提取核心风格 ===
-    style_keywords = {
-        "纸雕": "纸雕层叠工艺",
-        "东方幻想": "东方幻想世界观",
-        "山海经": "山海经神话体系",
-        "国风": "国风视觉体系",
-        "东方美学": "东方美学体系",
-        "复古": "复古质感",
-        "微缩": "微缩工艺",
-        "电影感": "电影感叙事",
-        "赛博朋克": "赛博朋克美学",
-        "极简": "极简主义",
-        "水墨": "水墨技法",
-        "胶片": "胶片质感",
-        "3D": "3D渲染",
-        "插画": "插画风格",
-        "海报": "海报排版",
-        "建筑": "建筑渲染",
-        "产品": "产品摄影",
-        "时尚": "时尚摄影",
-        "人像": "人像摄影",
-        "科幻": "科幻概念",
-    }
-    core_styles = []
-    for tag in tags:
-        if tag in style_keywords:
-            core_styles.append(style_keywords[tag])
-        elif "东方" in tag or "中国" in tag or "国风" in tag:
-            core_styles.append("东方美学")
+    # 构建 LLM 分析 prompt
+    llm_prompt = f"""你是一位专业的 AI 提示词策展人。分析下面这条提示词，生成当日推荐的策展内容。
 
-    # === 2. 从prompt内容中提取关键技法 ===
-    technique_patterns = [
-        ("纸雕/纸艺层叠", "纸雕" in prompt_text or "纸艺" in prompt_text or "剪纸" in prompt_text),
-        ("立体切纸边缘", "切纸" in prompt_text or "纸边缘" in prompt_text),
-        ("压纹纸张质感", "压纹" in prompt_text or "纸张质感" in prompt_text),
-        ("浮雕阴影", "浮雕" in prompt_text or "阴影" in prompt_text),
-        ("中轴对称构图", "中轴线" in prompt_text or "对称" in prompt_text or "中心汇聚" in prompt_text),
-        ("圆形视觉焦点", "圆月" in prompt_text or "圆形" in prompt_text or "圆光" in prompt_text or "日轮" in prompt_text),
-        ("纵深感通道", "纵深感" in prompt_text or "通道" in prompt_text or "台阶" in prompt_text or "长街" in prompt_text),
-        ("书法字体排版", "书法" in prompt_text or "主标题" in prompt_text or "字体" in prompt_text),
-        ("层叠建筑群", "层层叠叠" in prompt_text or "楼阁" in prompt_text or "塔楼" in prompt_text or "廊桥" in prompt_text),
-        ("克制色系", "克制" in prompt_text or "深蓝" in prompt_text or "朱砂红" in prompt_text or "暖金" in prompt_text),
-        ("版面层级设计", "排版" in prompt_text or "标题区" in prompt_text or "副标题" in prompt_text),
-        ("cinematic lighting", "cinematic lighting" in prompt_lower),
-        ("体积光", "体积光" in prompt_text or "volumetric" in prompt_lower),
-        ("景深控制", "depth of field" in prompt_lower or "景深" in prompt_text or "bokeh" in prompt_lower),
-        ("胶片颗粒", "grain" in prompt_lower or "胶片" in prompt_text or "film look" in prompt_lower),
-        ("微距摄影", "macro" in prompt_lower or "微距" in prompt_text),
-        ("移轴效果", "tilt-shift" in prompt_lower or "移轴" in prompt_text),
-    ]
-    techniques = [name for name, found in technique_patterns if found]
+## 提示词信息
+- 标题：{title}
+- 分类：{category}
+- 标签：{', '.join(tags)}
+- 模型：{model_name}
+- slug：{slug}
 
-    # === 3. 构建策展笔记 ===
-    note_parts = []
+## 提示词完整内容
+{prompt_text}
 
-    # 第一句：总体定位
-    if core_styles:
-        styles_str = " + ".join(core_styles[:3])
-        note_parts.append(f"这是一套融合「{styles_str}」的完整提示词框架。")
+## 输出要求
+以 JSON 格式输出，包含以下字段：
 
-    # 第二句：核心技法
-    if techniques:
-        tech_str = "、".join(techniques[:4])
-        note_parts.append(f"核心技法：{tech_str}。")
+1. **curatorNote**（100-150字）：策展笔记，读起来像资深编辑的推荐语。分析这个 prompt 的独特之处——结构设计、风格创新、技法亮点、适用场景。不要模板化套话，要有具体洞察。
 
-    # 第三句：结构亮点（从prompt中提取关键段落）
-    if "【整体构图】" in prompt_text:
-        note_parts.append("提示词按构图→场景→风格→色彩→文字五层递进，结构清晰，可复用性强。")
-    elif "【构图" in prompt_text:
-        note_parts.append("提示词按模块化结构编排，每一层都可独立替换。")
+2. **highlight**（20-30字）：一句话亮点，吸引人的精华摘要。
 
-    # 第四句：模型
-    if model and model != "通用 Prompt":
-        note_parts.append(f"实测 {model} 可稳定输出，适合作为海报类提示词的基准模板。")
+3. **technique**（20-40字）：关键技法标签，用「 · 」分隔，如「纸雕层叠 · 中轴对称构图 · 克制色系」。
 
-    note = " ".join(note_parts) if note_parts else f"这个提示词展示了 AI 图像生成的创意可能性。"
+4. **tip**（30-50字）：一个实用的提示词写作技巧，基于这个 prompt 的结构特点来写。
 
-    # === 4. 生成亮点（基于实际内容） ===
-    if core_styles:
-        highlight = f"{' · '.join(core_styles[:2])} · {title[:20]}"
-    else:
+5. **tryChange**（30-50字）：「试着改一个词」建议，具体到可操作的方向，比如换材质、换光效、换色系。
+
+## 输出格式
+```json
+{{
+  "curatorNote": "...",
+  "highlight": "...",
+  "technique": "...",
+  "tip": "...",
+  "tryChange": "..."
+}}
+```
+
+注意：curatorNote 控制在 100-150 字，其他字段简洁有力。不要用「这是一套融合」「这是一款」等模板开头，直接进入分析。"""
+
+    # 调用 API
+    try:
+        resp = requests.post(
+            f"{base_url}/chat/completions",
+            headers={
+                "Authorization": f"Bearer {api_key}",
+                "Content-Type": "application/json",
+            },
+            json={
+                "model": model,
+                "messages": [{"role": "user", "content": llm_prompt}],
+                "temperature": 0.7,
+                "max_tokens": 1000,
+            },
+            timeout=30,
+        )
+        resp.raise_for_status()
+        result = resp.json()
+        content = result["choices"][0]["message"]["content"]
+
+        # 提取 JSON
+        import json as json_lib
+        json_match = re.search(r'```json\s*(\{.*?\})\s*```', content, re.DOTALL)
+        if json_match:
+            parsed = json_lib.loads(json_match.group(1))
+        else:
+            # 尝试直接解析
+            parsed = json_lib.loads(content)
+
+        note = parsed.get("curatorNote", title)
+        highlight = parsed.get("highlight", title[:30])
+        technique = parsed.get("technique", " · ".join(tags[:3]))
+        tip = parsed.get("tip", "好的提示词结构让 AI 更容易理解你的意图。")
+        try_change = parsed.get("tryChange", "试试换一个核心材质词，观察氛围变化。")
+
+        print(f"  📝 LLM 生成策展笔记成功")
+        return note, highlight, technique, tip, try_change
+
+    except Exception as e:
+        print(f"  ⚠️ LLM 调用失败: {e}")
+        # fallback: 基于标签生成
+        tag_str = " · ".join(tags[:3]) if tags else category
+        note = f"这是一个 {tag_str} 方向的提示词，包含完整的场景描述和风格控制。"
         highlight = title[:30]
-
-    # === 5. 生成技法标签 ===
-    if techniques:
-        technique = " · ".join(techniques[:3])
-    elif tags:
-        technique = " · ".join(tags[:3])
-    else:
-        technique = f"{category} · AI绘图"
-
-    # === 6. 生成实用技巧（基于实际prompt结构） ===
-    if "【整体构图】" in prompt_text:
-        tip = "用「【】」分段标记（如【整体构图】【色彩】）能大幅提升 AI 对复杂提示词的结构理解。"
-    elif "--ar" in prompt_text:
-        tip = "在提示词中明确比例（--ar 3:4）比后期裁切更稳定，尤其适合竖版海报。"
-    elif "纸雕" in prompt_text or "纸艺" in prompt_text:
-        tip = "「纸雕」「层叠」「压纹」等材质词需要配合「阴影」「浮雕」才能生成真实的手工质感。"
-    elif "volumetric" in prompt_lower or "体积光" in prompt_text:
-        tip = "「volumetric lighting」配合「backlight」能产生戏剧性的光束穿透效果，适合氛围感场景。"
-    else:
-        tip = "用「'」或「【】」做段落分隔，比用换行符更容易让 AI 理解层级关系。"
-
-    # === 7. 生成「试着改一个词」（基于实际内容） ===
-    if "深蓝" in prompt_text and "暖金" in prompt_text:
-        try_change = "把「深蓝+暖金」改成「墨绿+银灰」，从东方神话转向神秘森林氛围。"
-    elif "纸雕" in prompt_text:
-        try_change = "把「纸雕」换成「金属蚀刻」，材质从纸艺转向工业风，视觉完全重构。"
-    elif "--ar" in prompt_text:
-        try_change = "试着改 --ar 比例，从 3:4 改成 16:9，构图重心从竖向叙事转向横向全景。"
-    elif "cinematic" in prompt_lower:
-        try_change = "把「cinematic lighting」换成「neon noir lighting」，从电影感转向赛博朋克。"
-    else:
-        try_change = "把核心材质词换掉（如纸张→金属、布料→玻璃），观察材质对氛围的决定性影响。"
-
-    return note, highlight, technique, tip, try_change
+        technique = tag_str
+        tip = "用具体的材质词和光线描述替代笼统形容词，能显著提升输出质量。"
+        try_change = "试着替换核心材质词，观察同一结构下的风格变化。"
+        return note, highlight, technique, tip, try_change
 
 
 def main():
