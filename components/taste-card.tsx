@@ -524,8 +524,8 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       // ── 人格名（居中，大字宋体） ──
       const nameY = 395  // 下移10px
       const nameLen = currentPersona.name.length
-      // 字体更大：3字160px, 4字148px, 5字132px, 6字+120px
-      const nameSize = nameLen >= 6 ? 120 : nameLen === 5 ? 132 : nameLen === 4 ? 148 : 160
+      // 字号规范：6字+96px, 5字108px, 4字120px, 3字及以下132px
+      const nameSize = nameLen >= 6 ? 96 : nameLen === 5 ? 108 : nameLen === 4 ? 120 : 132
       ctx.font = `900 ${nameSize}px "Noto Serif SC", "Songti SC", "SimSun", serif`
       ctx.fillStyle = C.ink
       ctx.textAlign = 'center'
