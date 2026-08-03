@@ -317,10 +317,24 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
     const saved = loadProfile()
     let hasChanges = false
     
+    // 合并服务端收藏和本地收藏
+    const allFavorites: Array<{ slug: string; title: string; category: string; tags: string[]; model: string; cover: string }> = []
+    
+    // 服务端收藏（Supabase）
     if (serverFavorites && serverFavorites.length > 0) {
-      saved.favoriteCount = serverFavorites.length
+      allFavorites.push(...serverFavorites)
+    }
+    
+    // 本地收藏（localStorage）
+    const localFavs = JSON.parse(localStorage.getItem('cgfan_favorites') || '[]')
+    if (localFavs.length > 0) {
+      allFavorites.push(...localFavs)
+    }
+    
+    if (allFavorites.length > 0) {
+      saved.favoriteCount = allFavorites.length
       const existingSlugs = new Set(saved.history.map(h => h.slug))
-      const newFavorites = serverFavorites.filter(fav => !existingSlugs.has(fav.slug))
+      const newFavorites = allFavorites.filter(fav => !existingSlugs.has(fav.slug))
       
       if (newFavorites.length > 0 || saved.history.length === 0) {
         saved.history = [...saved.history, ...newFavorites.map((fav, index) => ({
@@ -346,38 +360,6 @@ export function TasteCardClient({ serverFavorites, isLoggedIn }: TasteCardClient
       }
       
       if (hasChanges) saveProfile(saved)
-    } else {
-      const localFavs = JSON.parse(localStorage.getItem('cgfan_favorites') || '[]')
-      if (localFavs.length > 0) {
-        saved.favoriteCount = localFavs.length
-        const existingSlugs = new Set(saved.history.map(h => h.slug))
-        const newFavorites = localFavs.filter((fav: any) => !existingSlugs.has(fav.slug))
-        
-        if (newFavorites.length > 0 || saved.history.length === 0) {
-          saved.history = [...saved.history, ...newFavorites.map((fav: any, index: number) => ({
-            slug: fav.slug,
-            vector: calculateVectorFromPrompt(fav),
-            timestamp: Date.now() - (newFavorites.length - index) * 1000,
-          }))]
-          hasChanges = true
-        }
-        
-        if (saved.history.length > 0) {
-          const avgVector: AestheticVector = { complexity: 0, colorIntensity: 0, arousal: 0, fluency: 0, novelty: 0, harmony: 0, narrative: 0, stylization: 0 }
-          saved.history.forEach(item => {
-            (Object.keys(avgVector) as (keyof AestheticVector)[]).forEach(key => {
-              avgVector[key] += item.vector[key]
-            })
-          })
-          ;(Object.keys(avgVector) as (keyof AestheticVector)[]).forEach(key => {
-            avgVector[key] = Math.round(avgVector[key] / saved.history.length)
-          })
-          saved.vector = avgVector
-          hasChanges = true
-        }
-        
-        if (hasChanges) saveProfile(saved)
-      }
     }
     
     setProfile(saved)
