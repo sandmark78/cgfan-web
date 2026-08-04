@@ -9,7 +9,7 @@ export const runtime = 'edge'
  * 每日一味历史卡片 - 显示过去8天的精选
  */
 export default function DailyHistory() {
-  const allFeatures = getAllFeatures().slice(1, 9) // 跳过今天，取过去8天
+  const allFeatures = getAllFeatures().slice(1, 10) // 跳过今天，取过去9天
 
   if (allFeatures.length === 0) return null
 
@@ -24,7 +24,7 @@ export default function DailyHistory() {
         </Link>
       </div>
 
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {allFeatures.map((feature, index) => {
           const prompt = getPromptBySlug(feature.slug)
           if (!prompt) return null
@@ -35,11 +35,18 @@ export default function DailyHistory() {
           const cnNums = ['', '一', '二', '三', '四', '五', '六', '七', '八', '九', '十', '十一', '十二']
           const cnMonth = cnNums[month]
 
+          // 响应式显示：单排7个，双排8个，三排9个
+          const visibilityClass = index === 7 
+            ? 'hidden sm:block' // 第8个：双排和三排显示
+            : index === 8 
+            ? 'hidden lg:block' // 第9个：只三排显示
+            : '' // 前7个：都显示
+
           return (
             <Link
               key={feature.slug}
               href={`/prompt/${prompt.slug}`}
-              className="group glass-card block overflow-hidden"
+              className={`group glass-card block overflow-hidden ${visibilityClass}`}
             >
               {/* 图片 */}
               <div className="relative aspect-square overflow-hidden">
