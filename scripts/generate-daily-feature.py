@@ -282,27 +282,38 @@ def main():
     favorites = parse_favorite_images()
     print(f"📊 从品味画像中找到 {len(favorites)} 张'最喜欢'图片")
 
-    # === 选题逻辑（品味优先） ===
-    # 优先级：用户确认最喜欢 > 高分图 > 历史最喜欢没用过 > 历史高分没用过 > 最新收录
+    # === 选题逻辑（昨天新图优先） ===
+    # 优先级：昨天新上传的最高分 > 用户确认最喜欢 > 高分图 > 历史高分没用过 > 最新收录
 
     selected = None
     selection_reason = ""
 
-    # 从"最喜欢"列表中区分：用户确认的 vs 普通高分
-    # 用户确认的"最喜欢"：在 IMAGE_TASTE.md 正文中标记了「→ 最喜欢」的
-    user_confirmed_titles = parse_user_confirmed_favorites()
-    print(f"📊 用户确认最喜欢：{len(user_confirmed_titles)} 张")
-    print(f"📊 高分图片（最喜欢列表）：{len(favorites)} 张")
-
-    # 优先级 1: 用户确认"最喜欢"的 + 未使用
-    for fav in favorites:  # favorites 已按分数降序
-        if fav["title"] in user_confirmed_titles:
-            slug = find_slug_by_title(prompts, fav["title"])
+    # 优先级 1: 昨天新上传的最高分图
+    yesterday_prompts = [p for p in prompts if p.get("added", "").startswith(yesterday_str)]
+    print(f"📊 昨天（{yesterday_str}）新上传：{len(yesterday_prompts)} 张")
+    
+    if yesterday_prompts:
+        # 按评分降序排序
+        yesterday_prompts.sort(key=lambda p: p.get("score", 0), reverse=True)
+        for yp in yesterday_prompts:
+            slug = yp.get("slug")
             if slug and slug not in existing_slugs:
-                selected = next((p for p in prompts if p.get("slug") == slug), None)
-                if selected:
-                    selection_reason = f"用户确认最喜欢（{fav['score']}/80）"
-                    break
+                selected = yp
+                selection_reason = f"昨天新上传最高分（{yp.get('score', 0)}/80）"
+                break
+
+    # 优先级 2: 用户确认"最喜欢"的 + 未使用
+    if not selected:
+        user_confirmed_titles = parse_user_confirmed_favorites()
+        print(f"📊 用户确认最喜欢：{len(user_confirmed_titles)} 张")
+        for fav in favorites:  # favorites 已按分数降序
+            if fav["title"] in user_confirmed_titles:
+                slug = find_slug_by_title(prompts, fav["title"])
+                if slug and slug not in existing_slugs:
+                    selected = next((p for p in prompts if p.get("slug") == slug), None)
+                    if selected:
+                        selection_reason = f"用户确认最喜欢（{fav['score']}/80）"
+                        break
 
     # 优先级 2: 高分图（最喜欢列表中，按分数降序）+ 未使用
     if not selected:

@@ -267,6 +267,7 @@ def parse_markdown_file(file_path: Path) -> Optional[Dict[str, Any]]:
             'difficulty': detected_difficulty,
             'cover': frontmatter.get('cover', ''),
             'date': str(frontmatter.get('date', '')),
+            'added': str(frontmatter.get('added', '')),
             'source': frontmatter.get('source', ''),
             'sourceLink': frontmatter.get('sourceLink', ''),
             'author': frontmatter.get('author', '') or frontmatter.get('source', '') or 'Unknown',
