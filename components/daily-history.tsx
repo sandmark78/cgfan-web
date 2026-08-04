@@ -25,29 +25,31 @@ export default function DailyHistory() {
       </div>
 
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {allFeatures.map((feature, index) => {
-          const prompt = getPromptBySlug(feature.slug)
-          if (!prompt) return null
+        {allFeatures
+          .map((feature) => ({ feature, prompt: getPromptBySlug(feature.slug) }))
+          .filter(({ prompt }) => prompt !== null)
+          .slice(0, 9) // 最多显示9个
+          .map(({ feature, prompt }, index) => {
+            if (!prompt) return null // TypeScript 类型收窄
+            const date = new Date(feature.date)
+            const day = date.getDate()
+            const month = date.getMonth() + 1
+            const cnNums = ['', '一', '二', '三', '四', '五', '六', '七', '八', '九', '十', '十一', '十二']
+            const cnMonth = cnNums[month]
 
-          const date = new Date(feature.date)
-          const day = date.getDate()
-          const month = date.getMonth() + 1
-          const cnNums = ['', '一', '二', '三', '四', '五', '六', '七', '八', '九', '十', '十一', '十二']
-          const cnMonth = cnNums[month]
+            // 响应式显示：单排7个，双排8个，三排9个
+            const visibilityClass = index === 7 
+              ? 'hidden sm:block' // 第8个：双排和三排显示
+              : index === 8 
+              ? 'hidden lg:block' // 第9个：只三排显示
+              : '' // 前7个：都显示
 
-          // 响应式显示：单排7个，双排8个，三排9个
-          const visibilityClass = index === 7 
-            ? 'hidden sm:block' // 第8个：双排和三排显示
-            : index === 8 
-            ? 'hidden lg:block' // 第9个：只三排显示
-            : '' // 前7个：都显示
-
-          return (
-            <Link
-              key={feature.slug}
-              href={`/prompt/${prompt.slug}`}
-              className={`group glass-card block overflow-hidden ${visibilityClass}`}
-            >
+            return (
+              <Link
+                key={feature.slug}
+                href={`/prompt/${prompt.slug}`}
+                className={`group glass-card block overflow-hidden ${visibilityClass}`}
+              >
               {/* 图片 */}
               <div className="relative aspect-square overflow-hidden">
                 {prompt.cover ? (
