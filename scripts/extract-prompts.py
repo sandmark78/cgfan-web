@@ -187,10 +187,24 @@ def parse_markdown_file(file_path: Path) -> Optional[Dict[str, Any]]:
         frontmatter_str = parts[1]
         body = parts[2]
         
+        # 检查重复字段（防止 YAML 解析静默失败）
+        lines = frontmatter_str.strip().split('\n')
+        field_counts = {}
+        for line in lines:
+            if ':' in line and not line.startswith(' '):
+                field = line.split(':')[0].strip()
+                field_counts[field] = field_counts.get(field, 0) + 1
+        
+        duplicates = [f for f, c in field_counts.items() if c > 1]
+        if duplicates:
+            print(f"⚠️  {file_path.name}: 重复字段 {duplicates}，跳过")
+            return None
+        
         # 解析 frontmatter
         try:
             frontmatter = yaml.safe_load(frontmatter_str)
-        except yaml.YAMLError:
+        except yaml.YAMLError as e:
+            print(f"⚠️  {file_path.name}: YAML 解析失败 - {e}")
             return None
         
         # 提取各个部分
