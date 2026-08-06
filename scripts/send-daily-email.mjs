@@ -80,39 +80,59 @@ async function sendDailyEmail() {
   const resend = new Resend(RESEND_API_KEY)
 
   let sentCount = 0
+  let failedCount = 0
   for (const subscriber of subscribers) {
-    try {
-      await resend.emails.send({
-        from: 'CGfan <noreply@send.cgfan.com>',
-        to: subscriber.email,
-        subject: `每日一味：${feature.highlight}`,
-        html: `
-          <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
-            <h1 style="color: #2D5F3E; font-size: 24px; margin-bottom: 16px;">${feature.highlight}</h1>
-            <p style="color: #4A4A4A; font-size: 16px; line-height: 1.6; margin-bottom: 24px;">
-              ${feature.curatorNote}
-            </p>
-            ${feature.tip ? `
-              <div style="background: #f0f9f4; border-left: 4px solid #2D5F3E; padding: 16px; margin-bottom: 24px;">
-                <p style="color: #2D5F3E; font-size: 14px; margin: 0;">
-                  <strong>💡 实用技巧</strong><br/>
-                  ${feature.tip}
-                </p>
-              </div>
-            ` : ''}
-            <a href="https://www.cgfan.com/prompt/${feature.slug}" style="display: inline-block; background: #2D5F3E; color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-weight: 600;">
-              查看完整提示词
-            </a>
-            <p style="color: #999; font-size: 12px; margin-top: 32px;">
-              退订请 <a href="https://www.cgfan.com/subscribe/unsubscribe?email=${encodeURIComponent(subscriber.email)}" style="color: #999;">点击这里</a>
-            </p>
-          </div>
-        `,
-      })
-      sentCount++
-      console.log(`✓ Sent to ${subscriber.email}`)
-    } catch (error) {
-      console.error(`✗ Failed to send to ${subscriber.email}:`, error.message)
+    let retries = 3
+    let success = false
+    
+    while (retries > 0 && !success) {
+      try {
+        const result = await resend.emails.send({
+          from: 'CGfan <noreply@send.cgfan.com>',
+          to: subscriber.email,
+          subject: `每日一味：${feature.highlight}`,
+          html: `
+            <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
+              <h1 style="color: #2D5F3E; font-size: 24px; margin-bottom: 16px;">${feature.highlight}</h1>
+              <p style="color: #4A4A4A; font-size: 16px; line-height: 1.6; margin-bottom: 24px;">
+                ${feature.curatorNote}
+              </p>
+              ${feature.tip ? `
+                <div style="background: #f0f9f4; border-left: 4px solid #2D5F3E; padding: 16px; margin-bottom: 24px;">
+                  <p style="color: #2D5F3E; font-size: 14px; margin: 0;">
+                    <strong>💡 实用技巧</strong><br/>
+                    ${feature.tip}
+                  </p>
+                </div>
+              ` : ''}
+              <a href="https://www.cgfan.com/prompt/${feature.slug}" style="display: inline-block; background: #2D5F3E; color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-weight: 600;">
+                查看完整提示词
+              </a>
+              <p style="color: #999; font-size: 12px; margin-top: 32px;">
+                退订请 <a href="https://www.cgfan.com/subscribe/unsubscribe?email=${encodeURIComponent(subscriber.email)}" style="color: #999;">点击这里</a>
+              </p>
+            </div>
+          `,
+        })
+        
+        // 检查 API 响应
+        if (result.error) {
+          throw new Error(`Resend API error: ${JSON.stringify(result.error)}`)
+        }
+        
+        sentCount++
+        success = true
+        console.log(`✓ Sent to ${subscriber.email}`)
+      } catch (error) {
+        retries--
+        if (retries > 0) {
+          console.log(`⚠ Retry ${3-retries}/3 for ${subscriber.email}: ${error.message}`)
+          await new Promise(r => setTimeout(r, 2000 * (3-retries))) // 递增延迟
+        } else {
+          failedCount++
+          console.error(`✗ Failed to send to ${subscriber.email} after 3 retries: ${error.message}`)
+        }
+      }
     }
   }
 
