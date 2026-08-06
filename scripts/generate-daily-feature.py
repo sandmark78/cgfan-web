@@ -41,6 +41,51 @@ def load_prompts():
     return json.loads(decoded)
 
 
+def enrich_prompts_with_scores(prompts):
+    """从 markdown 文件中读取 score 字段并补充到 prompts 数据中"""
+    prompts_dir = os.path.join(WORKDIR, "content/prompts")
+    
+    # 构建 slug -> prompt 映射
+    slug_map = {p.get("slug"): p for p in prompts}
+    
+    # 遍历所有 markdown 文件
+    for category in os.listdir(prompts_dir):
+        category_path = os.path.join(prompts_dir, category)
+        if not os.path.isdir(category_path):
+            continue
+        
+        for filename in os.listdir(category_path):
+            if not filename.endswith('.md'):
+                continue
+            
+            filepath = os.path.join(category_path, filename)
+            with open(filepath, 'r', encoding='utf-8') as f:
+                md_content = f.read()
+            
+            # 提取 frontmatter
+            fm_match = re.match(r'^---\n(.*?)\n---', md_content, re.DOTALL)
+            if not fm_match:
+                continue
+            
+            frontmatter = fm_match.group(1)
+            
+            # 提取 slug
+            slug_match = re.search(r'slug:\s*["\x27]?([^"\x27\n]+)["\x27]?', frontmatter)
+            if not slug_match:
+                continue
+            slug = slug_match.group(1).strip()
+            
+            # 提取 score
+            score_match = re.search(r'score:\s*(\d+)', frontmatter)
+            if not score_match:
+                continue
+            score = int(score_match.group(1))
+            
+            # 更新 prompt 数据
+            if slug in slug_map:
+                slug_map[slug]['score'] = score
+
+
 def parse_daily_features():
     """解析 lib/daily-feature.ts 中的日期和 slug"""
     with open(DAILY_FEATURE_FILE, "r", encoding="utf-8") as f:
@@ -277,6 +322,7 @@ def main():
 
     # 加载提示词数据
     prompts = load_prompts()
+    enrich_prompts_with_scores(prompts)
 
     # 解析品味画像中的"最喜欢"列表
     favorites = parse_favorite_images()
