@@ -20,6 +20,7 @@ authorLink: https://x.com/azed_ai
 author: Amira Zairi (azed_ai)
 
 
+
 ---
 
 ## Prompt
