@@ -37,12 +37,10 @@ export default function DailyHistory() {
             const cnNums = ['', '一', '二', '三', '四', '五', '六', '七', '八', '九', '十', '十一', '十二']
             const cnMonth = cnNums[month]
 
-            // 响应式显示：单排7个，双排8个，三排9个
-            const visibilityClass = index === 7 
-              ? 'hidden sm:block' // 第8个：双排和三排显示
-              : index === 8 
+            // 响应式显示：单排和双排8个，三排9个
+            const visibilityClass = index === 8 
               ? 'hidden lg:block' // 第9个：只三排显示
-              : '' // 前7个：都显示
+              : '' // 前8个：都显示
 
             return (
               <Link
