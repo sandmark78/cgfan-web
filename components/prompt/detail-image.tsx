@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
 
 interface DetailImageProps {
@@ -10,7 +10,10 @@ interface DetailImageProps {
 }
 
 /**
- * 详情页大图（客户端组件，支持多图轮播 + 点击预览）
+ * 详情页图片区（客户端组件）
+ * - 上方大图：保持现有样式，点击打开 Lightbox
+ * - 下方缩略图条：水平滚动，点击切换大图
+ * - Lightbox：全屏预览，支持左右切换
  */
 export function DetailImage({ src, alt, images }: DetailImageProps) {
   // 如果有 images 数组，使用它；否则 fallback 到单张 src
@@ -18,11 +21,12 @@ export function DetailImage({ src, alt, images }: DetailImageProps) {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [hasError, setHasError] = useState(false)
   const [showLightbox, setShowLightbox] = useState(false)
+  const thumbnailRef = useRef<HTMLDivElement>(null)
 
   const currentImage = imageList[currentIndex]
   const hasMultiple = imageList.length > 1
 
-  // 按ESC键关闭
+  // 按ESC键关闭 Lightbox
   useEffect(() => {
     const handleEsc = (e: KeyboardEvent) => {
       if (e.key === 'Escape') setShowLightbox(false)
@@ -50,6 +54,16 @@ export function DetailImage({ src, alt, images }: DetailImageProps) {
     setHasError(false)
   }, [currentIndex])
 
+  // 切换图片时，自动滚动缩略图到可见区域
+  useEffect(() => {
+    if (thumbnailRef.current && hasMultiple) {
+      const thumbnail = thumbnailRef.current.children[currentIndex] as HTMLElement
+      if (thumbnail) {
+        thumbnail.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' })
+      }
+    }
+  }, [currentIndex, hasMultiple])
+
   const goToPrevious = () => {
     setCurrentIndex((prev) => (prev === 0 ? imageList.length - 1 : prev - 1))
   }
@@ -69,9 +83,9 @@ export function DetailImage({ src, alt, images }: DetailImageProps) {
   return (
     <>
       <div className="relative w-full max-w-[500px]">
-        {/* 主图片 */}
+        {/* 主图片区域 */}
         <div 
-          className="cursor-zoom-in relative overflow-hidden"
+          className="cursor-zoom-in relative overflow-hidden rounded-xl"
           onClick={() => setShowLightbox(true)}
         >
           <Image
@@ -84,56 +98,49 @@ export function DetailImage({ src, alt, images }: DetailImageProps) {
             priority
             onError={() => setHasError(true)}
           />
-        </div>
-
-        {/* 多图指示器 */}
-        {hasMultiple && (
-          <>
-            {/* 左右箭头 */}
-            <button
-              onClick={(e) => { e.stopPropagation(); goToPrevious() }}
-              className="absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-black/50 p-2 text-white backdrop-blur-sm transition-all hover:bg-black/70 hover:scale-110"
-              aria-label="上一张"
-            >
-              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-              </svg>
-            </button>
-            <button
-              onClick={(e) => { e.stopPropagation(); goToNext() }}
-              className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-black/50 p-2 text-white backdrop-blur-sm transition-all hover:bg-black/70 hover:scale-110"
-              aria-label="下一张"
-            >
-              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
-
-            {/* 底部圆点指示器 */}
-            <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
-              {imageList.map((_, idx) => (
-                <button
-                  key={idx}
-                  onClick={(e) => { e.stopPropagation(); setCurrentIndex(idx) }}
-                  className={`h-2 w-2 rounded-full transition-all ${
-                    idx === currentIndex
-                      ? 'bg-white scale-125'
-                      : 'bg-white/50 hover:bg-white/75'
-                  }`}
-                  aria-label={`切换到第 ${idx + 1} 张图片`}
-                />
-              ))}
-            </div>
-
-            {/* 图片计数 */}
+          
+          {/* 图片计数（仅多图时显示） */}
+          {hasMultiple && (
             <div className="absolute top-3 right-3 rounded-full bg-black/50 px-2 py-1 text-xs text-white backdrop-blur-sm">
               {currentIndex + 1} / {imageList.length}
             </div>
-          </>
+          )}
+        </div>
+
+        {/* 缩略图条（仅多图时显示） */}
+        {hasMultiple && (
+          <div 
+            ref={thumbnailRef}
+            className="mt-3 flex gap-2 overflow-x-auto pb-2 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-transparent"
+            style={{ scrollbarWidth: 'thin' }}
+          >
+            {imageList.map((img, idx) => (
+              <button
+                key={idx}
+                onClick={() => setCurrentIndex(idx)}
+                className={`relative flex-shrink-0 overflow-hidden rounded-lg transition-all ${
+                  idx === currentIndex
+                    ? 'ring-2 ring-green-500 ring-offset-2 dark:ring-offset-gray-900'
+                    : 'opacity-60 hover:opacity-100'
+                }`}
+                style={{ width: '64px', height: '64px' }}
+                aria-label={`切换到第 ${idx + 1} 张图片`}
+              >
+                <Image
+                  src={img}
+                  alt={`${alt} - 图 ${idx + 1}`}
+                  width={64}
+                  height={64}
+                  className="h-full w-full object-cover"
+                  sizes="64px"
+                />
+              </button>
+            ))}
+          </div>
         )}
       </div>
 
-      {/* Lightbox */}
+      {/* Lightbox 全屏预览 */}
       {showLightbox && (
         <div 
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm animate-in fade-in duration-200"
@@ -153,6 +160,7 @@ export function DetailImage({ src, alt, images }: DetailImageProps) {
           {/* 多图导航（Lightbox 内） */}
           {hasMultiple && (
             <>
+              {/* 左箭头 */}
               <button
                 onClick={(e) => { e.stopPropagation(); goToPrevious() }}
                 className="absolute left-4 top-1/2 -translate-y-1/2 z-10 rounded-full bg-white/10 p-3 text-white backdrop-blur-md transition-colors hover:bg-white/20"
@@ -162,6 +170,8 @@ export function DetailImage({ src, alt, images }: DetailImageProps) {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                 </svg>
               </button>
+              
+              {/* 右箭头 */}
               <button
                 onClick={(e) => { e.stopPropagation(); goToNext() }}
                 className="absolute right-4 top-1/2 -translate-y-1/2 z-10 rounded-full bg-white/10 p-3 text-white backdrop-blur-md transition-colors hover:bg-white/20"
@@ -172,20 +182,9 @@ export function DetailImage({ src, alt, images }: DetailImageProps) {
                 </svg>
               </button>
 
-              {/* 底部圆点指示器（Lightbox 内） */}
-              <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
-                {imageList.map((_, idx) => (
-                  <button
-                    key={idx}
-                    onClick={(e) => { e.stopPropagation(); setCurrentIndex(idx) }}
-                    className={`h-2.5 w-2.5 rounded-full transition-all ${
-                      idx === currentIndex
-                        ? 'bg-white scale-125'
-                        : 'bg-white/50 hover:bg-white/75'
-                    }`}
-                    aria-label={`切换到第 ${idx + 1} 张图片`}
-                  />
-                ))}
+              {/* 图片计数 */}
+              <div className="absolute top-4 right-16 rounded-full bg-black/50 px-3 py-1 text-sm text-white backdrop-blur-sm">
+                {currentIndex + 1} / {imageList.length}
               </div>
             </>
           )}
@@ -200,12 +199,6 @@ export function DetailImage({ src, alt, images }: DetailImageProps) {
               alt={alt}
               className="max-h-[90vh] max-w-full object-contain shadow-2xl"
             />
-            {/* Lightbox 内图片计数 */}
-            {hasMultiple && (
-              <div className="absolute top-4 right-4 rounded-full bg-black/50 px-3 py-1 text-sm text-white backdrop-blur-sm">
-                {currentIndex + 1} / {imageList.length}
-              </div>
-            )}
           </div>
         </div>
       )}
