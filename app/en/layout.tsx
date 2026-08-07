@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import Header from '@/components/header';
+import Footer from '@/components/footer';
 
 export const metadata: Metadata = {
   title: {
@@ -9,12 +11,18 @@ export const metadata: Metadata = {
 };
 
 /**
- * English layout - no nested html/body tags
+ * English layout
  */
 export default function EnglishLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
-  return <>{children}</>
+  return (
+    <>
+      <Header />
+      <main className="flex-1 min-w-0 max-w-full shell">{children}</main>
+      <Footer />
+    </>
+  )
 }
