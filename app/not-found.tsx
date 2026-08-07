@@ -40,7 +40,7 @@ export default async function NotFound() {
               href={`/prompt/${prompt.slug}`}
               className="group overflow-hidden rounded-lg border border-gray-200 transition-all hover:border-green-500 hover:shadow-lg dark:border-gray-700 dark:hover:border-green-500"
             >
-              <div className="aspect-video overflow-hidden bg-gray-100 dark:bg-gray-800">
+              <div className="relative aspect-video overflow-hidden bg-gray-100 dark:bg-gray-800">
                 {prompt.cover ? (
                   <Image src={prompt.cover} alt={prompt.title} fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
