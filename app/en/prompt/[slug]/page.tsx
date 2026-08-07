@@ -1,10 +1,9 @@
-import { getAllPrompts, getPromptBySlug } from '@/lib/prompts'
+import { getPromptBySlug } from '@/lib/prompts'
 import { notFound } from 'next/navigation'
 import { CopyPromptButton } from '@/components/prompt/copy-prompt-button'
 import { LikeButton } from '@/components/prompt/like-button'
 import { FavoriteButton } from '@/components/prompt/favorite-button'
 import { ShareButton } from '@/components/prompt/share-button'
-import { PromptGrid } from '@/components/prompt/prompt-grid'
 import { DetailImage } from '@/components/prompt/detail-image'
 import { PromptTextBlock } from '@/components/prompt/prompt-text-block'
 import { PromptRecipeCard } from '@/components/prompt-recipe-card'
@@ -65,7 +64,7 @@ export async function generateMetadata({
 }
 
 /**
- * Prompt detail page - left image, right text layout
+ * Prompt detail page - simplified version without related prompts
  */
 export default async function PromptDetailPage({
   params,
@@ -142,24 +141,6 @@ export default async function PromptDetailPage({
     .eq('prompt_slug', slug)
 
   likeCount = count || 0
-
-  // Get related prompts
-  const allPrompts = getAllPrompts()
-  const currentTags = new Set(prompt.tags)
-  const related = allPrompts
-    .filter((p) => p.slug !== slug)
-    .map((p) => ({
-      ...p,
-      score: p.tags.filter((t) => currentTags.has(t)).length + (p.category === prompt.category ? 1 : 0),
-    }))
-    .filter((p) => p.score > 0)
-    .sort((a, b) => b.score - a.score)
-    .slice(0, 6)
-
-  // Previous/Next navigation
-  const currentIndex = allPrompts.findIndex((p) => p.slug === slug)
-  const prevPrompt = currentIndex > 0 ? allPrompts[currentIndex - 1] : null
-  const nextPrompt = currentIndex < allPrompts.length - 1 ? allPrompts[currentIndex + 1] : null
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-8">
@@ -340,52 +321,6 @@ export default async function PromptDetailPage({
           </div>
         </div>
       </div>
-
-      {/* Previous/Next navigation */}
-      {(prevPrompt || nextPrompt) && (
-        <div className="mt-12 flex items-center justify-between gap-4">
-          {prevPrompt ? (
-            <Link
-              href={`/en/prompt/${prevPrompt.slug}`}
-              className="group flex items-center gap-3 rounded-lg border border-gray-200 p-4 transition-all hover:border-green-500 hover:shadow-md dark:border-gray-700 dark:hover:border-green-500"
-            >
-              <svg className="h-5 w-5 text-gray-400 transition-transform group-hover:-translate-x-1 group-hover:text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-              </svg>
-              <div className="flex-1">
-                <div className="text-xs text-gray-500 dark:text-gray-400">Previous</div>
-                <div className="hidden md:block line-clamp-1 text-sm font-medium text-gray-900 dark:text-white">{prevPrompt.title}</div>
-              </div>
-            </Link>
-          ) : <div />}
-          {nextPrompt ? (
-            <Link
-              href={`/en/prompt/${nextPrompt.slug}`}
-              className="group flex items-center gap-3 rounded-lg border border-gray-200 p-4 text-right transition-all hover:border-green-500 hover:shadow-md dark:border-gray-700 dark:hover:border-green-500"
-            >
-              <div className="flex-1">
-                <div className="text-xs text-gray-500 dark:text-gray-400">Next</div>
-                <div className="hidden md:block line-clamp-1 text-sm font-medium text-gray-900 dark:text-white">{nextPrompt.title}</div>
-              </div>
-              <svg className="h-5 w-5 text-gray-400 transition-transform group-hover:translate-x-1 group-hover:text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </Link>
-          ) : <div />}
-        </div>
-      )}
-
-      {/* Related prompts */}
-      {related.length > 0 && (
-        <div className="mt-8">
-          <h2 className="font-serif text-xl font-bold text-gray-900 dark:text-white">
-            Related Prompts
-          </h2>
-          <div className="mt-4">
-            <PromptGrid prompts={related} maxRows={2} />
-          </div>
-        </div>
-      )}
 
       {/* Prompt share card */}
       <div className="mt-12" data-share-card>
