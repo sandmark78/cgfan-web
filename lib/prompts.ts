@@ -77,36 +77,18 @@ function dbRowToPromptData(row: any): PromptData {
  * 获取所有提示词
  */
 export async function getAllPrompts(): Promise<PromptData[]> {
-  // Supabase PostgREST 默认 max-rows 为 1000，需要分页获取全部数据
-  let allData: any[] = [];
-  let page = 0;
-  const pageSize = 1000;
-  let hasMore = true;
+  const { data, error } = await supabase
+    .from('prompts')
+    .select('*')
+    .order('added', { ascending: false })
+    .limit(2000)
 
-  while (hasMore) {
-    const { data, error } = await supabase
-      .from('prompts')
-      .select('*')
-      .order('added', { ascending: false })
-      .range(page * pageSize, (page + 1) * pageSize - 1)
-
-    if (error) {
-      console.error('获取所有提示词失败:', error)
-      return []
-    }
-
-    if (data.length === 0) {
-      hasMore = false
-    } else {
-      allData = allData.concat(data)
-      page++
-      if (data.length < pageSize) {
-        hasMore = false
-      }
-    }
+  if (error) {
+    console.error('获取所有提示词失败:', error)
+    return []
   }
 
-  return allData.map(dbRowToPromptData)
+  return data.map(dbRowToPromptData)
 }
 
 /**
@@ -130,32 +112,18 @@ export async function getPromptBySlug(slug: string): Promise<PromptData | null> 
  * 获取所有分类
  */
 export async function getAllCategories(): Promise<{ name: string; count: number }[]> {
-  let allData: any[] = [];
-  let page = 0;
-  const pageSize = 1000;
-  let hasMore = true;
+  const { data, error } = await supabase
+    .from('prompts')
+    .select('category')
+    .limit(2000)
 
-  while (hasMore) {
-    const { data, error } = await supabase
-      .from('prompts')
-      .select('category')
-      .range(page * pageSize, (page + 1) * pageSize - 1)
-
-    if (error) {
-      console.error('获取分类失败:', error)
-      return []
-    }
-    if (data.length === 0) {
-      hasMore = false
-    } else {
-      allData = allData.concat(data)
-      page++
-      if (data.length < pageSize) hasMore = false
-    }
+  if (error) {
+    console.error('获取分类失败:', error)
+    return []
   }
 
   const categoryMap = new Map<string, number>()
-  allData.forEach((row: any) => {
+  data.forEach((row: any) => {
     if (row.category) {
       categoryMap.set(row.category, (categoryMap.get(row.category) || 0) + 1)
     }
@@ -164,33 +132,22 @@ export async function getAllCategories(): Promise<{ name: string; count: number 
   return Array.from(categoryMap.entries()).map(([name, count]) => ({ name, count }))
 }
 
+/**
+ * 获取所有标签
+ */
 export async function getAllTags(): Promise<{ name: string; count: number }[]> {
-  let allData: any[] = [];
-  let page = 0;
-  const pageSize = 1000;
-  let hasMore = true;
+  const { data, error } = await supabase
+    .from('prompts')
+    .select('tags')
+    .limit(2000)
 
-  while (hasMore) {
-    const { data, error } = await supabase
-      .from('prompts')
-      .select('tags')
-      .range(page * pageSize, (page + 1) * pageSize - 1)
-
-    if (error) {
-      console.error('获取标签失败:', error)
-      return []
-    }
-    if (data.length === 0) {
-      hasMore = false
-    } else {
-      allData = allData.concat(data)
-      page++
-      if (data.length < pageSize) hasMore = false
-    }
+  if (error) {
+    console.error('获取标签失败:', error)
+    return []
   }
 
   const tagMap = new Map<string, number>()
-  allData.forEach((row: any) => {
+  data.forEach((row: any) => {
     if (row.tags && Array.isArray(row.tags)) {
       row.tags.forEach((tag: string) => {
         tagMap.set(tag, (tagMap.get(tag) || 0) + 1)
