@@ -227,20 +227,8 @@ export default async function PromptDetailPage({
                       </a>
                     );
                   }
-                  // username 是 'i'（匿名链接）或非 X 来源：显示 author 名，链接到推文
-                  if (prompt.sourceLink) {
-                    return (
-                      <a
-                        href={prompt.sourceLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="font-medium text-green-600 dark:text-green-400 hover:underline"
-                      >
-                        {prompt.author}
-                      </a>
-                    );
-                  }
-                  // Fallback：纯文本
+                  // username 是 'i'（匿名链接）或非 X 来源：不链接，只显示作者名
+                  // （"查看原文"按钮已处理跳转推文）
                   return (
                     <span className="font-medium text-gray-900 dark:text-white">{prompt.author}</span>
                   );
