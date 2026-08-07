@@ -361,11 +361,9 @@ async function main() {
         if (promptData) {
           // 添加文件修改时间用于排序
           (promptData as any).mtime = stat.mtimeMs;
-          // 如果 added 是纯日期（无时间分量），用 mtime 补全精确时间戳
+          // 如果 added 是纯日期（无时间分量），用固定正午时间补全，保留日期语义
           if (promptData.added && /^\d{4}-\d{2}-\d{2}$/.test(promptData.added)) {
-            const pad = (n: number) => String(n).padStart(2, '0');
-            const d = new Date(stat.mtime);
-            promptData.added = `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}T${pad(d.getHours())}:${pad(d.getMinutes())}:${pad(d.getSeconds())}.${String(d.getMilliseconds()).padStart(3,'0')}+08:00`;
+            promptData.added = `${promptData.added}T12:00:00.000+08:00`;
           }
           allPrompts.push(promptData);
         } else {
