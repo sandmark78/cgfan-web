@@ -226,6 +226,7 @@ def main():
             'model': model,
             'prompt': cleaned_prompt,
             'imgs': tweet.get('imgs', []),
+            'images': tweet.get('images', []),  # 本地图片路径（batch-fetch-tweets.py 写入）
             'source': f"https://x.com/i/status/{tweet_id}"
         })
         
