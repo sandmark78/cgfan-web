@@ -111,7 +111,7 @@ export function DetailImage({ src, alt, images }: DetailImageProps) {
         {hasMultiple && (
           <div 
             ref={thumbnailRef}
-            className="mt-3 flex gap-2 overflow-x-auto pb-2 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-transparent"
+            className="mt-3 flex gap-2 overflow-x-auto px-3 pt-3 pb-2 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-transparent"
             style={{ scrollbarWidth: 'thin' }}
           >
             {imageList.map((img, idx) => (
@@ -123,16 +123,16 @@ export function DetailImage({ src, alt, images }: DetailImageProps) {
                     ? 'ring-2 ring-green-500 ring-offset-2 dark:ring-offset-gray-900'
                     : 'opacity-60 hover:opacity-100'
                 }`}
-                style={{ width: '64px', height: '64px' }}
+                style={{ width: '72px', height: '72px' }}
                 aria-label={`切换到第 ${idx + 1} 张图片`}
               >
                 <Image
                   src={img}
                   alt={`${alt} - 图 ${idx + 1}`}
-                  width={64}
-                  height={64}
+                  width={72}
+                  height={72}
                   className="h-full w-full object-cover"
-                  sizes="64px"
+                  sizes="72px"
                 />
               </button>
             ))}
