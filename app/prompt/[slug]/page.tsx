@@ -25,7 +25,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>
 }): Promise<Metadata> {
   const { slug } = await params
-  const prompt = getPromptBySlug(slug)
+  const prompt = await getPromptBySlug(slug)
 
   if (!prompt) {
     return {
@@ -73,7 +73,7 @@ export default async function PromptDetailPage({
   params: Promise<{ slug: string }>
 }) {
   const { slug } = await params
-  const prompt = getPromptBySlug(slug)
+  const prompt = await getPromptBySlug(slug)
 
   if (!prompt) {
     notFound()
@@ -145,7 +145,7 @@ export default async function PromptDetailPage({
   likeCount = count || 0
 
   // 获取相似推荐（按标签相似度排序，包含所有来源）
-  const allPrompts = getAllPrompts()
+  const allPrompts = await getAllPrompts()
   const currentTags = new Set(prompt.tags)
   const related = allPrompts
     .filter((p) => p.slug !== slug)

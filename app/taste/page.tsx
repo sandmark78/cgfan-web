@@ -24,7 +24,7 @@ export default async function TastePage() {
       .eq('user_id', user.id)
 
     if (favs && favs.length > 0) {
-      const allPrompts = getAllPrompts()
+      const allPrompts = await getAllPrompts()
       const slugSet = new Set(favs.map(f => f.prompt_slug))
       serverFavorites = allPrompts
         .filter(p => slugSet.has(p.slug))

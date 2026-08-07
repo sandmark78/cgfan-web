@@ -10,7 +10,7 @@ export const runtime = 'edge'
  * 首页 - 绿色 + 奶白 + 毛玻璃风格
  */
 export default async function Home() {
-  const prompts = getAllPrompts()
+  const prompts = await getAllPrompts()
   
   // 从 Supabase 获取所有提示词的点赞数
   const supabase = await createClient()
@@ -33,7 +33,8 @@ export default async function Home() {
   }))
   
   // 获取热门标签（前20个，排除 AI绘图 和 提示词）
-  const popularTags = getAllTags()
+  const allTags = await getAllTags()
+  const popularTags = allTags
     .filter(tag => tag.name !== 'AI绘图' && tag.name !== '提示词')
     .slice(0, 20)
   

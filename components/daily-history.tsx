@@ -8,10 +8,18 @@ export const runtime = 'edge'
 /**
  * 每日一味历史卡片 - 显示过去8天的精选
  */
-export default function DailyHistory() {
+export default async function DailyHistory() {
   const allFeatures = getAllFeatures().slice(1, 10) // 跳过今天，取过去9天
 
   if (allFeatures.length === 0) return null
+
+  // 异步获取所有相关的 prompt
+  const featuresWithPrompts = await Promise.all(
+    allFeatures.map(async (feature) => ({
+      feature,
+      prompt: await getPromptBySlug(feature.slug)
+    }))
+  )
 
   return (
     <section className="mt-12">
@@ -25,8 +33,7 @@ export default function DailyHistory() {
       </div>
 
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {allFeatures
-          .map((feature) => ({ feature, prompt: getPromptBySlug(feature.slug) }))
+        {featuresWithPrompts
           .filter(({ prompt }) => prompt !== null)
           .slice(0, 9) // 最多显示9个
           .map(({ feature, prompt }, index) => {

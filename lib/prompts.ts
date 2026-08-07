@@ -1,4 +1,4 @@
-import promptsDataEncoded from './prompts-data'
+import { createClient } from '@supabase/supabase-js'
 
 /**
  * 提示词数据结构
@@ -41,34 +41,90 @@ export interface PromptData {
   }
 }
 
-// 解码 Base64 数据（防止直接抓取）
-const jsonString = typeof promptsDataEncoded === 'string' 
-  ? Buffer.from(promptsDataEncoded, 'base64').toString('utf-8')
-  : JSON.stringify(promptsDataEncoded)
-const staticPrompts = JSON.parse(jsonString) as unknown as PromptData[]
+// 初始化 Supabase 客户端
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://kxgmtmcspzetyxkhemsw.supabase.co'
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt4Z210bWNzcHpldHl4a2hlbXN3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQ2Mjg0MDEsImV4cCI6MjEwMDIwNDQwMX0.OhDCjNSnOt1HnwQ8zVtQsJ-gLl6_jpxoJ6V4CbhNP5c'
+
+const supabase = createClient(supabaseUrl, supabaseAnonKey)
+
+/**
+ * 将数据库记录转换为 PromptData 格式
+ */
+function dbRowToPromptData(row: any): PromptData {
+  return {
+    title: row.title,
+    slug: row.slug,
+    model: row.model || '',
+    category: row.category || '',
+    tags: row.tags || [],
+    difficulty: row.difficulty || 'intermediate',
+    cover: row.cover || '',
+    images: row.images || [row.cover],
+    date: row.date || '',
+    added: row.added || '',
+    source: row.source || '',
+    sourceLink: row.source_link || '',
+    author: row.author || '',
+    authorLink: row.author_link,
+    prompt: row.prompt || '',
+    negativePrompt: row.negative_prompt || '',
+    parameters: row.parameters || {},
+    promptDNA: row.prompt_dna
+  }
+}
 
 /**
  * 获取所有提示词
  */
-export function getAllPrompts(): PromptData[] {
-  return staticPrompts
+export async function getAllPrompts(): Promise<PromptData[]> {
+  const { data, error } = await supabase
+    .from('prompts')
+    .select('*')
+    .order('added', { ascending: false })
+
+  if (error) {
+    console.error('获取所有提示词失败:', error)
+    return []
+  }
+
+  return data.map(dbRowToPromptData)
 }
 
 /**
  * 根据 slug 获取单个提示词
  */
-export function getPromptBySlug(slug: string): PromptData | null {
-  return staticPrompts.find((p) => p.slug === slug) || null
+export async function getPromptBySlug(slug: string): Promise<PromptData | null> {
+  const { data, error } = await supabase
+    .from('prompts')
+    .select('*')
+    .eq('slug', slug)
+    .single()
+
+  if (error || !data) {
+    return null
+  }
+
+  return dbRowToPromptData(data)
 }
 
 /**
  * 获取所有分类
  */
-export function getAllCategories(): { name: string; count: number }[] {
-  const categoryMap = new Map<string, number>()
+export async function getAllCategories(): Promise<{ name: string; count: number }[]> {
+  const { data, error } = await supabase
+    .from('prompts')
+    .select('category')
 
-  staticPrompts.forEach((p) => {
-    categoryMap.set(p.category, (categoryMap.get(p.category) || 0) + 1)
+  if (error) {
+    console.error('获取分类失败:', error)
+    return []
+  }
+
+  const categoryMap = new Map<string, number>()
+  data.forEach((row: any) => {
+    if (row.category) {
+      categoryMap.set(row.category, (categoryMap.get(row.category) || 0) + 1)
+    }
   })
 
   return Array.from(categoryMap.entries()).map(([name, count]) => ({ name, count }))
@@ -77,13 +133,23 @@ export function getAllCategories(): { name: string; count: number }[] {
 /**
  * 获取所有标签
  */
-export function getAllTags(): { name: string; count: number }[] {
-  const tagMap = new Map<string, number>()
+export async function getAllTags(): Promise<{ name: string; count: number }[]> {
+  const { data, error } = await supabase
+    .from('prompts')
+    .select('tags')
 
-  staticPrompts.forEach((p) => {
-    p.tags.forEach((tag) => {
-      tagMap.set(tag, (tagMap.get(tag) || 0) + 1)
-    })
+  if (error) {
+    console.error('获取标签失败:', error)
+    return []
+  }
+
+  const tagMap = new Map<string, number>()
+  data.forEach((row: any) => {
+    if (row.tags && Array.isArray(row.tags)) {
+      row.tags.forEach((tag: string) => {
+        tagMap.set(tag, (tagMap.get(tag) || 0) + 1)
+      })
+    }
   })
 
   return Array.from(tagMap.entries())
@@ -94,13 +160,35 @@ export function getAllTags(): { name: string; count: number }[] {
 /**
  * 按分类筛选提示词
  */
-export function getPromptsByCategory(category: string): PromptData[] {
-  return staticPrompts.filter((p) => p.category === category)
+export async function getPromptsByCategory(category: string): Promise<PromptData[]> {
+  const { data, error } = await supabase
+    .from('prompts')
+    .select('*')
+    .eq('category', category)
+    .order('added', { ascending: false })
+
+  if (error) {
+    console.error('按分类筛选失败:', error)
+    return []
+  }
+
+  return data.map(dbRowToPromptData)
 }
 
 /**
  * 按标签筛选提示词
  */
-export function getPromptsByTag(tag: string): PromptData[] {
-  return staticPrompts.filter((p) => p.tags.includes(tag))
+export async function getPromptsByTag(tag: string): Promise<PromptData[]> {
+  const { data, error } = await supabase
+    .from('prompts')
+    .select('*')
+    .contains('tags', [tag])
+    .order('added', { ascending: false })
+
+  if (error) {
+    console.error('按标签筛选失败:', error)
+    return []
+  }
+
+  return data.map(dbRowToPromptData)
 }

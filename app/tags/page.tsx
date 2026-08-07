@@ -43,8 +43,8 @@ const TAG_DESCRIPTIONS: Record<string, string> = {
   'GPT-Image2': 'GPT Image 2 模型提示词',
 }
 
-export default function TagsPage() {
-  const tags = getAllTags()
+export default async function TagsPage() {
+  const tags = await getAllTags()
   
   // 按数量排序
   const sortedTags = [...tags].sort((a, b) => b.count - a.count)

@@ -14,7 +14,7 @@ export async function GET(request: NextRequest) {
   const model = searchParams.get('model')
   const difficulty = searchParams.get('difficulty')
 
-  let prompts = getAllPrompts()
+  let prompts = await getAllPrompts()
   prompts = [...prompts].sort((a, b) => {
     const addedA = (a as any).added || '';
     const addedB = (b as any).added || '';

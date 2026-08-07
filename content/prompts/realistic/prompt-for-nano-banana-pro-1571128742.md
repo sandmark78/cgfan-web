@@ -3,7 +3,6 @@ title: "戏剧光影：丰盈身姿与清纯面容"
 slug: prompt-for-nano-banana-pro-1571128742
 model: Midjourney
 category: photography
-tags: ["人像", "时尚", "插画", "摄影", "动物"]
 tags:
 - 摄影
 - AI绘画

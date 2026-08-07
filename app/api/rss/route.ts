@@ -7,7 +7,8 @@ export const runtime = 'edge'
  * GET /api/rss
  */
 export async function GET() {
-  const prompts = getAllPrompts().slice(0, 50) // 最新 50 条
+  const allPrompts = await getAllPrompts()
+  const prompts = allPrompts.slice(0, 50) // 最新 50 条
   const baseUrl = 'https://www.cgfan.com'
 
   const rss = `<?xml version="1.0" encoding="UTF-8"?>

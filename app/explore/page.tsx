@@ -75,11 +75,12 @@ export default async function ExplorePage({
   const { category, tag, q, model, difficulty, page } = params
   const currentPage = Math.max(1, parseInt(page || '1', 10))
 
-  const categories = getAllCategories()
-  const tags = getAllTags().filter(tag => tag.name !== 'AI绘图' && tag.name !== '提示词')
+  const categories = await getAllCategories()
+  const allTags = await getAllTags()
+  const tags = allTags.filter(tag => tag.name !== 'AI绘图' && tag.name !== '提示词')
 
   // 统计模型和难度分布
-  const allPrompts = getAllPrompts()
+  const allPrompts = await getAllPrompts()
   const modelCounts: Record<string, number> = {}
   const diffCounts: Record<string, number> = {}
   allPrompts.forEach(p => {
@@ -141,10 +142,10 @@ export default async function ExplorePage({
     prompts = searchResults.map(item => item.prompt)
     activeFilter = `"${q}"`
   } else if (category) {
-    prompts = getPromptsByCategory(category)
+    prompts = await getPromptsByCategory(category)
     activeFilter = getCategoryLabel(category)
   } else if (tag) {
-    prompts = getPromptsByTag(tag)
+    prompts = await getPromptsByTag(tag)
     activeFilter = `#${tag}`
   } else if (model) {
     prompts = prompts.filter(p => p.model.toLowerCase().includes(model.toLowerCase().split(' ')[0].toLowerCase()))

@@ -33,7 +33,7 @@ export default async function DashboardPage() {
   const likedSlugs = new Set(likes?.map((l) => l.prompt_slug) || [])
   const favoriteSlugs = new Set(favorites?.map((f) => f.prompt_slug) || [])
 
-  const allPrompts = getAllPrompts()
+  const allPrompts = await getAllPrompts()
   const likedPrompts = allPrompts.filter((p) => likedSlugs.has(p.slug))
   const favoritePrompts = allPrompts.filter((p) => favoriteSlugs.has(p.slug))
 

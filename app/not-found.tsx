@@ -5,9 +5,9 @@ import { getAllPrompts } from '@/lib/prompts'
 /**
  * 404 页面 - 提供搜索和热门推荐
  */
-export default function NotFound() {
+export default async function NotFound() {
   // 获取热门提示词（按点赞数排序）
-  const allPrompts = getAllPrompts()
+  const allPrompts = await getAllPrompts()
   const popularPrompts = allPrompts.slice(0, 4) // 取前4个作为推荐
 
   return (

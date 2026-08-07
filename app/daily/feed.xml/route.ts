@@ -8,8 +8,8 @@ export async function GET() {
   const features = getAllFeatures()
   const baseUrl = 'https://www.cgfan.com'
 
-  const items = features.map((f) => {
-    const prompt = getPromptBySlug(f.slug)
+  const items = await Promise.all(features.map(async (f) => {
+    const prompt = await getPromptBySlug(f.slug)
     const title = prompt?.title || f.slug
     const link = `${baseUrl}/prompt/${f.slug}`
     const date = new Date(f.date)
@@ -24,7 +24,7 @@ export async function GET() {
       <description><![CDATA[${description}]]></description>
       ${f.technique ? `<category>${f.technique}</category>` : ''}
     </item>`
-  }).join('\n')
+  })).then(results => results.join('\n'))
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">

@@ -1,7 +1,7 @@
 import { getAllPrompts } from '@/lib/prompts'
 
-export default function sitemap() {
-  const prompts = getAllPrompts()
+export default async function sitemap() {
+  const prompts = await getAllPrompts()
   const baseUrl = 'https://www.cgfan.com'
 
   return [

@@ -11,12 +11,12 @@ export const runtime = 'edge'
  * 每日一味 - 今日推荐
  * 图左文右横向紧凑卡，火漆印章左上角标，日期签右下对角
  */
-export default function DailyFeature() {
+export default async function DailyFeature() {
   const todayFeature = getTodayFeature()
 
   if (!todayFeature) return null
 
-  const prompt = getPromptBySlug(todayFeature.slug)
+  const prompt = await getPromptBySlug(todayFeature.slug)
   if (!prompt) return null
 
   const today = new Date()

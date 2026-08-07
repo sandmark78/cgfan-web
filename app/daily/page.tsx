@@ -10,7 +10,7 @@ export const metadata = {
   description: '每日一味精选，附策展笔记与实用技巧',
 }
 
-export default function DailyPage() {
+export default async function DailyPage() {
   const features = getAllFeatures()
 
   return (
@@ -38,8 +38,8 @@ export default function DailyPage() {
       </div>
 
       <div className="space-y-8">
-        {features.map((feature) => {
-          const prompt = getPromptBySlug(feature.slug)
+        {await Promise.all(features.map(async (feature) => {
+          const prompt = await getPromptBySlug(feature.slug)
           if (!prompt) return null
 
           const date = new Date(feature.date)
@@ -114,7 +114,7 @@ export default function DailyPage() {
               </div>
             </article>
           )
-        })}
+        }))}
       </div>
     </div>
   )
