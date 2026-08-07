@@ -327,7 +327,7 @@ function parseMarkdownFile(filePath: string): PromptData | null {
       cover: frontmatter.cover || '',
       images: Array.isArray(frontmatter.images) ? frontmatter.images : (frontmatter.cover ? [frontmatter.cover] : []),
       date: String(frontmatter.date || ''),
-      added: normalizeDate(frontmatter.added || frontmatter.date || ''), // 统一 YYYY-MM-DD 格式
+      added: normalizeDate(frontmatter.added || frontmatter.date || ''), // 保留原始时间戳或纯日期
       source: frontmatter.source || '',
       sourceLink: frontmatter.sourceLink || (frontmatter.source && frontmatter.source.startsWith('http') ? frontmatter.source : ''),
       author: frontmatter.author || 'Unknown',
@@ -361,6 +361,12 @@ async function main() {
         if (promptData) {
           // 添加文件修改时间用于排序
           (promptData as any).mtime = stat.mtimeMs;
+          // 如果 added 是纯日期（无时间分量），用 mtime 补全精确时间戳
+          if (promptData.added && /^\d{4}-\d{2}-\d{2}$/.test(promptData.added)) {
+            const pad = (n: number) => String(n).padStart(2, '0');
+            const d = new Date(stat.mtime);
+            promptData.added = `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}T${pad(d.getHours())}:${pad(d.getMinutes())}:${pad(d.getSeconds())}.${String(d.getMilliseconds()).padStart(3,'0')}+08:00`;
+          }
           allPrompts.push(promptData);
         } else {
           skippedCount++;

@@ -25,7 +25,6 @@ export async function GET(request: NextRequest) {
     .from('prompts')
     .select('*', { count: 'exact' })
     .order('added', { ascending: false })
-    .order('created_at', { ascending: false })
 
   // 应用筛选
   if (category) {
