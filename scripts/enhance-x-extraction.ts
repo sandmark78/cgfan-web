@@ -11,6 +11,7 @@
 
 import fs from 'fs';
 import path from 'path';
+import { getAllPrompts, upsertPrompts } from './supabase-utils';
 
 interface PromptData {
   title: string;
@@ -194,21 +195,9 @@ function extractTags(content: string, existingTags: string[]): string[] {
 /**
  * 主处理函数
  */
-function main() {
-  const promptsPath = path.join(process.cwd(), 'lib/prompts-data.ts');
-  
-  if (!fs.existsSync(promptsPath)) {
-    console.error('❌ 找不到 prompts-data.ts');
-    process.exit(1);
-  }
-  
-  const tsContent = fs.readFileSync(promptsPath, 'utf-8');
-  const base64Match = tsContent.match(/export default `([^`]+)`/);
-  if (!base64Match) {
-    console.error('❌ 无法解析 prompts-data.ts');
-    process.exit(1);
-  }
-  const promptsData: PromptData[] = JSON.parse(Buffer.from(base64Match[1], 'base64').toString('utf-8'));
+async function main() {
+  console.log('📊 从 Supabase 获取数据...');
+  const promptsData = await getAllPrompts();
   
   console.log(`📊 当前提示词: ${promptsData.length} 条`);
   console.log(`🎯 质量门槛: 提示词 ≥ ${QUALITY_GATES.MIN_PROMPT_LENGTH} 字符`);
@@ -216,7 +205,7 @@ function main() {
   
   let improvedCount = 0;
   let filteredCount = 0;
-  const filteredPrompts: PromptData[] = [];
+  const updatedPrompts: PromptData[] = [];
   
   for (const prompt of promptsData) {
     // 1. 改进提示词提取
@@ -253,11 +242,15 @@ function main() {
       continue;
     }
     
-    filteredPrompts.push(prompt);
+    updatedPrompts.push(prompt);
   }
   
-  // 保存结果
-  fs.writeFileSync(promptsPath, JSON.stringify(filteredPrompts, null, 2), 'utf-8');
+  // 保存结果到 Supabase
+  console.log('\n' + '='.repeat(60));
+  console.log('💾 准备更新到 Supabase...');
+  console.log('='.repeat(60));
+  
+  const updatedCount = await upsertPrompts(updatedPrompts);
   
   console.log('\n' + '='.repeat(60));
   console.log('✅ 优化完成！');
@@ -265,8 +258,8 @@ function main() {
   console.log(`📊 原始: ${promptsData.length} 条`);
   console.log(`📝 改进提示词: ${improvedCount} 条`);
   console.log(`❌ 过滤: ${filteredCount} 条`);
-  console.log(`✅ 保留: ${filteredPrompts.length} 条`);
+  console.log(`✅ 更新: ${updatedCount} 条`);
   console.log('='.repeat(60));
 }
 
-main();
+main().catch(console.error);

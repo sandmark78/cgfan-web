@@ -4,8 +4,7 @@
  * 通过推文链接匹配，提取完整的提示词
  */
 
-import fs from 'fs';
-import path from 'path';
+import { getAllPrompts, upsertPrompts } from './supabase-utils';
 
 interface SearchIndexItem {
   title: string;
@@ -133,21 +132,16 @@ async function main() {
   
   console.log(`📊 建立索引: ${tweetIndex.size} 条推文链接`);
   
-  // 读取 prompts-data.ts (Base64 编码)
-  const promptsPath = path.join(process.cwd(), 'lib/prompts-data.ts');
-  const tsContent = fs.readFileSync(promptsPath, 'utf-8');
-  const base64Match = tsContent.match(/export default `([^`]+)`/);
-  if (!base64Match) {
-    console.error('❌ 无法解析 prompts-data.ts');
-    process.exit(1);
-  }
-  const promptsData: PromptData[] = JSON.parse(Buffer.from(base64Match[1], 'base64').toString('utf-8'));
+  // 从 Supabase 获取提示词数据
+  console.log('📊 从 Supabase 获取数据...');
+  const promptsData = await getAllPrompts();
   
   console.log(`📝 当前提示词: ${promptsData.length} 条`);
   
   // 统计
   let updatedCount = 0;
   let matchedCount = 0;
+  const updatedPrompts: PromptData[] = [];
   
   // 补全不完整的提示词
   for (const prompt of promptsData) {
@@ -179,13 +173,18 @@ async function main() {
         prompt.tags = extractTagsFromContent(matchedItem.content, prompt.tags);
         
         updatedCount++;
+        updatedPrompts.push(prompt);
         console.log(`✅ 更新: ${prompt.slug} (${prompt.prompt.length} 字符)`);
       }
     }
   }
   
-  // 保存更新后的数据
-  fs.writeFileSync(promptsPath, JSON.stringify(promptsData, null, 2), 'utf-8');
+  // 保存更新后的数据到 Supabase
+  if (updatedPrompts.length > 0) {
+    console.log('\n💾 正在更新到 Supabase...');
+    const upsertedCount = await upsertPrompts(updatedPrompts);
+    console.log(`✅ 已更新 ${upsertedCount} 条到 Supabase`);
+  }
   
   console.log('\n' + '='.repeat(60));
   console.log('✅ 补全完成！');

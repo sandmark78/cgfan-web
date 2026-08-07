@@ -89,10 +89,13 @@ const promptsDir = path.join(process.cwd(), 'content/prompts')
 const prompts = traverseDir(promptsDir)
   .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 
-const outputPath = path.join(process.cwd(), 'lib/prompts-data.ts')
-const jsonString = JSON.stringify(prompts, null, 2)
-const encoded = Buffer.from(jsonString).toString('base64')
-const tsContent = `export default \`${encoded}\`;\n`
-fs.writeFileSync(outputPath, tsContent)
+async function main() {
+  // 同步到 Supabase
+  console.log('🔄 正在同步到 Supabase...');
+  const { upsertPrompts } = await import('./supabase-utils');
+  const upsertedCount = await upsertPrompts(prompts);
+  
+  console.log(`✅ 生成完成：${prompts.length} 条提示词已同步到 Supabase（成功 ${upsertedCount} 条）`);
+}
 
-console.log(`✅ Generated ${prompts.length} prompts to ${outputPath}`)
+main().catch(console.error);

@@ -342,9 +342,8 @@ function parseMarkdownFile(filePath: string): PromptData | null {
   }
 }
 
-function main() {
+async function main() {
   const contentDir = path.join(process.cwd(), 'content/prompts');
-  const outputFile = path.join(process.cwd(), 'lib/prompts-data.ts');
   
   const allPrompts: PromptData[] = [];
   let skippedCount = 0;
@@ -399,13 +398,12 @@ function main() {
     }
   });
   
-  // 写入 TypeScript 文件（Base64 编码，防止直接抓取）
-  const jsonString = JSON.stringify(allPrompts, null, 2);
-  const encoded = Buffer.from(jsonString).toString('base64');
-  const tsContent = `export default \`${encoded}\`;\n`;
-  fs.writeFileSync(outputFile.replace('.json', '.ts'), tsContent, 'utf-8');
-  fs.writeFileSync(outputFile.replace('.json', '.ts'), tsContent, 'utf-8');
-  fs.writeFileSync(outputFile.replace('.json', '.ts'), tsContent, 'utf-8');
+  // 同步到 Supabase
+  console.log('🔄 正在同步到 Supabase...');
+  const { upsertPrompts } = await import('./supabase-utils');
+  const upsertedCount = await upsertPrompts(allPrompts);
+  
+  console.log(`✅ 提取完成：${allPrompts.length} 条提示词已同步到 Supabase（成功 ${upsertedCount} 条）`);
   
   // 统计信息
   const modelStats: Record<string, number> = {};

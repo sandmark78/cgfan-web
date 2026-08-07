@@ -9,8 +9,7 @@
  * 4. 提示词是纯中文问候语 - 无实际内容
  */
 
-import fs from 'fs';
-import path from 'path';
+import { getAllPrompts, deletePrompts } from './supabase-utils'
 
 interface PromptData {
   slug: string;
@@ -42,19 +41,13 @@ function isLowQuality(prompt: string): { low: boolean; reason: string } {
   return { low: false, reason: '' };
 }
 
-function main() {
-  const promptsPath = path.join(process.cwd(), 'lib/prompts-data.ts');
-  const tsContent = fs.readFileSync(promptsPath, 'utf-8');
-  const base64Match = tsContent.match(/export default `([^`]+)`/);
-  if (!base64Match) {
-    console.error('❌ 无法解析 prompts-data.ts');
-    process.exit(1);
-  }
-  const data: PromptData[] = JSON.parse(Buffer.from(base64Match[1], 'base64').toString('utf-8'));
+async function main() {
+  console.log('📊 从 Supabase 获取数据...');
+  const data = await getAllPrompts();
   
   console.log(`📊 原始数据: ${data.length} 条`);
   
-  const highQuality: PromptData[] = [];
+  const lowQualitySlugs: string[] = [];
   let filteredCount = 0;
   
   for (const prompt of data) {
@@ -62,30 +55,26 @@ function main() {
     
     if (quality.low) {
       filteredCount++;
+      lowQualitySlugs.push(prompt.slug);
       console.log(`❌ 过滤: ${prompt.slug}`);
       console.log(`   原因: ${quality.reason}`);
       console.log(`   内容: ${prompt.prompt.slice(0, 80)}...`);
-    } else {
-      highQuality.push(prompt);
     }
   }
   
   console.log('\n' + '='.repeat(60));
-  console.log('✅ 清理完成！');
+  console.log('🗑️  准备删除低质量数据...');
   console.log('='.repeat(60));
   console.log(`📊 原始: ${data.length} 条`);
-  console.log(`❌ 过滤: ${filteredCount} 条`);
-  console.log(`✅ 保留: ${highQuality.length} 条`);
+  console.log(`❌ 待删除: ${filteredCount} 条`);
   console.log('='.repeat(60));
   
-  // 备份原文件
-  const backupPath = promptsPath + '.backup';
-  fs.copyFileSync(promptsPath, backupPath);
-  console.log(`\n💾 备份已保存: ${backupPath}`);
-  
-  // 写入新文件
-  fs.writeFileSync(promptsPath, JSON.stringify(highQuality, null, 2), 'utf-8');
-  console.log(`✅ 已更新: ${promptsPath}`);
+  if (filteredCount > 0) {
+    const deletedCount = await deletePrompts(lowQualitySlugs);
+    console.log(`\n✅ 已删除 ${deletedCount} 条低质量数据`);
+  } else {
+    console.log('\n✅ 没有需要删除的数据');
+  }
 }
 
-main();
+main().catch(console.error);
