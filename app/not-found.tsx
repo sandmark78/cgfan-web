@@ -1,56 +1,28 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { headers } from 'next/headers'
 import { getAllPrompts } from '@/lib/prompts'
 
 /**
- * 404 页面 - 根据 URL 路径自动切换中英文
+ * 404 页面 - 提供搜索和热门推荐
  */
 export default async function NotFound() {
-  // 从请求头获取路径（Cloudflare 自动设置 x-invoke-path）
-  const headersList = await headers()
-  const pathname = headersList.get('x-invoke-path') || ''
-  const isEnglish = pathname.startsWith('/en')
-
   // 获取热门提示词
   const allPrompts = await getAllPrompts()
   const popularPrompts = allPrompts.slice(0, 4)
 
-  const t = isEnglish ? {
-    title: 'Page Not Found',
-    desc: 'The page you are looking for does not exist or has been removed.',
-    searchPlaceholder: 'Search prompts...',
-    hotTitle: 'Popular Prompts',
-    backHome: 'Back to Home',
-    searchAction: '/en/explore',
-    homeHref: '/en',
-    promptPrefix: '/en/prompt/',
-  } : {
-    title: '页面不存在',
-    desc: '页面不存在或已被移除',
-    searchPlaceholder: '搜索提示词...',
-    hotTitle: '热门推荐',
-    backHome: '返回首页',
-    searchAction: '/explore',
-    homeHref: '/',
-    promptPrefix: '/prompt/',
-  }
-
   return (
     <div className="mx-auto max-w-4xl px-4 py-16">
-      {/* 404 标题 */}
       <div className="text-center">
         <h1 className="mb-4 text-6xl font-bold text-gray-900 dark:text-white">404</h1>
-        <p className="mb-8 text-lg text-gray-600 dark:text-gray-400">{t.desc}</p>
+        <p className="mb-8 text-lg text-gray-600 dark:text-gray-400">页面不存在或已被移除</p>
       </div>
 
-      {/* 搜索框 */}
       <div className="mx-auto mb-12 max-w-md">
-        <form action={t.searchAction} method="GET" className="relative">
+        <form action="/explore" method="GET" className="relative">
           <input
             type="text"
             name="q"
-            placeholder={t.searchPlaceholder}
+            placeholder="搜索提示词..."
             className="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 pl-12 text-gray-900 outline-none transition-all focus:border-green-500 focus:ring-2 focus:ring-green-500/20 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:focus:border-green-500"
           />
           <svg className="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -59,22 +31,18 @@ export default async function NotFound() {
         </form>
       </div>
 
-      {/* 热门推荐 */}
       <div>
-        <h2 className="mb-6 text-center text-xl font-semibold text-gray-900 dark:text-white">{t.hotTitle}</h2>
+        <h2 className="mb-6 text-center text-xl font-semibold text-gray-900 dark:text-white">热门推荐</h2>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {popularPrompts.map((prompt, index) => (
             <Link
               key={prompt.slug}
-              href={`${t.promptPrefix}${prompt.slug}`}
+              href={`/prompt/${prompt.slug}`}
               className="group overflow-hidden rounded-lg border border-gray-200 transition-all hover:border-green-500 hover:shadow-lg dark:border-gray-700 dark:hover:border-green-500"
             >
               <div className="aspect-video overflow-hidden bg-gray-100 dark:bg-gray-800">
                 {prompt.cover ? (
-                  <Image
-                    src={prompt.cover}
-                    alt={prompt.title}
-                    fill
+                  <Image src={prompt.cover} alt={prompt.title} fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     loading={index === 0 ? 'eager' : 'lazy'}
                     className="object-cover transition-transform group-hover:scale-105"
@@ -95,16 +63,12 @@ export default async function NotFound() {
         </div>
       </div>
 
-      {/* 返回按钮 */}
       <div className="mt-12 text-center">
-        <Link
-          href={t.homeHref}
-          className="inline-flex items-center gap-2 rounded-lg bg-green-500 px-6 py-3 font-medium text-white transition-colors hover:bg-green-600"
-        >
+        <Link href="/" className="inline-flex items-center gap-2 rounded-lg bg-green-500 px-6 py-3 font-medium text-white transition-colors hover:bg-green-600">
           <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
           </svg>
-          {t.backHome}
+          返回首页
         </Link>
       </div>
     </div>

@@ -8,10 +8,6 @@ import { NextResponse, type NextRequest } from 'next/server'
 export async function middleware(request: NextRequest) {
   let supabaseResponse = NextResponse.next({ request })
 
-  // 设置自定义 header，供 404 页面等判断当前路径语言
-  const pathname = request.nextUrl.pathname
-  supabaseResponse.headers.set('x-pathname', pathname)
-
   const supabase = createServerClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,

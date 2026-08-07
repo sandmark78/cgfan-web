@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import { createClient } from '@/lib/supabase/client'
 import type { User } from '@supabase/supabase-js'
-import { useRouter, usePathname } from 'next/navigation'
+import { useRouter } from 'next/navigation'
 import SubscribeModal from './subscribe-modal'
 
 /**
@@ -14,7 +14,6 @@ import SubscribeModal from './subscribe-modal'
 export default function Header() {
   const [isDark, setIsDark] = useState(false)
   const router = useRouter()
-  const pathname = usePathname()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [searchQuery, setSearchQuery] = useState('')
   const [user, setUser] = useState<User | null>(null)
@@ -145,21 +144,6 @@ export default function Header() {
                 <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
               </svg>
             )}
-          </button>
-
-          {/* 语言切换 */}
-          <button
-            onClick={() => {
-              const isEn = pathname.startsWith('/en')
-              const newPath = isEn ? pathname.replace(/^\/en/, '') || '/' : `/en${pathname}`
-              router.push(newPath)
-            }}
-            className="rounded-full p-1.5 sm:p-2 transition-colors hover:bg-gray-100 dark:hover:bg-gray-800"
-            aria-label="切换语言"
-          >
-            <span className="text-xs sm:text-sm font-medium text-gray-600 dark:text-gray-400">
-              {pathname.startsWith('/en') ? '中' : 'EN'}
-            </span>
           </button>
 
           {/* 订阅按钮 */}
