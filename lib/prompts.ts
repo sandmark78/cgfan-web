@@ -81,6 +81,7 @@ export async function getAllPrompts(): Promise<PromptData[]> {
     .from('prompts')
     .select('*')
     .order('added', { ascending: false })
+    .limit(2000)
 
   if (error) {
     console.error('获取所有提示词失败:', error)
@@ -114,6 +115,7 @@ export async function getAllCategories(): Promise<{ name: string; count: number 
   const { data, error } = await supabase
     .from('prompts')
     .select('category')
+    .limit(2000)
 
   if (error) {
     console.error('获取分类失败:', error)
@@ -137,6 +139,7 @@ export async function getAllTags(): Promise<{ name: string; count: number }[]> {
   const { data, error } = await supabase
     .from('prompts')
     .select('tags')
+    .limit(2000)
 
   if (error) {
     console.error('获取标签失败:', error)
