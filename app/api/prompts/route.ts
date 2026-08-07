@@ -1,8 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { getAllPrompts } from '@/lib/prompts'
+import { createClient } from '@supabase/supabase-js'
 
 export const runtime = 'edge'
-export const revalidate = 0  // 禁用缓存，每次请求都读取最新数据
+
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://kxgmtmcspzetyxkhemsw.supabase.co'
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt4Z210bWNzcHpldHl4a2hlbXN3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQ2Mjg0MDEsImV4cCI6MjEwMDIwNDQwMX0.OhDCjNSnOt1HnwQ8zVtQsJ-gLl6_jpxoJ6V4CbhNP5c'
+
+const supabase = createClient(supabaseUrl, supabaseAnonKey)
 
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams
@@ -14,47 +18,48 @@ export async function GET(request: NextRequest) {
   const model = searchParams.get('model')
   const difficulty = searchParams.get('difficulty')
 
-  let prompts = await getAllPrompts()
-  prompts = [...prompts].sort((a, b) => {
-    const addedA = (a as any).added || '';
-    const addedB = (b as any).added || '';
-    if (addedA && addedB) return addedB.localeCompare(addedA);
-    return 0;
-  })
+  // 构建查询
+  let query = supabase
+    .from('prompts')
+    .select('*', { count: 'exact' })
+    .order('added', { ascending: false })
 
-  if (q) {
-    const query = q.toLowerCase()
-    prompts = prompts.filter((p) =>
-      p.title.toLowerCase().includes(query) ||
-      p.prompt.toLowerCase().includes(query) ||
-      p.tags.some((t) => t.toLowerCase().includes(query)) ||
-      p.author.toLowerCase().includes(query) ||
-      p.model.toLowerCase().includes(query)
-    )
-  } else if (category) {
-    prompts = prompts.filter((p) => p.category === category)
-  } else if (tag) {
-    prompts = prompts.filter((p) => p.tags.includes(tag))
+  // 应用筛选
+  if (category) {
+    query = query.eq('category', category)
   }
-
+  if (tag) {
+    query = query.contains('tags', [tag])
+  }
   if (model) {
-    prompts = prompts.filter((p) => p.model.toLowerCase().includes(model.toLowerCase().split(' ')[0].toLowerCase()))
+    query = query.ilike('model', `%${model}%`)
   }
   if (difficulty) {
-    prompts = prompts.filter((p) => p.difficulty === difficulty)
+    query = query.eq('difficulty', difficulty)
+  }
+  if (q) {
+    query = query.or(`title.ilike.%${q}%,prompt.ilike.%${q}%,author.ilike.%${q}%`)
   }
 
-  const total = prompts.length
-  const totalPages = Math.ceil(total / pageSize)
-  const startIndex = (page - 1) * pageSize
-  const endIndex = Math.min(startIndex + pageSize, total)
-  const paginatedPrompts = prompts.slice(startIndex, endIndex)
+  // 分页
+  const from = (page - 1) * pageSize
+  const to = from + pageSize - 1
+  query = query.range(from, to)
+
+  const { data, error, count } = await query
+
+  if (error) {
+    console.error('查询失败:', error)
+    return NextResponse.json({ error: '查询失败' }, { status: 500 })
+  }
+
+  const totalPages = Math.ceil((count || 0) / pageSize)
 
   return NextResponse.json({
-    prompts: paginatedPrompts,
+    prompts: data || [],
     page,
     pageSize,
-    total,
+    total: count || 0,
     totalPages,
     hasMore: page < totalPages,
   }, {
