@@ -304,6 +304,7 @@ def main():
     
     # 同步到 Supabase
     try:
+        from scripts.supabase_utils import upsert_many
         synced = upsert_many(prompts)
         print(f"✅ Supabase 同步成功: {synced} 条")
     except Exception as e:
