@@ -268,17 +268,21 @@ def analyze_prompt(prompt_data: Dict) -> Dict:
 
 def main():
     """主函数：批量分析提示词"""
-    ts_file = Path('lib/prompts-data.ts')
-    content = ts_file.read_text()
-    
-    # 提取 base64 数据
-    match = re.search(r'export default `([^`]+)`', content)
-    if not match:
-        raise ValueError("无法解析 prompts-data.ts")
-    
-    encoded = match.group(1)
-    decoded = base64.b64decode(encoded).decode('utf-8')
-    prompts = json.loads(decoded)
+    # 从 Supabase 读取数据
+    try:
+        from scripts.supabase_utils import get_all_prompts, upsert_many
+        prompts = get_all_prompts()
+        print(f"📊 从 Supabase 读取到 {len(prompts)} 条提示词")
+    except Exception as e:
+        print(f"⚠️ Supabase 读取失败，降级到文件读取: {e}")
+        ts_file = Path('lib/prompts-data.ts')
+        content = ts_file.read_text()
+        match = re.search(r'export default `([^`]+)`', content)
+        if not match:
+            raise ValueError("无法解析 prompts-data.ts")
+        encoded = match.group(1)
+        decoded = base64.b64decode(encoded).decode('utf-8')
+        prompts = json.loads(decoded)
     
     print(f"📊 开始分析 {len(prompts)} 条提示词...")
     
@@ -291,11 +295,19 @@ def main():
         if dna_data:
             prompt['promptDNA'] = dna_data
     
-    # 写回文件
+    # 写回文件（兼容旧版）
     json_str = json.dumps(prompts, ensure_ascii=False, indent=2)
     encoded = base64.b64encode(json_str.encode('utf-8')).decode('utf-8')
     ts_content = f'export default `{encoded}`;\n'
+    ts_file = Path('lib/prompts-data.ts')
     ts_file.write_text(ts_content)
+    
+    # 同步到 Supabase
+    try:
+        synced = upsert_many(prompts)
+        print(f"✅ Supabase 同步成功: {synced} 条")
+    except Exception as e:
+        print(f"⚠️ Supabase 同步异常: {e}")
     
     print(f"✅ 完成！已为 {len(prompts)} 条提示词生成 DNA 数据")
 

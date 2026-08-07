@@ -10,27 +10,41 @@ import base64
 from pathlib import Path
 
 def decode_prompts():
-    """从prompts-data.ts读取数据"""
+    """从 Supabase 或 prompts-data.ts 读取数据"""
+    try:
+        from scripts.supabase_utils import get_all_prompts
+        prompts = get_all_prompts()
+        if prompts:
+            print(f"📖 从 Supabase 读取到 {len(prompts)} 条提示词")
+            return prompts
+    except Exception as e:
+        print(f"⚠️ Supabase 读取失败，降级到文件: {e}")
+    
     ts_file = Path('lib/prompts-data.ts')
     content = ts_file.read_text()
-    
-    # 提取base64字符串
     match = re.search(r'export default `([^`]+)`', content)
     if not match:
         raise ValueError("无法解析 prompts-data.ts")
-    
     encoded = match.group(1)
     decoded = base64.b64decode(encoded).decode('utf-8')
     return json.loads(decoded)
 
 def encode_prompts(prompts):
-    """写入prompts-data.ts"""
+    """写入文件并同步到 Supabase"""
     json_str = json.dumps(prompts, ensure_ascii=False, indent=2)
     encoded = base64.b64encode(json_str.encode('utf-8')).decode('utf-8')
     ts_content = f'export default `{encoded}`;\n'
-    
     ts_file = Path('lib/prompts-data.ts')
     ts_file.write_text(ts_content)
+    print(f"💾 写入 prompts-data.ts: {len(prompts)} 条")
+    
+    # 同步到 Supabase
+    try:
+        from scripts.supabase_utils import upsert_many
+        synced = upsert_many(prompts)
+        print(f"✅ Supabase 同步成功: {synced} 条")
+    except Exception as e:
+        print(f"⚠️ Supabase 同步异常: {e}")
 
 def detect_model_from_prompt(prompt_text):
     """从提示词文本识别模型"""

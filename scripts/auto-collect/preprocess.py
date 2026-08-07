@@ -161,6 +161,13 @@ def clean_format(prompt: str) -> str:
     return prompt.strip()
 
 def is_duplicate(tweet_id: str) -> bool:
+    """检查推文是否已收录（基于 slug）"""
+    try:
+        from scripts.supabase_utils import get_prompt_by_tweet_id
+        return get_prompt_by_tweet_id(tweet_id) is not None
+    except Exception:
+        pass
+    # 降级：检查 markdown 文件
     slug = f"prompt-{tweet_id}"
     prompts_dir = Path('content/prompts')
     for md_file in prompts_dir.rglob('*.md'):
@@ -169,11 +176,6 @@ def is_duplicate(tweet_id: str) -> bool:
         if f'slug: "{slug}"' in content or f"slug: '{slug}'" in content:
             return True
         if f'slug: {slug}' in content:
-            return True
-    data_file = Path('lib/prompts-data.ts')
-    if data_file.exists():
-        content = data_file.read_text()
-        if slug in content:
             return True
     return False
 

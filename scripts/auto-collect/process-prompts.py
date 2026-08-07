@@ -195,9 +195,13 @@ def clean_prompt(prompt):
 # ====== 去重检查（基于 slug，不是文件名） ======
 def is_duplicate(tweet_id):
     """检查 slug 是否已存在（文件名可能不同）"""
+    try:
+        from scripts.supabase_utils import get_prompt_by_tweet_id
+        return get_prompt_by_tweet_id(tweet_id) is not None
+    except Exception:
+        pass
+    # 降级：检查 markdown 文件
     slug = f"prompt-{tweet_id}"
-    
-    # 1. 检查所有 markdown 文件的 frontmatter
     prompts_dir = Path('content/prompts')
     for md_file in prompts_dir.rglob('*.md'):
         with open(md_file, 'r', encoding='utf-8') as f:
@@ -206,14 +210,6 @@ def is_duplicate(tweet_id):
             return True
         if f'slug: {slug}' in content:
             return True
-    
-    # 2. 检查 prompts-data.ts（Base64 编码，包含 slug）
-    data_file = Path('lib/prompts-data.ts')
-    if data_file.exists():
-        content = data_file.read_text()
-        if slug in content:
-            return True
-    
     return False
 
 # ====== 8维度评分 ======

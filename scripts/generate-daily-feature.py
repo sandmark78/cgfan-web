@@ -26,7 +26,16 @@ IMAGE_TASTE_FILE = os.path.join(WORKDIR, "docs/IMAGE_TASTE.md")
 
 
 def load_prompts():
-    """加载所有提示词数据（从 Base64 编码的 TypeScript 文件）"""
+    """加载所有提示词数据（优先从 Supabase 读取，降级到 Base64 文件）"""
+    try:
+        sys.path.insert(0, WORKDIR)
+        from scripts.supabase_utils import get_all_prompts
+        prompts = get_all_prompts()
+        if prompts:
+            return prompts
+    except Exception as e:
+        print(f"⚠️ Supabase 读取失败，降级到文件: {e}")
+    
     import base64
     with open(PROMPTS_DATA, "r", encoding="utf-8") as f:
         content = f.read()

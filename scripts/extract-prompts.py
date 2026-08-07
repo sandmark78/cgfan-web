@@ -302,7 +302,7 @@ def main():
     # 按上传时间排序（优先 added ISO 时间戳，无则 mtime）
     all_prompts.sort(key=lambda x: x.get('added', x.get('date', '')), reverse=False)
     
-    # 写入 TypeScript 文件（Base64 编码）
+    # 写入 TypeScript 文件（Base64 编码）- 兼容旧版
     import base64
     json_str = json.dumps(all_prompts, ensure_ascii=False, indent=2)
     encoded = base64.b64encode(json_str.encode('utf-8')).decode('utf-8')
@@ -310,6 +310,15 @@ def main():
     
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write(ts_content)
+    
+    # 同步到 Supabase
+    try:
+        print("\n🔄 同步到 Supabase...")
+        from scripts.supabase_utils import upsert_many
+        synced = upsert_many(all_prompts)
+        print(f"✅ Supabase 同步成功: {synced} 条")
+    except Exception as e:
+        print(f"⚠️ Supabase 同步异常: {e}")
     
     # 统计信息
     model_stats = {}

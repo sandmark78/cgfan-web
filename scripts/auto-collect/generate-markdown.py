@@ -181,21 +181,36 @@ def main():
         print("⚠️ 没有成功生成任何文件")
         return
     
-    # 更新 prompts-data.ts
-    print("\n🔄 更新 prompts-data.ts...")
+    # 同步到 Supabase
+    print("\n🔄 同步到 Supabase...")
     try:
-        result = subprocess.run(
-            ['python3', 'scripts/extract-prompts.py'],
-            capture_output=True,
-            text=True,
-            timeout=60
-        )
-        if result.returncode == 0:
-            print("✅ prompts-data.ts 更新成功")
-        else:
-            print(f"⚠️ prompts-data.ts 更新失败: {result.stderr[:200]}")
+        from scripts.supabase_utils import upsert_many
+        
+        # 从处理结果构建数据行
+        supabase_rows = []
+        for result in results:
+            row = {
+                'title': result.get('title', ''),
+                'slug': f"prompt-{result['tweet_id']}",
+                'model': result.get('model', ''),
+                'category': result.get('category', 'uncategorized'),
+                'tags': result.get('tags', []),
+                'difficulty': 'intermediate',
+                'cover': f"/images/prompts/prompt-{result['tweet_id']}.jpg",
+                'images': [f"/images/prompts/prompt-{result['tweet_id']}.jpg"],
+                'date': result.get('date', ''),
+                'added': datetime.now().strftime('%Y-%m-%d'),
+                'source': f"https://x.com/i/status/{result['tweet_id']}",
+                'source_link': f"https://x.com/i/status/{result['tweet_id']}",
+                'author': result.get('author', ''),
+                'prompt': result.get('prompt', ''),
+            }
+            supabase_rows.append(row)
+        
+        synced = upsert_many(supabase_rows)
+        print(f"✅ Supabase 同步成功: {synced} 条")
     except Exception as e:
-        print(f"⚠️ prompts-data.ts 更新异常: {e}")
+        print(f"⚠️ Supabase 同步异常: {e}")
     
     # 提交并推送
     print("\n🚀 提交并推送...")
