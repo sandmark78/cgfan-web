@@ -384,6 +384,7 @@ def score_prompt(prompt, tweet):
 # ===== PROCESS EACH TWEET =====
 results = []
 today = datetime.now().strftime("%Y-%m-%d")
+added_ts = datetime.now().strftime('%Y-%m-%dT%H:%M:%S.') + str(datetime.now().microsecond).zfill(6)[:3] + '+08:00'
 
 for i, tweet in enumerate(filtered_tweets, 1):
     tweet_id = tweet.get("id")
@@ -480,7 +481,7 @@ category: "{category}"
 model: "{model}"
 author: "{author}"
 date: "{date}"
-added: "{today}"
+added: "{added_ts}"
 source: "https://x.com/i/status/{tweet_id}"
 cover: "/images/prompts/{slug}.jpg"
 ---

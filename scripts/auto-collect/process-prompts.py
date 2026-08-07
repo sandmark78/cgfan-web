@@ -716,7 +716,7 @@ def create_markdown(tweet, prompt, title, model, scores, total_score, category):
 title: "{title}"
 slug: "prompt-{tweet_id}"
 date: {date}
-added: {datetime.now().strftime('%Y-%m-%d')}
+added: {datetime.now().strftime('%Y-%m-%dT%H:%M:%S.') + str(datetime.now().microsecond).zfill(6)[:3] + '+08:00'}
 author: "{author}"
 category: "{category}"
 tags: {json.dumps(tags, ensure_ascii=False)}

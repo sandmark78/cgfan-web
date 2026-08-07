@@ -86,11 +86,12 @@ def generate_markdown(result: Dict) -> bool:
     
     # 生成frontmatter
     today = datetime.now().strftime('%Y-%m-%d')
+    added_ts = datetime.now().strftime('%Y-%m-%dT%H:%M:%S.') + str(datetime.now().microsecond).zfill(6)[:3] + '+08:00'
     frontmatter = f"""---
 title: "{title}"
 slug: "prompt-{tweet_id}"
 date: {date}
-added: "{today}"
+added: "{added_ts}"
 author: "{author}"
 category: "{category}"
 tags: {json.dumps(tags, ensure_ascii=False)}
@@ -199,7 +200,7 @@ def main():
                 'cover': f"/images/prompts/prompt-{result['tweet_id']}.jpg",
                 'images': [f"/images/prompts/prompt-{result['tweet_id']}.jpg"],
                 'date': result.get('date', ''),
-                'added': datetime.now().strftime('%Y-%m-%d'),
+                'added': datetime.now().strftime('%Y-%m-%dT%H:%M:%S.') + str(datetime.now().microsecond).zfill(6)[:3] + '+08:00',
                 'source': f"https://x.com/i/status/{result['tweet_id']}",
                 'source_link': f"https://x.com/i/status/{result['tweet_id']}",
                 'author': result.get('author', ''),

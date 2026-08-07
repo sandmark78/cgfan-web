@@ -258,6 +258,7 @@ def score_prompt(prompt):
 
 # Process high-quality tweets that were skipped
 today = datetime.now().strftime("%Y-%m-%d")
+added_ts = datetime.now().strftime('%Y-%m-%dT%H:%M:%S.') + str(datetime.now().microsecond).zfill(6)[:3] + '+08:00'
 new_results = []
 
 for tweet in tweets:
@@ -329,7 +330,7 @@ category: "{category}"
 model: "{model}"
 author: "{author}"
 date: "{date}"
-added: "{today}"
+added: "{added_ts}"
 source: "https://x.com/i/status/{tweet_id}"
 cover: "/images/prompts/{slug}.jpg"
 ---
