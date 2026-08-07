@@ -40,6 +40,7 @@ interface InfiniteScrollGridProps {
 export function InfiniteScrollGrid({ initialPrompts, initialPage, initialHasMore, filters }: InfiniteScrollGridProps) {
   const [prompts, setPrompts] = useState<PromptData[]>(initialPrompts)
   const [page, setPage] = useState(initialPage)
+  const [offset, setOffset] = useState(initialPrompts.length) // 当前页内已加载数量
   const [hasMore, setHasMore] = useState(initialHasMore)
   const [loading, setLoading] = useState(false)
   const loaderRef = useRef<HTMLDivElement>(null)
@@ -48,8 +49,11 @@ export function InfiniteScrollGrid({ initialPrompts, initialPage, initialHasMore
     if (loading || !hasMore) return
     setLoading(true)
 
-    const nextPage = page + 1
-    const params = new URLSearchParams({ page: String(nextPage), pageSize: '20' })
+    const params = new URLSearchParams({
+      page: String(page),
+      offset: String(offset),
+      limit: '20'
+    })
     Object.entries(filters).forEach(([key, value]) => {
       if (value) params.set(key, value)
     })
@@ -60,7 +64,7 @@ export function InfiniteScrollGrid({ initialPrompts, initialPage, initialHasMore
 
       if (data.prompts && data.prompts.length > 0) {
         setPrompts(prev => [...prev, ...data.prompts])
-        setPage(nextPage)
+        setOffset(data.offset)
         setHasMore(data.hasMore)
       } else {
         setHasMore(false)
@@ -71,7 +75,7 @@ export function InfiniteScrollGrid({ initialPrompts, initialPage, initialHasMore
     } finally {
       setLoading(false)
     }
-  }, [page, loading, hasMore, filters])
+  }, [page, offset, loading, hasMore, filters])
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -90,10 +94,11 @@ export function InfiniteScrollGrid({ initialPrompts, initialPage, initialHasMore
     return () => observer.disconnect()
   }, [loadMore, hasMore, loading])
 
-  // 当 filters 变化时重置
+  // 当 filters 或 page 变化时重置
   useEffect(() => {
     setPrompts(initialPrompts)
     setPage(initialPage)
+    setOffset(initialPrompts.length)
     setHasMore(initialHasMore)
   }, [initialPrompts, initialPage, initialHasMore])
 

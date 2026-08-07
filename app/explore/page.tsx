@@ -6,11 +6,13 @@ import type { Metadata } from 'next'
 import { RandomButton } from '@/components/random-button'
 import { FilterDrawer } from '@/components/filter-drawer'
 import { InfiniteScrollGrid } from '@/components/infinite-scroll-grid'
+import Pagination from '@/components/pagination'
 
 export const runtime = 'edge'
 
 const ALL_MODELS = ['GPT Image 2', 'Midjourney', 'Gemini', '通用 Prompt']
 const ALL_DIFFICULTIES = ['beginner', 'intermediate', 'advanced']
+const PAGE_SIZE = 100 // 每页 100 个
 
 function getModelIcon(model: string) {
   const m = model.toLowerCase()
@@ -32,10 +34,10 @@ function getDifficultyLabel(d: string) {
 export async function generateMetadata({
   searchParams,
 }: {
-  searchParams: Promise<{ category?: string; tag?: string; q?: string; model?: string; difficulty?: string }>
+  searchParams: Promise<{ category?: string; tag?: string; q?: string; model?: string; difficulty?: string; page?: string }>
 }): Promise<Metadata> {
   const params = await searchParams
-  const { category, tag, q, model, difficulty } = params
+  const { category, tag, q, model, difficulty, page } = params
   const baseUrl = 'https://www.cgfan.com'
 
   let title = '探索'
@@ -54,6 +56,7 @@ export async function generateMetadata({
   if (model) paramsStr.set('model', model)
   if (difficulty) paramsStr.set('difficulty', difficulty)
   if (q) paramsStr.set('q', q)
+  if (page) paramsStr.set('page', page)
   const query = paramsStr.toString()
   if (query) canonical += `?${query}`
 
@@ -66,10 +69,11 @@ const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'eyJhbGciOi
 export default async function ExplorePage({
   searchParams,
 }: {
-  searchParams: Promise<{ category?: string; tag?: string; q?: string; model?: string; difficulty?: string }>
+  searchParams: Promise<{ category?: string; tag?: string; q?: string; model?: string; difficulty?: string; page?: string }>
 }) {
   const params = await searchParams
-  const { category, tag, q, model, difficulty } = params
+  const { category, tag, q, model, difficulty, page } = params
+  const currentPage = Math.max(1, parseInt(page || '1', 10))
 
   const supabase = createClient(supabaseUrl, supabaseAnonKey)
 
@@ -115,12 +119,13 @@ export default async function ExplorePage({
     if (row.difficulty) diffCounts[row.difficulty] = (diffCounts[row.difficulty] || 0) + 1
   })
 
-  // 获取第一页数据（20条）
+  // 获取当前页的第一批数据（20条）
+  const pageStart = (currentPage - 1) * PAGE_SIZE
   let query = supabase
     .from('prompts')
     .select('*', { count: 'exact' })
     .order('added', { ascending: false })
-    .range(0, 19)
+    .range(pageStart, pageStart + 19)
 
   if (category) query = query.eq('category', category)
   if (tag) query = query.contains('tags', [tag])
@@ -129,8 +134,9 @@ export default async function ExplorePage({
   if (q) query = query.or(`title.ilike.%${q}%,prompt.ilike.%${q}%,author.ilike.%${q}%`)
 
   const { data: initialData, count } = await query
-  const totalPages = Math.ceil((count || 0) / 20)
-  const initialHasMore = totalPages > 1
+  const totalPages = Math.ceil((count || 0) / PAGE_SIZE)
+  const pageTotal = Math.min(PAGE_SIZE, (count || 0) - pageStart)
+  const initialHasMore = pageTotal > 20
 
   let activeFilter = ''
   if (q) activeFilter = `"${q}"`
@@ -142,6 +148,7 @@ export default async function ExplorePage({
   const buildUrl = (key: string, value: string | null) => {
     const p = new URLSearchParams()
     if (value) p.set(key, value)
+    if (currentPage > 1 && key !== 'page') p.set('page', String(currentPage))
     const s = p.toString()
     return `/explore${s ? `?${s}` : ''}`
   }
@@ -261,12 +268,22 @@ export default async function ExplorePage({
                 <Link href="/explore" className="btn-primary mt-8 inline-block">浏览全部</Link>
               </div>
             ) : (
-              <InfiniteScrollGrid
-                initialPrompts={initialData || []}
-                initialPage={1}
-                initialHasMore={initialHasMore}
-                filters={{ category, tag, q, model, difficulty }}
-              />
+              <>
+                <InfiniteScrollGrid
+                  initialPrompts={initialData || []}
+                  initialPage={currentPage}
+                  initialHasMore={initialHasMore}
+                  filters={{ category, tag, q, model, difficulty }}
+                />
+                {totalPages > 1 && (
+                  <Pagination
+                    current={currentPage}
+                    total={totalPages}
+                    basePath="/explore"
+                    params={{ category, tag, q, model, difficulty }}
+                  />
+                )}
+              </>
             )}
           </div>
         </div>
