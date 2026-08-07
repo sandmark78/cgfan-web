@@ -224,6 +224,7 @@ def main():
         preprocessed.append({
             'tweet_id': tweet_id,
             'author': tweet.get('author', 'Unknown'),
+            'authorLink': tweet.get('authorLink', ''),
             'date': tweet.get('date', ''),
             'model': model,
             'prompt': cleaned_prompt,

@@ -51,6 +51,7 @@ def generate_markdown(result: Dict) -> bool:
     prompt = result['prompt']
     model = result['model']
     author = result['author']
+    authorLink = result.get('authorLink', '')
     date = result['date']
     scores = result['scores']
     total_score = result['total_score']
@@ -93,6 +94,7 @@ slug: "prompt-{tweet_id}"
 date: {date}
 added: "{added_ts}"
 author: "{author}"
+authorLink: "{authorLink}"
 category: "{category}"
 tags: {json.dumps(tags, ensure_ascii=False)}
 model: "{model}"

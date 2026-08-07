@@ -93,9 +93,22 @@ for tid, tab in tabs.items():
         all_text = data.get('allText', '')
         lines = all_text.split('\n')
         
-        # 提取作者：[0]===ARTICLE 0=== [1]作者名 [2]@handle
-        if not data.get('author') and len(lines) >= 2:
-            data['author'] = lines[1].strip()
+        # 提取作者和 handle：allText 结构通常是
+        # [0]===ARTICLE 0=== [1]空 [2]作者名 [3]@handle
+        # 逐行扫描，找名字行和 @handle 行
+        if not data.get('author'):
+            for i, line in enumerate(lines):
+                if line.strip() and 'ARTICLE' not in line and not line.startswith('@'):
+                    # 这是作者名
+                    data['author'] = line.strip()
+                    # 检查下一行是否 handle
+                    if i + 1 < len(lines) and lines[i+1].strip().startswith('@'):
+                        data['handle'] = lines[i+1].strip().lstrip('@')
+                        data['authorLink'] = f"https://x.com/{data['handle']}"
+                    break
+            # 兜底：如果没找到名字，用原逻辑
+            if not data.get('author') and len(lines) >= 2:
+                data['author'] = lines[1].strip()
         
         # 提取日期：找包含 AM/PM 和年份的行
         if not data.get('date'):

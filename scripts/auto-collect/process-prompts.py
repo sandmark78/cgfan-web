@@ -672,6 +672,7 @@ def create_markdown(tweet, prompt, title, model, scores, total_score, category):
     """创建 markdown 文件，使用中文标题命名"""
     tweet_id = tweet['id']
     author = tweet.get('author', 'Unknown')
+    authorLink = tweet.get('authorLink', '')
     date = tweet.get('date', datetime.now().strftime('%Y-%m-%d'))
     
     # 生成标签（支持中英文关键词）
@@ -718,6 +719,7 @@ slug: "prompt-{tweet_id}"
 date: {date}
 added: {datetime.now().strftime('%Y-%m-%dT%H:%M:%S.') + str(datetime.now().microsecond).zfill(6)[:3] + '+08:00'}
 author: "{author}"
+authorLink: "{authorLink}"
 category: "{category}"
 tags: {json.dumps(tags, ensure_ascii=False)}
 model: "{model}"
