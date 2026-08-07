@@ -187,7 +187,7 @@ export default async function PromptDetailPage({
       <div className="detail-layout">
         {/* 左侧：示例图 */}
         <div className="relative overflow-hidden rounded-xl min-w-0">
-          <DetailImage src={prompt.cover} alt={prompt.title} />
+          <DetailImage src={prompt.cover} alt={prompt.title} images={prompt.images} />
         </div>
 
         {/* 右侧：提示词信息 */}

@@ -232,6 +232,7 @@ interface PromptData {
   tags: string[];
   difficulty: string;
   cover: string;
+  images: string[];
   date: string;
   added: string; // 上传日期，用于排序
   source: string;
@@ -324,6 +325,7 @@ function parseMarkdownFile(filePath: string): PromptData | null {
       tags: extractedTags,
       difficulty: detectedDifficulty,
       cover: frontmatter.cover || '',
+      images: Array.isArray(frontmatter.images) ? frontmatter.images : (frontmatter.cover ? [frontmatter.cover] : []),
       date: String(frontmatter.date || ''),
       added: normalizeDate(frontmatter.added || frontmatter.date || ''), // 统一 YYYY-MM-DD 格式
       source: frontmatter.source || '',

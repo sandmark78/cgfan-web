@@ -116,61 +116,71 @@ for tid, tab in tabs.items():
     else:
         print(f"  ❌ {tid}: 提取失败")
 
-# ====== Step 5: 并行下载图片 ======
+# ====== Step 5: 并行下载图片（支持多图） ======
 print("🖼️  并行下载图片...")
 
 def download_image(tid, data):
     imgs = data.get('imgs', [])
     if not imgs:
-        return tid, 0
-    img = imgs[0]
-    img_url = img['src'] if isinstance(img, dict) else img
-    clean_url = img_url.split('?')[0] + '?format=jpg&name=orig'
-    out_path = f"public/images/prompts/prompt-{tid}.jpg"
+        return tid, 0, []
     
-    # 重试 3 次下载
-    for attempt in range(3):
-        run(f'curl -s -L -H "User-Agent: Mozilla/5.0" -o "{out_path}" "{clean_url}"')
-        try:
-            size = os.path.getsize(out_path)
-            if size > 0:
-                break  # 下载成功
-        except:
-            pass
-        if attempt < 2:
-            print(f"  ⚠️  {tid}: 下载失败，重试 {attempt+2}/3...")
-            import time
-            time.sleep(2)
+    downloaded_images = []
+    
+    # 下载所有图片
+    for idx, img in enumerate(imgs):
+        img_url = img['src'] if isinstance(img, dict) else img
+        clean_url = img_url.split('?')[0] + '?format=jpg&name=orig'
+        
+        # 第一张命名为 prompt-{id}.jpg（作为 cover），后续命名为 prompt-{id}-2.jpg, prompt-{id}-3.jpg...
+        if idx == 0:
+            out_path = f"public/images/prompts/prompt-{tid}.jpg"
         else:
-            # 三次都失败，删空文件
+            out_path = f"public/images/prompts/prompt-{tid}-{idx+1}.jpg"
+        
+        # 重试 3 次下载
+        success = False
+        for attempt in range(3):
+            run(f'curl -s -L -H "User-Agent: Mozilla/5.0" -o "{out_path}" "{clean_url}"')
             try:
-                os.remove(out_path)
+                size = os.path.getsize(out_path)
+                if size > 0:
+                    downloaded_images.append(f"/images/prompts/prompt-{tid}.jpg" if idx == 0 else f"/images/prompts/prompt-{tid}-{idx+1}.jpg")
+                    success = True
+                    break  # 下载成功
             except:
                 pass
-            return tid, 0
+            if attempt < 2:
+                print(f"  ⚠️  {tid} 图片{idx+1}: 下载失败，重试 {attempt+2}/3...")
+                import time
+                time.sleep(2)
+            else:
+                # 三次都失败，删空文件
+                try:
+                    os.remove(out_path)
+                except:
+                    pass
+        
+        if not success:
+            print(f"  ⚠️  {tid} 图片{idx+1}: 下载失败")
     
     # Safari 兼容修复（失败不影响）
-    try:
-        run(f'sips -s format jpeg -s formatOptions best "{out_path}" --out "{out_path}" 2>/dev/null')
-    except:
-        pass
+    if downloaded_images:
+        try:
+            first_img = f"public/images/prompts/prompt-{tid}.jpg"
+            run(f'sips -s format jpeg -s formatOptions best "{first_img}" --out "{first_img}" 2>/dev/null')
+        except:
+            pass
     
-    # 最终验证
-    try:
-        size = os.path.getsize(out_path)
-        if size == 0:
-            os.remove(out_path)
-            return tid, 0
-        return tid, size
-    except:
-        return tid, 0
+    return tid, len(downloaded_images), downloaded_images
 
 with ThreadPoolExecutor(max_workers=5) as pool:
     futures = [pool.submit(download_image, tid, data) for tid, data in results.items()]
     for f in as_completed(futures):
-        tid, size = f.result()
-        if size > 0:
-            print(f"  ✅ {tid}: {size}B")
+        tid, count, img_paths = f.result()
+        if count > 0:
+            # 把图片路径列表加到 results 中
+            results[tid]['images'] = img_paths
+            print(f"  ✅ {tid}: {count}张图片")
         else:
             print(f"  ⚠️  {tid}: 无图片")
 

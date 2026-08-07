@@ -11,6 +11,7 @@ export interface PromptData {
   tags: string[]
   difficulty: 'beginner' | 'intermediate' | 'advanced'
   cover: string
+  images?: string[]  // 多图支持：所有图片路径（cover 是第一张）
   date: string
   added: string
   source: string
