@@ -64,10 +64,28 @@ export async function upsertPrompts(prompts: any[]): Promise<number> {
   const supabase = getSupabaseClient()
   let successCount = 0
 
+  // 字段映射：camelCase → snake_case
+  function mapFields(p: any): any {
+    const mapping: Record<string, string> = {
+      'sourceLink': 'source_link',
+      'authorLink': 'author_link',
+      'negativePrompt': 'negative_prompt',
+      'promptDNA': 'prompt_dna',
+    }
+    const result: any = {}
+    for (const [key, value] of Object.entries(p)) {
+      const mappedKey = mapping[key] || key
+      result[mappedKey] = value
+    }
+    // 删除不含法的字段（JavaScript 特有）
+    delete result.mtime
+    return result
+  }
+
   // 分批插入（每批 100 条）
   const batchSize = 100
   for (let i = 0; i < prompts.length; i += batchSize) {
-    const batch = prompts.slice(i, i + batchSize)
+    const batch = prompts.slice(i, i + batchSize).map(mapFields)
     
     const { data, error } = await supabase
       .from('prompts')
