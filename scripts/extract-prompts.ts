@@ -343,7 +343,7 @@ function parseMarkdownFile(filePath: string): PromptData | null {
 
     return {
       title: frontmatter.title || '',
-      slug: frontmatter.slug || '',
+      slug: frontmatter.slug || path.basename(filePath, '.md'), // fallback 用文件名
       model: detectedModel,
       category: frontmatter.category || 'uncategorized',
       tags: extractedTags,
