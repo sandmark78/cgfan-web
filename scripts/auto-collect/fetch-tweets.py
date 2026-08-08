@@ -129,18 +129,58 @@ def main():
         print("没有新推文需要处理")
         return
     
-    # 分批采集（每批8条，避免Camofox并发限制）
-    print(f"🔄 开始分批采集推文内容（每批8条）...")
-    all_data = []
-    try:
-        all_data = batch_fetch(all_tweet_ids, batch_size=8)
-    except Exception as e:
-        print(f"⚠️ 分批采集失败: {e}")
+    # 分批采集（每批4条，避免Camofox并发限制）
+    print(f"🔄 开始分批采集推文内容（每批4条）...")
     
-    # 保存合并结果
+    # 初始化结果文件
     output_path = Path("/tmp/tweets_batch.json")
-    with open(output_path, 'w', encoding='utf-8') as f:
-        json.dump(all_data, f, ensure_ascii=False, indent=2)
+    output_path.write_text("[]", encoding='utf-8')
+    
+    # 手动分批，确保超时也能保存已收集的数据
+    batch_size = 4
+    for i in range(0, len(all_tweet_ids), batch_size):
+        batch = all_tweet_ids[i:i+batch_size]
+        batch_num = i // batch_size + 1
+        total_batches = (len(all_tweet_ids) + batch_size - 1) // batch_size
+        
+        print(f"\n📦 批次 {batch_num}/{total_batches}: {len(batch)} 条推文")
+        
+        tweet_ids_str = ' '.join(batch)
+        try:
+            proc = subprocess.Popen(
+                f"python3 scripts/batch-fetch-tweets.py {tweet_ids_str}",
+                shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True
+            )
+            stdout, stderr = proc.communicate(timeout=90)
+        except subprocess.TimeoutExpired:
+            proc.kill()
+            proc.wait(timeout=5)
+            print(f"  ⏰ 本批次超时（90s），跳过", flush=True)
+            continue
+        
+        # 读取本批次结果
+        batch_path = Path("/tmp/tweets_batch.json")
+        if batch_path.exists():
+            try:
+                with open(batch_path, 'r') as f:
+                    batch_data = json.load(f)
+                # 追加到总结果
+                with open(output_path, 'r') as f:
+                    all_data = json.load(f)
+                all_data.extend(batch_data)
+                with open(output_path, 'w') as f:
+                    json.dump(all_data, f, ensure_ascii=False, indent=2)
+                print(f"  ✅ 本批次采集 {len(batch_data)}/{len(batch)} 条，累计 {len(all_data)} 条")
+            except (json.JSONDecodeError, IOError) as e:
+                print(f"  ⚠️ 本批次数据损坏: {e}")
+            # 删除临时文件，避免下一批覆盖
+            batch_path.unlink()
+        else:
+            print(f"  ❌ 本批次无数据")
+    
+    # 读取最终结果
+    with open(output_path, 'r') as f:
+        all_data = json.load(f)
     
     print(f"\n📊 总共采集 {len(all_data)}/{len(all_tweet_ids)} 条推文内容")
     print(f"💾 数据已保存到: {output_path}")

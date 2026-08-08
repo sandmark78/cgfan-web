@@ -3,6 +3,7 @@ title: '提示词 分享: 线稿艺术'
 slug: prompt-share-line-art-1551217833
 model: Midjourney
 category: minimalist
+tags: ["人像", "海报", "插画", "极简", "赛博朋克"]
 tags:
 - LineArt
 - AIArt
@@ -17,6 +18,7 @@ source: https://x.com/i/status/2012841665359483325
 sourceLink: https://x.com/i/status/2012841665359483325
 authorLink: https://x.com/azed_ai
 author: Amira Zairi (azed_ai)
+
 
 
 
