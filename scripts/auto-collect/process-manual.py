@@ -57,10 +57,14 @@ def identify_model(text):
     return "通用 Prompt"
 
 def is_duplicate(slug):
+    """Check if slug already exists (also check source URL for robustness)"""
     for md_file in CONTENT_DIR.rglob("*.md"):
         with open(md_file, 'r', encoding='utf-8') as f:
             content = f.read()
         if f'slug: "{slug}"' in content:
+            return True
+        # 兼容：也检查 source URL（防止不同 slug 格式导致重复）
+        if f'status/{slug}' in content and slug.isdigit():
             return True
     return False
 

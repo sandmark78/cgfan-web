@@ -192,23 +192,26 @@ def clean_prompt(prompt):
     
     return prompt.strip()
 
-# ====== 去重检查（基于 slug，不是文件名） ======
+# ====== 去重检查（基于 source URL，不是 slug） ======
 def is_duplicate(tweet_id):
-    """检查 slug 是否已存在（文件名可能不同）"""
+    """检查推文是否已收录（基于 source URL，不是 slug）"""
+    source_url = f"https://x.com/i/status/{tweet_id}"
     try:
         from scripts.supabase_utils import get_prompt_by_tweet_id
         return get_prompt_by_tweet_id(tweet_id) is not None
     except Exception:
         pass
-    # 降级：检查 markdown 文件
-    slug = f"prompt-{tweet_id}"
+    # 降级：检查 markdown 文件的 source 字段
     prompts_dir = Path('content/prompts')
     for md_file in prompts_dir.rglob('*.md'):
         with open(md_file, 'r', encoding='utf-8') as f:
             content = f.read()
-        if f'slug: "{slug}"' in content or f"slug: '{slug}'" in content:
+        # 检查 source 字段是否匹配（更可靠）
+        if source_url in content:
             return True
-        if f'slug: {slug}' in content:
+        # 兼容旧格式：检查 slug
+        slug = f"prompt-{tweet_id}"
+        if f'slug: "{slug}"' in content or f"slug: '{slug}'" in content or f'slug: {slug}' in content:
             return True
     return False
 
