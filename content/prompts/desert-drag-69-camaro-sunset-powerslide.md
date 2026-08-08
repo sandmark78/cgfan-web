@@ -1,5 +1,6 @@
 ---
 title: "沙漠漂移：69年科迈罗夕阳飞车尘烟"
+slug: "desert-drag-69-camaro-sunset-powerslide"
 cover: "/images/prompts/prompt-2085799454788243892.jpg"
 images:
   - "/images/prompts/prompt-2085799454788243892.jpg"

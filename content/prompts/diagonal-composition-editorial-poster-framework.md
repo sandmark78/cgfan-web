@@ -1,5 +1,6 @@
 ---
 title: "对角线阅读路径：排版即势能的海报框架"
+slug: "diagonal-composition-editorial-poster-framework"
 cover: "/images/prompts/prompt-2085739060274803168.jpg"
 images:
   - "/images/prompts/prompt-2085739060274803168.jpg"

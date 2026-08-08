@@ -1,5 +1,6 @@
 ---
 title: "旅行纪念邮票：北欧极简风目的地集邮"
+slug: "travel-stamp-collection-scandinavian-minimal"
 cover: "/images/prompts/prompt-2085585132443046210.jpg"
 images:
   - "/images/prompts/prompt-2085585132443046210.jpg"

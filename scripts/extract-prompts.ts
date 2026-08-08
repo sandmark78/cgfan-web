@@ -242,6 +242,17 @@ interface PromptData {
   prompt: string;
   negativePrompt: string;
   parameters: Record<string, string>;
+  rating?: {
+    composition: number;
+    color: number;
+    lighting: number;
+    detail: number;
+    creativity: number;
+    technical: number;
+    aesthetic: number;
+    curation: number;
+    total: number;
+  };
 }
 
 function parseMarkdownFile(filePath: string): PromptData | null {
@@ -317,6 +328,19 @@ function parseMarkdownFile(filePath: string): PromptData | null {
       }
     }
     
+    // 读取评分字段
+    const rating = frontmatter.rating ? {
+      composition: Number(frontmatter.rating.composition) || 0,
+      color: Number(frontmatter.rating.color) || 0,
+      lighting: Number(frontmatter.rating.lighting) || 0,
+      detail: Number(frontmatter.rating.detail) || 0,
+      creativity: Number(frontmatter.rating.creativity) || 0,
+      technical: Number(frontmatter.rating.technical) || 0,
+      aesthetic: Number(frontmatter.rating.aesthetic) || 0,
+      curation: Number(frontmatter.rating.curation) || 0,
+      total: Number(frontmatter.rating.total) || 0
+    } : undefined;
+
     return {
       title: frontmatter.title || '',
       slug: frontmatter.slug || '',
@@ -334,7 +358,8 @@ function parseMarkdownFile(filePath: string): PromptData | null {
       authorLink: frontmatter.authorLink || '',
       prompt: cleanedPrompt,
       negativePrompt: negativePrompt && negativePrompt !== '(none provided)' ? negativePrompt : '',
-      parameters
+      parameters,
+      rating
     };
   } catch (error) {
     console.error(`❌ 处理失败 ${path.basename(filePath)}:`, error);

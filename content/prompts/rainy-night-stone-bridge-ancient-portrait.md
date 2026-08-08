@@ -1,5 +1,6 @@
 ---
 title: "雨夜石桥：油纸伞下古风双人的偶遇抓拍"
+slug: "rainy-night-stone-bridge-ancient-portrait"
 cover: "/images/prompts/prompt-2085698421785051498.jpg"
 images:
   - "/images/prompts/prompt-2085698421785051498.jpg"

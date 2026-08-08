@@ -1,5 +1,6 @@
 ---
 title: "雪檐围炉：35mm胶片下的古风冬日暖光"
+slug: "snow-eaves-fireside-35mm-ancient-portrait"
 cover: "/images/prompts/prompt-2085672297466388948.jpg"
 images:
   - "/images/prompts/prompt-2085672297466388948.jpg"

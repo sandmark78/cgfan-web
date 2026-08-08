@@ -1,5 +1,6 @@
 ---
 title: "玉石天阶穿云海：五人背影登天门"
+slug: "jade-stairway-through-clouds-to-heaven-gate"
 cover: "/images/prompts/prompt-2085622879602053504.jpg"
 images:
   - "/images/prompts/prompt-2085622879602053504.jpg"

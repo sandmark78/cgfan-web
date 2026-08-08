@@ -1,5 +1,6 @@
 ---
 title: "大众点评商户通：餐饮品牌视觉系统全案"
+slug: "dianping-restaurant-visual-system"
 cover: "/images/prompts/prompt-2085746935386841503.jpg"
 images:
   - "/images/prompts/prompt-2085746935386841503.jpg"

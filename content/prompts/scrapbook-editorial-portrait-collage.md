@@ -1,5 +1,6 @@
 ---
 title: "职业拼贴手账：撕纸边缘的编辑人像海报"
+slug: "scrapbook-editorial-portrait-collage"
 cover: "/images/prompts/prompt-2085382596016452082.jpg"
 images:
   - "/images/prompts/prompt-2085382596016452082.jpg"

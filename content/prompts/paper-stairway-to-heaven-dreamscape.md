@@ -1,5 +1,6 @@
 ---
 title: "纸艺长阶登天：她回眸望向云海来路"
+slug: "paper-stairway-to-heaven-dreamscape"
 cover: "/images/prompts/prompt-2085664200551207064.jpg"
 images:
   - "/images/prompts/prompt-2085664200551207064.jpg"

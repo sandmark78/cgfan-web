@@ -1,5 +1,6 @@
 ---
 title: "疏影横斜：发光窗口与梅枝鸟影的禅意"
+slug: "zen-shadow-glowing-window-plum-branch-bird"
 cover: "/images/prompts/prompt-2085340852252225587.jpg"
 images:
   - "/images/prompts/prompt-2085340852252225587.jpg"

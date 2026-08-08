@@ -74,6 +74,8 @@ export async function upsertPrompts(prompts: any[]): Promise<number> {
     }
     const result: any = {}
     for (const [key, value] of Object.entries(p)) {
+      // 过滤掉 rating 字段（Supabase 表暂无此列）
+      if (key === 'rating') continue
       const mappedKey = mapping[key] || key
       result[mappedKey] = value
     }

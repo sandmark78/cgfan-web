@@ -1,5 +1,6 @@
 ---
 title: "摄影与手绘线条：70%照片30%排版的编辑海报"
+slug: "photo-typography-hand-drawn-editorial-poster"
 cover: "/images/prompts/prompt-2085718150906015782.jpg"
 images:
   - "/images/prompts/prompt-2085718150906015782.jpg"

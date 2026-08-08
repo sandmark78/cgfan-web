@@ -1,5 +1,6 @@
 ---
 title: "闺阁窗光：描眉递簪的古风双人私密瞬间"
+slug: "boudoir-window-light-ancient-dual-portrait"
 cover: "/images/prompts/prompt-2085707530412454056.jpg"
 images:
   - "/images/prompts/prompt-2085707530412454056.jpg"

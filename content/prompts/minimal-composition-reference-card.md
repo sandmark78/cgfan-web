@@ -1,5 +1,6 @@
 ---
 title: "极简构图参考卡：黑白灰版式研究"
+slug: "minimal-composition-reference-card"
 cover: "/images/prompts/prompt-2077001748665778403.jpg"
 images:
   - "/images/prompts/prompt-2077001748665778403.jpg"

@@ -1,5 +1,6 @@
 ---
 title: "水墨枝干与极简字体：东方排版实验"
+slug: "ink-branch-minimal-typography-oriental"
 cover: "/images/prompts/prompt-2062720334571450688.jpg"
 images:
   - "/images/prompts/prompt-2062720334571450688.jpg"
