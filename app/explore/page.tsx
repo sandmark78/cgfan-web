@@ -10,7 +10,7 @@ import Pagination from '@/components/pagination'
 
 export const runtime = 'edge'
 
-const ALL_MODELS = ['GPT Image 2', 'Midjourney', 'Gemini', '通用 Prompt']
+const ALL_MODELS = ['GPT-image2', 'Midjourney', 'Gemini', '通用 Prompt']
 const ALL_DIFFICULTIES = ['beginner', 'intermediate', 'advanced']
 const PAGE_SIZE = 100 // 每页 100 个
 
