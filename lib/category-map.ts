@@ -2,6 +2,7 @@
  * 分类名中英文映射
  */
 export const CATEGORY_MAP: Record<string, { label: string; icon: string }> = {
+  // 主要分类
   photography: { label: '摄影', icon: '📸' },
   photorealistic: { label: '超写实', icon: '🎯' },
   portrait: { label: '人像', icon: '👤' },
@@ -19,6 +20,11 @@ export const CATEGORY_MAP: Record<string, { label: string; icon: string }> = {
   retro: { label: '复古', icon: '📼' },
   minimalist: { label: '极简', icon: '⚪' },
   abstract: { label: '抽象', icon: '🎭' },
+  // 补充分类
+  'chinese-style': { label: '国风', icon: '🏮' },
+  fashion: { label: '时尚', icon: '👗' },
+  architecture: { label: '建筑', icon: '🏛️' },
+  design: { label: '设计', icon: '✏️' },
 }
 
 /**
