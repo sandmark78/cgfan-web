@@ -325,9 +325,7 @@ def main():
         print(f"✅ {today} 已有每日一味数据，跳过")
         return
 
-    # 计算今天和昨天的日期（北京时间）
-    # 脚本 8:00 跑时，06:00 的自动采集已完成，图片 added 时间戳是今天
-    today_str = now_beijing.strftime("%Y-%m-%d")
+    # 计算昨天的日期（北京时间）
     yesterday = now_beijing - timedelta(days=1)
     yesterday_str = yesterday.strftime("%Y-%m-%d")
 
@@ -339,14 +337,11 @@ def main():
     favorites = parse_favorite_images()
     print(f"📊 从品味画像中找到 {len(favorites)} 张'最喜欢'图片")
 
-    # === 选题逻辑（新图优先） ===
+    # === 选题逻辑（从最喜欢列表选） ===
     # 优先级：
-    # 1. 今天新上传（自动采集） + 用户最喜欢的
-    # 2. 今天新上传的最高分
-    # 3. 昨天新上传 + 用户最喜欢的（补漏）
-    # 4. 昨天新上传的最高分（补漏）
-    # 5. 过去的最喜欢的（未使用过）
-    # 6. 过去的最高分（未使用过）
+    # 1. 用户确认的"最喜欢"（未使用过）
+    # 2. 品味画像中的高分图（未使用过）
+    # 3. 最新收录的未使用 prompt（fallback）
 
     selected = None
     selection_reason = ""
@@ -355,53 +350,27 @@ def main():
     user_confirmed_titles = parse_user_confirmed_favorites()
     print(f"📊 用户确认最喜欢：{len(user_confirmed_titles)} 张")
 
-    # 今天新上传的图（自动采集 06:00 已完成）
-    today_prompts = [p for p in prompts if p.get("added", "").startswith(today_str)]
-    print(f"📊 今天（{today_str}）新上传：{len(today_prompts)} 张")
-
-    # 昨天新上传的图（补漏）
-    yesterday_prompts = [p for p in prompts if p.get("added", "").startswith(yesterday_str)]
-    print(f"📊 昨天（{yesterday_str}）新上传：{len(yesterday_prompts)} 张")
-
-    # 优先级 1: 今天新上传 + 用户最喜欢的
-    if today_prompts:
-        for yp in today_prompts:
-            if yp.get("title") in user_confirmed_titles:
-                slug = yp.get("slug")
-                if slug and slug not in existing_slugs:
-                    selected = yp
-                    selection_reason = f"今天新上传 + 用户最喜欢"
+    # 优先级 1: 用户确认的"最喜欢"（未使用过）
+    print(f"🔍 从用户最喜欢列表中查找...")
+    for fav in favorites:  # favorites 已按分数降序
+        if fav["title"] in user_confirmed_titles:
+            slug = find_slug_by_title(prompts, fav["title"])
+            if slug and slug not in existing_slugs:
+                selected = next((p for p in prompts if p.get("slug") == slug), None)
+                if selected:
+                    selection_reason = f"用户最喜欢（{fav['score']}/80）+ 未使用"
                     break
 
-    # 优先级 2: 今天新上传的最高分
-    if not selected and today_prompts:
-        today_sorted = sorted(today_prompts, key=lambda p: p.get("score", 0), reverse=True)
-        for yp in today_sorted:
-            slug = yp.get("slug")
+    # 优先级 2: 品味画像中的高分图（未使用过）
+    if not selected:
+        print(f"🔍 从高分列表中查找...")
+        for fav in favorites:
+            slug = find_slug_by_title(prompts, fav["title"])
             if slug and slug not in existing_slugs:
-                selected = yp
-                selection_reason = f"今天新上传最高分（{yp.get('score', 0)}/80）"
-                break
-
-    # 优先级 3: 昨天新上传 + 用户最喜欢的（补漏）
-    if not selected and yesterday_prompts:
-        for yp in yesterday_prompts:
-            if yp.get("title") in user_confirmed_titles:
-                slug = yp.get("slug")
-                if slug and slug not in existing_slugs:
-                    selected = yp
-                    selection_reason = f"昨天新上传 + 用户最喜欢（补漏）"
+                selected = next((p for p in prompts if p.get("slug") == slug), None)
+                if selected:
+                    selection_reason = f"高分图（{fav['score']}/80）+ 未使用"
                     break
-
-    # 优先级 4: 昨天新上传的最高分（补漏）
-    if not selected and yesterday_prompts:
-        yesterday_prompts.sort(key=lambda p: p.get("score", 0), reverse=True)
-        for yp in yesterday_prompts:
-            slug = yp.get("slug")
-            if slug and slug not in existing_slugs:
-                selected = yp
-                selection_reason = f"昨天新上传最高分（补漏）（{yp.get('score', 0)}/80）"
-                break
 
     # 优先级 3: 过去的最喜欢的（未使用过）
     if not selected:
