@@ -109,8 +109,11 @@ export default async function ExplorePage({
   const { data: modelData } = await supabase.from('prompts').select('model')
   const modelCounts: Record<string, number> = {}
   modelData?.forEach((row: any) => {
-    const m = ALL_MODELS.find(m => row.model?.toLowerCase().includes(m.toLowerCase().split(' ')[0].toLowerCase())) || row.model
-    if (m) modelCounts[m] = (modelCounts[m] || 0) + 1
+    const dbModel = row.model || ''
+    // 直接匹配，如果数据库值在 ALL_MODELS 中
+    if (ALL_MODELS.includes(dbModel)) {
+      modelCounts[dbModel] = (modelCounts[dbModel] || 0) + 1
+    }
   })
 
   const { data: diffData } = await supabase.from('prompts').select('difficulty')
