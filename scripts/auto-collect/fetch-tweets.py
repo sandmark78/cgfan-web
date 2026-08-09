@@ -129,15 +129,15 @@ def main():
         print("没有新推文需要处理")
         return
     
-    # 分批采集（每批4条，避免Camofox并发限制）
-    print(f"🔄 开始分批采集推文内容（每批4条）...")
+    # 分批采集（每批6条，Camofox最多10tab，留4个余量）
+    print(f"🔄 开始分批采集推文内容（每批6条）...")
     
-    # 初始化结果文件
-    output_path = Path("/tmp/tweets_batch.json")
+    # 初始化结果文件（最终输出）
+    output_path = Path("/tmp/tweets_batch_all.json")
     output_path.write_text("[]", encoding='utf-8')
     
     # 手动分批，确保超时也能保存已收集的数据
-    batch_size = 4
+    batch_size = 6
     for i in range(0, len(all_tweet_ids), batch_size):
         batch = all_tweet_ids[i:i+batch_size]
         batch_num = i // batch_size + 1
@@ -151,20 +151,20 @@ def main():
                 f"python3 scripts/batch-fetch-tweets.py {tweet_ids_str}",
                 shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True
             )
-            stdout, stderr = proc.communicate(timeout=90)
+            stdout, stderr = proc.communicate(timeout=150)
         except subprocess.TimeoutExpired:
             proc.kill()
             proc.wait(timeout=5)
-            print(f"  ⏰ 本批次超时（90s），跳过", flush=True)
+            print(f"  ⏰ 本批次超时（150s），跳过", flush=True)
             continue
         
-        # 读取本批次结果
+        # 读取本批次结果（batch-fetch-tweets.py 写到 /tmp/tweets_batch.json）
         batch_path = Path("/tmp/tweets_batch.json")
         if batch_path.exists():
             try:
                 with open(batch_path, 'r') as f:
                     batch_data = json.load(f)
-                # 追加到总结果
+                # 追加到总结果文件
                 with open(output_path, 'r') as f:
                     all_data = json.load(f)
                 all_data.extend(batch_data)
@@ -173,10 +173,15 @@ def main():
                 print(f"  ✅ 本批次采集 {len(batch_data)}/{len(batch)} 条，累计 {len(all_data)} 条")
             except (json.JSONDecodeError, IOError) as e:
                 print(f"  ⚠️ 本批次数据损坏: {e}")
-            # 删除临时文件，避免下一批覆盖
+            # 删除临时批次文件，避免下一批覆盖
             batch_path.unlink()
         else:
             print(f"  ❌ 本批次无数据")
+    
+    # 将最终结果复制到标准路径（供后续步骤使用）
+    import shutil
+    final_path = Path("/tmp/tweets_batch.json")
+    shutil.copy2(output_path, final_path)
     
     # 读取最终结果
     with open(output_path, 'r') as f:
