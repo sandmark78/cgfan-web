@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
+    unoptimized: true, // Cloudflare Pages 不支持 Next.js 图片优化端点
     formats: ['image/avif', 'image/webp'],
     // 优化：减少 deviceSizes，匹配实际显示尺寸
     deviceSizes: [640, 750, 828, 1080],
