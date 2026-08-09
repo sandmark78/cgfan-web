@@ -138,6 +138,16 @@ export default async function ExplorePage({
   const pageTotal = Math.min(PAGE_SIZE, (count || 0) - pageStart)
   const initialHasMore = pageTotal > 20
 
+  // 获取所有 slug（用于全库随机）
+  let slugsQuery = supabase.from('prompts').select('slug')
+  if (category) slugsQuery = slugsQuery.eq('category', category)
+  if (tag) slugsQuery = slugsQuery.contains('tags', [tag])
+  if (model) slugsQuery = slugsQuery.ilike('model', `%${model}%`)
+  if (difficulty) slugsQuery = slugsQuery.eq('difficulty', difficulty)
+  if (q) slugsQuery = slugsQuery.or(`title.ilike.%${q}%,prompt.ilike.%${q}%,author.ilike.%${q}%`)
+  const { data: allSlugsData } = await slugsQuery
+  const allSlugs = allSlugsData?.map(p => p.slug).filter(Boolean) || []
+
   let activeFilter = ''
   if (q) activeFilter = `"${q}"`
   else if (category) activeFilter = getCategoryLabel(category)
@@ -249,7 +259,7 @@ export default async function ExplorePage({
                   <>全部提示词 <span className="ml-2 text-sm font-normal text-zinc-500">({count || 0} 个提示词)</span></>
                 )}
               </h1>
-              <RandomButton slugs={initialData?.map(p => p.slug) || []} />
+              <RandomButton slugs={allSlugs} />
             </div>
 
             {(count || 0) === 0 ? (
