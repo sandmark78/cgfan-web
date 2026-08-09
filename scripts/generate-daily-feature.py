@@ -127,15 +127,16 @@ def parse_favorite_images():
     matches = re.findall(table_pattern, content[start:])
 
     favorites = []
-    for title, author, score in matches:
+    for idx, (title, author, score) in enumerate(matches):
         favorites.append({
             "title": title.strip(),
             "author": author.strip(),
             "score": float(score),
+            "index": idx,  # 原始编号，用于同分排序
         })
 
-    # 按分数降序排序
-    favorites.sort(key=lambda x: x["score"], reverse=True)
+    # 按分数降序排序；分数相同时，编号靠后的优先（最近加入的）
+    favorites.sort(key=lambda x: (x["score"], x["index"]), reverse=True)
     return favorites
 
 
