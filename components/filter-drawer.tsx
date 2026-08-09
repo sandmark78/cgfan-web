@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { X, Filter } from 'lucide-react'
+import { getCategoryLabel } from '@/lib/category-map'
 
 interface FilterDrawerProps {
   categories: Array<{ name: string; count: number }>
@@ -106,7 +107,7 @@ export function FilterDrawer({
                         : 'text-zinc-400 hover:bg-zinc-800/50 hover:text-zinc-300'
                     }`}
                   >
-                    <span>{cat.name}</span>
+                    <span>{getCategoryLabel(cat.name)}</span>
                     <span className="text-xs text-zinc-600">{cat.count}</span>
                   </Link>
                 </li>
