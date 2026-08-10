@@ -4,16 +4,15 @@ slug: gemnana-2458
 date: 2026-03-09
 added: 2026-07-27T12:54:17+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: product
+tags: 
 difficulty: advanced
 source: "X / Oogie"
 sourceLink: "https://x.com/oggii_0/status/2030986112878235810"
 authorLink: "https://x.com/oggii_0"
 cover: /images/prompts/gemnana-2458.jpg
 ---
+
 
 ## Prompt
 

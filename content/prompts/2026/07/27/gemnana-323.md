@@ -4,10 +4,8 @@ slug: gemnana-323
 date: 2025-11-06
 added: 2026-07-27T11:31:15+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: photography
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/323.html"
 sourceLink: "https://x.com/karatademada/status/1977343963745923372"
@@ -15,6 +13,7 @@ author: "@karatademada"
 authorLink: "https://x.com/karatademada"
 cover: /images/prompts/gemnana-323.jpg
 ---
+
 
 ## Prompt
 

@@ -4,10 +4,8 @@ slug: gemnana-661
 date: 2026-01-04
 added: 2026-07-27T11:31:33+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/661.html"
 sourceLink: "https://x.com/hoor_world06/status/2007722778032484576"
@@ -15,6 +13,7 @@ author: "X / Hoor"
 authorLink: "https://x.com/hoor_world06"
 cover: /images/prompts/gemnana-661.jpg
 ---
+
 
 ## Prompt
 

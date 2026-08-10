@@ -4,10 +4,8 @@ slug: gemnana-705
 date: 2026-01-06
 added: 2026-07-27T11:31:33+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: photography
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/705.html"
 sourceLink: "https://x.com/Taaruk_/status/2008379371405668478"
@@ -15,6 +13,7 @@ author: "X / Taaruk"
 authorLink: "https://x.com/Taaruk_"
 cover: /images/prompts/gemnana-705.jpg
 ---
+
 
 ## Prompt
 

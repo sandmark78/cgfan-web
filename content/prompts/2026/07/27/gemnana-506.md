@@ -4,10 +4,8 @@ slug: gemnana-506
 date: 2025-11-09
 added: 2026-07-27T11:31:27+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/506.html"
 sourceLink: "https://x.com/ShreyaYadav___/status/1987493848294232422"
@@ -15,6 +13,7 @@ author: "X / Shreya Yadav"
 authorLink: "https://x.com/ShreyaYadav___"
 cover: /images/prompts/gemnana-506.jpg
 ---
+
 
 ## Prompt
 

@@ -4,16 +4,15 @@ slug: gemnana-2365
 date: 2026-03-03
 added: 2026-07-27T12:54:17+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: anime
+tags: 
 difficulty: advanced
 source: "X / TechieSA"
 sourceLink: "https://x.com/TechieBySA/status/2028810677301788892"
 authorLink: "https://x.com/TechieBySA"
 cover: /images/prompts/gemnana-2365.jpg
 ---
+
 
 ## Prompt
 

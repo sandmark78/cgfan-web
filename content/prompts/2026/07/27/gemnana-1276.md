@@ -4,10 +4,8 @@ slug: gemnana-1276
 date: 2026-01-15
 added: 2026-07-27T11:31:46+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1276.html"
 sourceLink: "https://x.com/IqraSaifiii/status/2011589148990206432"
@@ -15,6 +13,7 @@ author: "X / Iqra Saifi"
 authorLink: "https://x.com/IqraSaifiii"
 cover: /images/prompts/gemnana-1276.jpg
 ---
+
 
 ## Prompt
 

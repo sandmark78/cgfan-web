@@ -4,10 +4,8 @@ slug: gemnana-730
 date: 2026-01-06
 added: 2026-07-27T11:31:33+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/730.html"
 sourceLink: "https://x.com/harboriis/status/2008484790287430022"
@@ -15,6 +13,7 @@ author: "X / Harboriis"
 authorLink: "https://x.com/harboriis"
 cover: /images/prompts/gemnana-730.jpg
 ---
+
 
 ## Prompt
 

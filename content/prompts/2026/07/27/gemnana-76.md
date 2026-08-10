@@ -4,10 +4,8 @@ slug: gemnana-76
 date: 2025-11-06
 added: 2026-07-27T11:31:11+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: anime
+tags: 
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/76.html"
 sourceLink: "https://x.com/CharaspowerAI/status/1923778050845528388"
@@ -15,6 +13,7 @@ author: "@CharaspowerAI"
 authorLink: "https://x.com/CharaspowerAI"
 cover: /images/prompts/gemnana-76.jpg
 ---
+
 
 ## Prompt
 

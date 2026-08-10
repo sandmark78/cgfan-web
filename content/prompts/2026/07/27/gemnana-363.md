@@ -4,10 +4,8 @@ slug: gemnana-363
 date: 2025-11-06
 added: 2026-07-27T11:31:16+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: fashion
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/363.html"
 sourceLink: "https://x.com/hellokaton/status/1980121876996465085"
@@ -15,6 +13,7 @@ author: "@hellokaton"
 authorLink: "https://x.com/hellokaton"
 cover: /images/prompts/gemnana-363.jpg
 ---
+
 
 ## Prompt
 

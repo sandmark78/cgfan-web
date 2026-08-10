@@ -4,16 +4,15 @@ slug: gemnana-1681
 date: 2026-01-25
 added: 2026-07-27T12:53:50+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: advanced
 source: "X / Heisenberg"
 sourceLink: "https://x.com/rovvmut_/status/2015286261171486982"
 authorLink: "https://x.com/rovvmut_"
 cover: /images/prompts/gemnana-1681.jpg
 ---
+
 
 ## Prompt
 

@@ -4,19 +4,15 @@ slug: gemnana-2993
 date: 2026-05-12
 added: 2026-07-27T12:54:24+08:00
 model: GPT-Image2
-category: editorial
-tags:
-  - 提示词
-  - AI绘图
-  - ChatGPT
-  - AI
-  - 图片
+category: portrait
+tags: 
 difficulty: intermediate
 source: "X / Cherry 2.O"
 sourceLink: "https://x.com/Mind_Boticni/status/2054019075156971735"
 authorLink: "https://x.com/Mind_Boticni"
 cover: /images/prompts/gemnana-2993.jpg
 ---
+
 
 ## Prompt
 

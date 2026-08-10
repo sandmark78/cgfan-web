@@ -4,10 +4,8 @@ slug: gemnana-377
 date: 2025-11-06
 added: 2026-07-27T11:31:22+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: fashion
+tags: 
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/377.html"
 sourceLink: "https://x.com/wanerfu/status/1983353100066009387"
@@ -15,6 +13,7 @@ author: "@wanerfu"
 authorLink: "https://x.com/wanerfu"
 cover: /images/prompts/gemnana-377.jpg
 ---
+
 
 ## Prompt
 

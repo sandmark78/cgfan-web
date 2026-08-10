@@ -4,10 +4,8 @@ slug: gemnana-1080
 date: 2026-01-12
 added: 2026-07-27T11:31:45+08:00
 model: Midjourney
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: chinese-style
+tags: 
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/1080.html"
 sourceLink: "https://x.com/tisch_eins/status/2010743591426023426"
@@ -15,6 +13,7 @@ author: "X / Tischeins"
 authorLink: "https://x.com/tisch_eins"
 cover: /images/prompts/gemnana-1080.jpg
 ---
+
 
 ## Prompt
 

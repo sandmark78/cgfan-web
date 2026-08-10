@@ -4,10 +4,8 @@ slug: gemnana-1188
 date: 2026-01-14
 added: 2026-07-27T11:31:45+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: photorealistic
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1188.html"
 sourceLink: "https://x.com/Sheldon056/status/2011274988700205370"
@@ -15,6 +13,7 @@ author: "X / Duet | AI"
 authorLink: "https://x.com/Sheldon056"
 cover: /images/prompts/gemnana-1188.jpg
 ---
+
 
 ## Prompt
 

@@ -4,16 +4,15 @@ slug: gemnana-2715
 date: 2026-03-29
 added: 2026-07-27T12:54:23+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: photography
+tags: 
 difficulty: intermediate
 source: "X / Karlos"
 sourceLink: "https://x.com/de_mon010/status/2038263197925253176"
 authorLink: "https://x.com/de_mon010"
 cover: /images/prompts/gemnana-2715.jpg
 ---
+
 
 ## Prompt
 

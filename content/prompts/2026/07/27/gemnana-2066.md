@@ -4,16 +4,15 @@ slug: gemnana-2066
 date: 2026-02-10
 added: 2026-07-27T12:54:10+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: photography
+tags: 
 difficulty: advanced
 source: "X / Maercih"
 sourceLink: "https://x.com/Maercihh/status/2021190087657353591"
 authorLink: "https://x.com/Maercihh"
 cover: /images/prompts/gemnana-2066.jpg
 ---
+
 
 ## Prompt
 

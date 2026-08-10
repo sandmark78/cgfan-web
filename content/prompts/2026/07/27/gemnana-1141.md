@@ -4,10 +4,8 @@ slug: gemnana-1141
 date: 2026-01-13
 added: 2026-07-27T11:31:45+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/1141.html"
 sourceLink: "https://x.com/SimplyAnnisa/status/2011081163109236916"
@@ -15,6 +13,7 @@ author: "X / Anissa"
 authorLink: "https://x.com/SimplyAnnisa"
 cover: /images/prompts/gemnana-1141.jpg
 ---
+
 
 ## Prompt
 

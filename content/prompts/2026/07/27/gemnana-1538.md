@@ -4,10 +4,8 @@ slug: gemnana-1538
 date: 2026-01-18
 added: 2026-07-27T11:31:51+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/1538.html"
 sourceLink: "https://x.com/harboriis/status/2012905632782069864"
@@ -15,6 +13,7 @@ author: "X / Harboriis"
 authorLink: "https://x.com/harboriis"
 cover: /images/prompts/gemnana-1538.jpg
 ---
+
 
 ## Prompt
 

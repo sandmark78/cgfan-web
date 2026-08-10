@@ -4,16 +4,15 @@ slug: gemnana-1828
 date: 2026-01-30
 added: 2026-07-27T12:54:05+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: advanced
 source: "X / Saman | AI"
 sourceLink: "https://x.com/Samann_ai/status/2017190762346078697"
 authorLink: "https://x.com/Samann_ai"
 cover: /images/prompts/gemnana-1828.jpg
 ---
+
 ## Prompt
 
 创建一幅超现实、摄影棚风格的人像，使用 [USER_PHOTO] 作为精确身份参考（相同面容、发型、皮肤纹理和年龄）。

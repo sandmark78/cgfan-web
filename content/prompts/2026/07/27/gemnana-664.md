@@ -4,10 +4,8 @@ slug: gemnana-664
 date: 2026-01-04
 added: 2026-07-27T11:31:33+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: chinese-style
+tags: 
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/664.html"
 sourceLink: "https://x.com/hoor_world06/status/2007808981847474311"
@@ -15,6 +13,7 @@ author: "X / Hoor"
 authorLink: "https://x.com/hoor_world06"
 cover: /images/prompts/gemnana-664.jpg
 ---
+
 
 ## Prompt
 

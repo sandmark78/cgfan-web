@@ -4,10 +4,8 @@ slug: gemnana-1486
 date: 2026-01-17
 added: 2026-07-27T11:31:51+08:00
 model: Midjourney
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: beginner
 source: "https://gemnana.com/zh/case/1486.html"
 sourceLink: "https://x.com/EmpressTrash/status/2012365526866288991"
@@ -15,6 +13,7 @@ author: "X / Empress Trash 🌈🖤"
 authorLink: "https://x.com/EmpressTrash"
 cover: /images/prompts/gemnana-1486.jpg
 ---
+
 
 ## Prompt
 

@@ -4,10 +4,8 @@ slug: gemnana-775
 date: 2026-01-07
 added: 2026-07-27T11:31:33+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/775.html"
 sourceLink: "https://x.com/tabu_8114/status/2008765230441246824"
@@ -15,6 +13,7 @@ author: "X / Minhaa"
 authorLink: "https://x.com/tabu_8114"
 cover: /images/prompts/gemnana-775.jpg
 ---
+
 
 ## Prompt
 

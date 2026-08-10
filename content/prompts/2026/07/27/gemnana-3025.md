@@ -4,19 +4,15 @@ slug: gemnana-3025
 date: 2026-07-08
 added: 2026-07-27T12:54:24+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - 提示词
-  - AI绘图
-  - 通用
-  - 古风
-  - 写实
+category: chinese-style
+tags: 
 difficulty: advanced
 source: "X / @hectornaranjo96"
 sourceLink: "https://x.com/hectornaranjo96/status/2074642693574054207"
 authorLink: "https://x.com/hectornaranjo96"
 cover: /images/prompts/gemnana-3025.jpg
 ---
+
 
 ## Prompt
 

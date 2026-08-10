@@ -4,10 +4,8 @@ slug: gemnana-398
 date: 2025-11-06
 added: 2026-07-27T11:31:27+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: anime
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/398.html"
 sourceLink: "https://x.com/ShreyaYadav___/status/1985908915427758305"
@@ -15,6 +13,7 @@ author: "@ShreyaYadav___"
 authorLink: "https://x.com/ShreyaYadav___"
 cover: /images/prompts/gemnana-398.jpg
 ---
+
 
 ## Prompt
 

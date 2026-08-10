@@ -4,16 +4,15 @@ slug: gemnana-1961
 date: 2026-02-04
 added: 2026-07-27T12:54:05+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: architecture
+tags: 
 difficulty: advanced
 source: "X / Gadgetify"
 sourceLink: "https://x.com/Gdgtify/status/2018906863266345105"
 authorLink: "https://x.com/Gdgtify"
 cover: /images/prompts/gemnana-1961.jpg
 ---
+
 
 ## Prompt
 

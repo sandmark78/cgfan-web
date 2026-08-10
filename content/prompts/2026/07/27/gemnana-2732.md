@@ -4,16 +4,15 @@ slug: gemnana-2732
 date: 2026-03-30
 added: 2026-07-27T12:54:23+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: intermediate
 source: "X / K"
 sourceLink: "https://x.com/ChillaiKalan__/status/2038644704590328273"
 authorLink: "https://x.com/ChillaiKalan__"
 cover: /images/prompts/gemnana-2732.jpg
 ---
+
 
 ## Prompt
 

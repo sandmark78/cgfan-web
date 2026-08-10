@@ -4,14 +4,15 @@ slug: 3x3-editorial-photo-grid
 author: Eesha
 date: 2026-07-24
 model: GPT Image 2
-category: editorial
-tags: [人像, 编辑, 摄影, 极简, 工作室]
+category: minimalist
+tags: ["人像", "编辑", "摄影", "极简", "工作室"]
 difficulty: intermediate
 cover: /images/prompts/2080571396745486426.jpg
 source: https://x.com/MissDelulu9/status/2080571396745486426
 sourceLink: https://x.com/MissDelulu9/status/2080571396745486426
 authorLink: https://x.com/MissDelulu9
 ---
+
 
 GPT Image 2 on ChatGPT
 

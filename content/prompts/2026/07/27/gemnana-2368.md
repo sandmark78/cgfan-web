@@ -4,16 +4,15 @@ slug: gemnana-2368
 date: 2026-03-03
 added: 2026-07-27T12:54:17+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: intermediate
 source: "X / simeon-sanai"
 sourceLink: "https://x.com/Naiknelofar788/status/2028853502358003808"
 authorLink: "https://x.com/Naiknelofar788"
 cover: /images/prompts/gemnana-2368.jpg
 ---
+
 
 ## Prompt
 

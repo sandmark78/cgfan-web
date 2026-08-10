@@ -4,10 +4,8 @@ slug: gemnana-779
 date: 2026-01-07
 added: 2026-07-27T11:31:33+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: fashion
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/779.html"
 sourceLink: "https://x.com/SimplyAnnisa/status/2008770349715030096"
@@ -15,6 +13,7 @@ author: "X / Anissa"
 authorLink: "https://x.com/SimplyAnnisa"
 cover: /images/prompts/gemnana-779.jpg
 ---
+
 
 ## Prompt
 

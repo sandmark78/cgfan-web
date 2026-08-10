@@ -4,16 +4,15 @@ slug: gemnana-2482
 date: 2026-03-10
 added: 2026-07-27T12:54:17+08:00
 model: Gemini
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: intermediate
 source: "X / Synthia"
 sourceLink: "https://x.com/AIwithSynthia/status/2031520039850094952"
 authorLink: "https://x.com/AIwithSynthia"
 cover: /images/prompts/gemnana-2482.jpg
 ---
+
 
 ## Prompt
 

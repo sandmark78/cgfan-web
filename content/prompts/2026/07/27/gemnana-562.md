@@ -4,10 +4,8 @@ slug: gemnana-562
 date: 2026-01-09
 added: 2026-07-27T11:31:27+08:00
 model: Gemini
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/562.html"
 sourceLink: "https://x.com/oggii_0/status/2009296521637085542"
@@ -15,6 +13,7 @@ author: "X / Oogie"
 authorLink: "https://x.com/oggii_0"
 cover: /images/prompts/gemnana-562.jpg
 ---
+
 
 ## Prompt
 

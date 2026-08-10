@@ -4,10 +4,8 @@ slug: gemnana-325
 date: 2025-11-06
 added: 2026-07-27T11:31:15+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/325.html"
 sourceLink: "https://x.com/saniaspeaks_/status/1976622473107194142"
@@ -15,6 +13,7 @@ author: "@saniaspeaks_"
 authorLink: "https://x.com/saniaspeaks_"
 cover: /images/prompts/gemnana-325.jpg
 ---
+
 
 ## Prompt
 

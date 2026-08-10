@@ -4,16 +4,15 @@ slug: gemnana-2376
 date: 2026-03-04
 added: 2026-07-27T12:54:17+08:00
 model: Midjourney
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: advanced
 source: "X / Harboriis"
 sourceLink: "https://x.com/harboriis/status/2029064691482542266"
 authorLink: "https://x.com/harboriis"
 cover: /images/prompts/gemnana-2376.jpg
 ---
+
 ## Prompt
 
 超写实、光泽杂志风格的人像，年轻男性模特，秃顶，表情严峻粗犷，面部质感清晰（毛孔、胡茬阴影、细微疤痕）。

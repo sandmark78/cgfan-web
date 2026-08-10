@@ -7,16 +7,8 @@ added: "2026-08-10T07:31:55.000+08:00"
 model: "通用 Prompt"
 source: "https://x.com/i/status/2086443630202417349"
 cover: "/images/prompts/prompt-2086443630202417349.jpg"
-images:
-  - "/images/prompts/prompt-2086443630202417349.jpg"
-  - "/images/prompts/prompt-2086443630202417349-2.jpg"
-  - "/images/prompts/prompt-2086443630202417349-3.jpg"
-tags:
-  - "东方美学"
-  - "花精灵"
-  - "竹林"
-  - "蝴蝶"
-  - "薄纱"
+images: 
+tags: 
 score: "65/80"
 composition: "8/10"
 color: "9/10"
@@ -26,7 +18,9 @@ creativity: "8/10"
 technical: "8/10"
 aesthetic: "8/10"
 curation: "8/10"
+category: chinese-style
 ---
+
 
 ## Prompt
 

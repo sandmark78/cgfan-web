@@ -4,16 +4,15 @@ slug: gemnana-251
 date: 2025-11-06
 added: 2026-07-27T19:38:12+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: intermediate
 source: "@TechieBySA"
 sourceLink: "https://x.com/TechieBySA/status/1954831239996694902"
 authorLink: "https://x.com/TechieBySA"
 cover: /images/prompts/gemnana-251.jpg
 ---
+
 
 ## Prompt
 

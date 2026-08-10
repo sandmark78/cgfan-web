@@ -4,10 +4,8 @@ slug: gemnana-1195
 date: 2026-01-14
 added: 2026-07-27T11:31:45+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/1195.html"
 sourceLink: "https://x.com/AIwithkhan/status/2011306880740835746"
@@ -15,6 +13,7 @@ author: "X / Smiling Khan"
 authorLink: "https://x.com/AIwithkhan"
 cover: /images/prompts/gemnana-1195.jpg
 ---
+
 
 ## Prompt
 

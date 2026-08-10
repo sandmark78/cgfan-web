@@ -4,10 +4,8 @@ slug: gemnana-678
 date: 2026-01-05
 added: 2026-07-27T11:31:33+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/678.html"
 sourceLink: "https://x.com/meng_dagg695/status/2008133265492988148"
@@ -15,6 +13,7 @@ author: "X / ShaHid WaNii"
 authorLink: "https://x.com/meng_dagg695"
 cover: /images/prompts/gemnana-678.jpg
 ---
+
 
 ## Prompt
 

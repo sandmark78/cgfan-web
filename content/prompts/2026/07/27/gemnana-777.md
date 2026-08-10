@@ -4,10 +4,8 @@ slug: gemnana-777
 date: 2026-01-07
 added: 2026-07-27T11:31:33+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/777.html"
 sourceLink: "https://x.com/rovvmut_/status/2008767364675104818"
@@ -15,6 +13,7 @@ author: "X / Heisenberg"
 authorLink: "https://x.com/rovvmut_"
 cover: /images/prompts/gemnana-777.jpg
 ---
+
 
 ## Prompt
 

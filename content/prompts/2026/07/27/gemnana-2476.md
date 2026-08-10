@@ -4,16 +4,15 @@ slug: gemnana-2476
 date: 2026-03-10
 added: 2026-07-27T12:54:17+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: photography
+tags: 
 difficulty: intermediate
 source: "X / Zar⭕on"
 sourceLink: "https://x.com/Xaroon_x/status/2031377580612542472"
 authorLink: "https://x.com/Xaroon_x"
 cover: /images/prompts/gemnana-2476.jpg
 ---
+
 
 ## Prompt
 

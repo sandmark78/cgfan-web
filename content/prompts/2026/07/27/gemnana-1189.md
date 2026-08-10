@@ -4,10 +4,8 @@ slug: gemnana-1189
 date: 2026-01-14
 added: 2026-07-27T11:31:45+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: fantasy
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1189.html"
 sourceLink: "https://x.com/Taaruk_/status/2011282431744336078"
@@ -15,6 +13,7 @@ author: "X / Taaruk"
 authorLink: "https://x.com/Taaruk_"
 cover: /images/prompts/gemnana-1189.jpg
 ---
+
 
 ## Prompt
 

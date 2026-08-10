@@ -4,10 +4,8 @@ slug: gemnana-292
 date: 2025-11-06
 added: 2026-07-27T11:31:15+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: product
+tags: 
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/292.html"
 sourceLink: "https://x.com/songguoxiansen/status/1964874809130783108"
@@ -15,6 +13,7 @@ author: "@songguoxiansen"
 authorLink: "https://x.com/songguoxiansen"
 cover: /images/prompts/gemnana-292.jpg
 ---
+
 
 ## Prompt
 

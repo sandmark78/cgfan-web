@@ -7,17 +7,8 @@ added: "2026-08-10T07:31:55.000+08:00"
 model: "通用 Prompt"
 source: "https://x.com/i/status/2086505300459454826"
 cover: "/images/prompts/prompt-2086505300459454826.jpg"
-images:
-  - "/images/prompts/prompt-2086505300459454826.jpg"
-  - "/images/prompts/prompt-2086505300459454826-2.jpg"
-  - "/images/prompts/prompt-2086505300459454826-3.jpg"
-  - "/images/prompts/prompt-2086505300459454826-4.jpg"
-tags:
-  - "古典油画"
-  - "奇幻"
-  - "维多利亚"
-  - "美人鱼"
-  - "肖像"
+images: 
+tags: 
 score: "67/80"
 composition: "8/10"
 color: "9/10"
@@ -27,7 +18,9 @@ creativity: "9/10"
 technical: "8/10"
 aesthetic: "8/10"
 curation: "8/10"
+category: portrait
 ---
+
 
 ## Prompt
 

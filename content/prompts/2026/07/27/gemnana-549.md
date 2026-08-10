@@ -4,10 +4,8 @@ slug: gemnana-549
 date: 2026-01-04
 added: 2026-07-27T11:31:27+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: photography
+tags: 
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/549.html"
 sourceLink: "https://x.com/sidona/status/2007733520303829291"
@@ -15,6 +13,7 @@ author: "X / Sidona"
 authorLink: "https://x.com/sidona"
 cover: /images/prompts/gemnana-549.jpg
 ---
+
 
 ## Prompt
 

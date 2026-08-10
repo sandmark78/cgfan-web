@@ -4,16 +4,15 @@ slug: gemnana-2878
 date: 2026-04-18
 added: 2026-07-27T12:54:24+08:00
 model: GPT-Image2
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: chinese-style
+tags: 
 difficulty: intermediate
 source: "X / liyue_ai"
 sourceLink: "https://x.com/liyue_ai/status/2045506567735558336"
 authorLink: "https://x.com/liyue_ai"
 cover: /images/prompts/gemnana-2878.jpg
 ---
+
 
 ## Prompt
 

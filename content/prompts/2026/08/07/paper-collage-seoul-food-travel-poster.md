@@ -4,22 +4,23 @@ date: 2026-08-06
 added: 2026-08-07
 author: "simeon-sanai"
 model: "Seedream"
-tags: [纸艺工艺, 旅行海报, 美食插画, 城市文化, 立体拼贴]
-category: editorial
+tags: ["纸艺工艺", "旅行海报", "美食插画", "城市文化", "立体拼贴"]
+category: poster
 source: https://x.com/i/status/2085340502895825092
 cover: /images/prompts/prompt-2085340502895825092.jpg
 slug: paper-collage-seoul-food-travel-poster
-rating:
-  composition: 9
-  color: 9
-  lighting: 8
-  detail: 9
-  creativity: 9
-  technical: 9
-  aesthetic: 9
-  curation: 9
-  total: 71
+rating: 
+composition: 9
+color: 9
+lighting: 8
+detail: 9
+creativity: 9
+technical: 9
+aesthetic: 9
+curation: 9
+total: 71
 ---
+
 
 ## 概要
 

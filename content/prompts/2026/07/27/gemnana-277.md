@@ -4,10 +4,8 @@ slug: gemnana-277
 date: 2025-11-06
 added: 2026-07-27T11:31:15+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: product
+tags: 
 difficulty: beginner
 source: "https://gemnana.com/zh/case/277.html"
 sourceLink: "https://x.com/egeberkina/status/1904954513145868505"
@@ -15,6 +13,7 @@ author: "@egeberkina"
 authorLink: "https://x.com/egeberkina"
 cover: /images/prompts/gemnana-277.jpg
 ---
+
 
 ## Prompt
 

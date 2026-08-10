@@ -4,10 +4,8 @@ slug: gemnana-535
 date: 2025-12-14
 added: 2026-07-27T11:31:27+08:00
 model: Gemini
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: photorealistic
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/535.html"
 sourceLink: "https://x.com/ShreyaYadav___/status/2000027682533421139"
@@ -15,6 +13,7 @@ author: "X / Shreya Yadav"
 authorLink: "https://x.com/ShreyaYadav___"
 cover: /images/prompts/gemnana-535.jpg
 ---
+
 
 ## Prompt
 

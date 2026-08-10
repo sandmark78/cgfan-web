@@ -4,16 +4,15 @@ slug: gemnana-1903
 date: 2026-02-02
 added: 2026-07-27T12:54:05+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: fashion
+tags: 
 difficulty: intermediate
 source: "X / K"
 sourceLink: "https://x.com/ChillaiKalan__/status/2018171062580920797"
 authorLink: "https://x.com/ChillaiKalan__"
 cover: /images/prompts/gemnana-1903.jpg
 ---
+
 
 ## Prompt
 

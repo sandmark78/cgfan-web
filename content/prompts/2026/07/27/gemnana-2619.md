@@ -4,16 +4,15 @@ slug: gemnana-2619
 date: 2026-03-20
 added: 2026-07-27T12:54:17+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: photography
+tags: 
 difficulty: intermediate
 source: "X / K"
 sourceLink: "https://x.com/ChillaiKalan__/status/2034783762769486109"
 authorLink: "https://x.com/ChillaiKalan__"
 cover: /images/prompts/gemnana-2619.jpg
 ---
+
 
 ## Prompt
 

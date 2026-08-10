@@ -4,16 +4,15 @@ slug: gemnana-2469
 date: 2026-03-10
 added: 2026-07-27T12:54:17+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: sci-fi
+tags: 
 difficulty: intermediate
 source: "X / Harboriis"
 sourceLink: "https://x.com/harboriis/status/2031256944900714553"
 authorLink: "https://x.com/harboriis"
 cover: /images/prompts/gemnana-2469.jpg
 ---
+
 
 ## Prompt
 

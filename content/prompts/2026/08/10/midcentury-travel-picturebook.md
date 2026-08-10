@@ -7,19 +7,8 @@ added: "2026-08-10T07:31:55.000+08:00"
 model: "GPT-Image2"
 source: "https://x.com/i/status/2086508308001865864"
 cover: "/images/prompts/prompt-2086508308001865864.jpg"
-images:
-  - "/images/prompts/prompt-2086508308001865864.jpg"
-  - "/images/prompts/prompt-2086508308001865864-2.jpg"
-  - "/images/prompts/prompt-2086508308001865864-3.jpg"
-  - "/images/prompts/prompt-2086508308001865864-4.jpg"
-  - "/images/prompts/prompt-2086508308001865864-5.jpg"
-  - "/images/prompts/prompt-2086508308001865864-6.jpg"
-tags:
-  - "复古旅行"
-  - "故事书插画"
-  - "手绘风"
-  - "城市记忆"
-  - "中世纪"
+images: 
+tags: 
 score: "68/80"
 composition: "9/10"
 color: "8/10"
@@ -29,7 +18,9 @@ creativity: "9/10"
 technical: "8/10"
 aesthetic: "9/10"
 curation: "8/10"
+category: illustration
 ---
+
 
 ## Prompt
 

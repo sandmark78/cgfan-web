@@ -4,10 +4,8 @@ slug: gemnana-641
 date: 2026-01-02
 added: 2026-07-27T11:31:33+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/641.html"
 sourceLink: "https://x.com/TechieBySA/status/2007052918491582639"
@@ -15,6 +13,7 @@ author: "X / TechieSA"
 authorLink: "https://x.com/TechieBySA"
 cover: /images/prompts/gemnana-641.jpg
 ---
+
 
 ## Prompt
 

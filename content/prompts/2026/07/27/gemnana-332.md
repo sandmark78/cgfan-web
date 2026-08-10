@@ -4,10 +4,8 @@ slug: gemnana-332
 date: 2025-11-06
 added: 2026-07-27T11:31:15+08:00
 model: Midjourney
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/332.html"
 sourceLink: "https://x.com/MANISH1027512/status/1978041705623343437"
@@ -15,6 +13,7 @@ author: "@MANISH1027512"
 authorLink: "https://x.com/MANISH1027512"
 cover: /images/prompts/gemnana-332.jpg
 ---
+
 
 ## Prompt
 

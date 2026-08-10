@@ -4,10 +4,8 @@ slug: gemnana-362
 date: 2025-11-06
 added: 2026-07-27T11:31:16+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: photography
+tags: 
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/362.html"
 sourceLink: "https://x.com/hellokaton/status/1980121865248297389"
@@ -15,6 +13,7 @@ author: "@hellokaton"
 authorLink: "https://x.com/hellokaton"
 cover: /images/prompts/gemnana-362.jpg
 ---
+
 
 ## Prompt
 

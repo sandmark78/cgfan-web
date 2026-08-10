@@ -2,7 +2,7 @@
 title: "Nano Banana Pro 探险计划"
 slug: prompt-studio-nano-banana-pro-1542834490
 model: Midjourney
-category: editorial
+category: illustration
 tags: ["人像", "插画", "动物", "珠宝", "编辑"]
 difficulty: intermediate
 cover: /images/prompts/prompt-studio-nano-banana-pro-1542834490.jpg
@@ -12,11 +12,8 @@ source: https://x.com/i/status/2011097657385619460
 sourceLink: https://x.com/i/status/2011097657385619460
 authorLink: https://x.com/AllaAisling
 author: Alexandra Aisling
-
-
-
-
 ---
+
 
 ## Prompt
 

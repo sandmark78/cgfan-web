@@ -4,16 +4,15 @@ slug: gemnana-1798
 date: 2026-01-28
 added: 2026-07-27T12:54:05+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: advanced
 source: "X / Aijaz"
 sourceLink: "https://x.com/iamsofiaijaz/status/2016479730980290977"
 authorLink: "https://x.com/iamsofiaijaz"
 cover: /images/prompts/gemnana-1798.jpg
 ---
+
 
 ## Prompt
 

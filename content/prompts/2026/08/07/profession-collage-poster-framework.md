@@ -4,22 +4,23 @@ date: 2026-08-06
 added: 2026-08-07
 author: "Larus Canus"
 model: "GPT-Image2"
-tags: [拼贴艺术, 编辑设计, 职业人物, 框架模板, 系列化创作]
-category: editorial
+tags: ["拼贴艺术", "编辑设计", "职业人物", "框架模板", "系列化创作"]
+category: poster
 source: https://x.com/i/status/2085382596016452082
 cover: /images/prompts/prompt-2085382596016452082.jpg
 slug: profession-collage-poster-framework
-rating:
-  composition: 8
-  color: 7
-  lighting: 7
-  detail: 8
-  creativity: 8
-  technical: 8
-  aesthetic: 8
-  curation: 9
-  total: 63
+rating: 
+composition: 8
+color: 7
+lighting: 7
+detail: 8
+creativity: 8
+technical: 8
+aesthetic: 8
+curation: 9
+total: 63
 ---
+
 
 ## 概要
 

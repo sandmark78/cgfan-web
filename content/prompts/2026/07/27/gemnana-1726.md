@@ -4,16 +4,15 @@ slug: gemnana-1726
 date: 2026-01-26
 added: 2026-07-27T12:53:59+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: fashion
+tags: 
 difficulty: intermediate
 source: "X / Amara"
 sourceLink: "https://x.com/sassyamara_/status/2015758548199002294"
 authorLink: "https://x.com/sassyamara_"
 cover: /images/prompts/gemnana-1726.jpg
 ---
+
 
 ## Prompt
 

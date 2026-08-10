@@ -4,16 +4,15 @@ slug: gemnana-2630
 date: 2026-03-21
 added: 2026-07-27T12:54:17+08:00
 model: Midjourney
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: fashion
+tags: 
 difficulty: advanced
 source: "X / Alice"
 sourceLink: "https://x.com/youngcatwoman/status/2035292835247751289"
 authorLink: "https://x.com/youngcatwoman"
 cover: /images/prompts/gemnana-2630.jpg
 ---
+
 ## Prompt
 
 {   "prompt": "四位 Blackpink 成员——Jisoo、Jennie、Rosé 和 Lisa——在宽阔的现代室内楼梯上合影的写实团体肖像。

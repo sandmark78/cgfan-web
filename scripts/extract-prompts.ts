@@ -18,6 +18,42 @@ const MODEL_PATTERNS: Record<string, RegExp[]> = {
   'GPT-image2': [/gpt[\s-]*image[\s-]*2/i, /gpt[\s-]*image2/i, /chatgpt/i, /gpt-4/i, /gpt4/i],
 };
 
+// 模型名称标准化映射（旧值 → 新值）
+const MODEL_NORMALIZE: Record<string, string> = {
+  'Common': '通用 Prompt',
+  'common': '通用 Prompt',
+  'GPT Image 2': 'GPT-image2',
+  'GPT-Image 2': 'GPT-image2',
+  'GPT-Image': 'GPT-image2',
+  'ChatGPT': 'GPT-image2',
+  'DALL·E': 'DALL-E',
+};
+
+// 分类名称标准化映射（旧值 → 新值）
+const CATEGORY_NORMALIZE: Record<string, string> = {
+  'dong-man': 'anime',
+  'guo-feng': 'chinese-style',
+  'concept-art': 'concept_art',
+  // 中文分类映射到英文
+  '编辑设计': 'editorial',
+  '动漫': 'anime',
+  '国风': 'chinese-style',
+  '概念艺术': 'concept_art',
+  '3D渲染': '3d',
+  '摄影': 'photography',
+  '海报': 'poster',
+  '产品': 'product',
+  '插画': 'illustration',
+  '设计': 'design',
+  '时尚': 'fashion',
+  '抽象': 'abstract',
+  '建筑': 'architecture',
+  '艺术': 'artistic',
+  '电影感': 'cinematic',
+  '商业': 'commercial',
+  '奇幻': 'fantasy',
+};
+
 // 难度判断规则
 const DIFFICULTY_KEYWORDS = {
   advanced: [
@@ -76,17 +112,21 @@ function detectModel(content: string, frontmatterModel: string = ''): string {
   for (const [model, patterns] of Object.entries(MODEL_PATTERNS)) {
     for (const pattern of patterns) {
       if (pattern.test(contentLower)) {
-        return model;
+        return MODEL_NORMALIZE[model] || model;
       }
     }
   }
   
   // 正文没检测到，才用 frontmatter
   if (frontmatterModel) {
+    // 先检查是否在标准化映射中
+    if (MODEL_NORMALIZE[frontmatterModel]) {
+      return MODEL_NORMALIZE[frontmatterModel];
+    }
     for (const [model, patterns] of Object.entries(MODEL_PATTERNS)) {
       for (const pattern of patterns) {
         if (pattern.test(frontmatterModel)) {
-          return model;
+          return MODEL_NORMALIZE[model] || model;
         }
       }
     }
@@ -346,7 +386,7 @@ function parseMarkdownFile(filePath: string): PromptData | null {
       title: frontmatter.title || '',
       slug: frontmatter.slug || path.basename(filePath, '.md'), // fallback 用文件名
       model: detectedModel,
-      category: frontmatter.category || 'uncategorized',
+      category: CATEGORY_NORMALIZE[frontmatter.category] || frontmatter.category || 'uncategorized',
       tags: extractedTags,
       difficulty: detectedDifficulty,
       cover: frontmatter.cover || '',

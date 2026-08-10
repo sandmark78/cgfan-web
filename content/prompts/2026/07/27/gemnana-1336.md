@@ -4,10 +4,8 @@ slug: gemnana-1336
 date: 2026-01-15
 added: 2026-07-27T11:31:50+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1336.html"
 sourceLink: "https://x.com/saniaspeaks_/status/2011768680279834631"
@@ -15,6 +13,7 @@ author: "X / 𝗦𝗮𝗻𝗶𝗮"
 authorLink: "https://x.com/saniaspeaks_"
 cover: /images/prompts/gemnana-1336.jpg
 ---
+
 
 ## Prompt
 

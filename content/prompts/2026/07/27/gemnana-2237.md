@@ -4,16 +4,15 @@ slug: gemnana-2237
 date: 2026-02-24
 added: 2026-07-27T12:54:10+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: sci-fi
+tags: 
 difficulty: intermediate
 source: "X / Next Step ©"
 sourceLink: "https://x.com/nextstepst/status/2026177935053304222"
 authorLink: "https://x.com/nextstepst"
 cover: /images/prompts/gemnana-2237.jpg
 ---
+
 
 ## Prompt
 

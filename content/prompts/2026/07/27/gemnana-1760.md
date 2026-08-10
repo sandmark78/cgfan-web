@@ -4,16 +4,15 @@ slug: gemnana-1760
 date: 2026-01-27
 added: 2026-07-27T12:54:05+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: advanced
 source: "X / Duet | AI"
 sourceLink: "https://x.com/Sheldon056/status/2016088197714084320"
 authorLink: "https://x.com/Sheldon056"
 cover: /images/prompts/gemnana-1760.jpg
 ---
+
 
 ## Prompt
 

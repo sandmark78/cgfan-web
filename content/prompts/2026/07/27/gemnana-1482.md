@@ -4,10 +4,8 @@ slug: gemnana-1482
 date: 2026-01-17
 added: 2026-07-27T11:31:51+08:00
 model: Gemini
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: landscape
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1482.html"
 sourceLink: "https://x.com/BaharAzamm561/status/2012355638051971567"
@@ -15,6 +13,7 @@ author: "X / Bahar azam"
 authorLink: "https://x.com/BaharAzamm561"
 cover: /images/prompts/gemnana-1482.jpg
 ---
+
 
 ## Prompt
 

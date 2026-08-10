@@ -4,10 +4,8 @@ slug: gemnana-366
 date: 2025-11-06
 added: 2026-07-27T11:31:16+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/366.html"
 sourceLink: "https://x.com/IqraSaifiii/status/1982469385156489563"
@@ -15,6 +13,7 @@ author: "@IqraSaifiii"
 authorLink: "https://x.com/IqraSaifiii"
 cover: /images/prompts/gemnana-366.jpg
 ---
+
 
 ## Prompt
 

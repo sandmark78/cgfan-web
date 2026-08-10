@@ -4,10 +4,8 @@ slug: gemnana-907
 date: 2026-01-09
 added: 2026-07-27T11:31:40+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: fashion
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/907.html"
 sourceLink: "https://x.com/Taaruk_/status/2009630448499167474"
@@ -15,6 +13,7 @@ author: "X / Taaruk"
 authorLink: "https://x.com/Taaruk_"
 cover: /images/prompts/gemnana-907.jpg
 ---
+
 
 ## Prompt
 

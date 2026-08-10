@@ -4,10 +4,8 @@ slug: gemnana-105
 date: 2025-11-06
 added: 2026-07-27T11:31:15+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: product
+tags: 
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/105.html"
 sourceLink: "https://x.com/azed_ai/status/1931713849067241960"
@@ -15,6 +13,7 @@ author: "@azed_ai"
 authorLink: "https://x.com/azed_ai"
 cover: /images/prompts/gemnana-105.jpg
 ---
+
 
 ## Prompt
 

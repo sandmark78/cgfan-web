@@ -4,16 +4,15 @@ slug: gemnana-2871
 date: 2026-03-01
 added: 2026-07-27T12:54:24+08:00
 model: GPT-Image2
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: sci-fi
+tags: 
 difficulty: advanced
 source: "X / Fujimoto_hina"
 sourceLink: "https://x.com/Fujimoto_hina/status/2028045894088630679"
 authorLink: "https://x.com/Fujimoto_hina"
 cover: /images/prompts/gemnana-2871.jpg
 ---
+
 
 ## Prompt
 

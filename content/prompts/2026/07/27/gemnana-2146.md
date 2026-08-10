@@ -4,16 +4,15 @@ slug: gemnana-2146
 date: 2026-02-17
 added: 2026-07-27T12:54:10+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: intermediate
 source: "X / Aijaz"
 sourceLink: "https://x.com/iamsofiaijaz/status/2023643232845140297"
 authorLink: "https://x.com/iamsofiaijaz"
 cover: /images/prompts/gemnana-2146.jpg
 ---
+
 
 ## Prompt
 

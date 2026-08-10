@@ -4,16 +4,15 @@ slug: gemnana-2140
 date: 2026-02-16
 added: 2026-07-27T12:54:10+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: advanced
 source: "X / simeon-sanai"
 sourceLink: "https://x.com/Naiknelofar788/status/2023256749310988332"
 authorLink: "https://x.com/Naiknelofar788"
 cover: /images/prompts/gemnana-2140.jpg
 ---
+
 ## Prompt
 
 低角度特写肖像：一位白金金发女性佩戴夸张的大型雕塑感太阳镜，镜片由娇嫩半透明的叠层花瓣制成，呈鲜艳的洋红、琥珀和丁香色调，每片花瓣可见细腻的丝绸纹理，柔和的金色光线从边缘透过；

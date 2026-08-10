@@ -4,16 +4,15 @@ slug: gemnana-2464
 date: 2026-03-09
 added: 2026-07-27T12:54:17+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: photography
+tags: 
 difficulty: advanced
 source: "X / TechieSA"
 sourceLink: "https://x.com/TechieBySA/status/2031083876005576937"
 authorLink: "https://x.com/TechieBySA"
 cover: /images/prompts/gemnana-2464.jpg
 ---
+
 
 ## Prompt
 

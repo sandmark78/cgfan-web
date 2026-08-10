@@ -4,10 +4,8 @@ slug: gemnana-1344
 date: 2026-01-15
 added: 2026-07-27T11:31:50+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/1344.html"
 sourceLink: "https://x.com/harboriis/status/2011785693056679970"
@@ -15,6 +13,7 @@ author: "X / Harboriis"
 authorLink: "https://x.com/harboriis"
 cover: /images/prompts/gemnana-1344.jpg
 ---
+
 
 ## Prompt
 

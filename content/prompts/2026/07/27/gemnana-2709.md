@@ -4,16 +4,15 @@ slug: gemnana-2709
 date: 2026-03-29
 added: 2026-07-27T12:54:23+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: advanced
 source: "X / Cherry 2.O"
 sourceLink: "https://x.com/Mind_Boticni/status/2038182355743977689"
 authorLink: "https://x.com/Mind_Boticni"
 cover: /images/prompts/gemnana-2709.jpg
 ---
+
 
 ## Prompt
 

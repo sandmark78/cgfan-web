@@ -4,10 +4,8 @@ slug: gemnana-914
 date: 2026-01-09
 added: 2026-07-27T11:31:40+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: fashion
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/914.html"
 sourceLink: "https://x.com/craftian_keskin/status/2009665973058515294"
@@ -15,6 +13,7 @@ author: "X / Keskin"
 authorLink: "https://x.com/craftian_keskin"
 cover: /images/prompts/gemnana-914.jpg
 ---
+
 
 ## Prompt
 

@@ -4,10 +4,8 @@ slug: gemnana-1524
 date: 2026-01-18
 added: 2026-07-27T11:31:51+08:00
 model: Midjourney
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: fantasy
+tags: 
 difficulty: beginner
 source: "https://gemnana.com/zh/case/1524.html"
 sourceLink: "https://x.com/McC3Kat/status/2012816216331518148"
@@ -15,6 +13,7 @@ author: "X / Kathleen (Kat) Anne McCarthy"
 authorLink: "https://x.com/McC3Kat"
 cover: /images/prompts/gemnana-1524.jpg
 ---
+
 
 ## Prompt
 

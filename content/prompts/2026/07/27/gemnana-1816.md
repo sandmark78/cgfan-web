@@ -4,16 +4,15 @@ slug: gemnana-1816
 date: 2026-01-30
 added: 2026-07-27T12:54:05+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: fashion
+tags: 
 difficulty: advanced
 source: "X / Meem"
 sourceLink: "https://x.com/mehvishs25/status/2017067361673896150"
 authorLink: "https://x.com/mehvishs25"
 cover: /images/prompts/gemnana-1816.jpg
 ---
+
 
 ## Prompt
 

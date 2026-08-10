@@ -4,10 +4,8 @@ slug: gemnana-1021
 date: 2026-01-11
 added: 2026-07-27T11:31:40+08:00
 model: Midjourney
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: architecture
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1021.html"
 sourceLink: "https://x.com/BeautyVerse_Lab/status/2010378808176873774"
@@ -15,6 +13,7 @@ author: "X / BeautyVerse"
 authorLink: "https://x.com/BeautyVerse_Lab"
 cover: /images/prompts/gemnana-1021.jpg
 ---
+
 
 ## Prompt
 

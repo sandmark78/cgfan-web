@@ -4,10 +4,8 @@ slug: gemnana-902
 date: 2026-01-09
 added: 2026-07-27T11:31:40+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: beginner
 source: "https://gemnana.com/zh/case/902.html"
 sourceLink: "https://x.com/iamsofiaijaz/status/2009623964168098296"
@@ -15,6 +13,7 @@ author: "X / Aijaz"
 authorLink: "https://x.com/iamsofiaijaz"
 cover: /images/prompts/gemnana-902.jpg
 ---
+
 
 ## Prompt
 

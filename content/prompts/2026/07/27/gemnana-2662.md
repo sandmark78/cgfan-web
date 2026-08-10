@@ -4,16 +4,15 @@ slug: gemnana-2662
 date: 2026-03-24
 added: 2026-07-27T12:54:17+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: fashion
+tags: 
 difficulty: advanced
 source: "X / Harboris"
 sourceLink: "https://x.com/harboriis/status/2036365607827099705"
 authorLink: "https://x.com/harboriis"
 cover: /images/prompts/gemnana-2662.jpg
 ---
+
 
 ## Prompt
 

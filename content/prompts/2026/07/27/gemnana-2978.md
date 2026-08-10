@@ -4,19 +4,15 @@ slug: gemnana-2978
 date: 2026-05-05
 added: 2026-07-27T12:54:24+08:00
 model: ChatGPT
-category: editorial
-tags:
-  - 提示词
-  - AI绘图
-  - ChatGPT
-  - AI
-  - 图片
+category: photorealistic
+tags: 
 difficulty: intermediate
 source: "X / Minahil"
 sourceLink: "https://x.com/Minahil42298354/status/2051451976970293578"
 authorLink: "https://x.com/Minahil42298354"
 cover: /images/prompts/gemnana-2978.jpg
 ---
+
 
 ## Prompt
 

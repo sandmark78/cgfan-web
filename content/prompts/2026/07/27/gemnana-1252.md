@@ -4,10 +4,8 @@ slug: gemnana-1252
 date: 2026-01-14
 added: 2026-07-27T11:31:46+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: photography
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1252.html"
 sourceLink: "https://x.com/Taaruk_/status/2011453009553969357"
@@ -15,6 +13,7 @@ author: "X / Taaruk"
 authorLink: "https://x.com/Taaruk_"
 cover: /images/prompts/gemnana-1252.jpg
 ---
+
 
 ## Prompt
 

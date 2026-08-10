@@ -4,16 +4,15 @@ slug: gemnana-2024
 date: 2026-02-08
 added: 2026-07-27T12:54:10+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: chinese-style
+tags: 
 difficulty: intermediate
 source: "X / Aijaz"
 sourceLink: "https://x.com/iamsofiaijaz/status/2020317156085494141"
 authorLink: "https://x.com/iamsofiaijaz"
 cover: /images/prompts/gemnana-2024.jpg
 ---
+
 
 ## Prompt
 

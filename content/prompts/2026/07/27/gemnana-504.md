@@ -4,10 +4,8 @@ slug: gemnana-504
 date: 2025-11-08
 added: 2026-07-27T11:31:27+08:00
 model: Gemini
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: sci-fi
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/504.html"
 sourceLink: "https://x.com/Samann_ai/status/1986865467953455399"
@@ -15,6 +13,7 @@ author: "X / Saman | AI"
 authorLink: "https://x.com/Samann_ai"
 cover: /images/prompts/gemnana-504.jpg
 ---
+
 
 ## Prompt
 

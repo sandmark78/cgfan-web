@@ -4,10 +4,8 @@ slug: gemnana-917
 date: 2026-01-09
 added: 2026-07-27T11:31:40+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: photography
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/917.html"
 sourceLink: "https://x.com/YaseenK7212/status/2009672926522397130"
@@ -15,6 +13,7 @@ author: "X / Yaseen Khan Gul"
 authorLink: "https://x.com/YaseenK7212"
 cover: /images/prompts/gemnana-917.jpg
 ---
+
 
 ## Prompt
 

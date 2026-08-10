@@ -4,10 +4,8 @@ slug: gemnana-583
 date: 2025-12-19
 added: 2026-07-27T11:31:27+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/583.html"
 sourceLink: "https://x.com/harboriis/status/2001877289303490702"
@@ -15,6 +13,7 @@ author: "X / Harboriis"
 authorLink: "https://x.com/harboriis"
 cover: /images/prompts/gemnana-583.jpg
 ---
+
 
 ## Prompt
 

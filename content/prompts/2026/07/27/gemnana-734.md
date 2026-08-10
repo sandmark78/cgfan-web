@@ -4,10 +4,8 @@ slug: gemnana-734
 date: 2026-01-06
 added: 2026-07-27T11:31:33+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/734.html"
 sourceLink: "https://x.com/ChillaiKalan__/status/2008492773390111165"
@@ -15,6 +13,7 @@ author: "X / K"
 authorLink: "https://x.com/ChillaiKalan__"
 cover: /images/prompts/gemnana-734.jpg
 ---
+
 
 ## Prompt
 

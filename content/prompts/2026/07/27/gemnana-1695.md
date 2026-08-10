@@ -4,16 +4,15 @@ slug: gemnana-1695
 date: 2026-01-25
 added: 2026-07-27T12:53:55+08:00
 model: Midjourney
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: intermediate
 source: "X / AZIZ | AI 🇸🇦"
 sourceLink: "https://x.com/aziz4ai/status/2015404534533656745"
 authorLink: "https://x.com/aziz4ai"
 cover: /images/prompts/gemnana-1695.jpg
 ---
+
 
 ## Prompt
 

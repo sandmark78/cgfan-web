@@ -4,10 +4,8 @@ slug: gemnana-563
 date: 2026-01-09
 added: 2026-07-27T11:31:27+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: product
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/563.html"
 sourceLink: "https://x.com/BubbleBrain/status/2009311435646726423"
@@ -15,6 +13,7 @@ author: "X / BubbleBrain"
 authorLink: "https://x.com/BubbleBrain"
 cover: /images/prompts/gemnana-563.jpg
 ---
+
 
 ## Prompt
 

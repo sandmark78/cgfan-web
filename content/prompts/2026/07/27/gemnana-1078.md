@@ -4,10 +4,8 @@ slug: gemnana-1078
 date: 2026-01-12
 added: 2026-07-27T11:31:45+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: photography
+tags: 
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/1078.html"
 sourceLink: "https://x.com/Kashberg_0/status/2010733433157505149"
@@ -15,6 +13,7 @@ author: "X / Kashberg"
 authorLink: "https://x.com/Kashberg_0"
 cover: /images/prompts/gemnana-1078.jpg
 ---
+
 
 ## Prompt
 

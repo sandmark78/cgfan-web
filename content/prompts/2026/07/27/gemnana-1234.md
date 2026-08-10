@@ -4,10 +4,8 @@ slug: gemnana-1234
 date: 2026-01-14
 added: 2026-07-27T11:31:46+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: fashion
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1234.html"
 sourceLink: "https://x.com/FilmHub00/status/2011425018438115821"
@@ -15,6 +13,7 @@ author: "X / cinema 🎥"
 authorLink: "https://x.com/FilmHub00"
 cover: /images/prompts/gemnana-1234.jpg
 ---
+
 
 ## Prompt
 

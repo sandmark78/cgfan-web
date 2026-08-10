@@ -4,16 +4,15 @@ slug: gemnana-1698
 date: 2026-01-25
 added: 2026-07-27T12:53:55+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: product
+tags: 
 difficulty: intermediate
 source: "X / Amira Zairi"
 sourceLink: "https://x.com/azed_ai/status/2015423674061643925"
 authorLink: "https://x.com/azed_ai"
 cover: /images/prompts/gemnana-1698.jpg
 ---
+
 
 ## Prompt
 

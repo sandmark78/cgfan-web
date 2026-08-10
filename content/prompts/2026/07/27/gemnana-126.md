@@ -4,16 +4,15 @@ slug: gemnana-126
 date: 2025-11-06
 added: 2026-07-27T19:38:12+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: product
+tags: 
 difficulty: intermediate
 source: "@aziz4ai"
 sourceLink: "https://x.com/aziz4ai/status/1934702903932957023"
 authorLink: "https://x.com/aziz4ai"
 cover: /images/prompts/gemnana-126.jpg
 ---
+
 
 ## Prompt
 

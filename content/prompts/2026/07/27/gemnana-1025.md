@@ -4,10 +4,8 @@ slug: gemnana-1025
 date: 2026-01-11
 added: 2026-07-27T11:31:40+08:00
 model: Midjourney
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: anime
+tags: 
 difficulty: beginner
 source: "https://gemnana.com/zh/case/1025.html"
 sourceLink: "https://x.com/PanoramaJasmin/status/2010399926354956626"
@@ -15,6 +13,7 @@ author: "X / Thamer Ossra"
 authorLink: "https://x.com/PanoramaJasmin"
 cover: /images/prompts/gemnana-1025.jpg
 ---
+
 
 ## Prompt
 

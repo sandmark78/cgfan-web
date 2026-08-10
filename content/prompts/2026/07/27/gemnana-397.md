@@ -4,10 +4,8 @@ slug: gemnana-397
 date: 2025-11-06
 added: 2026-07-27T11:31:27+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/397.html"
 sourceLink: "https://x.com/saniaspeaks_/status/1986010537310961720"
@@ -15,6 +13,7 @@ author: "@saniaspeaks_"
 authorLink: "https://x.com/saniaspeaks_"
 cover: /images/prompts/gemnana-397.jpg
 ---
+
 
 ## Prompt
 

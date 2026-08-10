@@ -4,10 +4,8 @@ slug: gemnana-551
 date: 2026-01-04
 added: 2026-07-27T11:31:27+08:00
 model: Gemini
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: photography
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/551.html"
 sourceLink: "https://x.com/xmiiru_/status/2007732049839300912"
@@ -15,6 +13,7 @@ author: "X / Mira"
 authorLink: "https://x.com/xmiiru_"
 cover: /images/prompts/gemnana-551.jpg
 ---
+
 
 ## Prompt
 

@@ -4,16 +4,15 @@ slug: gemnana-1839
 date: 2026-01-30
 added: 2026-07-27T12:54:05+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: product
+tags: 
 difficulty: advanced
 source: "X / AmirMušić"
 sourceLink: "https://x.com/AmirMushich/status/2017345945025822871"
 authorLink: "https://x.com/AmirMushich"
 cover: /images/prompts/gemnana-1839.jpg
 ---
+
 
 ## Prompt
 

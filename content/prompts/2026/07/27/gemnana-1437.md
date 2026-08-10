@@ -4,10 +4,8 @@ slug: gemnana-1437
 date: 2026-01-16
 added: 2026-07-27T11:31:50+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: photography
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1437.html"
 sourceLink: "https://x.com/TechieBySA/status/2012133550817173583"
@@ -15,6 +13,7 @@ author: "X / TechieSA"
 authorLink: "https://x.com/TechieBySA"
 cover: /images/prompts/gemnana-1437.jpg
 ---
+
 
 ## Prompt
 

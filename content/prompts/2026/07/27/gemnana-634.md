@@ -4,10 +4,8 @@ slug: gemnana-634
 date: 2025-12-30
 added: 2026-07-27T11:31:33+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: fashion
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/634.html"
 sourceLink: "https://x.com/meng_dagg695/status/2005820511801254047"
@@ -15,6 +13,7 @@ author: "X / ShaHid WaNii"
 authorLink: "https://x.com/meng_dagg695"
 cover: /images/prompts/gemnana-634.jpg
 ---
+
 
 ## Prompt
 

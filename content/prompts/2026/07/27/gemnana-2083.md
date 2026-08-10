@@ -4,16 +4,15 @@ slug: gemnana-2083
 date: 2026-02-11
 added: 2026-07-27T12:54:10+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: architecture
+tags: 
 difficulty: advanced
 source: "X / 𝐌"
 sourceLink: "https://x.com/Strength04_X/status/2021588784895406168"
 authorLink: "https://x.com/Strength04_X"
 cover: /images/prompts/gemnana-2083.jpg
 ---
+
 
 ## Prompt
 

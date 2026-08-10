@@ -4,16 +4,15 @@ slug: gemnana-2046
 date: 2026-02-09
 added: 2026-07-27T12:54:10+08:00
 model: Midjourney
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: fashion
+tags: 
 difficulty: intermediate
 source: "X / K"
 sourceLink: "https://x.com/ChillaiKalan__/status/2020715808939549011"
 authorLink: "https://x.com/ChillaiKalan__"
 cover: /images/prompts/gemnana-2046.jpg
 ---
+
 
 ## Prompt
 

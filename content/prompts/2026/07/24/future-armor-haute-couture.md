@@ -2,10 +2,8 @@
 title: "未来战甲高级时装提示词"
 slug: future-armor-haute-couture
 model: Midjourney
-category: editorial
-tags:
-- AI绘图
-- 提示词
+category: sci-fi
+tags: 
 difficulty: intermediate
 cover: /images/prompts/prompt-2080175912243569008.jpg
 date: '2026-07-23'
@@ -15,6 +13,7 @@ sourceLink: "https://x.com/i/status/2080175912243569008"
 authorLink: "https://x.com/VoxcatAI"
 author: "VoxCat"
 ---
+
 
 ## Prompt
 

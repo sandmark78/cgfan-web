@@ -4,10 +4,8 @@ slug: gemnana-1018
 date: 2026-01-11
 added: 2026-07-27T11:31:40+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: fashion
+tags: 
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/1018.html"
 sourceLink: "https://x.com/hoor_world06/status/2010371975164944841"
@@ -15,6 +13,7 @@ author: "X / Hoor"
 authorLink: "https://x.com/hoor_world06"
 cover: /images/prompts/gemnana-1018.jpg
 ---
+
 
 ## Prompt
 

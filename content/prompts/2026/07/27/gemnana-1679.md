@@ -4,16 +4,15 @@ slug: gemnana-1679
 date: 2026-01-25
 added: 2026-07-27T12:53:50+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: photography
+tags: 
 difficulty: advanced
 source: "X / Sharon Riley"
 sourceLink: "https://x.com/Just_sharon7/status/2015265925344448648"
 authorLink: "https://x.com/Just_sharon7"
 cover: /images/prompts/gemnana-1679.jpg
 ---
+
 
 ## Prompt
 

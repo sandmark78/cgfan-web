@@ -2,10 +2,8 @@
 title: "古风私房自拍视角提示词"
 slug: ancient-style-selfie-angle
 model: Midjourney
-category: editorial
-tags:
-- AI绘图
-- 提示词
+category: chinese-style
+tags: 
 difficulty: intermediate
 cover: /images/prompts/prompt-2078196771466199115.jpg
 date: '2026-07-23'
@@ -15,6 +13,7 @@ sourceLink: "https://x.com/i/status/2078196771466199115"
 authorLink: "https://x.com/VoxcatAI"
 author: "VoxCat"
 ---
+
 
 ## Prompt
 

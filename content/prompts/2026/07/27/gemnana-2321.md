@@ -4,16 +4,15 @@ slug: gemnana-2321
 date: 2026-02-28
 added: 2026-07-27T12:54:10+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: photography
+tags: 
 difficulty: advanced
 source: "X / Kaan"
 sourceLink: "https://x.com/kaanakz/status/2027814444437307602"
 authorLink: "https://x.com/kaanakz"
 cover: /images/prompts/gemnana-2321.jpg
 ---
+
 
 ## Prompt
 

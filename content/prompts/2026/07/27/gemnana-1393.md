@@ -4,10 +4,8 @@ slug: gemnana-1393
 date: 2026-01-16
 added: 2026-07-27T11:31:50+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1393.html"
 sourceLink: "https://x.com/Adam38363368936/status/2011982558876315747"
@@ -15,6 +13,7 @@ author: "X / Adam也叫吉米"
 authorLink: "https://x.com/Adam38363368936"
 cover: /images/prompts/gemnana-1393.jpg
 ---
+
 
 ## Prompt
 

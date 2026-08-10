@@ -4,22 +4,23 @@ date: 2026-06-04
 added: 2026-08-07
 author: "小小东"
 model: "通用 Prompt"
-tags: [字体设计, 手写体, 夏日视觉, 编辑排版, 极简美学]
-category: editorial
+tags: ["字体设计", "手写体", "夏日视觉", "编辑排版", "极简美学"]
+category: minimalist
 source: https://x.com/i/status/2062720334571450688
 cover: /images/prompts/prompt-2062720334571450688.jpg
 slug: summer-handwritten-typography
-rating:
-  composition: 8
-  color: 8
-  lighting: 7
-  detail: 8
-  creativity: 8
-  technical: 8
-  aesthetic: 8
-  curation: 8
-  total: 63
+rating: 
+composition: 8
+color: 8
+lighting: 7
+detail: 8
+creativity: 8
+technical: 8
+aesthetic: 8
+curation: 8
+total: 63
 ---
+
 
 ## 概要
 

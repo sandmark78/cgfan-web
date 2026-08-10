@@ -4,16 +4,15 @@ slug: gemnana-2728
 date: 2026-03-30
 added: 2026-07-27T12:54:23+08:00
 model: Midjourney
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: intermediate
 source: "X / Alice"
 sourceLink: "https://x.com/youngcatwoman/status/2038558603943239874"
 authorLink: "https://x.com/youngcatwoman"
 cover: /images/prompts/gemnana-2728.jpg
 ---
+
 
 ## Prompt
 

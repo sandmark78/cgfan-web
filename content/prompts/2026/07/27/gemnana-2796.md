@@ -4,16 +4,15 @@ slug: gemnana-2796
 date: 2026-04-16
 added: 2026-07-27T12:54:24+08:00
 model: ChatGPT
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: photorealistic
+tags: 
 difficulty: intermediate
 source: "X / Karlos"
 sourceLink: "https://x.com/de_mon010/status/2044331476578382329"
 authorLink: "https://x.com/de_mon010"
 cover: /images/prompts/gemnana-2796.jpg
 ---
+
 
 ## Prompt
 

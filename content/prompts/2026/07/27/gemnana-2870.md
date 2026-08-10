@@ -4,16 +4,15 @@ slug: gemnana-2870
 date: 2026-03-01
 added: 2026-07-27T12:54:24+08:00
 model: GPT-Image2
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: fantasy
+tags: 
 difficulty: advanced
 source: "X / MrDasOnX"
 sourceLink: "https://x.com/MrDasOnX/status/2028087254757867560"
 authorLink: "https://x.com/MrDasOnX"
 cover: /images/prompts/gemnana-2870.jpg
 ---
+
 
 ## Prompt
 

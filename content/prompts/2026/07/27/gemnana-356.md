@@ -4,10 +4,8 @@ slug: gemnana-356
 date: 2025-11-06
 added: 2026-07-27T11:31:16+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: fashion
+tags: 
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/356.html"
 sourceLink: "https://x.com/SimplyAnnisa/status/1980804390694056368"
@@ -15,6 +13,7 @@ author: "@SimplyAnnisa"
 authorLink: "https://x.com/SimplyAnnisa"
 cover: /images/prompts/gemnana-356.jpg
 ---
+
 
 ## Prompt
 

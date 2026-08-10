@@ -4,10 +4,8 @@ slug: gemnana-350
 date: 2025-11-06
 added: 2026-07-27T11:31:15+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: beginner
 source: "https://gemnana.com/zh/case/350.html"
 sourceLink: "https://x.com/cnyzgkc/status/1980469269134733415"
@@ -15,6 +13,7 @@ author: "@cnyzgkc"
 authorLink: "https://x.com/cnyzgkc"
 cover: /images/prompts/gemnana-350.jpg
 ---
+
 
 ## Prompt
 

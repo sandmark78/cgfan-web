@@ -4,10 +4,8 @@ slug: gemnana-1292
 date: 2026-01-15
 added: 2026-07-27T11:31:50+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/1292.html"
 sourceLink: "https://x.com/iamrealsnow/status/2011645067816288286"
@@ -15,6 +13,7 @@ author: "X / Snow"
 authorLink: "https://x.com/iamrealsnow"
 cover: /images/prompts/gemnana-1292.jpg
 ---
+
 
 ## Prompt
 

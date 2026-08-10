@@ -4,16 +4,15 @@ slug: gemnana-2228
 date: 2026-02-23
 added: 2026-07-27T12:54:10+08:00
 model: Midjourney
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: photography
+tags: 
 difficulty: advanced
 source: "X / Midjourney Sref and prompt Library"
 sourceLink: "https://x.com/promptsref/status/2026009459969888731"
 authorLink: "https://x.com/promptsref"
 cover: /images/prompts/gemnana-2228.jpg
 ---
+
 
 ## Prompt
 

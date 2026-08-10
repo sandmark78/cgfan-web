@@ -4,16 +4,15 @@ slug: gemnana-2670
 date: 2026-03-24
 added: 2026-07-27T12:54:17+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: intermediate
 source: "X / MayorkingAI"
 sourceLink: "https://x.com/MayorKingAI/status/2036534946433736932"
 authorLink: "https://x.com/MayorKingAI"
 cover: /images/prompts/gemnana-2670.jpg
 ---
+
 
 ## Prompt
 

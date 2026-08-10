@@ -4,16 +4,15 @@ slug: gemnana-2108
 date: 2026-02-13
 added: 2026-07-27T12:54:10+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: photography
+tags: 
 difficulty: advanced
 source: "X / Harboriis"
 sourceLink: "https://x.com/harboriis/status/2022288144545259558"
 authorLink: "https://x.com/harboriis"
 cover: /images/prompts/gemnana-2108.jpg
 ---
+
 ## Prompt
 
 使用 Hasselblad 907X 50C 搭配 XCD 90mm f/2.5 镜头拍摄，光圈 f/2.8 浅景深强调西装的精确贴合，而背景溶解为画意般的色块；

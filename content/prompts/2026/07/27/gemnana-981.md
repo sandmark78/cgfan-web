@@ -4,10 +4,8 @@ slug: gemnana-981
 date: 2026-01-11
 added: 2026-07-27T11:31:40+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/981.html"
 sourceLink: "https://x.com/SimplyAnnisa/status/2010210760023248929"
@@ -15,6 +13,7 @@ author: "X / Anissa"
 authorLink: "https://x.com/SimplyAnnisa"
 cover: /images/prompts/gemnana-981.jpg
 ---
+
 
 ## Prompt
 

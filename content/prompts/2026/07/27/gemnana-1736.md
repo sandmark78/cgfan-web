@@ -4,16 +4,15 @@ slug: gemnana-1736
 date: 2026-01-26
 added: 2026-07-27T12:53:59+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: advanced
 source: "X / Harboriis"
 sourceLink: "https://x.com/harboriis/status/2015823640043151378"
 authorLink: "https://x.com/harboriis"
 cover: /images/prompts/gemnana-1736.jpg
 ---
+
 
 ## Prompt
 

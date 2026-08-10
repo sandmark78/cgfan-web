@@ -4,10 +4,8 @@ slug: gemnana-1122
 date: 2026-01-13
 added: 2026-07-27T11:31:45+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: anime
+tags: 
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/1122.html"
 sourceLink: "https://x.com/Chili_Pepper_A/status/2011049004705177631"
@@ -15,6 +13,7 @@ author: "X / 唐辛子"
 authorLink: "https://x.com/Chili_Pepper_A"
 cover: /images/prompts/gemnana-1122.jpg
 ---
+
 
 ## Prompt
 

@@ -4,16 +4,15 @@ slug: gemnana-2498
 date: 2026-03-12
 added: 2026-07-27T12:54:17+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: intermediate
 source: "X / Kashberg"
 sourceLink: "https://x.com/Kashberg_0/status/2031893424979546397"
 authorLink: "https://x.com/Kashberg_0"
 cover: /images/prompts/gemnana-2498.jpg
 ---
+
 
 ## Prompt
 

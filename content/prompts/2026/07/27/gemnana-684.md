@@ -4,10 +4,8 @@ slug: gemnana-684
 date: 2026-01-05
 added: 2026-07-27T11:31:33+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/684.html"
 sourceLink: "https://x.com/iamsofiaijaz/status/2008181655220154527"
@@ -15,6 +13,7 @@ author: "X / Aijaz"
 authorLink: "https://x.com/iamsofiaijaz"
 cover: /images/prompts/gemnana-684.jpg
 ---
+
 
 ## Prompt
 

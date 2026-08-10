@@ -4,10 +4,8 @@ slug: gemnana-597
 date: 2025-12-21
 added: 2026-07-27T11:31:27+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/597.html"
 sourceLink: "https://x.com/Sheldon056/status/2002763964476965234"
@@ -15,6 +13,7 @@ author: "X / Duet | AI"
 authorLink: "https://x.com/Sheldon056"
 cover: /images/prompts/gemnana-597.jpg
 ---
+
 
 ## Prompt
 

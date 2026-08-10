@@ -4,10 +4,8 @@ slug: gemnana-1340
 date: 2026-01-15
 added: 2026-07-27T11:31:50+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: fashion
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1340.html"
 sourceLink: "https://x.com/IqraSaifiii/status/2011780502546759715"
@@ -15,6 +13,7 @@ author: "X / Iqra Saifi"
 authorLink: "https://x.com/IqraSaifiii"
 cover: /images/prompts/gemnana-1340.jpg
 ---
+
 
 ## Prompt
 

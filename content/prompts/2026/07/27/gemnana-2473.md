@@ -4,16 +4,15 @@ slug: gemnana-2473
 date: 2026-03-10
 added: 2026-07-27T12:54:17+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: intermediate
 source: "X / Harboriis"
 sourceLink: "https://x.com/harboriis/status/2031362125055369376"
 authorLink: "https://x.com/harboriis"
 cover: /images/prompts/gemnana-2473.jpg
 ---
+
 
 ## Prompt
 

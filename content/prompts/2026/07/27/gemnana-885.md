@@ -4,10 +4,8 @@ slug: gemnana-885
 date: 2026-01-09
 added: 2026-07-27T11:31:40+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/885.html"
 sourceLink: "https://x.com/ChillaiKalan__/status/2009484351873151176"
@@ -15,6 +13,7 @@ author: "X / K"
 authorLink: "https://x.com/ChillaiKalan__"
 cover: /images/prompts/gemnana-885.jpg
 ---
+
 
 ## Prompt
 

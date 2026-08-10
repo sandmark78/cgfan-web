@@ -4,16 +4,15 @@ slug: gemnana-2352
 date: 2026-03-02
 added: 2026-07-27T12:54:17+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: architecture
+tags: 
 difficulty: intermediate
 source: "X / Aijaz"
 sourceLink: "https://x.com/iamsofiaijaz/status/2028508328859750704"
 authorLink: "https://x.com/iamsofiaijaz"
 cover: /images/prompts/gemnana-2352.jpg
 ---
+
 
 ## Prompt
 

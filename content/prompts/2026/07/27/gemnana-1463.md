@@ -4,10 +4,8 @@ slug: gemnana-1463
 date: 2026-01-16
 added: 2026-07-27T11:31:51+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: photorealistic
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1463.html"
 sourceLink: "https://x.com/astronomerozge1/status/2012242083927437636"
@@ -15,6 +13,7 @@ author: "X / Özge Döner"
 authorLink: "https://x.com/astronomerozge1"
 cover: /images/prompts/gemnana-1463.jpg
 ---
+
 
 ## Prompt
 

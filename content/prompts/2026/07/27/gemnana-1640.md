@@ -4,16 +4,15 @@ slug: gemnana-1640
 date: 2026-01-21
 added: 2026-07-27T12:53:44+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: architecture
+tags: 
 difficulty: advanced
 source: "X / Duet | AI"
 sourceLink: "https://x.com/Sheldon056/status/2013810394029298171"
 authorLink: "https://x.com/Sheldon056"
 cover: /images/prompts/gemnana-1640.jpg
 ---
+
 
 ## Prompt
 

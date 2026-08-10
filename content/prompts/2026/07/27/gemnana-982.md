@@ -4,10 +4,8 @@ slug: gemnana-982
 date: 2026-01-11
 added: 2026-07-27T11:31:40+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: photography
+tags: 
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/982.html"
 sourceLink: "https://x.com/AIwithSynthia/status/2010213849618886946"
@@ -15,6 +13,7 @@ author: "X / Synthia"
 authorLink: "https://x.com/AIwithSynthia"
 cover: /images/prompts/gemnana-982.jpg
 ---
+
 
 ## Prompt
 

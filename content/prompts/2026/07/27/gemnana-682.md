@@ -4,10 +4,8 @@ slug: gemnana-682
 date: 2026-01-05
 added: 2026-07-27T11:31:33+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: photography
+tags: 
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/682.html"
 sourceLink: "https://x.com/AIwithkhan/status/2008177924651044876"
@@ -15,6 +13,7 @@ author: "X / Smiling Khan"
 authorLink: "https://x.com/AIwithkhan"
 cover: /images/prompts/gemnana-682.jpg
 ---
+
 
 ## Prompt
 

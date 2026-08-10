@@ -4,10 +4,8 @@ slug: gemnana-1263
 date: 2026-01-14
 added: 2026-07-27T11:31:46+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: fashion
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1263.html"
 sourceLink: "https://x.com/AmirMushich/status/2011509897175724329"
@@ -15,6 +13,7 @@ author: "X / AmirMušić"
 authorLink: "https://x.com/AmirMushich"
 cover: /images/prompts/gemnana-1263.jpg
 ---
+
 
 ## Prompt
 

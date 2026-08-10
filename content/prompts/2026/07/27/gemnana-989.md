@@ -4,10 +4,8 @@ slug: gemnana-989
 date: 2026-01-11
 added: 2026-07-27T11:31:40+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: fashion
+tags: 
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/989.html"
 sourceLink: "https://x.com/Strength04_X/status/2010254425986875746"
@@ -15,6 +13,7 @@ author: "X / 𝐌"
 authorLink: "https://x.com/Strength04_X"
 cover: /images/prompts/gemnana-989.jpg
 ---
+
 
 ## Prompt
 

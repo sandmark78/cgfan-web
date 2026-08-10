@@ -4,10 +4,8 @@ slug: gemnana-973
 date: 2026-01-11
 added: 2026-07-27T11:31:40+08:00
 model: Gemini
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: architecture
+tags: 
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/973.html"
 sourceLink: "https://x.com/oye_samia/status/2010172615370125739"
@@ -15,6 +13,7 @@ author: "X / Dr. Samia"
 authorLink: "https://x.com/oye_samia"
 cover: /images/prompts/gemnana-973.jpg
 ---
+
 
 ## Prompt
 

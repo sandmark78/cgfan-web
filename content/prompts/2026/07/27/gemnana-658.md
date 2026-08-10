@@ -4,10 +4,8 @@ slug: gemnana-658
 date: 2026-01-04
 added: 2026-07-27T11:31:33+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: photography
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/658.html"
 sourceLink: "https://x.com/saniaspeaks_/status/2007661583246471621"
@@ -15,6 +13,7 @@ author: "X / 𝗦𝗮𝗻𝗶𝗮"
 authorLink: "https://x.com/saniaspeaks_"
 cover: /images/prompts/gemnana-658.jpg
 ---
+
 
 ## Prompt
 

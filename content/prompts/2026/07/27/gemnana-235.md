@@ -4,16 +4,15 @@ slug: gemnana-235
 date: 2025-11-06
 added: 2026-07-27T19:38:12+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: photography
+tags: 
 difficulty: beginner
 source: "@CharaspowerAI"
 sourceLink: "https://x.com/CharaspowerAI/status/1944796547587125663"
 authorLink: "https://x.com/CharaspowerAI"
 cover: /images/prompts/gemnana-235.jpg
 ---
+
 
 ## Prompt
 

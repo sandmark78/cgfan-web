@@ -4,10 +4,8 @@ slug: gemnana-752
 date: 2026-01-06
 added: 2026-07-27T11:31:33+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: fashion
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/752.html"
 sourceLink: "https://x.com/Xaroonx/status/2008556843954827601"
@@ -15,6 +13,7 @@ author: "X / Zar⭕on"
 authorLink: "https://x.com/Xaroonx"
 cover: /images/prompts/gemnana-752.jpg
 ---
+
 
 ## Prompt
 

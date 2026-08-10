@@ -4,10 +4,8 @@ slug: gemnana-1441
 date: 2026-01-16
 added: 2026-07-27T11:31:50+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: photography
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1441.html"
 sourceLink: "https://x.com/Taaruk_/status/2012144333970133351"
@@ -15,6 +13,7 @@ author: "X / Taaruk"
 authorLink: "https://x.com/Taaruk_"
 cover: /images/prompts/gemnana-1441.jpg
 ---
+
 
 ## Prompt
 

@@ -4,10 +4,8 @@ slug: gemnana-369
 date: 2025-11-06
 added: 2026-07-27T11:31:22+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/369.html"
 sourceLink: "https://x.com/eyishazyer/status/1982402114413596850"
@@ -15,6 +13,7 @@ author: "@eyishazyer"
 authorLink: "https://x.com/eyishazyer"
 cover: /images/prompts/gemnana-369.jpg
 ---
+
 
 ## Prompt
 

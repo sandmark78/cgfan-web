@@ -4,10 +4,8 @@ slug: gemnana-761
 date: 2026-01-06
 added: 2026-07-27T11:31:33+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: photography
+tags: 
 difficulty: beginner
 source: "https://gemnana.com/zh/case/761.html"
 sourceLink: "https://x.com/Ankit_patel211/status/2008615398665850943"
@@ -15,6 +13,7 @@ author: "X / ANKIT PATEL 🇮🇳 | AI"
 authorLink: "https://x.com/Ankit_patel211"
 cover: /images/prompts/gemnana-761.jpg
 ---
+
 
 ## Prompt
 

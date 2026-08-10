@@ -7,14 +7,8 @@ added: "2026-08-10T09:44:13.000+08:00"
 model: "GPT-Image2"
 source: "https://x.com/i/status/2086300155771519326"
 cover: "/images/prompts/prompt-2086300155771519326.jpg"
-images:
-  - "/images/prompts/prompt-2086300155771519326.jpg"
-tags:
-  - "编辑设计"
-  - "海报"
-  - "日式插画"
-  - "北欧设计"
-  - "品牌"
+images: 
+tags: 
 score: "60/80"
 composition: "8/10"
 color: "7/10"
@@ -24,7 +18,9 @@ creativity: "8/10"
 technical: "7/10"
 aesthetic: "8/10"
 curation: "8/10"
+category: product
 ---
+
 
 ## Prompt
 

@@ -4,10 +4,8 @@ slug: gemnana-750
 date: 2026-01-06
 added: 2026-07-27T11:31:33+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: photography
+tags: 
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/750.html"
 sourceLink: "https://x.com/Sophia_here12/status/2008555126127051059"
@@ -15,6 +13,7 @@ author: "X / Sophia✨"
 authorLink: "https://x.com/Sophia_here12"
 cover: /images/prompts/gemnana-750.jpg
 ---
+
 
 ## Prompt
 

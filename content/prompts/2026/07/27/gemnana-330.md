@@ -4,10 +4,8 @@ slug: gemnana-330
 date: 2025-11-06
 added: 2026-07-27T11:31:15+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: portrait
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/330.html"
 sourceLink: "https://x.com/IamEmily2050/status/1966758558483272144"
@@ -15,6 +13,7 @@ author: "@IamEmily2050"
 authorLink: "https://x.com/IamEmily2050"
 cover: /images/prompts/gemnana-330.jpg
 ---
+
 
 ## Prompt
 

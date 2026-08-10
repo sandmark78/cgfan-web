@@ -7,17 +7,8 @@ added: "2026-08-10T07:31:55.000+08:00"
 model: "通用 Prompt"
 source: "https://x.com/i/status/2085939057754878120"
 cover: "/images/prompts/prompt-2085939057754878120.jpg"
-images:
-  - "/images/prompts/prompt-2085939057754878120.jpg"
-  - "/images/prompts/prompt-2085939057754878120-2.jpg"
-  - "/images/prompts/prompt-2085939057754878120-3.jpg"
-  - "/images/prompts/prompt-2085939057754878120-4.jpg"
-tags:
-  - "电影感"
-  - "古风"
-  - "暖棕色调"
-  - "东方美学"
-  - "人像"
+images: 
+tags: 
 score: "66/80"
 composition: "8/10"
 color: "8/10"
@@ -27,7 +18,9 @@ creativity: "8/10"
 technical: "8/10"
 aesthetic: "9/10"
 curation: "8/10"
+category: chinese-style
 ---
+
 
 ## Prompt
 

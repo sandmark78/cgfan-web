@@ -4,10 +4,8 @@ slug: gemnana-871
 date: 2026-01-08
 added: 2026-07-27T11:31:40+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: product
+tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/871.html"
 sourceLink: "https://x.com/Ankit_patel211/status/2009339340418371647"
@@ -15,6 +13,7 @@ author: "X / ANKIT PATEL 🇮🇳 | AI"
 authorLink: "https://x.com/Ankit_patel211"
 cover: /images/prompts/gemnana-871.jpg
 ---
+
 
 ## Prompt
 

@@ -4,16 +4,15 @@ slug: gemnana-2538
 date: 2026-03-15
 added: 2026-07-27T12:54:17+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: photography
+tags: 
 difficulty: intermediate
 source: "X / DrSadek 🪶"
 sourceLink: "https://x.com/DrSadek_/status/2033136123342401904"
 authorLink: "https://x.com/DrSadek_"
 cover: /images/prompts/gemnana-2538.jpg
 ---
+
 
 ## Prompt
 

@@ -4,16 +4,15 @@ slug: gemnana-141
 date: 2025-11-06
 added: 2026-07-27T19:38:12+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: fashion
+tags: 
 difficulty: intermediate
 source: "@hc_dsn"
 sourceLink: "https://x.com/hc_dsn/status/1925431043122970869"
 authorLink: "https://x.com/hc_dsn"
 cover: /images/prompts/gemnana-141.jpg
 ---
+
 
 ## Prompt
 

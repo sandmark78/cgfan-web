@@ -4,16 +4,15 @@ slug: gemnana-2310
 date: 2026-02-28
 added: 2026-07-27T12:54:10+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: product
+tags: 
 difficulty: advanced
 source: "X / Duet | AI"
 sourceLink: "https://x.com/Sheldon056/status/2027645181538025847"
 authorLink: "https://x.com/Sheldon056"
 cover: /images/prompts/gemnana-2310.jpg
 ---
+
 
 ## Prompt
 

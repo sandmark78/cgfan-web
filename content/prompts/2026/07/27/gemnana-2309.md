@@ -4,16 +4,15 @@ slug: gemnana-2309
 date: 2026-02-28
 added: 2026-07-27T12:54:10+08:00
 model: 通用 Prompt
-category: editorial
-tags:
-  - AI绘图
-  - 提示词
+category: architecture
+tags: 
 difficulty: intermediate
 source: "X / 两斤"
 sourceLink: "https://x.com/0x00_Krypt/status/2027644159285465175"
 authorLink: "https://x.com/0x00_Krypt"
 cover: /images/prompts/gemnana-2309.jpg
 ---
+
 
 ## Prompt
 

@@ -5,14 +5,15 @@ author: Alexandra Aisling
 date: 2026-07-25
 added: 2026-07-25T17:35:00+08:00
 model: GPT Image 2
-category: editorial
-tags: [cyanotype, aesthetic, vintage, photography, blueprint]
+category: portrait
+tags: ["cyanotype", "aesthetic", "vintage", "photography", "blueprint"]
 difficulty: intermediate
 cover: /images/prompts/cyanotype-aesthetic.jpg
 source: https://x.com/AllaAisling/status/2080812273250263097
 sourceLink: https://x.com/AllaAisling/status/2080812273250263097
 authorLink: https://x.com/AllaAisling
 ---
+
 
 [SUBJECT], cyanotype process aesthetic, everything rendered in prussian blue and white, botanical or architectural elements contact-printed around the subject, the image reading as both photograph and blueprint, UV light artifacts at the edges, the oldest photographic feeling.
 
