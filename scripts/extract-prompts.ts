@@ -15,6 +15,7 @@ const MODEL_PATTERNS: Record<string, RegExp[]> = {
   'Leonardo': [/leonardo/i],
   'Adobe Firefly': [/firefly/i, /adobe/i],
   'Midjourney': [/midjourney/i, /mj\s*v?\d/i, /niji\s*\d/i, /\/imagine/i],
+  'GPT-image2': [/gpt[\s-]*image[\s-]*2/i, /gpt[\s-]*image2/i, /chatgpt/i, /gpt-4/i, /gpt4/i],
 };
 
 // 难度判断规则
