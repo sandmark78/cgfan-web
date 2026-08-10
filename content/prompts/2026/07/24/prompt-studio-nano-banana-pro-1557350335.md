@@ -4,12 +4,6 @@ slug: prompt-studio-nano-banana-pro-1557350335
 model: Midjourney
 category: retro
 tags: ["人像", "插画", "复古", "动物", "编辑"]
-tags:
-- AI Art
-- Creative Writing
-- Adobe Firefly
-- Visual Storytelling
-- Narrative Art
 difficulty: intermediate
 cover: /images/prompts/prompt-studio-nano-banana-pro-1557350335.jpg
 date: '2026-01-23'

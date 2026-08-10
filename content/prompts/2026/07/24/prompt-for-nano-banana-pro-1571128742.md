@@ -4,12 +4,6 @@ slug: prompt-for-nano-banana-pro-1571128742
 model: Midjourney
 category: photography
 tags: ["人像", "时尚", "插画", "摄影", "动物"]
-tags:
-- 摄影
-- AI绘画
-- 写真创作
-- 夜景人像
-- 时尚摄影
 difficulty: intermediate
 cover: /images/prompts/prompt-for-nano-banana-pro-1571128742.jpg
 date: '2026-01-31'

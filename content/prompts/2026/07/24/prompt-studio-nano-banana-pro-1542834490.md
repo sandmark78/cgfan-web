@@ -4,12 +4,6 @@ slug: prompt-studio-nano-banana-pro-1542834490
 model: Midjourney
 category: editorial
 tags: ["人像", "插画", "动物", "珠宝", "编辑"]
-tags:
-- Nanobanana
-- AI Art
-- Prompt Engineering
-- Adobe Firefly
-- Expedition Planning
 difficulty: intermediate
 cover: /images/prompts/prompt-studio-nano-banana-pro-1542834490.jpg
 date: '2026-01-14'

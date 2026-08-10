@@ -4,12 +4,6 @@ slug: prompt-studio-nano-banana-pro-passport-1552462717
 model: Midjourney
 category: 3d
 tags: ["人像", "3D", "插画", "动物", "编辑"]
-tags:
-- AI Art
-- Creative Prompt
-- Adobe Firefly
-- 3D Scene
-- Travel Visualization
 difficulty: intermediate
 cover: /images/prompts/prompt-studio-nano-banana-pro-passport-1552462717.jpg
 date: '2026-01-19'
