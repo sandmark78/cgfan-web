@@ -57,6 +57,11 @@ def calculate_taste_adjustment(prompt: str, tags: list) -> dict:
             adjustment['color'] = max(adjustment['color'], 1)
             adjustment['aesthetic'] = max(adjustment['aesthetic'], 1)
     
+    # 3b. 霓虹/紫外线风格 → 色彩/审美+1（复古未来主义变体）
+    if any(kw in prompt_lower for kw in ['neon', '霓虹', 'ultraviolet', '紫外线', 'bioluminescent', '生物发光']):
+        adjustment['color'] = max(adjustment['color'], 1)
+        adjustment['aesthetic'] = max(adjustment['aesthetic'], 1)
+    
     # 4. 胶片感+电影感+孤独情绪 → 光影/策展+1
     if any(kw in prompt_lower for kw in ['胶片', 'film', '35mm', 'ccd']):
         if any(kw in prompt_lower for kw in ['电影感', 'cinematic', '孤独', 'lonely']):
