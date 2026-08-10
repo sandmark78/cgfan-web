@@ -3,7 +3,7 @@ title: "人潮中静立的深色大衣少年"
 slug: gemnana-2256
 date: 2026-02-25
 added: 2026-07-27T12:54:10+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

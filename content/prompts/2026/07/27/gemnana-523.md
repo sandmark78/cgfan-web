@@ -3,7 +3,7 @@ title: "电影感情绪拼贴：复古风格的中性时尚女性肖像"
 slug: gemnana-523
 date: 2025-11-21
 added: 2026-07-27T11:31:27+08:00
-model: Common
+model: 通用 Prompt
 category: retro
 tags:
   - AI绘图

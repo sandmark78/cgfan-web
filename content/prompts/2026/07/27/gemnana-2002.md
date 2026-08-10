@@ -3,7 +3,7 @@ title: "极简超现实时尚，倚靠巨型绿靴"
 slug: gemnana-2002
 date: 2026-02-06
 added: 2026-07-27T12:54:10+08:00
-model: Common
+model: 通用 Prompt
 category: minimalist
 tags:
   - AI绘图

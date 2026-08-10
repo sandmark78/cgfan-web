@@ -3,7 +3,7 @@ title: "手绘复古地图鸟瞰国家风光"
 slug: gemnana-636
 date: 2025-12-31
 added: 2026-07-27T11:31:33+08:00
-model: Common
+model: 通用 Prompt
 category: illustration
 tags:
   - AI绘图

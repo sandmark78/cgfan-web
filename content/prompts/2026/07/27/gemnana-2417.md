@@ -3,7 +3,7 @@ title: "Full cinematic daylight fashion 肖像..."
 slug: gemnana-2417
 date: 2026-03-06
 added: 2026-07-27T12:54:17+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

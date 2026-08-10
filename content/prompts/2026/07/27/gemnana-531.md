@@ -3,7 +3,7 @@ title: "黑板粉笔画艺术：展现《海贼王》波雅·汉库克的细腻�
 slug: gemnana-531
 date: 2025-11-29
 added: 2026-07-27T11:31:27+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

@@ -3,7 +3,7 @@ title: "撕裂纸边分割的彩色与黑白双面肖像"
 slug: gemnana-1881
 date: 2026-02-01
 added: 2026-07-27T12:54:05+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

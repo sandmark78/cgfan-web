@@ -3,7 +3,7 @@ title: "参考图场景重现"
 slug: gemnana-2416
 date: 2026-03-06
 added: 2026-07-27T12:54:17+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

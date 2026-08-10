@@ -3,7 +3,7 @@ title: "水果造型创意包装摄影"
 slug: gemnana-2105
 date: 2026-02-13
 added: 2026-07-27T12:54:10+08:00
-model: Common
+model: 通用 Prompt
 category: photography
 tags:
   - AI绘图

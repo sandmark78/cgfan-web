@@ -3,7 +3,7 @@ title: "有趣的毛茸茸字母"
 slug: gemnana-73
 date: 2025-11-06
 added: 2026-07-27T11:31:11+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

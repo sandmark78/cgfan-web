@@ -3,7 +3,7 @@ title: "雾镜中的温馨夜感自拍：暖光、羞怯微笑与圣诞氛围"
 slug: gemnana-545
 date: 2026-01-04
 added: 2026-07-27T11:31:27+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

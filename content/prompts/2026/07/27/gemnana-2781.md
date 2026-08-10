@@ -3,7 +3,7 @@ title: "黄金时段情侣海滩分镜提示"
 slug: gemnana-2781
 date: 2026-04-15
 added: 2026-07-27T12:54:24+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

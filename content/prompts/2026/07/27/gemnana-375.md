@@ -3,7 +3,7 @@ title: "戴着报童帽身穿黑色马甲"
 slug: gemnana-375
 date: 2025-11-06
 added: 2026-07-27T11:31:22+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

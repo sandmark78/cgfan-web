@@ -3,7 +3,7 @@ title: "地铁车厢里的冷调时尚肖像"
 slug: gemnana-2274
 date: 2026-02-26
 added: 2026-07-27T12:54:10+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

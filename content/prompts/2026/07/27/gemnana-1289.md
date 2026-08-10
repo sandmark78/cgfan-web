@@ -3,7 +3,7 @@ title: "雨中新宿小巷，街头抓拍奔跑回眸"
 slug: gemnana-1289
 date: 2026-01-15
 added: 2026-07-27T11:31:46+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

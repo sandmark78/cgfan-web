@@ -3,7 +3,7 @@ title: "A hyper realistic cinematic 3:4 竖版..."
 slug: gemnana-770
 date: 2026-01-07
 added: 2026-07-27T11:31:33+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

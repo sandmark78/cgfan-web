@@ -3,7 +3,7 @@ title: "高时尚分割排版海报"
 slug: gemnana-2252
 date: 2026-02-24
 added: 2026-07-27T12:54:10+08:00
-model: Common
+model: 通用 Prompt
 category: poster
 tags:
   - AI绘图

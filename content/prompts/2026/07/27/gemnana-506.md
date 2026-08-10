@@ -3,7 +3,7 @@ title: "超逼真风格女性骑马肖像：白色礼服与风车夕阳场景"
 slug: gemnana-506
 date: 2025-11-09
 added: 2026-07-27T11:31:27+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

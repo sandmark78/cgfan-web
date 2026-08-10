@@ -3,7 +3,7 @@ title: "金色阶梯上的街头少年"
 slug: gemnana-781
 date: 2026-01-07
 added: 2026-07-27T11:31:33+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

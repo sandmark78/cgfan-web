@@ -3,7 +3,7 @@ title: "品牌标语造型的趣味排版"
 slug: gemnana-2714
 date: 2026-03-29
 added: 2026-07-27T12:54:23+08:00
-model: Common
+model: 通用 Prompt
 category: product
 tags:
   - AI绘图

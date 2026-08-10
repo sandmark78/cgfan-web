@@ -3,7 +3,7 @@ title: "产品超现实创意广告"
 slug: gemnana-691
 date: 2026-01-05
 added: 2026-07-27T11:31:33+08:00
-model: Common
+model: 通用 Prompt
 category: product
 tags:
   - AI绘图

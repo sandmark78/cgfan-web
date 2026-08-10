@@ -3,7 +3,7 @@ title: "为高端商业营销活动创建3×3网格，3:4纵横比，以上传�
 slug: gemnana-1791
 date: 2026-01-28
 added: 2026-07-27T12:54:05+08:00
-model: Common
+model: 通用 Prompt
 category: product
 tags:
   - AI绘图

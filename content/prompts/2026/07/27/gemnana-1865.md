@@ -3,7 +3,7 @@ title: "[BRAND NAME] design language, 物体 rei..."
 slug: gemnana-1865
 date: 2026-01-31
 added: 2026-07-27T12:54:05+08:00
-model: Common
+model: 通用 Prompt
 category: product
 tags:
   - AI绘图

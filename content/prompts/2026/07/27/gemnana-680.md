@@ -3,7 +3,7 @@ title: "俯瞰微缩品牌旗舰店"
 slug: gemnana-680
 date: 2026-01-05
 added: 2026-07-27T11:31:33+08:00
-model: Common
+model: 通用 Prompt
 category: product
 tags:
   - AI绘图

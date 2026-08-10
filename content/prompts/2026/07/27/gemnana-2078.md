@@ -3,7 +3,7 @@ title: "云层之上坐在机翼上自拍"
 slug: gemnana-2078
 date: 2026-02-11
 added: 2026-07-27T12:54:10+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

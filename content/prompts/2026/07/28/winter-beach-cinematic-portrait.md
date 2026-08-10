@@ -1,7 +1,7 @@
 ---
 title: "海边冬夜回头电影感人像"
 slug: winter-beach-cinematic-portrait
-model: Common
+model: 通用 Prompt
 category: portrait
 tags:
   - AI绘图

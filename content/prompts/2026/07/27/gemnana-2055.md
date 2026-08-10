@@ -3,7 +3,7 @@ title: "颜料飞溅的侧面青年肖像"
 slug: gemnana-2055
 date: 2026-02-09
 added: 2026-07-27T12:54:10+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

@@ -3,7 +3,7 @@ title: "暗黑电影感超现实女性肖像"
 slug: gemnana-658
 date: 2026-01-04
 added: 2026-07-27T11:31:33+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

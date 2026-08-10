@@ -3,7 +3,7 @@ title: "为迷你C罗人偶上色"
 slug: gemnana-1199
 date: 2026-01-14
 added: 2026-07-27T11:31:45+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

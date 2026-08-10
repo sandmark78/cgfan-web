@@ -3,7 +3,7 @@ title: "极简胶囊品牌海报：透明剖面与品牌元素填充"
 slug: gemnana-578
 date: 2026-03-30
 added: 2026-07-27T11:31:27+08:00
-model: Common
+model: 通用 Prompt
 category: poster
 tags:
   - AI绘图

@@ -3,7 +3,7 @@ title: "圆形底座上的超写实等轴测微缩人生"
 slug: gemnana-813
 date: 2026-01-07
 added: 2026-07-27T11:31:33+08:00
-model: Common
+model: 通用 Prompt
 category: photorealistic
 tags:
   - AI绘图

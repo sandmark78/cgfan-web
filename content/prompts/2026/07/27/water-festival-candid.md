@@ -1,7 +1,7 @@
 ---
 title: "夏日泼水节闺蜜抓拍"
 slug: water-festival-candid
-model: Common
+model: 通用 Prompt
 category: portrait
 tags:
   - AI绘图

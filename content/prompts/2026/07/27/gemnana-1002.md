@@ -3,7 +3,7 @@ title: "Create a hyper realistic 爆炸 vertic..."
 slug: gemnana-1002
 date: 2026-01-11
 added: 2026-07-27T11:31:40+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

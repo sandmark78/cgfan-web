@@ -3,7 +3,7 @@ title: "奢华 perfume 产品 摄影 in a..."
 slug: gemnana-1972
 date: 2026-02-04
 added: 2026-07-27T12:54:10+08:00
-model: Common
+model: 通用 Prompt
 category: product
 tags:
   - AI绘图

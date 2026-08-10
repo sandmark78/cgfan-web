@@ -3,7 +3,7 @@ title: "微型透明胶囊"
 slug: gemnana-169
 date: 2025-11-06
 added: 2026-07-27T19:38:12+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

@@ -3,7 +3,7 @@ title: "红兜帽下的烈焰红唇特写"
 slug: gemnana-2050
 date: 2026-02-09
 added: 2026-07-27T12:54:10+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

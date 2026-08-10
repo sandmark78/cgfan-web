@@ -3,7 +3,7 @@ title: "面包形态"
 slug: gemnana-29
 date: 2025-11-06
 added: 2026-07-26T21:00:00+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags: []
 difficulty: intermediate

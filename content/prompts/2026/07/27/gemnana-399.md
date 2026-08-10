@@ -3,7 +3,7 @@ title: "一幅超写实细节丰富的水下特写肖像"
 slug: gemnana-399
 date: 2025-11-06
 added: 2026-07-27T11:31:27+08:00
-model: Common
+model: 通用 Prompt
 category: photorealistic
 tags:
   - AI绘图

@@ -3,7 +3,7 @@ title: "昏暗巴士中的神秘凝视"
 slug: gemnana-2441
 date: 2026-03-08
 added: 2026-07-27T12:54:17+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

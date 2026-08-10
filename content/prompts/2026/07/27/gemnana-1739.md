@@ -3,7 +3,7 @@ title: "暗色地平线，高端产品揭幕"
 slug: gemnana-1739
 date: 2026-01-26
 added: 2026-07-27T12:53:59+08:00
-model: Common
+model: 通用 Prompt
 category: product
 tags:
   - AI绘图

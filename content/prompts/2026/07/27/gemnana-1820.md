@@ -3,7 +3,7 @@ title: "在柔和米色的工作室内，构建3x3精细编辑照片网格"
 slug: gemnana-1820
 date: 2026-01-30
 added: 2026-07-27T12:54:05+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

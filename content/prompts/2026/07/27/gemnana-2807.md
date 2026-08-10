@@ -3,7 +3,7 @@ title: "GPTimage2角色设定卡制作"
 slug: gemnana-2807
 date: 2026-04-18
 added: 2026-07-27T12:54:24+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

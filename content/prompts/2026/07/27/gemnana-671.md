@@ -3,7 +3,7 @@ title: "超写实地标景观微缩模型"
 slug: gemnana-671
 date: 2026-01-04
 added: 2026-07-27T11:31:33+08:00
-model: Common
+model: 通用 Prompt
 category: photorealistic
 tags:
   - AI绘图

@@ -3,7 +3,7 @@ title: "低角度时尚产品宣传大片"
 slug: gemnana-2683
 date: 2026-03-26
 added: 2026-07-27T12:54:23+08:00
-model: Common
+model: 通用 Prompt
 category: product
 tags:
   - AI绘图

@@ -3,7 +3,7 @@ title: "古风贵女水光美妆特写提示词"
 slug: gemnana-3025
 date: 2026-07-08
 added: 2026-07-27T12:54:24+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - 提示词

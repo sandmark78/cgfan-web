@@ -3,7 +3,7 @@ title: "微缩后院里误用地球物件的外星人"
 slug: gemnana-801
 date: 2026-01-07
 added: 2026-07-27T11:31:33+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

@@ -3,7 +3,7 @@ title: "现代简约窗边场景创意绘制指南"
 slug: gemnana-541
 date: 2026-01-04
 added: 2026-07-27T11:31:27+08:00
-model: Common
+model: 通用 Prompt
 category: minimalist
 tags:
   - AI绘图

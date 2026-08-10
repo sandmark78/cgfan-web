@@ -3,7 +3,7 @@ title: "极简工作室里的超现实自信人像"
 slug: gemnana-500
 date: 2025-11-08
 added: 2026-07-27T11:31:27+08:00
-model: Common
+model: 通用 Prompt
 category: minimalist
 tags:
   - AI绘图

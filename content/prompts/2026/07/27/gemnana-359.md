@@ -3,7 +3,7 @@ title: "品牌创意3D广告"
 slug: gemnana-359
 date: 2025-11-06
 added: 2026-07-27T11:31:16+08:00
-model: Common
+model: 通用 Prompt
 category: product
 tags:
   - AI绘图

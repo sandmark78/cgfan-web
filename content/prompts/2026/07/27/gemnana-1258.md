@@ -3,7 +3,7 @@ title: "斑马线上模糊人潮中的清晰身影"
 slug: gemnana-1258
 date: 2026-01-14
 added: 2026-07-27T11:31:46+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

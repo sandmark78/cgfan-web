@@ -3,7 +3,7 @@ title: "冬日午后的沉静男性时尚"
 slug: gemnana-752
 date: 2026-01-06
 added: 2026-07-27T11:31:33+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

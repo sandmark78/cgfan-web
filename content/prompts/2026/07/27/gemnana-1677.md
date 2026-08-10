@@ -3,7 +3,7 @@ title: "双手插兜的鼠尾草绿衬衫，冷静自信"
 slug: gemnana-1677
 date: 2026-01-25
 added: 2026-07-27T12:53:50+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

@@ -1,7 +1,7 @@
 ---
 title: "蜂巢女皇高定礼服"
 slug: honeycomb-queen-gown
-model: Common
+model: 通用 Prompt
 category: fantasy
 tags:
   - AI绘图

@@ -3,7 +3,7 @@ title: "品牌奢华之物从天而降"
 slug: gemnana-27
 date: 2025-11-06
 added: 2026-07-26T21:00:00+08:00
-model: Common
+model: 通用 Prompt
 category: product
 tags: []
 difficulty: intermediate

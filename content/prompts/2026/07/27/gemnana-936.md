@@ -3,7 +3,7 @@ title: "黄昏乡间公路，情侣电影感剧照网格"
 slug: gemnana-936
 date: 2026-01-10
 added: 2026-07-27T11:31:40+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

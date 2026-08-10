@@ -3,7 +3,7 @@ title: "烈焰色调的电影眼眸特写"
 slug: gemnana-1835
 date: 2026-01-30
 added: 2026-07-27T12:54:05+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

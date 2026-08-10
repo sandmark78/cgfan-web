@@ -3,7 +3,7 @@ title: "积云雕塑Q版萌化"
 slug: gemnana-2547
 date: 2026-03-15
 added: 2026-07-27T12:54:17+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

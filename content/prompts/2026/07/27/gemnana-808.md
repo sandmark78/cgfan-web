@@ -3,7 +3,7 @@ title: "苔藓森林中的玻璃立方微景观"
 slug: gemnana-808
 date: 2026-01-07
 added: 2026-07-27T11:31:33+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

@@ -3,7 +3,7 @@ title: "穿着充气羽绒服的鸟儿：自然风光中的趣味瞬间"
 slug: gemnana-510
 date: 2025-11-10
 added: 2026-07-27T11:31:27+08:00
-model: Common
+model: 通用 Prompt
 category: landscape
 tags:
   - AI绘图

@@ -3,7 +3,7 @@ title: "手办-ZBrush建模屏显与万代风格包装盒"
 slug: gemnana-294
 date: 2025-11-06
 added: 2026-07-27T11:31:15+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

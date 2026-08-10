@@ -3,7 +3,7 @@ title: "皮克斯风格文化人物镜前自拍"
 slug: gemnana-2562
 date: 2026-03-16
 added: 2026-07-27T12:54:17+08:00
-model: Common
+model: 通用 Prompt
 category: portrait
 tags:
   - AI绘图

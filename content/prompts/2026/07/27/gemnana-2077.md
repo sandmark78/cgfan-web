@@ -3,7 +3,7 @@ title: "复古扶手椅上的夸张摇头娃娃"
 slug: gemnana-2077
 date: 2026-02-11
 added: 2026-07-27T12:54:10+08:00
-model: Common
+model: 通用 Prompt
 category: retro
 tags:
   - AI绘图

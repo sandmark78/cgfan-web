@@ -3,7 +3,7 @@ title: "大理石金饰的精致棋子"
 slug: gemnana-645
 date: 2026-01-02
 added: 2026-07-27T11:31:33+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

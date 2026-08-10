@@ -3,7 +3,7 @@ title: "Logo超写实微型摄影"
 slug: gemnana-42
 date: 2025-11-06
 added: 2026-07-26T22:00:00+08:00
-model: Common
+model: 通用 Prompt
 category: photography
 tags: []
 difficulty: intermediate

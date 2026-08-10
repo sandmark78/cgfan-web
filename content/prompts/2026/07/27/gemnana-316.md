@@ -3,7 +3,7 @@ title: "物体变成大胆的卡通滴水"
 slug: gemnana-316
 date: 2025-11-06
 added: 2026-07-27T11:31:15+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

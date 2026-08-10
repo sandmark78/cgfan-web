@@ -3,7 +3,7 @@ title: "真人肖像与3D卡通迷你角色"
 slug: gemnana-792
 date: 2026-01-07
 added: 2026-07-27T11:31:33+08:00
-model: Common
+model: 通用 Prompt
 category: 3d
 tags:
   - AI绘图

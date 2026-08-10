@@ -3,7 +3,7 @@ title: "电影感皇家肖像，童话王室的奢华美学"
 slug: gemnana-917
 date: 2026-01-09
 added: 2026-07-27T11:31:40+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

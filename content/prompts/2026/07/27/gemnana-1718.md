@@ -3,7 +3,7 @@ title: "Use The Uploaded 图像 Of The Woman As S..."
 slug: gemnana-1718
 date: 2026-01-26
 added: 2026-07-27T12:53:59+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

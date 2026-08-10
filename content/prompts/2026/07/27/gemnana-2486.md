@@ -3,7 +3,7 @@ title: "折纸风格角色"
 slug: gemnana-2486
 date: 2026-03-11
 added: 2026-07-27T12:54:17+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

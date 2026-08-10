@@ -3,7 +3,7 @@ title: "草地里的微型建筑工人微距世界"
 slug: gemnana-2083
 date: 2026-02-11
 added: 2026-07-27T12:54:10+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

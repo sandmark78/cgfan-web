@@ -3,7 +3,7 @@ title: "品牌领导骑行"
 slug: gemnana-40
 date: 2025-11-06
 added: 2026-07-26T22:00:00+08:00
-model: Common
+model: 通用 Prompt
 category: product
 tags: []
 difficulty: intermediate

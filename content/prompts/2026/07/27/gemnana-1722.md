@@ -3,7 +3,7 @@ title: "[产品]，俯视平铺中心位置，周围环绕[成分]，新鲜切�
 slug: gemnana-1722
 date: 2026-01-26
 added: 2026-07-27T12:53:59+08:00
-model: Common
+model: 通用 Prompt
 category: product
 tags:
   - AI绘图

@@ -3,7 +3,7 @@ title: "泰迪熊从可乐罐中探出身来"
 slug: gemnana-807
 date: 2026-01-07
 added: 2026-07-27T11:31:33+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

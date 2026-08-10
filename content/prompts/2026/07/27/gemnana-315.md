@@ -3,7 +3,7 @@ title: "照片级逼真的概念食物艺术肖像"
 slug: gemnana-315
 date: 2025-11-06
 added: 2026-07-27T19:38:12+08:00
-model: Common
+model: 通用 Prompt
 category: photography
 tags:
   - AI绘图

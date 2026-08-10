@@ -3,7 +3,7 @@ title: "金属浮雕冲压Logo"
 slug: gemnana-2741
 date: 2026-03-31
 added: 2026-07-27T12:54:24+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

@@ -3,7 +3,7 @@ title: "大胆撞色时尚肖像，捧脸惊讶的戏剧瞬间"
 slug: gemnana-1404
 date: 2026-01-16
 added: 2026-07-27T11:31:50+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

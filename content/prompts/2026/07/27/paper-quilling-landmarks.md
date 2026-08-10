@@ -1,7 +1,7 @@
 ---
 title: "纸艺卷折地标人像"
 slug: paper-quilling-landmarks
-model: Common
+model: 通用 Prompt
 category: portrait
 tags:
   - AI绘图

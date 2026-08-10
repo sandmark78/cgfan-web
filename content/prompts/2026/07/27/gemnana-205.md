@@ -3,7 +3,7 @@ title: "以动物为灵感的品牌"
 slug: gemnana-205
 date: 2025-11-06
 added: 2026-07-27T11:31:15+08:00
-model: Common
+model: 通用 Prompt
 category: product
 tags:
   - AI绘图

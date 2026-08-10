@@ -3,7 +3,7 @@ title: "金框分屏倒可乐的西装绅士"
 slug: gemnana-630
 date: 2025-12-29
 added: 2026-07-27T11:31:27+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

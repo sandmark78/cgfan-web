@@ -4,16 +4,18 @@
 export const CATEGORY_MAP: Record<string, { label: string; icon: string }> = {
   // 主要分类
   photography: { label: '摄影', icon: '📸' },
-  photorealistic: { label: '超写实', icon: '🎯' },
+  photorealistic: { label: '超写实', icon: '' },
   portrait: { label: '人像', icon: '👤' },
-  landscape: { label: '风景', icon: '🏞️' },
+  landscape: { label: '风景', icon: '️' },
   product: { label: '产品', icon: '📦' },
   poster: { label: '海报', icon: '🖼️' },
   editorial: { label: '编辑设计', icon: '📰' },
   illustration: { label: '插画', icon: '🎨' },
-  concept_art: { label: '概念艺术', icon: '💡' },
+  concept_art: { label: '概念艺术', icon: '' },
+  'concept-art': { label: '概念艺术', icon: '💡' },
   '3d': { label: '3D渲染', icon: '🎮' },
-  anime: { label: '动漫', icon: '🎌' },
+  anime: { label: '动漫', icon: '' },
+  'dong-man': { label: '动漫', icon: '🎌' },
   cyberpunk: { label: '赛博朋克', icon: '🌃' },
   'sci-fi': { label: '科幻', icon: '🚀' },
   fantasy: { label: '奇幻', icon: '🧙' },
@@ -22,9 +24,13 @@ export const CATEGORY_MAP: Record<string, { label: string; icon: string }> = {
   abstract: { label: '抽象', icon: '🎭' },
   // 补充分类
   'chinese-style': { label: '国风', icon: '🏮' },
+  'guo-feng': { label: '国风', icon: '🏮' },
   fashion: { label: '时尚', icon: '👗' },
   architecture: { label: '建筑', icon: '🏛️' },
   design: { label: '设计', icon: '✏️' },
+  artistic: { label: '艺术', icon: '🎨' },
+  cinematic: { label: '电影感', icon: '🎬' },
+  commercial: { label: '商业', icon: '💼' },
 }
 
 /**

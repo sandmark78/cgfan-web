@@ -3,7 +3,7 @@ title: "纯黑背景的产品悬浮特写"
 slug: gemnana-2072
 date: 2026-02-11
 added: 2026-07-27T12:54:10+08:00
-model: Common
+model: 通用 Prompt
 category: product
 tags:
   - AI绘图

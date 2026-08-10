@@ -3,7 +3,7 @@ title: "哑光黑产品，抛光金属银质感"
 slug: gemnana-2101
 date: 2026-02-12
 added: 2026-07-27T12:54:10+08:00
-model: Common
+model: 通用 Prompt
 category: product
 tags:
   - AI绘图

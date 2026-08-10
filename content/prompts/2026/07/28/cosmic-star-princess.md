@@ -1,7 +1,7 @@
 ---
 title: "星空宇宙公主幻想"
 slug: cosmic-star-princess
-model: Common
+model: 通用 Prompt
 category: portrait
 tags:
   - AI绘图

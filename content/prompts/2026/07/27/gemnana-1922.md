@@ -3,7 +3,7 @@ title: "面包雕塑超写实造型"
 slug: gemnana-1922
 date: 2026-02-02
 added: 2026-07-27T12:54:05+08:00
-model: Common
+model: 通用 Prompt
 category: photorealistic
 tags:
   - AI绘图

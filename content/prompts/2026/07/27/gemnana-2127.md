@@ -3,7 +3,7 @@ title: "极致画质的超写实电影感人像"
 slug: gemnana-2127
 date: 2026-02-15
 added: 2026-07-27T12:54:10+08:00
-model: Common
+model: 通用 Prompt
 category: photorealistic
 tags:
   - AI绘图

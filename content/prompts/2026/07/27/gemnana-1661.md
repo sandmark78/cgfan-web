@@ -3,7 +3,7 @@ title: "A futuristic cyber aesthetic 肖像 of..."
 slug: gemnana-1661
 date: 2026-01-24
 added: 2026-07-27T12:53:44+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

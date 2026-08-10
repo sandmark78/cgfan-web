@@ -3,7 +3,7 @@ title: "十二人偶队列收藏级渲染"
 slug: gemnana-2614
 date: 2026-03-19
 added: 2026-07-27T12:54:17+08:00
-model: Common
+model: 通用 Prompt
 category: 3d
 tags:
   - AI绘图

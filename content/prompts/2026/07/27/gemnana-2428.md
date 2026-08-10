@@ -3,7 +3,7 @@ title: "雪山之巅的巨型手机"
 slug: gemnana-2428
 date: 2026-03-07
 added: 2026-07-27T12:54:17+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

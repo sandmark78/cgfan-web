@@ -3,7 +3,7 @@ title: "创建你自己的GTA角色"
 slug: gemnana-5
 date: 2025-11-06
 added: 2026-07-26T21:33:35+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - 艺术

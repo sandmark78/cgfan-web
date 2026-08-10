@@ -3,7 +3,7 @@ title: "超现实主义极简概念广告"
 slug: gemnana-269
 date: 2025-11-06
 added: 2026-07-27T11:31:15+08:00
-model: Common
+model: 通用 Prompt
 category: concept-art
 tags:
   - AI绘图

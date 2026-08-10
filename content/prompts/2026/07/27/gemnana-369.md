@@ -3,7 +3,7 @@ title: "身穿一件宽松的白色衬衫肖像照"
 slug: gemnana-369
 date: 2025-11-06
 added: 2026-07-27T11:31:22+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

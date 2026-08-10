@@ -3,7 +3,7 @@ title: "Hyperrealistic dark fantasy 肖像 of..."
 slug: gemnana-590
 date: 2025-12-20
 added: 2026-07-27T11:31:27+08:00
-model: Common
+model: 通用 Prompt
 category: fantasy
 tags:
   - AI绘图

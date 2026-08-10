@@ -3,7 +3,7 @@ title: "一张戏剧性的黑白工作室肖像照"
 slug: gemnana-361
 date: 2025-11-06
 added: 2026-07-27T11:31:16+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

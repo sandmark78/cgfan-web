@@ -3,7 +3,7 @@ title: "使用以 f6f4f0 为主背景， 2d6dc3 为主蓝色，同时也包含�
 slug: gemnana-2590
 date: 2026-03-18
 added: 2026-07-27T12:54:17+08:00
-model: Common
+model: 通用 Prompt
 category: landscape
 tags:
   - AI绘图

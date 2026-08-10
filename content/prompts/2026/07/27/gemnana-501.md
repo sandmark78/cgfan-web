@@ -3,7 +3,7 @@ title: "极光雪景下的忧郁少女三联画：超写实数字艺术呈现"
 slug: gemnana-501
 date: 2025-11-08
 added: 2026-07-27T11:31:27+08:00
-model: Common
+model: 通用 Prompt
 category: photorealistic
 tags:
   - AI绘图

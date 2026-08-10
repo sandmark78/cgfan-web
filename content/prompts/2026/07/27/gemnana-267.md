@@ -3,7 +3,7 @@ title: "超现实几何艺术风格的数字插画"
 slug: gemnana-267
 date: 2025-11-06
 added: 2026-07-27T19:38:12+08:00
-model: Common
+model: 通用 Prompt
 category: illustration
 tags:
   - AI绘图

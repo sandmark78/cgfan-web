@@ -93,7 +93,7 @@ function detectModel(content: string, frontmatterModel: string = ''): string {
     return frontmatterModel;
   }
   
-  return 'Common';
+  return '通用 Prompt';
 }
 
 function detectDifficulty(content: string): string {

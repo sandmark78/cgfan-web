@@ -3,7 +3,7 @@ title: "指尖扭蛋里的微缩世界"
 slug: gemnana-632
 date: 2025-12-29
 added: 2026-07-27T11:31:33+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

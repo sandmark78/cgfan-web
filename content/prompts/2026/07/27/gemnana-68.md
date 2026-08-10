@@ -3,7 +3,7 @@ title: "透明容器里有一个微型的3D世界"
 slug: gemnana-68
 date: 2025-11-06
 added: 2026-07-27T11:31:07+08:00
-model: Common
+model: 通用 Prompt
 category: 3d
 tags:
   - AI绘图

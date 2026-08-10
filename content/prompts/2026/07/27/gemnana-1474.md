@@ -3,7 +3,7 @@ title: "もう少しテカテカさせてみたのじゃ✨"
 slug: gemnana-1474
 date: 2026-01-17
 added: 2026-07-27T11:31:51+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

@@ -3,7 +3,7 @@ title: "东方古风清雅女性正面肖像，超近景贴脸特写，人物正
 slug: gemnana-2697
 date: 2026-03-28
 added: 2026-07-27T12:54:23+08:00
-model: Common
+model: 通用 Prompt
 category: portrait
 tags:
   - AI绘图

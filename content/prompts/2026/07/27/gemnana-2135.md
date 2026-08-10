@@ -3,7 +3,7 @@ title: "金框中走出的文艺复兴少女"
 slug: gemnana-2135
 date: 2026-02-15
 added: 2026-07-27T12:54:10+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

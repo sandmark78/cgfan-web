@@ -3,7 +3,7 @@ title: "夜色桥头的青年三联肖像"
 slug: gemnana-1736
 date: 2026-01-26
 added: 2026-07-27T12:53:59+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

@@ -3,7 +3,7 @@ title: "绯红花海中的侧影"
 slug: gemnana-2182
 date: 2026-02-20
 added: 2026-07-27T12:54:10+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

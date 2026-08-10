@@ -3,7 +3,7 @@ title: "掌中另一个自己，温暖微笑"
 slug: gemnana-1185
 date: 2026-01-14
 added: 2026-07-27T11:31:45+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

@@ -3,7 +3,7 @@ title: "中国小众城市与特产地图"
 slug: gemnana-824
 date: 2026-01-08
 added: 2026-07-27T11:31:39+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

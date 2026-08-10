@@ -3,7 +3,7 @@ title: "一位年轻女性的时尚电影肖像"
 slug: gemnana-363
 date: 2025-11-06
 added: 2026-07-27T11:31:16+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

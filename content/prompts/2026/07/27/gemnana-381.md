@@ -3,7 +3,7 @@ title: "一张极具戏剧张力的黑白特写肖像"
 slug: gemnana-381
 date: 2025-11-06
 added: 2026-07-27T11:31:22+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

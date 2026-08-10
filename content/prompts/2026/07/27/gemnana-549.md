@@ -3,7 +3,7 @@ title: "车内静谧奢华瞬间：高角度镜头下的优雅与自信"
 slug: gemnana-549
 date: 2026-01-04
 added: 2026-07-27T11:31:27+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

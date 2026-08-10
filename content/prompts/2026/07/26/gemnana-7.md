@@ -3,7 +3,7 @@ title: "刺绣肖像"
 slug: gemnana-7
 date: 2025-11-06
 added: 2026-07-26T21:33:35+08:00
-model: Common
+model: 通用 Prompt
 category: portrait
 tags:
   - 人像

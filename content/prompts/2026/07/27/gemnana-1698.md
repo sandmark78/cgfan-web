@@ -3,7 +3,7 @@ title: "水花环绕的护肤品广告"
 slug: gemnana-1698
 date: 2026-01-25
 added: 2026-07-27T12:53:55+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

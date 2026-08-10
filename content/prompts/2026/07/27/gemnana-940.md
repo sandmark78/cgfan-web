@@ -3,7 +3,7 @@ title: "单色橙色画报，高级时装美学"
 slug: gemnana-940
 date: 2026-01-10
 added: 2026-07-27T11:31:40+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

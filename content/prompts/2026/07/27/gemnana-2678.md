@@ -3,7 +3,7 @@ title: "电影海报变儿童蜡笔画"
 slug: gemnana-2678
 date: 2026-03-25
 added: 2026-07-27T12:54:23+08:00
-model: Common
+model: 通用 Prompt
 category: poster
 tags:
   - AI绘图

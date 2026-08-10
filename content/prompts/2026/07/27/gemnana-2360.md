@@ -3,7 +3,7 @@ title: "3D 微缩日本温泉乡，黏土风格立体模型"
 slug: gemnana-2360
 date: 2026-03-03
 added: 2026-07-27T12:54:17+08:00
-model: Common
+model: 通用 Prompt
 category: 3d
 tags:
   - AI绘图

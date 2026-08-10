@@ -3,7 +3,7 @@ title: "暖光渐变中的电影感男性肖像"
 slug: gemnana-2660
 date: 2026-03-24
 added: 2026-07-27T12:54:17+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

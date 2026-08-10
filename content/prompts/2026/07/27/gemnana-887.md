@@ -3,7 +3,7 @@ title: "包头巾少女镜子自拍"
 slug: gemnana-887
 date: 2026-01-09
 added: 2026-07-27T11:31:40+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

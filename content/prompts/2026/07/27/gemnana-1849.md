@@ -3,7 +3,7 @@ title: "北欧黑沙滩的四格胶片"
 slug: gemnana-1849
 date: 2026-01-31
 added: 2026-07-27T12:54:05+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

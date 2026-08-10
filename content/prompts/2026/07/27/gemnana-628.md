@@ -3,7 +3,7 @@ title: "户外光影人像"
 slug: gemnana-628
 date: 2025-12-29
 added: 2026-07-27T11:31:27+08:00
-model: Common
+model: 通用 Prompt
 category: portrait
 tags:
   - AI绘图

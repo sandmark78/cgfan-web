@@ -3,7 +3,7 @@ title: "超新鲜柑橘汽水微距系列高端广告级成像与流体动力学
 slug: gemnana-563
 date: 2026-01-09
 added: 2026-07-27T11:31:27+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

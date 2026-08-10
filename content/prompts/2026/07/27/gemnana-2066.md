@@ -3,7 +3,7 @@ title: "电影写实肖像，长凳上的读书人"
 slug: gemnana-2066
 date: 2026-02-10
 added: 2026-07-27T12:54:10+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

@@ -3,7 +3,7 @@ title: "超高清照片级写实肖像"
 slug: gemnana-616
 date: 2025-12-25
 added: 2026-07-27T11:31:27+08:00
-model: Common
+model: 通用 Prompt
 category: photography
 tags:
   - AI绘图

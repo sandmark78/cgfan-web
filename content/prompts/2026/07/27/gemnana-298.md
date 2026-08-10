@@ -3,7 +3,7 @@ title: "超写实3D漫画肖像"
 slug: gemnana-298
 date: 2025-11-06
 added: 2026-07-27T11:31:15+08:00
-model: Common
+model: 通用 Prompt
 category: photorealistic
 tags:
   - AI绘图

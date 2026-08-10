@@ -3,7 +3,7 @@ title: "复古锡玩具立体模型风格"
 slug: gemnana-45
 date: 2025-11-06
 added: 2026-07-26T22:00:00+08:00
-model: Common
+model: 通用 Prompt
 category: retro
 tags: []
 difficulty: intermediate

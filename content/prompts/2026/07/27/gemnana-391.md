@@ -3,7 +3,7 @@ title: "赛博美学未来社交软件界面照片"
 slug: gemnana-391
 date: 2025-11-06
 added: 2026-07-27T11:31:27+08:00
-model: Common
+model: 通用 Prompt
 category: photography
 tags:
   - AI绘图

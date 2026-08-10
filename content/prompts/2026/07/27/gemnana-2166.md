@@ -3,7 +3,7 @@ title: "铂金发女郎的金毛皮草外套，白色极简空间"
 slug: gemnana-2166
 date: 2026-02-19
 added: 2026-07-27T12:54:10+08:00
-model: Common
+model: 通用 Prompt
 category: minimalist
 tags:
   - AI绘图

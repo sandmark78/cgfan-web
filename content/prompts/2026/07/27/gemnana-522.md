@@ -3,7 +3,7 @@ title: "纳米香蕉效果震撼！探索AI创意新边界"
 slug: gemnana-522
 date: 2025-11-21
 added: 2026-07-27T11:31:27+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

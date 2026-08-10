@@ -3,7 +3,7 @@ title: "创作漫画风格插画"
 slug: gemnana-270
 date: 2025-11-06
 added: 2026-07-27T11:31:15+08:00
-model: Common
+model: 通用 Prompt
 category: illustration
 tags:
   - AI绘图

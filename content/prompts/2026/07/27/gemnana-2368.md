@@ -3,7 +3,7 @@ title: "八K特写仰望光影肖像"
 slug: gemnana-2368
 date: 2026-03-03
 added: 2026-07-27T12:54:17+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

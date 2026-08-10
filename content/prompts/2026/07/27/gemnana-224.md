@@ -3,7 +3,7 @@ title: "时尚的胶囊海报"
 slug: gemnana-224
 date: 2025-11-06
 added: 2026-07-27T11:31:15+08:00
-model: Common
+model: 通用 Prompt
 category: poster
 tags:
   - AI绘图

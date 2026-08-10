@@ -3,7 +3,7 @@ title: "主体细节精致刻画"
 slug: gemnana-282
 date: 2025-11-06
 added: 2026-07-27T11:31:15+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

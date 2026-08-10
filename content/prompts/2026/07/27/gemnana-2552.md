@@ -3,7 +3,7 @@ title: "鱼眼镜头下的棋手"
 slug: gemnana-2552
 date: 2026-03-16
 added: 2026-07-27T12:54:17+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

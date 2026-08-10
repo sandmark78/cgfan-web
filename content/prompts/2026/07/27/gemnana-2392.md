@@ -3,7 +3,7 @@ title: "产品悬浮居中，留白至简构图"
 slug: gemnana-2392
 date: 2026-03-04
 added: 2026-07-27T12:54:17+08:00
-model: Common
+model: 通用 Prompt
 category: product
 tags:
   - AI绘图

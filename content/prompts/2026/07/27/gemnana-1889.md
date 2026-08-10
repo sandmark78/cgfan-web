@@ -3,7 +3,7 @@ title: "钩针编织微缩机场"
 slug: gemnana-1889
 date: 2026-02-01
 added: 2026-07-27T12:54:05+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

@@ -3,7 +3,7 @@ title: "彩色黏土微缩地标世界"
 slug: gemnana-732
 date: 2026-01-06
 added: 2026-07-27T11:31:33+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

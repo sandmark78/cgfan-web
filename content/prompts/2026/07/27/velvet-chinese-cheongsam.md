@@ -1,7 +1,7 @@
 ---
 title: "酒红丝绒新中式旗袍"
 slug: velvet-chinese-cheongsam
-model: Common
+model: 通用 Prompt
 category: portrait
 tags:
   - AI绘图

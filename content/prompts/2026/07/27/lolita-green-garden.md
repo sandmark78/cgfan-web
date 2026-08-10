@@ -1,7 +1,7 @@
 ---
 title: "新中式绿白洛丽塔COS"
 slug: lolita-green-garden
-model: Common
+model: 通用 Prompt
 category: portrait
 tags:
   - AI绘图

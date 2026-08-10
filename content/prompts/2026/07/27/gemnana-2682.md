@@ -3,7 +3,7 @@ title: "皮克斯动画群像海报"
 slug: gemnana-2682
 date: 2026-03-26
 added: 2026-07-27T12:54:23+08:00
-model: Common
+model: 通用 Prompt
 category: poster
 tags:
   - AI绘图

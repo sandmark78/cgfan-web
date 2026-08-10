@@ -3,7 +3,7 @@ title: "霍格沃茨魔法少女肖像"
 slug: gemnana-1141
 date: 2026-01-13
 added: 2026-07-27T11:31:45+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

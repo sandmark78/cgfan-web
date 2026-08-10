@@ -3,7 +3,7 @@ title: "双重曝光致敬海报"
 slug: gemnana-815
 date: 2026-01-07
 added: 2026-07-27T11:31:33+08:00
-model: Common
+model: 通用 Prompt
 category: poster
 tags:
   - AI绘图

@@ -3,7 +3,7 @@ title: "Low angle close up 肖像 of a platinu..."
 slug: gemnana-2140
 date: 2026-02-16
 added: 2026-07-27T12:54:10+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

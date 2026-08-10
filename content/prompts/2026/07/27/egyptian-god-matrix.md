@@ -1,7 +1,7 @@
 ---
 title: "矩阵中的埃及神祇"
 slug: egyptian-god-matrix
-model: Common
+model: 通用 Prompt
 category: sci-fi
 tags:
   - AI绘图

@@ -3,7 +3,7 @@ title: "时尚人像摄影写真"
 slug: gemnana-609
 date: 2025-12-24
 added: 2026-07-27T11:31:27+08:00
-model: Common
+model: 通用 Prompt
 category: photography
 tags:
   - AI绘图

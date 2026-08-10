@@ -3,7 +3,7 @@ title: "在雪地调整提示词偶然捕捉的雪中眨眼甜美瞬间"
 slug: gemnana-570
 date: 2026-01-14
 added: 2026-07-27T11:31:27+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

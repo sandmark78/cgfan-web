@@ -3,7 +3,7 @@ title: "奢华 fashion editorial 肖像 of a w..."
 slug: gemnana-1612
 date: 2026-01-20
 added: 2026-07-27T11:31:51+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

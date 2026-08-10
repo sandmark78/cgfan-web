@@ -3,7 +3,7 @@ title: "3D纸艺作品"
 slug: gemnana-283
 date: 2025-11-06
 added: 2026-07-27T19:38:12+08:00
-model: Common
+model: 通用 Prompt
 category: 3d
 tags:
   - AI绘图

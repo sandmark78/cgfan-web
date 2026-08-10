@@ -3,7 +3,7 @@ title: "还原真实面容的影楼肖像"
 slug: gemnana-2546
 date: 2026-03-15
 added: 2026-07-27T12:54:17+08:00
-model: Common
+model: 通用 Prompt
 category: photorealistic
 tags:
   - AI绘图

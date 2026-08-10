@@ -3,7 +3,7 @@ title: "身穿古代服饰的派大星和海绵宝宝"
 slug: gemnana-347
 date: 2025-11-06
 added: 2026-07-27T11:31:15+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

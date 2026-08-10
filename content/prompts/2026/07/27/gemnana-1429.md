@@ -3,7 +3,7 @@ title: "「放流中のダム直下でダム汁を浴びて喜んでいる人達
 slug: gemnana-1429
 date: 2026-01-16
 added: 2026-07-27T11:31:50+08:00
-model: Common
+model: 通用 Prompt
 category: portrait
 tags:
   - AI绘图

@@ -3,7 +3,7 @@ title: "微缩行星城市地标球体"
 slug: gemnana-695
 date: 2026-01-05
 added: 2026-07-27T11:31:33+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

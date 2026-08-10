@@ -3,7 +3,7 @@ title: "等距微缩日式浴室泡澡"
 slug: gemnana-1351
 date: 2026-01-15
 added: 2026-07-27T11:31:50+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

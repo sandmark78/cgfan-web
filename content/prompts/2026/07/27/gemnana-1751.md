@@ -3,7 +3,7 @@ title: "洋红蓝光戏剧人像"
 slug: gemnana-1751
 date: 2026-01-27
 added: 2026-07-27T12:54:05+08:00
-model: Common
+model: 通用 Prompt
 category: portrait
 tags:
   - AI绘图

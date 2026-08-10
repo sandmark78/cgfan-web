@@ -3,7 +3,7 @@ title: "高端产品爆裂视图微距广告示例与风格表现指南"
 slug: gemnana-2767
 date: 2026-04-08
 added: 2026-07-27T12:54:24+08:00
-model: Common
+model: 通用 Prompt
 category: product
 tags:
   - AI绘图

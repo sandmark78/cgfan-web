@@ -3,7 +3,7 @@ title: "黑暗奇幻中的女巫师"
 slug: gemnana-1334
 date: 2026-01-15
 added: 2026-07-27T11:31:50+08:00
-model: Common
+model: 通用 Prompt
 category: fantasy
 tags:
   - AI绘图

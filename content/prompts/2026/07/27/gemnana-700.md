@@ -3,7 +3,7 @@ title: "与动物互动的温馨人像摄影"
 slug: gemnana-700
 date: 2026-01-06
 added: 2026-07-27T11:31:33+08:00
-model: Common
+model: 通用 Prompt
 category: photography
 tags:
   - AI绘图

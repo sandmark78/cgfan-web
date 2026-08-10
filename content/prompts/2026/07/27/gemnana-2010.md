@@ -3,7 +3,7 @@ title: "照片转戏剧风格艺术画像"
 slug: gemnana-2010
 date: 2026-02-06
 added: 2026-07-27T12:54:10+08:00
-model: Common
+model: 通用 Prompt
 category: photography
 tags:
   - AI绘图

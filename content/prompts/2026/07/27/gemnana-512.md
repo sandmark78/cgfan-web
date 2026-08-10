@@ -3,7 +3,7 @@ title: "雨夜中的超写实蜘蛛侠与女性亲密瞬间"
 slug: gemnana-512
 date: 2025-11-10
 added: 2026-07-27T11:31:27+08:00
-model: Common
+model: 通用 Prompt
 category: photorealistic
 tags:
   - AI绘图

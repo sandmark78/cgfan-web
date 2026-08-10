@@ -3,7 +3,7 @@ title: "微距镜头下的超现实微缩世界"
 slug: gemnana-2538
 date: 2026-03-15
 added: 2026-07-27T12:54:17+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

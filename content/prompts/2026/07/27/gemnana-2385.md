@@ -3,7 +3,7 @@ title: "巧克力山坡上的微缩冬日"
 slug: gemnana-2385
 date: 2026-03-04
 added: 2026-07-27T12:54:17+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

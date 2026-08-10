@@ -3,7 +3,7 @@ title: "九十年代都市黑白胶片肖像"
 slug: gemnana-2116
 date: 2026-02-14
 added: 2026-07-27T12:54:10+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

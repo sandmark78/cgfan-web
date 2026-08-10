@@ -3,7 +3,7 @@ title: "机械设备三层解构"
 slug: gemnana-1859
 date: 2026-01-31
 added: 2026-07-27T12:54:05+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

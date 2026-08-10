@@ -3,7 +3,7 @@ title: "8K 超写实甜点，极致刀锋对焦"
 slug: gemnana-842
 date: 2026-01-08
 added: 2026-07-27T11:31:40+08:00
-model: Common
+model: 通用 Prompt
 category: photorealistic
 tags:
   - AI绘图

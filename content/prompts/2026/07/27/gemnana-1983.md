@@ -3,7 +3,7 @@ title: "高架桥下的孤独城市身影"
 slug: gemnana-1983
 date: 2026-02-05
 added: 2026-07-27T12:54:10+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

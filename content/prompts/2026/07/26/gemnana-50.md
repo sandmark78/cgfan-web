@@ -3,7 +3,7 @@ title: "通过钥匙孔看世界"
 slug: gemnana-50
 date: 2025-11-06
 added: 2026-07-26T22:00:00+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags: []
 difficulty: intermediate

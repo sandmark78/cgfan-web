@@ -3,7 +3,7 @@ title: "制作照片中人物的玩具"
 slug: gemnana-276
 date: 2025-11-06
 added: 2026-07-27T19:38:12+08:00
-model: Common
+model: 通用 Prompt
 category: photography
 tags:
   - AI绘图

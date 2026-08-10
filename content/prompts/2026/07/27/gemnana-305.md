@@ -3,7 +3,7 @@ title: "奢侈品牌广告"
 slug: gemnana-305
 date: 2025-11-06
 added: 2026-07-27T11:31:15+08:00
-model: Common
+model: 通用 Prompt
 category: product
 tags:
   - AI绘图

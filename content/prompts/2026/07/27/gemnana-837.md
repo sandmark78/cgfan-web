@@ -3,7 +3,7 @@ title: "草原女摄影师与肩上的猎豹幼崽"
 slug: gemnana-837
 date: 2026-01-08
 added: 2026-07-27T11:31:39+08:00
-model: Common
+model: 通用 Prompt
 category: photography
 tags:
   - AI绘图

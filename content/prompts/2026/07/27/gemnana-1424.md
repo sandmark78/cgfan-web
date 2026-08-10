@@ -3,7 +3,7 @@ title: "古铜肌肤深棕高髻，自然迷人的女性"
 slug: gemnana-1424
 date: 2026-01-16
 added: 2026-07-27T11:31:50+08:00
-model: Common
+model: 通用 Prompt
 category: landscape
 tags:
   - AI绘图

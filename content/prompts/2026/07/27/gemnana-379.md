@@ -3,7 +3,7 @@ title: "一张超现实的微距照片"
 slug: gemnana-379
 date: 2025-11-06
 added: 2026-07-27T11:31:22+08:00
-model: Common
+model: 通用 Prompt
 category: photography
 tags:
   - AI绘图

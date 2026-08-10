@@ -3,7 +3,7 @@ title: "品牌乐器"
 slug: gemnana-81
 date: 2025-11-06
 added: 2026-07-27T11:31:11+08:00
-model: Common
+model: 通用 Prompt
 category: product
 tags:
   - AI绘图

@@ -3,7 +3,7 @@ title: "超逼真全身肖像与角色互动"
 slug: gemnana-401
 date: 2025-11-06
 added: 2026-07-27T11:31:27+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

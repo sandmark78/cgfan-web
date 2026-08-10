@@ -3,7 +3,7 @@ title: "展臂姿态的时尚人像"
 slug: gemnana-608
 date: 2025-12-24
 added: 2026-07-27T11:31:27+08:00
-model: Common
+model: 通用 Prompt
 category: portrait
 tags:
   - AI绘图

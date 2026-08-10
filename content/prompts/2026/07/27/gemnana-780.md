@@ -3,7 +3,7 @@ title: "橙色背景下的平移模糊神秘侧影"
 slug: gemnana-780
 date: 2026-01-07
 added: 2026-07-27T11:31:33+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

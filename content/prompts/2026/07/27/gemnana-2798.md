@@ -3,7 +3,7 @@ title: "GPT-2图片变灰与电视剧照测试"
 slug: gemnana-2798
 date: 2026-04-17
 added: 2026-07-27T12:54:24+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

@@ -3,7 +3,7 @@ title: "雨夜街头的高端时尚肖像"
 slug: gemnana-2201
 date: 2026-02-21
 added: 2026-07-27T12:54:10+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

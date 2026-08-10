@@ -1,7 +1,7 @@
 ---
 title: "SQL语法书籍可视化"
 slug: sql-book-visualization
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

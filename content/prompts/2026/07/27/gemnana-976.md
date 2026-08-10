@@ -3,7 +3,7 @@ title: "宁静眼眸，简约优雅"
 slug: gemnana-976
 date: 2026-01-11
 added: 2026-07-27T11:31:40+08:00
-model: Common
+model: 通用 Prompt
 category: minimalist
 tags:
   - AI绘图

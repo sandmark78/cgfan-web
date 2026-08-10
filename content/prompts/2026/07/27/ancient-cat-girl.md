@@ -1,7 +1,7 @@
 ---
 title: "古寺猫咪少女"
 slug: ancient-cat-girl
-model: Common
+model: 通用 Prompt
 category: portrait
 tags:
   - AI绘图

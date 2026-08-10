@@ -3,7 +3,7 @@ title: "叙事电影感时尚，撑伞行走的女人"
 slug: gemnana-1018
 date: 2026-01-11
 added: 2026-07-27T11:31:40+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

@@ -3,7 +3,7 @@ title: "皮克斯风影视角色镜子自拍"
 slug: gemnana-2514
 date: 2026-03-13
 added: 2026-07-27T12:54:17+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

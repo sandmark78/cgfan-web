@@ -3,7 +3,7 @@ title: "风中侧颜的神秘褐发少女"
 slug: gemnana-2396
 date: 2026-03-05
 added: 2026-07-27T12:54:17+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

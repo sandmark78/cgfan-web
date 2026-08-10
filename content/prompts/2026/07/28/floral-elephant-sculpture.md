@@ -1,7 +1,7 @@
 ---
 title: "花卉巨象奇幻雕塑"
 slug: floral-elephant-sculpture
-model: Common
+model: 通用 Prompt
 category: fantasy
 tags:
   - AI绘图

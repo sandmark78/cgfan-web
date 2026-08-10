@@ -3,7 +3,7 @@ title: "沙中沟渠连海，大地艺术摄影"
 slug: gemnana-2177
 date: 2026-02-19
 added: 2026-07-27T12:54:10+08:00
-model: Common
+model: 通用 Prompt
 category: photography
 tags:
   - AI绘图

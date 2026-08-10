@@ -3,7 +3,7 @@ title: "强迫透视下的巨型球鞋"
 slug: gemnana-1358
 date: 2026-01-15
 added: 2026-07-27T11:31:50+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

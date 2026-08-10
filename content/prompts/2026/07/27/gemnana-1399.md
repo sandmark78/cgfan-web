@@ -3,7 +3,7 @@ title: "文学策展人，打字机上的诗歌雕塑"
 slug: gemnana-1399
 date: 2026-01-16
 added: 2026-07-27T11:31:50+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

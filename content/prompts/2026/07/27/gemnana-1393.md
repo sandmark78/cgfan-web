@@ -3,7 +3,7 @@ title: "颜料染工装，艺术家肖像"
 slug: gemnana-1393
 date: 2026-01-16
 added: 2026-07-27T11:31:50+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

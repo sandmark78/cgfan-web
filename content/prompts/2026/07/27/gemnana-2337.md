@@ -3,7 +3,7 @@ title: "街头风格的全侧身影"
 slug: gemnana-2337
 date: 2026-03-02
 added: 2026-07-27T12:54:10+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

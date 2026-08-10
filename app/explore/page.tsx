@@ -110,9 +110,12 @@ export default async function ExplorePage({
   const modelCounts: Record<string, number> = {}
   modelData?.forEach((row: any) => {
     const dbModel = row.model || ''
-    // 直接匹配，如果数据库值在 ALL_MODELS 中
-    if (ALL_MODELS.includes(dbModel)) {
-      modelCounts[dbModel] = (modelCounts[dbModel] || 0) + 1
+    // 大小写不敏感匹配
+    const dbLower = dbModel.toLowerCase()
+    if (ALL_MODELS.some(m => m.toLowerCase() === dbLower)) {
+      // 找到匹配的模型，用标准名称
+      const matched = ALL_MODELS.find(m => m.toLowerCase() === dbLower)!
+      modelCounts[matched] = (modelCounts[matched] || 0) + 1
     }
   })
 

@@ -3,7 +3,7 @@ title: "居酒屋里用闪光灯拍摄的美女照片"
 slug: gemnana-336
 date: 2025-11-06
 added: 2026-07-27T11:31:15+08:00
-model: Common
+model: 通用 Prompt
 category: photography
 tags:
   - AI绘图

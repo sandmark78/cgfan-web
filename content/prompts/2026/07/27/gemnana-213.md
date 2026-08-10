@@ -3,7 +3,7 @@ title: "3D蓬松的物体"
 slug: gemnana-213
 date: 2025-11-06
 added: 2026-07-27T11:31:15+08:00
-model: Common
+model: 通用 Prompt
 category: 3d
 tags:
   - AI绘图

@@ -3,7 +3,7 @@ title: "超写实四格拼贴，高端生活方式"
 slug: gemnana-834
 date: 2026-01-08
 added: 2026-07-27T11:31:39+08:00
-model: Common
+model: 通用 Prompt
 category: photorealistic
 tags:
   - AI绘图

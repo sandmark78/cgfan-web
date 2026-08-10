@@ -3,7 +3,7 @@ title: "等距微缩墨尔本板球场，超写实宣传"
 slug: gemnana-1118
 date: 2026-01-13
 added: 2026-07-27T11:31:45+08:00
-model: Common
+model: 通用 Prompt
 category: photorealistic
 tags:
   - AI绘图

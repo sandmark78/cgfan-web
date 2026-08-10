@@ -3,7 +3,7 @@ title: "熔铜光晕中的蒸汽朋克女工匠"
 slug: gemnana-2137
 date: 2026-02-16
 added: 2026-07-27T12:54:10+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

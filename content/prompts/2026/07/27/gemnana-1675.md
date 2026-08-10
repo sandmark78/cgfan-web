@@ -3,7 +3,7 @@ title: "雪中仰头接花的透明伞少女"
 slug: gemnana-1675
 date: 2026-01-25
 added: 2026-07-27T12:53:50+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

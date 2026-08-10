@@ -3,7 +3,7 @@ title: "零修饰超写实面部微距肖像"
 slug: gemnana-1048
 date: 2026-01-12
 added: 2026-07-27T11:31:45+08:00
-model: Common
+model: 通用 Prompt
 category: photorealistic
 tags:
   - AI绘图

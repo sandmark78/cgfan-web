@@ -3,7 +3,7 @@ title: "复古电影风格黑色长裙少女艺术照"
 slug: gemnana-505
 date: 2025-11-09
 added: 2026-07-27T11:31:27+08:00
-model: Common
+model: 通用 Prompt
 category: retro
 tags:
   - AI绘图

@@ -3,7 +3,7 @@ title: "高定时尚动感镜头，风中飘逸面料"
 slug: gemnana-1726
 date: 2026-01-26
 added: 2026-07-27T12:53:59+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

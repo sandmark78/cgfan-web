@@ -3,7 +3,7 @@ title: "九宫格商业产品视觉矩阵"
 slug: gemnana-1714
 date: 2026-01-26
 added: 2026-07-27T12:53:55+08:00
-model: Common
+model: 通用 Prompt
 category: product
 tags:
   - AI绘图

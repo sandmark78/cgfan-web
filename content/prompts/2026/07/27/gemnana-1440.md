@@ -3,7 +3,7 @@ title: "电影感超真实航拍人像"
 slug: gemnana-1440
 date: 2026-01-16
 added: 2026-07-27T11:31:50+08:00
-model: Common
+model: 通用 Prompt
 category: photorealistic
 tags:
   - AI绘图

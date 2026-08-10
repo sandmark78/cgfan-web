@@ -3,7 +3,7 @@ title: "照片级真实感室内躺姿人像"
 slug: gemnana-326
 date: 2025-11-06
 added: 2026-07-27T11:31:15+08:00
-model: Common
+model: 通用 Prompt
 category: photography
 tags:
   - AI绘图

@@ -3,7 +3,7 @@ title: "高端产品展开视图内部结构的宏观摄影100mm镜头风格8K1:
 slug: gemnana-569
 date: 2026-01-13
 added: 2026-07-27T11:31:27+08:00
-model: Common
+model: 通用 Prompt
 category: product
 tags:
   - AI绘图

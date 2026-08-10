@@ -3,7 +3,7 @@ title: "水下广角鱼群人像"
 slug: gemnana-1060
 date: 2026-01-12
 added: 2026-07-27T11:31:45+08:00
-model: Common
+model: 通用 Prompt
 category: portrait
 tags:
   - AI绘图

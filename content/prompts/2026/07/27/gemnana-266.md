@@ -3,7 +3,7 @@ title: "乐高超级英雄摆出充满动感的动作姿势"
 slug: gemnana-266
 date: 2025-11-06
 added: 2026-07-27T11:31:15+08:00
-model: Common
+model: 通用 Prompt
 category: editorial
 tags:
   - AI绘图

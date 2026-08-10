@@ -3,7 +3,7 @@ title: "撕裂纸带易拉罐摄影"
 slug: gemnana-2302
 date: 2026-02-27
 added: 2026-07-27T12:54:10+08:00
-model: Common
+model: 通用 Prompt
 category: photography
 tags:
   - AI绘图

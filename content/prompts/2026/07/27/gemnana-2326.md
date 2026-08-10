@@ -3,7 +3,7 @@ title: "巨人掌中微型人物"
 slug: gemnana-2326
 date: 2026-03-01
 added: 2026-07-27T12:54:10+08:00
-model: Common
+model: 通用 Prompt
 category: portrait
 tags:
   - AI绘图
