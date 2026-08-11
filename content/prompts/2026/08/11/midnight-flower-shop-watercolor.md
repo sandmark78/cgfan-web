@@ -10,7 +10,7 @@ date: "2026-08-10"
 added: "2026-08-11T10:50:00.000+08:00"
 source: "https://x.com/i/status/2086806767602630939"
 cover: "/images/prompts/prompt-2086806767602630939.jpg"
-score: 67/80
+score: 68/80
 composition: 8/10
 color: 9/10
 lighting: 8/10
@@ -25,7 +25,7 @@ curation: 8/10
 
 **作者**: Aylin  
 **日期**: 2026-08-10  
-**评分**: 67/80
+**评分**: 68/80
 
 ## Prompt
 

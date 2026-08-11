@@ -15,7 +15,7 @@ images:
   - "/images/prompts/prompt-2086843715063316892-2.jpg"
   - "/images/prompts/prompt-2086843715063316892-3.jpg"
   - "/images/prompts/prompt-2086843715063316892-4.jpg"
-score: 65/80
+score: 64/80
 composition: 8/10
 color: 8/10
 lighting: 7/10
@@ -30,7 +30,7 @@ curation: 8/10
 
 **作者**: Anissa  
 **日期**: 2026-08-10  
-**评分**: 65/80
+**评分**: 64/80
 
 ## Prompt
 
