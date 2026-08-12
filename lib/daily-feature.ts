@@ -19,6 +19,15 @@ export interface DailyFeature {
  */
 export const dailyFeatures: DailyFeature[] = [
   {
+    date: '2026-08-12',
+    slug: 'novel-cover-framework',
+    curatorNote: '这是一个 book-cover · novel · editorial 方向的提示词，包含完整的场景描述和风格控制。',
+    highlight: 'AI 小说封面生成框架：故事驱动封面设计',
+    technique: 'book-cover · novel · editorial',
+    tip: '用具体的材质词和光线描述替代笼统形容词，能显著提升输出质量。',
+    tryChange: '试着替换核心材质词，观察同一结构下的风格变化。',
+  },
+  {
     date: '2026-08-11',
     slug: 'prompt-2082803142102847607',
     curatorNote: '这条提示词把「学术魔幻现实主义」玩出了新高度：用黑板公式与云朵微缩模型的碰撞，让精密机械脱离冷冰冰的金属质感，转而拥有诗意与智性并存的视觉叙事。最妙的是JSON内嵌AI_INFER指令，让模型自主生成三个具体交互动作，既保留控制力又释放随机性。2×2网格的编排适合展览式对比，尤其适配天文、生物等复杂系统主题，是「理性命题×荒诞想象」的教科书级示范。',
