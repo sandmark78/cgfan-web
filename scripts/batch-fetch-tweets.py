@@ -11,9 +11,12 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 os.chdir("/Users/mac/.hermes/profiles/cgfan/workspace/cgfan-web")
 
 def run(cmd, timeout=30):
-    """执行命令，返回 stdout"""
-    r = subprocess.run(cmd, shell=True, capture_output=True, text=True, timeout=timeout)
-    return r.stdout.strip()
+    """执行命令，返回 stdout。超时返回空字符串，不抛异常"""
+    try:
+        r = subprocess.run(cmd, shell=True, capture_output=True, text=True, timeout=timeout)
+        return r.stdout.strip()
+    except subprocess.TimeoutExpired:
+        return ""
 
 def camofox_cmd(cmd, timeout=30):
     """执行 camofox 命令"""
@@ -128,6 +131,12 @@ for tid, tab in tabs.items():
         print(f"  ✅ {tid}: 作者={data.get('author','?')}, 日期={data.get('date','?')}, 图片={len(data.get('imgs',[]))}张")
     else:
         print(f"  ❌ {tid}: 提取失败")
+
+# ====== Step 4.5: 先保存数据（防止图片下载崩溃丢数据） ======
+batch = list(results.values())
+with open("/tmp/tweets_batch.json", "w") as f:
+    json.dump(batch, f, ensure_ascii=False, indent=2)
+print(f"💾 数据已保存: {len(results)} 条")
 
 # ====== Step 5: 并行下载图片（支持多图） ======
 print("🖼️  并行下载图片...")
