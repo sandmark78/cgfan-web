@@ -294,18 +294,21 @@ def generate_curator_note(prompt, taste_profile):
         try_change = parsed.get("tryChange", "试试换一个核心材质词，观察氛围变化。")
 
         print(f"  📝 LLM 生成策展笔记成功")
-        return note, highlight, technique, tip, try_change
+        return note, highlight, technique, tip, try_change, False
 
     except Exception as e:
         print(f"  ⚠️ LLM 调用失败: {e}")
-        # fallback: 基于标签生成
+        # fallback: 基于标签生成（但标记为需要人工审核）
         tag_str = " · ".join(tags[:3]) if tags else category
         note = f"这是一个 {tag_str} 方向的提示词，包含完整的场景描述和风格控制。"
         highlight = title[:30]
         technique = tag_str
         tip = "用具体的材质词和光线描述替代笼统形容词，能显著提升输出质量。"
         try_change = "试着替换核心材质词，观察同一结构下的风格变化。"
-        return note, highlight, technique, tip, try_change
+        print(f"  ⚠️ 使用 fallback 内容，建议人工审核")
+        return note, highlight, technique, tip, try_change, True  # 第6个返回值标记是否为 fallback
+
+    return note, highlight, technique, tip, try_change, False  # 正常返回
 
 
 def main():
@@ -416,7 +419,14 @@ def main():
     print(f"   理由: {selection_reason}")
 
     # 生成策展笔记
-    note, highlight, technique, tip, try_change = generate_curator_note(selected, favorites)
+    note, highlight, technique, tip, try_change, is_fallback = generate_curator_note(selected, favorites)
+    
+    # 校验：如果是 fallback 内容，发出警告并跳过部署
+    if is_fallback:
+        print(f"\n❌ 策展笔记生成失败，使用 fallback 内容")
+        print(f"   建议手动运行脚本或检查 API 配置")
+        print(f"   跳过今天的部署，等待人工处理")
+        return
 
     # 读取当前的 daily-feature.ts
     with open(DAILY_FEATURE_FILE, "r", encoding="utf-8") as f:
