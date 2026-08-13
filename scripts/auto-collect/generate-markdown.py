@@ -2,17 +2,23 @@
 """
 生成markdown文件并部署
 
-读取 /tmp/llm_processed.json（LLM处理结果），生成最终的markdown文件，
+读取 data/auto-collect/evaluated.json（LLM处理结果），生成最终的markdown文件，
 更新 prompts-data.ts，提交并推送。
 """
 
 import json
 import os
 import subprocess
+import sys
 from pathlib import Path
 from datetime import datetime
+from typing import Dict
 
-os.chdir("/Users/mac/.hermes/profiles/cgfan/workspace/cgfan-web")
+# 导入共享配置
+sys.path.insert(0, str(Path(__file__).parent))
+from config import PROJECT_ROOT, PROMPTS_DIR, IMAGES_DIR, EVALUATED
+
+os.chdir(str(PROJECT_ROOT))
 
 def download_image(img_url: str, output_path: str) -> bool:
     """下载图片"""
@@ -77,8 +83,8 @@ def generate_markdown(result: Dict) -> bool:
     elif any(kw in title_lower or kw in prompt_lower for kw in ['风景', 'landscape', '自然']):
         category = 'landscape'
     
-    # 创建目录
-    output_dir = Path(f'content/prompts/{category}')
+    # 确定输出目录（直接写入 PROMPTS_DIR，归档由 archive-by-date.py 处理）
+    output_dir = PROMPTS_DIR
     output_dir.mkdir(parents=True, exist_ok=True)
     
     # 生成文件名
@@ -158,20 +164,23 @@ def main():
     print("📝 生成markdown文件并部署")
     print("=" * 60)
     
-    # 读取LLM处理结果
-    processed_file = Path('/tmp/llm_processed.json')
-    if not processed_file.exists():
-        print("❌ 未找到处理结果")
+    # 读取LLM处理结果（从 data/auto-collect/evaluated.json）
+    if not EVALUATED.exists():
+        print(f"❌ 未找到处理结果: {EVALUATED}")
         return
     
-    with open(processed_file, 'r', encoding='utf-8') as f:
+    with open(EVALUATED, 'r', encoding='utf-8') as f:
         results = json.load(f)
     
     print(f"📥 读取到 {len(results)} 条处理结果")
     
+    # 过滤：只处理 status='pass' 的
+    passed_results = [r for r in results if r.get('status') == 'pass']
+    print(f"✅ 通过评估: {len(passed_results)} 条")
+    
     # 逐条生成markdown
     success_count = 0
-    for result in results:
+    for result in passed_results:
         try:
             if generate_markdown(result):
                 success_count += 1

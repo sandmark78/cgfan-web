@@ -62,7 +62,14 @@ results = {}
 # 先把 JS 代码写到文件，避免引号嵌套问题
 EXTRACT_JS = """JSON.stringify({
   allText: Array.from(document.querySelectorAll("article")).map((a,i) => "===ARTICLE " + i + "===\\n" + a.innerText).join("\\n\\n"),
-  imgs: Array.from(document.querySelectorAll("img")).filter(img => img.src.includes("pbs.twimg.com/media/")).map(img => ({ src: img.src, alt: img.alt || "" })),
+  imgs: (() => {
+    const firstArticle = document.querySelector("article");
+    if (!firstArticle) return [];
+    return Array.from(firstArticle.querySelectorAll("img"))
+      .filter(img => img.src.includes("pbs.twimg.com/media/"))
+      .slice(0, 4)
+      .map(img => ({ src: img.src, alt: img.alt || "" }));
+  })(),
   has_video: !!document.querySelector('article video, article [data-testid="videoPlayer"], article [data-testid="playButton"]'),
   author: (document.querySelector('article [data-testid="User-Name"]') || {}).innerText?.split("\\n")[0] || "",
   date: (() => { const t = document.querySelector("article time"); return t ? new Date(t.getAttribute("datetime")).toISOString().split("T")[0] : ""; })()

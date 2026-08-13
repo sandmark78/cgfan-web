@@ -15,6 +15,10 @@ import time
 import os
 import signal
 
+# 导入共享配置
+sys.path.insert(0, str(Path(__file__).parent))
+from config import DATA_DIR, TWEETS_BATCH, PROJECT_ROOT
+
 def load_authors():
     """加载作者列表"""
     config_path = Path(__file__).parent / 'authors.json'
@@ -61,7 +65,8 @@ def batch_fetch(tweet_ids, batch_size=8):
         try:
             proc = subprocess.Popen(
                 f"python3 scripts/batch-fetch-tweets.py {tweet_ids_str}",
-                shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True
+                shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True,
+                cwd=str(PROJECT_ROOT)
             )
             stdout, stderr = proc.communicate(timeout=60)
         except subprocess.TimeoutExpired:
@@ -71,7 +76,7 @@ def batch_fetch(tweet_ids, batch_size=8):
             continue
         
         # 读取本批次结果
-        batch_path = Path("/tmp/tweets_batch.json")
+        batch_path = DATA_DIR / "tweets_batch_temp.json"
         if batch_path.exists():
             try:
                 with open(batch_path, 'r') as f:
@@ -133,7 +138,7 @@ def main():
     print(f"🔄 开始分批采集推文内容（每批6条）...")
     
     # 初始化结果文件（最终输出）
-    output_path = Path("/tmp/tweets_batch_all.json")
+    output_path = DATA_DIR / "tweets_batch_all.json"
     output_path.write_text("[]", encoding='utf-8')
     
     # 手动分批，确保超时也能保存已收集的数据
@@ -158,8 +163,8 @@ def main():
             print(f"  ⏰ 本批次超时（150s），跳过", flush=True)
             continue
         
-        # 读取本批次结果（batch-fetch-tweets.py 写到 /tmp/tweets_batch.json）
-        batch_path = Path("/tmp/tweets_batch.json")
+        # 读取本批次结果（batch-fetch-tweets.py 写到 DATA_DIR/tweets_batch_temp.json）
+        batch_path = DATA_DIR / "tweets_batch_temp.json"
         if batch_path.exists():
             try:
                 with open(batch_path, 'r') as f:
@@ -180,7 +185,7 @@ def main():
     
     # 将最终结果复制到标准路径（供后续步骤使用）
     import shutil
-    final_path = Path("/tmp/tweets_batch.json")
+    final_path = TWEETS_BATCH
     shutil.copy2(output_path, final_path)
     
     # 读取最终结果

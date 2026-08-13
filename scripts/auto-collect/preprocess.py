@@ -20,10 +20,15 @@ LLM（agent）负责：
 import json
 import re
 import os
+import sys
 from pathlib import Path
 from typing import Dict, List, Optional
 
-os.chdir("/Users/mac/.hermes/profiles/cgfan/workspace/cgfan-web")
+# 导入共享配置
+sys.path.insert(0, str(Path(__file__).parent))
+from config import DATA_DIR, TWEETS_BATCH, PREPROCESSED, PROJECT_ROOT
+
+os.chdir(str(PROJECT_ROOT))
 
 # ====== 模型识别 ======
 def identify_model(text: str) -> str:
@@ -189,7 +194,7 @@ def main():
     print("🔧 预处理：格式清理 + 数据准备")
     print("=" * 60)
     
-    batch_file = Path('/tmp/tweets_batch.json')
+    batch_file = TWEETS_BATCH
     if not batch_file.exists():
         print("❌ 未找到采集数据")
         return
@@ -244,7 +249,7 @@ def main():
     
     # 保存供LLM（agent）处理
     if preprocessed:
-        output_file = Path('/tmp/preprocessed_tweets.json')
+        output_file = PREPROCESSED
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(preprocessed, f, ensure_ascii=False, indent=2)
         print(f"💾 数据已保存: {output_file}")

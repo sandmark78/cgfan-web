@@ -5,29 +5,32 @@ Download images for all processed prompts
 
 import json
 import urllib.request
+import sys
 from pathlib import Path
 import time
 
-WORKSPACE = Path("/Users/mac/.hermes/profiles/cgfan/workspace/cgfan-web")
-IMAGES_DIR = WORKSPACE / "public" / "images" / "prompts"
-TWEETS_FILE = Path("/tmp/tweets_batch.json")
-RESULTS_FILE = Path("/tmp/process_results.json")
+# 导入共享配置
+sys.path.insert(0, str(Path(__file__).parent))
+from config import PROJECT_ROOT, IMAGES_DIR, TWEETS_BATCH, EVALUATED
 
-# Load processed results
-with open(RESULTS_FILE, 'r', encoding='utf-8') as f:
+# Load evaluated results
+with open(EVALUATED, 'r', encoding='utf-8') as f:
     results = json.load(f)
 
+# Filter only passed items
+results = [r for r in results if r.get('status') == 'pass']
+
 # Load tweets data
-with open(TWEETS_FILE, 'r', encoding='utf-8') as f:
+with open(TWEETS_BATCH, 'r', encoding='utf-8') as f:
     tweets = json.load(f)
 
 # Create tweet ID to images mapping
 tweet_images = {}
 for tweet in tweets:
-    tweet_id = tweet.get("id")
+    tweet_id = tweet.get("id") or tweet.get("tweet_id")
     imgs = tweet.get("imgs", [])
     if imgs:
-        tweet_images[tweet_id] = imgs
+        tweet_images[str(tweet_id)] = imgs
 
 print(f"Processing {len(results)} prompts...")
 print(f"Found images for {len(tweet_images)} tweets")
