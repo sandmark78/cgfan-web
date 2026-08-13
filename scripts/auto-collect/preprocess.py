@@ -21,8 +21,10 @@ import json
 import re
 import os
 import sys
+import subprocess
 from pathlib import Path
 from typing import Dict, List, Optional
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # 导入共享配置
 sys.path.insert(0, str(Path(__file__).parent))
@@ -189,6 +191,50 @@ def is_duplicate(tweet_id: str) -> bool:
             return True
     return False
 
+# ====== 图片下载（过滤后执行） ======
+def run_shell(cmd, timeout=30):
+    """执行 shell 命令"""
+    try:
+        return subprocess.run(cmd, shell=True, capture_output=True, text=True, timeout=timeout)
+    except subprocess.TimeoutExpired:
+        return None
+
+def download_image(tweet_id: str, img_url: str, index: int) -> str:
+    """下载单张图片，返回本地路径"""
+    # 第一张图作为封面，命名为 prompt-{id}.jpg
+    # 后续图片命名为 prompt-{id}-2.jpg, prompt-{id}-3.jpg 等
+    if index == 0:
+        filename = f"prompt-{tweet_id}.jpg"
+    else:
+        filename = f"prompt-{tweet_id}-{index+1}.jpg"
+    
+    local_path = IMAGES_DIR / filename
+    
+    # 下载图片
+    result = run_shell(f'curl -s -L "{img_url}" -o "{local_path}"', timeout=30)
+    if result and result.returncode == 0 and local_path.exists():
+        # 验证文件是否有效
+        if local_path.stat().st_size > 0:
+            return f"/images/prompts/{filename}"
+    
+    # 下载失败，清理
+    if local_path.exists():
+        local_path.unlink()
+    return None
+
+def download_images_for_tweet(tweet_id: str, img_urls: List[str]) -> List[str]:
+    """下载一条推文的所有图片"""
+    if not img_urls:
+        return []
+    
+    downloaded = []
+    for idx, url in enumerate(img_urls):
+        path = download_image(tweet_id, url, idx)
+        if path:
+            downloaded.append(path)
+    
+    return downloaded
+
 # ====== 主流程 ======
 def main():
     print("🔧 预处理：格式清理 + 数据准备")
@@ -247,12 +293,40 @@ def main():
     
     print(f"\n📊 预处理完成: {len(preprocessed)}/{len(tweets)} 条")
     
+    # ====== 下载图片（只下载通过过滤的推文） ======
+    if preprocessed:
+        print(f"\n🖼️  开始下载图片（{len(preprocessed)} 条推文）...")
+        for item in preprocessed:
+            tweet_id = item['tweet_id']
+            img_data = item.get('imgs', [])
+            
+            if not img_data:
+                continue
+            
+            # 提取图片 URL
+            img_urls = []
+            for img in img_data:
+                if isinstance(img, dict):
+                    src = img.get('src', '')
+                    if src:
+                        img_urls.append(src)
+                elif isinstance(img, str):
+                    img_urls.append(img)
+            
+            if img_urls:
+                downloaded = download_images_for_tweet(tweet_id, img_urls)
+                item['images'] = downloaded
+                if downloaded:
+                    print(f"  ✅ {tweet_id}: {len(downloaded)} 张图片")
+                else:
+                    print(f"  ⚠️ {tweet_id}: 无图片下载成功")
+    
     # 保存供LLM（agent）处理
     if preprocessed:
         output_file = PREPROCESSED
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(preprocessed, f, ensure_ascii=False, indent=2)
-        print(f"💾 数据已保存: {output_file}")
+        print(f"\n💾 数据已保存: {output_file}")
         print(f"🤖 请在下一轮用LLM处理这些数据")
 
 if __name__ == "__main__":

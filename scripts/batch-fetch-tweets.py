@@ -145,73 +145,8 @@ with open("/tmp/tweets_batch.json", "w") as f:
     json.dump(batch, f, ensure_ascii=False, indent=2)
 print(f"💾 数据已保存: {len(results)} 条")
 
-# ====== Step 5: 并行下载图片（支持多图） ======
-print("🖼️  并行下载图片...")
-
-def download_image(tid, data):
-    imgs = data.get('imgs', [])
-    if not imgs:
-        return tid, 0, []
-    
-    downloaded_images = []
-    
-    # 下载所有图片
-    for idx, img in enumerate(imgs):
-        img_url = img['src'] if isinstance(img, dict) else img
-        clean_url = img_url.split('?')[0] + '?format=jpg&name=orig'
-        
-        # 第一张命名为 prompt-{id}.jpg（作为 cover），后续命名为 prompt-{id}-2.jpg, prompt-{id}-3.jpg...
-        if idx == 0:
-            out_path = f"public/images/prompts/prompt-{tid}.jpg"
-        else:
-            out_path = f"public/images/prompts/prompt-{tid}-{idx+1}.jpg"
-        
-        # 重试 3 次下载
-        success = False
-        for attempt in range(3):
-            run(f'curl -s -L -H "User-Agent: Mozilla/5.0" -o "{out_path}" "{clean_url}"')
-            try:
-                size = os.path.getsize(out_path)
-                if size > 0:
-                    downloaded_images.append(f"/images/prompts/prompt-{tid}.jpg" if idx == 0 else f"/images/prompts/prompt-{tid}-{idx+1}.jpg")
-                    success = True
-                    break  # 下载成功
-            except:
-                pass
-            if attempt < 2:
-                print(f"  ⚠️  {tid} 图片{idx+1}: 下载失败，重试 {attempt+2}/3...")
-                import time
-                time.sleep(2)
-            else:
-                # 三次都失败，删空文件
-                try:
-                    os.remove(out_path)
-                except:
-                    pass
-        
-        if not success:
-            print(f"  ⚠️  {tid} 图片{idx+1}: 下载失败")
-    
-    # Safari 兼容修复（失败不影响）
-    if downloaded_images:
-        try:
-            first_img = f"public/images/prompts/prompt-{tid}.jpg"
-            run(f'sips -s format jpeg -s formatOptions best "{first_img}" --out "{first_img}" 2>/dev/null')
-        except:
-            pass
-    
-    return tid, len(downloaded_images), downloaded_images
-
-with ThreadPoolExecutor(max_workers=5) as pool:
-    futures = [pool.submit(download_image, tid, data) for tid, data in results.items()]
-    for f in as_completed(futures):
-        tid, count, img_paths = f.result()
-        if count > 0:
-            # 把图片路径列表加到 results 中
-            results[tid]['images'] = img_paths
-            print(f"  ✅ {tid}: {count}张图片")
-        else:
-            print(f"  ⚠️  {tid}: 无图片")
+# ====== Step 5: 图片下载已移到 preprocess.py（过滤后下载，避免孤儿图片） ======
+print("📝 图片将在预处理（过滤）后下载")
 
 # ====== Step 6: 输出汇总 ======
 batch = list(results.values())
@@ -220,4 +155,4 @@ with open("/tmp/tweets_batch.json", "w") as f:
 
 print(f"\n📊 采集完成: {len(results)}/{len(ids)} 条成功")
 print(f"   数据: /tmp/tweets_batch.json")
-print(f"   图片: public/images/prompts/prompt-{{id}}.jpg")
+print(f"   ⚠️ 图片未下载，等待 preprocess.py 过滤后下载")
