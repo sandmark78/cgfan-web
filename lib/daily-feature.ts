@@ -19,6 +19,15 @@ export interface DailyFeature {
  */
 export const dailyFeatures: DailyFeature[] = [
   {
+    date: '2026-08-14',
+    slug: 'prompt-2083947335445319717',
+    curatorNote: '这条提示词的核心创新在于把字体从平面符号变成可交互的雕塑实体。通过「BREAK THE TYPE」「GRIP THE FORM」等四个方向，强制 AI 理解字母是有重量、有深度、有物理接触面的三维结构。关键技法是「肢体穿越 counter space」（字母内部负空间），让排版与人体形成真实的力学关系，而非简单叠加。这种「字体即建筑」的思维，让时尚海报同时具备编辑设计的克制和雕塑装置的张力。',
+    highlight: '字体即建筑：人体与巨型字模的物理互动实验',
+    technique: '3D 字体雕塑化 · 肢体穿越负空间 · 四方向变体 · 工作室灯光',
+    tip: '写排版类 prompt 时，把字母当建筑写：「grip the edge」「step on the stroke」「pass through the counter」。用动词定义人与字的关系，比「next to the letter」多出十倍空间张力。',
+    tryChange: '把「translucent cobalt-blue B」换成「weathered concrete R」，从时尚编辑转向粗野主义，观察材质如何重塑字体性格。',
+  },
+  {
     date: '2026-08-13',
     slug: 'prompt-2082828565469364541',
     curatorNote: '将狄兰·托马斯的诗句直接嵌入提示词，等于给模型设定了一个情绪基调——反抗湮灭的悲壮感。配合《星际穿越》的叙事场景，比单纯写“史诗感科幻海报”更精准。双sref的混合风格参考配合--sw 100，让画面在保持电影质感的同時，又脱离剧照感。--raw与--hd的叠加处理，进一步强化了颗粒与细节层次。适合做影迷向概念海报或氛围类视觉实验。',
