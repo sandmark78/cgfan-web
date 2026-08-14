@@ -28,7 +28,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # 导入共享配置
 sys.path.insert(0, str(Path(__file__).parent))
-from config import DATA_DIR, TWEETS_BATCH, PREPROCESSED, PROJECT_ROOT
+from config import DATA_DIR, TWEETS_BATCH, PREPROCESSED, PROJECT_ROOT, IMAGES_DIR
 
 os.chdir(str(PROJECT_ROOT))
 

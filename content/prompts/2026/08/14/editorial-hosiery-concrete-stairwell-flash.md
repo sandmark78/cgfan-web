@@ -7,6 +7,7 @@ source: "https://x.com/i/status/2086483680264950056"
 date: "2026-08-09"
 added: "2026-08-14T06:40:00.000+08:00"
 model: "GPT-Image2"
+category: "建筑设计"
 tags:
   - "编辑摄影"
   - "时尚人像"

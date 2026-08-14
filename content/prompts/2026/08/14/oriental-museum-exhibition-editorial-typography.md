@@ -7,6 +7,7 @@ source: "https://x.com/i/status/2085683388078268686"
 date: "2026-08-07"
 added: "2026-08-14T06:40:00.000+08:00"
 model: "GPT-Image2"
+category: "AI创作"
 tags:
   - "东方美学"
   - "编辑设计"
