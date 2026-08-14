@@ -341,63 +341,23 @@ def main():
     favorites = parse_favorite_images()
     print(f"📊 从品味画像中找到 {len(favorites)} 张'最喜欢'图片")
 
-    # === 选题逻辑（从最喜欢列表选） ===
+    # === 选题逻辑（从最喜欢列表选，按分数降序） ===
     # 优先级：
-    # 1. 用户确认的"最喜欢"（未使用过）
-    # 2. 品味画像中的高分图（未使用过）
-    # 3. 最新收录的未使用 prompt（fallback）
+    # 1. 最喜欢列表中的高分图（未使用过，按分数降序）
+    # 2. 最新收录的未使用 prompt（fallback）
 
     selected = None
     selection_reason = ""
 
-    # 解析用户确认的"最喜欢"
-    user_confirmed_titles = parse_user_confirmed_favorites()
-    print(f"📊 用户确认最喜欢：{len(user_confirmed_titles)} 张")
-
-    # 优先级 1: 用户确认的"最喜欢"（未使用过）
-    print(f"🔍 从用户最喜欢列表中查找...")
+    # 直接从最喜欢列表中按分数降序选（不区分是否标记"→ 最喜欢"）
+    print(f"🔍 从最喜欢列表中查找（按分数降序）...")
     for fav in favorites:  # favorites 已按分数降序
-        if fav["title"] in user_confirmed_titles:
-            slug = find_slug_by_title(prompts, fav["title"])
-            if slug and slug not in existing_slugs:
-                selected = next((p for p in prompts if p.get("slug") == slug), None)
-                if selected:
-                    selection_reason = f"用户最喜欢（{fav['score']}/80）+ 未使用"
-                    break
-
-    # 优先级 2: 品味画像中的高分图（未使用过）
-    if not selected:
-        print(f"🔍 从高分列表中查找...")
-        for fav in favorites:
-            slug = find_slug_by_title(prompts, fav["title"])
-            if slug and slug not in existing_slugs:
-                selected = next((p for p in prompts if p.get("slug") == slug), None)
-                if selected:
-                    selection_reason = f"高分图（{fav['score']}/80）+ 未使用"
-                    break
-
-    # 优先级 3: 过去的最喜欢的（未使用过）
-    if not selected:
-        print(f"🔍 从用户最喜欢列表中查找...")
-        for fav in favorites:  # favorites 已按分数降序
-            if fav["title"] in user_confirmed_titles:
-                slug = find_slug_by_title(prompts, fav["title"])
-                if slug and slug not in existing_slugs:
-                    selected = next((p for p in prompts if p.get("slug") == slug), None)
-                    if selected:
-                        selection_reason = f"用户最喜欢（{fav['score']}/80）+ 未使用"
-                        break
-
-    # 优先级 4: 过去的最高分（未使用过）
-    if not selected:
-        print(f"🔍 从高分列表中查找...")
-        for fav in favorites:
-            slug = find_slug_by_title(prompts, fav["title"])
-            if slug and slug not in existing_slugs:
-                selected = next((p for p in prompts if p.get("slug") == slug), None)
-                if selected:
-                    selection_reason = f"高分图（{fav['score']}/80）+ 未使用"
-                    break
+        slug = find_slug_by_title(prompts, fav["title"])
+        if slug and slug not in existing_slugs:
+            selected = next((p for p in prompts if p.get("slug") == slug), None)
+            if selected:
+                selection_reason = f"高分图（{fav['score']}/80）+ 未使用"
+                break
 
     # 优先级 5: 最新收录的未使用 prompt（fallback）
     if not selected:
