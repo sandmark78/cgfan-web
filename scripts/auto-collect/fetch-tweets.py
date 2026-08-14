@@ -25,30 +25,43 @@ def load_authors():
     with open(config_path, 'r', encoding='utf-8') as f:
         return json.load(f)
 
-def fetch_author_with_timeout(script_path, author_twitter, timeout=30):
-    """用 Popen + communicate 实现可靠超时"""
-    try:
-        proc = subprocess.Popen(
-            ['python3', script_path, author_twitter],
-            stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-            text=True
-        )
-        stdout, stderr = proc.communicate(timeout=timeout)
-        tweet_ids = []
-        for line in stdout.split('\n'):
-            if line.strip().isdigit() and len(line.strip()) >= 15:
-                tweet_ids.append(line.strip())
-        return tweet_ids, None
-    except subprocess.TimeoutExpired:
-        proc.kill()
-        proc.wait(timeout=5)
-        return [], "超时"
-    except Exception as e:
+def fetch_author_with_timeout(script_path, author_twitter, timeout=60, max_retries=2):
+    """用 Popen + communicate 实现可靠超时，支持重试"""
+    for attempt in range(max_retries):
         try:
+            proc = subprocess.Popen(
+                ['python3', script_path, author_twitter],
+                stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                text=True
+            )
+            stdout, stderr = proc.communicate(timeout=timeout)
+            tweet_ids = []
+            for line in stdout.split('\n'):
+                if line.strip().isdigit() and len(line.strip()) >= 15:
+                    tweet_ids.append(line.strip())
+            if tweet_ids:
+                return tweet_ids, None
+            # 如果没有推文，可能是暂时性问题，重试
+            if attempt < max_retries - 1:
+                time.sleep(2)
+                continue
+            return [], "无推文"
+        except subprocess.TimeoutExpired:
             proc.kill()
-        except:
-            pass
-        return [], str(e)[:200]
+            proc.wait(timeout=5)
+            if attempt < max_retries - 1:
+                time.sleep(2)
+                continue
+            return [], f"超时({timeout}s)"
+        except Exception as e:
+            try:
+                proc.kill()
+            except:
+                pass
+            if attempt < max_retries - 1:
+                time.sleep(2)
+                continue
+            return [], str(e)[:200]
 
 def batch_fetch(tweet_ids, batch_size=8):
     """分批调用 batch-fetch-tweets.py，每批最多8条（留2个tab余量）"""
@@ -112,7 +125,7 @@ def main():
         print(f"  开始抓取...", flush=True)
         
         author_script = str(Path(__file__).parent / 'fetch_author_tweets.py')
-        tweet_ids, error = fetch_author_with_timeout(author_script, author['twitter'], timeout=30)
+        tweet_ids, error = fetch_author_with_timeout(author_script, author['twitter'], timeout=60)
         
         if error:
             print(f"  ⏰ {error}，跳过", flush=True)

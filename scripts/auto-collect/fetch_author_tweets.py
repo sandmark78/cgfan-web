@@ -142,12 +142,12 @@ if __name__ == '__main__':
         print("用法: python3 fetch_author_tweets.py @username")
         sys.exit(1)
     
-    # 全局超时保护：25秒后自动退出
+    # 全局超时保护：55秒后自动退出（需小于父进程的60s超时）
     import signal
     def handler(signum, frame):
-        print("⏰ 全局超时（25s），退出")
+        print("⏰ 全局超时（55s），退出")
         sys.exit(1)
-    signal.alarm(25)
+    signal.alarm(55)
     signal.signal(signal.SIGALRM, handler)
     
     username = sys.argv[1]
