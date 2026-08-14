@@ -28,7 +28,6 @@ export const dailyFeatures: DailyFeature[] = [
     tryChange: '将 stone 换成 weathered copper with green patina，赋予字模氧化铜的时间质感与色彩层次。',
   },
   {
-  {
     date: '2026-08-13',
     slug: 'prompt-2082828565469364541',
     curatorNote: '将狄兰·托马斯的诗句直接嵌入提示词，等于给模型设定了一个情绪基调——反抗湮灭的悲壮感。配合《星际穿越》的叙事场景，比单纯写“史诗感科幻海报”更精准。双sref的混合风格参考配合--sw 100，让画面在保持电影质感的同時，又脱离剧照感。--raw与--hd的叠加处理，进一步强化了颗粒与细节层次。适合做影迷向概念海报或氛围类视觉实验。',
