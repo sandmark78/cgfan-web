@@ -202,15 +202,21 @@ def find_slug_by_title(prompts, title):
 def generate_curator_note(prompt, taste_profile):
     """调用 LLM 分析完整 prompt 内容，生成有深度的策展笔记"""
     import requests
-    import yaml
 
-    # 读取 API 配置
-    with open(os.path.expanduser("~/.hermes/profiles/cgfan/config.yaml"), "r") as f:
-        config = yaml.safe_load(f)
-    provider = config["providers"]["sensenova"]
-    api_key = provider["api_key"]
-    base_url = provider["base_url"]
-    model = provider["model"]
+    # 读取 API 配置（使用 qwen3.7-plus）
+    # 从 .env 文件读取
+    env_path = os.path.expanduser("~/.hermes/profiles/cgfan/.env")
+    env_vars = {}
+    if os.path.exists(env_path):
+        with open(env_path, "r") as f:
+            for line in f:
+                if "=" in line and not line.startswith("#"):
+                    key, value = line.strip().split("=", 1)
+                    env_vars[key] = value
+
+    api_key = env_vars.get("ALIBABA_CODING_PLAN_API_KEY", "")
+    base_url = env_vars.get("ALIBABA_CODING_PLAN_BASE_URL", "https://coding.dashscope.aliyuncs.com/v1")
+    model = "qwen3.7-plus"
 
     title = prompt.get("title", "")
     category = prompt.get("category", "")

@@ -21,12 +21,13 @@ export const dailyFeatures: DailyFeature[] = [
   {
     date: '2026-08-14',
     slug: 'prompt-2083947335445319717',
-    curatorNote: '这条提示词的核心创新在于把字体从平面符号变成可交互的雕塑实体。通过「BREAK THE TYPE」「GRIP THE FORM」等四个方向，强制 AI 理解字母是有重量、有深度、有物理接触面的三维结构。关键技法是「肢体穿越 counter space」（字母内部负空间），让排版与人体形成真实的力学关系，而非简单叠加。这种「字体即建筑」的思维，让时尚海报同时具备编辑设计的克制和雕塑装置的张力。',
-    highlight: '字体即建筑：人体与巨型字模的物理互动实验',
-    technique: '3D 字体雕塑化 · 肢体穿越负空间 · 四方向变体 · 工作室灯光',
-    tip: '写排版类 prompt 时，把字母当建筑写：「grip the edge」「step on the stroke」「pass through the counter」。用动词定义人与字的关系，比「next to the letter」多出十倍空间张力。',
-    tryChange: '把「translucent cobalt-blue B」换成「weathered concrete R」，从时尚编辑转向粗野主义，观察材质如何重塑字体性格。',
+    curatorNote: '将字体从平面符号升维为可触碰的建筑结构，是这条提示词的核心突破。四个方向系统性地探索人体与字模的四种物理关系——穿越、攀握、悬撑、栖坐——每种都强调真实的接触点、阴影和前后景层次。这种「字体即雕塑」的思路，让排版设计从视觉装饰变成空间叙事。极简文字排版刻意让标题穿过人物或字模，形成多层景深，是高级时尚海报的经典手法。',
+    highlight: '字母化为可攀爬的巨型雕塑，人体与字体产生物理碰撞。',
+    technique: '字体雕塑化 · 多层景深排版 · 接触点物理模拟 · 材质分区配色',
+    tip: '用「四方向」框架探索同一主题的不同变体，每个方向指定不同互动方式、材质与姿态，保持系列感同时获得丰富变化。',
+    tryChange: '将 stone 换成 weathered copper with green patina，赋予字模氧化铜的时间质感与色彩层次。',
   },
+  {
   {
     date: '2026-08-13',
     slug: 'prompt-2082828565469364541',
