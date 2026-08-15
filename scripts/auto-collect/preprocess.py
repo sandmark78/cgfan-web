@@ -210,11 +210,21 @@ def download_image(tweet_id: str, img_url: str, index: int) -> str:
     
     local_path = IMAGES_DIR / filename
     
+    # Twitter 图片 URL 强制返回 JPG 格式（避免 WebP）
+    jpg_url = img_url.replace('format=webp', 'format=jpg').replace('&name=medium', '&name=large')
+    if 'format=' not in jpg_url:
+        jpg_url += '&format=jpg' if '?' in jpg_url else '?format=jpg'
+    
     # 下载图片
-    result = run_shell(f'curl -s -L "{img_url}" -o "{local_path}"', timeout=30)
+    result = run_shell(f'curl -s -L "{jpg_url}" -o "{local_path}"', timeout=30)
     if result and result.returncode == 0 and local_path.exists():
         # 验证文件是否有效
         if local_path.stat().st_size > 0:
+            # 检查实际格式，如果是 WebP 则转换为真正的 JPG
+            file_check = run_shell(f'file "{local_path}"', timeout=5)
+            if file_check and 'WebP' in file_check.stdout:
+                # 用 sips 转换为真正的 JPEG
+                run_shell(f'sips -s format jpeg "{local_path}" --out "{local_path}"', timeout=10)
             return f"/images/prompts/{filename}"
     
     # 下载失败，清理
