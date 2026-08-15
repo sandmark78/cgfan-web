@@ -11,9 +11,11 @@ const SUPABASE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY
 const RESEND_API_KEY = process.env.RESEND_API_KEY
 
 async function getTodayFeature() {
-  // 从 GitHub 读取 daily-feature.ts
-  const response = await fetch('https://raw.githubusercontent.com/sandmark78/cgfan-web/main/lib/daily-feature.ts')
-  const content = await response.text()
+  // 从本地文件读取 daily-feature.ts
+  const fs = await import('fs')
+  const path = await import('path')
+  const filePath = path.join(process.cwd(), 'lib', 'daily-feature.ts')
+  const content = fs.readFileSync(filePath, 'utf-8')
   
   // 获取今天的日期（北京时间 UTC+8）
   const now = new Date()
