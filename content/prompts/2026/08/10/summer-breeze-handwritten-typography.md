@@ -5,6 +5,7 @@ author: "小小东"
 date: "2026-08-06"
 added: "2026-08-10T09:44:13.000+08:00"
 model: "通用 Prompt"
+category: "AI创作"
 source: "https://x.com/i/status/2085378664699724041"
 cover: "/images/prompts/prompt-2085378664699724041.jpg"
 images:

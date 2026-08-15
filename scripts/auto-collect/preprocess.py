@@ -1,268 +1,105 @@
 #!/usr/bin/env python3
 """
-预处理脚本：格式清理 + 数据准备
+预处理脚本 v2.0：只做过滤/去重，prompt 提取交给 LLM
 
 脚本负责：
-- 提取原始prompt（多格式识别）
-- 格式清理（@handle、日期、互动数据）
-- 模型识别（关键词匹配）
-- 去重检查
-- 保存清理后的数据供LLM（agent）处理
+- 过滤视频内容
+- 去重检查（基于 source URL）
+- 提取基本信息（author, date, images）
+- 下载图片
+- 输出完整数据供 LLM 处理
 
-LLM（agent）负责：
-- 标题生成
-- 标签提取
-- prompt语义清理
-- 8维度评分
-- 创建markdown文件
+LLM 负责：
+- 提取 prompt（从 allText / imgs alt / 评论区）
+- 判断内容类型（人像写真/产品/插画等）
+- 过滤不合格内容
+- 标题生成、标签提取、评分
 """
 
 import json
 import re
 import os
 import sys
-import subprocess
 from pathlib import Path
 from typing import Dict, List, Optional
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # 导入共享配置
 sys.path.insert(0, str(Path(__file__).parent))
-from config import DATA_DIR, TWEETS_BATCH, PREPROCESSED, PROJECT_ROOT, IMAGES_DIR
+from config import TWEETS_BATCH, PREPROCESSED, IMAGES_DIR
 
-os.chdir(str(PROJECT_ROOT))
-
-# ====== 模型识别 ======
-def identify_model(text: str) -> str:
-    text_lower = text.lower()
-    if any(k in text_lower for k in [
-        'gpt image 2', 'gpt-image2', 'gpt-image-2', 'gpt image2',
-        'chatgpt-image2', 'chatgpt image2', '创建图片', 'generate image',
-        'dall-e 3', 'dall-e-3', 'dalle-3'
-    ]):
-        return 'GPT-Image2'
-    if 'midjourney' in text_lower or ' mj ' in text_lower or text_lower.startswith('mj ') or '--ar' in text or '--sref' in text or '--cref' in text:
-        return 'Midjourney'
-    if 'gemini' in text_lower:
-        return 'Gemini'
-    if 'dall-e' in text_lower or 'dalle' in text_lower:
-        return 'DALL-E'
-    if 'stable diffusion' in text_lower or 'sd ' in text_lower:
-        return 'Stable Diffusion'
-    if 'flux' in text_lower:
-        return 'Flux'
-    if 'seedream' in text_lower:
-        return 'Seedream'
-    return '通用 Prompt'
-
-# ====== prompt提取 ======
-def extract_raw_prompt(all_text: str, imgs: Optional[List] = None) -> Optional[str]:
-    articles = re.findall(r'===ARTICLE \d+===(.*?)(?====ARTICLE|\Z)', all_text, re.DOTALL)
-    
-    for art in articles:
-        if 'SYSTEM PROMPT' in art:
-            continue
-        
-        # 格式1: "提示词：" / "Prompt:"
-        patterns_prefix = [
-            r'(?:提示词|Prompt)[：:]\s*\n(.+?)(?=\n[A-Z][a-z]+\s+@|\n\d{1,2}:\d{2}\s+[AP]M|\Z)',
-            r'【GPT Image2プロンプト】\s*\n(.+?)(?=\n[A-Z][a-z]+\s+@|\n\d{1,2}:\d{2}\s+[AP]M|\Z)',
-        ]
-        for pattern in patterns_prefix:
-            match = re.search(pattern, art, re.DOTALL | re.IGNORECASE)
-            if match:
-                prompt = match.group(1).strip()
-                if len(prompt) > 50:
-                    return clean_format(prompt)
-        
-        # 格式2: 正文中直接包含prompt
-        inline_keywords = [
-            'input ::', 'step_1', 'Scene_Type', '2x2 grid',
-            '国风CG插画', '唐风美学', 'pen and ink drawing',
-            'Fine art black and white', '比例：4:3', '主题：用[',
-        ]
-        if any(kw in art for kw in inline_keywords):
-            prompt = extract_inline_prompt(art)
-            if prompt and len(prompt) > 50:
-                return clean_format(prompt)
-    
-    # 格式3: 图片ALT text
-    if imgs:
-        for img in imgs:
-            alt = img.get('alt', '') if isinstance(img, dict) else ''
-            if len(alt) > 80:
-                prompt_indicators = [
-                    'illustration', 'portrait', 'landscape', 'scene', 'render',
-                    'cinematic', 'detailed', 'style', 'aesthetic', 'composition',
-                    'lighting', 'color', 'texture', 'atmosphere', 'mood',
-                    'photography', 'camera', 'lens', 'aspect ratio',
-                    'ultra', 'highly detailed', 'realistic', 'fantasy',
-                    'vintage', 'retro', 'futuristic', 'surreal',
-                ]
-                alt_lower = alt.lower()
-                if any(kw in alt_lower for kw in prompt_indicators):
-                    return alt.strip()
-    
-    return None
-
-def extract_inline_prompt(art_text: str) -> Optional[str]:
-    lines = art_text.split('\n')
-    prompt_lines = []
-    for line in lines:
-        if re.match(r'^[A-Z][a-z]+\s+@[^\s]+$', line.strip()):
-            if prompt_lines: break
-            continue
-        if re.match(r'^\d{1,2}:\d{2}\s+(AM|PM)', line.strip()):
-            if prompt_lines: break
-            continue
-        if line.strip() in ['Views', 'Made with AI', 'Made with Gemini']:
-            continue
-        if re.match(r'^\d+(\.\d+)?[KMB]?$', line.strip()) and len(line.strip()) < 10:
-            continue
-        if len(line.strip()) > 20:
-            prompt_lines.append(line)
-    return '\n'.join(prompt_lines).strip() if prompt_lines else None
-
-def clean_format(prompt: str) -> str:
-    lines = prompt.split('\n')
-    clean_lines = []
-    
-    for line in lines:
-        stripped = line.strip()
-        if re.match(r'^[A-Za-z\u4e00-\u9fff]+\s*$', stripped) and len(stripped) < 20:
-            continue
-        if re.match(r'^@[A-Za-z0-9_]+$', stripped):
-            continue
-        if re.match(r'^\w+\s+\d{1,2}$', stripped):
-            continue
-        if re.match(r'^\d{1,2}:\d{2}\s*(AM|PM)', stripped, re.IGNORECASE):
-            continue
-        if re.match(r'^[\d,.]+[KMB]?$', stripped) and len(stripped) < 10:
-            continue
-        if stripped in ['Views', 'Made with AI', 'Made with Gemini', 'Show more', '显示更多']:
-            continue
-        if re.match(r'^提示词\s*Prompt[：:]?\s*$', stripped):
-            continue
-        if stripped.startswith('@创建图片') or stripped.startswith('@Create image'):
-            continue
-        clean_lines.append(line)
-    
-    prompt = '\n'.join(clean_lines)
-    prompt = re.sub(r'\n{3,}', '\n\n', prompt)
-    prompt = prompt.strip()
-    
-    # 截断推文正文边界
-    boundary_patterns = [
-        r'\n[A-Z][a-z]+\s+[A-Z][a-z]+\s*\n@',
-        r'\n[\u4e00-\u9fff]{2,5}\s*\n@',
-        r'\n\d+\s*\n\d+\s*\n[\d,.]+[KMB]?\s*$',
-    ]
-    for pattern in boundary_patterns:
-        match = re.search(pattern, prompt)
-        if match:
-            prompt = prompt[:match.start()].strip()
-    
-    prompt = re.sub(r'@[A-Za-z0-9_]+', '', prompt)
-    prompt = re.sub(r'\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d{1,2}\b', '', prompt)
-    
-    return prompt.strip()
+# 兼容旧路径：如果 tweets_batch.json 在 /tmp 也有，优先用 data/ 下的
+# 但 fetch-tweets.py 可能写到 /tmp，做个 fallback
+import shutil
+TMP_TWEETS = Path('/tmp/tweets_batch.json')
+if not TWEETS_BATCH.exists() and TMP_TWEETS.exists():
+    shutil.copy(TMP_TWEETS, TWEETS_BATCH)
 
 def is_duplicate(tweet_id: str) -> bool:
-    """检查推文是否已收录（基于 source 字段，不是 slug）"""
+    """检查推文是否已收录"""
     source_url = f"https://x.com/i/status/{tweet_id}"
     
-    try:
-        from scripts.supabase_utils import get_prompt_by_tweet_id
-        return get_prompt_by_tweet_id(tweet_id) is not None
-    except Exception:
-        pass
-    
-    # 降级：检查 markdown 文件的 source 字段
+    # 检查 markdown 文件
     prompts_dir = Path('content/prompts')
-    for md_file in prompts_dir.rglob('*.md'):
-        with open(md_file, 'r', encoding='utf-8') as f:
-            content = f.read()
-        # 检查 source 字段是否匹配（更可靠）
-        if source_url in content:
-            return True
-        # 兼容旧格式：检查 slug
-        slug = f"prompt-{tweet_id}"
-        if f'slug: "{slug}"' in content or f"slug: '{slug}'" in content or f'slug: {slug}' in content:
-            return True
+    if prompts_dir.exists():
+        for md_file in prompts_dir.rglob('*.md'):
+            try:
+                with open(md_file, 'r', encoding='utf-8') as f:
+                    content = f.read()
+                if source_url in content or f"prompt-{tweet_id}" in content:
+                    return True
+            except Exception:
+                pass
     return False
 
-# ====== 图片下载（过滤后执行） ======
-def run_shell(cmd, timeout=30):
-    """执行 shell 命令"""
+def download_image(img_url: str, save_path: Path) -> bool:
+    """下载单张图片"""
     try:
-        return subprocess.run(cmd, shell=True, capture_output=True, text=True, timeout=timeout)
-    except subprocess.TimeoutExpired:
-        return None
+        # 强制 JPG 格式
+        img_url = img_url.replace('format=webp', 'format=jpg')
+        if 'format=' not in img_url:
+            img_url += '&format=jpg' if '?' in img_url else '?format=jpg'
+        
+        import subprocess
+        result = subprocess.run(
+            ['curl', '-sL', '-o', str(save_path), img_url],
+            timeout=15, capture_output=True
+        )
+        
+        if result.returncode == 0 and save_path.exists() and save_path.stat().st_size > 0:
+            # 检查是否真的是 JPEG
+            file_result = subprocess.run(
+                ['file', str(save_path)], capture_output=True, text=True
+            )
+            if 'JPEG' not in file_result.stdout and 'WebP' in file_result.stdout:
+                # WebP 伪装，转换
+                subprocess.run(
+                    ['sips', '-s', 'format', 'jpeg', str(save_path), '--out', str(save_path)],
+                    capture_output=True
+                )
+            return True
+        return False
+    except Exception as e:
+        print(f"    ❌ 下载失败: {e}")
+        return False
 
-def download_image(tweet_id: str, img_url: str, index: int) -> str:
-    """下载单张图片，返回本地路径"""
-    # 第一张图作为封面，命名为 prompt-{id}.jpg
-    # 后续图片命名为 prompt-{id}-2.jpg, prompt-{id}-3.jpg 等
-    if index == 0:
-        filename = f"prompt-{tweet_id}.jpg"
-    else:
-        filename = f"prompt-{tweet_id}-{index+1}.jpg"
-    
-    local_path = IMAGES_DIR / filename
-    
-    # Twitter 图片 URL 强制返回 JPG 格式（避免 WebP）
-    jpg_url = img_url.replace('format=webp', 'format=jpg').replace('&name=medium', '&name=large')
-    if 'format=' not in jpg_url:
-        jpg_url += '&format=jpg' if '?' in jpg_url else '?format=jpg'
-    
-    # 下载图片
-    result = run_shell(f'curl -s -L "{jpg_url}" -o "{local_path}"', timeout=30)
-    if result and result.returncode == 0 and local_path.exists():
-        # 验证文件是否有效
-        if local_path.stat().st_size > 0:
-            # 检查实际格式，如果是 WebP 则转换为真正的 JPG
-            file_check = run_shell(f'file "{local_path}"', timeout=5)
-            if file_check and 'WebP' in file_check.stdout:
-                # 用 sips 转换为真正的 JPEG
-                run_shell(f'sips -s format jpeg "{local_path}" --out "{local_path}"', timeout=10)
-            return f"/images/prompts/{filename}"
-    
-    # 下载失败，清理
-    if local_path.exists():
-        local_path.unlink()
-    return None
-
-def download_images_for_tweet(tweet_id: str, img_urls: List[str]) -> List[str]:
-    """下载一条推文的所有图片"""
-    if not img_urls:
-        return []
-    
-    downloaded = []
-    for idx, url in enumerate(img_urls):
-        path = download_image(tweet_id, url, idx)
-        if path:
-            downloaded.append(path)
-    
-    return downloaded
-
-# ====== 主流程 ======
 def main():
-    print("🔧 预处理：格式清理 + 数据准备")
-    print("=" * 60)
+    print(f"📥 读取推文数据: {TWEETS_BATCH}")
     
-    batch_file = TWEETS_BATCH
-    if not batch_file.exists():
-        print("❌ 未找到采集数据")
-        return
+    if not Path(TWEETS_BATCH).exists():
+        print(f"❌ 文件不存在: {TWEETS_BATCH}")
+        sys.exit(1)
     
-    with open(batch_file, 'r', encoding='utf-8') as f:
+    with open(TWEETS_BATCH, 'r', encoding='utf-8') as f:
         tweets = json.load(f)
     
-    print(f"📥 读取到 {len(tweets)} 条推文")
+    print(f"📦 读取到 {len(tweets)} 条推文\n")
     
     # 逐条处理
     preprocessed = []
     skipped_video = 0
+    skipped_duplicate = 0
+    
     for tweet in tweets:
         tweet_id = tweet['id']
         
@@ -275,69 +112,78 @@ def main():
         # 去重检查
         if is_duplicate(tweet_id):
             print(f"⏭️ 跳过重复: {tweet_id}")
+            skipped_duplicate += 1
             continue
         
-        # 提取并清理prompt
-        raw_prompt = extract_raw_prompt(tweet.get('allText', ''), tweet.get('imgs'))
-        if not raw_prompt:
-            print(f"⚠️ 未找到prompt: {tweet_id}")
+        # 提取基本信息（不做 prompt 提取，交给 LLM）
+        author = tweet.get('author', 'Unknown')
+        author_link = tweet.get('authorLink', '')
+        date = tweet.get('date', '')
+        all_text = tweet.get('allText', '')
+        imgs = tweet.get('imgs', [])
+        
+        # 检查是否有图片
+        if not imgs:
+            print(f"⚠️ 无图片: {tweet_id}")
             continue
         
-        cleaned_prompt = clean_format(raw_prompt)
-        model = identify_model(tweet.get('allText', ''))
+        # 下载图片
+        downloaded_images = []
+        for i, img in enumerate(imgs[:4]):  # 最多4张
+            img_url = img.get('src', '')
+            if not img_url:
+                continue
+            
+            # 命名规则
+            if i == 0:
+                filename = f"prompt-{tweet_id}.jpg"
+            else:
+                filename = f"prompt-{tweet_id}-{i+1}.jpg"
+            
+            save_path = Path(IMAGES_DIR) / filename
+            save_path.parent.mkdir(parents=True, exist_ok=True)
+            
+            if download_image(img_url, save_path):
+                downloaded_images.append(f"/images/prompts/{filename}")
+                print(f"  ✅ 图片 {i+1}: {filename}")
+            else:
+                print(f"  ❌ 图片 {i+1} 下载失败")
         
-        # 保存预处理结果，供LLM（agent）处理
+        if not downloaded_images:
+            print(f"⚠️ 无图片下载成功: {tweet_id}")
+            continue
+        
+        # 保存完整数据供 LLM 处理
         preprocessed.append({
             'tweet_id': tweet_id,
-            'author': tweet.get('author', 'Unknown'),
-            'authorLink': tweet.get('authorLink', ''),
-            'date': tweet.get('date', ''),
-            'model': model,
-            'prompt': cleaned_prompt,
-            'imgs': tweet.get('imgs', []),
-            'images': tweet.get('images', []),  # 本地图片路径（batch-fetch-tweets.py 写入）
+            'author': author,
+            'authorLink': author_link,
+            'date': date,
+            'allText': all_text,  # 完整文本，LLM 提取 prompt
+            'imgs': imgs,  # 图片元数据（含 alt）
+            'images': downloaded_images,  # 本地图片路径
             'source': f"https://x.com/i/status/{tweet_id}"
         })
         
-        print(f"✅ 预处理成功: {tweet_id} ({len(cleaned_prompt)} chars)")
+        print(f"✅ 预处理: {tweet_id} ({len(downloaded_images)} 张图片)\n")
     
-    print(f"\n📊 预处理完成: {len(preprocessed)}/{len(tweets)} 条")
+    print(f"\n{'='*60}")
+    print(f"📊 预处理完成")
+    print(f"  总计: {len(tweets)} 条")
+    print(f"  视频: {skipped_video} 条")
+    print(f"  重复: {skipped_duplicate} 条")
+    print(f"  通过: {len(preprocessed)} 条")
     
-    # ====== 下载图片（只下载通过过滤的推文） ======
-    if preprocessed:
-        print(f"\n🖼️  开始下载图片（{len(preprocessed)} 条推文）...")
-        for item in preprocessed:
-            tweet_id = item['tweet_id']
-            img_data = item.get('imgs', [])
-            
-            if not img_data:
-                continue
-            
-            # 提取图片 URL
-            img_urls = []
-            for img in img_data:
-                if isinstance(img, dict):
-                    src = img.get('src', '')
-                    if src:
-                        img_urls.append(src)
-                elif isinstance(img, str):
-                    img_urls.append(img)
-            
-            if img_urls:
-                downloaded = download_images_for_tweet(tweet_id, img_urls)
-                item['images'] = downloaded
-                if downloaded:
-                    print(f"  ✅ {tweet_id}: {len(downloaded)} 张图片")
-                else:
-                    print(f"  ⚠️ {tweet_id}: 无图片下载成功")
-    
-    # 保存供LLM（agent）处理
+    # 保存供 LLM 处理
     if preprocessed:
         output_file = PREPROCESSED
+        Path(output_file).parent.mkdir(parents=True, exist_ok=True)
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(preprocessed, f, ensure_ascii=False, indent=2)
         print(f"\n💾 数据已保存: {output_file}")
-        print(f"🤖 请在下一轮用LLM处理这些数据")
+        print(f"🤖 请在下一轮用 LLM 处理这些数据（提取 prompt、评分、生成 markdown）")
+    else:
+        print("\n⚠️ 无有效数据")
 
 if __name__ == "__main__":
     main()

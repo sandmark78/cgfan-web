@@ -1,14 +1,20 @@
 #!/usr/bin/env python3
 """batch-fetch-tweets.py — 批量推文采集（并行优化版）
 用法: python3 scripts/batch-fetch-tweets.py id1 id2 id3 ...
-输出: /tmp/tweets_batch.json
+输出: data/auto-collect/tweets_batch_temp.json (供 fetch-tweets.py 读取)
 图片: public/images/prompts/prompt-{id}.jpg
 """
 
 import subprocess, json, re, sys, os
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from pathlib import Path
 
 os.chdir("/Users/mac/.hermes/profiles/cgfan/workspace/cgfan-web")
+
+# 输出路径（与 fetch-tweets.py 期望的路径一致）
+DATA_DIR = Path("data/auto-collect")
+DATA_DIR.mkdir(parents=True, exist_ok=True)
+OUTPUT_PATH = DATA_DIR / "tweets_batch_temp.json"
 
 def run(cmd, timeout=30):
     """执行命令，返回 stdout。超时返回空字符串，不抛异常"""
@@ -141,7 +147,7 @@ for tid, tab in tabs.items():
 
 # ====== Step 4.5: 先保存数据（防止图片下载崩溃丢数据） ======
 batch = list(results.values())
-with open("/tmp/tweets_batch.json", "w") as f:
+with open(OUTPUT_PATH, "w") as f:
     json.dump(batch, f, ensure_ascii=False, indent=2)
 print(f"💾 数据已保存: {len(results)} 条")
 

@@ -6,6 +6,7 @@ authorLink: "https://x.com/airina_xyz"
 date: "2026-08-09"
 added: "2026-08-10T18:45:00.000+08:00"
 model: "Midjourney"
+category: "海报设计"
 source: "https://x.com/i/status/2086376707368649029"
 cover: "/images/prompts/prompt-2086376707368649029.jpg"
 images:

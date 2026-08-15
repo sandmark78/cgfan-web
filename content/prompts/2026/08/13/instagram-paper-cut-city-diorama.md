@@ -7,6 +7,7 @@ source: "https://x.com/i/status/2087461427363934705"
 date: "2026-08-12"
 added: "2026-08-13T06:30:00.000+08:00"
 model: "GPT-Image2"
+category: "AI创作"
 tags: ["纸艺", "微缩", "旅行", "城市", "3D纸雕"]
 cover: "/images/prompts/prompt-2087461427363934705.jpg"
 images:

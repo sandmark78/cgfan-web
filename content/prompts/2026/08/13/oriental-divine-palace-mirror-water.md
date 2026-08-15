@@ -7,6 +7,7 @@ source: "https://x.com/i/status/2087105130156159021"
 date: "2026-08-11"
 added: "2026-08-13T06:30:00.000+08:00"
 model: "通用 Prompt"
+category: "AI创作"
 tags: ["东方美学", "建筑", "仙侠", "电影感", "超尺度"]
 cover: "/images/prompts/prompt-2087105130156159021.jpg"
 images:

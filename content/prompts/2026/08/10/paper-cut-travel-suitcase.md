@@ -5,6 +5,7 @@ author: "simeon-sanai"
 date: "2026-08-09"
 added: "2026-08-10T07:31:55.000+08:00"
 model: "GPT-Image2"
+category: "海报设计"
 source: "https://x.com/i/status/2086377637711434188"
 cover: "/images/prompts/prompt-2086377637711434188.jpg"
 images:

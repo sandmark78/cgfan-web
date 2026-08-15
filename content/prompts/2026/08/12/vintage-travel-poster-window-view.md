@@ -7,6 +7,7 @@ source: "https://x.com/i/status/2087100105929417025"
 date: "2026-08-11"
 added: "2026-08-12T06:25:00.000+08:00"
 model: "GPT-Image2"
+category: "AI创作"
 tags: ["复古海报", "旅行设计", "Mid-Century", "编辑设计", "字体排版"]
 cover: "/images/prompts/prompt-2087100105929417025.jpg"
 images:

@@ -7,6 +7,7 @@ source: "https://x.com/i/status/2087232122260210039"
 date: "2026-08-11"
 added: "2026-08-12T06:30:00.000+08:00"
 model: "GPT-Image2"
+category: "AI创作"
 tags: ["荧光笔", "旅行海报", "极简设计", "建筑速写", "留白艺术"]
 cover: "/images/prompts/prompt-2087232122260210039.jpg"
 images:

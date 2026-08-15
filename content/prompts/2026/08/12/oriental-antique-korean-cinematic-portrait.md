@@ -7,6 +7,7 @@ source: "https://x.com/i/status/2087042576604102863"
 date: "2026-08-10"
 added: "2026-08-12T06:20:00.000+08:00"
 model: "通用 Prompt"
+category: "AI创作"
 tags: ["古风写真", "电影感", "韩系审美", "东方美学", "氛围摄影"]
 cover: "/images/prompts/prompt-2087042576604102863.jpg"
 images:

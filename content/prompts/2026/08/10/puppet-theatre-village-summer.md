@@ -5,6 +5,7 @@ author: "Beanie Blossom"
 date: "2026-08-09"
 added: "2026-08-10T07:31:55.000+08:00"
 model: "通用 Prompt"
+category: "AI创作"
 source: "https://x.com/i/status/2086421996875985304"
 cover: "/images/prompts/prompt-2086421996875985304.jpg"
 images:
