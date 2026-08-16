@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 """
-预处理脚本 v2.0：只做过滤/去重，prompt 提取交给 LLM
+预处理脚本 v2.1：只做过滤/去重，不下载图片
 
 脚本负责：
 - 过滤视频内容
 - 去重检查（基于 source URL）
-- 提取基本信息（author, date, images）
-- 下载图片
+- 提取基本信息（author, date, image URLs）
 - 输出完整数据供 LLM 处理
 
 LLM 负责：
@@ -14,6 +13,10 @@ LLM 负责：
 - 判断内容类型（人像写真/产品/插画等）
 - 过滤不合格内容
 - 标题生成、标签提取、评分
+
+图片下载：
+- LLM 评分后，只对≥60分的条目下载图片
+- 避免下载大量最终被丢弃的图片
 """
 
 import json
@@ -127,33 +130,18 @@ def main():
             print(f"⚠️ 无图片: {tweet_id}")
             continue
         
-        # 下载图片
-        downloaded_images = []
+        # 提取图片 URL（不下载）
+        image_urls = []
         for i, img in enumerate(imgs[:4]):  # 最多4张
             img_url = img.get('src', '')
-            if not img_url:
-                continue
-            
-            # 命名规则
-            if i == 0:
-                filename = f"prompt-{tweet_id}.jpg"
-            else:
-                filename = f"prompt-{tweet_id}-{i+1}.jpg"
-            
-            save_path = Path(IMAGES_DIR) / filename
-            save_path.parent.mkdir(parents=True, exist_ok=True)
-            
-            if download_image(img_url, save_path):
-                downloaded_images.append(f"/images/prompts/{filename}")
-                print(f"  ✅ 图片 {i+1}: {filename}")
-            else:
-                print(f"  ❌ 图片 {i+1} 下载失败")
+            if img_url:
+                image_urls.append(img_url)
         
-        if not downloaded_images:
-            print(f"⚠️ 无图片下载成功: {tweet_id}")
+        if not image_urls:
+            print(f"⚠️ 无图片URL: {tweet_id}")
             continue
         
-        # 保存完整数据供 LLM 处理
+        # 保存完整数据供 LLM 处理（含图片URL但不下载）
         preprocessed.append({
             'tweet_id': tweet_id,
             'author': author,
@@ -161,11 +149,11 @@ def main():
             'date': date,
             'allText': all_text,  # 完整文本，LLM 提取 prompt
             'imgs': imgs,  # 图片元数据（含 alt）
-            'images': downloaded_images,  # 本地图片路径
+            'image_urls': image_urls,  # 图片URL（不下载）
             'source': f"https://x.com/i/status/{tweet_id}"
         })
         
-        print(f"✅ 预处理: {tweet_id} ({len(downloaded_images)} 张图片)\n")
+        print(f"✅ 预处理: {tweet_id} ({len(image_urls)} 张图片URL)\n")
     
     print(f"\n{'='*60}")
     print(f"📊 预处理完成")
