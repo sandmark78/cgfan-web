@@ -468,12 +468,21 @@ async function main() {
     }
   });
   
-  // 同步到 Supabase
-  console.log('🔄 正在同步到 Supabase...');
-  const { upsertPrompts } = await import('./supabase-utils');
-  const upsertedCount = await upsertPrompts(allPrompts);
-  
-  console.log(`✅ 提取完成：${allPrompts.length} 条提示词已同步到 Supabase（成功 ${upsertedCount} 条）`);
+  // 增量同步：先查 Supabase 已有 slug，只同步新增的
+  console.log('🔄 正在增量同步到 Supabase...');
+  const { upsertPrompts, getExistingSlugs } = await import('./supabase-utils');
+  const existingSlugs = await getExistingSlugs();
+  console.log(`📋 Supabase 已有 ${existingSlugs.size} 条，本地共 ${allPrompts.length} 条`);
+
+  const newPrompts = allPrompts.filter(p => !existingSlugs.has(p.slug));
+  console.log(`📦 本次新增 ${newPrompts.length} 条`);
+
+  if (newPrompts.length === 0) {
+    console.log('✅ 无新增数据，跳过同步');
+  } else {
+    const upsertedCount = await upsertPrompts(newPrompts);
+    console.log(`✅ 增量同步完成：成功 ${upsertedCount} 条`);
+  }
   
   // 统计信息
   const modelStats: Record<string, number> = {};

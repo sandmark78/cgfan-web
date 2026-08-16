@@ -58,6 +58,43 @@ export async function getAllPrompts(): Promise<any[]> {
 }
 
 /**
+ * 获取 Supabase 中已存在的所有 slug（轻量查询，只取 slug）
+ */
+export async function getExistingSlugs(): Promise<Set<string>> {
+  const supabase = getSupabaseClient()
+  const slugs = new Set<string>()
+  let page = 0
+  const pageSize = 1000
+  let hasMore = true
+
+  while (hasMore) {
+    const { data, error } = await supabase
+      .from('prompts')
+      .select('slug')
+      .range(page * pageSize, (page + 1) * pageSize - 1)
+
+    if (error) {
+      console.error('获取已有 slug 失败:', error)
+      return slugs
+    }
+
+    if (data.length === 0) {
+      hasMore = false
+    } else {
+      for (const row of data) {
+        slugs.add(row.slug)
+      }
+      page++
+      if (data.length < pageSize) {
+        hasMore = false
+      }
+    }
+  }
+
+  return slugs
+}
+
+/**
  * 批量更新提示词到 Supabase
  */
 export async function upsertPrompts(prompts: any[]): Promise<number> {
