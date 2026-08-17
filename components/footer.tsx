@@ -26,6 +26,16 @@ export default function Footer() {
               版权
             </Link>
             <span className="text-gray-300 dark:text-gray-700">·</span>
+            <span className="text-gray-400 dark:text-gray-600">友链</span>
+            <a
+              href="https://deepmess.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors hover:text-green-600 dark:hover:text-green-400"
+            >
+              DeepMess
+            </a>
+            <span className="text-gray-300 dark:text-gray-700">·</span>
             <span>© 2026 CGfan.com</span>
           </div>
 
