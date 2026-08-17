@@ -7,8 +7,6 @@ added: "2026-08-10T07:31:55.000+08:00"
 model: "GPT-Image2"
 source: "https://x.com/i/status/2086489895661670798"
 cover: "/images/prompts/prompt-2086489895661670798.jpg"
-images: 
-tags: 
 score: "66/80"
 composition: "8/10"
 color: "8/10"

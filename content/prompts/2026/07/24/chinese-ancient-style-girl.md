@@ -1,9 +1,9 @@
 ---
-title: "接上一期，分享绝美AI古风女生侧颜提示词
+title: "接上一期，分享绝美AI古风女生侧颜提示词"
 slug: chinese-ancient-style-girl
 model: Midjourney
 category: chinese-style
-tags: 
+tags: ["古风", "人像", "宋韵美学", "工笔写实"]
 difficulty: intermediate
 cover: /images/prompts/prompt-2078522659567239382.jpg
 date: '2026-07-23'

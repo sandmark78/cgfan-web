@@ -7,8 +7,6 @@ added: "2026-08-10T09:44:13.000+08:00"
 model: "通用 Prompt"
 source: "https://x.com/i/status/2086452441084772476"
 cover: "/images/prompts/prompt-2086452441084772476.jpg"
-images: 
-tags: 
 score: "64/80"
 composition: "8/10"
 color: "8/10"
