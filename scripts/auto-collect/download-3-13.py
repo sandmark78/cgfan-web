@@ -1,30 +1,22 @@
 #!/usr/bin/env python3
-"""Download images for candidate entries"""
-
+"""Download images for entries 3 and 13"""
 import json
 import urllib.request
-import os
 from pathlib import Path
 
-# Load preprocessed data
 with open('data/auto-collect/preprocessed.json', 'r') as f:
     data = json.load(f)
 
-# Candidate entries to download
-candidates = [0, 5, 6, 10, 13, 17, 20, 26, 30, 34]
-
 download_dir = Path('public/images/prompts')
-download_dir.mkdir(parents=True, exist_ok=True)
 
-for idx in candidates:
+for idx in [3, 13]:
     entry = data[idx]
     tweet_id = entry['tweet_id']
     image_urls = entry.get('image_urls', [])
-    
-    print(f"\n[{idx}] Downloading images for tweet {tweet_id}...")
-    
+
+    print(f"Downloading images for tweet {tweet_id}...")
+
     for img_idx, url in enumerate(image_urls):
-        # Determine filename
         if img_idx == 0:
             filename = f"prompt-{tweet_id}.jpg"
         else:
@@ -32,33 +24,24 @@ for idx in candidates:
         
         filepath = download_dir / filename
         
-        # Skip if already exists
         if filepath.exists():
             print(f"  ✓ {filename} already exists")
             continue
         
-        # Download image
         try:
-            # Replace format=webp with format=jpg to avoid WebP issues
             download_url = url.replace('format=webp', 'format=jpg')
-            
             req = urllib.request.Request(download_url, headers={
-                'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'
+                'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)'
             })
             
             with urllib.request.urlopen(req, timeout=30) as response:
                 with open(filepath, 'wb') as f:
                     f.write(response.read())
             
-            # Verify file size
             size = filepath.stat().st_size
-            if size > 0:
-                print(f"  ✓ {filename} ({size} bytes)")
-            else:
-                print(f"  ✗ {filename} is empty!")
-                filepath.unlink()
-                
+            print(f"  ✓ {filename} ({size} bytes)")
+            
         except Exception as e:
-            print(f"  ✗ Failed to download {filename}: {e}")
+            print(f"  ✗ Failed: {e}")
 
-print("\n✅ Image download complete")
+print("\n✅ Done")
