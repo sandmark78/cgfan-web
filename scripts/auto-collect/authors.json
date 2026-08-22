@@ -107,6 +107,30 @@
       "twitter": "@Soranlan",
       "avg_score": 0,
       "total_images": 0
+    },
+    {
+      "name": "古一",
+      "twitter": "@MANISH1027512",
+      "avg_score": 71.5,
+      "total_images": 2
+    },
+    {
+      "name": "Nicholas",
+      "twitter": "@nnnnicholas",
+      "avg_score": 64.0,
+      "total_images": 2
+    },
+    {
+      "name": "AI Aimee",
+      "twitter": "@RockGrokAI",
+      "avg_score": 64.0,
+      "total_images": 1
+    },
+    {
+      "name": "蛋黄堡",
+      "twitter": "@Hamburgerai",
+      "avg_score": 66.0,
+      "total_images": 2
     }
   ],
   "min_score": 65,
