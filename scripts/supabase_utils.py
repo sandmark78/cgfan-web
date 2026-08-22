@@ -125,7 +125,7 @@ def upsert_prompt(prompt: Dict) -> bool:
     client = get_client()
     row = prompt_to_db_row(prompt)
     result = client.table('prompts').upsert(row, on_conflict='slug').execute()
-    return not result.error
+    return bool(result.data)
 
 def upsert_many(prompts: List[Dict]) -> int:
     """批量插入或更新，返回成功数量"""
@@ -135,7 +135,7 @@ def upsert_many(prompts: List[Dict]) -> int:
     for i in range(0, len(rows), batch_size):
         batch = rows[i:i + batch_size]
         result = get_client().table('prompts').upsert(batch, on_conflict='slug').execute()
-        if not result.error:
+        if result.data:
             count += len(batch)
     return count
 
@@ -143,7 +143,7 @@ def delete_prompt_by_slug(slug: str) -> bool:
     """删除提示词"""
     client = get_client()
     result = client.table('prompts').delete().eq('slug', slug).execute()
-    return not result.error
+    return bool(result.data)
 
 # ====== 聚合查询 ======
 

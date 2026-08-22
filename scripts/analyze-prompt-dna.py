@@ -268,6 +268,12 @@ def analyze_prompt(prompt_data: Dict) -> Dict:
 
 def main():
     """主函数：批量分析提示词"""
+    # 修复 sys.path，确保能导入 scripts 模块
+    import sys
+    project_root = Path(__file__).parent.parent
+    if str(project_root) not in sys.path:
+        sys.path.insert(0, str(project_root))
+    
     # 从 Supabase 读取数据
     try:
         from scripts.supabase_utils import get_all_prompts, upsert_many
@@ -308,7 +314,9 @@ def main():
         synced = upsert_many(prompts)
         print(f"✅ Supabase 同步成功: {synced} 条")
     except Exception as e:
-        print(f"⚠️ Supabase 同步异常: {e}")
+        print(f"❌ Supabase 同步失败: {e}")
+        import traceback
+        traceback.print_exc()
     
     print(f"✅ 完成！已为 {len(prompts)} 条提示词生成 DNA 数据")
 

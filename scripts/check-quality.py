@@ -49,11 +49,11 @@ for md_file in prompts_dir.rglob('*.md'):
         problems.append('标题含emoji')
     
     # 3. 检查是否有图片
-    cover_match = re.search(r'cover:\s*(.+?)$', frontmatter, re.MULTILINE)
+    cover_match = re.search(r'cover:\s*["\']?(.+?)["\']?\s*$', frontmatter, re.MULTILINE)
     if not cover_match:
         problems.append('无封面图')
     else:
-        cover_path = cover_match.group(1).strip()
+        cover_path = cover_match.group(1).strip().strip('"').strip("'")
         # 检查图片文件是否存在
         img_file = Path('/Users/mac/.hermes/profiles/cgfan/workspace/cgfan-web/public') / cover_path.lstrip('/')
         if not img_file.exists():
