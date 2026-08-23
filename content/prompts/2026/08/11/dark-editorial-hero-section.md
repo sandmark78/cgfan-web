@@ -17,15 +17,15 @@ images:
   - "/images/prompts/prompt-2086828099979669670-4.jpg"
   - "/images/prompts/prompt-2086828099979669670-5.jpg"
   - "/images/prompts/prompt-2086828099979669670-6.jpg"
-score: 70/80
-composition: 9/10
-color: 8/10
-lighting: 8/10
-detail: 8/10
-creativity: 8/10
-technical: 9/10
-aesthetic: 9/10
-curation: 9/10
+score: 67
+composition: 9
+color: 7
+lighting: 8
+detail: 8
+creativity: 8
+technical: 9
+aesthetic: 9
+curation: 9
 ---
 
 # 暗黑编辑风 · 沉浸式英雄区块设计

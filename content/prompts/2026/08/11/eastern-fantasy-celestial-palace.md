@@ -15,15 +15,15 @@ images:
   - "/images/prompts/prompt-2086998103799038035-2.jpg"
   - "/images/prompts/prompt-2086998103799038035-3.jpg"
   - "/images/prompts/prompt-2086998103799038035-4.jpg"
-score: 72/80
-composition: 9/10
-color: 8/10
-lighting: 9/10
-detail: 9/10
-creativity: 9/10
-technical: 9/10
-aesthetic: 10/10
-curation: 9/10
+score: 71
+composition: 9
+color: 7
+lighting: 9
+detail: 9
+creativity: 9
+technical: 9
+aesthetic: 10
+curation: 9
 ---
 
 # 东方仙侠天宫云海 · 电影级奇幻建筑

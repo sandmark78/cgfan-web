@@ -13,15 +13,15 @@ cover: "/images/prompts/prompt-2086758454941675659.jpg"
 images:
   - "/images/prompts/prompt-2086758454941675659.jpg"
   - "/images/prompts/prompt-2086758454941675659-2.jpg"
-score: 66/80
-composition: 8/10
-color: 7/10
-lighting: 7/10
-detail: 9/10
-creativity: 10/10
-technical: 8/10
-aesthetic: 8/10
-curation: 8/10
+score: 65
+composition: 8
+color: 7
+lighting: 7
+detail: 9
+creativity: 10
+technical: 8
+aesthetic: 8
+curation: 8
 ---
 
 # 递归叙事马赛克 · 多尺度人物传记系统

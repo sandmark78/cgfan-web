@@ -15,15 +15,15 @@ images:
   - "/images/prompts/prompt-2086130418534002803-2.jpg"
   - "/images/prompts/prompt-2086130418534002803-3.jpg"
   - "/images/prompts/prompt-2086130418534002803-4.jpg"
-score: 68/80
-composition: 8/10
-color: 8/10
-lighting: 9/10
-detail: 8/10
-creativity: 9/10
-technical: 9/10
-aesthetic: 9/10
-curation: 8/10
+score: 67
+composition: 7
+color: 8
+lighting: 9
+detail: 8
+creativity: 9
+technical: 9
+aesthetic: 9
+curation: 8
 ---
 
 # 废墟中读报：末世荒诞的冷静旁观

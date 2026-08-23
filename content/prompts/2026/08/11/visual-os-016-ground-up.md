@@ -15,15 +15,15 @@ images:
   - "/images/prompts/prompt-2086814975629107560-2.jpg"
   - "/images/prompts/prompt-2086814975629107560-3.jpg"
   - "/images/prompts/prompt-2086814975629107560-4.jpg"
-score: 71/80
-composition: 9/10
-color: 10/10
-lighting: 8/10
-detail: 8/10
-creativity: 9/10
-technical: 9/10
-aesthetic: 9/10
-curation: 9/10
+score: 70
+composition: 9
+color: 10
+lighting: 7
+detail: 8
+creativity: 9
+technical: 9
+aesthetic: 9
+curation: 9
 ---
 
 # VISUAL OS 016 — 从地面仰拍的城市频率

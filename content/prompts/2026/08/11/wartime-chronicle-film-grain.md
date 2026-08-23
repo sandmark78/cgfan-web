@@ -18,15 +18,15 @@ images:
   - "/images/prompts/prompt-2086814975025185084-5.jpg"
   - "/images/prompts/prompt-2086814975025185084-6.jpg"
   - "/images/prompts/prompt-2086814975025185084-7.jpg"
-score: 72/80
-composition: 9/10
-color: 8/10
-lighting: 9/10
-detail: 9/10
-creativity: 9/10
-technical: 9/10
-aesthetic: 9/10
-curation: 9/10
+score: 70
+composition: 9
+color: 7
+lighting: 9
+detail: 9
+creativity: 9
+technical: 9
+aesthetic: 9
+curation: 9
 ---
 
 # 二战纪实影像 · 胶片质感战争编年史

@@ -15,15 +15,15 @@ images:
   - "/images/prompts/prompt-2086866107965821125-2.jpg"
   - "/images/prompts/prompt-2086866107965821125-3.jpg"
   - "/images/prompts/prompt-2086866107965821125-4.jpg"
-score: 68/80
-composition: 9/10
-color: 7/10
-lighting: 7/10
-detail: 8/10
-creativity: 8/10
-technical: 8/10
-aesthetic: 8/10
-curation: 8/10
+score: 63
+composition: 9
+color: 7
+lighting: 7
+detail: 8
+creativity: 8
+technical: 8
+aesthetic: 8
+curation: 8
 ---
 
 # 纸质信息设计 · 克制庄重的版面系统

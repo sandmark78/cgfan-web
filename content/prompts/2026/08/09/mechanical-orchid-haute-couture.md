@@ -13,15 +13,15 @@ cover: "/images/prompts/prompt-2086186439037849811.jpg"
 images:
   - "/images/prompts/prompt-2086186439037849811.jpg"
   - "/images/prompts/prompt-2086186439037849811-2.jpg"
-score: 68/80
-composition: 8/10
-color: 8/10
-lighting: 9/10
-detail: 9/10
-creativity: 8/10
-technical: 9/10
-aesthetic: 9/10
-curation: 8/10
+score: 67
+composition: 7
+color: 8
+lighting: 9
+detail: 9
+creativity: 8
+technical: 9
+aesthetic: 9
+curation: 8
 ---
 
 # 黑色机械兰花：高定裙的雕塑感

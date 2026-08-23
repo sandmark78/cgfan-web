@@ -16,15 +16,15 @@ images:
   - "/images/prompts/prompt-2086362886222598499-3.jpg"
   - "/images/prompts/prompt-2086362886222598499-4.jpg"
   - "/images/prompts/prompt-2086362886222598499-5.jpg"
-score: 65/80
-composition: 8/10
-color: 8/10
-lighting: 8/10
-detail: 8/10
-creativity: 8/10
-technical: 8/10
-aesthetic: 8/10
-curation: 8/10
+score: 63
+composition: 7
+color: 8
+lighting: 8
+detail: 8
+creativity: 8
+technical: 8
+aesthetic: 8
+curation: 8
 ---
 
 # 夏夜花园晚餐：水粉质感的温暖叙事

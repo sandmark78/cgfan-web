@@ -16,15 +16,15 @@ images:
   - "/images/prompts/prompt-2086276401397907950-3.jpg"
   - "/images/prompts/prompt-2086276401397907950-4.jpg"
   - "/images/prompts/prompt-2086276401397907950-5.jpg"
-score: 63/80
-composition: 8/10
-color: 8/10
-lighting: 7/10
-detail: 8/10
-creativity: 8/10
-technical: 8/10
-aesthetic: 7/10
-curation: 7/10
+score: 61
+composition: 8
+color: 8
+lighting: 7
+detail: 8
+creativity: 8
+technical: 8
+aesthetic: 7
+curation: 7
 ---
 
 # 酸性复古矢量：鱼眼透视运动鞋街头

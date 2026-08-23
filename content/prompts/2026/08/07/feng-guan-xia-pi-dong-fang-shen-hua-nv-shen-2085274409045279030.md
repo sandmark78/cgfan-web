@@ -14,15 +14,15 @@ images:
   - "/images/prompts/prompt-2085274409045279030-2.jpg"
   - "/images/prompts/prompt-2085274409045279030-3.jpg"
   - "/images/prompts/prompt-2085274409045279030-4.jpg"
-score: 71/80
-composition: 9/10
-color: 9/10
-lighting: 8/10
-detail: 10/10
-creativity: 9/10
-technical: 9/10
-aesthetic: 9/10
-curation: 8/10
+score: 70
+composition: 9
+color: 9
+lighting: 7
+detail: 10
+creativity: 9
+technical: 9
+aesthetic: 9
+curation: 8
 ---
 
 # 凤冠拆解为色彩元素，东方极繁美学

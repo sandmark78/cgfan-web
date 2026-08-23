@@ -19,15 +19,15 @@ images:
   - "/images/prompts/prompt-2086256436275982541-6.jpg"
   - "/images/prompts/prompt-2086256436275982541-7.jpg"
   - "/images/prompts/prompt-2086256436275982541-8.jpg"
-score: 64/80
-composition: 8/10
-color: 8/10
-lighting: 7/10
-detail: 9/10
-creativity: 8/10
-technical: 8/10
-aesthetic: 8/10
-curation: 7/10
+score: 63
+composition: 8
+color: 8
+lighting: 7
+detail: 9
+creativity: 8
+technical: 8
+aesthetic: 8
+curation: 7
 ---
 
 # 风格炼金术：葛饰北斋×敦煌壁画×火影忍者

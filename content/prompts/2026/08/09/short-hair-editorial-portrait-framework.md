@@ -20,15 +20,15 @@ images:
   - "/images/prompts/prompt-2086062646864847140-7.jpg"
   - "/images/prompts/prompt-2086062646864847140-8.jpg"
   - "/images/prompts/prompt-2086062646864847140-9.jpg"
-score: 64/80
-composition: 8/10
-color: 7/10
-lighting: 7/10
-detail: 8/10
-creativity: 7/10
-technical: 8/10
+score: 63
+composition: 7
+color: 8
+lighting: 8
+detail: 8
+creativity: 8
+technical: 8
 aesthetics: 7/10
-curation: 8/10
+curation: 8
 ---
 
 ## 简介

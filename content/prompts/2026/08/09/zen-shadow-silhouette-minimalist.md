@@ -19,15 +19,15 @@ images:
   - "/images/prompts/prompt-2086133609891561600-6.jpg"
   - "/images/prompts/prompt-2086133609891561600-7.jpg"
   - "/images/prompts/prompt-2086133609891561600-8.jpg"
-score: 70/80
-composition: 9/10
-color: 9/10
-lighting: 9/10
-detail: 8/10
-creativity: 9/10
-technical: 9/10
-aesthetic: 9/10
-curation: 8/10
+score: 69
+composition: 9
+color: 9
+lighting: 9
+detail: 7
+creativity: 9
+technical: 9
+aesthetic: 9
+curation: 8
 ---
 
 # 禅意剪影：愚公移山的极简光影

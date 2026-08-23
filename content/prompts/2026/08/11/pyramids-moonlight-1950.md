@@ -10,15 +10,15 @@ date: "2026-08-10"
 added: "2026-08-11T10:53:00.000+08:00"
 source: "https://x.com/i/status/2086892098041827494"
 cover: "/images/prompts/prompt-2086892098041827494.jpg"
-score: 65/80
-composition: 8/10
-color: 7/10
-lighting: 9/10
-detail: 8/10
-creativity: 7/10
-technical: 8/10
-aesthetic: 8/10
-curation: 8/10
+score: 63
+composition: 8
+color: 7
+lighting: 9
+detail: 8
+creativity: 7
+technical: 8
+aesthetic: 8
+curation: 8
 ---
 
 # 1950年月光下的吉萨金字塔

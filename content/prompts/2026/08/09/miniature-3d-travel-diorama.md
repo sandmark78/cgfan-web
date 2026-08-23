@@ -13,15 +13,15 @@ cover: "/images/prompts/prompt-2086125703427436788.jpg"
 images:
   - "/images/prompts/prompt-2086125703427436788.jpg"
   - "/images/prompts/prompt-2086125703427436788-2.jpg"
-score: 67/80
-composition: 8/10
-color: 8/10
-lighting: 8/10
-detail: 9/10
-creativity: 9/10
-technical: 8/10
-aesthetic: 8/10
-curation: 8/10
+score: 65
+composition: 7
+color: 8
+lighting: 8
+detail: 9
+creativity: 9
+technical: 8
+aesthetic: 8
+curation: 8
 ---
 
 # 微缩3D旅行立体画：手工明信片世界

@@ -19,15 +19,15 @@ images:
   - "/images/prompts/prompt-2086270220948385897-6.jpg"
   - "/images/prompts/prompt-2086270220948385897-7.jpg"
   - "/images/prompts/prompt-2086270220948385897-8.jpg"
-score: 65/80
-composition: 8/10
-color: 8/10
-lighting: 8/10
-detail: 9/10
-creativity: 7/10
-technical: 9/10
-aesthetic: 8/10
-curation: 7/10
+score: 64
+composition: 8
+color: 8
+lighting: 8
+detail: 9
+creativity: 7
+technical: 9
+aesthetic: 8
+curation: 7
 ---
 
 # 银发少女赛博窗边：3D二次元CG人像

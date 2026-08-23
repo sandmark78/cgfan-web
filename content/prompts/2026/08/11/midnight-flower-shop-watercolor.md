@@ -10,15 +10,15 @@ date: "2026-08-10"
 added: "2026-08-11T10:50:00.000+08:00"
 source: "https://x.com/i/status/2086806767602630939"
 cover: "/images/prompts/prompt-2086806767602630939.jpg"
-score: 68/80
-composition: 8/10
-color: 9/10
-lighting: 8/10
-detail: 8/10
-creativity: 8/10
-technical: 8/10
-aesthetic: 8/10
-curation: 8/10
+score: 64
+composition: 7
+color: 9
+lighting: 8
+detail: 8
+creativity: 8
+technical: 8
+aesthetic: 8
+curation: 8
 ---
 
 # 午夜花店 · 欧洲老街水彩插画

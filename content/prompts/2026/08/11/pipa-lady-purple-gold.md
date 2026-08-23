@@ -17,15 +17,15 @@ images:
   - "/images/prompts/prompt-2087002325252718839-4.jpg"
   - "/images/prompts/prompt-2087002325252718839-5.jpg"
   - "/images/prompts/prompt-2087002325252718839-6.jpg"
-score: 73/80
-composition: 9/10
-color: 9/10
-lighting: 9/10
-detail: 9/10
-creativity: 9/10
-technical: 9/10
-aesthetic: 10/10
-curation: 9/10
+score: 71
+composition: 7
+color: 9
+lighting: 9
+detail: 9
+creativity: 9
+technical: 9
+aesthetic: 10
+curation: 9
 ---
 
 # 古风琵琶仕女 · 紫金色调杂志封面

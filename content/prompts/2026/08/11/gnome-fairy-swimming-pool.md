@@ -15,15 +15,15 @@ images:
   - "/images/prompts/prompt-2086723987061764331-2.jpg"
   - "/images/prompts/prompt-2086723987061764331-3.jpg"
   - "/images/prompts/prompt-2086723987061764331-4.jpg"
-score: 66/80
-composition: 8/10
-color: 8/10
-lighting: 8/10
-detail: 9/10
-creativity: 8/10
-technical: 8/10
-aesthetic: 8/10
-curation: 8/10
+score: 64
+composition: 7
+color: 8
+lighting: 8
+detail: 9
+creativity: 8
+technical: 8
+aesthetic: 8
+curation: 8
 ---
 
 # 废弃泳池里的精灵微世界

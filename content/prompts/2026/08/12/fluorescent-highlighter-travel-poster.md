@@ -17,15 +17,15 @@ images:
   - "/images/prompts/prompt-2087232122260210039-4.jpg"
   - "/images/prompts/prompt-2087232122260210039-5.jpg"
   - "/images/prompts/prompt-2087232122260210039-6.jpg"
-score: 67/80
-composition: 9/10
-color: 9/10
-lighting: 7/10
-detail: 8/10
-creativity: 9/10
+score: 66
+composition: 7
+color: 8
+lighting: 8
+detail: 8
+creativity: 11
 technique: 8/10
-aesthetic: 9/10
-curation: 8/10
+aesthetic: 8
+curation: 8
 ---
 
 ## 评分说明
