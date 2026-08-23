@@ -72,10 +72,16 @@ def check_prompt_quality():
             
             # 提取8维度分数
             dims = {}
-            for dim in ['composition', 'color', 'lighting', 'detail', 'creativity', 'technical', 'aesthetic', 'curation']:
+            for dim in ['composition', 'color', 'lighting', 'detail', 'creativity', 'technical', 'aesthetic']:
                 dim_match = re.search(rf'{dim}:\s*(\d+(?:\.\d+)?)/10', fm_text)
                 if dim_match:
                     dims[dim] = float(dim_match.group(1))
+            # 8th dim: could be 'curator' or 'curation'
+            for dim8 in ['curator', 'curation']:
+                dim_match = re.search(rf'{dim8}:\s*(\d+(?:\.\d+)?)/10', fm_text)
+                if dim_match:
+                    dims[dim8] = float(dim_match.group(1))
+                    break
             
             # 验证总分
             if dims:

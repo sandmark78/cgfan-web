@@ -19,9 +19,9 @@ images:
   - "/images/prompts/prompt-2086096437532618930-6.jpg"
   - "/images/prompts/prompt-2086096437532618930-7.jpg"
   - "/images/prompts/prompt-2086096437532618930-8.jpg"
-score: 70/80
+score: 69/80
 composition: 9/10
-color: 8/10
+color: 7/10
 lighting: 8/10
 detail: 9/10
 creativity: 9/10
