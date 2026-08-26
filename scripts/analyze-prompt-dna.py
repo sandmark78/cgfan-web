@@ -308,21 +308,31 @@ def main():
     ts_file = Path('lib/prompts-data.ts')
     ts_file.write_text(ts_content)
     
-    # 同步到 Supabase（只同步新增的）
+    # 同步到 Supabase（增量：只同步新增 + 更新已有但字段缺失的）
     try:
-        from scripts.supabase_utils import get_existing_slugs, upsert_many
+        from scripts.supabase_utils import get_all_prompts, upsert_many
         
-        # 获取已存在的 slugs
-        existing_slugs = get_existing_slugs()
+        existing = get_all_prompts()
+        existing_map = {p['slug']: p for p in existing}
         
-        # 只同步新增的数据
-        new_prompts = [p for p in prompts if p.get('slug') not in existing_slugs]
+        # 找新增的 + 需要更新的（author_link 或 source_link 为空）
+        to_sync = []
+        for p in prompts:
+            slug = p.get('slug', '')
+            if slug not in existing_map:
+                # 新增
+                to_sync.append(p)
+            else:
+                # 已有，检查是否需要更新
+                ex = existing_map[slug]
+                if not ex.get('author_link') or not ex.get('source_link'):
+                    to_sync.append(p)
         
-        if new_prompts:
-            synced = upsert_many(new_prompts)
-            print(f"✅ Supabase 增量同步成功: {synced} 条（跳过 {len(prompts) - len(new_prompts)} 条已存在）")
+        if to_sync:
+            synced = upsert_many(to_sync)
+            print(f"✅ Supabase 增量同步成功: {synced} 条（新增+更新，跳过 {len(prompts) - len(to_sync)} 条无需更新）")
         else:
-            print(f"✅ 无新增数据，跳过同步")
+            print(f"✅ 无新增或需更新数据，跳过同步")
     except Exception as e:
         print(f"❌ Supabase 同步失败: {e}")
         import traceback
