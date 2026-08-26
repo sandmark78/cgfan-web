@@ -308,11 +308,21 @@ def main():
     ts_file = Path('lib/prompts-data.ts')
     ts_file.write_text(ts_content)
     
-    # 同步到 Supabase
+    # 同步到 Supabase（只同步新增的）
     try:
-        from scripts.supabase_utils import upsert_many
-        synced = upsert_many(prompts)
-        print(f"✅ Supabase 同步成功: {synced} 条")
+        from scripts.supabase_utils import get_existing_slugs, upsert_many
+        
+        # 获取已存在的 slugs
+        existing_slugs = get_existing_slugs()
+        
+        # 只同步新增的数据
+        new_prompts = [p for p in prompts if p.get('slug') not in existing_slugs]
+        
+        if new_prompts:
+            synced = upsert_many(new_prompts)
+            print(f"✅ Supabase 增量同步成功: {synced} 条（跳过 {len(prompts) - len(new_prompts)} 条已存在）")
+        else:
+            print(f"✅ 无新增数据，跳过同步")
     except Exception as e:
         print(f"❌ Supabase 同步失败: {e}")
         import traceback
