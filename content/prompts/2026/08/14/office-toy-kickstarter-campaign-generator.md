@@ -15,15 +15,15 @@ tags:
 cover: "/images/prompts/prompt-2087847631884100062.jpg"
 images:
   - "/images/prompts/prompt-2087847631884100062.jpg"
-score: "65/80"
-composition: "8/10"
-color: "8/10"
-lighting: "8/10"
-detail: "8/10"
-creativity: "8/10"
-technical: "8/10"
-aesthetic: "8/10"
-curation: "8/10"
+score: 64
+composition: 8
+color: 8
+lighting: 8
+detail: 8
+creativity: 8
+technical: 8
+aesthetic: 8
+curation: 8
 ---
 
 # 办公玩具众筹活动生成器

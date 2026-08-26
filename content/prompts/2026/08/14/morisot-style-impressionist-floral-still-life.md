@@ -15,15 +15,15 @@ tags:
 cover: "/images/prompts/prompt-2088053236192481332.jpg"
 images:
   - "/images/prompts/prompt-2088053236192481332.jpg"
-score: "64/80"
-composition: "8/10"
-color: "9/10"
-lighting: "8/10"
-detail: "8/10"
-creativity: "8/10"
-technical: "8/10"
-aesthetic: "8/10"
-curation: "8/10"
+score: 65
+composition: 8
+color: 9
+lighting: 8
+detail: 8
+creativity: 8
+technical: 8
+aesthetic: 8
+curation: 8
 ---
 
 # 莫里索风格印象派花卉静物

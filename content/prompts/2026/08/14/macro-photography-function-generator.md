@@ -15,15 +15,15 @@ tags:
 cover: "/images/prompts/prompt-2087879844562616818.jpg"
 images:
   - "/images/prompts/prompt-2087879844562616818.jpg"
-score: "67/80"
-composition: "8/10"
-color: "8/10"
-lighting: "8/10"
-detail: "9/10"
-creativity: "9/10"
-technical: "8/10"
-aesthetic: "8/10"
-curation: "8/10"
+score: 66
+composition: 8
+color: 8
+lighting: 8
+detail: 9
+creativity: 9
+technical: 8
+aesthetic: 8
+curation: 8
 ---
 
 # 微距摄影函数式生成器
