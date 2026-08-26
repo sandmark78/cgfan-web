@@ -278,7 +278,7 @@ def generate_curator_note(prompt, taste_profile):
                 "temperature": 0.7,
                 "max_tokens": 1000,
             },
-            timeout=120,
+            timeout=180,
         )
         resp.raise_for_status()
         result = resp.json()
