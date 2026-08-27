@@ -16,6 +16,7 @@
 import json
 import os
 import re
+import sys
 from datetime import datetime, timedelta
 from pathlib import Path
 
@@ -286,12 +287,52 @@ def generate_curator_note(prompt, taste_profile):
 
         # 提取 JSON
         import json as json_lib
+        
+        # 尝试从 markdown 代码块中提取
         json_match = re.search(r'```json\s*(\{.*?\})\s*```', content, re.DOTALL)
         if json_match:
-            parsed = json_lib.loads(json_match.group(1))
+            json_str = json_match.group(1)
         else:
-            # 尝试直接解析
-            parsed = json_lib.loads(content)
+            # 尝试找到第一个 { 和最后一个 }
+            start = content.find('{')
+            end = content.rfind('}')
+            if start != -1 and end != -1 and end > start:
+                json_str = content[start:end+1]
+            else:
+                json_str = content
+        
+        # 尝试解析，如果失败则尝试修复常见问题
+        try:
+            parsed = json_lib.loads(json_str)
+        except json_lib.JSONDecodeError as e:
+            print(f"  ⚠️ JSON 解析失败: {e}")
+            print(f"  📄 原始内容前200字符: {content[:200]}")
+            
+            # 修复常见问题
+            fixed = json_str
+            # 移除尾部逗号
+            fixed = re.sub(r',\s*([}\]])', r'\1', fixed)
+            # 修复未转义的控制字符
+            fixed = re.sub(r'[\x00-\x1f]', ' ', fixed)
+            
+            try:
+                parsed = json_lib.loads(fixed)
+                print(f"  ✅ JSON 修复成功")
+            except json_lib.JSONDecodeError as e2:
+                print(f"  ⚠️ JSON 修复失败: {e2}")
+                # 最后尝试：用正则提取各个字段
+                print(f"  🔧 尝试正则提取字段...")
+                parsed = {}
+                for key in ["curatorNote", "highlight", "technique", "tip", "tryChange"]:
+                    # 匹配 "key": "value" 模式，处理值中的转义引号
+                    m = re.search(rf'"{key}"\s*:\s*"((?:[^"\\]|\\.)*)"', content)
+                    if m:
+                        parsed[key] = m.group(1).replace('\\"', '"').replace('\\n', ' ')
+                
+                if not parsed.get("curatorNote"):
+                    print(f"  ❌ 正则提取也失败，使用 fallback")
+                    raise
+                print(f"  ✅ 正则提取成功")
 
         note = parsed.get("curatorNote", title)
         highlight = parsed.get("highlight", title[:30])
