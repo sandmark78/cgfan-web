@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-保存候选提示词（评分低于60分但仍有价值）
+保存候选提示词（评分低于58分但仍有价值）
 输出到 content/candidates/YYYY-MM-DD.json
 """
 

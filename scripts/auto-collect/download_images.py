@@ -7,7 +7,7 @@
 
 流程：
 1. 读取 llm_processed.json
-2. 过滤 score >= 60 的条目
+2. 过滤 score >= 58 的条目
 3. 对每条下载其 image_urls 中的图片
 4. 输出下载结果供后续步骤使用
 """
@@ -62,8 +62,8 @@ def main():
     with open(SCORED_ITEMS, 'r', encoding='utf-8') as f:
         scored = json.load(f)
     
-    # 过滤 >= 60 分
-    valid = [item for item in scored if item.get('total', 0) >= 60]
+    # 过滤 >= 58 分
+    valid = [item for item in scored if item.get('total', 0) >= 58]
     print(f"📦 通过评分: {len(valid)} 条\n")
     
     if not valid:

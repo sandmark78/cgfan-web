@@ -169,11 +169,11 @@ def main():
                 f"python3 scripts/batch-fetch-tweets.py {tweet_ids_str}",
                 shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True
             )
-            stdout, stderr = proc.communicate(timeout=150)
+            stdout, stderr = proc.communicate(timeout=180)
         except subprocess.TimeoutExpired:
             proc.kill()
             proc.wait(timeout=5)
-            print(f"  ⏰ 本批次超时（150s），跳过", flush=True)
+            print(f"  ⏰ 本批次超时（180s），跳过", flush=True)
             continue
         
         # 读取本批次结果（batch-fetch-tweets.py 写到 DATA_DIR/tweets_batch_temp.json）

@@ -23,7 +23,7 @@ EVALUATED = DATA_DIR / "evaluated.json"
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 # ====== 采集门槛 ======
-MIN_SCORE = 60  # 低于此分数不收录
+MIN_SCORE = 58  # 低于此分数不收录
 
 # ====== 内容过滤规则 ======
 # 过滤掉的内容类型（正则关键词）
