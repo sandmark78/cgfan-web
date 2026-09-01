@@ -111,7 +111,10 @@ export function InfiniteScrollGrid({ initialPrompts, initialPage, initialHasMore
             className="animate-fade-in"
             style={{ animationDelay: `${(index % 20) * 50}ms` }}
           >
-            <PromptCard prompt={prompt} />
+            <PromptCard prompt={{
+              ...prompt,
+              editorPick: (prompt as any).editor_pick || false
+            }} />
           </div>
         ))}
       </div>
