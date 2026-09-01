@@ -44,8 +44,8 @@ export default async function DailyFeature() {
       />
       
       <article className="daily-card glass-card">
-        {/* 左：图 + 角标 */}
-        <figure className="daily-figure">
+        {/* 左：图 + 角标 - 可点击进入详情页 */}
+        <Link href={`/prompt/${prompt.slug}`} className="daily-figure relative">
           {prompt.cover ? (
             <Image
               src={prompt.cover}
@@ -66,7 +66,7 @@ export default async function DailyFeature() {
             <span className="daily-date-day">{day}</span>
             <span className="daily-date-meta">{cnMonth}月 · 周{weekday}</span>
           </figcaption>
-        </figure>
+        </Link>
 
         {/* 右：文字，紧凑 */}
         <div className="daily-body">

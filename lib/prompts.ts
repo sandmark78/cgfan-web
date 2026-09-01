@@ -77,18 +77,32 @@ function dbRowToPromptData(row: any): PromptData {
  * 获取所有提示词
  */
 export async function getAllPrompts(): Promise<PromptData[]> {
-  const { data, error } = await supabase
-    .from('prompts')
-    .select('*')
-    .order('added', { ascending: false })
-    .limit(2000)
-
-  if (error) {
-    console.error('获取所有提示词失败:', error)
-    return []
+  // Supabase 默认限制 1000 行，需要分页获取全部数据
+  const pageSize = 1000
+  let allData: any[] = []
+  let from = 0
+  
+  while (true) {
+    const { data, error } = await supabase
+      .from('prompts')
+      .select('*')
+      .order('added', { ascending: false })
+      .range(from, from + pageSize - 1)
+    
+    if (error) {
+      console.error('获取所有提示词失败:', error)
+      break
+    }
+    
+    if (!data || data.length === 0) break
+    
+    allData = allData.concat(data)
+    
+    if (data.length < pageSize) break
+    from += pageSize
   }
-
-  return data.map(dbRowToPromptData)
+  
+  return allData.map(dbRowToPromptData)
 }
 
 /**

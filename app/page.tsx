@@ -12,8 +12,13 @@ export const runtime = 'edge'
 export default async function Home() {
   const prompts = await getAllPrompts()
   
-  // 从 Supabase 获取所有提示词的点赞数
+  // 获取实际总数（Supabase 默认限制 1000 行，需要单独查询总数）
   const supabase = await createClient()
+  const { count: totalCount } = await supabase
+    .from('prompts')
+    .select('*', { count: 'exact', head: true })
+  
+  const displayCount = totalCount || prompts.length
   const { data: likes } = await supabase
     .from('likes')
     .select('prompt_slug')
