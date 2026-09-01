@@ -32,11 +32,9 @@ export default async function Home() {
     likeCount: likeCounts[p.slug] || 0,
   }))
   
-  // 获取热门标签（前20个，排除 AI绘图 和 提示词）
+  // 获取热门标签（前20个）
   const allTags = await getAllTags()
-  const popularTags = allTags
-    .filter(tag => tag.name !== 'AI绘图' && tag.name !== '提示词')
-    .slice(0, 20)
+  const popularTags = allTags.slice(0, 20)
   
   // 标签 emoji 映射
   const tagEmojiMap: Record<string, string> = {
@@ -48,7 +46,6 @@ export default async function Home() {
     '风景': '🏔️',
     '电影感': '🎬',
     '极简': '✨',
-    'AI艺术': '🤖',
     '动漫': '🎨',
     '复古': '📼',
     '超现实': '🌀',
@@ -58,8 +55,20 @@ export default async function Home() {
     '可爱': '🐻',
     '奇幻': '🧙',
     '概念艺术': '💡',
-    'AI绘图': '🎯',
-    '提示词': '💬',
+    '编辑设计': '📐',
+    '东方美学': '🏮',
+    '国风': '🎎',
+    '插画': '🖌️',
+    '微缩': '🔬',
+    '纸艺': '✂️',
+    '旅行': '✈️',
+    '排版': '🔤',
+    '品牌设计': '🏷️',
+    '时尚': '💎',
+    '海报': '🖼️',
+    '油画': '🎨',
+    '留白': '⬜',
+    '信息图': '📊',
   }
 
   return (
@@ -71,6 +80,9 @@ export default async function Home() {
         </h1>
         <p className="mx-auto mt-1.5 sm:mt-3 max-w-2xl text-sm sm:text-lg text-gray-600 dark:text-gray-400 leading-snug">
           每天精选一个 AI 提示词，附示例图和策展笔记。不贪多，只选好的，复制即用。
+        </p>
+        <p className="mx-auto mt-2 text-xs text-gray-500 dark:text-gray-500">
+          已收录 <span className="font-medium text-green-600 dark:text-green-400">{prompts.length}</span> 条提示词
         </p>
         <div className="mt-3 sm:mt-5 flex items-center justify-center gap-3 sm:gap-4 flex-wrap">
           <Link href="/explore" className="btn-primary text-sm sm:text-base px-5 sm:px-7 py-2 sm:py-2.5">

@@ -17,12 +17,13 @@ interface PromptCardProps {
     negativePrompt?: string
     author?: string
     likeCount?: number
+    editorPick?: boolean
   }
   priority?: boolean
 }
 
 /**
- * 从提示词文本中提取干净的摘要（去除重复的标题）
+ * 从提示词文本中提取干净的摘要（去除重复标题、杂文标记，智能截断）
  */
 function extractSummary(prompt: PromptCardProps['prompt']): string {
   const fullText = prompt.prompt || ''
@@ -34,18 +35,55 @@ function extractSummary(prompt: PromptCardProps['prompt']): string {
     summary = fullText.slice(title.length).trim()
   }
   
+  // 去除杂文标记和互动数据
+  summary = summary
+    .replace(/===ARTICLE \d+===/g, '')
+    .replace(/@\w+/g, '')
+    .replace(/Made with AI/g, '')
+    .replace(/^#+\s*/gm, '')
+    .trim()
+  
   // 如果去除后太短，尝试从其他字段提取
   if (summary.length < 50) {
     // 尝试从 negativePrompt 提取
     if (prompt.negativePrompt && prompt.negativePrompt.length > 50) {
-      return prompt.negativePrompt.slice(0, 150) + '...'
+      return truncateSmart(prompt.negativePrompt, 120)
     }
-    // 否则返回原始提示词（截断）
-    return fullText.length > 150 ? fullText.slice(0, 150) + '...' : fullText
+    // 否则返回原始提示词（智能截断）
+    return truncateSmart(fullText, 120)
   }
   
-  // 截断到 150 字符
-  return summary.length > 150 ? summary.slice(0, 150) + '...' : summary
+  // 智能截断到 120 字符（中文字符占2宽度，取较保守值）
+  return truncateSmart(summary, 120)
+}
+
+/**
+ * 智能截断：在句子边界截断，不切断单词/句子
+ */
+function truncateSmart(text: string, maxLen: number): string {
+  if (text.length <= maxLen) return text
+  
+  // 截取前 maxLen 字符
+  let truncated = text.slice(0, maxLen)
+  
+  // 找到最后一个句子边界（。！？. 换行 或标点）
+  const lastSentence = truncated.search(/[。！？.!？\n][^。！？.!？\n]*$/)
+  if (lastSentence > maxLen * 0.5) {
+    // 如果在合理位置找到句子边界，在那里截断
+    truncated = truncated.slice(0, lastSentence + 1)
+  } else {
+    // 否则在最后一个空格/逗号处截断
+    const lastSpace = Math.max(
+      truncated.lastIndexOf(' '),
+      truncated.lastIndexOf('，'),
+      truncated.lastIndexOf(',')
+    )
+    if (lastSpace > maxLen * 0.5) {
+      truncated = truncated.slice(0, lastSpace)
+    }
+  }
+  
+  return truncated + '…'
 }
 
 /**
@@ -112,6 +150,15 @@ export function PromptCard({ prompt, priority = false }: PromptCardProps) {
               {difficultyLabel}
             </span>
           </div>
+
+          {/* 编辑推荐徽章 */}
+          {prompt.editorPick && (
+            <div className="absolute bottom-3 left-3 z-10">
+              <span className="rounded-full bg-green-600/90 px-2.5 py-1 text-xs font-medium text-white backdrop-blur-sm">
+                ✦ 编辑推荐
+              </span>
+            </div>
+          )}
         </div>
 
         {/* 内容区 */}

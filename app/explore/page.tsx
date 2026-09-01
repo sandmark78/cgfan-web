@@ -7,6 +7,7 @@ import { RandomButton } from '@/components/random-button'
 import { FilterDrawer } from '@/components/filter-drawer'
 import { InfiniteScrollGrid } from '@/components/infinite-scroll-grid'
 import Pagination from '@/components/pagination'
+import { BackToTop } from '@/components/back-to-top'
 
 export const runtime = 'edge'
 
@@ -304,6 +305,9 @@ export default async function ExplorePage({
           </div>
         </div>
       </div>
+      
+      {/* 返回顶部按钮 */}
+      <BackToTop />
     </>
   )
 }
