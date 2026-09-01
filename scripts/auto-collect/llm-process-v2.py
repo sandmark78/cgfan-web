@@ -22,6 +22,7 @@ PROMPTS_DIR = PROJECT / "content" / "prompts"
 
 sys.path.insert(0, str(PROJECT / "scripts"))
 from taste_bonus import calculate_taste_adjustment
+from tag_cleaner import clean_tags
 sys.path.insert(0, str(PROJECT / "scripts" / "auto-collect"))
 
 def clean_prompt(text):
@@ -341,10 +342,15 @@ def main():
         images = download_images(image_urls, tweet_id)
         print(f"     ✅ 下载 {len(images)} 张")
         
+        # 清理标签：删除泛标签、合并中英文、去重
+        cleaned_tags = clean_tags(coll['tags'])
+        if cleaned_tags != coll['tags']:
+            print(f"  🏷️ 标签清理：{coll['tags']} → {cleaned_tags}")
+        
         # 创建 markdown
         filepath = create_markdown(
             tweet_id, author, author_link, date, source,
-            coll['model'], coll['title'], coll['tags'],
+            coll['model'], coll['title'], cleaned_tags,
             coll['category'], summary, prompt, scores, images
         )
         print(f"  ✅ 已创建：{filepath.name}")
