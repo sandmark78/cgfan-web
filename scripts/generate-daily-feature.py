@@ -58,25 +58,24 @@ def enrich_prompts_with_scores(prompts):
     # 构建 slug -> prompt 映射
     slug_map = {p.get("slug"): p for p in prompts}
     
-    # 遍历所有 markdown 文件
-    for category in os.listdir(prompts_dir):
-        category_path = os.path.join(prompts_dir, category)
-        if not os.path.isdir(category_path):
-            continue
-        
-        for filename in os.listdir(category_path):
+    # ⚠️ 必须用 os.walk() 递归遍历！目录结构是 content/prompts/YYYY/MM/DD/*.md
+    # 用 os.listdir() 只扫一层会漏掉所有文件（2026-09-03 修复）
+    for root, dirs, files in os.walk(prompts_dir):
+        for filename in files:
             if not filename.endswith('.md'):
                 continue
             
-            filepath = os.path.join(category_path, filename)
+            filepath = os.path.join(root, filename)
             with open(filepath, 'r', encoding='utf-8') as f:
                 md_content = f.read()
             
-            # 提取 frontmatter
+            # 提取 frontmatter（支持被 --- 包裹的格式）
             fm_match = re.match(r'^---\n(.*?)\n---', md_content, re.DOTALL)
             if not fm_match:
-                continue
-            
+                # 尝试匹配整个文件（有些文件可能没有结尾的 ---）
+                fm_match = re.match(r'^---\n(.*)', md_content, re.DOTALL)
+                if not fm_match:
+                    continue
             frontmatter = fm_match.group(1)
             
             # 提取 slug
@@ -85,15 +84,21 @@ def enrich_prompts_with_scores(prompts):
                 continue
             slug = slug_match.group(1).strip()
             
-            # 提取 score
-            score_match = re.search(r'score:\s*(\d+)', frontmatter)
+            # 提取 score（支持整数和小数，如 68 或 68.5 或 68/80 或 68.5/80）
+            score_match = re.search(r'score:\s*([\d.]+)(?:/80)?', frontmatter)
             if not score_match:
                 continue
-            score = int(score_match.group(1))
+            score = float(score_match.group(1))
             
             # 更新 prompt 数据
             if slug in slug_map:
                 slug_map[slug]['score'] = score
+    
+    # 诊断输出：报告 enrich 结果（2026-09-03 新增）
+    enriched = sum(1 for p in prompts if p.get('score', 0) > 0)
+    print(f"📊 enrich_prompts_with_scores: {enriched}/{len(prompts)} 条记录获得 score")
+    if enriched == 0:
+        print(f"  ⚠️ 警告：没有匹配到任何 score！检查 content/prompts 目录结构和 markdown frontmatter")
 
 
 def parse_daily_features():
@@ -186,17 +191,83 @@ def parse_user_confirmed_favorites():
     return confirmed
 
 
-def find_slug_by_title(prompts, title):
-    """根据标题找到对应的 slug"""
-    # 模糊匹配：标题可能不完全一致
+def build_md_title_slug_map():
+    """从 markdown 文件建立 title→slug 和 slug→prompt_data 映射
+    返回 (title_to_slug, slug_to_prompt)
+    slug_to_prompt 包含 title/category/tags/model/prompt/slug 等字段
+    """
+    prompts_dir = os.path.join(WORKDIR, "content/prompts")
+    title_to_slug = {}
+    slug_to_prompt = {}
+    for root, dirs, files in os.walk(prompts_dir):
+        for filename in files:
+            if not filename.endswith('.md'):
+                continue
+            filepath = os.path.join(root, filename)
+            with open(filepath, 'r', encoding='utf-8') as f:
+                md_content = f.read()
+            fm_match = re.match(r'^---\n(.*?)\n---', md_content, re.DOTALL)
+            if not fm_match:
+                fm_match = re.match(r'^---\n(.*)', md_content, re.DOTALL)
+                if not fm_match:
+                    continue
+            frontmatter = fm_match.group(1)
+            slug_match = re.search(r'slug:\s*["\']?([^"\'\n]+)["\']?', frontmatter)
+            title_match = re.search(r'title:\s*["\']?([^"\'\n]+)["\']?', frontmatter)
+            if not (slug_match and title_match):
+                continue
+            slug = slug_match.group(1).strip()
+            title = title_match.group(1).strip()
+            title_to_slug[title] = slug
+            
+            # 提取完整 prompt 数据
+            category_match = re.search(r'category:\s*["\']?([^"\'\n]+)["\']?', frontmatter)
+            model_match = re.search(r'model:\s*["\']?([^"\'\n]+)["\']?', frontmatter)
+            tags_match = re.search(r'tags:\s*\[([^\]]*)\]', frontmatter)
+            score_match = re.search(r'score:\s*([\d.]+)', frontmatter)
+            
+            # 提取 prompt 正文（``` 代码块中的内容）
+            prompt_body = ""
+            code_match = re.search(r'## Prompt\s*\n\s*```\s*\n(.*?)```', md_content, re.DOTALL)
+            if code_match:
+                prompt_body = code_match.group(1).strip()
+            
+            tags = []
+            if tags_match:
+                tags = [t.strip().strip('"\'') for t in tags_match.group(1).split(',') if t.strip()]
+            
+            slug_to_prompt[slug] = {
+                'slug': slug,
+                'title': title,
+                'category': category_match.group(1).strip() if category_match else '',
+                'model': model_match.group(1).strip() if model_match else '通用 Prompt',
+                'tags': tags,
+                'prompt': prompt_body,
+                'score': float(score_match.group(1)) if score_match else 0,
+            }
+    return title_to_slug, slug_to_prompt
+
+
+def find_slug_by_title(prompts, title, md_title_map=None):
+    """根据标题找到对应的 slug（优先 Supabase，fallback 到 markdown title 映射）"""
+    # 1. 精确匹配 Supabase
     for p in prompts:
         p_title = p.get("title", "")
-        # 完全匹配
         if p_title == title:
             return p.get("slug")
-        # 包含匹配（处理标题被截断的情况）
+    # 2. 包含匹配 Supabase
+    for p in prompts:
+        p_title = p.get("title", "")
         if title in p_title or p_title in title:
             return p.get("slug")
+    # 3. 精确匹配 markdown title→slug 映射
+    if md_title_map:
+        if title in md_title_map:
+            return md_title_map[title]
+        # 4. 模糊匹配 markdown
+        for md_title, slug in md_title_map.items():
+            if title in md_title or md_title in title:
+                return slug
     return None
 
 
@@ -383,6 +454,10 @@ def main():
     # 加载提示词数据
     prompts = load_prompts()
     enrich_prompts_with_scores(prompts)
+    
+    # 建立 markdown title→slug 映射（补充 Supabase 里没有的条目）
+    md_title_map, md_slug_to_prompt = build_md_title_slug_map()
+    print(f"📂 markdown 映射: {len(md_title_map)} 条 title→slug, {len(md_slug_to_prompt)} 条完整数据")
 
     # 解析品味画像中的"最喜欢"列表
     favorites = parse_favorite_images()
@@ -399,9 +474,14 @@ def main():
     # 直接从最喜欢列表中按分数降序选（不区分是否标记"→ 最喜欢"）
     print(f"🔍 从最喜欢列表中查找（按分数降序）...")
     for fav in favorites:  # favorites 已按分数降序
-        slug = find_slug_by_title(prompts, fav["title"])
+        slug = find_slug_by_title(prompts, fav["title"], md_title_map)
         if slug and slug not in existing_slugs:
+            # 优先从 Supabase 数据里找
             selected = next((p for p in prompts if p.get("slug") == slug), None)
+            # 如果 Supabase 里没有，从 markdown 数据里构造
+            if not selected and slug in md_slug_to_prompt:
+                selected = md_slug_to_prompt[slug]
+                print(f"  📂 从 markdown 数据中获取: {selected['title'][:30]}")
             if selected:
                 selection_reason = f"高分图（{fav['score']}/80）+ 未使用"
                 break
