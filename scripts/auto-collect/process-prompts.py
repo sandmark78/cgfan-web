@@ -846,14 +846,20 @@ def main():
             print(f"   构图:{scores['composition']:.1f} 色彩:{scores['color']:.1f} 光影:{scores['lighting']:.1f} 细节:{scores['detail']:.1f}")
             print(f"   创意:{scores['creativity']:.1f} 技术:{scores['technical']:.1f} 审美:{scores['aesthetic']:.1f} 策展:{scores['curation']:.1f}")
             
-            # 65分以上保留，65分以下加入候选清单
-            if total_score < 65:
-                print(f"⏭️  评分低于65，加入候选清单")
+            # 58分以上收录，65分以上加入「最喜欢的图片」表格
+            if total_score < 58:
+                print(f"⏭️  评分低于58，加入候选清单")
                 # 保存候选（即使低分，方便人工筛选）
                 from scripts.auto_collect.save_candidate import save_candidate
                 save_candidate(tweet, prompt, title, model, scores, total_score, category)
                 results['rejected'] += 1
                 continue
+            
+            # 65分以上自动加入 IMAGE_TASTE.md 的「最喜欢的图片」表格
+            if total_score >= 65:
+                print(f"⭐ 评分≥65，自动加入美学品味记录")
+                from scripts.auto_collect.append_taste import append_to_taste
+                append_to_taste(tweet, title, model, total_score, category)
             
             # 生成标题
             title = generate_title(prompt, tweet)

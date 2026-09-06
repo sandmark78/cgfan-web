@@ -439,12 +439,18 @@ for i, tweet in enumerate(filtered_tweets, 1):
     total_score = score_prompt(prompt, tweet)
     print(f"  Score: {total_score}/80")
     
-    if total_score < 65:
+    if total_score < 58:
         print(f"  ✗ Score too low ({total_score}/80), saving as candidate")
         # 保存候选（方便人工筛选）
         from scripts.auto_collect.save_candidate import save_candidate
         save_candidate(tweet, prompt, title, model, {}, total_score, category)
         continue
+    
+    # 65分以上自动加入 IMAGE_TASTE.md 的「最喜欢的图片」表格
+    if total_score >= 65:
+        print(f"  ⭐ Score ≥65, auto-adding to IMAGE_TASTE.md")
+        from scripts.auto_collect.append_taste import append_to_taste
+        append_to_taste(tweet, title, model, total_score, category)
     
     # Create markdown file
     output_dir = CONTENT_DIR / category
