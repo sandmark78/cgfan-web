@@ -25,7 +25,7 @@ def load_authors():
     with open(config_path, 'r', encoding='utf-8') as f:
         return json.load(f)
 
-def fetch_author_with_timeout(script_path, author_twitter, timeout=60, max_retries=2):
+def fetch_author_with_timeout(script_path, author_twitter, timeout=90, max_retries=2):
     """用 Popen + communicate 实现可靠超时，支持重试"""
     for attempt in range(max_retries):
         try:
@@ -81,11 +81,11 @@ def batch_fetch(tweet_ids, batch_size=8):
                 shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True,
                 cwd=str(PROJECT_ROOT)
             )
-            stdout, stderr = proc.communicate(timeout=60)
+            stdout, stderr = proc.communicate(timeout=90)
         except subprocess.TimeoutExpired:
             proc.kill()
             proc.wait(timeout=5)
-            print(f"  ⏰ 本批次超时（60s），跳过", flush=True)
+            print(f"  ⏰ 本批次超时（90s），跳过", flush=True)
             continue
         
         # 读取本批次结果
@@ -125,7 +125,7 @@ def main():
         print(f"  开始抓取...", flush=True)
         
         author_script = str(Path(__file__).parent / 'fetch_author_tweets.py')
-        tweet_ids, error = fetch_author_with_timeout(author_script, author['twitter'], timeout=60)
+        tweet_ids, error = fetch_author_with_timeout(author_script, author['twitter'], timeout=90)
         
         if error:
             print(f"  ⏰ {error}，跳过", flush=True)
