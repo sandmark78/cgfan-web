@@ -69,20 +69,20 @@
     {
       "name": "九尾狐-FoxFairy🦊",
       "twitter": "@Stellakjbk",
-      "avg_score": 0,
-      "total_images": 0
+      "avg_score": 60.0,
+      "total_images": 1
     },
     {
       "name": "simeon-sanai",
       "twitter": "@Naiknelofar788",
-      "avg_score": 0,
-      "total_images": 0
+      "avg_score": 62.5,
+      "total_images": 2
     },
     {
       "name": "Saul Goodman",
       "twitter": "@Goodmanprotocol",
-      "avg_score": 0,
-      "total_images": 0
+      "avg_score": 61.5,
+      "total_images": 2
     },
     {
       "name": "LudovicCreator",
@@ -105,8 +105,8 @@
     {
       "name": "Soran",
       "twitter": "@Soranlan",
-      "avg_score": 0,
-      "total_images": 0
+      "avg_score": 67.0,
+      "total_images": 1
     },
     {
       "name": "古一",
@@ -131,6 +131,36 @@
       "twitter": "@Hamburgerai",
       "avg_score": 66.0,
       "total_images": 2
+    },
+    {
+      "name": "迪威",
+      "twitter": "@fadeaway2024",
+      "avg_score": 67.0,
+      "total_images": 1
+    },
+    {
+      "name": "梦老湿 Dream AI",
+      "twitter": "@jackzhang123vip",
+      "avg_score": 64.5,
+      "total_images": 2
+    },
+    {
+      "name": "DeepBlue深藍",
+      "twitter": "@DeepBlueX0",
+      "avg_score": 64.0,
+      "total_images": 3
+    },
+    {
+      "name": "Aniya Intelligence",
+      "twitter": "@aniyaintel",
+      "avg_score": 63.0,
+      "total_images": 1
+    },
+    {
+      "name": "BubbleBrain",
+      "twitter": "@BubbleBrain",
+      "avg_score": 60.0,
+      "total_images": 1
     }
   ],
   "min_score": 65,
