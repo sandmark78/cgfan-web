@@ -161,6 +161,30 @@
       "twitter": "@BubbleBrain",
       "avg_score": 60.0,
       "total_images": 1
+    },
+    {
+      "name": "Aylin",
+      "twitter": "@aylinspace",
+      "avg_score": 66.5,
+      "total_images": 2
+    },
+    {
+      "name": "Shams",
+      "twitter": "@shamsamin56",
+      "avg_score": 66.0,
+      "total_images": 1
+    },
+    {
+      "name": "AIVideoHub",
+      "twitter": "@aivideohub",
+      "avg_score": 65.5,
+      "total_images": 2
+    },
+    {
+      "name": "Amira Zairi",
+      "twitter": "@azed_ai",
+      "avg_score": 65.0,
+      "total_images": 1
     }
   ],
   "min_score": 65,
