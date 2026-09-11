@@ -113,6 +113,7 @@ def main():
     print(f"📅 时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
     
     all_tweet_ids = []
+    author_status = []  # 记录每个作者的状态
     
     # 先清理所有 camofox 进程，避免残留 tab 干扰
     subprocess.run("pkill -f camoufox 2>/dev/null", shell=True)
@@ -129,13 +130,32 @@ def main():
         
         if error:
             print(f"  ⏰ {error}，跳过", flush=True)
+            author_status.append({
+                'name': author['name'],
+                'twitter': author['twitter'],
+                'status': 'error',
+                'error': error,
+                'count': 0
+            })
             continue
         
         if tweet_ids:
             all_tweet_ids.extend(tweet_ids)
             print(f"  ✅ {len(tweet_ids)} 条新推文", flush=True)
+            author_status.append({
+                'name': author['name'],
+                'twitter': author['twitter'],
+                'status': 'success',
+                'count': len(tweet_ids)
+            })
         else:
             print(f"  ⏭️ 没有新推文", flush=True)
+            author_status.append({
+                'name': author['name'],
+                'twitter': author['twitter'],
+                'status': 'no_tweets',
+                'count': 0
+            })
     
     # 去重
     all_tweet_ids = list(set(all_tweet_ids))
@@ -196,6 +216,13 @@ def main():
         else:
             print(f"  ❌ 本批次无数据")
     
+    # 保存作者状态报告
+    status_path = DATA_DIR / "author_fetch_status.json"
+    with open(status_path, 'w', encoding='utf-8') as f:
+        json.dump(author_status, f, ensure_ascii=False, indent=2)
+    
+    print(f"\n📊 作者抓取状态已保存: {status_path}")
+    
     # 将最终结果复制到标准路径（供后续步骤使用）
     import shutil
     final_path = TWEETS_BATCH
@@ -205,8 +232,23 @@ def main():
     with open(output_path, 'r') as f:
         all_data = json.load(f)
     
+    # 统计
+    success_count = sum(1 for s in author_status if s['status'] == 'success')
+    no_tweets_count = sum(1 for s in author_status if s['status'] == 'no_tweets')
+    error_count = sum(1 for s in author_status if s['status'] == 'error')
+    
     print(f"\n📊 总共采集 {len(all_data)}/{len(all_tweet_ids)} 条推文内容")
     print(f"💾 数据已保存到: {output_path}")
+    print(f"\n📋 作者状态汇总:")
+    print(f"  ✅ 成功: {success_count} 位")
+    print(f"  ⏭️ 无推文: {no_tweets_count} 位")
+    print(f"  ⏰ 失败: {error_count} 位")
+    
+    if error_count > 0:
+        print(f"\n⚠️ 失败作者:")
+        for s in author_status:
+            if s['status'] == 'error':
+                print(f"  - {s['name']} (@{s['twitter']}): {s['error']}")
 
 if __name__ == '__main__':
     main()
