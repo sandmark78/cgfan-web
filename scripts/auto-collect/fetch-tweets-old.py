@@ -1,0 +1,245 @@
+#!/usr/bin/env python3
+"""
+自动采集高分作者推文
+每天运行，抓取指定作者最近24小时的推文
+
+⚠️ 关键：Camofox 最多同时开10个tab，必须分批处理
+"""
+
+import json
+import subprocess
+import sys
+from pathlib import Path
+from datetime import datetime
+import time
+import os
+import signal
+
+# 导入共享配置
+sys.path.insert(0, str(Path(__file__).parent))
+from config import DATA_DIR, TWEETS_BATCH, PROJECT_ROOT
+
+def load_authors():
+    """加载作者列表"""
+    config_path = Path(__file__).parent / 'authors.json'
+    with open(config_path, 'r', encoding='utf-8') as f:
+        return json.load(f)
+
+def fetch_author_with_timeout(script_path, author_twitter, timeout=60, max_retries=1):
+    """用 Popen + communicate 实现可靠超时，不重试（节省时间）"""
+    for attempt in range(max_retries):
+        try:
+            proc = subprocess.Popen(
+                ['python3', script_path, author_twitter],
+                stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                text=True
+            )
+            stdout, stderr = proc.communicate(timeout=timeout)
+            tweet_ids = []
+            for line in stdout.split('\n'):
+                if line.strip().isdigit() and len(line.strip()) >= 15:
+                    tweet_ids.append(line.strip())
+            if tweet_ids:
+                return tweet_ids, None
+            # 不重试，直接返回
+            return [], "无推文"
+        except subprocess.TimeoutExpired:
+            proc.kill()
+            proc.wait(timeout=5)
+            return [], f"超时({timeout}s)"
+        except Exception as e:
+            try:
+                proc.kill()
+            except:
+                pass
+            return [], str(e)[:200]
+
+def batch_fetch(tweet_ids, batch_size=8):
+    """分批调用 batch-fetch-tweets.py，每批最多8条（留2个tab余量）"""
+    all_results = []
+    
+    for i in range(0, len(tweet_ids), batch_size):
+        batch = tweet_ids[i:i+batch_size]
+        batch_num = i // batch_size + 1
+        total_batches = (len(tweet_ids) + batch_size - 1) // batch_size
+        
+        print(f"\n📦 批次 {batch_num}/{total_batches}: {len(batch)} 条推文")
+        
+        tweet_ids_str = ' '.join(batch)
+        try:
+            proc = subprocess.Popen(
+                f"python3 scripts/batch-fetch-tweets.py {tweet_ids_str}",
+                shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True,
+                cwd=str(PROJECT_ROOT)
+            )
+            stdout, stderr = proc.communicate(timeout=90)
+        except subprocess.TimeoutExpired:
+            proc.kill()
+            proc.wait(timeout=5)
+            print(f"  ⏰ 本批次超时（90s），跳过", flush=True)
+            continue
+        
+        # 读取本批次结果
+        batch_path = DATA_DIR / "tweets_batch_temp.json"
+        if batch_path.exists():
+            try:
+                with open(batch_path, 'r') as f:
+                    batch_data = json.load(f)
+                all_results.extend(batch_data)
+                print(f"  ✅ 本批次采集 {len(batch_data)}/{len(batch)} 条")
+            except (json.JSONDecodeError, IOError) as e:
+                print(f"  ⚠️ 本批次数据损坏: {e}")
+            # 删除临时文件，避免下一批覆盖
+            batch_path.unlink()
+        else:
+            print(f"  ❌ 本批次无数据")
+    
+    return all_results
+
+def main():
+    config = load_authors()
+    authors = config['authors']
+    
+    print(f"🚀 开始自动采集，共 {len(authors)} 位作者")
+    print(f"📅 时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+    
+    all_tweet_ids = []
+    author_status = []  # 记录每个作者的状态
+    
+    # 先清理所有 camofox 进程，避免残留 tab 干扰
+    subprocess.run("pkill -f camoufox 2>/dev/null", shell=True)
+    time.sleep(3)
+    
+    for i, author in enumerate(authors, 1):
+        print(f"\n[{i}/{len(authors)}] {author['name']} ({author['twitter']})")
+        
+        sys.stdout.flush()
+        print(f"  开始抓取...", flush=True)
+        
+        author_script = str(Path(__file__).parent / 'fetch_author_tweets.py')
+        tweet_ids, error = fetch_author_with_timeout(author_script, author['twitter'], timeout=90)
+        
+        if error:
+            print(f"  ⏰ {error}，跳过", flush=True)
+            author_status.append({
+                'name': author['name'],
+                'twitter': author['twitter'],
+                'status': 'error',
+                'error': error,
+                'count': 0
+            })
+            continue
+        
+        if tweet_ids:
+            all_tweet_ids.extend(tweet_ids)
+            print(f"  ✅ {len(tweet_ids)} 条新推文", flush=True)
+            author_status.append({
+                'name': author['name'],
+                'twitter': author['twitter'],
+                'status': 'success',
+                'count': len(tweet_ids)
+            })
+        else:
+            print(f"  ⏭️ 没有新推文", flush=True)
+            author_status.append({
+                'name': author['name'],
+                'twitter': author['twitter'],
+                'status': 'no_tweets',
+                'count': 0
+            })
+    
+    # 去重
+    all_tweet_ids = list(set(all_tweet_ids))
+    print(f"\n{'='*60}")
+    print(f"共 {len(all_tweet_ids)} 条去重后的新推文")
+    print(f"{'='*60}\n")
+    
+    if not all_tweet_ids:
+        print("没有新推文需要处理")
+        return
+    
+    # 分批采集（每批6条，Camofox最多10tab，留4个余量）
+    print(f"🔄 开始分批采集推文内容（每批6条）...")
+    
+    # 初始化结果文件（最终输出）
+    output_path = DATA_DIR / "tweets_batch_all.json"
+    output_path.write_text("[]", encoding='utf-8')
+    
+    # 手动分批，确保超时也能保存已收集的数据
+    batch_size = 6
+    for i in range(0, len(all_tweet_ids), batch_size):
+        batch = all_tweet_ids[i:i+batch_size]
+        batch_num = i // batch_size + 1
+        total_batches = (len(all_tweet_ids) + batch_size - 1) // batch_size
+        
+        print(f"\n📦 批次 {batch_num}/{total_batches}: {len(batch)} 条推文")
+        
+        tweet_ids_str = ' '.join(batch)
+        try:
+            proc = subprocess.Popen(
+                f"python3 scripts/batch-fetch-tweets.py {tweet_ids_str}",
+                shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True
+            )
+            stdout, stderr = proc.communicate(timeout=180)
+        except subprocess.TimeoutExpired:
+            proc.kill()
+            proc.wait(timeout=5)
+            print(f"  ⏰ 本批次超时（180s），跳过", flush=True)
+            continue
+        
+        # 读取本批次结果（batch-fetch-tweets.py 写到 DATA_DIR/tweets_batch_temp.json）
+        batch_path = DATA_DIR / "tweets_batch_temp.json"
+        if batch_path.exists():
+            try:
+                with open(batch_path, 'r') as f:
+                    batch_data = json.load(f)
+                # 追加到总结果文件
+                with open(output_path, 'r') as f:
+                    all_data = json.load(f)
+                all_data.extend(batch_data)
+                with open(output_path, 'w') as f:
+                    json.dump(all_data, f, ensure_ascii=False, indent=2)
+                print(f"  ✅ 本批次采集 {len(batch_data)}/{len(batch)} 条，累计 {len(all_data)} 条")
+            except (json.JSONDecodeError, IOError) as e:
+                print(f"  ⚠️ 本批次数据损坏: {e}")
+            # 删除临时批次文件，避免下一批覆盖
+            batch_path.unlink()
+        else:
+            print(f"  ❌ 本批次无数据")
+    
+    # 保存作者状态报告
+    status_path = DATA_DIR / "author_fetch_status.json"
+    with open(status_path, 'w', encoding='utf-8') as f:
+        json.dump(author_status, f, ensure_ascii=False, indent=2)
+    
+    print(f"\n📊 作者抓取状态已保存: {status_path}")
+    
+    # 将最终结果复制到标准路径（供后续步骤使用）
+    import shutil
+    final_path = TWEETS_BATCH
+    shutil.copy2(output_path, final_path)
+    
+    # 读取最终结果
+    with open(output_path, 'r') as f:
+        all_data = json.load(f)
+    
+    # 统计
+    success_count = sum(1 for s in author_status if s['status'] == 'success')
+    no_tweets_count = sum(1 for s in author_status if s['status'] == 'no_tweets')
+    error_count = sum(1 for s in author_status if s['status'] == 'error')
+    
+    print(f"\n📊 总共采集 {len(all_data)}/{len(all_tweet_ids)} 条推文内容")
+    print(f"💾 数据已保存到: {output_path}")
+    print(f"\n📋 作者状态汇总:")
+    print(f"  ✅ 成功: {success_count} 位")
+    print(f"  ⏭️ 无推文: {no_tweets_count} 位")
+    print(f"  ⏰ 失败: {error_count} 位")
+    
+    if error_count > 0:
+        print(f"\n⚠️ 失败作者:")
+        for s in author_status:
+            if s['status'] == 'error':
+                print(f"  - {s['name']} (@{s['twitter']}): {s['error']}")
+
+if __name__ == '__main__':
+    main()

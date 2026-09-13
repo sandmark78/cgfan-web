@@ -58,8 +58,8 @@ for i, tid in enumerate(ids, 1):
     run("sleep 0.5")
 
 # ====== Step 3: 统一等待 ======
-print("⏳ 等待页面加载 (3s)...")
-run("sleep 3")
+print("⏳ 等待页面加载 (2s)...")
+run("sleep 2")
 
 # ====== Step 4: 串行提取（Camofox 单线程，不支持并发 eval） ======
 print("📥 逐条提取内容...")

@@ -27,7 +27,7 @@ def fetch_latest_tweets(username):
     
     print(f"🔍 抓取 @{username} 的最新推文...")
     
-    # 强制清理所有旧 tab（用 kill 确保干净）
+    # 清理旧 tab（不杀进程，复用 camofox 实例）
     try:
         tabs_output = camofox_cmd("get-tabs 2>/dev/null", timeout=10)
         for m in re.finditer(r'[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}', tabs_output):
@@ -36,11 +36,8 @@ def fetch_latest_tweets(username):
             except Exception:
                 pass
     except Exception:
-        # 如果 get-tabs 卡住，直接 kill 所有 camofox 进程
-        import subprocess as sp
-        sp.run("pkill -f camoufox 2>/dev/null", shell=True)
-        run("sleep 2")
-    run("sleep 1")
+        pass
+    run("sleep 0.5")
     
     # 打开作者主页
     out = camofox_cmd(f'open "{url}" 2>&1', timeout=60)
@@ -53,7 +50,7 @@ def fetch_latest_tweets(username):
     print(f"✅ 页面已打开: {tab[:8]}...")
     
     # 等待页面加载
-    run("sleep 3")
+    run("sleep 2")
     
     # 只提取推文ID和时间（简化版，复用 batch-fetch-tweets.py 的逻辑）
     EXTRACT_JS = """JSON.stringify(
