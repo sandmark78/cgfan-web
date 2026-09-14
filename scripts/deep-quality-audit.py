@@ -64,7 +64,7 @@ def check_supabase_data():
             issues.append(f"❌ {p.get('slug', 'unknown')}: 缺少字段 {', '.join(missing)}")
         
         # 检查 prompt 内容
-        prompt_text = p.get('prompt', '')
+        prompt_text = p.get('prompt') or ''
         if len(prompt_text) < 50:
             issues.append(f"⚠️ {p['slug']}: prompt 太短 ({len(prompt_text)} 字符)")
         
