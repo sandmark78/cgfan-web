@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
 """
-强制更新今天采集的提示词数据到 Supabase
-解决增量同步不更新已存在 slug 的问题
+强制同步今天的提示词到 Supabase（只同步表中存在的字段）
 """
 import sys
 import re
+import yaml
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-import yaml
 from scripts.supabase_utils import get_client
 
 def parse_frontmatter(filepath: Path) -> dict:
@@ -22,6 +21,14 @@ def parse_frontmatter(filepath: Path) -> dict:
     except yaml.YAMLError as e:
         print(f'  ⚠️  YAML 解析错误: {e}')
         return {}
+
+def extract_prompt_content(filepath: Path) -> str:
+    """提取 Prompt 部分的内容"""
+    content = filepath.read_text(encoding='utf-8')
+    match = re.search(r'## Prompt\s*\n\n(.*?)(?:\n\n## |\Z)', content, re.DOTALL)
+    if match:
+        return match.group(1).strip()
+    return ""
 
 def main():
     client = get_client()
@@ -42,28 +49,40 @@ def main():
         try:
             fm = parse_frontmatter(file)
             slug = fm.get('slug')
-            images = fm.get('images', [])
             
             if not slug:
                 print(f'⚠️  {file.name}: 缺少 slug')
                 fail += 1
                 continue
             
-            if not images or len(images) <= 1:
-                print(f'⏭️  {slug}: 只有1张图，跳过')
-                continue
+            # 构建数据行（只包含 Supabase 表中存在的字段）
+            row = {
+                'slug': slug,
+                'title': fm.get('title', ''),
+                'cover': fm.get('cover', ''),
+                'images': fm.get('images', []),
+                'source': fm.get('source', ''),
+                'author': fm.get('author', ''),
+                'date': fm.get('date', ''),
+                'added': fm.get('added', ''),
+                'tags': fm.get('tags', []),
+                'model': fm.get('model', ''),
+                'category': fm.get('category', ''),
+                'prompt': extract_prompt_content(file),
+            }
             
-            # 强制更新 images 字段
-            result = client.table('prompts').update({
-                'images': images,
-                'cover': fm.get('cover'),
-            }).eq('slug', slug).execute()
+            # 处理 authorLink → author_link
+            if fm.get('authorLink'):
+                row['author_link'] = fm.get('authorLink')
+            
+            # 强制 upsert
+            result = client.table('prompts').upsert(row, on_conflict='slug').execute()
             
             if hasattr(result, 'error') and result.error:
                 print(f'❌ {slug}: {result.error}')
                 fail += 1
             else:
-                print(f'✅ {slug}: {len(images)} 张图')
+                print(f'✅ {slug}: {fm.get("title", "")}')
                 ok += 1
                 
         except Exception as e:
