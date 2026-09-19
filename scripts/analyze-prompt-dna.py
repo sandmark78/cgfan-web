@@ -267,7 +267,7 @@ def analyze_prompt(prompt_data: Dict) -> Dict:
     }
 
 def main():
-    """主函数：批量分析提示词"""
+    """主函数：只分析新增的提示词"""
     # 修复 sys.path，确保能导入 scripts 模块
     import sys
     project_root = Path(__file__).parent.parent
@@ -290,55 +290,43 @@ def main():
         decoded = base64.b64decode(encoded).decode('utf-8')
         prompts = json.loads(decoded)
     
-    print(f"📊 开始分析 {len(prompts)} 条提示词...")
+    # 找出缺少 DNA 数据的提示词
+    prompts_without_dna = [p for p in prompts if not p.get('promptDNA')]
+    print(f"📊 总提示词: {len(prompts)} 条，缺少 DNA: {len(prompts_without_dna)} 条")
     
-    # 分析每条提示词
-    for i, prompt in enumerate(prompts):
-        if i % 100 == 0:
-            print(f"  进度: {i}/{len(prompts)}")
+    if not prompts_without_dna:
+        print(f"✅ 所有提示词都已有 DNA 数据，无需分析")
+        return
+    
+    print(f"📊 开始分析 {len(prompts_without_dna)} 条新增提示词...")
+    
+    # 只分析缺少 DNA 的提示词
+    for i, prompt in enumerate(prompts_without_dna):
+        if i % 10 == 0:
+            print(f"  进度: {i}/{len(prompts_without_dna)}")
         
         dna_data = analyze_prompt(prompt)
         if dna_data:
             prompt['promptDNA'] = dna_data
     
-    # 写回文件（兼容旧版）
-    json_str = json.dumps(prompts, ensure_ascii=False, indent=2)
-    encoded = base64.b64encode(json_str.encode('utf-8')).decode('utf-8')
-    ts_content = f'export default `{encoded}`;\n'
-    ts_file = Path('lib/prompts-data.ts')
-    ts_file.write_text(ts_content)
-    
-    # 同步到 Supabase（增量：只同步新增 + 更新已有但字段缺失的）
+    # 同步到 Supabase（只更新新增的）
     try:
-        from scripts.supabase_utils import get_all_prompts, upsert_many
+        from scripts.supabase_utils import upsert_many
         
-        existing = get_all_prompts()
-        existing_map = {p['slug']: p for p in existing}
-        
-        # 找新增的 + 需要更新的（author_link 或 source_link 为空）
-        to_sync = []
-        for p in prompts:
-            slug = p.get('slug', '')
-            if slug not in existing_map:
-                # 新增
-                to_sync.append(p)
-            else:
-                # 已有，检查是否需要更新
-                ex = existing_map[slug]
-                if not ex.get('author_link') or not ex.get('source_link'):
-                    to_sync.append(p)
+        # 只同步有 DNA 数据的
+        to_sync = [p for p in prompts_without_dna if p.get('promptDNA')]
         
         if to_sync:
             synced = upsert_many(to_sync)
-            print(f"✅ Supabase 增量同步成功: {synced} 条（新增+更新，跳过 {len(prompts) - len(to_sync)} 条无需更新）")
+            print(f"✅ Supabase 同步成功: {synced} 条新增 DNA 数据")
         else:
-            print(f"✅ 无新增或需更新数据，跳过同步")
+            print(f"✅ 无新增 DNA 数据需要同步")
     except Exception as e:
         print(f"❌ Supabase 同步失败: {e}")
         import traceback
         traceback.print_exc()
     
-    print(f"✅ 完成！已为 {len(prompts)} 条提示词生成 DNA 数据")
+    print(f"✅ 完成！已为 {len(prompts_without_dna)} 条新增提示词生成 DNA 数据")
 
 if __name__ == '__main__':
     main()
