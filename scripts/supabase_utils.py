@@ -92,10 +92,22 @@ def prompt_to_db_row(prompt: Dict) -> Dict:
 # ====== 查询操作 ======
 
 def get_all_prompts() -> List[Dict]:
-    """获取所有提示词（按 added 倒序）"""
+    """获取所有提示词（按 added 倒序，分页获取）"""
     client = get_client()
-    data = client.table('prompts').select('*').order('added', desc=True).execute()
-    return [db_row_to_prompt(row) for row in data.data]
+    all_data = []
+    page_size = 1000
+    offset = 0
+    
+    while True:
+        data = client.table('prompts').select('*').order('added', desc=True).limit(page_size).range(offset, offset + page_size - 1).execute()
+        if not data.data:
+            break
+        all_data.extend(data.data)
+        if len(data.data) < page_size:
+            break
+        offset += page_size
+    
+    return [db_row_to_prompt(row) for row in all_data]
 
 def get_prompt_by_slug(slug: str) -> Optional[Dict]:
     """根据 slug 获取提示词"""
