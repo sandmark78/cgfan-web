@@ -63,10 +63,13 @@ def check_supabase_data():
         if missing:
             issues.append(f"❌ {p.get('slug', 'unknown')}: 缺少字段 {', '.join(missing)}")
         
-        # 检查 prompt 内容
+        # 检查 prompt 内容（中文信息密度高，CJK 字符用更低阈值）
         prompt_text = p.get('prompt') or ''
-        if len(prompt_text) < 50:
-            issues.append(f"⚠️ {p['slug']}: prompt 太短 ({len(prompt_text)} 字符)")
+        cjk_count = sum(1 for c in prompt_text if '\u4e00' <= c <= '\u9fff' or '\u3400' <= c <= '\u4dbf')
+        cjk_ratio = cjk_count / len(prompt_text) if prompt_text else 0
+        min_len = 30 if cjk_ratio > 0.5 else 50
+        if len(prompt_text) < min_len:
+            issues.append(f"⚠️ {p['slug']}: prompt 太短 ({len(prompt_text)} 字符, 阈值 {min_len})")
         
         # 检查是否包含 @handle
         if '@' in prompt_text and any(c.isalpha() for c in prompt_text.split('@')[1][:10]):
