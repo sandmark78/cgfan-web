@@ -185,6 +185,30 @@
       "twitter": "@azed_ai",
       "avg_score": 65.0,
       "total_images": 1
+    },
+    {
+      "name": "Vigo Zhao",
+      "twitter": "@VigoCreativeAI",
+      "avg_score": 67.0,
+      "total_images": 1
+    },
+    {
+      "name": "KrishnaG",
+      "twitter": "@KrishnaBio1",
+      "avg_score": 66.0,
+      "total_images": 1
+    },
+    {
+      "name": "Kris Kashtanova",
+      "twitter": "@icreatelife",
+      "avg_score": 58.0,
+      "total_images": 1
+    },
+    {
+      "name": "Mr.pinecone",
+      "twitter": "@Mrpinecone888",
+      "avg_score": 56.0,
+      "total_images": 2
     }
   ],
   "min_score": 65,
