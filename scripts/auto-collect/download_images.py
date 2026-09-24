@@ -1,20 +1,22 @@
 #!/usr/bin/env python3
 """
-图片下载脚本：只对 LLM 评分通过的条目下载图片
+图片下载脚本 v2.2：只对 LLM 评分通过的条目下载图片
 
-输入：/tmp/llm_processed.json（包含评分结果的 JSON）
+输入：/tmp/final_scored.json（包含评分结果的 JSON）
 输出：下载图片到 public/images/prompts/
 
 流程：
-1. 读取 llm_processed.json
-2. 过滤 score >= 58 的条目
+1. 读取 final_scored.json
+2. 过滤 score >= 55 的条目（新门槛）
 3. 对每条下载其 image_urls 中的图片
-4. 输出下载结果供后续步骤使用
+4. 增加重试机制，避免超时
+5. 输出下载结果供后续步骤使用
 """
 
 import json
 import sys
 import subprocess
+import time
 from pathlib import Path
 
 # 配置
@@ -22,35 +24,48 @@ IMAGES_DIR = Path('public/images/prompts')
 LLM_PROCESSED = Path('/tmp/llm_processed.json')
 SCORED_ITEMS = Path('/tmp/final_scored.json')
 
-def download_image(img_url: str, save_path: Path) -> bool:
-    """下载单张图片"""
-    try:
-        # 强制 JPG 格式
-        img_url = img_url.replace('format=webp', 'format=jpg')
-        if 'format=' not in img_url:
-            img_url += '&format=jpg' if '?' in img_url else '?format=jpg'
-        
-        result = subprocess.run(
-            ['curl', '-sL', '-o', str(save_path), img_url],
-            timeout=15, capture_output=True
-        )
-        
-        if result.returncode == 0 and save_path.exists() and save_path.stat().st_size > 0:
-            # 检查是否真的是 JPEG
-            file_result = subprocess.run(
-                ['file', str(save_path)], capture_output=True, text=True
+def download_image(img_url: str, save_path: Path, max_retries: int = 3) -> bool:
+    """下载单张图片，带重试机制"""
+    for attempt in range(max_retries):
+        try:
+            # 强制 JPG 格式
+            img_url = img_url.replace('format=webp', 'format=jpg')
+            if 'format=' not in img_url:
+                img_url += '&format=jpg' if '?' in img_url else '?format=jpg'
+            
+            result = subprocess.run(
+                ['curl', '-sL', '--connect-timeout', '10', '--max-time', '30', 
+                 '-o', str(save_path), img_url],
+                timeout=35, capture_output=True
             )
-            if 'JPEG' not in file_result.stdout and 'WebP' in file_result.stdout:
-                # WebP 伪装，转换
-                subprocess.run(
-                    ['sips', '-s', 'format', 'jpeg', str(save_path), '--out', str(save_path)],
-                    capture_output=True
+            
+            if result.returncode == 0 and save_path.exists() and save_path.stat().st_size > 0:
+                # 检查是否真的是 JPEG
+                file_result = subprocess.run(
+                    ['file', str(save_path)], capture_output=True, text=True
                 )
-            return True
-        return False
-    except Exception as e:
-        print(f"    ❌ 下载失败: {e}")
-        return False
+                if 'JPEG' not in file_result.stdout and 'WebP' in file_result.stdout:
+                    # WebP 伪装，转换
+                    subprocess.run(
+                        ['sips', '-s', 'format', 'jpeg', str(save_path), '--out', str(save_path)],
+                        capture_output=True
+                    )
+                return True
+            else:
+                if attempt < max_retries - 1:
+                    print(f"    ⚠️ 第{attempt+1}次失败，重试...")
+                    time.sleep(2)
+                    continue
+                return False
+        except Exception as e:
+            if attempt < max_retries - 1:
+                print(f"    ⚠️ 第{attempt+1}次异常: {e}，重试...")
+                time.sleep(2)
+                continue
+            print(f"    ❌ 下载失败: {e}")
+            return False
+    
+    return False
 
 def main():
     print(f"📥 读取评分结果: {SCORED_ITEMS}")
@@ -62,9 +77,9 @@ def main():
     with open(SCORED_ITEMS, 'r', encoding='utf-8') as f:
         scored = json.load(f)
     
-    # 过滤 >= 58 分
-    valid = [item for item in scored if item.get('total', 0) >= 58]
-    print(f"📦 通过评分: {len(valid)} 条\n")
+    # 过滤 >= 55 分（新门槛）
+    valid = [item for item in scored if item.get('total', 0) >= 55]
+    print(f"📦 通过评分（≥55分）: {len(valid)} 条\n")
     
     if not valid:
         print("⚠️ 无需要下载的图片")

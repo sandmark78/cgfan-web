@@ -1,21 +1,21 @@
 #!/usr/bin/env python3
 """
-预处理脚本 v2.1：只做过滤/去重，不下载图片
+预处理脚本 v2.2：过滤/去重 + prompt提取
 
 脚本负责：
 - 过滤视频内容
 - 去重检查（基于 source URL）
 - 提取基本信息（author, date, image URLs）
+- 提取 prompt（从 allText）
 - 输出完整数据供 LLM 处理
 
 LLM 负责：
-- 提取 prompt（从 allText / imgs alt / 评论区）
 - 判断内容类型（人像写真/产品/插画等）
 - 过滤不合格内容
 - 标题生成、标签提取、评分
 
 图片下载：
-- LLM 评分后，只对≥58分的条目下载图片
+- LLM 评分后，只对≥55分的条目下载图片
 - 避免下载大量最终被丢弃的图片
 """
 
@@ -31,12 +31,55 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 sys.path.insert(0, str(Path(__file__).parent))
 from config import TWEETS_BATCH, PREPROCESSED, IMAGES_DIR
 
-# 兼容旧路径：如果 tweets_batch.json 在 /tmp 也有，优先用 data/ 下的
-# 但 fetch-tweets.py 可能写到 /tmp，做个 fallback
+# 兼容旧路径
 import shutil
 TMP_TWEETS = Path('/tmp/tweets_batch.json')
 if not TWEETS_BATCH.exists() and TMP_TWEETS.exists():
     shutil.copy(TMP_TWEETS, TWEETS_BATCH)
+
+def extract_prompt(all_text: str) -> str:
+    """从 allText 中提取 prompt"""
+    prompt = ''
+    
+    # 方法1: 查找明确的 prompt 标记
+    patterns = [
+        r'Prompt[:：]\s*\n*([\s\S]+?)(?=\n\nMade with AI|\n\n\d+:\d+ [AP]M|\n\d+:\d+ AM ·|\n\d+:\d+ PM ·|\Z)', 
+        r'提示词[:：]\s*\n*([\s\S]+?)(?=\n\nMade with AI|\n\n\d+:\d+ [AP]M|\n\d+:\d+ AM ·|\n\d+:\d+ PM ·|\Z)',
+        r'咒语[:：]\s*\n*([\s\S]+?)(?=\n\nMade with AI|\n\n\d+:\d+ [AP]M|\Z)'
+    ]
+    
+    for pattern in patterns:
+        match = re.search(pattern, all_text, re.IGNORECASE)
+        if match:
+            prompt = match.group(1).strip()
+            break
+    
+    # 方法2: 从 ARTICLE 0 提取完整描述
+    if not prompt:
+        articles = re.findall(r'===ARTICLE 0===\n(.*?)(?====ARTICLE|\Z)', all_text, re.DOTALL)
+        if articles:
+            content = articles[0]
+            lines = content.split('\n')
+            prompt_lines = []
+            skip_author = True
+            
+            for line in lines:
+                # 跳过作者信息和日期行
+                if skip_author and (line.startswith('@') or line.strip() == '' or 
+                                   'Made with AI' in line or ('·' in line and 'Views' in line)):
+                    continue
+                if 'Views' in line or line.strip().isdigit():
+                    continue
+                skip_author = False
+                
+                # 只保留有意义的长行
+                if len(line) > 30:
+                    prompt_lines.append(line)
+            
+            if prompt_lines:
+                prompt = '\n'.join(prompt_lines[:20])
+    
+    return prompt[:3000] if prompt else ''
 
 def is_duplicate(tweet_id: str) -> bool:
     """检查推文是否已收录"""
@@ -55,37 +98,6 @@ def is_duplicate(tweet_id: str) -> bool:
                 pass
     return False
 
-def download_image(img_url: str, save_path: Path) -> bool:
-    """下载单张图片"""
-    try:
-        # 强制 JPG 格式
-        img_url = img_url.replace('format=webp', 'format=jpg')
-        if 'format=' not in img_url:
-            img_url += '&format=jpg' if '?' in img_url else '?format=jpg'
-        
-        import subprocess
-        result = subprocess.run(
-            ['curl', '-sL', '-o', str(save_path), img_url],
-            timeout=15, capture_output=True
-        )
-        
-        if result.returncode == 0 and save_path.exists() and save_path.stat().st_size > 0:
-            # 检查是否真的是 JPEG
-            file_result = subprocess.run(
-                ['file', str(save_path)], capture_output=True, text=True
-            )
-            if 'JPEG' not in file_result.stdout and 'WebP' in file_result.stdout:
-                # WebP 伪装，转换
-                subprocess.run(
-                    ['sips', '-s', 'format', 'jpeg', str(save_path), '--out', str(save_path)],
-                    capture_output=True
-                )
-            return True
-        return False
-    except Exception as e:
-        print(f"    ❌ 下载失败: {e}")
-        return False
-
 def main():
     print(f"📥 读取推文数据: {TWEETS_BATCH}")
     
@@ -102,6 +114,7 @@ def main():
     preprocessed = []
     skipped_video = 0
     skipped_duplicate = 0
+    prompt_extracted = 0
     
     for tweet in tweets:
         tweet_id = tweet['id']
@@ -118,7 +131,7 @@ def main():
             skipped_duplicate += 1
             continue
         
-        # 提取基本信息（不做 prompt 提取，交给 LLM）
+        # 提取基本信息
         author = tweet.get('author', 'Unknown')
         author_link = tweet.get('authorLink', '')
         date = tweet.get('date', '')
@@ -130,7 +143,7 @@ def main():
             print(f"⚠️ 无图片: {tweet_id}")
             continue
         
-        # 提取图片 URL（不下载）
+        # 提取图片 URL
         image_urls = []
         for i, img in enumerate(imgs[:4]):  # 最多4张
             img_url = img.get('src', '')
@@ -141,19 +154,26 @@ def main():
             print(f"⚠️ 无图片URL: {tweet_id}")
             continue
         
-        # 保存完整数据供 LLM 处理（含图片URL但不下载）
+        # 提取 prompt
+        prompt = extract_prompt(all_text)
+        if prompt:
+            prompt_extracted += 1
+        
+        # 保存完整数据
         preprocessed.append({
             'tweet_id': tweet_id,
             'author': author,
             'authorLink': author_link,
             'date': date,
-            'allText': all_text,  # 完整文本，LLM 提取 prompt
-            'imgs': imgs,  # 图片元数据（含 alt）
-            'image_urls': image_urls,  # 图片URL（不下载）
+            'allText': all_text,
+            'prompt': prompt,  # 已提取的 prompt
+            'imgs': imgs,
+            'image_urls': image_urls,
             'source': f"https://x.com/i/status/{tweet_id}"
         })
         
-        print(f"✅ 预处理: {tweet_id} ({len(image_urls)} 张图片URL)\n")
+        prompt_status = f"prompt: {len(prompt)}字" if prompt else "无prompt"
+        print(f"✅ 预处理: {tweet_id} ({len(image_urls)} 张图片, {prompt_status})\n")
     
     print(f"\n{'='*60}")
     print(f"📊 预处理完成")
@@ -161,6 +181,7 @@ def main():
     print(f"  视频: {skipped_video} 条")
     print(f"  重复: {skipped_duplicate} 条")
     print(f"  通过: {len(preprocessed)} 条")
+    print(f"  Prompt提取: {prompt_extracted}/{len(preprocessed)} 条")
     
     # 保存供 LLM 处理
     if preprocessed:
@@ -169,7 +190,7 @@ def main():
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(preprocessed, f, ensure_ascii=False, indent=2)
         print(f"\n💾 数据已保存: {output_file}")
-        print(f"🤖 请在下一轮用 LLM 处理这些数据（提取 prompt、评分、生成 markdown）")
+        print(f"🤖 请在下一轮用 LLM 处理这些数据（评分、生成 markdown）")
     else:
         print("\n⚠️ 无有效数据")
 

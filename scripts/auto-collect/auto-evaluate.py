@@ -35,22 +35,103 @@ TITLE_RULES = [
 ]
 
 def generate_title(prompt: str) -> str:
-    """根据 prompt 内容生成标题（≤20字）"""
+    """根据 prompt 内容生成有画面感的标题（≤20字）"""
     prompt_lower = prompt.lower()
     
-    for keywords, template in TITLE_RULES:
-        if any(kw in prompt_lower for kw in keywords):
-            # 提取主题词
-            subject = extract_subject(prompt)
-            title = template.format(subject=subject)
-            if len(title) <= 20:
-                return title
-            return title[:20]
+    # 提取关键视觉元素
+    visual_elements = extract_visual_elements(prompt)
     
-    # 默认标题
-    subject = extract_subject(prompt)
-    title = f"AI视觉创作：{subject}"
+    # 根据内容类型生成不同风格的标题
+    title_type = detect_title_type(prompt)
+    
+    if title_type == 'editorial':
+        # 编辑设计类：强调构图和形式
+        if visual_elements:
+            title = f"{visual_elements[0]}的编辑美学"
+        else:
+            subject = extract_subject(prompt)
+            title = f"{subject}的排版实验"
+    
+    elif title_type == 'oriental':
+        # 东方美学类：强调意境
+        if visual_elements:
+            title = f"{visual_elements[0]}的东方意境"
+        else:
+            subject = extract_subject(prompt)
+            title = f"{subject}的诗意表达"
+    
+    elif title_type == 'miniature':
+        # 微缩类：强调精致和想象
+        if visual_elements:
+            title = f"微缩{visual_elements[0]}世界"
+        else:
+            subject = extract_subject(prompt)
+            title = f"掌心大小的{subject}"
+    
+    elif title_type == 'cinematic':
+        # 电影感类：强调氛围和情绪
+        if visual_elements:
+            title = f"{visual_elements[0]}的电影时刻"
+        else:
+            subject = extract_subject(prompt)
+            title = f"{subject}的光影叙事"
+    
+    elif title_type == 'surreal':
+        # 超现实类：强调创意和反差
+        if visual_elements:
+            title = f"当{visual_elements[0]}遇见想象"
+        else:
+            subject = extract_subject(prompt)
+            title = f"{subject}的奇幻变身"
+    
+    else:
+        # 通用类：有画面感的描述
+        subject = extract_subject(prompt)
+        if visual_elements:
+            title = f"{visual_elements[0]}与{subject}"
+        else:
+            title = f"{subject}的视觉探索"
+    
+    # 确保不超过20字
     return title[:20] if len(title) > 20 else title
+
+def extract_visual_elements(prompt: str) -> list:
+    """从 prompt 提取视觉元素（2-3个关键词）"""
+    elements = []
+    
+    # 优先提取具体的视觉对象
+    visual_patterns = [
+        r'([^\s,，]{2,6}(?:海报|画册|书本|邮票|包装))',
+        r'([^\s,，]{2,6}(?:城市|建筑|空间|场景))',
+        r'([^\s,，]{2,6}(?:人物|角色|形象))',
+        r'([^\s,，]{2,6}(?:光影|色彩|质感))',
+    ]
+    
+    for pattern in visual_patterns:
+        matches = re.findall(pattern, prompt)
+        elements.extend(matches[:2])
+        if len(elements) >= 3:
+            break
+    
+    # 去重
+    return list(dict.fromkeys(elements))[:3]
+
+def detect_title_type(prompt: str) -> str:
+    """检测标题类型"""
+    prompt_lower = prompt.lower()
+    
+    if any(kw in prompt_lower for kw in ['编辑', 'editorial', '排版', 'typography', '杂志']):
+        return 'editorial'
+    elif any(kw in prompt_lower for kw in ['东方', '古风', '水墨', '仙侠', '国风']):
+        return 'oriental'
+    elif any(kw in prompt_lower for kw in ['微缩', 'miniature', '掌心', '小巧']):
+        return 'miniature'
+    elif any(kw in prompt_lower for kw in ['电影', 'cinematic', '胶片', '光影']):
+        return 'cinematic'
+    elif any(kw in prompt_lower for kw in ['超现实', 'surreal', '奇幻', '变身']):
+        return 'surreal'
+    else:
+        return 'general'
 
 def extract_subject(prompt: str) -> str:
     """从 prompt 提取主题词（≤10字）"""
@@ -120,19 +201,34 @@ def generate_tags(prompt: str) -> list:
 
 # ====== 基础评分规则 ======
 def base_score(prompt: str) -> dict:
-    """根据 prompt 内容给出基础评分（8维度）"""
+    """根据 prompt 内容给出基础评分（8维度）
+    
+    评分策略：
+    - 根据 prompt 长度和质量动态调整基础分
+    - 长 prompt（>1000字）：基础分 8.5
+    - 中等 prompt（600-1000字）：基础分 8
+    - 短 prompt（<600字）：基础分 7.5
+    """
     prompt_lower = prompt.lower()
     
-    # 默认基础分8
+    # 根据 prompt 长度确定基础分
+    if len(prompt) > 1000:
+        base = 8.5
+    elif len(prompt) >= 600:
+        base = 8.0
+    else:
+        base = 7.5
+    
+    # 默认基础分
     scores = {
-        'composition': 8,
-        'color': 8,
-        'lighting': 8,
-        'detail': 8,
-        'creativity': 8,
-        'technical': 8,
-        'aesthetic': 8,
-        'curation': 8,
+        'composition': base,
+        'color': base,
+        'lighting': base,
+        'detail': base,
+        'creativity': base,
+        'technical': base,
+        'aesthetic': base,
+        'curation': base,
     }
     
     # 设计/排版类 → 创意和策展突出
