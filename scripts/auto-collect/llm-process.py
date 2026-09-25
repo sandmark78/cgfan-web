@@ -27,6 +27,9 @@ from taste_bonus import calculate_taste_adjustment, apply_adjustment
 sys.path.insert(0, str(Path(__file__).parent))
 from config import PREPROCESSED, IMAGES_DIR, PROMPTS_DIR
 
+# 兼容旧代码
+CONTENT_DIR = PROMPTS_DIR
+
 def extract_prompt_from_text(allText: str) -> Tuple[str, str]:
     """
     从 allText 提取 prompt
@@ -471,8 +474,8 @@ def main():
         print(f"     最终分：{scores['final_scores']}")
         
         # 5. 检查分数
-        if scores['total'] < 60:
-            print(f"  ⚠️ 分数 < 60，不收录")
+        if scores['total'] < 58:
+            print(f"  ⚠️ 分数 < 58，不收录")
             results['low_score'] += 1
             results['details'].append({
                 'tweet_id': tweet_id,
