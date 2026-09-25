@@ -170,9 +170,9 @@ def scan_authors_batch(author_batch, batch_num, total_batches):
             if line.startswith('result:'):
                 try:
                     tweets = json.loads(line[7:].strip())
-                    # 过滤 48 小时内的推文（放宽到 48h 增加数据量）
+                    # 过滤 24 小时内的推文
                     from datetime import timedelta
-                    cutoff = datetime.now() - timedelta(hours=48)
+                    cutoff = datetime.now() - timedelta(hours=24)
                     for tweet in tweets:
                         time_str = tweet.get('time', '')
                         if time_str:
