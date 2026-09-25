@@ -27,60 +27,63 @@ def load_authors():
 def check_recent_tweets(twitter_username, hours=24):
     """
     轻量级检测作者是否在最近N小时内发推
-    使用Twitter syndication API，不需要camofox
+    直接访问x.com页面提取timestamp，不需要camofox
     返回: (has_recent, latest_time_str)
     """
     try:
-        url = f"https://syndication.twitter.com/srv/timeline-profile/screen-name/{twitter_username}"
+        url = f"https://x.com/{twitter_username}"
         headers = {
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'
         }
-        response = requests.get(url, headers=headers, timeout=10)
+        response = requests.get(url, headers=headers, timeout=10, allow_redirects=True)
         
         if response.status_code != 200:
-            return False, "HTTP错误"
+            return False, f"HTTP {response.status_code}"
         
-        # 解析HTML，查找推文时间
         html = response.text
         
-        # 查找时间标记（如 "2h", "1d", "Sep 23" 等）
-        time_patterns = [
-            r'data-datetime="([^"]+)"',  # ISO格式时间
-            r'<time[^>]*datetime="([^"]+)"',  # time标签
-            r'·\s*(\d+[smhd])\s*·',  # 相对时间如 "2h", "1d"
-        ]
+        # 提取timestamp并转换为datetime
+        timestamps = re.findall(r'"timestamp":(\d+)', html)
         
-        for pattern in time_patterns:
-            matches = re.findall(pattern, html)
-            if matches:
-                # 检查第一个（最新的）时间
-                time_str = matches[0]
-                
-                # 解析相对时间
-                match = re.match(r'(\d+)([smhd])', time_str.lower())
-                if match:
-                    value = int(match.group(1))
-                    unit = match.group(2)
-                    
-                    if unit == 's' and value <= hours * 3600:
-                        return True, f"{value}秒前"
-                    elif unit == 'm' and value <= hours * 60:
-                        return True, f"{value}分钟前"
-                    elif unit == 'h' and value <= hours:
-                        return True, f"{value}小时前"
-                    elif unit == 'd' and value == 0:
-                        return True, "今天"
-                
-                # 解析ISO格式
-                try:
-                    tweet_time = datetime.fromisoformat(time_str.replace('Z', '+00:00'))
-                    cutoff = datetime.now().replace(tzinfo=tweet_time.tzinfo) - timedelta(hours=hours)
-                    if tweet_time >= cutoff:
-                        return True, time_str
-                except:
-                    pass
+        if not timestamps:
+            return False, "无时间戳"
         
-        return False, "无新推文"
+        # 检查最新的timestamp是否在指定小时内
+        now = datetime.now()
+        cutoff = now - timedelta(hours=hours)
+        
+        latest_time = None
+        for ts in timestamps[:10]:  # 检查前10个
+            ts_int = int(ts)
+            # 如果是毫秒，转换为秒
+            if ts_int > 1e12:
+                ts_int = ts_int // 1000
+            
+            tweet_time = datetime.fromtimestamp(ts_int)
+            
+            if latest_time is None or tweet_time > latest_time:
+                latest_time = tweet_time
+            
+            # 如果在指定小时内，立即返回
+            if tweet_time >= cutoff:
+                diff = now - tweet_time
+                if diff.days == 0:
+                    time_str = f"{diff.seconds//3600}小时前"
+                else:
+                    time_str = f"{diff.days}天前"
+                return True, time_str
+        
+        # 没有找到24小时内的推文
+        if latest_time:
+            diff = now - latest_time
+            if diff.days == 0:
+                time_str = f"最新: {diff.seconds//3600}小时前"
+            else:
+                time_str = f"最新: {diff.days}天前"
+        else:
+            time_str = "无新推文"
+        
+        return False, time_str
     
     except Exception as e:
         return False, f"检测失败: {str(e)}"
