@@ -109,9 +109,58 @@ def extract_prompt_with_llm(alltext):
         clean_prompt = re.sub(r'^```\w*\n?', '', clean_prompt)
         clean_prompt = re.sub(r'\n?```$', '', clean_prompt)
         
+        # 验证prompt质量
+        if not validate_prompt(clean_prompt):
+            return None, "INVALID"
+        
         return clean_prompt, "OK"
     except Exception as e:
         return None, f"ERROR: {e}"
+
+
+def validate_prompt(prompt):
+    """
+    验证清理后的prompt是否有效
+    
+    Returns:
+        bool: True如果有效，False如果无效
+    """
+    if not prompt or len(prompt) < 50:
+        return False
+    
+    # 检查是否包含明显的噪音
+    noise_patterns = [
+        r'@\w+',  # @handle
+        r'\d{1,2}:\d{2}\s*(AM|PM)',  # 时间
+        r'\d+\s*Views?',  # 浏览数
+        r'Made with AI',  # 工具标记
+        r'===ARTICLE',  # 文章分隔
+    ]
+    
+    for pattern in noise_patterns:
+        if re.search(pattern, prompt, re.IGNORECASE):
+            return False
+    
+    # 检查是否包含模板占位符（这是模板，不是实际prompt）
+    if '{填写}' in prompt or '{fill}' in prompt.lower():
+        return False
+    
+    # 检查是否包含创作指令关键词
+    instruction_keywords = [
+        'create', 'generate', 'design', 'make', 'draw', 'paint',
+        '创建', '生成', '设计', '制作', '绘制',
+        'style', 'mood', 'lighting', 'composition',
+        '风格', '氛围', '光影', '构图'
+    ]
+    
+    prompt_lower = prompt.lower()
+    has_instruction = any(kw in prompt_lower for kw in instruction_keywords)
+    
+    # 如果没有明确的指令关键词，至少要有描述性内容
+    if not has_instruction and len(prompt) < 100:
+        return False
+    
+    return True
 
 def clean_prompt_for_display(prompt):
     """
