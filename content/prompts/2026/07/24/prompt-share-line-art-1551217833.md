@@ -30,7 +30,7 @@ author: Amira Zairi (azed_ai)
 
 ## Prompt
 
-Prompt share: Line art 💬Prompt: A minimalistic illustration of a [subject], drawn in clean, abstract lines and simple shapes. Outlined in neon light blue and pink, set against a solid black background. No facial features or texture, flow, and luminous simplicity. Check ATLs for inspiration ✨
+A minimalistic illustration of a [subject], drawn in clean, abstract lines and simple shapes. Outlined in neon light blue and pink, set against a solid black background. No facial features or texture, flow, and luminous simplicity. Check ATLs for inspiration ✨
 
 ## Negative Prompt
 

@@ -40,15 +40,41 @@ def fetch_tweet_content(tweet_id):
         var article = document.querySelector('article');
         if (!article) return null;
         
-        var author = '', authorLink = '';
-        var authorLinks = article.querySelectorAll('a[role="link"]');
-        for (var i = 0; i < authorLinks.length; i++) {
-            var href = authorLinks[i].getAttribute('href') || '';
-            if (href.indexOf('/status/') === -1 && href.charAt(0) === '/') {
+        var author = '', authorLink = '', authorHandle = '';
+        
+        // 方法1: 从链接提取author
+        var links = article.querySelectorAll('a');
+        for (var i = 0; i < links.length; i++) {
+            var href = links[i].getAttribute('href') || '';
+            // 找author链接：以/开头，不包含/status/，不是photo链接
+            if (href.charAt(0) === '/' && href.indexOf('/status/') === -1 && href.indexOf('/photo/') === -1) {
                 authorLink = 'https://x.com' + href;
-                var nameEl = authorLinks[i].querySelector('span');
-                if (nameEl) author = nameEl.innerText.trim();
-                break;
+                authorHandle = href.replace('/', '');
+                // 找作者名（在span里）
+                var spans = links[i].querySelectorAll('span');
+                for (var j = 0; j < spans.length; j++) {
+                    var text = spans[j].innerText.trim();
+                    // 排除@handle，找到作者名
+                    if (text && text.charAt(0) !== '@') {
+                        author = text;
+                        break;
+                    }
+                }
+                if (author) break;
+            }
+        }
+        
+        // 方法2: 如果方法1失败，从article开头提取
+        if (!author) {
+            var text = article.innerText || '';
+            var lines = text.split('\\n');
+            if (lines.length >= 2) {
+                author = lines[0].trim();
+                var handle = lines[1].trim();
+                if (handle.charAt(0) === '@') {
+                    authorHandle = handle.substring(1);
+                    authorLink = 'https://x.com/' + authorHandle;
+                }
             }
         }
         
@@ -70,6 +96,7 @@ def fetch_tweet_content(tweet_id):
         return {
             id: '%s',
             author: author,
+            authorHandle: authorHandle,
             authorLink: authorLink,
             text: text,
             imgs: imgs,

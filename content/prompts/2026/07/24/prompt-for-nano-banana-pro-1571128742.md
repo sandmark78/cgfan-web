@@ -29,7 +29,7 @@ author: Anissa (SimplyAnnisa)
 ---
 ## Prompt
 
-Prompt for nano banana pro: Masterpiece, best quality, detailed lighting, dramatic shadows, voluptuous body, innocent face. (Use a 100% identical reference face) Create an ultra-realistic portrait of a young Asian woman at night, 9:16 ratio (vertical portrait). Medium shot (waist up), taken using a phone's rear camera with a strong flash, with Hongyadong (Hongya Cave) in Chongqing, China as the backdrop. Background: The background must be an exact copy of Hongyadong Chongqing, a highly viral and
+Masterpiece, best quality, detailed lighting, dramatic shadows, voluptuous body, innocent face. (Use a 100% identical reference face) Create an ultra-realistic portrait of a young Asian woman at night, 9:16 ratio (vertical portrait). Medium shot (waist up), taken using a phone's rear camera with a strong flash, with Hongyadong (Hongya Cave) in Chongqing, China as the backdrop. Background: The background must be an exact copy of Hongyadong Chongqing, a highly viral andy viral and
 
 ## Negative Prompt
 
