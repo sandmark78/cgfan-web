@@ -5,12 +5,17 @@ Process remaining high-quality tweets with manual title generation
 
 import json
 import re
+import sys
 from pathlib import Path
 from datetime import datetime
 
 WORKSPACE = Path("/Users/mac/.hermes/profiles/cgfan/workspace/cgfan-web")
 CONTENT_DIR = WORKSPACE / "content" / "prompts"
 TWEETS_FILE = Path("/tmp/tweets_batch.json")
+
+# Import LLM cleaner
+sys.path.insert(0, str(WORKSPACE / "scripts" / "auto-collect"))
+from llm_cleaner import extract_prompt_with_llm, clean_prompt_for_display
 
 with open(TWEETS_FILE, 'r', encoding='utf-8') as f:
     tweets = json.load(f)
@@ -20,24 +25,27 @@ with open('/tmp/process_results.json', 'r', encoding='utf-8') as f:
     
 processed_ids = {r['tweet_id'] for r in already_processed}
 
-def extract_clean_prompt(text):
-    articles = re.split(r'===ARTICLE \d+===', text)
-    best = max([a for a in articles if a.strip()], key=len, default="")
-    
-    prompt = best
-    prompt = re.sub(r'@[a-zA-Z0-9_]+\n?', '', prompt)
-    prompt = re.sub(r'\w+ \d{1,2}\n', '', prompt)
-    prompt = re.sub(r'\d{1,2}:\d{2} [AP]M · \w+ \d+, \d{4}\n?', '', prompt)
-    prompt = re.sub(r'\d+\.?\d*K?\nViews\n', '', prompt)
-    prompt = re.sub(r'#[\w\u4e00-\u9fff]+\s*', '', prompt)
-    prompt = re.sub(r'Made with AI\n?', '', prompt)
-    prompt = re.sub(r'兄弟们.*?\n', '', prompt)
-    prompt = re.sub(r'分享.*?\n', '', prompt)
-    prompt = re.sub(r'提示词[：:]\s*\n?', '', prompt, flags=re.IGNORECASE)
-    prompt = re.sub(r'Prompt[：:]\s*\n?', '', prompt, flags=re.IGNORECASE)
-    prompt = re.sub(r'\n{3,}', '\n\n', prompt)
-    
-    return prompt.strip()
+def extract_clean_prompt(text, tweet_id):
+    """Extract clean prompt using LLM."""
+    try:
+        clean_prompt, status = extract_prompt_with_llm(text)
+        
+        if status == 'NO_PROMPT':
+            print(f"  ℹ️  {tweet_id}: 无prompt")
+            return ""
+        elif status == 'INCOMPLETE':
+            print(f"  ⚠️  {tweet_id}: prompt不完整")
+            return ""
+        elif status.startswith('ERROR'):
+            print(f"  ❌ {tweet_id}: LLM错误 - {status}")
+            return ""
+        
+        # 清理用于显示
+        clean_prompt = clean_prompt_for_display(clean_prompt)
+        return clean_prompt
+    except Exception as e:
+        print(f"  ❌ {tweet_id}: 提取失败 - {e}")
+        return ""
 
 def extract_from_alt(tweet):
     for img in tweet.get("imgs", []):
@@ -100,8 +108,8 @@ for tweet in tweets:
     author = tweet.get("author", "Unknown")
     date = tweet.get("date", today)
     
-    # Extract prompt
-    prompt = extract_clean_prompt(all_text)
+    # Extract prompt using LLM
+    prompt = extract_clean_prompt(all_text, tweet_id)
     if not prompt or len(prompt) < 100:
         alt = extract_from_alt(tweet)
         if alt:

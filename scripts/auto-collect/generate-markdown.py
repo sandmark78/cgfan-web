@@ -11,60 +11,31 @@ from datetime import datetime
 sys.path.insert(0, 'scripts')
 from taste_bonus import calculate_taste_adjustment, apply_adjustment
 
+# Import LLM cleaner
+sys.path.insert(0, 'scripts/auto-collect')
+from llm_cleaner import extract_prompt_with_llm, clean_prompt_for_display
+
 def extract_clean_prompt(allText: str, tweet_id: str) -> str:
-    """Extract clean prompt from allText, removing metadata."""
-    lines = allText.split('\n')
-    prompt_lines = []
-    in_prompt = False
-    
-    for line in lines:
-        # Skip metadata
-        if any(skip in line for skip in [
-            '===ARTICLE', 'Made with AI', 'Views', 'PM ·', 'AM ·',
-            '@', 'http', '#AI', '1:', '2:', '3:', '4:', '5:',
-            '🤯', '📸', '🎨', '✨', '🕯️', '🧿', '🌿', '🧊', '🍋', '🧳', '☀️'
-        ]):
-            continue
+    """Extract clean prompt from allText using LLM."""
+    try:
+        clean_prompt, status = extract_prompt_with_llm(allText)
         
-        # Detect prompt start
-        if any(kw in line for kw in ['提示词：', 'Prompt:', 'prompt:', '【主题】', '【STYLE】', 'Create a', 'A tiny mouse', 'Theme:', 'CITY:']):
-            in_prompt = True
+        if status == 'NO_PROMPT':
+            print(f"  ℹ️  {tweet_id}: 无prompt")
+            return ""
+        elif status == 'INCOMPLETE':
+            print(f"  ⚠️  {tweet_id}: prompt不完整")
+            return ""
+        elif status.startswith('ERROR'):
+            print(f"  ❌ {tweet_id}: LLM错误 - {status}")
+            return ""
         
-        if in_prompt:
-            prompt_lines.append(line)
-    
-    # If no prompt detected, return empty
-    if not prompt_lines:
+        # 清理用于显示
+        clean_prompt = clean_prompt_for_display(clean_prompt)
+        return clean_prompt
+    except Exception as e:
+        print(f"  ❌ {tweet_id}: 提取失败 - {e}")
         return ""
-    
-    # Clean up
-    prompt = '\n'.join(prompt_lines)
-    
-    # Remove common noise patterns
-    noise_patterns = [
-        'Larus Canus', '尘林 Spark', 'Michael Rabone', 'Beanie Blossom',
-        'Saul Goodman', 'Loriel.AI', 'simeon-sanai', 'LudovicCreator',
-        '小小东', '月无关', 'Zidan 子丹',
-        '@MrLarus', '@chenlinspark', '@michaelrabone', '@BeanieBlossom',
-        '@Goodmanprotocol', '@ou_zhen599', '@Naiknelofar788', '@LudovicCreator',
-        '@xiaoxiaodong01', '@0xkyne', '@liluocheng13',
-        'Jul 14', 'Aug 15', 'Aug 16', 'Aug 14', 'Aug 13',
-        '11:18 PM', '7:00 AM', '4:00 AM', '10:00 AM', '12:58 AM',
-        '1:24 AM', '5:53 PM', '5:13 PM', '8:50 PM', '7:13 AM',
-        '13.2K', '8.1K', '2.4K', '2.1K', '1.4K', '1.8K', '2.5K', '5.7K',
-        'Views', '471', '388', '954', '11', '7', '28', '215', '192',
-        'Made with AI', 'Show more', 'Prompt below 👇', 'Prompt in the comments 👇',
-    ]
-    
-    for noise in noise_patterns:
-        prompt = prompt.replace(noise, '')
-    
-    # Remove excessive whitespace
-    lines = [line.strip() for line in prompt.split('\n')]
-    lines = [line for line in lines if line]
-    prompt = '\n'.join(lines)
-    
-    return prompt.strip()
 
 def score_item(title: str, prompt: str, tags: list) -> dict:
     """Score an item across 8 dimensions."""
