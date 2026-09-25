@@ -141,10 +141,6 @@ def validate_prompt(prompt):
         if re.search(pattern, prompt, re.IGNORECASE):
             return False
     
-    # 检查是否包含模板占位符（这是模板，不是实际prompt）
-    if '{填写}' in prompt or '{fill}' in prompt.lower():
-        return False
-    
     # 检查是否包含创作指令关键词
     instruction_keywords = [
         'create', 'generate', 'design', 'make', 'draw', 'paint',
