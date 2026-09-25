@@ -1,17 +1,18 @@
 #!/usr/bin/env python3
 """
-自动采集高分作者推文 v2 - 批量并行优化版
-31 个作者分 6 批，每批 5-6 个，总时间 < 5 分钟
+自动采集高分作者推文 v3 - 轻量级检测优化版
+先用HTTP请求检测24小时内是否有发推，只对有发推的作者用camofox抓取
 """
 
 import json
 import subprocess
 import sys
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timedelta
 import time
 import re
 import os
+import requests
 
 # 导入共享配置
 sys.path.insert(0, str(Path(__file__).parent))
@@ -22,6 +23,67 @@ def load_authors():
     config_path = Path(__file__).parent / 'authors.json'
     with open(config_path, 'r', encoding='utf-8') as f:
         return json.load(f)
+
+def check_recent_tweets(twitter_username, hours=24):
+    """
+    轻量级检测作者是否在最近N小时内发推
+    使用Twitter syndication API，不需要camofox
+    返回: (has_recent, latest_time_str)
+    """
+    try:
+        url = f"https://syndication.twitter.com/srv/timeline-profile/screen-name/{twitter_username}"
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'
+        }
+        response = requests.get(url, headers=headers, timeout=10)
+        
+        if response.status_code != 200:
+            return False, "HTTP错误"
+        
+        # 解析HTML，查找推文时间
+        html = response.text
+        
+        # 查找时间标记（如 "2h", "1d", "Sep 23" 等）
+        time_patterns = [
+            r'data-datetime="([^"]+)"',  # ISO格式时间
+            r'<time[^>]*datetime="([^"]+)"',  # time标签
+            r'·\s*(\d+[smhd])\s*·',  # 相对时间如 "2h", "1d"
+        ]
+        
+        for pattern in time_patterns:
+            matches = re.findall(pattern, html)
+            if matches:
+                # 检查第一个（最新的）时间
+                time_str = matches[0]
+                
+                # 解析相对时间
+                match = re.match(r'(\d+)([smhd])', time_str.lower())
+                if match:
+                    value = int(match.group(1))
+                    unit = match.group(2)
+                    
+                    if unit == 's' and value <= hours * 3600:
+                        return True, f"{value}秒前"
+                    elif unit == 'm' and value <= hours * 60:
+                        return True, f"{value}分钟前"
+                    elif unit == 'h' and value <= hours:
+                        return True, f"{value}小时前"
+                    elif unit == 'd' and value == 0:
+                        return True, "今天"
+                
+                # 解析ISO格式
+                try:
+                    tweet_time = datetime.fromisoformat(time_str.replace('Z', '+00:00'))
+                    cutoff = datetime.now().replace(tzinfo=tweet_time.tzinfo) - timedelta(hours=hours)
+                    if tweet_time >= cutoff:
+                        return True, time_str
+                except:
+                    pass
+        
+        return False, "无新推文"
+    
+    except Exception as e:
+        return False, f"检测失败: {str(e)}"
 
 def camofox_cmd(cmd, timeout=30):
     """执行 camofox 命令"""
@@ -194,23 +256,62 @@ def main():
     config = load_authors()
     authors = config['authors']
     
-    print(f"🚀 自动采集 v2，共 {len(authors)} 位作者")
+    print(f"🚀 自动采集 v3，共 {len(authors)} 位作者")
     print(f"📅 时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    print(f"⚡ 批量并行模式，预计 3-5 分钟\n")
+    print(f"⚡ 轻量级检测模式，预计 1-2 分钟\n")
     
     # 清理 camofox
     subprocess.run("pkill -f camoufox 2>/dev/null", shell=True)
     time.sleep(2)
     
-    # 分批扫描（每批 5-6 个作者）
+    # 第一步：轻量级检测哪些作者24小时内有发推
+    print(f"🔍 检测24小时内有发推的作者...")
+    active_authors = []
+    inactive_authors = []
+    
+    for author in authors:
+        twitter = author['twitter'].replace('@', '')
+        has_recent, time_info = check_recent_tweets(twitter, hours=24)
+        
+        if has_recent:
+            active_authors.append(author)
+            print(f"  ✅ {twitter}: {time_info}")
+        else:
+            inactive_authors.append(author)
+            print(f"  ⏭️ {twitter}: {time_info}")
+    
+    print(f"\n📊 检测结果: {len(active_authors)}/{len(authors)} 位作者24小时内有发推")
+    
+    if not active_authors:
+        print("\n⚠️ 没有作者有新推文，跳过采集")
+        # 保存状态
+        status_path = DATA_DIR / "author_fetch_status.json"
+        status_data = []
+        for author in authors:
+            twitter = author['twitter'].replace('@', '')
+            has_recent, time_info = check_recent_tweets(twitter, hours=24)
+            status_data.append({
+                'name': author['name'],
+                'twitter': author['twitter'],
+                'status': 'no_tweets' if not has_recent else 'success',
+                'count': 0,
+                'last_check': time_info
+            })
+        with open(status_path, 'w', encoding='utf-8') as f:
+            json.dump(status_data, f, ensure_ascii=False, indent=2)
+        return
+    
+    # 第二步：只对活跃作者用camofox抓取
+    print(f"\n🎯 开始抓取 {len(active_authors)} 位活跃作者...")
+    
     batch_size = 6
     all_tweet_ids = []
     author_status = []
     
-    for i in range(0, len(authors), batch_size):
-        batch = authors[i:i+batch_size]
+    for i in range(0, len(active_authors), batch_size):
+        batch = active_authors[i:i+batch_size]
         batch_num = i // batch_size + 1
-        total_batches = (len(authors) + batch_size - 1) // batch_size
+        total_batches = (len(active_authors) + batch_size - 1) // batch_size
         
         results = scan_authors_batch(batch, batch_num, total_batches)
         
@@ -232,6 +333,16 @@ def main():
                     'status': 'no_tweets',
                     'count': 0
                 })
+    
+    # 添加不活跃作者到状态
+    for author in inactive_authors:
+        author_status.append({
+            'name': author['name'],
+            'twitter': author['twitter'],
+            'status': 'skipped',
+            'count': 0,
+            'reason': '24小时内无发推'
+        })
     
     # 去重
     all_tweet_ids = list(set(all_tweet_ids))
@@ -263,11 +374,13 @@ def main():
     # 统计
     success_count = sum(1 for s in author_status if s['status'] == 'success')
     no_tweets_count = sum(1 for s in author_status if s['status'] == 'no_tweets')
+    skipped_count = sum(1 for s in author_status if s['status'] == 'skipped')
     
     print(f"\n📊 采集完成")
     print(f"  总推文: {len(all_data)} 条")
     print(f"  成功作者: {success_count}/{len(authors)}")
     print(f"  无推文: {no_tweets_count} 位")
+    print(f"  跳过: {skipped_count} 位（24小时内无发推）")
     print(f"💾 数据: {output_path}")
 
 if __name__ == '__main__':
