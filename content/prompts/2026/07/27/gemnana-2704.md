@@ -1,5 +1,5 @@
 ---
-title: "提示词 on Midjourney : A breathtaking de..."
+title: "漫画书风插画：粗黑轮廓与半色调网点"
 slug: gemnana-2704
 date: 2026-03-28
 added: 2026-07-27T12:54:23+08:00
