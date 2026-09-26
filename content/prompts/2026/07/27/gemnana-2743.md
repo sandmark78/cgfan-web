@@ -1,5 +1,5 @@
 ---
-title: "FGO FGO二部パッケージ妄想合わせ midjourney FateGrandOrder Mordred https:/..."
+title: "FGO二部パッケージ：Fate风格妄想插画"
 slug: gemnana-2743
 date: 2026-03-31
 added: 2026-07-27T19:38:12+08:00

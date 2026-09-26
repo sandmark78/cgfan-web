@@ -1,5 +1,5 @@
 ---
-title: Nano Banana Pro + Kling AI 九个摄影机位控制同一个角色，这效果能直接去拍电影了~
+title: "九机位同角色：Nano Banana+Kling的电影级控制"
 slug: nano-banana-pro-kling-ai-1570898055
 model: Midjourney
 category: photography

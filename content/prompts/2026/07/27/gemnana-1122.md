@@ -1,5 +1,5 @@
 ---
-title: "プロンプトもご提供いただいていて、とても勉強になります…！NijiV7×nanobanana × sref＋NijiV7..."
+title: "NijiV7×NanoBanana：sref风格迁移实验"
 slug: gemnana-1122
 date: 2026-01-13
 added: 2026-07-27T11:31:45+08:00

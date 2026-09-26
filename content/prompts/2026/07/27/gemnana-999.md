@@ -1,5 +1,5 @@
 ---
-title: "Nano Banana Pro gives wings to your imag... 提示词"
+title: "Nano Banana Pro：为想象力插上翅膀"
 slug: gemnana-999
 date: 2026-01-11
 added: 2026-07-27T11:31:40+08:00

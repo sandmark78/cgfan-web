@@ -1,5 +1,5 @@
 ---
-title: "夜之翼"
+title: "夜之翼：幽玄Midjourney风格"
 slug: gemnana-2223
 date: 2026-02-23
 added: 2026-07-27T12:54:10+08:00

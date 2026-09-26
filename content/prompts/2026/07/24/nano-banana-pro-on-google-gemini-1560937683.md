@@ -1,5 +1,5 @@
 ---
-title: "Nano Banana Pro on Google... Nano Banana Pro 创作"
+title: "Nano Banana Pro遇上Google Gemini"
 slug: nano-banana-pro-on-google-gemini-1560937683
 model: Midjourney
 category: photography

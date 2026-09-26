@@ -1,5 +1,5 @@
 ---
-title: "Good night, X fam! 😘 AIArt Midjourney ht... 提示词"
+title: "Midjourney晚安：X家人们的AI艺术夜"
 slug: gemnana-1565
 date: 2026-01-19
 added: 2026-07-27T11:31:51+08:00
