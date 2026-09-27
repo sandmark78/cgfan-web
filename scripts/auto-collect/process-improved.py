@@ -289,7 +289,7 @@ for tweet in tweets:
     total_score = score_prompt(prompt)
     
     # Only process high-quality (≥58)
-    if total_score < 58:
+    if total_score < 52:
         continue
     
     # Generate title

@@ -846,8 +846,8 @@ def main():
             print(f"   构图:{scores['composition']:.1f} 色彩:{scores['color']:.1f} 光影:{scores['lighting']:.1f} 细节:{scores['detail']:.1f}")
             print(f"   创意:{scores['creativity']:.1f} 技术:{scores['technical']:.1f} 审美:{scores['aesthetic']:.1f} 策展:{scores['curation']:.1f}")
             
-            # 58分以上收录，65分以上加入「最喜欢的图片」表格
-            if total_score < 58:
+            # 52分以上收录，65分以上加入「最喜欢的图片」表格
+            if total_score < 52:
                 print(f"⏭️  评分低于58，加入候选清单")
                 # 保存候选（即使低分，方便人工筛选）
                 from scripts.auto_collect.save_candidate import save_candidate

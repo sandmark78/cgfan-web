@@ -329,8 +329,8 @@ def main():
         scores['total'] = total  # 添加 total 字段
         print(f"  📊 评分：{'+'.join(str(v) for k, v in coll['scores'].items())}={total}/80")
         
-        if total < 60:
-            print(f"  ⚠️ 分数 < 60，不收录")
+        if total < 52:
+            print(f"  ⚠️ 分数 < 52，不收录")
             skipped += 1
             continue
         

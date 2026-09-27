@@ -474,8 +474,8 @@ def main():
         print(f"     最终分：{scores['final_scores']}")
         
         # 5. 检查分数
-        if scores['total'] < 58:
-            print(f"  ⚠️ 分数 < 58，不收录")
+        if scores['total'] < 52:
+            print(f"  ⚠️ 分数 < 52，不收录")
             results['low_score'] += 1
             results['details'].append({
                 'tweet_id': tweet_id,

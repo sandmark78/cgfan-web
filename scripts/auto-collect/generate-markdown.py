@@ -275,8 +275,8 @@ def main():
         total = sum(scores.values())
         
         # Skip if below threshold
-        if total < 60:
-            print(f"⚠️  {tid}: score {total} < 60, skipping")
+        if total < 52:
+            print(f"⚠️  {tid}: score {total} < 52, skipping")
             continue
         
         # Generate markdown
