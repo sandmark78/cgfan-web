@@ -84,73 +84,60 @@ def identify_model(text):
     return "通用 Prompt"
 
 def generate_title(prompt, author):
-    """Generate visual Chinese title"""
+    """生成有画面感的中文标题（≤20字）
     
-    # Extract key visual elements
+    规则：
+    - 不用作者名字
+    - 用冒号分隔主题和细节
+    - 提取核心视觉元素
+    - ≤20字
+    """
+    # 提取核心视觉元素
     elements = []
     
-    # Style
-    if "唐风" in prompt or "盛唐" in prompt:
-        elements.append("盛唐")
-    elif "古风" in prompt:
-        elements.append("古风")
-    if "新中式" in prompt:
-        elements.append("新中式")
-    if "仙侠" in prompt:
-        elements.append("仙侠")
-    if "剑修" in prompt:
-        elements.append("剑修")
-    if "莲灯" in prompt:
-        elements.append("莲灯")
-    if "凤冠" in prompt:
-        elements.append("凤冠")
-    if "牡丹" in prompt:
-        elements.append("牡丹")
-    if "旗袍" in prompt:
-        elements.append("旗袍")
+    # 主体对象
+    if any(kw in prompt for kw in ['人物', '女孩', '少女', '女性', '女子']):
+        elements.append('人物')
+    elif any(kw in prompt for kw in ['建筑', '城市', '地标']):
+        elements.append('建筑')
+    elif any(kw in prompt for kw in ['产品', '瓶', '罐', '包装']):
+        elements.append('产品')
+    elif any(kw in prompt for kw in ['海报', 'poster']):
+        elements.append('海报')
+    elif any(kw in prompt for kw in ['插画', 'illustration']):
+        elements.append('插画')
     
-    # Subject
-    if "女子" in prompt or "女性" in prompt:
-        if "将军" in prompt:
-            elements.append("女将")
-        elif "剑修" in prompt:
-            elements.append("剑修女主")
-        elif "贵女" in prompt:
-            elements.append("贵女")
-        else:
-            elements.append("女子")
+    # 风格特征
+    if any(kw in prompt for kw in ['微缩', 'miniature', 'tiny']):
+        elements.append('微缩')
+    elif any(kw in prompt for kw in ['纸艺', 'paper', '折叠', '剪纸']):
+        elements.append('纸艺')
+    elif any(kw in prompt for kw in ['东方', '古风', '仙侠', '水墨', '唐风']):
+        elements.append('东方')
+    elif any(kw in prompt for kw in ['复古', 'retro', 'vintage']):
+        elements.append('复古')
+    elif any(kw in prompt for kw in ['科幻', '未来', 'cyberpunk']):
+        elements.append('科幻')
     
-    # Technique
-    if "3D" in prompt or "立体" in prompt:
-        elements.append("3D")
-    if "剪纸" in prompt or "纸雕" in prompt:
-        elements.append("纸艺")
-    if "粘土" in prompt:
-        elements.append("粘土")
-    if "线条" in prompt:
-        elements.append("线条")
+    # 视觉技法
+    if any(kw in prompt for kw in ['留白', '呼吸', '空间']):
+        elements.append('留白')
+    elif any(kw in prompt for kw in ['光影', '光', 'light', 'shadow']):
+        elements.append('光影')
+    elif any(kw in prompt for kw in ['色彩', 'color', '撞色']):
+        elements.append('色彩')
+    elif any(kw in prompt for kw in ['质感', 'texture', '纹理']):
+        elements.append('质感')
     
-    # Format
-    if "海报" in prompt:
-        elements.append("海报")
-    elif "写真" in prompt:
-        elements.append("写真")
-    elif "人像" in prompt:
-        elements.append("人像")
-    
-    # Build title
-    if not elements:
-        # Fallback: extract from first sentence
-        first_line = prompt.split('\n')[0][:20]
-        return first_line if first_line else "创意视觉"
-    
-    title = "".join(elements[:4])
-    
-    # Ensure ≤ 20 chars
-    if len(title) > 20:
-        title = title[:20]
-    
-    return title
+    # 组合标题
+    if len(elements) >= 2:
+        return f"{elements[0]}×{elements[1]}：{elements[2] if len(elements) > 2 else '视觉实验'}"
+    elif len(elements) == 1:
+        return f"{elements[0]}：视觉创作"
+    else:
+        # 从 prompt 提取前15个字符作为主题
+        first_sentence = prompt.split('。')[0].split('，')[0][:15]
+        return f"{first_sentence}：AI视觉创作"
 
 def extract_tags(prompt, title):
     """Extract 3-5 tags"""

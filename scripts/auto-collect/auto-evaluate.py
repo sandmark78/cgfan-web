@@ -35,65 +35,60 @@ TITLE_RULES = [
 ]
 
 def generate_title(prompt: str) -> str:
-    """根据 prompt 内容生成有画面感的标题（≤20字）"""
-    prompt_lower = prompt.lower()
+    """生成有画面感的中文标题（≤20字）
     
-    # 提取关键视觉元素
-    visual_elements = extract_visual_elements(prompt)
+    规则：
+    - 不用作者名字
+    - 用冒号分隔主题和细节
+    - 提取核心视觉元素
+    - ≤20字
+    """
+    # 提取核心视觉元素
+    elements = []
     
-    # 根据内容类型生成不同风格的标题
-    title_type = detect_title_type(prompt)
+    # 主体对象
+    if any(kw in prompt for kw in ['人物', '女孩', '少女', '女性', '女子']):
+        elements.append('人物')
+    elif any(kw in prompt for kw in ['建筑', '城市', '地标']):
+        elements.append('建筑')
+    elif any(kw in prompt for kw in ['产品', '瓶', '罐', '包装']):
+        elements.append('产品')
+    elif any(kw in prompt for kw in ['海报', 'poster']):
+        elements.append('海报')
+    elif any(kw in prompt for kw in ['插画', 'illustration']):
+        elements.append('插画')
     
-    if title_type == 'editorial':
-        # 编辑设计类：强调构图和形式
-        if visual_elements:
-            title = f"{visual_elements[0]}的编辑美学"
-        else:
-            subject = extract_subject(prompt)
-            title = f"{subject}的排版实验"
+    # 风格特征
+    if any(kw in prompt for kw in ['微缩', 'miniature', 'tiny']):
+        elements.append('微缩')
+    elif any(kw in prompt for kw in ['纸艺', 'paper', '折叠', '剪纸']):
+        elements.append('纸艺')
+    elif any(kw in prompt for kw in ['东方', '古风', '仙侠', '水墨', '唐风']):
+        elements.append('东方')
+    elif any(kw in prompt for kw in ['复古', 'retro', 'vintage']):
+        elements.append('复古')
+    elif any(kw in prompt for kw in ['科幻', '未来', 'cyberpunk']):
+        elements.append('科幻')
     
-    elif title_type == 'oriental':
-        # 东方美学类：强调意境
-        if visual_elements:
-            title = f"{visual_elements[0]}的东方意境"
-        else:
-            subject = extract_subject(prompt)
-            title = f"{subject}的诗意表达"
+    # 视觉技法
+    if any(kw in prompt for kw in ['留白', '呼吸', '空间']):
+        elements.append('留白')
+    elif any(kw in prompt for kw in ['光影', '光', 'light', 'shadow']):
+        elements.append('光影')
+    elif any(kw in prompt for kw in ['色彩', 'color', '撞色']):
+        elements.append('色彩')
+    elif any(kw in prompt for kw in ['质感', 'texture', '纹理']):
+        elements.append('质感')
     
-    elif title_type == 'miniature':
-        # 微缩类：强调精致和想象
-        if visual_elements:
-            title = f"微缩{visual_elements[0]}世界"
-        else:
-            subject = extract_subject(prompt)
-            title = f"掌心大小的{subject}"
-    
-    elif title_type == 'cinematic':
-        # 电影感类：强调氛围和情绪
-        if visual_elements:
-            title = f"{visual_elements[0]}的电影时刻"
-        else:
-            subject = extract_subject(prompt)
-            title = f"{subject}的光影叙事"
-    
-    elif title_type == 'surreal':
-        # 超现实类：强调创意和反差
-        if visual_elements:
-            title = f"当{visual_elements[0]}遇见想象"
-        else:
-            subject = extract_subject(prompt)
-            title = f"{subject}的奇幻变身"
-    
+    # 组合标题
+    if len(elements) >= 2:
+        return f"{elements[0]}×{elements[1]}：{elements[2] if len(elements) > 2 else '视觉实验'}"
+    elif len(elements) == 1:
+        return f"{elements[0]}：视觉创作"
     else:
-        # 通用类：有画面感的描述
-        subject = extract_subject(prompt)
-        if visual_elements:
-            title = f"{visual_elements[0]}与{subject}"
-        else:
-            title = f"{subject}的视觉探索"
-    
-    # 确保不超过20字
-    return title[:20] if len(title) > 20 else title
+        # 从 prompt 提取前15个字符作为主题
+        first_sentence = prompt.split('。')[0].split('，')[0][:15]
+        return f"{first_sentence}：AI视觉创作"
 
 def extract_visual_elements(prompt: str) -> list:
     """从 prompt 提取视觉元素（2-3个关键词）"""
