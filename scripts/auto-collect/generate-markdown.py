@@ -148,121 +148,22 @@ def main():
     with open('data/auto-collect/preprocessed.json', 'r') as f:
         data = json.load(f)
     
-    # Items to process
-    items_config = [
-        {
-            'id': '2088872896437358881',
-            'title': '视觉聚核：海报构图的四种力量',
-            'tags': ['海报设计', '构图框架', '编辑排版', '视觉系统']
-        },
-        {
-            'id': '2088993388460986600',
-            'title': '地中海涂鸦与时尚人像的融合',
-            'tags': ['时尚海报', '涂鸦艺术', '混合媒体', '编辑设计']
-        },
-        {
-            'id': '2078072262368829730',
-            'title': '胶片颗粒下的纽约皮草街拍',
-            'tags': ['胶片摄影', '街拍', '黑白', '电影感']
-        },
-        {
-            'id': '2087131922841379280',
-            'title': '霓虹立体：Zendaya的五重风格',
-            'tags': ['霓虹', '立体摄影', '双重曝光', '时尚']
-        },
-        {
-            'id': '2088898063050117360',
-            'title': '洗衣机里的小老鼠：剪纸插画',
-            'tags': ['剪纸插画', '微缩', '故事书', '童趣']
-        },
-        {
-            'id': '2089034457852338434',
-            'title': '克苏鲁：Midjourney 6.1风格探索',
-            'tags': ['克苏鲁', 'Midjourney', '暗黑', '风格探索']
-        },
-        {
-            'id': '2089004186755092648',
-            'title': 'IDENTITY TRACE：网版肖像与色彩扫描窗',
-            'tags': ['实验海报', '网版印刷', '角色海报', '编辑设计']
-        },
-        {
-            'id': '2088988526427898366',
-            'title': '夏日涂鸦：真人与手绘的六格叙事',
-            'tags': ['夏日海报', '涂鸦艺术', '六格漫画', '编辑设计']
-        },
-        {
-            'id': '2088669387163369531',
-            'title': '水彩城市：湿画法的旅行海报',
-            'tags': ['水彩', '城市海报', '旅行', '编辑排版']
-        },
-        {
-            'id': '2088976148801716425',
-            'title': '城市地标汇聚：仰视角度的海报系统',
-            'tags': ['城市海报', '地标', '构图框架', '视觉系统']
-        },
-        {
-            'id': '2088901593836265855',
-            'title': '拼贴旅行：撕纸边缘的视觉叙事',
-            'tags': ['拼贴', '旅行海报', '纸艺', '编辑设计']
-        },
-        {
-            'id': '2088992503433499013',
-            'title': '博物馆展览：文物海报的仪式感',
-            'tags': ['博物馆', '展览设计', '仪式感', '编辑排版']
-        },
-        {
-            'id': '2088989167703208234',
-            'title': '半调黑色解构：网点的灰度艺术',
-            'tags': ['半调', '黑白', '解构', '实验设计']
-        },
-        {
-            'id': '2088428890599694477',
-            'title': '复古未来：黑底错版的印刷美学',
-            'tags': ['复古', '未来主义', '印刷质感', '编辑设计']
-        },
-        {
-            'id': '2088951153543270681',
-            'title': '杂志封面：气泡字体与青春编辑',
-            'tags': ['杂志封面', '气泡字体', '青春', '编辑设计']
-        },
-        {
-            'id': '2088997439873425664',
-            'title': '旅行女孩：手绘角色的四格实景',
-            'tags': ['旅行海报', '手绘角色', '四格', '编辑设计']
-        },
-        {
-            'id': '2088835863270813860',
-            'title': '木刻旅行：手工质感的城市海报',
-            'tags': ['木刻', '旅行海报', '手工质感', '复古印刷']
-        },
-        {
-            'id': '2088639773900759489',
-            'title': '复古旅行：丝网印刷的城市记忆',
-            'tags': ['复古旅行', '丝网印刷', '城市', '手工质感']
-        },
-        {
-            'id': '2088898567976947961',
-            'title': '霓虹紫外线：五重立体风格',
-            'tags': ['霓虹', '紫外线', '立体', '时尚']
-        },
-        {
-            'id': '2088918226902409478',
-            'title': '复古旅行：木刻与丝网的混合',
-            'tags': ['复古旅行', '木刻', '丝网', '手工质感']
-        },
-    ]
+    # Import batch title generator
+    sys.path.insert(0, str(Path(__file__).parent))
+    from importlib.machinery import SourceFileLoader
+    llm_process = SourceFileLoader('llm_process', str(Path(__file__).parent / 'llm-process.py')).load_module()
+    generate_titles_batch = llm_process.generate_titles_batch
     
     # Create output directory
     out_dir = Path('content/prompts')
     out_dir.mkdir(parents=True, exist_ok=True)
     
-    processed = 0
-    for config in items_config:
-        tid = config['id']
-        item = next((i for i in data if i['tweet_id'] == tid), None)
-        if not item:
-            print(f"⚠️  {tid}: not found in data")
-            continue
+    # Phase 1: Extract prompts and score
+    print("【阶段1】提取prompt并评分...")
+    qualified_items = []
+    
+    for item in data:
+        tid = item['tweet_id']
         
         # Extract clean prompt
         clean_prompt = extract_clean_prompt(item['allText'], tid)
@@ -270,8 +171,24 @@ def main():
             print(f"⚠️  {tid}: prompt too short or empty")
             continue
         
+        # Extract tags (simple extraction)
+        tags = []
+        prompt_lower = clean_prompt.lower()
+        if any(kw in prompt_lower for kw in ['海报', 'poster']):
+            tags.append('海报设计')
+        if any(kw in prompt_lower for kw in ['微缩', 'miniature']):
+            tags.append('微缩景观')
+        if any(kw in prompt_lower for kw in ['纸艺', 'paper']):
+            tags.append('纸艺工艺')
+        if any(kw in prompt_lower for kw in ['复古', 'retro', 'vintage']):
+            tags.append('复古风格')
+        if any(kw in prompt_lower for kw in ['电影', 'cinematic']):
+            tags.append('电影感')
+        if not tags:
+            tags = ['AI创作']
+        
         # Score
-        scores = score_item(config['title'], clean_prompt, config['tags'])
+        scores = score_item('', clean_prompt, tags)
         total = sum(scores.values())
         
         # Skip if below threshold
@@ -279,8 +196,44 @@ def main():
             print(f"⚠️  {tid}: score {total} < 52, skipping")
             continue
         
+        qualified_items.append({
+            'item': item,
+            'clean_prompt': clean_prompt,
+            'tags': tags,
+            'scores': scores,
+            'total': total
+        })
+    
+    if not qualified_items:
+        print("⚠️ 没有符合条件的内容")
+        return
+    
+    print(f"✅ {len(qualified_items)} 条内容通过评分")
+    
+    # Phase 2: Batch generate titles
+    print("\n【阶段2】批量生成标题...")
+    prompts_for_titles = [q['clean_prompt'] for q in qualified_items]
+    titles = generate_titles_batch(prompts_for_titles)
+    
+    # Assign titles
+    for i, q in enumerate(qualified_items):
+        q['title'] = titles[i]
+        print(f"  {i+1}. {q['item']['tweet_id']}: {titles[i]}")
+    
+    # Phase 3: Generate markdown
+    print("\n【阶段3】生成markdown文件...")
+    processed = 0
+    for q in qualified_items:
+        item = q['item']
+        tid = item['tweet_id']
+        title = q['title']
+        tags = q['tags']
+        scores = q['scores']
+        clean_prompt = q['clean_prompt']
+        total = q['total']
+        
         # Generate markdown
-        md_content = generate_markdown(item, config['title'], config['tags'], scores, clean_prompt)
+        md_content = generate_markdown(item, title, tags, scores, clean_prompt)
         
         # Write file
         filename = f"prompt-{tid}.md"
@@ -288,7 +241,7 @@ def main():
         with open(filepath, 'w', encoding='utf-8') as f:
             f.write(md_content)
         
-        print(f"✅ {filename}: {config['title']} ({total}/80)")
+        print(f"✅ {filename}: {title} ({total}/80)")
         processed += 1
     
     print(f"\n✅ Generated {processed} markdown files")
