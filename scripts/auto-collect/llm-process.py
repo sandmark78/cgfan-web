@@ -210,62 +210,78 @@ def score_prompt(prompt: str, tags: List[str]) -> Dict:
     }
 
 def generate_title(prompt: str, author: str) -> str:
-    """生成有画面感的中文标题（≤20字）
+    """用LLM生成有画面感的中文标题（≤20字）"""
+    from llm_cleaner import call_llm
     
-    规则：
-    - 不用作者名字
-    - 用冒号分隔主题和细节
-    - 提取核心视觉元素
-    - ≤20字
-    """
-    prompt_lower = prompt.lower()
+    llm_prompt = f"""你是CGfan网站的标题策展专家。为以下AI提示词生成一个**有画面感的中文标题**。
+
+## 提示词内容
+```
+{prompt[:500]}
+```
+
+## 标题要求
+
+1. **长度**：8-20个中文字
+2. **风格**：有画面感、有创意、能吸引点击
+3. **内容**：提取prompt的核心视觉元素，不要泛泛而谈
+4. **语言**：纯中文，不要英文
+5. **禁止**：
+   - 不要包含作者名
+   - 不要用"实验"、"创作"等泛词
+   - 不要简单罗列关键词（如"微缩×纸艺"）
+   - 不要翻译英文prompt，要理解内容后重新表达
+
+## 示例
+
+❌ 差标题：
+- "花园"（太泛）
+- "复古实验"（模板化）
+- "微缩×纸艺：视觉创作"（机械组合）
+- "AI Aimee"（包含作者）
+
+✅ 好标题：
+- "乌龟背着的袜子商店"（具体场景）
+- "圆珠笔课本涂鸦重生"（动作+创意）
+- "仙侠女将的黑金长剑"（人物+道具）
+- "色彩饱和度的奢侈感"（概念+洞察）
+
+## 输出
+
+直接输出标题，不要任何解释、不要引号。
+"""
     
-    # 提取核心视觉元素（优先顺序）
-    elements = []
+    try:
+        title = call_llm(llm_prompt, max_tokens=100).strip()
+        # 清理可能的多余字符
+        title = title.strip('"\'「」『』【】')
+        title = title.split('\n')[0]  # 只取第一行
+        
+        # 验证长度
+        if 8 <= len(title) <= 20:
+            return title
+        elif len(title) > 20:
+            return title[:20]
+        else:
+            # 如果太短，用fallback
+            return _fallback_title(prompt)
+    except Exception as e:
+        print(f"⚠️ LLM标题生成失败: {e}")
+        return _fallback_title(prompt)
+
+def _fallback_title(prompt: str) -> str:
+    """fallback标题生成（当LLM失败时）"""
+    import re
+    prompt_clean = re.sub(r'@\w+', '', prompt)
+    prompt_clean = re.sub(r'https?://\S+', '', prompt_clean)
+    prompt_clean = re.sub(r'#\w+', '', prompt_clean)
+    prompt_clean = prompt_clean.strip()
     
-    # 主体对象
-    if any(kw in prompt for kw in ['人物', '女孩', '少女', '女性']):
-        elements.append('人物')
-    elif any(kw in prompt for kw in ['建筑', '城市', '地标']):
-        elements.append('建筑')
-    elif any(kw in prompt for kw in ['产品', '瓶', '罐', '包装']):
-        elements.append('产品')
-    elif any(kw in prompt for kw in ['海报', 'poster']):
-        elements.append('海报')
-    elif any(kw in prompt for kw in ['插画', 'illustration']):
-        elements.append('插画')
-    
-    # 风格特征
-    if any(kw in prompt for kw in ['微缩', 'miniature', 'tiny']):
-        elements.append('微缩')
-    elif any(kw in prompt for kw in ['纸艺', 'paper', '折叠']):
-        elements.append('纸艺')
-    elif any(kw in prompt for kw in ['东方', '古风', '仙侠', '水墨']):
-        elements.append('东方')
-    elif any(kw in prompt for kw in ['复古', 'retro', ' vintage']):
-        elements.append('复古')
-    elif any(kw in prompt for kw in ['科幻', '未来', 'cyberpunk']):
-        elements.append('科幻')
-    
-    # 视觉技法
-    if any(kw in prompt for kw in ['留白', '呼吸', '空间']):
-        elements.append('留白')
-    elif any(kw in prompt for kw in ['光影', '光', 'light', 'shadow']):
-        elements.append('光影')
-    elif any(kw in prompt for kw in ['色彩', 'color', '撞色']):
-        elements.append('色彩')
-    elif any(kw in prompt for kw in ['质感', 'texture', '纹理']):
-        elements.append('质感')
-    
-    # 组合标题
-    if len(elements) >= 2:
-        return f"{elements[0]}×{elements[1]}：{elements[2] if len(elements) > 2 else '视觉实验'}"
-    elif len(elements) == 1:
-        return f"{elements[0]}：视觉创作"
-    else:
-        # 从 prompt 提取前15个字符作为主题
-        first_sentence = prompt.split('。')[0].split('，')[0][:15]
-        return f"{first_sentence}：AI视觉创作"
+    # 提取前30个字符
+    first_part = prompt_clean[:30].strip()
+    if len(first_part) >= 8:
+        return first_part
+    return "视觉创作"
 
 def extract_tags(prompt: str) -> List[str]:
     """提取3-5个精准标签"""
