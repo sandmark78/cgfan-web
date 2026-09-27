@@ -215,10 +215,10 @@ def generate_title(prompt: str, author: str = None) -> str:
     return titles[0] if titles else _fallback_title(prompt)
 
 def generate_titles_batch(prompts: list) -> list:
-    """批量生成标题，一次API调用处理多个prompt
+    """批量生成标题，分批处理避免超时
     
     Args:
-        prompts: prompt列表，每个元素是字符串
+        prompts: prompt列表
     
     Returns:
         标题列表，顺序与输入对应
@@ -228,10 +228,25 @@ def generate_titles_batch(prompts: list) -> list:
     if not prompts:
         return []
     
-    # 构造批量请求
+    # 分批处理，每批最多10个
+    BATCH_SIZE = 10
+    all_titles = []
+    
+    for i in range(0, len(prompts), BATCH_SIZE):
+        batch = prompts[i:i+BATCH_SIZE]
+        batch_titles = _generate_batch(batch)
+        all_titles.extend(batch_titles)
+    
+    return all_titles
+
+def _generate_batch(prompts: list) -> list:
+    """生成一批标题（最多10个）"""
+    from llm_cleaner import call_llm
+    
+    # 构造批量请求，减少每个prompt字符数
     prompt_items = []
     for i, prompt in enumerate(prompts, 1):
-        prompt_items.append(f"【{i}】\n```\n{prompt[:300]}\n```")
+        prompt_items.append(f"【{i}】\n```\n{prompt[:200]}\n```")  # 300→200字符
     
     llm_prompt = f"""你是CGfan网站的标题策展专家。为以下{len(prompts)}个AI提示词各生成一个**有画面感的中文标题**。
 
