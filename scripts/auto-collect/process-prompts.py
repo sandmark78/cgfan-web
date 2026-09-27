@@ -285,66 +285,12 @@ def score_8_dimensions(prompt_text, images):
     total = sum(scores.values()) / 8 * 8  # 80分制
     return scores, total
 
-# ====== 中文标题生成（增强版，避免重复，有画面感） ======
+# ====== 标题生成（使用批量函数，避免逐条调用LLM） ======
 def generate_title(prompt_text, tweet=None):
-    """用LLM生成有画面感的中文标题（≤20字）"""
-    from llm_cleaner import call_llm
-    
-    llm_prompt = f"""你是CGfan网站的标题策展专家。为以下AI提示词生成一个**有画面感的中文标题**。
-
-## 提示词内容
-```
-{prompt[:500]}
-```
-
-## 标题要求
-
-1. **长度**：8-20个中文字
-2. **风格**：有画面感、有创意、能吸引点击
-3. **内容**：提取prompt的核心视觉元素，不要泛泛而谈
-4. **语言**：纯中文，不要英文
-5. **禁止**：
-   - 不要包含作者名
-   - 不要用"实验"、"创作"等泛词
-   - 不要简单罗列关键词（如"微缩×纸艺"）
-   - 不要翻译英文prompt，要理解内容后重新表达
-
-## 示例
-
-❌ 差标题：
-- "花园"（太泛）
-- "复古实验"（模板化）
-- "微缩×纸艺：视觉创作"（机械组合）
-- "AI Aimee"（包含作者）
-
-✅ 好标题：
-- "乌龟背着的袜子商店"（具体场景）
-- "圆珠笔课本涂鸦重生"（动作+创意）
-- "仙侠女将的黑金长剑"（人物+道具）
-- "色彩饱和度的奢侈感"（概念+洞察）
-
-## 输出
-
-直接输出标题，不要任何解释、不要引号。
-"""
-    
-    try:
-        title = call_llm(llm_prompt, max_tokens=100).strip()
-        # 清理可能的多余字符
-        title = title.strip('"\'「」『』【】')
-        title = title.split('\n')[0]  # 只取第一行
-        
-        # 验证长度
-        if 8 <= len(title) <= 20:
-            return title
-        elif len(title) > 20:
-            return title[:20]
-        else:
-            # 如果太短，用fallback
-            return _fallback_title(prompt)
-    except Exception as e:
-        print(f"⚠️ LLM标题生成失败: {e}")
-        return _fallback_title(prompt)
+    """向后兼容的包装函数，实际调用批量生成"""
+    from llm_process import generate_titles_batch
+    titles = generate_titles_batch([prompt_text])
+    return titles[0] if titles else "未命名作品"
 
 def generate_titles_batch(prompts: list) -> list:
     """批量生成标题，一次API调用处理多个prompt
@@ -636,21 +582,6 @@ def main():
                 from scripts.auto_collect.append_taste import append_to_taste
                 append_to_taste(tweet, title, model, total_score, category)
             
-            # 生成标题
-            title = generate_title(prompt, tweet)
-            print(f"📝 标题: {title}")
-            
-            # 确定分类
-            category = get_category(prompt, title)
-            print(f"📂 分类: {category}")
-            
-            # 创建 markdown 文件
-            md_path = create_markdown(tweet, prompt, title, model, scores, total_score, category)
-            print(f"💾 文件: {md_path}")
-            
-            results['processed'] += 1
-            results['accepted'] += 1
-        
         except Exception as e:
             print(f"❌ 处理失败: {e}")
             results['rejected'] += 1
