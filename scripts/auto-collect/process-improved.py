@@ -143,6 +143,84 @@ def generate_title(prompt, author):
         print(f"⚠️ LLM标题生成失败: {e}")
         return _fallback_title(prompt)
 
+def generate_titles_batch(prompts: list) -> list:
+    """批量生成标题，一次API调用处理多个prompt
+    
+    Args:
+        prompts: prompt列表，每个元素是字符串
+    
+    Returns:
+        标题列表，顺序与输入对应
+    """
+    from llm_cleaner import call_llm
+    
+    if not prompts:
+        return []
+    
+    # 构造批量请求
+    prompt_items = []
+    for i, prompt in enumerate(prompts, 1):
+        prompt_items.append(f"【{i}】\n```\n{prompt[:300]}\n```")
+    
+    llm_prompt = f"""你是CGfan网站的标题策展专家。为以下{len(prompts)}个AI提示词各生成一个**有画面感的中文标题**。
+
+## 提示词列表
+
+{chr(10).join(prompt_items)}
+
+## 标题要求
+
+1. **长度**：8-20个中文字
+2. **风格**：有画面感、有创意、能吸引点击
+3. **内容**：提取prompt的核心视觉元素，不要泛泛而谈
+4. **语言**：纯中文，不要英文
+5. **禁止**：
+   - 不要包含作者名
+   - 不要用"实验"、"创作"等泛词
+   - 不要简单罗列关键词（如"微缩×纸艺"）
+   - 不要翻译英文prompt，要理解内容后重新表达
+
+## 输出格式
+
+按顺序输出标题，每行一个，格式：序号. 标题
+例如：
+1. 乌龟背着的袜子商店
+2. 圆珠笔课本涂鸦重生
+3. 仙侠女将的黑金长剑
+
+不要任何解释，不要引号。
+"""
+    
+    try:
+        response = call_llm(llm_prompt, max_tokens=500)
+        lines = response.strip().split('\n')
+        
+        # 解析结果
+        titles = []
+        for line in lines:
+            line = line.strip()
+            if not line:
+                continue
+            # 匹配 "1. 标题" 格式
+            import re
+            match = re.match(r'^\d+\.\s*(.+)$', line)
+            if match:
+                title = match.group(1).strip()
+                title = title.strip('"\'「」『』【】')
+                titles.append(title)
+        
+        # 补齐或截断到输入数量
+        while len(titles) < len(prompts):
+            titles.append(_fallback_title(prompts[len(titles)]))
+        titles = titles[:len(prompts)]
+        
+        return titles
+    except Exception as e:
+        print(f"⚠️ 批量标题生成失败: {e}")
+        return [_fallback_title(p) for p in prompts]
+
+
+
 def extract_tags(prompt, title):
     """Extract 3-5 tags"""
     tags = []

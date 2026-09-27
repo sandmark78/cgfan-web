@@ -269,6 +269,83 @@ def generate_title(prompt: str, author: str) -> str:
         print(f"⚠️ LLM标题生成失败: {e}")
         return _fallback_title(prompt)
 
+def generate_titles_batch(prompts: list) -> list:
+    """批量生成标题，一次API调用处理多个prompt
+    
+    Args:
+        prompts: prompt列表，每个元素是字符串
+    
+    Returns:
+        标题列表，顺序与输入对应
+    """
+    from llm_cleaner import call_llm
+    
+    if not prompts:
+        return []
+    
+    # 构造批量请求
+    prompt_items = []
+    for i, prompt in enumerate(prompts, 1):
+        prompt_items.append(f"【{i}】\n```\n{prompt[:300]}\n```")
+    
+    llm_prompt = f"""你是CGfan网站的标题策展专家。为以下{len(prompts)}个AI提示词各生成一个**有画面感的中文标题**。
+
+## 提示词列表
+
+{chr(10).join(prompt_items)}
+
+## 标题要求
+
+1. **长度**：8-20个中文字
+2. **风格**：有画面感、有创意、能吸引点击
+3. **内容**：提取prompt的核心视觉元素，不要泛泛而谈
+4. **语言**：纯中文，不要英文
+5. **禁止**：
+   - 不要包含作者名
+   - 不要用"实验"、"创作"等泛词
+   - 不要简单罗列关键词（如"微缩×纸艺"）
+   - 不要翻译英文prompt，要理解内容后重新表达
+
+## 输出格式
+
+按顺序输出标题，每行一个，格式：序号. 标题
+例如：
+1. 乌龟背着的袜子商店
+2. 圆珠笔课本涂鸦重生
+3. 仙侠女将的黑金长剑
+
+不要任何解释，不要引号。
+"""
+    
+    try:
+        response = call_llm(llm_prompt, max_tokens=500)
+        lines = response.strip().split('\n')
+        
+        # 解析结果
+        titles = []
+        for line in lines:
+            line = line.strip()
+            if not line:
+                continue
+            # 匹配 "1. 标题" 格式
+            import re
+            match = re.match(r'^\d+\.\s*(.+)$', line)
+            if match:
+                title = match.group(1).strip()
+                title = title.strip('"\'「」『』【】')
+                titles.append(title)
+        
+        # 补齐或截断到输入数量
+        while len(titles) < len(prompts):
+            titles.append(_fallback_title(prompts[len(titles)]))
+        titles = titles[:len(prompts)]
+        
+        return titles
+    except Exception as e:
+        print(f"⚠️ 批量标题生成失败: {e}")
+        return [_fallback_title(p) for p in prompts]
+
+
 def _fallback_title(prompt: str) -> str:
     """fallback标题生成（当LLM失败时）- 提取核心意象"""
     import re
@@ -530,6 +607,10 @@ def main():
         'details': []
     }
     
+    # 第一阶段：提取 prompt、过滤、评分，收集所有>=52分的条目
+    print("\n第一阶段：提取、过滤、评分...")
+    qualified_items = []  # 存储通过筛选的条目
+    
     for i, item in enumerate(data):
         tweet_id = item['tweet_id']
         author = item['author']
@@ -599,15 +680,50 @@ def main():
             })
             continue
         
-        # 6. 生成标题
-        title = generate_title(prompt, author)
+        # 收集通过筛选的条目
+        qualified_items.append({
+            'item': item,
+            'prompt': prompt,
+            'model': model,
+            'scores': scores,
+            'tags': tags,
+            'image_urls': image_urls,
+            'tweet_id': tweet_id,
+            'author': author
+        })
+    
+    # 第二阶段：批量生成标题
+    if qualified_items:
+        print(f"\n第二阶段：批量生成 {len(qualified_items)} 个标题...")
+        prompts_for_titles = [q['prompt'] for q in qualified_items]
+        titles = generate_titles_batch(prompts_for_titles)
         
-        # 7. 下载图片
+        # 将标题赋值给对应条目
+        for i, q in enumerate(qualified_items):
+            q['title'] = titles[i]
+            print(f"  {i+1}. {q['tweet_id']}: {titles[i]}")
+    
+    # 第三阶段：下载图片、创建 markdown
+    print(f"\n第三阶段：下载图片、创建 markdown...")
+    for q in qualified_items:
+        item = q['item']
+        prompt = q['prompt']
+        model = q['model']
+        scores = q['scores']
+        title = q['title']
+        tags = q['tags']
+        image_urls = q['image_urls']
+        tweet_id = q['tweet_id']
+        author = q['author']
+        
+        print(f"\n处理 {tweet_id}...")
+        
+        # 下载图片
         print(f"  📥 下载图片...")
         images = download_images(image_urls, tweet_id)
         print(f"     下载 {len(images)} 张图片")
         
-        # 8. 创建 markdown
+        # 创建 markdown
         filepath = create_markdown(item, prompt, model, scores, title, tags, images)
         print(f"  ✅ 已创建：{filepath.name}")
         
@@ -620,8 +736,6 @@ def main():
             'title': title,
             'file': filepath.name
         })
-        
-        print()
     
     # 输出报告
     print("\n" + "="*60)
