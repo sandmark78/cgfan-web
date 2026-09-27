@@ -270,17 +270,86 @@ def generate_title(prompt: str, author: str) -> str:
         return _fallback_title(prompt)
 
 def _fallback_title(prompt: str) -> str:
-    """fallback标题生成（当LLM失败时）"""
+    """fallback标题生成（当LLM失败时）- 提取核心意象"""
     import re
     prompt_clean = re.sub(r'@\w+', '', prompt)
     prompt_clean = re.sub(r'https?://\S+', '', prompt_clean)
     prompt_clean = re.sub(r'#\w+', '', prompt_clean)
     prompt_clean = prompt_clean.strip()
     
-    # 提取前30个字符
-    first_part = prompt_clean[:30].strip()
-    if len(first_part) >= 8:
-        return first_part
+    # 优先提取具体主体+动作
+    subject_map = [
+        (['tortoise', '乌龟', '龟'], '乌龟'),
+        (['mice', 'mouse', '老鼠', '小鼠'], '小鼠'),
+        (['socks', '袜子'], '袜子'),
+        (['lighthouse', '灯塔'], '灯塔'),
+        (['batman', '蝙蝠侠'], '蝙蝠侠'),
+        (['garden', '花园'], '花园'),
+        (['ceramic', '陶瓷'], '陶瓷'),
+        (['whale', '鲸鱼'], '鲸鱼'),
+        (['dragon', '龙'], '巨龙'),
+        (['robot', '机器人'], '机器人'),
+        (['portrait', '肖像'], '肖像'),
+        (['poster', '海报'], '海报'),
+        (['typography', '字体', 'type'], '字体'),
+        (['food', '美食'], '美食'),
+        (['product', '产品'], '产品'),
+        (['city', '城市'], '城市'),
+        (['mountain', '山'], '山岳'),
+        (['forest', '森林'], '森林'),
+        (['ocean', '海洋', 'sea'], '海洋'),
+        (['moon', '月亮'], '月亮'),
+        (['star', '星星'], '星星'),
+        (['fire', '火焰'], '火焰'),
+        (['ice', '冰'], '冰'),
+        (['glass', '玻璃'], '玻璃'),
+        (['paper', '纸张'], '纸张'),
+        (['stone', '石头'], '石头'),
+        (['crystal', '水晶'], '水晶'),
+    ]
+    
+    prompt_lower = prompt.lower()
+    found = []
+    for kws, chn in subject_map:
+        for kw in kws:
+            if re.search(r'\b' + re.escape(kw) + r'\b', prompt_lower):
+                found.append(chn)
+                break
+    
+    # 补充风格词
+    style_map = [
+        (['vintage', 'retro', '复古'], '复古'),
+        (['miniature', '微缩'], '微缩'),
+        (['oriental', '东方', '古风'], '东方'),
+        (['futuristic', '科幻', '未来'], '科幻'),
+        (['watercolor', '水彩'], '水彩'),
+        (['cinematic', '电影'], '电影感'),
+        (['minimalist', '极简'], '极简'),
+    ]
+    styles = []
+    for kws, chn in style_map:
+        for kw in kws:
+            if kw in prompt_lower:
+                styles.append(chn)
+                break
+    
+    # 组合标题
+    if found and styles:
+        return f"{found[0]}·{styles[0]}"
+    elif found:
+        return found[0]
+    elif styles:
+        return f"{styles[0]}视觉"
+    else:
+        # 中文prompt：提取第一段核心
+        segments = re.split(r'[，。！？\n]', prompt_clean)
+        for segment in segments:
+            segment = segment.strip()
+            if 5 <= len(segment) <= 16:
+                return segment
+        first_part = prompt_clean[:16].strip()
+        if len(first_part) >= 5:
+            return first_part
     return "视觉创作"
 
 def extract_tags(prompt: str) -> List[str]:
