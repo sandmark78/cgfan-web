@@ -209,65 +209,10 @@ def score_prompt(prompt: str, tags: List[str]) -> Dict:
         'total': total
     }
 
-def generate_title(prompt: str, author: str) -> str:
-    """用LLM生成有画面感的中文标题（≤20字）"""
-    from llm_cleaner import call_llm
-    
-    llm_prompt = f"""你是CGfan网站的标题策展专家。为以下AI提示词生成一个**有画面感的中文标题**。
-
-## 提示词内容
-```
-{prompt[:500]}
-```
-
-## 标题要求
-
-1. **长度**：8-20个中文字
-2. **风格**：有画面感、有创意、能吸引点击
-3. **内容**：提取prompt的核心视觉元素，不要泛泛而谈
-4. **语言**：纯中文，不要英文
-5. **禁止**：
-   - 不要包含作者名
-   - 不要用"实验"、"创作"等泛词
-   - 不要简单罗列关键词（如"微缩×纸艺"）
-   - 不要翻译英文prompt，要理解内容后重新表达
-
-## 示例
-
-❌ 差标题：
-- "花园"（太泛）
-- "复古实验"（模板化）
-- "微缩×纸艺：视觉创作"（机械组合）
-- "AI Aimee"（包含作者）
-
-✅ 好标题：
-- "乌龟背着的袜子商店"（具体场景）
-- "圆珠笔课本涂鸦重生"（动作+创意）
-- "仙侠女将的黑金长剑"（人物+道具）
-- "色彩饱和度的奢侈感"（概念+洞察）
-
-## 输出
-
-直接输出标题，不要任何解释、不要引号。
-"""
-    
-    try:
-        title = call_llm(llm_prompt, max_tokens=100).strip()
-        # 清理可能的多余字符
-        title = title.strip('"\'「」『』【】')
-        title = title.split('\n')[0]  # 只取第一行
-        
-        # 验证长度
-        if 8 <= len(title) <= 20:
-            return title
-        elif len(title) > 20:
-            return title[:20]
-        else:
-            # 如果太短，用fallback
-            return _fallback_title(prompt)
-    except Exception as e:
-        print(f"⚠️ LLM标题生成失败: {e}")
-        return _fallback_title(prompt)
+def generate_title(prompt: str, author: str = None) -> str:
+    """向后兼容的包装函数，实际调用批量生成"""
+    titles = generate_titles_batch([prompt])
+    return titles[0] if titles else _fallback_title(prompt)
 
 def generate_titles_batch(prompts: list) -> list:
     """批量生成标题，一次API调用处理多个prompt
