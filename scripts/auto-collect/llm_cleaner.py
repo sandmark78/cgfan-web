@@ -42,7 +42,7 @@ def call_llm(prompt_text, max_tokens=3000):
             "temperature": 0.3,
             "max_tokens": max_tokens
         },
-        timeout=180
+        timeout=300  # 增加到5分钟，批量生成需要更多推理时间
     )
     resp.raise_for_status()
     result = resp.json()
