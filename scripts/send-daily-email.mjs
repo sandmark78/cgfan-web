@@ -69,15 +69,14 @@ async function sendDailyEmail() {
   console.log(`Today's feature: ${feature.highlight}`)
 
   // 检查今天是否已发送过邮件（去重）
+  // 用UTC时间查询，与数据库存储格式一致
   const now = new Date()
-  const beijingOffset = 8 * 60 * 60 * 1000
-  const beijingNow = new Date(now.getTime() + beijingOffset)
-  const today = beijingNow.toISOString().split('T')[0]
-  const todayStart = `${today}T00:00:00.000+08:00`
-  const todayEnd = `${today}T23:59:59.999+08:00`
+  const utcToday = now.toISOString().split('T')[0]
+  const utcStart = `${utcToday}T00:00:00.000Z`
+  const utcEnd = `${utcToday}T23:59:59.999Z`
 
   const checkResponse = await fetch(
-    `${SUPABASE_URL}/rest/v1/daily_emails?sent_at=gte.${todayStart}&sent_at=lte.${todayEnd}&select=id`,
+    `${SUPABASE_URL}/rest/v1/daily_emails?sent_at=gte.${utcStart}&sent_at=lte.${utcEnd}&select=id`,
     {
       headers: {
         'apikey': SUPABASE_KEY,
