@@ -5,7 +5,7 @@ author: Michael Rabone
 date: 2026-07-25
 added: 2026-07-25T20:43:00+08:00
 model: Midjourney
-category: editorial
+category: "编辑设计"
 tags: [portrait, desert, cinematic, golden-hour, midjourney-8]
 difficulty: intermediate
 cover: /images/prompts/amazigh-woman.jpg

@@ -2,7 +2,7 @@
 title: "年轻女性人像写真"
 slug: image_request-subject-type-young-adult-1564527620
 model: Midjourney
-category: photography
+category: "摄影"
 tags:
   - 摄影
   - AI Art

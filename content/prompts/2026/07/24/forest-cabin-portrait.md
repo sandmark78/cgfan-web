@@ -4,7 +4,7 @@ slug: forest-cabin-portrait
 author: HeyGirls
 date: 2026-07-24
 model: GPT-Image2
-category: portrait
+category: "人像"
 tags: [人像, 自然, 森林, 木屋, 清新]
 difficulty: intermediate
 cover: /images/prompts/2080510789065093167.jpg

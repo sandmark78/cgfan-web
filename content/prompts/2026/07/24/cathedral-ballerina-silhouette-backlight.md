@@ -3,8 +3,8 @@ title: 教堂芭蕾舞者剪影 - 神圣背光人像
 slug: cathedral-ballerina-silhouette-backlight
 author: Loriel.AI
 date: 2026-07-24
-model: GPT Image 2
-category: portrait
+model: "GPT-Image2"
+category: "人像"
 tags: [人像, 剪影, 教堂, 芭蕾, 背光, 电影感]
 difficulty: advanced
 cover: /images/prompts/2080576844915708137.jpg

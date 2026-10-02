@@ -2,7 +2,7 @@
 title: "银叶三叶草微距晨露"
 slug: framing-luck-with-silver-clovers-1570845953
 model: Midjourney
-category: photography
+category: "摄影"
 tags:
 - 摄影
 - 珠宝设计

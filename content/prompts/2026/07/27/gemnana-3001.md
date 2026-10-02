@@ -3,8 +3,8 @@ title: "浮世绘风和风数字插画"
 slug: gemnana-3001
 date: 2026-05-24
 added: 2026-07-27T12:54:24+08:00
-model: ChatGPT
-category: illustration
+model: "GPT-Image2"
+category: "插画"
 tags:
   - 提示词
   - AI绘图

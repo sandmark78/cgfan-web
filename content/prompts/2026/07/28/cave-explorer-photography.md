@@ -2,7 +2,7 @@
 title: "溶洞光影探险摄影"
 slug: cave-explorer-photography
 model: 通用 Prompt
-category: photography
+category: "摄影"
 tags:
   - AI绘图
   - 提示词

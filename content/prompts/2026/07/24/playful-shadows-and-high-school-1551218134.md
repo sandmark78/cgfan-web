@@ -2,7 +2,7 @@
 title: "四叶草框住的小确幸"
 slug: playful-shadows-and-high-school-1551218134
 model: Midjourney
-category: photography
+category: "摄影"
 tags:
 - 摄影
 - photography

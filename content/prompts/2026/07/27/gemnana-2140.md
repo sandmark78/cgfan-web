@@ -4,7 +4,7 @@ slug: gemnana-2140
 date: 2026-02-16
 added: 2026-07-27T12:54:10+08:00
 model: 通用 Prompt
-category: portrait
+category: "人像"
 tags: 
 difficulty: advanced
 source: "X / simeon-sanai"

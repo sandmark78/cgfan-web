@@ -8,7 +8,7 @@ author_link: "https://x.com/Goodmanprotocol"
 source: "https://x.com/i/status/2085939245026529335"
 model: "GPT-Image2"
 tags: ["旅行插画", "北欧极简", "编辑海报", "层叠剪纸", "有限配色"]
-category: "design"
+category: "设计"
 cover: "/images/prompts/prompt-2085939245026529335.jpg"
 images:
   - "/images/prompts/prompt-2085939245026529335.jpg"

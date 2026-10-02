@@ -4,7 +4,7 @@ slug: gemnana-608
 date: 2025-12-24
 added: 2026-07-27T11:31:27+08:00
 model: 通用 Prompt
-category: portrait
+category: "人像"
 tags:
   - AI绘图
   - 提示词

@@ -4,7 +4,7 @@ slug: gemnana-2568
 date: 2026-03-16
 added: 2026-07-27T12:54:17+08:00
 model: 通用 Prompt
-category: illustration
+category: "插画"
 tags:
   - AI绘图
   - 提示词

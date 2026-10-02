@@ -4,7 +4,7 @@ slug: gemnana-1849
 date: 2026-01-31
 added: 2026-07-27T12:54:05+08:00
 model: 通用 Prompt
-category: photography
+category: "摄影"
 tags: 
 difficulty: advanced
 source: "X / K"

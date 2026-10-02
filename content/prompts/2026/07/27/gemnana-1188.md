@@ -4,7 +4,7 @@ slug: gemnana-1188
 date: 2026-01-14
 added: 2026-07-27T11:31:45+08:00
 model: 通用 Prompt
-category: photorealistic
+category: "写实"
 tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1188.html"

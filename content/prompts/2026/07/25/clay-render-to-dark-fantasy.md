@@ -3,7 +3,7 @@ title: "黏土渲染转暗黑奇幻"
 slug: clay-render-to-dark-fantasy
 author: DrSadek
 date: 2026-07-21
-model: GPT Image 2
+model: "GPT-Image2"
 category: fantasy
 tags: [clay-render, dark-fantasy, cinematic, two-step, denoise, GPT-Image2]
 difficulty: advanced

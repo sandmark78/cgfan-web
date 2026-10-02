@@ -2,7 +2,7 @@
 title: "微缩3D旅行立体画：手工明信片世界"
 slug: "prompt-2086125703427436788"
 tags: ["微缩", "3D渲染", "旅行", "纸艺", "GPT-Image2"]
-category: "3d"
+category: "3D渲染"
 model: "GPT-Image2"
 author: "Sharon Riley"
 authorLink: "https://x.com/Just_sharon7"

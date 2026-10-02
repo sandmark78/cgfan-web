@@ -4,7 +4,7 @@ slug: gemnana-2869
 date: 2026-03-01
 added: 2026-07-27T12:54:24+08:00
 model: GPT-Image2
-category: anime
+category: "动漫"
 tags: 
 difficulty: advanced
 source: "X / Fujimoto_hina"

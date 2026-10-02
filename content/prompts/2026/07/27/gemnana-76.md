@@ -4,7 +4,7 @@ slug: gemnana-76
 date: 2025-11-06
 added: 2026-07-27T11:31:11+08:00
 model: 通用 Prompt
-category: anime
+category: "动漫"
 tags: 
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/76.html"

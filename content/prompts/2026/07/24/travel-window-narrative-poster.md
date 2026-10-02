@@ -2,7 +2,7 @@
 title: "旅途窗口叙事海报"
 slug: travel-window-narrative-poster
 model: GPT-Image2
-category: poster
+category: "海报"
 tags:
 - AI绘图
 - 提示词

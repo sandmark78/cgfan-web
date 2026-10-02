@@ -4,7 +4,7 @@ slug: gemnana-1961
 date: 2026-02-04
 added: 2026-07-27T12:54:05+08:00
 model: 通用 Prompt
-category: architecture
+category: "建筑"
 tags: 
 difficulty: advanced
 source: "X / Gadgetify"

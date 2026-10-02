@@ -8,7 +8,7 @@ author_link: "https://x.com/Goodmanprotocol"
 source: "https://x.com/i/status/2086006299154858137"
 model: "GPT-Image2"
 tags: ["品牌设计", "能量饮料", "产品设计", "商业概念", "GPT-Image2"]
-category: "design"
+category: "设计"
 cover: "/images/prompts/prompt-2086006299154858137.jpg"
 images:
   - "/images/prompts/prompt-2086006299154858137.jpg"

@@ -13,7 +13,7 @@ authorLink: "https://x.com/Goodmanprotocol"
 source: "https://x.com/i/status/2085799454788243892"
 model: "GPT-Image2"
 tags: ["汽车", "复古", "电影感", "胶片", "沙漠"]
-category: "fashion"
+category: "时尚"
 rating:
   composition: 8
   color: 8

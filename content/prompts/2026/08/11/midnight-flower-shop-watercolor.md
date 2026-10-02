@@ -2,7 +2,7 @@
 title: "午夜花店 · 欧洲老街水彩插画"
 slug: "prompt-2086806767602630939"
 tags: ["watercolor", "illustration", "dreamy", "architecture"]
-category: "illustration"
+category: "插画"
 model: "通用 Prompt"
 author: "Aylin"
 authorLink: "https://x.com/aylinspace"

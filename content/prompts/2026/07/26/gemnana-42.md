@@ -4,7 +4,7 @@ slug: gemnana-42
 date: 2025-11-06
 added: 2026-07-26T22:00:00+08:00
 model: 通用 Prompt
-category: photography
+category: "摄影"
 tags: []
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/42.html"

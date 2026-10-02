@@ -2,7 +2,7 @@
 title: "夏夜花园晚餐：水粉质感的温暖叙事"
 slug: "prompt-2086362886222598499"
 tags: ["水粉插画", "花园", "温暖叙事", "故事书", "自然光"]
-category: "illustration"
+category: "插画"
 model: "通用 Prompt"
 author: "Beanie Blossom"
 authorLink: "https://x.com/BeanieBlossom"

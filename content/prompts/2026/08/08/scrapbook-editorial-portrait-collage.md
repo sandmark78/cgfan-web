@@ -11,7 +11,7 @@ authorLink: "https://x.com/MrLarus"
 source: "https://x.com/i/status/2085382596016452082"
 model: "GPT-Image2"
 tags: ["拼贴", "编辑设计", "手账", "人像", "排版"]
-category: "editorial"
+category: "编辑设计"
 rating:
   composition: 8
   color: 8

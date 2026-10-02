@@ -8,7 +8,7 @@ author_link: "https://x.com/laruscanus"
 source: "https://x.com/i/status/2086062646864847140"
 model: "GPT-Image2"
 tags: ["编辑肖像", "短发时尚", "人物海报框架", "GPT-Image2", "时尚摄影"]
-category: "photography"
+category: "摄影"
 cover: "/images/prompts/prompt-2086062646864847140.jpg"
 images:
   - "/images/prompts/prompt-2086062646864847140.jpg"

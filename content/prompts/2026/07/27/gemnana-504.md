@@ -4,7 +4,7 @@ slug: gemnana-504
 date: 2025-11-08
 added: 2026-07-27T11:31:27+08:00
 model: Gemini
-category: sci-fi
+category: "科幻"
 tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/504.html"

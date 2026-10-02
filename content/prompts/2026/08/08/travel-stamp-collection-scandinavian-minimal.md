@@ -13,7 +13,7 @@ authorLink: "https://x.com/Goodmanprotocol"
 source: "https://x.com/i/status/2085585132443046210"
 model: "GPT-Image2"
 tags: ["旅行", "邮票", "极简", "北欧设计", "编辑感"]
-category: "design"
+category: "设计"
 rating:
   composition: 9
   color: 8

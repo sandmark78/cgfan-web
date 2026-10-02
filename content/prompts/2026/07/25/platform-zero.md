@@ -4,8 +4,8 @@ slug: platform-zero
 author: Nagarjuna Creates
 date: 2026-07-24
 added: 2026-07-25T20:43:00+08:00
-model: GPT Image 2
-category: editorial
+model: "GPT-Image2"
+category: "编辑设计"
 tags: [cinematic, victorian, train, mist, railway, storytelling]
 difficulty: advanced
 cover: /images/prompts/platform-zero.jpg

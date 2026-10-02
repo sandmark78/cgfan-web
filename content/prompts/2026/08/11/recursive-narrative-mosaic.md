@@ -2,7 +2,7 @@
 title: "递归叙事马赛克 · 多尺度人物传记系统"
 slug: "prompt-2086758454941675659"
 tags: ["conceptual", "generative", "mosaic", "narrative"]
-category: "conceptual"
+category: "概念"
 model: "通用 Prompt"
 author: "Gadgetify"
 authorLink: "https://x.com/Gdgtify"

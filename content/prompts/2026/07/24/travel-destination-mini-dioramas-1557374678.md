@@ -2,7 +2,7 @@
 title: "旅行地标微缩立体模型"
 slug: travel-destination-mini-dioramas-1557374678
 model: Midjourney
-category: 3d
+category: "3D渲染"
 tags:
 - 艺术
 - AI

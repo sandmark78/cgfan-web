@@ -12,7 +12,7 @@ authorLink: "https://x.com/chenlinspark"
 source: "https://x.com/i/status/2085698421785051498"
 model: "通用 Prompt"
 tags: ["古风", "东方美学", "电影感", "油纸伞", "雨夜"]
-category: "guo-feng"
+category: "国风"
 rating:
   composition: 8
   color: 8

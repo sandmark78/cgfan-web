@@ -5,7 +5,7 @@ added: 2026-08-07
 author: "小小东"
 model: "通用 Prompt"
 tags: [东方美学, 极简主义, 禅意摄影, 剪影艺术, 留白]
-category: artistic
+category: "艺术"
 source: https://x.com/i/status/2085343703791796450
 cover: /images/prompts/prompt-2085343703791796450.jpg
 slug: zen-shadow-photography-yugong

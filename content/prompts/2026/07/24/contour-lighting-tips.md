@@ -2,7 +2,7 @@
 title: "AI创作轮廓光应用提示词"
 slug: contour-lighting-tips
 model: Midjourney
-category: editorial
+category: "编辑设计"
 tags:
 - AI绘图
 - 提示词

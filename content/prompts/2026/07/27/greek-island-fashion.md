@@ -2,7 +2,7 @@
 title: "希腊海岛蓝色礼服时装大片"
 slug: greek-island-fashion
 model: GPT-Image2
-category: portrait
+category: "人像"
 tags:
   - AI绘图
   - 提示词

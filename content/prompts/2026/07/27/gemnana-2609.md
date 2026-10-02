@@ -4,7 +4,7 @@ slug: gemnana-2609
 date: 2026-03-19
 added: 2026-07-27T12:54:17+08:00
 model: Adobe Firefly
-category: 3d
+category: "3D渲染"
 tags:
   - AI绘图
   - 提示词

@@ -2,7 +2,7 @@
 title: "Ana de Armas超写实肖像"
 slug: ana-de-armas-is-literally-looking-1554067528
 model: Midjourney
-category: photography
+category: "摄影"
 tags:
 - 摄影
 - AI_Art

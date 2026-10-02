@@ -2,7 +2,7 @@
 title: "GPT 图像生成二代"
 slug: gpt-image2
 model: Midjourney
-category: editorial
+category: "编辑设计"
 tags:
   - AI绘图
   - 提示词

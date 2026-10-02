@@ -4,8 +4,8 @@ slug: storybook-diorama-grid
 author: Gadgetify
 date: 2026-07-23
 added: 2026-07-25T20:34:00+08:00
-model: GPT Image 2
-category: editorial
+model: "GPT-Image2"
+category: "编辑设计"
 tags: [diorama, miniature, collectible, storybook, museum]
 difficulty: advanced
 cover: /images/prompts/storybook-diorama-grid.jpg

@@ -3,8 +3,8 @@ title: 角色设定与生活手账海报
 slug: character-design-life-journal-poster
 author: 多肉｜AI 内容增长架构师
 date: 2026-07-23
-model: GPT Image 2
-category: poster
+model: "GPT-Image2"
+category: "海报"
 tags: [角色设定, 手账, 动漫, 插画, 中文]
 difficulty: advanced
 cover: /images/prompts/2080136792318083513.jpg

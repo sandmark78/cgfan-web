@@ -2,7 +2,7 @@
 title: "暗黑编辑风 · 沉浸式英雄区块设计"
 slug: "prompt-2086828099979669670"
 tags: ["web-design", "hero-section", "editorial", "dark-mode"]
-category: "design"
+category: "设计"
 model: "通用 Prompt"
 author: "Dogan Ural"
 authorLink: "https://x.com/doganuraldesign"

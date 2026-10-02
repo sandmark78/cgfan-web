@@ -3,8 +3,8 @@ title: "LOOP城市骑行奢侈编辑海报"
 slug: loop-city-cycling-editorial-poster
 author: Marcos
 date: 2026-07-24
-model: GPT Image 2
-category: poster
+model: "GPT-Image2"
+category: "海报"
 tags: [海报, 编辑, 城市, 骑行, 排版, 奢侈]
 difficulty: advanced
 cover: /images/prompts/2080636904152998144.jpg

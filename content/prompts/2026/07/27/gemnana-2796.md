@@ -3,8 +3,8 @@ title: "地铁第一人称写实图生成"
 slug: gemnana-2796
 date: 2026-04-16
 added: 2026-07-27T12:54:24+08:00
-model: ChatGPT
-category: photorealistic
+model: "GPT-Image2"
+category: "写实"
 tags: 
 difficulty: intermediate
 source: "X / Karlos"

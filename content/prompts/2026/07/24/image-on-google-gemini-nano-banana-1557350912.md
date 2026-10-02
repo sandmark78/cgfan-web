@@ -2,7 +2,7 @@
 title: "导演微缩片场的电影人"
 slug: image-on-google-gemini-nano-banana-1557350912
 model: Midjourney
-category: photography
+category: "摄影"
 tags:
 - 摄影
 - AIArt

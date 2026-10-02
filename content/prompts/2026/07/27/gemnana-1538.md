@@ -4,7 +4,7 @@ slug: gemnana-1538
 date: 2026-01-18
 added: 2026-07-27T11:31:51+08:00
 model: 通用 Prompt
-category: portrait
+category: "人像"
 tags: 
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/1538.html"

@@ -2,7 +2,7 @@
 title: "打字机召唤复古故事"
 slug: prompt-studio-nano-banana-pro-1557350335
 model: Midjourney
-category: retro
+category: "复古"
 tags: ["人像", "插画", "复古", "动物", "编辑"]
 difficulty: intermediate
 cover: /images/prompts/prompt-studio-nano-banana-pro-1557350335.jpg

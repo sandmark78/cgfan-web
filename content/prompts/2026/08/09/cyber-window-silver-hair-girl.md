@@ -2,7 +2,7 @@
 title: "银发少女赛博窗边：3D二次元CG人像"
 slug: "prompt-2086270220948385897"
 tags: ["3D渲染", "二次元", "赛博朋克", "人像", "CG"]
-category: "3d"
+category: "3D渲染"
 model: "通用 Prompt"
 author: "VoxCat"
 authorLink: "https://x.com/VoxcatAI"

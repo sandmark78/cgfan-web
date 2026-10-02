@@ -2,7 +2,7 @@
 title: "通宵达旦·三格日本女子写真"
 slug: educational-ai-art-all-night-long-1550581964
 model: Midjourney
-category: photography
+category: "摄影"
 tags:
 - 摄影
 - AIGenerated

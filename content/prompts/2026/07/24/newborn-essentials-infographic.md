@@ -2,7 +2,7 @@
 title: "新生儿用品必备指南信息图"
 slug: newborn-essentials-infographic
 model: GPT-Image2
-category: editorial
+category: "编辑设计"
 tags:
 - AI绘图
 - 提示词

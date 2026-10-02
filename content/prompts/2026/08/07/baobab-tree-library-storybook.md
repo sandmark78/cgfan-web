@@ -5,7 +5,7 @@ added: 2026-08-07
 author: "Beanie Blossom"
 model: "通用 Prompt"
 tags: [故事书插画, 微缩世界, 绘本风格, 手绘质感, 奇幻叙事]
-category: illustration
+category: "插画"
 source: https://x.com/i/status/2085274183639130374
 cover: /images/prompts/prompt-2085274183639130374.jpg
 slug: baobab-tree-library-storybook

@@ -4,7 +4,7 @@ slug: gemnana-1424
 date: 2026-01-16
 added: 2026-07-27T11:31:50+08:00
 model: 通用 Prompt
-category: landscape
+category: "风景"
 tags:
   - AI绘图
   - 提示词

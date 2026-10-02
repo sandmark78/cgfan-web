@@ -2,7 +2,7 @@
 title: "东方仙侠天宫云海 · 电影级奇幻建筑"
 slug: "prompt-2086998103799038035"
 tags: ["东方美学", "仙侠", "天宫", "云海", "电影感", "奇幻建筑"]
-category: "concept-art"
+category: "概念艺术"
 model: "通用 Prompt"
 author: "九尾狐-FoxFairy🦊"
 authorLink: "https://x.com/Stellakjbk"

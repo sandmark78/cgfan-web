@@ -5,7 +5,7 @@ added: 2026-08-07
 author: "小小东"
 model: "通用 Prompt"
 tags: ["字体设计", "手写体", "夏日视觉", "编辑排版", "极简美学"]
-category: minimalist
+category: "极简"
 source: https://x.com/i/status/2062720334571450688
 cover: /images/prompts/prompt-2062720334571450688.jpg
 slug: summer-handwritten-typography

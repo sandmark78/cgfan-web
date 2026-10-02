@@ -2,7 +2,7 @@
 title: "未来战甲高级时装提示词"
 slug: future-armor-haute-couture
 model: Midjourney
-category: sci-fi
+category: "科幻"
 tags: 
 difficulty: intermediate
 cover: /images/prompts/prompt-2080175912243569008.jpg

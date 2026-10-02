@@ -2,7 +2,7 @@
 title: "8K超写实竖版人像"
 slug: create-an-8k-hyper-realistic-portrait-1550594950
 model: Midjourney
-category: photography
+category: "摄影"
 tags:
   - 摄影
   - AI_Image_Generation

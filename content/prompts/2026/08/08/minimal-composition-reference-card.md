@@ -18,7 +18,7 @@ authorLink: "https://x.com/MrLarus"
 source: "https://x.com/i/status/2077001748665778403"
 model: "GPT-Image2"
 tags: ["极简", "构图", "编辑设计", "瑞士平面", "排版"]
-category: "design"
+category: "设计"
 rating:
   composition: 9
   color: 7

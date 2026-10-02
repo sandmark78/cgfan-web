@@ -2,7 +2,7 @@
 title: "二战纪实影像 · 胶片质感战争编年史"
 slug: "prompt-2086814975025185084"
 tags: ["cinematic", "film-grain", "wartime", "documentary", "midjourney"]
-category: "cinematic"
+category: "电影感"
 model: "Midjourney"
 author: "LudovicCreator"
 authorLink: "https://x.com/LudovicCreator"

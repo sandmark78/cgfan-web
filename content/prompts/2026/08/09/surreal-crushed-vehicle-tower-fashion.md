@@ -2,7 +2,7 @@
 title: "超现实废车塔：白裙少女的夏日对峙"
 slug: "prompt-2086258839507325204"
 tags: ["超现实", "日本时尚", "废车雕塑", "极端透视", "Midjourney"]
-category: "anime"
+category: "动漫"
 model: "Midjourney"
 author: "Zidan 子丹"
 authorLink: "https://x.com/liluocheng13"

@@ -2,7 +2,7 @@
 title: "纸质信息设计 · 克制庄重的版面系统"
 slug: "prompt-2086866107965821125"
 tags: ["editorial", "typography", "information-design", "minimalism"]
-category: "design"
+category: "设计"
 model: "GPT-Image2"
 author: "小小东"
 authorLink: "https://x.com/xiaoxiaodong01"

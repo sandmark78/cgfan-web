@@ -5,7 +5,7 @@ added: 2026-08-07
 author: "尘林 Spark"
 model: "通用 Prompt"
 tags: [3D CG插画, 幻想角色, 银发少女, 冰蓝神鸟, 电影级光影]
-category: illustration
+category: "插画"
 source: https://x.com/i/status/2085365284614107474
 cover: /images/prompts/prompt-2085365284614107474.jpg
 slug: silver-hair-fantasy-cg-illustration

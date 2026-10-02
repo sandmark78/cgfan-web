@@ -2,7 +2,7 @@
 title: "手工巧克力奢华产品摄影"
 slug: artisan-chocolate-product-visuals-1542373192
 model: Midjourney
-category: product
+category: "产品"
 tags:
 - 摄影
 - Nanobanana

@@ -3,8 +3,8 @@ title: "代达罗斯型模型的日常提示词实验"
 slug: gemnana-1483
 date: 2026-01-17
 added: 2026-07-27T11:31:51+08:00
-model: ChatGPT
-category: editorial
+model: "GPT-Image2"
+category: "编辑设计"
 tags:
   - AI绘图
   - 提示词

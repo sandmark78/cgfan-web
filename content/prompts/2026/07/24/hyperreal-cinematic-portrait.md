@@ -1,8 +1,8 @@
 ---
 title: "超写实电影感人像提示词"
 slug: hyperreal-cinematic-portrait
-model: ChatGPT
-category: photorealistic
+model: "GPT-Image2"
+category: "写实"
 tags:
 - AI绘图
 - 提示词

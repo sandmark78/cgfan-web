@@ -4,7 +4,7 @@ slug: gemnana-1021
 date: 2026-01-11
 added: 2026-07-27T11:31:40+08:00
 model: Midjourney
-category: architecture
+category: "建筑"
 tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1021.html"

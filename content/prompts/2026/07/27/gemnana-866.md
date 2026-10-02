@@ -3,8 +3,8 @@ title: "ChatGPT 图像 1.5 × Google Veo 3.1"
 slug: gemnana-866
 date: 2026-01-08
 added: 2026-07-27T11:31:40+08:00
-model: GPT-Image
-category: editorial
+model: "GPT-Image2"
+category: "编辑设计"
 tags:
   - AI绘图
   - 提示词

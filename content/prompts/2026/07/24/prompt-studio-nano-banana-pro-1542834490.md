@@ -2,7 +2,7 @@
 title: "Nano Banana Pro 探险计划"
 slug: prompt-studio-nano-banana-pro-1542834490
 model: Midjourney
-category: illustration
+category: "插画"
 tags: ["人像", "插画", "动物", "珠宝", "编辑"]
 difficulty: intermediate
 cover: /images/prompts/prompt-studio-nano-banana-pro-1542834490.jpg

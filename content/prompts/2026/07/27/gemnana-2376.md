@@ -4,7 +4,7 @@ slug: gemnana-2376
 date: 2026-03-04
 added: 2026-07-27T12:54:17+08:00
 model: Midjourney
-category: portrait
+category: "人像"
 tags: 
 difficulty: advanced
 source: "X / Harboriis"

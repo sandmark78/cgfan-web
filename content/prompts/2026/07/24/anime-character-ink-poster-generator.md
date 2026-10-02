@@ -3,8 +3,8 @@ title: 动漫角色水墨海报生成器
 slug: anime-character-ink-poster-generator
 author: simeon-sanai
 date: 2026-07-24
-model: Seedream 5.0
-category: poster
+model: "Seedream"
+category: "海报"
 tags: [动漫, 海报, 水墨, 科幻, 角色]
 difficulty: advanced
 cover: /images/prompts/2080546079431692580.jpg

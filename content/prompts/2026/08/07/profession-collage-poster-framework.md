@@ -5,7 +5,7 @@ added: 2026-08-07
 author: "Larus Canus"
 model: "GPT-Image2"
 tags: ["拼贴艺术", "编辑设计", "职业人物", "框架模板", "系列化创作"]
-category: poster
+category: "海报"
 source: https://x.com/i/status/2085382596016452082
 cover: /images/prompts/prompt-2085382596016452082.jpg
 slug: profession-collage-poster-framework

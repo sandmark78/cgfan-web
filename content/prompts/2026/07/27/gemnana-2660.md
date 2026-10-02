@@ -4,7 +4,7 @@ slug: gemnana-2660
 date: 2026-03-24
 added: 2026-07-27T12:54:17+08:00
 model: 通用 Prompt
-category: photography
+category: "摄影"
 tags: 
 difficulty: advanced
 source: "X / simeon-sanai"

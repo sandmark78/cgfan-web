@@ -3,8 +3,8 @@ title: "GPT Image 2 生成动漫角色设定"
 slug: gemnana-2990
 date: 2026-05-11
 added: 2026-07-27T12:54:24+08:00
-model: ChatGPT
-category: anime
+model: "GPT-Image2"
+category: "动漫"
 tags:
   - 提示词
   - AI绘图

@@ -4,7 +4,7 @@ slug: gemnana-1953
 date: 2026-02-03
 added: 2026-07-27T12:54:05+08:00
 model: 通用 Prompt
-category: portrait
+category: "人像"
 tags: 
 difficulty: intermediate
 source: "X / Saman | AI"

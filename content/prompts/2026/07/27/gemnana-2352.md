@@ -4,7 +4,7 @@ slug: gemnana-2352
 date: 2026-03-02
 added: 2026-07-27T12:54:17+08:00
 model: 通用 Prompt
-category: architecture
+category: "建筑"
 tags: 
 difficulty: intermediate
 source: "X / Aijaz"

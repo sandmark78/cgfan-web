@@ -3,8 +3,8 @@ title: "勉強日和🐰AIにAIを教えてもらおう❣"
 slug: gemnana-582
 date: 2025-12-19
 added: 2026-07-27T11:31:27+08:00
-model: GPT-Image
-category: editorial
+model: "GPT-Image2"
+category: "编辑设计"
 tags:
   - AI绘图
   - 提示词

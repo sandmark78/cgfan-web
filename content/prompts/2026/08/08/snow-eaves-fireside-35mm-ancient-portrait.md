@@ -13,7 +13,7 @@ authorLink: "https://x.com/chenlinspark"
 source: "https://x.com/i/status/2085672297466388948"
 model: "通用 Prompt"
 tags: ["古风", "胶片", "电影感", "雪景", "暖光"]
-category: "guo-feng"
+category: "国风"
 rating:
   composition: 8
   color: 8

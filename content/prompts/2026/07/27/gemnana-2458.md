@@ -4,7 +4,7 @@ slug: gemnana-2458
 date: 2026-03-09
 added: 2026-07-27T12:54:17+08:00
 model: 通用 Prompt
-category: product
+category: "产品"
 tags: 
 difficulty: advanced
 source: "X / Oogie"

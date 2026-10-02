@@ -2,7 +2,7 @@
 title: "唐风美学CG人像"
 slug: "prompt-2082967135614021849"
 tags: ["人像", "东方美学", "唐风", "CG"]
-category: "portrait"
+category: "人像"
 model: "通用 Prompt"
 author: "尘林 Spark"
 date: "2026-07-30"

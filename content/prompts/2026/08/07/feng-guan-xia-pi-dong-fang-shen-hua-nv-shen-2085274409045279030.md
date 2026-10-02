@@ -2,7 +2,7 @@
 title: "凤冠拆解为色彩元素，东方极繁美学"
 slug: "feng-guan-xia-pi-dong-fang-shen-hua-nv-shen-2085274409045279030"
 tags: ["东方美学", "凤冠", "敦煌壁画", "极繁主义", "神话"]
-category: "guo-feng"
+category: "国风"
 model: "Midjourney"
 author: "Zidan 子丹"
 date: "2026-08-06"

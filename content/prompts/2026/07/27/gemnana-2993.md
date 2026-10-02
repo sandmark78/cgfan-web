@@ -4,7 +4,7 @@ slug: gemnana-2993
 date: 2026-05-12
 added: 2026-07-27T12:54:24+08:00
 model: GPT-Image2
-category: portrait
+category: "人像"
 tags: 
 difficulty: intermediate
 source: "X / Cherry 2.O"

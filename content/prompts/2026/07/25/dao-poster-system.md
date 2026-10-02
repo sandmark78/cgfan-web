@@ -4,8 +4,8 @@ slug: dao-poster-system
 author: 虎小象
 date: 2026-07-24
 added: 2026-07-25T17:35:00+08:00
-model: GPT Image 2
-category: poster
+model: "GPT-Image2"
+category: "海报"
 tags: [poster, system-prompt, fisheye, neon, typography]
 difficulty: advanced
 cover: /images/prompts/dao-poster-system.jpg

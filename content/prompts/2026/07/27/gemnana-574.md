@@ -4,7 +4,7 @@ slug: gemnana-574
 date: 2026-01-18
 added: 2026-07-27T11:31:27+08:00
 model: Gemini
-category: portrait
+category: "人像"
 tags:
   - AI绘图
   - 提示词

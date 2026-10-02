@@ -2,7 +2,7 @@
 title: 'Kling 2.6 提示词: Hyperspeed FPV in a ve...'
 slug: kling-26-prompt-hyperspeed-fpv-in-a-1543070080
 model: Midjourney
-category: sci-fi
+category: "科幻"
 tags:
 - Kling
 - AI Video Generation

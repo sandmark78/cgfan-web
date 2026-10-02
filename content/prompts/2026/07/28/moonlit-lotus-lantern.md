@@ -2,7 +2,7 @@
 title: "月下荷灯东方古风人像"
 slug: moonlit-lotus-lantern
 model: 通用 Prompt
-category: portrait
+category: "人像"
 tags:
   - AI绘图
   - 提示词

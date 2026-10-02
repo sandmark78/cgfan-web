@@ -4,7 +4,7 @@ slug: gemnana-1673
 date: 2026-01-25
 added: 2026-07-27T12:53:50+08:00
 model: 通用 Prompt
-category: product
+category: "产品"
 tags:
   - AI绘图
   - 提示词

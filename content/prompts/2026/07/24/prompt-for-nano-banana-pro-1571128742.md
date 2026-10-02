@@ -2,7 +2,7 @@
 title: "戏剧光影：丰盈身姿与清纯面容"
 slug: prompt-for-nano-banana-pro-1571128742
 model: Midjourney
-category: photography
+category: "摄影"
 tags: ["人像", "时尚", "插画", "摄影", "动物"]
 difficulty: intermediate
 cover: /images/prompts/prompt-for-nano-banana-pro-1571128742.jpg

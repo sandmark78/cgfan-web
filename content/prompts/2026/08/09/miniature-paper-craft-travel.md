@@ -8,7 +8,7 @@ author_link: "https://x.com/Naiknelofar788"
 source: "https://x.com/i/status/2085947435445354577"
 model: "GPT-Image2"
 tags: ["微缩纸艺", "旅行插画", "立体明信片", "手工质感", "柔和粉彩"]
-category: "illustration"
+category: "插画"
 cover: "/images/prompts/prompt-2085947435445354577.jpg"
 images:
   - "/images/prompts/prompt-2085947435445354577.jpg"

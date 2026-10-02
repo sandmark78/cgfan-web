@@ -4,7 +4,7 @@ slug: gemnana-719
 date: 2026-01-06
 added: 2026-07-27T11:31:33+08:00
 model: 通用 Prompt
-category: landscape
+category: "风景"
 tags: 
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/719.html"

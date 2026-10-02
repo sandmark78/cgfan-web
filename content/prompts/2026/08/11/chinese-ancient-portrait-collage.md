@@ -2,7 +2,7 @@
 title: "东方古风人物志 · 剪纸拼贴海报"
 slug: "prompt-2086775867716366391"
 tags: ["chinese-style", "poster", "collage", "editorial", "typography"]
-category: "design"
+category: "设计"
 model: "GPT-Image2"
 author: "Larus Canus"
 authorLink: "https://x.com/MrLarus"

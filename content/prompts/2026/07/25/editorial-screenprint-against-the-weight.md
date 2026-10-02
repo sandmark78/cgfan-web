@@ -3,8 +3,8 @@ title: "逆流而行：编辑风丝网印刷系列 — 四幕独行者"
 slug: editorial-screenprint-against-the-weight
 author: Ahmed
 date: 2026-07-24
-model: GPT Image 2
-category: editorial
+model: "GPT-Image2"
+category: "编辑设计"
 tags: [editorial-screenprint, minimal-color, silhouette, series, GPT-Image2]
 difficulty: intermediate
 cover: /images/prompts/editorial-screenprint-dam-worker.webp

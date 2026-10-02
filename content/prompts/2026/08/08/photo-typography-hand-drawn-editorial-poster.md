@@ -18,7 +18,7 @@ authorLink: "https://x.com/MrLarus"
 source: "https://x.com/i/status/2085718150906015782"
 model: "GPT-Image2"
 tags: ["编辑设计", "人像", "手绘线条", "排版", "独立杂志"]
-category: "editorial"
+category: "编辑设计"
 rating:
   composition: 8
   color: 7

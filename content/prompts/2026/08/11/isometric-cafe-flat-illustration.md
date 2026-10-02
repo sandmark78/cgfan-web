@@ -2,7 +2,7 @@
 title: "等距微缩咖啡馆 · 扁平插画风"
 slug: "prompt-2086843715063316892"
 tags: ["isometric", "illustration", "flat-design", "cafe"]
-category: "illustration"
+category: "插画"
 model: "GPT-Image2"
 author: "Anissa"
 authorLink: "https://x.com/SimplyAnnisa"

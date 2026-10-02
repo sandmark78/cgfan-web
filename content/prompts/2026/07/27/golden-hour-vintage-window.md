@@ -1,8 +1,8 @@
 ---
 title: "黄金时刻的复古窗边人像"
 slug: golden-hour-vintage-window
-model: GPT-Image
-category: retro
+model: "GPT-Image2"
+category: "复古"
 tags:
   - AI绘图
   - 提示词

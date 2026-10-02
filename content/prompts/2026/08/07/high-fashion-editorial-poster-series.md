@@ -5,7 +5,7 @@ added: 2026-08-07
 author: "Larus Canus"
 model: "GPT-Image2"
 tags: [时尚编辑, 人像摄影, 四联画, 高定服装, 电影感]
-category: fashion
+category: "时尚"
 source: https://x.com/i/status/2085395483736879174
 cover: /images/prompts/prompt-2085395483736879174.jpg
 slug: high-fashion-editorial-poster-series

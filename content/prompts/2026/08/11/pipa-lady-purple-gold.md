@@ -2,7 +2,7 @@
 title: "古风琵琶仕女 · 紫金色调杂志封面"
 slug: "prompt-2087002325252718839"
 tags: ["portrait", "chinese-style", "editorial", "fashion"]
-category: "portrait"
+category: "人像"
 model: "通用 Prompt"
 author: "VoxCat"
 authorLink: "https://x.com/VoxcatAI"

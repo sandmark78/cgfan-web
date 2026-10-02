@@ -2,7 +2,7 @@
 title: "废墟中读报：末世荒诞的冷静旁观"
 slug: "prompt-2086130418534002803"
 tags: ["超现实", "复古摄影", "胶片质感", "电影感", "荒诞叙事"]
-category: "photography"
+category: "摄影"
 model: "GPT-Image2"
 author: "Taaruk"
 authorLink: "https://x.com/Taaruk_"

@@ -3,8 +3,8 @@ title: "ChatGPT生成红调多重曝光人像"
 slug: gemnana-2952
 date: 2026-04-25
 added: 2026-07-27T12:54:24+08:00
-model: ChatGPT
-category: photography
+model: "GPT-Image2"
+category: "摄影"
 tags:
   - 提示词
   - AI绘图

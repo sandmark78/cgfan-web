@@ -4,8 +4,8 @@ slug: character-reference-prompt
 author: Ciri_ai
 date: 2026-07-25
 added: 2026-07-25T18:30:00+08:00
-model: GPT Image 2
-category: portrait
+model: "GPT-Image2"
+category: "人像"
 tags: ["character", "reference", "doodle", "portrait", "mixed-media"]
 difficulty: advanced
 cover: /images/prompts/character-reference-prompt.jpg

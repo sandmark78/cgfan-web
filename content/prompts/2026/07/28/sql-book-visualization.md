@@ -2,7 +2,7 @@
 title: "SQL语法书籍可视化"
 slug: sql-book-visualization
 model: 通用 Prompt
-category: editorial
+category: "编辑设计"
 tags:
   - AI绘图
   - 提示词

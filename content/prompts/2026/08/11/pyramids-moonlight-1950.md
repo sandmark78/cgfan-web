@@ -2,7 +2,7 @@
 title: "1950年月光下的吉萨金字塔"
 slug: "prompt-2086892098041827494"
 tags: ["cinematic", "landscape", "night", "photorealistic"]
-category: "cinematic"
+category: "电影感"
 model: "通用 Prompt"
 author: "Malzahran"
 authorLink: "https://x.com/Malzahran2"

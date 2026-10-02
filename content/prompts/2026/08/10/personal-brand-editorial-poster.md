@@ -16,7 +16,7 @@ creativity: "8/10"
 technical: "7/10"
 aesthetic: "8/10"
 curation: "8/10"
-category: product
+category: "产品"
 ---
 
 

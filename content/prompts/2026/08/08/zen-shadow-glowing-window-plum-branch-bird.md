@@ -14,7 +14,7 @@ authorLink: "https://x.com/xiaoxiaodong01"
 source: "https://x.com/i/status/2085340852252225587"
 model: "通用 Prompt"
 tags: ["东方美学", "极简", "禅意", "剪影", "留白"]
-category: "design"
+category: "设计"
 rating:
   composition: 9
   color: 9

@@ -5,7 +5,7 @@ added: 2026-08-07
 author: "小小东"
 model: "通用 Prompt"
 tags: [东方美学, 极简主义, 禅意摄影, 窗口构图, 剪影艺术]
-category: artistic
+category: "艺术"
 source: https://x.com/i/status/2085340852252225587
 cover: /images/prompts/prompt-2085340852252225587.jpg
 slug: neo-chinese-zen-window-photography

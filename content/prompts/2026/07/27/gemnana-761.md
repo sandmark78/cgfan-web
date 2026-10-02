@@ -4,7 +4,7 @@ slug: gemnana-761
 date: 2026-01-06
 added: 2026-07-27T11:31:33+08:00
 model: 通用 Prompt
-category: photography
+category: "摄影"
 tags: 
 difficulty: beginner
 source: "https://gemnana.com/zh/case/761.html"

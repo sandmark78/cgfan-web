@@ -2,7 +2,7 @@
 title: "九机位同角色：Nano Banana+Kling的电影级控制"
 slug: nano-banana-pro-kling-ai-1570898055
 model: Midjourney
-category: photography
+category: "摄影"
 tags:
 - 视频
 - AI视频生成

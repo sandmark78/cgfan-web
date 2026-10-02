@@ -2,7 +2,7 @@
 title: "VISUAL OS 016 — 从地面仰拍的城市频率"
 slug: "prompt-2086814975629107560"
 tags: ["editorial", "typography", "color-system", "street-photography"]
-category: "design"
+category: "设计"
 model: "GPT-Image2"
 author: "Vigo Zhao"
 authorLink: "https://x.com/VigoCreativeAI"

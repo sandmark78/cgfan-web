@@ -4,8 +4,8 @@ slug: yuki-morning-bathroom-portrait
 author: YUKI
 date: 2026-07-26
 added: 2026-07-27T20:23:45+08:00
-model: GPT-Image
-category: portrait
+model: "GPT-Image2"
+category: "人像"
 tags: [cinematic, photorealistic, lifestyle, morning, bathroom]
 difficulty: advanced
 cover: /images/prompts/yuki-morning-bathroom-portrait.webp

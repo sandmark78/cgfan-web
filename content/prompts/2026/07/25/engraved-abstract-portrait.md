@@ -4,8 +4,8 @@ slug: engraved-abstract-portrait
 author: Marcos
 date: 2026-07-25
 added: 2026-07-25T20:34:00+08:00
-model: GPT Image 2
-category: abstract
+model: "GPT-Image2"
+category: "抽象"
 tags: [engraving, abstract, portrait, mixed-media, editorial]
 difficulty: advanced
 cover: /images/prompts/engraved-abstract-portrait.jpg

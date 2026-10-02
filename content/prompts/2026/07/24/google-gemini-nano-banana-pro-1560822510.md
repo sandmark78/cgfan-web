@@ -2,7 +2,7 @@
 title: "Google Gemini Nano Banana... 创作"
 slug: google-gemini-nano-banana-pro-1560822510
 model: Midjourney
-category: photography
+category: "摄影"
 tags:
 - 摄影
 - AIArt

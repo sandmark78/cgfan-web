@@ -12,7 +12,7 @@ authorLink: "https://x.com/liyue_ai"
 source: "https://x.com/i/status/2085664200551207064"
 model: "GPT-Image2"
 tags: ["纸艺", "东方美学", "立体剪纸", "仙侠", "叙事性"]
-category: "guo-feng"
+category: "国风"
 rating:
   composition: 9
   color: 9

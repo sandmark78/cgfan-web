@@ -4,7 +4,7 @@ slug: gemnana-1933
 date: 2026-02-03
 added: 2026-07-27T12:54:05+08:00
 model: Midjourney
-category: retro
+category: "复古"
 tags:
   - AI绘图
   - 提示词

@@ -2,7 +2,7 @@
 title: "蓝图觉醒·建筑从纸面升起"
 slug: nano-banana-pro-blueprint-awakening
 model: Adobe Firefly
-category: 3d
+category: "3D渲染"
 tags:
 - AI绘图
 - 提示词

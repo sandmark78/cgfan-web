@@ -7,7 +7,7 @@ source: "https://x.com/i/status/2088094463528980888"
 date: "2026-08-13"
 added: "2026-08-14T18:35:00.000+08:00"
 model: "通用 Prompt"
-category: "illustration"
+category: "插画"
 tags:
   - "东方美学"
   - "神兽"

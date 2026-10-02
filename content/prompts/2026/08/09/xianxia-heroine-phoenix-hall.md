@@ -8,7 +8,7 @@ author_link: "https://x.com/liyue_ai"
 source: "https://x.com/i/status/2086125950299975724"
 model: "GPT-Image2"
 tags: ["古风仙侠", "东方仙宫", "唐风大女主", "凤凰金殿", "角色海报"]
-category: "illustration"
+category: "插画"
 cover: "/images/prompts/prompt-2086125950299975724.jpg"
 images:
   - "/images/prompts/prompt-2086125950299975724.jpg"

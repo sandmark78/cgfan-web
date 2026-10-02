@@ -2,7 +2,7 @@
 title: "告诉Grok出生时间，AI精准解读人生"
 slug: birth-date-time-prompt
 model: Midjourney
-category: editorial
+category: "编辑设计"
 tags:
 - GROK
 - AI分析

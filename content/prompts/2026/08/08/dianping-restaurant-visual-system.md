@@ -18,7 +18,7 @@ authorLink: "https://x.com/MrLarus"
 source: "https://x.com/i/status/2085746935386841503"
 model: "GPT-Image2"
 tags: ["餐饮", "品牌设计", "编辑设计", "视觉系统", "商业"]
-category: "commercial"
+category: "商业"
 rating:
   composition: 8
   color: 8

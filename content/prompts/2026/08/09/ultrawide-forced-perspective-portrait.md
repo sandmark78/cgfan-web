@@ -8,7 +8,7 @@ author_link: "https://x.com/laruscanus"
 source: "https://x.com/i/status/2084942367971332129"
 model: "GPT-Image2"
 tags: ["超广角", "强制透视", "人像框架", "低角度摄影", "运动时尚"]
-category: "photography"
+category: "摄影"
 cover: "/images/prompts/prompt-2084942367971332129.jpg"
 images:
   - "/images/prompts/prompt-2084942367971332129.jpg"

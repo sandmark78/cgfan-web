@@ -4,7 +4,7 @@ slug: gemnana-27
 date: 2025-11-06
 added: 2026-07-26T21:00:00+08:00
 model: 通用 Prompt
-category: product
+category: "产品"
 tags: []
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/27.html"

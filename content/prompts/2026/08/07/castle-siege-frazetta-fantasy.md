@@ -5,7 +5,7 @@ added: 2026-08-07
 author: "Mutton Jefrey with 1F Jefrey"
 model: "通用 Prompt"
 tags: [奇幻油画, 史诗战争, 城堡攻防, 英雄叙事, 电影感]
-category: cinematic
+category: "电影感"
 source: https://x.com/i/status/2085038767061275018
 cover: /images/prompts/prompt-2085038767061275018.jpg
 slug: castle-siege-frazetta-fantasy

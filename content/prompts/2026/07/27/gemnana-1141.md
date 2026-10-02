@@ -4,7 +4,7 @@ slug: gemnana-1141
 date: 2026-01-13
 added: 2026-07-27T11:31:45+08:00
 model: 通用 Prompt
-category: portrait
+category: "人像"
 tags: 
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/1141.html"

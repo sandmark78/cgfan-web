@@ -2,7 +2,7 @@
 title: "编辑设计人物品牌海报框架：人生即视觉识别"
 slug: "prompt-2086327571743211650"
 tags: ["编辑设计", "品牌叙事", "海报框架", "人物品牌", "GPT-Image2"]
-category: "editorial"
+category: "编辑设计"
 model: "GPT-Image2"
 author: "Ciri"
 authorLink: "https://x.com/Ciri_ai"

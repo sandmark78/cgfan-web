@@ -8,7 +8,7 @@ author_link: "https://x.com/laruscanus"
 source: "https://x.com/i/status/2086096437532618930"
 model: "GPT-Image2"
 tags: ["古风海报", "东方美学", "编辑设计", "朝代器物", "手绘线条"]
-category: "design"
+category: "设计"
 cover: "/images/prompts/prompt-2086096437532618930.jpg"
 images:
   - "/images/prompts/prompt-2086096437532618930.jpg"

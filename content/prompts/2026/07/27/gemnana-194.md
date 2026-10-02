@@ -4,7 +4,7 @@ slug: gemnana-194
 date: 2025-11-06
 added: 2026-07-27T11:31:15+08:00
 model: 通用 Prompt
-category: sci-fi
+category: "科幻"
 tags: 
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/194.html"

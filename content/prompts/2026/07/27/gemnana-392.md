@@ -3,8 +3,8 @@ title: "创建3D推特个人资料卡片"
 slug: gemnana-392
 date: 2025-11-06
 added: 2026-07-27T11:31:27+08:00
-model: ChatGPT
-category: 3d
+model: "GPT-Image2"
+category: "3D渲染"
 tags:
   - AI绘图
   - 提示词

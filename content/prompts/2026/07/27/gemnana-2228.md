@@ -4,7 +4,7 @@ slug: gemnana-2228
 date: 2026-02-23
 added: 2026-07-27T12:54:10+08:00
 model: Midjourney
-category: photography
+category: "摄影"
 tags: 
 difficulty: advanced
 source: "X / Midjourney Sref and prompt Library"

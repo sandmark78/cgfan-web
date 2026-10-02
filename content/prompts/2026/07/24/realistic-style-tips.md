@@ -2,7 +2,7 @@
 title: "GPT Image 2生图小技巧：3D CG转写实风"
 slug: realistic-style-tips
 model: GPT-Image2
-category: 3d
+category: "3D渲染"
 tags:
 - AI绘图
 - 提示词

@@ -4,7 +4,7 @@ slug: gemnana-1486
 date: 2026-01-17
 added: 2026-07-27T11:31:51+08:00
 model: Midjourney
-category: portrait
+category: "人像"
 tags: 
 difficulty: beginner
 source: "https://gemnana.com/zh/case/1486.html"

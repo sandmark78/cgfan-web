@@ -4,7 +4,7 @@ slug: gemnana-1870
 date: 2026-02-01
 added: 2026-07-27T12:54:05+08:00
 model: 通用 Prompt
-category: sci-fi
+category: "科幻"
 tags:
   - AI绘图
   - 提示词

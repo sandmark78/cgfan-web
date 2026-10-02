@@ -2,7 +2,7 @@
 title: "禅意剪影：愚公移山的极简光影"
 slug: "prompt-2086133609891561600"
 tags: ["禅意摄影", "极简构图", "剪影艺术", "东方美学", "光影对比"]
-category: "photography"
+category: "摄影"
 model: "通用 Prompt"
 author: "✶❈A.n.A❈✶"
 authorLink: "https://x.com/AnA_AlQ8"

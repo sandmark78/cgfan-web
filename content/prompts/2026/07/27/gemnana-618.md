@@ -4,7 +4,7 @@ slug: gemnana-618
 date: 2025-12-25
 added: 2026-07-27T11:31:27+08:00
 model: 通用 Prompt
-category: 3d
+category: "3D渲染"
 tags:
   - AI绘图
   - 提示词

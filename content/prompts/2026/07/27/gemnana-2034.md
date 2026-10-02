@@ -4,7 +4,7 @@ slug: gemnana-2034
 date: 2026-02-08
 added: 2026-07-27T12:54:10+08:00
 model: 通用 Prompt
-category: editorial
+category: "编辑设计"
 tags:
   - AI绘图
   - 提示词

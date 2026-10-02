@@ -4,7 +4,7 @@ slug: gemnana-2002
 date: 2026-02-06
 added: 2026-07-27T12:54:10+08:00
 model: 通用 Prompt
-category: minimalist
+category: "极简"
 tags:
   - AI绘图
   - 提示词

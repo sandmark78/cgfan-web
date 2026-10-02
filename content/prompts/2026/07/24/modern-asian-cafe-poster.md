@@ -3,8 +3,8 @@ title: 现代亚洲咖啡馆海报生成器
 slug: modern-asian-cafe-poster
 author: Anissa
 date: 2026-07-24
-model: GPT Image 2
-category: poster
+model: "GPT-Image2"
+category: "海报"
 tags: [咖啡, 海报, 商业, 日韩, 极简]
 difficulty: intermediate
 cover: /images/prompts/2080648358914658503.jpg

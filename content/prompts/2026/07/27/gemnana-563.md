@@ -4,7 +4,7 @@ slug: gemnana-563
 date: 2026-01-09
 added: 2026-07-27T11:31:27+08:00
 model: 通用 Prompt
-category: product
+category: "产品"
 tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/563.html"

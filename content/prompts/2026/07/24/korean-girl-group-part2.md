@@ -2,7 +2,7 @@
 title: 【AI写真系列×韩系女团风】第二弹
 slug: korean-girl-group-part2
 model: Midjourney
-category: photography
+category: "摄影"
 tags:
 - 摄影
 - AI写真

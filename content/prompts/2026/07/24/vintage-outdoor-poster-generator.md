@@ -3,8 +3,8 @@ title: 复古户外杂志海报生成器
 slug: vintage-outdoor-poster-generator
 author: 虎小象
 date: 2026-07-24
-model: GPT Image 2
-category: poster
+model: "GPT-Image2"
+category: "海报"
 tags: [海报, 复古, 户外, 双语, 排版]
 difficulty: advanced
 cover: /images/prompts/2080560380636803368.jpg

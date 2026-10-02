@@ -5,7 +5,7 @@ author: "CGfan Editorial"
 date: 2026-07-27
 added: 2026-07-27T15:05:00+08:00
 model: GPT-Image2
-category: portrait
+category: "人像"
 tags: ["portrait photography", "cinematic", "golden hour", "AI prompt", "editorial"]
 difficulty: intermediate
 cover: /images/prompts/prompt-2081250398342455404.jpg

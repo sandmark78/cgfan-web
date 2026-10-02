@@ -2,7 +2,7 @@
 title: "Nano Banana Pro 护照奥德赛"
 slug: prompt-studio-nano-banana-pro-passport-1552462717
 model: Midjourney
-category: 3d
+category: "3D渲染"
 tags: ["人像", "3D", "插画", "动物", "编辑"]
 difficulty: intermediate
 cover: /images/prompts/prompt-studio-nano-banana-pro-passport-1552462717.jpg

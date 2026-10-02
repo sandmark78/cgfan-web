@@ -2,7 +2,7 @@
 title: "角色旋转海报提示词"
 slug: character-rotation-poster
 model: Midjourney
-category: poster
+category: "海报"
 tags:
 - AI绘图
 - 提示词

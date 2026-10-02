@@ -4,7 +4,7 @@ slug: gemnana-2083
 date: 2026-02-11
 added: 2026-07-27T12:54:10+08:00
 model: 通用 Prompt
-category: architecture
+category: "建筑"
 tags: 
 difficulty: advanced
 source: "X / 𝐌"

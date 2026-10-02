@@ -4,7 +4,7 @@ slug: gemnana-1078
 date: 2026-01-12
 added: 2026-07-27T11:31:45+08:00
 model: 通用 Prompt
-category: photography
+category: "摄影"
 tags: 
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/1078.html"

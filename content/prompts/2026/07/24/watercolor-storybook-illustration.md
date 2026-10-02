@@ -3,8 +3,8 @@ title: 水彩故事书插画生成器
 slug: watercolor-storybook-illustration
 author: Eesha
 date: 2026-07-24
-model: ChatGPT
-category: illustration
+model: "GPT-Image2"
+category: "插画"
 tags: [水彩, 故事书, 插画, 儿童, 极简]
 difficulty: intermediate
 cover: /images/prompts/2080652535405400276.jpg

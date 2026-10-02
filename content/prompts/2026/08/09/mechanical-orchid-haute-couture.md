@@ -2,7 +2,7 @@
 title: "黑色机械兰花：高定裙的雕塑感"
 slug: "prompt-2086186439037849811"
 tags: ["高定时装", "机械美学", "黑色优雅", "时尚摄影"]
-category: "fashion"
+category: "时尚"
 model: "通用 Prompt"
 author: "Aylin"
 authorLink: "https://x.com/aylinspace"

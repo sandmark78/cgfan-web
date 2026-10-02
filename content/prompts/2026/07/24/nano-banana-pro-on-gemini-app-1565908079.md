@@ -2,7 +2,7 @@
 title: "粉樱遮面的诗意人像"
 slug: nano-banana-pro-on-gemini-app-1565908079
 model: Midjourney
-category: photography
+category: "摄影"
 tags:
 - 摄影
 - AIArt

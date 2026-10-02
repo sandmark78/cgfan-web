@@ -2,7 +2,7 @@
 title: "风格炼金术：葛饰北斋×敦煌壁画×火影忍者"
 slug: "prompt-2086256436275982541"
 tags: ["风格融合", "葛饰北斋", "敦煌壁画", "极繁主义", "GPT-Image2"]
-category: "illustration"
+category: "插画"
 model: "GPT-Image2"
 author: "draco"
 authorLink: "https://x.com/DracoVibeCoding"

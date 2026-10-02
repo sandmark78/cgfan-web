@@ -4,7 +4,7 @@ slug: gemnana-2302
 date: 2026-02-27
 added: 2026-07-27T12:54:10+08:00
 model: 通用 Prompt
-category: photography
+category: "摄影"
 tags:
   - AI绘图
   - 提示词

@@ -2,7 +2,7 @@
 title: "戏剧光影英雄人像"
 slug: gemini-nano-banana-pro-1558266253
 model: Midjourney
-category: photography
+category: "摄影"
 tags:
 - 摄影
 - AI Photography

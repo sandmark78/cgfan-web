@@ -5,7 +5,7 @@ added: 2026-08-07
 author: "Larus Canus"
 model: "GPT-Image2"
 tags: ["拼贴艺术", "编辑设计", "城市生活", "情绪海报", "框架模板"]
-category: poster
+category: "海报"
 source: https://x.com/i/status/2077409333424312465
 cover: /images/prompts/prompt-2077409333424312465.jpg
 slug: daily-mood-collage-editorial-poster

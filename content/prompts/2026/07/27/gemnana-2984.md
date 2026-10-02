@@ -3,8 +3,8 @@ title: "日系胶片风私密夜景照片拼贴"
 slug: gemnana-2984
 date: 2026-05-06
 added: 2026-07-27T12:54:24+08:00
-model: ChatGPT
-category: photography
+model: "GPT-Image2"
+category: "摄影"
 tags:
   - 提示词
   - AI绘图

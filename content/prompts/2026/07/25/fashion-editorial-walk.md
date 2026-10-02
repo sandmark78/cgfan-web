@@ -4,8 +4,8 @@ slug: fashion-editorial-walk
 author: ToroJushiAi
 date: 2026-07-24
 added: 2026-07-25T20:46:00+08:00
-model: GPT Image 2
-category: architecture
+model: "GPT-Image2"
+category: "建筑"
 tags: ["fashion", "editorial", "architecture", "golden-hour", "cinematic"]
 difficulty: advanced
 cover: /images/prompts/fashion-editorial-walk.jpg

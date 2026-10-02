@@ -15,7 +15,7 @@ authorLink: "https://x.com/liyue_ai"
 source: "https://x.com/i/status/2085622879602053504"
 model: "GPT-Image2"
 tags: ["仙侠", "东方美学", "电影感", "建筑", "史诗"]
-category: "guo-feng"
+category: "国风"
 rating:
   composition: 9
   color: 8

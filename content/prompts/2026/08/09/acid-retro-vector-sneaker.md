@@ -2,7 +2,7 @@
 title: "酸性复古矢量：鱼眼透视运动鞋街头"
 slug: "prompt-2086276401397907950"
 tags: ["酸性设计", "复古矢量", "鱼眼透视", "霓虹", "街头文化"]
-category: "illustration"
+category: "插画"
 model: "通用 Prompt"
 author: "VoxCat"
 authorLink: "https://x.com/VoxcatAI"

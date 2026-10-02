@@ -2,7 +2,7 @@
 title: "车内慵懒坐姿电影感写真"
 slug: car-lazy-sitting-cinematic
 model: Midjourney
-category: photography
+category: "摄影"
 tags:
 - AI绘图
 - 提示词

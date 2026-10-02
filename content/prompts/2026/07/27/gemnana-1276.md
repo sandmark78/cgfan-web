@@ -4,7 +4,7 @@ slug: gemnana-1276
 date: 2026-01-15
 added: 2026-07-27T11:31:46+08:00
 model: 通用 Prompt
-category: portrait
+category: "人像"
 tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/1276.html"

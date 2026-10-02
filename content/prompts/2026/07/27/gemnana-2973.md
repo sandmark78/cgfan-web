@@ -4,7 +4,7 @@ slug: gemnana-2973
 date: 2026-05-04
 added: 2026-07-27T12:54:24+08:00
 model: Midjourney
-category: photography
+category: "摄影"
 tags:
   - 提示词
   - AI绘图

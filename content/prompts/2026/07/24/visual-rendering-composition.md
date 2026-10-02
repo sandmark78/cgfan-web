@@ -2,7 +2,7 @@
 title: 🍌 Nano Banana Pro：视觉渲染与构图
 slug: visual-rendering-composition
 model: Midjourney
-category: photography
+category: "摄影"
 tags:
 - 教程
 - AI生图

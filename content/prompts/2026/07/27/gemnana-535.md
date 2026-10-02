@@ -4,7 +4,7 @@ slug: gemnana-535
 date: 2025-12-14
 added: 2026-07-27T11:31:27+08:00
 model: Gemini
-category: photorealistic
+category: "写实"
 tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/535.html"

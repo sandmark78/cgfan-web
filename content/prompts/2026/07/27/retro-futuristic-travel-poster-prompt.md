@@ -5,7 +5,7 @@ author: "CGfan Editorial"
 date: 2026-07-27
 added: 2026-07-27T15:10:00+08:00
 model: GPT-Image2
-category: poster
+category: "海报"
 tags: ["travel poster", "retro-futuristic", "paper quilling", "AI prompt", "vintage"]
 difficulty: advanced
 cover: /images/prompts/prompt-2081306869503799549.jpg

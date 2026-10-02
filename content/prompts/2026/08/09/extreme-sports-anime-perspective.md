@@ -8,7 +8,7 @@ author_link: "https://x.com/laruscanus"
 source: "https://x.com/i/status/2086078106062958663"
 model: "GPT-Image2"
 tags: ["动漫插画", "极限运动", "透视框架", "广角变形", "日系关键视觉"]
-category: "anime"
+category: "动漫"
 cover: "/images/prompts/prompt-2086078106062958663.jpg"
 images:
   - "/images/prompts/prompt-2086078106062958663.jpg"

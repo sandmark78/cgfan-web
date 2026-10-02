@@ -2,7 +2,7 @@
 title: "黑白时尚大片"
 slug: nano-banana-pro-on-artingai-1542365093
 model: Midjourney
-category: photography
+category: "摄影"
 tags:
 - 摄影
 - Nanobanana

@@ -3,8 +3,8 @@ title: "GPT图像提示：宋韵月夜河景"
 slug: gemnana-2946
 date: 2026-04-23
 added: 2026-07-27T12:54:24+08:00
-model: ChatGPT
-category: editorial
+model: "GPT-Image2"
+category: "编辑设计"
 tags:
   - 提示词
   - AI绘图

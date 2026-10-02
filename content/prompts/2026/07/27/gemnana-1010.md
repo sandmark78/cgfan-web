@@ -4,7 +4,7 @@ slug: gemnana-1010
 date: 2026-01-11
 added: 2026-07-27T11:31:40+08:00
 model: Midjourney
-category: anime
+category: "动漫"
 tags: 
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/1010.html"

@@ -18,7 +18,7 @@ authorLink: "https://x.com/MrLarus"
 source: "https://x.com/i/status/2085739060274803168"
 model: "通用 Prompt"
 tags: ["编辑设计", "排版", "海报框架", "对角构图", "极简"]
-category: "design"
+category: "设计"
 rating:
   composition: 9
   color: 7

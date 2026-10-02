@@ -3,8 +3,8 @@ title: "用ChatGPT轻松制作个性化3D卡哇伊贴纸教程"
 slug: gemnana-498
 date: 2025-11-07
 added: 2026-07-27T11:31:27+08:00
-model: ChatGPT
-category: 3d
+model: "GPT-Image2"
+category: "3D渲染"
 tags:
   - AI绘图
   - 提示词

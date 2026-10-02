@@ -4,7 +4,7 @@ slug: gemnana-1018
 date: 2026-01-11
 added: 2026-07-27T11:31:40+08:00
 model: 通用 Prompt
-category: fashion
+category: "时尚"
 tags: 
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/1018.html"

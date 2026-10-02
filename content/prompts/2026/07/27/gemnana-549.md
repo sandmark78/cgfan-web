@@ -4,7 +4,7 @@ slug: gemnana-549
 date: 2026-01-04
 added: 2026-07-27T11:31:27+08:00
 model: 通用 Prompt
-category: photography
+category: "摄影"
 tags: 
 difficulty: intermediate
 source: "https://gemnana.com/zh/case/549.html"

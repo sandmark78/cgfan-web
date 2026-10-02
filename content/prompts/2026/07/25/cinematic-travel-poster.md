@@ -4,8 +4,8 @@ slug: cinematic-travel-poster
 author: NoorAI
 date: 2026-07-25
 added: 2026-07-25T19:50:00+08:00
-model: GPT Image 2
-category: poster
+model: "GPT-Image2"
+category: "海报"
 tags: [travel, poster, hot-air-balloon, cinematic, typography]
 difficulty: intermediate
 cover: /images/prompts/cinematic-travel-poster.jpg

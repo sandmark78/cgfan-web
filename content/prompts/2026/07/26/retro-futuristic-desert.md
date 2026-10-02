@@ -2,7 +2,7 @@
 title: "复古未来主义沙漠加油站"
 slug: retro-futuristic-desert
 model: Midjourney
-category: sci-fi
+category: "科幻"
 tags:
 - AI绘图
 - 提示词

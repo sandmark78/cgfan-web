@@ -3,8 +3,8 @@ title: 3×3 编辑照片网格生成器
 slug: 3x3-editorial-photo-grid
 author: Eesha
 date: 2026-07-24
-model: GPT Image 2
-category: minimalist
+model: "GPT-Image2"
+category: "极简"
 tags: ["人像", "编辑", "摄影", "极简", "工作室"]
 difficulty: intermediate
 cover: /images/prompts/2080571396745486426.jpg

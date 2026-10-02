@@ -16,7 +16,7 @@ creativity: "9/10"
 technical: "8/10"
 aesthetic: "8/10"
 curation: "8/10"
-category: portrait
+category: "人像"
 ---
 
 

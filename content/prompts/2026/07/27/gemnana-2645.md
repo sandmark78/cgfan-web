@@ -4,7 +4,7 @@ slug: gemnana-2645
 date: 2026-03-22
 added: 2026-07-27T12:54:17+08:00
 model: 通用 Prompt
-category: poster
+category: "海报"
 tags:
   - AI绘图
   - 提示词

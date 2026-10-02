@@ -4,8 +4,8 @@ slug: tuscan-sunlit-residence
 author: Larus Canus
 date: 2026-07-25
 added: 2026-07-25T17:35:00+08:00
-model: GPT Image 2
-category: editorial
+model: "GPT-Image2"
+category: "编辑设计"
 tags: [interior, design, editorial, tuscan, architecture]
 difficulty: advanced
 cover: /images/prompts/tuscan-sunlit-residence.jpg

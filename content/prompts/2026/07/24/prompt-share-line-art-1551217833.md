@@ -2,7 +2,7 @@
 title: '提示词 分享: 线稿艺术'
 slug: prompt-share-line-art-1551217833
 model: Midjourney
-category: minimalist
+category: "极简"
 tags: ["人像", "海报", "插画", "极简", "赛博朋克"]
 difficulty: intermediate
 cover: /images/prompts/prompt-share-line-art-1551217833.jpg

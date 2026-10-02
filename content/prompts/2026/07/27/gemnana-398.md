@@ -4,7 +4,7 @@ slug: gemnana-398
 date: 2025-11-06
 added: 2026-07-27T11:31:27+08:00
 model: 通用 Prompt
-category: anime
+category: "动漫"
 tags: 
 difficulty: advanced
 source: "https://gemnana.com/zh/case/398.html"

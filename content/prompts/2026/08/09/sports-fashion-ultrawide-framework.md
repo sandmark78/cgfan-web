@@ -8,7 +8,7 @@ author_link: "https://x.com/laruscanus"
 source: "https://x.com/i/status/2086058504926941541"
 model: "GPT-Image2"
 tags: ["运动时尚", "超广角", "韩系街拍", "低角度摄影", "体育摄影"]
-category: "photography"
+category: "摄影"
 cover: "/images/prompts/prompt-2086058504926941541.jpg"
 images:
   - "/images/prompts/prompt-2086058504926941541.jpg"
