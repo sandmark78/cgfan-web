@@ -78,10 +78,11 @@ export default async function ExplorePage({
 
   const supabase = createClient(supabaseUrl, supabaseAnonKey)
 
-  // 获取分类和标签（用于侧边栏）
+  // 获取分类和标签（用于侧边栏）- 必须设置limit，默认只有1000
   const { data: categoriesData } = await supabase
     .from('prompts')
     .select('category')
+    .limit(10000)
   const categoryMap = new Map<string, number>()
   categoriesData?.forEach((row: any) => {
     if (row.category) {
@@ -93,6 +94,7 @@ export default async function ExplorePage({
   const { data: tagsData } = await supabase
     .from('prompts')
     .select('tags')
+    .limit(10000)
   const tagMap = new Map<string, number>()
   tagsData?.forEach((row: any) => {
     if (row.tags && Array.isArray(row.tags)) {
@@ -107,16 +109,19 @@ export default async function ExplorePage({
   const tags = allTags.filter(tag => tag.name !== 'AI绘图' && tag.name !== '提示词')
 
   // 统计模型和难度分布
-  const { data: modelData } = await supabase.from('prompts').select('model')
+  const { data: modelData } = await supabase.from('prompts').select('model').limit(10000)
   const modelCounts: Record<string, number> = {}
   modelData?.forEach((row: any) => {
     const dbModel = row.model || ''
-    // 大小写不敏感匹配
-    const dbLower = dbModel.toLowerCase()
-    if (ALL_MODELS.some(m => m.toLowerCase() === dbLower)) {
-      // 找到匹配的模型，用标准名称
-      const matched = ALL_MODELS.find(m => m.toLowerCase() === dbLower)!
-      modelCounts[matched] = (modelCounts[matched] || 0) + 1
+    // 标准化模型名称（处理大小写和变体）
+    const normalizedModel = dbModel
+      .replace(/^gpt-image2$/i, 'GPT-image2')
+      .replace(/^midjourney$/i, 'Midjourney')
+      .replace(/^gemini$/i, 'Gemini')
+      .replace(/^通用\s*prompt$/i, '通用 Prompt')
+    
+    if (ALL_MODELS.includes(normalizedModel)) {
+      modelCounts[normalizedModel] = (modelCounts[normalizedModel] || 0) + 1
     }
   })
 
