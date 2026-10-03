@@ -49,8 +49,8 @@ def extract_prompt_from_text(allText: str) -> Tuple[str, str]:
     elif 'Gemini' in text:
         model = "Gemini"
     
-    # 尝试从 "提示词：" / "Prompt:" 后面提取
-    prompt_match = re.search(r'(?:提示词(?:Prompt)?|Prompt)[：:]\s*\n?(.+?)(?=\n\n(?:Made with|Views|\d+:\d+)|$)', text, re.DOTALL | re.IGNORECASE)
+    # 尝试从 "提示词：" / "Prompt:" / "Prompt ↓" 后面提取
+    prompt_match = re.search(r'(?:提示词(?:Prompt)?|Prompt)[：:]?\s*[↓]?\s*\n+(.+?)(?=\n\n(?:Made with|Views|\d+:\d+)|$)', text, re.DOTALL | re.IGNORECASE)
     if prompt_match:
         prompt = prompt_match.group(1).strip()
         # 清理 prompt
