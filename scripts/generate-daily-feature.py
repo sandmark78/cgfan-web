@@ -113,7 +113,13 @@ def parse_daily_features():
 
 
 def parse_favorite_images():
-    """从 IMAGE_TASTE.md 解析"最喜欢"列表（有评分的）"""
+    """从 IMAGE_TASTE.md 解析"最喜欢"列表（有评分的）
+    
+    支持两种格式：
+    1. 标准表格：| # | 标题 | 作者 | 8维度分数 | 总分 |
+    2. 紧凑表格：| # | 标题 | 作者 | 总分 | 8维度 |
+    3. 非标准格式：### 标题 - 73/80 ⭐⭐⭐
+    """
     if not os.path.exists(IMAGE_TASTE_FILE):
         print(f"⚠️  找不到 {IMAGE_TASTE_FILE}，跳过品味画像")
         return []
@@ -121,25 +127,52 @@ def parse_favorite_images():
     with open(IMAGE_TASTE_FILE, "r", encoding="utf-8") as f:
         content = f.read()
 
-    # 找到"## 最喜欢的图片"部分
-    start = content.find("## 最喜欢的图片")
-    if start == -1:
-        return []
-
-    # 提取表格行：| # | 图片 | 作者 | 8维度分数 | 总分 |
-    # 格式：| 1 | AI 小说封面生成框架 | Larus Canus | 9 | 8 | 9 | 8 | 9 | 9 | 9 | 9 | 70/80 |
-    # 总分可能是小数如 68.5/80
-    table_pattern = r"\|\s*\d+\s*\|\s*([^|]+?)\s*\|\s*([^|]+?)\s*\|(?:[^|]*\|){8}\s*([\d.]+)/80\s*\|"
-    matches = re.findall(table_pattern, content[start:])
-
     favorites = []
-    for idx, (title, author, score) in enumerate(matches):
-        favorites.append({
-            "title": title.strip(),
-            "author": author.strip(),
-            "score": float(score),
-            "index": idx,  # 原始编号，用于同分排序
-        })
+    seen_titles = set()  # 去重
+
+    # 格式1：标准表格 | # | 标题 | 作者 | 8维度 | 总分 |
+    # 例如：| 1 | AI 小说封面 | Larus Canus | 8 | 7 | 8 | 8 | 8 | 9 | 9 | 9 | 66/80 |
+    table_pattern = r"\|\s*\d+\s*\|\s*([^|]+?)\s*\|\s*([^|]+?)\s*\|(?:[^|]*\|){8}\s*([\d.]+)/80\s*\|"
+    for idx, (title, author, score) in enumerate(re.findall(table_pattern, content)):
+        title = title.strip()
+        if title not in seen_titles:
+            favorites.append({
+                "title": title,
+                "author": author.strip(),
+                "score": float(score),
+                "index": idx,
+            })
+            seen_titles.add(title)
+
+    # 格式2：紧凑表格 | # | 标题 | 作者 | 总分 | 8维度 |
+    # 例如：| 3 | 二战纪实影像 | LudovicCreator | 72/80 | 9+8+9+9+9+9+9+9 |
+    # 关键特征：第4列是 数字/80，第5列是 数字+数字+... 的格式
+    compact_pattern = r"\|\s*\d+\s*\|\s*([^|]+?)\s*\|\s*([^|]+?)\s*\|\s*([\d.]+)/80\s*\|\s*[\d\+]+\s*\|"
+    for idx, (title, author, score) in enumerate(re.findall(compact_pattern, content)):
+        title = title.strip()
+        if title not in seen_titles:
+            favorites.append({
+                "title": title,
+                "author": author.strip(),
+                "score": float(score),
+                "index": len(favorites),
+            })
+            seen_titles.add(title)
+
+    # 格式3：### 标题 - 73/80 ⭐⭐⭐
+    header_pattern = r"###\s+(.+?)\s*-\s*([\d.]+)/80"
+    for idx, (title, score) in enumerate(re.findall(header_pattern, content)):
+        title = title.strip()
+        # 清理标题中的作者信息（如 "古风琵琶仕女 · 紫金色调杂志封面 (VoxCat)"）
+        title = re.sub(r'\s*\([^)]+\)\s*$', '', title)
+        if title not in seen_titles:
+            favorites.append({
+                "title": title,
+                "author": "",  # 非标准格式没有作者信息
+                "score": float(score),
+                "index": len(favorites),
+            })
+            seen_titles.add(title)
 
     # 按分数降序排序；分数相同时，编号靠后的优先（最近加入的）
     favorites.sort(key=lambda x: (x["score"], x["index"]), reverse=True)
