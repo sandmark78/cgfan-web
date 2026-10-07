@@ -19,6 +19,15 @@ export interface DailyFeature {
  */
 export const dailyFeatures: DailyFeature[] = [
   {
+    date: '2026-10-07',
+    slug: 'prompt-2083872906409627939',
+    curatorNote: '这条提示词的精妙之处在于「情绪锚点」的精准投放——quiet melancholic eyes、subtle facial asymmetry，这些细节让仙侠人设跳出了空洞的仙气堆砌。结构上采用「场景史诗感→人物情绪感→渲染工业感」三段递进，用IMAX 70mm和Unreal Engine 5等硬核渲染词锚定质感下限。最值得关注的是它对「anime realism」的边界探索：既要求动漫式的飘逸，又用not cartoon、not CGI做反向约束，这种矛盾指令反而逼出了独特的真人二次元混合美学。',
+    highlight: '仙侠史诗场景与脆弱情绪的精准对撞，真人感与动漫感的边界实验。',
+    technique: '三段递进结构 · 情绪锚点前置 · 反向约束指令 · 渲染引擎堆叠',
+    tip: '在描述人物时，用「subtle facial asymmetry」这类微观真实细节替代泛泛的beautiful，能显著提升AI生成人像的真人质感，避免塑料感。',
+    tryChange: '将白色汉服改为「墨色渐变纱衣」，光效从golden sunlight换成「cold moonlight with silver rim light」，整体氛围会从神圣转向清冷孤绝。',
+  },
+  {
     date: '2026-10-06',
     slug: 'prompt-2082323788969255156',
     curatorNote: '此提示词的精髓在于对“未完成感”的精准控制。通过明确界定各元素的“完成度”（前景中度刻画、背景轻度勾勒），结合干笔纹理与大面积留白，巧妙规避了AI常见的过度渲染。模块化结构将风格、文本、场景与背景简化严格分离，非常适合独立出版物、艺术展览或生活方式品牌的视觉物料生成。',
