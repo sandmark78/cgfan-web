@@ -724,10 +724,13 @@ export const dailyFeatures: DailyFeature[] = [
 ]
 
 /**
- * 获取今日推荐
+ * 获取今日推荐（使用北京时间 UTC+8）
  */
 export function getTodayFeature(): DailyFeature | null {
-  const today = new Date().toISOString().split('T')[0] // YYYY-MM-DD
+  // 使用北京时间（UTC+8）
+  const now = new Date()
+  const beijingTime = new Date(now.getTime() + 8 * 60 * 60 * 1000)
+  const today = beijingTime.toISOString().split('T')[0] // YYYY-MM-DD
   return dailyFeatures.find((f) => f.date === today) || null
 }
 
