@@ -47,7 +47,21 @@ def fetch_tweet_content(tweet_id):
         for (var i = 0; i < links.length; i++) {
             var href = links[i].getAttribute('href') || '';
             // 找author链接：以/开头，不包含/status/，不是photo链接
-            if (href.charAt(0) === '/' && href.indexOf('/status/') === -1 && href.indexOf('/photo/') === -1) {
+            // 排除：/status/, /photo/, /compose/, /search?, /explore, /home, /notifications, /messages, /i/, /settings, /hashtag/, ?in_reply_to=
+            if (href.charAt(0) === '/' 
+                && href.indexOf('/status/') === -1 
+                && href.indexOf('/photo/') === -1
+                && href.indexOf('/compose/') === -1
+                && href.indexOf('/search') === -1
+                && href.indexOf('/explore') === -1
+                && href.indexOf('/home') === -1
+                && href.indexOf('/notifications') === -1
+                && href.indexOf('/messages') === -1
+                && href.indexOf('/i/') === -1
+                && href.indexOf('/settings') === -1
+                && href.indexOf('/hashtag/') === -1
+                && href.indexOf('?in_reply_to=') === -1
+                && href.indexOf('?') === -1) {  // 排除所有带查询参数的链接
                 authorLink = 'https://x.com' + href;
                 authorHandle = href.replace('/', '');
                 // 找作者名（在span里）
