@@ -546,6 +546,52 @@ curation: {final_scores['curation']}
     
     return filepath
 
+def validate_author(author: str) -> bool:
+    """验证作者名是否有效"""
+    if not author or author.strip() == '':
+        return False
+    # 纯数字 → 无效（X页面结构变化导致的bug）
+    if author.strip().isdigit():
+        return False
+    # 只有1个字符 → 可疑
+    if len(author.strip()) <= 1:
+        return False
+    return True
+
+def refetch_author(tweet_id: str) -> Optional[Dict]:
+    """从X页面重新抓取作者信息（curl方式，不依赖camofox）"""
+    import subprocess
+    url = f"https://x.com/i/status/{tweet_id}"
+    
+    try:
+        result = subprocess.run(
+            ['curl', '-s', '-L', '-A', 'Mozilla/5.0', url],
+            capture_output=True, text=True, timeout=15
+        )
+        
+        if result.returncode == 0:
+            html = result.stdout
+            # 从 og:title 提取: "Author Name (@handle) on X"
+            title_match = re.search(r'<meta property="og:title" content="([^"]+)"', html)
+            if title_match:
+                title = title_match.group(1)
+                m = re.match(r'^(.+?)\s+\(@(\w+)\)\s+on X', title)
+                if m:
+                    author_name = m.group(1)
+                    author_handle = m.group(2)
+                    author_link = f'https://x.com/{author_handle}'
+                    
+                    if not author_name.isdigit() and len(author_name) > 1:
+                        return {
+                            'author': author_name,
+                            'authorHandle': author_handle,
+                            'authorLink': author_link
+                        }
+    except Exception as e:
+        print(f"    ⚠️ 重新抓取作者失败: {e}")
+    
+    return None
+
 def main():
     print("🤖 开始 LLM 处理...\n")
     
@@ -558,6 +604,29 @@ def main():
         data = json.load(f)
     
     print(f"📦 读取到 {len(data)} 条预处理数据\n")
+    
+    # 🔒 作者验证：检查并修复纯数字作者
+    invalid_author_count = 0
+    for i, item in enumerate(data):
+        author = item.get('author', '')
+        if not validate_author(author):
+            invalid_author_count += 1
+            tweet_id = item.get('tweet_id', '')
+            print(f"⚠️ [{i+1}] 作者名异常: '{author}' (tweet: {tweet_id})")
+            
+            # 尝试重新抓取
+            fixed = refetch_author(tweet_id)
+            if fixed:
+                item['author'] = fixed['author']
+                item['authorLink'] = fixed['authorLink']
+                print(f"   ✅ 已修复: {fixed['author']} (@{fixed['authorHandle']})")
+            else:
+                print(f"   ❌ 无法修复，将跳过此条")
+    
+    if invalid_author_count > 0:
+        print(f"\n🔒 作者验证: {invalid_author_count} 条异常，{invalid_author_count - sum(1 for item in data if not validate_author(item.get('author', '')))} 条已修复\n")
+    else:
+        print("🔒 作者验证: 全部通过 ✅\n")
     
     results = {
         'total': len(data),
