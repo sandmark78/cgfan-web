@@ -565,14 +565,14 @@ def refetch_author(tweet_id: str) -> Optional[Dict]:
     
     try:
         result = subprocess.run(
-            ['curl', '-s', '-L', '-A', 'Mozilla/5.0', url],
+            ['curl', '-s', '-L', '-A', 'Mozilla/5.0', '--connect-timeout', '5', '--max-time', '10', url],
             capture_output=True, text=True, timeout=15
         )
         
-        if result.returncode == 0:
+        if result.returncode == 0 and result.stdout:
             html = result.stdout
             # 从 og:title 提取: "Author Name (@handle) on X"
-            title_match = re.search(r'<meta property="og:title" content="([^"]+)"', html)
+            title_match = re.search(r'<meta property="og:title"[^>]*content="([^"]+)"', html)
             if title_match:
                 title = title_match.group(1)
                 m = re.match(r'^(.+?)\s+\(@(\w+)\)\s+on X', title)
@@ -587,6 +587,8 @@ def refetch_author(tweet_id: str) -> Optional[Dict]:
                             'authorHandle': author_handle,
                             'authorLink': author_link
                         }
+    except subprocess.TimeoutExpired:
+        print(f"    ⚠️ 重新抓取作者超时: {tweet_id}")
     except Exception as e:
         print(f"    ⚠️ 重新抓取作者失败: {e}")
     
