@@ -20,7 +20,7 @@ export interface DailyFeature {
 export const dailyFeatures: DailyFeature[] = [
   {
     date: '2026-10-08',
-    slug: 'prompt-2083838916579217887',
+    slug: 'prompt-2107817970961711546',
     curatorNote: '用自造美学概念（Milk Cloud Orbit、Cream Halo Transit）锚定AI视觉方向，比堆砌形容词更精准。强调「视觉静默」——大量留白、降低文案密度、舒缓模块节奏——直接对抗电商详情页常见的信息轰炸。英文主标题配中文副标的排版策略建立国际化精致感，适用于高端产品页、品牌视觉手册与礼盒包装设计。',
     highlight: '用自造美学概念驯服AI，让电商详情页学会「安静」与「留白」。',
     technique: '自造美学概念锚定风格 · 负空间驱动排版 · 双语层级排版 · 材质真实感渲染',
