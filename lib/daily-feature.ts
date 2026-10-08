@@ -19,6 +19,15 @@ export interface DailyFeature {
  */
 export const dailyFeatures: DailyFeature[] = [
   {
+    date: '2026-10-08',
+    slug: 'prompt-2083838916579217887',
+    curatorNote: '用自造美学概念（Milk Cloud Orbit、Cream Halo Transit）锚定AI视觉方向，比堆砌形容词更精准。强调「视觉静默」——大量留白、降低文案密度、舒缓模块节奏——直接对抗电商详情页常见的信息轰炸。英文主标题配中文副标的排版策略建立国际化精致感，适用于高端产品页、品牌视觉手册与礼盒包装设计。',
+    highlight: '用自造美学概念驯服AI，让电商详情页学会「安静」与「留白」。',
+    technique: '自造美学概念锚定风格 · 负空间驱动排版 · 双语层级排版 · 材质真实感渲染',
+    tip: '为AI创造专属美学词汇（如本例的Milk Cloud Orbit），比描述具体效果更能统一整体调性，让模型在「模糊但一致」的方向上自由发挥。',
+    tryChange: '将「Milk Cloud Orbit」替换为「Obsidian Vein」，材质从奶油柔光转向黑曜石纹理，整体调性会从温暖克制变为冷峻力量感。',
+  },
+  {
     date: '2026-10-07',
     slug: 'prompt-2083872906409627939',
     curatorNote: '这条提示词的精妙之处在于「情绪锚点」的精准投放——quiet melancholic eyes、subtle facial asymmetry，这些细节让仙侠人设跳出了空洞的仙气堆砌。结构上采用「场景史诗感→人物情绪感→渲染工业感」三段递进，用IMAX 70mm和Unreal Engine 5等硬核渲染词锚定质感下限。最值得关注的是它对「anime realism」的边界探索：既要求动漫式的飘逸，又用not cartoon、not CGI做反向约束，这种矛盾指令反而逼出了独特的真人二次元混合美学。',

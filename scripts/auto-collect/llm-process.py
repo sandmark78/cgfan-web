@@ -215,7 +215,7 @@ def generate_title(prompt: str, author: str = None) -> str:
     return titles[0] if titles else _fallback_title(prompt)
 
 def generate_titles_batch(prompts: list) -> list:
-    """批量生成标题，分批处理避免超时
+    """批量生成标题，并行处理避免超时
     
     Args:
         prompts: prompt列表
@@ -224,18 +224,35 @@ def generate_titles_batch(prompts: list) -> list:
         标题列表，顺序与输入对应
     """
     from llm_cleaner import call_llm
+    from concurrent.futures import ThreadPoolExecutor, as_completed
     
     if not prompts:
         return []
     
-    # 分批处理，每批最多10个
-    BATCH_SIZE = 10
-    all_titles = []
-    
+    # 分批处理，每批20个（减少调用次数）
+    BATCH_SIZE = 20
+    batches = []
     for i in range(0, len(prompts), BATCH_SIZE):
-        batch = prompts[i:i+BATCH_SIZE]
-        batch_titles = _generate_batch(batch)
-        all_titles.extend(batch_titles)
+        batches.append((i, prompts[i:i+BATCH_SIZE]))
+    
+    all_titles = [None] * len(prompts)
+    
+    # 并行处理多个批次
+    with ThreadPoolExecutor(max_workers=3) as executor:
+        futures = {executor.submit(_generate_batch, batch): (idx, batch) 
+                   for idx, batch in batches}
+        
+        for future in as_completed(futures):
+            idx, batch = futures[future]
+            try:
+                batch_titles = future.result(timeout=180)  # 每批最多3分钟
+                for i, title in enumerate(batch_titles):
+                    all_titles[idx + i] = title
+            except Exception as e:
+                print(f"  ⚠️ 批次 {idx//BATCH_SIZE + 1} 失败: {e}")
+                # fallback到规则提取
+                for i, prompt in enumerate(batch):
+                    all_titles[idx + i] = _fallback_title(prompt)
     
     return all_titles
 
