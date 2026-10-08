@@ -20,10 +20,12 @@ export default async function DailyFeature() {
   if (!prompt) return null
 
   const today = new Date()
-  const day = today.getDate()
-  const month = today.getMonth() + 1
+  // 使用北京时间（UTC+8）显示日期，避免边缘时间错位
+  const beijingTime = new Date(today.getTime() + 8 * 60 * 60 * 1000)
+  const day = beijingTime.getUTCDate()
+  const month = beijingTime.getUTCMonth() + 1
   const weekdays = ['日', '一', '二', '三', '四', '五', '六']
-  const weekday = weekdays[today.getDay()]
+  const weekday = weekdays[beijingTime.getUTCDay()]
   // 中文月份
   const cnNums = ['', '一', '二', '三', '四', '五', '六', '七', '八', '九', '十', '十一', '十二']
   const cnMonth = cnNums[month]
