@@ -229,8 +229,8 @@ def generate_titles_batch(prompts: list) -> list:
     if not prompts:
         return []
     
-    # 分批处理，每批20个（减少调用次数）
-    BATCH_SIZE = 20
+    # 分批处理，每批10个（减少单次请求复杂度）
+    BATCH_SIZE = 10
     batches = []
     for i in range(0, len(prompts), BATCH_SIZE):
         batches.append((i, prompts[i:i+BATCH_SIZE]))
@@ -245,7 +245,7 @@ def generate_titles_batch(prompts: list) -> list:
         for future in as_completed(futures):
             idx, batch = futures[future]
             try:
-                batch_titles = future.result(timeout=180)  # 每批最多3分钟
+                batch_titles = future.result(timeout=120)  # 每批最多2分钟
                 for i, title in enumerate(batch_titles):
                     all_titles[idx + i] = title
             except Exception as e:
