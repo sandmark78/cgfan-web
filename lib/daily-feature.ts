@@ -29,12 +29,12 @@ export const dailyFeatures: DailyFeature[] = [
   },
   {
     date: '2026-10-07',
-    slug: 'prompt-2083872906409627939',
+    slug: 'prompt-2107372593250721924',
     curatorNote: '这条提示词的精妙之处在于「情绪锚点」的精准投放——quiet melancholic eyes、subtle facial asymmetry，这些细节让仙侠人设跳出了空洞的仙气堆砌。结构上采用「场景史诗感→人物情绪感→渲染工业感」三段递进，用IMAX 70mm和Unreal Engine 5等硬核渲染词锚定质感下限。最值得关注的是它对「anime realism」的边界探索：既要求动漫式的飘逸，又用not cartoon、not CGI做反向约束，这种矛盾指令反而逼出了独特的真人二次元混合美学。',
-    highlight: '仙侠史诗场景与脆弱情绪的精准对撞，真人感与动漫感的边界实验。',
-    technique: '三段递进结构 · 情绪锚点前置 · 反向约束指令 · 渲染引擎堆叠',
-    tip: '在描述人物时，用「subtle facial asymmetry」这类微观真实细节替代泛泛的beautiful，能显著提升AI生成人像的真人质感，避免塑料感。',
-    tryChange: '将白色汉服改为「墨色渐变纱衣」，光效从golden sunlight换成「cold moonlight with silver rim light」，整体氛围会从神圣转向清冷孤绝。',
+    highlight: '漂浮在云端的超现实地标奇境，构图与色彩的极致平衡。',
+    technique: '超现实地标 · 云端悬浮 · 色彩层次 · 视觉奇观',
+    tip: '在描述地标建筑时，用「floating above clouds」和「surreal dreamscape」营造超现实感，配合「vibrant color palette」让画面更具视觉冲击力。',
+    tryChange: '将「floating above clouds」改为「suspended in cosmic void」，色彩从「vibrant」换成「ethereal pastel」，整体氛围会从奇幻转向空灵。',
   },
   {
     date: '2026-10-06',
