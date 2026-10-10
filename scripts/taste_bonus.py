@@ -93,6 +93,19 @@ def calculate_taste_adjustment(prompt: str, tags: list) -> dict:
             adjustment['composition'] = max(adjustment['composition'], 1)
             adjustment['creativity'] = max(adjustment['creativity'], 1)
     
+    # 10. 子丹风格（Zidan）：超写实东方玄幻+电影级人像 → 全维度+1（共+8分，实际+3分上限）
+    # 识别关键词：子丹/Zidan + 超写实/电影感/东方/仙侠/玄幻
+    is_zidan_style = (
+        any(kw in prompt_lower for kw in ['子丹', 'zidan']) or
+        (any(kw in prompt_lower for kw in ['超写实', 'ultra realistic', 'photorealistic']) and
+         any(kw in prompt_lower for kw in ['东方', 'oriental', '仙侠', 'xianxia', '玄幻', 'fantasy']) and
+         any(kw in prompt_lower for kw in ['电影感', 'cinematic', '电影级', 'epic']))
+    )
+    if is_zidan_style:
+        # 子丹风格全维度+1，但总分上限+3
+        for dim in adjustment:
+            adjustment[dim] = max(adjustment[dim], 1)
+    
     # ===== 减分项（每个维度最多减1分）=====
     
     # 1. 纯商业产品/广告 → 审美-1, 策展-1
