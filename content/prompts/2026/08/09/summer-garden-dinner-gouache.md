@@ -25,6 +25,7 @@ creativity: 8
 technical: 8
 aesthetic: 8
 curation: 8
+source_link: "https://x.com/i/status/2086362886222598499"
 ---
 
 # 夏夜花园晚餐：水粉质感的温暖叙事

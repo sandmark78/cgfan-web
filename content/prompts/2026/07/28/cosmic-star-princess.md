@@ -17,6 +17,7 @@ source: https://x.com/i/status/2081601980959723635
 sourceLink: https://x.com/i/status/2081601980959723635
 authorLink: https://x.com/liluocheng13
 author: "Zidan 子丹"
+source_link: "https://x.com/i/status/2081601980959723635"
 ---
 
 ## Prompt

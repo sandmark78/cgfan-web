@@ -15,6 +15,7 @@ source: "https://x.com/i/status/2045013913901867334"
 sourceLink: "https://x.com/i/status/2045013913901867334"
 authorLink: "https://x.com/MANISH1027512"
 author: "古一"
+source_link: "https://x.com/i/status/2045013913901867334"
 ---
 
 ## Prompt

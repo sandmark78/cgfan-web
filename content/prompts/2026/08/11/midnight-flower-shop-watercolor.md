@@ -19,6 +19,7 @@ creativity: 8
 technical: 8
 aesthetic: 8
 curation: 8
+source_link: "https://x.com/i/status/2086806767602630939"
 ---
 
 # 午夜花店 · 欧洲老街水彩插画

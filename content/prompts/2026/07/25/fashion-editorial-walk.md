@@ -12,6 +12,8 @@ cover: /images/prompts/fashion-editorial-walk.jpg
 source: https://x.com/ToroJushiAi/status/2080775030368301215
 sourceLink: https://x.com/ToroJushiAi/status/2080775030368301215
 authorLink: https://x.com/ToroJushiAi
+source_link: "https://x.com/ToroJushiAi/status/2080775030368301215"
+author_link: "https://x.com/ToroJushiAi"
 ---
 
 

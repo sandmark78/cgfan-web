@@ -24,6 +24,7 @@ creativity: 8
 technical: 8
 aesthetic: 8
 curation: 8
+source_link: "https://x.com/i/status/2088053236192481332"
 ---
 
 # 莫里索风格印象派花卉静物

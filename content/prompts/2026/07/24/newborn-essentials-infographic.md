@@ -16,6 +16,7 @@ source: "https://x.com/i/status/2009523651679539373"
 sourceLink: "https://x.com/i/status/2009523651679539373"
 authorLink: "https://x.com/yyyole"
 author: "沐阳"
+source_link: "https://x.com/i/status/2009523651679539373"
 ---
 
 ## Prompt

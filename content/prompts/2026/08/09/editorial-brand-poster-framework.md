@@ -23,6 +23,7 @@ creativity: 9
 technical: 8
 aesthetic: 9
 curation: 9
+source_link: "https://x.com/i/status/2086327571743211650"
 ---
 
 # 编辑设计人物品牌海报框架：人生即视觉识别

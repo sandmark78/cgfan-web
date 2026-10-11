@@ -17,6 +17,7 @@ source: https://x.com/i/status/2011060762454999475
 sourceLink: https://x.com/i/status/2011060762454999475
 authorLink: https://x.com/MayorKingAI
 author: MayorkingAI
+source_link: "https://x.com/i/status/2011060762454999475"
 ---
 ## Prompt
 

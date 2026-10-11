@@ -11,6 +11,8 @@ source: "@aziz4ai"
 sourceLink: "https://x.com/aziz4ai/status/1934702903932957023"
 authorLink: "https://x.com/aziz4ai"
 cover: /images/prompts/gemnana-126.jpg
+source_link: "https://x.com/aziz4ai"
+author_link: "https://x.com/aziz4ai"
 ---
 
 

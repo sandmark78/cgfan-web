@@ -17,6 +17,7 @@ source: https://x.com/i/status/2016087115482763660
 sourceLink: https://x.com/i/status/2016087115482763660
 authorLink: https://x.com/lenawakes
 author: Lena lenawakes
+source_link: "https://x.com/i/status/2016087115482763660"
 ---
 
 ## Prompt

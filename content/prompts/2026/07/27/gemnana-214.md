@@ -13,6 +13,8 @@ source: "@umesh_ai"
 sourceLink: "https://x.com/umesh_ai/status/1942635640816034224"
 authorLink: "https://x.com/umesh_ai"
 cover: /images/prompts/gemnana-214.jpg
+source_link: "https://x.com/umesh_ai"
+author_link: "https://x.com/umesh_ai"
 ---
 
 ## Prompt

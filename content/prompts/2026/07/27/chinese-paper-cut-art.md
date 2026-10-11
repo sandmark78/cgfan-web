@@ -17,6 +17,7 @@ source: https://x.com/i/status/2081361095227523438
 sourceLink: https://x.com/i/status/2081361095227523438
 authorLink: https://x.com/Stellakjbk
 author: "九尾狐-FoxFairy🦊"
+source_link: "https://x.com/i/status/2081361095227523438"
 ---
 
 ## Prompt

@@ -17,6 +17,7 @@ source: https://x.com/i/status/2081726799567016222
 sourceLink: https://x.com/i/status/2081726799567016222
 authorLink: https://x.com/chenlinspark
 author: "尘林 Spark"
+source_link: "https://x.com/i/status/2081726799567016222"
 ---
 ## Prompt
 

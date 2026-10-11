@@ -17,6 +17,7 @@ technical: "7/10"
 aesthetic: "8/10"
 curation: "8/10"
 category: "产品"
+source_link: "https://x.com/i/status/2086300155771519326"
 ---
 
 

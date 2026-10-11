@@ -12,6 +12,8 @@ cover: /images/prompts/tuscan-sunlit-residence.jpg
 source: https://x.com/MrLarus/status/2080652961231827318
 sourceLink: https://x.com/MrLarus/status/2080652961231827318
 authorLink: https://x.com/MrLarus
+source_link: "https://x.com/MrLarus/status/2080652961231827318"
+author_link: "https://x.com/MrLarus"
 ---
 
 ## Prompt

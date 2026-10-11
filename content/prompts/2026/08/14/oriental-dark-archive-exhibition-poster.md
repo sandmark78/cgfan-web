@@ -28,6 +28,7 @@ creativity: "9/10"
 technical: "8/10"
 aesthetic: "9/10"
 curation: "9/10"
+source_link: "https://x.com/i/status/2087904511046152257"
 ---
 
 # 东方暗黑档案实验博物馆海报

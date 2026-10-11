@@ -17,6 +17,7 @@ source: https://x.com/i/status/2081681001751683156
 sourceLink: https://x.com/i/status/2081681001751683156
 authorLink: https://x.com/RockGrokAI
 author: "AI Aimee"
+source_link: "https://x.com/i/status/2081681001751683156"
 ---
 
 ## Prompt

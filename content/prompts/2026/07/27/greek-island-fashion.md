@@ -17,6 +17,7 @@ source: https://x.com/i/status/2081681005669154964
 sourceLink: https://x.com/i/status/2081681005669154964
 authorLink: https://x.com/ToroJushiAi
 author: "ToroJushiAi"
+source_link: "https://x.com/i/status/2081681005669154964"
 ---
 
 ## Prompt

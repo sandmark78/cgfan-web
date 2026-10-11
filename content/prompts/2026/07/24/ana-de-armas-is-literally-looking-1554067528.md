@@ -17,6 +17,7 @@ source: https://x.com/i/status/2013588573065220479
 sourceLink: https://x.com/i/status/2013588573065220479
 authorLink: https://x.com/YaseenK7212
 author: Yaseen Khan Gul (YaseenK7212)
+source_link: "https://x.com/i/status/2013588573065220479"
 ---
 ## Prompt
 

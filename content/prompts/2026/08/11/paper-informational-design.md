@@ -24,6 +24,7 @@ creativity: 8
 technical: 8
 aesthetic: 8
 curation: 8
+source_link: "https://x.com/i/status/2086866107965821125"
 ---
 
 # 纸质信息设计 · 克制庄重的版面系统

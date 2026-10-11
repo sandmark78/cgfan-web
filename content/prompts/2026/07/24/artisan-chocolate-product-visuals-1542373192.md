@@ -17,6 +17,8 @@ source: https://x.com/Just_sharon7/status/2010898635425530329?s=20
 sourceLink: https://x.com/Just_sharon7/status/2010898635425530329?s=20
 authorLink: https://x.com/Just_sharon7
 author: Sharon Riley Just_sharon7
+source_link: "https://x.com/Just_sharon7/status/2010898635425530329?s=20"
+author_link: "https://x.com/Just_sharon7"
 ---
 
 ## Prompt

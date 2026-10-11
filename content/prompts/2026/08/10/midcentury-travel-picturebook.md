@@ -17,6 +17,7 @@ technical: "8/10"
 aesthetic: "9/10"
 curation: "8/10"
 category: "插画"
+source_link: "https://x.com/i/status/2086508308001865864"
 ---
 
 

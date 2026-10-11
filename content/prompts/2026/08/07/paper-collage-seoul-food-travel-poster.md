@@ -19,6 +19,7 @@ technical: 9
 aesthetic: 9
 curation: 9
 total: 71
+source_link: "https://x.com/i/status/2085340502895825092"
 ---
 
 

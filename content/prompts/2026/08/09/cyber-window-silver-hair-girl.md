@@ -28,6 +28,7 @@ creativity: 7
 technical: 9
 aesthetic: 8
 curation: 7
+source_link: "https://x.com/i/status/2086270220948385897"
 ---
 
 # 银发少女赛博窗边：3D二次元CG人像

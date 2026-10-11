@@ -29,6 +29,7 @@ creativity: "9/10"
 technical: "7/10"
 aesthetic: "8/10"
 curation: "7/10"
+source_link: "https://x.com/i/status/2086376707368649029"
 ---
 
 ## Prompt

@@ -17,6 +17,7 @@ source: https://x.com/i/status/2016357678680039438
 sourceLink: https://x.com/i/status/2016357678680039438
 authorLink: https://x.com/Taaruk_
 author: Taaruk_
+source_link: "https://x.com/i/status/2016357678680039438"
 ---
 ## Prompt
 

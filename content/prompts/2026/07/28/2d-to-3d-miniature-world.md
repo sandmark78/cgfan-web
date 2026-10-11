@@ -17,6 +17,7 @@ source: https://x.com/i/status/2081756035744747968
 sourceLink: https://x.com/i/status/2081756035744747968
 authorLink: https://x.com/yourPlugAI
 author: "Gilbert Odera | Your AI Plug"
+source_link: "https://x.com/i/status/2081756035744747968"
 ---
 ## Prompt
 

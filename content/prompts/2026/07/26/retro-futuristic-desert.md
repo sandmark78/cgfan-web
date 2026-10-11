@@ -18,6 +18,7 @@ source: "https://x.com/i/status/2081234873923084558"
 sourceLink: "https://x.com/i/status/2081234873923084558"
 authorLink: "https://x.com/VigoCreativeAI"
 author: "simeon-sanai"
+source_link: "https://x.com/i/status/2081234873923084558"
 ---
 ## Prompt
 

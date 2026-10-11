@@ -11,6 +11,8 @@ cover: /images/prompts/2080560380636803368.jpg
 source: https://x.com/hx831126/status/2080560380636803368
 sourceLink: https://x.com/hx831126/status/2080560380636803368
 authorLink: https://x.com/hx831126
+source_link: "https://x.com/hx831126/status/2080560380636803368"
+author_link: "https://x.com/hx831126"
 ---
 
 @创建图片 # INPUT KEYWORD｜输入关键词  **KEYWORD：［camping］**  

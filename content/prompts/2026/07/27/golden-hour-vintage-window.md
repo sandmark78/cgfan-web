@@ -17,6 +17,7 @@ source: https://x.com/i/status/2081565648564691454
 sourceLink: https://x.com/i/status/2081565648564691454
 authorLink: https://x.com/YUKIMASTERAI
 author: "YUKI"
+source_link: "https://x.com/i/status/2081565648564691454"
 ---
 ## Prompt
 

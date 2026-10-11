@@ -13,6 +13,8 @@ source: "@Artedeingenio"
 sourceLink: "https://x.com/Artedeingenio/status/1935369568408523045"
 authorLink: "https://x.com/Artedeingenio"
 cover: /images/prompts/gemnana-191.jpg
+source_link: "https://x.com/Artedeingenio"
+author_link: "https://x.com/Artedeingenio"
 ---
 
 ## Prompt

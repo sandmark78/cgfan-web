@@ -17,6 +17,7 @@ source: https://x.com/i/status/2014984098213929280
 sourceLink: https://x.com/i/status/2014984098213929280
 authorLink: https://x.com/Kashberg_0
 author: Kashberg_0
+source_link: "https://x.com/i/status/2014984098213929280"
 ---
 ## Prompt
 

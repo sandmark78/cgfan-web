@@ -28,6 +28,7 @@ creativity: 7/10
 technical: 7/10
 aesthetics: 7/10
 curation: 7/10
+source_link: "https://x.com/i/status/2086078106062958663"
 ---
 
 ## 简介

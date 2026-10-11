@@ -17,6 +17,7 @@ source: https://x.com/i/status/2081617461586333886
 sourceLink: https://x.com/i/status/2081617461586333886
 authorLink: https://x.com/john_my07
 author: "Johnn"
+source_link: "https://x.com/i/status/2081617461586333886"
 ---
 ## Prompt
 

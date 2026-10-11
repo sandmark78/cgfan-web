@@ -24,6 +24,7 @@ creativity: 9/10
 technical: 8/10
 aesthetic: 8/10
 curation: 7/10
+source_link: "https://x.com/i/status/2086258839507325204"
 ---
 
 # 超现实废车塔：白裙少女的夏日对峙

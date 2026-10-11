@@ -9,6 +9,7 @@ date: "2026-07-30"
 added: "2026-07-31"
 source: "https://x.com/i/status/2082967135614021849"
 cover: "/images/prompts/prompt-2082967135614021849.jpg"
+source_link: "https://x.com/i/status/2082967135614021849"
 ---
 
 国风CG插画，唐风美学，古代绝美女子，半身近景特写，画面重心聚焦面部与上半身，高级人像构图，电影级镜头语言与空间透视

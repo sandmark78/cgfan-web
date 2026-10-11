@@ -22,6 +22,7 @@ creativity: 9
 technical: 8
 aesthetic: 8
 curation: 8
+source_link: "https://x.com/i/status/2086125703427436788"
 ---
 
 # 微缩3D旅行立体画：手工明信片世界

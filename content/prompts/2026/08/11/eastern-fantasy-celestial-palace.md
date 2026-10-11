@@ -24,6 +24,7 @@ creativity: 9
 technical: 9
 aesthetic: 10
 curation: 9
+source_link: "https://x.com/i/status/2086998103799038035"
 ---
 
 # 东方仙侠天宫云海 · 电影级奇幻建筑

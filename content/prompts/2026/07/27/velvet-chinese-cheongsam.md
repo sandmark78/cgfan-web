@@ -17,6 +17,7 @@ source: https://x.com/i/status/2081719752322592839
 sourceLink: https://x.com/i/status/2081719752322592839
 authorLink: https://x.com/VoxcatAI
 author: "VoxCat"
+source_link: "https://x.com/i/status/2081719752322592839"
 ---
 
 ## Prompt

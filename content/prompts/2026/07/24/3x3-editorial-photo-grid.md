@@ -11,6 +11,8 @@ cover: /images/prompts/2080571396745486426.jpg
 source: https://x.com/MissDelulu9/status/2080571396745486426
 sourceLink: https://x.com/MissDelulu9/status/2080571396745486426
 authorLink: https://x.com/MissDelulu9
+source_link: "https://x.com/MissDelulu9/status/2080571396745486426"
+author_link: "https://x.com/MissDelulu9"
 ---
 
 

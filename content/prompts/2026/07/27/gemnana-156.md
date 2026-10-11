@@ -13,6 +13,8 @@ source: "@zeng_wt"
 sourceLink: "https://x.com/zeng_wt/status/1936743124522750336"
 authorLink: "https://x.com/zeng_wt"
 cover: /images/prompts/gemnana-156.jpg
+source_link: "https://x.com/zeng_wt"
+author_link: "https://x.com/zeng_wt"
 ---
 
 ## Prompt

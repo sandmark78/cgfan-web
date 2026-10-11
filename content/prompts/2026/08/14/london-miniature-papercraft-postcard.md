@@ -28,6 +28,7 @@ creativity: "9/10"
 technical: "8/10"
 aesthetic: "9/10"
 curation: "9/10"
+source_link: "https://x.com/i/status/2088124379775566200"
 ---
 
 # 伦敦微缩立体纸艺明信片

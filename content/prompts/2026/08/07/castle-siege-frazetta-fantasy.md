@@ -19,6 +19,7 @@ rating:
   aesthetic: 8
   curation: 7
   total: 63
+source_link: "https://x.com/i/status/2085038767061275018"
 ---
 
 ## 概要

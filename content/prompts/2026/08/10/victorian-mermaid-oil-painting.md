@@ -17,6 +17,7 @@ technical: "8/10"
 aesthetic: "8/10"
 curation: "8/10"
 category: "人像"
+source_link: "https://x.com/i/status/2086505300459454826"
 ---
 
 

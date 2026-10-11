@@ -28,6 +28,7 @@ creativity: 9
 technical: 9
 aesthetic: 9
 curation: 8
+source_link: "https://x.com/i/status/2086133609891561600"
 ---
 
 # 禅意剪影：愚公移山的极简光影

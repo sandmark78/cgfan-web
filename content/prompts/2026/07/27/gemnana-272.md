@@ -13,6 +13,8 @@ source: "@miilesus"
 sourceLink: "https://x.com/miilesus/status/1925157350068900103"
 authorLink: "https://x.com/miilesus"
 cover: /images/prompts/gemnana-272.jpg
+source_link: "https://x.com/miilesus"
+author_link: "https://x.com/miilesus"
 ---
 
 ## Prompt

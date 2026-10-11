@@ -17,6 +17,7 @@ source: https://x.com/i/status/2017136190042911190
 sourceLink: https://x.com/i/status/2017136190042911190
 authorLink: https://x.com/Bitturing
 author: Bitturing
+source_link: "https://x.com/i/status/2017136190042911190"
 ---
 
 ## Prompt

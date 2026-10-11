@@ -26,6 +26,7 @@ creativity: 11
 technique: 8/10
 aesthetic: 8
 curation: 8
+source_link: "https://x.com/i/status/2087232122260210039"
 ---
 
 ## 评分说明

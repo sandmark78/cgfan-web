@@ -17,6 +17,7 @@ source: https://x.com/i/status/2012718730854502440
 sourceLink: https://x.com/i/status/2012718730854502440
 authorLink: https://x.com/sidona
 author: sidona
+source_link: "https://x.com/i/status/2012718730854502440"
 ---
 
 ## Prompt

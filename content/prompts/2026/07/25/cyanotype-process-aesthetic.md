@@ -12,6 +12,8 @@ cover: /images/prompts/cyanotype-aesthetic.jpg
 source: https://x.com/AllaAisling/status/2080812273250263097
 sourceLink: https://x.com/AllaAisling/status/2080812273250263097
 authorLink: https://x.com/AllaAisling
+source_link: "https://x.com/AllaAisling/status/2080812273250263097"
+author_link: "https://x.com/AllaAisling"
 ---
 
 

@@ -13,6 +13,8 @@ source: "@LudovicCreator"
 sourceLink: "https://x.com/LudovicCreator/status/1936703218827817358"
 authorLink: "https://x.com/LudovicCreator"
 cover: /images/prompts/gemnana-162.jpg
+source_link: "https://x.com/LudovicCreator"
+author_link: "https://x.com/LudovicCreator"
 ---
 
 ## Prompt

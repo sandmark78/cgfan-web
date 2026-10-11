@@ -15,6 +15,7 @@ source: "https://x.com/i/status/2080184891593859153"
 sourceLink: "https://x.com/i/status/2080184891593859153"
 authorLink: "https://x.com/MrLarus"
 author: "Larus Canus"
+source_link: "https://x.com/i/status/2080184891593859153"
 ---
 
 ## Prompt

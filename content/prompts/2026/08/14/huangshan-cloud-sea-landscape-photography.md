@@ -24,6 +24,7 @@ creativity: "8/10"
 technical: "9/10"
 aesthetic: "9/10"
 curation: "8/10"
+source_link: "https://x.com/i/status/2087892508424716404"
 ---
 
 # 黄山云海仙境风景摄影

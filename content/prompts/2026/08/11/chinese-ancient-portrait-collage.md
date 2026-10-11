@@ -28,6 +28,7 @@ creativity: 9
 technical: 9
 aesthetic: 9
 curation: 9
+source_link: "https://x.com/i/status/2086775867716366391"
 ---
 
 # 东方古风人物志 · 剪纸拼贴海报

@@ -18,6 +18,7 @@ source: https://x.com/i/status/2081242575390826981
 sourceLink: https://x.com/i/status/2081242575390826981
 authorLink: https://x.com/DeepBlueAIX
 author: "DeepBlue深藍"
+source_link: "https://x.com/i/status/2081242575390826981"
 ---
 
 ## Prompt

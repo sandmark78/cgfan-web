@@ -24,6 +24,7 @@ creativity: 9
 technical: 9
 aesthetic: 9
 curation: 9
+source_link: "https://x.com/i/status/2086814975629107560"
 ---
 
 # VISUAL OS 016 — 从地面仰拍的城市频率

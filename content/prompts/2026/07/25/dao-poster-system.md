@@ -12,6 +12,8 @@ cover: /images/prompts/dao-poster-system.jpg
 source: https://x.com/hx831126/status/2080681825505280084
 sourceLink: https://x.com/hx831126/status/2080681825505280084
 authorLink: https://x.com/hx831126
+source_link: "https://x.com/hx831126/status/2080681825505280084"
+author_link: "https://x.com/hx831126"
 ---
 
 ROLE｜角色

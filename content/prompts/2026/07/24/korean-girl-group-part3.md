@@ -17,6 +17,7 @@ source: https://x.com/i/status/2016803276566737364
 sourceLink: https://x.com/i/status/2016803276566737364
 authorLink: https://x.com/qisi_ai
 author: 骑司Chase (qisi_ai)
+source_link: "https://x.com/i/status/2016803276566737364"
 ---
 ## Prompt
 

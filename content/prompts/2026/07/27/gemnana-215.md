@@ -13,6 +13,8 @@ source: "@B_4AI"
 sourceLink: "https://x.com/B_4AI/status/1942850557548388499"
 authorLink: "https://x.com/B_4AI"
 cover: /images/prompts/gemnana-215.jpg
+source_link: "https://x.com/B_4AI"
+author_link: "https://x.com/B_4AI"
 ---
 
 ## Prompt

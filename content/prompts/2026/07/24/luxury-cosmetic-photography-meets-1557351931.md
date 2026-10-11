@@ -17,6 +17,7 @@ source: https://x.com/i/status/2014347192321167565
 sourceLink: https://x.com/i/status/2014347192321167565
 authorLink: https://x.com/0xbisc
 author: Latte 0xbisc
+source_link: "https://x.com/i/status/2014347192321167565"
 ---
 ## Prompt
 

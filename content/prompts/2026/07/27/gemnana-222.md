@@ -13,6 +13,8 @@ source: "@azed_ai"
 sourceLink: "https://x.com/azed_ai/status/1944067498187665507"
 authorLink: "https://x.com/azed_ai"
 cover: /images/prompts/gemnana-222.jpg
+source_link: "https://x.com/azed_ai"
+author_link: "https://x.com/azed_ai"
 ---
 
 ## Prompt

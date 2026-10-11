@@ -11,6 +11,8 @@ source: "@hc_dsn"
 sourceLink: "https://x.com/hc_dsn/status/1925431043122970869"
 authorLink: "https://x.com/hc_dsn"
 cover: /images/prompts/gemnana-141.jpg
+source_link: "https://x.com/hc_dsn"
+author_link: "https://x.com/hc_dsn"
 ---
 
 

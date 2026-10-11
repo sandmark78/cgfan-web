@@ -11,6 +11,8 @@ cover: /images/prompts/2080691509817639347.jpg
 source: https://x.com/Sairah_0/status/2080691509817639347
 sourceLink: https://x.com/Sairah_0/status/2080691509817639347
 authorLink: https://x.com/Sairah_0
+source_link: "https://x.com/Sairah_0/status/2080691509817639347"
+author_link: "https://x.com/Sairah_0"
 ---
 
 # 纽约旅行水彩插画

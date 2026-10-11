@@ -11,6 +11,8 @@ cover: /images/prompts/2080629318309556345.jpg
 source: https://x.com/Gdgtify/status/2080629318309556345
 sourceLink: https://x.com/Gdgtify/status/2080629318309556345
 authorLink: https://x.com/Gdgtify
+source_link: "https://x.com/Gdgtify/status/2080629318309556345"
+author_link: "https://x.com/Gdgtify"
 ---
 
 

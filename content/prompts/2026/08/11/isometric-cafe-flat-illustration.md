@@ -24,6 +24,7 @@ creativity: 8/10
 technical: 8/10
 aesthetic: 8/10
 curation: 8/10
+source_link: "https://x.com/i/status/2086843715063316892"
 ---
 
 # 等距微缩咖啡馆 · 扁平插画风

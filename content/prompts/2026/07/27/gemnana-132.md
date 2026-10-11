@@ -13,6 +13,8 @@ source: "@BeanieBlossom"
 sourceLink: "https://x.com/BeanieBlossom/status/1934581820433301996"
 authorLink: "https://x.com/BeanieBlossom"
 cover: /images/prompts/gemnana-132.jpg
+source_link: "https://x.com/BeanieBlossom"
+author_link: "https://x.com/BeanieBlossom"
 ---
 
 ## Prompt

@@ -17,6 +17,7 @@ source: https://x.com/i/status/2017166130746675620
 sourceLink: https://x.com/i/status/2017166130746675620
 authorLink: https://x.com/kashmir_ki_lark
 author: kashmir_ki_lark
+source_link: "https://x.com/i/status/2017166130746675620"
 ---
 ## Prompt
 

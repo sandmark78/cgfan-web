@@ -12,6 +12,8 @@ cover: /images/prompts/2079912938538951156.jpg
 source: https://x.com/VoxcatAI/status/2079912938538951156
 sourceLink: https://x.com/VoxcatAI/status/2079912938538951156
 authorLink: https://x.com/VoxcatAI
+source_link: "https://x.com/VoxcatAI/status/2079912938538951156"
+author_link: "https://x.com/VoxcatAI"
 ---
 
 

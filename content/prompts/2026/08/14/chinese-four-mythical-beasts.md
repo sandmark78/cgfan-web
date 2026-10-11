@@ -31,6 +31,7 @@ creativity: "9/10"
 technical: "9/10"
 aesthetic: "9/10"
 curation: "9/10"
+source_link: "https://x.com/i/status/2088094463528980888"
 ---
 
 # 中式四大神兽：火麒麟雷麟烛龙玄龟

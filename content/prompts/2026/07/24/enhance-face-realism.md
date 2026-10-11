@@ -14,6 +14,7 @@ source: "https://x.com/i/status/2078471143313592413"
 sourceLink: "https://x.com/i/status/2078471143313592413"
 authorLink: "https://x.com/GrayNoteLab"
 author: "灰度笔记"
+source_link: "https://x.com/i/status/2078471143313592413"
 ---
 
 ## Prompt

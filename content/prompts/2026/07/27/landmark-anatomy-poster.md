@@ -17,6 +17,7 @@ source: https://x.com/i/status/2081444405781594232
 sourceLink: https://x.com/i/status/2081444405781594232
 authorLink: https://x.com/TechieBySA
 author: "TechieSA"
+source_link: "https://x.com/i/status/2081444405781594232"
 ---
 ## Prompt
 

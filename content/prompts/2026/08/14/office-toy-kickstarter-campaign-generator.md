@@ -24,6 +24,7 @@ creativity: 8
 technical: 8
 aesthetic: 8
 curation: 8
+source_link: "https://x.com/i/status/2087847631884100062"
 ---
 
 # 办公玩具众筹活动生成器

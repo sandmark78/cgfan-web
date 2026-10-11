@@ -12,6 +12,8 @@ cover: /images/prompts/platform-zero.jpg
 source: https://x.com/nagarjuncreates/status/2080804228587790410
 sourceLink: https://x.com/nagarjuncreates/status/2080804228587790410
 authorLink: https://x.com/nagarjuncreates
+source_link: "https://x.com/nagarjuncreates/status/2080804228587790410"
+author_link: "https://x.com/nagarjuncreates"
 ---
 
 Create an ultra-realistic cinematic scene of a mysterious Victorian railway station known only as "Platform Zero," a forgotten platform that seems to exist outside of time. The atmosphere should feel magical, haunting, and filled with untold stories.

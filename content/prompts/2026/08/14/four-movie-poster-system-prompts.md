@@ -27,6 +27,7 @@ creativity: "9/10"
 technical: "8/10"
 aesthetic: "9/10"
 curation: "9/10"
+source_link: "https://x.com/i/status/2087902189926613145"
 ---
 
 # 四部电影海报系统提示词

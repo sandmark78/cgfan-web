@@ -17,6 +17,7 @@ source: https://x.com/i/status/2017223007060808035
 sourceLink: https://x.com/i/status/2017223007060808035
 authorLink: https://x.com/NattyWindstorm
 author: Natty Windstorm
+source_link: "https://x.com/i/status/2017223007060808035"
 ---
 ## Prompt
 

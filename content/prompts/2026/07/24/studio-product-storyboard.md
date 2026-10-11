@@ -17,6 +17,7 @@ source: https://x.com/i/status/2012527817477828745
 sourceLink: https://x.com/i/status/2012527817477828745
 authorLink: https://x.com/songguoxiansen
 author: 松果先森
+source_link: "https://x.com/i/status/2012527817477828745"
 ---
 ## Prompt
 

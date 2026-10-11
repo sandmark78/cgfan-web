@@ -26,6 +26,7 @@ creativity: 9
 technical: 9
 aesthetic: 10
 curation: 9
+source_link: "https://x.com/i/status/2087002325252718839"
 ---
 
 # 古风琵琶仕女 · 紫金色调杂志封面

@@ -15,6 +15,7 @@ source: "https://x.com/i/status/2058455967961067966"
 sourceLink: "https://x.com/i/status/2058455967961067966"
 authorLink: "https://x.com/liyue_ai"
 author: "李岳"
+source_link: "https://x.com/i/status/2058455967961067966"
 ---
 
 ## Prompt

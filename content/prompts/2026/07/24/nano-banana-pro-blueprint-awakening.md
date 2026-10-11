@@ -16,6 +16,7 @@ source: "https://x.com/i/status/2010009737816162736"
 sourceLink: "https://x.com/i/status/2010009737816162736"
 authorLink: "https://x.com/AllaAisling"
 author: "Alexandra Aisling"
+source_link: "https://x.com/i/status/2010009737816162736"
 ---
 ## Prompt
 

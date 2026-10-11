@@ -17,6 +17,7 @@ source: https://x.com/i/status/2014213404878324132
 sourceLink: https://x.com/i/status/2014213404878324132
 authorLink: https://x.com/AIwithkhan
 author: AIwithkhan
+source_link: "https://x.com/i/status/2014213404878324132"
 ---
 ## Prompt
 

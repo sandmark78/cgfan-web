@@ -63,6 +63,16 @@ def db_row_to_prompt(row: Dict) -> Dict:
         'parameters': row.get('parameters') or {},
         'mtime': row.get('mtime'),
         'promptDNA': row.get('prompt_dna'),
+        # 评分字段
+        'score': row.get('score'),
+        'composition': row.get('composition'),
+        'color': row.get('color'),
+        'lighting': row.get('lighting'),
+        'detail': row.get('detail'),
+        'creativity': row.get('creativity'),
+        'technical': row.get('technical'),
+        'aesthetic': row.get('aesthetic'),
+        'curation': row.get('curation'),
     }
 
 def prompt_to_db_row(prompt: Dict) -> Dict:
@@ -87,6 +97,16 @@ def prompt_to_db_row(prompt: Dict) -> Dict:
         'parameters': prompt.get('parameters') or {},
         'mtime': int(prompt['mtime']) if prompt.get('mtime') else None,
         'prompt_dna': prompt.get('promptDNA'),
+        # 评分字段
+        'score': prompt.get('score'),
+        'composition': prompt.get('composition'),
+        'color': prompt.get('color'),
+        'lighting': prompt.get('lighting'),
+        'detail': prompt.get('detail'),
+        'creativity': prompt.get('creativity'),
+        'technical': prompt.get('technical'),
+        'aesthetic': prompt.get('aesthetic'),
+        'curation': prompt.get('curation'),
     }
 
 # ====== 查询操作 ======

@@ -13,6 +13,8 @@ source: "@Kerroudjm"
 sourceLink: "https://x.com/Kerroudjm/status/1944730614323671129"
 authorLink: "https://x.com/Kerroudjm"
 cover: /images/prompts/gemnana-236.jpg
+source_link: "https://x.com/Kerroudjm"
+author_link: "https://x.com/Kerroudjm"
 ---
 
 ## Prompt

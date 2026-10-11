@@ -13,6 +13,8 @@ source: "@fy360593"
 sourceLink: "https://x.com/fy360593/status/1955265393188286632"
 authorLink: "https://x.com/fy360593"
 cover: /images/prompts/gemnana-248.jpg
+source_link: "https://x.com/fy360593"
+author_link: "https://x.com/fy360593"
 ---
 
 ## Prompt

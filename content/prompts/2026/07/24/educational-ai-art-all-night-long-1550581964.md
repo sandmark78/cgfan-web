@@ -17,6 +17,7 @@ source: https://x.com/i/status/2012669231498703282
 sourceLink: https://x.com/i/status/2012669231498703282
 authorLink: https://x.com/GirlsinAIArt
 author: Girls in AI Art｜GiAA(ギア)
+source_link: "https://x.com/i/status/2012669231498703282"
 ---
 
 ## Prompt

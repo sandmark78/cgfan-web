@@ -17,6 +17,7 @@ source: https://x.com/i/status/2081620096242381059
 sourceLink: https://x.com/i/status/2081620096242381059
 authorLink: https://x.com/RobotCleopatra
 author: "Skipper VanderWall"
+source_link: "https://x.com/i/status/2081620096242381059"
 ---
 ## Prompt
 

@@ -15,6 +15,7 @@ source: "https://x.com/i/status/2079557034622796056"
 sourceLink: "https://x.com/i/status/2079557034622796056"
 authorLink: "https://x.com/xiaoxiaodong01"
 author: "小小东"
+source_link: "https://x.com/i/status/2079557034622796056"
 ---
 
 ## Prompt

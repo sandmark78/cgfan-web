@@ -27,6 +27,7 @@ creativity: 9
 technical: 9
 aesthetic: 9
 curation: 9
+source_link: "https://x.com/i/status/2086814975025185084"
 ---
 
 # 二战纪实影像 · 胶片质感战争编年史

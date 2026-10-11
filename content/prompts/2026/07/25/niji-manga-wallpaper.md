@@ -12,6 +12,8 @@ cover: /images/prompts/niji-manga-wallpaper.jpg
 source: https://x.com/CharaspowerAI/status/2080714737902346634
 sourceLink: https://x.com/CharaspowerAI/status/2080714737902346634
 authorLink: https://x.com/CharaspowerAI
+source_link: "https://x.com/CharaspowerAI/status/2080714737902346634"
+author_link: "https://x.com/CharaspowerAI"
 ---
 
 [Character name] [action / power pose / energy effect] wallpaper, in the style of V-Ray tracing, vivid energy explosions, vibrant manga, powerful compositions, strong facial expression, intense emotional atmosphere.

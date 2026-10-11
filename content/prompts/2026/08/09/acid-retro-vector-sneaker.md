@@ -25,6 +25,7 @@ creativity: 8
 technical: 8
 aesthetic: 7
 curation: 7
+source_link: "https://x.com/i/status/2086276401397907950"
 ---
 
 # 酸性复古矢量：鱼眼透视运动鞋街头

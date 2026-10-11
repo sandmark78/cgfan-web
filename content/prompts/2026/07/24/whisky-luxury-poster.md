@@ -11,6 +11,8 @@ cover: /images/prompts/2080615196691698043.jpg
 source: https://x.com/ou_zhen599/status/2080615196691698043
 sourceLink: https://x.com/ou_zhen599/status/2080615196691698043
 authorLink: https://x.com/ou_zhen599
+source_link: "https://x.com/ou_zhen599/status/2080615196691698043"
+author_link: "https://x.com/ou_zhen599"
 ---
 
 # 威士忌奢华海报

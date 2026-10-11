@@ -13,6 +13,8 @@ source: "@TheRelianceAI"
 sourceLink: "https://x.com/TheRelianceAI/status/1925223613055017251"
 authorLink: "https://x.com/TheRelianceAI"
 cover: /images/prompts/gemnana-99.jpg
+source_link: "https://x.com/TheRelianceAI"
+author_link: "https://x.com/TheRelianceAI"
 ---
 
 ## Prompt

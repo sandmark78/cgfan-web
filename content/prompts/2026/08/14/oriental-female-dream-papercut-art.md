@@ -26,6 +26,7 @@ creativity: "9/10"
 technical: "9/10"
 aesthetic: "9/10"
 curation: "8/10"
+source_link: "https://x.com/i/status/2088162687817822218"
 ---
 
 # 东方女性梦境立体剪纸艺术

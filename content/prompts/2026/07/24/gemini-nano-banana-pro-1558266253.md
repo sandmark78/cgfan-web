@@ -17,6 +17,7 @@ source: https://x.com/i/status/2014576740492869761
 sourceLink: https://x.com/i/status/2014576740492869761
 authorLink: https://x.com/lexx_aura
 author: Lex (lexx_aura)
+source_link: "https://x.com/i/status/2014576740492869761"
 ---
 ## Prompt
 

@@ -29,6 +29,7 @@ creativity: "9/10"
 technique: "8/10"
 aesthetic: "9/10"
 curation: "9/10"
+source_link: "https://x.com/i/status/2085683388078268686"
 ---
 
 ## 评分算术

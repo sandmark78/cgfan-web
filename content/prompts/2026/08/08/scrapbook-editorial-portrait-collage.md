@@ -22,6 +22,7 @@ rating:
   aesthetic: 8
   curation: 9
   total: 66
+source_link: "https://x.com/i/status/2085382596016452082"
 ---
 
 ## 摘要

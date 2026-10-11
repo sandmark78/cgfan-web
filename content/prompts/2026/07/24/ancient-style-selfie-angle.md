@@ -12,6 +12,7 @@ source: "https://x.com/i/status/2078196771466199115"
 sourceLink: "https://x.com/i/status/2078196771466199115"
 authorLink: "https://x.com/VoxcatAI"
 author: "VoxCat"
+source_link: "https://x.com/i/status/2078196771466199115"
 ---
 
 

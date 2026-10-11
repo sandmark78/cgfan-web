@@ -12,6 +12,7 @@ cover: /images/prompts/yuki-morning-bathroom-portrait.webp
 source: https://x.com/i/status/2081516911645589874
 sourceLink: https://x.com/i/status/2081516911645589874
 authorLink: https://x.com/YUKIMASTERAI
+source_link: "https://x.com/i/status/2081516911645589874"
 ---
 
 ## Prompt

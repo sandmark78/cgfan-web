@@ -17,6 +17,7 @@ source: https://x.com/i/status/2015282932643139964
 sourceLink: https://x.com/i/status/2015282932643139964
 authorLink: https://x.com/ChillaiKalan__
 author: K ChillaiKalan__
+source_link: "https://x.com/i/status/2015282932643139964"
 ---
 ## Prompt
 

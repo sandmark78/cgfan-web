@@ -17,6 +17,7 @@ source: https://x.com/i/status/2017306745358402020
 sourceLink: https://x.com/i/status/2017306745358402020
 authorLink: https://x.com/astronomerozge1
 author: astronomerozge1
+source_link: "https://x.com/i/status/2017306745358402020"
 ---
 
 ## Prompt

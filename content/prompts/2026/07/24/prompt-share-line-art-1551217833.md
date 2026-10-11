@@ -26,6 +26,7 @@ author: Amira Zairi (azed_ai)
 
 
 
+source_link: "https://x.com/i/status/2012841665359483325"
 ---
 
 ## Prompt

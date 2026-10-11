@@ -11,6 +11,8 @@ source: "@CharaspowerAI"
 sourceLink: "https://x.com/CharaspowerAI/status/1944796547587125663"
 authorLink: "https://x.com/CharaspowerAI"
 cover: /images/prompts/gemnana-235.jpg
+source_link: "https://x.com/CharaspowerAI"
+author_link: "https://x.com/CharaspowerAI"
 ---
 
 

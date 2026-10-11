@@ -24,6 +24,7 @@ creativity: "9/10"
 technical: "8/10"
 aesthetic: "8/10"
 curation: "8/10"
+source_link: "https://x.com/i/status/2088174544632824184"
 ---
 
 # 灯塔看守人纺织风格插画

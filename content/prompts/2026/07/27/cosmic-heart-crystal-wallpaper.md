@@ -17,6 +17,7 @@ source: https://x.com/i/status/2081395886882508953
 sourceLink: https://x.com/i/status/2081395886882508953
 authorLink: https://x.com/aylinspace
 author: "Aylin"
+source_link: "https://x.com/i/status/2081395886882508953"
 ---
 ## Prompt
 

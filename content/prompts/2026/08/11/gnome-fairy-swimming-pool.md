@@ -24,6 +24,7 @@ creativity: 8
 technical: 8
 aesthetic: 8
 curation: 8
+source_link: "https://x.com/i/status/2086723987061764331"
 ---
 
 # 废弃泳池里的精灵微世界

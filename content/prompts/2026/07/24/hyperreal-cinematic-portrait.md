@@ -14,6 +14,7 @@ source: "https://x.com/i/status/2009298156748722252"
 sourceLink: "https://x.com/i/status/2009298156748722252"
 authorLink: "https://x.com/iamsofiaijaz"
 author: "Aijaz"
+source_link: "https://x.com/i/status/2009298156748722252"
 ---
 ## Prompt
 

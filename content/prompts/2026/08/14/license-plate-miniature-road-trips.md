@@ -24,6 +24,7 @@ creativity: 9
 technical: 8
 aesthetic: 8
 curation: 8
+source_link: "https://x.com/i/status/2087913314894450875"
 ---
 
 # 车牌微缩公路旅行

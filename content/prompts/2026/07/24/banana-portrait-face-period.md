@@ -21,6 +21,7 @@ source: "https://x.com/i/status/2080124574696694035"
 sourceLink: "https://x.com/i/status/2080124574696694035"
 authorLink: "https://x.com/94vanAI"
 author: "𝟡𝟜 ᴾᴸᴬʸᶠᴼᴿᴳᴱ"
+source_link: "https://x.com/i/status/2080124574696694035"
 ---
 
 ## Prompt

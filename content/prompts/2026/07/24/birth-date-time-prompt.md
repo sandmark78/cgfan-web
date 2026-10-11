@@ -16,6 +16,7 @@ source: https://x.com/i/status/2011391647226241078
 sourceLink: https://x.com/i/status/2011391647226241078
 authorLink: https://x.com/meijiangAI
 author: 美酱AI (meijiangAI)
+source_link: "https://x.com/i/status/2011391647226241078"
 ---
 
 ## Prompt

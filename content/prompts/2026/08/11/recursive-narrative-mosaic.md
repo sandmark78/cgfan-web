@@ -22,6 +22,7 @@ creativity: 10
 technical: 8
 aesthetic: 8
 curation: 8
+source_link: "https://x.com/i/status/2086758454941675659"
 ---
 
 # 递归叙事马赛克 · 多尺度人物传记系统

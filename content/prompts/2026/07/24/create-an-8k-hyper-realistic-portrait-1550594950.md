@@ -17,6 +17,7 @@ source: https://x.com/i/status/2012578660453405071
 sourceLink: https://x.com/i/status/2012578660453405071
 authorLink: https://x.com/OOTD
 author: simplykingofdairyqueen
+source_link: "https://x.com/i/status/2012578660453405071"
 ---
 
 ## Prompt

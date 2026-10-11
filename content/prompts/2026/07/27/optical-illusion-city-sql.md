@@ -17,6 +17,7 @@ source: https://x.com/i/status/2081674958527225877
 sourceLink: https://x.com/i/status/2081674958527225877
 authorLink: https://x.com/Gdgtify
 author: "Gadgetify"
+source_link: "https://x.com/i/status/2081674958527225877"
 ---
 ## Prompt
 

@@ -13,6 +13,8 @@ source: "@vkuoo"
 sourceLink: "https://x.com/vkuoo/status/1929708611208728874"
 authorLink: "https://x.com/vkuoo"
 cover: /images/prompts/gemnana-256.jpg
+source_link: "https://x.com/vkuoo"
+author_link: "https://x.com/vkuoo"
 ---
 
 ## Prompt

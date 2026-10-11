@@ -13,6 +13,8 @@ source: "@hc_dsn"
 sourceLink: "https://x.com/hc_dsn/status/1938203557771260064"
 authorLink: "https://x.com/hc_dsn"
 cover: /images/prompts/gemnana-167.jpg
+source_link: "https://x.com/hc_dsn"
+author_link: "https://x.com/hc_dsn"
 ---
 
 ## Prompt

@@ -26,6 +26,7 @@ creativity: 8
 technical: 9
 aesthetic: 9
 curation: 9
+source_link: "https://x.com/i/status/2086828099979669670"
 ---
 
 # 暗黑编辑风 · 沉浸式英雄区块设计

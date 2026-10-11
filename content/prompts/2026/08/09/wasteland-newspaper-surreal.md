@@ -24,6 +24,7 @@ creativity: 9
 technical: 9
 aesthetic: 9
 curation: 8
+source_link: "https://x.com/i/status/2086130418534002803"
 ---
 
 # 废墟中读报：末世荒诞的冷静旁观

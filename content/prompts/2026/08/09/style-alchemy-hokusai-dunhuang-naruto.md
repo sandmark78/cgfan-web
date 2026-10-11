@@ -28,6 +28,7 @@ creativity: 8
 technical: 8
 aesthetic: 8
 curation: 7
+source_link: "https://x.com/i/status/2086256436275982541"
 ---
 
 # 风格炼金术：葛饰北斋×敦煌壁画×火影忍者

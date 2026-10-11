@@ -22,6 +22,7 @@ creativity: 8
 technical: 9
 aesthetic: 9
 curation: 8
+source_link: "https://x.com/i/status/2086186439037849811"
 ---
 
 # 黑色机械兰花：高定裙的雕塑感

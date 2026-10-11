@@ -19,6 +19,7 @@ creativity: 7
 technical: 8
 aesthetic: 8
 curation: 8
+source_link: "https://x.com/i/status/2086892098041827494"
 ---
 
 # 1950年月光下的吉萨金字塔

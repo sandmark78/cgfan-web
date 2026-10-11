@@ -17,6 +17,7 @@ source: https://x.com/i/status/2014212617779441724
 sourceLink: https://x.com/i/status/2014212617779441724
 authorLink: https://x.com/aleenaamiir
 author: Aleena Amir
+source_link: "https://x.com/i/status/2014212617779441724"
 ---
 ## Prompt
 

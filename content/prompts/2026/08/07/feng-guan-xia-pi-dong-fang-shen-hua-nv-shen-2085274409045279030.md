@@ -23,6 +23,7 @@ creativity: 9
 technical: 9
 aesthetic: 9
 curation: 8
+source_link: "https://x.com/i/status/2085274409045279030"
 ---
 
 # 凤冠拆解为色彩元素，东方极繁美学

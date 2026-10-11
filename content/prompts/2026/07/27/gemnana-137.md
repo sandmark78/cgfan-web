@@ -13,6 +13,8 @@ source: "@aziz4ai"
 sourceLink: "https://x.com/aziz4ai/status/1934528170264572227"
 authorLink: "https://x.com/aziz4ai"
 cover: /images/prompts/gemnana-137.jpg
+source_link: "https://x.com/aziz4ai"
+author_link: "https://x.com/aziz4ai"
 ---
 
 ## Prompt

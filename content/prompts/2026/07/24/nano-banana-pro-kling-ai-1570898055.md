@@ -17,6 +17,7 @@ source: https://x.com/i/status/2017190433127072212
 sourceLink: https://x.com/i/status/2017190433127072212
 authorLink: https://x.com/LiEvanna85716
 author: 邪修玩AI-诗泳 LiEvanna85716
+source_link: "https://x.com/i/status/2017190433127072212"
 ---
 
 ## Prompt
