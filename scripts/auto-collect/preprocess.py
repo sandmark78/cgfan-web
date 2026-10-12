@@ -124,15 +124,32 @@ def main():
         date = tweet.get('date', '')
         all_text = tweet.get('allText', '')
         imgs = tweet.get('imgs', [])
+        quote_tweet = tweet.get('quoteTweet', None)
         
-        # 检查是否有图片
-        if not imgs:
+        # 引用推文处理（v3.1 新增，2026-10-12）
+        # 如果主推文没有图片，但引用推文有图片，使用引用推文的图片
+        quote_imgs = []
+        quote_image_urls = []
+        quote_all_text = ''
+        if quote_tweet:
+            quote_imgs = quote_tweet.get('imgs', [])
+            quote_all_text = quote_tweet.get('text', '')
+            for i, img in enumerate(quote_imgs[:4]):
+                img_url = img.get('src', '')
+                if img_url:
+                    quote_image_urls.append(img_url)
+            print(f"📎 引用推文: {quote_tweet.get('author', '?')} (@{quote_tweet.get('authorHandle', '?')})")
+            print(f"   引用图片: {len(quote_image_urls)} 张")
+        
+        # 检查是否有图片（主推文或引用推文）
+        if not imgs and not quote_imgs:
             print(f"⚠️ 无图片: {tweet_id}")
             continue
         
-        # 提取图片 URL（不下载）
+        # 提取图片 URL（不下载）- 优先使用主推文图片，否则使用引用推文图片
         image_urls = []
-        for i, img in enumerate(imgs[:4]):  # 最多4张
+        source_imgs = imgs if imgs else quote_imgs
+        for i, img in enumerate(source_imgs[:4]):  # 最多4张
             img_url = img.get('src', '')
             if img_url:
                 image_urls.append(img_url)
@@ -150,7 +167,11 @@ def main():
             'allText': all_text,  # 完整文本，LLM 提取 prompt
             'imgs': imgs,  # 图片元数据（含 alt）
             'image_urls': image_urls,  # 图片URL（不下载）
-            'source': f"https://x.com/i/status/{tweet_id}"
+            'source': f"https://x.com/i/status/{tweet_id}",
+            # 引用推文数据（v3.1）
+            'quoteTweet': quote_tweet,
+            'quoteAllText': quote_all_text,
+            'quoteImageUrls': quote_image_urls
         })
         
         print(f"✅ 预处理: {tweet_id} ({len(image_urls)} 张图片URL)\n")

@@ -107,6 +107,58 @@ def fetch_tweet_content(tweet_id):
         var timeEl = article.querySelector('time');
         var date = timeEl ? timeEl.getAttribute('datetime') : '';
         
+        // 引用推文（Quote Tweet）检测
+        var quoteTweet = null;
+        // Twitter 的引用推文容器通常有 role="link" 且包含 /status/ 链接
+        var allDivs = article.querySelectorAll('div[role="link"]');
+        for (var i = 0; i < allDivs.length; i++) {
+            var link = allDivs[i].querySelector('a[href*="/status/"]');
+            if (link) {
+                var quoteHref = link.getAttribute('href') || '';
+                // 提取引用推文的作者和图片
+                var quoteAuthor = '';
+                var quoteHandle = '';
+                var quoteImgs = [];
+                var quoteText = '';
+                
+                // 提取引用推文的作者名和handle
+                var quoteLinks = allDivs[i].querySelectorAll('a');
+                for (var k = 0; k < quoteLinks.length; k++) {
+                    var qHref = quoteLinks[k].getAttribute('href') || '';
+                    if (qHref.charAt(0) === '/' 
+                        && qHref.indexOf('/status/') === -1 
+                        && qHref.indexOf('/photo/') === -1
+                        && qHref.indexOf('?') === -1) {
+                        quoteHandle = qHref.replace('/', '');
+                        quoteAuthor = quoteLinks[k].innerText.trim();
+                        break;
+                    }
+                }
+                
+                // 提取引用推文的图片
+                var quoteImgEls = allDivs[i].querySelectorAll('img');
+                for (var k = 0; k < quoteImgEls.length; k++) {
+                    var qSrc = quoteImgEls[k].getAttribute('src') || '';
+                    var qAlt = quoteImgEls[k].getAttribute('alt') || '';
+                    if (qSrc.indexOf('twimg.com/media') > -1) {
+                        quoteImgs.push({ src: qSrc, alt: qAlt });
+                    }
+                }
+                
+                // 提取引用推文的文本
+                quoteText = allDivs[i].innerText || '';
+                
+                quoteTweet = {
+                    url: 'https://x.com' + quoteHref,
+                    author: quoteAuthor,
+                    authorHandle: quoteHandle,
+                    text: quoteText,
+                    imgs: quoteImgs
+                };
+                break;
+            }
+        }
+        
         return {
             id: '%s',
             author: author,
@@ -115,7 +167,8 @@ def fetch_tweet_content(tweet_id):
             text: text,
             imgs: imgs,
             date: date,
-            allText: text
+            allText: text,
+            quoteTweet: quoteTweet
         };
     })())""" % tweet_id
     
