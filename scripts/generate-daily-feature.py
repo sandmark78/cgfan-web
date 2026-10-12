@@ -95,7 +95,7 @@ def enrich_prompts_with_scores(prompts):
                 slug_map[slug]['score'] = score
     
     # 诊断输出：报告 enrich 结果（2026-09-03 新增）
-    enriched = sum(1 for p in prompts if p.get('score', 0) > 0)
+    enriched = sum(1 for p in prompts if (p.get('score') or 0) > 0)
     print(f"📊 enrich_prompts_with_scores: {enriched}/{len(prompts)} 条记录获得 score")
     if enriched == 0:
         print(f"  ⚠️ 警告：没有匹配到任何 score！检查 content/prompts 目录结构和 markdown frontmatter")
