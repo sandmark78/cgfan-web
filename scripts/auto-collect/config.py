@@ -45,20 +45,7 @@ def should_filter(prompt: str, has_video: bool = False) -> tuple[bool, str]:
     if has_video:
         return True, '视频内容'
     
-    prompt_lower = prompt.lower()
-    
-    # 私房写真
-    if any(kw in prompt for kw in FILTER_PATTERNS['私房写真']):
-        return True, '私房写真'
-    
-    # COS写真
-    if any(kw in prompt_lower for kw in [kw.lower() for kw in FILTER_PATTERNS['COS写真']]):
-        return True, 'COS写真'
-    
-    # 纯人像写真（不含古风/仙侠/电影感）
-    is_portrait = any(kw in prompt for kw in ['人像写真', '人像摄影'])
-    has_exception = any(kw in prompt for kw in PORTRAIT_EXCEPTIONS)
-    if is_portrait and not has_exception:
-        return True, '纯人像写真'
+    # 2026-10-12 用户要求：去除私房/COS/人像写真过滤
+    # 只保留视频过滤
     
     return False, ''

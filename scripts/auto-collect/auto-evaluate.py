@@ -283,13 +283,10 @@ def base_score(prompt: str) -> dict:
         scores['color'] = 9
         scores['creativity'] = 9
     
-    # 人像（非私房/COS）
+    # 人像
     if any(kw in prompt for kw in ['人像', '人物', 'portrait', 'woman', 'man', '女性', '男性']):
-        if any(kw in prompt for kw in PORTRAIT_EXCEPTIONS):
-            scores['aesthetic'] = 9
-            scores['lighting'] = 9
-        else:
-            scores['aesthetic'] = 7  # 普通人像降分
+        scores['aesthetic'] = 8
+        scores['lighting'] = 8
     
     # 品牌/LOGO设计
     if any(kw in prompt_lower for kw in ['logo', 'brand', '品牌', '标志']):

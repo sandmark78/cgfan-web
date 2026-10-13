@@ -123,21 +123,7 @@ def should_filter(prompt: str, allText: str) -> Tuple[bool, str]:
     if 'video' in text_lower or '.mp4' in text_lower or '.mov' in text_lower:
         return True, "视频内容"
     
-    # 过滤私房写真
-    if '私房' in text_lower or 'boudoir' in text_lower:
-        return True, "私房写真"
-    
-    # 过滤 COS 写真
-    if 'cos' in text_lower and ('写真' in text_lower or 'cosplay' in text_lower):
-        return True, "COS写真"
-    
-    # 过滤纯人像写真（不含仙侠/古风/电影感）
-    portrait_keywords = ['人像写真', 'portrait photography', 'photo booth', '拍照亭']
-    has_portrait = any(kw in text_lower for kw in portrait_keywords)
-    has_artistic = any(kw in text_lower for kw in ['仙侠', '古风', '电影感', 'cinematic', 'fantasy', 'wuxia'])
-    
-    if has_portrait and not has_artistic:
-        return True, "纯人像写真"
+    # 2026-10-12 用户要求：去除私房/COS/人像写真过滤
     
     # 检查是否只有负面提示词
     if 'negative prompt' in text_lower and 'prompt' not in text_lower.replace('negative prompt', ''):

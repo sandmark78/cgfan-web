@@ -134,23 +134,7 @@ def should_filter(all_text, prompt_text, imgs):
         if kw in combined:
             return True, f'视频内容({kw})'
     
-    # Private portrait / suggestive
-    for kw in FILTER_PORTRAIT:
-        if kw in combined:
-            # Check if it has strong artistic context (古风/仙侠/电影感)
-            has_artistic = any(kw2 in combined for kw2 in ['古风', '仙侠', '电影感', 'cinematic', 'storybook'])
-            if not has_artistic:
-                return True, f'隐晦性暗示/私房({kw})'
-    
-    # COS写真 without artistic context
-    if any(kw in combined for kw in ['cos', 'cosplay']):
-        if not any(kw2 in combined for kw2 in ['古风', '仙侠', '电影感', 'street', '街拍']):
-            return True, 'COS写真'
-    
-    # Pure portrait without artistic merit
-    if 'portrait' in combined and len(prompt_text) < 200:
-        if not any(kw in combined for kw in ['古风', '仙侠', '电影感', 'storybook', 'editorial', 'cinematic', 'fantasy']):
-            return True, '纯人像写真'
+    # 2026-10-12 用户要求：去除私房/COS/人像写真过滤
     
     # QT/share threads without actual prompt
     if 'qt or share' in combined or 'share your' in combined:
