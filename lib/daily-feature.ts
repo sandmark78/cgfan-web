@@ -19,6 +19,15 @@ export interface DailyFeature {
  */
 export const dailyFeatures: DailyFeature[] = [
   {
+    date: '2026-10-15',
+    slug: 'prompt-2109948906264199313',
+    curatorNote: '该Prompt以模块化结构精准构建时尚大片，从画幅到身材曲线层层递进，逻辑严密。最大亮点是对“真实感”的极致追求，用“translucent, creamy”打破AI塑料肤质，配合“clearly adult”年龄锚定，完美复刻韩国时尚杂志的冷峻高级感，极度适合高端美妆或服饰的视觉概念生成。',
+    highlight: '复刻韩系时尚杂志冷峻高级感，以极致肤质细节打破AI塑料感。',
+    technique: '9:16竖版构图 · 模块化特征递进 · 肤质微观刻画 · 冷峻氛围锚定',
+    tip: '采用“画幅-气质-身材-肤质”的漏斗式结构描述人物，能避免特征遗漏，大幅提升AI生成的立体感与真实度。',
+    tryChange: '将“indoor”换为“outdoor”，“creamy”换为“sweaty”，即可将冷峻室内大片转为热辣街头写真。',
+  },
+  {
     date: '2026-10-14',
     slug: 'prompt-2110068841187578335',
     curatorNote: '这条提示词的精髓在于用设计语言而非描述语言驱动画面。"peel becomes the motion line"不是在说柠檬皮长什么样，而是在定义它的视觉功能——引导视线、打破几何、建立风味感知。这种"先功能后形态"的写法让AI理解构图意图而非堆砌元素。通心粉光环作为雕塑质感而非装饰，保持了包装的货架权威感。整体呈现出商业摄影与编辑设计的精确平衡。',
