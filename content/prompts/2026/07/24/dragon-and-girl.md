@@ -1,5 +1,5 @@
 ---
-title: "龙与少女"
+title: "视觉作品"
 slug: dragon-and-girl
 model: Midjourney
 category: fantasy

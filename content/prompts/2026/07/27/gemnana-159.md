@@ -1,5 +1,5 @@
 ---
-title: "渲染宝石"
+title: "3D渲染视觉"
 slug: gemnana-159
 date: 2025-11-06
 added: 2026-07-27T11:31:15+08:00

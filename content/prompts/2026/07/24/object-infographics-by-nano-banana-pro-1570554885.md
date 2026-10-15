@@ -1,5 +1,5 @@
 ---
-title: "物品信息图"
+title: "编辑设计视觉"
 slug: object-infographics-by-nano-banana-pro-1570554885
 model: Midjourney
 category: "编辑设计"
