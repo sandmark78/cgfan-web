@@ -505,8 +505,19 @@ def main():
     selection_reason = ""
 
     # 直接从最喜欢列表中按分数降序选（不区分是否标记"→ 最喜欢"）
+    # 过滤"写真"类内容：每日一味不出现写真
     print(f"🔍 从最喜欢列表中查找（按分数降序）...")
-    for fav in favorites:  # favorites 已按分数降序
+    
+    # 过滤掉标题包含"写真"的条目
+    filtered_favorites = []
+    for fav in favorites:
+        title = fav["title"]
+        if "写真" in title:
+            print(f"  🚫 过滤写真：「{title[:30]}」不入选每日一味")
+        else:
+            filtered_favorites.append(fav)
+    
+    for fav in filtered_favorites:  # favorites 已按分数降序
         slug = find_slug_by_title(prompts, fav["title"], md_title_map)
         if slug and slug not in existing_slugs:
             # 优先从 Supabase 数据里找
