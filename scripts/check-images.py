@@ -50,14 +50,18 @@ def check_images():
         # 检查 cover
         if cover:
             total_images += 1
-            filename = cover.split('/')[-1]
-            filepath = images_dir / filename
+            # cover 可能是完整路径如 /images/prompts/2026-10-12/xxx.jpg
+            if cover.startswith('/images/prompts/'):
+                filepath = project_root / 'public' / cover.lstrip('/')
+            else:
+                filename = cover.split('/')[-1]
+                filepath = images_dir / filename
             if not filepath.exists():
                 missing.append({
                     'slug': slug,
                     'type': 'cover',
                     'path': cover,
-                    'file': filename,
+                    'file': cover.split('/')[-1],
                     'md_file': str(md_file.relative_to(prompts_dir))
                 })
     

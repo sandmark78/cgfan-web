@@ -19,6 +19,15 @@ export interface DailyFeature {
  */
 export const dailyFeatures: DailyFeature[] = [
   {
+    date: '2026-10-16',
+    slug: 'prompt-2109948906264199313',
+    curatorNote: '这条提示词的精髓在于「由骨到皮」的分层构建逻辑。先用9:16竖构图和室内时尚摄影锚定体裁框架，再以「cool, sophisticated aura」注入气质灵魂，最后用「fair→translucent→creamy→realistic texture」四层递进堆叠肌肤质感——从色相到透光率到触感逐层加深，让AI理解的不是一个词，而是一组光学信号。这种「心理气质+物理质感」双线并行的写法，特别适合需要人物有「存在感」而非「漂亮空壳」的时尚编辑类创作。',
+    highlight: '四层肌肤质感递进 × 冷感气质锚定，让AI画出有温度的时尚肖像。',
+    technique: '竖版构图锚定 · 体裁先行定位 · 肌肤多层质感堆叠 · 气质关键词注入',
+    tip: '写人物肤质时，别只给一个形容词。用「色相→透光感→触感→微观纹理」的递进链，给AI一组可渲染的光学指令，真实感会跃升一个量级。',
+    tryChange: '把「indoor fashion photography」换成「rainy neon-lit street at dusk」，再给皮肤加一层「glistening with fine rain droplets」，整张图会从棚拍杂志感变成电影剧照氛围。',
+  },
+  {
     date: '2026-10-15',
     slug: 'prompt-2110068841187578335',
     curatorNote: '此提示词巧妙将产品元素转化为视觉叙事。以柠檬皮打破包装的刚性几何，构建动态视线引导；同时用通心粉阵列构筑“椭圆光环”，在赋予产品舞台感的同时严守“标签留白”的商业底线。这种“艺术雕塑感+货架逻辑”的平衡，是高端食品海报的绝佳范本，展现了AI在商业美术中极高的可控性。',
