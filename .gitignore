@@ -40,3 +40,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 gemnana-data/
+
+# backups (local only, too large for GitHub)
+backups/
+
+# auto-collect temp data
+data/auto-collect/
