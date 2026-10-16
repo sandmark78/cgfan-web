@@ -369,17 +369,20 @@ function parseMarkdownFile(filePath: string): PromptData | null {
       }
     }
     
-    // 读取评分字段
-    const rating = frontmatter.rating ? {
-      composition: Number(frontmatter.rating.composition) || 0,
-      color: Number(frontmatter.rating.color) || 0,
-      lighting: Number(frontmatter.rating.lighting) || 0,
-      detail: Number(frontmatter.rating.detail) || 0,
-      creativity: Number(frontmatter.rating.creativity) || 0,
-      technical: Number(frontmatter.rating.technical) || 0,
-      aesthetic: Number(frontmatter.rating.aesthetic) || 0,
-      curation: Number(frontmatter.rating.curation) || 0,
-      total: Number(frontmatter.rating.total) || 0
+    // 读取评分字段 - 支持嵌套 rating 对象和顶层扁平字段两种格式
+    const fm = frontmatter as any;
+    const hasRating = fm.rating && typeof fm.rating === 'object';
+    const hasFlatScore = fm.score !== undefined || fm.composition !== undefined;
+    const rating = (hasRating || hasFlatScore) ? {
+      composition: Number(hasRating ? fm.rating.composition : fm.composition) || 0,
+      color: Number(hasRating ? fm.rating.color : fm.color) || 0,
+      lighting: Number(hasRating ? fm.rating.lighting : fm.lighting) || 0,
+      detail: Number(hasRating ? fm.rating.detail : fm.detail) || 0,
+      creativity: Number(hasRating ? fm.rating.creativity : fm.creativity) || 0,
+      technical: Number(hasRating ? fm.rating.technical : fm.technical) || 0,
+      aesthetic: Number(hasRating ? fm.rating.aesthetic : fm.aesthetic) || 0,
+      curation: Number(hasRating ? fm.rating.curation : fm.curation) || 0,
+      total: Number(hasRating ? fm.rating.total : fm.score) || 0
     } : undefined;
 
     return {
