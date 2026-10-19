@@ -15,12 +15,12 @@ images:
   - "/images/prompts/prompt-2087100105929417025-2.jpg"
   - "/images/prompts/prompt-2087100105929417025-3.jpg"
   - "/images/prompts/prompt-2087100105929417025-4.jpg"
-score: 67
+score: 66
 composition: 7
 color: 8
 lighting: 8
 detail: 8
-creativity: 12
+creativity: 11
 technique: 9/10
 aesthetic: 8
 curation: 8

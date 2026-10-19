@@ -15,8 +15,8 @@ tags:
 cover: "/images/prompts/prompt-2087879844562616818.jpg"
 images:
   - "/images/prompts/prompt-2087879844562616818.jpg"
-score: 66
-composition: 8
+score: 65
+composition: 7
 color: 8
 lighting: 8
 detail: 9

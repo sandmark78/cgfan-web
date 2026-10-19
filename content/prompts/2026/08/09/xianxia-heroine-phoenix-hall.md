@@ -13,12 +13,12 @@ cover: "/images/prompts/prompt-2086125950299975724.jpg"
 images:
   - "/images/prompts/prompt-2086125950299975724.jpg"
   - "/images/prompts/prompt-2086125950299975724-2.jpg"
-score: 66
+score: 65
 composition: 7
 color: 8
 lighting: 8
 detail: 8
-creativity: 11
+creativity: 10
 technical: 8
 aesthetics: 8/10
 curation: 8
