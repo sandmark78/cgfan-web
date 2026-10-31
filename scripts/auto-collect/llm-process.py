@@ -16,6 +16,7 @@ import json
 import re
 import os
 import sys
+import subprocess
 from pathlib import Path
 from datetime import datetime
 from typing import Dict, List, Optional, Tuple
@@ -428,8 +429,8 @@ def extract_tags(prompt: str) -> List[str]:
     return tags[:5]
 
 def download_images(image_urls: List[str], tweet_id: str) -> List[str]:
-    """下载图片，返回本地路径列表"""
-    import subprocess
+    """下载图片，返回本地路径列表（使用requests绕过反爬虫）"""
+    import requests
     
     downloaded = []
     for i, url in enumerate(image_urls):
@@ -447,12 +448,21 @@ def download_images(image_urls: List[str], tweet_id: str) -> List[str]:
         save_path = IMAGES_DIR / filename
         
         try:
-            result = subprocess.run(
-                ['curl', '-sL', '-o', str(save_path), url],
-                timeout=15, capture_output=True
-            )
+            # 使用requests替代curl，避免Twitter反爬虫拦截
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                'Accept': 'image/webp,image/apng,image/*,*/*;q=0.8',
+                'Accept-Language': 'en-US,en;q=0.9',
+                'Referer': 'https://x.com/',
+            }
             
-            if result.returncode == 0 and save_path.exists() and save_path.stat().st_size > 0:
+            response = requests.get(url, headers=headers, timeout=30)
+            
+            if response.status_code == 200 and len(response.content) > 0:
+                # 写入文件
+                with open(save_path, 'wb') as f:
+                    f.write(response.content)
+                
                 # 检查是否 WebP 伪装
                 file_result = subprocess.run(
                     ['file', str(save_path)], capture_output=True, text=True
@@ -464,6 +474,8 @@ def download_images(image_urls: List[str], tweet_id: str) -> List[str]:
                     )
                 
                 downloaded.append(f"/images/prompts/{filename}")
+            else:
+                print(f"    ❌ 下载失败: HTTP {response.status_code}")
         except Exception as e:
             print(f"    ❌ 下载失败: {e}")
     
