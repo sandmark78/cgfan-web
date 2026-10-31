@@ -306,7 +306,9 @@ def find_slug_by_title(prompts, title, md_title_map=None):
 
 def generate_curator_note(prompt, taste_profile):
     """调用 LLM 分析完整 prompt 内容，生成有深度的策展笔记"""
-    import requests
+    import urllib.request
+    import urllib.error
+    import json as json_lib
 
     # 读取 API 配置（使用 qwen3.7-plus）
     # 从 .env 文件读取
@@ -371,26 +373,30 @@ def generate_curator_note(prompt, taste_profile):
 
     # 调用 API
     try:
-        resp = requests.post(
+        payload = json_lib.dumps({
+            "model": model,
+            "messages": [{"role": "user", "content": llm_prompt}],
+            "temperature": 0.7,
+            "max_tokens": 1000,
+        }).encode("utf-8")
+        
+        req = urllib.request.Request(
             f"{base_url}/chat/completions",
+            data=payload,
             headers={
                 "Authorization": f"Bearer {api_key}",
                 "Content-Type": "application/json",
             },
-            json={
-                "model": model,
-                "messages": [{"role": "user", "content": llm_prompt}],
-                "temperature": 0.7,
-                "max_tokens": 1000,
-            },
-            timeout=180,
+            method="POST",
         )
-        resp.raise_for_status()
-        result = resp.json()
+        
+        with urllib.request.urlopen(req, timeout=180) as response:
+            resp_data = response.read().decode("utf-8")
+            result = json_lib.loads(resp_data)
+        
         content = result["choices"][0]["message"]["content"]
 
         # 提取 JSON
-        import json as json_lib
         
         # 尝试从 markdown 代码块中提取
         json_match = re.search(r'```json\s*(\{.*?\})\s*```', content, re.DOTALL)
