@@ -43,9 +43,26 @@ export interface PromptData {
 
 // 初始化 Supabase 客户端
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://kxgmtmcspzetyxkhemsw.supabase.co'
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt4Z210bWNzcHpldHl4a2hlbXN3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQ2Mjg0MDEsImV4cCI6MjEwMDIwNDQwMX0.OhDCjNSnOt1HnwQ8zVtQsJ-gLl6_jpxoJ6V4CbhNP5c'
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'eyJhbG...NP5c'
 
 const supabase = createClient(supabaseUrl, supabaseAnonKey)
+
+/**
+ * 内存缓存 - Edge Runtime 全局变量
+ * 缓存时间：5 分钟（300 秒）
+ */
+const CACHE_TTL = 5 * 60 * 1000 // 5 分钟
+
+interface CacheEntry<T> {
+  data: T
+  timestamp: number
+}
+
+// 全局缓存（Edge Runtime 会保持全局变量）
+const globalCache = (globalThis as any).__promptsCache = (globalThis as any).__promptsCache || {
+  allPrompts: null as CacheEntry<PromptData[]> | null,
+  promptBySlug: {} as Record<string, CacheEntry<PromptData>>,
+}
 
 /**
  * 将数据库记录转换为 PromptData 格式
@@ -74,9 +91,14 @@ function dbRowToPromptData(row: any): PromptData {
 }
 
 /**
- * 获取所有提示词
+ * 获取所有提示词（带内存缓存）
  */
 export async function getAllPrompts(): Promise<PromptData[]> {
+  // 检查缓存
+  if (globalCache.allPrompts && Date.now() - globalCache.allPrompts.timestamp < CACHE_TTL) {
+    return globalCache.allPrompts.data
+  }
+
   // Supabase 默认限制 1000 行，需要分页获取全部数据
   const pageSize = 1000
   let allData: any[] = []
@@ -102,13 +124,24 @@ export async function getAllPrompts(): Promise<PromptData[]> {
     from += pageSize
   }
   
-  return allData.map(dbRowToPromptData)
+  const result = allData.map(dbRowToPromptData)
+  
+  // 写入缓存
+  globalCache.allPrompts = { data: result, timestamp: Date.now() }
+  
+  return result
 }
 
 /**
- * 根据 slug 获取单个提示词
+ * 根据 slug 获取单个提示词（带内存缓存）
  */
 export async function getPromptBySlug(slug: string): Promise<PromptData | null> {
+  // 检查缓存
+  const cached = globalCache.promptBySlug[slug]
+  if (cached && Date.now() - cached.timestamp < CACHE_TTL) {
+    return cached.data
+  }
+
   const { data, error } = await supabase
     .from('prompts')
     .select('*')
@@ -119,7 +152,12 @@ export async function getPromptBySlug(slug: string): Promise<PromptData | null> 
     return null
   }
 
-  return dbRowToPromptData(data)
+  const result = dbRowToPromptData(data)
+  
+  // 写入缓存
+  globalCache.promptBySlug[slug] = { data: result, timestamp: Date.now() }
+  
+  return result
 }
 
 /**
