@@ -70,7 +70,7 @@ export async function GET(request: NextRequest) {
     pageTotal: Math.min(pageSize, (count || 0) - (page - 1) * pageSize),
   }, {
     headers: {
-      'Cache-Control': 'public, max-age=0, s-maxage=10, stale-while-revalidate=59',
+      'Cache-Control': 'public, max-age=60, s-maxage=300, stale-while-revalidate=600',
     },
   })
 }

@@ -3,9 +3,18 @@ import { NextResponse, type NextRequest } from 'next/server'
 
 /**
  * Middleware: 刷新 Supabase Auth Session
- * 确保每个请求都有最新的认证状态
+ * 优化：只在需要认证的页面运行，添加缓存避免频繁调用
  */
 export async function middleware(request: NextRequest) {
+  // 只对需要认证的路径运行 middleware
+  const needsAuth = request.nextUrl.pathname.startsWith('/admin') || 
+                    request.nextUrl.pathname.startsWith('/dashboard') ||
+                    request.nextUrl.pathname.startsWith('/api/admin')
+
+  if (!needsAuth) {
+    return NextResponse.next()
+  }
+
   let supabaseResponse = NextResponse.next({ request })
 
   const supabase = createServerClient(
@@ -22,7 +31,6 @@ export async function middleware(request: NextRequest) {
           )
           supabaseResponse = NextResponse.next({ request })
           cookiesToSet.forEach(({ name, value, options }) => {
-            // 设置默认路径和其他属性
             const cookieOptions = {
               path: '/',
               ...options,
@@ -34,7 +42,7 @@ export async function middleware(request: NextRequest) {
     }
   )
 
-  // 刷新 session
+  // 只在需要认证的路径刷新 session
   await supabase.auth.getUser()
 
   return supabaseResponse
@@ -43,12 +51,13 @@ export async function middleware(request: NextRequest) {
 export const config = {
   matcher: [
     /*
-     * 匹配所有路径，除了：
-     * - _next/static (static files)
-     * - _next/image (image optimization)
-     * - favicon.ico (favicon)
-     * - public 静态资源
+     * 只对需要认证的路径运行 middleware：
+     * - /admin/* (管理后台)
+     * - /dashboard/* (用户面板)
+     * - /api/admin/* (管理 API)
      */
-    '/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)',
+    '/admin/:path*',
+    '/dashboard/:path*',
+    '/api/admin/:path*',
   ],
 }
