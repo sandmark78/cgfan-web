@@ -71,31 +71,48 @@ def check_supabase_data():
         if len(prompt_text) < min_len:
             issues.append(f"⚠️ {p['slug']}: prompt 太短 ({len(prompt_text)} 字符, 阈值 {min_len})")
         
-        # 检查是否包含 @handle
-        if '@' in prompt_text and any(c.isalpha() for c in prompt_text.split('@')[1][:10]):
-            issues.append(f"⚠️ {p['slug']}: prompt 可能包含 @handle")
+        # 检查是否包含 @handle（排除 Signature/水印指令中的合理用法）
+        if '@' in prompt_text:
+            for i, c in enumerate(prompt_text):
+                if c == '@':
+                    before = prompt_text[max(0,i-100):i].lower()
+                    handle_text = prompt_text[i:i+20].lower()
+                    # 如果在 Signature/watermark 指令上下文中，属于合理用法
+                    if any(kw in before for kw in ['signature', 'watermark', 'logo', 'text overlay', 'brand']):
+                        continue
+                    if any(kw in handle_text for kw in ['sandmrk', 'cgfan', 'sandmark']):
+                        continue
+                    # 真正的 @handle 泄露
+                    if any(ch.isalpha() for ch in prompt_text[i+1:i+11]):
+                        issues.append(f"⚠️ {p['slug']}: prompt 包含 @handle → ...{prompt_text[max(0,i-20):i+30].strip()}...")
+                        break
     
-    # 3. 检查评分数据
-    scored_prompts = [p for p in recent_prompts if p.get('scores')]
+    # 3. 检查评分数据（8维度独立列）
+    SCORE_DIMS = ['aesthetic', 'color', 'composition', 'creativity', 'curation', 'detail', 'lighting', 'technical']
+    scored_prompts = [p for p in recent_prompts if any(p.get(k) is not None for k in SCORE_DIMS)]
     
     for p in scored_prompts:
-        scores = p['scores']
+        dims = {k: p.get(k) for k in SCORE_DIMS}
+        none_count = sum(1 for k in SCORE_DIMS if dims[k] is None)
         
-        # 检查 8 维度
-        if len(scores) != 8:
-            issues.append(f"❌ {p['slug']}: 评分维度数量错误 ({len(scores)}/8)")
+        if none_count > 0 and none_count < 8:
+            issues.append(f"❌ {p['slug']}: 评分维度不完整 ({8-none_count}/8)")
+            continue
+        
+        if none_count == 8:
+            # 没有评分数据，跳过
             continue
         
         # 检查总分
-        total = sum(scores)
-        stored_total = p.get('score_total')
+        calc_total = sum(dims[k] for k in SCORE_DIMS)
+        stored_total = p.get('score')
         
-        if stored_total and abs(total - stored_total) > 0.1:
-            issues.append(f"❌ {p['slug']}: 总分不一致 (计算={total}, 存储={stored_total})")
+        if stored_total and abs(calc_total - stored_total) > 0.1:
+            issues.append(f"❌ {p['slug']}: 总分不一致 (计算={calc_total}, 存储={stored_total})")
         
         # 检查是否全 8+ (禁止)
-        if all(s >= 8 for s in scores):
-            issues.append(f"⚠️ {p['slug']}: 全维度 8+ (可能评分虚高)")
+        if all(dims[k] >= 8 for k in SCORE_DIMS):
+            issues.append(f"⚠️ {p['slug']}: 全维度 8+ (总分{calc_total}，可能评分虚高)")
     
     # 5. 检查每日一味（从 lib/daily-feature.ts 读取）
     today = datetime.now().strftime('%Y-%m-%d')
