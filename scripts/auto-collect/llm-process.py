@@ -51,13 +51,28 @@ def extract_prompt_from_text(allText: str) -> Tuple[str, str]:
         model = "Gemini"
     
     # 尝试从 "提示词：" / "Prompt:" / "Prompt ↓" 后面提取
-    prompt_match = re.search(r'(?:提示词(?:Prompt)?|Prompt)[：:]?\s*[↓]?\s*\n+(.+?)(?=\n\n(?:Made with|Views|\d+:\d+)|$)', text, re.DOTALL | re.IGNORECASE)
+    # 支持多种格式：提示词（欢迎返图）：、提示词Prompt:、Prompt below ↓
+    prompt_match = re.search(r'(?:提示词[（(]?[^）)]*[）)]?|Prompt)[：:]?\s*[↓👇]?\s*\n+(.+?)(?=\n\n(?:Made with|Views|\d+:\d+|\d+,?\d*\s*Views)|$)', text, re.DOTALL | re.IGNORECASE)
     if prompt_match:
         prompt = prompt_match.group(1).strip()
         # 清理 prompt
         prompt = clean_prompt(prompt)
         if len(prompt) > 50:
             return prompt, model
+    
+    # 尝试从 "提示词在评论区" 后面提取（ARTICLE sections）
+    if '提示词' in text and ('评论区' in text or '👇' in text):
+        # 查找 ARTICLE 部分
+        article_match = re.search(r'===ARTICLE \d+===\n(.+?)(?===ARTICLE|$)', text, re.DOTALL)
+        if article_match:
+            article_text = article_match.group(1)
+            # 从 ARTICLE 中提取 prompt
+            prompt_match2 = re.search(r'(?:提示词|Prompt)[：:]?\s*\n+(.+?)(?=\n\n|$)', article_text, re.DOTALL | re.IGNORECASE)
+            if prompt_match2:
+                prompt = prompt_match2.group(1).strip()
+                prompt = clean_prompt(prompt)
+                if len(prompt) > 50:
+                    return prompt, model
     
     # 尝试提取 Midjourney 参数周围的描述
     mj_match = re.search(r'(.+?--ar\s+\d+:\d+.+?)(?=\n\n|$)', text, re.DOTALL)
