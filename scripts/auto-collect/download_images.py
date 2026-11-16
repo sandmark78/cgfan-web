@@ -32,7 +32,7 @@ SCORED_ITEMS = Path('/tmp/final_scored.json')
 CAMOFOX = Path('/Users/mac/.local/bin/camofox')
 
 
-def open_browser_tab(url: str) -> str | None:
+def open_browser_tab(url: str):
     """打开浏览器标签，返回 tab_id"""
     result = subprocess.run(
         [str(CAMOFOX), 'open', url],
