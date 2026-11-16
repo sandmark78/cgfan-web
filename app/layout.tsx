@@ -1,25 +1,26 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono, Noto_Serif_SC } from 'next/font/google';
+import localFont from 'next/font/local';
 import './globals.css';
 import { ToastProvider } from '@/components/toast'
 import Header from '@/components/header';
 import Footer from '@/components/footer';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-});
-
-const notoSerif = Noto_Serif_SC({
+// 本地字体：NotoSerifSC（从Google Fonts迁移到本地，避免构建时拉取失败）
+const notoSerif = localFont({
+  src: '../public/fonts/NotoSerifSC-Regular.woff2',
   variable: '--font-serif',
-  subsets: ['latin'],
-  weight: ['500', '700', '900'],
+  weight: '400',
+  display: 'swap',
 });
+
+// 系统字体栈替代Geist（避免外部依赖）
+const systemSans = `
+  -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB',
+  'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif
+`;
+const systemMono = `
+  'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace
+`;
 
 export const viewport = {
   width: 'device-width',
@@ -83,9 +84,13 @@ export default function RootLayout({
   return (
     <html
       lang="zh-CN"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`h-full antialiased`}
+      style={{
+        '--font-sans': systemSans,
+        '--font-mono': systemMono,
+      } as React.CSSProperties}
     >
-      <body className={`${geistSans.variable} ${geistMono.variable} relative min-h-screen overflow-x-hidden`}>
+      <body className={`${notoSerif.variable} relative min-h-screen overflow-x-hidden`}>
         {/* 可访问性：跳到主要内容 */}
         <a
           href="#main-content"

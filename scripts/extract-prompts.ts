@@ -299,7 +299,23 @@ interface PromptData {
 function parseMarkdownFile(filePath: string): PromptData | null {
   try {
     const content = fs.readFileSync(filePath, 'utf-8');
-    const { data: frontmatter, content: body } = matter(content);
+    const { data: frontmatter, content: body } = matter(content, {
+      excerpt: false,
+      engines: {
+        yaml: (str: string) => {
+          try {
+            return require('js-yaml').load(str);
+          } catch (e) {
+            console.warn(`⚠️  YAML 解析失败，跳过文件: ${filePath}`);
+            return null;
+          }
+        }
+      }
+    });
+    
+    if (!frontmatter) {
+      return null;
+    }
     
     // 提取各个部分
     const sections: Record<string, string> = {};
