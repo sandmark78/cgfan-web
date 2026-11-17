@@ -23,6 +23,7 @@ technique: 8
 aesthetic: 9
 curation: 7
 difficulty: "advanced"
+
 ---
 
 ## Prompt
@@ -47,7 +48,7 @@ Rendering: 8K resolution, ray tracing enabled, subsurface scattering on skin and
 
 Constraints: No modern elements, text, watermark, logos. No tear mole, beauty marks, round eyes, exaggerated makeup. No plastic skin, oversmoothing, excessive saturation. No anime, cartoon, distorted hands, facial distortion. No overexposure, harsh shadows, ring light reflection. No dislocated shoulder, unnatural shoulder angle, missing collarbone, gravity-defying breasts. No thick neck, short neck, long torso, long waist. No overly thin, emaciated, bony, flat chest, small bust, narrow hips, short legs. No high noise, low quality.
 
-Signature: "AI art gallery | @sandmrk" exactly once, bottom center, Montserrat Regular, pure white, +1.5px letter spacing, 2% image height, 10% above bottom edge. No shadow, outline, glow, background.
+Signature: "AI art gallery | " exactly once, bottom center, Montserrat Regular, pure white, +1.5px letter spacing, 2% image height, 10% above bottom edge. No shadow, outline, glow, background.
 
 ## Negative Prompt
 
