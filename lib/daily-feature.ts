@@ -19,6 +19,15 @@ export interface DailyFeature {
  */
 export const dailyFeatures: DailyFeature[] = [
   {
+    date: '2026-11-20',
+    slug: '2084640640650838066',
+    curatorNote: '这条提示词的核心亮点，\n是用"bokeh光斑"模拟萤火虫的生物发光，\n让整片森林变成呼吸的灯海。\n变量化配色(COLOR1/COLOR2)赋予风格弹性，\n但SUBJECT留白会不会喧宾夺主？\n适合氛围壁纸、奇幻插画，\n或沉浸式空间投影。',
+    highlight: '萤火光斑织就呼吸灯海，让整片森林悬浮于幻境。',
+    technique: 'Bokeh光斑模拟 · 生物发光质感 · 变量化配色框架 · 奇幻氛围层叠',
+    tip: '用bokeh模拟微光源时，加入"mimic bioluminescence"可避免AI生成普通灯珠，光斑会有自然衰减的呼吸感。',
+    tryChange: '试着将[COLOR1]/[COLOR2]锁定为"荧光蓝绿+暗紫"，加入"mist volumetric light"，可营造出雾气弥漫的深林秘境。',
+  },
+  {
     date: '2026-11-19',
     slug: '2083515736656695351',
     curatorNote: '将日系IP与传统水墨写意碰撞，打破常规动漫海报的高饱和视觉定势。核心亮点在于对‘大量留白’的精准控制，以虚实相生凸显女性角色的清冷感。结构上明确指定‘随机成年女性’与‘8张独立’生成，兼顾盲盒惊喜感与批量产出实用性，极适合国风游戏宣发或艺术海报。',
